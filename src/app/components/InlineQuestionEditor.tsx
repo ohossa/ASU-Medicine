@@ -11,6 +11,7 @@ import {
   RefreshCw,
 } from "lucide-react";
 import { reportRequest, questionBankRequest } from "../reports/client";
+import { DeleteQuestionModal } from "./DeleteQuestionModal";
 
 export interface InlineQuestionEditorProps {
   moduleCode: string;
@@ -32,6 +33,7 @@ export interface InlineQuestionEditorProps {
   reportId?: string;
   reportRevision?: number;
   onSaved?: (updatedQuestion: any, newRevision?: number) => void;
+  onDeleted?: (deletedQuestionId: string, newRevision?: number) => void;
   onCancel?: () => void;
 }
 
@@ -43,6 +45,7 @@ export function InlineQuestionEditor({
   reportId,
   reportRevision = 0,
   onSaved,
+  onDeleted,
   onCancel,
 }: InlineQuestionEditorProps) {
   const { getToken } = useAuth();
@@ -58,6 +61,7 @@ export function InlineQuestionEditor({
 
   const [activeRevision, setActiveRevision] = useState<number>(revision);
   const [busy, setBusy] = useState(false);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
@@ -445,40 +449,72 @@ export function InlineQuestionEditor({
       </div>
 
       {/* Action Buttons */}
-      <div className="mt-5 flex flex-wrap items-center justify-end gap-2.5 border-t border-teal-200/50 pt-4 dark:border-teal-800/40">
-        {onCancel && (
-          <button
-            type="button"
-            onClick={onCancel}
-            disabled={busy}
-            className="min-h-[40px] px-3.5 py-1.5 text-xs font-medium text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-100 transition-colors"
-          >
-            Cancel
-          </button>
-        )}
-
+      <div className="mt-5 flex flex-wrap items-center justify-between gap-2.5 border-t border-teal-200/50 pt-4 dark:border-teal-800/40">
         <button
           type="button"
-          onClick={() => handleSave(false)}
+          onClick={() => setShowDeleteModal(true)}
           disabled={busy}
-          className="min-h-[40px] inline-flex items-center gap-1.5 rounded-xl border border-stone-300/80 bg-white px-4 py-2 text-xs font-semibold text-stone-700 shadow-sm hover:bg-stone-50 active:scale-[0.98] dark:border-stone-700 dark:bg-stone-800 dark:text-stone-200 transition-all"
+          className="min-h-[40px] inline-flex items-center gap-1.5 rounded-xl border border-rose-200 bg-rose-50/50 px-3.5 py-2 text-xs font-semibold text-rose-600 hover:bg-rose-100/80 hover:text-rose-700 hover:border-rose-300 dark:border-rose-900/50 dark:bg-rose-950/20 dark:text-rose-400 dark:hover:bg-rose-950/40 dark:hover:text-rose-300 transition-all active:scale-[0.98]"
         >
-          {busy ? <Loader2 size={13} className="animate-spin" /> : null}
-          Save Question Patch
+          <Trash2 size={13} />
+          Delete Question
         </button>
 
-        {reportId && (
+        <div className="flex flex-wrap items-center gap-2.5">
+          {onCancel && (
+            <button
+              type="button"
+              onClick={onCancel}
+              disabled={busy}
+              className="min-h-[40px] px-3.5 py-1.5 text-xs font-medium text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-100 transition-colors"
+            >
+              Cancel
+            </button>
+          )}
+
           <button
             type="button"
-            onClick={() => handleSave(true)}
+            onClick={() => handleSave(false)}
             disabled={busy}
-            className="min-h-[40px] inline-flex items-center gap-1.5 rounded-xl bg-teal-600 px-4 py-2 text-xs font-semibold text-white shadow-sm hover:bg-teal-700 active:scale-[0.98] transition-all"
+            className="min-h-[40px] inline-flex items-center gap-1.5 rounded-xl border border-stone-300/80 bg-white px-4 py-2 text-xs font-semibold text-stone-700 shadow-sm hover:bg-stone-50 active:scale-[0.98] dark:border-stone-700 dark:bg-stone-800 dark:text-stone-200 transition-all"
           >
-            {busy ? <Loader2 size={13} className="animate-spin" /> : <Check size={14} />}
-            Save & Mark Report Fixed
+            {busy ? <Loader2 size={13} className="animate-spin" /> : null}
+            Save Question Patch
           </button>
-        )}
+
+          {reportId && (
+            <button
+              type="button"
+              onClick={() => handleSave(true)}
+              disabled={busy}
+              className="min-h-[40px] inline-flex items-center gap-1.5 rounded-xl bg-teal-600 px-4 py-2 text-xs font-semibold text-white shadow-sm hover:bg-teal-700 active:scale-[0.98] transition-all"
+            >
+              {busy ? <Loader2 size={13} className="animate-spin" /> : <Check size={14} />}
+              Save & Mark Report Fixed
+            </button>
+          )}
+        </div>
       </div>
+
+      {showDeleteModal && (
+        <DeleteQuestionModal
+          isOpen={showDeleteModal}
+          onClose={() => setShowDeleteModal(false)}
+          moduleCode={moduleCode}
+          chapterId={chapterId}
+          questionId={question.id}
+          questionStem={stem}
+          revision={activeRevision}
+          reportId={reportId}
+          reportRevision={reportRevision}
+          onSuccess={(result) => {
+            setShowDeleteModal(false);
+            if (onDeleted) {
+              onDeleted(String(question.id), result.revision);
+            }
+          }}
+        />
+      )}
     </div>
   );
 }

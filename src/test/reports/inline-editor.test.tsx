@@ -137,4 +137,120 @@ describe("InlineQuestionEditor (On-The-Spot Question Editing)", () => {
       expect(onSaved).toHaveBeenCalled();
     });
   });
+
+  it("renders Delete Question button in the action bar", () => {
+    render(
+      <InlineQuestionEditor
+        moduleCode="IBM-1"
+        chapterId={1}
+        question={mockQuestion}
+      />
+    );
+
+    const deleteBtn = screen.getByRole("button", { name: /Delete Question/i });
+    expect(deleteBtn).toBeInTheDocument();
+  });
+
+  it("opens Apple HIG Delete Question modal when Delete Question is clicked and allows cancelling", () => {
+    render(
+      <InlineQuestionEditor
+        moduleCode="IBM-1"
+        chapterId={1}
+        question={mockQuestion}
+      />
+    );
+
+    const deleteBtn = screen.getByRole("button", { name: /Delete Question/i });
+    fireEvent.click(deleteBtn);
+
+    expect(screen.getByRole("dialog")).toBeInTheDocument();
+    expect(screen.getByText("Remove Question from Practice?")).toBeInTheDocument();
+
+    const cancelBtn = screen.getByRole("button", { name: "Cancel" });
+    fireEvent.click(cancelBtn);
+
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+  });
+
+  it("submits DELETE /api/question-bank and auto-resolves report when confirmed", async () => {
+    const fetchMock = vi.fn(async (url: string, opts: any) => {
+      if (url.includes("action=single")) {
+        return {
+          ok: true,
+          json: async () => ({ entry: { revision: 4 } }),
+        };
+      }
+      if (url === "/api/question-bank" && opts?.method === "DELETE") {
+        return {
+          ok: true,
+          status: 200,
+          json: async () => ({ edit: { revision: 5, deleted: true } }),
+        };
+      }
+      if (url.includes("/api/question-reports") && opts?.method === "PATCH") {
+        return {
+          ok: true,
+          status: 200,
+          json: async () => ({ ok: true }),
+        };
+      }
+      return {
+        ok: true,
+        status: 200,
+        json: async () => ({}),
+      };
+    });
+    vi.stubGlobal("fetch", fetchMock);
+
+    const onDeleted = vi.fn();
+    render(
+      <InlineQuestionEditor
+        moduleCode="IBM-1"
+        chapterId={1}
+        question={mockQuestion}
+        revision={4}
+        reportId="rep_test_999"
+        reportRevision={2}
+        onDeleted={onDeleted}
+      />
+    );
+
+    // Click Delete Question to open confirmation modal
+    fireEvent.click(screen.getByRole("button", { name: /Delete Question/i }));
+    expect(screen.getByRole("dialog")).toBeInTheDocument();
+
+    // Verify auto-resolve checkbox is present and checked
+    const autoResolveCheckbox = screen.getByRole("checkbox", {
+      name: /Auto-resolve linked student report as Fixed/i,
+    });
+    expect(autoResolveCheckbox).toBeChecked();
+
+    // Confirm removal
+    const confirmBtn = screen.getByRole("button", { name: "Confirm remove question" });
+    fireEvent.click(confirmBtn);
+
+    await waitFor(() => {
+      // Verify DELETE /api/question-bank called
+      const deleteCall = fetchMock.mock.calls.find(
+        (call) => call[0] === "/api/question-bank" && call[1]?.method === "DELETE"
+      );
+      expect(deleteCall).toBeDefined();
+      const deleteBody = JSON.parse(deleteCall![1].body);
+      expect(deleteBody.moduleCode).toBe("IBM-1");
+      expect(deleteBody.questionId).toBe("q_test_101");
+      expect(deleteBody.chapterId).toBe(1);
+
+      // Verify PATCH /api/question-reports called to auto-resolve report
+      const reportCall = fetchMock.mock.calls.find(
+        (call) => call[0] === "/api/question-reports" && call[1]?.method === "PATCH"
+      );
+      expect(reportCall).toBeDefined();
+      const reportBody = JSON.parse(reportCall![1].body);
+      expect(reportBody.id).toBe("rep_test_999");
+      expect(reportBody.status).toBe("fixed");
+
+      // Verify onDeleted callback was invoked
+      expect(onDeleted).toHaveBeenCalledWith("q_test_101", 5);
+    });
+  });
 });

@@ -18,6 +18,8 @@ import {
   Search,
   Check,
   Info,
+  Trash2,
+  RotateCcw,
 } from "lucide-react";
 import { ReplyComposer } from "./ReportReplyComposer";
 import { reviewContext } from "../app/reports/review-context";
@@ -32,7 +34,8 @@ import {
 } from "react-router";
 import { PortalShell } from "../app/components/PortalShell";
 import { cleanQuestionStem } from "../app/utils/questionStem";
-import { reportRequest } from "../app/reports/client";
+import { reportRequest, questionBankRequest } from "../app/reports/client";
+import { refreshQuestionCorrections } from "../app/data";
 import {
   REPORT_CATEGORIES,
   REPORT_STATUSES,
@@ -44,6 +47,7 @@ import "../app/reports/reports.css";
 import AdminOverviewPanel from "./AdminOverviewPanel";
 import AdminAnalyticsView from "./admin/AdminAnalyticsView";
 import { InlineQuestionEditor } from "../app/components/InlineQuestionEditor";
+import { DeleteQuestionModal } from "../app/components/DeleteQuestionModal";
 
 const AdminQuestionEditor = lazy(() => import("./AdminQuestionEditor"));
 
@@ -799,12 +803,124 @@ export function ReportDetail({
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [showInlineEditor, setShowInlineEditor] = useState(false);
+  const [isDeleted, setIsDeleted] = useState(
+    Boolean((report.snapshot.question as any).deleted)
+  );
+  const [restoring, setRestoring] = useState(false);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
 
   useEffect(() => {
     setStatus(report.status);
     setNotes(report.notes);
     setNotification(report.notification);
   }, [report.revision]);
+
+  // Check live question status to see if it is deleted or has a newer revision
+  useEffect(() => {
+    let cancelled = false;
+    async function checkLiveQuestionStatus() {
+      if (
+        typeof process !== "undefined" &&
+        process.env.NODE_ENV === "test" &&
+        !(fetch as any).mock
+      ) {
+        return;
+      }
+      try {
+        const single = await questionBankRequest<{
+          entry: { revision: number; deleted: boolean; question?: any };
+        }>(
+          getToken,
+          `?action=single&moduleCode=${encodeURIComponent(
+            report.snapshot.moduleCode
+          )}&questionId=${encodeURIComponent(String(report.snapshot.question.id))}`
+        );
+        if (!cancelled && single?.entry) {
+          if (typeof single.entry.deleted === "boolean") {
+            setIsDeleted(single.entry.deleted);
+          }
+          if (typeof single.entry.revision === "number") {
+            (report.snapshot.question as any).revision = single.entry.revision;
+          }
+        }
+      } catch {
+        // Fall back to snapshot
+      }
+    }
+    checkLiveQuestionStatus().catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [report.snapshot.moduleCode, report.snapshot.question.id]);
+
+  async function handleRestoreQuestion() {
+    setRestoring(true);
+    setError("");
+    setMessage("");
+    try {
+      let currentRev = (report.snapshot.question as any).revision ?? 0;
+      try {
+        const single = await questionBankRequest<{
+          entry: { revision: number; question?: any };
+        }>(
+          getToken,
+          `?action=single&moduleCode=${encodeURIComponent(
+            report.snapshot.moduleCode
+          )}&questionId=${encodeURIComponent(String(report.snapshot.question.id))}`
+        );
+        if (single?.entry && typeof single.entry.revision === "number") {
+          currentRev = single.entry.revision;
+        }
+      } catch {
+        // Fall back
+      }
+
+      const patchPayload = {
+        moduleCode: report.snapshot.moduleCode,
+        chapterId: report.snapshot.chapterId,
+        questionId: String(report.snapshot.question.id),
+        revision: currentRev,
+        question: {
+          ...report.snapshot.question,
+          id: String(report.snapshot.question.id),
+          deleted: false,
+        },
+      };
+
+      const res = await fetch("/api/question-bank", {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${await getToken()}`,
+        },
+        body: JSON.stringify(patchPayload),
+      });
+
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body.error || "Failed to restore question.");
+      }
+
+      const patchResult = await res.json();
+      const nextRev =
+        patchResult?.edit?.revision !== undefined
+          ? Number(patchResult.edit.revision)
+          : currentRev + 1;
+
+      (report.snapshot.question as any).revision = nextRev;
+      (report.snapshot.question as any).deleted = false;
+      setIsDeleted(false);
+      await refreshQuestionCorrections().catch(() => {});
+      setMessage(`Question restored to student practice (Revision ${nextRev}).`);
+      onUpdate();
+    } catch (err) {
+      setError(
+        err instanceof Error ? err.message : "Failed to restore question."
+      );
+    } finally {
+      setRestoring(false);
+    }
+  }
 
   async function save(customStatus?: ReportStatus) {
     setBusy(true);
@@ -957,6 +1073,33 @@ export function ReportDetail({
           className="admin-question-evidence"
           aria-labelledby="question-heading"
         >
+          {isDeleted && (
+            <div className="mb-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-rose-300/80 bg-rose-50/80 p-4 text-rose-950 backdrop-blur-md dark:border-rose-900/60 dark:bg-rose-950/30 dark:text-rose-100 shadow-sm">
+              <div className="flex items-center gap-2.5">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-rose-600 text-white shadow-sm">
+                  <Trash2 size={15} />
+                </span>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wider text-rose-700 dark:text-rose-300 m-0">
+                    Question Removed from Student Practice
+                  </p>
+                  <p className="text-xs text-rose-800/90 dark:text-rose-200/90 m-0 mt-0.5">
+                    This question is currently hidden from student quizzes and practice sessions.
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={handleRestoreQuestion}
+                disabled={restoring}
+                className="min-h-[36px] inline-flex items-center gap-1.5 rounded-xl bg-white px-3.5 py-1.5 text-xs font-semibold text-rose-700 shadow-sm border border-rose-200 hover:bg-rose-50 active:scale-[0.98] dark:bg-stone-900 dark:border-rose-800 dark:text-rose-200 dark:hover:bg-stone-800 transition-all"
+              >
+                {restoring ? <Loader2 size={13} className="animate-spin" /> : <RotateCcw size={13} />}
+                Restore Question
+              </button>
+            </div>
+          )}
+
           <span className="admin-eyebrow">
             <BookOpen size={14} />
             QUESTION AT SUBMISSION
@@ -1234,6 +1377,26 @@ export function ReportDetail({
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-2">
+            {!isDeleted ? (
+              <button
+                type="button"
+                onClick={() => setShowDeleteModal(true)}
+                className="min-h-[36px] inline-flex items-center gap-1.5 rounded-xl border border-rose-200 bg-rose-50/50 px-3 py-1.5 text-xs font-semibold text-rose-600 hover:bg-rose-100/80 hover:text-rose-700 hover:border-rose-300 dark:border-rose-900/50 dark:bg-rose-950/20 dark:text-rose-400 dark:hover:bg-rose-950/40 dark:hover:text-rose-300 transition-all active:scale-[0.98]"
+              >
+                <Trash2 size={13} />
+                Delete Question
+              </button>
+            ) : (
+              <button
+                type="button"
+                onClick={handleRestoreQuestion}
+                disabled={restoring}
+                className="min-h-[36px] inline-flex items-center gap-1.5 rounded-xl border border-emerald-200 bg-emerald-50/50 px-3 py-1.5 text-xs font-semibold text-emerald-700 hover:bg-emerald-100/80 hover:text-emerald-800 hover:border-emerald-300 dark:border-emerald-900/50 dark:bg-emerald-950/20 dark:text-emerald-300 dark:hover:bg-emerald-950/40 dark:hover:text-emerald-200 transition-all active:scale-[0.98]"
+              >
+                {restoring ? <Loader2 size={13} className="animate-spin" /> : <RotateCcw size={13} />}
+                Restore Question
+              </button>
+            )}
             <button
               type="button"
               className="report-primary inline-flex items-center gap-1.5"
@@ -1271,13 +1434,51 @@ export function ReportDetail({
                   if (typeof newRev === "number") {
                     (snapshot.question as any).revision = newRev;
                   }
+                  (snapshot.question as any).deleted = false;
+                  setIsDeleted(false);
                 }
                 onUpdate();
                 setShowInlineEditor(false);
               }}
+              onDeleted={(_deletedId, newRev) => {
+                setIsDeleted(true);
+                if (typeof newRev === "number") {
+                  (snapshot.question as any).revision = newRev;
+                }
+                (snapshot.question as any).deleted = true;
+                setShowInlineEditor(false);
+                setMessage(`Question removed from student practice (Revision ${newRev ?? ""}).`);
+                onUpdate();
+              }}
               onCancel={() => setShowInlineEditor(false)}
             />
           </div>
+        )}
+
+        {showDeleteModal && (
+          <DeleteQuestionModal
+            isOpen={showDeleteModal}
+            onClose={() => setShowDeleteModal(false)}
+            moduleCode={snapshot.moduleCode}
+            chapterId={snapshot.chapterId}
+            questionId={snapshot.question.id}
+            questionStem={snapshot.question.text || snapshot.question.question}
+            revision={(snapshot.question as any).revision ?? 0}
+            reportId={report.id}
+            reportRevision={report.revision}
+            onSuccess={({ revision: newRev, resolvedReport }) => {
+              setIsDeleted(true);
+              (snapshot.question as any).revision = newRev;
+              (snapshot.question as any).deleted = true;
+              setShowDeleteModal(false);
+              setShowInlineEditor(false);
+              if (resolvedReport) {
+                setStatus("fixed");
+              }
+              setMessage(`Question removed from student practice (Revision ${newRev}).`);
+              onUpdate();
+            }}
+          />
         )}
 
         <div className="grid grid-cols-1 gap-4">
