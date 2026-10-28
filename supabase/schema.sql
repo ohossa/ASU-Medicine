@@ -4,42 +4,54 @@
 -- =========================================================================
 
 -- 1. QUESTION REPORTS TABLE
--- Stores student-reported question feedback, formatting bugs, and answers
 CREATE TABLE IF NOT EXISTS public.reports (
-    id TEXT PRIMARY KEY,                           -- Unique deterministic ID (e.g. r_dc185985f0cd0a26eb08483e566d837219cb0e4c)
-    request_hash TEXT NOT NULL,                    -- Idempotency hash
-    reporter_id TEXT NOT NULL,                     -- Clerk user ID
-    reporter JSONB DEFAULT '{}'::jsonb,            -- Reporter profile: name, username, email, emailVerified
-    category TEXT NOT NULL,                        -- wrong_answer, unclear_wording, missing_image, duplicate, formatting, other
-    explanation TEXT NOT NULL DEFAULT '',          -- Student description / note
-    module_code TEXT NOT NULL,                     -- Module identifier (e.g. MGL-3, GIT-1)
-    chapter_id INTEGER NOT NULL DEFAULT 1,         -- Chapter ID (e.g. 5)
-    question_id TEXT NOT NULL,                     -- Question ID (e.g. MGL3-CH5-PATH-0847)
-    sub_question_id TEXT,                          -- Optional sub-question ID
-    snapshot JSONB NOT NULL,                       -- Full question snapshot (stem, options, correctIndex, explanation)
-    status TEXT NOT NULL DEFAULT 'new',            -- new, reviewing, resolved, dismissed
-    notes TEXT NOT NULL DEFAULT '',                -- Admin internal review notes
-    revision INTEGER NOT NULL DEFAULT 1,           -- Optimistic locking revision counter
-    notification JSONB DEFAULT '{"state":"pending"}'::jsonb, -- Email notification delivery status
+    id TEXT PRIMARY KEY,
+    request_hash TEXT NOT NULL,
+    reporter_id TEXT NOT NULL,
+    reporter JSONB DEFAULT '{}'::jsonb,
+    category TEXT NOT NULL,
+    explanation TEXT NOT NULL DEFAULT '',
+    module_code TEXT NOT NULL,
+    chapter_id INTEGER NOT NULL DEFAULT 1,
+    question_id TEXT NOT NULL,
+    sub_question_id TEXT,
+    snapshot JSONB NOT NULL,
+    status TEXT NOT NULL DEFAULT 'new',
+    notes TEXT NOT NULL DEFAULT '',
+    revision INTEGER NOT NULL DEFAULT 1,
+    notification JSONB DEFAULT '{"state":"pending"}'::jsonb,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
--- Fast lookup indexes for admin filtering and searching
 CREATE INDEX IF NOT EXISTS idx_reports_status ON public.reports(status);
 CREATE INDEX IF NOT EXISTS idx_reports_module ON public.reports(module_code);
 CREATE INDEX IF NOT EXISTS idx_reports_question ON public.reports(question_id);
 CREATE INDEX IF NOT EXISTS idx_reports_created_at ON public.reports(created_at DESC);
 
--- Enable Row Level Security (RLS)
 ALTER TABLE public.reports ENABLE ROW LEVEL SECURITY;
 
+CREATE POLICY "Allow public insert to reports" ON public.reports
+    FOR INSERT TO anon, authenticated
+    WITH CHECK (true);
+
+CREATE POLICY "Allow public select on reports" ON public.reports
+    FOR SELECT TO anon, authenticated
+    USING (true);
+
+CREATE POLICY "Allow public update on reports" ON public.reports
+    FOR UPDATE TO anon, authenticated
+    USING (true)
+    WITH CHECK (true);
+
+GRANT ALL ON public.reports TO anon, authenticated;
+
+
 -- 2. USER CLOUD SYNC & PROGRESS TABLE
--- Replaces tens of thousands of fragmented Redis keys with a single clean row per user
 CREATE TABLE IF NOT EXISTS public.user_progress (
-    user_id TEXT PRIMARY KEY,                      -- Clerk user ID
-    data JSONB NOT NULL DEFAULT '{}'::jsonb,       -- Full user state (quiz sessions, flags, tracker, etc.)
-    academic_year INTEGER DEFAULT 1,               -- Selected academic year (1 to 5)
+    user_id TEXT PRIMARY KEY,
+    data JSONB NOT NULL DEFAULT '{}'::jsonb,
+    academic_year INTEGER DEFAULT 1,
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
@@ -47,8 +59,15 @@ CREATE INDEX IF NOT EXISTS idx_user_progress_updated ON public.user_progress(upd
 
 ALTER TABLE public.user_progress ENABLE ROW LEVEL SECURITY;
 
+CREATE POLICY "Allow all on user_progress" ON public.user_progress
+    FOR ALL TO anon, authenticated
+    USING (true)
+    WITH CHECK (true);
+
+GRANT ALL ON public.user_progress TO anon, authenticated;
+
+
 -- 3. REAL-TIME PRESENCE TABLE
--- Lightweight active student tracker (heartbeats)
 CREATE TABLE IF NOT EXISTS public.presence (
     user_id TEXT PRIMARY KEY,
     alias TEXT NOT NULL DEFAULT 'Student',
@@ -60,25 +79,18 @@ CREATE INDEX IF NOT EXISTS idx_presence_last_seen ON public.presence(last_seen D
 
 ALTER TABLE public.presence ENABLE ROW LEVEL SECURITY;
 
--- 4. INSERT RECOVERED QUESTION REPORT
--- Seeds the reported question MGL3-CH5-PATH-0847 so it is immediately active
+CREATE POLICY "Allow all on presence" ON public.presence
+    FOR ALL TO anon, authenticated
+    USING (true)
+    WITH CHECK (true);
+
+GRANT ALL ON public.presence TO anon, authenticated;
+
+
+-- 4. SEED THE RECOVERED QUESTION REPORT (MGL3-CH5-PATH-0847)
 INSERT INTO public.reports (
-    id,
-    request_hash,
-    reporter_id,
-    reporter,
-    category,
-    explanation,
-    module_code,
-    chapter_id,
-    question_id,
-    snapshot,
-    status,
-    notes,
-    revision,
-    notification,
-    created_at,
-    updated_at
+    id, request_hash, reporter_id, reporter, category, explanation,
+    module_code, chapter_id, question_id, snapshot, status, notes, revision, notification, created_at, updated_at
 ) VALUES (
     'r_dc185985f0cd0a26eb08483e566d837219cb0e4c',
     'recovered_r_dc185985f0cd0a26eb08483e566d837219cb0e4c',
@@ -89,27 +101,6 @@ INSERT INTO public.reports (
     'MGL-3',
     5,
     'MGL3-CH5-PATH-0847',
-    '{
-        "moduleCode": "MGL-3",
-        "chapterId": 5,
-        "chapterTitle": "Pathology",
-        "subjectName": "Pathology",
-        "topicName": "Hepatitis",
-        "version": "97453f5ae1f99603d0260f586922ac8af1b9e57f8f0d158f2e218dcf947456c1",
-        "question": {
-            "id": "MGL3-CH5-PATH-0847",
-            "type": "mcq",
-            "text": "4- Which of the following hepatic viruses can cause fatal fulminant hepatitis in pregnant\\nwomen:",
-            "explanation": "HEV can cause severe or fulminant hepatitis during pregnancy, particularly in endemic regions.",
-            "options": ["HBV", "HCV", "HDV", "HEV"],
-            "correctIndex": 3,
-            "lecture": 17
-        }
-    }'::jsonb,
-    'new',
-    '',
-    1,
-    '{"state": "sent"}'::jsonb,
-    NOW(),
-    NOW()
+    '{"moduleCode":"MGL-3","chapterId":5,"chapterTitle":"Pathology","subjectName":"Pathology","topicName":"Hepatitis","version":"97453f5ae1f99603d0260f586922ac8af1b9e57f8f0d158f2e218dcf947456c1","question":{"id":"MGL3-CH5-PATH-0847","type":"mcq","text":"4- Which of the following hepatic viruses can cause fatal fulminant hepatitis in pregnant\\nwomen:","explanation":"HEV can cause severe or fulminant hepatitis during pregnancy, particularly in endemic regions.","options":["HBV","HCV","HDV","HEV"],"correctIndex":3,"lecture":17}}'::jsonb,
+    'new', '', 1, '{"state": "sent"}'::jsonb, NOW(), NOW()
 ) ON CONFLICT (id) DO NOTHING;
