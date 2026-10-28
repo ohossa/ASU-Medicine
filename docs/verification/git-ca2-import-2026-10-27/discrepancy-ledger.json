@@ -1,0 +1,93 @@
+[
+  {
+    "questionId": "MGL3-CH1-ANAT-1047",
+    "discipline": "Anatomy / Embryology",
+    "chapterId": 201,
+    "stem": "During embryological development, the midgut rotates through:",
+    "currentKey": "270° clockwise (Index 2)",
+    "medicalConsensus": "270° counterclockwise / anticlockwise around the superior mesenteric artery (Langman's Medical Embryology, Moore The Developing Human).",
+    "classification": "FACULTY_SLIDE_KEY_PRESERVED_WITH_NOTE",
+    "discrepancyDetails": "The historical department exam slide on page 106 specifically colored 'C. 270° clockwise' in red. Medically, physiological herniation produces 90° counterclockwise rotation and abdominal return produces 180° counterclockwise rotation (total 270° counterclockwise). Explanation explicitly instructs students on both the true embryological mechanism and the exam slide convention.",
+    "status": "FLAGGED_IN_DISCREPANCY_LEDGER"
+  },
+  {
+    "questionId": "MGL3-CH2-PHYS-0926",
+    "discipline": "Physiology",
+    "chapterId": 202,
+    "stem": "Which gastrointestinal hormone stimulates insulin secretion in response to oral glucose and nutrients?",
+    "currentKey": "GIP (Index 2)",
+    "previousKey": "Secretin (Index 0)",
+    "medicalConsensus": "Glucose-dependent insulinotropic peptide (GIP) and GLP-1 are the classic incretin hormones (Guyton & Hall, Costanzo Physiology).",
+    "classification": "EXTRACTION_PARSER_ERROR_CORRECTED",
+    "discrepancyDetails": "Slide 183 highlighted 'C. GIP' in color 0xa2272c. The original parser missed the single 3-letter word GIP and defaulted to index 0. Corrected to index 2 (GIP), aligning perfectly with both the slide key and universal physiological science.",
+    "status": "CORRECTED"
+  },
+  {
+    "questionId": "MGL3-CH3-HIST-1125",
+    "discipline": "Histology",
+    "chapterId": 203,
+    "stem": "Decreased blood supply to the liver (ischemia) greatly affects hepatocytes. The first group of hepatocytes to be affected are normally characterized by which of the following?",
+    "currentKey": "They are detected in zone 1 of the liver acinus (Index 2)",
+    "medicalConsensus": "Zone 3 (perivenous/centrilobular) hepatocytes are farthest from arterial inflow and have the lowest pO2, making them the first to suffer ischemic necrosis (Junqueira Histology, Robbins Pathology).",
+    "classification": "FACULTY_EXAM_SLIDE_AMBIGUITY",
+    "discrepancyDetails": "Historical exam slide on page 211 highlighted both Option C (Zone 1) and Option E (farthest from the central vein) in red Garamond font. The question explanation comprehensively details the hepatic acinar zones (Zone 1 periportal vs Zone 3 centrilobular) so students are fully prepared.",
+    "status": "FLAGGED_IN_DISCREPANCY_LEDGER"
+  },
+  {
+    "questionId": "MGL3-CH3-HIST-1126",
+    "discipline": "Histology",
+    "chapterId": 203,
+    "stem": "The wall of the gall bladder is similar to that of the large intestine in which of the following features?",
+    "currentKey": "Having well developed muscularis mucosae (Index 4)",
+    "medicalConsensus": "The gallbladder wall histologically consists of mucosa, a single layer of smooth muscle, perimuscular connective tissue, and serosa; it completely lacks a muscularis mucosae and submucosa (Junqueira's Basic Histology).",
+    "classification": "FACULTY_EXAM_SLIDE_AMBIGUITY",
+    "discrepancyDetails": "The historical 2021 Final Paper 2 slide 213 explicitly marked 'Having well developed muscularis mucosae' in red text. The updated explanation clarifies true gallbladder histology while noting the department slide scoring convention.",
+    "status": "FLAGGED_IN_DISCREPANCY_LEDGER"
+  },
+  {
+    "questionId": "MGL3-CH4-BIOC-0540",
+    "discipline": "Biochemistry",
+    "chapterId": 204,
+    "stem": "Which of the following mechanisms directly link an increased NADH/NAD+ ratio to the development of alcoholic fatty liver disease (hepatic steatosis)?",
+    "currentKey": "Increased conversion of dihydroxyacetone phosphate (DHAP) to glycerol-3-phosphate (Index 3)",
+    "previousKey": "Inhibition of glycerol-3-phosphate dehydrogenase, reducing triglyceride synthesis (Index 1)",
+    "medicalConsensus": "High NADH shifts glycerol-3-phosphate dehydrogenase toward glycerol-3-phosphate formation, providing the essential substrate for hepatic triglyceride synthesis (Mark's Medical Biochemistry, Lehninger).",
+    "classification": "EXTRACTION_PARSER_ERROR_CORRECTED",
+    "discrepancyDetails": "Slide 265 explicitly bolded Option D in color 0xa8282d. Corrected to index 3, matching both the official slide key and biochemical consensus.",
+    "status": "CORRECTED"
+  },
+  {
+    "questionId": "MGL3-CH7-MICR-0421",
+    "discipline": "Microbiology",
+    "chapterId": 207,
+    "stem": "How many doses are required for the primary vaccination schedule for hepatitis A vaccine in an immunocompetent individual?",
+    "currentKey": "One dose (Index 0)",
+    "previousKey": "Two doses (Index 1)",
+    "medicalConsensus": "International CDC guidelines recommend 2 doses (0 and 6–12 months); however, the Ain Shams University department textbook (Page 278, Part 2) specifies a single dose for primary vaccination in immunocompetent individuals.",
+    "classification": "DEPARTMENT_TEXTBOOK_AUTHORITY",
+    "discrepancyDetails": "Aligned with Ain Shams University curriculum textbook (Page 278, Part 2) in commit f13a6e7. Explanation documents the department textbook locator.",
+    "status": "VERIFIED_ACCORDING_TO_SYLLABUS"
+  },
+  {
+    "questionId": "MGL3-CH8-PARA-1540",
+    "discipline": "Parasitology",
+    "chapterId": 208,
+    "stem": "1. Which test is useful for the diagnosis of visceral leishmaniasis (VLM) by detecting specific antibodies?",
+    "currentKey": "Raw freshwater fish (Index 1)",
+    "medicalConsensus": "The stem on slide 431 accidentally copied a serology prompt header onto a Heterophyes heterophyes fish-borne infection question.",
+    "classification": "SOURCE_SLIDE_TYPOGRAPHICAL_ERROR",
+    "discrepancyDetails": "The slide creators pasted the title from a different question onto an infection transmission question where the keyed answer is 'Raw freshwater fish' (transmission of Heterophyes). Preserved historical key with explicit explanatory note unmasking the slide typo.",
+    "status": "FLAGGED_IN_DISCREPANCY_LEDGER"
+  },
+  {
+    "questionId": "MGL3-CH8-PARA-1547",
+    "discipline": "Parasitology",
+    "chapterId": 208,
+    "stem": "Pernicious anemia is a complication of infection by:",
+    "currentKey": "Taenia saginata & Ancylostoma duodenale (Index 4)",
+    "medicalConsensus": "Diphyllobothrium latum causes megaloblastic (B12 deficiency) tapeworm anemia; hookworms cause microcytic iron-deficiency anemia.",
+    "classification": "FACULTY_SLIDE_KEY_PRESERVED_WITH_NOTE",
+    "discrepancyDetails": "The department exam slide grouped Taenia saginata and Ancylostoma duodenale together under this question. Upgraded explanation clarifies the hematological distinction between Diphyllobothrium (B12/megaloblastic) and Ancylostoma (iron deficiency/microcytic).",
+    "status": "FLAGGED_IN_DISCREPANCY_LEDGER"
+  }
+]

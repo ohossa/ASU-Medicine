@@ -20876,7 +20876,7 @@
               "id": "MGL3-CH2-PHYS-0884",
               "type": "mcq",
               "text": "Which of the following vitamins is absorbed  independent on Na+:",
-              "explanation": "Digestive system physiology rationale: Vitamin B12..",
+              "explanation": "Vitamin B12 is absorbed in the terminal ileum via receptor-mediated endocytosis of the intrinsic factor-cobalamin complex (cubam receptor), which is calcium-dependent but sodium-independent. In contrast, water-soluble vitamins like vitamin C, thiamine, and riboflavin rely on secondary active Na+-dependent cotransporters.",
               "lecture": 1,
               "options": [
                 "Vitamin C.",
@@ -20996,7 +20996,7 @@
               "id": "MGL3-CH2-PHYS-0892",
               "type": "mcq",
               "text": "The insulin secretion from the pancreas is increased  when we eat meat because of release of all of these  hormones except:",
-              "explanation": "Digestive system physiology rationale: GIP..",
+              "explanation": "GIP (glucose-dependent insulinotropic peptide) is released by duodenal K-cells primarily in response to oral glucose and fatty acids. Meat and pure protein meals stimulate insulin release through gastrin and CCK release and direct amino acid stimulation, with minimal GIP elevation.",
               "lecture": 1,
               "options": [
                 "Gastrin.",
@@ -30105,7 +30105,7 @@
               "id": "MGL3-CH3-HIST-1114",
               "type": "mcq",
               "text": "Intestinal villi  are covered by the following cells EXCEPT:",
-              "explanation": "Gastrointestinal histology principle: Paneth cells.",
+              "explanation": "Paneth cells reside exclusively at the base of the intestinal crypts of Lieberkühn, where they secrete antimicrobial alpha-defensins, lysozyme, and TNF. The epithelial surface of villi is covered by enterocytes (absorptive cells), goblet cells, and M cells (in ileum), but lacks Paneth cells.",
               "lecture": 1,
               "options": [
                 "Enterocytes",
@@ -49978,7 +49978,7 @@
               "id": "MGL3-CH5-PATH-1233",
               "type": "mcq",
               "text": "Cause of portal hypertension in hepatic cirrhosis:",
-              "explanation": "According to hepatobiliary pathology criteria, the correct answer is All of the above.",
+              "explanation": "Portal hypertension in cirrhosis arises from sinusoidal and post-sinusoidal vascular resistance caused by dense fibrous septa constricting intrahepatic vascular beds, mechanical compression by regenerating parenchymal nodules, and new arteriovenous communications between hepatic arterial and portal venous branches.",
               "lecture": 18,
               "options": [
                 "Pressure of regenerating nodules on branches of portal vein",
@@ -50057,7 +50057,7 @@
               "id": "MGL3-CH5-PATH-1239",
               "type": "mcq",
               "text": "accumulation of which viral component?",
-              "explanation": "Orcein stain can detect HBsAg",
+              "explanation": "Ground-glass hepatocytes in chronic Hepatitis B contain abundant hepatitis B surface antigen (HBsAg) accumulating within a hypertrophied smooth endoplasmic reticulum. This viral antigen is selectively stained by Shikata orcein, Victoria blue, or immunohistochemical methods.",
               "lecture": 1,
               "options": [
                 "HBcAg",
@@ -56009,7 +56009,7 @@
               "id": "MGL3-CH6-PHAR-0614",
               "type": "mcq",
               "text": "Irritant laxatives include all of the following, EXCEPT:",
-              "explanation": "Lactulose is an osmotic laxative.",
+              "explanation": "Lactulose is a non-absorbable synthetic disaccharide that acts as an osmotic laxative by drawing water into the intestinal lumen. Castor oil, bisacodyl, and anthraquinone derivatives (senna, cascara) are stimulant/irritant laxatives that directly irritate enterocytes and stimulate the enteric nervous system.",
               "lecture": 1,
               "options": [
                 "Castor oil",
@@ -56345,7 +56345,7 @@
               "id": "MGL3-CH6-PHAR-0638",
               "type": "essay",
               "text": "ESSAY: Mention the essential lines of treatment of bleeding oesophageal varices (explain the management of variceal bleeding).",
-              "explanation": "A. Control of bleeding varices",
+              "explanation": "Acute variceal hemorrhage is managed emergently with vasoactive agents (octreotide, terlipressin, or vasopressin plus nitroglycerin) to reduce splanchnic blood flow and portal pressure, endoscopic variceal band ligation, prophylactic IV antibiotics (ceftriaxone), and non-selective beta-blockers (propranolol/nadolol) for secondary prevention.",
               "lecture": 1,
               "modelAnswer": "A. Control of bleeding varices\n1. IV vasopressin or terlipressin: VC of mesenteric & splanchnic vessels → ↓ portal blood flow.\nTerlipressin is a vasopressin analog released in a slow & sustained manner.\n2. IV vasopressin + IV nitroglycerin: nitrates ↓ the systemic VC induced by vasopressin &\naccentuate its portal hypotensive effect.\n3. Octreotide: direct VC of splanchnic arterioles; ↓ release of peptides (e.g. glucagon) responsible\nfor the hyperdynamic circulation.\nB. Prophylaxis of bleeding (cirrhotic patients)\n1. Non-selective β-blockers (propranolol, nadolol): block β2 of mesenteric vessels → unopposed\nα1 VC → ↓ portal flow; block β1 → ↓ COP → ↓ portal flow.\n2. Antisecretory drugs (PPIs & H2 blockers) help prevent rebleeding (controversial: may ↑ risk of\nsecondary bacterial peritonitis).\nNitrates should NOT be used alone in cirrhosis (aggravate the hyperdynamic syndrome).\nProphylaxis with isosorbide mononitrate → ↑ mortality in patients > 50 years."
             },
@@ -56417,7 +56417,7 @@
               "id": "MGL3-CH6-PHAR-0647",
               "type": "essay",
               "text": "ESSAY: Mention the mechanism of action and adverse effects of Lomotil.",
-              "explanation": "Lomotil = diphenoxylate + atropine.",
+              "explanation": "Lomotil combines diphenoxylate (an opioid receptor agonist that slows intestinal motility and increases transit time) with subtherapeutic atropine. Atropine produces unpleasant anticholinergic effects at higher doses (dry mouth, tachycardia), specifically discouraging opioid abuse while relieving intestinal smooth-muscle spasms.",
               "lecture": 1,
               "modelAnswer": "Lomotil = diphenoxylate + atropine.\nMechanism: diphenoxylate acts on presynaptic opioid receptors in the submucosal & myenteric\nplexus → ↓ ACh release → ↓ peristalsis → ↑ water & salt absorption. Atropine relieves its\nspasmogenic effect, discourages abuse and adds to the antidiarrheal action.\nAdverse effects: spasmogenic effect (↑ smooth-muscle tone); overdose → CNS & respiratory\ndepression, paralytic ileus.\nContraindications: severe colitis, bloody diarrhea, fever & systemic infection (→ toxic\nmegacolon); acute gastroenteritis in infants & children."
             },
@@ -56425,7 +56425,7 @@
               "id": "MGL3-CH6-PHAR-0648",
               "type": "essay",
               "text": "GIVE REASON: Atropine is combined with diphenoxylate in the Lomotil preparation.",
-              "explanation": "1. To relieve its spasmogenic effect.",
+              "explanation": "Subtherapeutic atropine is co-formulated with diphenoxylate in Lomotil primarily to prevent drug abuse and habituation by eliciting noxious anticholinergic symptoms at supratherapeutic doses, while also contributing antispasmodic action against opioid-induced intestinal smooth-muscle hypertonicity.",
               "lecture": 1,
               "modelAnswer": "1. To relieve its spasmogenic effect.\n2. To discourage abuse, which may occur with prolonged use.\n3. May contribute to the antidiarrheal action."
             },
@@ -56603,7 +56603,7 @@
               "id": "MGL3-CH6-PHAR-0668",
               "type": "mcq",
               "text": "The following drug is not correctly matched with its adverse effect",
-              "explanation": "Official pharmacology answer: Cyclosporine / neurotoxicity.",
+              "explanation": "Cyclosporine characteristically causes dose-dependent nephrotoxicity, hypertension, gingival hyperplasia, and hirsutism. While tremor and paresthesias can occur, nephrotoxicity (afferent arteriolar vasoconstriction) is the primary, dose-limiting adverse effect.",
               "lecture": 1,
               "options": [
                 "Azathioprine / Bone marrow depression & alopecia",
@@ -56617,7 +56617,7 @@
               "id": "MGL3-CH6-PHAR-0669",
               "type": "mcq",
               "text": "Adverse effects of cyclosporine do not include",
-              "explanation": "Official pharmacology answer: Hypoglycemia.",
+              "explanation": "Cyclosporine suppresses insulin gene expression and causes pancreatic beta-cell vacuolization, resulting in post-transplant diabetes mellitus and hyperglycemia, never hypoglycemia. Other common adverse effects include nephrotoxicity, hypertension, hyperkalemia, and hypomagnesemia.",
               "lecture": 1,
               "options": [
                 "Osteoporosis",
@@ -87389,7 +87389,7 @@
                 "Spleen"
               ],
               "correctIndex": 1,
-              "explanation": "Anatomical relationship confirms that Neck of the pancreas is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The portal vein forms directly posterior to the neck of the pancreas by the confluence of the superior mesenteric vein and splenic vein. The head lies to the right within the duodenal C-loop, while the body and tail extend across the midline toward the splenic hilum."
             },
             {
               "id": "MGL3-CH1-ANAT-1003",
@@ -87404,7 +87404,7 @@
                 "Proper hepatic artery"
               ],
               "correctIndex": 0,
-              "explanation": "Anatomical relationship confirms that Gastroduodenal artery is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The gastroduodenal artery descends directly behind the first part of the duodenum. Deep peptic ulcers eroding the posterior duodenal wall penetrate this vessel, causing massive arterial hemorrhage. Anterior ulcers conversely tend to perforate into the peritoneal cavity rather than bleed."
             },
             {
               "id": "MGL3-CH1-ANAT-1004",
@@ -87419,7 +87419,7 @@
                 "Portal vein"
               ],
               "correctIndex": 1,
-              "explanation": "Anatomical relationship confirms that Common bile duct is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The common bile duct descends in a groove or tunnel on the posterior surface of the pancreatic head before joining the main pancreatic duct at the ampulla of Vater. The gastroduodenal artery lies anteriorly, while the portal vein forms behind the neck."
             },
             {
               "id": "MGL3-CH1-ANAT-1005",
@@ -87434,7 +87434,7 @@
                 "Superior rectal artery"
               ],
               "correctIndex": 1,
-              "explanation": "Anatomical relationship confirms that Gastroduodenal artery is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The gastroduodenal artery descends behind the first part of the duodenum and passes along the posterior margin of the pancreatic head, giving off superior pancreaticoduodenal branches. The splenic artery runs along the superior border of the pancreatic body and tail."
             },
             {
               "id": "MGL3-CH1-ANAT-1006",
@@ -87449,7 +87449,7 @@
                 "Duodenojejunal flexure"
               ],
               "correctIndex": 2,
-              "explanation": "Anatomical relationship confirms that 3rd part is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The third (horizontal) part of the duodenum crosses anterior to the abdominal aorta and IVC, directly posterior to the superior mesenteric artery and vein. Compression in this narrow vascular angle causes superior mesenteric artery (SMA) syndrome (Wilkie syndrome)."
             },
             {
               "id": "MGL3-CH1-ANAT-1007",
@@ -87464,7 +87464,7 @@
                 "Portal vein"
               ],
               "correctIndex": 3,
-              "explanation": "Anatomical relationship confirms that Common bile duct is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The common bile duct passes along the posterior aspect of the pancreatic head. Tumors of the pancreatic head characteristically compress this duct, presenting with painless obstructive jaundice and palpable gallbladder (Courvoisier sign)."
             },
             {
               "id": "MGL3-CH1-ANAT-1008",
@@ -87479,7 +87479,7 @@
                 "Tail of the pancreas"
               ],
               "correctIndex": 2,
-              "explanation": "Anatomical relationship confirms that Neck of the pancreas is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The portal vein forms specifically behind the neck of the pancreas at the level of L1–L2. The uncinate process lies posterior to the superior mesenteric vessels, while the body and tail extend laterally into the splenorenal ligament."
             },
             {
               "id": "MGL3-CH1-ANAT-1009",
@@ -87494,7 +87494,7 @@
                 "The splenic vein and the short gastric veins"
               ],
               "correctIndex": 0,
-              "explanation": "Anatomical relationship confirms that The superior mesenteric vein and the splenic vein is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The portal vein is formed by the union of the superior mesenteric vein and the splenic vein. The inferior mesenteric vein usually empties into the splenic vein (or occasionally the SMV), rather than joining the primary portal confluence directly."
             },
             {
               "id": "MGL3-CH1-ANAT-1010",
@@ -87509,7 +87509,7 @@
                 "Right crus"
               ],
               "correctIndex": 2,
-              "explanation": "Anatomical relationship confirms that Pylorus of stomach is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The pylorus of the stomach lies directly anterior to the neck of the pancreas, separated by the lesser sac (omental bursa). The portal vein, IVC, and aorta lie posterior to the pancreas."
             },
             {
               "id": "MGL3-CH1-ANAT-1011",
@@ -87524,7 +87524,7 @@
                 "Gastroduodenal artery and proper hepatic artery"
               ],
               "correctIndex": 1,
-              "explanation": "Anatomical relationship confirms that Superior mesenteric artery and inferior mesenteric artery is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The third part of the duodenum is crossed anteriorly by the superior mesenteric artery and inferiorly/posteriorly relates to the origin of the inferior mesenteric artery from the aorta. The celiac trunk originates higher at T12, above the pancreas."
             },
             {
               "id": "MGL3-CH1-ANAT-1012",
@@ -87539,7 +87539,7 @@
                 "Falciform ligament and ligamentum venosum"
               ],
               "correctIndex": 1,
-              "explanation": "Anatomical relationship confirms that Gallbladder and ligamentum teres is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The quadrate lobe on the visceral surface of the liver is bounded on the right by the gallbladder fossa and on the left by the fissure for the ligamentum teres. Posteriorly, it is demarcated by the porta hepatis."
             },
             {
               "id": "MGL3-CH1-ANAT-1013",
@@ -87554,7 +87554,7 @@
                 "Splenic vein as it passes along the posterior surface of the pancreatic body"
               ],
               "correctIndex": 1,
-              "explanation": "Anatomical relationship confirms that Common bile duct as it descends through or behind the head of the pancreas is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Carcinoma of the pancreatic head typically compresses the common bile duct as it traverses or grooves the posterior head, leading to painless progressive jaundice, dark urine, and pale stools. The cystic and common hepatic ducts lie superiorly."
             },
             {
               "id": "MGL3-CH1-ANAT-1014",
@@ -87569,7 +87569,7 @@
                 "Gastroduodenal artery"
               ],
               "correctIndex": 2,
-              "explanation": "Anatomical relationship confirms that Hepatic artery is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The proper hepatic artery travels within the free (right) margin of the lesser omentum (hepatoduodenal ligament) anterior to the portal vein and to the left of the common bile duct. The celiac artery and splenic artery do not enter this ligament."
             },
             {
               "id": "MGL3-CH1-ANAT-1015",
@@ -87584,7 +87584,7 @@
                 "Hepatopancreatic ampulla"
               ],
               "correctIndex": 0,
-              "explanation": "Anatomical relationship confirms that Common bile duct is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The common bile duct (ductus choledochus) is formed by the union of the cystic duct from the gallbladder and the common hepatic duct from the liver. It descends to join the pancreatic duct at the hepatopancreatic ampulla."
             },
             {
               "id": "MGL3-CH1-ANAT-1016",
@@ -87599,7 +87599,7 @@
                 "Quadrate lobe"
               ],
               "correctIndex": 1,
-              "explanation": "Anatomical relationship confirms that Porta hepatis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The lesser omentum attaches to the visceral surface of the liver at the porta hepatis and the fissure for the ligamentum venosum. It conveys the portal triad within its thickened free margin (hepatoduodenal ligament)."
             },
             {
               "id": "MGL3-CH1-ANAT-1017",
@@ -87614,7 +87614,7 @@
                 "Riedel's lobe"
               ],
               "correctIndex": 2,
-              "explanation": "Anatomical relationship confirms that Caudate lobe is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The caudate lobe lies on the visceral surface between the groove for the inferior vena cava (on the right) and the fissure for the ligamentum venosum (on the left), superior to the porta hepatis."
             },
             {
               "id": "MGL3-CH1-ANAT-1018",
@@ -87629,7 +87629,7 @@
                 "Splenic artery"
               ],
               "correctIndex": 3,
-              "explanation": "Anatomical relationship confirms that Right branch of the hepatic artery is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The cystic artery typically arises from the right branch of the hepatic artery proper within the cystohepatic triangle of Calot (bounded by cystic duct, common hepatic duct, and inferior liver margin). Iatrogenic injury during cholecystectomy risks severe bleeding."
             },
             {
               "id": "MGL3-CH1-ANAT-1019",
@@ -87644,7 +87644,7 @@
                 "Left gastric vein"
               ],
               "correctIndex": 2,
-              "explanation": "Anatomical relationship confirms that Common hepatic duct is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The common hepatic duct is formed by the convergence of the right and left hepatic ducts at the porta hepatis. It is approximately 3–4 cm long and descends anterior to the right branch of the portal vein."
             },
             {
               "id": "MGL3-CH1-ANAT-1020",
@@ -87659,7 +87659,7 @@
                 "Ligamentum teres"
               ],
               "correctIndex": 2,
-              "explanation": "Anatomical relationship confirms that Pars hepatica is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "During hepatic development, the pars hepatica of the hepatic diverticulum expands into the septum transversum to form the liver cords and intrahepatic bile ducts, dividing the liver parenchyma anatomically into lobes and segments."
             },
             {
               "id": "MGL3-CH1-ANAT-1021",
@@ -87674,7 +87674,7 @@
                 "Hepatopancreatic ampulla"
               ],
               "correctIndex": 4,
-              "explanation": "Anatomical relationship confirms that Hepatopancreatic ampulla is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "A gallstone impacted at the hepatopancreatic ampulla (ampulla of Vater) obstructs both biliary and pancreatic drainage. This common channel obstruction increases intraductal pancreatic pressure, triggering acute gallstone pancreatitis alongside jaundice."
             },
             {
               "id": "MGL3-CH1-ANAT-1022",
@@ -87689,7 +87689,7 @@
                 "Hepatic vein and splenic vein"
               ],
               "correctIndex": 0,
-              "explanation": "Anatomical relationship confirms that Splenic vein and superior mesenteric vein is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The portal vein forms by the confluence of the splenic vein and the superior mesenteric vein behind the pancreatic neck. The splenic vein drains the spleen, stomach, and pancreas, while the SMV drains the small intestine and proximal colon."
             },
             {
               "id": "MGL3-CH1-ANAT-1023",
@@ -87704,7 +87704,7 @@
                 "Hepatic vein"
               ],
               "correctIndex": 0,
-              "explanation": "Anatomical relationship confirms that Superior rectal vein is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The superior rectal vein drains the upper rectum into the inferior mesenteric vein, which belongs to the portal venous system. The middle and inferior rectal veins drain into internal iliac and pudendal veins (caval system)."
             },
             {
               "id": "MGL3-CH1-ANAT-1024",
@@ -87719,7 +87719,7 @@
                 "Superior mesenteric vein and inferior vena cava"
               ],
               "correctIndex": 0,
-              "explanation": "Anatomical relationship confirms that Superior rectal vein and inferior rectal vein is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Portosystemic anastomosis at the anorectal junction occurs between the superior rectal vein (portal via IMV) and the middle/inferior rectal veins (systemic via internal iliac/pudendal). Portal hypertension causes rectal varices (distinct from simple hemorrhoids)."
             },
             {
               "id": "MGL3-CH1-ANAT-1025",
@@ -87734,7 +87734,7 @@
                 "Inferior mesenteric vein"
               ],
               "correctIndex": 2,
-              "explanation": "Anatomical relationship confirms that Portal vein is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Venous drainage from the gastric fundus via short gastric veins and left gastroepiploic vein empties into the splenic vein, which directly contributes to the portal vein. Elevated portal pressure causes gastric varices prone to massive hemorrhage."
             },
             {
               "id": "MGL3-CH1-ANAT-1026",
@@ -87749,7 +87749,7 @@
                 "Cystic artery"
               ],
               "correctIndex": 1,
-              "explanation": "Anatomical relationship confirms that Portal vein is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Within the free margin of the lesser omentum (hepatoduodenal ligament), the portal vein lies most posteriorly. The common bile duct lies anteriorly on the right, and the hepatic artery proper lies anteriorly on the left."
             },
             {
               "id": "MGL3-CH1-ANAT-1027",
@@ -87764,7 +87764,7 @@
                 "Portal vein"
               ],
               "correctIndex": 4,
-              "explanation": "Anatomical relationship confirms that Portal vein is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "At the porta hepatis, the arrangement of the portal triad from anterior to posterior is: hepatic ducts (most anterior), hepatic artery branches (intermediate), and portal vein branches (most posterior)."
             },
             {
               "id": "MGL3-CH1-ANAT-1028",
@@ -87779,7 +87779,7 @@
                 "Right gastro-epiploic vein"
               ],
               "correctIndex": 0,
-              "explanation": "Anatomical relationship confirms that Left gastric vein is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The left gastric vein (coronary vein) runs along the lesser curvature of the stomach and drains directly into the portal vein trunk. In portal hypertension, retrograde flow through this vein leads to life-threatening esophageal varices."
             },
             {
               "id": "MGL3-CH1-ANAT-1029",
@@ -87794,7 +87794,7 @@
                 "Inferior mesenteric vein"
               ],
               "correctIndex": 2,
-              "explanation": "Anatomical relationship confirms that Paraumbilical vein is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The paraumbilical veins run along the ligamentum teres in the falciform ligament and drain directly into the left branch of the portal vein. In portal hypertension, collateral flow to epigastric veins produces caput medusae."
             },
             {
               "id": "MGL3-CH1-ANAT-1030",
@@ -87809,7 +87809,7 @@
                 "Hepatic and renal veins"
               ],
               "correctIndex": 1,
-              "explanation": "Anatomical relationship confirms that Left gastric and azygos veins is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The esophageal portosystemic anastomosis connects the esophageal tributaries of the left gastric vein (portal) with the esophageal veins that drain into the azygos and hemiazygos veins (systemic/caval). Dilation produces esophageal varices."
             },
             {
               "id": "MGL3-CH1-ANAT-1031",
@@ -87824,7 +87824,7 @@
                 "Spleen"
               ],
               "correctIndex": 4,
-              "explanation": "Anatomical relationship confirms that Spleen is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The spleen itself is not a site of portosystemic anastomosis; splenic venous blood flows exclusively into the portal system via the splenic vein. Major portosystemic sites include the esophagus, umbilicus, rectum, and retroperitoneum (Retzius)."
             },
             {
               "id": "MGL3-CH1-ANAT-1032",
@@ -87839,7 +87839,7 @@
                 "It develops from the hindgut and is supplied by the inferior mesenteric artery."
               ],
               "correctIndex": 2,
-              "explanation": "Anatomical relationship confirms that Its proximal part develops from the foregut, while its distal part develops from the midgut. is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The duodenum has a dual origin: the segment proximal to the major duodenal papilla arises from the foregut (celiac artery supply), whereas the segment distal to the papilla arises from the midgut (superior mesenteric artery supply)."
             },
             {
               "id": "MGL3-CH1-ANAT-1033",
@@ -87854,7 +87854,7 @@
                 "Vitelline duct"
               ],
               "correctIndex": 1,
-              "explanation": "Anatomical relationship confirms that Dorsal part of the cloaca is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "During the 4th–7th weeks, the urorectal septum divides the cloaca into an anterior urogenital sinus and a posterior/dorsal anorectal canal, which forms the rectum and superior anal canal."
             },
             {
               "id": "MGL3-CH1-ANAT-1034",
@@ -87869,7 +87869,7 @@
                 "Septum transversum"
               ],
               "correctIndex": 1,
-              "explanation": "Anatomical relationship confirms that Ventral mesogastrium is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The ventral mesogastrium gives rise to both the falciform ligament (between liver and anterior abdominal wall) and the lesser omentum (hepatogastric and hepatoduodenal ligaments, between liver and stomach/duodenum). The greater omentum derives from dorsal mesogastrium."
             },
             {
               "id": "MGL3-CH1-ANAT-1035",
@@ -87884,7 +87884,7 @@
                 "Accessory pancreatic duct (of Santorini)"
               ],
               "correctIndex": 1,
-              "explanation": "Anatomical relationship confirms that Uncinate process is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The uncinate process and inferior part of the pancreatic head develop from the ventral pancreatic bud. The dorsal pancreatic bud forms the upper head, body, tail, and accessory pancreatic duct."
             },
             {
               "id": "MGL3-CH1-ANAT-1036",
@@ -87899,7 +87899,7 @@
                 "Foregut endoderm only"
               ],
               "correctIndex": 1,
-              "explanation": "Anatomical relationship confirms that Ventral pancreatic bud is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The ventral pancreatic bud rotates dorsally behind the duodenum to fuse with the dorsal bud. The ventral bud forms the uncinate process and the inferior portion of the pancreatic head, and its duct forms the main pancreatic duct."
             },
             {
               "id": "MGL3-CH1-ANAT-1037",
@@ -87914,7 +87914,7 @@
                 "Supracardinal veins"
               ],
               "correctIndex": 2,
-              "explanation": "Anatomical relationship confirms that Vitelline veins is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "During hepatic organogenesis, the branching liver cords invade the mesenchyme of the septum transversum and interlace with the vitelline and umbilical veins, transforming them into the hepatic sinusoids."
             },
             {
               "id": "MGL3-CH1-ANAT-1038",
@@ -87929,7 +87929,7 @@
                 "Pylorus and gallbladder"
               ],
               "correctIndex": 0,
-              "explanation": "Anatomical relationship confirms that Second part of the duodenum and right lobe of the liver is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The right renal artery passes posterior to the inferior vena cava, the head of the pancreas, the second part of the duodenum, and the right lobe of the liver before reaching the renal hilum."
             },
             {
               "id": "MGL3-CH1-ANAT-1039",
@@ -87944,7 +87944,7 @@
                 "Mesentery of the hindgut"
               ],
               "correctIndex": 2,
-              "explanation": "Anatomical relationship confirms that Ventral mesogastrium is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The lesser omentum is derived from the embryonic ventral mesogastrium. It connects the lesser curvature of the stomach and first part of the duodenum to the liver."
             },
             {
               "id": "MGL3-CH1-ANAT-1040",
@@ -87959,7 +87959,7 @@
                 "Hirschsprung disease"
               ],
               "correctIndex": 3,
-              "explanation": "Anatomical relationship confirms that Congenital pyloric hypertrophy is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Congenital hypertrophic pyloric stenosis involves hypertrophy of the pyloric circular smooth muscle, causing gastric outlet obstruction. It presents classically at 3–6 weeks of age with non-bilious projectile vomiting and an 'olive-shaped' abdominal mass."
             },
             {
               "id": "MGL3-CH1-ANAT-1041",
@@ -87974,7 +87974,7 @@
                 "Meckle’s Diverticulum"
               ],
               "correctIndex": 2,
-              "explanation": "Anatomical relationship confirms that Congenital hypertrophic pyloric stenosis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Non-bilious projectile vomiting in a 3-week-old male infant is pathognomonic for congenital hypertrophic pyloric stenosis. Because the obstruction is at the pylorus (proximal to the ampulla of Vater), vomitus does not contain bile."
             },
             {
               "id": "MGL3-CH1-ANAT-1042",
@@ -87989,7 +87989,7 @@
                 "Major duodenal papilla"
               ],
               "correctIndex": 4,
-              "explanation": "Anatomical relationship confirms that Major duodenal papilla is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The major duodenal papilla (ampulla of Vater) marks the embryological junction between the foregut and midgut. Structures proximal are supplied by the celiac trunk; structures distal are supplied by the superior mesenteric artery."
             },
             {
               "id": "MGL3-CH1-ANAT-1043",
@@ -88004,7 +88004,7 @@
                 "Hindgut only"
               ],
               "correctIndex": 2,
-              "explanation": "Anatomical relationship confirms that Foregut and midgut is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The duodenum is formed by the junction of the terminal foregut and cephalic midgut, explaining its dual vascular supply from both the celiac axis (superior pancreaticoduodenal) and superior mesenteric artery (inferior pancreaticoduodenal)."
             },
             {
               "id": "MGL3-CH1-ANAT-1044",
@@ -88019,7 +88019,7 @@
                 "Supracardinal veins"
               ],
               "correctIndex": 1,
-              "explanation": "Anatomical relationship confirms that Vitelline veins is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepatic sinusoids develop from the vitelline veins as they break up into an anastomosing network around the growing hepatic cords within the septum transversum. The umbilical veins primarily form the ductus venosus."
             },
             {
               "id": "MGL3-CH1-ANAT-1045",
@@ -88034,7 +88034,7 @@
                 "Right and left hepatic ducts"
               ],
               "correctIndex": 2,
-              "explanation": "Anatomical relationship confirms that Common hepatic duct is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The common hepatic duct derives from the cranial part of the hepatic diverticulum (liver bud), which also gives rise to the intrahepatic biliary tree and liver parenchyma."
             },
             {
               "id": "MGL3-CH1-ANAT-1046",
@@ -88049,7 +88049,7 @@
                 "Midgut loop"
               ],
               "correctIndex": 1,
-              "explanation": "Anatomical relationship confirms that Pars cystica is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The gallbladder and cystic duct arise from the pars cystica (caudal division) of the hepatic diverticulum, while the cranial division (pars hepatica) forms the liver and hepatic ducts."
             },
             {
               "id": "MGL3-CH1-ANAT-1047",
@@ -88064,7 +88064,7 @@
                 "360° anticlockwise"
               ],
               "correctIndex": 2,
-              "explanation": "Anatomical relationship confirms that 270° clockwise is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "During development, the midgut rotates a total of 270° counterclockwise around the superior mesenteric artery (90° during physiological herniation, 180° on abdominal return). Note: The historical exam slide key recorded 270° clockwise as the keyed option."
             },
             {
               "id": "MGL3-CH1-ANAT-1048",
@@ -88079,7 +88079,7 @@
                 "Omphalocele"
               ],
               "correctIndex": 4,
-              "explanation": "Anatomical relationship confirms that Omphalocele is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Failure of the physiological midgut hernia to retract into the abdominal cavity during the 10th week results in an omphalocele, where abdominal viscera remain herniated into the umbilical cord covered by amnion and peritoneum."
             },
             {
               "id": "MGL3-CH1-ANAT-1049",
@@ -88094,7 +88094,7 @@
                 "Common bile duct"
               ],
               "correctIndex": 4,
-              "explanation": "Anatomical relationship confirms that Common bile duct is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The narrow proximal stem connecting the hepatic diverticulum to the duodenum persists as the common bile duct (ductus choledochus), through which bile reaches the second part of the duodenum."
             }
           ]
         }
@@ -88143,7 +88143,7 @@
                 "Inhibiting lipid absorption"
               ],
               "correctIndex": 1,
-              "explanation": "Physiologically, Facilitating emulsification and micelle formation is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Bile salts are amphipathic molecules that emulsify large dietary lipid droplets into small emulsion droplets, dramatically increasing the surface area for pancreatic lipase. They subsequently form mixed micelles with monoglycerides and fatty acids, facilitating transport across the unstirred water layer."
             },
             {
               "id": "MGL3-CH2-PHYS-0894",
@@ -88158,7 +88158,7 @@
                 "Stimulating secretin release"
               ],
               "correctIndex": 3,
-              "explanation": "Physiologically, Keeping cholesterol soluble in bile is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Bile salts, together with phospholipids (lecithin), aggregate into mixed micelles that keep hydrophobic cholesterol dissolved in aqueous bile. A relative deficiency of bile salts or excess cholesterol causes cholesterol supersaturation and lithogenesis (gallstone formation)."
             },
             {
               "id": "MGL3-CH2-PHYS-0895",
@@ -88173,7 +88173,7 @@
                 "Inhibiting micelle formation"
               ],
               "correctIndex": 1,
-              "explanation": "Physiologically, Increasing the effective activity of pancreatic lipase by emulsification is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "By emulsifying dietary triglycerides into microscopic droplets, bile salts expand the surface area accessible to pancreatic lipase and its cofactor colipase. Colipase anchors lipase to the bile-salt-coated droplet surface, preventing enzyme displacement."
             },
             {
               "id": "MGL3-CH2-PHYS-0896",
@@ -88188,7 +88188,7 @@
                 "Stimulation of intrinsic factor secretion"
               ],
               "correctIndex": 1,
-              "explanation": "Physiologically, Solubilization of cholesterol in bile is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The primary physiological function of bile salts in biliary secretions is the solubilization of cholesterol. Without micellar incorporation by bile salts and phosphatidylcholine, water-insoluble free cholesterol precipitates to form cholesterol gallstones."
             },
             {
               "id": "MGL3-CH2-PHYS-0897",
@@ -88203,7 +88203,7 @@
                 "They are pancreatic enzymes"
               ],
               "correctIndex": 1,
-              "explanation": "Physiologically, They act as effective detergents for dietary lipids is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Bile acids possess both polar (hydrophilic) and nonpolar (hydrophobic) faces, functioning as biological detergents. This detergent action lowers surface tension, breaking dietary fat into a fine emulsion essential for enzymatic lipid hydrolysis."
             },
             {
               "id": "MGL3-CH2-PHYS-0898",
@@ -88218,7 +88218,7 @@
                 "Increased drug toxicity due to impaired drug metabolism"
               ],
               "correctIndex": 3,
-              "explanation": "Physiologically, Hypercalcemia due to increased activation of vitamin D is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Severe liver failure impairs 25-hydroxylation of vitamin D, leading to hypocalcemia rather than hypercalcemia. Manifestations of liver failure include hypoalbuminemia, coagulopathy (decreased clotting factors), jaundice, and portal hypertension."
             },
             {
               "id": "MGL3-CH2-PHYS-0899",
@@ -88233,7 +88233,7 @@
                 "Gastrin"
               ],
               "correctIndex": 1,
-              "explanation": "Physiologically, Bile salts is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Bile salts are the most potent physiological choleretics (agents that stimulate bile secretion). Their reabsorption from the ileum and return to the liver via enterohepatic circulation directly stimulates hepatocytes to secrete bile acid-dependent bile."
             },
             {
               "id": "MGL3-CH2-PHYS-0900",
@@ -88248,7 +88248,7 @@
                 "They increase the surface area of dietary fat available for attack by pancreatic lipase"
               ],
               "correctIndex": 4,
-              "explanation": "Physiologically, They increase the surface area of dietary fat available for attack by pancreatic lipase is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Bile salts do not hydrolyze triglycerides themselves; they emulsify them into smaller droplets. This mechanical dispersion vastly increases the total surface area available for pancreatic lipase to digest triglycerides into free fatty acids and 2-monoglycerides."
             },
             {
               "id": "MGL3-CH2-PHYS-0901",
@@ -88263,7 +88263,7 @@
                 "Pancreas"
               ],
               "correctIndex": 3,
-              "explanation": "Physiologically, Liver is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The liver is the exclusive site of plasma albumin synthesis, producing approximately 12–15 grams per day. In end-stage chronic liver disease, impaired albumin synthesis leads to decreased plasma oncotic pressure, peripheral edema, and ascites."
             },
             {
               "id": "MGL3-CH2-PHYS-0902",
@@ -88278,7 +88278,7 @@
                 "Calcium oxalate stone"
               ],
               "correctIndex": 2,
-              "explanation": "Physiologically, Cholesterol stone is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Cholesterol gallstones account for approximately 75–80% of all gallstones in Western populations. They arise when the concentration of biliary cholesterol exceeds the solubilizing capacity of bile salts and phospholipids, leading to crystal nucleation."
             },
             {
               "id": "MGL3-CH2-PHYS-0903",
@@ -88293,7 +88293,7 @@
                 "Neutralize gastric acid"
               ],
               "correctIndex": 2,
-              "explanation": "Physiologically, Keep cholesterol soluble in bile is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Within bile, cholesterol is completely insoluble in water. Bile salts and lecithin form mixed micelles that encapsulate cholesterol within their hydrophobic interiors, maintaining it in a stable soluble state throughout biliary transit."
             },
             {
               "id": "MGL3-CH2-PHYS-0904",
@@ -88308,7 +88308,7 @@
                 "Increased bilirubin conjugation"
               ],
               "correctIndex": 3,
-              "explanation": "Physiologically, Reduced bile salts relative to cholesterol is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Cholesterol gallstone formation is driven by biliary cholesterol supersaturation, typically resulting from decreased bile salt and phospholipid secretion relative to cholesterol, gallbladder hypomotility, and accelerated crystallization."
             },
             {
               "id": "MGL3-CH2-PHYS-0905",
@@ -88323,7 +88323,7 @@
                 "Somatostatin"
               ],
               "correctIndex": 3,
-              "explanation": "Physiologically, Cholecystokinin is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Cholecystokinin (CCK), released by duodenal I-cells in response to fat and amino acids, induces vigorous gallbladder contraction while simultaneously relaxing the sphincter of Oddi, allowing bile to discharge into the duodenum."
             },
             {
               "id": "MGL3-CH2-PHYS-0906",
@@ -88338,7 +88338,7 @@
                 "Vagal inhibition"
               ],
               "correctIndex": 2,
-              "explanation": "Physiologically, Splanchnic escape is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Splanchnic escape describes the physiological return of intestinal blood flow toward normal despite sustained sympathetic stimulation or vasoconstrictor infusion, mediated by the local accumulation of vasodilatory metabolites (adenosine, hypoxia, hypercapnia)."
             },
             {
               "id": "MGL3-CH2-PHYS-0907",
@@ -88353,7 +88353,7 @@
                 "Lactase"
               ],
               "correctIndex": 2,
-              "explanation": "Physiologically, Lipase is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Steatorrhea (excessive fat in stool) primarily results from pancreatic lipase deficiency. Lipase is responsible for digesting over 80% of dietary triglycerides; its reduction below 10% causes malabsorption of fats and fat-soluble vitamins (A, D, E, K)."
             },
             {
               "id": "MGL3-CH2-PHYS-0908",
@@ -88368,7 +88368,7 @@
                 "Somatostatin"
               ],
               "correctIndex": 2,
-              "explanation": "Physiologically, Cholecystokinin (CCK) is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "A cholagogue is an agent that stimulates evacuation of the gallbladder. Cholecystokinin (CCK) is the principal physiological cholagogue. Choleretics, by contrast (such as bile salts and secretin), stimulate hepatic bile production."
             },
             {
               "id": "MGL3-CH2-PHYS-0909",
@@ -88383,7 +88383,7 @@
                 "Lipase"
               ],
               "correctIndex": 0,
-              "explanation": "Physiologically, Bile acids is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Approximately 95% of bile acids secreted into the gut are actively reabsorbed in the terminal ileum via the apical sodium-dependent bile acid transporter (ASBT) and recycled back to the liver via the portal vein (enterohepatic circulation)."
             },
             {
               "id": "MGL3-CH2-PHYS-0910",
@@ -88398,7 +88398,7 @@
                 "Alkaline chyme"
               ],
               "correctIndex": 1,
-              "explanation": "Physiologically, Fats is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Long-chain fatty acids and protein digestion products (peptides and amino acids) in the duodenal lumen are the most potent physiological stimuli triggering CCK release from enteroendocrine I-cells."
             },
             {
               "id": "MGL3-CH2-PHYS-0911",
@@ -88413,7 +88413,7 @@
                 "Increasing parenchymal bile secretion by hepatocytes"
               ],
               "correctIndex": 4,
-              "explanation": "Physiologically, Increasing parenchymal bile secretion by hepatocytes is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Bile salts reaching hepatocytes via the portal vein stimulate canalicular bile secretion directly through the bile salt export pump (BSEP), establishing the bile acid-dependent fraction of bile flow."
             },
             {
               "id": "MGL3-CH2-PHYS-0912",
@@ -88428,7 +88428,7 @@
                 "Hypertonic glucose solution"
               ],
               "correctIndex": 1,
-              "explanation": "Physiologically, Fat-rich meal is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Fatty foods entering the duodenum evoke maximal release of cholecystokinin (CCK), causing forceful gallbladder contraction. This explains why patients with cholelithiasis experience biliary colic classically after fatty meals."
             },
             {
               "id": "MGL3-CH2-PHYS-0913",
@@ -88443,7 +88443,7 @@
                 "Bile salts"
               ],
               "correctIndex": 4,
-              "explanation": "Physiologically, Bile salts is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The return of bile salts to the liver via the enterohepatic circulation is the primary physiological stimulus for hepatic bile formation. Secretin also increases bile secretion, but primarily stimulates water and bicarbonate secretion from ductal cholangiocytes."
             },
             {
               "id": "MGL3-CH2-PHYS-0914",
@@ -88458,7 +88458,7 @@
                 "Triglyceride droplet"
               ],
               "correctIndex": 2,
-              "explanation": "Physiologically, Chylomicron is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Inside enterocytes, re-esterified triglycerides, cholesterol esters, and fat-soluble vitamins are packaged with apolipoprotein B-48 into chylomicrons. Chylomicrons exit by exocytosis and enter lymphatic lacteals because they are too large for vascular capillaries."
             },
             {
               "id": "MGL3-CH2-PHYS-0915",
@@ -88473,7 +88473,7 @@
                 "Pyloric antrum"
               ],
               "correctIndex": 3,
-              "explanation": "Physiologically, Duodenum is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The duodenum is the first and shortest segment of the small intestine. It receives acidic gastric chyme through the pylorus and mixes it with pancreatic digestive secretions and bile at the major duodenal papilla."
             },
             {
               "id": "MGL3-CH2-PHYS-0916",
@@ -88488,7 +88488,7 @@
                 "Long-chain fatty acids"
               ],
               "correctIndex": 1,
-              "explanation": "Physiologically, Di- and tripeptides is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Di- and tripeptides are absorbed across the enterocyte apical membrane via the peptide transporter 1 (PepT1), driven by an inward proton (H+) electrochemical gradient maintained by the apical Na+/H+ exchanger (NHE3)."
             },
             {
               "id": "MGL3-CH2-PHYS-0917",
@@ -88503,7 +88503,7 @@
                 "Dietary fiber and phosphates"
               ],
               "correctIndex": 1,
-              "explanation": "Physiologically, Hydrochloric acid (HCl) and Vitamin C is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Gastric hydrochloric acid (HCl) dissolves dietary ferric iron (Fe3+), while vitamin C (ascorbic acid) reduces it to the more soluble and absorbable ferrous state (Fe2+), which is transported by DMT1."
             },
             {
               "id": "MGL3-CH2-PHYS-0918",
@@ -88518,7 +88518,7 @@
                 "Chymotrypsin"
               ],
               "correctIndex": 1,
-              "explanation": "Physiologically, Enteropeptidase is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Enteropeptidase (enterokinase), a brush-border enzyme in the duodenal mucosa, cleaves trypsinogen to active trypsin. Active trypsin then autocatalytically activates all other pancreatic zymogens (chymotrypsinogen, procarboxypeptidase, proelastase)."
             },
             {
               "id": "MGL3-CH2-PHYS-0919",
@@ -88533,7 +88533,7 @@
                 "Ceruloplasmin"
               ],
               "correctIndex": 2,
-              "explanation": "Physiologically, Hepcidin is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepcidin, synthesized by the liver, binds to and induces the internalization and degradation of ferroportin (the basolateral iron exporter). Therefore, a decrease in hepcidin levels leads to increased ferroportin expression and enhanced iron export into circulation."
             },
             {
               "id": "MGL3-CH2-PHYS-0920",
@@ -88548,7 +88548,7 @@
                 "Receptor-mediated endocytosis"
               ],
               "correctIndex": 2,
-              "explanation": "Physiologically, Facilitated diffusion is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Fructose absorption across the apical brush border occurs via facilitated diffusion mediated by GLUT5. It exits the basolateral membrane into the bloodstream via GLUT2, neither of which requires ATP or sodium cotransport."
             },
             {
               "id": "MGL3-CH2-PHYS-0921",
@@ -88563,7 +88563,7 @@
                 "Bile salts in the stomach"
               ],
               "correctIndex": 2,
-              "explanation": "Physiologically, Fat and amino acids in the small intestine is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Cholecystokinin (CCK) is synthesized and secreted by enteroendocrine I-cells in the duodenal and jejunal mucosa primarily in response to luminal peptides, amino acids, and fatty acids."
             },
             {
               "id": "MGL3-CH2-PHYS-0922",
@@ -88578,7 +88578,7 @@
                 "Osmosis"
               ],
               "correctIndex": 0,
-              "explanation": "Physiologically, Primary active transport is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Calcium extrusion across the basolateral membrane of enterocytes into the interstitial space is mediated primarily by a plasma membrane Ca2+-ATPase (PMCA1b), which utilizes ATP hydrolysis (primary active transport)."
             },
             {
               "id": "MGL3-CH2-PHYS-0923",
@@ -88593,7 +88593,7 @@
                 "Potassium (K+)"
               ],
               "correctIndex": 2,
-              "explanation": "Physiologically, Calcium (Ca²+) is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Intestinal calcium absorption is strictly regulated by active vitamin D (1,25-dihydroxyvitamin D3 / calcitriol) according to physiological demand, upregulating calbindin-D9k, apical TRPV6 channels, and basolateral PMCA."
             },
             {
               "id": "MGL3-CH2-PHYS-0924",
@@ -88608,7 +88608,7 @@
                 "Secondary active transport"
               ],
               "correctIndex": 4,
-              "explanation": "Physiologically, Secondary active transport is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Glucose and galactose are transported across the apical enterocyte membrane against their concentration gradients via SGLT1 (sodium-glucose linked transporter 1), utilizing the sodium electrochemical gradient created by the Na+/K+ ATPase (secondary active transport)."
             },
             {
               "id": "MGL3-CH2-PHYS-0925",
@@ -88623,7 +88623,7 @@
                 "Impaired bile acid reabsorption in the terminal ileum only"
               ],
               "correctIndex": 1,
-              "explanation": "Physiologically, Flattening of intestinal villi after eating wheat flour is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Celiac disease (gluten-sensitive enteropathy) involves immune-mediated damage triggered by dietary gluten (gliadin), leading to intraepithelial lymphocytosis, crypt hyperplasia, and characteristic diffuse villous blunting/flattening with resultant malabsorption."
             },
             {
               "id": "MGL3-CH2-PHYS-0926",
@@ -88637,8 +88637,8 @@
                 "Motilin",
                 "Somatostatin"
               ],
-              "correctIndex": 0,
-              "explanation": "Physiologically, Secretin is the correct finding as assessed in GIT past examination guidelines."
+              "correctIndex": 2,
+              "explanation": "GIP (glucose-dependent insulinotropic peptide), secreted by duodenal K-cells in response to luminal glucose and fats, stimulates pancreatic beta-cell insulin secretion (the incretin effect). Secretin primarily stimulates ductal bicarbonate secretion."
             },
             {
               "id": "MGL3-CH2-PHYS-0927",
@@ -88653,7 +88653,7 @@
                 "Endocytosis"
               ],
               "correctIndex": 2,
-              "explanation": "Physiologically, Facilitated diffusion is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Fructose is unique among major dietary monosaccharides because its apical absorption is mediated by carrier-mediated facilitated diffusion via the specific transporter GLUT5, independent of sodium."
             },
             {
               "id": "MGL3-CH2-PHYS-0928",
@@ -88668,7 +88668,7 @@
                 "Bile salts in the stomach"
               ],
               "correctIndex": 2,
-              "explanation": "Physiologically, Fat and amino acids in the small intestine is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "CCK is stimulated by fat and protein breakdown products in the small intestine. Its actions include gallbladder contraction, pancreatic enzyme secretion, sphincter of Oddi relaxation, and delay of gastric emptying."
             },
             {
               "id": "MGL3-CH2-PHYS-0929",
@@ -88683,7 +88683,7 @@
                 "Cholecystokinin"
               ],
               "correctIndex": 4,
-              "explanation": "Physiologically, Cholecystokinin is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Cholecystokinin (CCK) and gastrin are potent stimuli for insulin release following a protein-rich meal. Amino acids stimulate CCK release, which acts synergistically on pancreatic beta-cell CCK1 receptors to amplify postprandial insulin release."
             }
           ]
         }
@@ -88732,7 +88732,7 @@
                 "Elastic arteries"
               ],
               "correctIndex": 1,
-              "explanation": "Histologically, Fenestrated sinusoids is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepatic sinusoids are low-pressure, discontinuous, fenestrated capillaries lined by specialized endothelial cells with large transcellular pores (fenestrae) and no continuous basal lamina, permitting unhindered bidirectional exchange of plasma proteins between blood and hepatocytes."
             },
             {
               "id": "MGL3-CH3-HIST-1117",
@@ -88747,7 +88747,7 @@
                 "Cholangiocyte"
               ],
               "correctIndex": 2,
-              "explanation": "Histologically, Fat-storing cell is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepatic stellate cells (Ito cells / fat-storing cells) reside in the perisinusoidal space of Disse. In health, they store approximately 80% of the body's vitamin A in cytoplasmic lipid droplets. Upon liver injury, they transdifferentiate into myofibroblasts, becoming the primary drivers of fibrosis."
             },
             {
               "id": "MGL3-CH3-HIST-1118",
@@ -88762,7 +88762,7 @@
                 "Cholangiocytes"
               ],
               "correctIndex": 2,
-              "explanation": "Histologically, Hepatocytes is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepatocytes synthesize primary bile acids (cholic and chenodeoxycholic acid) from cholesterol and actively excrete them across their apical canalicular membranes into bile canaliculi via the bile salt export pump (BSEP / ABCB11)."
             },
             {
               "id": "MGL3-CH3-HIST-1119",
@@ -88777,7 +88777,7 @@
                 "Submandibular gland"
               ],
               "correctIndex": 1,
-              "explanation": "Histologically, Gallbladder is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The gallbladder mucosa is lined by simple columnar epithelium. Mucus-secreting tubuloacinar glands are normally found in the lamina propria of the gallbladder neck and cystic duct, secreting protective mucin to lubricate bile flow."
             },
             {
               "id": "MGL3-CH3-HIST-1120",
@@ -88792,7 +88792,7 @@
                 "Extracellular calcium crystals"
               ],
               "correctIndex": 1,
-              "explanation": "Histologically, Intracellular lipid droplets is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepatic stellate cells (Ito cells) are identified histologically in the space of Disse by their characteristic intracellular lipid droplets containing retinyl esters (vitamin A). Gold chloride or lipid stains highlight these diagnostic droplets."
             },
             {
               "id": "MGL3-CH3-HIST-1121",
@@ -88807,7 +88807,7 @@
                 "Enterocyte"
               ],
               "correctIndex": 1,
-              "explanation": "Histologically, Adipocyte is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Adipocytes are specialized connective tissue cells characterized by a large, unilocular lipid droplet occupying almost the entire cytoplasm, displacing the nucleus and organelle rim to the cell periphery."
             },
             {
               "id": "MGL3-CH3-HIST-1122",
@@ -88822,7 +88822,7 @@
                 "Endothelial lining devoid of any cellular fenestrae"
               ],
               "correctIndex": 2,
-              "explanation": "Histologically, Space of Disse between it and hepatocytes is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The perisinusoidal space of Disse separates the discontinuous sinusoidal endothelium from the hepatocyte vascular surface. Microvilli from hepatocytes extend into this space, facilitating rapid metabolic exchange with plasma."
             },
             {
               "id": "MGL3-CH3-HIST-1123",
@@ -88837,7 +88837,7 @@
                 "The space of Disse separates adjacent hepatocytes within the same plate"
               ],
               "correctIndex": 3,
-              "explanation": "Histologically, Sinusoids are lined with fenestrated endothelial cells is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepatic sinusoids are lined by discontinuous, fenestrated endothelial cells lacking a continuous basal lamina, alongside resident Kupffer cells (macrophages). Kupffer cells anchor to the luminal surface and phagocytose bacteria and senescent erythrocytes."
             },
             {
               "id": "MGL3-CH3-HIST-1124",
@@ -88852,7 +88852,7 @@
                 "Fenestrated endothelial & Kupffer cells"
               ],
               "correctIndex": 1,
-              "explanation": "Histologically, Hepatocytes & cholangiocytes is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The canals of Hering (intrahepatic bile ductules) represent the transition between bile canaliculi and interlobular bile ducts. They are lined partly by hepatocytes and partly by cuboidal cholangiocytes, and harbor the hepatic stem cell niche."
             },
             {
               "id": "MGL3-CH3-HIST-1125",
@@ -88867,7 +88867,7 @@
                 "They are farthest from the central vein"
               ],
               "correctIndex": 2,
-              "explanation": "Histologically, They are detected in zone 1 of the liver acinus is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "In hepatic acinus architecture, Zone 3 (centrilobular) hepatocytes surround the central vein and receive the lowest oxygen tension, making them most susceptible to ischemic injury and toxic necrosis. Note: The historical exam slide keyed Zone 1."
             },
             {
               "id": "MGL3-CH3-HIST-1126",
@@ -88882,7 +88882,7 @@
                 "Having well developed muscularis mucosae"
               ],
               "correctIndex": 4,
-              "explanation": "Histologically, Having well developed muscularis mucosae is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The gallbladder wall consists of a mucosa, muscularis, and perimuscular serosa/adventitia; it lacks a distinct submucosa and muscularis mucosae. Note: The historical 2021 exam slide keyed muscularis mucosae as a shared feature."
             },
             {
               "id": "MGL3-CH3-HIST-1127",
@@ -88897,7 +88897,7 @@
                 "Stomach"
               ],
               "correctIndex": 1,
-              "explanation": "Histologically, Pancreas is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The pancreas is a dual organ: the exocrine component consists of serous acini with eosinophilic zymogen granules and pale centroacinar cells, while the endocrine component consists of vascularized islets of Langerhans scattered throughout the parenchyma."
             },
             {
               "id": "MGL3-CH3-HIST-1128",
@@ -88912,7 +88912,7 @@
                 "Enterochromaffin-like cell"
               ],
               "correctIndex": 0,
-              "explanation": "Histologically, Centroacinar cell is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Centroacinar cells represent the terminal ductal cells of intercalated ducts extending into the center of pancreatic serous acini. They have pale-staining, flattened cytoplasm and secrete bicarbonate-rich aqueous fluid in response to secretin."
             },
             {
               "id": "MGL3-CH3-HIST-1129",
@@ -88927,7 +88927,7 @@
                 "Stomach"
               ],
               "correctIndex": 1,
-              "explanation": "Histologically, Pancreas is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Centroacinar cells are a unique histological hallmark of the exocrine pancreas. They are completely absent in the parotid gland and other serous glands, serving as the definitive distinguishing feature."
             },
             {
               "id": "MGL3-CH3-HIST-1130",
@@ -88942,7 +88942,7 @@
                 "Kupffer cells"
               ],
               "correctIndex": 2,
-              "explanation": "Histologically, Centroacinar cells is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Pale-staining centroacinar cells occupy the lumen of pancreatic acini, forming the initial origin of the intercalated ducts. Acinar cells contain basal basophilic rough ER and apical eosinophilic zymogen granules."
             },
             {
               "id": "MGL3-CH3-HIST-1131",
@@ -88957,7 +88957,7 @@
                 "Intestinal crypts"
               ],
               "correctIndex": 1,
-              "explanation": "Histologically, Pancreatic acini is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Centroacinar cells are located within pancreatic acini, continuous with the simple squamous/low cuboidal epithelium of the intercalated ducts, responding to secretin by releasing alkaline fluid."
             },
             {
               "id": "MGL3-CH3-HIST-1132",
@@ -88972,7 +88972,7 @@
                 "Perisinusoidal fat-storing Ito cells"
               ],
               "correctIndex": 2,
-              "explanation": "Histologically, Intra-acinar centroacinar cells is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Intra-acinar centroacinar cells and the absence of striated (salivary) ducts reliably distinguish the histological section of the exocrine pancreas from the serous parotid salivary gland."
             }
           ]
         }
@@ -89019,7 +89019,7 @@
                 "Hormone-sensitive lipase (HSL)"
               ],
               "correctIndex": 0,
-              "explanation": "Biochemically, 7-α-hydroxylase is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Cholesterol 7-alpha-hydroxylase (CYP7A1), an endoplasmic reticulum cytochrome P450 enzyme, catalyzes the initial and rate-limiting step in bile acid synthesis from cholesterol. It is feedback-inhibited by bile acids returning via the enterohepatic circulation through the nuclear FXR receptor."
             },
             {
               "id": "MGL3-CH4-BIOC-0526",
@@ -89034,7 +89034,7 @@
                 "Directly inhibits pancreatic lipase to prevent triglyceride digestion in the lumen"
               ],
               "correctIndex": 0,
-              "explanation": "Biochemically, Binds bile acids in the gut and prevents their reabsorption is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Bile acid sequestrants (such as cholestyramine and colestipol) are positively charged resins that bind negatively charged bile acids in the intestinal lumen, preventing reabsorption. This depletes the bile acid pool, upregulating hepatic LDL receptors and lowering plasma cholesterol."
             },
             {
               "id": "MGL3-CH4-BIOC-0527",
@@ -89064,7 +89064,7 @@
                 "Normal level of total bilirubin in the blood"
               ],
               "correctIndex": 3,
-              "explanation": "Biochemically, High level of direct bilirubin in the blood is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "In obstructive (post-hepatic) jaundice, mechanical blockage of the biliary tree prevents bile excretion. Conjugated (direct, water-soluble) bilirubin regurgitates into hepatic sinusoids and the systemic circulation, leading to dark urine (bilirubinuria) and pale, acholic stools."
             },
             {
               "id": "MGL3-CH4-BIOC-0529",
@@ -89079,7 +89079,7 @@
                 "Significant decrease in serum alkaline phosphatase"
               ],
               "correctIndex": 1,
-              "explanation": "Biochemically, Marked elevation of direct bilirubin in serum is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Complete common bile duct obstruction by an impacted gallstone prevents conjugated bilirubin from reaching the intestines. Direct bilirubin accumulates in plasma, yielding high serum direct bilirubin and elevated alkaline phosphatase (ALP) and GGT."
             },
             {
               "id": "MGL3-CH4-BIOC-0530",
@@ -89094,7 +89094,7 @@
                 "Elevated in blood in viral hepatitis"
               ],
               "correctIndex": 4,
-              "explanation": "Biochemically, Elevated in blood in viral hepatitis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "In acute viral hepatitis, diffuse hepatocellular damage causes mixed jaundice: impaired bilirubin excretion leads to regurgitation of conjugated bilirubin, while impaired uptake and conjugation elevate unconjugated bilirubin, with prominent serum AST/ALT elevation."
             },
             {
               "id": "MGL3-CH4-BIOC-0531",
@@ -89109,7 +89109,7 @@
                 "Hydroxyurea"
               ],
               "correctIndex": 3,
-              "explanation": "Biochemically, 6-Mercaptopurine is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "6-Mercaptopurine (6-MP) is a purine antimetabolite prodrug converted intracellularly by HGPRT into thioinosine monophosphate (TIMP). TIMP pseudofeedback-inhibits glutamine-PRPP amidotransferase, blocking de novo purine nucleotide synthesis."
             },
             {
               "id": "MGL3-CH4-BIOC-0532",
@@ -89124,7 +89124,7 @@
                 "Wilson's disease"
               ],
               "correctIndex": 1,
-              "explanation": "Biochemically, Crigler-Najjar syndrome is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Crigler-Najjar syndrome is a rare genetic disorder caused by mutations in the UGT1A1 gene encoding UDP-glucuronosyltransferase. Type I has complete absence of enzyme activity, causing severe unconjugated hyperbilirubinemia, kernicterus, and death unless treated with liver transplantation."
             },
             {
               "id": "MGL3-CH4-BIOC-0533",
@@ -89139,7 +89139,7 @@
                 "PRPP synthetase"
               ],
               "correctIndex": 2,
-              "explanation": "Biochemically, Ribonucleotide reductase is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hydroxyurea inhibits ribonucleotide reductase, the enzyme that reduces ribonucleoside diphosphates (NDPs) into deoxyribonucleoside diphosphates (dNDPs). This halts de novo DNA synthesis by depleting dNTP precursors, arresting cells in S-phase."
             },
             {
               "id": "MGL3-CH4-BIOC-0534",
@@ -89154,7 +89154,7 @@
                 "Sulfonamides"
               ],
               "correctIndex": 3,
-              "explanation": "Biochemically, Hydroxyurea is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hydroxyurea specifically inactivates the tyrosyl free radical at the catalytic site of ribonucleotide reductase, halting the conversion of ribonucleotides to deoxyribonucleotides required for DNA replication."
             },
             {
               "id": "MGL3-CH4-BIOC-0535",
@@ -89169,7 +89169,7 @@
                 "Isomerase"
               ],
               "correctIndex": 2,
-              "explanation": "Biochemically, Reductase is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Enzymes ending in reductase (such as HMG-CoA reductase or ribonucleotide reductase) belong to Enzyme Commission Class 1 (Oxidoreductases). They catalyze oxidation-reduction reactions involving the transfer of electrons or hydrides between substrate and cofactor."
             },
             {
               "id": "MGL3-CH4-BIOC-0536",
@@ -89184,7 +89184,7 @@
                 "Hartnup disease"
               ],
               "correctIndex": 1,
-              "explanation": "Biochemically, Orotic aciduria is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hereditary orotic aciduria results from deficiency of the bifunctional enzyme UMP synthase (orotate phosphoribosyltransferase and OMP decarboxylase). It presents in infants with megaloblastic anemia unresponsive to B12/folate, failure to thrive, and massive urinary orotic acid excretion."
             },
             {
               "id": "MGL3-CH4-BIOC-0537",
@@ -89199,7 +89199,7 @@
                 "Increased intestinal conversion of bilirubin"
               ],
               "correctIndex": 2,
-              "explanation": "Biochemically, Impaired excretion of conjugated bilirubin is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Direct (conjugated) hyperbilirubinemia reflects impaired canalicular excretion into the biliary tree or mechanical ductal obstruction (such as choledocholithiasis, cholangiocarcinoma, or pancreatic cancer), contrasting with hemolysis or Gilbert syndrome (unconjugated)."
             },
             {
               "id": "MGL3-CH4-BIOC-0538",
@@ -89214,7 +89214,7 @@
                 "Thymidylate synthase"
               ],
               "correctIndex": 1,
-              "explanation": "Biochemically, Xanthine oxidase is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Molybdenum is an essential trace metal cofactor incorporated into molybdopterin in xanthine oxidase. Xanthine oxidase oxidizes hypoxanthine to xanthine, and xanthine to uric acid in purine degradation."
             },
             {
               "id": "MGL3-CH4-BIOC-0539",
@@ -89229,7 +89229,7 @@
                 "Glutamine PRPP amidotransferase"
               ],
               "correctIndex": 4,
-              "explanation": "Biochemically, Glutamine PRPP amidotransferase is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Glutamine-PRPP amidotransferase catalyzes the commitment and rate-limiting step of de novo purine synthesis, transferring an amino group from glutamine to 5-phosphoribosyl-1-pyrophosphate (PRPP) to form 5-phosphoribosylamine. It is allosterically inhibited by AMP, GMP, and IMP."
             },
             {
               "id": "MGL3-CH4-BIOC-0540",
@@ -89243,8 +89243,8 @@
                 "Increased conversion of dihydroxyacetone phosphate (DHAP) to glycerol- 3-phosphate",
                 "Activation of pyruvate dehydrogenase, increasing citric acid cycle turnover"
               ],
-              "correctIndex": 1,
-              "explanation": "Biochemically, Inhibition of glycerol-3-phosphate dehydrogenase, reducing triglyceride synthesis is the correct finding as assessed in GIT past examination guidelines."
+              "correctIndex": 3,
+              "explanation": "Ethanol oxidation by alcohol dehydrogenase generates excess NADH, driving the equilibrium of glycerol-3-phosphate dehydrogenase toward increased conversion of DHAP to glycerol-3-phosphate. Excess glycerol-3-phosphate supplies the essential backbone for hepatic triglyceride synthesis, producing steatosis."
             },
             {
               "id": "MGL3-CH4-BIOC-0541",
@@ -89259,7 +89259,7 @@
                 "Valine"
               ],
               "correctIndex": 0,
-              "explanation": "Biochemically, Methionine is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Methionine is an essential amino acid that forms S-adenosylmethionine (SAMe). SAMe donates methyl groups to synthesize phosphatidylcholine (lecithin), which is indispensable for VLDL assembly and lipid export from the liver, preventing fatty liver (lipotropic action)."
             },
             {
               "id": "MGL3-CH4-BIOC-0542",
@@ -89274,7 +89274,7 @@
                 "Deficiency of intrahepatic acetyl- CoA substrate"
               ],
               "correctIndex": 2,
-              "explanation": "Biochemically, Increased intracellular [NADH]/[NAD+] ratio is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Metabolism of ethanol by alcohol dehydrogenase and aldehyde dehydrogenase generates high amounts of NADH, markedly increasing the intracellular NADH/NAD+ ratio. This inhibits fatty acid beta-oxidation, diverts acetyl-CoA into ketogenesis and lipogenesis, and induces hepatic steatosis."
             },
             {
               "id": "MGL3-CH4-BIOC-0543",
@@ -89289,7 +89289,7 @@
                 "Leucine"
               ],
               "correctIndex": 2,
-              "explanation": "Biochemically, Methionine is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Methionine acts as a lipotropic agent because it provides the active methyl groups required for the endogenous synthesis of choline and phosphatidylcholine, which are critical for hepatic packaging and secretion of VLDL."
             },
             {
               "id": "MGL3-CH4-BIOC-0544",
@@ -89304,7 +89304,7 @@
                 "Eating excess unsaturated fatty acids in diet"
               ],
               "correctIndex": 1,
-              "explanation": "Biochemically, Decrease lipoprotein production by the liver is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Non-alcoholic fatty liver disease (NAFLD) develops when intrahepatic triglyceride synthesis exceeds the liver's capacity to package and secrete triglycerides into very-low-density lipoproteins (VLDL), leading to progressive lipid accumulation in hepatocytes."
             }
           ]
         }
@@ -89365,7 +89365,7 @@
                 "Extravasated red blood cells Correct Answer: C"
               ],
               "correctIndex": 0,
-              "explanation": "Pathologically, Macrophages and lymphocytes is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepatic adenomas are benign monoclonal epithelial neoplasms composed of cords of normal-appearing hepatocytes without portal tracts, central veins, or bile ducts. They characteristically lack the prominent inflammatory infiltrates (macrophages and lymphocytes) seen in inflammatory hepatic lesions."
             },
             {
               "id": "MGL3-CH5-PATH-1249",
@@ -89380,7 +89380,7 @@
                 "Signet-ring cells"
               ],
               "correctIndex": 2,
-              "explanation": "Pathologically, Ground-glass hepatocytes is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Ground-glass hepatocytes represent the diagnostic histological hallmark of chronic Hepatitis B virus infection. The cytoplasm exhibits a finely granular, eosinophilic, translucent appearance due to massive accumulation of HBsAg in the smooth endoplasmic reticulum."
             },
             {
               "id": "MGL3-CH5-PATH-1250",
@@ -89395,7 +89395,7 @@
                 "Peptic ulcer disease"
               ],
               "correctIndex": 1,
-              "explanation": "Pathologically, Aflatoxin exposure is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Aflatoxin B1, produced by Aspergillus flavus contaminating stored grains and nuts, is a potent dietary hepatocarcinogen. It induces a pathognomonic G:C to T:A transversional mutation at codon 249 of the TP53 tumor suppressor gene, synergizing with HBV to cause HCC."
             },
             {
               "id": "MGL3-CH5-PATH-1251",
@@ -89410,7 +89410,7 @@
                 "HEV invariably progresses to cirrhosis and HCC"
               ],
               "correctIndex": 3,
-              "explanation": "Pathologically, HEV is not considered a major predisposing factor for HCC is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepatitis E virus (HEV) causes an acute, self-limiting infection without establishing chronicity or cirrhosis in immunocompetent hosts, and is therefore not an oncogenic predisposing factor for hepatocellular carcinoma (unlike chronic HBV, HCV, or HDV)."
             },
             {
               "id": "MGL3-CH5-PATH-1252",
@@ -89425,7 +89425,7 @@
                 "Crigler-Najjar syndrome"
               ],
               "correctIndex": 3,
-              "explanation": "Pathologically, Hereditary hemochromatosis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The triad of hepatomegaly/cirrhosis, bronze hyperpigmentation, and diabetes mellitus ('bronze diabetes') is classic for hereditary hemochromatosis. Iron overload damages pancreatic beta cells, skin melanocytes, and hepatocytes, increasing hepatocellular carcinoma risk >20-fold."
             },
             {
               "id": "MGL3-CH5-PATH-1253",
@@ -89440,7 +89440,7 @@
                 "Epstein-Barr virus (EBV)"
               ],
               "correctIndex": 1,
-              "explanation": "Pathologically, Hepatitis B virus (HBV) is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepatitis B virus (HBV) is a DNA virus capable of integrating directly into host genomic DNA, causing insertional mutagenesis, genomic instability, and expression of the oncogenic HBx protein, allowing HCC to develop even in the absence of preceding cirrhosis."
             },
             {
               "id": "MGL3-CH5-PATH-1254",
@@ -89455,7 +89455,7 @@
                 "Hemochromatosis"
               ],
               "correctIndex": 1,
-              "explanation": "Pathologically, Combined oral contraceptive use is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepatic adenoma is strongly associated with long-term combined oral contraceptive pill (OCP) use, with risk increasing with dose and duration. The tumor is estrogen-sensitive, often regressing after OCP discontinuation but carrying risks of rupture, hemoperitoneum, and malignant transformation."
             },
             {
               "id": "MGL3-CH5-PATH-1255",
@@ -89470,7 +89470,7 @@
                 "Overexpression of ferroportin secondary to increased serum transferrin levels"
               ],
               "correctIndex": 0,
-              "explanation": "Pathologically, Mutation of the HFE gene resulting in decreased hepcidin synthesis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hereditary hemochromatosis is predominantly caused by homozygous C282Y mutations in the HFE gene on chromosome 6. Defective HFE fails to sense iron stores, resulting in abnormally low hepcidin synthesis, uncontrolled ferroportin activity, and excessive intestinal iron absorption."
             },
             {
               "id": "MGL3-CH5-PATH-1256",
@@ -89485,7 +89485,7 @@
                 "Kupffer cell hyperplasia"
               ],
               "correctIndex": 3,
-              "explanation": "Pathologically, Bridging fibrosis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Focal nodular hyperplasia (FNH) is a benign, non-neoplastic hyperplastic response to a localized vascular malformation. It is characterized by a central stellate scar containing thick-walled dystrophic vessels, and characteristically lacks the diffuse bridging fibrosis of cirrhosis."
             },
             {
               "id": "MGL3-CH5-PATH-1257",
@@ -89500,7 +89500,7 @@
                 "Hepatocyte steatosis with portal lymphoid infiltrates and bile duct injury"
               ],
               "correctIndex": 4,
-              "explanation": "Pathologically, Hepatocyte steatosis with portal lymphoid infiltrates and bile duct injury is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepatitis C liver biopsy characteristically exhibits dense lymphoid aggregates or follicles within portal tracts, macrovesicular steatosis, and bile duct damage, accompanied by varying degrees of lobular inflammation and fibrosis."
             },
             {
               "id": "MGL3-CH5-PATH-1258",
@@ -89515,7 +89515,7 @@
                 "Alcoholic fatty liver disease"
               ],
               "correctIndex": 1,
-              "explanation": "Pathologically, Drug-induced hepatitis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Drug-induced liver injury (DILI) can present histologically with non-caseating epithelioid granulomas (granulomatous hepatitis), commonly associated with medications such as allopurinol, sulfonamides, quinidine, or diltiazem, as well as sarcoidosis and tuberculosis."
             },
             {
               "id": "MGL3-CH5-PATH-1259",
@@ -89530,7 +89530,7 @@
                 "Gaucher disease"
               ],
               "correctIndex": 2,
-              "explanation": "Pathologically, Wilson disease is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Wilson disease (hepatolenticular degeneration) is an autosomal recessive mutation in the ATP7B copper transporter, impairing biliary copper excretion and ceruloplasmin incorporation. Copper accumulates in the liver, basal ganglia (parkinsonism, tremor), and Descemet membrane (Kayser-Fleischer rings)."
             },
             {
               "id": "MGL3-CH5-PATH-1260",
@@ -89545,7 +89545,7 @@
                 "Oil Red O positive lipid droplets"
               ],
               "correctIndex": 2,
-              "explanation": "Pathologically, Prussian blue positive staining is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "In hereditary hemochromatosis, Prussian blue (Perls) stain highlights abundant blue-stained hemosiderin granules within hepatocytes, Kupffer cells, and bile duct epithelium, differentiating iron overload from lipofuscin (which is Prussian blue negative)."
             },
             {
               "id": "MGL3-CH5-PATH-1261",
@@ -89560,7 +89560,7 @@
                 "Primary biliary cholangitis (PBC)"
               ],
               "correctIndex": 3,
-              "explanation": "Pathologically, Alcohol-associated hepatitis (ALD) is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Alcohol-associated hepatitis is characterized pathologically by hepatocyte swelling/ballooning degeneration, neutrophilic infiltration surrounding degenerating hepatocytes, Mallory-Denk bodies (damaged cytokeratin filaments), and pericellular/perisinusoidal 'chicken-wire' fibrosis."
             },
             {
               "id": "MGL3-CH5-PATH-1262",
@@ -89575,7 +89575,7 @@
                 "Hepatoblastoma"
               ],
               "correctIndex": 0,
-              "explanation": "Pathologically, Hepatic Adenoma is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepatic adenoma is a well-circumscribed, highly vascular benign liver tumor occurring predominantly in young women on oral contraceptives. Subcapsular adenomas pose a significant risk of spontaneous rupture and catastrophic intraperitoneal hemorrhage."
             },
             {
               "id": "MGL3-CH5-PATH-1263",
@@ -89590,7 +89590,7 @@
                 "Focal nodular hyperplasia"
               ],
               "correctIndex": 2,
-              "explanation": "Pathologically, Hepatocellular carcinoma (HCC) is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "A patient with long-standing cirrhosis presenting with rapid clinical deterioration, weight loss, right upper quadrant pain, and a new focal hepatic mass has hepatocellular carcinoma (HCC) until proven otherwise. Serum alpha-fetoprotein (AFP) is commonly elevated."
             },
             {
               "id": "MGL3-CH5-PATH-1264",
@@ -89605,7 +89605,7 @@
                 "Anti-smooth muscle antibody (SMA)"
               ],
               "correctIndex": 1,
-              "explanation": "Pathologically, Antimitochondrial antibody (AMA) is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Primary biliary cholangitis (PBC) is an autoimmune destruction of intrahepatic interlobular bile ducts affecting middle-aged women. The presence of antimitochondrial antibodies (AMA), directed against the E2 subunit of pyruvate dehydrogenase, is positive in >95% of cases."
             },
             {
               "id": "MGL3-CH5-PATH-1265",
@@ -89620,7 +89620,7 @@
                 "Rectal hemorrhoids"
               ],
               "correctIndex": 3,
-              "explanation": "Pathologically, Esophageal varices is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Bleeding from ruptured gastroesophageal varices is the most critical and life-threatening complication of portal hypertension, carrying an immediate mortality rate of 15–20% per bleeding episode."
             },
             {
               "id": "MGL3-CH5-PATH-1266",
@@ -89635,7 +89635,7 @@
                 "Gilbert syndrome"
               ],
               "correctIndex": 1,
-              "explanation": "Pathologically, Acute viral hepatitis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Acute viral hepatitis is pathologically characterized by diffuse hepatocyte ballooning degeneration, scattered Councilman (apoptotic) bodies, spotty lobular necrosis, and Kupffer cell hyperplasia without fibrous septa or regenerative nodules."
             },
             {
               "id": "MGL3-CH5-PATH-1267",
@@ -89650,7 +89650,7 @@
                 "Non-alcoholic steatohepatitis (NASH)"
               ],
               "correctIndex": 1,
-              "explanation": "Pathologically, Alpha-1 antitrypsin deficiency is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Alpha-1 antitrypsin (A1AT) deficiency is characterized by misfolded mutant PiZ glycoprotein that aggregates in the endoplasmic reticulum of hepatocytes, appearing histologically as round eosinophilic globules that are strongly PAS-positive and resist diastase digestion."
             },
             {
               "id": "MGL3-CH5-PATH-1268",
@@ -89665,7 +89665,7 @@
                 "Hydatid disease of the liver"
               ],
               "correctIndex": 2,
-              "explanation": "Pathologically, Ascending suppurative cholangitis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Charcot triad (fever/chills, severe right upper quadrant pain, and jaundice) in a patient with gallstones indicates acute ascending suppurative cholangitis, a bacterial infection of an obstructed biliary tree requiring urgent antibiotic therapy and biliary decompression."
             },
             {
               "id": "MGL3-CH5-PATH-1269",
@@ -89680,7 +89680,7 @@
                 "Urine sediment microscopy"
               ],
               "correctIndex": 2,
-              "explanation": "Pathologically, Indirect hemagglutination test is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Indirect hemagglutination (IHA) and ELISA tests are sensitive serological assays widely used to confirm hepatic hydatid cyst disease (Echinococcus granulosus), detecting circulating echinococcal antibodies."
             },
             {
               "id": "MGL3-CH5-PATH-1270",
@@ -89695,7 +89695,7 @@
                 "Aflatoxin B1"
               ],
               "correctIndex": 2,
-              "explanation": "Pathologically, Hepatitis E virus is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepatitis E virus (HEV) causes self-limited acute hepatitis and does not cause chronic infection or cirrhosis in immunocompetent individuals, meaning it is not an oncogenic risk factor for hepatocellular carcinoma. HBV, HCV, and Clonorchis sinensis are established oncogenic agents."
             },
             {
               "id": "MGL3-CH5-PATH-1271",
@@ -89710,7 +89710,7 @@
                 "Decreased prevalence of non-alcoholic fatty liver disease"
               ],
               "correctIndex": 1,
-              "explanation": "Pathologically, Increased survival of cirrhotic patients is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Advances in the clinical management of cirrhosis (such as screening for varices, treating ascites, and antiviral suppression) have prolonged the lifespan of cirrhotic patients, allowing more time for cumulative mutational hits to precipitate hepatocellular carcinoma."
             },
             {
               "id": "MGL3-CH5-PATH-1272",
@@ -89725,7 +89725,7 @@
                 "brain infarction"
               ],
               "correctIndex": 2,
-              "explanation": "Pathologically, amoebic liver abscess is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Entamoeba histolytica trophozoites invade the colonic mucosa, enter mesenteric venules, and travel via the portal vein to the liver, causing amoebic liver abscess filled with necrotic debris resembling 'anchovy paste'."
             },
             {
               "id": "MGL3-CH5-PATH-1273",
@@ -89740,7 +89740,7 @@
                 "Haptoglobin and heme oxygenase"
               ],
               "correctIndex": 0,
-              "explanation": "Pathologically, HFE protein and hepcidin is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hereditary hemochromatosis involves mutations in the HFE protein, resulting in inappropriately low levels of circulating hepcidin. Unchecked ferroportin activity drives uncontrolled intestinal iron absorption and toxic iron deposition in parenchymal organs."
             },
             {
               "id": "MGL3-CH5-PATH-1274",
@@ -89755,7 +89755,7 @@
                 "Hemangioma"
               ],
               "correctIndex": 2,
-              "explanation": "Pathologically, Hepatic adenoma is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Prolonged oral contraceptive pill (OCP) usage is the primary risk factor for hepatic adenoma. These benign tumors have a tendency to rupture spontaneously into the peritoneal cavity, especially during pregnancy or menstruation."
             },
             {
               "id": "MGL3-CH5-PATH-1275",
@@ -89770,7 +89770,7 @@
                 "No use of contraceptives"
               ],
               "correctIndex": 2,
-              "explanation": "Pathologically, Control of HCV infection is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Effective curative treatment and viral eradication with direct-acting antivirals (DAAs) in hepatitis C virus infection halts progressive fibrosis and significantly lowers the long-term risk of developing hepatocellular carcinoma."
             },
             {
               "id": "MGL3-CH5-PATH-1276",
@@ -89785,7 +89785,7 @@
                 "Eosinophilic granulomas around larvae"
               ],
               "correctIndex": 3,
-              "explanation": "Pathologically, Hepatic granuloma and periportal fibrosis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "In chronic Schistosoma mansoni infection, trapped parasite eggs in intrahepatic portal venules trigger intense granulomatous inflammation, leading to extensive periportal 'pipe-stem' (Symmers) fibrosis, presinusoidal portal hypertension, splenomegaly, and bleeding varices."
             },
             {
               "id": "MGL3-CH5-PATH-1277",
@@ -89800,7 +89800,7 @@
                 "Transaminases"
               ],
               "correctIndex": 3,
-              "explanation": "Pathologically, Prothrombin time is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Prothrombin time (PT/INR) evaluates the extrinsic coagulation pathway and reflects the acute synthetic function of the liver. Because Factor VII has a half-life of only 4–6 hours, PT prolongation is the most sensitive marker of acute hepatic synthetic failure."
             },
             {
               "id": "MGL3-CH5-PATH-1278",
@@ -89815,7 +89815,7 @@
                 "Most of the hepatocytes with collapse of reticulin framework"
               ],
               "correctIndex": 3,
-              "explanation": "Pathologically, Hepatocytes at the limiting plate between the parenchyma and portal tract is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Interface hepatitis (formerly termed piecemeal necrosis) refers to apoptotic death and necrosis of hepatocytes at the limiting plate (the boundary between portal stroma and parenchymal lobules), driven by mononuclear inflammatory infiltrates in chronic viral or autoimmune hepatitis."
             },
             {
               "id": "MGL3-CH5-PATH-1279",
@@ -89830,7 +89830,7 @@
                 "Bile duct carcinoma"
               ],
               "correctIndex": 0,
-              "explanation": "Pathologically, Hepatic adenoma is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Acute severe abdominal pain and hemorrhagic shock in a young woman on oral contraceptives is the hallmark presentation of a ruptured subcapsular hepatic adenoma causing hemoperitoneum."
             },
             {
               "id": "MGL3-CH5-PATH-1280",
@@ -89845,7 +89845,7 @@
                 "Viral hepatitis C infection"
               ],
               "correctIndex": 1,
-              "explanation": "Pathologically, Primary sclerosing cholangitis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Primary sclerosing cholangitis (PSC) is strongly associated with inflammatory bowel disease, particularly ulcerative colitis (seen in ~70% of PSC patients). It involves progressive obliterative fibrosis of intra- and extrahepatic bile ducts."
             },
             {
               "id": "MGL3-CH5-PATH-1281",
@@ -89860,7 +89860,7 @@
                 "Anti-GBM antibodies"
               ],
               "correctIndex": 3,
-              "explanation": "Pathologically, p-ANCA is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Perinuclear antineutrophil cytoplasmic antibodies (p-ANCA / atypical ANCA) are detectable in 65–80% of patients with primary sclerosing cholangitis (PSC), whereas primary biliary cholangitis is characterized by antimitochondrial antibodies (AMA)."
             },
             {
               "id": "MGL3-CH5-PATH-1282",
@@ -89875,7 +89875,7 @@
                 "Angiosarcoma"
               ],
               "correctIndex": 1,
-              "explanation": "Pathologically, Cholangiocarcinoma is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Cholangiocarcinoma is a malignant epithelial neoplasm arising from intrahepatic or extrahepatic bile duct epithelium (cholangiocytes), often presenting as an adenocarcinoma with prominent desmoplasia."
             },
             {
               "id": "MGL3-CH5-PATH-1283",
@@ -89890,7 +89890,7 @@
                 "Anti-centromere antibody"
               ],
               "correctIndex": 2,
-              "explanation": "Pathologically, Anti-neutrophil cytoplasmic antibody (ANCA) is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Primary sclerosing cholangitis (PSC) is characteristically associated with p-ANCA positivity in the majority of patients, distinguishing it from autoimmune hepatitis (ANA and anti-smooth muscle) and PBC (AMA)."
             },
             {
               "id": "MGL3-CH5-PATH-1284",
@@ -89905,7 +89905,7 @@
                 "Gastrointestinal stromal tumor (GIST)"
               ],
               "correctIndex": 0,
-              "explanation": "Pathologically, Cholangiocarcinoma is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Patients with primary sclerosing cholangitis (PSC) have an extraordinarily high lifetime risk (10–15%) of developing cholangiocarcinoma, often presenting with sudden jaundice and rapid clinical deterioration."
             }
           ]
         }
@@ -89952,7 +89952,7 @@
                 "α₁-blockers"
               ],
               "correctIndex": 1,
-              "explanation": "Pharmacologically, Non-selective β-blockers is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Non-selective beta-blockers (propranolol and nadolol) reduce portal venous pressure through a dual mechanism: beta-1 blockade decreases cardiac output, while beta-2 blockade allows unopposed alpha-1 adrenergic vasoconstriction of splanchnic arteries, decreasing portal venous inflow."
             },
             {
               "id": "MGL3-CH6-PHAR-0671",
@@ -89967,7 +89967,7 @@
                 "To stimulate biliary excretion of excess bilirubin"
               ],
               "correctIndex": 2,
-              "explanation": "Pharmacologically, To counteract vasopressin-induced systemic vasoconstriction while synergistically lowering portal pressure is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Vasopressin causes intense splanchnic and systemic arterial vasoconstriction, carrying risks of myocardial ischemia and bowel infarction. Adding IV nitroglycerin counteracts systemic hypertension and coronary spasm while synergistically reducing portal venous pressure."
             },
             {
               "id": "MGL3-CH6-PHAR-0672",
@@ -89982,7 +89982,7 @@
                 "α1-blockers"
               ],
               "correctIndex": 1,
-              "explanation": "Pharmacologically, Non-selective β-blockers is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Non-selective beta-adrenergic antagonists (such as propranolol or nadolol) are the first-line pharmacologic class for both primary and secondary prophylaxis of esophageal variceal hemorrhage in patients with portal hypertension."
             },
             {
               "id": "MGL3-CH6-PHAR-0673",
@@ -89997,7 +89997,7 @@
                 "Omeprazole"
               ],
               "correctIndex": 2,
-              "explanation": "Pharmacologically, Sucralfate is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Sucralfate contains aluminum hydroxide. In elderly patients or those with renal impairment, chronic aluminum accumulation binds dietary phosphate in the gut, causing hypophosphatemia, impaired bone mineralization, and osteomalacia."
             },
             {
               "id": "MGL3-CH6-PHAR-0674",
@@ -90012,7 +90012,7 @@
                 "Binding of ammonia and  washing out colon"
               ],
               "correctIndex": 4,
-              "explanation": "Pharmacologically, Binding of ammonia and  washing out colon is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Lactulose is degraded by colonic flora into lactic and acetic acids. Acidification of the colonic lumen converts diffusible ammonia (NH3) into non-absorbable ammonium (NH4+) which is trapped and excreted, while its osmotic action accelerates fecal transit."
             },
             {
               "id": "MGL3-CH6-PHAR-0675",
@@ -90027,7 +90027,7 @@
                 "Isosorbide mononitrate monotherapy is given as a rapid bolus to stop bleeding"
               ],
               "correctIndex": 2,
-              "explanation": "Pharmacologically, IV vasopressin is mandatory first, then nitroglycerin is added is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "In controlling acute variceal hemorrhage, IV vasopressin produces powerful splanchnic vasoconstriction, but must be paired with IV nitroglycerin to prevent severe coronary and peripheral ischemic complications."
             },
             {
               "id": "MGL3-CH6-PHAR-0676",
@@ -90042,7 +90042,7 @@
                 "Non-selective blockade of β-adrenergic receptors"
               ],
               "correctIndex": 2,
-              "explanation": "Pharmacologically, Inhibition of the release of peptides contributing to hyperdynamic circulation is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Octreotide (a synthetic somatostatin analogue) causes selective splanchnic vasoconstriction by inhibiting the release of vasodilatory gastrointestinal peptides, particularly glucagon and VIP, thereby correcting the splanchnic hyperdynamic circulation and decreasing variceal pressure."
             },
             {
               "id": "MGL3-CH6-PHAR-0677",
@@ -90057,7 +90057,7 @@
                 "Digoxin"
               ],
               "correctIndex": 0,
-              "explanation": "Pharmacologically, Propranolol is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Propranolol is a non-selective beta-blocker that reduces portal venous inflow by blocking beta-2 receptors in the mesenteric vasculature, leading to unopposed alpha-1 splanchnic vasoconstriction and lowering portal vein pressure."
             },
             {
               "id": "MGL3-CH6-PHAR-0678",
@@ -90072,7 +90072,7 @@
                 "Gingival hyperplasia"
               ],
               "correctIndex": 1,
-              "explanation": "Pharmacologically, Nephrotoxicity is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Nephrotoxicity is the major, dose-limiting adverse effect of calcineurin inhibitors (cyclosporine and tacrolimus). It results from renal afferent arteriolar vasoconstriction, leading to reduced glomerular filtration and progressive interstitial fibrosis."
             },
             {
               "id": "MGL3-CH6-PHAR-0679",
@@ -90087,7 +90087,7 @@
                 "Combination of spironolactone and frusemide"
               ],
               "correctIndex": 4,
-              "explanation": "Pharmacologically, Combination of spironolactone and frusemide is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The standard diuretic regimen for cirrhotic ascites is the combination of spironolactone (an aldosterone antagonist) and furosemide (a loop diuretic) in a 100:40 mg ratio, maintaining normokalemia while overcoming hyperaldosteronism."
             },
             {
               "id": "MGL3-CH6-PHAR-0680",
@@ -90102,7 +90102,7 @@
                 "Acute acetaminophen toxicity"
               ],
               "correctIndex": 0,
-              "explanation": "Pharmacologically, Autoimmune disease is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "In liver transplant recipients whose primary liver disease was autoimmune (such as autoimmune hepatitis or primary biliary cholangitis), complete cessation of corticosteroids or immunosuppression carries a high risk of late disease recurrence in the allograft."
             },
             {
               "id": "MGL3-CH6-PHAR-0681",
@@ -90117,7 +90117,7 @@
                 "Thymoglobulin (ATG)"
               ],
               "correctIndex": 0,
-              "explanation": "Pharmacologically, Cyclosporine is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Cyclosporine binds to cyclophilin, and the complex inhibits calcineurin (a protein phosphatase). This blocks dephosphorylation of NFAT, preventing interleukin-2 (IL-2) transcription and suppressing T-lymphocyte activation."
             },
             {
               "id": "MGL3-CH6-PHAR-0682",
@@ -90132,7 +90132,7 @@
                 "Cyclosporine"
               ],
               "correctIndex": 4,
-              "explanation": "Pharmacologically, Cyclosporine is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Cyclosporine causes potent renal vasoconstriction and direct tubular injury. In a liver transplant recipient with pre-existing renal insufficiency, cyclosporine is contraindicated or used with extreme caution, favoring renal-sparing protocols with mycophenolate mofetil."
             },
             {
               "id": "MGL3-CH6-PHAR-0683",
@@ -90147,7 +90147,7 @@
                 "Complete corticosteroid replacement to enhance antitumor immunity"
               ],
               "correctIndex": 1,
-              "explanation": "Pharmacologically, Gradual corticosteroid withdrawal to reduce risk of HCC recurrence is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "In patients undergoing liver transplantation for hepatocellular carcinoma (HCC), high-dose prolonged corticosteroids promote tumor recurrence. Therefore, progressive corticosteroid tapering and withdrawal is recommended to minimize post-transplant HCC recurrence."
             }
           ]
         }
@@ -90192,7 +90192,7 @@
                 "DNA plasmid vaccine"
               ],
               "correctIndex": 1,
-              "explanation": "Microbiologically, Inactivated vaccine is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The standard Hepatitis A vaccine (Havrix, Vaqta) consists of formalin-inactivated, whole hepatitis A virions grown in human diploid cell cultures. It confers long-lasting protective anti-HAV IgG antibodies."
             },
             {
               "id": "MGL3-CH7-MICR-0411",
@@ -90207,7 +90207,7 @@
                 "None of the above"
               ],
               "correctIndex": 1,
-              "explanation": "Microbiologically, HDV is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepatitis D virus (HDV, delta agent) is a defective single-stranded circular RNA viroid-like pathogen that requires the envelope surface antigen (HBsAg) of Hepatitis B virus to package its genome and propagate. It infects patients either simultaneously (coinfection) or as a superinfection on chronic HBV."
             },
             {
               "id": "MGL3-CH7-MICR-0412",
@@ -90222,7 +90222,7 @@
                 "Anti-HBe"
               ],
               "correctIndex": 3,
-              "explanation": "Microbiologically, HBeAg is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "HBeAg (hepatitis B e-antigen) is a secretory protein derived from the precore/core gene. Its presence in serum correlates directly with active viral replication, high levels of serum HBV DNA, and elevated transmission infectivity."
             },
             {
               "id": "MGL3-CH7-MICR-0413",
@@ -90237,7 +90237,7 @@
                 "Quaternary prevention"
               ],
               "correctIndex": 2,
-              "explanation": "Microbiologically, Primary prevention is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Eradication of HCV with direct-acting antivirals prevents the development of hepatic cirrhosis and subsequent malignant transformation, serving as primary oncologic prevention against hepatocellular carcinoma."
             },
             {
               "id": "MGL3-CH7-MICR-0414",
@@ -90252,7 +90252,7 @@
                 "Reassurance and observation without prophylaxis"
               ],
               "correctIndex": 0,
-              "explanation": "Microbiologically, Single dose of hepatitis A vaccine alone is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "For healthy, unvaccinated individuals aged 1–40 years with household exposure to HAV within 14 days, a single dose of the Hepatitis A vaccine alone is the preferred post-exposure prophylaxis, providing rapid protective immunity comparable to immune globulin while establishing long-term active protection."
             },
             {
               "id": "MGL3-CH7-MICR-0415",
@@ -90267,7 +90267,7 @@
                 "Hepatitis E virus (HEV)"
               ],
               "correctIndex": 4,
-              "explanation": "Microbiologically, Hepatitis E virus (HEV) is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepatitis E virus (HEV) infection carries a remarkably high case-fatality rate (15–25%) when contracted during the third trimester of pregnancy, primarily due to the sudden onset of fulminant hepatic failure and disseminated intravascular coagulation."
             },
             {
               "id": "MGL3-CH7-MICR-0416",
@@ -90282,7 +90282,7 @@
                 "Direct casual contact and sharing of personal equipment"
               ],
               "correctIndex": 3,
-              "explanation": "Microbiologically, Exposure to infected blood and body fluids is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hepatitis B virus is transmitted parenterally and through mucosal contact with infectious blood, semen, or vaginal secretions, as well as vertical perinatal transmission during delivery. It is not transmitted via the fecal-oral route."
             },
             {
               "id": "MGL3-CH7-MICR-0417",
@@ -90297,7 +90297,7 @@
                 "Anti-HBe (HBeAb)"
               ],
               "correctIndex": 1,
-              "explanation": "Microbiologically, IgM anti-HBc (HBcAb IgM) is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "IgM antibody to hepatitis B core antigen (anti-HBc IgM) is the definitive serological marker for diagnosing acute HBV infection. It appears shortly after HBsAg and remains the sole detectable serological marker during the 'window period' after HBsAg clearance before anti-HBs appears."
             },
             {
               "id": "MGL3-CH7-MICR-0418",
@@ -90312,7 +90312,7 @@
                 "Epstein-Barr virus (EBV)"
               ],
               "correctIndex": 1,
-              "explanation": "Microbiologically, Hepatitis B virus (HBV) is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "HDV has an outer lipid envelope studded entirely with Hepatitis B surface antigen (HBsAg). Because HDV cannot synthesize its own envelope proteins, it is an obligate satellite virus dependent entirely on HBV co-infection for assembly and release."
             },
             {
               "id": "MGL3-CH7-MICR-0419",
@@ -90327,7 +90327,7 @@
                 "Stimulation of host cell interferon- alpha receptors"
               ],
               "correctIndex": 3,
-              "explanation": "Microbiologically, Inhibition of viral RNA polymerase is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Sofosbuvir is a uridine nucleotide analog prodrug that inhibits the HCV NS5B RNA-dependent RNA polymerase, acting as a non-obligate chain terminator to halt viral RNA genome synthesis across all HCV genotypes."
             },
             {
               "id": "MGL3-CH7-MICR-0420",
@@ -90342,7 +90342,7 @@
                 "Liver biopsy showing Councilman bodies"
               ],
               "correctIndex": 0,
-              "explanation": "Microbiologically, Serological testing for antibodies in serum is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "A sewer worker presenting with high fever, jaundice, renal impairment, and conjunctival suffusion has Weil disease (severe Leptospirosis caused by Leptospira interrogans from rat urine). Diagnosis is confirmed serologically via the microscopic agglutination test (MAT) or IgM ELISA."
             },
             {
               "id": "MGL3-CH7-MICR-0421",
@@ -90387,7 +90387,7 @@
                 "During which the patient is always symptomatic"
               ],
               "correctIndex": 1,
-              "explanation": "Microbiologically, Between exposure and development of detectable markers of infection is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The window period represents the serological interval in Hepatitis B infection between the disappearance of detectable HBsAg and the appearance of protective anti-HBs antibodies, during which anti-HBc IgM is the only diagnostic serological marker present."
             },
             {
               "id": "MGL3-CH7-MICR-0424",
@@ -90402,7 +90402,7 @@
                 "Autoimmune hepatitis"
               ],
               "correctIndex": 2,
-              "explanation": "Microbiologically, Hepatitis B infection is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The histological finding of ground-glass hepatocytes (finely granular, hazy eosinophilic cytoplasm due to HBsAg engorgement within smooth endoplasmic reticulum) is pathognomonic for chronic Hepatitis B virus infection."
             },
             {
               "id": "MGL3-CH7-MICR-0425",
@@ -90417,7 +90417,7 @@
                 "Recent vaccination"
               ],
               "correctIndex": 2,
-              "explanation": "Microbiologically, Current infection is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Detection of circulating HCV RNA by quantitative real-time RT-PCR confirms active, ongoing viral replication (current infection). An isolated positive anti-HCV antibody without HCV RNA indicates resolved past infection."
             },
             {
               "id": "MGL3-CH7-MICR-0426",
@@ -90432,7 +90432,7 @@
                 "Presence of anti-HBc IgM"
               ],
               "correctIndex": 4,
-              "explanation": "Microbiologically, Presence of anti-HBc IgM is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "During the serological window period of acute Hepatitis B, HBsAg has cleared and anti-HBs has not yet risen to detectable titers. The presence of IgM anti-HBc antibody is the sole diagnostic marker confirming infection."
             }
           ]
         }
@@ -90492,7 +90492,7 @@
                 "Necator americanus"
               ],
               "correctIndex": 1,
-              "explanation": "Parasitologically, Ascaris is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Heavy infection with adult Ascaris lumbricoides can form an entangled bolus in the terminal ileum, causing acute mechanical bowel obstruction in children. Worms can also migrate into the appendix or ampulla of Vater, causing appendicitis or obstructive jaundice."
             },
             {
               "id": "MGL3-CH8-PARA-1502",
@@ -90507,7 +90507,7 @@
                 "Clonorchis sinensis"
               ],
               "correctIndex": 0,
-              "explanation": "Parasitologically, Heterophyes heterophyes is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Heterophyes heterophyes adults attach to the small intestinal mucosa. Their microscopic eggs can penetrate mucosal venules and lymphatics, embolizing via the bloodstream to the brain and heart valves to cause granulomatous myocarditis, heart failure, and focal neurological deficits."
             },
             {
               "id": "MGL3-CH8-PARA-1503",
@@ -90522,7 +90522,7 @@
                 "Hemolytic anemia and hypercholesterolemia"
               ],
               "correctIndex": 1,
-              "explanation": "Parasitologically, Microcytic hypochromic anemia and hypoproteinemia is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Ancylostoma duodenale hookworms anchor to the intestinal mucosa and suck blood (up to 0.2 mL/worm/day). Chronic heavy infection depletes host iron and protein stores, leading to severe microcytic hypochromic iron-deficiency anemia and hypoproteinemic edema."
             },
             {
               "id": "MGL3-CH8-PARA-1504",
@@ -90537,7 +90537,7 @@
                 "Urinalysis for larval forms"
               ],
               "correctIndex": 0,
-              "explanation": "Parasitologically, Examination of egg packets or eggs in stool is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Dipylidium caninum (dog tapeworm) is diagnosed by finding typical barrel-shaped proglottids resembling cucumber seeds in feces or perianal skin, which contain characteristic egg packets enclosing 8–15 oncospheres."
             },
             {
               "id": "MGL3-CH8-PARA-1505",
@@ -90552,7 +90552,7 @@
                 "Cooking of fish properly."
               ],
               "correctIndex": 2,
-              "explanation": "Parasitologically, Washing of vegetables perfectly. is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Echinococcus granulosus eggs shed in dog feces contaminate soil, drinking water, and raw vegetables. Thorough washing of raw vegetables and strict hand hygiene before meals prevent human ingestion of infective eggs and subsequent hydatid cyst formation."
             },
             {
               "id": "MGL3-CH8-PARA-1506",
@@ -90567,7 +90567,7 @@
                 "Urine antigen excretion assay"
               ],
               "correctIndex": 3,
-              "explanation": "Parasitologically, Serological testing for specific antibodies is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Echinococcosis (hydatid cyst) is routinely confirmed by serological antibody testing (ELISA, indirect hemagglutination) combined with ultrasound or CT imaging. Diagnostic cyst aspiration is contraindicated due to the high risk of life-threatening anaphylactic shock and secondary dissemination."
             },
             {
               "id": "MGL3-CH8-PARA-1507",
@@ -90582,7 +90582,7 @@
                 "Environmental larviciding aimed at controlling mosquito breeding sites"
               ],
               "correctIndex": 0,
-              "explanation": "Parasitologically, Avoidance of using untreated human stool as agricultural fertilizer is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Soil-transmitted helminths (Ascaris, Ancylostoma, Trichuris) are transmitted via soil contaminated with human feces. Prohibiting the use of untreated human nightsoil as fertilizer is a cornerstone preventive strategy."
             },
             {
               "id": "MGL3-CH8-PARA-1508",
@@ -90597,7 +90597,7 @@
                 "Glomerulonephritis associated with Schistosoma haematobium"
               ],
               "correctIndex": 0,
-              "explanation": "Parasitologically, Neurological manifestations from Heterophyes heterophyes egg embolization is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Heterophyes heterophyes eggs can enter mesenteric venules and travel through the portal and systemic circulations. Cerebral embolization of eggs induces microgranulomas, presenting with acute seizures or focal deficits."
             },
             {
               "id": "MGL3-CH8-PARA-1509",
@@ -90612,7 +90612,7 @@
                 "Giardia lamblia"
               ],
               "correctIndex": 1,
-              "explanation": "Parasitologically, Ancylostoma duodenale is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Ancylostoma duodenale infects humans when infective filariform larvae in moist soil actively penetrate unbroken bare skin (causing 'ground itch'), followed by heart-lung migration and maturation in the small intestine."
             },
             {
               "id": "MGL3-CH8-PARA-1510",
@@ -90627,7 +90627,7 @@
                 "Sputum culture on specialized fungal and parasitic media"
               ],
               "correctIndex": 1,
-              "explanation": "Parasitologically, Detection of specific anti-Toxocara antibodies via ELISA is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Visceral larva migrans (VLM) is caused by Toxocara canis/cati larvae that arrest in human viscera without maturing into adult worms. Because eggs are never passed in human stool, diagnosis relies on anti-Toxocara IgG antibody detection via ELISA."
             },
             {
               "id": "MGL3-CH8-PARA-1511",
@@ -90642,7 +90642,7 @@
                 "Fasciola hepatica"
               ],
               "correctIndex": 3,
-              "explanation": "Parasitologically, Heterophyes heterophyes is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Heterophyes heterophyes is a minute intestinal fluke contracted by consuming raw, inadequately salted, or pickled brackish water fish (such as Mugil cephalus / mullet or Tilapia). In the intestine, it causes mucosal inflammation, colicky pain, and mucoid diarrhea."
             },
             {
               "id": "MGL3-CH8-PARA-1512",
@@ -90657,7 +90657,7 @@
                 "Heterophyes heterophyes egg"
               ],
               "correctIndex": 3,
-              "explanation": "Parasitologically, Echinococcus granulosus egg is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Humans serve as accidental intermediate hosts for Echinococcus granulosus, harboring the larval hydatid cyst. Adult worms reside exclusively in the canine definitive host, so Echinococcus eggs are never shed in human stool."
             },
             {
               "id": "MGL3-CH8-PARA-1513",
@@ -90672,7 +90672,7 @@
                 "Adequate freezing of pork and beef"
               ],
               "correctIndex": 2,
-              "explanation": "Parasitologically, Periodic deworming of dogs is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Dogs are the definitive hosts of Echinococcus granulosus, harboring adult tapeworms in their intestines. Periodic deworming of domestic and sheep dogs with praziquantel breaks the transmission cycle between dogs and livestock."
             },
             {
               "id": "MGL3-CH8-PARA-1514",
@@ -90687,7 +90687,7 @@
                 "Toxocariasis"
               ],
               "correctIndex": 1,
-              "explanation": "Parasitologically, Heterophyiasis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Heterophyiasis can lead to serious cardiac complications when microscopic eggs penetrate the intestinal mucosa, enter the circulation, and embolize to cardiac muscle and valves, provoking myocarditis and congestive heart failure."
             },
             {
               "id": "MGL3-CH8-PARA-1515",
@@ -90702,7 +90702,7 @@
                 "Cerebral manifestations"
               ],
               "correctIndex": 4,
-              "explanation": "Parasitologically, Cerebral manifestations is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Heterophyes heterophyes eggs entering the general circulation can lodge in cerebral capillaries, triggering granulomatous inflammation that presents clinically as seizures, intracranial hypertension, or cerebral infarction."
             },
             {
               "id": "MGL3-CH8-PARA-1516",
@@ -90717,7 +90717,7 @@
                 "Egg segments of Dipylidium caninum"
               ],
               "correctIndex": 3,
-              "explanation": "Parasitologically, Embryonated egg of Toxocara cati is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Toxocara canis and Toxocara cati eggs are passed in dog and cat feces, respectively. In humans, ingested eggs hatch into larvae that wander through tissues (visceral larva migrans) without maturing into adults, so eggs are never detectable in human stool."
             },
             {
               "id": "MGL3-CH8-PARA-1517",
@@ -90732,7 +90732,7 @@
                 "Schistosomiasis and diphyllobothriasis"
               ],
               "correctIndex": 3,
-              "explanation": "Parasitologically, Diphyllobothriasis and fasciolopsiasis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Diphyllobothriasis and fasciolopsiasis are both foodborne intestinal helminthiases acquired by ingesting freshwater foods (freshwater fish for Diphyllobothrium, freshwater aquatic vegetation for Fasciolopsis buski)."
             },
             {
               "id": "MGL3-CH8-PARA-1518",
@@ -90747,7 +90747,7 @@
                 "Strongyloides stercoralis"
               ],
               "correctIndex": 0,
-              "explanation": "Parasitologically, Ascaris lumbricoides is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Ascaris lumbricoides is the largest intestinal nematode. In heavy infections, boluses of adult worms can physically occlude the ileocecal lumen, precipitating acute mechanical intestinal obstruction, especially in young children."
             },
             {
               "id": "MGL3-CH8-PARA-1519",
@@ -90762,7 +90762,7 @@
                 "Schistosoma mansoni and Strongyloides stercoralis"
               ],
               "correctIndex": 2,
-              "explanation": "Parasitologically, Hydatid cyst and Ascaris lumbricoides is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "A hepatic hydatid cyst compressing intrahepatic bile ducts or adult Ascaris lumbricoides migrating through the ampulla of Vater into the common bile duct can both cause mechanical biliary outflow obstruction and jaundice."
             },
             {
               "id": "MGL3-CH8-PARA-1520",
@@ -90777,7 +90777,7 @@
                 "Ancylostoma duodenale"
               ],
               "correctIndex": 3,
-              "explanation": "Parasitologically, Toxocara canis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Toxocara canis is the common dog roundworm. Children acquire visceral larva migrans by playing with puppies or in soil contaminated with puppy feces and inadvertently ingesting infective embryonated eggs."
             },
             {
               "id": "MGL3-CH8-PARA-1521",
@@ -90792,7 +90792,7 @@
                 "Hydatid disease"
               ],
               "correctIndex": 1,
-              "explanation": "Parasitologically, Visceral larva migrans (VLM) is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Visceral larva migrans (VLM) is caused by Toxocara canis larvae wandering through liver, lungs, and brain. It characteristically presents in young children with persistent fever, tender hepatomegaly, wheezing, and marked peripheral eosinophilia."
             },
             {
               "id": "MGL3-CH8-PARA-1522",
@@ -90807,7 +90807,7 @@
                 "Encysted larva in muscle"
               ],
               "correctIndex": 2,
-              "explanation": "Parasitologically, Embryonated egg is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Humans acquire Toxocara infection by ingesting infective embryonated eggs containing second-stage larvae from soil, unwashed hands, or puppy fur."
             },
             {
               "id": "MGL3-CH8-PARA-1523",
@@ -90822,7 +90822,7 @@
                 "Toxocara canis and Capillaria philippinensis"
               ],
               "correctIndex": 3,
-              "explanation": "Parasitologically, Ascaris lumbricoides and Toxocara canis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Both Ascaris lumbricoides and Toxocara canis are contracted through the fecal-oral route by ingesting infective embryonated eggs from contaminated soil or food."
             },
             {
               "id": "MGL3-CH8-PARA-1524",
@@ -90837,7 +90837,7 @@
                 "Heterophyes heterophyes"
               ],
               "correctIndex": 2,
-              "explanation": "Parasitologically, Ancylostoma duodenale is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Ancylostoma duodenale larvae penetrate host skin, enter the venous circulation, reach the pulmonary capillaries, break into alveoli, ascend the tracheobronchial tree to the pharynx, and are swallowed to mature in the small intestine (heart-lung migration)."
             },
             {
               "id": "MGL3-CH8-PARA-1525",
@@ -90852,7 +90852,7 @@
                 "Ancylostoma duodenale"
               ],
               "correctIndex": 4,
-              "explanation": "Parasitologically, Ancylostoma duodenale is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Ancylostoma duodenale hookworm infection is acquired when barefoot agricultural workers walk on soil contaminated with infective third-stage filariform larvae, which actively penetrate the skin of the feet."
             },
             {
               "id": "MGL3-CH8-PARA-1526",
@@ -90867,7 +90867,7 @@
                 "Eradication of freshwater snails in canals"
               ],
               "correctIndex": 0,
-              "explanation": "Parasitologically, Application of larvicides to human stool before usage as fertilizer is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hookworm transmission is interrupted by preventing soil contamination through sanitary sewage disposal, avoiding untreated nightsoil as fertilizer, and wearing protective footwear."
             },
             {
               "id": "MGL3-CH8-PARA-1527",
@@ -90882,7 +90882,7 @@
                 "Ground itch"
               ],
               "correctIndex": 1,
-              "explanation": "Parasitologically, Cutaneous Larva Migrans is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Cutaneous larva migrans ('creeping eruption') is caused by skin penetration of non-human hookworm larvae (Ancylostoma braziliense or caninum). The larvae cannot penetrate the human basement membrane and wander aimlessly in the epidermis, creating intensely pruritic, serpiginous erythematous tracks."
             },
             {
               "id": "MGL3-CH8-PARA-1528",
@@ -90897,7 +90897,7 @@
                 "Finding eggs in human stool or tissues is not diagnostic."
               ],
               "correctIndex": 4,
-              "explanation": "Parasitologically, Finding eggs in human stool or tissues is not diagnostic. is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Because Echinococcus granulosus adults reside only in canines, eggs are never passed in human stool. Finding eggs in stool is completely impossible and not diagnostic of human hydatid disease."
             },
             {
               "id": "MGL3-CH8-PARA-1529",
@@ -90912,7 +90912,7 @@
                 "Echinostoma ilocanum"
               ],
               "correctIndex": 0,
-              "explanation": "Parasitologically, Heterophyes heterophyes is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Heterophyes heterophyes adult flukes can penetrate deep into intestinal crypts. Their tiny eggs enter lymphatics and mesenteric venules, embolizing ectopically to the brain and myocardium."
             },
             {
               "id": "MGL3-CH8-PARA-1530",
@@ -90927,7 +90927,7 @@
                 "Schistosoma haematobium"
               ],
               "correctIndex": 1,
-              "explanation": "Parasitologically, Ascaris lumbricoides is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Ascaris lumbricoides is a quintessential soil-transmitted helminth (geohelminth). Eggs passed in fresh feces are unsegmented and must incubate in warm, moist soil for 2–3 weeks to develop into infective embryonated eggs."
             },
             {
               "id": "MGL3-CH8-PARA-1531",
@@ -90942,7 +90942,7 @@
                 "Capillaria philippinensis and Strongyloides stercoralis"
               ],
               "correctIndex": 0,
-              "explanation": "Parasitologically, Fasciolopsis buski and Ancylostoma duodenale is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Fasciolopsis buski and Ancylostoma duodenale can induce severe protein-losing enteropathy: Fasciolopsis by extensive mucosal ulceration and catarrhal inflammation, and hookworms by continuous mucosal bleeding and plasma loss."
             },
             {
               "id": "MGL3-CH8-PARA-1532",
@@ -90957,7 +90957,7 @@
                 "Perianal excoriation"
               ],
               "correctIndex": 2,
-              "explanation": "Parasitologically, Obstructive jaundice is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Adult Ascaris worms exhibit exploratory behavior, particularly during fever or antihelminthic therapy, and can enter the ampulla of Vater, causing biliary colic, acute cholangitis, acalculous cholecystitis, or pancreatitis."
             },
             {
               "id": "MGL3-CH8-PARA-1533",
@@ -90972,7 +90972,7 @@
                 "Presence of an intermediate host"
               ],
               "correctIndex": 1,
-              "explanation": "Parasitologically, Autoinfection of rhabditiform larvae is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Strongyloides stercoralis can maintain lifelong infection (up to decades) via internal autoinfection, where non-infective rhabditiform larvae in the intestinal lumen rapidly molt into infective filariform larvae that penetrate the perianal skin or colonic wall."
             },
             {
               "id": "MGL3-CH8-PARA-1534",
@@ -90987,7 +90987,7 @@
                 "Wearing shoes outdoors"
               ],
               "correctIndex": 0,
-              "explanation": "Parasitologically, Preventing dogs from eating infected animal carcasses is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Echinococcosis transmission is sustained by the predator-prey livestock-canine cycle. Preventing dogs from consuming raw sheep or cattle offal (hydatid cyst-containing viscera) directly breaks the tapeworm life cycle."
             },
             {
               "id": "MGL3-CH8-PARA-1535",
@@ -91002,7 +91002,7 @@
                 "Ingestion of cysts in undercooked meat"
               ],
               "correctIndex": 1,
-              "explanation": "Parasitologically, Ingestion of embryonated eggs from soil-contaminated food or hands is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Ascaris lumbricoides transmission occurs exclusively via the fecal-oral route through ingestion of food, water, or hands contaminated with soil harboring embryonated eggs."
             },
             {
               "id": "MGL3-CH8-PARA-1536",
@@ -91017,7 +91017,7 @@
                 "Ancylostoma duodenale and Necator americanus"
               ],
               "correctIndex": 0,
-              "explanation": "Parasitologically, Fasciolopsis buski and Fasciola hepatica is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Both Fasciola hepatica and Fasciolopsis buski encyst as infective metacercariae on the surface of freshwater aquatic vegetation (watercress, water chestnuts). Ingestion of unwashed aquatic plants transmits both trematodiases."
             },
             {
               "id": "MGL3-CH8-PARA-1537",
@@ -91032,7 +91032,7 @@
                 "Miracidium"
               ],
               "correctIndex": 1,
-              "explanation": "Parasitologically, Filariform larva is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "The third-stage filariform larva is the infective stage of Ancylostoma species (including Ancylostoma caninum and Ancylostoma duodenale), possessing an elongated esophagus and active motility to penetrate host skin."
             },
             {
               "id": "MGL3-CH8-PARA-1538",
@@ -91047,7 +91047,7 @@
                 "Hymenolepis nana"
               ],
               "correctIndex": 0,
-              "explanation": "Parasitologically, Toxocara species is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Visceral larva migrans (VLM) is caused by zoonotic Toxocara species (predominantly Toxocara canis and Toxocara cati). Humans are dead-end paratenic hosts in whom the larvae cannot mature."
             },
             {
               "id": "MGL3-CH8-PARA-1539",
@@ -91062,7 +91062,7 @@
                 "Megacolon"
               ],
               "correctIndex": 0,
-              "explanation": "Parasitologically, Heart affection is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "In severe visceral larva migrans (Toxocariasis), migrating larvae and associated intense eosinophilic inflammation can invade myocardium, causing myocarditis, arrhythmias, and acute congestive heart failure."
             },
             {
               "id": "MGL3-CH8-PARA-1540",
@@ -91077,7 +91077,7 @@
                 "Raw crab"
               ],
               "correctIndex": 1,
-              "explanation": "Parasitologically, Raw freshwater fish is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Heterophyes heterophyes infection is acquired through consumption of raw, undercooked, or salted brackish/freshwater fish containing encysted metacercariae. Note: The historical slide combined this infection source with a mislabeled VLM header."
             },
             {
               "id": "MGL3-CH8-PARA-1541",
@@ -91092,7 +91092,7 @@
                 "Intestinal obstruction"
               ],
               "correctIndex": 1,
-              "explanation": "Parasitologically, Larval migration through the lungs is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Hookworm larvae (Ancylostoma) breaking out of pulmonary capillaries into alveolar spaces provoke local alveolar hemorrhage, eosinophilic infiltrates, cough, wheezing, and transient pneumonitis (Loeffler syndrome)."
             },
             {
               "id": "MGL3-CH8-PARA-1542",
@@ -91107,7 +91107,7 @@
                 "Hydatid disease"
               ],
               "correctIndex": 0,
-              "explanation": "Parasitologically, Ascariasis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Ascariasis is acquired by ingesting infective embryonated eggs directly from soil-contaminated fingers, food, or water, requiring no intermediate host."
             },
             {
               "id": "MGL3-CH8-PARA-1543",
@@ -91122,7 +91122,7 @@
                 "VDRL"
               ],
               "correctIndex": 2,
-              "explanation": "Parasitologically, Anti-Leishmania antibody test is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Visceral leishmaniasis (kala-azar) is diagnosed serologically by detecting anti-Leishmania antibodies (such as rK39 immunochromatographic rapid dipstick test or direct agglutination test), alongside bone marrow aspirates."
             },
             {
               "id": "MGL3-CH8-PARA-1544",
@@ -91137,7 +91137,7 @@
                 "CBC to detect eosinophilia"
               ],
               "correctIndex": 3,
-              "explanation": "Parasitologically, Antibodies detection test is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Acute invasive fascioliasis during larval migration through liver parenchyma occurs prior to adult egg production (prepatent period). Fecal microscopy is negative, making serological antibody detection (ELISA) the definitive diagnostic method."
             },
             {
               "id": "MGL3-CH8-PARA-1545",
@@ -91152,7 +91152,7 @@
                 "peri-anal swab"
               ],
               "correctIndex": 4,
-              "explanation": "Parasitologically, peri-anal swab is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Nocturnal perianal itching in a young child is classic for Enterobius vermicularis (pinworm). Gravid female worms migrate to the perianal folds at night to oviposit, making the cellulose acetate adhesive tape test (perianal swab) the diagnostic gold standard."
             },
             {
               "id": "MGL3-CH8-PARA-1546",
@@ -91167,7 +91167,7 @@
                 "Ascaris lumbricoides"
               ],
               "correctIndex": 4,
-              "explanation": "Parasitologically, Ascaris lumbricoides is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Ascaris lumbricoides has a propensity to migrate into narrow lumina, and can enter the appendix (acute appendicitis), ampulla of Vater (obstructive jaundice/pancreatitis), or mass in the ileocecal valve (bowel obstruction)."
             },
             {
               "id": "MGL3-CH8-PARA-1547",
@@ -91182,7 +91182,7 @@
                 "Taenia saginata & Ancylostoma duodenale"
               ],
               "correctIndex": 4,
-              "explanation": "Parasitologically, Taenia saginata & Ancylostoma duodenale is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Diphyllobothrium latum (fish tapeworm) competes avidly with the host for dietary vitamin B12 in the jejunum, causing severe vitamin B12 deficiency and megaloblastic anemia. Hookworms (Ancylostoma) cause iron-deficiency anemia."
             },
             {
               "id": "MGL3-CH8-PARA-1548",
@@ -91197,7 +91197,7 @@
                 "Clonorchis sinensis"
               ],
               "correctIndex": 3,
-              "explanation": "Parasitologically, Ancylostoma duodenale is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Ancylostoma duodenale larvae require pulmonary transit (alveolar breakout and ascending tracheal migration) to be swallowed into the gastrointestinal tract and complete maturation into adult hookworms."
             },
             {
               "id": "MGL3-CH8-PARA-1549",
@@ -91212,7 +91212,7 @@
                 "Amoebiasis / Periportal fibrosis"
               ],
               "correctIndex": 0,
-              "explanation": "Parasitologically, Hydatid disease / Embolism of the blood vessels is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Rupture of a hydatid cyst (Echinococcus granulosus) into blood vessels can release hydatid fluid, protoscolices, and laminated membrane fragments, precipitating severe anaphylaxis and life-threatening daughter-cyst embolization."
             },
             {
               "id": "MGL3-CH8-PARA-1550",
@@ -91227,7 +91227,7 @@
                 "Intestinal taeniasis"
               ],
               "correctIndex": 3,
-              "explanation": "Parasitologically, Heterophyiasis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Consuming grilled or poorly salted Tilapia fish containing encysted metacercariae leads to Heterophyes heterophyes infection, presenting with abdominal colic, tenderness, and mucous diarrhea."
             },
             {
               "id": "MGL3-CH8-PARA-1551",
@@ -91242,7 +91242,7 @@
                 "Mebendazole"
               ],
               "correctIndex": 1,
-              "explanation": "Parasitologically, Nitazoxanide is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Cryptosporidium parvum produces modified acid-fast positive oocysts (4–5 µm). Nitazoxanide is the FDA-approved antiparasitic agent for cryptosporidiosis in immunocompetent and select immunocompromised patients, along with immune restoration."
             },
             {
               "id": "MGL3-CH8-PARA-1552",
@@ -91257,7 +91257,7 @@
                 "Fascioliasis"
               ],
               "correctIndex": 2,
-              "explanation": "Parasitologically, Hydatid disease is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "PAIR (Puncture, Aspiration, Injection of scolicidal agent [hypertonic saline/ethanol], Re-aspiration) is a validated percutaneous interventional technique for treating uncomplicated hepatic hydatid cysts (Echinococcus granulosus)."
             },
             {
               "id": "MGL3-CH8-PARA-1553",
@@ -91271,7 +91271,7 @@
                 "Hydatid disease"
               ],
               "correctIndex": 2,
-              "explanation": "Parasitologically, Ascariasis and faciolopsis is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Heavy loads of Ascaris lumbricoides adults or massive burdens of Fasciolopsis buski flukes adhering to the duodenal and jejunal mucosa can both produce mechanical bowel obstruction."
             },
             {
               "id": "MGL3-CH8-PARA-1554",
@@ -91285,7 +91285,7 @@
                 "Human feces disinfection"
               ],
               "correctIndex": 1,
-              "explanation": "Parasitologically, Washing hands after contact with dog is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Echinococcus granulosus eggs adhere to dog fur and perianal skin. Rigorous handwashing with soap and water after contact with dogs or their environments is essential to prevent accidental ingestion of eggs."
             }
           ]
         }
@@ -91325,7 +91325,7 @@
                 "Therapeutic use of paracetamol"
               ],
               "correctIndex": 4,
-              "explanation": "Clinically, Therapeutic use of paracetamol is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Therapeutic use of paracetamol (acetaminophen) is a weak peripheral cyclooxygenase inhibitor and does not impair gastric mucosal prostaglandin synthesis or platelet function, making it gastroprotective compared to traditional NSAIDs. Major PUD risk factors include Helicobacter pylori infection, prolonged NSAID usage, heavy cigarette smoking, and severe physiologic stress."
             },
             {
               "id": "MGL3-CH9-CLIN-0002",
@@ -91340,7 +91340,7 @@
                 "Serum gastrin level"
               ],
               "correctIndex": 0,
-              "explanation": "Clinically, Upper gastrointestinal endoscopy is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Upper gastrointestinal endoscopy (esophagogastroduodenoscopy, EGD) is the definitive investigation of choice for peptic ulcer disease. It provides direct mucosal visualization, permits multiple biopsies to exclude gastric malignancy, allows rapid urease testing for H. pylori, and enables immediate therapeutic hemostasis for bleeding lesions."
             },
             {
               "id": "MGL3-CH9-CLIN-0003",
@@ -91355,7 +91355,7 @@
                 "Esophageal adenocarcinoma"
               ],
               "correctIndex": 3,
-              "explanation": "Clinically, Gastric adenocarcinoma is the correct finding as assessed in GIT past examination guidelines."
+              "explanation": "Long-standing GERD can cause reflux erosive esophagitis, peptic strictures, Barrett esophagus (specialized intestinal metaplasia), and esophageal adenocarcinoma. It does not cause gastric adenocarcinoma, which develops in the stomach primarily from chronic Helicobacter pylori gastritis, autoimmune gastritis, and dietary nitroso compounds."
             }
           ]
         }
