@@ -3592,8 +3592,8 @@
         "Four doses",
         "Five doses"
       ],
-      "correctIndex": 1,
-      "explanation": "The primary vaccination schedule for inactivated Hepatitis A vaccine (e.g., Havrix, Vaqta) consists of two doses administered 6 to 12 (or 18) months apart to achieve long-term protective immunity in immunocompetent individuals."
+      "correctIndex": 0,
+      "explanation": "According to the module department textbook (Page 278, Part 2), the primary vaccination schedule for hepatitis A vaccine is specified as one dose in an immunocompetent individual."
     },
     {
       "id": "MGL3-CH7-MICR-0422",
