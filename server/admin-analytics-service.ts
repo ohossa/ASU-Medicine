@@ -3,6 +3,7 @@ import { ReportError } from "./report-service.js";
 import { evalRedis } from "./report-store.js";
 import { listEditableModules, readQuestionBank, bankEntries } from "./question-bank.js";
 import { getOnlineUsers } from "./presence-service.js";
+import { getSupabase } from "./supabase-client.js";
 
 export const OWNER_EMAIL = "omarhmaged@gmail.com";
 
@@ -153,18 +154,6 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
     catalogModules = [];
   }
 
-  // 2. Fetch live profiles from Redis if available
-  let rawProfileKeys: string[] = [];
-  try {
-    const keysResult = await evalRedis("return redis.call('KEYS', 'asu_learning:v1:profile:*')", []);
-    if (Array.isArray(keysResult)) {
-      rawProfileKeys = keysResult.map(String);
-    }
-  } catch {
-    // Redis unavailable or running in isolated test
-    rawProfileKeys = [];
-  }
-
   const students: StudentAnalytics[] = [];
   const moduleAggregates: Record<string, { attempts: number; correct: number; uniqueStudents: Set<string> }> = {};
   const questionFailures: Record<string, { attempts: number; failures: number; moduleCode: string; chapterId: number }> = {};
@@ -174,8 +163,140 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
     moduleAggregates[mod.code] = { attempts: 0, correct: 0, uniqueStudents: new Set() };
   }
 
+  // 2. Try Supabase first (O(1) table query, no SCAN/KEYS)
+  const supabase = getSupabase();
+  let supabaseLoaded = false;
+  if (supabase) {
+    try {
+      const { data: supaProfiles, error: pErr } = await supabase
+        .from('learning_profiles')
+        .select('*');
+
+      if (!pErr && Array.isArray(supaProfiles) && supaProfiles.length > 0) {
+        const { data: allEntries } = await supabase
+          .from('learning_entries')
+          .select('*')
+          .order('created_at', { ascending: false })
+          .limit(2000);
+
+        const entriesByUser = new Map<string, any[]>();
+        if (Array.isArray(allEntries)) {
+          for (const entry of allEntries) {
+            const list = entriesByUser.get(entry.user_id) || [];
+            list.push(entry);
+            entriesByUser.set(entry.user_id, list);
+
+            if (entry.created_at && recentActivity.length < 50) {
+              const prof = supaProfiles.find(p => p.user_id === entry.user_id);
+              recentActivity.push({
+                studentName: prof?.alias || "Student",
+                studentId: entry.user_id,
+                moduleCode: entry.module_code,
+                questionId: String(entry.question_id),
+                correct: Boolean(entry.correct),
+                timestamp: entry.created_at,
+              });
+            }
+          }
+        }
+
+        for (const profile of supaProfiles) {
+          const userId = profile.user_id;
+          const userEntries = entriesByUser.get(userId) || [];
+          let studentCorrect = 0;
+          const studentModuleBreakdown: Record<string, { attempts: number; correct: number; accuracy: number }> = {};
+
+          for (const entry of userEntries) {
+            const mCode = entry.module_code;
+            if (!studentModuleBreakdown[mCode]) {
+              studentModuleBreakdown[mCode] = { attempts: 0, correct: 0, accuracy: 0 };
+            }
+            studentModuleBreakdown[mCode].attempts++;
+            if (entry.correct) {
+              studentModuleBreakdown[mCode].correct++;
+              studentCorrect++;
+            }
+
+            if (!moduleAggregates[mCode]) {
+              moduleAggregates[mCode] = { attempts: 0, correct: 0, uniqueStudents: new Set() };
+            }
+            moduleAggregates[mCode].attempts++;
+            if (entry.correct) moduleAggregates[mCode].correct++;
+            moduleAggregates[mCode].uniqueStudents.add(userId);
+
+            const qKey = `${mCode}:${entry.question_id}`;
+            if (!questionFailures[qKey]) {
+              questionFailures[qKey] = {
+                attempts: 0,
+                failures: 0,
+                moduleCode: mCode,
+                chapterId: entry.chapter_id || 1,
+              };
+            }
+            questionFailures[qKey].attempts++;
+            if (!entry.correct) questionFailures[qKey].failures++;
+          }
+
+          for (const mCode of Object.keys(studentModuleBreakdown)) {
+            const b = studentModuleBreakdown[mCode];
+            b.accuracy = b.attempts > 0 ? Math.round((b.correct / b.attempts) * 100) : 0;
+          }
+
+          let weakestModule: string | undefined;
+          let minAcc = 101;
+          for (const [mCode, b] of Object.entries(studentModuleBreakdown)) {
+            if (b.attempts >= 5 && b.accuracy < minAcc) {
+              minAcc = b.accuracy;
+              weakestModule = `${mCode} (${b.accuracy}%)`;
+            }
+          }
+
+          const totalAttempts = userEntries.length;
+          const studentAccuracy = totalAttempts > 0 ? Math.round((studentCorrect / totalAttempts) * 100) : 0;
+          const onlineMeta = presence.users.find((u) => u.userId === userId);
+
+          students.push({
+            id: userId,
+            name: profile.alias || `Student ${userId.slice(-4)}`,
+            email: `${userId.slice(0, 8)}@student.asu.edu.eg`,
+            year: profile.year || 1,
+            xp: profile.xp || 0,
+            level: profile.level || 1,
+            streak: profile.streak || 0,
+            bestStreak: profile.best_streak || 0,
+            questionsAttempted: totalAttempts,
+            questionsCorrect: studentCorrect,
+            accuracy: studentAccuracy,
+            studyTimeMinutes: Math.round(totalAttempts * 1.5),
+            lastActive: profile.last_day || new Date().toISOString().slice(0, 10),
+            isOnline: presence.onlineUserIds.includes(userId),
+            activeModule: onlineMeta?.moduleCode,
+            weakestModule,
+            moduleBreakdown: studentModuleBreakdown,
+          });
+        }
+        supabaseLoaded = true;
+      }
+    } catch {
+      // Supabase unavailable or table missing; continue to Redis
+    }
+  }
+
+  // 3. Fallback to Redis if Supabase didn't have profiles
+  let rawProfileKeys: string[] = [];
+  if (!supabaseLoaded) {
+    try {
+      const keysResult = await evalRedis("return redis.call('KEYS', 'asu_learning:v1:profile:*')", []);
+      if (Array.isArray(keysResult)) {
+        rawProfileKeys = keysResult.map(String);
+      }
+    } catch {
+      rawProfileKeys = [];
+    }
+  }
+
   // Aggregate student data from Redis
-  for (const pKey of rawProfileKeys) {
+  if (!supabaseLoaded) for (const pKey of rawProfileKeys) {
     const userId = pKey.replace("asu_learning:v1:profile:", "");
     try {
       const pRaw = await evalRedis("return redis.call('GET', KEYS[1])", [pKey]);

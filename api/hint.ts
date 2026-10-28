@@ -18,6 +18,7 @@
  */
 
 import { recordTutorUsage } from '../server/tutor-metrics.js';
+import { getSupabase } from '../server/supabase-client.js';
 import { verifyToken } from '@clerk/backend';
 import { Redis as UpstashRedis } from '@upstash/redis';
 import { Redis as ioredis } from 'ioredis';
@@ -568,22 +569,35 @@ if (redisUrl) {
   dbClient = { get: async () => null, set: async () => {} };
 }
 
-/* ─── rate limiter ─── */
+/* ─── rate limiter with in-memory fallback ─── */
 const RATE_LIMIT_WINDOW_MS = 60_000; // 1 minute
 const RATE_LIMIT_MAX = 10;
+const inMemoryHintBuckets = new Map<string, number[]>();
 
 async function checkRateLimit(userId: string): Promise<boolean> {
   const key = `hint_rate:${userId}`;
   const now = Date.now();
-  const bucket: number[] = (await dbClient.get(key)) ?? [];
+  let bucket: number[] = [];
+  try {
+    const fromDb = await dbClient.get(key);
+    if (Array.isArray(fromDb)) bucket = fromDb;
+    else bucket = inMemoryHintBuckets.get(userId) ?? [];
+  } catch {
+    bucket = inMemoryHintBuckets.get(userId) ?? [];
+  }
+
   const windowStart = now - RATE_LIMIT_WINDOW_MS;
   const recent = bucket.filter((t: number) => t > windowStart);
   if (recent.length >= RATE_LIMIT_MAX) return false;
   recent.push(now);
-  // Trim to max to prevent unbounded growth
   if (recent.length > RATE_LIMIT_MAX) recent.shift();
-  // Expire in 120 seconds to prevent lingering zombie keys in Redis
-  await dbClient.set(key, recent, { EX: 120 });
+
+  inMemoryHintBuckets.set(userId, recent);
+  try {
+    await dbClient.set(key, recent, { EX: 120 });
+  } catch {
+    // Ignore Redis rate limit write failure
+  }
   return true;
 }
 
@@ -642,6 +656,25 @@ export default async function handler(req: any, res: any) {
     /* 4. Generate hint */
     const adapter = getAdapter();
     const response = await adapter.generateHint(requestBody);
+
+    /* Telemetry log to Supabase */
+    try {
+      const supabase = getSupabase();
+      if (supabase) {
+        Promise.resolve(
+          supabase.from('ai_hint_logs').insert({
+            user_id: userId,
+            module_code: (requestBody as any).moduleCode || '',
+            question_id: (requestBody as any).questionId || '',
+            provider: process.env.HINT_AI_PROVIDER || 'nvidia',
+            model: process.env.NVIDIA_HINT_MODEL || 'default',
+            status: 'success',
+          })
+        ).catch(() => {});
+      }
+    } catch {
+      // Ignore telemetry failure
+    }
 
     /* 5. Return */
     return res.status(200).json(response);
