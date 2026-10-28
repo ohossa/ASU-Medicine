@@ -201,7 +201,7 @@ CREATE POLICY "Allow all on triage_assessments" ON public.triage_assessments FOR
 GRANT ALL ON public.triage_assessments TO anon, authenticated;
 
 
--- 10. SEED THE RECOVERED QUESTION REPORT (MGL3-CH5-PATH-0847)
+-- 10. SEED THE RECOVERED QUESTION REPORT (MGL3-CH5-PATH-0847 -> MOVED TO MICROBIOLOGY)
 INSERT INTO public.reports (
     id, request_hash, reporter_id, reporter, category, explanation,
     module_code, chapter_id, question_id, snapshot, status, notes, revision, notification, created_at, updated_at
@@ -213,8 +213,13 @@ INSERT INTO public.reports (
     'formatting',
     'Bro this is micro',
     'MGL-3',
-    5,
+    7,
     'MGL3-CH5-PATH-0847',
-    '{"moduleCode":"MGL-3","chapterId":5,"chapterTitle":"Pathology","subjectName":"Pathology","topicName":"Hepatitis","version":"97453f5ae1f99603d0260f586922ac8af1b9e57f8f0d158f2e218dcf947456c1","question":{"id":"MGL3-CH5-PATH-0847","type":"mcq","text":"4- Which of the following hepatic viruses can cause fatal fulminant hepatitis in pregnant\\nwomen:","explanation":"HEV can cause severe or fulminant hepatitis during pregnancy, particularly in endemic regions.","options":["HBV","HCV","HDV","HEV"],"correctIndex":3,"lecture":17}}'::jsonb,
-    'new', '', 1, '{"state": "sent"}'::jsonb, NOW(), NOW()
-) ON CONFLICT (id) DO UPDATE SET reporter = '{"name": "Medical Student", "username": "student", "email": "student@asu.codes", "emailVerified": true, "systemRecovered": true}'::jsonb;
+    '{"moduleCode":"MGL-3","chapterId":7,"chapterTitle":"Microbiology","subjectName":"Microbiology","topicName":"Viral hepatitis","version":"97453f5ae1f99603d0260f586922ac8af1b9e57f8f0d158f2e218dcf947456c1","question":{"id":"MGL3-CH5-PATH-0847","type":"mcq","text":"4- Which of the following hepatic viruses can cause fatal fulminant hepatitis in pregnant\\nwomen:","explanation":"HEV can cause severe or fulminant hepatitis during pregnancy, particularly in endemic regions.","options":["HBV","HCV","HDV","HEV"],"correctIndex":3,"lecture":2}}'::jsonb,
+    'fixed', 'Moved from Pathology (Ch 5) to Microbiology (Ch 7, Viral hepatitis) per student feedback.', 1, '{"state": "sent"}'::jsonb, NOW(), NOW()
+) ON CONFLICT (id) DO UPDATE SET 
+    chapter_id = 7,
+    snapshot = '{"moduleCode":"MGL-3","chapterId":7,"chapterTitle":"Microbiology","subjectName":"Microbiology","topicName":"Viral hepatitis","version":"97453f5ae1f99603d0260f586922ac8af1b9e57f8f0d158f2e218dcf947456c1","question":{"id":"MGL3-CH5-PATH-0847","type":"mcq","text":"4- Which of the following hepatic viruses can cause fatal fulminant hepatitis in pregnant\\nwomen:","explanation":"HEV can cause severe or fulminant hepatitis during pregnancy, particularly in endemic regions.","options":["HBV","HCV","HDV","HEV"],"correctIndex":3,"lecture":2}}'::jsonb,
+    status = 'fixed',
+    notes = 'Moved from Pathology (Ch 5) to Microbiology (Ch 7, Viral hepatitis) per student feedback.',
+    reporter = '{"name": "Medical Student", "username": "student", "email": "student@asu.codes", "emailVerified": true, "systemRecovered": true}'::jsonb;

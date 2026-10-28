@@ -45851,20 +45851,6 @@
               "lecture": 17
             },
             {
-              "id": "MGL3-CH5-PATH-0847",
-              "type": "mcq",
-              "text": "4- Which of the following hepatic viruses can cause fatal fulminant hepatitis in pregnant\nwomen:",
-              "explanation": "HEV can cause severe or fulminant hepatitis during pregnancy, particularly in endemic regions.",
-              "options": [
-                "HBV",
-                "HCV",
-                "HDV",
-                "HEV"
-              ],
-              "correctIndex": 3,
-              "lecture": 17
-            },
-            {
               "id": "MGL3-CH5-PATH-0848",
               "type": "mcq",
               "text": "(1133) Choose the correct answer:\nThe mode of transmission of hepatitis A infection is:",
@@ -60683,6 +60669,20 @@
               ],
               "correctIndex": 3,
               "lecture": 6
+            },
+            {
+              "id": "MGL3-CH5-PATH-0847",
+              "type": "mcq",
+              "text": "4- Which of the following hepatic viruses can cause fatal fulminant hepatitis in pregnant\nwomen:",
+              "explanation": "HEV can cause severe or fulminant hepatitis during pregnancy, particularly in endemic regions.",
+              "options": [
+                "HBV",
+                "HCV",
+                "HDV",
+                "HEV"
+              ],
+              "correctIndex": 3,
+              "lecture": 2
             }
           ]
         }
@@ -90356,8 +90356,8 @@
                 "Four doses",
                 "Five doses"
               ],
-              "correctIndex": 1,
-              "explanation": "The primary vaccination schedule for inactivated Hepatitis A vaccine (e.g., Havrix, Vaqta) consists of two doses administered 6 to 12 (or 18) months apart to achieve long-term protective immunity in immunocompetent individuals."
+              "correctIndex": 0,
+              "explanation": "According to the module department textbook (Page 278, Part 2), the primary vaccination schedule for hepatitis A vaccine is specified as one dose in an immunocompetent individual."
             },
             {
               "id": "MGL3-CH7-MICR-0422",

@@ -1262,9 +1262,16 @@ export function ReportDetail({
               moduleCode={snapshot.moduleCode}
               chapterId={snapshot.chapterId}
               question={snapshot.question}
+              revision={(snapshot.question as any).revision ?? 0}
               reportId={report.id}
               reportRevision={report.revision}
-              onSaved={() => {
+              onSaved={(updatedQuestion, newRev) => {
+                if (updatedQuestion) {
+                  snapshot.question = updatedQuestion;
+                  if (typeof newRev === "number") {
+                    (snapshot.question as any).revision = newRev;
+                  }
+                }
                 onUpdate();
                 setShowInlineEditor(false);
               }}
