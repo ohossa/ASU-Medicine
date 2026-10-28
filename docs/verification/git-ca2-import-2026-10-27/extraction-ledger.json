@@ -3593,7 +3593,7 @@
         "Five doses"
       ],
       "correctIndex": 1,
-      "explanation": "Microbiologically, Two doses is the correct finding as assessed in GIT past examination guidelines."
+      "explanation": "The primary vaccination schedule for inactivated Hepatitis A vaccine (e.g., Havrix, Vaqta) consists of two doses administered 6 to 12 (or 18) months apart to achieve long-term protective immunity in immunocompetent individuals."
     },
     {
       "id": "MGL3-CH7-MICR-0422",
@@ -3607,8 +3607,8 @@
         "HEV",
         "HCV and HBV"
       ],
-      "correctIndex": 0,
-      "explanation": "Microbiologically, HBV is the correct finding as assessed in GIT past examination guidelines."
+      "correctIndex": 3,
+      "explanation": "HEV (like HAV) is transmitted enterically via the fecal-oral route and causes acute, self-limiting hepatitis without causing chronic hepatitis or cirrhosis in immunocompetent individuals, unlike HBV, HCV, and HDV."
     },
     {
       "id": "MGL3-CH7-MICR-0423",

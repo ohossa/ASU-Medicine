@@ -20,6 +20,8 @@ export async function sendReportEmail(
     `Subject: ${snapshot.subjectName}`,
     `Question ID: ${snapshot.question.id}`,
     report.subQuestionId ? `Question part: ${report.subQuestionId}` : "",
+    `Reporter: ${report.reporter?.name || 'Student'}${report.reporter?.email ? ` <${report.reporter.email}>` : ''}${report.reporter?.emailVerified ? ' (Verified)' : ''}`,
+    report.reporter?.username ? `Username: @${report.reporter.username}` : "",
     `Student note: ${report.explanation || "No explanation added."}`,
     `Question: ${snapshot.question.text || snapshot.question.question || ""}`,
     `Review securely: ${origin}/admin/reports?report=${report.id}`,
