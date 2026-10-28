@@ -45851,20 +45851,6 @@
               "lecture": 17
             },
             {
-              "id": "MGL3-CH5-PATH-0847",
-              "type": "mcq",
-              "text": "4- Which of the following hepatic viruses can cause fatal fulminant hepatitis in pregnant\nwomen:",
-              "explanation": "HEV can cause severe or fulminant hepatitis during pregnancy, particularly in endemic regions.",
-              "options": [
-                "HBV",
-                "HCV",
-                "HDV",
-                "HEV"
-              ],
-              "correctIndex": 3,
-              "lecture": 17
-            },
-            {
               "id": "MGL3-CH5-PATH-0848",
               "type": "mcq",
               "text": "(1133) Choose the correct answer:\nThe mode of transmission of hepatitis A infection is:",
@@ -60683,6 +60669,20 @@
               ],
               "correctIndex": 3,
               "lecture": 6
+            },
+            {
+              "id": "MGL3-CH5-PATH-0847",
+              "type": "mcq",
+              "text": "4- Which of the following hepatic viruses can cause fatal fulminant hepatitis in pregnant\nwomen:",
+              "explanation": "HEV can cause severe or fulminant hepatitis during pregnancy, particularly in endemic regions.",
+              "options": [
+                "HBV",
+                "HCV",
+                "HDV",
+                "HEV"
+              ],
+              "correctIndex": 3,
+              "lecture": 2
             }
           ]
         }

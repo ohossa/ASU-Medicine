@@ -76,11 +76,28 @@ export const editStore: EditStore = {
     const supabase = getSupabase();
     if (supabase) {
       try {
-        const { data: existing } = await supabase
+        let { data: existing } = await supabase
           .from('question_edits')
-          .select('revision, question_data')
+          .select('id, revision, question_data')
           .eq('id', id)
           .maybeSingle();
+
+        // Fallback: If not found by chapter-specific id, search by module_code and question_id
+        // in case the question was moved between chapters
+        if (!existing) {
+          const { data: byQ } = await supabase
+            .from('question_edits')
+            .select('id, revision, question_data')
+            .eq('module_code', edit.moduleCode)
+            .eq('question_id', edit.questionId)
+            .maybeSingle();
+          if (byQ) {
+            existing = byQ;
+            if (byQ.id !== id) {
+              await supabase.from('question_edits').delete().eq('id', byQ.id);
+            }
+          }
+        }
 
         const currentRevision = existing ? Number(existing.revision) : 0;
         if (currentRevision !== Number(revision)) {
