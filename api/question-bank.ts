@@ -38,5 +38,10 @@ export default async function handler(req:any,res:any){
   let body;try{body=JSON.parse(raw);}catch{throw new ReportError(400,'Invalid JSON.');}
   const edit=req.method==='POST'?await service.create(token,body):req.method==='DELETE'?await service.remove(token,body):await service.save(token,body);
   return res.status(req.method==='POST'?201:200).json({edit});
- }catch(e){if(isReportError(e))return res.status(e.status).json({error:e.message});console.error('Question bank request failed');return res.status(503).json({error:'Question management is unavailable. Check server configuration and try again.'});}
+ }catch(e: any){
+  if(isReportError(e))return res.status(e.status).json({error:e.message});
+  console.error('Question bank request failed:', e);
+  const msg = e instanceof Error ? e.message : 'Question management is unavailable. Check server configuration and try again.';
+  return res.status(500).json({error: msg});
+ }
 }
