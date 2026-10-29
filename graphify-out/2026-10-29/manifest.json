@@ -3636,9 +3636,9 @@
     "semantic_hash": ""
   },
   "src/app/App.tsx": {
-    "mtime": 1793258122.7100933,
-    "seen": 1793258366.791622,
-    "ast_hash": "16b7f2566601f89fe59948279fb4f23e",
+    "mtime": 1793267312.7201536,
+    "seen": 1793267440.6679091,
+    "ast_hash": "30b0a2c4eae587f5f15ef2b07d6f0bc6",
     "semantic_hash": ""
   },
   "src/app/biochemistry-bank.integration.test.ts": {
@@ -4122,10 +4122,10 @@
     "semantic_hash": "0432308307cf4590c01c33796be3de0b"
   },
   "src/app/context/ThemeContext.tsx": {
-    "mtime": 1793084901.9313157,
-    "seen": 1793085010.502303,
-    "ast_hash": "f1034d1058ef421e51e8cc4770f05aba",
-    "semantic_hash": "f1034d1058ef421e51e8cc4770f05aba"
+    "mtime": 1793266353.70316,
+    "seen": 1793267440.672529,
+    "ast_hash": "d3d5b2be11841ff34bb458fdeedc9147",
+    "semantic_hash": ""
   },
   "src/app/context/ThemeContextValue.ts": {
     "mtime": 1781867886.8491607,
@@ -4152,8 +4152,8 @@
     "semantic_hash": "2ffa3b85e60c5e009954037ddbb13a79"
   },
   "src/app/generated/bankManifest.json": {
-    "mtime": 1793258303.876281,
-    "seen": 1793258366.793549,
+    "mtime": 1793266037.512576,
+    "seen": 1793267440.672626,
     "ast_hash": "a45df74e17b53cee3bf9b8611fbf8f87",
     "semantic_hash": ""
   },
@@ -5232,15 +5232,15 @@
     "semantic_hash": "33079c33159cea5c37a2ca52346a2a8f"
   },
   "src/pages/Dashboard.git-navigation.test.tsx": {
-    "mtime": 1793258253.0140717,
-    "seen": 1793258366.7971609,
-    "ast_hash": "0dd21fb4b8e52eedeaaa40b044d80df6",
+    "mtime": 1793267210.027257,
+    "seen": 1793267440.67606,
+    "ast_hash": "5e28bfeb98d19e7384edec30c28f2b87",
     "semantic_hash": ""
   },
   "src/pages/Dashboard.tsx": {
-    "mtime": 1793258075.0692246,
-    "seen": 1793258366.797162,
-    "ast_hash": "7544dad53976f267e161b7ea5568943c",
+    "mtime": 1793267048.7694774,
+    "seen": 1793267440.676061,
+    "ast_hash": "3f13f4010b9dc6dd381e222f26899c71",
     "semantic_hash": ""
   },
   "src/pages/LearningActivity.tsx": {
@@ -8412,9 +8412,9 @@
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1793256642.5846717,
-    "seen": 1793258366.810668,
-    "ast_hash": "56638ba8ae643f4ec5a2f7fe049ca34c",
+    "mtime": 1793258391.0936673,
+    "seen": 1793267440.692054,
+    "ast_hash": "8e9a91996dcf9051b0bf58e5b29b1793",
     "semantic_hash": ""
   },
   "AI_HINT_SETUP.md": {
@@ -13080,9 +13080,9 @@
     "semantic_hash": ""
   },
   "public/version.json": {
-    "mtime": 1793258303.9204853,
-    "seen": 1793258366.7898922,
-    "ast_hash": "dd742374e953b78bba7eb1528bec53f7",
+    "mtime": 1793266037.5591483,
+    "seen": 1793267440.666134,
+    "ast_hash": "c8277f4eddb9bc65bee1c28537dfdaf2",
     "semantic_hash": ""
   },
   "scripts/generate-version.mjs": {
@@ -13092,9 +13092,9 @@
     "semantic_hash": ""
   },
   "src/app/generated/version.json": {
-    "mtime": 1793258303.9208157,
-    "seen": 1793258366.79355,
-    "ast_hash": "dd742374e953b78bba7eb1528bec53f7",
+    "mtime": 1793266037.559345,
+    "seen": 1793267440.672628,
+    "ast_hash": "c8277f4eddb9bc65bee1c28537dfdaf2",
     "semantic_hash": ""
   },
   "src/app/hooks/useVersionCheck.ts": {
@@ -13110,27 +13110,33 @@
     "semantic_hash": ""
   },
   "src/app/data/ankiDecks.ts": {
-    "mtime": 1793257940.5930765,
-    "seen": 1793258366.793529,
-    "ast_hash": "4e3e9502879c770a876baff9d1193151",
+    "mtime": 1793267277.0772681,
+    "seen": 1793267440.6726038,
+    "ast_hash": "4f1377f2666fd9e7f6d08d7faff56af1",
     "semantic_hash": ""
   },
   "src/pages/AnkiDecksPage.tsx": {
-    "mtime": 1793258153.7836041,
-    "seen": 1793258366.79716,
-    "ast_hash": "287524fd4327ba9f3d546dd8f95a908b",
+    "mtime": 1793267365.8937726,
+    "seen": 1793267440.6760588,
+    "ast_hash": "84dedaf291a216aa434d85f45c75dbb7",
     "semantic_hash": ""
   },
   "src/test/anki/AnkiDecksPage.test.tsx": {
-    "mtime": 1793258214.7398357,
-    "seen": 1793258366.797525,
-    "ast_hash": "3bb0b3b07e8e262e2b70c6db5bd256c8",
+    "mtime": 1793267253.4057148,
+    "seen": 1793267440.676543,
+    "ast_hash": "6481967c1c78d053e41d16c6a445f14b",
     "semantic_hash": ""
   },
   "src/test/anki/anki-decks.test.ts": {
     "mtime": 1793257926.538766,
     "seen": 1793258366.7975261,
     "ast_hash": "3cd5579f8d6e27b16e63e4ae1338fbb0",
+    "semantic_hash": ""
+  },
+  "public/luro-anki-logo.png": {
+    "mtime": 1793266937.5609334,
+    "seen": 1793267440.7084658,
+    "ast_hash": "cd65ed07d8deb7efbdb75c56cbef4e9c",
     "semantic_hash": ""
   }
 }
