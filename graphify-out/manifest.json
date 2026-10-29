@@ -648,9 +648,9 @@
     "semantic_hash": ""
   },
   "api/question-bank.ts": {
-    "mtime": 1793168323.6953926,
-    "seen": 1793216141.847957,
-    "ast_hash": "ceacbc119d5182a71c985e36a1ed91a9",
+    "mtime": 1793291069.6276681,
+    "seen": 1793291779.754806,
+    "ast_hash": "9e3cab0eeefd25456dfc18a8130cef0d",
     "semantic_hash": ""
   },
   "api/question-reports.ts": {
@@ -3462,10 +3462,10 @@
     "semantic_hash": "d938e019dc3ad71324e09edfb532bdc3"
   },
   "server/learning-bank.ts": {
-    "mtime": 1793084901.913608,
-    "seen": 1793085010.501376,
-    "ast_hash": "c042717170521ce489bd98eb8dca079c",
-    "semantic_hash": "c042717170521ce489bd98eb8dca079c"
+    "mtime": 1793291087.6881855,
+    "seen": 1793291779.7636611,
+    "ast_hash": "f36f1cd7cb3fc1d283820940179c1f46",
+    "semantic_hash": ""
   },
   "server/learning-policy.ts": {
     "mtime": 1793084901.9136798,
@@ -3504,15 +3504,15 @@
     "semantic_hash": "72e3b48ad286ab98338bda903b49f2f0"
   },
   "server/question-edit-service.ts": {
-    "mtime": 1791470989.6034122,
-    "seen": 1792747204.534561,
-    "ast_hash": "5cd4903a9c5ce9ae7282951cd9906264",
-    "semantic_hash": "5cd4903a9c5ce9ae7282951cd9906264"
+    "mtime": 1793291007.0679657,
+    "seen": 1793291779.763778,
+    "ast_hash": "7a57a083b24206fbf2be84251255d8ef",
+    "semantic_hash": ""
   },
   "server/question-edit-store.ts": {
-    "mtime": 1793174818.4114306,
-    "seen": 1793216141.856148,
-    "ast_hash": "4c38f4e4f3a739bb350339ac0dab9054",
+    "mtime": 1793291031.1750078,
+    "seen": 1793291779.7637792,
+    "ast_hash": "7abeadbe7aa646a699b146c9838e4798",
     "semantic_hash": ""
   },
   "server/report-auth.ts": {
@@ -3540,9 +3540,9 @@
     "semantic_hash": "3ecdeb125c609d7079477b6cb5ff7f96"
   },
   "server/report-question.ts": {
-    "mtime": 1793124349.995238,
-    "seen": 1793216141.8561852,
-    "ast_hash": "cb064d000ea987e09f1b26aab016f84f",
+    "mtime": 1793291194.6121426,
+    "seen": 1793291779.7638452,
+    "ast_hash": "e3600ca5fd8cef026f8ca04a8f032343",
     "semantic_hash": ""
   },
   "server/report-replies.ts": {
@@ -4500,16 +4500,16 @@
     "semantic_hash": "a73d64a9406287c0cd1dd47e75d3d332"
   },
   "src/app/lib/publishedEdits.test.ts": {
-    "mtime": 1791450218.580724,
-    "seen": 1792747204.534661,
-    "ast_hash": "e912f7a114b45df6ba0e34e9461472ef",
-    "semantic_hash": "e912f7a114b45df6ba0e34e9461472ef"
+    "mtime": 1793291132.2495131,
+    "seen": 1793291779.767266,
+    "ast_hash": "e0acd6ab2b14dbbf1389a413d5d26d55",
+    "semantic_hash": ""
   },
   "src/app/lib/publishedEdits.ts": {
-    "mtime": 1791450326.361177,
-    "seen": 1792747204.5346618,
-    "ast_hash": "57d95a7ee7850760a4b83d663aa9b0d1",
-    "semantic_hash": "57d95a7ee7850760a4b83d663aa9b0d1"
+    "mtime": 1793291713.7744005,
+    "seen": 1793291779.767267,
+    "ast_hash": "5b5a189bcf63c2cddc140cb5679a41f6",
+    "semantic_hash": ""
   },
   "src/app/lib/pulseEngine.ts": {
     "mtime": 1781283597.664158,
@@ -5220,16 +5220,16 @@
     "semantic_hash": ""
   },
   "src/pages/AdminPortal.tsx": {
-    "mtime": 1793254675.6385891,
-    "seen": 1793256628.4033449,
-    "ast_hash": "58f55b31fe73f5f97ab3367da7025190",
+    "mtime": 1793291585.34382,
+    "seen": 1793291779.769495,
+    "ast_hash": "d8c7a5e076ac8b5e9e3f716e097d7ebe",
     "semantic_hash": ""
   },
   "src/pages/AdminQuestionEditor.tsx": {
-    "mtime": 1791450620.8013442,
-    "seen": 1792747204.53473,
-    "ast_hash": "33079c33159cea5c37a2ca52346a2a8f",
-    "semantic_hash": "33079c33159cea5c37a2ca52346a2a8f"
+    "mtime": 1793291515.8351681,
+    "seen": 1793291779.769495,
+    "ast_hash": "fe16061147042cd6144144a36452eb99",
+    "semantic_hash": ""
   },
   "src/pages/Dashboard.git-navigation.test.tsx": {
     "mtime": 1793267210.027257,
@@ -5358,10 +5358,10 @@
     "semantic_hash": "27be4cfa2049c73ddc342b0bfcfc9d88"
   },
   "src/test/reports/edits.test.ts": {
-    "mtime": 1791470138.407747,
-    "seen": 1792747204.534742,
-    "ast_hash": "e2d0acbbb4753af5a7f6bb6fa3d3c3d6",
-    "semantic_hash": "e2d0acbbb4753af5a7f6bb6fa3d3c3d6"
+    "mtime": 1793291171.1037948,
+    "seen": 1793291779.770226,
+    "ast_hash": "69c6e1691928063a93d080524b92f440",
+    "semantic_hash": ""
   },
   "src/test/reports/groq-tutor.test.ts": {
     "mtime": 1791483165.0446026,
@@ -12414,9 +12414,9 @@
     "semantic_hash": ""
   },
   "docs/ARCHITECTURE_ENCYCLOPEDIA.md": {
-    "mtime": 1793258352.649068,
-    "seen": 1793258366.816302,
-    "ast_hash": "c7dcfb38afd06551a34fc639ee38972e",
+    "mtime": 1793291660.5634265,
+    "seen": 1793291779.7869492,
+    "ast_hash": "1cc0985631a84dd5afad9e7e5d795f02",
     "semantic_hash": ""
   },
   "docs/MASTER_FORENSIC_AUDIT_REPORT.md": {
@@ -12522,9 +12522,9 @@
     "semantic_hash": ""
   },
   "src/app/components/InlineQuestionEditor.tsx": {
-    "mtime": 1793254675.6383634,
-    "seen": 1793256628.3988092,
-    "ast_hash": "9ae48a248aa38543be6f75d553afe996",
+    "mtime": 1793291411.8436406,
+    "seen": 1793291779.7647371,
+    "ast_hash": "bd59645e06d2df1da5f8fb38e19aad84",
     "semantic_hash": ""
   },
   "src/app/components/KnowledgeGraphDrawer.tsx": {
@@ -12588,9 +12588,9 @@
     "semantic_hash": ""
   },
   "src/test/reports/inline-editor.test.tsx": {
-    "mtime": 1793254675.6392863,
-    "seen": 1793256628.404084,
-    "ast_hash": "ec37554ffab4f99193d4da552da1fab9",
+    "mtime": 1793291555.32246,
+    "seen": 1793291779.770303,
+    "ast_hash": "c9b8fb18ec9e789403d69a0f482a3e70",
     "semantic_hash": ""
   },
   ".agents/skills/security-audit/report-schema.json": {

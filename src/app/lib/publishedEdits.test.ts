@@ -16,5 +16,41 @@ describe('published corrections',()=>{
   await applyPublishedEdits(bank,[]);
   expect(bank.MGL.v2Raw.chapters[0].subjects[0].questions).toEqual([q]);
  });
-
+ it('relocates an existing question across subjects and chapters with stable ID intact',async()=>{
+  const q={id:'MGL3-CH5-PATH-0976',lecture:19,text:'Echinococcus question',type:'mcq',options:['A','B'],correctIndex:1};
+  const bank:any={
+   'MGL-3':{
+    v2Raw:{
+     chapters:[
+      {id:5,title:'Pathology',subjects:[{id:'pathology',name:'Pathology',questions:[q]}]},
+      {id:8,title:'Parasitology',subjects:[{id:'parasitology',name:'Parasitology',questions:[]}]}
+     ]
+    }
+   }
+  };
+  const baseVersion=await sha256(q);
+  const relocateEdit={
+   moduleCode:'MGL-3',
+   chapterId:5,
+   questionId:'MGL3-CH5-PATH-0976',
+   targetChapterId:8,
+   targetSubjectId:'parasitology',
+   baseVersion,
+   question:{...q,lecture:2,text:'Relocated Echinococcus question'}
+  };
+  expect(await applyPublishedEdits(bank,[relocateEdit])).toBe(1);
+  // Removed from source chapter 5 pathology
+  expect(bank['MGL-3'].v2Raw.chapters[0].subjects[0].questions).toHaveLength(0);
+  // Added to destination chapter 8 parasitology
+  const destQuestions=bank['MGL-3'].v2Raw.chapters[1].subjects[0].questions;
+  expect(destQuestions).toHaveLength(1);
+  expect(destQuestions[0].id).toBe('MGL3-CH5-PATH-0976');
+  expect(destQuestions[0].lecture).toBe(2);
+  expect(destQuestions[0].text).toBe('Relocated Echinococcus question');
+  // Revert back on empty edits overlay
+  await applyPublishedEdits(bank,[]);
+  expect(bank['MGL-3'].v2Raw.chapters[0].subjects[0].questions).toHaveLength(1);
+  expect(bank['MGL-3'].v2Raw.chapters[0].subjects[0].questions[0].id).toBe('MGL3-CH5-PATH-0976');
+  expect(bank['MGL-3'].v2Raw.chapters[1].subjects[0].questions).toHaveLength(0);
+ });
 });

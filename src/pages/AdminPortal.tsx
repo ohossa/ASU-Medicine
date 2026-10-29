@@ -1424,11 +1424,12 @@ export function ReportDetail({
             <InlineQuestionEditor
               moduleCode={snapshot.moduleCode}
               chapterId={snapshot.chapterId}
+              subjectId={(snapshot as any).subjectId}
               question={snapshot.question}
               revision={(snapshot.question as any).revision ?? 0}
               reportId={report.id}
               reportRevision={report.revision}
-              onSaved={(updatedQuestion, newRev) => {
+              onSaved={(updatedQuestion, newRev, relocation) => {
                 if (updatedQuestion) {
                   snapshot.question = updatedQuestion;
                   if (typeof newRev === "number") {
@@ -1436,6 +1437,23 @@ export function ReportDetail({
                   }
                   (snapshot.question as any).deleted = false;
                   setIsDeleted(false);
+                  if (relocation) {
+                    if (relocation.chapterId !== undefined) {
+                      snapshot.chapterId = relocation.chapterId;
+                    }
+                    if (relocation.chapterTitle) {
+                      snapshot.chapterTitle = relocation.chapterTitle;
+                    }
+                    if (relocation.subjectId) {
+                      (snapshot as any).subjectId = relocation.subjectId;
+                    }
+                    if (relocation.subjectName) {
+                      snapshot.subjectName = relocation.subjectName;
+                    }
+                    if (relocation.topicName) {
+                      snapshot.topicName = relocation.topicName;
+                    }
+                  }
                 }
                 onUpdate();
                 setShowInlineEditor(false);

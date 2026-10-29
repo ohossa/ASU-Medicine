@@ -28,6 +28,8 @@ function rowToEdit(row: any): QuestionEdit {
     updatedAt: row.updated_at || new Date().toISOString(),
     subjectId: data.subjectId,
     deleted: Boolean(data.deleted),
+    targetChapterId: data.targetChapterId !== undefined ? Number(data.targetChapterId) : undefined,
+    targetSubjectId: data.targetSubjectId !== undefined ? String(data.targetSubjectId) : undefined,
   };
 }
 
@@ -126,6 +128,8 @@ export const editStore: EditStore = {
               baseVersion: edit.baseVersion,
               question: edit.question,
               subjectId: edit.subjectId,
+              targetChapterId: edit.targetChapterId,
+              targetSubjectId: edit.targetSubjectId,
               deleted: Boolean(edit.deleted),
               history,
             },

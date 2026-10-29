@@ -24,7 +24,9 @@ export default async function handler(req:any,res:any){
     const entries=await service.list(token,moduleCode);
     const entry=entries.find((e:any)=>String(e.question.id)===qId);
     if(!entry)return res.status(404).json({error:'Question not found.'});
-    return res.status(200).json({entry});
+    const bank=await readQuestionBank(moduleCode);
+    const chapters=bank.chapters?.map((c:any)=>({id:c.id,title:c.title,subjects:c.subjects?.map((s:any)=>({id:s.id,name:s.name,lectureCount:s.lectureCount,lectureNames:s.lectureNames}))}))??[];
+    return res.status(200).json({entry,chapters});
    }
    const entries=await service.list(token,moduleCode),search=String(query.search??'').toLowerCase().slice(0,200);
    const offset=Number(query.offset??0);if(!Number.isSafeInteger(offset)||offset<0||offset>100000)throw new ReportError(400,'Invalid page.');

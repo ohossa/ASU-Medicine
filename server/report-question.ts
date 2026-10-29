@@ -107,6 +107,8 @@ export async function resolveReportQuestion(
           question = added.question;
         }
         if (!question) continue;
+        let destChapter = chapter;
+        let destSubject = subject;
         if (getEdits && edits.length > 0) {
           const sourceVersion = createHash("sha256")
             .update(JSON.stringify(question))
@@ -118,7 +120,17 @@ export async function resolveReportQuestion(
               e.baseVersion === sourceVersion,
           );
           if (edit?.deleted) continue;
-          if (edit) question = edit.question;
+          if (edit) {
+            question = edit.question;
+            if (edit.targetChapterId !== undefined) {
+              const foundCh = allChapters.find((c) => c.id === edit.targetChapterId);
+              if (foundCh) destChapter = foundCh;
+            }
+            if (edit.targetSubjectId !== undefined) {
+              const foundSub = destChapter.subjects?.find((s) => s.id === edit.targetSubjectId);
+              if (foundSub) destSubject = foundSub;
+            }
+          }
         }
 
         if (
@@ -130,12 +142,12 @@ export async function resolveReportQuestion(
           throw new ReportError(404, "That question part could not be found.");
         return {
           moduleCode: cleanModule,
-          chapterId: chapter.id,
-          chapterTitle: chapter.title,
-          subjectName: subject.name,
+          chapterId: destChapter.id,
+          chapterTitle: destChapter.title,
+          subjectName: destSubject.name,
           topicName:
             typeof question.lecture === "number"
-              ? subject.lectureNames?.[question.lecture - 1]
+              ? destSubject.lectureNames?.[question.lecture - 1]
               : undefined,
           version: createHash("sha256")
             .update(JSON.stringify(question))

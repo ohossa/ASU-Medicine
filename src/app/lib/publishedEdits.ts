@@ -14,7 +14,20 @@ export async function applyPublishedEdits(databases:Record<string,any>,edits:any
  for(const subject of chapter.subjects??[]){const index=subject.questions.findIndex((q:any)=>String(q.id)===edit.questionId);if(index<0)continue;
  const key=`${edit.moduleCode}:${edit.chapterId}:${edit.questionId}`,source=subject.questions[index];
  const version=await sha256(source);sourceVersions.set(key,version);
- if(version!==edit.baseVersion||String(edit.question?.id)!==edit.questionId||edit.question.lecture!==source.lecture)continue;
- if(edit.deleted)subject.questions.splice(index,1);else subject.questions[index]={...edit.question,contentVersion:await sha256(edit.question)};applied++;}
+ if(version!==edit.baseVersion||String(edit.question?.id)!==edit.questionId)continue;
+ const destChapterId=edit.targetChapterId??edit.chapterId;
+ const destSubjectId=edit.targetSubjectId??edit.subjectId??subject.id;
+ const isRelocated=destChapterId!==edit.chapterId||destSubjectId!==subject.id;
+ if(!isRelocated&&edit.targetChapterId===undefined&&edit.targetSubjectId===undefined&&edit.question?.lecture!==source.lecture)continue;
+ if(isRelocated){
+  subject.questions.splice(index,1);
+  if(!edit.deleted){
+   const destChapter=bank.chapters?.find((c:any)=>c.id===destChapterId);
+   const destSubject=destChapter?.subjects?.find((s:any)=>s.id===destSubjectId);
+   if(destSubject){destSubject.questions.push({...edit.question,contentVersion:await sha256(edit.question)});applied++;}
+  }else applied++;
+ }else{
+  if(edit.deleted)subject.questions.splice(index,1);else subject.questions[index]={...edit.question,contentVersion:await sha256(edit.question)};applied++;
+ }}
  }return applied;
 }
