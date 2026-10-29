@@ -244,8 +244,8 @@ export default function AdminAnalyticsView() {
         </div>
       </div>
 
-      {/* Error state */}
-      {error && (
+      {/* Error state banner */}
+      {error && data && (
         <div className="rounded-2xl border border-rose-200 bg-rose-50/80 p-4 text-xs font-medium text-rose-800 dark:border-rose-900/40 dark:bg-rose-950/40 dark:text-rose-200 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <AlertTriangle size={16} />
@@ -254,10 +254,51 @@ export default function AdminAnalyticsView() {
           <button
             type="button"
             onClick={fetchAnalytics}
-            className="rounded-lg bg-rose-100 px-2.5 py-1 text-xs font-semibold text-rose-900 dark:bg-rose-900/60 dark:text-rose-100"
+            className="rounded-lg bg-rose-100 px-2.5 py-1 text-xs font-semibold text-rose-900 dark:bg-rose-900/60 dark:text-rose-100 min-h-[44px]"
           >
             Retry
           </button>
+        </div>
+      )}
+
+      {/* Loading Skeleton */}
+      {loading && !data && (
+        <div className="space-y-6 animate-pulse">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+            {[...Array(6)].map((_, i) => (
+              <div
+                key={i}
+                className="h-24 rounded-2xl border border-stone-200/80 bg-stone-100/60 dark:border-stone-800 dark:bg-stone-800/40"
+              />
+            ))}
+          </div>
+          <div className="h-64 rounded-2xl border border-stone-200/80 bg-stone-100/60 dark:border-stone-800 dark:bg-stone-800/40" />
+        </div>
+      )}
+
+      {/* Authentication / Empty State when data is not loaded */}
+      {!loading && !data && (
+        <div className="rounded-3xl border border-stone-200/80 bg-white/80 p-8 text-center shadow-sm backdrop-blur-xl dark:border-stone-800 dark:bg-stone-900/80 space-y-3">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-700 dark:bg-amber-950/60 dark:text-amber-400">
+            <Shield size={24} />
+          </div>
+          <h2 className="text-lg font-bold text-stone-900 dark:text-stone-100">
+            Portal Deep Analytics
+          </h2>
+          <p className="max-w-md mx-auto text-xs text-stone-500 dark:text-stone-400">
+            {error ||
+              "Sign in with the verified administrator account (omarhmaged@gmail.com) to view live student cohorts, mastery telemetry, and failure distributions."}
+          </p>
+          <div className="pt-2">
+            <button
+              type="button"
+              onClick={fetchAnalytics}
+              className="inline-flex items-center gap-2 rounded-xl bg-teal-600 px-4 py-2.5 text-xs font-semibold text-white shadow-sm hover:bg-teal-700 transition-colors min-h-[44px]"
+            >
+              <RefreshCw size={13} />
+              Retry Connection
+            </button>
+          </div>
         </div>
       )}
 
