@@ -140,7 +140,7 @@ export function getModuleDeckGroups(
         moduleCode: mod.code,
         title: `${mod.name} Flashcards`,
         description:
-          "High-yield spaced repetition cards in preparation with textbook page citations.",
+          "High-yield spaced repetition cards in preparation.",
         isAvailable: false,
       },
     ];

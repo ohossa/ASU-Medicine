@@ -102,8 +102,8 @@ export function AnkiDecksPage({
                 </span>
               </div>
               <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400 max-w-2xl">
-                Spaced-repetition flashcards packed with lecture diagrams,
-                clinical photos, and exact textbook page citations.
+                Spaced-repetition flashcards packed with lecture diagrams and
+                clinical photos.
               </p>
             </div>
           </div>
@@ -184,10 +184,9 @@ export function AnkiDecksPage({
                       <p className="text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-300">
                         We kept the cards punchy and practical, packed with
                         lecture slides, textbook diagrams, and clinical figures.
-                        Every card includes the exact textbook page number at the
-                        bottom, so if a question looks tricky, you can verify it
-                        in your book in five seconds without digging through
-                        giant lecture PDFs.
+                        Decks like GIT also include textbook page references at
+                        the bottom, so if a question looks tricky, you can verify
+                        it in your book right away.
                       </p>
                     </div>
 
