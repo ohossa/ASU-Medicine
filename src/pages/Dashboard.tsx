@@ -38,7 +38,7 @@ const YEARS: Year[] = [
 const TOOLS = [
   { title: "Full History",     icon: Activity,      accent: "#22c55e", badge: null,        sub: "View all your past quiz sessions and results", route: "/history" },
   { title: "Marks Calculator", icon: Calculator,    accent: "#f87171", badge: "Predictor", sub: "Calculate requirements and target scores", route: "/marks-calculator" },
-  { title: "Anki Decks",       icon: Layers,        accent: "#8b5cf6", badge: "Flashcards", sub: "Spaced-repetition decks with textbook page citations", route: "/anki" },
+  { title: "Anki Flashcards",  icon: Layers,        accent: "#8b5cf6", badge: "Flashcards", sub: "Spaced-repetition cards with textbook page citations", route: "/anki" },
   { title: "Question Search",  icon: Search,        accent: "#2dd4bf", badge: "Search",    sub: "Search text in all database questions and answers", route: "/question-search" },
   { title: "My Progress",    icon: GraduationCap, accent: "#22c55e", badge: "Syllabus",  sub: "Progress, performance, activity and rewards", route: "/learning" },
 ];

@@ -61,6 +61,32 @@ export function resolveDirectDownloadUrl(rawUrl?: string): string {
 }
 
 /**
+ * Official LURO Anki WhatsApp Community Group link.
+ * Can be updated with your direct WhatsApp group invite link (e.g. https://chat.whatsapp.com/...).
+ */
+export const ANKI_WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/invite";
+
+/**
+ * Returns the effective Anki community URL.
+ * If a custom group link has been configured, opens that link;
+ * otherwise directs to Omar's WhatsApp with a prefilled community request.
+ */
+export function getAnkiCommunityUrl(): string {
+  if (
+    ANKI_WHATSAPP_GROUP_URL &&
+    ANKI_WHATSAPP_GROUP_URL !== "https://chat.whatsapp.com/invite"
+  ) {
+    return ANKI_WHATSAPP_GROUP_URL;
+  }
+  return (
+    "https://wa.me/201040479155?text=" +
+    encodeURIComponent(
+      "Hi Omar, I'd like to join the LURO / ASU Anki WhatsApp community!",
+    )
+  );
+}
+
+/**
  * Canonical registry of Anki decks for Ain Shams University Medical Portal.
  * You can paste either a GitHub Release URL or a Google Drive share link into downloadUrl.
  */
@@ -76,7 +102,6 @@ export const ANKI_DECKS_REGISTRY: Record<string, AnkiDeck[]> = {
         "Upper GIT, Esophagus, Stomach, Duodenum & Peritoneal Cavity. Every card includes textbook page references.",
       cardCount: 620,
       fileSize: "28 MB",
-      // Set to your GitHub Release URL or Google Drive share link:
       downloadUrl:
         "https://github.com/omarhossa/ASU-Medical-Portal/releases/download/v1.0.0-anki/GIT_Part_1.apkg",
       provider: "github",
@@ -91,7 +116,6 @@ export const ANKI_DECKS_REGISTRY: Record<string, AnkiDeck[]> = {
         "Small & Large Intestine, Hepatobiliary System, Pancreas & Clinical Pathology. Loaded with high-yield lecture figures.",
       cardCount: 740,
       fileSize: "34 MB",
-      // Set to your GitHub Release URL or Google Drive share link:
       downloadUrl:
         "https://github.com/omarhossa/ASU-Medical-Portal/releases/download/v1.0.0-anki/GIT_Part_2.apkg",
       provider: "github",
@@ -114,7 +138,7 @@ export function getModuleDeckGroups(
       {
         id: `${mod.code.toLowerCase()}-deck-pending`,
         moduleCode: mod.code,
-        title: `${mod.name} Anki Deck`,
+        title: `${mod.name} Flashcards`,
         description:
           "High-yield spaced repetition cards in preparation with textbook page citations.",
         isAvailable: false,

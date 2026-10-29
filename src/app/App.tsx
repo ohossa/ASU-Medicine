@@ -80,7 +80,7 @@ import { useTheme } from './hooks/useTheme';
 import { useLanguage } from './hooks/useLanguage';
 import { saveQuizResult } from './utils/storage';
 import type { QuizResult } from './utils/storage';
-import { SignedIn, SignedOut, UserButton, useUser, useAuth } from '@clerk/clerk-react';
+import { UserButton, useUser, useAuth } from '@clerk/clerk-react';
 const LoginScreen = lazy(() => import('./components/LoginScreen').then(m => ({ default: m.LoginScreen })));
 import LoadingScreen from './components/LoadingScreen';
 import { useQuizSession, clearLocalDrafts } from './hooks/useQuizSession';
@@ -1230,7 +1230,7 @@ function MainApp() {
 
             <Route path="/anki" element={
               <FeatureErrorBoundary name="AnkiDecksPage">
-                <Suspense fallback={<LoadingScreen compact label="Opening Anki Decks…"/>}>
+                <Suspense fallback={<LoadingScreen compact label="Opening Anki Flashcards…"/>}>
                   <AnkiDecksPage
                     onBack={() => navigate('/')}
                     userButton={customUserButton}

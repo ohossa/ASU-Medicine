@@ -30,13 +30,16 @@ describe("AnkiDecksPage Component", () => {
     cleanup();
   });
 
-  it("renders page header, title, and returns to dashboard when back button is clicked", () => {
+  it("renders page header, title, LURO logo, and returns to dashboard when back button is clicked", () => {
     const handleBack = vi.fn();
     render(<AnkiDecksPage onBack={handleBack} initialYear={3} />);
 
     expect(
-      screen.getByRole("heading", { name: "Anki Flashcard Decks", level: 1 }),
+      screen.getByRole("heading", { name: "Anki Flashcards", level: 1 }),
     ).toBeInTheDocument();
+
+    const logo = screen.getByAltText("LURO Anki");
+    expect(logo).toHaveAttribute("src", "/luro-anki-logo.png");
 
     const returnBtn = screen.getByRole("button", {
       name: /Return to Dashboard/i,
@@ -45,12 +48,22 @@ describe("AnkiDecksPage Component", () => {
     expect(handleBack).toHaveBeenCalledOnce();
   });
 
-  it("renders the collapsible guide card with Notion tutorial and MemU App Store links", () => {
+  it("keeps the setup guide closed by default and reveals Notion, MemU, and WhatsApp links upon expansion", () => {
     render(<AnkiDecksPage onBack={() => {}} initialYear={3} />);
 
     expect(
       screen.getByText("New to Anki? Quick Setup & Mobile Guide"),
     ).toBeInTheDocument();
+
+    // Verify closed on default
+    const guideToggle = screen.getByRole("button", {
+      name: /New to Anki\? Quick Setup & Mobile Guide/i,
+    });
+    expect(guideToggle).toHaveAttribute("aria-expanded", "false");
+
+    // Click to open guide
+    fireEvent.click(guideToggle);
+    expect(guideToggle).toHaveAttribute("aria-expanded", "true");
 
     const notionLink = screen.getByRole("link", {
       name: /Open Ain Shams Anki Tutorial/i,
@@ -67,13 +80,6 @@ describe("AnkiDecksPage Component", () => {
       "href",
       "https://apps.apple.com/us/app/memu-enhanced-flashcards/id6742653596",
     );
-
-    // Toggle guide accordion closed
-    const guideToggle = screen.getByRole("button", {
-      name: /New to Anki\? Quick Setup & Mobile Guide/i,
-    });
-    fireEvent.click(guideToggle);
-    expect(guideToggle).toHaveAttribute("aria-expanded", "false");
   });
 
   it("displays Year 3 Semester 1 modules including MGL-3 with ready Part 1 and Part 2 download buttons", () => {
@@ -86,7 +92,7 @@ describe("AnkiDecksPage Component", () => {
 
     // Check download buttons
     const downloadBtns = screen.getAllByRole("link", {
-      name: /Download.*flashcard deck/i,
+      name: /Download.*flashcard/i,
     });
     expect(downloadBtns.length).toBeGreaterThanOrEqual(2);
     expect(downloadBtns[0]).toHaveAttribute("download");

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import {
-  Layers,
   Download,
   ExternalLink,
   ChevronDown,
@@ -11,12 +10,14 @@ import {
   GraduationCap,
   CheckCircle2,
   Clock,
+  MessageCircle,
 } from "lucide-react";
 import { PortalShell } from "../app/components/PortalShell";
 import {
   getModuleDeckGroups,
   getTotalAvailableDecksCount,
   resolveDirectDownloadUrl,
+  getAnkiCommunityUrl,
 } from "../app/data/ankiDecks";
 import type { AnkiDeck } from "../app/data/ankiDecks";
 
@@ -55,12 +56,19 @@ export function AnkiDecksPage({
     } catch {}
     return 1;
   });
-  const [guideOpen, setGuideOpen] = useState<boolean>(true);
+  const [guideOpen, setGuideOpen] = useState<boolean>(() => {
+    try {
+      const sp = new URLSearchParams(window.location.search);
+      return sp.get("guide") === "1" || sp.get("guide") === "open";
+    } catch {}
+    return false;
+  });
 
   const moduleGroups = getModuleDeckGroups(selectedYear, selectedSemester);
   const totalAvailableDecks = getTotalAvailableDecksCount();
+  const communityUrl = getAnkiCommunityUrl();
 
-  const crumbs = [{ label: "Portal", onClick: onBack }, { label: "Anki Decks" }];
+  const crumbs = [{ label: "Portal", onClick: onBack }, { label: "Anki Flashcards" }];
 
   return (
     <PortalShell crumbs={crumbs} userButton={userButton}>
@@ -73,17 +81,24 @@ export function AnkiDecksPage({
         {/* ── Page Hero Header ────────────────────────────────────────── */}
         <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-4">
-            <div className="grid h-12 w-12 sm:h-14 sm:w-14 place-items-center rounded-2xl bg-violet-600/15 text-violet-600 dark:bg-violet-500/20 dark:text-violet-400 shadow-sm border border-violet-500/20">
-              <Layers size={28} />
+            <div className="relative h-14 w-14 sm:h-16 sm:w-16 shrink-0 rounded-2xl overflow-hidden shadow-md border border-zinc-200/80 dark:border-white/10 bg-white dark:bg-zinc-900 p-1">
+              <img
+                src="/luro-anki-logo.png"
+                alt="LURO Anki"
+                className="h-full w-full object-contain rounded-xl"
+              />
             </div>
             <div>
-              <div className="flex items-center gap-2.5">
+              <div className="flex flex-wrap items-center gap-2.5">
                 <h1 className="font-heading text-2xl sm:text-3xl font-black tracking-tight text-zinc-900 dark:text-white">
-                  Anki Flashcard Decks
+                  Anki Flashcards
                 </h1>
-                <span className="hidden sm:inline-flex items-center gap-1 rounded-full bg-violet-500/10 px-3 py-1 text-xs font-bold text-violet-700 dark:text-violet-300 border border-violet-500/20">
+                <span className="inline-flex items-center gap-1 rounded-full bg-violet-500/10 px-3 py-1 text-xs font-bold text-violet-700 dark:text-violet-300 border border-violet-500/20">
                   <Sparkles size={12} />
                   {totalAvailableDecks} Ready
+                </span>
+                <span className="inline-flex items-center gap-1 rounded-full bg-sky-500/10 px-2.5 py-0.5 text-[11px] font-bold text-sky-700 dark:text-sky-300 border border-sky-500/20">
+                  LURO Edition
                 </span>
               </div>
               <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400 max-w-2xl">
@@ -93,13 +108,29 @@ export function AnkiDecksPage({
             </div>
           </div>
 
-          <button
-            type="button"
-            onClick={onBack}
-            className="self-start sm:self-auto inline-flex min-h-[44px] items-center gap-2 rounded-full border border-zinc-200 dark:border-white/10 bg-white dark:bg-zinc-900 px-4 py-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500"
-          >
-            ← Return to Dashboard
-          </button>
+          <div className="flex flex-wrap items-center gap-2.5 self-start sm:self-auto">
+            <a
+              href={communityUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-[44px] items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-50/90 dark:bg-emerald-950/40 px-4 py-2 text-xs font-bold text-emerald-800 dark:text-emerald-300 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 transition-all shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-500 active:scale-[0.98]"
+              title="Join official LURO Anki WhatsApp community"
+            >
+              <svg className="w-4 h-4 fill-current text-emerald-600 dark:text-emerald-400 shrink-0" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.458h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              <span>WhatsApp Group</span>
+              <ExternalLink size={13} className="opacity-70" />
+            </a>
+
+            <button
+              type="button"
+              onClick={onBack}
+              className="inline-flex min-h-[44px] items-center gap-2 rounded-full border border-zinc-200 dark:border-white/10 bg-white dark:bg-zinc-900 px-4 py-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-violet-500"
+            >
+              ← Return to Dashboard
+            </button>
+          </div>
         </div>
 
         {/* ── Humanized Instructions & iOS Guide Card ─────────────────── */}
@@ -143,12 +174,12 @@ export function AnkiDecksPage({
                   transition={{ duration: 0.25 }}
                   className="border-t border-zinc-200/60 dark:border-white/[0.06] px-5 pb-6 pt-5 sm:px-6"
                 >
-                  <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+                  <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
                     {/* Column 1: Card Design */}
                     <div className="space-y-2">
                       <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-violet-600 dark:text-violet-400">
                         <CheckCircle2 size={14} />
-                        How these decks are built
+                        How these cards are built
                       </div>
                       <p className="text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-300">
                         We kept the cards punchy and practical, packed with
@@ -169,7 +200,7 @@ export function AnkiDecksPage({
                       <p className="text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-300">
                         Anki uses spaced repetition so you don&apos;t forget
                         early lectures before finals. If you&apos;ve never used
-                        it, our Ain Shams tutorial covers deck imports, recommended
+                        it, our Ain Shams tutorial covers card imports, recommended
                         interval settings, and key shortcuts:
                       </p>
                       <a
@@ -196,7 +227,7 @@ export function AnkiDecksPage({
                         <code className="rounded bg-zinc-200/60 dark:bg-zinc-800 px-1 py-0.5 text-xs font-mono">
                           .apkg
                         </code>{" "}
-                        decks with full image support, MemU works right away:
+                        packages with full image support, MemU works right away:
                       </p>
                       <a
                         href="https://apps.apple.com/us/app/memu-enhanced-flashcards/id6742653596"
@@ -205,6 +236,26 @@ export function AnkiDecksPage({
                         className="inline-flex min-h-[44px] items-center gap-2 rounded-xl border border-zinc-300 dark:border-white/20 bg-white dark:bg-zinc-800 px-3.5 py-2 text-xs font-semibold text-zinc-800 dark:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-700 active:scale-[0.98] transition-all"
                       >
                         Get MemU on App Store (Free)
+                        <ExternalLink size={13} />
+                      </a>
+                    </div>
+
+                    {/* Column 4: WhatsApp Community */}
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+                        <MessageCircle size={14} />
+                        Anki Community Group
+                      </div>
+                      <p className="text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-300">
+                        Have questions, want to request cards, or discuss card edits? Join our student WhatsApp group for active updates and support:
+                      </p>
+                      <a
+                        href={communityUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-emerald-600 px-3.5 py-2 text-xs font-semibold text-white shadow-sm hover:bg-emerald-700 active:scale-[0.98] transition-all"
+                      >
+                        Join WhatsApp Group
                         <ExternalLink size={13} />
                       </a>
                     </div>
@@ -283,7 +334,7 @@ export function AnkiDecksPage({
           </div>
         </div>
 
-        {/* ── Module Decks Grid ───────────────────────────────────────── */}
+        {/* ── Module Cards Grid ───────────────────────────────────────── */}
         <section
           aria-label={`Modules for Year ${selectedYear} Semester ${selectedSemester}`}
           className="pb-16"
@@ -325,7 +376,7 @@ export function AnkiDecksPage({
                         {mod.name}
                       </h3>
 
-                      {/* Decks within this module */}
+                      {/* Cards within this module */}
                       <div className="mt-4 space-y-3">
                         {decks.map((deck) => (
                           <DeckItem key={deck.id} deck={deck} />
@@ -396,7 +447,7 @@ function DeckItem({ deck }: { deck: AnkiDeck }) {
           target="_blank"
           rel="noopener noreferrer"
           download
-          aria-label={`Download ${deck.title} flashcard deck`}
+          aria-label={`Download ${deck.title} flashcards`}
           className="inline-flex min-h-[44px] items-center gap-1.5 rounded-full bg-emerald-600 px-4 py-2 text-xs font-bold text-white shadow-sm hover:bg-emerald-500 active:scale-[0.97] transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-500 dark:bg-emerald-500 dark:hover:bg-emerald-400 dark:text-zinc-950"
         >
           <Download size={14} />
