@@ -176,11 +176,33 @@ export default async function handler(req: any, res: any) {
         try {
           const { data: row, error } = await supabase
             .from('user_progress')
-            .select('data')
+            .select('data, academic_year')
             .eq('user_id', userId)
             .maybeSingle();
-          if (!error && row?.data && typeof row.data === 'object' && Object.keys(row.data).length > 0) {
-            return res.status(200).json({ data: row.data });
+
+          if (!error && row) {
+            const resultData = (typeof row.data === 'object' && row.data !== null) ? { ...(row.data as Record<string, unknown>) } : {};
+            const yearKey = `asu_preferences:${userId}:academic-year`;
+            if (row.academic_year && !resultData[yearKey]) {
+              resultData[yearKey] = { year: row.academic_year, version: 1, timestamp: Date.now() };
+            }
+            return res.status(200).json({ data: resultData });
+          }
+
+          if (!error && !row) {
+            // New user without user_progress row yet; check learning_profiles as secondary
+            const { data: prof } = await supabase
+              .from('learning_profiles')
+              .select('year')
+              .eq('user_id', userId)
+              .maybeSingle();
+
+            const resultData: Record<string, unknown> = {};
+            if (prof?.year) {
+              const yearKey = `asu_preferences:${userId}:academic-year`;
+              resultData[yearKey] = { year: prof.year, version: 1, timestamp: Date.now() };
+            }
+            return res.status(200).json({ data: resultData });
           }
         } catch (err) {
           console.warn('Supabase sync GET error, checking Redis fallback:', err);
@@ -188,7 +210,7 @@ export default async function handler(req: any, res: any) {
       }
 
       if (!redisUrl && (!kvUrl || !kvToken)) {
-        return res.status(200).json({ data: null, message: "Storage not configured yet" });
+        return res.status(200).json({ data: {}, message: "Storage not configured yet" });
       }
       try {
         const keys = await dbClient.scanKeys(`${keyPrefix}*`);
@@ -212,14 +234,14 @@ export default async function handler(req: any, res: any) {
           supabase.from('user_progress').upsert({
             user_id: userId,
             data: result,
+            academic_year: (result[`asu_preferences:${userId}:academic-year`] as any)?.year || 1,
             updated_at: new Date().toISOString(),
           }, { onConflict: 'user_id' }).then(() => {}, () => {});
         }
         return res.status(200).json({ data: result });
       } catch (err: unknown) {
-        const msg = err instanceof Error ? err.message : String(err);
-        console.error('Redis GET error:', err);
-        return res.status(500).json({ error: 'Failed to retrieve data', details: msg });
+        console.warn('Redis GET fallback failed, returning empty data:', err);
+        return res.status(200).json({ data: {} });
       }
     }
 
@@ -281,16 +303,30 @@ export default async function handler(req: any, res: any) {
             let year = existingRow?.academic_year || 1;
             if (body[yearKey]?.year) {
               year = body[yearKey].year;
+              // Synchronize year with learning_profiles table
+              await supabase.from('learning_profiles').upsert({
+                user_id: userId,
+                year,
+                updated_at: new Date().toISOString(),
+              }, { onConflict: 'user_id' }).then(() => {}, () => {});
             }
 
-            await supabase.from('user_progress').upsert({
+            const { error: upsertErr } = await supabase.from('user_progress').upsert({
               user_id: userId,
               data: next,
               academic_year: year,
               updated_at: new Date().toISOString(),
             }, { onConflict: 'user_id' });
-          } catch (err) {
-            console.warn('Supabase sync POST error:', err);
+
+            if (upsertErr) {
+              console.error('Supabase user_progress upsert error:', upsertErr);
+              throw new Error(upsertErr.message);
+            }
+          } catch (err: any) {
+            console.error('Supabase sync POST error:', err);
+            if (!redisUrl && (!kvUrl || !kvToken)) {
+              return res.status(500).json({ error: 'Failed to save to cloud storage.', details: err?.message || String(err) });
+            }
           }
         }
 
