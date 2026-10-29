@@ -42,7 +42,7 @@
 - [Community 73](Community_73.md) (10 shared connections)
 - [Community 114](Community_114.md) (9 shared connections)
 - [Community 111](Community_111.md) (8 shared connections)
-- [Community 153](Community_153.md) (8 shared connections)
+- [Community 95](Community_95.md) (8 shared connections)
 - [Community 65](Community_65.md) (7 shared connections)
 - [Label React Badge](Label_React_Badge.md) (7 shared connections)
 

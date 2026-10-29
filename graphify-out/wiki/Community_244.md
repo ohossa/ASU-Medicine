@@ -1,41 +1,41 @@
 # Community 244
 
-> 13 nodes
+> 12 nodes
 
 ## Key Concepts
 
-- **validate-findings.test.cjs** (26 connections) — `.agents/skills/security-audit/validate-findings.test.cjs`
-- **validateDocument()** (8 connections) — `.agents/skills/security-audit/validate-findings.cjs`
-- **errorsFor()** (3 connections) — `.agents/skills/security-audit/validate-findings.test.cjs`
-- **rejectMutation()** (2 connections) — `.agents/skills/security-audit/validate-findings.test.cjs`
-- **LIMITS** (2 connections) — `.agents/skills/security-audit/validate-findings.cjs`
-- **ref_node_assert** (2 connections)
-- **ref_node_os** (2 connections)
-- **assertNoInjectedControlBytes()** (1 connections) — `.agents/skills/security-audit/validate-findings.test.cjs`
-- **cliOutput()** (1 connections) — `.agents/skills/security-audit/validate-findings.test.cjs`
-- **runCli()** (1 connections) — `.agents/skills/security-audit/validate-findings.test.cjs`
-- **TERMINAL_CONTROL_BYTES** (1 connections) — `.agents/skills/security-audit/validate-findings.test.cjs`
-- **validatorPath** (1 connections) — `.agents/skills/security-audit/validate-findings.test.cjs`
-- **agents_skills_security_audit_report_schema** (1 connections)
+- **ErrorBoundary** (9 connections) — `src/app/components/ErrorBoundary.tsx`
+- **src/main.tsx** (8 connections) — `src/main.tsx`
+- **ErrorBoundary.tsx** (7 connections) — `src/app/components/ErrorBoundary.tsx`
+- **@vercel/analytics** (2 connections) — `package.json`
+- **src_styles_index** (2 connections)
+- **Props** (1 connections) — `src/app/components/ErrorBoundary.tsx`
+- **State** (1 connections) — `src/app/components/ErrorBoundary.tsx`
+- **.componentDidCatch()** (1 connections) — `src/app/components/ErrorBoundary.tsx`
+- **.getDerivedStateFromError()** (1 connections) — `src/app/components/ErrorBoundary.tsx`
+- **.handleReload()** (1 connections) — `src/app/components/ErrorBoundary.tsx`
+- **.handleReset()** (1 connections) — `src/app/components/ErrorBoundary.tsx`
+- **.render()** (1 connections) — `src/app/components/ErrorBoundary.tsx`
 
 ## Relationships
 
-- [Community 72](Community_72.md) (10 shared connections)
-- [Community 120](Community_120.md) (6 shared connections)
-- [Community 25](Community_25.md) (4 shared connections)
-- [Community 319](Community_319.md) (1 shared connections)
-- [Community 33](Community_33.md) (1 shared connections)
-- [Community 243](Community_243.md) (1 shared connections)
+- [Community 6](Community_6.md) (3 shared connections)
+- [Community 95](Community_95.md) (3 shared connections)
+- [Community 239](Community_239.md) (2 shared connections)
+- [Community 24](Community_24.md) (1 shared connections)
+- [React Eslint Plugin](React_Eslint_Plugin.md) (1 shared connections)
+- [Community 34](Community_34.md) (1 shared connections)
 
 ## Source Files
 
-- `.agents/skills/security-audit/validate-findings.cjs`
-- `.agents/skills/security-audit/validate-findings.test.cjs`
+- `package.json`
+- `src/app/components/ErrorBoundary.tsx`
+- `src/main.tsx`
 
 ## Audit Trail
 
-- EXTRACTED: 36 (97%)
-- INFERRED: 1 (3%)
+- EXTRACTED: 23 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -28,10 +28,10 @@ Read `WEBSITE_UI_WORKFLOW.md` before changing study navigation or quiz controls.
 
 ## Knowledge Graph & Architectural Encyclopedia
 
-This repository contains a complete, verified 8,008-node knowledge graph and master architectural documentation:
+This repository contains a complete, verified 8,024-node knowledge graph and master architectural documentation:
 - **Master Architecture Encyclopedia:** [`docs/ARCHITECTURE_ENCYCLOPEDIA.md`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/docs/ARCHITECTURE_ENCYCLOPEDIA.md) — Complete breakdown of all core subsystems, runtime state contracts, PostgreSQL 15 Supabase schema, the intake pipeline, and the 42 module catalog.
-- **Interactive Visualizer:** [`graphify-out/graph.html`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/graphify-out/graph.html) — Browser-based visualization of the 1,131 community clusters.
-- **Agent Knowledge Wiki:** [`graphify-out/wiki/index.md`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/graphify-out/wiki/index.md) — 1,141 articles crawlable by AI agents.
+- **Interactive Visualizer:** [`graphify-out/graph.html`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/graphify-out/graph.html) — Browser-based visualization of the 1,137 community clusters.
+- **Agent Knowledge Wiki:** [`graphify-out/wiki/index.md`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/graphify-out/wiki/index.md) — 1,147 articles crawlable by AI agents.
 - **GraphRAG Database:** [`graphify-out/graph.json`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/graphify-out/graph.json) — Raw graph data for semantic queries.
 - **Fast Query Traversal:** Any agent can run `graphify query "<question>"` to trace paths and dependencies.
 

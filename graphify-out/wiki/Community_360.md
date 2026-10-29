@@ -23,7 +23,7 @@
 
 - [Bank Audit Validate](Bank_Audit_Validate.md) (4 shared connections)
 - [Vite Config Figmaassetresolver](Vite_Config_Figmaassetresolver.md) (2 shared connections)
-- [Community 36](Community_36.md) (1 shared connections)
+- [Community 152](Community_152.md) (1 shared connections)
 - [Community 72](Community_72.md) (1 shared connections)
 - [Fixes Merge Chunk](Fixes_Merge_Chunk.md) (1 shared connections)
 - [Final Bank Assemble](Final_Bank_Assemble.md) (1 shared connections)

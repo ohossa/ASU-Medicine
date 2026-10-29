@@ -1,13 +1,13 @@
 # MainApp()
 
-> God node · 61 connections · `src/app/App.tsx`
+> God node · 62 connections · `src/app/App.tsx`
 
 **Community:** [Community 6](Community_6.md)
 
 ## Connections by Relation
 
 ### calls
-- [useLanguage()](useLanguage.md) `EXTRACTED`
+- useLanguage() `EXTRACTED`
 - useTheme() `EXTRACTED`
 - getChaptersForModuleAndMode() `EXTRACTED`
 - practiceTopics() `EXTRACTED`
@@ -27,7 +27,7 @@
 - toGitTopicChapter() `EXTRACTED`
 - questionScore() `EXTRACTED`
 - saveQuizResult() `EXTRACTED`
-- *…and 40 more `calls` connection(s) not listed (lowest-degree first to go)*
+- *…and 41 more `calls` connection(s) not listed (lowest-degree first to go)*
 
 ### contains
 - src/app/App.tsx `EXTRACTED`

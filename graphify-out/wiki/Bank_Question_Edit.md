@@ -1,18 +1,18 @@
 # Bank Question Edit
 
-> 45 nodes
+> 51 nodes
 
 ## Key Concepts
 
-- **ReportError** (39 connections) — `server/report-service.ts`
 - **question-edit-service.ts** (24 connections) — `server/question-edit-service.ts`
 - **question-edit-store.ts** (21 connections) — `server/question-edit-store.ts`
 - **api/question-bank.ts** (15 connections) — `api/question-bank.ts`
+- **ref_node_crypto** (15 connections)
 - **server/question-bank.ts** (13 connections) — `server/question-bank.ts`
 - **createQuestionEditService()** (12 connections) — `server/question-edit-service.ts`
+- **learning-bank.ts** (10 connections) — `server/learning-bank.ts`
 - **bankEntries()** (8 connections) — `server/question-bank.ts`
-- **authenticateReportUser()** (8 connections) — `server/report-auth.ts`
-- **triage** (8 connections) — `api/question-reports.ts`
+- **question-edit-schema.ts** (7 connections) — `server/question-edit-schema.ts`
 - **management.test.ts** (7 connections) — `src/test/reports/management.test.ts`
 - **handler()** (6 connections) — `api/question-bank.ts`
 - **listEditableModules()** (6 connections) — `server/question-bank.ts`
@@ -23,44 +23,45 @@
 - **edits.test.ts** (5 connections) — `src/test/reports/edits.test.ts`
 - **questionVersion()** (4 connections) — `server/question-bank.ts`
 - **getEntry()** (4 connections) — `server/question-edit-service.ts`
+- **editStore** (4 connections) — `server/question-edit-store.ts`
+- **learningBank()** (3 connections) — `server/learning-bank.ts`
 - **target()** (3 connections) — `server/question-edit-service.ts`
 - **setup()** (3 connections) — `src/test/reports/management.test.ts`
+- **learning-bank.test.ts** (3 connections) — `src/test/reports/learning-bank.test.ts`
 - **QuestionEdit** (2 connections) — `server/question-edit-service.ts`
-- **owner()** (2 connections) — `server/question-edit-service.ts`
-- **parse()** (2 connections) — `server/question-edit-service.ts`
-- **parse()** (2 connections) — `server/report-service.ts`
-- *... and 20 more nodes in this community*
+- *... and 26 more nodes in this community*
 
 ## Relationships
 
-- [Community 50](Community_50.md) (18 shared connections)
-- [Community 10](Community_10.md) (18 shared connections)
-- [Community 211](Community_211.md) (11 shared connections)
-- [Community 3](Community_3.md) (11 shared connections)
-- [Reply Report Replies](Reply_Report_Replies.md) (4 shared connections)
-- [Triage Report Lease](Triage_Report_Lease.md) (4 shared connections)
-- [Community 246](Community_246.md) (3 shared connections)
-- [Community 36](Community_36.md) (2 shared connections)
+- [Community 10](Community_10.md) (30 shared connections)
+- [Community 50](Community_50.md) (16 shared connections)
+- [Triage Report Lease](Triage_Report_Lease.md) (3 shared connections)
+- [Community 152](Community_152.md) (3 shared connections)
+- [Community 319](Community_319.md) (2 shared connections)
+- [Community 33](Community_33.md) (2 shared connections)
+- [Reply Report Replies](Reply_Report_Replies.md) (2 shared connections)
 - [Community 245](Community_245.md) (1 shared connections)
-- [Community 319](Community_319.md) (1 shared connections)
-- [Community 33](Community_33.md) (1 shared connections)
+- [Community 314](Community_314.md) (1 shared connections)
+- [Community 211](Community_211.md) (1 shared connections)
+- [Community 36](Community_36.md) (1 shared connections)
+- [Community 34](Community_34.md) (1 shared connections)
 
 ## Source Files
 
 - `api/question-bank.ts`
-- `api/question-reports.ts`
+- `server/learning-bank.ts`
 - `server/question-bank.ts`
+- `server/question-edit-schema.ts`
 - `server/question-edit-service.ts`
 - `server/question-edit-store.ts`
-- `server/report-auth.ts`
-- `server/report-service.ts`
 - `src/test/reports/edits.test.ts`
+- `src/test/reports/learning-bank.test.ts`
 - `src/test/reports/management.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 149 (96%)
-- INFERRED: 6 (4%)
+- EXTRACTED: 140 (97%)
+- INFERRED: 5 (3%)
 - AMBIGUOUS: 0 (0%)
 
 ---

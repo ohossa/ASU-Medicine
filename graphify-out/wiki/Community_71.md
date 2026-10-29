@@ -1,6 +1,6 @@
 # Community 71
 
-> 29 nodes
+> 25 nodes
 
 ## Key Concepts
 
@@ -8,8 +8,6 @@
 - **.add_question()** (24 connections) — `docs/verification/locomotor-import-2026-10-23/run_expanded_extract.py`
 - **clean_option()** (23 connections) — `docs/verification/locomotor-import-2026-10-23/run_expanded_extract.py`
 - **.run_all()** (21 connections) — `docs/verification/locomotor-import-2026-10-23/run_expanded_extract.py`
-- **run_expanded_extract.py** (10 connections) — `docs/verification/locomotor-import-2026-10-23/run_expanded_extract.py`
-- **compute_fingerprint()** (6 connections) — `docs/verification/locomotor-import-2026-10-23/run_expanded_extract.py`
 - **.parse_anatomy_revision()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/run_expanded_extract.py`
 - **.parse_anatomy_youssef_answers()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/run_expanded_extract.py`
 - **.parse_biochem_fa_oxidation()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/run_expanded_extract.py`
@@ -29,14 +27,12 @@
 - **.parse_physio_abdelhamid()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/run_expanded_extract.py`
 - **.parse_physio_m_hassan()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/run_expanded_extract.py`
 - **.parse_physiology_pdf()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/run_expanded_extract.py`
-- *... and 4 more nodes in this community*
+- **.ingest_checkpoint()** (3 connections) — `docs/verification/locomotor-import-2026-10-23/run_expanded_extract.py`
+- **.__init__()** (1 connections) — `docs/verification/locomotor-import-2026-10-23/run_expanded_extract.py`
 
 ## Relationships
 
-- [Community 79](Community_79.md) (5 shared connections)
-- [Biochemistry Build Intake](Biochemistry_Build_Intake.md) (2 shared connections)
-- [Community 93](Community_93.md) (1 shared connections)
-- [Community 20](Community_20.md) (1 shared connections)
+- [Community 38](Community_38.md) (6 shared connections)
 
 ## Source Files
 
@@ -44,7 +40,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 101 (100%)
+- EXTRACTED: 89 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

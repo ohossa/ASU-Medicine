@@ -1,26 +1,34 @@
 # Community 253
 
-> 4 nodes
+> 11 nodes
 
 ## Key Concepts
 
-- **propagate-fixes.ts** (4 connections) — `data-format-v2/scripts/propagate-fixes.ts`
-- **combined** (1 connections) — `data-format-v2/scripts/propagate-fixes.ts`
-- **fixReport** (1 connections) — `data-format-v2/scripts/propagate-fixes.ts`
-- **idToFix** (1 connections) — `data-format-v2/scripts/propagate-fixes.ts`
+- **preflightJsonText()** (12 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
+- **fail()** (7 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
+- **beginValue()** (6 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
+- **beginString()** (4 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
+- **currentContainer()** (4 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
+- **beginContainer()** (3 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
+- **closeContainer()** (3 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
+- **countValue()** (3 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
+- **JsonStructureError** (2 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
+- **isTokenDelimiter()** (2 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
+- **isWhitespace()** (2 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
 
 ## Relationships
 
-- [Bank Audit Validate](Bank_Audit_Validate.md) (1 shared connections)
+- [Community 25](Community_25.md) (3 shared connections)
+- [Community 243](Community_243.md) (1 shared connections)
 
 ## Source Files
 
-- `data-format-v2/scripts/propagate-fixes.ts`
+- `.agents/skills/security-audit/validate-coverage-ledger.cjs`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 25 (96%)
+- INFERRED: 1 (4%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -22,8 +22,8 @@
 
 - [Community 360](Community_360.md) (2 shared connections)
 - [React Eslint Plugin](React_Eslint_Plugin.md) (2 shared connections)
+- [Community 152](Community_152.md) (1 shared connections)
 - [Community 36](Community_36.md) (1 shared connections)
-- [Community 42](Community_42.md) (1 shared connections)
 
 ## Source Files
 

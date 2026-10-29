@@ -1,6 +1,6 @@
 # Reply Report Replies
 
-> 47 nodes
+> 46 nodes
 
 ## Key Concepts
 
@@ -19,7 +19,6 @@
 - **ReplyDraft** (6 connections) — `src/app/reports/reply-contracts.ts`
 - **ReplyConversation** (4 connections) — `src/app/reports/reply-contracts.ts`
 - **questionText()** (4 connections) — `src/app/reports/reply-context.ts`
-- **replyContextText()** (4 connections) — `src/app/reports/reply-context.ts`
 - **ContextReport** (3 connections) — `src/app/reports/reply-context.ts`
 - **escape()** (3 connections) — `src/app/reports/reply-context.ts`
 - **paragraph()** (3 connections) — `src/app/reports/reply-context.ts`
@@ -29,21 +28,18 @@
 - **.getReport()** (2 connections) — `server/report-replies.ts`
 - **.send()** (2 connections) — `server/report-replies.ts`
 - **.draft()** (2 connections) — `server/report-replies.ts`
-- *... and 22 more nodes in this community*
+- **.finish()** (2 connections) — `server/report-replies.ts`
+- *... and 21 more nodes in this community*
 
 ## Relationships
 
+- [Community 10](Community_10.md) (15 shared connections)
 - [Community 240](Community_240.md) (7 shared connections)
-- [Community 3](Community_3.md) (5 shared connections)
-- [Bank Question Edit](Bank_Question_Edit.md) (4 shared connections)
-- [Community 10](Community_10.md) (4 shared connections)
 - [Community 50](Community_50.md) (4 shared connections)
-- [Community 211](Community_211.md) (2 shared connections)
+- [Bank Question Edit](Bank_Question_Edit.md) (2 shared connections)
 - [Triage Report Lease](Triage_Report_Lease.md) (2 shared connections)
-- [Community 36](Community_36.md) (2 shared connections)
-- [Community 246](Community_246.md) (1 shared connections)
+- [Community 152](Community_152.md) (2 shared connections)
 - [Community 33](Community_33.md) (1 shared connections)
-- [Community 140](Community_140.md) (1 shared connections)
 
 ## Source Files
 
@@ -56,7 +52,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 117 (100%)
+- EXTRACTED: 115 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

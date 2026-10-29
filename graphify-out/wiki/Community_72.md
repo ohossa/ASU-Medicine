@@ -1,11 +1,12 @@
 # Community 72
 
-> 35 nodes
+> 36 nodes
 
 ## Key Concepts
 
 - **validate-findings.cjs** (35 connections) — `.agents/skills/security-audit/validate-findings.cjs`
 - **validate()** (13 connections) — `.agents/skills/security-audit/validate-findings.cjs`
+- **validateDocument()** (8 connections) — `.agents/skills/security-audit/validate-findings.cjs`
 - **collectFindingSemanticErrors()** (7 connections) — `.agents/skills/security-audit/validate-findings.cjs`
 - **check()** (7 connections) — `.agents/skills/security-audit/validate-findings.cjs`
 - **collectSchemaErrors()** (6 connections) — `.agents/skills/security-audit/validate-findings.cjs`
@@ -28,12 +29,11 @@
 - **findDiscriminator()** (3 connections) — `.agents/skills/security-audit/validate-findings.cjs`
 - **hasVisibleProse()** (3 connections) — `.agents/skills/security-audit/validate-findings.cjs`
 - **isSafeRelativeSourcePath()** (3 connections) — `.agents/skills/security-audit/validate-findings.cjs`
-- **loadSchema()** (3 connections) — `.agents/skills/security-audit/validate-findings.cjs`
-- *... and 10 more nodes in this community*
+- *... and 11 more nodes in this community*
 
 ## Relationships
 
-- [Community 244](Community_244.md) (10 shared connections)
+- [Community 120](Community_120.md) (6 shared connections)
 - [Bank Audit Validate](Bank_Audit_Validate.md) (1 shared connections)
 - [Community 360](Community_360.md) (1 shared connections)
 
@@ -43,8 +43,8 @@
 
 ## Audit Trail
 
-- EXTRACTED: 86 (93%)
-- INFERRED: 6 (7%)
+- EXTRACTED: 88 (94%)
+- INFERRED: 6 (6%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,12 +1,12 @@
 # Community 15
 
-> 27 nodes
+> 28 nodes
 
 ## Key Concepts
 
 - **LearningProvider.tsx** (25 connections) — `src/app/learning/LearningProvider.tsx`
-- **learning/contracts.ts** (16 connections) — `src/app/learning/contracts.ts`
 - **store/progress.tsx** (14 connections) — `src/app/store/progress.tsx`
+- **SubjectSelect.sync.test.tsx** (13 connections) — `src/app/components/SubjectSelect.sync.test.tsx`
 - **useLearning()** (11 connections) — `src/app/learning/LearningProvider.tsx`
 - **LearningProvider()** (8 connections) — `src/app/learning/LearningProvider.tsx`
 - **learning-queue.test.tsx** (8 connections) — `src/test/reports/learning-queue.test.tsx`
@@ -27,28 +27,27 @@
 - **Ctx** (2 connections) — `src/app/store/ProgressContextValue.tsx`
 - **load()** (2 connections) — `src/app/store/progress.tsx`
 - **Harness()** (2 connections) — `src/test/reports/learning-queue.test.tsx`
-- **learningState** (2 connections) — `src/app/components/SubjectSelect.navigation.test.tsx`
-- **LearningContext** (1 connections) — `src/app/learning/LearningProvider.tsx`
-- *... and 2 more nodes in this community*
+- **chapter** (1 connections) — `src/app/components/SubjectSelect.sync.test.tsx`
+- **props** (1 connections) — `src/app/components/SubjectSelect.sync.test.tsx`
+- *... and 3 more nodes in this community*
 
 ## Relationships
 
-- [Community 6](Community_6.md) (9 shared connections)
-- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (6 shared connections)
-- [Community 46](Community_46.md) (4 shared connections)
-- [Community 211](Community_211.md) (3 shared connections)
+- [Community 6](Community_6.md) (10 shared connections)
+- [Community 46](Community_46.md) (7 shared connections)
+- [Community 95](Community_95.md) (6 shared connections)
+- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (5 shared connections)
+- [Community 24](Community_24.md) (4 shared connections)
+- [Community 152](Community_152.md) (4 shared connections)
 - [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (3 shared connections)
-- [Community 24](Community_24.md) (3 shared connections)
-- [Community 10](Community_10.md) (3 shared connections)
-- [Community 238](Community_238.md) (3 shared connections)
-- [Community 153](Community_153.md) (3 shared connections)
-- [Community 56](Community_56.md) (2 shared connections)
-- [Interactivebackground Cell Constructor](Interactivebackground_Cell_Constructor.md) (2 shared connections)
-- [Community 95](Community_95.md) (2 shared connections)
+- [Community 50](Community_50.md) (2 shared connections)
+- [Community 32](Community_32.md) (2 shared connections)
+- [Community 34](Community_34.md) (1 shared connections)
+- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (1 shared connections)
 
 ## Source Files
 
-- `src/app/components/SubjectSelect.navigation.test.tsx`
+- `src/app/components/SubjectSelect.sync.test.tsx`
 - `src/app/learning/LearningProvider.tsx`
 - `src/app/learning/XPAwardBubble.tsx`
 - `src/app/learning/contracts.ts`
@@ -58,7 +57,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 95 (100%)
+- EXTRACTED: 93 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

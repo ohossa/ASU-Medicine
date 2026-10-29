@@ -1,68 +1,78 @@
 # Community 95
 
-> 44 nodes
+> 103 nodes
 
 ## Key Concepts
 
+- **ref_react** (142 connections)
 - **SyllabusTrackerPage.tsx** (40 connections) — `src/pages/SyllabusTrackerPage.tsx`
+- **YearModules.tsx** (29 connections) — `src/pages/YearModules.tsx`
 - **SyllabusTracker.tsx** (27 connections) — `src/app/components/SyllabusTracker.tsx`
+- **Dashboard.tsx** (25 connections) — `src/pages/Dashboard.tsx`
+- **ref_motion** (23 connections)
+- **PortalShell()** (22 connections) — `src/app/components/PortalShell.tsx`
+- **PortalShell.tsx** (19 connections) — `src/app/components/PortalShell.tsx`
+- **StudyMode.tsx** (18 connections) — `src/pages/StudyMode.tsx`
+- **AnkiDecksPage.tsx** (17 connections) — `src/pages/AnkiDecksPage.tsx`
 - **LevelUpOverlay.tsx** (12 connections) — `src/app/components/LevelUpOverlay.tsx`
 - **useProgress()** (11 connections) — `src/app/hooks/useProgress.ts`
 - **SyllabusTrackerPage()** (11 connections) — `src/pages/SyllabusTrackerPage.tsx`
-- **celebrate.ts** (10 connections) — `src/app/lib/celebrate.ts`
+- **YearModules()** (11 connections) — `src/pages/YearModules.tsx`
+- **ankiDecks.ts** (11 connections) — `src/app/data/ankiDecks.ts`
+- **motion.ts** (11 connections) — `src/app/lib/motion.ts`
+- **applySubjectTheme()** (9 connections) — `src/app/theme/subjectThemes.ts`
 - **useProgress.ts** (9 connections) — `src/app/hooks/useProgress.ts`
+- **subjectThemes.ts** (8 connections) — `src/app/theme/subjectThemes.ts`
 - **SyllabusTracker()** (7 connections) — `src/app/components/SyllabusTracker.tsx`
 - **SoundManagerComponent.tsx** (7 connections) — `src/app/components/SoundManagerComponent.tsx`
-- **celebrate()** (5 connections) — `src/app/lib/celebrate.ts`
-- **fx.config.ts** (5 connections) — `src/app/lib/fx.config.ts`
-- **FX** (4 connections) — `src/app/lib/fx.config.ts`
-- **LevelUpOverlay()** (3 connections) — `src/app/components/LevelUpOverlay.tsx`
-- **SoundManagerComponent()** (3 connections) — `src/app/components/SoundManagerComponent.tsx`
-- **getConfettiColors()** (3 connections) — `src/app/lib/confettiConfig.ts`
-- **LazyLevelUpOverlay** (3 connections) — `src/app/App.tsx`
-- **confettiConfig.ts** (3 connections) — `src/app/lib/confettiConfig.ts`
-- **Props** (2 connections) — `src/app/components/SyllabusTracker.tsx`
-- **emptyChapterState()** (2 connections) — `src/app/components/SyllabusTracker.tsx`
-- **lectureKeys()** (2 connections) — `src/app/components/SyllabusTracker.tsx`
-- **styleHint()** (2 connections) — `src/app/components/SyllabusTracker.tsx`
-- **emptyChapterState()** (2 connections) — `src/pages/SyllabusTrackerPage.tsx`
-- **lectureKeys()** (2 connections) — `src/pages/SyllabusTrackerPage.tsx`
-- **lookupModule()** (2 connections) — `src/pages/SyllabusTrackerPage.tsx`
-- **readTrackerStorage()** (2 connections) — `src/pages/SyllabusTrackerPage.tsx`
-- *... and 19 more nodes in this community*
+- **AnkiDecksPage()** (6 connections) — `src/pages/AnkiDecksPage.tsx`
+- **Dashboard()** (6 connections) — `src/pages/Dashboard.tsx`
+- **Light_Dark Mode Toggle/src/app/App.tsx** (6 connections) — `Light_Dark Mode Toggle/src/app/App.tsx`
+- **Light_Dark Mode Toggle/src/app/components/ThemeToggle.tsx** (6 connections) — `Light_Dark Mode Toggle/src/app/components/ThemeToggle.tsx`
+- *... and 78 more nodes in this community*
 
 ## Relationships
 
-- [Community 13](Community_13.md) (10 shared connections)
-- [Community 6](Community_6.md) (10 shared connections)
-- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (9 shared connections)
-- [Community 153](Community_153.md) (9 shared connections)
-- [Community 81](Community_81.md) (7 shared connections)
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (6 shared connections)
-- [Usesoundengine Soundkey Audiopolicy](Usesoundengine_Soundkey_Audiopolicy.md) (4 shared connections)
-- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (3 shared connections)
-- [Community 51](Community_51.md) (2 shared connections)
-- [Community 36](Community_36.md) (2 shared connections)
-- [Community 145](Community_145.md) (2 shared connections)
-- [Community 56](Community_56.md) (2 shared connections)
+- [Community 6](Community_6.md) (42 shared connections)
+- [Community 24](Community_24.md) (39 shared connections)
+- [Community 152](Community_152.md) (21 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (16 shared connections)
+- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (16 shared connections)
+- [Community 34](Community_34.md) (15 shared connections)
+- [Community 51](Community_51.md) (14 shared connections)
+- [Community 36](Community_36.md) (14 shared connections)
+- [Community 56](Community_56.md) (10 shared connections)
+- [Community 32](Community_32.md) (8 shared connections)
+- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (8 shared connections)
+- [Atomic UI Components & Avatars](Atomic_UI_Components_&_Avatars.md) (8 shared connections)
 
 ## Source Files
 
+- `Light_Dark Mode Toggle/src/app/App.tsx`
+- `Light_Dark Mode Toggle/src/app/components/ThemeToggle.tsx`
+- `Light_Dark Mode Toggle/src/app/components/figma/ImageWithFallback.tsx`
+- `Light_Dark Mode Toggle/src/main.tsx`
 - `src/app/App.tsx`
 - `src/app/components/LevelUpOverlay.tsx`
+- `src/app/components/PortalShell.mobile.test.tsx`
+- `src/app/components/PortalShell.tsx`
 - `src/app/components/SoundManagerComponent.tsx`
 - `src/app/components/SyllabusTracker.tsx`
+- `src/app/components/figma/ImageWithFallback.tsx`
+- `src/app/components/ui/StackedCarousel.tsx`
+- `src/app/data/ankiDecks.ts`
 - `src/app/hooks/useProgress.ts`
 - `src/app/lib/celebrate.ts`
-- `src/app/lib/confettiConfig.ts`
-- `src/app/lib/fx.config.ts`
 - `src/app/lib/motion.ts`
-- `src/pages/SyllabusTrackerPage.tsx`
+- `src/app/theme/subjectThemes.ts`
+- `src/pages/AnkiDecksPage.tsx`
+- `src/pages/Dashboard.tsx`
+- `src/pages/StudyMode.tsx`
 
 ## Audit Trail
 
-- EXTRACTED: 135 (99%)
-- INFERRED: 1 (1%)
+- EXTRACTED: 466 (100%)
+- INFERRED: 2 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

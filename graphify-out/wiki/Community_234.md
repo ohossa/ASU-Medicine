@@ -1,25 +1,16 @@
 # Community 234
 
-> 27 nodes
+> 24 nodes
 
 ## Key Concepts
 
-- **useVersionCheck.ts** (10 connections) — `src/app/hooks/useVersionCheck.ts`
-- **6. Admin Command Center, Analytics & Master Leaderboard Subsystems** (9 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
-- **useVersionCheck()** (7 connections) — `src/app/hooks/useVersionCheck.ts`
-- **SiteUpdateNotice.tsx** (7 connections) — `src/app/components/SiteUpdateNotice.tsx`
+- **3. The 7 Core Subsystems** (11 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
+- **6. Admin Command Center, Analytics & Master Leaderboard Subsystems** (10 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
 - **ASU Medical Portal — Master Architectural Encyclopedia & System Specification** (7 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
-- **version-check.test.ts** (6 connections) — `src/test/lifecycle/version-check.test.ts`
-- **SiteUpdateNotice()** (5 connections) — `src/app/components/SiteUpdateNotice.tsx`
-- **applyAppUpdate()** (4 connections) — `src/app/hooks/useVersionCheck.ts`
-- **SiteUpdateNotice.test.tsx** (4 connections) — `src/app/components/SiteUpdateNotice.test.tsx`
-- **fetchRemoteVersion()** (3 connections) — `src/app/hooks/useVersionCheck.ts`
-- **isNewerVersion()** (3 connections) — `src/app/hooks/useVersionCheck.ts`
-- **AppVersionInfo** (2 connections) — `src/app/hooks/useVersionCheck.ts`
 - **1. System Overview & Core Philosophy** (2 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
 - **6.3 Admin Master Leaderboard & Student Search** (2 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
 - **6.8 Indestructible Cache & Auto-Update Architecture (iPadOS/iOS Safari & Cross-Platform)** (2 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
-- **CURRENT_BUILD_VERSION** (1 connections) — `src/app/hooks/useVersionCheck.ts`
+- **6.9 Anki Flashcard Decks Architecture & Direct Storage Resolution** (2 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
 - **ARCHITECTURE_ENCYCLOPEDIA.md** (1 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
 - **2. High-Level System Architecture** (1 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
 - **4. Canonical Module Catalog (42 Banks)** (1 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
@@ -29,29 +20,31 @@
 - **6.5 Supabase PostgreSQL 15 Migration & Resilient Report Pipeline** (1 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
 - **6.7 Edge & Serverless Security Architecture** (1 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
 - **7. Medical Review & High-Yield Explanation Standards** (1 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
-- *... and 2 more nodes in this community*
+- **Core Architectural Axioms** (1 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
+- **Subsystem 10: Apple Design Curricular Study Mode Selector** (1 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
+- **Subsystem 3: The Active Solving Engine (`QuizInterface.tsx` & `ClinicalCaseSolver.tsx`)** (1 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
+- **Subsystem 4: Client-Side Inverted Search Index (`src/app/search/`)** (1 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
+- **Subsystem 5: Question Intake & Validation Pipeline (`data-format-v2/`)** (1 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
+- **Subsystem 7: Supabase PostgreSQL 15 Database, Error Reporting & Live Question Management (`server/`)** (1 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
+- **Subsystem 8: Exclusive Owner Deep Analytics & Real-Time Presence (`server/admin-analytics-service.ts`)** (1 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
+- **Subsystem 9: Knowledge Graph Topic Explorer & Cloud Sync Indicator** (1 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
 
 ## Relationships
 
-- [Community 153](Community_153.md) (3 shared connections)
-- [Community 1](Community_1.md) (2 shared connections)
-- [Community 36](Community_36.md) (2 shared connections)
+- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (2 shared connections)
 - [Community 56](Community_56.md) (2 shared connections)
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (1 shared connections)
-- [Community 152](Community_152.md) (1 shared connections)
+- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (1 shared connections)
+- [Community 249](Community_249.md) (1 shared connections)
+- [Community 95](Community_95.md) (1 shared connections)
 
 ## Source Files
 
 - `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
-- `src/app/components/SiteUpdateNotice.test.tsx`
-- `src/app/components/SiteUpdateNotice.tsx`
-- `src/app/hooks/useVersionCheck.ts`
-- `src/test/lifecycle/version-check.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 46 (96%)
-- INFERRED: 2 (4%)
+- EXTRACTED: 27 (90%)
+- INFERRED: 3 (10%)
 - AMBIGUOUS: 0 (0%)
 
 ---

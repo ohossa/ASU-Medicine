@@ -318,6 +318,12 @@ To eliminate stale PWA cache trapping—particularly on Mobile Safari / iPadOS w
 - **Apple HIG Liquid Glass Update Notice (`SiteUpdateNotice.tsx`):** Styled as a floating translucent pill (`backdrop-blur-2xl rounded-full`) with an emerald pulse indicator, $\ge 44\text{px}$ touch target, and accessible ARIA attributes. Dispatches `asu:save-before-refresh` before triggering reload.
 - **Startup Storage & Module Validation:** `src/app/App.tsx` verifies that any persisted `asu_portal_module` in `localStorage` actually exists in the current `bankManifest.json`. Corrupt or deleted module references are safely purged, preventing blank screen lockups while preserving all user study history, XP, streaks, and Clerk credentials.
 
+### 6.9 Anki Flashcard Decks Architecture & Direct Storage Resolution
+- **Curriculum-Wide Flashcard Hub (`src/pages/AnkiDecksPage.tsx`):** A dedicated, responsive Apple HIG route (`/anki`) organizing high-yield spaced-repetition `.apkg` flashcard decks by Academic Year (Years 1–5), Semester (1 & 2), and Module. Accessible via the home dashboard tools grid.
+- **Universal Direct-Download Engine (`src/app/data/ankiDecks.ts`):** `resolveDirectDownloadUrl()` automatically transforms Google Drive sharing links (`/file/d/<id>/view`) into instant direct-export download URLs (`https://drive.google.com/uc?export=download&id=<id>`) and converts GitHub blob URLs into raw CDN downloads. This guarantees 1-tap `.apkg` download triggers on iOS, iPadOS, Android, macOS, and Windows without landing on intermediate preview pages.
+- **Free Mobile Alternative & Humanized Setup:** Features an expandable, humanized instruction card (*"New to Anki? Quick Setup & Mobile Guide"*) linking to the Ain Shams Notion tutorial and pointing iPhone/iPad users to MemU as a 100% free iOS alternative to the paid AnkiMobile app.
+- **Apple HIG Materials & Motion:** Employs Liquid Glass materials (`backdrop-blur-xl bg-white/80 dark:bg-stone-900/80 border border-stone-200/80 dark:border-white/10`), $\ge 44\text{px}$ touch targets across all segmented controls and download pills, spring transitions, and full WCAG accessibility.
+
 ---
 
 ## 7. Medical Review & High-Yield Explanation Standards

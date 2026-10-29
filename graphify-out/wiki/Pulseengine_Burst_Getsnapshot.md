@@ -16,7 +16,7 @@
 
 ## Relationships
 
-- [Interactivebackground Cell Constructor](Interactivebackground_Cell_Constructor.md) (1 shared connections)
+- [Community 32](Community_32.md) (1 shared connections)
 
 ## Source Files
 

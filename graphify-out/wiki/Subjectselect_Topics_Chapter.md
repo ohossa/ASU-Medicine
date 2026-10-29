@@ -4,7 +4,6 @@
 
 ## Key Concepts
 
-- **ChapterData** (53 connections) — `src/app/types.ts`
 - **SubjectSelect.tsx** (53 connections) — `src/app/components/SubjectSelect.tsx`
 - **practiceNavigation.ts** (36 connections) — `src/app/learning/practiceNavigation.ts`
 - **customPractice.ts** (35 connections) — `src/app/learning/customPractice.ts`
@@ -16,46 +15,47 @@
 - **customPractice.test.ts** (20 connections) — `src/app/learning/customPractice.test.ts`
 - **practiceNavigation.test.ts** (20 connections) — `src/app/learning/practiceNavigation.test.ts`
 - **selectedPractice()** (16 connections) — `src/app/learning/customPractice.ts`
-- **SubjectSelect.topics.test.tsx** (14 connections) — `src/app/components/SubjectSelect.topics.test.tsx`
 - **ShuffleSwitch()** (13 connections) — `src/app/preferences/ShuffleSwitch.tsx`
+- **QuizSessionSave** (12 connections) — `src/app/hooks/useQuizSession.ts`
 - **TopicPracticePicker()** (12 connections) — `src/app/components/TopicPracticePicker.tsx`
 - **questionCountLabel()** (11 connections) — `src/app/learning/practiceNavigation.ts`
 - **attemptSnapshot.ts** (11 connections) — `src/app/learning/attemptSnapshot.ts`
 - **ChapterTopicList()** (10 connections) — `src/app/components/ChapterTopicList.tsx`
+- **isPastExamSection()** (10 connections) — `src/app/lib/practiceOrder.ts`
+- **practiceOrder.ts** (10 connections) — `src/app/lib/practiceOrder.ts`
+- **ShuffleSwitch.tsx** (10 connections) — `src/app/preferences/ShuffleSwitch.tsx`
 - **year2-topics-consolidation.test.ts** (10 connections) — `src/app/year2-topics-consolidation.test.ts`
+- **visiblePracticeChapters()** (9 connections) — `src/app/lib/practiceOrder.ts`
+- **getLearningQuestionVersions()** (8 connections) — `src/app/data.ts`
 - **freezeAttempt()** (8 connections) — `src/app/learning/attemptSnapshot.ts`
 - **restoreAttempt()** (8 connections) — `src/app/learning/attemptSnapshot.ts`
-- **attemptedPracticeIds()** (8 connections) — `src/app/learning/practiceNavigation.ts`
-- **TopicSessionPicker.tsx** (8 connections) — `src/app/components/TopicSessionPicker.tsx`
-- **PracticeTopic** (7 connections) — `src/app/learning/customPractice.ts`
-- **resumeCustomPractice()** (7 connections) — `src/app/learning/customPractice.ts`
 - *... and 34 more nodes in this community*
 
 ## Relationships
 
-- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (32 shared connections)
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (31 shared connections)
-- [Community 36](Community_36.md) (30 shared connections)
-- [Community 238](Community_238.md) (23 shared connections)
-- [Community 6](Community_6.md) (19 shared connections)
-- [Community 145](Community_145.md) (18 shared connections)
-- [Community 34](Community_34.md) (18 shared connections)
-- [Community 152](Community_152.md) (17 shared connections)
-- [Community 13](Community_13.md) (14 shared connections)
-- [Community 15](Community_15.md) (6 shared connections)
-- [Community 42](Community_42.md) (5 shared connections)
-- [Community 81](Community_81.md) (5 shared connections)
+- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (52 shared connections)
+- [Community 152](Community_152.md) (29 shared connections)
+- [Community 34](Community_34.md) (24 shared connections)
+- [Community 6](Community_6.md) (21 shared connections)
+- [Community 36](Community_36.md) (19 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (18 shared connections)
+- [Community 46](Community_46.md) (14 shared connections)
+- [Community 24](Community_24.md) (14 shared connections)
+- [Community 95](Community_95.md) (8 shared connections)
+- [Community 15](Community_15.md) (5 shared connections)
+- [Community 42](Community_42.md) (2 shared connections)
+- [Community 145](Community_145.md) (2 shared connections)
 
 ## Source Files
 
 - `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
 - `src/app/components/ChapterTopicList.tsx`
 - `src/app/components/SubjectSelect.navigation.test.tsx`
-- `src/app/components/SubjectSelect.topics.test.tsx`
 - `src/app/components/SubjectSelect.tsx`
-- `src/app/components/TopicPracticePicker.test.tsx`
 - `src/app/components/TopicPracticePicker.tsx`
 - `src/app/components/TopicSessionPicker.tsx`
+- `src/app/data.ts`
+- `src/app/hooks/useQuizSession.ts`
 - `src/app/iae1-topics.test.ts`
 - `src/app/learning/LearningProvider.tsx`
 - `src/app/learning/attemptSnapshot.ts`
@@ -64,15 +64,15 @@
 - `src/app/learning/historyScope.ts`
 - `src/app/learning/practiceNavigation.test.ts`
 - `src/app/learning/practiceNavigation.ts`
+- `src/app/lib/practiceOrder.test.ts`
 - `src/app/lib/practiceOrder.ts`
 - `src/app/preferences/ShuffleSwitch.tsx`
-- `src/app/types.ts`
-- `src/app/utils/studyLinks.ts`
+- `src/app/year2-topics-consolidation.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 398 (99%)
-- INFERRED: 3 (1%)
+- EXTRACTED: 374 (99%)
+- INFERRED: 5 (1%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -18,12 +18,10 @@
 
 ## Relationships
 
-- [Community 13](Community_13.md) (4 shared connections)
-- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (4 shared connections)
-- [Community 145](Community_145.md) (2 shared connections)
-- [Community 153](Community_153.md) (2 shared connections)
-- [Community 36](Community_36.md) (1 shared connections)
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (1 shared connections)
+- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (6 shared connections)
+- [Community 24](Community_24.md) (4 shared connections)
+- [Community 95](Community_95.md) (2 shared connections)
+- [Community 152](Community_152.md) (2 shared connections)
 
 ## Source Files
 

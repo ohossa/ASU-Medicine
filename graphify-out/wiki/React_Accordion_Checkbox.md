@@ -34,7 +34,7 @@
 
 - [Atomic UI Components & Avatars](Atomic_UI_Components_&_Avatars.md) (19 shared connections)
 - [React Framework & Icon Dependencies](React_Framework_&_Icon_Dependencies.md) (6 shared connections)
-- [Community 153](Community_153.md) (5 shared connections)
+- [Community 95](Community_95.md) (5 shared connections)
 - [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (5 shared connections)
 - [Carousel React Alert](Carousel_React_Alert.md) (3 shared connections)
 - [Dialog Command Commanddialog](Dialog_Command_Commanddialog.md) (2 shared connections)

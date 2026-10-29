@@ -72,6 +72,7 @@ const FlaggedQuestionsScreen = lazy(() => import('./components/FlaggedQuestionsS
 
 const QuestionSearch = lazy(() => import('./components/QuestionSearch').then(m => ({ default: m.QuestionSearch })));
 const MarksCalculator = lazy(() => import('./components/MarksCalculator').then(m => ({ default: m.MarksCalculator })));
+const AnkiDecksPage = lazy(() => import('../pages/AnkiDecksPage').then(m => ({ default: m.AnkiDecksPage })));
 const SyllabusTrackerPage = lazy(() => import('../pages/SyllabusTrackerPage').then(m => ({ default: m.SyllabusTrackerPage })));
 
 import { ThemeProvider } from './context/ThemeContext';
@@ -1216,6 +1217,18 @@ function MainApp() {
                   <MarksCalculator studentYear={activeStudentYear??selectedYear??3}
                     onBack={() => navigate('/')}
                     userButton={customUserButton}
+                  />
+                </Suspense>
+              </FeatureErrorBoundary>
+            } />
+
+            <Route path="/anki" element={
+              <FeatureErrorBoundary name="AnkiDecksPage">
+                <Suspense fallback={<LoadingScreen compact label="Opening Anki Decks…"/>}>
+                  <AnkiDecksPage
+                    onBack={() => navigate('/')}
+                    userButton={customUserButton}
+                    initialYear={activeStudentYear ?? selectedYear ?? 3}
                   />
                 </Suspense>
               </FeatureErrorBoundary>
