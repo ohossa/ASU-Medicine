@@ -33,7 +33,6 @@ const YearModules = lazy(() => import('../pages/YearModules'));
 const StudyMode = lazy(() => import('../pages/StudyMode'));
 const SubjectSelect = lazy(() => import('./components/SubjectSelect').then(m => ({ default: m.SubjectSelect })));
 const StudyTrackerSelectorModal = lazy(() => import('./components/StudyTrackerSelectorModal').then(m => ({ default: m.StudyTrackerSelectorModal })));
-const KnowledgeGraphPage = lazy(() => import('../pages/KnowledgeGraphPage').then(m => ({ default: m.KnowledgeGraphPage })));
 import { UserSyncPill } from './components/UserSyncPill';
 
 // Lazy-loaded FX layer components
@@ -58,8 +57,7 @@ import {
   Flag,
   Globe,
   Check,
-  HeartHandshake,
-  Network
+  HeartHandshake
 } from 'lucide-react';
 import { toGitTopicChapter } from './lib/gitBank';
 import type { ChapterData, SubjectData, Question, Screen, QuizAnswer, QuestionCollection } from './types';
@@ -1005,14 +1003,6 @@ function MainApp() {
           )}
 
           <UserButton.Action
-            label={language === 'en' ? "Knowledge Graph" : "شبكة المفاهيم"}
-            labelIcon={<Network size={16} className="text-biochem" />}
-            onClick={() => {
-              transitionTo(() => navigate('/knowledge-graph'));
-            }}
-          />
-
-          <UserButton.Action
             label={language === 'en' ? "My Progress" : "تقدمي"}
             labelIcon={<Activity size={16} className="text-[#2dd4bf]" />}
             onClick={() => {
@@ -1207,13 +1197,7 @@ function MainApp() {
             <Route path="/study-tracker" element={<Navigate to="/learning?view=progress" replace/>}/>
             <Route path="/history" element={<Navigate to="/learning?view=activity" replace/>}/>
 
-            <Route path="/knowledge-graph" element={
-              <FeatureErrorBoundary name="KnowledgeGraphPage">
-                <Suspense fallback={<LoadingScreen compact label="Opening Knowledge Graph Explorer…"/>}>
-                  <KnowledgeGraphPage userButton={customUserButton} />
-                </Suspense>
-              </FeatureErrorBoundary>
-            } />
+            <Route path="/knowledge-graph" element={<Navigate to="/" replace/>}/>
 
             <Route path="/case-solver" element={<Navigate to="/" replace/>}/>
 
