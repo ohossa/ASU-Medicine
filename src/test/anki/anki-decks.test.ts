@@ -3,9 +3,17 @@ import {
   resolveDirectDownloadUrl,
   getModuleDeckGroups,
   getTotalAvailableDecksCount,
+  getAnkiCommunityUrl,
+  ANKI_WHATSAPP_GROUP_URL,
 } from "../../app/data/ankiDecks";
 
 describe("Anki Deck Catalog & Link Engine", () => {
+  describe("community url", () => {
+    it("returns official WhatsApp community group URL", () => {
+      expect(ANKI_WHATSAPP_GROUP_URL).toContain("chat.whatsapp.com/Jc9rZktSszkIf2lfzCcL94");
+      expect(getAnkiCommunityUrl()).toBe(ANKI_WHATSAPP_GROUP_URL);
+    });
+  });
   describe("resolveDirectDownloadUrl", () => {
     it("converts Google Drive share link into 1-tap direct export download URL", () => {
       const gdriveShareUrl =

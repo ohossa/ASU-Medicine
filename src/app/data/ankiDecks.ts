@@ -62,9 +62,9 @@ export function resolveDirectDownloadUrl(rawUrl?: string): string {
 
 /**
  * Official LURO Anki WhatsApp Community Group link.
- * Can be updated with your direct WhatsApp group invite link (e.g. https://chat.whatsapp.com/...).
  */
-export const ANKI_WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/invite";
+export const ANKI_WHATSAPP_GROUP_URL: string =
+  "https://chat.whatsapp.com/Jc9rZktSszkIf2lfzCcL94?s=cl&p=i&mlu=4&ilr=4&iam=2";
 
 /**
  * Returns the effective Anki community URL.
@@ -74,7 +74,7 @@ export const ANKI_WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/invite";
 export function getAnkiCommunityUrl(): string {
   if (
     ANKI_WHATSAPP_GROUP_URL &&
-    ANKI_WHATSAPP_GROUP_URL !== "https://chat.whatsapp.com/invite"
+    !ANKI_WHATSAPP_GROUP_URL.endsWith("/invite")
   ) {
     return ANKI_WHATSAPP_GROUP_URL;
   }
