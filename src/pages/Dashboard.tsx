@@ -38,7 +38,6 @@ const YEARS: Year[] = [
 const TOOLS = [
   { title: "Full History",     icon: Activity,      accent: "#22c55e", badge: null,        sub: "View all your past quiz sessions and results", route: "/history" },
   { title: "Marks Calculator", icon: Calculator,    accent: "#f87171", badge: "Predictor", sub: "Calculate requirements and target scores", route: "/marks-calculator" },
-  { title: "Anki Flashcards",  icon: Layers,        accent: "#8b5cf6", badge: "Flashcards", sub: "Spaced-repetition flashcards for semester modules", route: "/anki" },
   { title: "Question Search",  icon: Search,        accent: "#2dd4bf", badge: "Search",    sub: "Search text in all database questions and answers", route: "/question-search" },
   { title: "My Progress",    icon: GraduationCap, accent: "#22c55e", badge: "Syllabus",  sub: "Progress, performance, activity and rewards", route: "/learning" },
 ];
@@ -291,10 +290,60 @@ export default function Dashboard({ userButton, onOpenTrackerSelector, studentYe
                 </button>
               );
             })}
-            <a href="/support" className="group flex items-center gap-4 sm:col-span-2 lg:col-span-4 rounded-3xl border border-zinc-200 bg-white p-5 text-left transition-colors hover:border-emerald-500/40 dark:border-white/10 dark:bg-[#141414]">
-              <span className="grid h-11 w-11 place-items-center rounded-xl bg-emerald-500/10 text-emerald-700 dark:text-emerald-300"><HeartHandshake size={20}/></span>
-              <div className="min-w-0 flex-1"><h4 className="font-heading text-[15px] font-bold">{language === 'en' ? 'Support ASUCodes' : 'دعم ASUCodes'}</h4>
-              <p className="mt-1 text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-400">{language === 'en' ? 'Optional support. Help keep every question free for everyone.' : 'دعم اختياري يساعد في بقاء كل الأسئلة مجانية للجميع.'}</p></div><ArrowRight size={18} aria-hidden="true" className="shrink-0 text-zinc-500"/>
+            {/* Anki Flashcards Banner Card (spans full width above Support) */}
+            <button
+              type="button"
+              onClick={() => navigate('/anki')}
+              className="group flex items-center gap-4 sm:col-span-2 lg:col-span-4 rounded-3xl border border-zinc-200/80 bg-white p-5 text-left cursor-pointer transition-all duration-300 hover:border-purple-500/40 hover:-translate-y-0.5 hover:shadow-sm dark:border-white/[0.08] dark:bg-[#141414] active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500/50"
+            >
+              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-purple-500/10 text-purple-600 dark:text-purple-400">
+                <Layers size={20} />
+              </span>
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center gap-2">
+                  <h4 className="font-heading text-[15px] font-bold text-zinc-900 dark:text-zinc-100">
+                    {language === 'en' ? 'Anki Flashcards' : 'بطاقات أنكي التعليمية'}
+                  </h4>
+                  <span className="rounded-full px-2.5 py-0.5 text-[10px] font-bold tracking-wide bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
+                    {language === 'en' ? 'Flashcards' : 'فلاش كاردز'}
+                  </span>
+                </div>
+                <p className="mt-1 text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-400">
+                  {language === 'en'
+                    ? 'Spaced-repetition flashcards packed with lecture details for every semester module.'
+                    : 'بطاقات تكرار متباعد جاهزة ومحملة بتفاصيل المحاضرات لكل موديول.'}
+                </p>
+              </div>
+              <ArrowRight
+                size={18}
+                aria-hidden="true"
+                className="shrink-0 text-zinc-400 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:text-purple-500 dark:text-zinc-500 dark:group-hover:text-purple-400"
+              />
+            </button>
+
+            {/* Support ASUCodes Banner Card */}
+            <a
+              href="/support"
+              className="group flex items-center gap-4 sm:col-span-2 lg:col-span-4 rounded-3xl border border-zinc-200/80 bg-white p-5 text-left transition-all duration-300 hover:border-emerald-500/40 hover:-translate-y-0.5 hover:shadow-sm dark:border-white/[0.08] dark:bg-[#141414] active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500/50"
+            >
+              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-emerald-500/10 text-emerald-700 dark:text-emerald-300">
+                <HeartHandshake size={20} />
+              </span>
+              <div className="min-w-0 flex-1">
+                <h4 className="font-heading text-[15px] font-bold text-zinc-900 dark:text-zinc-100">
+                  {language === 'en' ? 'Support ASUCodes' : 'دعم ASUCodes'}
+                </h4>
+                <p className="mt-1 text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-400">
+                  {language === 'en'
+                    ? 'Optional support. Help keep every question free for everyone.'
+                    : 'دعم اختياري يساعد في بقاء كل الأسئلة مجانية للجميع.'}
+                </p>
+              </div>
+              <ArrowRight
+                size={18}
+                aria-hidden="true"
+                className="shrink-0 text-zinc-400 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:text-emerald-500 dark:text-zinc-500 dark:group-hover:text-emerald-400"
+              />
             </a>
           </div>
         </section>
