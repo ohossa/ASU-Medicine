@@ -294,8 +294,8 @@ export default async function handler(req: any, res: any) {
           }
         }
 
-        // 2. Also write to Redis mirror if Redis is configured
-        if (redisUrl || (kvUrl && kvToken)) {
+        // 2. Only write to Redis if Supabase is not configured (prevents Upstash bandwidth exhaustion when Supabase is primary)
+        if (!supabase && (redisUrl || (kvUrl && kvToken))) {
           try {
             for (const [strippedKey, value] of Object.entries(body)) {
               if (strippedKey.startsWith('asu_preferences:') && strippedKey !== `asu_preferences:${userId}:shuffle` && strippedKey !== yearKey) continue;

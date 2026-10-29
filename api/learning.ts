@@ -4,12 +4,29 @@ import { evalRedis } from "../server/report-store.js";
 import { ReportError, isReportError } from "../server/report-service.js";
 import { learningBank } from "../server/learning-bank.js";
 import { createLearningService } from "../server/learning-service.js";
+import { getSupabase } from "../server/supabase-client.js";
 import {
   award,
   dashboard,
   getProfile,
   saveProfile,
 } from "../server/learning-store.js";
+
+const inMemoryRates = new Map<string, { count: number; resetAt: number }>();
+function checkRateLimit(id: string, maxPerMinute = 120): boolean {
+  const now = Date.now();
+  const entry = inMemoryRates.get(id);
+  if (!entry || now > entry.resetAt) {
+    inMemoryRates.set(id, { count: 1, resetAt: now + 60000 });
+    return true;
+  }
+  if (entry.count >= maxPerMinute) {
+    return false;
+  }
+  entry.count++;
+  return true;
+}
+
 const service = createLearningService({
   authenticate: authenticateReportUser,
   bank: learningBank,
@@ -18,22 +35,79 @@ const service = createLearningService({
   profile: getProfile,
   saveProfile,
   year: async (id) => {
-    const raw = await evalRedis("return redis.call('GET',KEYS[1])", [
-      `asu_data:${id}:asu_preferences:${id}:academic-year`,
-    ]);
+    // 1. Primary: Supabase
+    const supabase = getSupabase();
+    if (supabase) {
+      try {
+        const { data: userRow } = await supabase
+          .from("user_progress")
+          .select("academic_year, data")
+          .eq("user_id", id)
+          .maybeSingle();
+
+        if (
+          userRow?.academic_year &&
+          Number.isInteger(userRow.academic_year) &&
+          userRow.academic_year >= 1 &&
+          userRow.academic_year <= 5
+        ) {
+          return userRow.academic_year;
+        }
+
+        const dataObj = userRow?.data as Record<string, any> | undefined;
+        const prefYear = dataObj?.[`asu_preferences:${id}:academic-year`]?.year;
+        if (
+          prefYear &&
+          Number.isInteger(prefYear) &&
+          prefYear >= 1 &&
+          prefYear <= 5
+        ) {
+          return prefYear;
+        }
+
+        const { data: profileRow } = await supabase
+          .from("learning_profiles")
+          .select("year")
+          .eq("user_id", id)
+          .maybeSingle();
+
+        if (
+          profileRow?.year &&
+          Number.isInteger(profileRow.year) &&
+          profileRow.year >= 1 &&
+          profileRow.year <= 5
+        ) {
+          return profileRow.year;
+        }
+      } catch (err) {
+        console.warn("Supabase year check error:", err);
+      }
+    }
+
+    // 2. Resilient fallback: Redis (safely wrapped in try/catch)
     try {
+      const raw = await evalRedis("return redis.call('GET',KEYS[1])", [
+        `asu_data:${id}:asu_preferences:${id}:academic-year`,
+      ]);
       return JSON.parse(LZString.decompress(String(raw)) ?? "null")?.year ?? 0;
     } catch {
       return 0;
     }
   },
-  rate: async (id) =>
-    Number(
-      await evalRedis(
-        "local n=redis.call('INCR',KEYS[1]);if n==1 then redis.call('EXPIRE',KEYS[1],60) end;return n",
-        [`asu_learning:v1:rate:${id}`],
-      ),
-    ) <= 60,
+  rate: async (id) => {
+    if (!checkRateLimit(id, 120)) return false;
+    try {
+      const n = Number(
+        await evalRedis(
+          "local n=redis.call('INCR',KEYS[1]);if n==1 then redis.call('EXPIRE',KEYS[1],60) end;return n",
+          [`asu_learning:v1:rate:${id}`],
+        ),
+      );
+      return n <= 120;
+    } catch {
+      return true;
+    }
+  },
 });
 interface Req {
   method?: string;
