@@ -4,7 +4,10 @@ export { ThemeContext } from './ThemeContextValue';
 import { ThemeContext } from './ThemeContextValue';
 
 function readTheme() {
-  try { return localStorage.getItem('theme') !== 'light'; }
+  try {
+    if (typeof window !== "undefined" && window.location.search.includes("theme=light")) return false;
+    return localStorage.getItem('theme') !== 'light';
+  }
   catch { return true; }
 }
 function applyTheme(dark:boolean) {

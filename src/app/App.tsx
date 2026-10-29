@@ -427,6 +427,9 @@ function MainApp() {
 
   const [yearModalDismissed, setYearModalDismissed] = useState<boolean>(() => {
     try {
+      if (import.meta.env.DEV && typeof window !== "undefined" && window.location.search.includes("__preview=1")) {
+        return true;
+      }
       return sessionStorage.getItem('asu_year_modal_dismissed') === 'true' ||
              localStorage.getItem('asu_year_modal_dismissed') === 'true';
     } catch {
@@ -436,6 +439,9 @@ function MainApp() {
 
   const [fallbackYear, setFallbackYear] = useState<number | null>(() => {
     try {
+      if (import.meta.env.DEV && typeof window !== "undefined" && window.location.search.includes("__preview=1")) {
+        return 3;
+      }
       const v = localStorage.getItem('asu_medical_student_year_fallback') ||
                 localStorage.getItem('asu_medical_student_year');
       const n = v ? parseInt(v, 10) : null;
@@ -1664,13 +1670,18 @@ function MainApp() {
 export default function App() {
   const {isLoaded,isSignedIn}=useAuth();
   const deferredMounted=useDeferredMount();
+  const isDevPreview = Boolean(
+    import.meta.env.DEV &&
+    typeof window !== "undefined" &&
+    window.location.search.includes("__preview=1")
+  );
   useEffect(()=>{void import('../pages/Dashboard');void import('../pages/YearModules');},[]);
   useEffect(()=>{if(isLoaded&&isSignedIn){performance.mark('asu:shell-ready');void startCorrectionsRefresh();}},[isLoaded,isSignedIn]);
 
   return (
     <ThemeProvider>
-      {!isLoaded&&<LoadingScreen/>}
-      {isLoaded && (
+      {!isLoaded && !isDevPreview && <LoadingScreen/>}
+      {(isLoaded || isDevPreview) && (
         <>
 
           {/* Dynamic Floating Background Blobs & Interactive Dots */}
@@ -1692,7 +1703,7 @@ export default function App() {
             <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-anatomy/30 to-transparent dark:from-anatomy/20 blob-float-2" />
           </div>
 
-          <SignedIn>
+          {(isSignedIn || isDevPreview) ? (
             <BrowserRouter>
               <ReportProvider><LearningProvider><ProgressProvider>
                 <MainApp />
@@ -1713,12 +1724,11 @@ export default function App() {
                 )}
               </ProgressProvider></LearningProvider></ReportProvider>
             </BrowserRouter>
-          </SignedIn>
-          <SignedOut>
+          ) : (
             <Suspense fallback={<LoadingScreen />}>
               <LoginScreen />
             </Suspense>
-          </SignedOut>
+          )}
         </>
       )}
     </ThemeProvider>

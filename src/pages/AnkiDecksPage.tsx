@@ -39,8 +39,22 @@ export function AnkiDecksPage({
   userButton,
   initialYear = 3,
 }: AnkiDecksPageProps) {
-  const [selectedYear, setSelectedYear] = useState<number>(initialYear);
-  const [selectedSemester, setSelectedSemester] = useState<number>(1);
+  const [selectedYear, setSelectedYear] = useState<number>(() => {
+    try {
+      const sp = new URLSearchParams(window.location.search);
+      const yr = Number(sp.get("year"));
+      if (yr >= 1 && yr <= 5) return yr;
+    } catch {}
+    return initialYear;
+  });
+  const [selectedSemester, setSelectedSemester] = useState<number>(() => {
+    try {
+      const sp = new URLSearchParams(window.location.search);
+      const sem = Number(sp.get("semester") || sp.get("sem"));
+      if (sem === 1 || sem === 2) return sem;
+    } catch {}
+    return 1;
+  });
   const [guideOpen, setGuideOpen] = useState<boolean>(true);
 
   const moduleGroups = getModuleDeckGroups(selectedYear, selectedSemester);
