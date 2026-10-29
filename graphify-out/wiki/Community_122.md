@@ -18,13 +18,10 @@
 
 ## Relationships
 
+- [Community 95](Community_95.md) (6 shared connections)
 - [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (6 shared connections)
-- [Learning Correctionstatus Facts](Learning_Correctionstatus_Facts.md) (3 shared connections)
-- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (1 shared connections)
-- [Community 107](Community_107.md) (1 shared connections)
-- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (1 shared connections)
-- [Intake Verification Reports & Audits](Intake_Verification_Reports_&_Audits.md) (1 shared connections)
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (1 shared connections)
+- [Community 36](Community_36.md) (1 shared connections)
+- [Community 15](Community_15.md) (1 shared connections)
 
 ## Source Files
 

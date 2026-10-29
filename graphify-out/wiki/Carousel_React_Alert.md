@@ -1,6 +1,6 @@
 # Carousel React Alert
 
-> 43 nodes
+> 44 nodes
 
 ## Key Concepts
 
@@ -11,6 +11,7 @@
 - **Button()** (9 connections) — `Light_Dark Mode Toggle/src/app/components/ui/button.tsx`
 - **buttonVariants** (9 connections) — `Light_Dark Mode Toggle/src/app/components/ui/button.tsx`
 - **calendar.tsx** (8 connections) — `Light_Dark Mode Toggle/src/app/components/ui/calendar.tsx`
+- **@radix-ui/react-slot@1.1.2** (6 connections) — `Light_Dark Mode Toggle/package.json`
 - **useCarousel()** (5 connections) — `Light_Dark Mode Toggle/src/app/components/ui/carousel.tsx`
 - **PaginationLink()** (5 connections) — `Light_Dark Mode Toggle/src/app/components/ui/pagination.tsx`
 - **AlertDialogContent()** (4 connections) — `Light_Dark Mode Toggle/src/app/components/ui/alert-dialog.tsx`
@@ -28,17 +29,18 @@
 - **AlertDialogFooter()** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/alert-dialog.tsx`
 - **AlertDialogHeader()** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/alert-dialog.tsx`
 - **AlertDialogPortal()** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/alert-dialog.tsx`
-- **AlertDialogTitle()** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/alert-dialog.tsx`
-- *... and 18 more nodes in this community*
+- *... and 19 more nodes in this community*
 
 ## Relationships
 
-- [Atomic UI Components & Avatars](Atomic_UI_Components_&_Avatars.md) (26 shared connections)
-- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (10 shared connections)
-- [Form Input Controls & Modals](Form_Input_Controls_&_Modals.md) (3 shared connections)
+- [Atomic UI Components & Avatars](Atomic_UI_Components_&_Avatars.md) (27 shared connections)
+- [Community 95](Community_95.md) (5 shared connections)
+- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (5 shared connections)
+- [Form Input Controls & Modals](Form_Input_Controls_&_Modals.md) (4 shared connections)
+- [React Framework & Icon Dependencies](React_Framework_&_Icon_Dependencies.md) (4 shared connections)
 - [React Accordion Checkbox](React_Accordion_Checkbox.md) (3 shared connections)
-- [React Framework & Icon Dependencies](React_Framework_&_Icon_Dependencies.md) (3 shared connections)
 - [Toggle Alert Group](Toggle_Alert_Group.md) (2 shared connections)
+- [Label React Badge](Label_React_Badge.md) (1 shared connections)
 
 ## Source Files
 
@@ -51,7 +53,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 109 (100%)
+- EXTRACTED: 114 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

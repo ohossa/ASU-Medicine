@@ -1,61 +1,69 @@
 # Community 251
 
-> 26 nodes
+> 69 nodes
 
 ## Key Concepts
 
-- **Split views** (21 connections) — `.agents/skills/apple-design/references/hig/split-views.md`
-- **Lists and tables** (19 connections) — `.agents/skills/apple-design/references/hig/lists-and-tables.md`
-- **Disclosure controls** (14 connections) — `.agents/skills/apple-design/references/hig/disclosure-controls.md`
-- **Outline views** (13 connections) — `.agents/skills/apple-design/references/hig/outline-views.md`
-- **Column views** (11 connections) — `.agents/skills/apple-design/references/hig/column-views.md`
-- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/column-views.md`
-- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/column-views.md`
-- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/column-views.md`
-- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/disclosure-controls.md`
-- **Disclosure buttons** (1 connections) — `.agents/skills/apple-design/references/hig/disclosure-controls.md`
-- **Disclosure triangles** (1 connections) — `.agents/skills/apple-design/references/hig/disclosure-controls.md`
-- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/disclosure-controls.md`
-- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/disclosure-controls.md`
-- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/lists-and-tables.md`
-- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/lists-and-tables.md`
-- **Content** (1 connections) — `.agents/skills/apple-design/references/hig/lists-and-tables.md`
-- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/lists-and-tables.md`
-- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/lists-and-tables.md`
-- **Style** (1 connections) — `.agents/skills/apple-design/references/hig/lists-and-tables.md`
-- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/outline-views.md`
-- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/outline-views.md`
-- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/outline-views.md`
-- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/split-views.md`
-- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/split-views.md`
-- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/split-views.md`
-- *... and 1 more nodes in this community*
+- **HIG reference lookup** (143 connections) — `.agents/skills/apple-design/references/hig-lookup.md`
+- **Alerts** (22 connections) — `.agents/skills/apple-design/references/hig/alerts.md`
+- **Sheets** (21 connections) — `.agents/skills/apple-design/references/hig/sheets.md`
+- **Activity views** (16 connections) — `.agents/skills/apple-design/references/hig/activity-views.md`
+- **Modality** (16 connections) — `.agents/skills/apple-design/references/hig/modality.md`
+- **Action sheets** (15 connections) — `.agents/skills/apple-design/references/hig/action-sheets.md`
+- **Popovers** (15 connections) — `.agents/skills/apple-design/references/hig/popovers.md`
+- **Panels** (14 connections) — `.agents/skills/apple-design/references/hig/panels.md`
+- **Maps** (12 connections) — `.agents/skills/apple-design/references/hig/maps.md`
+- **Collaboration and sharing** (10 connections) — `.agents/skills/apple-design/references/hig/collaboration-and-sharing.md`
+- **Progress indicators** (10 connections) — `.agents/skills/apple-design/references/hig/progress-indicators.md`
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/action-sheets.md`
+- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/action-sheets.md`
+- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/action-sheets.md`
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/activity-views.md`
+- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/activity-views.md`
+- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/activity-views.md`
+- **Share and action extensions** (1 connections) — `.agents/skills/apple-design/references/hig/activity-views.md`
+- **Anatomy** (1 connections) — `.agents/skills/apple-design/references/hig/alerts.md`
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/alerts.md`
+- **Buttons** (1 connections) — `.agents/skills/apple-design/references/hig/alerts.md`
+- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/alerts.md`
+- **Content** (1 connections) — `.agents/skills/apple-design/references/hig/alerts.md`
+- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/alerts.md`
+- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/alerts.md`
+- *... and 44 more nodes in this community*
 
 ## Relationships
 
-- [Community 1](Community_1.md) (20 shared connections)
-- [Community 78](Community_78.md) (7 shared connections)
-- [Community 85](Community_85.md) (4 shared connections)
-- [Community 131](Community_131.md) (3 shared connections)
-- [Community 11](Community_11.md) (2 shared connections)
-- [Community 134](Community_134.md) (1 shared connections)
-- [Community 79](Community_79.md) (1 shared connections)
-- [Community 246](Community_246.md) (1 shared connections)
-- [Community 329](Community_329.md) (1 shared connections)
-- [Community 118](Community_118.md) (1 shared connections)
+- [Community 1](Community_1.md) (55 shared connections)
+- [Community 131](Community_131.md) (23 shared connections)
+- [Community 118](Community_118.md) (15 shared connections)
+- [Community 134](Community_134.md) (13 shared connections)
+- [Community 119](Community_119.md) (10 shared connections)
+- [Community 156](Community_156.md) (10 shared connections)
+- [Community 84](Community_84.md) (10 shared connections)
+- [Community 11](Community_11.md) (8 shared connections)
+- [Community 85](Community_85.md) (8 shared connections)
+- [Community 107](Community_107.md) (7 shared connections)
+- [Community 97](Community_97.md) (7 shared connections)
+- [Community 83](Community_83.md) (4 shared connections)
 
 ## Source Files
 
-- `.agents/skills/apple-design/references/hig/column-views.md`
-- `.agents/skills/apple-design/references/hig/disclosure-controls.md`
-- `.agents/skills/apple-design/references/hig/lists-and-tables.md`
-- `.agents/skills/apple-design/references/hig/outline-views.md`
-- `.agents/skills/apple-design/references/hig/split-views.md`
+- `.agents/skills/apple-design/references/hig-lookup.md`
+- `.agents/skills/apple-design/references/hig/action-sheets.md`
+- `.agents/skills/apple-design/references/hig/activity-views.md`
+- `.agents/skills/apple-design/references/hig/alerts.md`
+- `.agents/skills/apple-design/references/hig/collaboration-and-sharing.md`
+- `.agents/skills/apple-design/references/hig/maps.md`
+- `.agents/skills/apple-design/references/hig/modality.md`
+- `.agents/skills/apple-design/references/hig/panels.md`
+- `.agents/skills/apple-design/references/hig/popovers.md`
+- `.agents/skills/apple-design/references/hig/progress-indicators.md`
+- `.agents/skills/apple-design/references/hig/sheets.md`
 
 ## Audit Trail
 
-- EXTRACTED: 50 (71%)
-- INFERRED: 20 (29%)
+- EXTRACTED: 222 (83%)
+- INFERRED: 44 (17%)
 - AMBIGUOUS: 0 (0%)
 
 ---

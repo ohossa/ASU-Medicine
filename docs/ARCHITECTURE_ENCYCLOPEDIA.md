@@ -1,7 +1,7 @@
 # ASU Medical Portal — Master Architectural Encyclopedia & System Specification
 
 > **Target Audience:** All current and future AI coding agents, engineering leads, and medical content reviewers working on the ASU Medical Portal.  
-> **Source of Truth:** Generated from deterministic AST analysis, semantic graph modeling, and empirical verification of the codebase (7,419 nodes, 12,139 edges, 1,073 communities).
+> **Source of Truth:** Generated from deterministic AST analysis, semantic graph modeling, and empirical verification of the codebase (7,991 nodes, 13,096 edges, 1,135 communities, 1,145 wiki articles).
 
 ---
 
@@ -17,7 +17,7 @@ The **ASU Medical Portal** is a high-performance, mobile-first, offline-capable 
    - **Subject-First Modules:** `Subject` → `Topic` → `Questions`.
    - **Single-Branch Modules:** Chapters open directly to topics without redundant subject selector screens.
 4. **Resumable State & Session Fingerprints:** Practice sessions maintain stable 20/40 question batch fingerprints, permitting seamless resumption across reloads and devices.
-5. **Apple HIG & Accessible Design:** Touch targets $\ge 44\text{px}$, semantic light/dark mode tokens, zero UI sound toggle text clutter, and strict keyboard focusability.
+5. **Apple HIG & Accessible Design:** Touch targets $\ge 44\text{px}$, semantic light/dark mode tokens, zero UI sound toggle text clutter, accessible dialogs (`role="dialog"`, `aria-modal="true"`), and strict keyboard focusability.
 
 ---
 
@@ -30,6 +30,7 @@ flowchart TD
         Nav["Curriculum Navigation<br/>(Dashboard, ChapterSelect, SubjectSelect, FlowBreadcrumbs)"]
         Search["Client Search Indexer<br/>(QuestionSearch, useSearchIndex, engine.ts)"]
         Solvers["Active Solvers<br/>(QuizInterface.tsx, ClinicalCaseSolver.tsx)"]
+        Admin["Admin Management Suite<br/>(AdminPortal, InlineQuestionEditor, DeleteQuestionModal)"]
         Dash["Results & Remediation<br/>(ResultsDashboard.tsx, FlaggedQuestionsScreen.tsx)"]
     end
 
@@ -46,16 +47,21 @@ flowchart TD
         Banks["42 Module Banks JSON<br/>(src/imports/year-X/semester-Y/<MODULE>.json)"]
     end
 
-    subgraph Serverless ["Cloud & Feedback Layer (server/)"]
-        Redis["Upstash Redis / Cloud DB"]
-        Inbox["report-inbox.ts<br/>(Student Feedback, Typo Reporting)"]
+    subgraph CloudLayer ["Cloud Database & Edge Layer (server/ & api/)"]
+        Supabase["Supabase PostgreSQL 15<br/>(aws-0-eu-central-1 pooler :6543)"]
+        Tables["Tables: question_reports, report_replies,<br/>question_edits, question_edit_history"]
+        Fallback["Resilient Ring Buffer / Redis Fallback"]
+        Inbox["report-inbox.ts & question-edit-service.ts"]
     end
 
     Raw --> IR --> VB --> Banks
     Banks -->|npm run prebuild| Manifest
     App --> Nav --> Solvers --> Dash
+    App --> Admin --> Inbox
     Solvers <--> Cache <--> Loader <--> Banks
-    Solvers --> Inbox --> Redis
+    Solvers --> Inbox --> Supabase
+    Supabase <--> Tables
+    Supabase -.->|Auto-Recovery| Fallback
     App --> Search <--> Cache
 ```
 
@@ -132,14 +138,22 @@ Governed by [`QUESTION_IMPORT_WORKFLOW.md`](file:///Users/omarhossa/Documents/Me
 
 ---
 
-### Subsystem 7: Serverless Error Reporting & Human-First Review (`server/`)
-- **Report Inbox ([`server/report-inbox.ts`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/server/report-inbox.ts)):**
-  - Receives student reports on typos, ambiguous stems, or incorrect answer keys via [`ReportQuestion.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/reports/ReportQuestion.tsx).
-  - Backed by Upstash Redis with local memory fallbacks for development.
-  - Human-first administration in [`AdminPortal.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/pages/AdminPortal.tsx) without AI mediation or filtering.
+### Subsystem 7: Supabase PostgreSQL 15 Database, Error Reporting & Live Question Management (`server/`)
+- **Supabase PostgreSQL 15 Architecture ([`server/supabase-db.ts`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/server/supabase-db.ts)):**
+  - **Relational Tables:**
+    - `question_reports`: Complete audit log of student feedback, category, explanation, snapshot (JSONB), verification status, reporter Clerk metadata, and resolution notes.
+    - `report_replies`: History of institutional correspondence delivered to students.
+    - `question_edits`: Dynamic live question overrides across modules, storing module code, chapter, subject, question (JSONB), revision number, and deletion status (`deleted BOOLEAN`).
+    - `question_edit_history`: Immutable revision log tracing every edit, author, and timestamp.
+  - **Connection Pooling & Resilient Fallback:** Powered by Supabase pgBouncer on port `6543` in transaction pooling mode. Features a dual-layer auto-recovery mechanism: if Supabase experiences maintenance, latency, or connection drops, writes seamlessly spool into a local ring buffer or Redis fallback without dropping student reports.
 - **On-The-Spot Question Editing ([`InlineQuestionEditor.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/components/InlineQuestionEditor.tsx)):**
   - Enables instant inline patch editing of question stem, choices, designated correct answer, and faculty explanation without opening the full question bank or navigating away.
-  - Writes live overrides via `PATCH /api/question-bank` into Redis overlay `asu_question_edits:v1:${moduleCode}`.
+  - **Optimistic Concurrency Control:** Automatically fetches the live server revision (`action=single`) on mount and pre-save, preventing HTTP 409 conflict errors across concurrent admin sessions.
+- **Apple HIG Question Deletion & Instant Restore Lifecycle ([`DeleteQuestionModal.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/components/DeleteQuestionModal.tsx)):**
+  - **Destructive Confirmation Modal:** Accessible material dialog (`role="dialog"`, `aria-modal="true"`) with backdrop blur (`backdrop-blur-md bg-black/60`), soft rose destructive styling, and $\ge 44\text{px}$ touch targets.
+  - **Auto-Resolve Integration:** Checkbox automatically marks the linked student report as `fixed` with note *"Question removed from student practice."* upon deletion.
+  - **Reversible Practice Exclusion:** `DELETE /api/question-bank` records `deleted: true`. Practice loaders (`learning-bank.ts`, `publishedEdits.ts`) immediately filter out the question from student quizzes while preserving history.
+  - **Instant Restore Pathway:** Question snapshot card renders an Apple-styled warning banner with a **Restore Question** button that issues `PATCH /api/question-bank` (`deleted: false`) to reinstate the question instantly.
 - **Verified Student Email System & Structural Humanizer ([`ReportReplyComposer.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/pages/ReportReplyComposer.tsx)):**
   - Integrated in-portal email delivery system communicating directly with students via Resend and verified institutional relays.
   - **Context-Rich Templates:** Automatically embeds the original question text, all options (with designated answer), explanation, and student report notes so students have complete context even months after reporting.
@@ -266,21 +280,43 @@ The ASU Medical Portal features a private command center located at `/admin` and
 - **Direct Human Review:** Replaced automated AI pre-triage with clean, unhindered faculty review workflows.
 - **Inline Editing:** Administrators can edit question stems, choices, designated correct answer indices, and detailed clinical explanations directly within the analytics reports without reloading question banks.
 
-### 6.5 Zero-Loss Student Question Reporting Architecture
-The student reporting pipeline (`server/report-question.ts`, `server/report-store.ts`, `server/report-service.ts`, `api/question-reports.ts`) guarantees that no student feedback is dropped, rejected, or lost under network or storage degradation:
+### 6.5 Supabase PostgreSQL 15 Migration & Resilient Report Pipeline
+The student reporting pipeline (`server/report-question.ts`, `server/report-store.ts`, `server/report-service.ts`, `server/supabase-db.ts`, `api/question-reports.ts`) is backed by Supabase PostgreSQL 15, guaranteeing high-throughput durability, ACID guarantees, and zero lost reports:
+- **Relational Tables & Schema:**
+  - `question_reports`: Stores student feedback, full question snapshot (JSONB), Clerk identity details, status, and resolution history.
+  - `question_edits`: Stores live question patches, lecture routing, revision counter, and `deleted` flag.
+  - `report_replies`: Stores student email correspondence delivered via Resend.
 - **Two-Pass Chapter Resolution:** Resolves questions strictly against client-provided chapter IDs first, falling back immediately to a complete scan across all module chapters. Prevents false 404s when practice assessments or exam configurations use synthetic or differing chapter identifiers (e.g. CA-2 vs practice bank).
-- **Isolated Redis Dynamic Edits Lookup:** Wrapping live Redis edit overlays in isolated fault barriers ensures temporary key-value store slowdowns or disconnections never impede question intake.
-- **In-Memory & Spool Fallback Queue:** If Upstash Redis is unreachable or unconfigured, reports are automatically stored in an in-memory queue (`fallbackReports`), returning an immediate HTTP 200/201 success confirmation to the student. Fallback reports seamlessly merge into admin list and status queries.
+- **Dual-Layer Fallback Queue:** If Supabase connection pooler is unreachable or unconfigured, reports automatically buffer into an in-memory queue (`fallbackReports`) or Redis, returning immediate HTTP 200/201 success confirmation to the student. Fallback records merge seamlessly into admin views.
 - **Auth Resilience:** Student authentication resolves valid JWT token claims directly if external Clerk REST endpoints experience latency, preserving reporting availability.
 - **Direct Faculty Review Trust:** Student reporting interface reflects human-first faculty review, explicitly removing legacy AI review references.
 
-### 6.6 Edge & Serverless Security Architecture
+### 6.6 Concurrency Control, Deletion & Instant Restoration Lifecycle
+- **Zero-Conflict Revision Sync:** To eliminate HTTP 409 conflicts during consecutive live edits, `InlineQuestionEditor` and `DeleteQuestionModal` query `action=single` immediately before mutating the database, ensuring optimistic locks use the true live revision.
+- **Reversible Deletion Standard:**
+  1. Deletion sets `deleted: true` and bumps `revision` in Supabase `question_edits`.
+  2. Loaders (`learning-bank.ts`, `publishedEdits.ts`) exclude deleted questions from quizzes.
+  3. The Question Snapshot card displays an Apple-styled warning banner: *"Question Removed from Student Practice"*.
+  4. Instant restoration via **Restore Question** button executes `PATCH /api/question-bank` with `{ deleted: false }`, immediately un-deleting the question for all students.
+
+### 6.7 Edge & Serverless Security Architecture
 - **Origin Reflection Protection:** Token verification across serverless functions (`api/sync.ts`, `server/admin-analytics-service.ts`) enforces strict whitelists of verified production domains (`https://asu.codes`, `https://www.asu.codes`, `https://asu-medicine.vercel.app`) without reflecting unverified request `Origin` headers into authorized parties.
 - **Fail-Closed Cron & Service Authentication:** Maintenance routes (`api/cron-maintenance.ts`) fail closed with HTTP 500 if `CRON_SECRET` is unset, and HTTP 401 if unauthorized tokens are presented.
 - **Fail-Closed Admin Secrets:** Administrative verification rejects token validation when `CLERK_SECRET_KEY` is missing, prohibiting static or hardcoded fallback keys.
 - **Rate-Limited & Sanitized Telemetry:** Presence heartbeats (`api/presence.ts`, `server/presence-service.ts`) sanitize user IDs against strict alphanumeric expressions ($\le 64$ characters), preventing Redis memory flooding attacks.
 - **Content Security Policy & Modern Transport:** `vercel.json` enforces HSTS (`max-age=63072000; includeSubDomains; preload`), strict Content Security Policy (`default-src 'self'`, whitelisted Clerk/Upstash/AI endpoints, `frame-ancestors 'self'`), COOP (`same-origin-allow-popups`), and CORP (`same-origin`).
 - **Apple-Design Security UI:** The client integrates an Apple HIG-compliant glassmorphic security notification system (`SecurityNoticeToast.tsx`) with $\ge 44\text{px}$ touch targets, smooth spring motion, and WCAG AAA contrast for auth challenge handling and rate-limiting alerts.
+
+---
+
+## 7. Medical Review & High-Yield Explanation Standards
+
+Every imported or audited question bank adheres to strict pedagogical guidelines:
+- **Concise Medical Rationales:** Explanations must be concise ($\le 65$ words), evidence-based, and focused on high-yield clinical mechanisms.
+- **Zero Boilerplate References:** Eliminate lazy citations like *"Source: Past Exam 2024"*. Ground all justifications directly in standard authoritative medical references (Guyton & Hall Physiology, Robbins & Cotran Pathology, Nelson Pediatrics).
+- **Extraction Key Audit:** Every answer key must be medically verified against the designated source before publication. Key discrepancies must be logged in a discrepancy ledger and reviewed by faculty.
+
+---
 
 Whenever an agent makes modifications to this codebase, they **MUST** obey the following iron rules:
 

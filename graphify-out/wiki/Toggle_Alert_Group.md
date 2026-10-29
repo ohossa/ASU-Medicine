@@ -1,6 +1,6 @@
 # Toggle Alert Group
 
-> 19 nodes
+> 18 nodes
 
 ## Key Concepts
 
@@ -9,7 +9,6 @@
 - **toggle.tsx** (8 connections) — `Light_Dark Mode Toggle/src/app/components/ui/toggle.tsx`
 - **class-variance-authority@0.7.1** (8 connections) — `Light_Dark Mode Toggle/package.json`
 - **badge.tsx** (7 connections) — `Light_Dark Mode Toggle/src/app/components/ui/badge.tsx`
-- **@radix-ui/react-slot@1.1.2** (6 connections) — `Light_Dark Mode Toggle/package.json`
 - **toggleVariants** (4 connections) — `Light_Dark Mode Toggle/src/app/components/ui/toggle.tsx`
 - **Alert()** (3 connections) — `Light_Dark Mode Toggle/src/app/components/ui/alert.tsx`
 - **Badge()** (3 connections) — `Light_Dark Mode Toggle/src/app/components/ui/badge.tsx`
@@ -26,13 +25,13 @@
 
 ## Relationships
 
-- [Atomic UI Components & Avatars](Atomic_UI_Components_&_Avatars.md) (12 shared connections)
-- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (8 shared connections)
-- [React Framework & Icon Dependencies](React_Framework_&_Icon_Dependencies.md) (4 shared connections)
+- [Atomic UI Components & Avatars](Atomic_UI_Components_&_Avatars.md) (11 shared connections)
+- [Community 95](Community_95.md) (4 shared connections)
+- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (4 shared connections)
+- [React Framework & Icon Dependencies](React_Framework_&_Icon_Dependencies.md) (3 shared connections)
 - [Carousel React Alert](Carousel_React_Alert.md) (2 shared connections)
-- [Form Input Controls & Modals](Form_Input_Controls_&_Modals.md) (2 shared connections)
-- [Community 120](Community_120.md) (1 shared connections)
-- [Label React Badge](Label_React_Badge.md) (1 shared connections)
+- [Community 114](Community_114.md) (1 shared connections)
+- [Form Input Controls & Modals](Form_Input_Controls_&_Modals.md) (1 shared connections)
 
 ## Source Files
 
@@ -44,7 +43,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 54 (100%)
+- EXTRACTED: 49 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

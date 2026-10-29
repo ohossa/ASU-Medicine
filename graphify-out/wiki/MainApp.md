@@ -1,8 +1,8 @@
 # MainApp()
 
-> God node · 58 connections · `src/app/App.tsx`
+> God node · 61 connections · `src/app/App.tsx`
 
-**Community:** [Root App Shell & Authentication](Root_App_Shell_&_Authentication.md)
+**Community:** [Community 6](Community_6.md)
 
 ## Connections by Relation
 
@@ -19,15 +19,15 @@
 - useLearning() `EXTRACTED`
 - LoadingScreen() `EXTRACTED`
 - findQuestionById() `EXTRACTED`
+- useCloudSync() `EXTRACTED`
 - useQuizSession() `EXTRACTED`
 - QuizFlowWrapper() `EXTRACTED`
 - useBankRevision() `EXTRACTED`
 - useShufflePreference() `EXTRACTED`
-- useCloudSync() `EXTRACTED`
 - toGitTopicChapter() `EXTRACTED`
 - questionScore() `EXTRACTED`
 - saveQuizResult() `EXTRACTED`
-- *…and 37 more `calls` connection(s) not listed (lowest-degree first to go)*
+- *…and 40 more `calls` connection(s) not listed (lowest-degree first to go)*
 
 ### contains
 - src/app/App.tsx `EXTRACTED`

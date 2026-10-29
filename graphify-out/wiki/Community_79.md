@@ -1,63 +1,51 @@
 # Community 79
 
-> 23 nodes
+> 25 nodes
 
 ## Key Concepts
 
-- **Collections** (34 connections) — `.agents/skills/apple-design/references/hig/collections.md`
-- **import-year1-release.py** (10 connections) — `scripts/import-year1-release.py`
-- **map-anki-lectures.py** (7 connections) — `scripts/map-anki-lectures.py`
-- **convert()** (6 connections) — `scripts/import-year1-release.py`
-- **main()** (6 connections) — `scripts/import-year1-release.py`
-- **rebuild-unique-keywords.py** (5 connections) — `scripts/rebuild-unique-keywords.py`
-- **audit-keyword-overlap.py** (4 connections) — `scripts/audit-keyword-overlap.py`
-- **filter-unique-keywords.py** (4 connections) — `scripts/filter-unique-keywords.py`
-- **merge-keyword-dictionaries.py** (4 connections) — `scripts/merge-keyword-dictionaries.py`
-- **nonempty()** (3 connections) — `scripts/import-year1-release.py`
-- **parse_decks()** (3 connections) — `scripts/map-anki-lectures.py`
-- **update_bank()** (3 connections) — `scripts/map-anki-lectures.py`
-- **analyze-structure-terms.py** (2 connections) — `scripts/analyze-structure-terms.py`
-- **clean_name()** (1 connections) — `scripts/map-anki-lectures.py`
-- **Audit keyword dictionary for overlap and uniqueness.** (1 connections) — `scripts/audit-keyword-overlap.py`
-- **Filter keyword dictionary to keep only unique/rare keywords.** (1 connections) — `scripts/filter-unique-keywords.py`
-- **Lossless structural conversion of the four designated Year 1 source banks.…** (1 connections) — `scripts/import-year1-release.py`
-- **Map Anki deck names to bank lecture names and update MCNS-2.json.** (1 connections) — `scripts/map-anki-lectures.py`
-- **Merge book TOC topics and Anki keywords into unified keyword dictionaries.** (1 connections) — `scripts/merge-keyword-dictionaries.py`
-- **Rebuild keyword dictionary keeping only exact, unique, chapter-specific…** (1 connections) — `scripts/rebuild-unique-keywords.py`
-- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/collections.md`
-- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/collections.md`
-- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/collections.md`
+- **import_git_assessment2.py** (18 connections) — `scripts/import_git_assessment2.py`
+- **fitz** (17 connections)
+- **run_intake()** (13 connections) — `scripts/import_git_assessment2.py`
+- **extract_abdel_hamid_physio()** (6 connections) — `scripts/import_git_assessment2.py`
+- **extract_alaa_pharma()** (6 connections) — `scripts/import_git_assessment2.py`
+- **extract_elshorbagy()** (6 connections) — `scripts/import_git_assessment2.py`
+- **extract_hegazy()** (6 connections) — `scripts/import_git_assessment2.py`
+- **extract_histo_mcq3()** (6 connections) — `scripts/import_git_assessment2.py`
+- **Any** (6 connections)
+- **extract_patho_bro()** (5 connections) — `scripts/import_git_assessment2.py`
+- **normalize_text()** (5 connections) — `scripts/import_git_assessment2.py`
+- **match_lecture()** (4 connections) — `scripts/import_git_assessment2.py`
+- **options_overlap()** (4 connections) — `scripts/import_git_assessment2.py`
+- **token_similarity()** (3 connections) — `scripts/import_git_assessment2.py`
+- **ASU Medical Portal - Assessment 2 (GIT Module) Intake & Deduplication Script…** (1 connections) — `scripts/import_git_assessment2.py`
+- **Parse Hegazy Liver & Pancreas pathology file.** (1 connections) — `scripts/import_git_assessment2.py`
+- **Parse Patho bro Git 2 Mcq file.** (1 connections) — `scripts/import_git_assessment2.py`
+- **Parse ALAA pharma mcq GIT-2 [old] .pdf.** (1 connections) — `scripts/import_git_assessment2.py`
+- **Parse ABDEL-HAMID digestive system-2 [2022] .pdf.** (1 connections) — `scripts/import_git_assessment2.py`
+- **Normalize question text for robust deduplication.** (1 connections) — `scripts/import_git_assessment2.py`
+- **Parse Bg Histo GIT MCQ-3.pdf.** (1 connections) — `scripts/import_git_assessment2.py`
+- **Jaccard similarity on word sets.** (1 connections) — `scripts/import_git_assessment2.py`
+- **Calculate overlap ratio of options.** (1 connections) — `scripts/import_git_assessment2.py`
+- **Smart auto-sorting: matches question stem against lecture names.** (1 connections) — `scripts/import_git_assessment2.py`
+- **Parse Dr. Mohammed Elshorbagy Liver & Lower GIT question bank.** (1 connections) — `scripts/import_git_assessment2.py`
 
 ## Relationships
 
-- [Reorganize Essays Bank](Reorganize_Essays_Bank.md) (10 shared connections)
-- [Community 38](Community_38.md) (6 shared connections)
-- [Biochemistry Build Intake](Biochemistry_Build_Intake.md) (6 shared connections)
-- [Keyword Unique Keywords](Keyword_Unique_Keywords.md) (6 shared connections)
-- [Chapter Hybrid Force](Chapter_Hybrid_Force.md) (4 shared connections)
-- [Community 1](Community_1.md) (4 shared connections)
-- [Polish Rejected Biochemistry](Polish_Rejected_Biochemistry.md) (2 shared connections)
-- [Quality Replay Content](Quality_Replay_Content.md) (2 shared connections)
-- [Classify Question Questions](Classify_Question_Questions.md) (1 shared connections)
-- [Community 251](Community_251.md) (1 shared connections)
-- [Community 121](Community_121.md) (1 shared connections)
-- [Community 85](Community_85.md) (1 shared connections)
+- [Community 38](Community_38.md) (12 shared connections)
+- [Community 20](Community_20.md) (4 shared connections)
+- [Community 98](Community_98.md) (4 shared connections)
+- [Community 93](Community_93.md) (3 shared connections)
+- [Community 318](Community_318.md) (1 shared connections)
 
 ## Source Files
 
-- `.agents/skills/apple-design/references/hig/collections.md`
-- `scripts/analyze-structure-terms.py`
-- `scripts/audit-keyword-overlap.py`
-- `scripts/filter-unique-keywords.py`
-- `scripts/import-year1-release.py`
-- `scripts/map-anki-lectures.py`
-- `scripts/merge-keyword-dictionaries.py`
-- `scripts/rebuild-unique-keywords.py`
+- `scripts/import_git_assessment2.py`
 
 ## Audit Trail
 
-- EXTRACTED: 69 (95%)
-- INFERRED: 4 (5%)
+- EXTRACTED: 70 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

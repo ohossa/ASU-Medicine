@@ -1,35 +1,41 @@
 # Community 155
 
-> 7 nodes
+> 18 nodes
 
 ## Key Concepts
 
-- **LanguageContext.tsx** (12 connections) — `src/app/context/LanguageContext.tsx`
-- **LanguageContextValue.ts** (6 connections) — `src/app/context/LanguageContextValue.ts`
-- **LanguageContext** (4 connections) — `src/app/context/LanguageContextValue.ts`
-- **Language** (1 connections) — `src/app/context/LanguageContext.tsx`
-- **Language** (1 connections) — `src/app/context/LanguageContextValue.ts`
-- **LanguageContextType** (1 connections) — `src/app/context/LanguageContextValue.ts`
-- **translations** (1 connections) — `src/app/context/LanguageContext.tsx`
+- **Supabase** (8 connections) — `.agents/skills/supabase/SKILL.md`
+- **feedback-issue-template.md** (4 connections) — `.agents/skills/supabase/assets/feedback-issue-template.md`
+- **skill-feedback.md** (3 connections) — `.agents/skills/supabase/references/skill-feedback.md`
+- **Making and Committing Schema Changes** (3 connections) — `.agents/skills/supabase/SKILL.md`
+- **supabase/SKILL.md** (2 connections) — `.agents/skills/supabase/SKILL.md`
+- **Skill Feedback** (2 connections) — `.agents/skills/supabase/references/skill-feedback.md`
+- **Fix suggestion** (1 connections) — `.agents/skills/supabase/assets/feedback-issue-template.md`
+- **Source** (1 connections) — `.agents/skills/supabase/assets/feedback-issue-template.md`
+- **What happened** (1 connections) — `.agents/skills/supabase/assets/feedback-issue-template.md`
+- **Steps** (1 connections) — `.agents/skills/supabase/references/skill-feedback.md`
+- **Core Principles** (1 connections) — `.agents/skills/supabase/SKILL.md`
+- **Debugging** (1 connections) — `.agents/skills/supabase/SKILL.md`
+- **Option A: Declarative schemas** (1 connections) — `.agents/skills/supabase/SKILL.md`
+- **Option B: Imperative migrations** (1 connections) — `.agents/skills/supabase/SKILL.md`
+- **Reference Guides** (1 connections) — `.agents/skills/supabase/SKILL.md`
+- **Supabase CLI** (1 connections) — `.agents/skills/supabase/SKILL.md`
+- **Supabase Documentation** (1 connections) — `.agents/skills/supabase/SKILL.md`
+- **Supabase MCP Server** (1 connections) — `.agents/skills/supabase/SKILL.md`
 
 ## Relationships
 
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (2 shared connections)
-- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (2 shared connections)
-- [Learning Correctionstatus Facts](Learning_Correctionstatus_Facts.md) (2 shared connections)
-- [Portalentry Styles Themecontext](Portalentry_Styles_Themecontext.md) (2 shared connections)
-- [Community 81](Community_81.md) (2 shared connections)
-- [Flowbreadcrumbs Gitbankselect Integration](Flowbreadcrumbs_Gitbankselect_Integration.md) (1 shared connections)
-- [Community 1](Community_1.md) (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `src/app/context/LanguageContext.tsx`
-- `src/app/context/LanguageContextValue.ts`
+- `.agents/skills/supabase/SKILL.md`
+- `.agents/skills/supabase/assets/feedback-issue-template.md`
+- `.agents/skills/supabase/references/skill-feedback.md`
 
 ## Audit Trail
 
-- EXTRACTED: 19 (100%)
+- EXTRACTED: 17 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

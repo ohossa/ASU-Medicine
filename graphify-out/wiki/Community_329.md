@@ -1,46 +1,24 @@
 # Community 329
 
-> 17 nodes
+> 2 nodes
 
 ## Key Concepts
 
-- **Segmented controls** (15 connections) — `.agents/skills/apple-design/references/hig/segmented-controls.md`
-- **Boxes** (12 connections) — `.agents/skills/apple-design/references/hig/boxes.md`
-- **Tab views** (12 connections) — `.agents/skills/apple-design/references/hig/tab-views.md`
-- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/boxes.md`
-- **Content** (1 connections) — `.agents/skills/apple-design/references/hig/boxes.md`
-- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/boxes.md`
-- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/boxes.md`
-- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/segmented-controls.md`
-- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/segmented-controls.md`
-- **Content** (1 connections) — `.agents/skills/apple-design/references/hig/segmented-controls.md`
-- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/segmented-controls.md`
-- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/segmented-controls.md`
-- **Anatomy** (1 connections) — `.agents/skills/apple-design/references/hig/tab-views.md`
-- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/tab-views.md`
-- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/tab-views.md`
-- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/tab-views.md`
-- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/tab-views.md`
+- **data-upsert.md** (1 connections) — `.agents/skills/supabase-postgres-best-practices/references/data-upsert.md`
+- **Use UPSERT for Insert-or-Update Operations** (1 connections) — `.agents/skills/supabase-postgres-best-practices/references/data-upsert.md`
 
 ## Relationships
 
-- [Community 1](Community_1.md) (12 shared connections)
-- [Community 131](Community_131.md) (3 shared connections)
-- [Community 78](Community_78.md) (3 shared connections)
-- [Community 85](Community_85.md) (1 shared connections)
-- [Community 134](Community_134.md) (1 shared connections)
-- [Community 251](Community_251.md) (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.agents/skills/apple-design/references/hig/boxes.md`
-- `.agents/skills/apple-design/references/hig/segmented-controls.md`
-- `.agents/skills/apple-design/references/hig/tab-views.md`
+- `.agents/skills/supabase-postgres-best-practices/references/data-upsert.md`
 
 ## Audit Trail
 
-- EXTRACTED: 25 (68%)
-- INFERRED: 12 (32%)
+- EXTRACTED: 1 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,25 +1,38 @@
 # Community 207
 
-> 4 nodes
+> 17 nodes
 
 ## Key Concepts
 
-- **quality-audit.ts** (4 connections) — `data-format-v2/scripts/quality-audit.ts`
-- **bank** (1 connections) — `data-format-v2/scripts/quality-audit.ts`
-- **questions** (1 connections) — `data-format-v2/scripts/quality-audit.ts`
-- **textMap** (1 connections) — `data-format-v2/scripts/quality-audit.ts`
+- **Changelog** (6 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
+- **[1.2.0](https://github.com/supabase/agent-skills/compare/v1.1.1...v1.2.0) (2026-06-02)** (3 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
+- **[1.3.0](https://github.com/supabase/agent-skills/compare/v1.2.0...v1.3.0) (2026-06-05)** (3 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
+- **[1.4.0](https://github.com/supabase/agent-skills/compare/v1.3.0...v1.4.0) (2026-07-10)** (3 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
+- **[1.5.0](https://github.com/supabase/agent-skills/compare/supabase-postgres-best-practices-v1.4.0...supabase-postgres-best-practices-v1.5.0) (2026-07-30)** (3 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
+- **[1.6.0](https://github.com/supabase/agent-skills/compare/supabase-postgres-best-practices-v1.5.0...supabase-postgres-best-practices-v1.6.0) (2026-07-30)** (3 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
+- **supabase-postgres-best-practices/CHANGELOG.md** (1 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
+- **Bug Fixes** (1 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
+- **Bug Fixes** (1 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
+- **Bug Fixes** (1 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
+- **Bug Fixes** (1 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
+- **Bug Fixes** (1 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
+- **Features** (1 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
+- **Features** (1 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
+- **Features** (1 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
+- **Features** (1 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
+- **Features** (1 connections) — `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
 
 ## Relationships
 
-- [Bank Audit Validate](Bank_Audit_Validate.md) (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `data-format-v2/scripts/quality-audit.ts`
+- `.agents/skills/supabase-postgres-best-practices/CHANGELOG.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 16 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

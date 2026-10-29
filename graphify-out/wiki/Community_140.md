@@ -1,35 +1,40 @@
 # Community 140
 
-> 8 nodes
+> 11 nodes
 
 ## Key Concepts
 
-- **store/progress.tsx** (14 connections) — `src/app/store/progress.tsx`
-- **ProgressContextValue.tsx** (5 connections) — `src/app/store/ProgressContextValue.tsx`
-- **AccountProgress()** (4 connections) — `src/app/store/progress.tsx`
-- **ProgressProvider()** (4 connections) — `src/app/store/progress.tsx`
-- **ProgressState** (3 connections) — `src/app/store/ProgressContextValue.tsx`
-- **ProgressContext** (3 connections) — `src/app/store/ProgressContextValue.tsx`
-- **Ctx** (2 connections) — `src/app/store/ProgressContextValue.tsx`
-- **load()** (2 connections) — `src/app/store/progress.tsx`
+- **TriagePanel.tsx** (13 connections) — `src/pages/TriagePanel.tsx`
+- **TriagePanel()** (8 connections) — `src/pages/TriagePanel.tsx`
+- **StudyButton()** (6 connections) — `src/app/components/ui/StudyControls.tsx`
+- **StudyControls.tsx** (6 connections) — `src/app/components/ui/StudyControls.tsx`
+- **TriageAssessmentCard()** (5 connections) — `src/pages/TriagePanel.tsx`
+- **StatusMessage()** (4 connections) — `src/app/components/ui/StudyControls.tsx`
+- **triage-panel.test.tsx** (4 connections) — `src/test/reports/triage-panel.test.tsx`
+- **action()** (3 connections) — `src/pages/TriagePanel.tsx`
+- **StudySurface()** (1 connections) — `src/app/components/ui/StudyControls.tsx`
+- **action()** (1 connections) — `src/pages/TriagePanel.tsx`
+- **runQueue()** (1 connections) — `src/pages/TriagePanel.tsx`
 
 ## Relationships
 
-- [Learning Correctionstatus Facts](Learning_Correctionstatus_Facts.md) (3 shared connections)
-- [Root App Shell & Authentication](Root_App_Shell_&_Authentication.md) (3 shared connections)
-- [Ecgmonitor Pulseengine Burst](Ecgmonitor_Pulseengine_Burst.md) (2 shared connections)
-- [Confettimanager Levelupoverlay Celebrate](Confettimanager_Levelupoverlay_Celebrate.md) (2 shared connections)
-- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (2 shared connections)
-- [Client Adminoverviewpanel Adminportal](Client_Adminoverviewpanel_Adminportal.md) (1 shared connections)
+- [Community 56](Community_56.md) (5 shared connections)
+- [Community 24](Community_24.md) (3 shared connections)
+- [Community 95](Community_95.md) (3 shared connections)
+- [Triage Report Lease](Triage_Report_Lease.md) (2 shared connections)
+- [Community 105](Community_105.md) (1 shared connections)
+- [Community 36](Community_36.md) (1 shared connections)
+- [Community 15](Community_15.md) (1 shared connections)
 
 ## Source Files
 
-- `src/app/store/ProgressContextValue.tsx`
-- `src/app/store/progress.tsx`
+- `src/app/components/ui/StudyControls.tsx`
+- `src/pages/TriagePanel.tsx`
+- `src/test/reports/triage-panel.test.tsx`
 
 ## Audit Trail
 
-- EXTRACTED: 25 (100%)
+- EXTRACTED: 34 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

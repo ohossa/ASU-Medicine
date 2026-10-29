@@ -1,16 +1,17 @@
 # Community 134
 
-> 45 nodes
+> 50 nodes
 
 ## Key Concepts
 
 - **Buttons** (29 connections) — `.agents/skills/apple-design/references/hig/buttons.md`
-- **Menus** (28 connections) — `.agents/skills/apple-design/references/hig/menus.md`
+- **Icons** (26 connections) — `.agents/skills/apple-design/references/hig/icons.md`
 - **Pull-down buttons** (19 connections) — `.agents/skills/apple-design/references/hig/pull-down-buttons.md`
 - **Context menus** (17 connections) — `.agents/skills/apple-design/references/hig/context-menus.md`
-- **Edit menus** (16 connections) — `.agents/skills/apple-design/references/hig/edit-menus.md`
-- **Toggles** (16 connections) — `.agents/skills/apple-design/references/hig/toggles.md`
+- **Right to left** (17 connections) — `.agents/skills/apple-design/references/hig/right-to-left.md`
+- **Image views** (16 connections) — `.agents/skills/apple-design/references/hig/image-views.md`
 - **Pop-up buttons** (15 connections) — `.agents/skills/apple-design/references/hig/pop-up-buttons.md`
+- **Page controls** (13 connections) — `.agents/skills/apple-design/references/hig/page-controls.md`
 - **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/buttons.md`
 - **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/buttons.md`
 - **Content** (1 connections) — `.agents/skills/apple-design/references/hig/buttons.md`
@@ -23,43 +24,43 @@
 - **Content** (1 connections) — `.agents/skills/apple-design/references/hig/context-menus.md`
 - **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/context-menus.md`
 - **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/context-menus.md`
-- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/edit-menus.md`
-- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/edit-menus.md`
-- **Content** (1 connections) — `.agents/skills/apple-design/references/hig/edit-menus.md`
-- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/edit-menus.md`
-- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/edit-menus.md`
-- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/menus.md`
-- *... and 20 more nodes in this community*
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/icons.md`
+- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/icons.md`
+- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/icons.md`
+- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/icons.md`
+- **Standard icons** (1 connections) — `.agents/skills/apple-design/references/hig/icons.md`
+- *... and 25 more nodes in this community*
 
 ## Relationships
 
-- [Community 1](Community_1.md) (28 shared connections)
-- [Community 78](Community_78.md) (12 shared connections)
-- [Community 85](Community_85.md) (11 shared connections)
-- [Community 121](Community_121.md) (8 shared connections)
-- [Community 11](Community_11.md) (5 shared connections)
-- [Community 131](Community_131.md) (4 shared connections)
-- [Community 154](Community_154.md) (2 shared connections)
-- [Community 246](Community_246.md) (2 shared connections)
+- [Community 1](Community_1.md) (33 shared connections)
+- [Community 251](Community_251.md) (13 shared connections)
+- [Community 131](Community_131.md) (10 shared connections)
+- [Community 85](Community_85.md) (7 shared connections)
+- [Community 156](Community_156.md) (6 shared connections)
+- [Community 119](Community_119.md) (5 shared connections)
+- [Community 97](Community_97.md) (3 shared connections)
 - [Community 118](Community_118.md) (2 shared connections)
-- [Community 329](Community_329.md) (1 shared connections)
-- [Community 209](Community_209.md) (1 shared connections)
-- [Community 251](Community_251.md) (1 shared connections)
+- [Community 107](Community_107.md) (2 shared connections)
+- [Community 121](Community_121.md) (2 shared connections)
+- [Community 83](Community_83.md) (1 shared connections)
+- [Community 84](Community_84.md) (1 shared connections)
 
 ## Source Files
 
 - `.agents/skills/apple-design/references/hig/buttons.md`
 - `.agents/skills/apple-design/references/hig/context-menus.md`
-- `.agents/skills/apple-design/references/hig/edit-menus.md`
-- `.agents/skills/apple-design/references/hig/menus.md`
+- `.agents/skills/apple-design/references/hig/icons.md`
+- `.agents/skills/apple-design/references/hig/image-views.md`
+- `.agents/skills/apple-design/references/hig/page-controls.md`
 - `.agents/skills/apple-design/references/hig/pop-up-buttons.md`
 - `.agents/skills/apple-design/references/hig/pull-down-buttons.md`
-- `.agents/skills/apple-design/references/hig/toggles.md`
+- `.agents/skills/apple-design/references/hig/right-to-left.md`
 
 ## Audit Trail
 
-- EXTRACTED: 100 (78%)
-- INFERRED: 28 (22%)
+- EXTRACTED: 108 (77%)
+- INFERRED: 32 (23%)
 - AMBIGUOUS: 0 (0%)
 
 ---

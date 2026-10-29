@@ -1,63 +1,64 @@
 # Community 97
 
-> 48 nodes
+> 33 nodes
 
 ## Key Concepts
 
-- **Playing haptics** (21 connections) — `.agents/skills/apple-design/references/hig/playing-haptics.md`
-- **Augmented reality** (20 connections) — `.agents/skills/apple-design/references/hig/augmented-reality.md`
-- **Feedback** (18 connections) — `.agents/skills/apple-design/references/hig/feedback.md`
-- **Motion** (17 connections) — `.agents/skills/apple-design/references/hig/motion.md`
-- **Playing audio** (17 connections) — `.agents/skills/apple-design/references/hig/playing-audio.md`
-- **Playing video** (14 connections) — `.agents/skills/apple-design/references/hig/playing-video.md`
-- **Live-viewing apps** (11 connections) — `.agents/skills/apple-design/references/hig/live-viewing-apps.md`
-- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/augmented-reality.md`
-- **Communicating with people** (1 connections) — `.agents/skills/apple-design/references/hig/augmented-reality.md`
-- **Designing object interactions** (1 connections) — `.agents/skills/apple-design/references/hig/augmented-reality.md`
-- **Handling interruptions** (1 connections) — `.agents/skills/apple-design/references/hig/augmented-reality.md`
-- **Helping people place objects** (1 connections) — `.agents/skills/apple-design/references/hig/augmented-reality.md`
-- **Icons and badges** (1 connections) — `.agents/skills/apple-design/references/hig/augmented-reality.md`
-- **Offering a multiuser experience** (1 connections) — `.agents/skills/apple-design/references/hig/augmented-reality.md`
-- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/augmented-reality.md`
-- **Providing coaching** (1 connections) — `.agents/skills/apple-design/references/hig/augmented-reality.md`
-- **Reacting to real-world objects** (1 connections) — `.agents/skills/apple-design/references/hig/augmented-reality.md`
-- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/augmented-reality.md`
-- **Suggesting problem resolutions** (1 connections) — `.agents/skills/apple-design/references/hig/augmented-reality.md`
-- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/feedback.md`
-- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/feedback.md`
-- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/feedback.md`
-- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/live-viewing-apps.md`
-- **Cloud DVR** (1 connections) — `.agents/skills/apple-design/references/hig/live-viewing-apps.md`
-- **EPG experience** (1 connections) — `.agents/skills/apple-design/references/hig/live-viewing-apps.md`
-- *... and 23 more nodes in this community*
+- **Text fields** (19 connections) — `.agents/skills/apple-design/references/hig/text-fields.md`
+- **Labels** (18 connections) — `.agents/skills/apple-design/references/hig/labels.md`
+- **Sliders** (17 connections) — `.agents/skills/apple-design/references/hig/sliders.md`
+- **Text views** (15 connections) — `.agents/skills/apple-design/references/hig/text-views.md`
+- **Pickers** (14 connections) — `.agents/skills/apple-design/references/hig/pickers.md`
+- **Combo boxes** (12 connections) — `.agents/skills/apple-design/references/hig/combo-boxes.md`
+- **Steppers** (11 connections) — `.agents/skills/apple-design/references/hig/steppers.md`
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/combo-boxes.md`
+- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/combo-boxes.md`
+- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/combo-boxes.md`
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/labels.md`
+- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/labels.md`
+- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/labels.md`
+- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/labels.md`
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/pickers.md`
+- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/pickers.md`
+- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/pickers.md`
+- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/pickers.md`
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/sliders.md`
+- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/sliders.md`
+- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/sliders.md`
+- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/sliders.md`
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/steppers.md`
+- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/steppers.md`
+- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/steppers.md`
+- *... and 8 more nodes in this community*
 
 ## Relationships
 
-- [Community 1](Community_1.md) (29 shared connections)
-- [Community 78](Community_78.md) (8 shared connections)
+- [Community 1](Community_1.md) (28 shared connections)
+- [Community 251](Community_251.md) (7 shared connections)
 - [Community 118](Community_118.md) (5 shared connections)
-- [Community 85](Community_85.md) (5 shared connections)
-- [Community 11](Community_11.md) (3 shared connections)
-- [Community 209](Community_209.md) (2 shared connections)
+- [Community 119](Community_119.md) (4 shared connections)
+- [Community 134](Community_134.md) (3 shared connections)
+- [Community 85](Community_85.md) (2 shared connections)
+- [Community 83](Community_83.md) (2 shared connections)
 - [Community 131](Community_131.md) (2 shared connections)
-- [Community 246](Community_246.md) (1 shared connections)
-- [Community 121](Community_121.md) (1 shared connections)
-- [Community 134](Community_134.md) (1 shared connections)
+- [Community 11](Community_11.md) (1 shared connections)
+- [Community 107](Community_107.md) (1 shared connections)
+- [Community 156](Community_156.md) (1 shared connections)
 
 ## Source Files
 
-- `.agents/skills/apple-design/references/hig/augmented-reality.md`
-- `.agents/skills/apple-design/references/hig/feedback.md`
-- `.agents/skills/apple-design/references/hig/live-viewing-apps.md`
-- `.agents/skills/apple-design/references/hig/motion.md`
-- `.agents/skills/apple-design/references/hig/playing-audio.md`
-- `.agents/skills/apple-design/references/hig/playing-haptics.md`
-- `.agents/skills/apple-design/references/hig/playing-video.md`
+- `.agents/skills/apple-design/references/hig/combo-boxes.md`
+- `.agents/skills/apple-design/references/hig/labels.md`
+- `.agents/skills/apple-design/references/hig/pickers.md`
+- `.agents/skills/apple-design/references/hig/sliders.md`
+- `.agents/skills/apple-design/references/hig/steppers.md`
+- `.agents/skills/apple-design/references/hig/text-fields.md`
+- `.agents/skills/apple-design/references/hig/text-views.md`
 
 ## Audit Trail
 
-- EXTRACTED: 80 (74%)
-- INFERRED: 28 (26%)
+- EXTRACTED: 66 (70%)
+- INFERRED: 28 (30%)
 - AMBIGUOUS: 0 (0%)
 
 ---

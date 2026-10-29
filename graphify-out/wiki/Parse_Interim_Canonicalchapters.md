@@ -33,8 +33,7 @@
 
 ## Relationships
 
-- [Files Valid Validate](Files_Valid_Validate.md) (1 shared connections)
-- [Files Dedupe Blocks](Files_Dedupe_Blocks.md) (1 shared connections)
+- [Community 33](Community_33.md) (2 shared connections)
 
 ## Source Files
 

@@ -2,7 +2,7 @@
 
 > God node · 60 connections · `src/app/hooks/useLanguage.ts`
 
-**Community:** [Learning Correctionstatus Facts](Learning_Correctionstatus_Facts.md)
+**Community:** [Community 95](Community_95.md)
 
 ## Connections by Relation
 
@@ -14,8 +14,8 @@
 - SubjectSelect() `EXTRACTED`
 - QuestionSearch() `EXTRACTED`
 - PortalShell() `EXTRACTED`
-- LearningHub() `EXTRACTED`
 - PortalFooter() `EXTRACTED`
+- LearningHub() `EXTRACTED`
 - ChapterSelect() `EXTRACTED`
 - GitBankSelect() `EXTRACTED`
 - ReportQuestionButton() `EXTRACTED`
@@ -49,8 +49,8 @@
 - FlaggedQuestionsScreen.tsx `EXTRACTED`
 - PortalShell.tsx `EXTRACTED`
 - StudyTrackerSelectorModal.tsx `EXTRACTED`
-- MatchingQuestion.tsx `EXTRACTED`
 - PortalFooter.tsx `EXTRACTED`
+- MatchingQuestion.tsx `EXTRACTED`
 - AcademicYearProfilePage.tsx `EXTRACTED`
 - LearningActivity.tsx `EXTRACTED`
 - *…and 8 more `imports` connection(s) not listed (lowest-degree first to go)*

@@ -21,9 +21,8 @@
 ## Relationships
 
 - [Community 360](Community_360.md) (2 shared connections)
+- [Community 36](Community_36.md) (2 shared connections)
 - [React Eslint Plugin](React_Eslint_Plugin.md) (2 shared connections)
-- [Intake Verification Reports & Audits](Intake_Verification_Reports_&_Audits.md) (1 shared connections)
-- [Community 36](Community_36.md) (1 shared connections)
 
 ## Source Files
 

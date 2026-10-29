@@ -1,58 +1,70 @@
 # Community 3
 
-> 22 nodes
+> 40 nodes
 
 ## Key Concepts
 
-- **YearModules.tsx** (29 connections) — `src/pages/YearModules.tsx`
-- **StudyMode.tsx** (19 connections) — `src/pages/StudyMode.tsx`
-- **PremiumCards.tsx** (12 connections) — `src/components/cards/PremiumCards.tsx`
-- **YearModules()** (11 connections) — `src/pages/YearModules.tsx`
-- **CardShell()** (10 connections) — `src/components/cards/PremiumCards.tsx`
-- **StudyMode()** (5 connections) — `src/pages/StudyMode.tsx`
-- **YearModules.test.tsx** (5 connections) — `src/pages/YearModules.test.tsx`
-- **IconBadge()** (4 connections) — `src/components/cards/PremiumCards.tsx`
-- **PremiumCardsDemo()** (4 connections) — `src/components/cards/PremiumCards.tsx`
-- **StudyModeCard()** (4 connections) — `src/components/cards/PremiumCards.tsx`
-- **ModuleCard()** (3 connections) — `src/components/cards/PremiumCards.tsx`
-- **YearCard()** (3 connections) — `src/components/cards/PremiumCards.tsx`
-- **StudyMode** (3 connections) — `src/app/App.tsx`
-- **YearModules** (3 connections) — `src/app/App.tsx`
-- **ProgressRing()** (2 connections) — `src/pages/YearModules.tsx`
-- **Mode** (1 connections) — `src/pages/StudyMode.tsx`
-- **StudyModeProps** (1 connections) — `src/pages/StudyMode.tsx`
-- **Module** (1 connections) — `src/pages/YearModules.tsx`
-- **YearModulesProps** (1 connections) — `src/pages/YearModules.tsx`
-- **SYSTEMS** (1 connections) — `src/components/cards/PremiumCards.tsx`
-- **MODES** (1 connections) — `src/pages/StudyMode.tsx`
-- **src_components_cards_premium_cards** (1 connections)
+- **question-reports.ts** (42 connections) — `api/question-reports.ts`
+- **report-reply-store.ts** (21 connections) — `server/report-reply-store.ts`
+- **report-auth.ts** (14 connections) — `server/report-auth.ts`
+- **report-email.ts** (12 connections) — `server/report-email.ts`
+- **security.test.ts** (9 connections) — `src/test/reports/security.test.ts`
+- **authenticateReportUser()** (8 connections) — `server/report-auth.ts`
+- **resolveReportQuestion()** (8 connections) — `server/report-question.ts`
+- **triage** (8 connections) — `api/question-reports.ts`
+- **overview-api.test.ts** (7 connections) — `src/test/reports/overview-api.test.ts`
+- **@clerk/backend** (7 connections) — `package.json`
+- **REPORT_CATEGORIES** (6 connections) — `src/app/reports/contracts.ts`
+- **handler()** (5 connections) — `api/question-reports.ts`
+- **Response** (4 connections) — `api/question-reports.ts`
+- **verifiedReporterEmail()** (4 connections) — `server/report-auth.ts`
+- **sendReportReply()** (4 connections) — `server/report-email.ts`
+- **reply-recipient.test.ts** (4 connections) — `src/test/reports/reply-recipient.test.ts`
+- **current()** (3 connections) — `api/question-reports.ts`
+- **reportReplyConfigured()** (3 connections) — `server/report-email.ts`
+- **sendReportEmail()** (3 connections) — `server/report-email.ts`
+- **reply-email.test.ts** (3 connections) — `src/test/reports/reply-email.test.ts`
+- **service** (2 connections) — `api/question-reports.ts`
+- **OWNER_EMAIL** (2 connections) — `server/report-auth.ts`
+- **replyStore** (2 connections) — `server/report-reply-store.ts`
+- **Request** (1 connections) — `api/question-reports.ts`
+- **.json()** (1 connections) — `api/question-reports.ts`
+- *... and 15 more nodes in this community*
 
 ## Relationships
 
-- [Learning Correctionstatus Facts](Learning_Correctionstatus_Facts.md) (10 shared connections)
-- [Intake Verification Reports & Audits](Intake_Verification_Reports_&_Audits.md) (9 shared connections)
-- [Root App Shell & Authentication](Root_App_Shell_&_Authentication.md) (7 shared connections)
-- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (5 shared connections)
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (4 shared connections)
-- [Community 95](Community_95.md) (4 shared connections)
-- [Useacademicyear Usesearchindex Questionsearch](Useacademicyear_Usesearchindex_Questionsearch.md) (4 shared connections)
-- [Flowbreadcrumbs Gitbankselect Integration](Flowbreadcrumbs_Gitbankselect_Integration.md) (3 shared connections)
-- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (2 shared connections)
-- [Community 36](Community_36.md) (2 shared connections)
-- [Community 107](Community_107.md) (2 shared connections)
+- [Bank Question Edit](Bank_Question_Edit.md) (15 shared connections)
+- [Community 10](Community_10.md) (15 shared connections)
+- [Community 50](Community_50.md) (13 shared connections)
+- [Triage Report Lease](Triage_Report_Lease.md) (12 shared connections)
+- [Reply Report Replies](Reply_Report_Replies.md) (10 shared connections)
+- [Community 105](Community_105.md) (5 shared connections)
+- [Community 36](Community_36.md) (4 shared connections)
+- [Community 33](Community_33.md) (1 shared connections)
+- [Community 24](Community_24.md) (1 shared connections)
+- [Community 56](Community_56.md) (1 shared connections)
+- [React Eslint Plugin](React_Eslint_Plugin.md) (1 shared connections)
+- [Generatehint Constructor Hint](Generatehint_Constructor_Hint.md) (1 shared connections)
 
 ## Source Files
 
-- `src/app/App.tsx`
-- `src/components/cards/PremiumCards.tsx`
-- `src/pages/StudyMode.tsx`
-- `src/pages/YearModules.test.tsx`
-- `src/pages/YearModules.tsx`
+- `@clerk/backend`
+- `api/question-reports.ts`
+- `package.json`
+- `server/report-auth.ts`
+- `server/report-email.ts`
+- `server/report-question.ts`
+- `server/report-reply-store.ts`
+- `src/app/reports/contracts.ts`
+- `src/test/reports/overview-api.test.ts`
+- `src/test/reports/reply-email.test.ts`
+- `src/test/reports/reply-recipient.test.ts`
+- `src/test/reports/security.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 88 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 130 (94%)
+- INFERRED: 9 (6%)
 - AMBIGUOUS: 0 (0%)
 
 ---
