@@ -68,7 +68,7 @@ export function replyTemplate(
   const context = `${report.snapshot.moduleCode} · Question ${report.snapshot.question.id}`;
   const detail =
     kind === "correct"
-      ? `I reviewed your report about ${context} with the faculty curriculum references. The current answer is correct.\n\n[Explain the correct answer and address the student’s concern here]`
+      ? `I reviewed your report about ${context} with the curriculum references. The current answer is correct.\n\n[Explain the correct answer and address the student’s concern here]`
       : kind === "fixed"
         ? `I reviewed your report about ${context} and updated the question.\n\n[Describe the correction that you have published here]`
         : `I’m reviewing your report about ${context} and would appreciate a little more detail.\n\n[Ask your specific clarification question here]`;

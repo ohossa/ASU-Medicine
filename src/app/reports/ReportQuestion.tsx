@@ -289,8 +289,8 @@ function ReportDialog({
               </label>
               <p className="report-muted mt-3">
                 {ar
-                  ? "يراجع فريق الكلية كل بلاغ مباشرةً وبسرية. لا تضف بيانات شخصية؛ تبقى بيانات حسابك في لوحة الإدارة الخاصة."
-                  : "Our faculty team reviews every report directly. Keep personal details out of your note; recorded account details stay in the private admin inbox."}
+                  ? "يراجع فريق المراجعة لدينا كل بلاغ مباشرةً وبسرية. لا تضف بيانات شخصية؛ تبقى بيانات حسابك في لوحة الإدارة الخاصة."
+                  : "Our review team reviews every report directly. Keep personal details out of your note; recorded account details stay in the private admin inbox."}
               </p>
               <div className="report-field-hint">
                 <span>
