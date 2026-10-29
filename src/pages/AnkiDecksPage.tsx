@@ -97,9 +97,6 @@ export function AnkiDecksPage({
                   <Sparkles size={12} />
                   {totalAvailableDecks} Ready
                 </span>
-                <span className="inline-flex items-center gap-1 rounded-full bg-sky-500/10 px-2.5 py-0.5 text-[11px] font-bold text-sky-700 dark:text-sky-300 border border-sky-500/20">
-                  LURO Edition
-                </span>
               </div>
               <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400 max-w-2xl">
                 Spaced-repetition flashcards packed with lecture diagrams and
@@ -319,7 +316,7 @@ export function AnkiDecksPage({
                     role="tab"
                     aria-selected={isSelected}
                     onClick={() => setSelectedSemester(sem)}
-                    className={`inline-flex min-h-[40px] items-center justify-center rounded-lg px-4 py-1.5 text-xs font-bold transition-all cursor-pointer focus-visible:outline-none ${
+                    className={`inline-flex min-h-[44px] items-center justify-center rounded-lg px-4 py-1.5 text-xs font-bold transition-all cursor-pointer focus-visible:outline-none ${
                       isSelected
                         ? "bg-white text-zinc-900 shadow-sm dark:bg-zinc-900 dark:text-white"
                         : "text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
