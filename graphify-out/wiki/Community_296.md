@@ -18,7 +18,7 @@
 ## Relationships
 
 - [Community 120](Community_120.md) (2 shared connections)
-- [Community 38](Community_38.md) (1 shared connections)
+- [Biochemistry Build Intake](Biochemistry_Build_Intake.md) (1 shared connections)
 - [Community 78](Community_78.md) (1 shared connections)
 
 ## Source Files

@@ -2,7 +2,7 @@
 
 > God node · 60 connections · `src/app/hooks/useLanguage.ts`
 
-**Community:** [Community 95](Community_95.md)
+**Community:** [Community 13](Community_13.md)
 
 ## Connections by Relation
 

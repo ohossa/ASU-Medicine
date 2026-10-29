@@ -1,77 +1,78 @@
 # Community 6
 
-> 69 nodes
+> 65 nodes
 
 ## Key Concepts
 
-- **src/app/App.tsx** (161 connections) — `src/app/App.tsx`
+- **src/app/App.tsx** (162 connections) — `src/app/App.tsx`
 - **MainApp()** (61 connections) — `src/app/App.tsx`
+- **ref_react_router** (30 connections)
 - **App()** (18 connections) — `src/app/App.tsx`
-- **StudyTrackerSelectorModal.tsx** (16 connections) — `src/app/components/StudyTrackerSelectorModal.tsx`
-- **AcademicYearProfilePage.tsx** (14 connections) — `src/app/components/profile/AcademicYearProfilePage.tsx`
+- **KnowledgeGraphPage.tsx** (15 connections) — `src/pages/KnowledgeGraphPage.tsx`
+- **ensureModuleDataLoaded()** (12 connections) — `src/app/data.ts`
 - **CorrectionStatus.tsx** (11 connections) — `src/app/components/CorrectionStatus.tsx`
 - **LoadingScreen()** (10 connections) — `src/app/components/LoadingScreen.tsx`
-- **ErrorBoundary** (9 connections) — `src/app/components/ErrorBoundary.tsx`
+- **RouteDataGate.tsx** (10 connections) — `src/app/loading/RouteDataGate.tsx`
 - **QuizFlowWrapper()** (9 connections) — `src/app/App.tsx`
 - **useBankRevision()** (8 connections) — `src/app/components/CorrectionStatus.tsx`
 - **LoadingScreen.tsx** (8 connections) — `src/app/components/LoadingScreen.tsx`
-- **ModuleInfo** (7 connections) — `src/app/data.ts`
-- **LanguageProfilePage.tsx** (6 connections) — `src/app/components/profile/LanguageProfilePage.tsx`
-- **currentPractice.ts** (6 connections) — `src/app/learning/currentPractice.ts`
-- **design-controls.test.tsx** (6 connections) — `src/test/reports/design-controls.test.tsx`
-- **study-links.test.ts** (6 connections) — `src/test/reports/study-links.test.ts`
+- **RouteDataGate()** (7 connections) — `src/app/loading/RouteDataGate.tsx`
+- **QuizResumeCard.tsx** (7 connections) — `src/app/components/QuizResumeCard.tsx`
+- **UserSyncPill.tsx** (7 connections) — `src/app/components/UserSyncPill.tsx`
+- **RouteDataGate.test.tsx** (6 connections) — `src/app/loading/RouteDataGate.test.tsx`
 - **CorrectionStatus()** (5 connections) — `src/app/components/CorrectionStatus.tsx`
-- **LanguageProfilePage()** (5 connections) — `src/app/components/profile/LanguageProfilePage.tsx`
-- **currentPractice()** (5 connections) — `src/app/learning/currentPractice.ts`
+- **useOwnerAccess()** (5 connections) — `src/app/reports/useOwnerAccess.ts`
 - **FeatureErrorBoundary.tsx** (5 connections) — `src/app/components/FeatureErrorBoundary.tsx`
 - **usePresence.ts** (5 connections) — `src/app/hooks/usePresence.ts`
-- **studyLinks.ts** (5 connections) — `src/app/utils/studyLinks.ts`
-- **AcademicYearProfilePageProps** (4 connections) — `src/app/components/profile/AcademicYearProfilePage.tsx`
-- **Screen** (4 connections) — `src/app/types.ts`
+- **useOwnerAccess.test.ts** (5 connections) — `src/app/reports/useOwnerAccess.test.ts`
 - **FeatureErrorBoundary()** (4 connections) — `src/app/components/FeatureErrorBoundary.tsx`
-- *... and 44 more nodes in this community*
+- **AcademicYearProfilePage()** (4 connections) — `src/app/components/profile/AcademicYearProfilePage.tsx`
+- **QuizResumeCard()** (4 connections) — `src/app/components/QuizResumeCard.tsx`
+- **UserSyncPill()** (4 connections) — `src/app/components/UserSyncPill.tsx`
+- *... and 40 more nodes in this community*
 
 ## Relationships
 
-- [Community 95](Community_95.md) (62 shared connections)
-- [Community 36](Community_36.md) (38 shared connections)
-- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (37 shared connections)
-- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (23 shared connections)
-- [Community 46](Community_46.md) (18 shared connections)
-- [Community 24](Community_24.md) (17 shared connections)
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (13 shared connections)
-- [Community 15](Community_15.md) (11 shared connections)
-- [Community 34](Community_34.md) (9 shared connections)
-- [Community 56](Community_56.md) (8 shared connections)
-- [Community 51](Community_51.md) (4 shared connections)
-- [Community 145](Community_145.md) (4 shared connections)
+- [Community 13](Community_13.md) (25 shared connections)
+- [Community 36](Community_36.md) (22 shared connections)
+- [Community 56](Community_56.md) (19 shared connections)
+- [Community 153](Community_153.md) (19 shared connections)
+- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (19 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (16 shared connections)
+- [Community 46](Community_46.md) (15 shared connections)
+- [Community 145](Community_145.md) (15 shared connections)
+- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (15 shared connections)
+- [Community 81](Community_81.md) (14 shared connections)
+- [Community 95](Community_95.md) (10 shared connections)
+- [Community 34](Community_34.md) (10 shared connections)
 
 ## Source Files
 
 - `src/app/App.tsx`
 - `src/app/components/CorrectionStatus.tsx`
-- `src/app/components/ErrorBoundary.tsx`
 - `src/app/components/FeatureErrorBoundary.tsx`
 - `src/app/components/LoadingScreen.tsx`
-- `src/app/components/StudyTrackerSelectorModal.tsx`
+- `src/app/components/QuizResumeCard.tsx`
+- `src/app/components/UserSyncPill.tsx`
 - `src/app/components/profile/AcademicYearProfilePage.tsx`
-- `src/app/components/profile/LanguageProfilePage.tsx`
 - `src/app/data.ts`
 - `src/app/hooks/useDeferredMount.ts`
 - `src/app/hooks/usePresence.ts`
+- `src/app/hooks/useQuizSession.ts`
 - `src/app/hooks/useViewTransition.ts`
-- `src/app/learning/currentPractice.ts`
 - `src/app/loading/LoadingScreen.test.tsx`
-- `src/app/types.ts`
-- `src/app/utils/safeStorage.ts`
-- `src/app/utils/studyLinks.ts`
-- `src/test/reports/design-controls.test.tsx`
-- `src/test/reports/study-links.test.ts`
+- `src/app/loading/RouteDataGate.test.tsx`
+- `src/app/loading/RouteDataGate.tsx`
+- `src/app/reports/useOwnerAccess.test.ts`
+- `src/app/reports/useOwnerAccess.ts`
+- `src/app/utils/historyQuestions.ts`
+- `src/app/utils/missedQuestions.ts`
+- `src/pages/KnowledgeGraphPage.tsx`
 
 ## Audit Trail
 
-- EXTRACTED: 379 (99%)
-- INFERRED: 2 (1%)
+- EXTRACTED: 394 (99%)
+- INFERRED: 4 (1%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,6 +1,6 @@
 # Quality Replay Content
 
-> 51 nodes
+> 52 nodes
 
 ## Key Concepts
 
@@ -25,20 +25,21 @@
 - **coverage_errors()** (7 connections) — `scripts/ibm_quality.py`
 - **bank()** (7 connections) — `scripts/test_year1_quality.py`
 - **normalize()** (7 connections) — `scripts/year1_quality.py`
+- **unittest** (7 connections)
 - **write_json()** (6 connections) — `scripts/year1_quality.py`
 - **source_errors()** (5 connections) — `scripts/ibm_quality.py`
 - **.test_recovers_when_bank_write_succeeds_but_receipt_write_fails()** (5 connections) — `scripts/test_ibm_quality.py`
-- **.test_replay_rejects_stale_or_unknown_decisions()** (5 connections) — `scripts/test_year1_quality.py`
-- *... and 26 more nodes in this community*
+- *... and 27 more nodes in this community*
 
 ## Relationships
 
-- [Community 20](Community_20.md) (16 shared connections)
-- [Keyword Unique Keywords](Keyword_Unique_Keywords.md) (7 shared connections)
-- [Polish Rejected Biochemistry](Polish_Rejected_Biochemistry.md) (6 shared connections)
-- [Community 38](Community_38.md) (4 shared connections)
-- [Rejected Biochemistry Organization](Rejected_Biochemistry_Organization.md) (3 shared connections)
-- [Biochemistry Build Intake](Biochemistry_Build_Intake.md) (2 shared connections)
+- [Community 20](Community_20.md) (11 shared connections)
+- [Keyword Unique Keywords](Keyword_Unique_Keywords.md) (8 shared connections)
+- [Polish Rejected Biochemistry](Polish_Rejected_Biochemistry.md) (7 shared connections)
+- [Biochemistry Build Intake](Biochemistry_Build_Intake.md) (5 shared connections)
+- [Community 79](Community_79.md) (4 shared connections)
+- [Rejected Biochemistry Organization](Rejected_Biochemistry_Organization.md) (4 shared connections)
+- [Community 38](Community_38.md) (2 shared connections)
 
 ## Source Files
 
@@ -49,7 +50,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 184 (98%)
+- EXTRACTED: 189 (98%)
 - INFERRED: 3 (2%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,6 +1,6 @@
 # Generatehint Constructor Hint
 
-> 33 nodes
+> 31 nodes
 
 ## Key Concepts
 
@@ -21,36 +21,32 @@
 - **.generateHint()** (4 connections) — `api/hint.ts`
 - **.generateHint()** (4 connections) — `api/hint.ts`
 - **.generateHint()** (4 connections) — `api/hint.ts`
-- **ioredis** (4 connections) — `package.json`
-- **@upstash/redis** (4 connections) — `package.json`
 - **nvidia-model.test.ts** (3 connections) — `src/test/reports/nvidia-model.test.ts`
 - **provider-response.test.ts** (3 connections) — `src/test/reports/provider-response.test.ts`
 - **buildInitialMessage()** (2 connections) — `api/hint.ts`
 - **checkRateLimit()** (2 connections) — `api/hint.ts`
 - **detectProvider()** (2 connections) — `api/hint.ts`
 - **HintRequest** (1 connections) — `api/hint.ts`
-- *... and 8 more nodes in this community*
+- **HintResponse** (1 connections) — `api/hint.ts`
+- **.generateHint()** (1 connections) — `api/hint.ts`
+- *... and 6 more nodes in this community*
 
 ## Relationships
 
-- [Community 50](Community_50.md) (7 shared connections)
+- [Community 50](Community_50.md) (8 shared connections)
 - [Community 105](Community_105.md) (3 shared connections)
 - [Community 36](Community_36.md) (3 shared connections)
-- [React Eslint Plugin](React_Eslint_Plugin.md) (2 shared connections)
-- [Community 240](Community_240.md) (2 shared connections)
-- [Community 3](Community_3.md) (1 shared connections)
 
 ## Source Files
 
 - `api/hint.ts`
-- `package.json`
 - `src/test/reports/groq-tutor.test.ts`
 - `src/test/reports/nvidia-model.test.ts`
 - `src/test/reports/provider-response.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 80 (100%)
+- EXTRACTED: 74 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

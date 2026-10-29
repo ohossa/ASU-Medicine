@@ -33,9 +33,9 @@
 
 ## Relationships
 
-- [Community 38](Community_38.md) (10 shared connections)
+- [Community 79](Community_79.md) (10 shared connections)
 - [Community 20](Community_20.md) (4 shared connections)
-- [Biochemistry Build Intake](Biochemistry_Build_Intake.md) (4 shared connections)
+- [Community 38](Community_38.md) (4 shared connections)
 - [Keyword Unique Keywords](Keyword_Unique_Keywords.md) (4 shared connections)
 
 ## Source Files

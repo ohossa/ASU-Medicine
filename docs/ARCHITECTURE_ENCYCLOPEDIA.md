@@ -307,6 +307,17 @@ The student reporting pipeline (`server/report-question.ts`, `server/report-stor
 - **Content Security Policy & Modern Transport:** `vercel.json` enforces HSTS (`max-age=63072000; includeSubDomains; preload`), strict Content Security Policy (`default-src 'self'`, whitelisted Clerk/Upstash/AI endpoints, `frame-ancestors 'self'`), COOP (`same-origin-allow-popups`), and CORP (`same-origin`).
 - **Apple-Design Security UI:** The client integrates an Apple HIG-compliant glassmorphic security notification system (`SecurityNoticeToast.tsx`) with $\ge 44\text{px}$ touch targets, smooth spring motion, and WCAG AAA contrast for auth challenge handling and rate-limiting alerts.
 
+### 6.8 Indestructible Cache & Auto-Update Architecture (iPadOS/iOS Safari & Cross-Platform)
+To eliminate stale PWA cache trapping—particularly on Mobile Safari / iPadOS where home-screen web apps and Safari tabs aggressively pinned precached App Shells—the portal implements a multi-layer autonomous self-healing and update delivery architecture:
+- **Decoupled Network-First Navigation:** Workbox's legacy `NavigationRoute(createHandlerBoundToURL("index.html"))` is replaced with `navigateFallback: null` and a runtime caching rule for `request.mode === 'navigate'` using `NetworkFirst` (with a 2-second timeout and `PrecacheFallbackPlugin({ fallbackURL: "/index.html" })`). When online, every page load or refresh receives fresh HTML from Vercel immediately; when offline, it falls back to cache instantly.
+- **Strict Edge Invalidation Headers:** `vercel.json` enforces `no-cache, no-store, must-revalidate` along with `Pragma: no-cache` and `Expires: 0` for `/(sw.js|workbox-*.js|manifest.webmanifest|manifest.json|version.json|registerSW.js|index.html|)`.
+- **Dynamic Chunk Preload Auto-Recovery:** A global `window.addEventListener("vite:preloadError")` catches post-deploy chunk hash mismatches (when older chunk hashes are purged from edge CDN), automatically pruning navigation caches and soft-reloading once per 15-second window without user intervention or broken views.
+- **Autonomous Version Poller (`useVersionCheck`):** Automatically polls `/version.json` with `cache: 'no-store'` on initial mount, window `focus`, and iPad `visibilitychange` (app resume).
+  - *Non-Quiz Browsing:* Triggers seamless background activation and auto-reload so students always practice on the latest release.
+  - *Active Timed Quiz:* Protects ongoing student answers and timers, holding reload and displaying the non-disruptive Apple HIG Liquid Glass update pill.
+- **Apple HIG Liquid Glass Update Notice (`SiteUpdateNotice.tsx`):** Styled as a floating translucent pill (`backdrop-blur-2xl rounded-full`) with an emerald pulse indicator, $\ge 44\text{px}$ touch target, and accessible ARIA attributes. Dispatches `asu:save-before-refresh` before triggering reload.
+- **Startup Storage & Module Validation:** `src/app/App.tsx` verifies that any persisted `asu_portal_module` in `localStorage` actually exists in the current `bankManifest.json`. Corrupt or deleted module references are safely purged, preventing blank screen lockups while preserving all user study history, XP, streaks, and Clerk credentials.
+
 ---
 
 ## 7. Medical Review & High-Yield Explanation Standards

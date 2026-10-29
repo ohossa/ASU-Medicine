@@ -34,15 +34,17 @@
 ## Relationships
 
 - [Community 10](Community_10.md) (20 shared connections)
-- [Community 3](Community_3.md) (12 shared connections)
 - [Community 105](Community_105.md) (10 shared connections)
-- [Reply Report Replies](Reply_Report_Replies.md) (7 shared connections)
+- [Community 3](Community_3.md) (9 shared connections)
+- [Community 240](Community_240.md) (4 shared connections)
+- [Bank Question Edit](Bank_Question_Edit.md) (4 shared connections)
 - [Community 56](Community_56.md) (3 shared connections)
 - [Community 36](Community_36.md) (3 shared connections)
 - [Community 50](Community_50.md) (2 shared connections)
+- [Reply Report Replies](Reply_Report_Replies.md) (2 shared connections)
 - [Community 140](Community_140.md) (2 shared connections)
-- [Bank Question Edit](Bank_Question_Edit.md) (2 shared connections)
 - [Community 305](Community_305.md) (1 shared connections)
+- [Community 211](Community_211.md) (1 shared connections)
 
 ## Source Files
 

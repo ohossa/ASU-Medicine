@@ -33,7 +33,7 @@
 - [Community 251](Community_251.md) (4 shared connections)
 - [Community 97](Community_97.md) (2 shared connections)
 - [Community 134](Community_134.md) (1 shared connections)
-- [Biochemistry Build Intake](Biochemistry_Build_Intake.md) (1 shared connections)
+- [Community 38](Community_38.md) (1 shared connections)
 - [Community 107](Community_107.md) (1 shared connections)
 
 ## Source Files

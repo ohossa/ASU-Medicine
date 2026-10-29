@@ -2,7 +2,7 @@
 
 > God node · 62 connections · `src/app/types.ts`
 
-**Community:** [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md)
+**Community:** [Community 238](Community_238.md)
 
 ## Connections by Relation
 

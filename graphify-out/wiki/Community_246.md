@@ -1,36 +1,43 @@
 # Community 246
 
-> 11 nodes
+> 12 nodes
 
 ## Key Concepts
 
-- **renderBlock()** (12 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderBlocks()** (7 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderTabs()** (6 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **headingLine()** (5 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderBody()** (5 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderTermList()** (5 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **trimBlankEdges()** (5 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **reduceHeading()** (4 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderAside()** (4 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderList()** (4 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **collectReferences()** (2 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
+- **zod** (8 connections) — `package.json`
+- **question-edit-schema.ts** (7 connections) — `server/question-edit-schema.ts`
+- **questionSchema.ts** (5 connections) — `src/app/validators/questionSchema.ts`
+- **questionSchema.test.ts** (3 connections) — `src/app/validators/questionSchema.test.ts`
+- **editableQuestionSchema** (2 connections) — `server/question-edit-schema.ts`
+- **QuestionSchema** (2 connections) — `src/app/validators/questionSchema.ts`
+- **QuestionSchemaType** (1 connections) — `src/app/validators/questionSchema.ts`
+- **validateAnswer()** (1 connections) — `server/question-edit-schema.ts`
+- **child** (1 connections) — `server/question-edit-schema.ts`
+- **common** (1 connections) — `server/question-edit-schema.ts`
+- **types** (1 connections) — `server/question-edit-schema.ts`
+- **MediaSchema** (1 connections) — `src/app/validators/questionSchema.ts`
 
 ## Relationships
 
-- [Community 9](Community_9.md) (12 shared connections)
-- [Community 311](Community_311.md) (5 shared connections)
-- [Community 315](Community_315.md) (2 shared connections)
-- [Community 308](Community_308.md) (2 shared connections)
+- [Bank Question Edit](Bank_Question_Edit.md) (3 shared connections)
+- [Community 36](Community_36.md) (1 shared connections)
+- [React Eslint Plugin](React_Eslint_Plugin.md) (1 shared connections)
+- [Community 3](Community_3.md) (1 shared connections)
+- [Reply Report Replies](Reply_Report_Replies.md) (1 shared connections)
+- [Community 10](Community_10.md) (1 shared connections)
+- [Triage Report Lease](Triage_Report_Lease.md) (1 shared connections)
 
 ## Source Files
 
-- `.agents/skills/apple-design/scripts/pull-hig.mjs`
+- `package.json`
+- `server/question-edit-schema.ts`
+- `src/app/validators/questionSchema.test.ts`
+- `src/app/validators/questionSchema.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 40 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 20 (95%)
+- INFERRED: 1 (5%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,64 +1,62 @@
 # Reply Report Replies
 
-> 53 nodes
+> 47 nodes
 
 ## Key Concepts
 
-- **ReportReplyComposer.tsx** (23 connections) — `src/pages/ReportReplyComposer.tsx`
+- **report-reply-store.ts** (21 connections) — `server/report-reply-store.ts`
 - **report-replies.ts** (20 connections) — `server/report-replies.ts`
 - **reply-context.ts** (16 connections) — `src/app/reports/reply-context.ts`
-- **ReplyComposer()** (11 connections) — `src/pages/ReportReplyComposer.tsx`
-- **humanizer-reply.test.tsx** (11 connections) — `src/test/reports/humanizer-reply.test.tsx`
 - **ReportReply** (10 connections) — `src/app/reports/reply-contracts.ts`
 - **reply-contracts.ts** (10 connections) — `src/app/reports/reply-contracts.ts`
-- **review-context.ts** (10 connections) — `src/app/reports/review-context.ts`
 - **ReplyStore** (9 connections) — `server/report-replies.ts`
 - **replyContext** (9 connections) — `src/app/reports/reply-context.ts`
 - **createReplyService()** (8 connections) — `server/report-replies.ts`
 - **replies.test.ts** (8 connections) — `src/test/reports/replies.test.ts`
 - **Dependencies** (7 connections) — `server/report-replies.ts`
 - **renderReplyEmail()** (7 connections) — `src/app/reports/reply-context.ts`
-- **reply-composer.test.tsx** (7 connections) — `src/test/reports/reply-composer.test.tsx`
 - **reply-context.test.ts** (7 connections) — `src/test/reports/reply-context.test.ts`
-- **review-context.test.ts** (7 connections) — `src/test/reports/review-context.test.ts`
 - **ReplyDraft** (6 connections) — `src/app/reports/reply-contracts.ts`
-- **humanizeAIExplanation()** (5 connections) — `src/app/reports/review-context.ts`
-- **replyTemplate()** (5 connections) — `src/app/reports/review-context.ts`
-- **reviewContext()** (5 connections) — `src/app/reports/review-context.ts`
 - **ReplyConversation** (4 connections) — `src/app/reports/reply-contracts.ts`
 - **questionText()** (4 connections) — `src/app/reports/reply-context.ts`
 - **replyContextText()** (4 connections) — `src/app/reports/reply-context.ts`
 - **ContextReport** (3 connections) — `src/app/reports/reply-context.ts`
-- *... and 28 more nodes in this community*
+- **escape()** (3 connections) — `src/app/reports/reply-context.ts`
+- **paragraph()** (3 connections) — `src/app/reports/reply-context.ts`
+- **string()** (3 connections) — `src/app/reports/reply-context.ts`
+- **owner()** (2 connections) — `server/report-replies.ts`
+- **report()** (2 connections) — `server/report-replies.ts`
+- **.getReport()** (2 connections) — `server/report-replies.ts`
+- **.send()** (2 connections) — `server/report-replies.ts`
+- **.draft()** (2 connections) — `server/report-replies.ts`
+- *... and 22 more nodes in this community*
 
 ## Relationships
 
-- [Community 3](Community_3.md) (10 shared connections)
-- [Community 10](Community_10.md) (9 shared connections)
-- [Community 56](Community_56.md) (8 shared connections)
-- [Triage Report Lease](Triage_Report_Lease.md) (7 shared connections)
-- [Community 36](Community_36.md) (5 shared connections)
+- [Community 240](Community_240.md) (7 shared connections)
+- [Community 3](Community_3.md) (5 shared connections)
 - [Bank Question Edit](Bank_Question_Edit.md) (4 shared connections)
-- [Community 95](Community_95.md) (3 shared connections)
-- [Community 6](Community_6.md) (2 shared connections)
-- [Community 15](Community_15.md) (2 shared connections)
+- [Community 10](Community_10.md) (4 shared connections)
+- [Community 50](Community_50.md) (4 shared connections)
+- [Community 211](Community_211.md) (2 shared connections)
+- [Triage Report Lease](Triage_Report_Lease.md) (2 shared connections)
+- [Community 36](Community_36.md) (2 shared connections)
+- [Community 246](Community_246.md) (1 shared connections)
+- [Community 33](Community_33.md) (1 shared connections)
+- [Community 140](Community_140.md) (1 shared connections)
 
 ## Source Files
 
 - `server/report-replies.ts`
+- `server/report-reply-store.ts`
 - `src/app/reports/reply-context.ts`
 - `src/app/reports/reply-contracts.ts`
-- `src/app/reports/review-context.ts`
-- `src/pages/ReportReplyComposer.tsx`
-- `src/test/reports/humanizer-reply.test.tsx`
 - `src/test/reports/replies.test.ts`
-- `src/test/reports/reply-composer.test.tsx`
 - `src/test/reports/reply-context.test.ts`
-- `src/test/reports/review-context.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 155 (100%)
+- EXTRACTED: 117 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

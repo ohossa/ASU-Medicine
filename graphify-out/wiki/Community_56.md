@@ -1,10 +1,11 @@
 # Community 56
 
-> 75 nodes
+> 66 nodes
 
 ## Key Concepts
 
 - **AdminPortal.tsx** (44 connections) — `src/pages/AdminPortal.tsx`
+- **@clerk/clerk-react** (28 connections) — `package.json`
 - **reportRequest()** (22 connections) — `src/app/reports/client.ts`
 - **refreshQuestionCorrections()** (15 connections) — `src/app/data.ts`
 - **AdminOverviewPanel.tsx** (15 connections) — `src/pages/AdminOverviewPanel.tsx`
@@ -24,37 +25,36 @@
 - **AdminOverviewPanel()** (8 connections) — `src/pages/AdminOverviewPanel.tsx`
 - **AdminWorkspace()** (8 connections) — `src/pages/AdminPortal.tsx`
 - **editor.test.tsx** (8 connections) — `src/test/reports/editor.test.tsx`
-- **6. Admin Command Center, Analytics & Master Leaderboard Subsystems** (8 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
 - **AdminPortal()** (7 connections) — `src/pages/AdminPortal.tsx`
 - **useOwnerAccess.ts** (7 connections) — `src/app/reports/useOwnerAccess.ts`
 - **admin-overview.test.tsx** (7 connections) — `src/test/reports/admin-overview.test.tsx`
 - **AdminAnalyticsView()** (6 connections) — `src/pages/admin/AdminAnalyticsView.tsx`
-- *... and 50 more nodes in this community*
+- *... and 41 more nodes in this community*
 
 ## Relationships
 
-- [Community 95](Community_95.md) (25 shared connections)
-- [Community 36](Community_36.md) (19 shared connections)
-- [Community 24](Community_24.md) (10 shared connections)
-- [Community 6](Community_6.md) (8 shared connections)
-- [Reply Report Replies](Reply_Report_Replies.md) (8 shared connections)
+- [Community 6](Community_6.md) (19 shared connections)
+- [Community 42](Community_42.md) (13 shared connections)
+- [Community 140](Community_140.md) (11 shared connections)
+- [Community 240](Community_240.md) (9 shared connections)
+- [Community 36](Community_36.md) (9 shared connections)
+- [Community 153](Community_153.md) (9 shared connections)
 - [Community 10](Community_10.md) (8 shared connections)
-- [Community 15](Community_15.md) (7 shared connections)
-- [Community 140](Community_140.md) (5 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (8 shared connections)
+- [Community 13](Community_13.md) (7 shared connections)
+- [Community 81](Community_81.md) (4 shared connections)
 - [Community 50](Community_50.md) (3 shared connections)
 - [Triage Report Lease](Triage_Report_Lease.md) (3 shared connections)
-- [Community 42](Community_42.md) (2 shared connections)
-- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (2 shared connections)
 
 ## Source Files
 
 - `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
+- `package.json`
 - `src/app/components/DeleteQuestionModal.tsx`
 - `src/app/components/InlineQuestionEditor.tsx`
 - `src/app/components/StudentEmailReplyModal.tsx`
 - `src/app/data.ts`
 - `src/app/reports/client.ts`
-- `src/app/reports/useOwnerAccess.test.ts`
 - `src/app/reports/useOwnerAccess.ts`
 - `src/app/utils/questionStem.ts`
 - `src/pages/AdminOverviewPanel.tsx`
@@ -71,7 +71,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 246 (99%)
+- EXTRACTED: 256 (99%)
 - INFERRED: 3 (1%)
 - AMBIGUOUS: 0 (0%)
 

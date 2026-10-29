@@ -1,6 +1,6 @@
 # Usesoundengine Soundkey Audiopolicy
 
-> 25 nodes
+> 33 nodes
 
 ## Key Concepts
 
@@ -9,36 +9,38 @@
 - **audioPolicy.ts** (12 connections) — `src/app/lib/audioPolicy.ts`
 - **feedbackSoundEnabled()** (11 connections) — `src/app/lib/audioPolicy.ts`
 - **sound.ts** (11 connections) — `src/app/lib/sound.ts`
+- **SoundManager** (9 connections) — `src/app/lib/sound.ts`
 - **useSoundEngine()** (9 connections) — `src/app/hooks/useSoundEngine.ts`
 - **play()** (8 connections) — `src/app/lib/soundEngine.ts`
 - **soundEngine.test.ts** (8 connections) — `src/app/lib/soundEngine.test.ts`
 - **prepareMixableAudio()** (7 connections) — `src/app/lib/audioPolicy.ts`
 - **setFeedbackSoundEnabled()** (7 connections) — `src/app/lib/audioPolicy.ts`
+- **.tone()** (7 connections) — `src/app/lib/sound.ts`
 - **audioPolicy.test.ts** (7 connections) — `src/app/lib/audioPolicy.test.ts`
 - **preloadSounds()** (6 connections) — `src/app/lib/soundEngine.ts`
 - **useSoundEngine.test.tsx** (6 connections) — `src/app/hooks/useSoundEngine.test.tsx`
 - **isIPhoneSafari()** (5 connections) — `src/app/lib/audioPolicy.ts`
 - **subscribeFeedbackSound()** (3 connections) — `src/app/lib/audioPolicy.ts`
 - **download()** (3 connections) — `src/app/lib/soundEngine.ts`
+- **.ac()** (2 connections) — `src/app/lib/sound.ts`
+- **.correct()** (2 connections) — `src/app/lib/sound.ts`
+- **.levelUp()** (2 connections) — `src/app/lib/sound.ts`
+- **.muted()** (2 connections) — `src/app/lib/sound.ts`
 - **.setMuted()** (2 connections) — `src/app/lib/sound.ts`
-- **sound** (2 connections) — `src/app/lib/sound.ts`
-- **SoundKey** (1 connections) — `src/app/hooks/useSoundEngine.ts`
-- **SoundKey** (1 connections) — `src/app/lib/soundEngine.ts`
-- **type()** (1 connections) — `src/app/lib/audioPolicy.test.ts`
-- **listeners** (1 connections) — `src/app/lib/audioPolicy.ts`
-- **buffers** (1 connections) — `src/app/lib/soundEngine.ts`
-- **downloads** (1 connections) — `src/app/lib/soundEngine.ts`
-- **SOUND_PATHS** (1 connections) — `src/app/lib/soundEngine.ts`
+- **.tick()** (2 connections) — `src/app/lib/sound.ts`
+- **.wrong()** (2 connections) — `src/app/lib/sound.ts`
+- *... and 8 more nodes in this community*
 
 ## Relationships
 
-- [Community 95](Community_95.md) (5 shared connections)
-- [Community 234](Community_234.md) (4 shared connections)
-- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (3 shared connections)
+- [Community 95](Community_95.md) (4 shared connections)
 - [Community 36](Community_36.md) (3 shared connections)
 - [Community 145](Community_145.md) (2 shared connections)
+- [Community 13](Community_13.md) (2 shared connections)
+- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (1 shared connections)
 - [Community 1](Community_1.md) (1 shared connections)
-- [Community 15](Community_15.md) (1 shared connections)
+- [Community 153](Community_153.md) (1 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (1 shared connections)
 
 ## Source Files
 
@@ -52,8 +54,8 @@
 
 ## Audit Trail
 
-- EXTRACTED: 77 (97%)
-- INFERRED: 2 (3%)
+- EXTRACTED: 89 (98%)
+- INFERRED: 2 (2%)
 - AMBIGUOUS: 0 (0%)
 
 ---

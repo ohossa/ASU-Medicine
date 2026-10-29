@@ -1,26 +1,30 @@
 # Community 247
 
-> 4 nodes
+> 8 nodes
 
 ## Key Concepts
 
-- **extract-biochem-066.ts** (4 connections) — `data-format-v2/scripts/extract-biochem-066.ts`
-- **blocks** (1 connections) — `data-format-v2/scripts/extract-biochem-066.ts`
-- **pages** (1 connections) — `data-format-v2/scripts/extract-biochem-066.ts`
-- **raw** (1 connections) — `data-format-v2/scripts/extract-biochem-066.ts`
+- **ASU Medical Portal — Full Optimization Execution Prompt** (11 connections) — `.opencode/plans/optimization-prompt.md`
+- **EXECUTION ORDER** (1 connections) — `.opencode/plans/optimization-prompt.md`
+- **🔴 P0 — Critical (Fix Immediately)** (1 connections) — `.opencode/plans/optimization-prompt.md`
+- **🟠 P1 — High Priority** (1 connections) — `.opencode/plans/optimization-prompt.md`
+- **🟡 P2 — Medium Priority** (1 connections) — `.opencode/plans/optimization-prompt.md`
+- **🟢 P3 — Low Priority** (1 connections) — `.opencode/plans/optimization-prompt.md`
+- **PRIORITY LEGEND** (1 connections) — `.opencode/plans/optimization-prompt.md`
+- **VERIFICATION** (1 connections) — `.opencode/plans/optimization-prompt.md`
 
 ## Relationships
 
-- [Bank Audit Validate](Bank_Audit_Validate.md) (1 shared connections)
+- [Community 1](Community_1.md) (4 shared connections)
 
 ## Source Files
 
-- `data-format-v2/scripts/extract-biochem-066.ts`
+- `.opencode/plans/optimization-prompt.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 7 (64%)
+- INFERRED: 4 (36%)
 - AMBIGUOUS: 0 (0%)
 
 ---

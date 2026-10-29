@@ -1,55 +1,73 @@
 # Community 145
 
-> 19 nodes
+> 38 nodes
 
 ## Key Concepts
 
-- **pulseEngine.ts** (12 connections) — `src/app/lib/pulseEngine.ts`
-- **celebrate.ts** (10 connections) — `src/app/lib/celebrate.ts`
-- **ConfettiManager.tsx** (7 connections) — `src/app/components/ConfettiManager.tsx`
-- **pulse** (7 connections) — `src/app/lib/pulseEngine.ts`
-- **fx.config.ts** (5 connections) — `src/app/lib/fx.config.ts`
-- **ECGMonitor.tsx** (4 connections) — `src/app/components/ECGMonitor.tsx`
-- **FX** (4 connections) — `src/app/lib/fx.config.ts`
-- **useReactiveBackground.ts** (4 connections) — `src/app/lib/useReactiveBackground.ts`
-- **getConfettiColors()** (3 connections) — `src/app/lib/confettiConfig.ts`
-- **confettiConfig.ts** (3 connections) — `src/app/lib/confettiConfig.ts`
-- **ConfettiManager()** (2 connections) — `src/app/components/ConfettiManager.tsx`
-- **fx** (2 connections) — `src/app/lib/pulseEngine.ts`
-- **canvas-confetti** (2 connections) — `package.json`
-- **FxKey** (1 connections) — `src/app/lib/fx.config.ts`
-- **Burst** (1 connections) — `src/app/lib/pulseEngine.ts`
-- **Mood** (1 connections) — `src/app/lib/pulseEngine.ts`
-- **ECGMonitor()** (1 connections) — `src/app/components/ECGMonitor.tsx`
-- **usePulseState()** (1 connections) — `src/app/lib/useReactiveBackground.ts`
-- **moduleConfettiColors** (1 connections) — `src/app/lib/confettiConfig.ts`
+- **QuizInterface.tsx** (71 connections) — `src/app/components/QuizInterface.tsx`
+- **useQuizSession.ts** (26 connections) — `src/app/hooks/useQuizSession.ts`
+- **SubjectData** (23 connections) — `src/app/types.ts`
+- **QuizAnswer** (18 connections) — `src/app/types.ts`
+- **QuizSessionSave** (12 connections) — `src/app/hooks/useQuizSession.ts`
+- **topicPracticeSession.test.ts** (12 connections) — `src/app/learning/topicPracticeSession.test.ts`
+- **useQuizSession()** (10 connections) — `src/app/hooks/useQuizSession.ts`
+- **topicPracticeSession.ts** (10 connections) — `src/app/learning/topicPracticeSession.ts`
+- **ResultPayload** (7 connections) — `src/app/App.tsx`
+- **FlowCrumb** (7 connections) — `src/app/components/FlowBreadcrumbs.tsx`
+- **Props** (7 connections) — `src/app/components/ResultsDashboard.tsx`
+- **committedAnswer()** (7 connections) — `src/app/learning/committedAnswer.ts`
+- **committedAnswerValue()** (7 connections) — `src/app/learning/committedAnswer.ts`
+- **Props** (6 connections) — `src/app/components/QuizInterface.tsx`
+- **committedAnswer.ts** (6 connections) — `src/app/learning/committedAnswer.ts`
+- **TopicScore** (5 connections) — `src/app/learning/customPractice.ts`
+- **getDraftsKey()** (5 connections) — `src/app/hooks/useQuizSession.ts`
+- **findTopicPracticeSession()** (5 connections) — `src/app/learning/topicPracticeSession.ts`
+- **TimerSettingsPanel.tsx** (5 connections) — `src/app/components/TimerSettingsPanel.tsx`
+- **useQuizSession.test.ts** (5 connections) — `src/app/hooks/useQuizSession.test.ts`
+- **TimerMode** (4 connections) — `src/app/components/TimerSettingsPanel.tsx`
+- **loadLocalDrafts()** (4 connections) — `src/app/hooks/useQuizSession.ts`
+- **saveLocalDrafts()** (4 connections) — `src/app/hooks/useQuizSession.ts`
+- **parseQuestionTable()** (4 connections) — `src/app/utils/questionTable.ts`
+- **committedAnswer.test.ts** (4 connections) — `src/app/learning/committedAnswer.test.ts`
+- *... and 13 more nodes in this community*
 
 ## Relationships
 
-- [Community 95](Community_95.md) (8 shared connections)
-- [Community 6](Community_6.md) (4 shared connections)
-- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (3 shared connections)
-- [Usesoundengine Soundkey Audiopolicy](Usesoundengine_Soundkey_Audiopolicy.md) (2 shared connections)
-- [Interactivebackground Cell Constructor](Interactivebackground_Cell_Constructor.md) (2 shared connections)
-- [Community 15](Community_15.md) (2 shared connections)
-- [Pulseengine Burst Getsnapshot](Pulseengine_Burst_Getsnapshot.md) (1 shared connections)
-- [React Eslint Plugin](React_Eslint_Plugin.md) (1 shared connections)
+- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (39 shared connections)
+- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (18 shared connections)
+- [Community 6](Community_6.md) (15 shared connections)
+- [Community 36](Community_36.md) (13 shared connections)
+- [Community 238](Community_238.md) (12 shared connections)
+- [Community 34](Community_34.md) (8 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (5 shared connections)
+- [Community 1](Community_1.md) (4 shared connections)
+- [Community 13](Community_13.md) (4 shared connections)
+- [Community 117](Community_117.md) (4 shared connections)
+- [Community 153](Community_153.md) (3 shared connections)
+- [Community 152](Community_152.md) (2 shared connections)
 
 ## Source Files
 
-- `package.json`
-- `src/app/components/ConfettiManager.tsx`
-- `src/app/components/ECGMonitor.tsx`
-- `src/app/lib/celebrate.ts`
-- `src/app/lib/confettiConfig.ts`
-- `src/app/lib/fx.config.ts`
-- `src/app/lib/pulseEngine.ts`
-- `src/app/lib/useReactiveBackground.ts`
+- `src/app/App.tsx`
+- `src/app/components/FlowBreadcrumbs.tsx`
+- `src/app/components/QuizInterface.tsx`
+- `src/app/components/ResultsDashboard.tsx`
+- `src/app/components/TimerSettingsPanel.tsx`
+- `src/app/hooks/useQuizSession.test.ts`
+- `src/app/hooks/useQuizSession.ts`
+- `src/app/learning/committedAnswer.test.ts`
+- `src/app/learning/committedAnswer.ts`
+- `src/app/learning/customPractice.ts`
+- `src/app/learning/topicPracticeSession.test.ts`
+- `src/app/learning/topicPracticeSession.ts`
+- `src/app/types.ts`
+- `src/app/utils/questionTable.test.ts`
+- `src/app/utils/questionTable.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 47 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 220 (100%)
+- INFERRED: 1 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

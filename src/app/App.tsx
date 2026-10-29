@@ -95,7 +95,8 @@ import {
   startCorrectionsRefresh,
   getChaptersForModuleAndMode,
   findQuestionById,
-  SYLLABUS_MODULES
+  SYLLABUS_MODULES,
+  bankManifest
 } from './data';
 import type { ModuleInfo } from './data';
 
@@ -478,7 +479,19 @@ function MainApp() {
     try { const saved = safeStorage.getItem<string | null>('asu_portal_semester', null); return saved ? Number(saved) : null; } catch { return null; }
   });
   const [selectedModule, setSelectedModule] = useState<ModuleInfo | null>(() => {
-    try { const saved = safeStorage.getItem<string | null>('asu_portal_module', null); return saved ? JSON.parse(saved) : null; } catch { return null; }
+    try {
+      const saved = safeStorage.getItem<string | null>('asu_portal_module', null);
+      if (!saved) return null;
+      const parsed = JSON.parse(saved);
+      if (parsed?.code && bankManifest[parsed.code]) {
+        return parsed;
+      }
+      safeStorage.removeItem('asu_portal_module');
+      return null;
+    } catch {
+      safeStorage.removeItem('asu_portal_module');
+      return null;
+    }
   });
   const [studyMode, setStudyMode] = useState<'mcq' | 'essay' | 'mixed' | null>(() => {
     try { const saved = safeStorage.getItem<string | null>('asu_portal_studyMode', null); return (saved as 'mcq' | 'essay' | 'mixed') || null; } catch { return null; }
@@ -643,7 +656,7 @@ function MainApp() {
     if (screen === 'chapters' && (!selectedModule || !studyMode)) {
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setScreen('yearSelect');
-    } else if (screen === 'subjects' && !selectedChapter) {
+    } else if (screen === 'subjects' && (!selectedChapter || !selectedModule)) {
        
       setScreen('chapters');
     } else if (screen === 'quiz' && !quizPayload) {
@@ -663,6 +676,17 @@ function MainApp() {
       setScreen('yearSelect');
     }
   }, [screen, selectedYear, selectedSemester, selectedModule, studyMode, selectedChapter, quizPayload, resultPayload, transitionTo]);
+
+  // Track active quiz status for seamless background update decisions
+  useEffect(() => {
+    try {
+      if (screen === 'quiz') {
+        sessionStorage.setItem('asu:active-quiz', '1');
+      } else {
+        sessionStorage.removeItem('asu:active-quiz');
+      }
+    } catch {}
+  }, [screen]);
 
   const handleSelectChapter = (chapter: ChapterData) => {
     transitionTo(() => {

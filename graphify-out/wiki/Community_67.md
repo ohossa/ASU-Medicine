@@ -1,12 +1,17 @@
 # Community 67
 
-> 36 nodes
+> 45 nodes
 
 ## Key Concepts
 
 - **import-ready.ts** (45 connections) — `data-format-v2/scripts/import-ready.ts`
 - **main()** (18 connections) — `data-format-v2/scripts/import-ready.ts`
+- **question-quality.ts** (11 connections) — `data-format-v2/scripts/question-quality.ts`
+- **contentFingerprint()** (9 connections) — `data-format-v2/scripts/question-quality.ts`
+- **questionQualityIssues()** (9 connections) — `data-format-v2/scripts/question-quality.ts`
+- **year1-quality.test.ts** (8 connections) — `src/app/year1-quality.test.ts`
 - **convertQuestion()** (7 connections) — `data-format-v2/scripts/import-ready.ts`
+- **resolveAnswerIndex()** (6 connections) — `data-format-v2/scripts/question-quality.ts`
 - **cleanStarText()** (5 connections) — `data-format-v2/scripts/import-ready.ts`
 - **inferSubject()** (5 connections) — `data-format-v2/scripts/import-ready.ts`
 - **makeDuplicateKey()** (5 connections) — `data-format-v2/scripts/import-ready.ts`
@@ -19,33 +24,30 @@
 - **resolveContentRouting()** (4 connections) — `data-format-v2/scripts/import-ready.ts`
 - **resolveSmartRouting()** (4 connections) — `data-format-v2/scripts/import-ready.ts`
 - **resolveChapter()** (3 connections) — `data-format-v2/scripts/import-ready.ts`
+- **validateQuestion()** (3 connections) — `data-format-v2/scripts/import-ready.ts`
+- **normalizeContent()** (3 connections) — `data-format-v2/scripts/question-quality.ts`
 - **findQuestionById()** (2 connections) — `data-format-v2/scripts/import-ready.ts`
 - **getOrCreateSubject()** (2 connections) — `data-format-v2/scripts/import-ready.ts`
 - **getTimestampString()** (2 connections) — `data-format-v2/scripts/import-ready.ts`
-- **inferType()** (2 connections) — `data-format-v2/scripts/import-ready.ts`
-- **nextQuestionId()** (2 connections) — `data-format-v2/scripts/import-ready.ts`
-- **validateUniqueIds()** (2 connections) — `data-format-v2/scripts/import-ready.ts`
-- **Chapter** (1 connections) — `data-format-v2/scripts/import-ready.ts`
-- **ImportReport** (1 connections) — `data-format-v2/scripts/import-ready.ts`
-- **IncomingBatch** (1 connections) — `data-format-v2/scripts/import-ready.ts`
-- **IncomingQuestion** (1 connections) — `data-format-v2/scripts/import-ready.ts`
-- *... and 11 more nodes in this community*
+- *... and 20 more nodes in this community*
 
 ## Relationships
 
-- [Community 13](Community_13.md) (9 shared connections)
+- [Community 36](Community_36.md) (16 shared connections)
 - [Tests Build Import](Tests_Build_Import.md) (3 shared connections)
-- [Community 36](Community_36.md) (2 shared connections)
-- [Community 33](Community_33.md) (2 shared connections)
+- [Community 319](Community_319.md) (1 shared connections)
+- [Community 33](Community_33.md) (1 shared connections)
 
 ## Source Files
 
 - `data-format-v2/scripts/import-ready.ts`
+- `data-format-v2/scripts/question-quality.ts`
+- `src/app/year1-quality.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 82 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 107 (97%)
+- INFERRED: 3 (3%)
 - AMBIGUOUS: 0 (0%)
 
 ---

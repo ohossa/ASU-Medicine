@@ -1,6 +1,6 @@
 # Community 1
 
-> 156 nodes
+> 125 nodes
 
 ## Key Concepts
 
@@ -8,13 +8,8 @@
 - **QuizPayload** (175 connections) — `src/app/App.tsx`
 - **SoundToggle()** (175 connections) — `src/app/components/SoundToggle.tsx`
 - **questionVariants** (170 connections) — `src/app/components/QuizInterface.tsx`
-- **Gauges** (12 connections) — `.agents/skills/apple-design/references/hig/gauges.md`
 - **Apple Design Skill** (12 connections) — `.agents/skills/apple-design/SKILL.md`
 - **BRIEFING — 2026-06-10T18:52:16Z** (11 connections) — `.agents/explorer_cwv_audit/BRIEFING.md`
-- **Rating indicators** (11 connections) — `.agents/skills/apple-design/references/hig/rating-indicators.md`
-- **Ratings and reviews** (11 connections) — `.agents/skills/apple-design/references/hig/ratings-and-reviews.md`
-- **🏥 ASU Medical Portal — Improvement Roadmap (v2)** (11 connections) — `.kimchi/docs/IMPROVEMENT_PLAN_v2.md`
-- **ASU Medical Portal — Full Optimization Execution Prompt** (11 connections) — `.opencode/plans/optimization-prompt.md`
 - **AGENTS.md** (10 connections) — `.agents/skills/apple-design/AGENTS.md`
 - **AirPlay** (10 connections) — `.agents/skills/apple-design/references/hig/airplay.md`
 - **Gyroscope and accelerometer** (10 connections) — `.agents/skills/apple-design/references/hig/gyro-and-accelerometer.md`
@@ -29,13 +24,18 @@
 - **BRIEFING — 2026-06-10T21:52:48+03:00** (9 connections) — `.agents/worker_cwv_implement/BRIEFING.md`
 - **CWV Fixes Implementation Handoff Report** (9 connections) — `.agents/worker_cwv_implement/handoff.md`
 - **iCloud** (8 connections) — `.agents/skills/apple-design/references/hig/icloud.md`
-- *... and 131 more nodes in this community*
+- **Status bars** (8 connections) — `.agents/skills/apple-design/references/hig/status-bars.md`
+- **Final Handoff Report - CWV Optimization** (7 connections) — `.agents/orchestrator/handoff.md`
+- **Verification Deliverables** (7 connections) — `.agents/reviewer_cwv/verification_deliverables.md`
+- **Web views** (7 connections) — `.agents/skills/apple-design/references/hig/web-views.md`
+- **Cross-platform translation** (6 connections) — `.agents/skills/apple-design/references/cross-platform.md`
+- *... and 100 more nodes in this community*
 
 ## Relationships
 
 - [Community 131](Community_131.md) (65 shared connections)
-- [Community 118](Community_118.md) (58 shared connections)
-- [Community 251](Community_251.md) (55 shared connections)
+- [Community 118](Community_118.md) (57 shared connections)
+- [Community 251](Community_251.md) (52 shared connections)
 - [Community 156](Community_156.md) (36 shared connections)
 - [Community 84](Community_84.md) (36 shared connections)
 - [Community 134](Community_134.md) (33 shared connections)
@@ -44,7 +44,7 @@
 - [Community 97](Community_97.md) (28 shared connections)
 - [Community 85](Community_85.md) (26 shared connections)
 - [Community 107](Community_107.md) (24 shared connections)
-- [Community 83](Community_83.md) (16 shared connections)
+- [Community 180](Community_180.md) (20 shared connections)
 
 ## Source Files
 
@@ -63,16 +63,16 @@
 - `.agents/skills/apple-design/references/cross-platform.md`
 - `.agents/skills/apple-design/references/hig/airplay.md`
 - `.agents/skills/apple-design/references/hig/color-wells.md`
-- `.agents/skills/apple-design/references/hig/gauges.md`
 - `.agents/skills/apple-design/references/hig/gyro-and-accelerometer.md`
 - `.agents/skills/apple-design/references/hig/icloud.md`
 - `.agents/skills/apple-design/references/hig/image-wells.md`
 - `.agents/skills/apple-design/references/hig/nfc.md`
+- `.agents/skills/apple-design/references/hig/status-bars.md`
 
 ## Audit Trail
 
-- EXTRACTED: 164 (20%)
-- INFERRED: 677 (80%)
+- EXTRACTED: 131 (16%)
+- INFERRED: 677 (84%)
 - AMBIGUOUS: 0 (0%)
 
 ---

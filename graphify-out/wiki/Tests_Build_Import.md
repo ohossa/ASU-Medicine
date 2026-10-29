@@ -43,8 +43,8 @@
 - [Release Inspect October](Release_Inspect_October.md) (4 shared connections)
 - [Community 1](Community_1.md) (4 shared connections)
 - [Community 67](Community_67.md) (3 shared connections)
-- [Community 13](Community_13.md) (1 shared connections)
-- [Community 33](Community_33.md) (1 shared connections)
+- [Community 36](Community_36.md) (1 shared connections)
+- [Community 319](Community_319.md) (1 shared connections)
 
 ## Source Files
 

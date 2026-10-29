@@ -1,32 +1,25 @@
 # Community 308
 
-> 9 nodes
+> 4 nodes
 
 ## Key Concepts
 
-- **renderInline()** (8 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderInlineNode()** (6 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderHigLink()** (4 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderLink()** (4 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderImage()** (3 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderReference()** (3 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **imageLabel()** (2 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **resolveAnchor()** (2 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **wrapInline()** (2 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
+- **test-import.ts** (4 connections) — `data-format-v2/scripts/test-import.ts`
+- **bank** (1 connections) — `data-format-v2/scripts/test-import.ts`
+- **errors** (1 connections) — `data-format-v2/scripts/test-import.ts`
+- **seenIds** (1 connections) — `data-format-v2/scripts/test-import.ts`
 
 ## Relationships
 
-- [Community 9](Community_9.md) (10 shared connections)
-- [Community 311](Community_311.md) (2 shared connections)
-- [Community 246](Community_246.md) (2 shared connections)
+- [Bank Audit Validate](Bank_Audit_Validate.md) (1 shared connections)
 
 ## Source Files
 
-- `.agents/skills/apple-design/scripts/pull-hig.mjs`
+- `data-format-v2/scripts/test-import.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 24 (100%)
+- EXTRACTED: 4 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

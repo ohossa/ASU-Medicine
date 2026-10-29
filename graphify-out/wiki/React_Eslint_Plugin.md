@@ -6,8 +6,9 @@
 
 - **package.json** (57 connections) — `package.json`
 - **eslint.config.js** (6 connections) — `eslint.config.js`
-- **peerDependencies** (3 connections) — `package.json`
+- **focus-trap-react** (3 connections) — `package.json`
 - **engines** (2 connections) — `package.json`
+- **canvas-confetti** (2 connections) — `package.json`
 - **@clerk/themes** (2 connections) — `package.json`
 - **eslint** (2 connections) — `package.json`
 - **@eslint/js** (2 connections) — `package.json`
@@ -17,10 +18,9 @@
 - **@supabase/supabase-js** (2 connections) — `package.json`
 - **@testing-library/jest-dom** (2 connections) — `package.json`
 - **typescript-eslint** (2 connections) — `package.json`
+- **@vercel/analytics** (2 connections) — `package.json`
 - **node** (1 connections) — `package.json`
 - **name** (1 connections) — `package.json`
-- **react** (1 connections) — `package.json`
-- **react-dom** (1 connections) — `package.json`
 - **private** (1 connections) — `package.json`
 - **type** (1 connections) — `package.json`
 - **version** (1 connections) — `package.json`
@@ -33,18 +33,18 @@
 
 ## Relationships
 
-- [Community 95](Community_95.md) (3 shared connections)
-- [Generatehint Constructor Hint](Generatehint_Constructor_Hint.md) (2 shared connections)
-- [Path Cleaner Batch](Path_Cleaner_Batch.md) (2 shared connections)
-- [Intake Valid Google](Intake_Valid_Google.md) (2 shared connections)
+- [Community 50](Community_50.md) (5 shared connections)
+- [Intake Valid Google](Intake_Valid_Google.md) (3 shared connections)
 - [Vite Config Figmaassetresolver](Vite_Config_Figmaassetresolver.md) (2 shared connections)
-- [Community 3](Community_3.md) (1 shared connections)
-- [Community 145](Community_145.md) (1 shared connections)
-- [Community 24](Community_24.md) (1 shared connections)
-- [Community 240](Community_240.md) (1 shared connections)
-- [Bank Question Edit](Bank_Question_Edit.md) (1 shared connections)
+- [Community 56](Community_56.md) (1 shared connections)
+- [Community 246](Community_246.md) (1 shared connections)
 - [Xphud Gamificationstore Zustand](Xphud_Gamificationstore_Zustand.md) (1 shared connections)
-- [Community 15](Community_15.md) (1 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (1 shared connections)
+- [Community 152](Community_152.md) (1 shared connections)
+- [Path Cleaner Batch](Path_Cleaner_Batch.md) (1 shared connections)
+- [Community 36](Community_36.md) (1 shared connections)
+- [Clerk React Vercel](Clerk_React_Vercel.md) (1 shared connections)
+- [Eslint React Plugin](Eslint_React_Plugin.md) (1 shared connections)
 
 ## Source Files
 
@@ -54,7 +54,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 69 (100%)
+- EXTRACTED: 71 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
