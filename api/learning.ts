@@ -45,6 +45,65 @@ const service = createLearningService({
           .eq("user_id", id)
           .maybeSingle();
 
+        const dataObj = userRow?.data as Record<string, any> | undefined;
+        const explicitPref = dataObj?.[`asu_preferences:${id}:academic-year`]?.year;
+        const portalYear = Number(dataObj?.["asu_portal_year"]);
+
+        // Explicit preference saved by the student takes absolute top priority
+        if (Number.isInteger(explicitPref) && explicitPref >= 1 && explicitPref <= 5) {
+          return explicitPref;
+        }
+
+        // Check if student has set an academic year > 1 in user_progress
+        if (
+          userRow?.academic_year &&
+          Number.isInteger(userRow.academic_year) &&
+          userRow.academic_year > 1 &&
+          userRow.academic_year <= 5
+        ) {
+          return userRow.academic_year;
+        }
+
+        // Check learning_profiles year if > 1
+        const { data: profileRow } = await supabase
+          .from("learning_profiles")
+          .select("year")
+          .eq("user_id", id)
+          .maybeSingle();
+
+        if (
+          profileRow?.year &&
+          Number.isInteger(profileRow.year) &&
+          profileRow.year > 1 &&
+          profileRow.year <= 5
+        ) {
+          return profileRow.year;
+        }
+
+        // Check recent question attempts from learning_entries (e.g. MGL-3 -> Year 3)
+        const { data: recentEntries } = await supabase
+          .from("learning_entries")
+          .select("module_code")
+          .eq("user_id", id)
+          .order("updated_at", { ascending: false })
+          .limit(10);
+
+        if (Array.isArray(recentEntries) && recentEntries.length > 0) {
+          for (const ent of recentEntries) {
+            const match = ent.module_code?.match(/-([1-5])$/);
+            if (match) {
+              const detectedYear = parseInt(match[1], 10);
+              if (detectedYear >= 1 && detectedYear <= 5) {
+                return detectedYear;
+              }
+            }
+          }
+        }
+
+        if (Number.isInteger(portalYear) && portalYear >= 1 && portalYear <= 5) {
+          return portalYear;
+        }
+
         if (
           userRow?.academic_year &&
           Number.isInteger(userRow.academic_year) &&
@@ -53,23 +112,6 @@ const service = createLearningService({
         ) {
           return userRow.academic_year;
         }
-
-        const dataObj = userRow?.data as Record<string, any> | undefined;
-        const prefYear = dataObj?.[`asu_preferences:${id}:academic-year`]?.year;
-        if (
-          prefYear &&
-          Number.isInteger(prefYear) &&
-          prefYear >= 1 &&
-          prefYear <= 5
-        ) {
-          return prefYear;
-        }
-
-        const { data: profileRow } = await supabase
-          .from("learning_profiles")
-          .select("year")
-          .eq("user_id", id)
-          .maybeSingle();
 
         if (
           profileRow?.year &&

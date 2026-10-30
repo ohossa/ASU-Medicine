@@ -96,7 +96,8 @@ export default function AdminAnalyticsView() {
       return (
         s.name.toLowerCase().includes(q) ||
         s.email.toLowerCase().includes(q) ||
-        s.id.toLowerCase().includes(q)
+        s.id.toLowerCase().includes(q) ||
+        Boolean(s.alias && s.alias.toLowerCase().includes(q))
       );
     })
     .sort((a, b) => {
@@ -607,19 +608,32 @@ export default function AdminAnalyticsView() {
 
                       <div className="pt-2 text-center">
                         <div className="relative inline-block mx-auto mb-2.5">
-                          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-slate-400 to-slate-600 font-black text-white text-lg shadow-sm">
-                            {stu.name.slice(0, 2).toUpperCase()}
-                          </div>
+                          {stu.avatar ? (
+                            <img
+                              src={stu.avatar}
+                              alt={stu.name}
+                              className="h-14 w-14 rounded-2xl object-cover shadow-sm ring-2 ring-slate-300"
+                            />
+                          ) : (
+                            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-slate-400 to-slate-600 font-black text-white text-lg shadow-sm">
+                              {stu.name.slice(0, 2).toUpperCase()}
+                            </div>
+                          )}
                           {stu.isOnline && (
                             <span className="absolute -bottom-1 -right-1 h-3.5 w-3.5 rounded-full bg-emerald-500 ring-2 ring-white dark:ring-stone-900 animate-pulse" title="Online now" />
                           )}
                         </div>
 
-                        <h4 className="font-bold text-stone-900 dark:text-stone-100 text-sm truncate">
+                        <h4 className="font-bold text-stone-900 dark:text-stone-100 text-sm truncate" title={stu.name}>
                           {stu.name}
                         </h4>
-                        <p className="text-[11px] text-stone-500 dark:text-stone-400 truncate">
-                          {stu.email}
+                        {stu.alias && stu.alias.toLowerCase() !== stu.name.toLowerCase() && (
+                          <p className="text-[11px] font-medium text-amber-700 dark:text-amber-400 truncate">
+                            Alias: {stu.alias}
+                          </p>
+                        )}
+                        <p className="text-[11px] text-stone-500 dark:text-stone-400 truncate" title={stu.email}>
+                          {stu.email || "No email"}
                         </p>
 
                         <div className="mt-3 rounded-2xl bg-white/80 p-3 shadow-inner dark:bg-stone-800/60 border border-slate-200/50 dark:border-slate-700/50">
@@ -674,19 +688,32 @@ export default function AdminAnalyticsView() {
 
                       <div className="pt-2 text-center">
                         <div className="relative inline-block mx-auto mb-2.5">
-                          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-400 via-amber-500 to-yellow-500 font-black text-amber-950 text-xl shadow-md ring-4 ring-amber-400/30">
-                            {stu.name.slice(0, 2).toUpperCase()}
-                          </div>
+                          {stu.avatar ? (
+                            <img
+                              src={stu.avatar}
+                              alt={stu.name}
+                              className="h-16 w-16 rounded-2xl object-cover shadow-md ring-4 ring-amber-400/30"
+                            />
+                          ) : (
+                            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-400 via-amber-500 to-yellow-500 font-black text-amber-950 text-xl shadow-md ring-4 ring-amber-400/30">
+                              {stu.name.slice(0, 2).toUpperCase()}
+                            </div>
+                          )}
                           {stu.isOnline && (
                             <span className="absolute -bottom-1 -right-1 h-4 w-4 rounded-full bg-emerald-500 ring-2 ring-white dark:ring-stone-900 animate-pulse" title="Online now" />
                           )}
                         </div>
 
-                        <h4 className="font-bold text-stone-900 dark:text-stone-100 text-base truncate">
+                        <h4 className="font-bold text-stone-900 dark:text-stone-100 text-base truncate" title={stu.name}>
                           {stu.name}
                         </h4>
-                        <p className="text-xs text-stone-500 dark:text-stone-400 truncate">
-                          {stu.email}
+                        {stu.alias && stu.alias.toLowerCase() !== stu.name.toLowerCase() && (
+                          <p className="text-xs font-semibold text-amber-800 dark:text-amber-300 truncate">
+                            Alias: {stu.alias}
+                          </p>
+                        )}
+                        <p className="text-xs text-stone-500 dark:text-stone-400 truncate" title={stu.email}>
+                          {stu.email || "No email"}
                         </p>
 
                         <div className="mt-3 rounded-2xl bg-amber-50/80 p-3.5 shadow-inner dark:bg-amber-950/40 border border-amber-200/80 dark:border-amber-800/60">
@@ -741,19 +768,32 @@ export default function AdminAnalyticsView() {
 
                       <div className="pt-2 text-center">
                         <div className="relative inline-block mx-auto mb-2.5">
-                          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-600 to-amber-800 font-black text-white text-lg shadow-sm">
-                            {stu.name.slice(0, 2).toUpperCase()}
-                          </div>
+                          {stu.avatar ? (
+                            <img
+                              src={stu.avatar}
+                              alt={stu.name}
+                              className="h-14 w-14 rounded-2xl object-cover shadow-sm ring-2 ring-amber-700/30"
+                            />
+                          ) : (
+                            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-600 to-amber-800 font-black text-white text-lg shadow-sm">
+                              {stu.name.slice(0, 2).toUpperCase()}
+                            </div>
+                          )}
                           {stu.isOnline && (
                             <span className="absolute -bottom-1 -right-1 h-3.5 w-3.5 rounded-full bg-emerald-500 ring-2 ring-white dark:ring-stone-900 animate-pulse" title="Online now" />
                           )}
                         </div>
 
-                        <h4 className="font-bold text-stone-900 dark:text-stone-100 text-sm truncate">
+                        <h4 className="font-bold text-stone-900 dark:text-stone-100 text-sm truncate" title={stu.name}>
                           {stu.name}
                         </h4>
-                        <p className="text-[11px] text-stone-500 dark:text-stone-400 truncate">
-                          {stu.email}
+                        {stu.alias && stu.alias.toLowerCase() !== stu.name.toLowerCase() && (
+                          <p className="text-[11px] font-medium text-amber-700 dark:text-amber-400 truncate">
+                            Alias: {stu.alias}
+                          </p>
+                        )}
+                        <p className="text-[11px] text-stone-500 dark:text-stone-400 truncate" title={stu.email}>
+                          {stu.email || "No email"}
                         </p>
 
                         <div className="mt-3 rounded-2xl bg-white/80 p-3 shadow-inner dark:bg-stone-800/60 border border-amber-200/40 dark:border-amber-900/40">
@@ -846,9 +886,17 @@ export default function AdminAnalyticsView() {
 
                         {/* Avatar */}
                         <div className="relative shrink-0">
-                          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-teal-600 font-bold text-white shadow-sm text-sm">
-                            {stu.name.slice(0, 2).toUpperCase()}
-                          </div>
+                          {stu.avatar ? (
+                            <img
+                              src={stu.avatar}
+                              alt={stu.name}
+                              className="h-11 w-11 rounded-2xl object-cover shadow-sm ring-1 ring-black/5"
+                            />
+                          ) : (
+                            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-teal-600 font-bold text-white shadow-sm text-sm">
+                              {stu.name.slice(0, 2).toUpperCase()}
+                            </div>
+                          )}
                           {stu.isOnline && (
                             <span
                               className="absolute -bottom-0.5 -right-0.5 h-3.5 w-3.5 rounded-full bg-emerald-500 ring-2 ring-white dark:ring-stone-900 animate-pulse"
@@ -863,6 +911,11 @@ export default function AdminAnalyticsView() {
                             <h4 className="text-sm font-semibold text-stone-900 dark:text-stone-100">
                               {stu.name}
                             </h4>
+                            {stu.alias && stu.alias.toLowerCase() !== stu.name.toLowerCase() && (
+                              <span className="rounded-full bg-amber-100/80 px-2 py-0.5 text-[10px] font-semibold text-amber-900 dark:bg-amber-950/60 dark:text-amber-300 ring-1 ring-amber-500/20">
+                                Alias: {stu.alias}
+                              </span>
+                            )}
                             {stu.isOnline && (
                               <span className="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 ring-1 ring-emerald-500/30">
                                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
@@ -878,7 +931,13 @@ export default function AdminAnalyticsView() {
                             </span>
                           </div>
                           <p className="text-xs text-stone-500 dark:text-stone-400 mt-0.5 truncate">
-                            {stu.email} · <span className="font-mono text-[11px]">ID: {stu.id}</span>
+                            {stu.email ? (
+                              <span className="font-medium text-stone-700 dark:text-stone-300">{stu.email}</span>
+                            ) : (
+                              <span className="italic text-stone-400">No email registered</span>
+                            )}
+                            {" · "}
+                            <span className="font-mono text-[11px]">ID: {stu.id}</span>
                           </p>
                         </div>
                       </div>

@@ -7,12 +7,16 @@ import {
   Flame,
   Check,
   RefreshCw,
+  AlertCircle,
+  Medal,
+  Crown,
 } from "lucide-react";
 import { PortalShell } from "../app/components/PortalShell";
 import { useAcademicYear } from "../app/preferences/useAcademicYear";
 import { useLearning } from "../app/learning/LearningProvider";
 import { REWARDS, TITLES } from "../app/learning/contracts";
 import { moduleProgress } from "../app/learning/progress";
+import { validateDisplayName } from "../../server/profanity-filter";
 import {
   SYLLABUS_MODULES,
   getChaptersForModuleAndMode,
@@ -71,6 +75,8 @@ export default function LearningHub({
     [saving, setSaving] = useState(false);
   const year = yearPref.year;
   const p = learning.data?.profile;
+  const currentAlias = alias ?? p?.alias ?? "";
+  const nameValidation = currentAlias ? validateDisplayName(currentAlias) : { valid: true };
   useEffect(() => {
     let live = true;
     if (year) {
@@ -268,6 +274,7 @@ export default function LearningHub({
           {[
             ["overview", ar ? "نظرة عامة" : "Overview"],
             ["progress", ar ? "التقدم" : "Progress"],
+            ["rankings", ar ? "لوحة الشرف" : "Leaderboard"],
             ["activity", ar ? "النشاط" : "Activity"],
             ["rewards", ar ? "المكافآت" : "Rewards"],
           ].map(([id, label]) => (
@@ -547,55 +554,186 @@ export default function LearningHub({
             onSelectHistory={onSelectHistory}
           />
         )}
-        {(tab === "rankings" || tab === "rewards") && (
+        {tab === "rankings" && (
           <section className="learning-panel">
             <h2>
               {ar
-                ? `ترتيب السنة ${year ?? "—"}`
-                : `Year ${year ?? "—"} leaderboard`}
+                ? `لوحة شرف السنة ${year ?? "—"}`
+                : `Year ${year ?? "—"} Student Leaderboard`}
             </h2>
             <p>
-              Automatically graded questions only. Essays earn personal XP, and
-              repeated questions do not award points again.
+              {ar
+                ? "الأسئلة المصححة تلقائياً فقط. المشاركة اختيارية تماماً، ويمكنك تفعيل أو إيقاف ظهورك في أي وقت."
+                : "Automatically graded questions only. Participation is completely optional. You can choose to appear on the leaderboard and write your preferred academic name."}
             </p>
-            <div className="learning-period">
+
+            {/* Participation & Name Filter Settings Card */}
+            <div className="leaderboard-optin-card">
+              <div className="optin-header">
+                <div>
+                  <h3 style={{ margin: "0 0 6px 0", fontSize: "16px", fontWeight: "700" }}>
+                    {ar ? "المشاركة في لوحة الشرف" : "Leaderboard Participation"}
+                  </h3>
+                  <p style={{ margin: 0, fontSize: "13px", color: "var(--muted-foreground)" }}>
+                    {ar
+                      ? "عند التفعيل، يظهر اسمك ومستواك ونقاطك لزملائك في نفس السنة الدراسية."
+                      : "When enabled, your chosen name, level, and XP appear to fellow students in Year " + (year ?? "—") + "."}
+                  </p>
+                </div>
+                <label className="optin-toggle-switch" title={ar ? "تفعيل/إلغاء المشاركة" : "Toggle participation"}>
+                  <input
+                    type="checkbox"
+                    checked={p?.optIn ?? false}
+                    disabled={saving || !p}
+                    onChange={(e) => void save({ optIn: e.target.checked })}
+                  />
+                  <span className="optin-slider" />
+                </label>
+              </div>
+
+              <div className="alias-input-group">
+                <label style={{ fontSize: "13px", fontWeight: "600", color: "var(--foreground)" }}>
+                  {ar ? "اسم العرض في لوحة الشرف" : "Your Leaderboard Display Name"}
+                </label>
+                <div className="alias-field-wrapper">
+                  <input
+                    className="alias-input-field"
+                    maxLength={24}
+                    value={currentAlias}
+                    onChange={(e) => {
+                      setAlias(e.target.value);
+                      if (saveError) setSaveError("");
+                    }}
+                    placeholder={ar ? "اكتب اسمك الأكاديمي (مثال: Dr. Sarah)" : "e.g. Dr. Sarah or your preferred name"}
+                  />
+                  <button
+                    disabled={
+                      saving ||
+                      !p ||
+                      !nameValidation.valid ||
+                      (alias === null && p?.alias === currentAlias) ||
+                      currentAlias.trim().length < 3
+                    }
+                    onClick={() => void save({ alias: currentAlias.trim() })}
+                    style={{
+                      padding: "12px 18px",
+                      borderRadius: "12px",
+                      background: "#14b8a6",
+                      color: "#fff",
+                      border: "none",
+                      fontWeight: "600",
+                      cursor: "pointer",
+                      fontSize: "14px",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    {saving ? (ar ? "جاري الحفظ…" : "Saving…") : (ar ? "حفظ الاسم" : "Save name")}
+                  </button>
+                </div>
+
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span className="alias-char-count">{currentAlias.length} / 24</span>
+                </div>
+
+                {!nameValidation.valid && currentAlias.length > 0 && (
+                  <div className="alias-error-banner" role="alert">
+                    <AlertCircle size={16} />
+                    <span>{ar ? nameValidation.errorAr : nameValidation.error}</span>
+                  </div>
+                )}
+
+                {saveError && (
+                  <div className="alias-error-banner" role="alert">
+                    <AlertCircle size={16} />
+                    <span>{saveError}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <div className="learning-period" style={{ marginTop: "16px" }}>
               <button
                 aria-pressed={learning.period === "weekly"}
                 onClick={() => learning.setPeriod("weekly")}
               >
-                This week
+                {ar ? "هذا الأسبوع" : "This week"}
               </button>
               <button
                 aria-pressed={learning.period === "all"}
                 onClick={() => learning.setPeriod("all")}
               >
-                All time
+                {ar ? "كل الأوقات" : "All time"}
               </button>
             </div>
-            {learning.loading && <p role="status">Loading rankings…</p>}
+
+            {learning.loading && <p role="status">{ar ? "جاري تحميل الترتيب…" : "Loading rankings…"}</p>}
+
+            {/* Apple HIG Top 3 Podium Cards */}
+            {!learning.loading && learning.data?.leaderboard && learning.data.leaderboard.length > 0 && (
+              <div className="public-leaderboard-podium">
+                {learning.data.leaderboard.slice(0, 3).map((lead, idx) => {
+                  const rankNum = idx + 1;
+                  const rankClass = rankNum === 1 ? "rank-1" : rankNum === 2 ? "rank-2" : "rank-3";
+                  const badgeClass = rankNum === 1 ? "gold" : rankNum === 2 ? "silver" : "bronze";
+                  const titleLabel = rankNum === 1 ? (ar ? "بطل الدفعة" : "#1 Champion") : rankNum === 2 ? (ar ? "الوصيف" : "#2 Contender") : (ar ? "المتفوق" : "#3 Achiever");
+
+                  return (
+                    <div key={idx} className={`podium-card ${rankClass}`}>
+                      <div className={`podium-badge ${badgeClass}`}>
+                        {rankNum === 1 ? <Crown size={14} /> : <Medal size={14} />}
+                        <span>{titleLabel}</span>
+                      </div>
+                      <div className="podium-alias">
+                        {lead.alias}
+                        {lead.isYou && (
+                          <span style={{ fontSize: "11px", marginLeft: "6px", color: "#14b8a6", fontWeight: "700" }}>
+                            {ar ? "· أنت" : "· You"}
+                          </span>
+                        )}
+                      </div>
+                      <div className="podium-level">Level {lead.level}</div>
+                      <div className="podium-xp">{lead.xp.toLocaleString()} XP</div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+
+            {/* Full Ranked Roster */}
             <ol className="learning-ranking">
               {learning.data?.leaderboard.map((row, i) => (
                 <li key={i} className={row.isYou ? "is-you" : ""}>
-                  <span>{i + 1}</span>
+                  <span style={{ fontWeight: "700", color: i < 3 ? "#14b8a6" : "var(--muted-foreground)" }}>
+                    {i + 1}
+                  </span>
                   <strong>
                     {row.alias}
-                    {row.isYou ? " · You" : ""}
+                    {row.isYou ? (ar ? " · أنت" : " · You") : ""}
                   </strong>
                   <span>Level {row.level}</span>
                   <b>{row.xp.toLocaleString()} XP</b>
                 </li>
               ))}
             </ol>
+
             {!learning.loading && !learning.data?.leaderboard.length && (
-              <p>
-                {ar
-                  ? "لا توجد نتائج عامة بعد. المشاركة اختيارية."
-                  : "No public rankings yet. Participation is optional."}
-              </p>
+              <div style={{ textAlign: "center", padding: "40px 16px" }}>
+                <Trophy size={40} style={{ margin: "0 auto 14px", color: "#f59e0b", opacity: 0.8 }} />
+                <h3 style={{ margin: "0 0 8px 0" }}>
+                  {ar ? "لا توجد نتائج عامة بعد" : "No public rankings yet"}
+                </h3>
+                <p style={{ margin: 0, color: "var(--muted-foreground)" }}>
+                  {ar
+                    ? "المشاركة اختيارية. فعل زر المشاركة بالأعلى لتكون أول من ينضم إلى لوحة الشرف!"
+                    : "Participation is optional. Toggle the switch above to become the first on the leaderboard!"}
+                </p>
+              </div>
             )}
+
             <p className="learning-footnote">
-              Weeks begin Monday in Cairo. Competitive points are capped at 500
-              per day; personal XP continues. Only aliases are public.
+              {ar
+                ? "يبدأ الأسبوع يوم الإثنين بتوقيت القاهرة. يتم احتساب النقاط التنافسية بحد أقصى 500 نقطة يومياً، بينما تستمر نقاط الخبرة الشخصية بلا حدود. الأسماء المستعارة فقط هي التي تظهر علناً."
+                : "Weeks begin Monday in Cairo. Competitive points are capped at 500 per day; personal XP continues. Only display names are public."}
             </p>
           </section>
         )}
@@ -611,21 +749,30 @@ export default function LearningHub({
                 {saveError}
               </p>
             )}
+            {!nameValidation.valid && currentAlias.length > 0 && (
+              <div className="alias-error-banner" role="alert" style={{ marginBottom: "14px" }}>
+                <AlertCircle size={16} />
+                <span>{ar ? nameValidation.errorAr : nameValidation.error}</span>
+              </div>
+            )}
             <div className="learning-consent">
               <label>
-                Public alias
+                {ar ? "اسم العرض المستعار" : "Public alias"}
                 <input
                   maxLength={24}
-                  value={alias ?? p?.alias ?? ""}
-                  onChange={(e) => setAlias(e.target.value)}
-                  placeholder="Choose an alias"
+                  value={currentAlias}
+                  onChange={(e) => {
+                    setAlias(e.target.value);
+                    if (saveError) setSaveError("");
+                  }}
+                  placeholder={ar ? "اختر اسماً مستعاراً" : "Choose an alias"}
                 />
               </label>
               <button
-                disabled={saving || !p}
-                onClick={() => void save({ alias: alias ?? p?.alias })}
+                disabled={saving || !p || !nameValidation.valid || currentAlias.trim().length < 3}
+                onClick={() => void save({ alias: currentAlias.trim() })}
               >
-                Save alias
+                {saving ? (ar ? "جاري الحفظ…" : "Saving…") : (ar ? "حفظ الاسم" : "Save alias")}
               </button>
               <label className="learning-checkbox">
                 <input
@@ -634,7 +781,7 @@ export default function LearningHub({
                   disabled={saving || !p}
                   onChange={(e) => void save({ optIn: e.target.checked })}
                 />
-                Show my alias on my year’s leaderboard
+                {ar ? "إظهار اسمي في لوحة الشرف لدراستي" : "Show my alias on my year’s leaderboard"}
               </label>
             </div>
             <h3>{ar ? "خلفيات الملف" : "Profile banners"}</h3>

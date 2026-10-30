@@ -12,6 +12,7 @@ export interface StudentAnalytics {
   name: string;
   email: string;
   avatar?: string;
+  alias?: string;
   year: number;
   xp: number;
   level: number;
@@ -146,6 +147,122 @@ export async function verifyOwner(token: string): Promise<{ id: string; email: s
   }
 }
 
+export interface ClerkUserInfo {
+  id: string;
+  name: string;
+  email: string;
+  avatar?: string;
+  username?: string;
+  createdAt?: string;
+  lastActive?: string;
+}
+
+let clerkUsersCache: {
+  timestamp: number;
+  users: Map<string, ClerkUserInfo>;
+} | null = null;
+
+const CLERK_CACHE_TTL_MS = 60 * 1000; // 1-minute in-memory cache
+
+export function clearClerkUsersCache(): void {
+  clerkUsersCache = null;
+}
+
+export function extractStudentName(
+  user?: { firstName?: string | null; lastName?: string | null; username?: string | null; emailAddresses?: any[] },
+  fallbackAlias?: string | null,
+  userId?: string
+): string {
+  const parts = [user?.firstName, user?.lastName].map((s) => s?.trim()).filter(Boolean);
+  if (parts.length > 0) {
+    return parts.join(" ");
+  }
+  if (user?.username?.trim()) {
+    return user.username.trim();
+  }
+  if (fallbackAlias?.trim()) {
+    return fallbackAlias.trim();
+  }
+  const email = user?.emailAddresses?.[0]?.emailAddress;
+  if (email && typeof email === "string" && email.includes("@")) {
+    const localPart = email.split("@")[0] || "";
+    const clean = localPart.replace(/[0-9_.-]+/g, " ").trim();
+    if (clean.length > 2) {
+      return clean
+        .split(/\s+/)
+        .map((p) => p.charAt(0).toUpperCase() + p.slice(1).toLowerCase())
+        .join(" ");
+    }
+  }
+  return userId ? `Student ${userId.slice(-4)}` : "Student";
+}
+
+export function extractStudentEmail(
+  user?: { emailAddresses?: any[]; primaryEmailAddressId?: string | null }
+): string {
+  const list = user?.emailAddresses;
+  if (!Array.isArray(list) || list.length === 0) return "";
+  const primary = list.find((e: any) => e.id === user?.primaryEmailAddressId);
+  if (primary?.emailAddress) return primary.emailAddress;
+  const verified = list.find((e: any) => e.verification?.status === "verified");
+  if (verified?.emailAddress) return verified.emailAddress;
+  return list[0]?.emailAddress || "";
+}
+
+export async function fetchEnrolledClerkUsers(secretKey?: string): Promise<Map<string, ClerkUserInfo>> {
+  const key = secretKey || process.env.CLERK_SECRET_KEY;
+  if (!key) return new Map();
+
+  const now = Date.now();
+  if (clerkUsersCache && now - clerkUsersCache.timestamp < CLERK_CACHE_TTL_MS) {
+    return clerkUsersCache.users;
+  }
+
+  const userMap = new Map<string, ClerkUserInfo>();
+
+  try {
+    const client = createClerkClient({ secretKey: key });
+    let offset = 0;
+    const limit = 500;
+
+    while (true) {
+      const res: any = await client.users.getUserList({ limit, offset });
+      const batch: any[] = Array.isArray(res) ? res : res?.data || [];
+      const totalCount = typeof res?.totalCount === "number" ? res.totalCount : batch.length;
+
+      for (const u of batch) {
+        if (!u || !u.id) continue;
+        const name = extractStudentName(u, null, u.id);
+        const email = extractStudentEmail(u);
+        const avatar = u.imageUrl || undefined;
+        const lastActive = u.lastSignInAt ? new Date(u.lastSignInAt).toISOString().slice(0, 10) : "";
+        const createdAt = u.createdAt ? new Date(u.createdAt).toISOString().slice(0, 10) : "";
+
+        userMap.set(u.id, {
+          id: u.id,
+          name,
+          email,
+          avatar,
+          username: u.username || undefined,
+          createdAt,
+          lastActive,
+        });
+      }
+
+      offset += batch.length;
+      if (batch.length < limit || (typeof totalCount === "number" && offset >= totalCount)) {
+        break;
+      }
+    }
+
+    clerkUsersCache = { timestamp: now, users: userMap };
+  } catch (err) {
+    console.warn("Clerk getUserList encountered an error:", err);
+  }
+
+  return userMap;
+}
+
 /**
  * Aggregates portal analytics from Redis and Catalog banks.
  * Handles production data and gracefully provides structured platform baselines when testing offline.
@@ -173,46 +290,98 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
     moduleAggregates[mod.code] = { attempts: 0, correct: 0, uniqueStudents: new Set() };
   }
 
-  // 2. Try Supabase first (O(1) table query, no SCAN/KEYS)
+  // 2. Fetch enrolled Clerk users for real identities (name, email, avatar)
+  const clerkUsers = await fetchEnrolledClerkUsers();
+
+  // 3. Try Supabase first (O(1) table query, unified complete roster)
   const supabase = getSupabase();
   let supabaseLoaded = false;
   if (supabase) {
     try {
-      const { data: supaProfiles, error: pErr } = await supabase
-        .from('learning_profiles')
-        .select('*');
+      const [profilesRes, progressRes, entriesRes] = await Promise.all([
+        supabase.from('learning_profiles').select('*'),
+        supabase.from('user_progress').select('user_id, academic_year, updated_at, data'),
+        supabase.from('learning_entries').select('*').order('created_at', { ascending: false }).limit(5000),
+      ]);
 
-      if (!pErr && Array.isArray(supaProfiles) && supaProfiles.length > 0) {
-        const { data: allEntries } = await supabase
-          .from('learning_entries')
-          .select('*')
-          .order('created_at', { ascending: false })
-          .limit(2000);
+      const supaProfiles = profilesRes.data;
+      const supaProgress = progressRes.data;
+      const allEntries = entriesRes.data;
 
-        const entriesByUser = new Map<string, any[]>();
-        if (Array.isArray(allEntries)) {
-          for (const entry of allEntries) {
-            const list = entriesByUser.get(entry.user_id) || [];
-            list.push(entry);
-            entriesByUser.set(entry.user_id, list);
+      const profileMap = new Map<string, any>();
+      if (Array.isArray(supaProfiles)) {
+        for (const p of supaProfiles) {
+          if (p && p.user_id) profileMap.set(p.user_id, p);
+        }
+      }
 
-            if (entry.created_at && recentActivity.length < 50) {
-              const prof = supaProfiles.find(p => p.user_id === entry.user_id);
-              recentActivity.push({
-                studentName: prof?.alias || "Student",
-                studentId: entry.user_id,
-                moduleCode: entry.module_code,
-                questionId: String(entry.question_id),
-                correct: Boolean(entry.correct),
-                timestamp: entry.created_at,
-              });
-            }
+      const progressMap = new Map<string, any>();
+      if (Array.isArray(supaProgress)) {
+        for (const pr of supaProgress) {
+          if (pr && pr.user_id) progressMap.set(pr.user_id, pr);
+        }
+      }
+
+      const entriesByUser = new Map<string, any[]>();
+      if (Array.isArray(allEntries)) {
+        for (const entry of allEntries) {
+          const list = entriesByUser.get(entry.user_id) || [];
+          list.push(entry);
+          entriesByUser.set(entry.user_id, list);
+
+          if (entry.created_at && recentActivity.length < 50) {
+            const clerkUser = clerkUsers.get(entry.user_id);
+            const prof = profileMap.get(entry.user_id);
+            const studentName = clerkUser?.name || prof?.alias || `Student ${entry.user_id.slice(-4)}`;
+            recentActivity.push({
+              studentName,
+              studentId: entry.user_id,
+              moduleCode: entry.module_code,
+              questionId: String(entry.question_id),
+              correct: Boolean(entry.correct),
+              timestamp: entry.created_at,
+            });
           }
         }
+      }
 
-        for (const profile of supaProfiles) {
-          const userId = profile.user_id;
+      // Unified roster of ALL accounts: Clerk registrations + Supabase profiles + Sync progress + Live presence
+      const allUserIds = new Set<string>([
+        ...clerkUsers.keys(),
+        ...profileMap.keys(),
+        ...progressMap.keys(),
+        ...presence.onlineUserIds,
+      ]);
+
+      if (allUserIds.size > 0) {
+        for (const userId of allUserIds) {
+          const profile = profileMap.get(userId);
+          const progress = progressMap.get(userId);
+          const clerkUser = clerkUsers.get(userId);
           const userEntries = entriesByUser.get(userId) || [];
+
+          // Real Name from Clerk, with intelligent fallback
+          const realName = clerkUser?.name || extractStudentName(clerkUser, profile?.alias, userId);
+
+          // Real Email from Clerk (strictly never dummy @student.asu.edu.eg)
+          const realEmail = clerkUser?.email || "";
+
+          // Real Avatar URL
+          const avatar = clerkUser?.avatar;
+
+          // Alias: only set if student chose an alias different from their name
+          const rawAlias = profile?.alias?.trim();
+          const alias = rawAlias && rawAlias.toLowerCase() !== realName.toLowerCase() ? rawAlias : undefined;
+
+          // Academic Year
+          const year = Number(profile?.year || progress?.academic_year || 1);
+
+          // XP, Level & Streaks
+          const xp = Number(profile?.xp || 0);
+          const level = Number(profile?.level || (Math.floor(xp / 500) + 1));
+          const streak = Number(profile?.streak || 0);
+          const bestStreak = Number(profile?.best_streak || streak);
+
           let studentCorrect = 0;
           const studentModuleBreakdown: Record<string, { attempts: number; correct: number; accuracy: number }> = {};
 
@@ -261,38 +430,63 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
             }
           }
 
-          const totalAttempts = userEntries.length;
+          let totalAttempts = userEntries.length;
+          // Fallback to progress.data if userEntries has no records
+          if (totalAttempts === 0 && progress?.data && typeof progress.data === "object") {
+            try {
+              for (const [key, val] of Object.entries(progress.data)) {
+                if (key.includes("history") && val && typeof val === "object") {
+                  const hist = val as any;
+                  if (hist.totalQuestions || hist.correctAnswers) {
+                    totalAttempts += Number(hist.totalQuestions || 0);
+                    studentCorrect += Number(hist.correctAnswers || 0);
+                  }
+                }
+              }
+            } catch {}
+          }
+
           const studentAccuracy = totalAttempts > 0 ? Math.round((studentCorrect / totalAttempts) * 100) : 0;
           const onlineMeta = presence.users.find((u) => u.userId === userId);
 
+          const todayStr = new Date().toISOString().slice(0, 10);
+          const lastActive = profile?.last_day ||
+            (progress?.updated_at ? progress.updated_at.slice(0, 10) : undefined) ||
+            clerkUser?.lastActive ||
+            clerkUser?.createdAt ||
+            todayStr;
+
           students.push({
             id: userId,
-            name: profile.alias || `Student ${userId.slice(-4)}`,
-            email: `${userId.slice(0, 8)}@student.asu.edu.eg`,
-            year: profile.year || 1,
-            xp: profile.xp || 0,
-            level: profile.level || 1,
-            streak: profile.streak || 0,
-            bestStreak: profile.best_streak || 0,
+            name: realName,
+            email: realEmail,
+            avatar,
+            alias,
+            year,
+            xp,
+            level,
+            streak,
+            bestStreak,
             questionsAttempted: totalAttempts,
             questionsCorrect: studentCorrect,
             accuracy: studentAccuracy,
             studyTimeMinutes: Math.round(totalAttempts * 1.5),
-            lastActive: profile.last_day || new Date().toISOString().slice(0, 10),
+            lastActive,
             isOnline: presence.onlineUserIds.includes(userId),
             activeModule: onlineMeta?.moduleCode,
             weakestModule,
             moduleBreakdown: studentModuleBreakdown,
           });
         }
+        students.sort((a, b) => b.xp - a.xp);
         supabaseLoaded = true;
       }
-    } catch {
-      // Supabase unavailable or table missing; continue to Redis
+    } catch (err) {
+      console.warn("Supabase analytics loading error:", err);
     }
   }
 
-  // 3. Fallback to Redis if Supabase didn't have profiles
+  // 4. Fallback to Redis if Supabase didn't have profiles
   let rawProfileKeys: string[] = [];
   if (!supabaseLoaded) {
     try {
@@ -305,107 +499,120 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
     }
   }
 
-  // Aggregate student data from Redis
-  if (!supabaseLoaded) for (const pKey of rawProfileKeys) {
-    const userId = pKey.replace("asu_learning:v1:profile:", "");
-    try {
-      const pRaw = await evalRedis("return redis.call('GET', KEYS[1])", [pKey]);
-      const eRaw = await evalRedis("return redis.call('HVALS', KEYS[1])", [`asu_learning:v1:entries:${userId}`]);
+  // Aggregate student data from Redis with Clerk enrichment
+  if (!supabaseLoaded) {
+    const redisUserIds = new Set<string>([
+      ...clerkUsers.keys(),
+      ...rawProfileKeys.map((k) => k.replace("asu_learning:v1:profile:", "")),
+      ...presence.onlineUserIds,
+    ]);
 
-      const profile = pRaw ? JSON.parse(String(pRaw)) : null;
-      const entries: any[] = Array.isArray(eRaw) ? eRaw.map((r) => JSON.parse(String(r))) : [];
+    for (const userId of redisUserIds) {
+      try {
+        const pRaw = await evalRedis("return redis.call('GET', KEYS[1])", [`asu_learning:v1:profile:${userId}`]);
+        const eRaw = await evalRedis("return redis.call('HVALS', KEYS[1])", [`asu_learning:v1:entries:${userId}`]);
 
-      if (!profile) continue;
+        const profile = pRaw ? JSON.parse(String(pRaw)) : null;
+        const entries: any[] = Array.isArray(eRaw) ? eRaw.map((r) => JSON.parse(String(r))) : [];
+        const clerkUser = clerkUsers.get(userId);
 
-      let studentCorrect = 0;
-      const studentModuleBreakdown: Record<string, { attempts: number; correct: number; accuracy: number }> = {};
+        if (!profile && !clerkUser) continue;
 
-      for (const entry of entries) {
-        const mCode = entry.moduleCode;
-        if (!studentModuleBreakdown[mCode]) {
-          studentModuleBreakdown[mCode] = { attempts: 0, correct: 0, accuracy: 0 };
+        const realName = clerkUser?.name || extractStudentName(clerkUser, profile?.alias, userId);
+        const realEmail = clerkUser?.email || "";
+        const avatar = clerkUser?.avatar;
+        const rawAlias = profile?.alias?.trim();
+        const alias = rawAlias && rawAlias.toLowerCase() !== realName.toLowerCase() ? rawAlias : undefined;
+
+        let studentCorrect = 0;
+        const studentModuleBreakdown: Record<string, { attempts: number; correct: number; accuracy: number }> = {};
+
+        for (const entry of entries) {
+          const mCode = entry.moduleCode;
+          if (!studentModuleBreakdown[mCode]) {
+            studentModuleBreakdown[mCode] = { attempts: 0, correct: 0, accuracy: 0 };
+          }
+          studentModuleBreakdown[mCode].attempts++;
+          if (entry.correct) {
+            studentModuleBreakdown[mCode].correct++;
+            studentCorrect++;
+          }
+
+          if (!moduleAggregates[mCode]) {
+            moduleAggregates[mCode] = { attempts: 0, correct: 0, uniqueStudents: new Set() };
+          }
+          moduleAggregates[mCode].attempts++;
+          if (entry.correct) moduleAggregates[mCode].correct++;
+          moduleAggregates[mCode].uniqueStudents.add(userId);
+
+          const qKey = `${mCode}:${entry.questionId}`;
+          if (!questionFailures[qKey]) {
+            questionFailures[qKey] = {
+              attempts: 0,
+              failures: 0,
+              moduleCode: mCode,
+              chapterId: entry.chapterId || 1,
+            };
+          }
+          questionFailures[qKey].attempts++;
+          if (!entry.correct) questionFailures[qKey].failures++;
+
+          if (entry.at && recentActivity.length < 50) {
+            recentActivity.push({
+              studentName: realName,
+              studentId: userId,
+              moduleCode: mCode,
+              questionId: String(entry.questionId),
+              correct: Boolean(entry.correct),
+              timestamp: entry.at,
+            });
+          }
         }
-        studentModuleBreakdown[mCode].attempts++;
-        if (entry.correct) {
-          studentModuleBreakdown[mCode].correct++;
-          studentCorrect++;
+
+        for (const mCode of Object.keys(studentModuleBreakdown)) {
+          const b = studentModuleBreakdown[mCode];
+          b.accuracy = b.attempts > 0 ? Math.round((b.correct / b.attempts) * 100) : 0;
         }
 
-        // Global module aggregates
-        if (!moduleAggregates[mCode]) {
-          moduleAggregates[mCode] = { attempts: 0, correct: 0, uniqueStudents: new Set() };
+        let weakestModule: string | undefined;
+        let minAcc = 101;
+        for (const [mCode, b] of Object.entries(studentModuleBreakdown)) {
+          if (b.attempts >= 5 && b.accuracy < minAcc) {
+            minAcc = b.accuracy;
+            weakestModule = `${mCode} (${b.accuracy}%)`;
+          }
         }
-        moduleAggregates[mCode].attempts++;
-        if (entry.correct) moduleAggregates[mCode].correct++;
-        moduleAggregates[mCode].uniqueStudents.add(userId);
 
-        // Global question failures
-        const qKey = `${mCode}:${entry.questionId}`;
-        if (!questionFailures[qKey]) {
-          questionFailures[qKey] = {
-            attempts: 0,
-            failures: 0,
-            moduleCode: mCode,
-            chapterId: entry.chapterId || 1,
-          };
-        }
-        questionFailures[qKey].attempts++;
-        if (!entry.correct) questionFailures[qKey].failures++;
+        const totalAttempts = entries.length;
+        const studentAccuracy = totalAttempts > 0 ? Math.round((studentCorrect / totalAttempts) * 100) : 0;
+        const onlineMeta = presence.users.find((u) => u.userId === userId);
 
-        // Live recent event
-        if (entry.at && recentActivity.length < 50) {
-          recentActivity.push({
-            studentName: profile.alias || "Student",
-            studentId: userId,
-            moduleCode: mCode,
-            questionId: String(entry.questionId),
-            correct: Boolean(entry.correct),
-            timestamp: entry.at,
-          });
-        }
+        students.push({
+          id: userId,
+          name: realName,
+          email: realEmail,
+          avatar,
+          alias,
+          year: profile?.year || 1,
+          xp: profile?.xp || 0,
+          level: profile?.level || 1,
+          streak: profile?.streak || 0,
+          bestStreak: profile?.bestStreak || 0,
+          questionsAttempted: totalAttempts,
+          questionsCorrect: studentCorrect,
+          accuracy: studentAccuracy,
+          studyTimeMinutes: Math.round(totalAttempts * 1.5),
+          lastActive: profile?.lastDay || clerkUser?.lastActive || new Date().toISOString().slice(0, 10),
+          isOnline: presence.onlineUserIds.includes(userId),
+          activeModule: onlineMeta?.moduleCode,
+          weakestModule,
+          moduleBreakdown: studentModuleBreakdown,
+        });
+      } catch {
+        continue;
       }
-
-      // Compute student accuracy and weakest module
-      for (const mCode of Object.keys(studentModuleBreakdown)) {
-        const b = studentModuleBreakdown[mCode];
-        b.accuracy = b.attempts > 0 ? Math.round((b.correct / b.attempts) * 100) : 0;
-      }
-
-      let weakestModule: string | undefined;
-      let minAcc = 101;
-      for (const [mCode, b] of Object.entries(studentModuleBreakdown)) {
-        if (b.attempts >= 5 && b.accuracy < minAcc) {
-          minAcc = b.accuracy;
-          weakestModule = `${mCode} (${b.accuracy}%)`;
-        }
-      }
-
-      const totalAttempts = entries.length;
-      const studentAccuracy = totalAttempts > 0 ? Math.round((studentCorrect / totalAttempts) * 100) : 0;
-      const onlineMeta = presence.users.find((u) => u.userId === userId);
-
-      students.push({
-        id: userId,
-        name: profile.alias || `Student ${userId.slice(-4)}`,
-        email: `${userId.slice(0, 8)}@student.asu.edu.eg`,
-        year: profile.year || 1,
-        xp: profile.xp || 0,
-        level: profile.level || 1,
-        streak: profile.streak || 0,
-        bestStreak: profile.bestStreak || 0,
-        questionsAttempted: totalAttempts,
-        questionsCorrect: studentCorrect,
-        accuracy: studentAccuracy,
-        studyTimeMinutes: Math.round(totalAttempts * 1.5),
-        lastActive: profile.lastDay || new Date().toISOString().slice(0, 10),
-        isOnline: presence.onlineUserIds.includes(userId),
-        activeModule: onlineMeta?.moduleCode,
-        weakestModule,
-        moduleBreakdown: studentModuleBreakdown,
-      });
-    } catch {
-      continue;
     }
+    students.sort((a, b) => b.xp - a.xp);
   }
 
   // If running locally or no live Redis data yet, populate baseline cohort data so admin dashboard is vivid and useful

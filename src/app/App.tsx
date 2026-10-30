@@ -762,7 +762,7 @@ function MainApp() {
     const correct=scoreParts.reduce((n,s)=>n+s.correct,0);
     const topicResults=topicScores(questions,answers);
 
-    if(selectedModule && selectedYear===activeStudentYear) learning.submit({moduleCode:selectedModule.code,items:questions.flatMap((q,i)=>answers[i]===undefined?[]:[{questionId:String(q.id),answer:answers[i]}])});
+    if(selectedModule) learning.submit({moduleCode:selectedModule.code,items:questions.flatMap((q,i)=>answers[i]===undefined?[]:[{questionId:String(q.id),answer:answers[i]}])});
     setIsFromHistory(false);
     saveQuizResult({
       questionSnapshot:freezeAttempt(questions),
@@ -1176,7 +1176,7 @@ function MainApp() {
                     handleSelectSubject={handleSelectSubject}
                     handleQuickStart={handleQuickStart}
                     quizPayload={quizPayload}
-                    handleAnswerXP={(q,answer)=>{if(selectedModule && selectedYear===activeStudentYear)learning.submit({moduleCode:selectedModule.code,items:[{questionId:String(q.id),answer}]});}}
+                    handleAnswerXP={(q,answer)=>{if(selectedModule)learning.submit({moduleCode:selectedModule.code,items:[{questionId:String(q.id),answer}]});}}
                     handleFinishQuiz={handleFinishQuiz}
                     resultPayload={resultPayload}
                     handleRetake={handleRetake}

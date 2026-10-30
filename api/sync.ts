@@ -183,8 +183,20 @@ export default async function handler(req: any, res: any) {
           if (!error && row) {
             const resultData = (typeof row.data === 'object' && row.data !== null) ? { ...(row.data as Record<string, unknown>) } : {};
             const yearKey = `asu_preferences:${userId}:academic-year`;
-            if (row.academic_year && !resultData[yearKey]) {
-              resultData[yearKey] = { year: row.academic_year, version: 1, timestamp: Date.now() };
+
+            // Detect accurate year: explicit preference or portal year takes precedence over default 1
+            const explicitPref = (resultData[yearKey] as any)?.year;
+            const portalYear = Number(resultData['asu_portal_year']);
+            let resolvedYear = row.academic_year;
+
+            if (Number.isInteger(explicitPref) && explicitPref >= 1 && explicitPref <= 5) {
+              resolvedYear = explicitPref;
+            } else if (Number.isInteger(portalYear) && portalYear >= 1 && portalYear <= 5) {
+              resolvedYear = portalYear;
+            }
+
+            if (!resultData[yearKey] && resolvedYear) {
+              resultData[yearKey] = { year: resolvedYear, version: 1, timestamp: Date.now() };
             }
             return res.status(200).json({ data: resultData });
           }
@@ -300,9 +312,39 @@ export default async function handler(req: any, res: any) {
               }
             }
 
-            let year = existingRow?.academic_year || 1;
+            // Resolve accurate academic year:
+            // 1. Explicit preference sent in payload
+            // 2. Portal year sent in payload
+            // 3. Existing academic year if > 1
+            // 4. Stored preference in next/current
+            // 5. Stored year in learning_profiles
+            let year = existingRow?.academic_year;
             if (body[yearKey]?.year) {
               year = body[yearKey].year;
+            } else if (body['asu_portal_year'] && Number.isInteger(Number(body['asu_portal_year']))) {
+              year = Number(body['asu_portal_year']);
+            } else if (!year || year === 1) {
+              const prefInNext = (next[yearKey] as any)?.year;
+              const portalInNext = Number(next['asu_portal_year']);
+              if (Number.isInteger(prefInNext) && prefInNext >= 1 && prefInNext <= 5) {
+                year = prefInNext;
+              } else if (Number.isInteger(portalInNext) && portalInNext >= 1 && portalInNext <= 5) {
+                year = portalInNext;
+              } else {
+                const { data: prof } = await supabase
+                  .from('learning_profiles')
+                  .select('year')
+                  .eq('user_id', userId)
+                  .maybeSingle();
+                if (prof?.year && prof.year >= 1 && prof.year <= 5) {
+                  year = prof.year;
+                } else {
+                  year = existingRow?.academic_year || 1;
+                }
+              }
+            }
+
+            if (body[yearKey]?.year) {
               // Synchronize year with learning_profiles table without resetting XP
               const { data: existingProf } = await supabase
                 .from('learning_profiles')

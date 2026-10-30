@@ -2,6 +2,7 @@ import { ReportError } from "./report-service.js";
 import { prepareReward } from "./learning-policy.js";
 import { REWARDS, TITLES } from "../src/app/learning/contracts.js";
 import type { QuestionSnapshot } from "../src/app/reports/contracts.js";
+import { validateDisplayName } from "./profanity-filter.js";
 interface Dependencies {
   authenticate: (token: string) => Promise<{ id: string }>;
   year: (id: string) => Promise<number>;
@@ -108,15 +109,11 @@ export function createLearningService(d: Dependencies) {
         patch.optIn = b.optIn;
       }
       if (b.alias !== undefined) {
-        if (
-          typeof b.alias !== "string" ||
-          !/^[\p{L}\p{N} _'-]{3,24}$/u.test(b.alias.trim())
-        )
-          throw new ReportError(
-            400,
-            "Use an alias of 3–24 letters or numbers, without an email address.",
-          );
-        patch.alias = b.alias.trim();
+        const validation = validateDisplayName(b.alias);
+        if (!validation.valid) {
+          throw new ReportError(400, validation.error ?? "Use an appropriate academic alias.");
+        }
+        patch.alias = (b.alias as string).trim();
       }
       for (const [field, pool] of [
         ["banner", REWARDS],

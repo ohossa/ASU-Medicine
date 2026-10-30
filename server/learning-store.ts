@@ -59,7 +59,7 @@ export async function getProfile(
         .maybeSingle();
 
       if (!error && data) {
-        return {
+        const profile: LearningProfile = {
           xp: Number(data.xp ?? 0),
           competitiveXp: Number(data.competitive_xp ?? 0),
           level: Number(data.level ?? 1),
@@ -72,6 +72,74 @@ export async function getProfile(
           banner: String(data.banner ?? 'default'),
           title: String(data.title ?? 'student'),
         };
+
+        // Automated Self-Healing Reconciliation:
+        // If profile.xp is 0 (or lower than what user earned in learning_entries),
+        // recalculate from learning_entries and restore it immediately!
+        const { data: entryRows } = await supabase
+          .from('learning_entries')
+          .select('question_id, ever_correct, correct')
+          .eq('user_id', id);
+
+        if (Array.isArray(entryRows) && entryRows.length > 0) {
+          const uniqueCorrect = new Set(
+            entryRows.filter((e) => e.ever_correct || e.correct).map((e) => e.question_id)
+          ).size;
+          const minEarnedXp = uniqueCorrect * 10;
+          if (minEarnedXp > profile.xp) {
+            profile.xp = minEarnedXp;
+            profile.competitiveXp = Math.max(profile.competitiveXp, minEarnedXp);
+            profile.level = Math.floor(minEarnedXp / 500) + 1;
+            // Persist healed progress to Supabase
+            await supabase.from('learning_profiles').update({
+              xp: profile.xp,
+              competitive_xp: profile.competitiveXp,
+              level: profile.level,
+              updated_at: new Date().toISOString(),
+            }).eq('user_id', id);
+          }
+        }
+
+        return profile;
+      }
+
+      if (!error && !data) {
+        // Create initial profile in Supabase to guarantee foreign key integrity
+        const initial = initialProfile(year);
+
+        // Check if there are already entries in learning_entries
+        const { data: entryRows } = await supabase
+          .from('learning_entries')
+          .select('question_id, ever_correct, correct')
+          .eq('user_id', id);
+
+        if (Array.isArray(entryRows) && entryRows.length > 0) {
+          const uniqueCorrect = new Set(
+            entryRows.filter((e) => e.ever_correct || e.correct).map((e) => e.question_id)
+          ).size;
+          const minEarnedXp = uniqueCorrect * 10;
+          initial.xp = minEarnedXp;
+          initial.competitiveXp = minEarnedXp;
+          initial.level = Math.floor(minEarnedXp / 500) + 1;
+        }
+
+        await supabase.from('learning_profiles').upsert({
+          user_id: id,
+          year: initial.year,
+          xp: initial.xp,
+          competitive_xp: initial.competitiveXp,
+          level: initial.level,
+          streak: initial.streak,
+          best_streak: initial.bestStreak,
+          last_day: initial.lastDay,
+          alias: initial.alias,
+          opt_in: initial.optIn,
+          banner: initial.banner,
+          title: initial.title,
+          updated_at: new Date().toISOString(),
+        }, { onConflict: 'user_id' });
+
+        return initial;
       }
     } catch (err) {
       // Supabase table may not exist yet; fall back silently
@@ -211,6 +279,24 @@ export async function award(id: string, year: number, rewards: unknown[]) {
         });
       }
 
+      // Guarantee learning_profiles row exists BEFORE inserting into learning_entries
+      // (Satisfies the foreign key constraint: learning_entries.user_id -> learning_profiles.user_id)
+      await supabase.from('learning_profiles').upsert({
+        user_id: id,
+        year: current.year || year,
+        xp: current.xp,
+        competitive_xp: current.competitiveXp,
+        level: current.level,
+        streak: current.streak,
+        best_streak: current.bestStreak,
+        last_day: current.lastDay || today,
+        alias: current.alias || 'Student',
+        opt_in: current.optIn ?? false,
+        banner: current.banner || 'default',
+        title: current.title || 'student',
+        updated_at: nowIso,
+      }, { onConflict: 'user_id' });
+
       if (entryRows.length > 0) {
         await supabase.from('learning_entries').upsert(entryRows, { onConflict: 'id' });
       }
@@ -294,7 +380,9 @@ export async function dashboard(
   period = "weekly",
 ): Promise<LearningDashboard> {
   let profile = await getProfile(id, year);
-  if (profile.year !== year) profile = await saveProfile(id, year, {});
+  if (!profile.year || profile.year < 1 || profile.year > 5) {
+    profile = await saveProfile(id, year, { year });
+  }
 
   // 1. Try Supabase first
   const supabase = getSupabase();
@@ -328,8 +416,7 @@ export async function dashboard(
             firstCorrect: r.first_correct,
             at: r.created_at,
             contentVersion: r.content_version,
-          }))
-          .filter((r) => r.moduleCode.endsWith("-" + year));
+          }));
 
         const leaderboard = rankRows.map((r: any) => ({
           alias: r.alias || "Student",
@@ -378,9 +465,7 @@ export async function dashboard(
     return {
       profile,
       entries: Array.isArray(raw)
-        ? raw
-            .map((r) => JSON.parse(String(r)))
-            .filter((r) => r.moduleCode.endsWith("-" + year))
+        ? raw.map((r) => JSON.parse(String(r)))
         : [],
       leaderboard,
       week: weekKey(),
