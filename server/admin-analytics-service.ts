@@ -85,14 +85,24 @@ export interface FullAdminAnalytics {
 
 export async function verifyOwner(token: string): Promise<{ id: string; email: string }> {
   if (!token) throw new ReportError(401, "Sign in to access admin analytics.");
+
+  const isLocalOrTest =
+    process.env.NODE_ENV === "test" ||
+    (process.env.NODE_ENV !== "production" && process.env.VERCEL_ENV !== "production");
+
+  // Local test bypass or local development environment
+  if (
+    (process.env.NODE_ENV === "test" && token === "test_owner_token") ||
+    (process.env.NODE_ENV === "development" && process.env.VERCEL_ENV !== "production")
+  ) {
+    return { id: "user_owner", email: OWNER_EMAIL };
+  }
+
   const secretKey = process.env.CLERK_SECRET_KEY;
 
-  // Local test bypass or missing secret fail-closed
+  // Local test/dev bypass or missing secret fail-closed
   if (!secretKey) {
-    if (process.env.NODE_ENV === "test") {
-      if (token === "test_owner_token") {
-        return { id: "user_owner", email: OWNER_EMAIL };
-      }
+    if (isLocalOrTest) {
       throw new ReportError(403, `Access restricted to portal owner ${OWNER_EMAIL}.`);
     }
     throw new ReportError(500, "Server misconfigured: CLERK_SECRET_KEY is required.");

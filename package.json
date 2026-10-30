@@ -10,8 +10,8 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "typecheck": "tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.api.json",
-    "prebuild": "node scripts/generate-bank-manifest.mjs",
-    "predev": "node scripts/generate-bank-manifest.mjs"
+    "prebuild": "node scripts/generate-bank-manifest.mjs && node scripts/generate-version.mjs",
+    "predev": "node scripts/generate-bank-manifest.mjs && node scripts/generate-version.mjs"
   },
   "dependencies": {
     "@clerk/backend": "^3.6.0",

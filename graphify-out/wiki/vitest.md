@@ -1,8 +1,8 @@
 # vitest
 
-> God node · 144 connections · `package.json`
+> God node · 147 connections · `package.json`
 
-**Community:** [Community 36](Community_36.md)
+**Community:** [Community 152](Community_152.md)
 
 ## Connections by Relation
 
@@ -30,7 +30,7 @@
 - triage-worker.test.ts `EXTRACTED`
 - PortalControls.test.tsx `EXTRACTED`
 - SubjectSelect.sync.test.tsx `EXTRACTED`
-- *…and 123 more `imports_from` connection(s) not listed (lowest-degree first to go)*
+- *…and 126 more `imports_from` connection(s) not listed (lowest-degree first to go)*
 
 ---
 

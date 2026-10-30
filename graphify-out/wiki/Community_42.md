@@ -1,12 +1,11 @@
 # Community 42
 
-> 24 nodes
+> 23 nodes
 
 ## Key Concepts
 
 - **learningQuestionVersions.test.ts** (13 connections) — `src/app/loading/learningQuestionVersions.test.ts`
 - **applyPublishedEdits()** (9 connections) — `src/app/lib/publishedEdits.ts`
-- **getLearningQuestionVersions()** (8 connections) — `src/app/data.ts`
 - **loadModuleFiles()** (8 connections) — `src/app/data.ts`
 - **publishedEdits.ts** (8 connections) — `src/app/lib/publishedEdits.ts`
 - **learningQuestionVersions.ts** (8 connections) — `src/app/loading/learningQuestionVersions.ts`
@@ -31,10 +30,12 @@
 
 ## Relationships
 
-- [Community 36](Community_36.md) (21 shared connections)
-- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (2 shared connections)
+- [Community 36](Community_36.md) (14 shared connections)
+- [Community 152](Community_152.md) (3 shared connections)
 - [Community 56](Community_56.md) (2 shared connections)
-- [Community 10](Community_10.md) (1 shared connections)
+- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (2 shared connections)
+- [Community 6](Community_6.md) (2 shared connections)
+- [Bank Question Edit](Bank_Question_Edit.md) (1 shared connections)
 
 ## Source Files
 
@@ -48,7 +49,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 70 (100%)
+- EXTRACTED: 65 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

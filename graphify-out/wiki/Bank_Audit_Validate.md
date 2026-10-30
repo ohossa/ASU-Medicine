@@ -37,7 +37,7 @@
 - [Audit Consistency Bank](Audit_Consistency_Bank.md) (1 shared connections)
 - [Clean Chunk Alllines](Clean_Chunk_Alllines.md) (1 shared connections)
 - [Community 206](Community_206.md) (1 shared connections)
-- [Community 247](Community_247.md) (1 shared connections)
+- [Community 315](Community_315.md) (1 shared connections)
 - [Extract Chunk Chunks](Extract_Chunk_Chunks.md) (1 shared connections)
 - [Section8 Blocks Existing](Section8_Blocks_Existing.md) (1 shared connections)
 - [Import Patho Essays](Import_Patho_Essays.md) (1 shared connections)

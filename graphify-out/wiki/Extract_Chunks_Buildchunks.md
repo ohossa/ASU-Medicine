@@ -22,7 +22,8 @@
 
 ## Relationships
 
-- [Community 33](Community_33.md) (4 shared connections)
+- [Community 319](Community_319.md) (2 shared connections)
+- [Community 33](Community_33.md) (2 shared connections)
 - [Community 9](Community_9.md) (1 shared connections)
 - [Path Cleaner Batch](Path_Cleaner_Batch.md) (1 shared connections)
 - [Intake Valid Google](Intake_Valid_Google.md) (1 shared connections)

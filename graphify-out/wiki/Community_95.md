@@ -1,50 +1,50 @@
 # Community 95
 
-> 152 nodes
+> 103 nodes
 
 ## Key Concepts
 
-- **ref_react** (139 connections)
-- **useLanguage()** (60 connections) — `src/app/hooks/useLanguage.ts`
-- **ref_lucide_react** (60 connections)
+- **ref_react** (142 connections)
 - **SyllabusTrackerPage.tsx** (40 connections) — `src/pages/SyllabusTrackerPage.tsx`
-- **useLanguage.ts** (32 connections) — `src/app/hooks/useLanguage.ts`
-- **@clerk/clerk-react** (28 connections) — `package.json`
+- **YearModules.tsx** (29 connections) — `src/pages/YearModules.tsx`
 - **SyllabusTracker.tsx** (27 connections) — `src/app/components/SyllabusTracker.tsx`
 - **Dashboard.tsx** (25 connections) — `src/pages/Dashboard.tsx`
-- **PortalEntry.tsx** (25 connections) — `src/PortalEntry.tsx`
-- **ref_motion** (22 connections)
-- **PortalShell()** (20 connections) — `src/app/components/PortalShell.tsx`
-- **PortalShell.tsx** (18 connections) — `src/app/components/PortalShell.tsx`
+- **ref_motion** (23 connections)
+- **PortalShell()** (22 connections) — `src/app/components/PortalShell.tsx`
+- **PortalShell.tsx** (19 connections) — `src/app/components/PortalShell.tsx`
 - **StudyMode.tsx** (18 connections) — `src/pages/StudyMode.tsx`
-- **PortalEntry()** (15 connections) — `src/PortalEntry.tsx`
-- **PortalFooter.tsx** (15 connections) — `src/app/components/PortalFooter.tsx`
-- **LegalLayout.tsx** (14 connections) — `src/pages/legal/LegalLayout.tsx`
-- **PortalControls.test.tsx** (13 connections) — `src/app/components/PortalControls.test.tsx`
-- **ThemeContext.tsx** (13 connections) — `src/app/context/ThemeContext.tsx`
+- **AnkiDecksPage.tsx** (17 connections) — `src/pages/AnkiDecksPage.tsx`
 - **LevelUpOverlay.tsx** (12 connections) — `src/app/components/LevelUpOverlay.tsx`
-- **LoginScreen.tsx** (12 connections) — `src/app/components/LoginScreen.tsx`
-- **LanguageContext.tsx** (12 connections) — `src/app/context/LanguageContext.tsx`
-- **useTheme.ts** (12 connections) — `src/app/hooks/useTheme.ts`
-- **ThemeProvider()** (11 connections) — `src/app/context/ThemeContext.tsx`
 - **useProgress()** (11 connections) — `src/app/hooks/useProgress.ts`
 - **SyllabusTrackerPage()** (11 connections) — `src/pages/SyllabusTrackerPage.tsx`
-- *... and 127 more nodes in this community*
+- **YearModules()** (11 connections) — `src/pages/YearModules.tsx`
+- **ankiDecks.ts** (11 connections) — `src/app/data/ankiDecks.ts`
+- **motion.ts** (11 connections) — `src/app/lib/motion.ts`
+- **applySubjectTheme()** (9 connections) — `src/app/theme/subjectThemes.ts`
+- **useProgress.ts** (9 connections) — `src/app/hooks/useProgress.ts`
+- **subjectThemes.ts** (8 connections) — `src/app/theme/subjectThemes.ts`
+- **SyllabusTracker()** (7 connections) — `src/app/components/SyllabusTracker.tsx`
+- **SoundManagerComponent.tsx** (7 connections) — `src/app/components/SoundManagerComponent.tsx`
+- **AnkiDecksPage()** (6 connections) — `src/pages/AnkiDecksPage.tsx`
+- **Dashboard()** (6 connections) — `src/pages/Dashboard.tsx`
+- **Light_Dark Mode Toggle/src/app/App.tsx** (6 connections) — `Light_Dark Mode Toggle/src/app/App.tsx`
+- **Light_Dark Mode Toggle/src/app/components/ThemeToggle.tsx** (6 connections) — `Light_Dark Mode Toggle/src/app/components/ThemeToggle.tsx`
+- *... and 78 more nodes in this community*
 
 ## Relationships
 
-- [Community 6](Community_6.md) (62 shared connections)
-- [Community 34](Community_34.md) (35 shared connections)
-- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (33 shared connections)
-- [Community 36](Community_36.md) (28 shared connections)
-- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (27 shared connections)
-- [Community 24](Community_24.md) (27 shared connections)
-- [Community 51](Community_51.md) (26 shared connections)
-- [Community 56](Community_56.md) (25 shared connections)
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (24 shared connections)
-- [Community 15](Community_15.md) (21 shared connections)
-- [Community 46](Community_46.md) (16 shared connections)
-- [Supportpage Costs Config](Supportpage_Costs_Config.md) (10 shared connections)
+- [Community 6](Community_6.md) (42 shared connections)
+- [Community 24](Community_24.md) (39 shared connections)
+- [Community 152](Community_152.md) (21 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (16 shared connections)
+- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (16 shared connections)
+- [Community 34](Community_34.md) (15 shared connections)
+- [Community 51](Community_51.md) (14 shared connections)
+- [Community 36](Community_36.md) (14 shared connections)
+- [Community 56](Community_56.md) (10 shared connections)
+- [Community 32](Community_32.md) (8 shared connections)
+- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (8 shared connections)
+- [Atomic UI Components & Avatars](Atomic_UI_Components_&_Avatars.md) (8 shared connections)
 
 ## Source Files
 
@@ -52,27 +52,27 @@
 - `Light_Dark Mode Toggle/src/app/components/ThemeToggle.tsx`
 - `Light_Dark Mode Toggle/src/app/components/figma/ImageWithFallback.tsx`
 - `Light_Dark Mode Toggle/src/main.tsx`
-- `docs/MASTER_FORENSIC_AUDIT_REPORT.md`
-- `package.json`
-- `src/PortalEntry.test.tsx`
-- `src/PortalEntry.tsx`
 - `src/app/App.tsx`
-- `src/app/components/ClerkThemeTogglePortal.tsx`
-- `src/app/components/ErrorBoundary.tsx`
-- `src/app/components/LanguageToggle.tsx`
 - `src/app/components/LevelUpOverlay.tsx`
-- `src/app/components/LoginScreen.tsx`
-- `src/app/components/PortalControls.test.tsx`
-- `src/app/components/PortalFooter.tsx`
 - `src/app/components/PortalShell.mobile.test.tsx`
 - `src/app/components/PortalShell.tsx`
 - `src/app/components/SoundManagerComponent.tsx`
-- `src/app/components/SoundToggle.tsx`
+- `src/app/components/SyllabusTracker.tsx`
+- `src/app/components/figma/ImageWithFallback.tsx`
+- `src/app/components/ui/StackedCarousel.tsx`
+- `src/app/data/ankiDecks.ts`
+- `src/app/hooks/useProgress.ts`
+- `src/app/lib/celebrate.ts`
+- `src/app/lib/motion.ts`
+- `src/app/theme/subjectThemes.ts`
+- `src/pages/AnkiDecksPage.tsx`
+- `src/pages/Dashboard.tsx`
+- `src/pages/StudyMode.tsx`
 
 ## Audit Trail
 
-- EXTRACTED: 758 (99%)
-- INFERRED: 5 (1%)
+- EXTRACTED: 466 (100%)
+- INFERRED: 2 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

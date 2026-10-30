@@ -9,6 +9,9 @@ import {
   X,
   Sparkles,
   RefreshCw,
+  FolderTree,
+  ArrowRight,
+  ShieldCheck,
 } from "lucide-react";
 import { reportRequest, questionBankRequest } from "../reports/client";
 import { DeleteQuestionModal } from "./DeleteQuestionModal";
@@ -16,6 +19,7 @@ import { DeleteQuestionModal } from "./DeleteQuestionModal";
 export interface InlineQuestionEditorProps {
   moduleCode: string;
   chapterId: number;
+  subjectId?: string;
   question: {
     id: string | number;
     text?: string;
@@ -32,7 +36,18 @@ export interface InlineQuestionEditorProps {
   revision?: number;
   reportId?: string;
   reportRevision?: number;
-  onSaved?: (updatedQuestion: any, newRevision?: number) => void;
+  chapters?: any[];
+  onSaved?: (
+    updatedQuestion: any,
+    newRevision?: number,
+    relocation?: {
+      chapterId: number;
+      chapterTitle: string;
+      subjectId: string;
+      subjectName: string;
+      topicName?: string;
+    }
+  ) => void;
   onDeleted?: (deletedQuestionId: string, newRevision?: number) => void;
   onCancel?: () => void;
 }
@@ -40,10 +55,12 @@ export interface InlineQuestionEditorProps {
 export function InlineQuestionEditor({
   moduleCode,
   chapterId,
+  subjectId,
   question,
   revision = 0,
   reportId,
   reportRevision = 0,
+  chapters: initialChapters,
   onSaved,
   onDeleted,
   onCancel,
@@ -59,6 +76,22 @@ export function InlineQuestionEditor({
     typeof question.correctIndex === "number" ? question.correctIndex : 0
   );
 
+  const [chapters, setChapters] = useState<any[]>(initialChapters || []);
+  const [selectedChapterId, setSelectedChapterId] = useState<number>(chapterId);
+  const [selectedSubjectId, setSelectedSubjectId] = useState<string>(subjectId || "");
+  const [selectedLecture, setSelectedLecture] = useState<number>(question.lecture || 1);
+  const [initialRouting, setInitialRouting] = useState<{
+    chapterId: number;
+    subjectId: string;
+    lecture: number;
+    chapterTitle?: string;
+    subjectName?: string;
+  }>({
+    chapterId,
+    subjectId: subjectId || "",
+    lecture: question.lecture || 1,
+  });
+
   const [activeRevision, setActiveRevision] = useState<number>(revision);
   const [busy, setBusy] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
@@ -70,7 +103,7 @@ export function InlineQuestionEditor({
     question.type === "mcq" ||
     question.type === "truefalse";
 
-  // Fetch latest live revision from server on mount or when question ID changes
+  // Fetch latest live revision and chapters from server on mount or when question ID changes
   useEffect(() => {
     let cancelled = false;
     async function fetchLatestRevision() {
@@ -84,14 +117,43 @@ export function InlineQuestionEditor({
       }
 
       try {
-        const single = await questionBankRequest<{ entry: { revision: number; question?: any } }>(
+        const single = await questionBankRequest<{
+          entry: {
+            revision: number;
+            chapterId?: number;
+            chapterTitle?: string;
+            subjectId?: string;
+            subjectName?: string;
+            question?: any;
+          };
+          chapters?: any[];
+        }>(
           getToken,
           `?action=single&moduleCode=${encodeURIComponent(
             moduleCode
           )}&questionId=${encodeURIComponent(String(question.id))}`
         );
-        if (!cancelled && single?.entry && typeof single.entry.revision === "number") {
-          setActiveRevision(single.entry.revision);
+        if (cancelled) return;
+        if (single?.chapters && Array.isArray(single.chapters) && single.chapters.length > 0) {
+          setChapters(single.chapters);
+        }
+        if (single?.entry) {
+          if (typeof single.entry.revision === "number") {
+            setActiveRevision(single.entry.revision);
+          }
+          const chId = single.entry.chapterId ?? chapterId;
+          const subId = single.entry.subjectId ?? subjectId ?? "";
+          const lec = single.entry.question?.lecture ?? question.lecture ?? 1;
+          setSelectedChapterId(chId);
+          setSelectedSubjectId(subId);
+          setSelectedLecture(lec);
+          setInitialRouting({
+            chapterId: chId,
+            subjectId: subId,
+            lecture: lec,
+            chapterTitle: single.entry.chapterTitle,
+            subjectName: single.entry.subjectName,
+          });
         }
       } catch {
         // Fall back to provided revision prop
@@ -101,7 +163,16 @@ export function InlineQuestionEditor({
     return () => {
       cancelled = true;
     };
-  }, [moduleCode, question.id]);
+  }, [moduleCode, question.id, chapterId, subjectId]);
+
+  useEffect(() => {
+    if (chapters.length > 0 && !selectedSubjectId) {
+      const matchCh = chapters.find((c) => c.id === selectedChapterId) || chapters[0];
+      if (matchCh?.subjects?.length > 0) {
+        setSelectedSubjectId(matchCh.subjects[0].id);
+      }
+    }
+  }, [chapters, selectedChapterId, selectedSubjectId]);
 
   const handleAddOption = () => {
     if (options.length >= 10) return;
@@ -189,7 +260,7 @@ export function InlineQuestionEditor({
         id: String(question.id),
         text: stem.trim(),
         explanation: explanation.trim(),
-        lecture: question.lecture || 1,
+        lecture: selectedLecture || question.lecture || 1,
         type: question.type || "mcq",
       };
 
@@ -199,13 +270,20 @@ export function InlineQuestionEditor({
       }
 
       // 3. Save question patch to server
-      const patchPayload = {
+      const patchPayload: Record<string, any> = {
         moduleCode,
         chapterId,
         questionId: String(question.id),
         revision: currentRev,
         question: updatedQuestion,
       };
+
+      if (selectedChapterId !== undefined) {
+        patchPayload.targetChapterId = selectedChapterId;
+      }
+      if (selectedSubjectId) {
+        patchPayload.targetSubjectId = selectedSubjectId;
+      }
 
       const res = await fetch("/api/question-bank", {
         method: "PATCH",
@@ -257,7 +335,16 @@ export function InlineQuestionEditor({
       );
 
       if (onSaved) {
-        onSaved(updatedQuestion, nextRev);
+        const destCh = chapters.find((c) => c.id === selectedChapterId);
+        const destSub = destCh?.subjects?.find((s: any) => s.id === selectedSubjectId);
+        const topicName = destSub?.lectureNames?.[selectedLecture - 1];
+        onSaved(updatedQuestion, nextRev, {
+          chapterId: selectedChapterId,
+          chapterTitle: destCh?.title || `Chapter ${selectedChapterId}`,
+          subjectId: selectedSubjectId,
+          subjectName: destSub?.name || selectedSubjectId,
+          topicName,
+        });
       }
     } catch (err) {
       setError(
@@ -267,6 +354,16 @@ export function InlineQuestionEditor({
       setBusy(false);
     }
   };
+
+  const currentChapterObj = chapters.find((c) => c.id === selectedChapterId);
+  const currentSubjectObj = currentChapterObj?.subjects?.find((s: any) => s.id === selectedSubjectId);
+  const initialChapterObj = chapters.find((c) => c.id === initialRouting.chapterId);
+  const initialSubjectObj = initialChapterObj?.subjects?.find((s: any) => s.id === initialRouting.subjectId);
+
+  const isRelocated =
+    selectedChapterId !== initialRouting.chapterId ||
+    (Boolean(selectedSubjectId) && Boolean(initialRouting.subjectId) && selectedSubjectId !== initialRouting.subjectId) ||
+    selectedLecture !== initialRouting.lecture;
 
   return (
     <div className="rounded-2xl border-2 border-teal-500/30 bg-teal-500/[0.03] p-5 shadow-sm dark:border-teal-500/20 dark:bg-teal-500/[0.02]">
@@ -332,6 +429,126 @@ export function InlineQuestionEditor({
 
       {/* Editor Body */}
       <div className="space-y-4">
+        {/* Curriculum Routing & Placement */}
+        <div className="rounded-xl border border-teal-500/20 bg-teal-500/[0.04] p-3.5 dark:border-teal-500/15 dark:bg-teal-500/[0.02]">
+          <div className="flex items-center gap-2 mb-2.5">
+            <FolderTree size={15} className="text-teal-600 dark:text-teal-400 shrink-0" />
+            <div>
+              <span className="text-xs font-bold uppercase tracking-wider text-stone-700 dark:text-stone-200">
+                Curriculum Routing & Placement
+              </span>
+              <p className="text-[11px] text-stone-500 dark:text-stone-400 m-0">
+                Move this question to another subject, chapter, or lecture topic directly.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label
+                htmlFor="destination-subject-select"
+                className="block text-[11px] font-semibold text-stone-600 dark:text-stone-300 mb-1"
+              >
+                Destination Chapter & Subject
+              </label>
+              {chapters.length > 0 ? (
+                <select
+                  id="destination-subject-select"
+                  aria-label="Destination Chapter and Subject"
+                  value={`${selectedChapterId}:${selectedSubjectId}`}
+                  onChange={(e) => {
+                    const [cIdStr, sId] = e.target.value.split(":");
+                    const cId = Number(cIdStr);
+                    setSelectedChapterId(cId);
+                    setSelectedSubjectId(sId);
+                    setSelectedLecture(1);
+                  }}
+                  disabled={busy}
+                  className="w-full min-h-[44px] rounded-xl border border-stone-200 bg-white/95 px-3 py-2 text-xs font-medium text-stone-800 shadow-sm focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-100"
+                >
+                  {chapters.flatMap((c) =>
+                    (c.subjects || []).map((s: any) => (
+                      <option key={`${c.id}:${s.id}`} value={`${c.id}:${s.id}`}>
+                        {c.title} · {s.name}
+                      </option>
+                    ))
+                  )}
+                </select>
+              ) : (
+                <div className="flex min-h-[44px] items-center rounded-xl border border-stone-200 bg-stone-50 px-3 text-xs text-stone-600 dark:border-stone-800 dark:bg-stone-900/50 dark:text-stone-300">
+                  Chapter {selectedChapterId} · Subject {selectedSubjectId || "Current"}
+                </div>
+              )}
+            </div>
+
+            <div>
+              <label
+                htmlFor="destination-lecture-select"
+                className="block text-[11px] font-semibold text-stone-600 dark:text-stone-300 mb-1"
+              >
+                Lecture / Topic
+              </label>
+              {currentSubjectObj?.lectureNames && currentSubjectObj.lectureNames.length > 0 ? (
+                <select
+                  id="destination-lecture-select"
+                  aria-label="Lecture or Topic"
+                  value={selectedLecture}
+                  onChange={(e) => setSelectedLecture(Number(e.target.value))}
+                  disabled={busy}
+                  className="w-full min-h-[44px] rounded-xl border border-stone-200 bg-white/95 px-3 py-2 text-xs font-medium text-stone-800 shadow-sm focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-100"
+                >
+                  {currentSubjectObj.lectureNames.map((name: string, idx: number) => (
+                    <option key={idx} value={idx + 1}>
+                      {idx + 1}. {name}
+                    </option>
+                  ))}
+                </select>
+              ) : (
+                <input
+                  id="destination-lecture-select"
+                  aria-label="Lecture or Topic"
+                  type="number"
+                  min={1}
+                  value={selectedLecture}
+                  onChange={(e) => setSelectedLecture(Math.max(1, Number(e.target.value) || 1))}
+                  disabled={busy}
+                  placeholder="Lecture number (e.g. 1)"
+                  className="w-full min-h-[44px] rounded-xl border border-stone-200 bg-white/95 px-3 py-2 text-xs font-medium text-stone-800 shadow-sm focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500/20 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-100"
+                />
+              )}
+            </div>
+          </div>
+
+          {/* Relocation indicator banner */}
+          {isRelocated && (
+            <div className="mt-3 flex items-start gap-2 rounded-lg border border-amber-500/30 bg-amber-500/10 p-2.5 text-xs text-amber-900 dark:border-amber-500/20 dark:bg-amber-950/20 dark:text-amber-200">
+              <ArrowRight size={14} className="shrink-0 mt-0.5 text-amber-600 dark:text-amber-400" />
+              <div className="flex-1 space-y-0.5">
+                <p className="font-semibold m-0">
+                  Relocating question:{" "}
+                  <span className="line-through opacity-75">
+                    {initialSubjectObj?.name || initialRouting.subjectName || `Chapter ${initialRouting.chapterId}`}
+                    {" "}(Lec {initialRouting.lecture})
+                  </span>
+                  {" "}→{" "}
+                  <span className="font-bold underline">
+                    {currentSubjectObj?.name || `Chapter ${selectedChapterId}`}
+                    {" "}(Lec {selectedLecture}
+                    {currentSubjectObj?.lectureNames?.[selectedLecture - 1]
+                      ? `: ${currentSubjectObj.lectureNames[selectedLecture - 1]}`
+                      : ""}
+                    )
+                  </span>
+                </p>
+                <p className="text-[11px] text-amber-700 dark:text-amber-300 m-0 flex items-center gap-1">
+                  <ShieldCheck size={12} className="shrink-0" />
+                  <span>Question ID <strong>{String(question.id)}</strong> is permanently preserved. Student quiz history and reports remain intact.</span>
+                </p>
+              </div>
+            </div>
+          )}
+        </div>
+
         {/* Question Stem */}
         <div>
           <label className="block text-xs font-semibold uppercase tracking-wider text-stone-600 dark:text-stone-300 mb-1.5">
@@ -454,9 +671,9 @@ export function InlineQuestionEditor({
           type="button"
           onClick={() => setShowDeleteModal(true)}
           disabled={busy}
-          className="min-h-[40px] inline-flex items-center gap-1.5 rounded-xl border border-rose-200 bg-rose-50/50 px-3.5 py-2 text-xs font-semibold text-rose-600 hover:bg-rose-100/80 hover:text-rose-700 hover:border-rose-300 dark:border-rose-900/50 dark:bg-rose-950/20 dark:text-rose-400 dark:hover:bg-rose-950/40 dark:hover:text-rose-300 transition-all active:scale-[0.98]"
+          className="min-h-[44px] inline-flex items-center gap-1.5 rounded-xl border border-rose-200 bg-rose-50/50 px-3.5 py-2 text-xs font-semibold text-rose-600 hover:bg-rose-100/80 hover:text-rose-700 hover:border-rose-300 dark:border-rose-900/50 dark:bg-rose-950/20 dark:text-rose-400 dark:hover:bg-rose-950/40 dark:hover:text-rose-300 transition-all active:scale-[0.98]"
         >
-          <Trash2 size={13} />
+          <Trash2 size={14} />
           Delete Question
         </button>
 
@@ -466,7 +683,7 @@ export function InlineQuestionEditor({
               type="button"
               onClick={onCancel}
               disabled={busy}
-              className="min-h-[40px] px-3.5 py-1.5 text-xs font-medium text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-100 transition-colors"
+              className="min-h-[44px] px-3.5 py-2 text-xs font-medium text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-stone-100 transition-colors"
             >
               Cancel
             </button>
@@ -476,7 +693,7 @@ export function InlineQuestionEditor({
             type="button"
             onClick={() => handleSave(false)}
             disabled={busy}
-            className="min-h-[40px] inline-flex items-center gap-1.5 rounded-xl border border-stone-300/80 bg-white px-4 py-2 text-xs font-semibold text-stone-700 shadow-sm hover:bg-stone-50 active:scale-[0.98] dark:border-stone-700 dark:bg-stone-800 dark:text-stone-200 transition-all"
+            className="min-h-[44px] inline-flex items-center gap-1.5 rounded-xl border border-stone-300/80 bg-white px-4 py-2 text-xs font-semibold text-stone-700 shadow-sm hover:bg-stone-50 active:scale-[0.98] dark:border-stone-700 dark:bg-stone-800 dark:text-stone-200 transition-all"
           >
             {busy ? <Loader2 size={13} className="animate-spin" /> : null}
             Save Question Patch
@@ -487,7 +704,7 @@ export function InlineQuestionEditor({
               type="button"
               onClick={() => handleSave(true)}
               disabled={busy}
-              className="min-h-[40px] inline-flex items-center gap-1.5 rounded-xl bg-teal-600 px-4 py-2 text-xs font-semibold text-white shadow-sm hover:bg-teal-700 active:scale-[0.98] transition-all"
+              className="min-h-[44px] inline-flex items-center gap-1.5 rounded-xl bg-teal-600 px-4 py-2 text-xs font-semibold text-white shadow-sm hover:bg-teal-700 active:scale-[0.98] transition-all"
             >
               {busy ? <Loader2 size={13} className="animate-spin" /> : <Check size={14} />}
               Save & Mark Report Fixed

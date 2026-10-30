@@ -19,3 +19,12 @@ it('shows true/false defaults and matching or blank keys without inventing missi
  expect(q({type:'fillblank',blanks:['liver'],acceptedAnswers:[['hepatic tissue']]})).toContain('hepatic tissue');
  expect(q({type:'mcq',text:'Missing key'})).toContain('Not recorded');
 });
+
+it('renders ASUCodes Question Review header and plain ASUCodes footer without official university claims',()=>{
+ const c=replyContext(report)!;
+ const e=renderReplyEmail('Thanks. We corrected it.',c);
+ expect(e.html).toContain('ASUCodes · Question Review');
+ expect(e.html).not.toContain('Faculty Review');
+ expect(e.html).toContain('>ASUCodes</div>');
+ expect(e.html).not.toContain('Ain Shams University Faculty of Medicine · ASUCodes');
+});

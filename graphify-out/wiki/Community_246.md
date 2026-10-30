@@ -1,35 +1,28 @@
 # Community 246
 
-> 11 nodes
+> 5 nodes
 
 ## Key Concepts
 
-- **renderBlock()** (12 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderBlocks()** (7 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderTabs()** (6 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **headingLine()** (5 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderBody()** (5 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderTermList()** (5 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **trimBlankEdges()** (5 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **reduceHeading()** (4 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderAside()** (4 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderList()** (4 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **collectReferences()** (2 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
+- **questionSchema.ts** (5 connections) — `src/app/validators/questionSchema.ts`
+- **questionSchema.test.ts** (3 connections) — `src/app/validators/questionSchema.test.ts`
+- **QuestionSchema** (2 connections) — `src/app/validators/questionSchema.ts`
+- **QuestionSchemaType** (1 connections) — `src/app/validators/questionSchema.ts`
+- **MediaSchema** (1 connections) — `src/app/validators/questionSchema.ts`
 
 ## Relationships
 
-- [Community 9](Community_9.md) (12 shared connections)
-- [Community 311](Community_311.md) (5 shared connections)
-- [Community 315](Community_315.md) (2 shared connections)
-- [Community 308](Community_308.md) (2 shared connections)
+- [Community 10](Community_10.md) (1 shared connections)
+- [Community 152](Community_152.md) (1 shared connections)
 
 ## Source Files
 
-- `.agents/skills/apple-design/scripts/pull-hig.mjs`
+- `src/app/validators/questionSchema.test.ts`
+- `src/app/validators/questionSchema.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 40 (100%)
+- EXTRACTED: 7 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

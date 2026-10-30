@@ -23,9 +23,10 @@
 
 ## Relationships
 
-- [Community 34](Community_34.md) (4 shared connections)
+- [Community 152](Community_152.md) (4 shared connections)
 - [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (3 shared connections)
-- [Community 95](Community_95.md) (2 shared connections)
+- [Community 95](Community_95.md) (1 shared connections)
+- [Community 24](Community_24.md) (1 shared connections)
 
 ## Source Files
 

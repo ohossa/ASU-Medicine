@@ -11,5 +11,78 @@ describe('owner question editing',()=>{
   const service=createQuestionEditService({authenticate:async()=>({id:'owner',isAdmin:true}),readBank:async()=>({chapters:[{id:1,subjects:[{questions:[legacy]}]}]}),store:{list:async()=>[],history:async()=>[],save:async(edit,revision)=>({...edit,revision:revision+1})}});
   expect((await service.save('owner',{moduleCode:'MCNS-2',chapterId:1,questionId:'q1',revision:0,question:{...legacy,text:'Corrected?'}})).question.lecture).toBe(0);
  });
+ it('relocates question to another chapter, subject and lecture topic while preserving stable question ID',async()=>{
+  let record:any=null;
+  const service=createQuestionEditService({
+   authenticate:async()=>({id:'owner',isAdmin:true}),
+   readBank:async()=>({
+    chapters:[
+     {id:5,title:'Pathology',subjects:[{id:'pathology',name:'Pathology',lectureCount:22,questions:[q]}]},
+     {id:8,title:'Parasitology',subjects:[{id:'parasitology',name:'Parasitology',lectureCount:21,lectureNames:['Liver Flukes','Cestodes'],questions:[]}]}
+    ]
+   }),
+   store:{
+    list:async()=>record?[record]:[],
+    save:async(edit:any,revision:number)=>{
+     record={...edit,revision:revision+1};
+     return record;
+    },
+    history:async()=>[]
+   }
+  });
 
+  // Cannot relocate to non-existent subject
+  await expect(service.save('owner',{
+   moduleCode:'MGL-3',
+   chapterId:5,
+   questionId:'q1',
+   targetChapterId:8,
+   targetSubjectId:'non-existent',
+   revision:0,
+   question:{...q,lecture:2}
+  })).rejects.toMatchObject({status:400});
+
+  // Cannot exceed lecture count of target subject
+  await expect(service.save('owner',{
+   moduleCode:'MGL-3',
+   chapterId:5,
+   questionId:'q1',
+   targetChapterId:8,
+   targetSubjectId:'parasitology',
+   revision:0,
+   question:{...q,lecture:25}
+  })).rejects.toMatchObject({status:400});
+
+  // Successful relocation
+  const saved=await service.save('owner',{
+   moduleCode:'MGL-3',
+   chapterId:5,
+   questionId:'q1',
+   targetChapterId:8,
+   targetSubjectId:'parasitology',
+   revision:0,
+   question:{...q,lecture:2,text:'Cestodes liver cyst'}
+  });
+
+  expect(saved.questionId).toBe('q1');
+  expect(saved.targetChapterId).toBe(8);
+  expect(saved.targetSubjectId).toBe('parasitology');
+  expect(saved.question.lecture).toBe(2);
+
+  // Check published output
+  const published=await service.published('MGL-3');
+  expect(published).toHaveLength(1);
+  expect(published[0].targetChapterId).toBe(8);
+  expect(published[0].targetSubjectId).toBe('parasitology');
+  expect(published[0].question.id).toBe('q1');
+
+  // Check list output reflects target location
+  const listed=await service.list('owner','MGL-3');
+  const found=listed.find((r:any)=>r.question.id==='q1');
+  expect(found.chapterId).toBe(8);
+  expect(found.chapterTitle).toBe('Parasitology');
+  expect(found.subjectId).toBe('parasitology');
+  expect(found.subjectName).toBe('Parasitology');
+  expect(found.originalChapterId).toBe(5);
+ });
 });

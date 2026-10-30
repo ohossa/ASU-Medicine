@@ -37,7 +37,7 @@
 - [Community 38](Community_38.md) (7 shared connections)
 - [Community 79](Community_79.md) (3 shared connections)
 - [Polish Rejected Biochemistry](Polish_Rejected_Biochemistry.md) (1 shared connections)
-- [Community 318](Community_318.md) (1 shared connections)
+- [Community 312](Community_312.md) (1 shared connections)
 - [Community 98](Community_98.md) (1 shared connections)
 
 ## Source Files

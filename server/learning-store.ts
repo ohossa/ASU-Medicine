@@ -102,12 +102,19 @@ export async function saveProfile(
       await supabase.from('learning_profiles').upsert({
         user_id: id,
         year,
+        xp: next.xp,
+        competitive_xp: next.competitiveXp,
+        level: next.level,
+        streak: next.streak,
+        best_streak: next.bestStreak,
+        last_day: next.lastDay,
         alias: next.alias,
         opt_in: next.optIn,
         banner: next.banner,
         title: next.title,
         updated_at: new Date().toISOString(),
       }, { onConflict: 'user_id' });
+      return next;
     } catch {
       // Supabase table may not exist yet; fall back silently
     }
@@ -138,24 +145,52 @@ export async function award(id: string, year: number, rewards: unknown[]) {
     d = new Date(today + "T12:00:00Z");
   d.setUTCDate(d.getUTCDate() - 1);
   const yesterday = d.toISOString().slice(0, 10);
+  const currentWeek = weekKey();
 
-  // 1. Write to Supabase if available
+  // 1. Process and compute awards via Supabase (Primary serverless store)
   const supabase = getSupabase();
   if (supabase && Array.isArray(rewards)) {
     try {
       const nowIso = new Date().toISOString();
       const current = await getProfile(id, year);
+
+      // Check existing entries to deduplicate XP awards for already-solved questions
+      const qIds = (rewards as any[])
+        .filter((r) => r && r.questionId)
+        .map((r) => String(r.questionId));
+
+      const existingMap = new Map<string, boolean>();
+      if (qIds.length > 0) {
+        const { data: existingRows } = await supabase
+          .from('learning_entries')
+          .select('question_id, ever_correct')
+          .eq('user_id', id)
+          .in('question_id', qIds);
+
+        if (Array.isArray(existingRows)) {
+          for (const row of existingRows) {
+            existingMap.set(String(row.question_id), Boolean(row.ever_correct));
+          }
+        }
+      }
+
       let personalAdd = 0;
       let competitiveAdd = 0;
 
       for (const r of rewards as any[]) {
-        if (r && r.personal > 0) {
+        if (!r || !r.questionId) continue;
+        const qId = String(r.questionId);
+        const wasEverCorrect = existingMap.get(qId) ?? false;
+        const isNowCorrect = Boolean(r.correct);
+
+        // Award XP only for new correct answers
+        if (r.personal > 0 && !wasEverCorrect && isNowCorrect) {
           personalAdd += Number(r.personal || 0);
           competitiveAdd += Number(r.competitive || 0);
         }
 
         const entryId = createHash('sha256')
-          .update(`${id}:${r.moduleCode}:${r.questionId}`)
+          .update(`${id}:${r.moduleCode}:${qId}`)
           .digest('hex');
 
         await supabase.from('learning_entries').upsert({
@@ -163,17 +198,23 @@ export async function award(id: string, year: number, rewards: unknown[]) {
           user_id: id,
           module_code: r.moduleCode,
           chapter_id: r.chapterId || 1,
-          question_id: r.questionId,
+          question_id: qId,
           subject: r.subject || '',
           topic: r.topic || '',
           type: r.type || 'mcq',
-          correct: Boolean(r.correct),
-          ever_correct: Boolean(r.correct),
-          first_correct: Boolean(r.correct),
+          correct: isNowCorrect,
+          ever_correct: wasEverCorrect || isNowCorrect,
+          first_correct: existingMap.has(qId) ? wasEverCorrect : isNowCorrect,
           content_version: r.contentVersion || '',
           updated_at: nowIso,
         }, { onConflict: 'id' });
       }
+
+      const { data: profRow } = await supabase
+        .from('learning_profiles')
+        .select('weekly_xp, current_week')
+        .eq('user_id', id)
+        .maybeSingle();
 
       const nextXp = current.xp + personalAdd;
       const nextCompXp = current.competitiveXp + competitiveAdd;
@@ -184,6 +225,9 @@ export async function award(id: string, year: number, rewards: unknown[]) {
       }
       const bestStreak = Math.max(current.bestStreak, streak);
 
+      const baseWeekly = profRow?.current_week === currentWeek ? Number(profRow?.weekly_xp ?? 0) : 0;
+      const nextWeeklyXp = baseWeekly + competitiveAdd;
+
       await supabase.from('learning_profiles').upsert({
         user_id: id,
         year,
@@ -193,11 +237,15 @@ export async function award(id: string, year: number, rewards: unknown[]) {
         streak,
         best_streak: bestStreak,
         last_day: today,
-        current_week: weekKey(),
+        weekly_xp: nextWeeklyXp,
+        current_week: currentWeek,
         updated_at: nowIso,
       }, { onConflict: 'user_id' });
-    } catch {
-      // Fallback silently if tables not present
+
+      // Return calculated XP awards directly from Supabase!
+      return { personal: personalAdd, competitive: competitiveAdd };
+    } catch (err) {
+      console.warn('Supabase award failed, falling back to Redis:', err);
     }
   }
 

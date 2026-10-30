@@ -7,7 +7,7 @@
 ## Connections by Relation
 
 ### calls
-- [useLanguage()](useLanguage.md) `EXTRACTED`
+- useLanguage() `EXTRACTED`
 - QuizInterface() `EXTRACTED`
 - isIPhoneSafari() `EXTRACTED`
 

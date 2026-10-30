@@ -81,9 +81,11 @@ export function LearningProvider({ children }: { children: ReactNode }) {
       if (!response.ok) {
         const localPreview = import.meta.env.DEV &&
           ["localhost", "127.0.0.1"].includes(window.location.hostname);
-        throw new Error(localPreview && response.status === 503
+        const err = new Error(localPreview && response.status === 503
           ? "Cloud learning is unavailable in this local preview. Your saved activity remains available."
           : result.error ?? "Learning sync failed.");
+        (err as any).status = response.status;
+        throw err;
       }
       return result;
     },
@@ -120,14 +122,28 @@ export function LearningProvider({ children }: { children: ReactNode }) {
       let flushed = false;
       while (queue.length && activeId.current === id) {
         const sent = queue[0];
-        const result = await request<{personal?:number}>("POST", sent.submission);
-        if(activeId.current===id && Number.isSafeInteger(result.personal) && result.personal!>0 && !document.hidden)
-          setAwardNotice({id:Date.now(),account:id,amount:result.personal!});
-        const latest = readQueue(id).filter((item) => item.id !== sent.id);
-        localStorage.setItem(queueKey(id), JSON.stringify(latest));
-        queue = latest;
-        flushed = true;
-        if (activeId.current === id) setPending(queue.length);
+        try {
+          const result = await request<{personal?:number}>("POST", sent.submission);
+          if(activeId.current===id && Number.isSafeInteger(result.personal) && result.personal!>0 && !document.hidden)
+            setAwardNotice({id:Date.now(),account:id,amount:result.personal!});
+          const latest = readQueue(id).filter((item) => item.id !== sent.id);
+          localStorage.setItem(queueKey(id), JSON.stringify(latest));
+          queue = latest;
+          flushed = true;
+          if (activeId.current === id) setPending(queue.length);
+        } catch (itemErr: any) {
+          // If server rejected item permanently (400 Bad Request), discard it so it does not block the queue
+          if (itemErr && (itemErr.status === 400 || itemErr.status === 409)) {
+            const latest = readQueue(id).filter((item) => item.id !== sent.id);
+            localStorage.setItem(queueKey(id), JSON.stringify(latest));
+            queue = latest;
+            flushed = true;
+            if (activeId.current === id) setPending(queue.length);
+            continue;
+          }
+          // For network or server errors (503, 500, etc.), halt and keep for next retry
+          throw itemErr;
+        }
       }
       if (flushed && activeId.current === id) await refresh();
     } catch (e) {

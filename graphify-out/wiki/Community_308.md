@@ -1,32 +1,29 @@
 # Community 308
 
-> 9 nodes
+> 8 nodes
 
 ## Key Concepts
 
-- **renderInline()** (8 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderInlineNode()** (6 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderHigLink()** (4 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderLink()** (4 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderImage()** (3 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **renderReference()** (3 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **imageLabel()** (2 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **resolveAnchor()** (2 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
-- **wrapInline()** (2 connections) — `.agents/skills/apple-design/scripts/pull-hig.mjs`
+- **SoundManager** (9 connections) — `src/app/lib/sound.ts`
+- **.tone()** (7 connections) — `src/app/lib/sound.ts`
+- **.ac()** (2 connections) — `src/app/lib/sound.ts`
+- **.correct()** (2 connections) — `src/app/lib/sound.ts`
+- **.levelUp()** (2 connections) — `src/app/lib/sound.ts`
+- **.muted()** (2 connections) — `src/app/lib/sound.ts`
+- **.tick()** (2 connections) — `src/app/lib/sound.ts`
+- **.wrong()** (2 connections) — `src/app/lib/sound.ts`
 
 ## Relationships
 
-- [Community 9](Community_9.md) (10 shared connections)
-- [Community 311](Community_311.md) (2 shared connections)
-- [Community 246](Community_246.md) (2 shared connections)
+- [Usesoundengine Soundkey Audiopolicy](Usesoundengine_Soundkey_Audiopolicy.md) (4 shared connections)
 
 ## Source Files
 
-- `.agents/skills/apple-design/scripts/pull-hig.mjs`
+- `src/app/lib/sound.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 24 (100%)
+- EXTRACTED: 16 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

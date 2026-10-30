@@ -1,43 +1,50 @@
 # Community 240
 
-> 13 nodes
+> 17 nodes
 
 ## Key Concepts
 
-- **sync.ts** (17 connections) — `api/sync.ts`
-- **handler()** (6 connections) — `api/sync.ts`
-- **mergeHistory()** (6 connections) — `shared/cloud-merge.ts`
-- **cloud-merge.ts** (5 connections) — `shared/cloud-merge.ts`
-- **sync-api.test.ts** (5 connections) — `src/test/reports/sync-api.test.ts`
-- **lz-string** (5 connections) — `package.json`
-- **mergeAccountValue()** (4 connections) — `api/sync.ts`
-- **newerValue()** (3 connections) — `shared/cloud-merge.ts`
-- **setWithTTL()** (2 connections) — `api/sync.ts`
-- **call()** (2 connections) — `src/test/reports/sync-api.test.ts`
-- **SYNC_CAS_LUA** (2 connections) — `shared/cloud-merge.ts`
-- **DbClient** (1 connections) — `api/sync.ts`
-- **mocks** (1 connections) — `src/test/reports/sync-api.test.ts`
+- **ReportReplyComposer.tsx** (23 connections) — `src/pages/ReportReplyComposer.tsx`
+- **ReplyComposer()** (11 connections) — `src/pages/ReportReplyComposer.tsx`
+- **humanizer-reply.test.tsx** (11 connections) — `src/test/reports/humanizer-reply.test.tsx`
+- **review-context.ts** (10 connections) — `src/app/reports/review-context.ts`
+- **reply-composer.test.tsx** (7 connections) — `src/test/reports/reply-composer.test.tsx`
+- **review-context.test.ts** (7 connections) — `src/test/reports/review-context.test.ts`
+- **humanizeAIExplanation()** (5 connections) — `src/app/reports/review-context.ts`
+- **replyTemplate()** (5 connections) — `src/app/reports/review-context.ts`
+- **reviewContext()** (5 connections) — `src/app/reports/review-context.ts`
+- **replyContextText()** (4 connections) — `src/app/reports/reply-context.ts`
+- **handleInsertAiExplanation()** (2 connections) — `src/pages/ReportReplyComposer.tsx`
+- **Pending** (1 connections) — `src/pages/ReportReplyComposer.tsx`
+- **saveDraft()** (1 connections) — `src/pages/ReportReplyComposer.tsx`
+- **send()** (1 connections) — `src/pages/ReportReplyComposer.tsx`
+- **mockReport** (1 connections) — `src/test/reports/humanizer-reply.test.tsx`
+- **report** (1 connections) — `src/test/reports/reply-composer.test.tsx`
+- **report** (1 connections) — `src/test/reports/review-context.test.ts`
 
 ## Relationships
 
-- [Community 50](Community_50.md) (6 shared connections)
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (3 shared connections)
-- [Generatehint Constructor Hint](Generatehint_Constructor_Hint.md) (2 shared connections)
-- [Community 3](Community_3.md) (1 shared connections)
-- [Community 36](Community_36.md) (1 shared connections)
-- [React Eslint Plugin](React_Eslint_Plugin.md) (1 shared connections)
-- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (1 shared connections)
+- [Community 56](Community_56.md) (8 shared connections)
+- [Reply Report Replies](Reply_Report_Replies.md) (7 shared connections)
+- [Community 10](Community_10.md) (6 shared connections)
+- [Triage Report Lease](Triage_Report_Lease.md) (5 shared connections)
+- [Community 152](Community_152.md) (5 shared connections)
+- [Community 6](Community_6.md) (3 shared connections)
+- [Community 95](Community_95.md) (1 shared connections)
+- [Community 24](Community_24.md) (1 shared connections)
 
 ## Source Files
 
-- `api/sync.ts`
-- `package.json`
-- `shared/cloud-merge.ts`
-- `src/test/reports/sync-api.test.ts`
+- `src/app/reports/reply-context.ts`
+- `src/app/reports/review-context.ts`
+- `src/pages/ReportReplyComposer.tsx`
+- `src/test/reports/humanizer-reply.test.tsx`
+- `src/test/reports/reply-composer.test.tsx`
+- `src/test/reports/review-context.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 37 (100%)
+- EXTRACTED: 66 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

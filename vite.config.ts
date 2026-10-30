@@ -35,10 +35,36 @@ const config: UserConfig & { test: InlineConfig } = {
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
+        navigateFallback: null,
         globPatterns: ['**/*.{js,css,html,png,svg,ico,woff2,mp3}'],
         maximumFileSizeToCacheInBytes: 15 * 1024 * 1024,
-        globIgnores: [...Object.keys(bankManifest).map(code=>`**/${code}-*.js`), '**/graph-*.js'],
-        runtimeCaching:[{urlPattern:new RegExp('/assets/(?:'+Object.keys(bankManifest).join('|')+'|graph)-[^/]+\\.js$'),handler:'CacheFirst',options:{cacheName:'asu-visited-banks-v1',cacheableResponse:{statuses:[200]},expiration:{maxEntries:70,maxAgeSeconds:90*24*60*60}}}],
+        globIgnores: [
+          ...Object.keys(bankManifest).map(code => `**/${code}-*.js`),
+          '**/graph-*.js',
+          '**/version.json',
+        ],
+        runtimeCaching: [
+          {
+            urlPattern: ({ request }) => request.mode === 'navigate',
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'asu-navigation-v2',
+              networkTimeoutSeconds: 2,
+              precacheFallback: {
+                fallbackURL: '/index.html',
+              },
+            },
+          },
+          {
+            urlPattern: new RegExp('/assets/(?:' + Object.keys(bankManifest).join('|') + '|graph)-[^/]+\\.js$'),
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'asu-visited-banks-v2',
+              cacheableResponse: { statuses: [200] },
+              expiration: { maxEntries: 70, maxAgeSeconds: 90 * 24 * 60 * 60 },
+            },
+          },
+        ],
       },
     }),
     ...(process.env.ANALYZE ? [visualizer({ open: true, gzipSize: true, brotliSize: true, filename: 'stats.html' })] : []),

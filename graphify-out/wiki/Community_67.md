@@ -1,6 +1,6 @@
 # Community 67
 
-> 36 nodes
+> 35 nodes
 
 ## Key Concepts
 
@@ -14,7 +14,6 @@
 - **buildDuplicateIndex()** (4 connections) — `data-format-v2/scripts/import-ready.ts`
 - **findFilesInDir()** (4 connections) — `data-format-v2/scripts/import-ready.ts`
 - **findTargetFile()** (4 connections) — `data-format-v2/scripts/import-ready.ts`
-- **normalizeCorrectIndex()** (4 connections) — `data-format-v2/scripts/import-ready.ts`
 - **removeExistingDuplicates()** (4 connections) — `data-format-v2/scripts/import-ready.ts`
 - **resolveContentRouting()** (4 connections) — `data-format-v2/scripts/import-ready.ts`
 - **resolveSmartRouting()** (4 connections) — `data-format-v2/scripts/import-ready.ts`
@@ -29,14 +28,16 @@
 - **ImportReport** (1 connections) — `data-format-v2/scripts/import-ready.ts`
 - **IncomingBatch** (1 connections) — `data-format-v2/scripts/import-ready.ts`
 - **IncomingQuestion** (1 connections) — `data-format-v2/scripts/import-ready.ts`
-- *... and 11 more nodes in this community*
+- **IncomingSubQuestion** (1 connections) — `data-format-v2/scripts/import-ready.ts`
+- *... and 10 more nodes in this community*
 
 ## Relationships
 
-- [Community 13](Community_13.md) (9 shared connections)
-- [Tests Build Import](Tests_Build_Import.md) (3 shared connections)
+- [Community 13](Community_13.md) (10 shared connections)
+- [Tests Build Import](Tests_Build_Import.md) (2 shared connections)
 - [Community 36](Community_36.md) (2 shared connections)
-- [Community 33](Community_33.md) (2 shared connections)
+- [Community 319](Community_319.md) (1 shared connections)
+- [Community 33](Community_33.md) (1 shared connections)
 
 ## Source Files
 
@@ -44,7 +45,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 82 (100%)
+- EXTRACTED: 80 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

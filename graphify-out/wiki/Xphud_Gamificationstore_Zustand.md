@@ -15,8 +15,8 @@
 
 ## Relationships
 
-- [Community 95](Community_95.md) (1 shared connections)
-- [Community 36](Community_36.md) (1 shared connections)
+- [Community 24](Community_24.md) (1 shared connections)
+- [Community 152](Community_152.md) (1 shared connections)
 - [React Eslint Plugin](React_Eslint_Plugin.md) (1 shared connections)
 
 ## Source Files

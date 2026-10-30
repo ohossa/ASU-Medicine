@@ -1,24 +1,36 @@
 # Community 153
 
-> 3 nodes
+> 6 nodes
 
 ## Key Concepts
 
-- **FakeWorker** (3 connections) — `src/app/search/useSearchIndex.test.tsx`
-- **.constructor()** (1 connections) — `src/app/search/useSearchIndex.test.tsx`
-- **.postMessage()** (1 connections) — `src/app/search/useSearchIndex.test.tsx`
+- **SecurityNoticeToast.tsx** (7 connections) — `src/app/components/SecurityNoticeToast.tsx`
+- **StudyEntry()** (6 connections) — `src/StudyEntry.tsx`
+- **security-notice-toast.test.tsx** (5 connections) — `src/test/reports/security-notice-toast.test.tsx`
+- **SecurityNoticeToast()** (4 connections) — `src/app/components/SecurityNoticeToast.tsx`
+- **dispatchSecurityNotice()** (2 connections) — `src/app/components/SecurityNoticeToast.tsx`
+- **SecurityNoticePayload** (1 connections) — `src/app/components/SecurityNoticeToast.tsx`
 
 ## Relationships
 
+- [Community 1](Community_1.md) (3 shared connections)
+- [Community 152](Community_152.md) (2 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (1 shared connections)
+- [Community 239](Community_239.md) (1 shared connections)
+- [Community 6](Community_6.md) (1 shared connections)
+- [Community 249](Community_249.md) (1 shared connections)
+- [Community 95](Community_95.md) (1 shared connections)
 - [Community 24](Community_24.md) (1 shared connections)
 
 ## Source Files
 
-- `src/app/search/useSearchIndex.test.tsx`
+- `src/StudyEntry.tsx`
+- `src/app/components/SecurityNoticeToast.tsx`
+- `src/test/reports/security-notice-toast.test.tsx`
 
 ## Audit Trail
 
-- EXTRACTED: 3 (100%)
+- EXTRACTED: 18 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

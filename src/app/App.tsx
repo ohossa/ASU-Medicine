@@ -33,7 +33,6 @@ const YearModules = lazy(() => import('../pages/YearModules'));
 const StudyMode = lazy(() => import('../pages/StudyMode'));
 const SubjectSelect = lazy(() => import('./components/SubjectSelect').then(m => ({ default: m.SubjectSelect })));
 const StudyTrackerSelectorModal = lazy(() => import('./components/StudyTrackerSelectorModal').then(m => ({ default: m.StudyTrackerSelectorModal })));
-const KnowledgeGraphPage = lazy(() => import('../pages/KnowledgeGraphPage').then(m => ({ default: m.KnowledgeGraphPage })));
 import { UserSyncPill } from './components/UserSyncPill';
 
 // Lazy-loaded FX layer components
@@ -58,8 +57,7 @@ import {
   Flag,
   Globe,
   Check,
-  HeartHandshake,
-  Network
+  HeartHandshake
 } from 'lucide-react';
 import { toGitTopicChapter } from './lib/gitBank';
 import type { ChapterData, SubjectData, Question, Screen, QuizAnswer, QuestionCollection } from './types';
@@ -72,6 +70,7 @@ const FlaggedQuestionsScreen = lazy(() => import('./components/FlaggedQuestionsS
 
 const QuestionSearch = lazy(() => import('./components/QuestionSearch').then(m => ({ default: m.QuestionSearch })));
 const MarksCalculator = lazy(() => import('./components/MarksCalculator').then(m => ({ default: m.MarksCalculator })));
+const AnkiDecksPage = lazy(() => import('../pages/AnkiDecksPage').then(m => ({ default: m.AnkiDecksPage })));
 const SyllabusTrackerPage = lazy(() => import('../pages/SyllabusTrackerPage').then(m => ({ default: m.SyllabusTrackerPage })));
 
 import { ThemeProvider } from './context/ThemeContext';
@@ -79,7 +78,7 @@ import { useTheme } from './hooks/useTheme';
 import { useLanguage } from './hooks/useLanguage';
 import { saveQuizResult } from './utils/storage';
 import type { QuizResult } from './utils/storage';
-import { SignedIn, SignedOut, UserButton, useUser, useAuth } from '@clerk/clerk-react';
+import { UserButton, useUser, useAuth } from '@clerk/clerk-react';
 const LoginScreen = lazy(() => import('./components/LoginScreen').then(m => ({ default: m.LoginScreen })));
 import LoadingScreen from './components/LoadingScreen';
 import { useQuizSession, clearLocalDrafts } from './hooks/useQuizSession';
@@ -95,7 +94,8 @@ import {
   startCorrectionsRefresh,
   getChaptersForModuleAndMode,
   findQuestionById,
-  SYLLABUS_MODULES
+  SYLLABUS_MODULES,
+  bankManifest
 } from './data';
 import type { ModuleInfo } from './data';
 
@@ -425,6 +425,9 @@ function MainApp() {
 
   const [yearModalDismissed, setYearModalDismissed] = useState<boolean>(() => {
     try {
+      if (import.meta.env.DEV && typeof window !== "undefined" && window.location.search.includes("__preview=1")) {
+        return true;
+      }
       return sessionStorage.getItem('asu_year_modal_dismissed') === 'true' ||
              localStorage.getItem('asu_year_modal_dismissed') === 'true';
     } catch {
@@ -434,6 +437,9 @@ function MainApp() {
 
   const [fallbackYear, setFallbackYear] = useState<number | null>(() => {
     try {
+      if (import.meta.env.DEV && typeof window !== "undefined" && window.location.search.includes("__preview=1")) {
+        return 3;
+      }
       const v = localStorage.getItem('asu_medical_student_year_fallback') ||
                 localStorage.getItem('asu_medical_student_year');
       const n = v ? parseInt(v, 10) : null;
@@ -478,7 +484,19 @@ function MainApp() {
     try { const saved = safeStorage.getItem<string | null>('asu_portal_semester', null); return saved ? Number(saved) : null; } catch { return null; }
   });
   const [selectedModule, setSelectedModule] = useState<ModuleInfo | null>(() => {
-    try { const saved = safeStorage.getItem<string | null>('asu_portal_module', null); return saved ? JSON.parse(saved) : null; } catch { return null; }
+    try {
+      const saved = safeStorage.getItem<string | null>('asu_portal_module', null);
+      if (!saved) return null;
+      const parsed = JSON.parse(saved);
+      if (parsed?.code && bankManifest[parsed.code]) {
+        return parsed;
+      }
+      safeStorage.removeItem('asu_portal_module');
+      return null;
+    } catch {
+      safeStorage.removeItem('asu_portal_module');
+      return null;
+    }
   });
   const [studyMode, setStudyMode] = useState<'mcq' | 'essay' | 'mixed' | null>(() => {
     try { const saved = safeStorage.getItem<string | null>('asu_portal_studyMode', null); return (saved as 'mcq' | 'essay' | 'mixed') || null; } catch { return null; }
@@ -643,7 +661,7 @@ function MainApp() {
     if (screen === 'chapters' && (!selectedModule || !studyMode)) {
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setScreen('yearSelect');
-    } else if (screen === 'subjects' && !selectedChapter) {
+    } else if (screen === 'subjects' && (!selectedChapter || !selectedModule)) {
        
       setScreen('chapters');
     } else if (screen === 'quiz' && !quizPayload) {
@@ -663,6 +681,17 @@ function MainApp() {
       setScreen('yearSelect');
     }
   }, [screen, selectedYear, selectedSemester, selectedModule, studyMode, selectedChapter, quizPayload, resultPayload, transitionTo]);
+
+  // Track active quiz status for seamless background update decisions
+  useEffect(() => {
+    try {
+      if (screen === 'quiz') {
+        sessionStorage.setItem('asu:active-quiz', '1');
+      } else {
+        sessionStorage.removeItem('asu:active-quiz');
+      }
+    } catch {}
+  }, [screen]);
 
   const handleSelectChapter = (chapter: ChapterData) => {
     transitionTo(() => {
@@ -974,14 +1003,6 @@ function MainApp() {
           )}
 
           <UserButton.Action
-            label={language === 'en' ? "Knowledge Graph" : "شبكة المفاهيم"}
-            labelIcon={<Network size={16} className="text-biochem" />}
-            onClick={() => {
-              transitionTo(() => navigate('/knowledge-graph'));
-            }}
-          />
-
-          <UserButton.Action
             label={language === 'en' ? "My Progress" : "تقدمي"}
             labelIcon={<Activity size={16} className="text-[#2dd4bf]" />}
             onClick={() => {
@@ -1176,13 +1197,7 @@ function MainApp() {
             <Route path="/study-tracker" element={<Navigate to="/learning?view=progress" replace/>}/>
             <Route path="/history" element={<Navigate to="/learning?view=activity" replace/>}/>
 
-            <Route path="/knowledge-graph" element={
-              <FeatureErrorBoundary name="KnowledgeGraphPage">
-                <Suspense fallback={<LoadingScreen compact label="Opening Knowledge Graph Explorer…"/>}>
-                  <KnowledgeGraphPage userButton={customUserButton} />
-                </Suspense>
-              </FeatureErrorBoundary>
-            } />
+            <Route path="/knowledge-graph" element={<Navigate to="/" replace/>}/>
 
             <Route path="/case-solver" element={<Navigate to="/" replace/>}/>
 
@@ -1192,6 +1207,18 @@ function MainApp() {
                   <MarksCalculator studentYear={activeStudentYear??selectedYear??3}
                     onBack={() => navigate('/')}
                     userButton={customUserButton}
+                  />
+                </Suspense>
+              </FeatureErrorBoundary>
+            } />
+
+            <Route path="/anki" element={
+              <FeatureErrorBoundary name="AnkiDecksPage">
+                <Suspense fallback={<LoadingScreen compact label="Opening Anki Flashcards…"/>}>
+                  <AnkiDecksPage
+                    onBack={() => navigate('/')}
+                    userButton={customUserButton}
+                    initialYear={activeStudentYear ?? selectedYear ?? 3}
                   />
                 </Suspense>
               </FeatureErrorBoundary>
@@ -1627,13 +1654,18 @@ function MainApp() {
 export default function App() {
   const {isLoaded,isSignedIn}=useAuth();
   const deferredMounted=useDeferredMount();
+  const isDevPreview = Boolean(
+    import.meta.env.DEV &&
+    typeof window !== "undefined" &&
+    window.location.search.includes("__preview=1")
+  );
   useEffect(()=>{void import('../pages/Dashboard');void import('../pages/YearModules');},[]);
   useEffect(()=>{if(isLoaded&&isSignedIn){performance.mark('asu:shell-ready');void startCorrectionsRefresh();}},[isLoaded,isSignedIn]);
 
   return (
     <ThemeProvider>
-      {!isLoaded&&<LoadingScreen/>}
-      {isLoaded && (
+      {!isLoaded && !isDevPreview && <LoadingScreen/>}
+      {(isLoaded || isDevPreview) && (
         <>
 
           {/* Dynamic Floating Background Blobs & Interactive Dots */}
@@ -1655,7 +1687,7 @@ export default function App() {
             <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-anatomy/30 to-transparent dark:from-anatomy/20 blob-float-2" />
           </div>
 
-          <SignedIn>
+          {(isSignedIn || isDevPreview) ? (
             <BrowserRouter>
               <ReportProvider><LearningProvider><ProgressProvider>
                 <MainApp />
@@ -1676,12 +1708,11 @@ export default function App() {
                 )}
               </ProgressProvider></LearningProvider></ReportProvider>
             </BrowserRouter>
-          </SignedIn>
-          <SignedOut>
+          ) : (
             <Suspense fallback={<LoadingScreen />}>
               <LoginScreen />
             </Suspense>
-          </SignedOut>
+          )}
         </>
       )}
     </ThemeProvider>

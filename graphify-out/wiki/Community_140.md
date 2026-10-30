@@ -20,11 +20,10 @@
 
 - [Community 56](Community_56.md) (5 shared connections)
 - [Community 24](Community_24.md) (3 shared connections)
-- [Community 95](Community_95.md) (3 shared connections)
-- [Triage Report Lease](Triage_Report_Lease.md) (2 shared connections)
-- [Community 105](Community_105.md) (1 shared connections)
-- [Community 36](Community_36.md) (1 shared connections)
-- [Community 15](Community_15.md) (1 shared connections)
+- [Triage Report Lease](Triage_Report_Lease.md) (3 shared connections)
+- [Community 95](Community_95.md) (2 shared connections)
+- [Community 152](Community_152.md) (2 shared connections)
+- [Community 6](Community_6.md) (1 shared connections)
 
 ## Source Files
 

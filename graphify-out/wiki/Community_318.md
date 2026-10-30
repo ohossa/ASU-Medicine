@@ -1,29 +1,25 @@
 # Community 318
 
-> 5 nodes
+> 4 nodes
 
 ## Key Concepts
 
-- **extract_supplement.py** (9 connections) — `docs/verification/locomotor-import-2026-10-23/extract_supplement.py`
-- **add_candidate()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/extract_supplement.py`
-- **compute_fingerprint()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/extract_supplement.py`
-- **clean_option()** (3 connections) — `docs/verification/locomotor-import-2026-10-23/extract_supplement.py`
-- **normalize_text()** (3 connections) — `docs/verification/locomotor-import-2026-10-23/extract_supplement.py`
+- **quality-audit.ts** (4 connections) — `data-format-v2/scripts/quality-audit.ts`
+- **bank** (1 connections) — `data-format-v2/scripts/quality-audit.ts`
+- **questions** (1 connections) — `data-format-v2/scripts/quality-audit.ts`
+- **textMap** (1 connections) — `data-format-v2/scripts/quality-audit.ts`
 
 ## Relationships
 
-- [Community 20](Community_20.md) (2 shared connections)
-- [Community 79](Community_79.md) (1 shared connections)
-- [Community 93](Community_93.md) (1 shared connections)
-- [Community 38](Community_38.md) (1 shared connections)
+- [Bank Audit Validate](Bank_Audit_Validate.md) (1 shared connections)
 
 ## Source Files
 
-- `docs/verification/locomotor-import-2026-10-23/extract_supplement.py`
+- `data-format-v2/scripts/quality-audit.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 14 (100%)
+- EXTRACTED: 4 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

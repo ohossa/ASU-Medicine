@@ -173,7 +173,7 @@ describe("InlineQuestionEditor (On-The-Spot Question Editing)", () => {
   });
 
   it("submits DELETE /api/question-bank and auto-resolves report when confirmed", async () => {
-    const fetchMock = vi.fn(async (url: string, opts: any) => {
+    const fetchMock = vi.fn(async (url: string, opts?: any) => {
       if (url.includes("action=single")) {
         return {
           ok: true,
@@ -251,6 +251,127 @@ describe("InlineQuestionEditor (On-The-Spot Question Editing)", () => {
 
       // Verify onDeleted callback was invoked
       expect(onDeleted).toHaveBeenCalledWith("q_test_101", 5);
+    });
+  });
+
+  it("renders curriculum routing controls and supports relocating question to another subject and lecture topic", async () => {
+    const mockChapters = [
+      {
+        id: 5,
+        title: "Pathology",
+        subjects: [{ id: "pathology", name: "Pathology", lectureCount: 22, lectureNames: ["Intro", "Inflammation"] }],
+      },
+      {
+        id: 8,
+        title: "Parasitology",
+        subjects: [
+          {
+            id: "parasitology",
+            name: "Parasitology",
+            lectureCount: 21,
+            lectureNames: [
+              "Trematodes of the liver",
+              "Cestodes of the liver (Echinococcus granulosus)",
+            ],
+          },
+        ],
+      },
+    ];
+
+    const fetchMock = vi.fn(async (url: string, _opts?: any) => {
+      if (url.includes("action=single")) {
+        return {
+          ok: true,
+          json: async () => ({
+            entry: {
+              revision: 1,
+              chapterId: 5,
+              subjectId: "pathology",
+              question: { ...mockQuestion, id: "MGL3-CH5-PATH-0976", lecture: 1 },
+            },
+            chapters: mockChapters,
+          }),
+        };
+      }
+      return {
+        ok: true,
+        status: 200,
+        json: async () => ({
+          edit: {
+            revision: 2,
+            targetChapterId: 8,
+            targetSubjectId: "parasitology",
+            question: { ...mockQuestion, id: "MGL3-CH5-PATH-0976", lecture: 2 },
+          },
+        }),
+      };
+    });
+    vi.stubGlobal("fetch", fetchMock);
+
+    const onSaved = vi.fn();
+    render(
+      <InlineQuestionEditor
+        moduleCode="MGL-3"
+        chapterId={5}
+        subjectId="pathology"
+        question={{ ...mockQuestion, id: "MGL3-CH5-PATH-0976", lecture: 1 }}
+        chapters={mockChapters}
+        onSaved={onSaved}
+      />
+    );
+
+    // Verify Curriculum Routing & Placement header
+    expect(screen.getByText("Curriculum Routing & Placement")).toBeInTheDocument();
+
+    // Verify Destination Chapter and Subject dropdown
+    const subjectSelect = screen.getByLabelText("Destination Chapter and Subject");
+    expect(subjectSelect).toBeInTheDocument();
+    expect(subjectSelect).toHaveValue("5:pathology");
+
+    // Relocate to Chapter 8 Parasitology
+    fireEvent.change(subjectSelect, { target: { value: "8:parasitology" } });
+    expect(subjectSelect).toHaveValue("8:parasitology");
+
+    // Lecture dropdown should now display Parasitology lectures
+    const lectureSelect = screen.getByLabelText("Lecture or Topic");
+    expect(screen.getByText("2. Cestodes of the liver (Echinococcus granulosus)")).toBeInTheDocument();
+
+    // Select lecture 2
+    fireEvent.change(lectureSelect, { target: { value: "2" } });
+    expect(lectureSelect).toHaveValue("2");
+
+    // Visual relocation indicator banner should be visible
+    expect(screen.getByText(/Relocating question:/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/MGL3-CH5-PATH-0976/i).length).toBeGreaterThanOrEqual(2);
+    expect(screen.getByText(/is permanently preserved/i)).toBeInTheDocument();
+
+    // Save Question Patch
+    const saveBtn = screen.getByRole("button", { name: /Save Question Patch/i });
+    fireEvent.click(saveBtn);
+
+    await waitFor(() => {
+      const patchCall = fetchMock.mock.calls.find((call) => call[0] === "/api/question-bank");
+      expect(patchCall).toBeDefined();
+      const body = JSON.parse(patchCall![1].body);
+      expect(body.moduleCode).toBe("MGL-3");
+      expect(body.chapterId).toBe(5); // source chapter
+      expect(body.questionId).toBe("MGL3-CH5-PATH-0976"); // Stable ID!
+      expect(body.targetChapterId).toBe(8); // destination chapter
+      expect(body.targetSubjectId).toBe("parasitology"); // destination subject
+      expect(body.question.lecture).toBe(2); // destination lecture
+
+      // Check onSaved callback received relocation metadata
+      expect(onSaved).toHaveBeenCalledWith(
+        expect.objectContaining({ id: "MGL3-CH5-PATH-0976", lecture: 2 }),
+        2,
+        expect.objectContaining({
+          chapterId: 8,
+          chapterTitle: "Parasitology",
+          subjectId: "parasitology",
+          subjectName: "Parasitology",
+          topicName: "Cestodes of the liver (Echinococcus granulosus)",
+        })
+      );
     });
   });
 });

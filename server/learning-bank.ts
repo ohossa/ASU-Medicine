@@ -31,30 +31,49 @@ export async function learningBank(
     if (bank.comingSoon || bank.meta?.moduleCode !== moduleCode) continue;
     for (const ch of bank.chapters ?? [])
       for (const s of ch.subjects ?? []) {
-        const items = [
-          ...(s.questions ?? []),
-          ...edits
-            .filter(
-              (e) =>
-                e.baseVersion === "created" &&
-                !e.deleted &&
-                e.chapterId === ch.id &&
-                e.subjectId === s.id,
-            )
-            .map((e) => e.question),
-        ];
-        for (let q of items) {
-          const version = createHash("sha256")
-            .update(JSON.stringify(q))
-            .digest("hex");
-          const edit = edits.find(
+        const relocatedToHere = edits
+          .filter(
             (e) =>
+              !e.deleted &&
+              e.baseVersion !== "created" &&
+              (e.targetChapterId !== undefined || e.targetSubjectId !== undefined) &&
+              (e.targetChapterId ?? e.chapterId) === ch.id &&
+              (e.targetSubjectId ?? e.subjectId) === s.id,
+          )
+          .map((e) => e.question);
+        const createdHere = edits
+          .filter(
+            (e) =>
+              e.baseVersion === "created" &&
+              !e.deleted &&
               e.chapterId === ch.id &&
-              e.questionId === String(q.id) &&
-              e.baseVersion === version,
+              e.subjectId === s.id,
+          )
+          .map((e) => e.question);
+        const sourceQuestions = (s.questions ?? []).filter((q: any) => {
+          const id = String(q.id);
+          const edit = edits.find(
+            (e) => e.chapterId === ch.id && e.questionId === id,
           );
-          if (edit?.deleted) continue;
-          if (edit) q = edit.question;
+          if (!edit) return true;
+          if (edit.deleted) return false;
+          const movedAway =
+            (edit.targetChapterId !== undefined && edit.targetChapterId !== ch.id) ||
+            (edit.targetSubjectId !== undefined && edit.targetSubjectId !== s.id);
+          return !movedAway;
+        });
+        const items = [...sourceQuestions, ...createdHere, ...relocatedToHere];
+        for (let q of items) {
+          const isExtra = createdHere.includes(q) || relocatedToHere.includes(q);
+          if (!isExtra) {
+            const edit = edits.find(
+              (e) =>
+                e.chapterId === ch.id &&
+                e.questionId === String(q.id),
+            );
+            if (edit?.deleted) continue;
+            if (edit) q = edit.question;
+          }
           const id = String(q.id);
           if (result.has(id))
             throw new Error("Duplicate canonical question ID.");

@@ -4,16 +4,16 @@
 
 ## Key Concepts
 
-- **Protocols, RPC, and Messaging Hunting** (9 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
-- **PROTOCOLS-RPC-AND-MESSAGING.md** (2 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
-- **Validation rules (apply before reporting ANY finding here)** (2 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
-- **Broker and queue isolation attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
-- **Core discipline (include in every agent prompt for this domain)** (1 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
-- **Framing, schema, and interpretation attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
-- **Replay, ordering, and transaction attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
-- **RPC identity and authorization attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
-- **Universal moves (apply across the above)** (1 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
-- **When to use this file** (1 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
+- **Memory Safety, Binary, and Kernel Hunting** (10 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
+- **Validation rules (apply before reporting ANY finding here)** (2 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
+- **Binary loading and runtime attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
+- **Bounds, integer, and representation attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
+- **Core discipline (include in every agent prompt for this domain)** (1 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
+- **FFI and ABI attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
+- **Kernel and privileged-interface attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
+- **Lifetime, type, and concurrency attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
+- **Universal moves (apply across the above)** (1 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
+- **When to use this file** (1 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
 
 ## Relationships
 
@@ -22,7 +22,7 @@
 
 ## Source Files
 
-- `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
+- `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
 
 ## Audit Trail
 
