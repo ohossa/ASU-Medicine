@@ -360,6 +360,7 @@ export function InteractiveBackground() {
     const mouse: MouseState = { x: -9999, y: -9999, lx: -9999, ly: -9999, energy: 0, active: false };
     
     const handlePointerMove = (e: PointerEvent) => {
+      wakeUp();
       if (mouse.active) {
         const dx = e.clientX - mouse.lx;
         const dy = e.clientY - mouse.ly;
@@ -376,6 +377,7 @@ export function InteractiveBackground() {
 
     // --- Click Mitosis: split nearest midground cell, Verlet push-apart ---
     const handlePointerDown = (e: PointerEvent) => {
+      wakeUp();
       if (motionScale < 0.05) return;
       let best: Cell | null = null;
       let bd = Infinity;
@@ -440,13 +442,35 @@ export function InteractiveBackground() {
     }
 
     /* ============================================================
-       RENDER LOOP
+       RENDER LOOP (Clamped to 30 FPS with 2-second Idle Auto-Sleep)
        ============================================================ */
+    const TARGET_FPS = 30;
+    const FRAME_INTERVAL = 1000 / TARGET_FPS;
+    let lastRenderTime = 0;
+    let lastInteractionTime = performance.now();
+    let isSleeping = false;
     let last = performance.now();
     let targets: { c: Cell; d: number }[] = [];
-    let animationLoop:ReturnType<typeof createVisibleAnimation>;
+    let animationLoop: ReturnType<typeof createVisibleAnimation>;
+
+    const wakeUp = () => {
+      lastInteractionTime = performance.now();
+      if (isSleeping) {
+        isSleeping = false;
+        animationLoop?.refresh();
+      }
+    };
 
     const frame = (now: number) => {
+      // Hard frame rate throttle: never exceed 30 FPS regardless of display refresh rate
+      if (now - lastRenderTime < FRAME_INTERVAL) return;
+      lastRenderTime = now;
+
+      // Idle Auto-Sleep: when user is reading or inactive for > 2s, pause animation loop (0% CPU/GPU)
+      if (now - lastInteractionTime > 2000 && pulse.bursts.length === 0 && (!mouse.active || mouse.energy < 0.01)) {
+        isSleeping = true;
+        return;
+      }
 
       const dt = Math.min(now - last, 50);
       last = now;
@@ -574,21 +598,8 @@ export function InteractiveBackground() {
         ctx.save();
         ctx.globalAlpha = def.alpha;
         
-        // Skip canvas filter blur on mobile for massive performance gains
-        if (def.blur && !isMobile) ctx.filter = `blur(${def.blur}px)`;
-
-        if (li === 2 && !isMobile) {
-          // Chromatic aberration (desktop only to optimize fill-rate)
-          ctx.globalAlpha = def.alpha * 0.35;
-          ctx.translate(-1.5, 0);
-          ctx.fillStyle = 'rgba(255, 60, 60, 0.10)';
-          ctx.fill(layerPath);
-          ctx.translate(3, 0);
-          ctx.fillStyle = 'rgba(60, 90, 255, 0.10)';
-          ctx.fill(layerPath);
-          ctx.translate(-1.5, 0);
-          ctx.globalAlpha = def.alpha;
-        }
+        // Zero software convolution blur: keeps 2D canvas GPU compositing instantaneous
+        ctx.filter = 'none';
         ctx.fillStyle = currentTheme.membrane;
         ctx.fill(layerPath);
 

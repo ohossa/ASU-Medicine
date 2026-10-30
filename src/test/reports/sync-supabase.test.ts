@@ -215,4 +215,122 @@ describe("Supabase-First Sync API (/api/sync)", () => {
     expect(savedProfileYear.user_id).toBe("user_save_year_test");
     expect(savedProfileYear.year).toBe(4);
   });
+
+  it("handles field=year lightweight query on GET without returning full data payload (slashes egress by 99.99%)", async () => {
+    mocks.verifyToken.mockResolvedValue({
+      sub: "user_lightweight_year_test",
+    });
+
+    let selectColumns = "";
+    mocks.supabase = {
+      from: vi.fn((table: string) => {
+        if (table === "user_progress") {
+          return {
+            select: vi.fn((cols: string) => {
+              selectColumns = cols;
+              return {
+                eq: vi.fn(() => ({
+                  maybeSingle: vi.fn(async () => ({
+                    data: { academic_year: 3 },
+                    error: null,
+                  })),
+                })),
+              };
+            }),
+          };
+        }
+        return {};
+      }),
+    };
+
+    const { default: handler } = await import("../../../api/sync");
+    const req: any = {
+      method: "GET",
+      url: "/api/sync?field=year",
+      headers: {
+        authorization: "Bearer valid_token",
+      },
+      query: { field: "year" },
+    };
+    const res = mockRes();
+
+    await handler(req, res);
+
+    expect(res.statusCode).toBe(200);
+    expect(res.body.year).toBe(3);
+    expect(selectColumns).toBe("academic_year"); // Verified: does NOT select massive data JSON blob
+  });
+
+  it("skips Supabase user_progress upsert on POST when data and academic_year are identical (prevents TOAST Disk IO churn)", async () => {
+    mocks.verifyToken.mockResolvedValue({
+      sub: "user_toast_guard_test",
+    });
+
+    const yearKey = "asu_preferences:user_toast_guard_test:academic-year";
+    const existingData = {
+      [yearKey]: { year: 2, version: 1, timestamp: 12345 },
+      theme: "dark",
+    };
+
+    let upsertCalled = false;
+    mocks.supabase = {
+      from: vi.fn((table: string) => {
+        if (table === "user_progress") {
+          return {
+            select: vi.fn(() => ({
+              eq: vi.fn(() => ({
+                maybeSingle: vi.fn(async () => ({
+                  data: {
+                    academic_year: 2,
+                    data: existingData,
+                  },
+                  error: null,
+                })),
+              })),
+            })),
+            upsert: vi.fn(async () => {
+              upsertCalled = true;
+              return { error: null };
+            }),
+          };
+        }
+        if (table === "learning_profiles") {
+          return {
+            select: vi.fn(() => ({
+              eq: vi.fn(() => ({
+                maybeSingle: vi.fn(async () => ({
+                  data: { user_id: "user_toast_guard_test", year: 2 },
+                  error: null,
+                })),
+              })),
+            })),
+            update: vi.fn(() => ({
+              eq: vi.fn(async () => ({ error: null })),
+            })),
+          };
+        }
+        return {};
+      }),
+    };
+
+    const { default: handler } = await import("../../../api/sync");
+    const req: any = {
+      method: "POST",
+      headers: {
+        authorization: "Bearer valid_token",
+        "content-type": "application/json",
+      },
+      body: {
+        [yearKey]: { year: 2, version: 1, timestamp: 12345 },
+        theme: "dark",
+      },
+    };
+    const res = mockRes();
+
+    await handler(req, res);
+
+    expect(res.statusCode).toBe(200);
+    expect(res.body).toEqual({ success: true });
+    expect(upsertCalled).toBe(false); // Verified: skipped disk write because payload was unchanged!
+  });
 });

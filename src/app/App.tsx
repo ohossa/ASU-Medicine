@@ -1098,11 +1098,6 @@ function MainApp() {
         Skip to content
       </a>
       <main id="main-content" className="w-full relative z-10">
-        <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden transform-gpu">
-          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/10 to-transparent dark:from-physiology/5 rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu"></div>
-          <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-clinical/10 to-transparent dark:from-clinical/5 rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu" style={{ animationDelay: '2s' }}></div>
-        </div>
-
         <>
           <CorrectionStatus />{studyLinkError&&<p role="alert" className="p-4 text-center">{studyLinkError}</p>}
           <RouteDataGate year={activeStudentYear}><Routes location={location}>
@@ -1668,8 +1663,8 @@ export default function App() {
       {(isLoaded || isDevPreview) && (
         <>
 
-          {/* Dynamic Floating Background Blobs & Interactive Dots */}
-          <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+          {/* Apple HIG Pure Medical Ambient Mesh Gradients (Zero CPU & Zero GPU 3D Load) */}
+          <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none select-none" style={{ contain: 'strict', transform: 'translateZ(0)' }}>
             {FX.DEFERRED_FX ? (
               deferredMounted && FX.reactiveBackground && (
                 <Suspense fallback={null}>
@@ -1683,8 +1678,8 @@ export default function App() {
                 </Suspense>
               )
             )}
-            <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/30 to-transparent dark:from-physiology/20 blob-float-1" />
-            <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-anatomy/30 to-transparent dark:from-anatomy/20 blob-float-2" />
+            <div className="absolute top-[-10%] left-[-5%] h-[45vw] w-[45vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/20 to-transparent dark:from-physiology/10" style={{ filter: 'blur(50px)', transform: 'translateZ(0)' }} />
+            <div className="absolute bottom-[-10%] right-[-5%] h-[50vw] w-[50vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-anatomy/20 to-transparent dark:from-anatomy/10" style={{ filter: 'blur(60px)', transform: 'translateZ(0)' }} />
           </div>
 
           {(isSignedIn || isDevPreview) ? (

@@ -19,9 +19,10 @@ async function readCloudYear(key:string,getToken:()=>Promise<string|null>){
  const job=(async()=>{
   const token=await getToken();
   if(!token)throw new Error('Sign in to load your year.');
-  const response=await fetch('/api/sync',{headers:{Authorization:`Bearer ${token}`},signal:AbortSignal.timeout(15_000)});
+  const response=await fetch('/api/sync?field=year',{headers:{Authorization:`Bearer ${token}`},signal:AbortSignal.timeout(15_000)});
   if(!response.ok)throw new Error('Cloud preference could not be loaded. Please retry.');
-  const payload=await response.json();return parsePreference(payload.data?.[key]);
+  const payload=await response.json();
+  return parsePreference(payload.data?.[key]) ?? (typeof payload.year === 'number' ? { year: payload.year, version: 1, timestamp: Date.now() } : null);
  })();
  pendingReads.set(key,job);
  try{return await job;}finally{if(pendingReads.get(key)===job)pendingReads.delete(key);}

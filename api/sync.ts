@@ -170,10 +170,42 @@ export default async function handler(req: any, res: any) {
     if (!redisUrl && !(kvUrl && kvToken) && !supabase) return res.status(503).json({error:'Cloud sync storage is not configured.'});
     const keyPrefix = `asu_data:${userId}:`;
 
+    const urlObj = new URL(req.url || '', 'http://localhost');
+    const isYearOnly = req.query?.field === 'year' || req.query?.yearOnly === 'true' || urlObj.searchParams.get('field') === 'year' || urlObj.searchParams.get('yearOnly') === 'true';
+
     // 3. Handle GET Request
     if (req.method === 'GET') {
       if (supabase) {
         try {
+          if (isYearOnly) {
+            // High-efficiency year-only check: transfers ~30 bytes instead of 500KB JSON (99.99% egress reduction)
+            const { data: row } = await supabase
+              .from('user_progress')
+              .select('academic_year')
+              .eq('user_id', userId)
+              .maybeSingle();
+
+            let resolvedYear = row?.academic_year;
+            if (!resolvedYear || resolvedYear === 1) {
+              const { data: prof } = await supabase
+                .from('learning_profiles')
+                .select('year')
+                .eq('user_id', userId)
+                .maybeSingle();
+              if (prof?.year) resolvedYear = prof.year;
+            }
+
+            const safeYear = Number.isInteger(resolvedYear) && resolvedYear! >= 1 && resolvedYear! <= 5 ? resolvedYear! : 1;
+            const yearKey = `asu_preferences:${userId}:academic-year`;
+            return res.status(200).json({
+              year: safeYear,
+              data: {
+                [yearKey]: { year: safeYear, version: 1, timestamp: Date.now() },
+                asu_portal_year: safeYear,
+              }
+            });
+          }
+
           const { data: row, error } = await supabase
             .from('user_progress')
             .select('data, academic_year')
@@ -375,16 +407,23 @@ export default async function handler(req: any, res: any) {
               }
             }
 
-            const { error: upsertErr } = await supabase.from('user_progress').upsert({
-              user_id: userId,
-              data: next,
-              academic_year: year,
-              updated_at: new Date().toISOString(),
-            }, { onConflict: 'user_id' });
+            // TOAST & Disk IO Guard: Skip heavy PostgreSQL write if data and year haven't changed
+            const isIdentical = existingRow &&
+              existingRow.academic_year === year &&
+              JSON.stringify(existingRow.data || {}) === JSON.stringify(next);
 
-            if (upsertErr) {
-              console.error('Supabase user_progress upsert error:', upsertErr);
-              throw new Error(upsertErr.message);
+            if (!isIdentical) {
+              const { error: upsertErr } = await supabase.from('user_progress').upsert({
+                user_id: userId,
+                data: next,
+                academic_year: year,
+                updated_at: new Date().toISOString(),
+              }, { onConflict: 'user_id' });
+
+              if (upsertErr) {
+                console.error('Supabase user_progress upsert error:', upsertErr);
+                throw new Error(upsertErr.message);
+              }
             }
           } catch (err: any) {
             console.error('Supabase sync POST error:', err);

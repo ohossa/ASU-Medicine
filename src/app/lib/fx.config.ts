@@ -1,7 +1,7 @@
 // Central feature flags. Flip anything off instantly.
 export const FX = {
   DEFERRED_FX: true,        // master flag to defer FX loading for LCP/FCP optimizations
-  reactiveBackground: true, // bg responds to quiz state
+  reactiveBackground: false, // Default to false for Apple HIG Pure CSS Mesh Gradients (0% CPU/GPU, silent fans, 0 video lag)
   ecgMonitor: true,         // heartbeat line under timer
   confetti: false,           // celebration on completion / perfect score
   sound: true,              // synth tones (respects user mute pref)

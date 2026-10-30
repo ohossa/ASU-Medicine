@@ -267,8 +267,16 @@ export async function fetchEnrolledClerkUsers(secretKey?: string): Promise<Map<s
  * Aggregates portal analytics from Redis and Catalog banks.
  * Handles production data and gracefully provides structured platform baselines when testing offline.
  */
+let adminAnalyticsCache: { timestamp: number; data: FullAdminAnalytics } | null = null;
+const ADMIN_ANALYTICS_CACHE_TTL = 30_000; // 30 seconds server-side cache to slash Supabase egress
+
 export async function getAdminAnalytics(token: string): Promise<FullAdminAnalytics> {
   await verifyOwner(token);
+
+  const now = Date.now();
+  if (adminAnalyticsCache && (now - adminAnalyticsCache.timestamp) < ADMIN_ANALYTICS_CACHE_TTL) {
+    return adminAnalyticsCache.data;
+  }
 
   // 1. Fetch current live presence
   const presence = await getOnlineUsers();
@@ -300,8 +308,8 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
     try {
       const [profilesRes, progressRes, entriesRes] = await Promise.all([
         supabase.from('learning_profiles').select('*'),
-        supabase.from('user_progress').select('user_id, academic_year, updated_at, data'),
-        supabase.from('learning_entries').select('*').order('created_at', { ascending: false }).limit(5000),
+        supabase.from('user_progress').select('user_id, academic_year, updated_at'),
+        supabase.from('learning_entries').select('user_id, module_code, question_id, chapter_id, correct, created_at').order('created_at', { ascending: false }).limit(2000),
       ]);
 
       const supaProfiles = profilesRes.data;
@@ -905,7 +913,7 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
   const activeToday = students.filter((s) => s.lastActive === today).length || Math.min(totalStudents, 3);
   const onlineNow = Math.max(presence.onlineCount, students.filter((s) => s.isOnline).length);
 
-  return {
+  const finalResult: FullAdminAnalytics = {
     summary: {
       totalStudents,
       onlineNow,
@@ -920,4 +928,7 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
     hardestQuestions,
     recentActivity,
   };
+
+  adminAnalyticsCache = { timestamp: Date.now(), data: finalResult };
+  return finalResult;
 }

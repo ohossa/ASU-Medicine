@@ -74,29 +74,31 @@ export async function getProfile(
         };
 
         // Automated Self-Healing Reconciliation:
-        // If profile.xp is 0 (or lower than what user earned in learning_entries),
-        // recalculate from learning_entries and restore it immediately!
-        const { data: entryRows } = await supabase
-          .from('learning_entries')
-          .select('question_id, ever_correct, correct')
-          .eq('user_id', id);
+        // Only query learning_entries if profile.xp === 0 to recover zeroed accounts,
+        // saving thousands of Supabase table reads and MBs of egress during standard sessions.
+        if (profile.xp === 0) {
+          const { data: entryRows } = await supabase
+            .from('learning_entries')
+            .select('question_id, ever_correct, correct')
+            .eq('user_id', id);
 
-        if (Array.isArray(entryRows) && entryRows.length > 0) {
-          const uniqueCorrect = new Set(
-            entryRows.filter((e) => e.ever_correct || e.correct).map((e) => e.question_id)
-          ).size;
-          const minEarnedXp = uniqueCorrect * 10;
-          if (minEarnedXp > profile.xp) {
-            profile.xp = minEarnedXp;
-            profile.competitiveXp = Math.max(profile.competitiveXp, minEarnedXp);
-            profile.level = Math.floor(minEarnedXp / 500) + 1;
-            // Persist healed progress to Supabase
-            await supabase.from('learning_profiles').update({
-              xp: profile.xp,
-              competitive_xp: profile.competitiveXp,
-              level: profile.level,
-              updated_at: new Date().toISOString(),
-            }).eq('user_id', id);
+          if (Array.isArray(entryRows) && entryRows.length > 0) {
+            const uniqueCorrect = new Set(
+              entryRows.filter((e) => e.ever_correct || e.correct).map((e) => e.question_id)
+            ).size;
+            const minEarnedXp = uniqueCorrect * 10;
+            if (minEarnedXp > profile.xp) {
+              profile.xp = minEarnedXp;
+              profile.competitiveXp = Math.max(profile.competitiveXp, minEarnedXp);
+              profile.level = Math.floor(minEarnedXp / 500) + 1;
+              // Persist healed progress to Supabase
+              await supabase.from('learning_profiles').update({
+                xp: profile.xp,
+                competitive_xp: profile.competitiveXp,
+                level: profile.level,
+                updated_at: new Date().toISOString(),
+              }).eq('user_id', id);
+            }
           }
         }
 

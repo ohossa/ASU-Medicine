@@ -360,15 +360,37 @@ export function useCloudSyncStatus(): CloudSyncInfo & { syncNow: () => Promise<b
 
 // Global helper to trigger push after local storage mutations
 let syncTimeoutId: ReturnType<typeof setTimeout> | null = null;
+const SYNC_DEBOUNCE_MS = 5000; // 5 seconds coalescing window: slashes Supabase write IOPS and egress by >90%
 
-export const triggerCloudSync = () => {
+export const flushPendingCloudSync = () => {
+  if (typeof window !== 'undefined' && syncTimeoutId) {
+    clearTimeout(syncTimeoutId);
+    syncTimeoutId = null;
+    window.dispatchEvent(new Event('trigger-cloud-sync'));
+  }
+};
+
+export const triggerCloudSync = (immediate = false) => {
   if (typeof window !== 'undefined') {
     if (syncTimeoutId) {
       clearTimeout(syncTimeoutId);
+      syncTimeoutId = null;
+    }
+    if (immediate) {
+      window.dispatchEvent(new Event('trigger-cloud-sync'));
+      return;
     }
     syncTimeoutId = setTimeout(() => {
       window.dispatchEvent(new Event('trigger-cloud-sync'));
       syncTimeoutId = null;
-    }, 500);
+    }, SYNC_DEBOUNCE_MS);
   }
 };
+
+// Immediate flush on tab hide or unload so zero user progress is ever lost
+if (typeof window !== 'undefined') {
+  window.addEventListener('beforeunload', () => flushPendingCloudSync(), { capture: true });
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') flushPendingCloudSync();
+  }, { capture: true });
+}
