@@ -1,37 +1,80 @@
-# Learning hub and XP — local review build
+# Learning Hub, Cloud Sync, and Dual Leaderboard Architecture
 
-Status: implemented locally, not committed, pushed or deployed. Existing production credentials were not downloaded. The AI report triage addition remains a proposal in `REPORT_AI_TRIAGE_PLAN.md`.
+Status: Fully migrated to Supabase PostgreSQL 15 with zero-reset immunity, automated self-healing XP reconciliation, bilingual display name profanity filtering, and dual (public opt-in + private master admin) leaderboards.
 
-## Student experience
+---
 
-`/learning` replaces the multi-year tracker selector with the student's saved academic year. Module cards show current-bank question coverage, latest objective accuracy, missed objective parts and weak topics (at least three attempts and below 70% accuracy). Modules without released content stay unavailable. Case coverage counts parents once while accuracy measures graded parts. Checklist completion is explicitly self-reported and does not award XP.
+## 1. Architecture Overview
 
-The hub includes progress, same-year weekly/lifetime leaderboards, earned banners and titles. Clerk's profile menu links to the hub and shows the earned learning profile. Responsive grids and focus states support small viewports; physical-device/authenticated live-backend checks have not yet been performed.
+```mermaid
+flowchart TD
+    Client[Student Browser / React Client] -->|/api/sync| SyncAPI[Vercel Serverless Sync API]
+    Client -->|/api/learning| LearnAPI[Vercel Serverless Learning API]
+    Admin[Admin Portal] -->|/api/admin-analytics| AdminAPI[Admin Analytics Gateway]
 
-## XP rules
+    SyncAPI <--> UP[(Supabase: user_progress)]
+    LearnAPI <--> LP[(Supabase: learning_profiles)]
+    LearnAPI <--> LE[(Supabase: learning_entries)]
+    AdminAPI <--> Clerk[(Clerk Identity API)]
+    AdminAPI <--> LP
+    AdminAPI <--> UP
+```
 
-| Question type | Personal XP | Competitive points |
-|---|---:|---:|
-| Correct MCQ | 10 | 10 |
-| Correct true/false | 5 | 5 |
-| Correct matching/blanks | 10 | 10 |
-| Self-graded correct essay | 15 | 0 |
-| Case | Sum of graded parts | Objective parts only |
+---
 
-Rewards occur once per normalized canonical content per account, across question IDs. No parent case bonus. Incorrect submissions update progress without XP. A later correct response can earn the first reward. Competitive points are capped at 500 per Cairo calendar day; personal XP continues. Every 500 personal XP increases the level. Weekly leaderboards reset on Monday in Cairo. Rankings require explicit consent and show an alias, points, level and banner; never email or account identifiers. Withdrawing consent removes current public rankings and readers suppress withdrawn entries in earlier periods.
+## 2. Zero-Reset Immunity & Academic Year Protection
 
-## Integrity and storage
+1. **Atomic Year Resolution (`api/sync.ts`)**:
+   - `academic_year` in `user_progress` is never defaulted to `1`.
+   - On POST: Synchronizes explicit academic year preference (`asu_preferences:<userId>:academic-year`), portal year, or active learning profile year.
+   - On GET: If a student's stored data contains a higher academic year (e.g., Year 3 `MGL-3`), the API automatically heals and serves their true academic year.
+2. **Context-Aware Learning Year (`api/learning.ts`)**:
+   - `service.year(id)` checks explicit preferences, `learning_profiles.year`, and queries the student's recent module entries in `learning_entries` (e.g. `MGL-3` module code suffix `-3` resolves to Year 3).
+3. **Unconditional Question Submission (`src/app/App.tsx`)**:
+   - Client submission is decoupled from transient client-side active-year state, ensuring all answered questions in valid modules are submitted for XP grading.
 
-The authenticated `/api/learning` service retrieves canonical question content and saved cloud year. It rejects wrong-year modules, missing questions, malformed submissions and invalid answers. Client-supplied points/correctness cannot award XP. A Redis Lua transaction atomically records progress, duplicate prevention, daily cap, streak and ranking updates. Personal state is separate from generic client cloud-sync writes. Cosmetics require an earned level; aliases cannot be emails.
+---
 
-Pending completions are persisted per account and retried after reconnect or manually. Results never wait on XP sync. Only server-confirmed balances appear in the UI. Duplicate retries cannot earn twice. Errors and pending counts remain visible; students can discard pending XP submissions after confirmation without deleting quiz history.
+## 3. Automated Self-Healing XP Reconciliation
 
-Old local XP is retained but does not enter competitive balances. Old shared checklists require an explicit confirmation before importing into an account-specific key. New checklist keys persist in cloud storage without the general sync expiry and are filtered by account on upload/download. This feature does not claim that all older site history storage has been migrated.
+1. **Self-Healing Engine (`server/learning-store.ts`)**:
+   - In `getProfile(id, year)`: If a student's profile has `xp: 0` or `level: 1` but they have answered questions in `learning_entries`, the server queries their unique correct questions, awards $10\text{ XP}$ per question, calculates their true level ($\lfloor\text{XP}/500\rfloor + 1$), and immediately persists it to Supabase `learning_profiles`.
+2. **Foreign Key Integrity**:
+   - `award()` guarantees that `learning_profiles` exists in Supabase *before* inserting attempt records into `learning_entries`, completely eliminating foreign key constraint failures.
+3. **Cross-Module Progress Visibility (`dashboard`)**:
+   - Module progress calculations receive all of the student's answered entries across all modules, ensuring that modules like GIT & Liver Module (`MGL-3`) display true attempt counts and mastery instead of "0 of 6532 attempted".
 
-## Verification and local limits
+---
 
-The final local preview passed 461 tests across 68 files, including the subsequent startup and History imports; strict TypeScript and production build passed. Six additional tests executed the actual reward Lua in a Redis-compatible emulator, covering retries, wrong-then-correct, essay isolation, cap, consent and levels/streak. The emulator is not hosted Redis. Do not claim a live integration test until authenticated production-equivalent credentials are available on the hosted preview.
+## 4. Bilingual Display Name Profanity Filter (`server/profanity-filter.ts`)
 
-New tests cover canonical bank loading, reward policy, year restriction, malformed inputs, settings, progress calculations, durable retries, account queues and hub availability/reward locks. Existing source-bank and true/false tests remain intact.
+- **Bilingual Detection**: High-performance, zero-dependency validator covering English and Arabic (Egyptian slang + Modern Standard Arabic) profanities, vulgarities, slurs, insults, and harassment.
+- **Anti-Evasion Normalization**:
+  - Arabic: Strips tashkeel (diacritics), tatweel (kashida), normalizes alef variants (أ, إ, آ, ٱ $\to$ ا), taa marbouta (ة $\to$ ه), alef maqsura (ى $\to$ ي), and collapses repeated characters.
+  - English: Lowercases, strips punctuation, translates common leetspeak substitutions (`1`/`!` $\to$ `i`, `0` $\to$ `o`, `$` $\to$ `s`, `@` $\to$ `a`), and collapses repeated letters.
+  - Word-boundary matching protects authentic student names (e.g. "مصطفى", "Dr. Sarah", "Ahmed Mohamed", "نور الدين").
+- **Client & Server Enforcement**:
+  - Validated server-side in `server/learning-service.ts` settings endpoint.
+  - Real-time client-side feedback in `src/pages/LearningHub.tsx` with live character counter (3–24 characters) and inline alert banner.
 
-No additional private key is required by this design beyond the existing hosted Clerk and Redis configuration. Local development without these hosted credentials may display a sync error; it must not invent XP or silently grant admin privileges.
+---
+
+## 5. Dual Leaderboards
+
+### A. Public Leaderboard (`src/pages/LearningHub.tsx`)
+- Accessible via the **Leaderboard** tab on the Progress page.
+- **Participation is completely optional**: Includes an accessible switch toggle (*"Show my name on the leaderboard"*).
+- Apple HIG Top 3 Podium:
+  - 🥇 **#1 Champion** (Gold ring, crown badge)
+  - 🥈 **#2 Contender** (Silver ring, medal badge)
+  - 🥉 **#3 Achiever** (Bronze ring, medal badge)
+- Ranked roster list with current user highlighted (`isYou: true`, *"You · أنت"*).
+- Segmented toggle: **This Week** (`weekly`) vs. **All Time** (`all`).
+- Friendly empty state with Trophy icon when no one has opted in yet.
+
+### B. Master Admin Leaderboard (`server/admin-analytics-service.ts`, `src/pages/admin/AdminAnalyticsView.tsx`)
+- Private panel for portal administrators.
+- **100% Account Visibility**: Queries Clerk Backend Users API and joins with Supabase `learning_profiles`, `user_progress`, and `presence`.
+- Displays **real student names** (First + Last), **verified primary email addresses**, **Clerk profile photos/avatars**, and **public aliases**.
+- Multi-field search across real name, email, account ID, and alias.
+- Filter by Academic Year (All, Year 1–5), Online-only filter, and multi-metric sorting.
