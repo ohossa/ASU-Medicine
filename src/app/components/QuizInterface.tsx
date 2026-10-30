@@ -55,9 +55,9 @@ interface Props {
 /* ----------------------------- Motion variants ----------------------------- */
 
 const questionVariants = {
-  enter: (dir: number) => ({ opacity: 0, x: dir * 48, scale: 0.98 }),
-  center: { opacity: 1, x: 0, scale: 1 },
-  exit: (dir: number) => ({ opacity: 0, x: dir * -48, scale: 0.98 })
+  enter: (dir: number) => ({ opacity: 0, x: dir * 24 }),
+  center: { opacity: 1, x: 0 },
+  exit: (dir: number) => ({ opacity: 0, x: dir * -24 })
 };
 
 /* --------------------------------- Helpers -------------------------------- */
@@ -291,52 +291,71 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     }
   }, [answers, current, question, playSound, language]);
 
-  /* Auto-save quiz session (debounced 2s after last change) — essayDrafts stored separately via saveLocalDrafts */
+  /* Auto-save quiz session (debounced 1.5s after last change) — essayDrafts stored separately via saveLocalDrafts */
   const quizDataRef = useRef({ current: 0, answers: {} as Record<number, QuizAnswer>, elapsedSeconds: 0, flagged: [] as number[], finished: false, timerMode: 'practice' as TimerMode, showEssayAnswer: false });
   const autoSaveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const draftSaveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const questionIds = React.useMemo(() => questions.map(question => question.id), [questions]);
   const questionVersions = React.useMemo(() => questions.map(q => q.contentVersion ?? 'source'), [questions]);
   useLayoutEffect(() => {
     quizDataRef.current = { current, answers, elapsedSeconds: totalElapsed, flagged: [...flagged], finished, timerMode, showEssayAnswer };
   });
+
+  const debouncedSaveDrafts = React.useCallback((nextDrafts: Record<number, string>) => {
+    if (draftSaveTimerRef.current) clearTimeout(draftSaveTimerRef.current);
+    draftSaveTimerRef.current = setTimeout(() => {
+      saveLocalDrafts(chapter?.id ?? -1, subject?.sessionKey ?? subject?.name ?? 'all', nextDrafts);
+    }, 500);
+  }, [chapter?.id, subject?.sessionKey, subject?.name]);
+
+  // Dedicated unmount save: runs once when the user unmounts/leaves the quiz
+  useEffect(() => {
+    return () => {
+      if (draftSaveTimerRef.current) clearTimeout(draftSaveTimerRef.current);
+      const d = quizDataRef.current;
+      if (!d.finished) {
+        saveQuizSession({
+          chapterId: chapter?.id ?? -1,
+          subjectName: subject?.sessionKey ?? subject?.name ?? 'all',
+          current: d.current,
+          answers: d.answers,
+          elapsedSeconds: d.elapsedSeconds,
+          flagged: d.flagged,
+          finished: d.finished,
+          timerMode: d.timerMode,
+          showEssayAnswer: d.showEssayAnswer,
+          questionIds,
+          questionVersions,
+        });
+      }
+    };
+  }, [chapter?.id, subject?.name, subject?.sessionKey, saveQuizSession, questionIds, questionVersions]);
+
+  // Debounced auto-save: saves 1500ms after user pauses without blocking keystrokes or option clicks
   useEffect(() => {
     if (quizDataRef.current.finished) return;
     if (autoSaveTimerRef.current) clearTimeout(autoSaveTimerRef.current);
     autoSaveTimerRef.current = setTimeout(() => {
       const d = quizDataRef.current;
-      saveQuizSession({
-        chapterId: chapter.id,
-        subjectName: subject?.sessionKey ?? subject?.name ?? 'all',
-        current: d.current,
-        answers: d.answers,
-        elapsedSeconds: d.elapsedSeconds,
-        flagged: d.flagged,
-        finished: d.finished,
-        timerMode: d.timerMode,
-        showEssayAnswer: d.showEssayAnswer,
-        questionIds,
-        questionVersions,
-      });
-    }, 2000);
+      if (!d.finished) {
+        saveQuizSession({
+          chapterId: chapter.id,
+          subjectName: subject?.sessionKey ?? subject?.name ?? 'all',
+          current: d.current,
+          answers: d.answers,
+          elapsedSeconds: d.elapsedSeconds,
+          flagged: d.flagged,
+          finished: d.finished,
+          timerMode: d.timerMode,
+          showEssayAnswer: d.showEssayAnswer,
+          questionIds,
+          questionVersions,
+        });
+      }
+    }, 1500);
     return () => {
       if (autoSaveTimerRef.current) {
         clearTimeout(autoSaveTimerRef.current);
-        const d = quizDataRef.current;
-        if (!d.finished) {
-          saveQuizSession({
-            chapterId: chapter?.id ?? -1,
-            subjectName: subject?.sessionKey ?? subject?.name ?? 'all',
-            current: d.current,
-            answers: d.answers,
-            elapsedSeconds: d.elapsedSeconds,
-            flagged: d.flagged,
-            finished: d.finished,
-            timerMode: d.timerMode,
-            showEssayAnswer: d.showEssayAnswer,
-            questionIds,
-            questionVersions,
-          });
-        }
       }
     };
   }, [current, answers, flagged, timerMode, showEssayAnswer, chapter?.id, subject?.name, subject?.sessionKey, saveQuizSession, questionIds, questionVersions]);
@@ -629,7 +648,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           const selected = value === i;
           const isCorrect = i === q.correctIndex;
 
-          let btnClass = 'group flex w-full items-center gap-3.5 rounded-xl border px-4 py-3.5 text-start transition-all duration-200 btn-press ';
+          let btnClass = 'group flex w-full items-center gap-3.5 rounded-xl border px-4 py-3.5 text-start transition-colors duration-150 active:scale-[0.99] transition-transform btn-press ';
           if (!hasAnswered) {
             btnClass += 'option-hover ';
           }
@@ -650,10 +669,10 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           }
 
           return (
-            <motion.button
+            <button
               key={i}
+              type="button"
               disabled={hasAnswered}
-              whileTap={hasAnswered ? undefined : { scale: 0.985 }}
               onClick={() => onChange(i)}
               className={btnClass}
             >
@@ -667,7 +686,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 )}
               </span>
               <span className="min-w-0 whitespace-pre-wrap text-sm leading-relaxed [overflow-wrap:anywhere]">{opt}</span>
-            </motion.button>
+            </button>
           );
         })}
       </div>
@@ -686,7 +705,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           const selected = selectedIndex === (val ? 0 : 1);
           const isCorrect = val === (question.correctIndex === 0);
 
-          let btnClass = 'flex flex-col items-center justify-center gap-2 rounded-2xl border py-6 min-h-[96px] transition-all duration-200 btn-press ';
+          let btnClass = 'flex flex-col items-center justify-center gap-2 rounded-2xl border py-6 min-h-[96px] transition-colors duration-150 active:scale-[0.98] transition-transform btn-press ';
 
           if (!hasAnswered) {
             btnClass += 'border-gray-200 dark:border-white/[0.07] bg-gray-50/50 dark:bg-white/[0.025] text-gray-700 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/[0.06]';
@@ -699,11 +718,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           }
 
           return (
-            <motion.button
+            <button
               key={label}
+              type="button"
               aria-label={label}
               disabled={hasAnswered}
-              whileTap={hasAnswered ? undefined : { scale: 0.97 }}
               onClick={() => onChange(val)}
               className={btnClass}
             >
@@ -716,7 +735,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                   </kbd>
                 )}
               </div>
-            </motion.button>
+            </button>
           );
         })}
       </div>
@@ -735,13 +754,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             setEssayDraft(val);
             const nextDrafts = { ...essayDrafts, [current]: val };
             setEssayDrafts(nextDrafts);
-            // Immediate local save (no cloud, no debounce)
-            saveLocalDrafts(chapter?.id ?? -1, subject?.sessionKey ?? subject?.name ?? 'all', nextDrafts);
-            onChange({ text: val, selfGrade: asEssayAnswer(value)?.selfGrade });
+            debouncedSaveDrafts(nextDrafts);
+          }}
+          onBlur={() => {
+            saveLocalDrafts(chapter?.id ?? -1, subject?.sessionKey ?? subject?.name ?? 'all', essayDrafts);
           }}
           rows={7}
           placeholder={t('essayPlaceholder') || "Type your answer…"}
-          className="w-full resize-y rounded-xl border border-gray-200 dark:border-white/[0.08] bg-white dark:bg-black/30 p-4 text-sm leading-relaxed text-gray-950 dark:text-white placeholder-gray-400 dark:placeholder-white/25 outline-none transition-colors focus:border-gray-400 dark:focus:border-white/25 backdrop-blur-xl"
+          className="w-full resize-y rounded-xl border border-gray-200 dark:border-white/[0.08] bg-white dark:bg-[#161618] p-4 text-sm leading-relaxed text-gray-950 dark:text-white placeholder-gray-400 dark:placeholder-white/25 outline-none transition-colors focus:border-gray-400 dark:focus:border-white/25"
         />
         <div className="flex items-center justify-between text-xs text-gray-500 dark:text-white/35">
           <span className="flex items-center gap-1.5">
@@ -1106,6 +1126,9 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                       onChange={e => {
                         const val = e.target.value;
                         setSubEssayDrafts(prev => ({ ...prev, [subQ.id]: val }));
+                      }}
+                      onBlur={() => {
+                        const val = subEssayDrafts[subQ.id] || '';
                         onChange({
                           ...subAns,
                           [subQ.id]: { text: val, selfGrade: asEssayAnswer(subVal)?.selfGrade }
@@ -1114,7 +1137,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                       onFocus={() => { lastFocusedSubQ.current = subQ.id; }}
                       rows={3}
                       placeholder="Type your essay answer…"
-                      className="w-full resize-y rounded-xl border border-gray-200 dark:border-white/[0.08] bg-white dark:bg-black/30 p-4 text-xs leading-relaxed text-gray-950 dark:text-white placeholder-gray-400 dark:placeholder-white/25 outline-none transition-colors focus:border-gray-400 dark:focus:border-white/25 backdrop-blur-xl"
+                      className="w-full resize-y rounded-xl border border-gray-200 dark:border-white/[0.08] bg-white dark:bg-[#161618] p-4 text-xs leading-relaxed text-gray-950 dark:text-white placeholder-gray-400 dark:placeholder-white/25 outline-none transition-colors focus:border-gray-400 dark:focus:border-white/25"
                     />
 
                     {!isCompleted && !revealedSubEssays[subQ.id] && (
@@ -1391,7 +1414,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
       {/* Main */}
       <section aria-label={isRTL ? "التدريب على الأسئلة" : "Question practice"} className="relative mx-auto max-w-4xl px-4 py-8 sm:px-6">
-        <AnimatePresence mode="wait" custom={direction}>
+        <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={current}
             custom={direction}
@@ -1399,7 +1422,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             initial="enter"
             animate="center"
             exit="exit"
-            transition={{ duration: 0.25, ease: 'easeOut' }}
+            transition={{ duration: 0.12, ease: [0.25, 1, 0.5, 1] }}
           >
             {/* Question meta */}
             <div className="mb-4 flex items-center justify-between">

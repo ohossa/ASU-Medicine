@@ -145,8 +145,24 @@ export function LearningProvider({ children }: { children: ReactNode }) {
 
         try {
           const result = await request<{ personal?: number }>("POST", mergedSubmission);
-          if (activeId.current === id && Number.isSafeInteger(result.personal) && result.personal! > 0 && !document.hidden)
-            setAwardNotice({ id: Date.now(), account: id, amount: result.personal! });
+          if (activeId.current === id && Number.isSafeInteger(result.personal) && result.personal! > 0) {
+            if (!document.hidden) setAwardNotice({ id: Date.now(), account: id, amount: result.personal! });
+            setSnapshot((prev) => {
+              if (!prev || prev.id !== id) return prev;
+              const nextXp = prev.data.profile.xp + result.personal!;
+              return {
+                ...prev,
+                data: {
+                  ...prev.data,
+                  profile: {
+                    ...prev.data.profile,
+                    xp: nextXp,
+                    level: Math.floor(nextXp / 500) + 1,
+                  },
+                },
+              };
+            });
+          }
           const latest = readQueue(id).filter((item) => !batchIds.has(item.id));
           localStorage.setItem(queueKey(id), JSON.stringify(latest));
           queue = latest;
@@ -166,7 +182,7 @@ export function LearningProvider({ children }: { children: ReactNode }) {
           throw itemErr;
         }
       }
-      if (flushed && activeId.current === id) await refresh();
+      if (flushed && activeId.current === id && !snapshot) await refresh();
     } catch (e) {
       if (activeId.current === id)
         setError(
@@ -228,6 +244,7 @@ export function LearningProvider({ children }: { children: ReactNode }) {
       clearInterval(interval);
     };
   }, [retry, refresh, isLoaded, userId]);
+
   const submit = useCallback(
     (submission: LearningSubmission) => {
       if (!userId) return;

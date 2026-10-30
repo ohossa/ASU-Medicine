@@ -754,7 +754,42 @@ function MainApp() {
     setQuizPayload({chapter,childAnchor:params.get('child')??undefined,subject:resume?(custom?.subject??{...(target.subject??chapter.subjects[0]),name:resume,questions}):params.has('missed')?missedPracticeSubject(subject,questions,chapter.accentColor):subject,questions:validSaved?(validSaved.questionIds?restoreQuestionOrder(questions,validSaved.questionIds)!:questions):questions,savedSession:validSaved});setScreen('quiz');
   },[location.pathname,location.search,bankRevision,learning.data]);
 
+  const answerBufferRef = useRef<{ questionId: string; answer: QuizAnswer }[]>([]);
+  const answerFlushTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const flushAnswerBuffer = useCallback(() => {
+    if (answerFlushTimerRef.current) {
+      clearTimeout(answerFlushTimerRef.current);
+      answerFlushTimerRef.current = null;
+    }
+    if (!answerBufferRef.current.length || !selectedModule) return;
+    const items = [...answerBufferRef.current];
+    answerBufferRef.current = [];
+    learning.submit({ moduleCode: selectedModule.code, items });
+  }, [learning, selectedModule]);
+
+  const handleAnswerXP = useCallback((q: Question, answer: QuizAnswer) => {
+    if (!selectedModule) return;
+    answerBufferRef.current.push({ questionId: String(q.id), answer });
+    if (answerFlushTimerRef.current) clearTimeout(answerFlushTimerRef.current);
+    answerFlushTimerRef.current = setTimeout(flushAnswerBuffer, 2500);
+  }, [selectedModule, flushAnswerBuffer]);
+
+  useEffect(() => {
+    return () => {
+      if (answerFlushTimerRef.current) {
+        clearTimeout(answerFlushTimerRef.current);
+        answerFlushTimerRef.current = null;
+      }
+    };
+  }, []);
+
   const handleFinishQuiz = (answers: Record<number, QuizAnswer>, elapsedSeconds: number, flaggedQuestions: Set<number>) => {
+    if (answerFlushTimerRef.current) {
+      clearTimeout(answerFlushTimerRef.current);
+      answerFlushTimerRef.current = null;
+    }
+    answerBufferRef.current = [];
     const questions = quizPayload!.questions;
     
     const scoreParts=questions.map((q,i)=>questionScore(q,answers[i]));
@@ -1171,7 +1206,7 @@ function MainApp() {
                     handleSelectSubject={handleSelectSubject}
                     handleQuickStart={handleQuickStart}
                     quizPayload={quizPayload}
-                    handleAnswerXP={(q,answer)=>{if(selectedModule)learning.submit({moduleCode:selectedModule.code,items:[{questionId:String(q.id),answer}]});}}
+                    handleAnswerXP={handleAnswerXP}
                     handleFinishQuiz={handleFinishQuiz}
                     resultPayload={resultPayload}
                     handleRetake={handleRetake}
@@ -1678,8 +1713,8 @@ export default function App() {
                 </Suspense>
               )
             )}
-            <div className="absolute top-[-10%] left-[-5%] h-[45vw] w-[45vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/20 to-transparent dark:from-physiology/10" style={{ filter: 'blur(50px)', transform: 'translateZ(0)' }} />
-            <div className="absolute bottom-[-10%] right-[-5%] h-[50vw] w-[50vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-anatomy/20 to-transparent dark:from-anatomy/10" style={{ filter: 'blur(60px)', transform: 'translateZ(0)' }} />
+            <div className="absolute top-[-10%] left-[-5%] h-[45vw] w-[45vw] rounded-full bg-[radial-gradient(circle_at_center,_rgba(16,185,129,0.08)_0%,_transparent_70%)] dark:bg-[radial-gradient(circle_at_center,_rgba(16,185,129,0.04)_0%,_transparent_70%)] pointer-events-none" style={{ transform: 'translateZ(0)' }} />
+            <div className="absolute bottom-[-10%] right-[-5%] h-[50vw] w-[50vw] rounded-full bg-[radial-gradient(circle_at_center,_rgba(59,130,246,0.08)_0%,_transparent_70%)] dark:bg-[radial-gradient(circle_at_center,_rgba(59,130,246,0.04)_0%,_transparent_70%)] pointer-events-none" style={{ transform: 'translateZ(0)' }} />
           </div>
 
           {(isSignedIn || isDevPreview) ? (
