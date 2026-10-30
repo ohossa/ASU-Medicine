@@ -303,12 +303,34 @@ export default async function handler(req: any, res: any) {
             let year = existingRow?.academic_year || 1;
             if (body[yearKey]?.year) {
               year = body[yearKey].year;
-              // Synchronize year with learning_profiles table
-              await supabase.from('learning_profiles').upsert({
-                user_id: userId,
-                year,
-                updated_at: new Date().toISOString(),
-              }, { onConflict: 'user_id' }).then(() => {}, () => {});
+              // Synchronize year with learning_profiles table without resetting XP
+              const { data: existingProf } = await supabase
+                .from('learning_profiles')
+                .select('user_id')
+                .eq('user_id', userId)
+                .maybeSingle();
+
+              if (existingProf) {
+                await supabase.from('learning_profiles').update({
+                  year,
+                  updated_at: new Date().toISOString(),
+                }).eq('user_id', userId);
+              } else {
+                await supabase.from('learning_profiles').insert({
+                  user_id: userId,
+                  year,
+                  xp: 0,
+                  competitive_xp: 0,
+                  level: 1,
+                  streak: 0,
+                  best_streak: 0,
+                  alias: 'Student',
+                  opt_in: false,
+                  banner: 'default',
+                  title: 'student',
+                  updated_at: new Date().toISOString(),
+                });
+              }
             }
 
             const { error: upsertErr } = await supabase.from('user_progress').upsert({

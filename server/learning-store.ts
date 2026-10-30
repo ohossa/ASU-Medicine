@@ -102,6 +102,12 @@ export async function saveProfile(
       await supabase.from('learning_profiles').upsert({
         user_id: id,
         year,
+        xp: next.xp,
+        competitive_xp: next.competitiveXp,
+        level: next.level,
+        streak: next.streak,
+        best_streak: next.bestStreak,
+        last_day: next.lastDay,
         alias: next.alias,
         opt_in: next.optIn,
         banner: next.banner,

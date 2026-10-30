@@ -1,5 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { award } from "../../../server/learning-store";
+import { cairoDay } from "../../../server/learning-policy";
 import * as supabaseClient from "../../../server/supabase-client";
 
 describe("Supabase-First Learning & Cutover Resilience", () => {
@@ -8,6 +9,11 @@ describe("Supabase-First Learning & Cutover Resilience", () => {
   });
 
   it("calculates XP, updates profile, and awards points directly via Supabase", async () => {
+    const today = cairoDay();
+    const d = new Date(today + "T12:00:00Z");
+    d.setUTCDate(d.getUTCDate() - 1);
+    const yesterday = d.toISOString().slice(0, 10);
+
     const mockProfile = {
       user_id: "user_test_123",
       year: 3,
@@ -16,7 +22,7 @@ describe("Supabase-First Learning & Cutover Resilience", () => {
       level: 5,
       streak: 4,
       best_streak: 4,
-      last_day: "2026-10-28",
+      last_day: yesterday,
       alias: "Test Student",
       opt_in: true,
       banner: "default",

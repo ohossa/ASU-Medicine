@@ -160,6 +160,21 @@ describe("Supabase-First Sync API (/api/sync)", () => {
         }
         if (table === "learning_profiles") {
           return {
+            select: vi.fn(() => ({
+              eq: vi.fn(() => ({
+                maybeSingle: vi.fn(async () => ({ data: null, error: null })),
+              })),
+            })),
+            insert: vi.fn(async (row: any) => {
+              savedProfileYear = row;
+              return { error: null };
+            }),
+            update: vi.fn(() => ({
+              eq: vi.fn(async () => {
+                savedProfileYear = { year: 4 };
+                return { error: null };
+              }),
+            })),
             upsert: vi.fn(async (row: any) => {
               savedProfileYear = row;
               return { error: null };
