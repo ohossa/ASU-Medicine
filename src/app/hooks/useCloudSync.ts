@@ -23,9 +23,7 @@ const STORAGE_KEYS = [
   'asu_marks_calculator_selected_preset',
   'asu_marks_calculator_scores',
   'asu_marks_calculator_custom_name',
-  'asu_marks_calculator_custom_sections',
-  'asu_marks_calculator_year_tab',
-  'asu_marks_calculator_semester_tab'
+  'asu_marks_calculator_custom_sections'
 ];
 
 export function useCloudSync() {
@@ -36,10 +34,12 @@ export function useCloudSync() {
   const isDirtyRef = useRef(false);
   // Track the last-synced value of each key to compute deltas
   const lastSyncedRef = useRef<Record<string, string>>({});
+  const lastEtagRef = useRef<string | null>(null);
   const getTokenRef = useRef(getToken);
 
   useEffect(() => {
     lastSyncedRef.current = {};
+    lastEtagRef.current = null;
     isDirtyRef.current = false;
   }, [userId]);
 
@@ -174,15 +174,28 @@ export function useCloudSync() {
       for(let i=0;i<localStorage.length;i++) { const key=localStorage.key(i);if(key)before.set(key,localStorage.getItem(key)); }
       try {
         const token = await getTokenRef.current();
+        const lastEtag = lastEtagRef.current;
         const res = await fetch('/api/sync', {
-          headers: { Authorization: `Bearer ${token}` },
+          headers: {
+            Authorization: `Bearer ${token}`,
+            ...(lastEtag ? { 'If-None-Match': lastEtag } : {})
+          },
           signal: AbortSignal.timeout(30000)
         });
+
+        if (res.status === 304) {
+          // HTTP 304 Not Modified: Cloud data is identical to local, 0 bytes egress transferred
+          updateCloudSyncInfo({ status: 'synced', lastSyncedAt: new Date(), error: null });
+          return;
+        }
 
         if (!res.ok) {
           const errText = await res.text();
           throw new Error(`API sync failed: ${res.status} - ${errText}`);
         }
+
+        const incomingEtag = res.headers?.get ? res.headers.get('ETag') : null;
+        if (incomingEtag) lastEtagRef.current = incomingEtag;
 
         const { data } = await res.json();
 

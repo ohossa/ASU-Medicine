@@ -261,6 +261,52 @@ describe("Supabase-First Sync API (/api/sync)", () => {
     expect(selectColumns).toBe("academic_year"); // Verified: does NOT select massive data JSON blob
   });
 
+  it("returns HTTP 304 Not Modified with zero body payload when client sends matching If-None-Match ETag (0 bytes egress)", async () => {
+    mocks.verifyToken.mockResolvedValue({
+      sub: "user_etag_test",
+    });
+
+    const timestamp = "2026-10-30T15:00:00.000Z";
+    mocks.supabase = {
+      from: vi.fn((table: string) => {
+        if (table === "user_progress") {
+          return {
+            select: vi.fn(() => ({
+              eq: vi.fn(() => ({
+                maybeSingle: vi.fn(async () => ({
+                  data: {
+                    academic_year: 2,
+                    data: { theme: "dark" },
+                    updated_at: timestamp,
+                  },
+                  error: null,
+                })),
+              })),
+            })),
+          };
+        }
+        return {};
+      }),
+    };
+
+    const { default: handler } = await import("../../../api/sync");
+    const req: any = {
+      method: "GET",
+      headers: {
+        authorization: "Bearer valid_token",
+        "if-none-match": `W/"${timestamp}"`,
+      },
+    };
+    const res = mockRes();
+    res.end = vi.fn(() => res);
+
+    await handler(req, res);
+
+    expect(res.statusCode).toBe(304);
+    expect(res.headers["ETag"]).toBe(`W/"${timestamp}"`);
+    expect(res.body).toBeNull(); // 0 bytes transferred
+  });
+
   it("skips Supabase user_progress upsert on POST when data and academic_year are identical (prevents TOAST Disk IO churn)", async () => {
     mocks.verifyToken.mockResolvedValue({
       sub: "user_toast_guard_test",

@@ -208,11 +208,18 @@ export default async function handler(req: any, res: any) {
 
           const { data: row, error } = await supabase
             .from('user_progress')
-            .select('data, academic_year')
+            .select('data, academic_year, updated_at')
             .eq('user_id', userId)
             .maybeSingle();
 
           if (!error && row) {
+            const etag = `W/"${row.updated_at || '0'}"`;
+            res.setHeader('ETag', etag);
+            const clientEtag = req.headers['if-none-match'];
+            if (clientEtag && clientEtag === etag) {
+              return res.status(304).end();
+            }
+
             const resultData = (typeof row.data === 'object' && row.data !== null) ? { ...(row.data as Record<string, unknown>) } : {};
             const yearKey = `asu_preferences:${userId}:academic-year`;
 
