@@ -177,6 +177,7 @@ export async function award(id: string, year: number, rewards: unknown[]) {
       let personalAdd = 0;
       let competitiveAdd = 0;
 
+      const entryRows: any[] = [];
       for (const r of rewards as any[]) {
         if (!r || !r.questionId) continue;
         const qId = String(r.questionId);
@@ -193,7 +194,7 @@ export async function award(id: string, year: number, rewards: unknown[]) {
           .update(`${id}:${r.moduleCode}:${qId}`)
           .digest('hex');
 
-        await supabase.from('learning_entries').upsert({
+        entryRows.push({
           id: entryId,
           user_id: id,
           module_code: r.moduleCode,
@@ -207,7 +208,11 @@ export async function award(id: string, year: number, rewards: unknown[]) {
           first_correct: existingMap.has(qId) ? wasEverCorrect : isNowCorrect,
           content_version: r.contentVersion || '',
           updated_at: nowIso,
-        }, { onConflict: 'id' });
+        });
+      }
+
+      if (entryRows.length > 0) {
+        await supabase.from('learning_entries').upsert(entryRows, { onConflict: 'id' });
       }
 
       const { data: profRow } = await supabase

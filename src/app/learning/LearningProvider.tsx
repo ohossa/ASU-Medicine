@@ -121,20 +121,41 @@ export function LearningProvider({ children }: { children: ReactNode }) {
       let queue = initialQueue;
       let flushed = false;
       while (queue.length && activeId.current === id) {
-        const sent = queue[0];
+        const first = queue[0];
+        // Coalesce contiguous items for the same module (up to 50 questions per batch)
+        const batch: typeof queue = [];
+        let totalQuestions = 0;
+        for (const item of queue) {
+          if (item.submission.moduleCode === first.submission.moduleCode) {
+            const count = item.submission.items?.length || 0;
+            if (totalQuestions + count <= 50) {
+              batch.push(item);
+              totalQuestions += count;
+              continue;
+            }
+          }
+          break;
+        }
+
+        const mergedSubmission: LearningSubmission = {
+          moduleCode: first.submission.moduleCode,
+          items: batch.flatMap((b) => b.submission.items || []),
+        };
+        const batchIds = new Set(batch.map((b) => b.id));
+
         try {
-          const result = await request<{personal?:number}>("POST", sent.submission);
-          if(activeId.current===id && Number.isSafeInteger(result.personal) && result.personal!>0 && !document.hidden)
-            setAwardNotice({id:Date.now(),account:id,amount:result.personal!});
-          const latest = readQueue(id).filter((item) => item.id !== sent.id);
+          const result = await request<{ personal?: number }>("POST", mergedSubmission);
+          if (activeId.current === id && Number.isSafeInteger(result.personal) && result.personal! > 0 && !document.hidden)
+            setAwardNotice({ id: Date.now(), account: id, amount: result.personal! });
+          const latest = readQueue(id).filter((item) => !batchIds.has(item.id));
           localStorage.setItem(queueKey(id), JSON.stringify(latest));
           queue = latest;
           flushed = true;
           if (activeId.current === id) setPending(queue.length);
         } catch (itemErr: any) {
-          // If server rejected item permanently (400 Bad Request), discard it so it does not block the queue
+          // If server rejected item permanently (400 Bad Request, 409 Conflict), drop the first item to isolate bad input
           if (itemErr && (itemErr.status === 400 || itemErr.status === 409)) {
-            const latest = readQueue(id).filter((item) => item.id !== sent.id);
+            const latest = readQueue(id).filter((item) => item.id !== first.id);
             localStorage.setItem(queueKey(id), JSON.stringify(latest));
             queue = latest;
             flushed = true;

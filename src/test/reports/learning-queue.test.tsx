@@ -125,3 +125,35 @@ it('refreshes server progress when returning to an already-open tab', async()=>{
  await screen.findByText('10');
  expect(screen.queryByText('+10 XP')).not.toBeInTheDocument();
 });
+
+it('coalesces multiple pending queue items for the same module into a single batch request', async () => {
+  const sentBodies: any[] = [];
+  vi.stubGlobal('fetch', vi.fn(async (_url, options) => {
+    if (options.method === 'POST') {
+      sentBodies.push(JSON.parse(options.body));
+      return { ok: true, json: async () => ({ personal: 50, competitive: 50 }) };
+    }
+    return { ok: true, json: async () => ({ profile: { xp: 50 }, entries: [], leaderboard: [] }) };
+  }));
+
+  // Simulate 5 queued items for MGL-3 in localStorage
+  localStorage.setItem(
+    queueKey("alice"),
+    JSON.stringify([
+      { id: "q1", submission: { moduleCode: "MGL-3", items: [{ questionId: "1", answer: 1 }] } },
+      { id: "q2", submission: { moduleCode: "MGL-3", items: [{ questionId: "2", answer: 2 }] } },
+      { id: "q3", submission: { moduleCode: "MGL-3", items: [{ questionId: "3", answer: 0 }] } },
+      { id: "q4", submission: { moduleCode: "MGL-3", items: [{ questionId: "4", answer: 1 }] } },
+      { id: "q5", submission: { moduleCode: "MGL-3", items: [{ questionId: "5", answer: 3 }] } },
+    ])
+  );
+
+  render(<LearningProvider><Harness /></LearningProvider>);
+  await waitFor(() => expect(screen.getByText('0 pending')).toBeInTheDocument());
+
+  // All 5 queue items coalesced into a SINGLE POST request with 5 items!
+  expect(sentBodies).toHaveLength(1);
+  expect(sentBodies[0].moduleCode).toBe("MGL-3");
+  expect(sentBodies[0].items).toHaveLength(5);
+  expect(JSON.parse(localStorage.getItem(queueKey("alice"))!)).toHaveLength(0);
+});

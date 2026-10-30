@@ -13,7 +13,7 @@ import {
 } from "../server/learning-store.js";
 
 const inMemoryRates = new Map<string, { count: number; resetAt: number }>();
-function checkRateLimit(id: string, maxPerMinute = 120): boolean {
+function checkRateLimit(id: string, maxPerMinute = 2500): boolean {
   const now = Date.now();
   const entry = inMemoryRates.get(id);
   if (!entry || now > entry.resetAt) {
@@ -95,7 +95,7 @@ const service = createLearningService({
     }
   },
   rate: async (id) => {
-    if (!checkRateLimit(id, 120)) return false;
+    if (!checkRateLimit(id, 2500)) return false;
     try {
       const n = Number(
         await evalRedis(
@@ -103,7 +103,7 @@ const service = createLearningService({
           [`asu_learning:v1:rate:${id}`],
         ),
       );
-      return n <= 120;
+      return n <= 2500;
     } catch {
       return true;
     }

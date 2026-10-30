@@ -57,7 +57,8 @@ describe("Supabase-First Learning & Cutover Resilience", () => {
               })),
             })),
             upsert: vi.fn(async (entry: any) => {
-              savedEntries.push(entry);
+              if (Array.isArray(entry)) savedEntries.push(...entry);
+              else savedEntries.push(entry);
               return { data: entry, error: null };
             }),
           };
