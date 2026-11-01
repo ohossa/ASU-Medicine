@@ -18,12 +18,22 @@ ALTER TABLE IF EXISTS public.presence ENABLE ROW LEVEL SECURITY;
 ALTER TABLE IF EXISTS public.ai_hint_logs ENABLE ROW LEVEL SECURITY;
 ALTER TABLE IF EXISTS public.triage_assessments ENABLE ROW LEVEL SECURITY;
 
--- 2. Drop overly permissive legacy public policies
+-- 2. Drop overly permissive legacy public policies & ensure idempotent policy replacement
 DROP POLICY IF EXISTS "Allow all on user_progress" ON public.user_progress;
 DROP POLICY IF EXISTS "Allow all on presence" ON public.presence;
 DROP POLICY IF EXISTS "Allow public read of active edits" ON public.question_edits;
 DROP POLICY IF EXISTS "Allow public read of profiles" ON public.learning_profiles;
 DROP POLICY IF EXISTS "Allow insert to ai_hint_logs" ON public.ai_hint_logs;
+
+DROP POLICY IF EXISTS "service_role_full_user_progress" ON public.user_progress;
+DROP POLICY IF EXISTS "service_role_full_reports" ON public.reports;
+DROP POLICY IF EXISTS "service_role_full_report_replies" ON public.report_replies;
+DROP POLICY IF EXISTS "service_role_full_question_edits" ON public.question_edits;
+DROP POLICY IF EXISTS "service_role_full_learning_profiles" ON public.learning_profiles;
+DROP POLICY IF EXISTS "service_role_full_learning_entries" ON public.learning_entries;
+DROP POLICY IF EXISTS "service_role_full_presence" ON public.presence;
+DROP POLICY IF EXISTS "service_role_full_ai_hint_logs" ON public.ai_hint_logs;
+DROP POLICY IF EXISTS "service_role_full_triage" ON public.triage_assessments;
 
 -- 3. Revoke all direct PostgREST data manipulation grants from anon & authenticated
 REVOKE ALL ON ALL TABLES IN SCHEMA public FROM anon;
