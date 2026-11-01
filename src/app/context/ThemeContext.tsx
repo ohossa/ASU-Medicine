@@ -70,6 +70,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const toggleTheme = useCallback(() => {
+    setIsStarlight(false);
     setIsDark(d => !d);
   }, []);
 

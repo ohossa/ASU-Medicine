@@ -24,7 +24,7 @@ export function ClerkThemeTogglePortal() {
         if (!existing) {
           existing = document.createElement('div');
           existing.id = 'clerk-custom-toggle-container';
-          existing.className = 'ms-auto flex items-center justify-end pl-2 shrink-0 scale-85 origin-right gap-2';
+          existing.className = 'ms-auto flex items-center justify-end pl-2 shrink-0 scale-85 ltr:origin-right rtl:origin-left gap-2';
           preview.appendChild(existing);
         }
         setContainer(existing);

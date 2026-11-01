@@ -18,6 +18,7 @@ import {
 import { SUPPORT, refundUrl } from "./config";
 import { RUNNING_COSTS, COST_CONVERSION, MONTHLY_TOTAL_USD, costAmount } from "./costs";
 import { ThemeToggle } from "../../app/components/ThemeToggle";
+import { StarlightToggle } from "../../app/components/StarlightToggle";
 import { LanguageToggle } from "../../app/components/LanguageToggle";
 import "./support.css";
 type Method = "instapay" | "vodafone" | "card";
@@ -108,6 +109,7 @@ export default function SupportPage() {
           </span>
           <div className="support-nav-actions">
             <LanguageToggle value={ar ? 'ar' : 'en'} onToggle={() => {setAr(!ar);setStatus('');}} />
+            <StarlightToggle showText={false} />
             <ThemeToggle />
             <a
               href="/"

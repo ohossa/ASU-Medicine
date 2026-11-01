@@ -19,40 +19,50 @@ export function StarlightToggle({ className = '', showText = true }: Props) {
   const { user, isLoaded } = useUser();
   const { isStarlight, toggleStarlight } = useTheme();
   const reducedMotion = useReducedMotion();
+  const isIconOnly = !showText;
 
   // If user is not signed in or not in the allowlist, render nothing
   if (!isLoaded || !user || !isUserStarlightEligible(user)) {
     return null;
   }
 
-  const handleToggle = (e: React.MouseEvent) => {
+  const handleToggle = (e: React.MouseEvent | React.TouchEvent) => {
     e.stopPropagation();
     const next = !isStarlight;
     toggleStarlight();
-    if (next) {
-      const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
-      triggerStarlightBurst(rect.left + rect.width / 2, rect.top + rect.height / 2);
+    if (next && typeof window !== 'undefined') {
+      const target = (e.currentTarget as HTMLElement);
+      if (target && target.getBoundingClientRect) {
+        const rect = target.getBoundingClientRect();
+        triggerStarlightBurst(rect.left + rect.width / 2, rect.top + rect.height / 2);
+      }
     }
   };
+
+  const label = isStarlight ? 'Disable Starlight theme' : 'Enable Starlight theme';
 
   return (
     <motion.button
       type="button"
       role="switch"
       aria-checked={isStarlight}
-      aria-label="Toggle secret Starlight theme"
+      aria-label={label}
+      title={label}
       onClick={handleToggle}
-      whileHover={reducedMotion ? {} : { scale: 1.04 }}
-      whileTap={reducedMotion ? {} : { scale: 0.96 }}
-      className={`starlight-toggle-btn ${isStarlight ? 'active' : ''} ${className}`}
+      whileHover={reducedMotion ? {} : { scale: 1.05 }}
+      whileTap={reducedMotion ? {} : { scale: 0.95 }}
+      className={`starlight-toggle-btn ${isIconOnly ? 'icon-only' : ''} ${isStarlight ? 'active' : ''} ${className}`}
       style={{
         display: 'inline-flex',
         alignItems: 'center',
         justifyContent: 'center',
-        gap: '6px',
-        minHeight: '44px',
-        padding: '0 14px',
-        borderRadius: '9999px',
+        gap: isIconOnly ? 0 : '6px',
+        minHeight: isIconOnly ? '36px' : '44px',
+        minWidth: isIconOnly ? '36px' : 'auto',
+        width: isIconOnly ? '36px' : 'auto',
+        height: isIconOnly ? '36px' : 'auto',
+        padding: isIconOnly ? 0 : '0 14px',
+        borderRadius: isIconOnly ? '50%' : '9999px',
         border: isStarlight
           ? '1px solid rgba(255, 255, 255, 0.45)'
           : '1px solid rgba(217, 70, 239, 0.35)',
@@ -62,17 +72,19 @@ export function StarlightToggle({ className = '', showText = true }: Props) {
         color: '#fdf4ff',
         cursor: 'pointer',
         boxShadow: isStarlight
-          ? '0 0 20px rgba(217, 70, 239, 0.4)'
+          ? '0 0 20px rgba(217, 70, 239, 0.45)'
           : '0 0 10px rgba(217, 70, 239, 0.15)',
         outline: 'none',
+        touchAction: 'manipulation',
+        WebkitTapHighlightColor: 'transparent',
       }}
     >
       <Sparkles
-        size={16}
+        size={isIconOnly ? 17 : 16}
         className={isStarlight ? 'text-amber-200 animate-pulse' : 'text-pink-400'}
         aria-hidden="true"
       />
-      {showText && (
+      {!isIconOnly && (
         <span
           style={{
             fontSize: '12px',

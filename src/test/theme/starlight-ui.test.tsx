@@ -55,7 +55,7 @@ describe('Starlight Secret Theme UI & Context', () => {
         <StarlightToggle />
       </ThemeProvider>,
     );
-    const btn = screen.getByRole('switch', { name: /toggle secret starlight theme/i });
+    const btn = screen.getByRole('switch', { name: /starlight theme/i });
     expect(btn).toBeInTheDocument();
     expect(btn).toHaveTextContent(/Starlight/i);
   });
@@ -72,8 +72,26 @@ describe('Starlight Secret Theme UI & Context', () => {
         <StarlightToggle />
       </ThemeProvider>,
     );
-    const btn = screen.getByRole('switch', { name: /toggle secret starlight theme/i });
+    const btn = screen.getByRole('switch', { name: /starlight theme/i });
     expect(btn).toBeInTheDocument();
+  });
+
+  it('renders icon-only mode with circle dimensions and mobile touch properties', () => {
+    mockUseUser.mockReturnValue({
+      isLoaded: true,
+      user: {
+        primaryEmailAddress: { emailAddress: 'sarahrateb@gmail.com' },
+      },
+    });
+    render(
+      <ThemeProvider>
+        <StarlightToggle showText={false} />
+      </ThemeProvider>,
+    );
+    const btn = screen.getByRole('switch', { name: /enable starlight theme/i });
+    expect(btn).toBeInTheDocument();
+    expect(btn).toHaveClass('icon-only');
+    expect(btn).not.toHaveTextContent(/Starlight/i);
   });
 
   it('toggles starlight theme and updates documentElement classes and localStorage', () => {
@@ -100,7 +118,7 @@ describe('Starlight Secret Theme UI & Context', () => {
       </ThemeProvider>,
     );
 
-    const btn = screen.getByRole('switch', { name: /toggle secret starlight theme/i });
+    const btn = screen.getByRole('switch', { name: /starlight theme/i });
     expect(screen.getByTestId('starlight-status')).toHaveTextContent('OFF');
     expect(document.documentElement.classList.contains('theme-starlight')).toBe(false);
 

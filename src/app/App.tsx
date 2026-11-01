@@ -36,7 +36,7 @@ const StudyTrackerSelectorModal = lazy(() => import('./components/StudyTrackerSe
 import { UserSyncPill } from './components/UserSyncPill';
 import { StarlightAtmosphere } from './components/StarlightAtmosphere';
 import { StarlightCelebration } from './components/StarlightCelebration';
-import { StarlightToggle } from './components/StarlightToggle';
+// Removed StarlightToggle from top navbar next to pfp
 
 // Lazy-loaded FX layer components
 const LazyLevelUpOverlay = lazy(() => import('./components/LevelUpOverlay').then(m => ({ default: m.LevelUpOverlay })));
@@ -998,10 +998,8 @@ function MainApp() {
   };
 
   const customUserButton = useMemo(() => (
-    <div className="flex items-center gap-2">
-      <StarlightToggle />
-      <UserSyncPill>
-        <UserButton
+    <UserSyncPill>
+      <UserButton
         appearance={{
           baseTheme: undefined,
           elements: {
@@ -1080,7 +1078,6 @@ function MainApp() {
       </UserButton.MenuItems>
     </UserButton>
     </UserSyncPill>
-    </div>
   ), [user, hasOwnerAccess, language, transitionTo, navigate, setQuizPayload, setResultPayload, setShowPortalsModal, setShowSupportModal, activeStudentYear, setStudentYear, setScreen, setSelectedYear, setSelectedSemester, setSelectedModule, setStudyMode, setSelectedChapter, learning.data?.profile]);
 
   return (

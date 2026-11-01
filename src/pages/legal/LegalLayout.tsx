@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { ArrowLeft, Shield, FileText, AlertTriangle } from "lucide-react";
 import { ThemeToggle } from "../../app/components/ThemeToggle";
+import { StarlightToggle } from "../../app/components/StarlightToggle";
 import { LanguageToggle } from "../../app/components/LanguageToggle";
 import { PortalFooter } from "../../app/components/PortalFooter";
 import "./legal.css";
@@ -30,6 +31,7 @@ export default function LegalLayout({ currentTab, children, arabic = false }: Le
 
           <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
             <LanguageToggle />
+            <StarlightToggle showText={false} />
             <ThemeToggle />
           </div>
         </header>
