@@ -160,6 +160,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     }
     return {};
   });
+  const essayDraftsRef = useRef(essayDrafts);
   const [confirmFinish, setConfirmFinish] = useState(false);
   const [timerMode, setTimerMode] = useState<'off' | 'practice' | 'exam'>('practice');
 
@@ -415,29 +416,20 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     setAnnouncement(msg);
   }, [answered, current, question, answers, language]);
 
-  /* Sync essay draft with current question index */
-  useLayoutEffect(() => {
-    if (!question) return;
-    if (question.type === 'essay') {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setEssayDraft(essayDrafts[current] ?? asEssayAnswer(answers[current])?.text ?? '');
-    }
-  }, [current, question, answers, essayDrafts]);
-
-  /* Navigate: load draft for new question index */
+  /* Navigate: load draft for new question index without layout recalculation loops */
   useLayoutEffect(() => {
     const question = questions[current];
     if (!question) return;
     if (question.type === 'essay') {
       // eslint-disable-next-line react-hooks/set-state-in-effect
-      setEssayDraft(essayDrafts[current] ?? asEssayAnswer(answers[current])?.text ?? '');
+      setEssayDraft(essayDraftsRef.current[current] ?? asEssayAnswer(answers[current])?.text ?? '');
       // Reset reveal state for new essay — only show if already graded
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setShowEssayAnswer(asEssayAnswer(answers[current])?.selfGrade !== undefined);
     } else {
       setShowEssayAnswer(false);
     }
-  }, [current, questions, answers, essayDrafts]);
+  }, [current, questions, answers]);
 
   /* Sync temporary states on index change */
   useLayoutEffect(() => {
@@ -752,12 +744,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           onChange={e => {
             const val = e.target.value;
             setEssayDraft(val);
-            const nextDrafts = { ...essayDrafts, [current]: val };
-            setEssayDrafts(nextDrafts);
-            debouncedSaveDrafts(nextDrafts);
+            essayDraftsRef.current[current] = val;
+            debouncedSaveDrafts(essayDraftsRef.current);
           }}
           onBlur={() => {
-            saveLocalDrafts(chapter?.id ?? -1, subject?.sessionKey ?? subject?.name ?? 'all', essayDrafts);
+            const drafts = { ...essayDraftsRef.current, [current]: essayDraft };
+            essayDraftsRef.current = drafts;
+            setEssayDrafts(drafts);
+            saveLocalDrafts(chapter?.id ?? -1, subject?.sessionKey ?? subject?.name ?? 'all', drafts);
           }}
           rows={7}
           placeholder={t('essayPlaceholder') || "Type your answer…"}
@@ -1414,7 +1408,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
       {/* Main */}
       <section aria-label={isRTL ? "التدريب على الأسئلة" : "Question practice"} className="relative mx-auto max-w-4xl px-4 py-8 sm:px-6">
-        <AnimatePresence initial={false} custom={direction}>
+        <AnimatePresence mode="popLayout" initial={false} custom={direction}>
           <motion.div
             key={current}
             custom={direction}
