@@ -1,0 +1,729 @@
+[
+  {
+    "id": 301,
+    "title": "Practical — Histology",
+    "subtitle": "Micrographs & Electron Microscopy (TEM/SEM)",
+    "emoji": "🔬",
+    "page": 661,
+    "lectureRange": "Stations 1–6",
+    "bankSection": "practical",
+    "subjects": [
+      {
+        "id": "histology",
+        "name": "Histology",
+        "iconName": "Microscope",
+        "lectures": "Stations 1–6",
+        "lectureCount": 6,
+        "lectureNames": [
+          "Taste Buds & Lingual Papillae",
+          "Salivary Glands Histology",
+          "Small Intestine & Brunner Glands",
+          "Paneth Cells & Crypts of Lieberkuhn",
+          "Colon vs Vermiform Appendix",
+          "Recto-anal Junction"
+        ],
+        "questions": [
+          {
+            "id": "MGL3-CH301-HIST-0001",
+            "type": "mcq",
+            "lecture": 1,
+            "text": "In this transmission electron micrograph (TEM) of a circumvallate papilla taste bud, identify the apical structure indicated by pointer [ A ]:",
+            "options": [
+              "Taste pore with microvilli",
+              "Basal reserve stem cell",
+              "Supporting sustentacular cell",
+              "Primary gustatory receptor"
+            ],
+            "correctIndex": 0,
+            "explanation": "The taste pore is the small apical mucosal opening through which microvilli of sensory gustatory cells project into the oral cavity to bind dissolved tastants.",
+            "keyConcept": "Taste pore: apical orifice transmitting tastants to sensory cell microvilli.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/histology/taste_bud_tem_masked.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0002",
+            "type": "mcq",
+            "lecture": 1,
+            "text": "In this transmission electron micrograph (TEM) of the circumvallate taste bud, identify the elongated insulating cells indicated by pointer [ B ]:",
+            "options": [
+              "Primary gustatory sensory cells",
+              "Supporting (sustentacular) cells",
+              "Basal undifferentiated stem cells",
+              "Antimicrobial secretory Paneth cells"
+            ],
+            "correctIndex": 1,
+            "explanation": "Supporting (sustentacular) cells span the entire height of the taste bud from the basal lamina to the taste pore, providing structural and metabolic insulation for gustatory receptor cells.",
+            "keyConcept": "Sustentacular cells: full-height supportive cells insulating sensory receptors.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/histology/taste_bud_tem_masked_b.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0003",
+            "type": "mcq",
+            "lecture": 2,
+            "text": "Examine this high-yield H&E histological section of a major salivary gland. Which defining histological feature confirms that this specimen is the parotid gland?",
+            "options": [
+              "Predominantly mucous tubules capped with serous demilunes",
+              "Purely mucous acini with flattened basal peripheral nuclei",
+              "Purely serous acini with narrow lumens and intercalated ducts",
+              "Co-dominant mixture of discrete serous and mucous acini"
+            ],
+            "correctIndex": 2,
+            "explanation": "The human parotid gland is 100% serous, exhibiting round basophilic acini with narrow lumens, spherical central nuclei, apical zymogen granules, and absence of mucous tubules.",
+            "keyConcept": "Parotid = purely serous acini with round central nuclei and intercalated ducts.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/histology/parotid_gland_he.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0004",
+            "type": "mcq",
+            "lecture": 3,
+            "text": "Examine this H&E cross-section of the gastrointestinal tract. What definitive landmark restricts the anatomical diagnosis to the duodenum?",
+            "options": [
+              "Aggregated Peyer lymphoid patches in the lamina propria and submucosa",
+              "Complete absence of mucosal villi with long straight vertical crypts",
+              "Stratified squamous non-keratinized mucosal epithelial lining",
+              "Branched coiled Brunner glands packed within the submucosal layer"
+            ],
+            "correctIndex": 3,
+            "explanation": "Brunner (duodenal) glands are branched coiled tubular mucous glands confined specifically to the submucosa of the duodenum, secreting alkaline mucin (pH 8.1–9.3) to protect against gastric acid.",
+            "keyConcept": "Submucosal Brunner glands are exclusively found in the duodenum.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/histology/duodenum_brunner_glands_he.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0005",
+            "type": "mcq",
+            "lecture": 4,
+            "text": "This transmission electron micrograph (TEM) demonstrates pyramidal cells at the base of the crypts of Lieberkühn with prominent apical dense granules. What is their primary function?",
+            "options": [
+              "Absorption of dietary lipids and synthesis of core chylomicrons",
+              "Secretion of antimicrobial alpha-defensins and lysozyme enzymes",
+              "Secretion of lubricating mucin glycoproteins by exocytosis",
+              "Systemic release of endocrine peptides gastrin and cholecystokinin"
+            ],
+            "correctIndex": 1,
+            "explanation": "Paneth cells occupy the bases of small intestinal crypts and contain large apical eosinophilic secretory granules containing lysozyme, phospholipase A2, and alpha-defensins providing mucosal immunity.",
+            "keyConcept": "Paneth cells secrete antimicrobial defensins and lysozyme at intestinal crypt bases.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/histology/paneth_cells_tem.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0006",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "Examine this cross-section of the vermiform appendix. Which histological characteristic most definitively distinguishes the appendix from the colon?",
+            "options": [
+              "Prominent outer taeniae coli formed by discrete longitudinal muscle bands",
+              "Numerous tall slender mucosal villi lined by microvillar enterocytes",
+              "Confluent lymphoid follicles infiltrating the lamina propria and submucosa",
+              "Complete absence of straight tubular crypts of Lieberkühn"
+            ],
+            "correctIndex": 2,
+            "explanation": "The vermiform appendix possesses a complete outer longitudinal muscle coat (no taeniae coli) and massive, confluent lymphoid follicles with germinal centers effacing the lamina propria and submucosa.",
+            "keyConcept": "Appendix: circular continuous longitudinal coat + dense circumferential lymphoid ring.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/histology/colon_vs_appendix_he.webp"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 302,
+    "title": "Practical — Pathology",
+    "subtitle": "Gross Pathology Museum Jars & Histopathology",
+    "emoji": "🧫",
+    "page": 457,
+    "lectureRange": "Stations 1–6",
+    "bankSection": "practical",
+    "subjects": [
+      {
+        "id": "pathology",
+        "name": "Pathology",
+        "iconName": "Activity",
+        "lectures": "Stations 1–6",
+        "lectureCount": 6,
+        "lectureNames": [
+          "Barrett Esophagus & Dysplasia",
+          "Pleomorphic Adenoma & Salivary Tumors",
+          "Warthin Tumor Histopathology",
+          "Liver Cirrhosis (Masson Trichrome)",
+          "Hepatocellular Carcinoma on Cirrhosis",
+          "Schistosomal Clay-Pipe-Stem Fibrosis"
+        ],
+        "questions": [
+          {
+            "id": "MGL3-CH302-PATH-0001",
+            "type": "mcq",
+            "lecture": 1,
+            "text": "This endoscopic biopsy from the distal esophagus of a patient with chronic reflux demonstrates epithelial replacement. What is the pathognomonic diagnostic finding?",
+            "options": [
+              "Columnar intestinal metaplasia containing alcian blue-positive goblet cells",
+              "Severe squamous cell dysplasia with intact underlying basal membrane",
+              "Eosinophilic microabscesses without glandular or goblet cell conversion",
+              "Dense submucosal lymphoid follicles with reactive germinal centers"
+            ],
+            "correctIndex": 0,
+            "explanation": "Barrett esophagus is defined histologically by intestinal metaplasia where normal squamous epithelium is replaced by columnar cells containing true goblet cells, conferring risk for adenocarcinoma.",
+            "keyConcept": "Barrett esophagus: intestinal metaplasia with true goblet cells above GE junction.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/pathology/barretts_esophagus_he.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH302-PATH-0002",
+            "type": "mcq",
+            "lecture": 2,
+            "text": "Examine this section from a benign parotid neoplasm (pleomorphic adenoma). What dual histological components define this mixed tumor?",
+            "options": [
+              "Bilayered oncocytic columnar cells overlying dense lymphoid stroma",
+              "Solid sheets of poorly differentiated clear cells with vascular invasion",
+              "Sheets of mature signet ring cells filled with abundant intracellular mucin",
+              "Epithelial ductal structures embedded in myxoid and chondroid stroma"
+            ],
+            "correctIndex": 3,
+            "explanation": "Pleomorphic adenoma (mixed tumor) displays epithelial ductal structures and sheets intermingled with myxoid, chondroid, or fibrous mesenchymal-like stroma elaborated by neoplastic myoepithelial cells.",
+            "keyConcept": "Pleomorphic adenoma = epithelial ducts embedded in myxochondroid matrix.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/pathology/pleomorphic_adenoma_he.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH302-PATH-0003",
+            "type": "mcq",
+            "lecture": 3,
+            "text": "This photomicrograph demonstrates Warthin tumor (papillary cystadenoma lymphomatosum). What microscopic architecture establishes the diagnosis?",
+            "options": [
+              "Malignant stratified squamous islands surrounded by marked desmoplasia",
+              "Acellular laminated chitinous membranes with calcified brood capsules",
+              "Bilayered oncocytic epithelium lining cysts over lymphoid stroma with follicles",
+              "Mucin-secreting signet ring cells infiltrating the parotid gland capsule"
+            ],
+            "correctIndex": 2,
+            "explanation": "Warthin tumor consists of cystic spaces with papillary foldings lined by a uniform double layer of pink oncocytic columnar cells resting upon a dense lymphoid stroma with germinal centers.",
+            "keyConcept": "Warthin tumor: bilayered oncocytic epithelium + lymphoid stroma with germinal centers.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/pathology/warthin_tumor_he.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH302-PATH-0004",
+            "type": "mcq",
+            "lecture": 4,
+            "text": "This liver biopsy stained with Masson trichrome demonstrates blue-staining fibrous bands. What pathological triad defines liver cirrhosis?",
+            "options": [
+              "Diffuse bridging fibrosis, architectural disruption, and regenerative nodules",
+              "Focal portal triaditis, central vein thrombosis, and preserved liver plates",
+              "Centrilobular macrovesicular steatosis without significant fibrous septation",
+              "Non-caseating granulomas with complete preservation of lobular architecture"
+            ],
+            "correctIndex": 0,
+            "explanation": "Cirrhosis is defined pathologically by diffuse bridging fibrosis (blue on Masson trichrome), complete loss of normal lobular architecture, and parenchymal nodular regeneration.",
+            "keyConcept": "Cirrhosis triad: diffuse fibrosis + regenerative nodules + architectural disruption.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/pathology/liver_cirrhosis_masson_trichrome.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH302-PATH-0005",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "A patient with cirrhosis develops a liver mass showing malignant hepatocytes. Which histological feature confirms hepatocellular carcinoma (HCC)?",
+            "options": [
+              "Orderly single-cell thick cords bordered by normal sinusoidal endothelial cells",
+              "Malignant glandular tubules producing abundant intracytoplasmic mucin",
+              "Small uniform round blue neuroendocrine cells with salt-and-pepper chromatin",
+              "Markedly thickened liver cell trabeculae (>3 cells thick) with atypical mitoses"
+            ],
+            "correctIndex": 3,
+            "explanation": "Hepatocellular carcinoma (HCC) is characterized by loss of reticulin framework, markedly thickened trabeculae (>3 cells thick), pseudoacinar architecture, pleomorphic nuclei, and atypical mitoses.",
+            "keyConcept": "HCC: thick trabeculae (>3 cells), nuclear atypia, and loss of reticulin network.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/pathology/hcc_on_cirrhosis_he.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH302-PATH-0006",
+            "type": "mcq",
+            "lecture": 6,
+            "text": "Examine this hepatic bilharziasis specimen (Symmers clay-pipe-stem fibrosis). What distinguishes schistosomal hepatic fibrosis from true cirrhosis?",
+            "options": [
+              "Widespread hepatocellular necrosis with diffuse micro-nodular regeneration",
+              "Preservation of normal lobular architecture and absence of regenerative nodules",
+              "Severe diffuse macrovesicular fatty change affecting all lobular zones",
+              "Primary obliteration of major hepatic veins with centrilobular congestion"
+            ],
+            "correctIndex": 1,
+            "explanation": "In Symmers clay-pipe-stem fibrosis, granulomatous and dense fibrosis is restricted to periportal spaces, while lobular architecture and central veins are preserved without regenerative nodules.",
+            "keyConcept": "Symmers fibrosis: periportal fibrosis with preserved lobular architecture (non-cirrhotic).",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/pathology/schistosomal_clay_pipe_stem_fibrosis.webp"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 303,
+    "title": "Practical — Parasitology",
+    "subtitle": "GIT Parasites, Eggs, Adults & Snail Vectors",
+    "emoji": "🐛",
+    "page": 2,
+    "lectureRange": "Stations 1–6",
+    "bankSection": "practical",
+    "subjects": [
+      {
+        "id": "parasitology",
+        "name": "Parasitology",
+        "iconName": "Bug",
+        "lectures": "Stations 1–6",
+        "lectureCount": 6,
+        "lectureNames": [
+          "Schistosoma mansoni Egg & Adult",
+          "Fasciola gigantica & Fasciola hepatica",
+          "Biomphalaria alexandrina & Lymnea Snails",
+          "Echinococcus granulosus Hydatid Wall",
+          "Enterobius vermicularis (Pinworm) Egg",
+          "Trichuris trichiura (Whipworm) Egg"
+        ],
+        "questions": [
+          {
+            "id": "MGL3-CH303-PARA-0001",
+            "type": "mcq",
+            "lecture": 1,
+            "text": "Identify this parasite egg recovered from the stool of a patient with dysentery. What morphological feature definitively identifies Schistosoma mansoni?",
+            "options": [
+              "Small oval yellowish-brown operculated shell containing a ciliated miracidium",
+              "Spherical thick-shelled brown egg bearing a conspicuous terminal spine",
+              "Barrel-shaped golden egg with translucent protruding bipolar mucoid plugs",
+              "Large elongated oval translucent shell bearing a prominent sharp lateral spine"
+            ],
+            "correctIndex": 3,
+            "explanation": "Schistosoma mansoni eggs measure 114–180 µm by 45–70 µm and feature a prominent sharp lateral spine near the posterior pole, in contrast to S. haematobium (terminal spine).",
+            "keyConcept": "Schistosoma mansoni egg = prominent sharp lateral spine.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/parasitology/schistosoma_mansoni_egg.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0002",
+            "type": "mcq",
+            "lecture": 2,
+            "text": "Identify this adult liver fluke recovered from a biliary tract prosection. Which feature differentiates Fasciola gigantica from Fasciola hepatica?",
+            "options": [
+              "Presence of a third specialized genital sucker (gonotyl) around genital pore",
+              "Complete absence of anterior oral and ventral fixation acetabula",
+              "Elongated body (up to 7.5 cm) with nearly parallel margins and faint shoulders",
+              "Unbranched simple tubular intestinal ceca extending to the posterior tip"
+            ],
+            "correctIndex": 2,
+            "explanation": "Fasciola gigantica is significantly longer (25–75 mm) than F. hepatica (20–30 mm), possesses nearly parallel lateral margins, and displays a less prominent cephalic cone and indistinct shoulders.",
+            "keyConcept": "Fasciola gigantica: large size (up to 7.5 cm), parallel borders, faint shoulders.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/parasitology/fasciola_gigantica_adult.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0003",
+            "type": "mcq",
+            "lecture": 3,
+            "text": "Identify this freshwater snail shell collected from Egyptian water channels. What morphological criteria confirm Biomphalaria alexandrina?",
+            "options": [
+              "Dextral conical shell with a sharp pointed apex and very large body whorl",
+              "Sinistral, discoidal shell coiled horizontally like a disk with aperture to left",
+              "Tall turreted spiral shell with an elongated narrow aperture on the right",
+              "Globular thick operculated shell with prominent concentric exterior ridges"
+            ],
+            "correctIndex": 1,
+            "explanation": "Biomphalaria alexandrina is the intermediate snail host of Schistosoma mansoni in Egypt; its shell is planorboid (discoidal, flat whorls) and sinistral (aperture opens to the left).",
+            "keyConcept": "Biomphalaria alexandrina: discoidal, sinistral shell; vector for S. mansoni.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/parasitology/biomphalaria_alexandrina_snail.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0004",
+            "type": "mcq",
+            "lecture": 4,
+            "text": "Examine this histological section of a hepatic hydatid cyst (Echinococcus granulosus). Identify the distinctive acellular parasite layer:",
+            "options": [
+              "Acellular, chitinous laminated (cuticular) membrane with fine striations",
+              "Inner nucleated germinal layer actively generating scolices and brood capsules",
+              "Dense outer vascularized fibrous pseudocapsule synthesized by the host liver",
+              "Calcified calcareous corpuscle layer lining the internal cyst cavity"
+            ],
+            "correctIndex": 0,
+            "explanation": "The hydatid cyst wall consists of an outer acellular laminated cuticular membrane (secreted by the parasite, appearing hyaline and striated) and an inner cellular germinal layer that buds brood capsules.",
+            "keyConcept": "Hydatid wall: outer acellular laminated layer + inner nucleated germinal layer.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/parasitology/hydatid_cyst_wall_he.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0005",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "Identify this parasite egg collected by perianal Scotch tape swab in a child with nocturnal pruritus ani:",
+            "options": [
+              "Planoconvex D-shaped transparent egg of Enterobius vermicularis",
+              "Thick-shelled corticated egg of Ascaris lumbricoides with wavy coat",
+              "Thin-shelled oval egg of Ancylostoma duodenale with clear space",
+              "Lemon-shaped egg of Trichuris trichiura with two polar plugs"
+            ],
+            "correctIndex": 0,
+            "explanation": "Enterobius vermicularis (pinworm) eggs are colorless, translucent, 50–60 µm long, and characteristically planoconvex (D-shaped, flattened on one side and convex on the other).",
+            "keyConcept": "Enterobius vermicularis egg: planoconvex (D-shaped), colorless, transparent shell.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/parasitology/enterobius_vermicularis_egg.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0006",
+            "type": "mcq",
+            "lecture": 6,
+            "text": "Identify this parasite egg found in a stool wet mount from an anemic patient. What morphological hallmark identifies Trichuris trichiura?",
+            "options": [
+              "Yellow operculated oval shell with an abopercular thickening and miracidium",
+              "Spherical brown egg with a thick radially striated embryophore and hooklets",
+              "Golden-brown barrel-shaped shell with prominent transparent bipolar mucoid plugs",
+              "Ovoid thin-shelled transparent egg containing an unsegmented granular ovum"
+            ],
+            "correctIndex": 2,
+            "explanation": "Trichuris trichiura (whipworm) eggs are barrel-shaped (50–54 µm by 22 µm), golden-brown, with a thick smooth shell and two characteristic translucent mucoid plugs protruding from both poles.",
+            "keyConcept": "Trichuris trichiura egg: barrel-shaped with bipolar mucoid plugs.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/parasitology/trichuris_trichiura_egg.webp"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 304,
+    "title": "Practical — Anatomy",
+    "subtitle": "Cadaveric Prosections, Vessels & Inguinal Canal",
+    "emoji": "🦴",
+    "page": 904,
+    "lectureRange": "Stations 1–3",
+    "bankSection": "practical",
+    "subjects": [
+      {
+        "id": "anatomy",
+        "name": "Anatomy",
+        "iconName": "Bone",
+        "lectures": "Stations 1–3",
+        "lectureCount": 3,
+        "lectureNames": [
+          "Celiac Trunk & Branches",
+          "Inguinal Canal Boundaries & Conjoint Tendon",
+          "Porta Hepatis Spatial Relationships"
+        ],
+        "questions": [
+          {
+            "id": "MGL3-CH304-ANAT-0001",
+            "type": "mcq",
+            "lecture": 1,
+            "text": "In a cadaveric prosection of the celiac trunk at the level of T12, which of the following is an immediate primary branch of the trunk?",
+            "options": [
+              "Gastroduodenal artery arising behind the first part of the duodenum",
+              "Splenic artery coursing tortuously along the upper border of pancreas",
+              "Right gastric artery running along the lesser curvature of stomach",
+              "Superior mesenteric artery descending anterior to the third part of duodenum"
+            ],
+            "correctIndex": 1,
+            "explanation": "The celiac trunk trifurcates into the left gastric artery, splenic artery (running along the upper pancreatic border to the spleen), and common hepatic artery.",
+            "keyConcept": "Celiac trunk trifurcation: Left gastric, Splenic, and Common hepatic arteries.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/anatomy/celiac_trunk_anatomy.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0002",
+            "type": "mcq",
+            "lecture": 2,
+            "text": "During dissection of the inguinal canal, identify the structure that reinforces the posterior wall in its medial third:",
+            "options": [
+              "Aponeurosis of the external oblique muscle with its intercrural fibers",
+              "Curved shelving border of the inguinal ligament (Poupart ligament)",
+              "Reflected triangular pectineal ligament (Cooper ligament) on pecten pubis",
+              "Conjoint tendon (falx inguinalis) behind the superficial inguinal ring"
+            ],
+            "correctIndex": 3,
+            "explanation": "The posterior wall of the inguinal canal is formed in its lateral two-thirds by the fascia transversalis and in its medial third by the conjoint tendon (falx inguinalis) formed by internal oblique and transversus abdominis.",
+            "keyConcept": "Inguinal canal posterior wall: Fascia transversalis (lateral) + Conjoint tendon (medial).",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/anatomy/inguinal_canal_anatomy.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0003",
+            "type": "mcq",
+            "lecture": 3,
+            "text": "At the porta hepatis (free margin of the lesser omentum), what is the correct spatial arrangement of the structures from anterior to posterior?",
+            "options": [
+              "Portal vein (anterior), Hepatic artery proper (middle), Bile duct (posterior)",
+              "Bile duct (anterior-right), Hepatic artery proper (anterior-left), Portal vein (posterior)",
+              "Hepatic artery proper (anterior), Portal vein (middle), Bile duct (posterior)",
+              "Inferior vena cava (anterior), Bile duct (middle), Hepatic artery (posterior)"
+            ],
+            "correctIndex": 1,
+            "explanation": "In the free edge of the lesser omentum: the common bile duct lies anterolaterally to the right, the hepatic artery proper lies anteromedially to the left, and the portal vein lies posteriorly.",
+            "keyConcept": "Porta hepatis relation: Duct on Right, Artery on Left, Portal Vein Behind.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/anatomy/porta_hepatis_anatomy.webp"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 305,
+    "title": "Practical — Physiology",
+    "subtitle": "GI Motility, Manometry & Secretory Regulation",
+    "emoji": "⚡",
+    "page": 929,
+    "lectureRange": "Stations 1–2",
+    "bankSection": "practical",
+    "subjects": [
+      {
+        "id": "physiology",
+        "name": "Physiology",
+        "iconName": "Zap",
+        "lectures": "Stations 1–2",
+        "lectureCount": 2,
+        "lectureNames": [
+          "Achalasia & Esophageal Manometry",
+          "Hormonal Control of Pancreatic Secretion"
+        ],
+        "questions": [
+          {
+            "id": "MGL3-CH305-PHYS-0001",
+            "type": "mcq",
+            "lecture": 1,
+            "text": "Esophageal manometry in a 35-year-old with dysphagia reveals unrelaxed LES and aperistalsis (achalasia). What is the primary neurogenic defect?",
+            "options": [
+              "Degeneration of inhibitory myenteric neurons producing nitric oxide and VIP",
+              "Excessive cholinergic vagal outflow hyperpolarizing esophageal smooth muscle",
+              "Loss of sensory afferent fibers in the submucosal Meissner nerve plexus",
+              "Autoimmune destruction of nicotinic acetylcholine receptors at striated endplates"
+            ],
+            "correctIndex": 0,
+            "explanation": "Achalasia results from selective degeneration of postganglionic inhibitory neurons in the myenteric (Auerbach) plexus that release nitric oxide (NO) and VIP, preventing lower esophageal sphincter relaxation.",
+            "keyConcept": "Achalasia: loss of NO/VIP inhibitory myenteric neurons causes aperistalsis and unrelaxed LES.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/physiology/achalasia_manometry_case.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH305-PHYS-0002",
+            "type": "mcq",
+            "lecture": 2,
+            "text": "In a lab experiment, introducing acidic chyme (pH < 4.5) into the duodenum triggers copious watery pancreatic juice rich in bicarbonate. Which hormone mediates this response?",
+            "options": [
+              "Cholecystokinin (CCK), secreted by mucosal I-cells in response to peptides",
+              "Gastrin, released from gastric antral G-cells in response to distension",
+              "Motilin, released from upper intestinal M-cells during interdigestive migrating complexes",
+              "Secretin, secreted by mucosal S-cells in response to intraluminal hydrogen ions"
+            ],
+            "correctIndex": 3,
+            "explanation": "Secretin is released by duodenal S-cells when luminal pH drops below 4.5. It acts on pancreatic ductular cells via cAMP to stimulate secretion of large volumes of watery, bicarbonate-rich juice.",
+            "keyConcept": "Secretin: triggered by duodenal acid -> stimulates ductal aqueous HCO3- secretion.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/physiology/pancreatic_hormonal_regulation.webp"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 306,
+    "title": "Practical — Biochemistry",
+    "subtitle": "Clinical Biochemistry, LFTs & Jaundice Biomarkers",
+    "emoji": "🧪",
+    "page": 1097,
+    "lectureRange": "Stations 1–2",
+    "bankSection": "practical",
+    "subjects": [
+      {
+        "id": "biochem",
+        "name": "Biochemistry",
+        "iconName": "FlaskConical",
+        "lectures": "Stations 1–2",
+        "lectureCount": 2,
+        "lectureNames": [
+          "Wilson Disease (ATP7B) Copper Profile",
+          "Liver Function Tests & Cholestatic Jaundice"
+        ],
+        "questions": [
+          {
+            "id": "MGL3-CH306-BIOC-0001",
+            "type": "mcq",
+            "lecture": 1,
+            "text": "A 12-year-old boy presents with hepatosplenomegaly, tremor, and Kayser-Fleischer rings (Wilson disease). What is the pathognomonic serum and urine biochemical profile?",
+            "options": [
+              "Elevated serum ceruloplasmin with markedly decreased urinary copper clearance",
+              "Markedly elevated serum ferritin, high transferrin saturation, and normal copper",
+              "Decreased serum ceruloplasmin, increased free serum copper, and elevated 24-hour urine copper",
+              "Deficiency of alpha-1 antitrypsin with normal serum ceruloplasmin and urinary copper"
+            ],
+            "correctIndex": 2,
+            "explanation": "Wilson disease (ATP7B mutation) causes impaired copper incorporation into apoceruloplasmin (low ceruloplasmin) and blocked biliary excretion, causing high free serum copper and high urinary copper excretion.",
+            "keyConcept": "Wilson disease: low serum ceruloplasmin + high urinary copper excretion (ATP7B defect).",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/biochemistry/wilson_disease_cbl.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH306-BIOC-0002",
+            "type": "mcq",
+            "lecture": 2,
+            "text": "A 52-year-old female presents with painless jaundice and clay-colored stools. Labs: Total Bilirubin 12 mg/dL, Direct Bilirubin 9.5 mg/dL, and marked elevation of ALP and GGT with mild ALT/AST elevation. What is the diagnosis?",
+            "options": [
+              "Acute viral hepatocellular hepatitis with diffuse hepatic cytolysis",
+              "Pre-hepatic hemolytic anemia with predominant unconjugated hyperbilirubinemia",
+              "Post-hepatic (obstructive/cholestatic) jaundice",
+              "Gilbert syndrome caused by reduced promoter activity of glucuronyl transferase"
+            ],
+            "correctIndex": 2,
+            "explanation": "Obstructive cholestatic jaundice shows predominant conjugated (direct) hyperbilirubinemia with disproportionate elevation of biliary canalicular enzymes (ALP and GGT) and clay stools from lack of stercobilin.",
+            "keyConcept": "Cholestatic jaundice: high direct bilirubin + marked elevation of ALP and GGT.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/biochemistry/jaundice_lft_markers.webp"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 307,
+    "title": "Practical — Microbiology",
+    "subtitle": "Stool Culture, Selective Media & Enteric Pathogens",
+    "emoji": "🦠",
+    "page": 1200,
+    "lectureRange": "Stations 1–2",
+    "bankSection": "practical",
+    "subjects": [
+      {
+        "id": "microbiology",
+        "name": "Microbiology",
+        "iconName": "ShieldAlert",
+        "lectures": "Stations 1–2",
+        "lectureCount": 2,
+        "lectureNames": [
+          "MacConkey & SS Agar Culture Media",
+          "TCBS Agar & Vibrio cholerae Identification"
+        ],
+        "questions": [
+          {
+            "id": "MGL3-CH307-MICR-0001",
+            "type": "mcq",
+            "lecture": 1,
+            "text": "A stool culture on MacConkey agar shows pale non-lactose-fermenting colonies. Subculture on Salmonella-Shigella (SS) agar produces colonies with black centers. Identify the pathogen:",
+            "options": [
+              "Shigella dysenteriae (non-lactose fermenter producing colorless colonies without H2S)",
+              "Salmonella enterica (H2S production creates black iron sulfide precipitate)",
+              "Escherichia coli (vigorous lactose fermenter producing bright pink dry colonies)",
+              "Vibrio cholerae (sucrose fermenter producing bright yellow colonies on TCBS agar)"
+            ],
+            "correctIndex": 1,
+            "explanation": "On MacConkey agar, Salmonella and Shigella are pale (non-lactose fermenters). On SS agar, Salmonella produces H2S gas which reacts with ferric citrate to produce black-centered colonies.",
+            "keyConcept": "Salmonella on SS agar = non-lactose fermenting colonies with black H2S centers.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/microbiology/macconkey_agar_stool_culture.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH307-MICR-0002",
+            "type": "mcq",
+            "lecture": 2,
+            "text": "Stool from a patient with rice-water diarrhea is cultured on Thiosulfate-Citrate-Bile Salts-Sucrose (TCBS) agar, yielding bright yellow colonies. Microscopic examination shows curved Gram-negative rods with darting motility. What is the organism?",
+            "options": [
+              "Vibrio cholerae (sucrose fermentation lowers pH and turns bromothymol blue yellow)",
+              "Campylobacter jejuni (microaerophilic thermophilic curved rod growing on Skirrow agar)",
+              "Helicobacter pylori (potent urease-producing curved rod colonizing gastric antrum)",
+              "Pseudomonas aeruginosa (non-fermenting Gram-negative rod producing green pyocyanin pigment)"
+            ],
+            "correctIndex": 0,
+            "explanation": "TCBS agar is highly selective and differential for Vibrio. Vibrio cholerae ferments sucrose, producing acid that turns the bromothymol blue pH indicator yellow.",
+            "keyConcept": "Vibrio cholerae: yellow colonies on TCBS agar + curved Gram-negative rods.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/microbiology/tcbs_agar_vibrio_cholerae.webp"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 308,
+    "title": "Practical — Clinical",
+    "subtitle": "Clinical Vignettes, Endoscopy & Cirrhosis Signs",
+    "emoji": "🩺",
+    "page": 1272,
+    "lectureRange": "Stations 1–2",
+    "bankSection": "practical",
+    "subjects": [
+      {
+        "id": "clinical",
+        "name": "Clinical",
+        "iconName": "Stethoscope",
+        "lectures": "Stations 1–2",
+        "lectureCount": 2,
+        "lectureNames": [
+          "Peptic Ulcer Endoscopy & H. pylori Therapy",
+          "Portal Hypertension & Caput Medusae"
+        ],
+        "questions": [
+          {
+            "id": "MGL3-CH308-CLIN-0001",
+            "type": "mcq",
+            "lecture": 1,
+            "text": "A 45-year-old smoker taking NSAIDs presents with burning epigastric pain 2–3 hours after meals relieved by food. Endoscopy reveals a punched-out duodenal ulcer. What is the essential medical management?",
+            "options": [
+              "Emergency partial gastrectomy with Roux-en-Y gastrojejunostomy reconstruction",
+              "High-dose continuous NSAID therapy combined with oral misoprostol monotherapy",
+              "Long-term empiric belladonna alkaloid therapy to suppress vagal gastric motility",
+              "Proton pump inhibitor (PPI) along with testing and eradication therapy for Helicobacter pylori"
+            ],
+            "correctIndex": 3,
+            "explanation": "Duodenal ulcers typically cause pain relieved by food and nocturnal pain. Treatment requires profound acid suppression with a PPI and eradication of H. pylori (triple or quadruple regimen).",
+            "keyConcept": "Duodenal ulcer: epigastric pain relieved by food; treat with PPI + H. pylori eradication.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/clinical/peptic_ulcer_endoscopy_case.webp"
+            }
+          },
+          {
+            "id": "MGL3-CH308-CLIN-0002",
+            "type": "mcq",
+            "lecture": 2,
+            "text": "A patient with cirrhosis presents with ascites, splenomegaly, and dilated tortuous superficial periumbilical veins radiating outward (caput medusae). What portosystemic collateral channel produces this sign?",
+            "options": [
+              "Superior vena cava collaterals anastomosing with internal mammary vessels",
+              "Left gastric veins anastomosing with lower esophageal tributaries of the azygos vein",
+              "Superior rectal vein anastomosing with middle and inferior rectal branches of internal iliac",
+              "Recanalized paraumbilical veins communicating with systemic epigastric veins"
+            ],
+            "correctIndex": 3,
+            "explanation": "Caput medusae results from severe portal hypertension where portal venous blood is shunted through recanalized paraumbilical veins in the falciform ligament into superficial and inferior epigastric veins.",
+            "keyConcept": "Caput medusae = portosystemic shunt through recanalized paraumbilical veins.",
+            "media": {
+              "imageUrl": "/images/practical/mgl-3/clinical/portal_hypertension_cirrhosis.webp"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -2,9 +2,8 @@ import { useState } from 'react';
 import { GraduationCap, Check } from 'lucide-react';
 import { useLanguage } from '../../hooks/useLanguage';
 import safeStorage from '../../utils/safeStorage';
-import type { Screen } from '../../types';
+import type { Screen, ModeType, ChapterData } from '../../types';
 import type { ModuleInfo } from '../../data';
-import type { ChapterData } from '../../types';
 
 interface AcademicYearProfilePageProps {
   studentYear: number | null;
@@ -13,7 +12,7 @@ interface AcademicYearProfilePageProps {
   setSelectedYear: React.Dispatch<React.SetStateAction<number | null>>;
   setSelectedSemester: React.Dispatch<React.SetStateAction<number | null>>;
   setSelectedModule: React.Dispatch<React.SetStateAction<ModuleInfo | null>>;
-  setStudyMode: React.Dispatch<React.SetStateAction<'mcq' | 'essay' | 'mixed' | null>>;
+  setStudyMode: React.Dispatch<React.SetStateAction<ModeType | null>>;
   setSelectedChapter: React.Dispatch<React.SetStateAction<ChapterData | null>>;
 }
 

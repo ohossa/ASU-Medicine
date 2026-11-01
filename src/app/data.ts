@@ -7,6 +7,7 @@ import { cleanQuestionStem } from './utils/questionStem';
 import { applyPublishedEdits } from './lib/publishedEdits';
 import type { ChapterData, Question, SubjectColor, SubjectData, SubQuestion } from './types';
 import { assignDefaultDifficulty, assignDefaultBloomLevel } from './lib/assignDefaultDifficulty';
+import mgl3PracticalChapters from './data/practical/mgl-3-practical.json';
 
 // Glob all JSON files under src/imports recursively at build time (lazy)
 const globbedFiles = import.meta.glob('../imports/**/*.json');
@@ -85,6 +86,7 @@ type V2RawQuestion = {
   bloomLevel?: Question['bloomLevel'];
   tags?: string[];
   estimatedTimeSeconds?: number;
+  imageUrl?: string;
   media?: Question['media'];
   avgCorrectRate?: number;
   totalAttempts?: number;
@@ -508,6 +510,7 @@ function transformV2Question(q: V2RawQuestion, subjectColor: SubjectColor): Ques
     tags: q.tags,
     estimatedTimeSeconds: q.estimatedTimeSeconds,
     media: q.media,
+    imageUrl: q.imageUrl || q.media?.imageUrl,
     avgCorrectRate: q.avgCorrectRate,
     totalAttempts: q.totalAttempts,
     discriminationIndex: q.discriminationIndex,
@@ -810,25 +813,58 @@ export function isModuleActive(moduleCode: string): boolean {
   return counts.totalCount > 0;
 }
 
-export function getModuleQuestionCounts(moduleCode: string) {
+export interface ModuleQuestionCounts {
+  mcqCount: number;
+  essayCount: number;
+  totalCount: number;
+  practicalCount?: number;
+}
+
+export function getModuleQuestionCounts(moduleCode: string): ModuleQuestionCounts {
+  const pCount = moduleCode === 'MGL-3' ? 29 : 0;
+  const attachPractical = (res: ModuleQuestionCounts) => {
+    if (pCount > 0) {
+      Object.defineProperty(res, 'practicalCount', {
+        value: pCount,
+        enumerable: false,
+        configurable: true,
+        writable: true,
+      });
+    }
+    return res;
+  };
+
   const db = moduleDatabases[moduleCode];
-  if(!db){const bank=bankManifest[moduleCode];return {mcqCount:bank?.mcqCount??0,essayCount:bank?.essayCount??0,totalCount:bank?.totalCount??0};}
+  if (!db) {
+    const bank = bankManifest[moduleCode];
+    return attachPractical({
+      mcqCount: bank?.mcqCount ?? 0,
+      essayCount: bank?.essayCount ?? 0,
+      totalCount: bank?.totalCount ?? 0,
+    });
+  }
   let mcqCount = 0;
   let essayCount = 0;
 
   if (db?.v2Raw) {
     db.v2Raw.chapters?.forEach((ch: V2RawChapter) => {
-      ch.subjects?.forEach((subj: V2RawSubject) => {
-        subj.questions?.forEach((q: V2RawQuestion) => {
-          if (q.type === 'essay' || q.type === 'case' || q.type === 'casestudy') {
-            essayCount++;
-          } else {
-            mcqCount++;
-          }
+      if (ch.bankSection !== 'practical') {
+        ch.subjects?.forEach((subj: V2RawSubject) => {
+          subj.questions?.forEach((q: V2RawQuestion) => {
+            if (q.type === 'essay' || q.type === 'case' || q.type === 'casestudy') {
+              essayCount++;
+            } else {
+              mcqCount++;
+            }
+          });
         });
-      });
+      }
     });
-    return { mcqCount, essayCount, totalCount: mcqCount + essayCount };
+    return attachPractical({
+      mcqCount,
+      essayCount,
+      totalCount: mcqCount + essayCount,
+    });
   }
 
   if (db?.mcqRaw) {
@@ -855,18 +891,28 @@ export function getModuleQuestionCounts(moduleCode: string) {
     }
   }
 
-  return { mcqCount, essayCount, totalCount: mcqCount + essayCount };
+  return attachPractical({ mcqCount, essayCount, totalCount: mcqCount + essayCount });
 }
 
 function buildChaptersForModuleAndMode(
   moduleCode: string,
-  mode: 'mcq' | 'essay' | 'mixed'
+  mode: 'mcq' | 'essay' | 'mixed' | 'practical'
 ): ChapterData[] {
+  if (mode === 'practical') {
+    if (moduleCode === 'MGL-3') {
+      return (mgl3PracticalChapters as unknown as ChapterData[]).map(ch => ({
+        ...ch,
+        accentColor: ch.accentColor || ch.subjects[0]?.id || 'histology'
+      }));
+    }
+    return [];
+  }
+
   const db = moduleDatabases[moduleCode];
   if (!db) return [];
 
   if (db.v2Raw) {
-    const chaptersList = db.v2Raw.chapters || [];
+    let chaptersList = (db.v2Raw.chapters || []).filter((ch: V2RawChapter) => ch.bankSection !== 'practical');
     const toSubjectColor = (subject: V2RawSubject): SubjectColor => {
       const name = (subject.name || '').toLowerCase();
       if (name.includes('anatomy')) return 'anatomy';
@@ -1028,7 +1074,7 @@ export function findQuestionById(id: string | number): { question: Question; cha
   return null;
 }
 
-export function getChaptersForModuleAndMode(code:string,mode:'mcq'|'essay'|'mixed'):ChapterData[]{
+export function getChaptersForModuleAndMode(code:string,mode:'mcq'|'essay'|'mixed'|'practical'):ChapterData[]{
  const key=code+':'+mode;const old=chapterCache.get(key);if(old?.revision===correctionRevision && old.chapters.length > 0)return old.chapters;
  const chapters=visiblePracticeChapters(buildChaptersForModuleAndMode(code,mode));for(const c of chapters)for(const s of c.subjects)for(const q of s.questions)q.contentVersion??=sourceContentVersions.get(code+':'+q.id)??bankManifest[code]?.revision;if(chapters.length > 0){chapterCache.set(key,{revision:correctionRevision,chapters});}return chapters;
 }

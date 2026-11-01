@@ -169,8 +169,8 @@ function QuizFlowWrapper({
 }: {
   selectedModule: ModuleInfo | null;
   setSelectedModule: (m: ModuleInfo | null) => void;
-  studyMode: 'mcq' | 'essay' | 'mixed' | null;
-  setStudyMode: (m: 'mcq' | 'essay' | 'mixed' | null) => void;
+  studyMode: 'mcq' | 'essay' | 'mixed' | 'practical' | null;
+  setStudyMode: (m: 'mcq' | 'essay' | 'mixed' | 'practical' | null) => void;
   screen: Screen;
   setScreen: (s: Screen) => void;
   activeChapters: ChapterData[];
@@ -202,7 +202,7 @@ function QuizFlowWrapper({
   const [gitExamPeriod, setGitExamPeriod] = useState<'ca-1' | 'ca-2' | null>(null);
   useEffect(() => { setGitCollection('practice'); }, [code, mode]);
   useEffect(() => {
-    if (selectedModule?.code === 'MGL-3' && screen !== 'chapters' && selectedChapter?.bankSection) {
+    if (selectedModule?.code === 'MGL-3' && screen !== 'chapters' && selectedChapter?.bankSection && selectedChapter.bankSection !== 'practical') {
       setGitCollection(selectedChapter.bankSection);
       if (selectedChapter.examPeriod) {
         setGitExamPeriod(selectedChapter.examPeriod);
@@ -505,8 +505,8 @@ function MainApp() {
       return null;
     }
   });
-  const [studyMode, setStudyMode] = useState<'mcq' | 'essay' | 'mixed' | null>(() => {
-    try { const saved = safeStorage.getItem<string | null>('asu_portal_studyMode', null); return (saved as 'mcq' | 'essay' | 'mixed') || null; } catch { return null; }
+  const [studyMode, setStudyMode] = useState<'mcq' | 'essay' | 'mixed' | 'practical' | null>(() => {
+    try { const saved = safeStorage.getItem<string | null>('asu_portal_studyMode', null); return (saved as 'mcq' | 'essay' | 'mixed' | 'practical') || null; } catch { return null; }
   });
 
   const [showTrackerSelector, setShowTrackerSelector] = useState(false);
@@ -994,7 +994,8 @@ function MainApp() {
   const studyModeNameMap = {
     mcq: 'MCQ Practice Mode',
     essay: 'Essay Study Mode',
-    mixed: 'Mixed Exam Mode'
+    mixed: 'Mixed Exam Mode',
+    practical: 'Practical Exam Mode',
   };
 
   const customUserButton = useMemo(() => (

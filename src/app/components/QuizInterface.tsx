@@ -40,6 +40,7 @@ import { useHintSystem } from '../hooks/useHintSystem';
 import { AIChatPanel } from './AIChatPanel';
 import { FormattedAnswer } from './FormattedAnswer';
 import { triggerStarlightBurst } from './StarlightCelebration';
+import { SpecimenViewer } from './SpecimenViewer';
 
 interface Props {
   childAnchor?:string;
@@ -1462,6 +1463,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
             {/* Question card */}
             <div className="rounded-2xl border border-gray-200 dark:border-white/[0.07] bg-card p-5 shadow-sm dark:shadow-[0_8px_40px_rgba(0,0,0,0.4)] sm:p-7">
+              {(question.media?.imageUrl || question.imageUrl) && (
+                <SpecimenViewer
+                  imageUrl={(question.media?.imageUrl || question.imageUrl)!}
+                  altText={question.text}
+                />
+              )}
+
               {question.type !== 'fillblank' && question.type !== 'case' && question.type !== 'casestudy' && renderFormattedText(
                 question.text,
                 "mb-6 text-base font-semibold leading-relaxed text-gray-900 dark:text-white sm:text-lg text-left whitespace-pre-line"

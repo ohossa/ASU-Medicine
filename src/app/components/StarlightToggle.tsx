@@ -10,13 +10,21 @@ interface Props {
   showText?: boolean;
 }
 
+function useSafeUser() {
+  try {
+    return useUser();
+  } catch {
+    return { user: null, isLoaded: true };
+  }
+}
+
 /**
  * StarlightToggle
  * Exclusive secret theme switch, visible ONLY to authorized accounts (sarahrateb@gmail.com, omarhmaged@gmail.com).
  * Adheres strictly to Apple HIG: min 44px touch target, visible focus ring, reduced motion.
  */
 export function StarlightToggle({ className = '', showText = true }: Props) {
-  const { user, isLoaded } = useUser();
+  const { user, isLoaded } = useSafeUser();
   const { isStarlight, toggleStarlight } = useTheme();
   const reducedMotion = useReducedMotion();
   const isIconOnly = !showText;

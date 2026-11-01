@@ -12,6 +12,8 @@ export type SubjectColor =
   | 'ophthalmology'
   | 'ent';
 
+export type ModeType = 'mcq' | 'essay' | 'mixed' | 'practical';
+
 export type Screen =
   | 'yearSelect'
   | 'semesterSelect'
@@ -132,6 +134,7 @@ export interface Question {
   bloomLevel?: 'remember' | 'understand' | 'apply' | 'analyze' | 'evaluate' | 'create';
   tags?: string[];
   estimatedTimeSeconds?: number;
+  imageUrl?: string;
   media?: {
     imageUrl?: string;
     videoUrl?: string;
@@ -157,9 +160,10 @@ export interface SubjectData {
 }
 
 export type QuestionCollection = 'practice' | 'past-exams';
+export type BankSection = QuestionCollection | 'practical';
 
 export interface ChapterData {
-  bankSection?: QuestionCollection;
+  bankSection?: BankSection;
   examPeriod?: 'ca-1' | 'ca-2';
   id: number;
   title: string;

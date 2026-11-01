@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import {
-  ArrowLeft, Activity, BookOpen, Layers, CalendarDays, ChevronRight, ArrowRight,
+  ArrowLeft, Activity, BookOpen, Layers, CalendarDays, ChevronRight, ArrowRight, Microscope,
   type LucideIcon,
 } from 'lucide-react';
 import { PortalShell } from '../app/components/PortalShell';
@@ -12,7 +12,7 @@ import { pageVariants } from '../app/lib/motion';
 /* ────────────────────────────────────────────────
    MODE DEFINITIONS & APPLE DESIGN SYSTEM TOKENS
    ──────────────────────────────────────────────── */
-type ModeType = 'mcq' | 'essay' | 'mixed';
+type ModeType = 'mcq' | 'essay' | 'mixed' | 'practical';
 
 interface ModeConfig {
   type: ModeType;
@@ -37,6 +37,17 @@ const MODES: ModeConfig[] = [
     badgeBg: 'bg-emerald-500/15',
     badgeText: 'text-emerald-600 dark:text-emerald-400',
     btnClass: 'bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm hover:shadow-[0_8px_20px_rgba(34,197,94,0.3)] focus-visible:ring-emerald-500',
+  },
+  {
+    type: 'practical',
+    title: 'Practical Exam Mode',
+    desc: 'Specimen identification, histology micrographs, gross pathology jars, and parasite vectors with interactive image zoom and label masking.',
+    cta: 'Start Practical Exam',
+    icon: Microscope,
+    accent: '#a855f7',
+    badgeBg: 'bg-purple-500/15',
+    badgeText: 'text-purple-600 dark:text-purple-400',
+    btnClass: 'bg-purple-600 hover:bg-purple-500 text-white shadow-sm hover:shadow-[0_8px_20px_rgba(168,85,247,0.3)] focus-visible:ring-purple-500',
   },
   {
     type: 'essay',
@@ -83,19 +94,23 @@ export default function StudyMode({ userButton, onStartStudyMode, onOpenSyllabus
     return getModuleQuestionCounts(moduleCode);
   }, [moduleCode]);
 
-  // Adaptively filter out Essay and Mixed modes if the module contains 0 essays
+  // Adaptively filter out Essay, Mixed, and Practical modes depending on available content
   const visibleModes = useMemo(() => {
     return MODES.filter((mode) => {
       if (mode.type === 'essay' || mode.type === 'mixed') {
         return counts.essayCount > 0;
       }
+      if (mode.type === 'practical') {
+        return (counts.practicalCount ?? 0) > 0 || moduleCode === 'MGL-3';
+      }
       return true;
     });
-  }, [counts.essayCount]);
+  }, [counts.essayCount, counts.practicalCount, moduleCode]);
 
   const getModeCount = (type: ModeType) => {
     if (type === 'mcq') return counts.mcqCount;
     if (type === 'essay') return counts.essayCount;
+    if (type === 'practical') return counts.practicalCount ?? 0;
     return counts.totalCount;
   };
 

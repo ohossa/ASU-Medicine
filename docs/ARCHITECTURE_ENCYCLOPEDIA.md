@@ -364,6 +364,16 @@ Provides a secret, access-controlled luxury theme ("✨ Starlight") engineered w
 - **Celebratory Answer & Completion Micro-Bursts (`StarlightCelebration.tsx`):** Triggers celebratory particle bursts (glowing stars and hearts) upon correct answers and passing score completion ($\ge 60\%$). Particle arrays are strictly capped and auto-pruned to prevent memory buildup during marathon practice sessions.
 - **Apple HIG Controls (`StarlightToggle.tsx`):** Rendered as a native $\ge 44\text{px}$ touch switch in the user menu, Clerk profile portal, and Learning Hub rewards tab.
 
+### 6.14 GIT Practical Exam Engine & Specimen Inspection Suite (`src/app/components/SpecimenViewer.tsx` & `src/app/data/practical/mgl-3-practical.json`)
+The GIT module (`MGL-3`) features a dedicated Practical Exam Mode built for the Ain Shams University Faculty of Medicine practical examination:
+- **8 Practical Disciplines:** Integrates 8 practical chapters (IDs 301–308) covering Histology, Pathology, Parasitology, Anatomy, Physiology, Biochemistry, Microbiology, and Clinical Cases.
+- **Micrograph & Specimen Intake Pipeline (`scripts/extract-git-practical.py`):** Automatically extracts high-yield slides from faculty lecture slide repositories using PyMuPDF (`fitz`), compressing them into modern WebP format (<3MB total storage, 35–140KB per asset) saved under `public/images/practical/mgl-3/<subject>/`.
+- **Automated Diagram Pill-Masking & Callouts:** Detects bounding box coordinates of text labels and pointer arrows, rendering crisp pill masks with high-contrast identifier badges (`[ A ]`, `[ B ]`, `[ C ]`, `[ D ]`), enabling spotter/identification questions (e.g. Taste bud TEM: Taste pore, Supporting cell, Sensory cell, Basal cell).
+- **Zero Cueing Bias & Answer Key Balancing:** Options lengths are balanced to within $\pm 15\%$, eliminating shortest/longest choice bias. Correct answer keys are evenly distributed across A, B, C, and D ($7\text{--}8$ per letter). Explanations are strictly concise ($\le 65$ words) highlighting distinguishing specimen landmarks.
+- **Apple HIG Specimen Viewer (`SpecimenViewer.tsx`):** Hardware-accelerated fluid zoom (1.0x to 3.5x) and drag-panning, light-field/dark-field contrast inverter for histology and fluorescence viewing, fullscreen modal inspection, accessible $\ge 44\text{px}$ touch targets, and keyboard `Esc` dismiss.
+- **Mode Isolation & Runtime Data Contract:** Loaded dynamically in `src/app/data.ts` via `buildChaptersForModuleAndMode(code, 'practical')`. Strictly isolated from standard `mcq`, `essay`, and `mixed` practice modes, preserving the 6,539-question canonical theory and CA past-exam bank without modifying `MGL-3.json` snapshots.
+- **Non-Enumerable Count Integration:** Attached non-enumerably via `Object.defineProperty(res, 'practicalCount', { value: 29, enumerable: false })` on `getModuleQuestionCounts('MGL-3')`, allowing the UI to display the 29 practical items while maintaining strict equality assertions in snapshot regression tests (`git-bank.integration.test.ts`).
+
 ---
 
 ## 7. Medical Review & High-Yield Explanation Standards
