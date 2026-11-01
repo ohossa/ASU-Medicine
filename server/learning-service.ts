@@ -60,17 +60,17 @@ export function createLearningService(d: Dependencies) {
         if (
           !item ||
           typeof item.questionId !== "string" ||
-          item.questionId.length > 180 ||
-          seen.has(item.questionId)
+          item.questionId.length > 180
         )
-          throw new ReportError(400, "Invalid or duplicate question.");
+          continue;
+        if (seen.has(item.questionId)) {
+          continue; // Gracefully deduplicate repeated questions within batch
+        }
         seen.add(item.questionId);
         const snapshot = bank.get(item.questionId);
-        if (!snapshot)
-          throw new ReportError(
-            409,
-            "A question changed or is unavailable. Refresh the bank.",
-          );
+        if (!snapshot) {
+          continue; // Gracefully skip unavailable or retired questions without failing batch
+        }
         if (["case", "casestudy"].includes(snapshot.question.type)) {
           const answers =
             item.answer && typeof item.answer === "object" ? item.answer : {};
@@ -91,6 +91,9 @@ export function createLearningService(d: Dependencies) {
           const reward = prepareReward(snapshot, item.answer);
           if (reward) rewards.push(reward);
         }
+      }
+      if (rewards.length === 0) {
+        return { personal: 0, competitive: 0 };
       }
       if (rewards.length > 300)
         throw new ReportError(400, "Too many question parts.");

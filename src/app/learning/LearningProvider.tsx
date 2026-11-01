@@ -17,6 +17,7 @@ import { XPAwardBubble } from "./XPAwardBubble";
 interface Context {
   data: LearningDashboard | null;
   loading: boolean;
+  syncing: boolean;
   error: string;
   pending: number;
   period: string;
@@ -52,6 +53,7 @@ export function LearningProvider({ children }: { children: ReactNode }) {
       data: LearningDashboard;
     } | null>(null),
     [loading, setLoading] = useState(false),
+    [syncing, setSyncing] = useState(false),
     [error, setError] = useState(""),
     [pending, setPending] = useState(0),
     [period, setPeriod] = useState("weekly");
@@ -117,6 +119,7 @@ export function LearningProvider({ children }: { children: ReactNode }) {
     const initialQueue = readQueue(id);
     if (initialQueue.length === 0) return;
     busy.current.add(id);
+    setSyncing(true);
     try {
       let queue = initialQueue;
       let flushed = false;
@@ -137,11 +140,28 @@ export function LearningProvider({ children }: { children: ReactNode }) {
           break;
         }
 
+        const uniqueItems = new Map<string, any>();
+        for (const item of batch.flatMap((b) => b.submission.items || [])) {
+          if (item && item.questionId) {
+            uniqueItems.set(item.questionId, item);
+          }
+        }
+
+        const batchIds = new Set(batch.map((b) => b.id));
+
+        if (uniqueItems.size === 0) {
+          const latest = readQueue(id).filter((item) => !batchIds.has(item.id));
+          localStorage.setItem(queueKey(id), JSON.stringify(latest));
+          queue = latest;
+          flushed = true;
+          if (activeId.current === id) setPending(queue.length);
+          continue;
+        }
+
         const mergedSubmission: LearningSubmission = {
           moduleCode: first.submission.moduleCode,
-          items: batch.flatMap((b) => b.submission.items || []),
+          items: Array.from(uniqueItems.values()),
         };
-        const batchIds = new Set(batch.map((b) => b.id));
 
         try {
           const result = await request<{ personal?: number }>("POST", mergedSubmission);
@@ -169,9 +189,9 @@ export function LearningProvider({ children }: { children: ReactNode }) {
           flushed = true;
           if (activeId.current === id) setPending(queue.length);
         } catch (itemErr: any) {
-          // If server rejected item permanently (400 Bad Request, 409 Conflict), drop the first item to isolate bad input
+          // If server rejected item permanently (400 Bad Request, 409 Conflict), drop the batch to unblock queue
           if (itemErr && (itemErr.status === 400 || itemErr.status === 409)) {
-            const latest = readQueue(id).filter((item) => item.id !== first.id);
+            const latest = readQueue(id).filter((item) => !batchIds.has(item.id));
             localStorage.setItem(queueKey(id), JSON.stringify(latest));
             queue = latest;
             flushed = true;
@@ -182,7 +202,7 @@ export function LearningProvider({ children }: { children: ReactNode }) {
           throw itemErr;
         }
       }
-      if (flushed && activeId.current === id && !snapshot) await refresh();
+      if (flushed && activeId.current === id) await refresh();
     } catch (e) {
       if (activeId.current === id)
         setError(
@@ -190,6 +210,7 @@ export function LearningProvider({ children }: { children: ReactNode }) {
         );
     } finally {
       busy.current.delete(id);
+      setSyncing(false);
     }
   }, [userId, request, refresh]);
   useEffect(() => {
@@ -289,6 +310,7 @@ export function LearningProvider({ children }: { children: ReactNode }) {
       value={{
         data: snapshot && snapshot.id === userId ? snapshot.data : null,
         loading,
+        syncing,
         error,
         pending,
         period,

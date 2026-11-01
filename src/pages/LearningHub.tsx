@@ -257,8 +257,14 @@ export default function LearningHub({
               {learning.pending} learning updates saved on this device, waiting
               to sync.
             </p>
-            <button onClick={() => void learning.retry()}>
-              {ar ? "مزامنة الآن" : "Sync now"}
+            <button
+              onClick={() => void learning.retry()}
+              disabled={learning.syncing}
+              style={learning.syncing ? { opacity: 0.7, cursor: "wait" } : undefined}
+            >
+              {learning.syncing
+                ? (ar ? "جارٍ المزامنة..." : "Syncing...")
+                : (ar ? "مزامنة الآن" : "Sync now")}
             </button>
             <button
               onClick={() => {
