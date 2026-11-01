@@ -74,9 +74,8 @@ export async function getProfile(
         };
 
         // Automated Self-Healing Reconciliation:
-        // Only query learning_entries if profile.xp === 0 to recover zeroed accounts,
-        // saving thousands of Supabase table reads and MBs of egress during standard sessions.
-        if (profile.xp === 0) {
+        // Recovers zeroed or desynchronized student accounts from verified learning_entries
+        if (profile.xp === 0 || profile.level <= 2) {
           const { data: entryRows } = await supabase
             .from('learning_entries')
             .select('question_id, ever_correct, correct')
@@ -301,7 +300,13 @@ export async function award(id: string, year: number, rewards: unknown[]) {
       }, { onConflict: 'user_id' });
 
       if (entryRows.length > 0) {
-        await supabase.from('learning_entries').upsert(entryRows, { onConflict: 'id' });
+        // Deduplicate entryRows by unique 'id' to prevent PostgreSQL Error 21000:
+        // "ON CONFLICT DO UPDATE command cannot affect row a second time"
+        const uniqueEntryMap = new Map<string, any>();
+        for (const row of entryRows) {
+          uniqueEntryMap.set(row.id, row);
+        }
+        await supabase.from('learning_entries').upsert(Array.from(uniqueEntryMap.values()), { onConflict: 'id' });
       }
 
       const { data: profRow } = await supabase
