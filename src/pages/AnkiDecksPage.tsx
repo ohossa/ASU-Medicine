@@ -18,8 +18,9 @@ import {
   getTotalAvailableDecksCount,
   resolveDirectDownloadUrl,
   getAnkiCommunityUrl,
+  getFullYearDeck,
 } from "../app/data/ankiDecks";
-import type { AnkiDeck } from "../app/data/ankiDecks";
+import type { AnkiDeck, FullYearAnkiDeck } from "../app/data/ankiDecks";
 
 interface AnkiDecksPageProps {
   onBack: () => void;
@@ -65,6 +66,7 @@ export function AnkiDecksPage({
   });
 
   const moduleGroups = getModuleDeckGroups(selectedYear, selectedSemester);
+  const fullYearDeck = getFullYearDeck(selectedYear);
   const totalAvailableDecks = getTotalAvailableDecksCount();
   const communityUrl = getAnkiCommunityUrl();
 
@@ -330,11 +332,27 @@ export function AnkiDecksPage({
           </div>
         </div>
 
-        {/* ── Module Cards Grid ───────────────────────────────────────── */}
+        {/* ── Full Year Master Deck Hero Card (for Year 1 & Year 2) ── */}
+        {fullYearDeck && (
+          <FullYearDeckHeroCard deck={fullYearDeck} year={selectedYear} />
+        )}
+
+        {/* ── Module Cards Section ───────────────────────────────────── */}
         <section
           aria-label={`Modules for Year ${selectedYear} Semester ${selectedSemester}`}
           className="pb-16"
         >
+          {fullYearDeck && (
+            <div className="mb-4">
+              <h3 className="font-heading text-base font-bold text-zinc-900 dark:text-white">
+                Included Modules in Year {selectedYear} Deck (Semester {selectedSemester})
+              </h3>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                All of the following semester modules are bundled into the master download above. Standalone single-module decks are in preparation.
+              </p>
+            </div>
+          )}
+
           {moduleGroups.length === 0 ? (
             <div className="rounded-3xl border border-dashed border-zinc-300 dark:border-white/10 p-12 text-center">
               <p className="text-sm text-zinc-500 dark:text-zinc-400">
@@ -351,8 +369,8 @@ export function AnkiDecksPage({
                   <div
                     key={mod.code}
                     className={`flex flex-col justify-between rounded-3xl border p-5 sm:p-6 transition-all duration-300 bg-white dark:bg-[#141414] ${
-                      hasReadyDecks
-                        ? "border-violet-500/40 shadow-sm hover:shadow-md hover:border-violet-500/60 dark:border-violet-500/30"
+                      fullYearDeck || hasReadyDecks
+                        ? "border-emerald-500/30 shadow-sm hover:shadow-md hover:border-emerald-500/50 dark:border-emerald-500/20"
                         : "border-zinc-200/80 dark:border-white/[0.07] opacity-95"
                     }`}
                   >
@@ -373,11 +391,41 @@ export function AnkiDecksPage({
                       </h3>
 
                       {/* Cards within this module */}
-                      <div className="mt-4 space-y-3">
-                        {decks.map((deck) => (
-                          <DeckItem key={deck.id} deck={deck} />
-                        ))}
-                      </div>
+                      {fullYearDeck ? (
+                        <div className="mt-4 space-y-2">
+                          <div className="rounded-2xl border border-emerald-500/25 bg-emerald-50/60 dark:bg-emerald-950/25 p-3.5">
+                            <div className="flex items-center justify-between gap-2">
+                              <span className="text-xs font-bold text-emerald-900 dark:text-emerald-200 flex items-center gap-1.5">
+                                <CheckCircle2 size={13} className="text-emerald-600 dark:text-emerald-400" />
+                                Included in Year {selectedYear} Deck
+                              </span>
+                              <span className="inline-flex items-center rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold text-emerald-700 dark:text-emerald-300">
+                                Ready
+                              </span>
+                            </div>
+                            <p className="mt-1 text-[11px] text-zinc-600 dark:text-zinc-400 leading-normal">
+                              Cards for {mod.name} are included in the complete download above.
+                            </p>
+                          </div>
+                          <div className="rounded-2xl border border-zinc-200/60 dark:border-white/[0.06] bg-zinc-50/50 dark:bg-white/[0.02] p-2.5">
+                            <div className="flex items-center justify-between gap-2 text-[11px]">
+                              <span className="text-zinc-500 dark:text-zinc-400">
+                                Standalone {mod.code} Deck
+                              </span>
+                              <span className="inline-flex items-center gap-1 rounded-full bg-zinc-200/60 dark:bg-white/10 px-2 py-0.5 text-[10px] font-bold text-zinc-600 dark:text-zinc-400">
+                                <Clock size={10} />
+                                In Prep
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="mt-4 space-y-3">
+                          {decks.map((deck) => (
+                            <DeckItem key={deck.id} deck={deck} />
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </div>
                 );
@@ -387,6 +435,76 @@ export function AnkiDecksPage({
         </section>
       </motion.div>
     </PortalShell>
+  );
+}
+
+function FullYearDeckHeroCard({
+  deck,
+  year,
+}: {
+  deck: FullYearAnkiDeck;
+  year: number;
+}) {
+  const directDownloadUrl = resolveDirectDownloadUrl(deck.downloadUrl);
+
+  return (
+    <div className="mb-8 overflow-hidden rounded-3xl border border-emerald-500/30 bg-gradient-to-br from-emerald-500/[0.08] via-white to-white dark:from-emerald-950/30 dark:via-[#141414] dark:to-[#141414] p-6 sm:p-8 shadow-sm backdrop-blur-xl">
+      <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+        <div className="space-y-3 max-w-3xl">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-bold text-emerald-800 dark:text-emerald-300 border border-emerald-500/30">
+              <Sparkles size={13} />
+              Whole Year Bundle
+            </span>
+            <span className="inline-flex items-center gap-1 rounded-full bg-zinc-100 dark:bg-white/10 px-2.5 py-1 text-xs font-semibold text-zinc-700 dark:text-zinc-300">
+              Year {year} · All Semesters
+            </span>
+            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/20 px-2.5 py-1 text-xs font-bold text-emerald-700 dark:text-emerald-300">
+              Ready to Download
+            </span>
+          </div>
+
+          <h3 className="font-heading text-xl sm:text-2xl font-black tracking-tight text-zinc-900 dark:text-white">
+            {deck.title}
+          </h3>
+
+          <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
+            {deck.description}
+          </p>
+
+          <div className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 pt-1">
+            <CheckCircle2 size={14} className="text-emerald-600 dark:text-emerald-400 shrink-0" />
+            <span>Contains all Year {year} modules combined into a single organized Anki deck hierarchy.</span>
+          </div>
+        </div>
+
+        {/* Action buttons (Apple HIG >= 44px touch targets) */}
+        <div className="flex flex-col sm:flex-row lg:flex-col gap-3 shrink-0">
+          <a
+            href={directDownloadUrl || deck.downloadUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+            aria-label={`Download ${deck.title} (.apkg)`}
+            className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl bg-emerald-600 px-6 py-3 text-sm font-bold text-white shadow-md shadow-emerald-600/20 hover:bg-emerald-500 active:scale-[0.98] transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-500 dark:bg-emerald-500 dark:hover:bg-emerald-400 dark:text-zinc-950"
+          >
+            <Download size={18} />
+            <span>Download Year {year} Deck (.apkg)</span>
+          </a>
+
+          <a
+            href={deck.downloadUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Open ${deck.title} in Google Drive`}
+            className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-2xl border border-zinc-200 dark:border-white/10 bg-white/80 dark:bg-zinc-900/80 px-5 py-2.5 text-xs font-semibold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 active:scale-[0.98] transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-emerald-500"
+          >
+            <span>Open in Google Drive</span>
+            <ExternalLink size={13} className="opacity-70" />
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }
 

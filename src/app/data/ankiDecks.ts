@@ -14,6 +14,18 @@ export interface AnkiDeck {
   isAvailable: boolean;
 }
 
+export interface FullYearAnkiDeck {
+  year: number;
+  title: string;
+  subtitle: string;
+  description: string;
+  downloadUrl: string;
+  provider: "gdrive" | "github" | "direct";
+  isAvailable: boolean;
+  tag?: string;
+  fileSize?: string;
+}
+
 export interface ModuleDeckGroup {
   module: ModuleInfo;
   year: number;
@@ -125,6 +137,40 @@ export const ANKI_DECKS_REGISTRY: Record<string, AnkiDeck[]> = {
 };
 
 /**
+ * Full Academic Year Anki Decks (All Modules in a single consolidated package)
+ */
+export const FULL_YEAR_DECKS_REGISTRY: Record<number, FullYearAnkiDeck> = {
+  1: {
+    year: 1,
+    title: "Year 1 Complete Flashcards Bundle",
+    subtitle: "All Year 1 Modules Included (Semesters 1 & 2)",
+    description:
+      "All Year 1 foundational modules in a single organized Anki deck tree (Anatomy, Histology, Physiology, Biochemistry, Microbiology, Pathology, and Pharmacology). Packed with high-yield textbook figures and lecture slides.",
+    downloadUrl:
+      "https://drive.google.com/file/d/1cMufcySwgAnZPbAJJZkL_2fi3zSSt1NB/view?usp=sharing",
+    provider: "gdrive",
+    isAvailable: true,
+    tag: "Whole Year Bundle",
+  },
+  2: {
+    year: 2,
+    title: "Year 2 Complete Flashcards Bundle",
+    subtitle: "All Year 2 Modules Included (Semesters 1 & 2)",
+    description:
+      "Complete integrated system flashcards for Year 2 (Cardiovascular, Respiratory, Musculoskeletal, Neurosciences, Endocrine, and Renal). Features clinical pathology, anatomical diagrams, histology micrographs, and lecture highlights.",
+    downloadUrl:
+      "https://drive.google.com/file/d/1m8cEDkfjMBzQWAXhhWLsiJWpXeHkOGU1/view?usp=drive_link",
+    provider: "gdrive",
+    isAvailable: true,
+    tag: "Whole Year Bundle",
+  },
+};
+
+export function getFullYearDeck(year: number): FullYearAnkiDeck | undefined {
+  return FULL_YEAR_DECKS_REGISTRY[year];
+}
+
+/**
  * Returns all module deck groups for a given academic year and semester.
  */
 export function getModuleDeckGroups(
@@ -158,8 +204,10 @@ export function getModuleDeckGroups(
  * Get total count of available Anki decks across the entire portal.
  */
 export function getTotalAvailableDecksCount(): number {
-  return Object.values(ANKI_DECKS_REGISTRY).reduce(
+  const fullYearCount = Object.values(FULL_YEAR_DECKS_REGISTRY).filter((d) => d.isAvailable).length;
+  const moduleDecksCount = Object.values(ANKI_DECKS_REGISTRY).reduce(
     (acc, decks) => acc + decks.filter((d) => d.isAvailable).length,
     0,
   );
+  return fullYearCount + moduleDecksCount;
 }

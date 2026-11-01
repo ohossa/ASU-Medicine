@@ -4,6 +4,7 @@ import {
   getModuleDeckGroups,
   getTotalAvailableDecksCount,
   getAnkiCommunityUrl,
+  getFullYearDeck,
   ANKI_WHATSAPP_GROUP_URL,
 } from "../../app/data/ankiDecks";
 
@@ -79,10 +80,40 @@ describe("Anki Deck Catalog & Link Engine", () => {
     });
   });
 
+  describe("getFullYearDeck", () => {
+    it("returns Year 1 complete flashcards deck with Google Drive download link", () => {
+      const deck1 = getFullYearDeck(1);
+      expect(deck1).toBeDefined();
+      expect(deck1?.isAvailable).toBe(true);
+      expect(deck1?.downloadUrl).toBe(
+        "https://drive.google.com/file/d/1cMufcySwgAnZPbAJJZkL_2fi3zSSt1NB/view?usp=sharing",
+      );
+      expect(resolveDirectDownloadUrl(deck1?.downloadUrl)).toContain(
+        "1cMufcySwgAnZPbAJJZkL_2fi3zSSt1NB",
+      );
+    });
+
+    it("returns Year 2 complete flashcards deck with Google Drive download link", () => {
+      const deck2 = getFullYearDeck(2);
+      expect(deck2).toBeDefined();
+      expect(deck2?.isAvailable).toBe(true);
+      expect(deck2?.downloadUrl).toBe(
+        "https://drive.google.com/file/d/1m8cEDkfjMBzQWAXhhWLsiJWpXeHkOGU1/view?usp=drive_link",
+      );
+      expect(resolveDirectDownloadUrl(deck2?.downloadUrl)).toContain(
+        "1m8cEDkfjMBzQWAXhhWLsiJWpXeHkOGU1",
+      );
+    });
+
+    it("returns undefined for years without full-year master bundle", () => {
+      expect(getFullYearDeck(4)).toBeUndefined();
+    });
+  });
+
   describe("getTotalAvailableDecksCount", () => {
-    it("reports at least 2 available decks currently in registry", () => {
+    it("reports at least 4 available decks (Year 1 & 2 full bundles + MGL-3 parts 1 & 2)", () => {
       const count = getTotalAvailableDecksCount();
-      expect(count).toBeGreaterThanOrEqual(2);
+      expect(count).toBeGreaterThanOrEqual(4);
     });
   });
 });

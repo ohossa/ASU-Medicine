@@ -127,4 +127,40 @@ describe("AnkiDecksPage Component", () => {
     // Year 1 Semester 2 Pathology module should be visible
     expect(screen.getByText("Introduction to Pathology")).toBeInTheDocument();
   });
+
+  it("renders Year 1 Whole Year Flashcards bundle card with 1-tap download and Google Drive link", () => {
+    render(<AnkiDecksPage onBack={() => {}} initialYear={1} />);
+
+    expect(
+      screen.getByText("Year 1 Complete Flashcards Bundle"),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(/All Year 1 foundational modules in a single organized Anki deck tree/i),
+    ).toBeInTheDocument();
+
+    const downloadLink = screen.getByRole("link", {
+      name: /Download Year 1 Complete Flashcards Bundle/i,
+    });
+    expect(downloadLink).toBeInTheDocument();
+    expect(downloadLink).toHaveAttribute("download");
+    expect(downloadLink.getAttribute("href")).toContain("1cMufcySwgAnZPbAJJZkL_2fi3zSSt1NB");
+  });
+
+  it("renders Year 2 Whole Year Flashcards bundle card with 1-tap download and Google Drive link", () => {
+    render(<AnkiDecksPage onBack={() => {}} initialYear={2} />);
+
+    expect(
+      screen.getByText("Year 2 Complete Flashcards Bundle"),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(/Complete integrated system flashcards for Year 2/i),
+    ).toBeInTheDocument();
+
+    const downloadLink = screen.getByRole("link", {
+      name: /Download Year 2 Complete Flashcards Bundle/i,
+    });
+    expect(downloadLink).toBeInTheDocument();
+    expect(downloadLink).toHaveAttribute("download");
+    expect(downloadLink.getAttribute("href")).toContain("1m8cEDkfjMBzQWAXhhWLsiJWpXeHkOGU1");
+  });
 });
