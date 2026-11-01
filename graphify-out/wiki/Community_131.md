@@ -41,7 +41,7 @@
 - [Community 85](Community_85.md) (6 shared connections)
 - [Community 119](Community_119.md) (5 shared connections)
 - [Community 83](Community_83.md) (5 shared connections)
-- [Community 107](Community_107.md) (5 shared connections)
+- [Community 15](Community_15.md) (5 shared connections)
 - [Community 11](Community_11.md) (4 shared connections)
 - [Community 121](Community_121.md) (2 shared connections)
 - [Community 97](Community_97.md) (2 shared connections)

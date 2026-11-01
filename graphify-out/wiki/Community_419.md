@@ -1,24 +1,25 @@
 # Community 419
 
-> 3 nodes
+> 4 nodes
 
 ## Key Concepts
 
-- **FakeWorker** (3 connections) — `src/app/search/useSearchIndex.test.tsx`
-- **.constructor()** (1 connections) — `src/app/search/useSearchIndex.test.tsx`
-- **.postMessage()** (1 connections) — `src/app/search/useSearchIndex.test.tsx`
+- **vitals.ts** (4 connections) — `src/app/lib/vitals.ts`
+- **initWebVitals()** (3 connections) — `src/app/lib/vitals.ts`
+- **getRating()** (2 connections) — `src/app/lib/vitals.ts`
+- **Metric** (1 connections) — `src/app/lib/vitals.ts`
 
 ## Relationships
 
-- [Community 24](Community_24.md) (1 shared connections)
+- [Community 114](Community_114.md) (2 shared connections)
 
 ## Source Files
 
-- `src/app/search/useSearchIndex.test.tsx`
+- `src/app/lib/vitals.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 3 (100%)
+- EXTRACTED: 6 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

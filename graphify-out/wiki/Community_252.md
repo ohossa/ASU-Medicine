@@ -4,33 +4,37 @@
 
 ## Key Concepts
 
-- **cross-match-essays.py** (14 connections) — `scripts/cross-match-essays.py`
-- **main()** (8 connections) — `scripts/cross-match-essays.py`
-- **normalize()** (4 connections) — `scripts/cross-match-essays.py`
-- **extract_bank_essays()** (3 connections) — `scripts/cross-match-essays.py`
-- **load_bank()** (3 connections) — `scripts/cross-match-essays.py`
-- **load_inerd()** (3 connections) — `scripts/cross-match-essays.py`
-- **map_inered_to_valid_subject()** (3 connections) — `scripts/cross-match-essays.py`
-- **jaccard()** (2 connections) — `scripts/cross-match-essays.py`
-- **get_max_chapter_id()** (1 connections) — `scripts/cross-match-essays.py`
-- **Cross-match bank essays with iNerd essays and update/add accordingly.** (1 connections) — `scripts/cross-match-essays.py`
-- **Map iNerd inferred subject to valid subject for a chapter.** (1 connections) — `scripts/cross-match-essays.py`
+- **TriagePanel.tsx** (13 connections) — `src/pages/TriagePanel.tsx`
+- **TriagePanel()** (8 connections) — `src/pages/TriagePanel.tsx`
+- **StudyButton()** (6 connections) — `src/app/components/ui/StudyControls.tsx`
+- **StudyControls.tsx** (6 connections) — `src/app/components/ui/StudyControls.tsx`
+- **TriageAssessmentCard()** (5 connections) — `src/pages/TriagePanel.tsx`
+- **StatusMessage()** (4 connections) — `src/app/components/ui/StudyControls.tsx`
+- **triage-panel.test.tsx** (4 connections) — `src/test/reports/triage-panel.test.tsx`
+- **action()** (3 connections) — `src/pages/TriagePanel.tsx`
+- **StudySurface()** (1 connections) — `src/app/components/ui/StudyControls.tsx`
+- **action()** (1 connections) — `src/pages/TriagePanel.tsx`
+- **runQueue()** (1 connections) — `src/pages/TriagePanel.tsx`
 
 ## Relationships
 
-- [Community 20](Community_20.md) (4 shared connections)
-- [Community 38](Community_38.md) (2 shared connections)
-- [Polish Rejected Biochemistry](Polish_Rejected_Biochemistry.md) (1 shared connections)
-- [Biochemistry Build Intake](Biochemistry_Build_Intake.md) (1 shared connections)
-- [Keyword Unique Keywords](Keyword_Unique_Keywords.md) (1 shared connections)
+- [Community 224](Community_224.md) (5 shared connections)
+- [Community 24](Community_24.md) (3 shared connections)
+- [Triage Report Lease](Triage_Report_Lease.md) (3 shared connections)
+- [Community 114](Community_114.md) (2 shared connections)
+- [Community 6](Community_6.md) (1 shared connections)
+- [Community 36](Community_36.md) (1 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (1 shared connections)
 
 ## Source Files
 
-- `scripts/cross-match-essays.py`
+- `src/app/components/ui/StudyControls.tsx`
+- `src/pages/TriagePanel.tsx`
+- `src/test/reports/triage-panel.test.tsx`
 
 ## Audit Trail
 
-- EXTRACTED: 26 (100%)
+- EXTRACTED: 34 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

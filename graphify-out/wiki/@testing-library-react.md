@@ -1,8 +1,8 @@
 # @testing-library/react
 
-> God node · 61 connections · `package.json`
+> God node · 63 connections · `package.json`
 
-**Community:** [Community 152](Community_152.md)
+**Community:** [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md)
 
 ## Connections by Relation
 
@@ -30,7 +30,7 @@
 - Dashboard.git-navigation.test.tsx `EXTRACTED`
 - admin.test.tsx `EXTRACTED`
 - AIChatPanel.test.tsx `EXTRACTED`
-- *…and 40 more `imports_from` connection(s) not listed (lowest-degree first to go)*
+- *…and 42 more `imports_from` connection(s) not listed (lowest-degree first to go)*
 
 ---
 

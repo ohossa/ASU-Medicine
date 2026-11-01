@@ -1,25 +1,27 @@
 # Community 418
 
-> 4 nodes
+> 5 nodes
 
 ## Key Concepts
 
-- **ErrorBoundary** (4 connections) — `git-integration-preview.tsx`
-- **.constructor()** (1 connections) — `git-integration-preview.tsx`
-- **.getDerivedStateFromError()** (1 connections) — `git-integration-preview.tsx`
-- **.render()** (1 connections) — `git-integration-preview.tsx`
+- **git-owner-corrections.test.ts** (6 connections) — `src/app/git-owner-corrections.test.ts`
+- **CorrectionQuestion** (1 connections) — `src/app/git-owner-corrections.test.ts`
+- **find()** (1 connections) — `src/app/git-owner-corrections.test.ts`
+- **preparedBank** (1 connections) — `src/app/git-owner-corrections.test.ts`
+- **questions** (1 connections) — `src/app/git-owner-corrections.test.ts`
 
 ## Relationships
 
+- [Community 36](Community_36.md) (1 shared connections)
 - [Community 34](Community_34.md) (1 shared connections)
 
 ## Source Files
 
-- `git-integration-preview.tsx`
+- `src/app/git-owner-corrections.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 6 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

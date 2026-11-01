@@ -1,24 +1,28 @@
 # Community 311
 
-> 3 nodes
+> 7 nodes
 
 ## Key Concepts
 
-- **peerDependencies** (3 connections) — `package.json`
-- **react** (1 connections) — `package.json`
-- **react-dom** (1 connections) — `package.json`
+- **enrich-deepseek.ts** (7 connections) — `data-format-v2/scripts/enrich-deepseek.ts`
+- **enrichBatch()** (5 connections) — `data-format-v2/scripts/enrich-deepseek.ts`
+- **callLLM()** (3 connections) — `data-format-v2/scripts/enrich-deepseek.ts`
+- **clean()** (2 connections) — `data-format-v2/scripts/enrich-deepseek.ts`
+- **main()** (2 connections) — `data-format-v2/scripts/enrich-deepseek.ts`
+- **needsE()** (2 connections) — `data-format-v2/scripts/enrich-deepseek.ts`
+- **sleep()** (2 connections) — `data-format-v2/scripts/enrich-deepseek.ts`
 
 ## Relationships
 
-- [React Eslint Plugin](React_Eslint_Plugin.md) (1 shared connections)
+- [Community 125](Community_125.md) (1 shared connections)
 
 ## Source Files
 
-- `package.json`
+- `data-format-v2/scripts/enrich-deepseek.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 3 (100%)
+- EXTRACTED: 12 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

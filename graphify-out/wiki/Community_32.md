@@ -1,54 +1,70 @@
 # Community 32
 
-> 19 nodes
+> 47 nodes
 
 ## Key Concepts
 
-- **pulseEngine.ts** (12 connections) — `src/app/lib/pulseEngine.ts`
-- **celebrate.ts** (10 connections) — `src/app/lib/celebrate.ts`
-- **ConfettiManager.tsx** (7 connections) — `src/app/components/ConfettiManager.tsx`
-- **pulse** (7 connections) — `src/app/lib/pulseEngine.ts`
-- **fx.config.ts** (5 connections) — `src/app/lib/fx.config.ts`
-- **ECGMonitor.tsx** (4 connections) — `src/app/components/ECGMonitor.tsx`
-- **FX** (4 connections) — `src/app/lib/fx.config.ts`
-- **useReactiveBackground.ts** (4 connections) — `src/app/lib/useReactiveBackground.ts`
-- **getConfettiColors()** (3 connections) — `src/app/lib/confettiConfig.ts`
-- **confettiConfig.ts** (3 connections) — `src/app/lib/confettiConfig.ts`
-- **ConfettiManager()** (2 connections) — `src/app/components/ConfettiManager.tsx`
-- **fx** (2 connections) — `src/app/lib/pulseEngine.ts`
-- **canvas-confetti** (2 connections) — `package.json`
-- **FxKey** (1 connections) — `src/app/lib/fx.config.ts`
-- **Burst** (1 connections) — `src/app/lib/pulseEngine.ts`
-- **Mood** (1 connections) — `src/app/lib/pulseEngine.ts`
-- **ECGMonitor()** (1 connections) — `src/app/components/ECGMonitor.tsx`
-- **usePulseState()** (1 connections) — `src/app/lib/useReactiveBackground.ts`
-- **moduleConfettiColors** (1 connections) — `src/app/lib/confettiConfig.ts`
+- **YearModules.tsx** (29 connections) — `src/pages/YearModules.tsx`
+- **Dashboard.tsx** (25 connections) — `src/pages/Dashboard.tsx`
+- **ref_motion** (24 connections)
+- **StudyMode.tsx** (18 connections) — `src/pages/StudyMode.tsx`
+- **YearModules()** (11 connections) — `src/pages/YearModules.tsx`
+- **motion.ts** (11 connections) — `src/app/lib/motion.ts`
+- **applySubjectTheme()** (9 connections) — `src/app/theme/subjectThemes.ts`
+- **Dashboard.git-navigation.test.tsx** (9 connections) — `src/pages/Dashboard.git-navigation.test.tsx`
+- **subjectThemes.ts** (8 connections) — `src/app/theme/subjectThemes.ts`
+- **Dashboard()** (6 connections) — `src/pages/Dashboard.tsx`
+- **Light_Dark Mode Toggle/src/app/App.tsx** (6 connections) — `Light_Dark Mode Toggle/src/app/App.tsx`
+- **Light_Dark Mode Toggle/src/app/components/ThemeToggle.tsx** (6 connections) — `Light_Dark Mode Toggle/src/app/components/ThemeToggle.tsx`
+- **StackedCarousel.tsx** (6 connections) — `src/app/components/ui/StackedCarousel.tsx`
+- **study-mode-apple-design.test.tsx** (6 connections) — `src/test/pages/study-mode-apple-design.test.tsx`
+- **pageVariants** (5 connections) — `src/app/lib/motion.ts`
+- **YearModules.test.tsx** (5 connections) — `src/pages/YearModules.test.tsx`
+- **ref_react_dom** (5 connections)
+- **StudyMode()** (4 connections) — `src/pages/StudyMode.tsx`
+- **Light_Dark Mode Toggle/src/main.tsx** (4 connections) — `Light_Dark Mode Toggle/src/main.tsx`
+- **App()** (3 connections) — `Light_Dark Mode Toggle/src/app/App.tsx`
+- **ThemeToggle()** (3 connections) — `Light_Dark Mode Toggle/src/app/components/ThemeToggle.tsx`
+- **Dashboard** (3 connections) — `src/app/App.tsx`
+- **StudyMode** (3 connections) — `src/app/App.tsx`
+- **YearModules** (3 connections) — `src/app/App.tsx`
+- **ProgressRing()** (2 connections) — `src/pages/YearModules.tsx`
+- *... and 22 more nodes in this community*
 
 ## Relationships
 
-- [Community 95](Community_95.md) (8 shared connections)
-- [Community 6](Community_6.md) (4 shared connections)
-- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (3 shared connections)
-- [Usesoundengine Soundkey Audiopolicy](Usesoundengine_Soundkey_Audiopolicy.md) (2 shared connections)
-- [Interactivebackground Cell Constructor](Interactivebackground_Cell_Constructor.md) (2 shared connections)
-- [Community 15](Community_15.md) (2 shared connections)
-- [Pulseengine Burst Getsnapshot](Pulseengine_Burst_Getsnapshot.md) (1 shared connections)
-- [React Eslint Plugin](React_Eslint_Plugin.md) (1 shared connections)
+- [Community 46](Community_46.md) (19 shared connections)
+- [Community 6](Community_6.md) (14 shared connections)
+- [Community 36](Community_36.md) (10 shared connections)
+- [Community 114](Community_114.md) (8 shared connections)
+- [Community 24](Community_24.md) (8 shared connections)
+- [Community 81](Community_81.md) (7 shared connections)
+- [Community 95](Community_95.md) (6 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (6 shared connections)
+- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (5 shared connections)
+- [Community 34](Community_34.md) (5 shared connections)
+- [Community 51](Community_51.md) (4 shared connections)
+- [Community 117](Community_117.md) (3 shared connections)
 
 ## Source Files
 
-- `package.json`
-- `src/app/components/ConfettiManager.tsx`
-- `src/app/components/ECGMonitor.tsx`
-- `src/app/lib/celebrate.ts`
-- `src/app/lib/confettiConfig.ts`
-- `src/app/lib/fx.config.ts`
-- `src/app/lib/pulseEngine.ts`
-- `src/app/lib/useReactiveBackground.ts`
+- `Light_Dark Mode Toggle/src/app/App.tsx`
+- `Light_Dark Mode Toggle/src/app/components/ThemeToggle.tsx`
+- `Light_Dark Mode Toggle/src/main.tsx`
+- `src/app/App.tsx`
+- `src/app/components/ui/StackedCarousel.tsx`
+- `src/app/lib/motion.ts`
+- `src/app/theme/subjectThemes.ts`
+- `src/pages/Dashboard.git-navigation.test.tsx`
+- `src/pages/Dashboard.tsx`
+- `src/pages/StudyMode.tsx`
+- `src/pages/YearModules.test.tsx`
+- `src/pages/YearModules.tsx`
+- `src/test/pages/study-mode-apple-design.test.tsx`
 
 ## Audit Trail
 
-- EXTRACTED: 47 (100%)
+- EXTRACTED: 169 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -72,6 +72,7 @@ const QuestionSearch = lazy(() => import('./components/QuestionSearch').then(m =
 const MarksCalculator = lazy(() => import('./components/MarksCalculator').then(m => ({ default: m.MarksCalculator })));
 const AnkiDecksPage = lazy(() => import('../pages/AnkiDecksPage').then(m => ({ default: m.AnkiDecksPage })));
 const SyllabusTrackerPage = lazy(() => import('../pages/SyllabusTrackerPage').then(m => ({ default: m.SyllabusTrackerPage })));
+const NotFoundPage = lazy(() => import('../pages/NotFoundPage').then(m => ({ default: m.NotFoundPage })));
 
 import { ThemeProvider } from './context/ThemeContext';
 import { useTheme } from './hooks/useTheme';
@@ -1308,7 +1309,7 @@ function MainApp() {
               } />
             ))}
 
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<Suspense fallback={<LoadingScreen compact label="Locating page…" />}><NotFoundPage /></Suspense>} />
         </Routes></RouteDataGate>
 
         {resumePayload && (

@@ -1,78 +1,78 @@
 # Flagged Questions & Results UI
 
-> 120 nodes
+> 109 nodes
 
 ## Key Concepts
 
 - **types.ts** (92 connections) — `src/app/types.ts`
-- **QuizInterface.tsx** (71 connections) — `src/app/components/QuizInterface.tsx`
-- **Question** (62 connections) — `src/app/types.ts`
+- **QuizInterface.tsx** (69 connections) — `src/app/components/QuizInterface.tsx`
 - **ResultsDashboard.tsx** (59 connections) — `src/app/components/ResultsDashboard.tsx`
-- **QuizInterface()** (36 connections) — `src/app/components/QuizInterface.tsx`
+- **QuizInterface()** (35 connections) — `src/app/components/QuizInterface.tsx`
 - **ResultsDashboard()** (30 connections) — `src/app/components/ResultsDashboard.tsx`
-- **checkAnswerCorrect()** (30 connections) — `src/app/utils/quiz.ts`
-- **useQuizSession.ts** (26 connections) — `src/app/hooks/useQuizSession.ts`
-- **locomotor-bank.integration.test.ts** (25 connections) — `src/app/locomotor-bank.integration.test.ts`
-- **quiz.ts** (24 connections) — `src/app/utils/quiz.ts`
-- **SubjectData** (23 connections) — `src/app/types.ts`
-- **QuizAnswer** (18 connections) — `src/app/types.ts`
 - **useQuizEngine.ts** (18 connections) — `src/app/hooks/useQuizEngine.ts`
 - **asFillBlankAnswer()** (17 connections) — `src/app/types.ts`
-- **missedQuestions.ts** (16 connections) — `src/app/utils/missedQuestions.ts`
 - **asEssayAnswer()** (15 connections) — `src/app/types.ts`
 - **asMatchingAnswer()** (15 connections) — `src/app/types.ts`
+- **MatchingQuestion.tsx** (14 connections) — `src/app/components/MatchingQuestion.tsx`
 - **QuizTrueFalse.feedback.test.tsx** (14 connections) — `src/app/components/QuizTrueFalse.feedback.test.tsx`
 - **asCaseAnswer()** (12 connections) — `src/app/types.ts`
-- **QuizCase.feedback.test.tsx** (12 connections) — `src/app/components/QuizCase.feedback.test.tsx`
 - **ResultsDashboard.missed.test.tsx** (12 connections) — `src/app/components/ResultsDashboard.missed.test.tsx`
-- **topicPracticeSession.test.ts** (12 connections) — `src/app/learning/topicPracticeSession.test.ts`
 - **useQuizEngine()** (11 connections) — `src/app/hooks/useQuizEngine.ts`
+- **AIChatPanel.tsx** (11 connections) — `src/app/components/AIChatPanel.tsx`
 - **QuizInterface.shortcuts.test.tsx** (11 connections) — `src/app/components/QuizInterface.shortcuts.test.tsx`
 - **QuizQuestionFormatting.test.tsx** (11 connections) — `src/app/components/QuizQuestionFormatting.test.tsx`
-- *... and 95 more nodes in this community*
+- **ResultsDashboard.answers.test.tsx** (11 connections) — `src/app/components/ResultsDashboard.answers.test.tsx`
+- **MatchingQuestion()** (10 connections) — `src/app/components/MatchingQuestion.tsx`
+- **isAnswerRecord()** (10 connections) — `src/app/types.ts`
+- **useHintSystem.ts** (10 connections) — `src/app/hooks/useHintSystem.ts`
+- **formatTime()** (9 connections) — `src/app/types.ts`
+- **QuizBreadcrumbs.test.tsx** (9 connections) — `src/app/components/QuizBreadcrumbs.test.tsx`
+- **useQuizEngine.test.ts** (9 connections) — `src/app/hooks/useQuizEngine.test.ts`
+- **getAnswerState()** (8 connections) — `src/app/hooks/useQuizEngine.ts`
+- *... and 84 more nodes in this community*
 
 ## Relationships
 
-- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (52 shared connections)
-- [Community 36](Community_36.md) (51 shared connections)
-- [Community 6](Community_6.md) (44 shared connections)
-- [Community 152](Community_152.md) (38 shared connections)
-- [Community 34](Community_34.md) (36 shared connections)
-- [Community 24](Community_24.md) (36 shared connections)
-- [Community 46](Community_46.md) (16 shared connections)
-- [Community 95](Community_95.md) (16 shared connections)
-- [Community 117](Community_117.md) (9 shared connections)
-- [Community 1](Community_1.md) (6 shared connections)
-- [Community 122](Community_122.md) (6 shared connections)
-- [Community 211](Community_211.md) (5 shared connections)
+- [Community 36](Community_36.md) (75 shared connections)
+- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (40 shared connections)
+- [Community 6](Community_6.md) (37 shared connections)
+- [Community 46](Community_46.md) (22 shared connections)
+- [Community 24](Community_24.md) (20 shared connections)
+- [Community 81](Community_81.md) (12 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (11 shared connections)
+- [Community 34](Community_34.md) (10 shared connections)
+- [Community 114](Community_114.md) (7 shared connections)
+- [Community 117](Community_117.md) (5 shared connections)
+- [Community 1](Community_1.md) (4 shared connections)
+- [Usesoundengine Soundkey Audiopolicy](Usesoundengine_Soundkey_Audiopolicy.md) (3 shared connections)
 
 ## Source Files
 
 - `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
-- `src/app/App.tsx`
-- `src/app/components/FlowBreadcrumbs.tsx`
+- `src/app/components/AIChatPanel.test.tsx`
+- `src/app/components/AIChatPanel.tsx`
+- `src/app/components/MatchingQuestion.test.tsx`
+- `src/app/components/MatchingQuestion.tsx`
 - `src/app/components/QuizBreadcrumbs.test.tsx`
-- `src/app/components/QuizCase.feedback.test.tsx`
 - `src/app/components/QuizInterface.shortcuts.test.tsx`
 - `src/app/components/QuizInterface.tsx`
 - `src/app/components/QuizQuestionFormatting.test.tsx`
+- `src/app/components/QuizResumeCard.tsx`
 - `src/app/components/QuizTrueFalse.feedback.test.tsx`
 - `src/app/components/ResultsDashboard.answers.test.tsx`
 - `src/app/components/ResultsDashboard.missed.test.tsx`
 - `src/app/components/ResultsDashboard.tsx`
-- `src/app/components/SubjectSelect.tsx`
 - `src/app/components/TimerSettingsPanel.tsx`
+- `src/app/hooks/useHintSystem.test.ts`
+- `src/app/hooks/useHintSystem.ts`
 - `src/app/hooks/useQuizEngine.test.ts`
 - `src/app/hooks/useQuizEngine.ts`
-- `src/app/hooks/useQuizSession.ts`
-- `src/app/learning/customPractice.ts`
-- `src/app/learning/practiceNavigation.ts`
-- `src/app/learning/topicPracticeSession.test.ts`
+- `src/app/learning/committedAnswer.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 670 (99%)
-- INFERRED: 5 (1%)
+- EXTRACTED: 508 (99%)
+- INFERRED: 4 (1%)
 - AMBIGUOUS: 0 (0%)
 
 ---

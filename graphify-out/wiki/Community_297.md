@@ -1,33 +1,42 @@
 # Community 297
 
-> 10 nodes
+> 8 nodes
 
 ## Key Concepts
 
-- **Memory Safety, Binary, and Kernel Hunting** (10 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
-- **Validation rules (apply before reporting ANY finding here)** (2 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
-- **Binary loading and runtime attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
-- **Bounds, integer, and representation attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
-- **Core discipline (include in every agent prompt for this domain)** (1 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
-- **FFI and ABI attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
-- **Kernel and privileged-interface attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
-- **Lifetime, type, and concurrency attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
-- **Universal moves (apply across the above)** (1 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
-- **When to use this file** (1 connections) — `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
+- **AdminAnalyticsView.tsx** (15 connections) — `src/pages/admin/AdminAnalyticsView.tsx`
+- **AdminAnalyticsView()** (7 connections) — `src/pages/admin/AdminAnalyticsView.tsx`
+- **StudentEmailReplyModal.tsx** (5 connections) — `src/app/components/StudentEmailReplyModal.tsx`
+- **admin-leaderboard-view.test.tsx** (5 connections) — `src/test/reports/admin-leaderboard-view.test.tsx`
+- **StudentEmailReplyModal()** (4 connections) — `src/app/components/StudentEmailReplyModal.tsx`
+- **StudentAnalytics** (2 connections) — `server/admin-analytics-service.ts`
+- **StudentEmailReplyModalProps** (1 connections) — `src/app/components/StudentEmailReplyModal.tsx`
+- **mockAnalyticsData** (1 connections) — `src/test/reports/admin-leaderboard-view.test.tsx`
 
 ## Relationships
 
-- [Community 78](Community_78.md) (1 shared connections)
-- [Community 120](Community_120.md) (1 shared connections)
+- [Community 6](Community_6.md) (4 shared connections)
+- [Community 50](Community_50.md) (3 shared connections)
+- [Community 240](Community_240.md) (3 shared connections)
+- [Community 248](Community_248.md) (2 shared connections)
+- [Community 114](Community_114.md) (2 shared connections)
+- [Community 46](Community_46.md) (2 shared connections)
+- [Community 18](Community_18.md) (1 shared connections)
+- [Community 224](Community_224.md) (1 shared connections)
+- [Community 36](Community_36.md) (1 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (1 shared connections)
 
 ## Source Files
 
-- `.agents/skills/security-audit/MEMORY-SAFETY-AND-BINARY.md`
+- `server/admin-analytics-service.ts`
+- `src/app/components/StudentEmailReplyModal.tsx`
+- `src/pages/admin/AdminAnalyticsView.tsx`
+- `src/test/reports/admin-leaderboard-view.test.tsx`
 
 ## Audit Trail
 
-- EXTRACTED: 10 (91%)
-- INFERRED: 1 (9%)
+- EXTRACTED: 29 (97%)
+- INFERRED: 1 (3%)
 - AMBIGUOUS: 0 (0%)
 
 ---

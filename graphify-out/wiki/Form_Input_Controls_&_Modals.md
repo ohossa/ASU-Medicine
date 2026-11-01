@@ -34,7 +34,7 @@
 ## Relationships
 
 - [Atomic UI Components & Avatars](Atomic_UI_Components_&_Avatars.md) (39 shared connections)
-- [Community 95](Community_95.md) (6 shared connections)
+- [Community 114](Community_114.md) (6 shared connections)
 - [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (6 shared connections)
 - [Carousel React Alert](Carousel_React_Alert.md) (4 shared connections)
 - [React Accordion Checkbox](React_Accordion_Checkbox.md) (2 shared connections)

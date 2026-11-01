@@ -1,5 +1,6 @@
 import { getAdminAnalytics } from "../server/admin-analytics-service.js";
 import { isReportError } from "../server/report-service.js";
+import { logSecurityEvent } from "../server/security-logger.js";
 
 interface Request {
   method?: string;
@@ -18,6 +19,7 @@ export default async function handler(req: Request, res: Response) {
   res.setHeader("Cache-Control", "private, no-store");
   res.setHeader("Content-Type", "application/json");
   res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("X-Frame-Options", "DENY");
 
   if (req.method !== "GET") {
     res.setHeader("Allow", "GET");
@@ -35,6 +37,13 @@ export default async function handler(req: Request, res: Response) {
     return res.status(200).json(data);
   } catch (err) {
     if (isReportError(err)) {
+      if (err.status === 401 || err.status === 403) {
+        logSecurityEvent({
+          type: err.status === 403 ? 'forbidden_admin' : 'auth_failure',
+          endpoint: '/api/admin-analytics',
+          details: err.message,
+        });
+      }
       return res.status(err.status).json({ error: err.message });
     }
     console.error("Admin analytics error:", err);

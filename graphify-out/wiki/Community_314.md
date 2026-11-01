@@ -1,24 +1,24 @@
 # Community 314
 
-> 5 nodes
+> 6 nodes
 
 ## Key Concepts
 
-- **generate-bank-manifest.mjs** (7 connections) — `scripts/generate-bank-manifest.mjs`
-- **walk()** (3 connections) — `scripts/generate-bank-manifest.mjs`
-- **imports** (1 connections) — `scripts/generate-bank-manifest.mjs`
-- **manifest** (1 connections) — `scripts/generate-bank-manifest.mjs`
-- **root** (1 connections) — `scripts/generate-bank-manifest.mjs`
+- **generate-placeholders.ts** (7 connections) — `data-format-v2/scripts/generate-placeholders.ts`
+- **buildPlaceholder()** (2 connections) — `data-format-v2/scripts/generate-placeholders.ts`
+- **main()** (2 connections) — `data-format-v2/scripts/generate-placeholders.ts`
+- **ModuleInfo** (1 connections) — `data-format-v2/scripts/generate-placeholders.ts`
+- **existingModules** (1 connections) — `data-format-v2/scripts/generate-placeholders.ts`
+- **MODULES** (1 connections) — `data-format-v2/scripts/generate-placeholders.ts`
 
 ## Relationships
 
-- [Community 319](Community_319.md) (1 shared connections)
-- [Bank Question Edit](Bank_Question_Edit.md) (1 shared connections)
+- [Community 125](Community_125.md) (1 shared connections)
 - [Community 33](Community_33.md) (1 shared connections)
 
 ## Source Files
 
-- `scripts/generate-bank-manifest.mjs`
+- `data-format-v2/scripts/generate-placeholders.ts`
 
 ## Audit Trail
 

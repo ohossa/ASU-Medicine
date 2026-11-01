@@ -1,6 +1,6 @@
 # Community 51
 
-> 71 nodes
+> 75 nodes
 
 ## Key Concepts
 
@@ -9,6 +9,7 @@
 - **MarksCalculator.tsx** (30 connections) — `src/app/components/MarksCalculator.tsx`
 - **AnalyticsDashboard.tsx** (26 connections) — `src/app/components/AnalyticsDashboard.tsx`
 - **getT()** (12 connections) — `src/app/components/ClinicalCaseSolver.tsx`
+- **LoginScreen.tsx** (12 connections) — `src/app/components/LoginScreen.tsx`
 - **AnalyticsDashboard()** (10 connections) — `src/app/components/AnalyticsDashboard.tsx`
 - **ClinicalCaseSolver()** (10 connections) — `src/app/components/ClinicalCaseSolver.tsx`
 - **MarksCalculator()** (10 connections) — `src/app/components/MarksCalculator.tsx`
@@ -28,23 +29,26 @@
 - **Tooltip()** (4 connections) — `src/app/components/AnalyticsDashboard.tsx`
 - **EcgWaveform()** (4 connections) — `src/app/components/ClinicalCaseSolver.tsx`
 - **Ring()** (4 connections) — `src/app/components/ClinicalCaseSolver.tsx`
-- **TrendArrow()** (4 connections) — `src/app/components/ClinicalCaseSolver.tsx`
-- *... and 46 more nodes in this community*
+- *... and 50 more nodes in this community*
 
 ## Relationships
 
-- [Community 95](Community_95.md) (14 shared connections)
-- [Community 6](Community_6.md) (11 shared connections)
-- [Community 24](Community_24.md) (5 shared connections)
-- [Community 152](Community_152.md) (5 shared connections)
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (3 shared connections)
-- [Community 46](Community_46.md) (2 shared connections)
+- [Community 46](Community_46.md) (12 shared connections)
+- [Community 114](Community_114.md) (8 shared connections)
+- [Community 6](Community_6.md) (7 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (5 shared connections)
+- [Community 32](Community_32.md) (4 shared connections)
+- [Community 36](Community_36.md) (3 shared connections)
+- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (2 shared connections)
 - [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (2 shared connections)
-- [Community 36](Community_36.md) (2 shared connections)
-- [Community 319](Community_319.md) (1 shared connections)
+- [Community 81](Community_81.md) (2 shared connections)
+- [Community 24](Community_24.md) (1 shared connections)
+- [Community 117](Community_117.md) (1 shared connections)
+- [Community 125](Community_125.md) (1 shared connections)
 
 ## Source Files
 
+- `package.json`
 - `src/app/components/AnalyticsDashboard.tsx`
 - `src/app/components/ClinicalCaseSolver.images.test.tsx`
 - `src/app/components/ClinicalCaseSolver.tsx`
@@ -57,7 +61,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 189 (100%)
+- EXTRACTED: 199 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

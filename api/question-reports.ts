@@ -9,10 +9,26 @@ import { createTriageService, reviewGroup } from "../server/triage-worker.js";
 import { triageStore } from "../server/triage-store.js";
 import { callTriageModel } from "../server/triage-provider.js";
 import { fetchEvidence } from "../server/triage-evidence.js";
+import { logSecurityEvent } from "../server/security-logger.js";
 import { z } from "zod";
 import {createReplyService} from '../server/report-replies.js';
 import {replyStore} from '../server/report-reply-store.js';
 const replies = createReplyService({authenticate:authenticateReportUser,getReport:id=>reportStore.get(id),recipient:verifiedReporterEmail,store:replyStore,send:sendReportReply,configured:reportReplyConfigured,sender:()=>process.env.REPORT_EMAIL_FROM || ''});
+
+const reportRateLimits = new Map<string, { count: number; resetAt: number }>();
+function checkReportRateLimit(identifier: string, limit = 10, windowMs = 300_000): boolean {
+  if (process.env.NODE_ENV === 'test') return true;
+  const now = Date.now();
+  const record = reportRateLimits.get(identifier);
+  if (!record || now > record.resetAt) {
+    reportRateLimits.set(identifier, { count: 1, resetAt: now + windowMs });
+    return true;
+  }
+  if (record.count >= limit) return false;
+  record.count++;
+  return true;
+}
+
 interface Request {
   method?: string;
   headers: Record<string, string | string[] | undefined>;
@@ -47,6 +63,7 @@ export default async function handler(req: Request, res: Response) {
   res.setHeader("Cache-Control", "private, no-store");
   res.setHeader("Content-Type", "application/json");
   res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("X-Frame-Options", "DENY");
   try {
     const header = req.headers.authorization;
     const token =
@@ -119,6 +136,19 @@ export default async function handler(req: Request, res: Response) {
         .status(200)
         .json({ notification: await service.retry(token, body) });
     if (action) throw new ReportError(400, "Unknown action.");
+
+    const clientIp = typeof req.headers['x-forwarded-for'] === 'string'
+      ? req.headers['x-forwarded-for'].split(',')[0].trim()
+      : token || 'unknown';
+    if (!checkReportRateLimit(clientIp)) {
+      logSecurityEvent({
+        type: 'rate_limit_exceeded',
+        endpoint: '/api/question-reports',
+        details: 'Report submission rate limit exceeded',
+      });
+      throw new ReportError(429, "You are submitting reports too quickly. Please wait a few minutes.");
+    }
+
     return res.status(201).json(await service.submit(token, body));
   } catch (error) {
     if (isReportError(error))

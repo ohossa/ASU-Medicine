@@ -1,41 +1,36 @@
 # Community 249
 
-> 12 nodes
+> 11 nodes
 
 ## Key Concepts
 
-- **useVersionCheck.ts** (10 connections) — `src/app/hooks/useVersionCheck.ts`
-- **useVersionCheck()** (7 connections) — `src/app/hooks/useVersionCheck.ts`
-- **SiteUpdateNotice.tsx** (7 connections) — `src/app/components/SiteUpdateNotice.tsx`
-- **version-check.test.ts** (6 connections) — `src/test/lifecycle/version-check.test.ts`
-- **SiteUpdateNotice()** (5 connections) — `src/app/components/SiteUpdateNotice.tsx`
-- **applyAppUpdate()** (4 connections) — `src/app/hooks/useVersionCheck.ts`
-- **SiteUpdateNotice.test.tsx** (4 connections) — `src/app/components/SiteUpdateNotice.test.tsx`
-- **fetchRemoteVersion()** (3 connections) — `src/app/hooks/useVersionCheck.ts`
-- **isNewerVersion()** (3 connections) — `src/app/hooks/useVersionCheck.ts`
-- **AppVersionInfo** (2 connections) — `src/app/hooks/useVersionCheck.ts`
-- **CURRENT_BUILD_VERSION** (1 connections) — `src/app/hooks/useVersionCheck.ts`
-- **src_app_generated_version** (1 connections)
+- **profanity-filter.ts** (12 connections) — `server/profanity-filter.ts`
+- **validateDisplayName()** (9 connections) — `server/profanity-filter.ts`
+- **profanity-filter.test.ts** (5 connections) — `src/test/reports/profanity-filter.test.ts`
+- **isNameAllowed()** (3 connections) — `server/profanity-filter.ts`
+- **normalizeArabic()** (2 connections) — `server/profanity-filter.ts`
+- **normalizeEnglish()** (2 connections) — `server/profanity-filter.ts`
+- **sanitizeDisplayName()** (2 connections) — `server/profanity-filter.ts`
+- **NameValidationResult** (1 connections) — `server/profanity-filter.ts`
+- **ARABIC_BOUNDARY_TERMS** (1 connections) — `server/profanity-filter.ts`
+- **ARABIC_ROOT_TERMS** (1 connections) — `server/profanity-filter.ts`
+- **ENGLISH_BLOCKED_TERMS** (1 connections) — `server/profanity-filter.ts`
 
 ## Relationships
 
-- [Community 152](Community_152.md) (3 shared connections)
-- [Community 1](Community_1.md) (2 shared connections)
-- [Community 95](Community_95.md) (2 shared connections)
-- [Community 153](Community_153.md) (1 shared connections)
-- [Community 234](Community_234.md) (1 shared connections)
+- [Community 65](Community_65.md) (3 shared connections)
+- [Community 46](Community_46.md) (3 shared connections)
+- [Community 36](Community_36.md) (1 shared connections)
 
 ## Source Files
 
-- `src/app/components/SiteUpdateNotice.test.tsx`
-- `src/app/components/SiteUpdateNotice.tsx`
-- `src/app/hooks/useVersionCheck.ts`
-- `src/test/lifecycle/version-check.test.ts`
+- `server/profanity-filter.ts`
+- `src/test/reports/profanity-filter.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 30 (97%)
-- INFERRED: 1 (3%)
+- EXTRACTED: 23 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,30 +1,34 @@
 # Community 247
 
-> 8 nodes
+> 11 nodes
 
 ## Key Concepts
 
-- **ASU Medical Portal — Full Optimization Execution Prompt** (11 connections) — `.opencode/plans/optimization-prompt.md`
-- **EXECUTION ORDER** (1 connections) — `.opencode/plans/optimization-prompt.md`
-- **🔴 P0 — Critical (Fix Immediately)** (1 connections) — `.opencode/plans/optimization-prompt.md`
-- **🟠 P1 — High Priority** (1 connections) — `.opencode/plans/optimization-prompt.md`
-- **🟡 P2 — Medium Priority** (1 connections) — `.opencode/plans/optimization-prompt.md`
-- **🟢 P3 — Low Priority** (1 connections) — `.opencode/plans/optimization-prompt.md`
-- **PRIORITY LEGEND** (1 connections) — `.opencode/plans/optimization-prompt.md`
-- **VERIFICATION** (1 connections) — `.opencode/plans/optimization-prompt.md`
+- **enrich-via-api.ts** (12 connections) — `data-format-v2/scripts/enrich-via-api.ts`
+- **enrichBatch()** (6 connections) — `data-format-v2/scripts/enrich-via-api.ts`
+- **callLLM()** (3 connections) — `data-format-v2/scripts/enrich-via-api.ts`
+- **buildSystemPrompt()** (2 connections) — `data-format-v2/scripts/enrich-via-api.ts`
+- **buildUserPrompt()** (2 connections) — `data-format-v2/scripts/enrich-via-api.ts`
+- **cleanJsonResponse()** (2 connections) — `data-format-v2/scripts/enrich-via-api.ts`
+- **main()** (2 connections) — `data-format-v2/scripts/enrich-via-api.ts`
+- **sleep()** (2 connections) — `data-format-v2/scripts/enrich-via-api.ts`
+- **Question** (1 connections) — `data-format-v2/scripts/enrich-via-api.ts`
+- **API_KEY** (1 connections) — `data-format-v2/scripts/enrich-via-api.ts`
+- **CONFIG** (1 connections) — `data-format-v2/scripts/enrich-via-api.ts`
 
 ## Relationships
 
-- [Community 1](Community_1.md) (4 shared connections)
+- [Community 125](Community_125.md) (1 shared connections)
+- [Community 33](Community_33.md) (1 shared connections)
 
 ## Source Files
 
-- `.opencode/plans/optimization-prompt.md`
+- `data-format-v2/scripts/enrich-via-api.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 7 (64%)
-- INFERRED: 4 (36%)
+- EXTRACTED: 18 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

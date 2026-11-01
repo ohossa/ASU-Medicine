@@ -1,6 +1,6 @@
 # Triage Report Lease
 
-> 74 nodes
+> 69 nodes
 
 ## Key Concepts
 
@@ -19,37 +19,37 @@
 - **TriageAssessment** (7 connections) — `src/app/reports/triage-contracts.ts`
 - **groupForTriage()** (7 connections) — `server/report-triage.ts`
 - **createTriageService()** (7 connections) — `server/triage-worker.ts`
-- **triage-evidence.ts** (7 connections) — `server/triage-evidence.ts`
 - **ServiceDeps** (6 connections) — `server/triage-worker.ts`
 - **aiSource()** (6 connections) — `server/report-triage.ts`
-- **fetchEvidence()** (6 connections) — `server/triage-evidence.ts`
 - **callTriageModel()** (6 connections) — `server/triage-provider.ts`
 - **Dependencies** (5 connections) — `server/report-service.ts`
 - **ReviewDeps** (5 connections) — `server/triage-worker.ts`
 - **EvidenceSource** (5 connections) — `src/app/reports/triage-contracts.ts`
 - **TriageLabel** (5 connections) — `src/app/reports/triage-contracts.ts`
 - **pilotMetrics()** (5 connections) — `server/report-triage.ts`
-- *... and 49 more nodes in this community*
+- **validateCitations()** (5 connections) — `server/report-triage.ts`
+- **state()** (5 connections) — `server/triage-worker.ts`
+- *... and 44 more nodes in this community*
 
 ## Relationships
 
-- [Community 10](Community_10.md) (32 shared connections)
-- [Community 50](Community_50.md) (6 shared connections)
-- [Community 240](Community_240.md) (5 shared connections)
+- [Community 136](Community_136.md) (16 shared connections)
+- [Community 3](Community_3.md) (15 shared connections)
+- [Community 65](Community_65.md) (7 shared connections)
+- [Reply Report Replies](Reply_Report_Replies.md) (6 shared connections)
+- [Community 50](Community_50.md) (4 shared connections)
 - [Community 105](Community_105.md) (4 shared connections)
-- [Community 56](Community_56.md) (3 shared connections)
-- [Community 211](Community_211.md) (3 shared connections)
-- [Bank Question Edit](Bank_Question_Edit.md) (3 shared connections)
-- [Community 140](Community_140.md) (3 shared connections)
-- [Community 152](Community_152.md) (3 shared connections)
-- [Reply Report Replies](Reply_Report_Replies.md) (2 shared connections)
+- [Community 240](Community_240.md) (3 shared connections)
+- [Community 252](Community_252.md) (3 shared connections)
+- [Community 36](Community_36.md) (3 shared connections)
+- [Community 10](Community_10.md) (2 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (1 shared connections)
 - [Community 305](Community_305.md) (1 shared connections)
 
 ## Source Files
 
 - `server/report-service.ts`
 - `server/report-triage.ts`
-- `server/triage-evidence.ts`
 - `server/triage-provider.ts`
 - `server/triage-store.ts`
 - `server/triage-worker.ts`
@@ -61,7 +61,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 220 (100%)
+- EXTRACTED: 211 (100%)
 - INFERRED: 1 (0%)
 - AMBIGUOUS: 0 (0%)
 

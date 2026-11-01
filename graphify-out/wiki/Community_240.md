@@ -1,50 +1,57 @@
 # Community 240
 
-> 17 nodes
+> 20 nodes
 
 ## Key Concepts
 
-- **ReportReplyComposer.tsx** (23 connections) — `src/pages/ReportReplyComposer.tsx`
-- **ReplyComposer()** (11 connections) — `src/pages/ReportReplyComposer.tsx`
-- **humanizer-reply.test.tsx** (11 connections) — `src/test/reports/humanizer-reply.test.tsx`
-- **review-context.ts** (10 connections) — `src/app/reports/review-context.ts`
-- **reply-composer.test.tsx** (7 connections) — `src/test/reports/reply-composer.test.tsx`
-- **review-context.test.ts** (7 connections) — `src/test/reports/review-context.test.ts`
-- **humanizeAIExplanation()** (5 connections) — `src/app/reports/review-context.ts`
-- **replyTemplate()** (5 connections) — `src/app/reports/review-context.ts`
-- **reviewContext()** (5 connections) — `src/app/reports/review-context.ts`
-- **replyContextText()** (4 connections) — `src/app/reports/reply-context.ts`
-- **handleInsertAiExplanation()** (2 connections) — `src/pages/ReportReplyComposer.tsx`
-- **Pending** (1 connections) — `src/pages/ReportReplyComposer.tsx`
-- **saveDraft()** (1 connections) — `src/pages/ReportReplyComposer.tsx`
-- **send()** (1 connections) — `src/pages/ReportReplyComposer.tsx`
-- **mockReport** (1 connections) — `src/test/reports/humanizer-reply.test.tsx`
-- **report** (1 connections) — `src/test/reports/reply-composer.test.tsx`
-- **report** (1 connections) — `src/test/reports/review-context.test.ts`
+- **AdminPortal.tsx** (44 connections) — `src/pages/AdminPortal.tsx`
+- **AdminOverviewPanel.tsx** (15 connections) — `src/pages/AdminOverviewPanel.tsx`
+- **cleanQuestionStem()** (10 connections) — `src/app/utils/questionStem.ts`
+- **delete-question.test.tsx** (10 connections) — `src/test/reports/delete-question.test.tsx`
+- **admin.test.tsx** (9 connections) — `src/test/reports/admin.test.tsx`
+- **AdminOverviewPanel()** (8 connections) — `src/pages/AdminOverviewPanel.tsx`
+- **AdminWorkspace()** (8 connections) — `src/pages/AdminPortal.tsx`
+- **AdminPortal()** (7 connections) — `src/pages/AdminPortal.tsx`
+- **admin-overview.test.tsx** (7 connections) — `src/test/reports/admin-overview.test.tsx`
+- **questionStem.ts** (5 connections) — `src/app/utils/questionStem.ts`
+- **AdminQuestionEditor** (3 connections) — `src/pages/AdminPortal.tsx`
+- **format()** (2 connections) — `src/pages/AdminOverviewPanel.tsx`
+- **show()** (2 connections) — `src/test/reports/admin-overview.test.tsx`
+- **showReport()** (2 connections) — `src/test/reports/admin.test.tsx`
+- **src_app_reports_reports** (2 connections)
+- **labels** (1 connections) — `src/pages/AdminOverviewPanel.tsx`
+- **statusLabels** (1 connections) — `src/pages/AdminPortal.tsx`
+- **reports** (1 connections) — `src/test/reports/admin-overview.test.tsx`
+- **report** (1 connections) — `src/test/reports/admin.test.tsx`
+- **mockReport** (1 connections) — `src/test/reports/delete-question.test.tsx`
 
 ## Relationships
 
-- [Community 56](Community_56.md) (8 shared connections)
-- [Reply Report Replies](Reply_Report_Replies.md) (7 shared connections)
-- [Community 10](Community_10.md) (6 shared connections)
-- [Triage Report Lease](Triage_Report_Lease.md) (5 shared connections)
-- [Community 152](Community_152.md) (5 shared connections)
-- [Community 6](Community_6.md) (3 shared connections)
-- [Community 95](Community_95.md) (1 shared connections)
-- [Community 24](Community_24.md) (1 shared connections)
+- [Community 224](Community_224.md) (13 shared connections)
+- [Community 117](Community_117.md) (6 shared connections)
+- [Community 24](Community_24.md) (6 shared connections)
+- [Community 36](Community_36.md) (5 shared connections)
+- [Community 46](Community_46.md) (5 shared connections)
+- [Community 248](Community_248.md) (5 shared connections)
+- [Community 136](Community_136.md) (5 shared connections)
+- [Community 6](Community_6.md) (4 shared connections)
+- [Reply Report Replies](Reply_Report_Replies.md) (4 shared connections)
+- [Community 297](Community_297.md) (3 shared connections)
+- [Community 105](Community_105.md) (3 shared connections)
+- [Triage Report Lease](Triage_Report_Lease.md) (3 shared connections)
 
 ## Source Files
 
-- `src/app/reports/reply-context.ts`
-- `src/app/reports/review-context.ts`
-- `src/pages/ReportReplyComposer.tsx`
-- `src/test/reports/humanizer-reply.test.tsx`
-- `src/test/reports/reply-composer.test.tsx`
-- `src/test/reports/review-context.test.ts`
+- `src/app/utils/questionStem.ts`
+- `src/pages/AdminOverviewPanel.tsx`
+- `src/pages/AdminPortal.tsx`
+- `src/test/reports/admin-overview.test.tsx`
+- `src/test/reports/admin.test.tsx`
+- `src/test/reports/delete-question.test.tsx`
 
 ## Audit Trail
 
-- EXTRACTED: 66 (100%)
+- EXTRACTED: 105 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

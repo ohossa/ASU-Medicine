@@ -1,25 +1,27 @@
 # Community 315
 
-> 4 nodes
+> 6 nodes
 
 ## Key Concepts
 
-- **extract-biochem-066.ts** (4 connections) — `data-format-v2/scripts/extract-biochem-066.ts`
-- **blocks** (1 connections) — `data-format-v2/scripts/extract-biochem-066.ts`
-- **pages** (1 connections) — `data-format-v2/scripts/extract-biochem-066.ts`
-- **raw** (1 connections) — `data-format-v2/scripts/extract-biochem-066.ts`
+- **recover-024.ts** (6 connections) — `data-format-v2/scripts/recover-024.ts`
+- **blocks** (1 connections) — `data-format-v2/scripts/recover-024.ts`
+- **idx** (1 connections) — `data-format-v2/scripts/recover-024.ts`
+- **pieces** (1 connections) — `data-format-v2/scripts/recover-024.ts`
+- **raw** (1 connections) — `data-format-v2/scripts/recover-024.ts`
+- **rest** (1 connections) — `data-format-v2/scripts/recover-024.ts`
 
 ## Relationships
 
-- [Bank Audit Validate](Bank_Audit_Validate.md) (1 shared connections)
+- [Community 125](Community_125.md) (1 shared connections)
 
 ## Source Files
 
-- `data-format-v2/scripts/extract-biochem-066.ts`
+- `data-format-v2/scripts/recover-024.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 6 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -342,6 +342,20 @@ To ensure instantaneous page transitions, zero UI stutter, and permanent elimina
 - **Font Weight Pruning:** Cleaned up 28 unused `@font-face` blocks from `fonts.css`, retaining only the 4 Apple HIG typographic weights (400, 500, 600, 700) with `font-display: swap`.
 - **Core Web Vitals Real User Monitoring:** Embedded zero-dependency PerformanceObserver tracking real-world LCP, INP, CLS, FCP, and TTFB.
 
+### 6.11 Pre-Launch Security Toolkit Architecture
+Hardens trust boundaries and eliminates credential exposure across all portal infrastructure:
+- **Supabase PostgreSQL 15 RLS Lockdown (`20261101_security_rls_lockdown.sql`):** Direct PostgREST table permissions revoked from the public `anon` role across all tables (`user_progress`, `reports`, `report_replies`, `question_edits`, `presence`, `learning_profiles`, `learning_entries`, `ai_hint_logs`, `triage_assessments`). Full access is granted exclusively to `service_role` through trusted serverless functions.
+- **Fail-Closed Credential Guards (`server/supabase-client.ts`):** Removed hardcoded fallback project URLs and anon keys; serverless backends fail closed if environment variables are unconfigured.
+- **Security Audit Logger (`server/security-logger.ts`):** In-memory 500-event ring buffer capturing unauthenticated access, admin route violations (403), and rate limit strikes (429).
+- **Report & Presence Rate Limiting:** Sliding-window rate limiters prevent spamming student feedback tickets and sanitize alias strings against script/HTML injection.
+- **HTTP Security Headers (`vercel.json`):** Configured with `X-Frame-Options: DENY` on API routes, `X-Content-Type-Options: nosniff`, `X-XSS-Protection: 1; mode=block`, and strict HSTS (`max-age=63072000; includeSubDomains; preload`).
+
+### 6.12 The Anti-Average Custom 404 Experience (`src/pages/NotFoundPage.tsx`)
+Inspired by [404s.design/sites/anti-average](https://www.404s.design/sites/anti-average) and Apple Human Interface Guidelines:
+- **Clinical Staging:** Replaces sterile dead-end 404 screens with an interactive medical diagnosis (*"DIAGNOSIS: ACUTE 404 SYNDROME · Vital Signs Missing"*).
+- **Interactive ECG Pulse:** Hardware-accelerated SVG stroke heartbeat wave with defibrillation stimulus button tracking dynamic BPM.
+- **Liquid Glass Materials & Escape Routes:** Backdrop blur (`backdrop-blur-2xl bg-white/80 dark:bg-stone-900/80`), $\ge 44\text{px}$ touch targets (*"Resuscitate Session"* returning to `/`, *"Learning Hub"* jumping to `/learning`, and history navigation).
+
 ---
 
 ## 7. Medical Review & High-Yield Explanation Standards

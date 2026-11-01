@@ -1,28 +1,33 @@
 # Community 317
 
-> 6 nodes
+> 10 nodes
 
 ## Key Concepts
 
-- **recover-024.ts** (6 connections) — `data-format-v2/scripts/recover-024.ts`
-- **blocks** (1 connections) — `data-format-v2/scripts/recover-024.ts`
-- **idx** (1 connections) — `data-format-v2/scripts/recover-024.ts`
-- **pieces** (1 connections) — `data-format-v2/scripts/recover-024.ts`
-- **raw** (1 connections) — `data-format-v2/scripts/recover-024.ts`
-- **rest** (1 connections) — `data-format-v2/scripts/recover-024.ts`
+- **Protocols, RPC, and Messaging Hunting** (9 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
+- **PROTOCOLS-RPC-AND-MESSAGING.md** (2 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
+- **Validation rules (apply before reporting ANY finding here)** (2 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
+- **Broker and queue isolation attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
+- **Core discipline (include in every agent prompt for this domain)** (1 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
+- **Framing, schema, and interpretation attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
+- **Replay, ordering, and transaction attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
+- **RPC identity and authorization attack classes (subagent_type: `general`)** (1 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
+- **Universal moves (apply across the above)** (1 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
+- **When to use this file** (1 connections) — `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
 
 ## Relationships
 
-- [Community 319](Community_319.md) (1 shared connections)
+- [Community 78](Community_78.md) (1 shared connections)
+- [Community 120](Community_120.md) (1 shared connections)
 
 ## Source Files
 
-- `data-format-v2/scripts/recover-024.ts`
+- `.agents/skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md`
 
 ## Audit Trail
 
-- EXTRACTED: 6 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 10 (91%)
+- INFERRED: 1 (9%)
 - AMBIGUOUS: 0 (0%)
 
 ---

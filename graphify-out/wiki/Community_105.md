@@ -1,6 +1,6 @@
 # Community 105
 
-> 21 nodes
+> 22 nodes
 
 ## Key Concepts
 
@@ -19,6 +19,7 @@
 - **bounded()** (3 connections) — `server/tutor-metrics.ts`
 - **dayKey()** (3 connections) — `server/tutor-metrics.ts`
 - **header()** (3 connections) — `server/tutor-metrics.ts`
+- **AdminOverview** (2 connections) — `src/app/reports/dashboard-contracts.ts`
 - **PriorityQuestion** (2 connections) — `src/app/reports/dashboard-contracts.ts`
 - **TutorQuota** (2 connections) — `src/app/reports/dashboard-contracts.ts`
 - **TutorUsage** (2 connections) — `src/app/reports/dashboard-contracts.ts`
@@ -28,12 +29,13 @@
 
 ## Relationships
 
-- [Community 10](Community_10.md) (12 shared connections)
+- [Community 136](Community_136.md) (9 shared connections)
 - [Community 50](Community_50.md) (5 shared connections)
 - [Triage Report Lease](Triage_Report_Lease.md) (4 shared connections)
-- [Community 56](Community_56.md) (3 shared connections)
+- [Community 240](Community_240.md) (3 shared connections)
+- [Community 3](Community_3.md) (3 shared connections)
 - [Generatehint Constructor Hint](Generatehint_Constructor_Hint.md) (3 shared connections)
-- [Community 152](Community_152.md) (2 shared connections)
+- [Community 36](Community_36.md) (2 shared connections)
 
 ## Source Files
 
@@ -46,7 +48,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 69 (100%)
+- EXTRACTED: 70 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

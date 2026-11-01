@@ -19,6 +19,7 @@
 
 import { recordTutorUsage } from '../server/tutor-metrics.js';
 import { getSupabase } from '../server/supabase-client.js';
+import { logSecurityEvent } from '../server/security-logger.js';
 import { verifyToken } from '@clerk/backend';
 import { Redis as UpstashRedis } from '@upstash/redis';
 import { Redis as ioredis } from 'ioredis';
@@ -643,6 +644,12 @@ export default async function handler(req: any, res: any) {
     /* 2. Rate limit */
     const allowed = await checkRateLimit(userId);
     if (!allowed) {
+      logSecurityEvent({
+        type: 'rate_limit_exceeded',
+        endpoint: '/api/hint',
+        userId,
+        details: 'Hint rate limit of 10 requests/minute exceeded',
+      });
       return res.status(429).json({ error: 'Rate limit exceeded. Try again in a minute.' });
     }
 

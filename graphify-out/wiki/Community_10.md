@@ -1,77 +1,68 @@
 # Community 10
 
-> 63 nodes
+> 47 nodes
 
 ## Key Concepts
 
-- **question-reports.ts** (42 connections) — `api/question-reports.ts`
-- **reports/contracts.ts** (42 connections) — `src/app/reports/contracts.ts`
-- **report-service.ts** (41 connections) — `server/report-service.ts`
 - **ReportError** (39 connections) — `server/report-service.ts`
-- **report-auth.ts** (14 connections) — `server/report-auth.ts`
-- **report-question.ts** (13 connections) — `server/report-question.ts`
-- **report-email.ts** (12 connections) — `server/report-email.ts`
-- **report-inbox.ts** (11 connections) — `server/report-inbox.ts`
-- **createReportService()** (10 connections) — `server/report-service.ts`
-- **isReportError()** (10 connections) — `server/report-service.ts`
-- **report-resilience.test.ts** (9 connections) — `src/test/reports/report-resilience.test.ts`
-- **security.test.ts** (9 connections) — `src/test/reports/security.test.ts`
-- **authenticateReportUser()** (8 connections) — `server/report-auth.ts`
-- **resolveReportQuestion()** (8 connections) — `server/report-question.ts`
-- **triage** (8 connections) — `api/question-reports.ts`
-- **zod** (8 connections) — `package.json`
-- **overview-api.test.ts** (7 connections) — `src/test/reports/overview-api.test.ts`
-- **@clerk/backend** (7 connections) — `package.json`
-- **REPORT_CATEGORIES** (6 connections) — `src/app/reports/contracts.ts`
-- **REPORT_STATUSES** (6 connections) — `src/app/reports/contracts.ts`
-- **inbox.test.ts** (6 connections) — `src/test/reports/inbox.test.ts`
-- **question.test.ts** (6 connections) — `src/test/reports/question.test.ts`
-- **ReportList** (5 connections) — `src/app/reports/contracts.ts`
-- **ReportSubmission** (5 connections) — `src/app/reports/contracts.ts`
-- **handler()** (5 connections) — `api/question-reports.ts`
-- *... and 38 more nodes in this community*
+- **question-edit-service.ts** (24 connections) — `server/question-edit-service.ts`
+- **question-edit-store.ts** (21 connections) — `server/question-edit-store.ts`
+- **api/question-bank.ts** (15 connections) — `api/question-bank.ts`
+- **server/question-bank.ts** (13 connections) — `server/question-bank.ts`
+- **createQuestionEditService()** (12 connections) — `server/question-edit-service.ts`
+- **learning-bank.ts** (10 connections) — `server/learning-bank.ts`
+- **bankEntries()** (8 connections) — `server/question-bank.ts`
+- **management.test.ts** (7 connections) — `src/test/reports/management.test.ts`
+- **handler()** (6 connections) — `api/question-bank.ts`
+- **listEditableModules()** (6 connections) — `server/question-bank.ts`
+- **readQuestionBank()** (6 connections) — `server/question-bank.ts`
+- **EditStore** (5 connections) — `server/question-edit-service.ts`
+- **eligible()** (5 connections) — `server/question-edit-service.ts`
+- **editedModules()** (5 connections) — `server/question-edit-store.ts`
+- **edits.test.ts** (5 connections) — `src/test/reports/edits.test.ts`
+- **learningBank()** (4 connections) — `server/learning-bank.ts`
+- **questionVersion()** (4 connections) — `server/question-bank.ts`
+- **getEntry()** (4 connections) — `server/question-edit-service.ts`
+- **editStore** (4 connections) — `server/question-edit-store.ts`
+- **target()** (3 connections) — `server/question-edit-service.ts`
+- **setup()** (3 connections) — `src/test/reports/management.test.ts`
+- **learning-bank.test.ts** (3 connections) — `src/test/reports/learning-bank.test.ts`
+- **6.8 Dynamic Curriculum Relocation & Stable ID Invariant Architecture** (3 connections) — `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
+- **QuestionEdit** (2 connections) — `server/question-edit-service.ts`
+- *... and 22 more nodes in this community*
 
 ## Relationships
 
-- [Triage Report Lease](Triage_Report_Lease.md) (32 shared connections)
-- [Bank Question Edit](Bank_Question_Edit.md) (30 shared connections)
-- [Community 50](Community_50.md) (23 shared connections)
-- [Reply Report Replies](Reply_Report_Replies.md) (15 shared connections)
-- [Community 105](Community_105.md) (12 shared connections)
-- [Community 152](Community_152.md) (8 shared connections)
-- [Community 56](Community_56.md) (6 shared connections)
-- [Community 240](Community_240.md) (6 shared connections)
-- [Community 211](Community_211.md) (5 shared connections)
-- [Community 24](Community_24.md) (3 shared connections)
-- [React Eslint Plugin](React_Eslint_Plugin.md) (2 shared connections)
-- [Community 3](Community_3.md) (1 shared connections)
+- [Community 136](Community_136.md) (16 shared connections)
+- [Community 3](Community_3.md) (14 shared connections)
+- [Community 50](Community_50.md) (14 shared connections)
+- [Community 65](Community_65.md) (11 shared connections)
+- [Reply Report Replies](Reply_Report_Replies.md) (4 shared connections)
+- [Community 246](Community_246.md) (3 shared connections)
+- [Community 36](Community_36.md) (3 shared connections)
+- [Triage Report Lease](Triage_Report_Lease.md) (2 shared connections)
+- [Community 125](Community_125.md) (2 shared connections)
+- [Community 33](Community_33.md) (2 shared connections)
+- [Community 245](Community_245.md) (1 shared connections)
+- [Community 18](Community_18.md) (1 shared connections)
 
 ## Source Files
 
-- `@clerk/backend`
-- `api/learning.ts`
-- `api/question-reports.ts`
-- `package.json`
-- `server/report-auth.ts`
-- `server/report-email.ts`
-- `server/report-inbox.ts`
-- `server/report-question.ts`
+- `api/question-bank.ts`
+- `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
+- `server/learning-bank.ts`
+- `server/question-bank.ts`
+- `server/question-edit-service.ts`
+- `server/question-edit-store.ts`
 - `server/report-service.ts`
-- `server/report-store.ts`
-- `src/app/reports/contracts.ts`
-- `src/test/reports/inbox.test.ts`
-- `src/test/reports/overview-api.test.ts`
-- `src/test/reports/question.test.ts`
-- `src/test/reports/reply-email.test.ts`
-- `src/test/reports/reply-recipient.test.ts`
-- `src/test/reports/report-resilience.test.ts`
-- `src/test/reports/security.test.ts`
-- `src/test/reports/service.test.ts`
+- `src/test/reports/edits.test.ts`
+- `src/test/reports/learning-bank.test.ts`
+- `src/test/reports/management.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 274 (97%)
-- INFERRED: 9 (3%)
+- EXTRACTED: 152 (96%)
+- INFERRED: 6 (4%)
 - AMBIGUOUS: 0 (0%)
 
 ---

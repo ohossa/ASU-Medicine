@@ -5,7 +5,7 @@ import {editStore,editedModules} from '../server/question-edit-store.js';
 import {ReportError, isReportError} from '../server/report-service.js';
 const service=createQuestionEditService({authenticate:authenticateReportUser,readBank:readQuestionBank,store:editStore});
 export default async function handler(req:any,res:any){
- res.setHeader('Content-Type','application/json');res.setHeader('Cache-Control','no-store');res.setHeader('X-Content-Type-Options','nosniff');
+ res.setHeader('Content-Type','application/json');res.setHeader('Cache-Control','no-store');res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('X-Frame-Options','DENY');
  const token=typeof req.headers.authorization==='string'?req.headers.authorization.replace(/^Bearer /,''):'';
  const query=req.query??{};
  try{

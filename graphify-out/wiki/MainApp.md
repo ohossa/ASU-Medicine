@@ -1,6 +1,6 @@
 # MainApp()
 
-> God node · 62 connections · `src/app/App.tsx`
+> God node · 64 connections · `src/app/App.tsx`
 
 **Community:** [Community 6](Community_6.md)
 
@@ -17,17 +17,17 @@
 - useAcademicYear() `EXTRACTED`
 - ensureModuleDataLoaded() `EXTRACTED`
 - useLearning() `EXTRACTED`
+- QuizFlowWrapper() `EXTRACTED`
 - LoadingScreen() `EXTRACTED`
 - findQuestionById() `EXTRACTED`
 - useCloudSync() `EXTRACTED`
 - useQuizSession() `EXTRACTED`
-- QuizFlowWrapper() `EXTRACTED`
 - useBankRevision() `EXTRACTED`
 - useShufflePreference() `EXTRACTED`
 - toGitTopicChapter() `EXTRACTED`
 - questionScore() `EXTRACTED`
 - saveQuizResult() `EXTRACTED`
-- *…and 41 more `calls` connection(s) not listed (lowest-degree first to go)*
+- *…and 43 more `calls` connection(s) not listed (lowest-degree first to go)*
 
 ### contains
 - src/app/App.tsx `EXTRACTED`

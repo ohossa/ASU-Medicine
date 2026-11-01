@@ -17,9 +17,9 @@
 
 ## Relationships
 
-- [Community 38](Community_38.md) (2 shared connections)
+- [Community 79](Community_79.md) (2 shared connections)
 - [Community 20](Community_20.md) (1 shared connections)
-- [Keyword Unique Keywords](Keyword_Unique_Keywords.md) (1 shared connections)
+- [Polish Rejected Biochemistry](Polish_Rejected_Biochemistry.md) (1 shared connections)
 
 ## Source Files
 

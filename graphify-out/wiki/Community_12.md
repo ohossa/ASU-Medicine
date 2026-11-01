@@ -1,6 +1,6 @@
 # Community 12
 
-> 40 nodes
+> 44 nodes
 
 ## Key Concepts
 
@@ -8,6 +8,8 @@
 - **.add_question()** (39 connections) — `docs/verification/locomotor-import-2026-10-23/master_extract_locomotor.py`
 - **clean_option()** (36 connections) — `docs/verification/locomotor-import-2026-10-23/master_extract_locomotor.py`
 - **.run_all()** (36 connections) — `docs/verification/locomotor-import-2026-10-23/master_extract_locomotor.py`
+- **master_extract_locomotor.py** (10 connections) — `docs/verification/locomotor-import-2026-10-23/master_extract_locomotor.py`
+- **compute_fingerprint()** (6 connections) — `docs/verification/locomotor-import-2026-10-23/master_extract_locomotor.py`
 - **.parse_anatomy_youssef_answers()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/master_extract_locomotor.py`
 - **.parse_biochem_fa_oxidation()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/master_extract_locomotor.py`
 - **.parse_biochem_locomotor1_pdf()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/master_extract_locomotor.py`
@@ -27,13 +29,13 @@
 - **.parse_parasitology_8_pdf()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/master_extract_locomotor.py`
 - **.parse_part1_ayman_para()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/master_extract_locomotor.py`
 - **.parse_part1_gout_pharma()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/master_extract_locomotor.py`
-- **.parse_patho_hegazy_bone()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/master_extract_locomotor.py`
-- **.parse_patho_khalifa_bone()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/master_extract_locomotor.py`
-- *... and 15 more nodes in this community*
+- *... and 19 more nodes in this community*
 
 ## Relationships
 
-- [Community 38](Community_38.md) (6 shared connections)
+- [Community 79](Community_79.md) (5 shared connections)
+- [Community 20](Community_20.md) (3 shared connections)
+- [Community 93](Community_93.md) (1 shared connections)
 
 ## Source Files
 
@@ -41,7 +43,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 147 (100%)
+- EXTRACTED: 159 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

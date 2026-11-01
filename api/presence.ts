@@ -18,6 +18,7 @@ export default async function handler(req: Request, res: Response) {
   res.setHeader("Cache-Control", "no-store, private");
   res.setHeader("Content-Type", "application/json");
   res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("X-Frame-Options", "DENY");
 
   if (req.method === "POST") {
     let body: any = req.body;
@@ -31,7 +32,7 @@ export default async function handler(req: Request, res: Response) {
     const rawId = typeof body?.userId === "string" ? body.userId.trim() : "";
     const userId = /^[a-zA-Z0-9_-]{1,64}$/.test(rawId) ? rawId : "anonymous";
     const rawAlias = typeof body?.alias === "string" ? body.alias.trim() : "";
-    const alias = rawAlias ? rawAlias.slice(0, 40) : "Student";
+    const alias = rawAlias ? rawAlias.replace(/[<>\r\n\t]/g, '').slice(0, 40) : "Student";
     const rawModule = typeof body?.moduleCode === "string" ? body.moduleCode.trim() : "";
     const moduleCode = /^[A-Z0-9-]{1,20}$/.test(rawModule) ? rawModule : undefined;
 

@@ -4,36 +4,35 @@
 
 ## Key Concepts
 
-- **TriagePanel.tsx** (13 connections) — `src/pages/TriagePanel.tsx`
-- **TriagePanel()** (8 connections) — `src/pages/TriagePanel.tsx`
-- **StudyButton()** (6 connections) — `src/app/components/ui/StudyControls.tsx`
-- **StudyControls.tsx** (6 connections) — `src/app/components/ui/StudyControls.tsx`
-- **TriageAssessmentCard()** (5 connections) — `src/pages/TriagePanel.tsx`
-- **StatusMessage()** (4 connections) — `src/app/components/ui/StudyControls.tsx`
-- **triage-panel.test.tsx** (4 connections) — `src/test/reports/triage-panel.test.tsx`
-- **action()** (3 connections) — `src/pages/TriagePanel.tsx`
-- **StudySurface()** (1 connections) — `src/app/components/ui/StudyControls.tsx`
-- **action()** (1 connections) — `src/pages/TriagePanel.tsx`
-- **runQueue()** (1 connections) — `src/pages/TriagePanel.tsx`
+- **navigation-menu.tsx** (15 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **NavigationMenu()** (3 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **NavigationMenuTrigger()** (3 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **NavigationMenuViewport()** (3 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **NavigationMenuContent()** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **NavigationMenuIndicator()** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **NavigationMenuItem()** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **NavigationMenuLink()** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **NavigationMenuList()** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **navigationMenuTriggerStyle** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **@radix-ui/react-navigation-menu@1.2.5** (2 connections) — `Light_Dark Mode Toggle/package.json`
 
 ## Relationships
 
-- [Community 56](Community_56.md) (5 shared connections)
-- [Community 24](Community_24.md) (3 shared connections)
-- [Triage Report Lease](Triage_Report_Lease.md) (3 shared connections)
-- [Community 95](Community_95.md) (2 shared connections)
-- [Community 152](Community_152.md) (2 shared connections)
-- [Community 6](Community_6.md) (1 shared connections)
+- [Atomic UI Components & Avatars](Atomic_UI_Components_&_Avatars.md) (9 shared connections)
+- [Community 114](Community_114.md) (1 shared connections)
+- [Toggle Alert Group](Toggle_Alert_Group.md) (1 shared connections)
+- [React Accordion Checkbox](React_Accordion_Checkbox.md) (1 shared connections)
+- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (1 shared connections)
+- [React Framework & Icon Dependencies](React_Framework_&_Icon_Dependencies.md) (1 shared connections)
 
 ## Source Files
 
-- `src/app/components/ui/StudyControls.tsx`
-- `src/pages/TriagePanel.tsx`
-- `src/test/reports/triage-panel.test.tsx`
+- `Light_Dark Mode Toggle/package.json`
+- `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
 
 ## Audit Trail
 
-- EXTRACTED: 34 (100%)
+- EXTRACTED: 26 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

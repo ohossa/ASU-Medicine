@@ -4,10 +4,10 @@
 
 ## Key Concepts
 
-- **KnowledgeGraphDrawer.tsx** (10 connections) — `src/app/components/KnowledgeGraphDrawer.tsx`
+- **KnowledgeGraphDrawer.tsx** (9 connections) — `src/app/components/KnowledgeGraphDrawer.tsx`
 - **knowledgeGraphService.ts** (9 connections) — `src/app/services/knowledgeGraphService.ts`
 - **KnowledgeGraphService** (7 connections) — `src/app/services/knowledgeGraphService.ts`
-- **KnowledgeGraphDrawer()** (6 connections) — `src/app/components/KnowledgeGraphDrawer.tsx`
+- **KnowledgeGraphDrawer()** (4 connections) — `src/app/components/KnowledgeGraphDrawer.tsx`
 - **.getNeighborhood()** (4 connections) — `src/app/services/knowledgeGraphService.ts`
 - **.matchTopic()** (3 connections) — `src/app/services/knowledgeGraphService.ts`
 - **ConceptNeighborhood** (2 connections) — `src/app/services/knowledgeGraphService.ts`
@@ -23,10 +23,9 @@
 
 ## Relationships
 
-- [Community 152](Community_152.md) (4 shared connections)
-- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (3 shared connections)
-- [Community 95](Community_95.md) (1 shared connections)
-- [Community 24](Community_24.md) (1 shared connections)
+- [Community 34](Community_34.md) (4 shared connections)
+- [Community 114](Community_114.md) (1 shared connections)
+- [Community 46](Community_46.md) (1 shared connections)
 
 ## Source Files
 
@@ -35,7 +34,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 32 (100%)
+- EXTRACTED: 29 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

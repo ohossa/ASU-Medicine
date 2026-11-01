@@ -30,10 +30,8 @@ CREATE INDEX IF NOT EXISTS idx_reports_question ON public.reports(question_id);
 CREATE INDEX IF NOT EXISTS idx_reports_created_at ON public.reports(created_at DESC);
 
 ALTER TABLE public.reports ENABLE ROW LEVEL SECURITY;
-CREATE POLICY "Allow public insert to reports" ON public.reports FOR INSERT TO anon, authenticated WITH CHECK (true);
-CREATE POLICY "Allow public select on reports" ON public.reports FOR SELECT TO anon, authenticated USING (true);
-CREATE POLICY "Allow public update on reports" ON public.reports FOR UPDATE TO anon, authenticated USING (true) WITH CHECK (true);
-GRANT ALL ON public.reports TO anon, authenticated;
+CREATE POLICY "service_role_full_reports" ON public.reports FOR ALL TO service_role USING (true) WITH CHECK (true);
+GRANT ALL ON public.reports TO service_role;
 
 
 -- 2. REPORT REPLIES TABLE (Drafts & Sent Conversations)
@@ -51,8 +49,8 @@ CREATE TABLE IF NOT EXISTS public.report_replies (
 
 CREATE INDEX IF NOT EXISTS idx_replies_report_id ON public.report_replies(report_id);
 ALTER TABLE public.report_replies ENABLE ROW LEVEL SECURITY;
-CREATE POLICY "Allow all on report_replies" ON public.report_replies FOR ALL TO anon, authenticated USING (true) WITH CHECK (true);
-GRANT ALL ON public.report_replies TO anon, authenticated;
+CREATE POLICY "service_role_full_report_replies" ON public.report_replies FOR ALL TO service_role USING (true) WITH CHECK (true);
+GRANT ALL ON public.report_replies TO service_role;
 
 
 -- 3. USER CLOUD SYNC & PROGRESS TABLE (1 Row / Student)
@@ -66,8 +64,8 @@ CREATE TABLE IF NOT EXISTS public.user_progress (
 CREATE INDEX IF NOT EXISTS idx_user_progress_updated ON public.user_progress(updated_at DESC);
 CREATE INDEX IF NOT EXISTS idx_user_progress_etag ON public.user_progress(user_id, updated_at);
 ALTER TABLE public.user_progress ENABLE ROW LEVEL SECURITY;
-CREATE POLICY "Allow all on user_progress" ON public.user_progress FOR ALL TO anon, authenticated USING (true) WITH CHECK (true);
-GRANT ALL ON public.user_progress TO anon, authenticated;
+CREATE POLICY "service_role_full_user_progress" ON public.user_progress FOR ALL TO service_role USING (true) WITH CHECK (true);
+GRANT ALL ON public.user_progress TO service_role;
 
 -- High-performance in-engine patch RPC (zero-read egress)
 CREATE OR REPLACE FUNCTION public.merge_user_progress(
@@ -93,7 +91,7 @@ BEGIN
     RETURN v_updated;
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
-GRANT EXECUTE ON FUNCTION public.merge_user_progress(TEXT, JSONB, INTEGER) TO anon, authenticated, service_role;
+GRANT EXECUTE ON FUNCTION public.merge_user_progress(TEXT, JSONB, INTEGER) TO service_role;
 
 
 -- 4. REAL-TIME PRESENCE TABLE
@@ -106,8 +104,8 @@ CREATE TABLE IF NOT EXISTS public.presence (
 
 CREATE INDEX IF NOT EXISTS idx_presence_last_seen ON public.presence(last_seen DESC);
 ALTER TABLE public.presence ENABLE ROW LEVEL SECURITY;
-CREATE POLICY "Allow all on presence" ON public.presence FOR ALL TO anon, authenticated USING (true) WITH CHECK (true);
-GRANT ALL ON public.presence TO anon, authenticated;
+CREATE POLICY "service_role_full_presence" ON public.presence FOR ALL TO service_role USING (true) WITH CHECK (true);
+GRANT ALL ON public.presence TO service_role;
 
 
 -- 5. LIVE QUESTION EDITS & AUDIT TRAIL
@@ -125,8 +123,8 @@ CREATE TABLE IF NOT EXISTS public.question_edits (
 
 CREATE INDEX IF NOT EXISTS idx_question_edits_module ON public.question_edits(module_code);
 ALTER TABLE public.question_edits ENABLE ROW LEVEL SECURITY;
-CREATE POLICY "Allow all on question_edits" ON public.question_edits FOR ALL TO anon, authenticated USING (true) WITH CHECK (true);
-GRANT ALL ON public.question_edits TO anon, authenticated;
+CREATE POLICY "service_role_full_question_edits" ON public.question_edits FOR ALL TO service_role USING (true) WITH CHECK (true);
+GRANT ALL ON public.question_edits TO service_role;
 
 
 -- 6. LEARNING & GAMIFICATION PROFILES
@@ -156,8 +154,8 @@ CREATE INDEX IF NOT EXISTS idx_learning_profiles_weekly
 ON public.learning_profiles(year, opt_in, weekly_xp DESC);
 
 ALTER TABLE public.learning_profiles ENABLE ROW LEVEL SECURITY;
-CREATE POLICY "Allow all on learning_profiles" ON public.learning_profiles FOR ALL TO anon, authenticated USING (true) WITH CHECK (true);
-GRANT ALL ON public.learning_profiles TO anon, authenticated;
+CREATE POLICY "service_role_full_learning_profiles" ON public.learning_profiles FOR ALL TO service_role USING (true) WITH CHECK (true);
+GRANT ALL ON public.learning_profiles TO service_role;
 
 
 -- 7. QUESTION ATTEMPT ENTRIES (Gamification Rewards & History)
@@ -184,8 +182,8 @@ CREATE INDEX IF NOT EXISTS idx_learning_entries_module ON public.learning_entrie
 CREATE INDEX IF NOT EXISTS idx_learning_entries_question ON public.learning_entries(question_id);
 
 ALTER TABLE public.learning_entries ENABLE ROW LEVEL SECURITY;
-CREATE POLICY "Allow all on learning_entries" ON public.learning_entries FOR ALL TO anon, authenticated USING (true) WITH CHECK (true);
-GRANT ALL ON public.learning_entries TO anon, authenticated;
+CREATE POLICY "service_role_full_learning_entries" ON public.learning_entries FOR ALL TO service_role USING (true) WITH CHECK (true);
+GRANT ALL ON public.learning_entries TO service_role;
 
 
 -- 8. AI HINT & TUTOR TELEMETRY
@@ -207,8 +205,8 @@ CREATE INDEX IF NOT EXISTS idx_ai_hint_rate_check ON public.ai_hint_logs(user_id
 CREATE INDEX IF NOT EXISTS idx_ai_hint_question ON public.ai_hint_logs(module_code, question_id);
 
 ALTER TABLE public.ai_hint_logs ENABLE ROW LEVEL SECURITY;
-CREATE POLICY "Allow all on ai_hint_logs" ON public.ai_hint_logs FOR ALL TO anon, authenticated USING (true) WITH CHECK (true);
-GRANT ALL ON public.ai_hint_logs TO anon, authenticated;
+CREATE POLICY "service_role_full_ai_hint_logs" ON public.ai_hint_logs FOR ALL TO service_role USING (true) WITH CHECK (true);
+GRANT ALL ON public.ai_hint_logs TO service_role;
 
 
 -- 9. AI TRIAGE ASSESSMENTS CACHE
@@ -224,8 +222,8 @@ CREATE TABLE IF NOT EXISTS public.triage_assessments (
 CREATE INDEX IF NOT EXISTS idx_triage_priority ON public.triage_assessments(priority);
 
 ALTER TABLE public.triage_assessments ENABLE ROW LEVEL SECURITY;
-CREATE POLICY "Allow all on triage_assessments" ON public.triage_assessments FOR ALL TO anon, authenticated USING (true) WITH CHECK (true);
-GRANT ALL ON public.triage_assessments TO anon, authenticated;
+CREATE POLICY "service_role_full_triage" ON public.triage_assessments FOR ALL TO service_role USING (true) WITH CHECK (true);
+GRANT ALL ON public.triage_assessments TO service_role;
 
 
 -- 10. SEED THE RECOVERED QUESTION REPORT (MGL3-CH5-PATH-0847 -> MOVED TO MICROBIOLOGY)

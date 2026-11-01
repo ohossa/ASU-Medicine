@@ -4,37 +4,37 @@
 
 ## Key Concepts
 
-- **validate-coverage-ledger.test.cjs** (24 connections) — `.agents/skills/security-audit/validate-coverage-ledger.test.cjs`
-- **sourceCheck()** (3 connections) — `.agents/skills/security-audit/validate-coverage-ledger.test.cjs`
-- **archivedAttempt()** (2 connections) — `.agents/skills/security-audit/validate-coverage-ledger.test.cjs`
-- **errorsFor()** (2 connections) — `.agents/skills/security-audit/validate-coverage-ledger.test.cjs`
-- **localCheck()** (2 connections) — `.agents/skills/security-audit/validate-coverage-ledger.test.cjs`
-- **unit()** (2 connections) — `.agents/skills/security-audit/validate-coverage-ledger.test.cjs`
-- **LIMITS** (2 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
+- **validate-findings.test.cjs** (26 connections) — `.agents/skills/security-audit/validate-findings.test.cjs`
+- **validateDocument()** (8 connections) — `.agents/skills/security-audit/validate-findings.cjs`
+- **errorsFor()** (3 connections) — `.agents/skills/security-audit/validate-findings.test.cjs`
+- **rejectMutation()** (2 connections) — `.agents/skills/security-audit/validate-findings.test.cjs`
+- **LIMITS** (2 connections) — `.agents/skills/security-audit/validate-findings.cjs`
+- **ref_node_assert** (2 connections)
 - **ref_node_test** (2 connections)
-- **assertNoInjectedControlBytes()** (1 connections) — `.agents/skills/security-audit/validate-coverage-ledger.test.cjs`
-- **cliOutput()** (1 connections) — `.agents/skills/security-audit/validate-coverage-ledger.test.cjs`
-- **runCli()** (1 connections) — `.agents/skills/security-audit/validate-coverage-ledger.test.cjs`
-- **TERMINAL_CONTROL_BYTES** (1 connections) — `.agents/skills/security-audit/validate-coverage-ledger.test.cjs`
-- **validatorPath** (1 connections) — `.agents/skills/security-audit/validate-coverage-ledger.test.cjs`
+- **assertNoInjectedControlBytes()** (1 connections) — `.agents/skills/security-audit/validate-findings.test.cjs`
+- **cliOutput()** (1 connections) — `.agents/skills/security-audit/validate-findings.test.cjs`
+- **runCli()** (1 connections) — `.agents/skills/security-audit/validate-findings.test.cjs`
+- **TERMINAL_CONTROL_BYTES** (1 connections) — `.agents/skills/security-audit/validate-findings.test.cjs`
+- **validatorPath** (1 connections) — `.agents/skills/security-audit/validate-findings.test.cjs`
+- **agents_skills_security_audit_report_schema** (1 connections)
 
 ## Relationships
 
-- [Community 25](Community_25.md) (9 shared connections)
-- [Community 120](Community_120.md) (3 shared connections)
+- [Community 72](Community_72.md) (10 shared connections)
+- [Community 120](Community_120.md) (6 shared connections)
+- [Community 25](Community_25.md) (4 shared connections)
 - [Community 33](Community_33.md) (2 shared connections)
-- [Community 253](Community_253.md) (1 shared connections)
-- [Community 319](Community_319.md) (1 shared connections)
+- [Community 125](Community_125.md) (1 shared connections)
 
 ## Source Files
 
-- `.agents/skills/security-audit/validate-coverage-ledger.cjs`
-- `.agents/skills/security-audit/validate-coverage-ledger.test.cjs`
+- `.agents/skills/security-audit/validate-findings.cjs`
+- `.agents/skills/security-audit/validate-findings.test.cjs`
 
 ## Audit Trail
 
-- EXTRACTED: 30 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 36 (97%)
+- INFERRED: 1 (3%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -167,6 +167,7 @@ export default async function handler(req: Req, res: Res) {
   res.setHeader("Cache-Control", "private, no-store");
   res.setHeader("Content-Type", "application/json");
   res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("X-Frame-Options", "DENY");
   try {
     const h = req.headers.authorization,
       token =

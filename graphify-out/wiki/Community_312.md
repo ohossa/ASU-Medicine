@@ -1,29 +1,28 @@
 # Community 312
 
-> 5 nodes
+> 7 nodes
 
 ## Key Concepts
 
-- **extract_supplement.py** (9 connections) — `docs/verification/locomotor-import-2026-10-23/extract_supplement.py`
-- **add_candidate()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/extract_supplement.py`
-- **compute_fingerprint()** (4 connections) — `docs/verification/locomotor-import-2026-10-23/extract_supplement.py`
-- **clean_option()** (3 connections) — `docs/verification/locomotor-import-2026-10-23/extract_supplement.py`
-- **normalize_text()** (3 connections) — `docs/verification/locomotor-import-2026-10-23/extract_supplement.py`
+- **enrich-fast.ts** (7 connections) — `data-format-v2/scripts/enrich-fast.ts`
+- **enrichBatch()** (6 connections) — `data-format-v2/scripts/enrich-fast.ts`
+- **callLLM()** (2 connections) — `data-format-v2/scripts/enrich-fast.ts`
+- **clean()** (2 connections) — `data-format-v2/scripts/enrich-fast.ts`
+- **main()** (2 connections) — `data-format-v2/scripts/enrich-fast.ts`
+- **needsE()** (2 connections) — `data-format-v2/scripts/enrich-fast.ts`
+- **sleep()** (2 connections) — `data-format-v2/scripts/enrich-fast.ts`
 
 ## Relationships
 
-- [Community 20](Community_20.md) (2 shared connections)
-- [Community 79](Community_79.md) (1 shared connections)
-- [Community 93](Community_93.md) (1 shared connections)
-- [Community 38](Community_38.md) (1 shared connections)
+- [Community 125](Community_125.md) (1 shared connections)
 
 ## Source Files
 
-- `docs/verification/locomotor-import-2026-10-23/extract_supplement.py`
+- `data-format-v2/scripts/enrich-fast.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 14 (100%)
+- EXTRACTED: 12 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -34,10 +34,10 @@
 ## Relationships
 
 - [Community 20](Community_20.md) (16 shared connections)
-- [Keyword Unique Keywords](Keyword_Unique_Keywords.md) (7 shared connections)
-- [Polish Rejected Biochemistry](Polish_Rejected_Biochemistry.md) (6 shared connections)
-- [Community 38](Community_38.md) (4 shared connections)
-- [Rejected Biochemistry Organization](Rejected_Biochemistry_Organization.md) (3 shared connections)
+- [Polish Rejected Biochemistry](Polish_Rejected_Biochemistry.md) (9 shared connections)
+- [Rejected Biochemistry Organization](Rejected_Biochemistry_Organization.md) (5 shared connections)
+- [Community 79](Community_79.md) (4 shared connections)
+- [Community 27](Community_27.md) (2 shared connections)
 - [Biochemistry Build Intake](Biochemistry_Build_Intake.md) (2 shared connections)
 
 ## Source Files

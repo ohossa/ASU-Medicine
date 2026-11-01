@@ -18,7 +18,7 @@
 
 ## Relationships
 
-- [Keyword Unique Keywords](Keyword_Unique_Keywords.md) (1 shared connections)
+- [Rejected Biochemistry Organization](Rejected_Biochemistry_Organization.md) (1 shared connections)
 
 ## Source Files
 

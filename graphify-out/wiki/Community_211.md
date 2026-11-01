@@ -1,40 +1,56 @@
 # Community 211
 
-> 10 nodes
+> 19 nodes
 
 ## Key Concepts
 
-- **learning-policy.ts** (13 connections) — `server/learning-policy.ts`
-- **learning-service.ts** (13 connections) — `server/learning-service.ts`
-- **prepareReward()** (6 connections) — `server/learning-policy.ts`
-- **createLearningService()** (6 connections) — `server/learning-service.ts`
-- **learning-policy.test.ts** (5 connections) — `src/test/reports/learning-policy.test.ts`
-- **learning-service.test.ts** (4 connections) — `src/test/reports/learning-service.test.ts`
-- **Dependencies** (3 connections) — `server/learning-service.ts`
-- **account()** (2 connections) — `server/learning-service.ts`
-- **setup()** (2 connections) — `src/test/reports/learning-service.test.ts`
-- **snapshot()** (1 connections) — `src/test/reports/learning-policy.test.ts`
+- **pulseEngine.ts** (12 connections) — `src/app/lib/pulseEngine.ts`
+- **celebrate.ts** (10 connections) — `src/app/lib/celebrate.ts`
+- **ConfettiManager.tsx** (7 connections) — `src/app/components/ConfettiManager.tsx`
+- **pulse** (7 connections) — `src/app/lib/pulseEngine.ts`
+- **fx.config.ts** (5 connections) — `src/app/lib/fx.config.ts`
+- **ECGMonitor.tsx** (4 connections) — `src/app/components/ECGMonitor.tsx`
+- **FX** (4 connections) — `src/app/lib/fx.config.ts`
+- **useReactiveBackground.ts** (4 connections) — `src/app/lib/useReactiveBackground.ts`
+- **getConfettiColors()** (3 connections) — `src/app/lib/confettiConfig.ts`
+- **confettiConfig.ts** (3 connections) — `src/app/lib/confettiConfig.ts`
+- **ConfettiManager()** (2 connections) — `src/app/components/ConfettiManager.tsx`
+- **fx** (2 connections) — `src/app/lib/pulseEngine.ts`
+- **canvas-confetti** (2 connections) — `package.json`
+- **FxKey** (1 connections) — `src/app/lib/fx.config.ts`
+- **Burst** (1 connections) — `src/app/lib/pulseEngine.ts`
+- **Mood** (1 connections) — `src/app/lib/pulseEngine.ts`
+- **ECGMonitor()** (1 connections) — `src/app/components/ECGMonitor.tsx`
+- **usePulseState()** (1 connections) — `src/app/lib/useReactiveBackground.ts`
+- **moduleConfettiColors** (1 connections) — `src/app/lib/confettiConfig.ts`
 
 ## Relationships
 
-- [Community 50](Community_50.md) (6 shared connections)
-- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (5 shared connections)
-- [Community 10](Community_10.md) (5 shared connections)
-- [Triage Report Lease](Triage_Report_Lease.md) (3 shared connections)
-- [Community 46](Community_46.md) (3 shared connections)
-- [Community 152](Community_152.md) (2 shared connections)
-- [Bank Question Edit](Bank_Question_Edit.md) (1 shared connections)
+- [Community 6](Community_6.md) (4 shared connections)
+- [Community 81](Community_81.md) (3 shared connections)
+- [Community 114](Community_114.md) (3 shared connections)
+- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (3 shared connections)
+- [Usesoundengine Soundkey Audiopolicy](Usesoundengine_Soundkey_Audiopolicy.md) (2 shared connections)
+- [Interactivebackground Cell Constructor](Interactivebackground_Cell_Constructor.md) (2 shared connections)
+- [Community 145](Community_145.md) (2 shared connections)
+- [Community 32](Community_32.md) (2 shared connections)
+- [Pulseengine Burst Getsnapshot](Pulseengine_Burst_Getsnapshot.md) (1 shared connections)
+- [React Eslint Plugin](React_Eslint_Plugin.md) (1 shared connections)
 
 ## Source Files
 
-- `server/learning-policy.ts`
-- `server/learning-service.ts`
-- `src/test/reports/learning-policy.test.ts`
-- `src/test/reports/learning-service.test.ts`
+- `package.json`
+- `src/app/components/ConfettiManager.tsx`
+- `src/app/components/ECGMonitor.tsx`
+- `src/app/lib/celebrate.ts`
+- `src/app/lib/confettiConfig.ts`
+- `src/app/lib/fx.config.ts`
+- `src/app/lib/pulseEngine.ts`
+- `src/app/lib/useReactiveBackground.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 40 (100%)
+- EXTRACTED: 47 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

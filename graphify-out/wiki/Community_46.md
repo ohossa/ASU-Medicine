@@ -1,76 +1,78 @@
 # Community 46
 
-> 50 nodes
+> 62 nodes
 
 ## Key Concepts
 
-- **LearningHub.tsx** (43 connections) — `src/pages/LearningHub.tsx`
-- **QuizResult** (18 connections) — `src/app/utils/storage.ts`
-- **LearningHub()** (18 connections) — `src/pages/LearningHub.tsx`
-- **learning/contracts.ts** (16 connections) — `src/app/learning/contracts.ts`
-- **learning-completeness.test.ts** (16 connections) — `src/test/reports/learning-completeness.test.ts`
-- **useAcademicYear.ts** (15 connections) — `src/app/preferences/useAcademicYear.ts`
+- **ref_lucide_react** (62 connections)
+- **useLanguage()** (60 connections) — `src/app/hooks/useLanguage.ts`
+- **LearningHub.tsx** (48 connections) — `src/pages/LearningHub.tsx`
+- **useLanguage.ts** (32 connections) — `src/app/hooks/useLanguage.ts`
+- **PortalShell()** (22 connections) — `src/app/components/PortalShell.tsx`
+- **LearningHub()** (21 connections) — `src/pages/LearningHub.tsx`
+- **PortalFooter()** (19 connections) — `src/app/components/PortalFooter.tsx`
+- **PortalShell.tsx** (19 connections) — `src/app/components/PortalShell.tsx`
+- **PortalFooter.tsx** (15 connections) — `src/app/components/PortalFooter.tsx`
 - **LearningActivity.tsx** (14 connections) — `src/pages/LearningActivity.tsx`
+- **LegalLayout.tsx** (14 connections) — `src/pages/legal/LegalLayout.tsx`
+- **PortalControls.test.tsx** (13 connections) — `src/app/components/PortalControls.test.tsx`
 - **learning-facts.test.ts** (13 connections) — `src/test/reports/learning-facts.test.ts`
-- **useAcademicYear()** (12 connections) — `src/app/preferences/useAcademicYear.ts`
-- **continuation.ts** (9 connections) — `src/app/learning/continuation.ts`
+- **ThemeToggle()** (10 connections) — `src/app/components/ThemeToggle.tsx`
+- **LegalLayout()** (10 connections) — `src/pages/legal/LegalLayout.tsx`
+- **LegalPages.test.tsx** (10 connections) — `src/pages/legal/LegalPages.test.tsx`
+- **SoundToggle.tsx** (9 connections) — `src/app/components/SoundToggle.tsx`
+- **src/app/components/ThemeToggle.tsx** (9 connections) — `src/app/components/ThemeToggle.tsx`
 - **facts.ts** (9 connections) — `src/app/learning/facts.ts`
 - **progress.ts** (9 connections) — `src/app/learning/progress.ts`
-- **useBankRevision()** (8 connections) — `src/app/components/CorrectionStatus.tsx`
-- **LearningActivity()** (7 connections) — `src/pages/LearningActivity.tsx`
-- **useAcademicYear.test.ts** (7 connections) — `src/app/preferences/useAcademicYear.test.ts`
-- **isModuleDataLoaded()** (6 connections) — `src/app/data.ts`
-- **scopeHistory()** (6 connections) — `src/app/learning/facts.ts`
-- **moduleProgress()** (6 connections) — `src/app/learning/progress.ts`
-- **WeeklyActivity()** (6 connections) — `src/pages/LearningActivity.tsx`
-- **currentPractice.ts** (6 connections) — `src/app/learning/currentPractice.ts`
-- **learning-progress.test.ts** (6 connections) — `src/test/reports/learning-progress.test.ts`
-- **LearningEntry** (5 connections) — `src/app/learning/contracts.ts`
-- **continuationQuestions()** (5 connections) — `src/app/learning/continuation.ts`
-- **currentPractice()** (5 connections) — `src/app/learning/currentPractice.ts`
-- **calendarActivity()** (5 connections) — `src/app/learning/facts.ts`
-- *... and 25 more nodes in this community*
+- **MedicalDisclaimerPage.tsx** (9 connections) — `src/pages/legal/MedicalDisclaimerPage.tsx`
+- **PrivacyPage.tsx** (9 connections) — `src/pages/legal/PrivacyPage.tsx`
+- **TermsPage.tsx** (9 connections) — `src/pages/legal/TermsPage.tsx`
+- **LanguageToggle()** (8 connections) — `src/app/components/LanguageToggle.tsx`
+- **YearSelectionModal.tsx** (8 connections) — `src/app/components/YearSelectionModal.tsx`
+- *... and 37 more nodes in this community*
 
 ## Relationships
 
-- [Community 6](Community_6.md) (23 shared connections)
-- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (16 shared connections)
-- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (14 shared connections)
-- [Community 24](Community_24.md) (14 shared connections)
-- [Community 152](Community_152.md) (11 shared connections)
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (10 shared connections)
-- [Community 36](Community_36.md) (10 shared connections)
-- [Community 15](Community_15.md) (7 shared connections)
-- [Community 95](Community_95.md) (6 shared connections)
-- [Community 34](Community_34.md) (3 shared connections)
-- [Community 211](Community_211.md) (3 shared connections)
-- [Community 50](Community_50.md) (2 shared connections)
+- [Community 6](Community_6.md) (40 shared connections)
+- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (28 shared connections)
+- [Community 114](Community_114.md) (26 shared connections)
+- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (22 shared connections)
+- [Community 32](Community_32.md) (19 shared connections)
+- [Community 36](Community_36.md) (19 shared connections)
+- [Community 24](Community_24.md) (18 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (18 shared connections)
+- [Community 34](Community_34.md) (15 shared connections)
+- [Community 51](Community_51.md) (12 shared connections)
+- [Community 81](Community_81.md) (11 shared connections)
+- [Community 65](Community_65.md) (7 shared connections)
 
 ## Source Files
 
-- `src/app/components/ChapterSelect.tsx`
-- `src/app/components/CorrectionStatus.tsx`
-- `src/app/components/HistoryScreen.tsx`
+- `src/app/components/ClerkThemeTogglePortal.tsx`
+- `src/app/components/LanguageToggle.tsx`
+- `src/app/components/PortalControls.test.tsx`
+- `src/app/components/PortalFooter.tsx`
+- `src/app/components/PortalShell.mobile.test.tsx`
+- `src/app/components/PortalShell.tsx`
+- `src/app/components/SoundToggle.tsx`
+- `src/app/components/ThemeToggle.tsx`
+- `src/app/components/YearSelectionModal.test.tsx`
+- `src/app/components/YearSelectionModal.tsx`
+- `src/app/components/profile/LanguageProfilePage.tsx`
 - `src/app/data.ts`
-- `src/app/learning/continuation.ts`
+- `src/app/hooks/useLanguage.ts`
 - `src/app/learning/contracts.ts`
-- `src/app/learning/currentPractice.ts`
 - `src/app/learning/facts.ts`
 - `src/app/learning/progress.ts`
 - `src/app/learning/topics.ts`
-- `src/app/preferences/useAcademicYear.test.ts`
-- `src/app/preferences/useAcademicYear.ts`
-- `src/app/utils/storage.ts`
 - `src/pages/LearningActivity.tsx`
 - `src/pages/LearningHub.tsx`
-- `src/test/reports/learning-completeness.test.ts`
-- `src/test/reports/learning-facts.test.ts`
-- `src/test/reports/learning-progress.test.ts`
+- `src/pages/legal/LegalLayout.tsx`
 
 ## Audit Trail
 
-- EXTRACTED: 223 (99%)
-- INFERRED: 2 (1%)
+- EXTRACTED: 441 (100%)
+- INFERRED: 2 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

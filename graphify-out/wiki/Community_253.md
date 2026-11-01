@@ -1,34 +1,32 @@
 # Community 253
 
-> 11 nodes
+> 10 nodes
 
 ## Key Concepts
 
-- **preflightJsonText()** (12 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
-- **fail()** (7 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
-- **beginValue()** (6 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
-- **beginString()** (4 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
-- **currentContainer()** (4 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
-- **beginContainer()** (3 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
-- **closeContainer()** (3 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
-- **countValue()** (3 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
-- **JsonStructureError** (2 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
-- **isTokenDelimiter()** (2 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
-- **isWhitespace()** (2 connections) — `.agents/skills/security-audit/validate-coverage-ledger.cjs`
+- **diag.ts** (10 connections) — `data-format-v2/scripts/diag.ts`
+- **Issue** (1 connections) — `data-format-v2/scripts/diag.ts`
+- **ParsedBlock** (1 connections) — `data-format-v2/scripts/diag.ts`
+- **Severity** (1 connections) — `data-format-v2/scripts/diag.ts`
+- **parseBlocks()** (1 connections) — `data-format-v2/scripts/diag.ts`
+- **validateBlock()** (1 connections) — `data-format-v2/scripts/diag.ts`
+- **fails** (1 connections) — `data-format-v2/scripts/diag.ts`
+- **files** (1 connections) — `data-format-v2/scripts/diag.ts`
+- **VALID_SUBJECTS** (1 connections) — `data-format-v2/scripts/diag.ts`
+- **VALID_TYPES** (1 connections) — `data-format-v2/scripts/diag.ts`
 
 ## Relationships
 
-- [Community 25](Community_25.md) (3 shared connections)
-- [Community 243](Community_243.md) (1 shared connections)
+- [Community 125](Community_125.md) (1 shared connections)
 
 ## Source Files
 
-- `.agents/skills/security-audit/validate-coverage-ledger.cjs`
+- `data-format-v2/scripts/diag.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 25 (96%)
-- INFERRED: 1 (4%)
+- EXTRACTED: 10 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---
