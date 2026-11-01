@@ -4,6 +4,10 @@ import { createRoot } from "react-dom/client";
 import { Analytics } from "@vercel/analytics/react";
 import "./styles/index.css";
 import { ErrorBoundary } from "./app/components/ErrorBoundary";
+import { initWebVitals } from "./app/lib/vitals";
+
+// Initialize Core Web Vitals performance tracker
+initWebVitals();
 
 // 1. Dynamic chunk loading recovery: If a new deployment removes old chunk hashes,
 // Vite fires 'vite:preloadError'. Soft-reload once to fetch fresh assets.

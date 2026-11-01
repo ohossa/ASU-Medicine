@@ -14,6 +14,7 @@ interface Response {
 }
 
 export default async function handler(req: Request, res: Response) {
+  const start = Date.now();
   res.setHeader("Cache-Control", "no-store, private");
   res.setHeader("Content-Type", "application/json");
   res.setHeader("X-Content-Type-Options", "nosniff");
@@ -35,11 +36,13 @@ export default async function handler(req: Request, res: Response) {
     const moduleCode = /^[A-Z0-9-]{1,20}$/.test(rawModule) ? rawModule : undefined;
 
     const onlineCount = await recordPresence({ userId, alias, moduleCode });
+    res.setHeader("Server-Timing", `total;dur=${Date.now() - start}`);
     return res.status(200).json({ ok: true, onlineCount });
   }
 
   if (req.method === "GET") {
     const data = await getOnlineUsers();
+    res.setHeader("Server-Timing", `total;dur=${Date.now() - start}`);
     return res.status(200).json(data);
   }
 

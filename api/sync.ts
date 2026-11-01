@@ -175,6 +175,7 @@ export default async function handler(req: any, res: any) {
 
     // 3. Handle GET Request
     if (req.method === 'GET') {
+      const getStartTime = Date.now();
       if (supabase) {
         try {
           if (isYearOnly) {
@@ -197,6 +198,7 @@ export default async function handler(req: any, res: any) {
 
             const safeYear = Number.isInteger(resolvedYear) && resolvedYear! >= 1 && resolvedYear! <= 5 ? resolvedYear! : 1;
             const yearKey = `asu_preferences:${userId}:academic-year`;
+            res.setHeader('Server-Timing', `db;dur=${Date.now() - getStartTime}`);
             return res.status(200).json({
               year: safeYear,
               data: {
@@ -204,6 +206,26 @@ export default async function handler(req: any, res: any) {
                 asu_portal_year: safeYear,
               }
             });
+          }
+
+          // Phase 1 ETag Verification: Query ONLY updated_at (30 bytes).
+          // If the cloud state is unchanged, return HTTP 304 without transferring the 500 KB data column!
+          const clientEtag = req.headers['if-none-match'];
+          if (clientEtag) {
+            const { data: meta } = await supabase
+              .from('user_progress')
+              .select('updated_at')
+              .eq('user_id', userId)
+              .maybeSingle();
+
+            const serverEtag = `W/"${meta?.updated_at || '0'}"`;
+            const cleanClient = clientEtag.replace(/^W\//, '');
+            const cleanServer = serverEtag.replace(/^W\//, '');
+            if (meta && cleanClient === cleanServer) {
+              res.setHeader('ETag', serverEtag);
+              res.setHeader('Server-Timing', `etag;dur=${Date.now() - getStartTime}`);
+              return res.status(304).end();
+            }
           }
 
           const { data: row, error } = await supabase
@@ -215,8 +237,8 @@ export default async function handler(req: any, res: any) {
           if (!error && row) {
             const etag = `W/"${row.updated_at || '0'}"`;
             res.setHeader('ETag', etag);
-            const clientEtag = req.headers['if-none-match'];
-            if (clientEtag && clientEtag === etag) {
+            if (clientEtag && clientEtag.replace(/^W\//, '') === etag.replace(/^W\//, '')) {
+              res.setHeader('Server-Timing', `db;dur=${Date.now() - getStartTime}`);
               return res.status(304).end();
             }
 
@@ -237,6 +259,7 @@ export default async function handler(req: any, res: any) {
             if (!resultData[yearKey] && resolvedYear) {
               resultData[yearKey] = { year: resolvedYear, version: 1, timestamp: Date.now() };
             }
+            res.setHeader('Server-Timing', `db;dur=${Date.now() - getStartTime}`);
             return res.status(200).json({ data: resultData });
           }
 
@@ -253,6 +276,7 @@ export default async function handler(req: any, res: any) {
               const yearKey = `asu_preferences:${userId}:academic-year`;
               resultData[yearKey] = { year: prof.year, version: 1, timestamp: Date.now() };
             }
+            res.setHeader('Server-Timing', `db;dur=${Date.now() - getStartTime}`);
             return res.status(200).json({ data: resultData });
           }
         } catch (err) {

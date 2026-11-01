@@ -40,6 +40,8 @@ local count = redis.call('ZCOUNT', zset, cutoff, '+inf')
 return count
 `;
 
+let cachedPresenceCount: { count: number; expiresAt: number } | null = null;
+
 export async function recordPresence(payload: PresencePayload): Promise<number> {
   const now = Math.floor(Date.now() / 1000);
   const rawId = typeof payload.userId === 'string' ? payload.userId.trim() : '';
@@ -56,9 +58,16 @@ export async function recordPresence(payload: PresencePayload): Promise<number> 
         last_seen: new Date().toISOString(),
       }, { onConflict: 'user_id' });
 
-      const cutoffIso = new Date(Date.now() - ONLINE_WINDOW_SECONDS * 1000).toISOString();
+      const nowMs = Date.now();
+      if (cachedPresenceCount && cachedPresenceCount.expiresAt > nowMs) {
+        return cachedPresenceCount.count;
+      }
+
+      const cutoffIso = new Date(nowMs - ONLINE_WINDOW_SECONDS * 1000).toISOString();
       const { count } = await supabase.from('presence').select('*', { count: 'exact', head: true }).gt('last_seen', cutoffIso);
-      return count ?? 1;
+      const safeCount = count ?? 1;
+      cachedPresenceCount = { count: safeCount, expiresAt: nowMs + 30000 };
+      return safeCount;
     } catch {
       // fallback to Redis
     }
@@ -83,18 +92,25 @@ export async function recordPresence(payload: PresencePayload): Promise<number> 
   }
 }
 
+let cachedOnlineUsers: { data: { onlineCount: number; onlineUserIds: string[]; users: OnlineUserSummary[] }; expiresAt: number } | null = null;
+
 export async function getOnlineUsers(): Promise<{
   onlineCount: number;
   onlineUserIds: string[];
   users: OnlineUserSummary[];
 }> {
-  const now = Math.floor(Date.now() / 1000);
+  const nowMs = Date.now();
+  if (cachedOnlineUsers && cachedOnlineUsers.expiresAt > nowMs) {
+    return cachedOnlineUsers.data;
+  }
+
+  const now = Math.floor(nowMs / 1000);
   const cutoff = now - ONLINE_WINDOW_SECONDS;
 
   const supabase = getSupabase();
   if (supabase) {
     try {
-      const cutoffIso = new Date(Date.now() - ONLINE_WINDOW_SECONDS * 1000).toISOString();
+      const cutoffIso = new Date(nowMs - ONLINE_WINDOW_SECONDS * 1000).toISOString();
       const { data, error } = await supabase
         .from('presence')
         .select('user_id, alias, module_code, last_seen')
@@ -106,13 +122,15 @@ export async function getOnlineUsers(): Promise<{
           userId: row.user_id,
           alias: row.alias,
           moduleCode: row.module_code,
-          lastSeenSecondsAgo: Math.max(0, Math.floor((Date.now() - new Date(row.last_seen).getTime()) / 1000)),
+          lastSeenSecondsAgo: Math.max(0, Math.floor((nowMs - new Date(row.last_seen).getTime()) / 1000)),
         }));
-        return {
+        const result = {
           onlineCount: users.length,
           onlineUserIds: users.map(u => u.userId),
           users,
         };
+        cachedOnlineUsers = { data: result, expiresAt: nowMs + 15000 };
+        return result;
       }
     } catch {
       // fallback to Redis

@@ -37,6 +37,7 @@ import { useUser } from "@clerk/clerk-react";
 import { studyTopics } from "../app/learning/topics";
 import { findContinuation } from "../app/learning/continuation";
 import { useLanguage } from "../app/hooks/useLanguage";
+import { LearningHubSkeleton } from "../app/components/skeletons/LearningHubSkeleton";
 export default function LearningHub({
   userButton,
   onSelectHistory,
@@ -190,6 +191,9 @@ export default function LearningHub({
         { label: ar ? "تقدمي" : "My Progress" },
       ]}
     >
+      {!learning.data && (learning.loading || yearPref.loading) ? (
+        <LearningHubSkeleton />
+      ) : (
       <section aria-label={ar ? "تقدّمي" : "My Progress"} className="learning-hub" dir={ar ? "rtl" : "ltr"}>
         {bankWarning && (
           <p role="status" className="learning-notice">
@@ -824,6 +828,7 @@ export default function LearningHub({
           </section>
         )}
       </section>
+      )}
     </PortalShell>
   );
 }

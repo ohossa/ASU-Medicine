@@ -74,7 +74,7 @@
       ]
     },
     {
-      "source": "/(hero|social-preview|asu-medicine-logo|favicon|favicon-192|favicon-512)\\.(png|webp|ico)",
+      "source": "/(hero|social-preview|asu-medicine-logo|luro-anki-logo|favicon|favicon-192|favicon-512)\\.(png|webp|ico)",
       "headers": [
         {
           "key": "Cache-Control",

@@ -177,3 +177,55 @@ A valid file satisfies all of the following:
 - Case sub-questions are only `mcq`, `essay`, or `fillblank`.
 - Fillblank questions include ordered `blanks`.
 - No duplicate top-level question IDs exist in the file.
+
+---
+
+## Supabase PostgreSQL 15 Sync & Performance Schema Specification
+
+For cloud-synchronized learning progress and client state persistence (`api/sync.ts` and `server/learning-store.ts`), the canonical relational schema is governed by `supabase/schema.sql`:
+
+### 1. `user_progress` Table
+Primary key-value store for user client state:
+- `user_id` (`TEXT PRIMARY KEY`): Clerk student user identifier.
+- `academic_year` (`SMALLINT NOT NULL DEFAULT 1`): Validated medical year (1-5).
+- `data` (`JSONB NOT NULL DEFAULT '{}'::jsonb`): Delta state dictionary storing preferences, quiz sessions, and history.
+- `updated_at` (`TIMESTAMPTZ NOT NULL DEFAULT timezone('utc', now())`): High-precision UTC timestamp used for HTTP 304 ETag generation.
+
+### 2. High-Performance In-Engine RPC: `merge_user_progress`
+Executes server-side JSONB deep merging directly inside PostgreSQL 15, completely eliminating Vercel-to-Supabase round-trip egress:
+```sql
+CREATE OR REPLACE FUNCTION merge_user_progress(
+  p_user_id TEXT,
+  p_patch JSONB,
+  p_year INT DEFAULT NULL
+)
+RETURNS TABLE (updated_at TIMESTAMPTZ, academic_year SMALLINT)
+LANGUAGE plpgsql
+AS $$
+BEGIN
+  RETURN QUERY
+  INSERT INTO user_progress (user_id, data, academic_year, updated_at)
+  VALUES (
+    p_user_id,
+    p_patch,
+    COALESCE(p_year, 1),
+    timezone('utc', now())
+  )
+  ON CONFLICT (user_id) DO UPDATE
+  SET
+    data = user_progress.data || p_patch,
+    academic_year = CASE WHEN p_year IS NOT NULL THEN p_year ELSE user_progress.academic_year END,
+    updated_at = timezone('utc', now())
+  RETURNING user_progress.updated_at, user_progress.academic_year;
+END;
+$$;
+```
+
+### 3. Egress-Eliminating Composite Indexes
+- `idx_user_progress_etag`: `(user_id, updated_at)` for instant 30-byte metadata ETag checks.
+- `idx_learning_entries_user_created`: `(user_id, created_at DESC)` for indexed dashboard lookups.
+- `idx_learning_entries_user_q`: `(user_id, question_id)` for duplicate submission checks.
+- `idx_learning_profiles_weekly_rank`: `(weekly_xp DESC, total_xp DESC)` for instant leaderboard ranking.
+- `idx_learning_profiles_alltime_rank`: `(total_xp DESC, questions_solved DESC)` for all-time leaderboard.
+- `idx_presence_active`: `(last_seen DESC)` for real-time online student counters.
+

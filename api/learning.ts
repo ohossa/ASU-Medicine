@@ -163,6 +163,7 @@ interface Res {
   json: (v: unknown) => unknown;
 }
 export default async function handler(req: Req, res: Res) {
+  const start = Date.now();
   res.setHeader("Cache-Control", "private, no-store");
   res.setHeader("Content-Type", "application/json");
   res.setHeader("X-Content-Type-Options", "nosniff");
@@ -170,15 +171,14 @@ export default async function handler(req: Req, res: Res) {
     const h = req.headers.authorization,
       token =
         typeof h === "string" && h.startsWith("Bearer ") ? h.slice(7) : "";
-    if (req.method === "GET")
-      return res
-        .status(200)
-        .json(
-          await service.overview(
-            token,
-            req.query?.period === "all" ? "all" : "weekly",
-          ),
-        );
+    if (req.method === "GET") {
+      const data = await service.overview(
+        token,
+        req.query?.period === "all" ? "all" : "weekly",
+      );
+      res.setHeader("Server-Timing", `total;dur=${Date.now() - start}`);
+      return res.status(200).json(data);
+    }
     if (!["POST", "PATCH"].includes(req.method ?? "")) {
       res.setHeader("Allow", "GET, POST, PATCH");
       return res.status(405).json({ error: "Method not allowed." });
@@ -195,13 +195,11 @@ export default async function handler(req: Req, res: Res) {
     } catch {
       throw new ReportError(400, "Invalid learning update.");
     }
-    return res
-      .status(200)
-      .json(
-        req.method === "PATCH"
-          ? await service.settings(token, body)
-          : await service.submit(token, body),
-      );
+    const result = req.method === "PATCH"
+      ? await service.settings(token, body)
+      : await service.submit(token, body);
+    res.setHeader("Server-Timing", `total;dur=${Date.now() - start}`);
+    return res.status(200).json(result);
   } catch (e) {
     return res
       .status(isReportError(e) ? e.status : 503)

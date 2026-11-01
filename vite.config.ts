@@ -90,17 +90,11 @@ const config: UserConfig & { test: InlineConfig } = {
           if (id.includes('node_modules/motion/') || id.includes('node_modules/@emotion/')) {
             return 'vendor-motion';
           }
-          if (id.includes('node_modules/@mui/')) {
-            return 'vendor-mui';
-          }
           if (id.includes('node_modules/lucide-react/')) {
             return 'vendor-lucide';
           }
-          if (id.includes('node_modules/recharts/') || id.includes('node_modules/d3-')) {
-            return 'vendor-recharts';
-          }
-          if (id.includes('node_modules/@radix-ui/') || id.includes('node_modules/vaul/') || id.includes('node_modules/date-fns/') || id.includes('node_modules/class-variance-authority/') || id.includes('node_modules/tailwind-merge/') || id.includes('node_modules/clsx/')) {
-            return 'vendor-utils';
+          if (id.includes('node_modules/lz-string/') || id.includes('node_modules/zod/') || id.includes('node_modules/zustand/')) {
+            return 'vendor-state';
           }
           if (id.includes('canvas-confetti') || id.includes('src/app/lib/celebrate') || id.includes('src/app/lib/sound')) {
             return 'fx-libs';

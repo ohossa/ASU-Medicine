@@ -81,6 +81,9 @@ import type { QuizResult } from './utils/storage';
 import { UserButton, useUser, useAuth } from '@clerk/clerk-react';
 const LoginScreen = lazy(() => import('./components/LoginScreen').then(m => ({ default: m.LoginScreen })));
 import LoadingScreen from './components/LoadingScreen';
+import { QuizSkeleton } from './components/skeletons/QuizSkeleton';
+import { LearningHubSkeleton } from './components/skeletons/LearningHubSkeleton';
+import { AdminAnalyticsSkeleton } from './components/skeletons/AdminAnalyticsSkeleton';
 import { useQuizSession, clearLocalDrafts } from './hooks/useQuizSession';
 import type { QuizSessionSave } from './hooks/useQuizSession';
 import QuizResumeCard from './components/QuizResumeCard';
@@ -302,7 +305,7 @@ function QuizFlowWrapper({
       )}
 
       {screen === 'quiz' && quizPayload && (
-        <Suspense fallback={<LoadingScreen compact label="Opening this view…"/>}>
+        <Suspense fallback={<QuizSkeleton />}>
           <QuizInterface
             chapter={quizPayload.chapter}
             subject={quizPayload.subject}
@@ -1221,9 +1224,9 @@ function MainApp() {
               } />
             ))}
 
-            <Route path="/admin/*" element={<FeatureErrorBoundary name="AdminPortal"><Suspense fallback={<div role="status">Loading admin portal…</div>}><AdminPortal userButton={customUserButton}/></Suspense></FeatureErrorBoundary>} />
+            <Route path="/admin/*" element={<FeatureErrorBoundary name="AdminPortal"><Suspense fallback={<AdminAnalyticsSkeleton />}><AdminPortal userButton={customUserButton}/></Suspense></FeatureErrorBoundary>} />
             {/* Tools pages */}
-            <Route path="/learning" element={<Suspense fallback={<div role="status">Loading your learning…</div>}><LearningHub key={user?.id} userButton={customUserButton} onSelectHistory={res=>handleSelectHistory(res,'history')}/></Suspense>}/>
+            <Route path="/learning" element={<Suspense fallback={<LearningHubSkeleton />}><LearningHub key={user?.id} userButton={customUserButton} onSelectHistory={res=>handleSelectHistory(res,'history')}/></Suspense>}/>
             <Route path="/study-tracker" element={<Navigate to="/learning?view=progress" replace/>}/>
             <Route path="/history" element={<Navigate to="/learning?view=activity" replace/>}/>
 

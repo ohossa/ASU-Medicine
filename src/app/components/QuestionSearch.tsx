@@ -440,7 +440,7 @@ export function QuestionSearch({
                 {results.slice(0, page).map((e) => {
                   const shown = revealed.has(e.key);
                   return (
-                    <article key={e.key}>
+                    <article key={e.key} style={{ contentVisibility: 'auto', containIntrinsicSize: '120px' }}>
                       <p className="search-meta">
                         {e.moduleName} · {e.subjectName} ·{" "}
                         {e.collection === "past-exams"

@@ -26,6 +26,7 @@ import {
 import type { FullAdminAnalytics, StudentAnalytics } from "../../../server/admin-analytics-service";
 import { InlineQuestionEditor } from "../../app/components/InlineQuestionEditor";
 import { StudentEmailReplyModal } from "../../app/components/StudentEmailReplyModal";
+import { AdminAnalyticsSkeleton } from "../../app/components/skeletons/AdminAnalyticsSkeleton";
 
 export default function AdminAnalyticsView() {
   const { getToken } = useAuth();
@@ -263,19 +264,7 @@ export default function AdminAnalyticsView() {
       )}
 
       {/* Loading Skeleton */}
-      {loading && !data && (
-        <div className="space-y-6 animate-pulse">
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-            {[...Array(6)].map((_, i) => (
-              <div
-                key={i}
-                className="h-24 rounded-2xl border border-stone-200/80 bg-stone-100/60 dark:border-stone-800 dark:bg-stone-800/40"
-              />
-            ))}
-          </div>
-          <div className="h-64 rounded-2xl border border-stone-200/80 bg-stone-100/60 dark:border-stone-800 dark:bg-stone-800/40" />
-        </div>
-      )}
+      {loading && !data && <AdminAnalyticsSkeleton />}
 
       {/* Authentication / Empty State when data is not loaded */}
       {!loading && !data && (
@@ -855,6 +844,7 @@ export default function AdminAnalyticsView() {
                 return (
                   <div
                     key={stu.id}
+                    style={{ contentVisibility: 'auto', containIntrinsicSize: '80px' }}
                     className="rounded-2xl border border-stone-200/80 bg-white/80 p-4 shadow-sm backdrop-blur-md dark:border-stone-800 dark:bg-stone-900/70 transition-all hover:border-teal-500/40"
                   >
                     <div

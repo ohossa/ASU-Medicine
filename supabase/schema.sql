@@ -64,9 +64,36 @@ CREATE TABLE IF NOT EXISTS public.user_progress (
 );
 
 CREATE INDEX IF NOT EXISTS idx_user_progress_updated ON public.user_progress(updated_at DESC);
+CREATE INDEX IF NOT EXISTS idx_user_progress_etag ON public.user_progress(user_id, updated_at);
 ALTER TABLE public.user_progress ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "Allow all on user_progress" ON public.user_progress FOR ALL TO anon, authenticated USING (true) WITH CHECK (true);
 GRANT ALL ON public.user_progress TO anon, authenticated;
+
+-- High-performance in-engine patch RPC (zero-read egress)
+CREATE OR REPLACE FUNCTION public.merge_user_progress(
+    p_user_id TEXT,
+    p_patch JSONB,
+    p_year INTEGER DEFAULT NULL
+) RETURNS JSONB AS $$
+DECLARE
+    v_updated JSONB;
+BEGIN
+    INSERT INTO public.user_progress (user_id, data, academic_year, updated_at)
+    VALUES (p_user_id, p_patch, COALESCE(p_year, 1), NOW())
+    ON CONFLICT (user_id) DO UPDATE SET
+        data = public.user_progress.data || p_patch,
+        academic_year = COALESCE(p_year, public.user_progress.academic_year),
+        updated_at = NOW()
+    RETURNING jsonb_build_object(
+        'user_id', user_id,
+        'academic_year', academic_year,
+        'updated_at', updated_at
+    ) INTO v_updated;
+
+    RETURN v_updated;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+GRANT EXECUTE ON FUNCTION public.merge_user_progress(TEXT, JSONB, INTEGER) TO anon, authenticated, service_role;
 
 
 -- 4. REAL-TIME PRESENCE TABLE

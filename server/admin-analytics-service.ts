@@ -268,7 +268,7 @@ export async function fetchEnrolledClerkUsers(secretKey?: string): Promise<Map<s
  * Handles production data and gracefully provides structured platform baselines when testing offline.
  */
 let adminAnalyticsCache: { timestamp: number; data: FullAdminAnalytics } | null = null;
-const ADMIN_ANALYTICS_CACHE_TTL = 30_000; // 30 seconds server-side cache to slash Supabase egress
+const ADMIN_ANALYTICS_CACHE_TTL = 60_000; // 60 seconds server-side cache to slash Supabase egress
 
 export async function getAdminAnalytics(token: string): Promise<FullAdminAnalytics> {
   await verifyOwner(token);
@@ -307,7 +307,7 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
   if (supabase) {
     try {
       const [profilesRes, progressRes, entriesRes] = await Promise.all([
-        supabase.from('learning_profiles').select('*'),
+        supabase.from('learning_profiles').select('user_id, year, xp, competitive_xp, weekly_xp, level, streak, best_streak, alias, opt_in, banner, title, last_day, updated_at'),
         supabase.from('user_progress').select('user_id, academic_year, updated_at'),
         supabase.from('learning_entries').select('user_id, module_code, question_id, chapter_id, correct, created_at').order('created_at', { ascending: false }).limit(2000),
       ]);

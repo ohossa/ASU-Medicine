@@ -184,6 +184,7 @@ export async function saveProfile(
         title: next.title,
         updated_at: new Date().toISOString(),
       }, { onConflict: 'user_id' });
+      clearDashboardCache(id);
       return next;
     } catch {
       // Supabase table may not exist yet; fall back silently
@@ -336,6 +337,7 @@ export async function award(id: string, year: number, rewards: unknown[]) {
       }, { onConflict: 'user_id' });
 
       // Return calculated XP awards directly from Supabase!
+      clearDashboardCache(id);
       return { personal: personalAdd, competitive: competitiveAdd };
     } catch (err) {
       console.warn('Supabase award failed, falling back to Redis:', err);
@@ -376,11 +378,34 @@ export async function award(id: string, year: number, rewards: unknown[]) {
   }
 }
 
+interface DashboardCacheEntry {
+  dashboard: LearningDashboard;
+  expiresAt: number;
+}
+const dashboardMemoryCache = new Map<string, DashboardCacheEntry>();
+
+export function clearDashboardCache(id?: string) {
+  if (id) {
+    for (const key of dashboardMemoryCache.keys()) {
+      if (key.startsWith(`${id}:`)) dashboardMemoryCache.delete(key);
+    }
+  } else {
+    dashboardMemoryCache.clear();
+  }
+}
+
 export async function dashboard(
   id: string,
   year: number,
   period = "weekly",
 ): Promise<LearningDashboard> {
+  const cacheKey = `${id}:${year}:${period}`;
+  const now = Date.now();
+  const cached = dashboardMemoryCache.get(cacheKey);
+  if (cached && cached.expiresAt > now) {
+    return cached.dashboard;
+  }
+
   let profile = await getProfile(id, year);
   if (!profile.year || profile.year < 1 || profile.year > 5) {
     profile = await saveProfile(id, year, { year });
@@ -392,7 +417,7 @@ export async function dashboard(
     try {
       const { data: entriesRows, error: entErr } = await supabase
         .from('learning_entries')
-        .select('*')
+        .select('module_code, chapter_id, question_id, topic, subject, type, correct, ever_correct, first_correct, created_at, content_version')
         .eq('user_id', id);
 
       const scoreCol = period === 'all' ? 'competitive_xp' : 'weekly_xp';
@@ -428,12 +453,17 @@ export async function dashboard(
           isYou: r.user_id === id,
         }));
 
-        return {
+        const result: LearningDashboard = {
           profile,
           entries,
           leaderboard,
           week: weekKey(),
         };
+
+        // Cache in memory for 60 seconds (zero egress on repeat visits)
+        dashboardMemoryCache.set(cacheKey, { dashboard: result, expiresAt: now + 60000 });
+
+        return result;
       }
     } catch {
       // Supabase not ready or query failed, fallback to Redis

@@ -185,6 +185,7 @@ class OpenAIAdapter implements AIAdapter {
         max_tokens: 200,
         temperature: 0.7,
       }),
+      signal: AbortSignal.timeout(15_000),
     });
 
     if (!res.ok) {
@@ -238,6 +239,7 @@ class GoogleGenAIAdapter implements AIAdapter {
           contents,
           generationConfig: { maxOutputTokens: 200, temperature: 0.7 },
         }),
+        signal: AbortSignal.timeout(15_000),
       }
     );
 
@@ -603,6 +605,7 @@ async function checkRateLimit(userId: string): Promise<boolean> {
 
 /* ─── export default handler ─── */
 export default async function handler(req: any, res: any) {
+  const startHintTime = Date.now();
   res.setHeader('Content-Type', 'application/json');
   res.setHeader('X-Content-Type-Options', 'nosniff');
   res.setHeader('X-Frame-Options', 'DENY');
@@ -677,8 +680,10 @@ export default async function handler(req: any, res: any) {
     }
 
     /* 5. Return */
+    res.setHeader('Server-Timing', `hint;dur=${Date.now() - startHintTime}`);
     return res.status(200).json(response);
   } catch (error: any) {
+    res.setHeader('Server-Timing', `hint;dur=${Date.now() - startHintTime}`);
     console.error('Hint API Error:', error);
     const msg = error.message || 'Unknown error';
     // Extract the upstream status code from the adapter error message (e.g. "OpenAI API error: 402 ...")
