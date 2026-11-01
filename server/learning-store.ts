@@ -74,8 +74,11 @@ export async function getProfile(
         };
 
         // Automated Self-Healing Reconciliation:
-        // Recovers zeroed or desynchronized student accounts from verified learning_entries
+        // Recovers zeroed or desynchronized student accounts from verified learning_entries & user_progress
         if (profile.xp === 0 || profile.level <= 2) {
+          let maxEarnedXp = profile.xp;
+
+          // 1. From learning_entries
           const { data: entryRows } = await supabase
             .from('learning_entries')
             .select('question_id, ever_correct, correct')
@@ -85,19 +88,41 @@ export async function getProfile(
             const uniqueCorrect = new Set(
               entryRows.filter((e) => e.ever_correct || e.correct).map((e) => e.question_id)
             ).size;
-            const minEarnedXp = uniqueCorrect * 10;
-            if (minEarnedXp > profile.xp) {
-              profile.xp = minEarnedXp;
-              profile.competitiveXp = Math.max(profile.competitiveXp, minEarnedXp);
-              profile.level = Math.floor(minEarnedXp / 500) + 1;
-              // Persist healed progress to Supabase
-              await supabase.from('learning_profiles').update({
-                xp: profile.xp,
-                competitive_xp: profile.competitiveXp,
-                level: profile.level,
-                updated_at: new Date().toISOString(),
-              }).eq('user_id', id);
+            maxEarnedXp = Math.max(maxEarnedXp, uniqueCorrect * 10);
+          }
+
+          // 2. From user_progress quiz history
+          const { data: progRow } = await supabase
+            .from('user_progress')
+            .select('data')
+            .eq('user_id', id)
+            .maybeSingle();
+
+          if (progRow?.data && typeof progRow.data === 'object') {
+            let histCorrect = 0;
+            for (const [k, v] of Object.entries(progRow.data)) {
+              if (k.includes('history') && Array.isArray(v)) {
+                for (const item of v) {
+                  if (item && item.correct !== undefined) {
+                    histCorrect += Number(item.correct || 0);
+                  }
+                }
+              }
             }
+            maxEarnedXp = Math.max(maxEarnedXp, histCorrect * 10);
+          }
+
+          if (maxEarnedXp > profile.xp) {
+            profile.xp = maxEarnedXp;
+            profile.competitiveXp = Math.max(profile.competitiveXp, maxEarnedXp);
+            profile.level = Math.floor(maxEarnedXp / 500) + 1;
+            // Persist healed progress to Supabase
+            await supabase.from('learning_profiles').update({
+              xp: profile.xp,
+              competitive_xp: profile.competitiveXp,
+              level: profile.level,
+              updated_at: new Date().toISOString(),
+            }).eq('user_id', id);
           }
         }
 
@@ -107,6 +132,7 @@ export async function getProfile(
       if (!error && !data) {
         // Create initial profile in Supabase to guarantee foreign key integrity
         const initial = initialProfile(year);
+        let maxEarnedXp = 0;
 
         // Check if there are already entries in learning_entries
         const { data: entryRows } = await supabase
@@ -118,10 +144,34 @@ export async function getProfile(
           const uniqueCorrect = new Set(
             entryRows.filter((e) => e.ever_correct || e.correct).map((e) => e.question_id)
           ).size;
-          const minEarnedXp = uniqueCorrect * 10;
-          initial.xp = minEarnedXp;
-          initial.competitiveXp = minEarnedXp;
-          initial.level = Math.floor(minEarnedXp / 500) + 1;
+          maxEarnedXp = Math.max(maxEarnedXp, uniqueCorrect * 10);
+        }
+
+        // Check if there is already quiz history in user_progress
+        const { data: progRow } = await supabase
+          .from('user_progress')
+          .select('data')
+          .eq('user_id', id)
+          .maybeSingle();
+
+        if (progRow?.data && typeof progRow.data === 'object') {
+          let histCorrect = 0;
+          for (const [k, v] of Object.entries(progRow.data)) {
+            if (k.includes('history') && Array.isArray(v)) {
+              for (const item of v) {
+                if (item && item.correct !== undefined) {
+                  histCorrect += Number(item.correct || 0);
+                }
+              }
+            }
+          }
+          maxEarnedXp = Math.max(maxEarnedXp, histCorrect * 10);
+        }
+
+        if (maxEarnedXp > 0) {
+          initial.xp = maxEarnedXp;
+          initial.competitiveXp = maxEarnedXp;
+          initial.level = Math.floor(maxEarnedXp / 500) + 1;
         }
 
         await supabase.from('learning_profiles').upsert({
