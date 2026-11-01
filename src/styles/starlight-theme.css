@@ -1,0 +1,211 @@
+/* ==============================================================================
+   ASU Medical Portal — Starlight Cosmic Velvet Secret Theme
+   Design System: Deep Midnight Indigo, Glowing Magenta, Electric Lavender,
+   Frosted Plum Glass, and Ambient Constellation Glow.
+   ============================================================================== */
+
+:root {
+  --starlight-bg-base: #0c071d;
+  --starlight-bg-surface: rgba(26, 13, 50, 0.72);
+  --starlight-bg-card: rgba(35, 17, 66, 0.65);
+  --starlight-bg-card-hover: rgba(48, 22, 92, 0.75);
+  --starlight-border: rgba(217, 70, 239, 0.22);
+  --starlight-border-hover: rgba(236, 72, 153, 0.45);
+  --starlight-border-focus: #d946ef;
+  --starlight-text-primary: #fdf4ff;
+  --starlight-text-secondary: #e9d5ff;
+  --starlight-text-muted: #c084fc;
+  --starlight-accent-pink: #ec4899;
+  --starlight-accent-magenta: #d946ef;
+  --starlight-accent-purple: #a855f7;
+  --starlight-glow: 0 0 25px rgba(217, 70, 239, 0.2);
+  --starlight-glow-strong: 0 0 35px rgba(236, 72, 153, 0.35);
+}
+
+/* ── Global Background and Body Overrides ────────────────────────────────── */
+html.theme-starlight,
+html.theme-starlight body {
+  background-color: var(--starlight-bg-base) !important;
+  color: var(--starlight-text-primary) !important;
+}
+
+/* Deep Cosmic Velvet Mesh Gradient */
+html.theme-starlight {
+  background-image: 
+    radial-gradient(ellipse 90% 60% at 50% -20%, rgba(120, 26, 170, 0.32), transparent 70%),
+    radial-gradient(ellipse 70% 50% at 85% 85%, rgba(217, 70, 239, 0.16), transparent 60%),
+    radial-gradient(ellipse 60% 40% at 15% 70%, rgba(236, 72, 153, 0.14), transparent 55%),
+    linear-gradient(180deg, #0c071d 0%, #110826 50%, #0a0518 100%) !important;
+  background-attachment: fixed !important;
+}
+
+/* ── Frosted Glass Cards & Panels ────────────────────────────────────────── */
+html.theme-starlight .rounded-2xl,
+html.theme-starlight .rounded-3xl,
+html.theme-starlight .dark\:bg-stone-900,
+html.theme-starlight .dark\:bg-stone-900\/60,
+html.theme-starlight .dark\:bg-stone-900\/70,
+html.theme-starlight .dark\:bg-stone-900\/80,
+html.theme-starlight .dark\:bg-stone-950,
+html.theme-starlight .dark\:bg-stone-950\/60,
+html.theme-starlight .dark\:bg-stone-950\/80,
+html.theme-starlight .portal-card,
+html.theme-starlight .glass-card {
+  background-color: var(--starlight-bg-card) !important;
+  border-color: var(--starlight-border) !important;
+  backdrop-filter: blur(20px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(160%) !important;
+  box-shadow: 0 10px 30px -10px rgba(12, 7, 29, 0.8), var(--starlight-glow) !important;
+}
+
+html.theme-starlight .dark\:border-stone-800,
+html.theme-starlight .dark\:border-stone-800\/60,
+html.theme-starlight .dark\:border-stone-800\/80,
+html.theme-starlight .dark\:border-stone-700 {
+  border-color: var(--starlight-border) !important;
+}
+
+/* ── Interactive Hover & Active States ────────────────────────────────────── */
+html.theme-starlight .hover\:border-stone-700:hover,
+html.theme-starlight .hover\:border-stone-600:hover,
+html.theme-starlight .hover\:border-teal-500:hover,
+html.theme-starlight .card-interactive:hover {
+  border-color: var(--starlight-border-hover) !important;
+  box-shadow: 0 12px 35px -8px rgba(217, 70, 239, 0.25), var(--starlight-glow-strong) !important;
+  transform: translateY(-1px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* ── Typography & Legibility Tokens ──────────────────────────────────────── */
+html.theme-starlight .text-stone-900,
+html.theme-starlight .dark\:text-stone-100,
+html.theme-starlight .dark\:text-white {
+  color: var(--starlight-text-primary) !important;
+}
+
+html.theme-starlight .text-stone-600,
+html.theme-starlight .text-stone-500,
+html.theme-starlight .dark\:text-stone-300,
+html.theme-starlight .dark\:text-stone-400 {
+  color: var(--starlight-text-secondary) !important;
+}
+
+html.theme-starlight .dark\:text-stone-500 {
+  color: var(--starlight-text-muted) !important;
+}
+
+/* ── Navigation, Headers & Breadcrumbs ────────────────────────────────────── */
+html.theme-starlight header,
+html.theme-starlight .sticky,
+html.theme-starlight .portal-nav-bar {
+  background-color: rgba(12, 7, 29, 0.82) !important;
+  border-color: var(--starlight-border) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+}
+
+/* ── Primary Accent Buttons & Active Navigation Pills ─────────────────────── */
+html.theme-starlight .bg-teal-600,
+html.theme-starlight .bg-teal-500,
+html.theme-starlight .hover\:bg-teal-700:hover,
+html.theme-starlight .bg-emerald-600,
+html.theme-starlight button.primary-btn {
+  background: linear-gradient(135deg, #d946ef 0%, #ec4899 50%, #f43f5e 100%) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 18px rgba(217, 70, 239, 0.35) !important;
+}
+
+html.theme-starlight .bg-teal-600:hover,
+html.theme-starlight .bg-emerald-600:hover {
+  background: linear-gradient(135deg, #e879f9 0%, #f472b6 50%, #fb7185 100%) !important;
+  box-shadow: 0 6px 24px rgba(236, 72, 153, 0.5) !important;
+}
+
+/* ── Quiz Solver Question & Option Cards ─────────────────────────────────── */
+html.theme-starlight .quiz-option-card,
+html.theme-starlight .option-btn {
+  background-color: rgba(30, 15, 58, 0.7) !important;
+  border-color: rgba(217, 70, 239, 0.22) !important;
+  color: var(--starlight-text-primary) !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+html.theme-starlight .quiz-option-card:hover,
+html.theme-starlight .option-btn:hover {
+  background-color: rgba(48, 22, 92, 0.8) !important;
+  border-color: var(--starlight-border-hover) !important;
+  box-shadow: var(--starlight-glow) !important;
+}
+
+/* Selected Question Option */
+html.theme-starlight .quiz-option-selected,
+html.theme-starlight .option-btn-selected {
+  background: linear-gradient(135deg, rgba(217, 70, 239, 0.22) 0%, rgba(168, 85, 247, 0.28) 100%) !important;
+  border-color: #d946ef !important;
+  box-shadow: 0 0 20px rgba(217, 70, 239, 0.4) !important;
+}
+
+/* Correct Answer (Neon Emerald Starlight Blend) */
+html.theme-starlight .quiz-option-correct {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.25) 0%, rgba(217, 70, 239, 0.2) 100%) !important;
+  border-color: #10b981 !important;
+  box-shadow: 0 0 22px rgba(16, 185, 129, 0.4) !important;
+}
+
+/* Incorrect Answer */
+html.theme-starlight .quiz-option-incorrect {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.25) 0%, rgba(217, 70, 239, 0.15) 100%) !important;
+  border-color: #f43f5e !important;
+  box-shadow: 0 0 22px rgba(244, 63, 94, 0.35) !important;
+}
+
+/* ── Learning Hub Leaderboard Podium ─────────────────────────────────────── */
+html.theme-starlight .leaderboard-rank-1 {
+  border-color: #f472b6 !important;
+  box-shadow: 0 0 30px rgba(244, 114, 182, 0.35) !important;
+}
+
+/* ── Starlight Exclusive Switch Pill (UI Control) ────────────────────────── */
+.starlight-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 9999px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  min-height: 38px;
+  cursor: pointer;
+  border: 1px solid rgba(217, 70, 239, 0.35);
+  background: rgba(30, 15, 58, 0.6);
+  color: #fdf4ff;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.starlight-toggle-btn:hover {
+  background: rgba(48, 22, 92, 0.85);
+  border-color: rgba(236, 72, 153, 0.6);
+  box-shadow: 0 0 18px rgba(217, 70, 239, 0.35);
+  transform: translateY(-1px);
+}
+
+.starlight-toggle-btn.active {
+  background: linear-gradient(135deg, #d946ef 0%, #ec4899 50%, #8b5cf6 100%);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  box-shadow: 0 0 24px rgba(217, 70, 239, 0.45);
+}
+
+/* ── Accessibility & Reduced Motion ──────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  html.theme-starlight *,
+  .starlight-toggle-btn {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

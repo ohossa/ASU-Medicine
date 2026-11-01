@@ -34,6 +34,9 @@ const StudyMode = lazy(() => import('../pages/StudyMode'));
 const SubjectSelect = lazy(() => import('./components/SubjectSelect').then(m => ({ default: m.SubjectSelect })));
 const StudyTrackerSelectorModal = lazy(() => import('./components/StudyTrackerSelectorModal').then(m => ({ default: m.StudyTrackerSelectorModal })));
 import { UserSyncPill } from './components/UserSyncPill';
+import { StarlightAtmosphere } from './components/StarlightAtmosphere';
+import { StarlightCelebration } from './components/StarlightCelebration';
+import { StarlightToggle } from './components/StarlightToggle';
 
 // Lazy-loaded FX layer components
 const LazyLevelUpOverlay = lazy(() => import('./components/LevelUpOverlay').then(m => ({ default: m.LevelUpOverlay })));
@@ -995,8 +998,10 @@ function MainApp() {
   };
 
   const customUserButton = useMemo(() => (
-    <UserSyncPill>
-      <UserButton
+    <div className="flex items-center gap-2">
+      <StarlightToggle />
+      <UserSyncPill>
+        <UserButton
         appearance={{
           baseTheme: undefined,
           elements: {
@@ -1075,10 +1080,13 @@ function MainApp() {
       </UserButton.MenuItems>
     </UserButton>
     </UserSyncPill>
+    </div>
   ), [user, hasOwnerAccess, language, transitionTo, navigate, setQuizPayload, setResultPayload, setShowPortalsModal, setShowSupportModal, activeStudentYear, setStudentYear, setScreen, setSelectedYear, setSelectedSemester, setSelectedModule, setStudyMode, setSelectedChapter, learning.data?.profile]);
 
   return (
     <div className="min-h-screen text-gray-900 dark:text-gray-100 font-manrope selection:bg-physiology/20 selection:text-physiology-dark overflow-x-hidden">
+      <StarlightAtmosphere />
+      <StarlightCelebration />
 
       <style>{`
         @keyframes shrinkHeader {

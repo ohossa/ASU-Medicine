@@ -34,6 +34,8 @@ import { scopeHistory, type ModuleScope } from "../app/learning/facts";
 import type { QuizResult } from "../app/utils/storage";
 import { useBankRevision } from "../app/components/CorrectionStatus";
 import { useUser } from "@clerk/clerk-react";
+import { isUserStarlightEligible } from "../app/config/secretThemes";
+import { StarlightToggle } from "../app/components/StarlightToggle";
 import { studyTopics } from "../app/learning/topics";
 import { findContinuation } from "../app/learning/continuation";
 import { useLanguage } from "../app/hooks/useLanguage";
@@ -754,6 +756,55 @@ export default function LearningHub({
               Earn banners and titles as your personal XP grows. Essays count
               toward these rewards.
             </p>
+
+            {isUserStarlightEligible(user) && (
+              <div
+                className="starlight-vip-card"
+                style={{
+                  margin: "20px 0 28px 0",
+                  padding: "20px 24px",
+                  borderRadius: "24px",
+                  background: "linear-gradient(135deg, rgba(30, 15, 58, 0.85) 0%, rgba(56, 18, 86, 0.8) 100%)",
+                  border: "1px solid rgba(217, 70, 239, 0.4)",
+                  boxShadow: "0 10px 30px -10px rgba(217, 70, 239, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2)",
+                  backdropFilter: "blur(20px)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  flexWrap: "wrap",
+                  gap: "16px",
+                }}
+              >
+                <div>
+                  <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "4px" }}>
+                    <span style={{ fontSize: "18px" }}>✨</span>
+                    <h3 style={{ margin: 0, fontSize: "16px", fontWeight: "700", color: "#fdf4ff" }}>
+                      {ar ? "ثيم ستارلايت السري (Starlight Velvet)" : "VIP Secret Theme: Starlight Velvet"}
+                    </h3>
+                    <span
+                      style={{
+                        fontSize: "11px",
+                        fontWeight: "700",
+                        background: "linear-gradient(135deg, #ec4899, #d946ef)",
+                        color: "#fff",
+                        padding: "2px 8px",
+                        borderRadius: "9999px",
+                        textTransform: "uppercase",
+                        letterSpacing: "0.05em",
+                      }}
+                    >
+                      Exclusive
+                    </span>
+                  </div>
+                  <p style={{ margin: 0, fontSize: "13px", color: "#e9d5ff", maxWidth: "520px" }}>
+                    {ar
+                      ? "ثيم كوزميك حصري بحبيبات نجوم متلألئة وقلوب متحركة وتصميم مخملي أرجواني فاخر."
+                      : "Cosmic midnight amethyst velvet theme with drifting starlight, floating translucent hearts, and celebratory sparkles."}
+                  </p>
+                </div>
+                <StarlightToggle showText={true} />
+              </div>
+            )}
             {saveError && (
               <p role="alert" className="learning-notice">
                 {saveError}

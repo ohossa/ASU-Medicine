@@ -26,6 +26,7 @@ import type { ChapterData, SubjectData, Question, SubjectColor, QuizAnswer, SubQ
 import { subjectStyles, formatTime, asEssayAnswer, asFillBlankAnswer, asMatchingAnswer, asCaseAnswer, isAnswerRecord } from '../types';
 import { useLanguage } from '../hooks/useLanguage';
 import { useTheme } from '../hooks/useTheme';
+import { triggerStarlightBurst } from './StarlightCelebration';
 import { FormattedAnswer } from './FormattedAnswer';
 import { useProgress } from '../hooks/useProgress';
 import { MatchingQuestion } from './MatchingQuestion';
@@ -245,6 +246,7 @@ export function ResultsDashboard({
 }: Props) {
   const { language } = useLanguage();
   const isRTL = language === 'ar';
+  const { isStarlight } = useTheme();
 
   const progressStore = useProgress();
   const [filter, setFilter] = useState<'all' | 'wrong' | 'flagged'>('all');
@@ -275,7 +277,7 @@ export function ResultsDashboard({
           ? 'text-amber-600 dark:text-amber-400'
           : 'text-rose-600 dark:text-rose-400';
 
-  /* Record achievements without a results-page animation. */
+  /* Record achievements and trigger Starlight celebration on passing score */
   useEffect(() => {
     if (totalCount === 0) return;
 
@@ -284,7 +286,18 @@ export function ResultsDashboard({
     } else if (percentage >= 75) {
       progressStore.unlock('high_score');
     }
-  }, [correctCount, totalCount, percentage, progressStore, subject?.id]);
+
+    if (isStarlight && percentage >= 60 && typeof window !== 'undefined') {
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      triggerStarlightBurst(w * 0.5, h * 0.35);
+      const timer = window.setTimeout(() => {
+        triggerStarlightBurst(w * 0.35, h * 0.4);
+        triggerStarlightBurst(w * 0.65, h * 0.4);
+      }, 350);
+      return () => window.clearTimeout(timer);
+    }
+  }, [correctCount, totalCount, percentage, progressStore, subject?.id, isStarlight]);
 
   const toggleSet = (setter: React.Dispatch<React.SetStateAction<Set<number>>>, i: number) =>
     setter(prev => {

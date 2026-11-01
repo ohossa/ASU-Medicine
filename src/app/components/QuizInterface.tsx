@@ -39,6 +39,7 @@ import { useQuizEngine } from '../hooks/useQuizEngine';
 import { useHintSystem } from '../hooks/useHintSystem';
 import { AIChatPanel } from './AIChatPanel';
 import { FormattedAnswer } from './FormattedAnswer';
+import { triggerStarlightBurst } from './StarlightCelebration';
 
 interface Props {
   childAnchor?:string;
@@ -241,6 +242,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       if (isCorrect) {
         fx.correct(0.5, 0.5, 1);
         playSound('correct');
+        triggerStarlightBurst();
       } else {
         fx.wrong(0.5, 0.5);
         playSound('wrong');

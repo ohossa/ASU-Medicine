@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { ThemeToggle } from './ThemeToggle';
+import { StarlightToggle } from './StarlightToggle';
 
 export function ClerkThemeTogglePortal() {
   const [container, setContainer] = useState<Element | null>(null);
@@ -23,7 +24,7 @@ export function ClerkThemeTogglePortal() {
         if (!existing) {
           existing = document.createElement('div');
           existing.id = 'clerk-custom-toggle-container';
-          existing.className = 'ms-auto flex items-center justify-end pl-2 shrink-0 scale-85 origin-right';
+          existing.className = 'ms-auto flex items-center justify-end pl-2 shrink-0 scale-85 origin-right gap-2';
           preview.appendChild(existing);
         }
         setContainer(existing);
@@ -44,5 +45,11 @@ export function ClerkThemeTogglePortal() {
 
   if (!container) return null;
 
-  return createPortal(<ThemeToggle />, container);
+  return createPortal(
+    <div className="flex items-center gap-2">
+      <StarlightToggle showText={false} />
+      <ThemeToggle />
+    </div>,
+    container
+  );
 }

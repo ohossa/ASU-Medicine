@@ -8,7 +8,7 @@ import {LanguageToggle} from './LanguageToggle';
 import {PortalFooter} from './PortalFooter';
 afterEach(cleanup);
 it('uses a keyboard-operated native switch with truthful dark-mode state in RTL',async()=>{
- function Harness(){const [dark,setDark]=useState(true);return <div dir="rtl"><ThemeContext.Provider value={{isDark:dark,theme:dark?'dark':'light',toggleTheme:()=>setDark(!dark)}}><ThemeToggle/></ThemeContext.Provider></div>;}
+ function Harness(){const [dark,setDark]=useState(true);return <div dir="rtl"><ThemeContext.Provider value={{isDark:dark,theme:dark?'dark':'light',toggleTheme:()=>setDark(!dark),isStarlight:false,toggleStarlight:()=>{},setStarlight:()=>{}}}><ThemeToggle/></ThemeContext.Provider></div>;}
  render(<Harness/>);const toggle=screen.getByRole('switch',{name:'Dark mode'});expect(toggle.tagName).toBe('BUTTON');expect(toggle).toHaveAttribute('aria-checked','true');expect(toggle).toHaveAttribute('dir','ltr');
  const user=userEvent.setup();await user.tab();expect(toggle).toHaveFocus();await user.keyboard(' ');expect(toggle).toHaveAttribute('aria-checked','false');await user.keyboard('{Enter}');expect(toggle).toHaveAttribute('aria-checked','true');
 });

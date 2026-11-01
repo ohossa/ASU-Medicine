@@ -356,6 +356,14 @@ Inspired by [404s.design/sites/anti-average](https://www.404s.design/sites/anti-
 - **Interactive ECG Pulse:** Hardware-accelerated SVG stroke heartbeat wave with defibrillation stimulus button tracking dynamic BPM.
 - **Liquid Glass Materials & Escape Routes:** Backdrop blur (`backdrop-blur-2xl bg-white/80 dark:bg-stone-900/80`), $\ge 44\text{px}$ touch targets (*"Resuscitate Session"* returning to `/`, *"Learning Hub"* jumping to `/learning`, and history navigation).
 
+### 6.13 The Secret Starlight Velvet Theme Engine (`src/app/config/secretThemes.ts` & `src/styles/starlight-theme.css`)
+Provides a secret, access-controlled luxury theme ("✨ Starlight") engineered with deep cosmic amethyst surfaces, twinkling starlight canvas, drifting hearts, and celebratory bursts:
+- **Strict Email Allowlisting:** Controlled via `isUserStarlightEligible()`. Restricts access to authorized email accounts (`sarahrateb@gmail.com`, `omarhmaged@gmail.com`). Non-authorized students experience zero bundle leaks, zero UI controls, and zero performance impact.
+- **Theme Stacking Model:** Starlight stacks cleanly onto `.dark` (`document.documentElement.classList.add('dark', 'theme-starlight')`). All existing Tailwind `dark:*` utilities remain active while CSS custom properties override background and surface tokens (`--starlight-bg: #0c071d`, `--starlight-surface: rgba(26, 13, 50, 0.72)`).
+- **Ambient Twinkling Canvas (`StarlightAtmosphere.tsx`):** GPU-accelerated backdrop rendering 35 twinkling stars and 12 gently drifting translucent hearts. Throttled to 30 FPS, auto-pauses when the document is hidden or idle, and respects `prefers-reduced-motion`.
+- **Celebratory Answer & Completion Micro-Bursts (`StarlightCelebration.tsx`):** Triggers celebratory particle bursts (glowing stars and hearts) upon correct answers and passing score completion ($\ge 60\%$). Particle arrays are strictly capped and auto-pruned to prevent memory buildup during marathon practice sessions.
+- **Apple HIG Controls (`StarlightToggle.tsx`):** Rendered as a native $\ge 44\text{px}$ touch switch in the user menu, Clerk profile portal, and Learning Hub rewards tab.
+
 ---
 
 ## 7. Medical Review & High-Yield Explanation Standards
