@@ -5,130 +5,582 @@
     "subtitle": "Micrographs & Electron Microscopy (TEM/SEM)",
     "emoji": "🔬",
     "page": 661,
-    "lectureRange": "Stations 1–6",
+    "lectureRange": "Stations 1–28",
     "bankSection": "practical",
     "subjects": [
       {
         "id": "histology",
         "name": "Histology",
         "iconName": "Microscope",
-        "lectures": "Stations 1–6",
+        "lectures": "Stations 1–28",
         "lectureCount": 6,
         "lectureNames": [
-          "Taste Buds & Lingual Papillae",
-          "Salivary Glands Histology",
-          "Small Intestine & Brunner Glands",
-          "Paneth Cells & Crypts of Lieberkuhn",
-          "Colon vs Vermiform Appendix",
-          "Recto-anal Junction"
+          "Alimentary Canal: Esophagus to Large Intestine",
+          "Oral Cavity & Salivary Glands",
+          "Liver & Gallbladder Architecture",
+          "Pancreas & Secretory Acini",
+          "Cellular Ultrastructure (TEM: Taste buds, Acini, Parietal cells)",
+          "Subcellular Ultrastructure (TEM/SEM: Enterocytes, Sinusoids, Paneth)"
         ],
         "questions": [
           {
             "id": "MGL3-CH301-HIST-0001",
             "type": "mcq",
             "lecture": 1,
-            "text": "In this transmission electron micrograph (TEM) of a circumvallate papilla taste bud, identify the apical structure indicated by pointer [ A ]:",
+            "text": "Examine this low-power histological section of the upper alimentary tract. Based on the non-keratinized stratified squamous epithelium and submucosal tubuloacinar mucous glands, identify this organ:",
             "options": [
-              "Taste pore with microvilli",
-              "Basal reserve stem cell",
-              "Supporting sustentacular cell",
-              "Primary gustatory receptor"
+              "Esophagus",
+              "Duodenum",
+              "Pyloric stomach",
+              "Jejunum"
             ],
             "correctIndex": 0,
-            "explanation": "The taste pore is the small apical mucosal opening through which microvilli of sensory gustatory cells project into the oral cavity to bind dissolved tastants.",
-            "keyConcept": "Taste pore: apical orifice transmitting tastants to sensory cell microvilli.",
+            "explanation": "The esophagus is characterized by a lining of non-keratinized stratified squamous epithelium, a prominent muscularis mucosae, and esophageal glands proper situated in the submucosa.",
+            "keyConcept": "Esophagus: non-keratinized stratified squamous epithelium with submucosal esophageal glands proper.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/histology/taste_bud_tem_masked.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/esophagus_lm.webp",
+              "caption": "Practical Spotter Examination — Station 1"
             }
           },
           {
             "id": "MGL3-CH301-HIST-0002",
             "type": "mcq",
             "lecture": 1,
-            "text": "In this transmission electron micrograph (TEM) of the circumvallate taste bud, identify the elongated insulating cells indicated by pointer [ B ]:",
+            "text": "Identify this small intestinal section characterized by tall leaf-like villi and abundant branched coiled tubuloacinar glands occupying the submucosa:",
             "options": [
-              "Primary gustatory sensory cells",
-              "Supporting (sustentacular) cells",
-              "Basal undifferentiated stem cells",
-              "Antimicrobial secretory Paneth cells"
+              "Ileum",
+              "Duodenum",
+              "Jejunum",
+              "Vermiform appendix"
             ],
             "correctIndex": 1,
-            "explanation": "Supporting (sustentacular) cells span the entire height of the taste bud from the basal lamina to the taste pore, providing structural and metabolic insulation for gustatory receptor cells.",
-            "keyConcept": "Sustentacular cells: full-height supportive cells insulating sensory receptors.",
+            "explanation": "Brunner's glands in the submucosa are the pathognomonic histological hallmark of the duodenum, secreting alkaline bicarbonate-rich mucus that neutralizes acidic gastric chyme.",
+            "keyConcept": "Duodenum: diagnostic submucosal Brunner's glands producing protective alkaline mucus.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/histology/taste_bud_tem_masked_b.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/duodenum_brunner_lm.webp",
+              "caption": "Practical Spotter Examination — Station 2"
             }
           },
           {
             "id": "MGL3-CH301-HIST-0003",
             "type": "mcq",
-            "lecture": 2,
-            "text": "Examine this high-yield H&E histological section of a major salivary gland. Which defining histological feature confirms that this specimen is the parotid gland?",
+            "lecture": 1,
+            "text": "Examine this small intestinal section demonstrating exceptionally tall, slender mucosal villi, prominent plicae circulares, and complete absence of submucosal glands or Peyer's patches. Identify this segment:",
             "options": [
-              "Predominantly mucous tubules capped with serous demilunes",
-              "Purely mucous acini with flattened basal peripheral nuclei",
-              "Purely serous acini with narrow lumens and intercalated ducts",
-              "Co-dominant mixture of discrete serous and mucous acini"
+              "Duodenum",
+              "Ileum",
+              "Jejunum",
+              "Cecum"
             ],
             "correctIndex": 2,
-            "explanation": "The human parotid gland is 100% serous, exhibiting round basophilic acini with narrow lumens, spherical central nuclei, apical zymogen granules, and absence of mucous tubules.",
-            "keyConcept": "Parotid = purely serous acini with round central nuclei and intercalated ducts.",
+            "explanation": "The jejunum possesses the tallest, most developed intestinal villi and deepest crypts for primary nutrient absorption, lacking both submucosal Brunner's glands and aggregated Peyer's patches.",
+            "keyConcept": "Jejunum: tall, well-developed villi without Brunner's glands or prominent Peyer's patches.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/histology/parotid_gland_he.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/jejunum_villi_lm.webp",
+              "caption": "Practical Spotter Examination — Station 3"
             }
           },
           {
             "id": "MGL3-CH301-HIST-0004",
             "type": "mcq",
-            "lecture": 3,
-            "text": "Examine this H&E cross-section of the gastrointestinal tract. What definitive landmark restricts the anatomical diagnosis to the duodenum?",
+            "lecture": 1,
+            "text": "In this histological section of the distal small intestine, identify the diagnostic aggregated lymphoid follicles that occupy both the lamina propria and submucosa on the antimesenteric border:",
             "options": [
-              "Aggregated Peyer lymphoid patches in the lamina propria and submucosa",
-              "Complete absence of mucosal villi with long straight vertical crypts",
-              "Stratified squamous non-keratinized mucosal epithelial lining",
-              "Branched coiled Brunner glands packed within the submucosal layer"
+              "Brunner's glands in duodenum",
+              "Taeniae coli in large colon",
+              "Demilunes in salivary gland",
+              "Peyer's patches in the ileum"
             ],
             "correctIndex": 3,
-            "explanation": "Brunner (duodenal) glands are branched coiled tubular mucous glands confined specifically to the submucosa of the duodenum, secreting alkaline mucin (pH 8.1–9.3) to protect against gastric acid.",
-            "keyConcept": "Submucosal Brunner glands are exclusively found in the duodenum.",
+            "explanation": "Peyer's patches are large aggregates of secondary lymphoid follicles situated in the lamina propria and submucosa of the ileum, covered by specialized follicle-associated M cells for antigen sampling.",
+            "keyConcept": "Ileum: hallmark aggregated lymphoid nodules (Peyer's patches) along the antimesenteric wall.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/histology/duodenum_brunner_glands_he.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/ileum_peyer_lm.webp",
+              "caption": "Practical Spotter Examination — Station 4"
             }
           },
           {
             "id": "MGL3-CH301-HIST-0005",
             "type": "mcq",
-            "lecture": 4,
-            "text": "This transmission electron micrograph (TEM) demonstrates pyramidal cells at the base of the crypts of Lieberkühn with prominent apical dense granules. What is their primary function?",
+            "lecture": 2,
+            "text": "Examine this histological section of the large bowel showing a flat mucosal surface without villi and straight, closely packed tubular crypts of Lieberkuhn. Identify this specimen:",
             "options": [
-              "Absorption of dietary lipids and synthesis of core chylomicrons",
-              "Secretion of antimicrobial alpha-defensins and lysozyme enzymes",
-              "Secretion of lubricating mucin glycoproteins by exocytosis",
-              "Systemic release of endocrine peptides gastrin and cholecystokinin"
+              "Colon (Large intestine)",
+              "Jejunum (Small intestine)",
+              "Duodenum (Small intestine)",
+              "Gastric body mucosa"
             ],
-            "correctIndex": 1,
-            "explanation": "Paneth cells occupy the bases of small intestinal crypts and contain large apical eosinophilic secretory granules containing lysozyme, phospholipase A2, and alpha-defensins providing mucosal immunity.",
-            "keyConcept": "Paneth cells secrete antimicrobial defensins and lysozyme at intestinal crypt bases.",
+            "correctIndex": 0,
+            "explanation": "The colon lacks mucosal villi and exhibits abundant straight, test-tube-like crypts of Lieberkuhn lined by numerous mucus-secreting goblet cells, with outer longitudinal muscle arranged into three taeniae coli.",
+            "keyConcept": "Colon: absence of villi with straight parallel crypts densely populated by goblet cells.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/histology/paneth_cells_tem.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/colon_crypts_lm.webp",
+              "caption": "Practical Spotter Examination — Station 5"
             }
           },
           {
             "id": "MGL3-CH301-HIST-0006",
             "type": "mcq",
-            "lecture": 5,
-            "text": "Examine this cross-section of the vermiform appendix. Which histological characteristic most definitively distinguishes the appendix from the colon?",
+            "lecture": 2,
+            "text": "Identify this small tubular gastrointestinal organ presenting a narrow, irregular stellate lumen, complete circular muscularis, and a confluent ring of massive lymphoid follicles expanding the submucosa:",
             "options": [
-              "Prominent outer taeniae coli formed by discrete longitudinal muscle bands",
-              "Numerous tall slender mucosal villi lined by microvillar enterocytes",
-              "Confluent lymphoid follicles infiltrating the lamina propria and submucosa",
-              "Complete absence of straight tubular crypts of Lieberkühn"
+              "Sigmoid colon",
+              "Vermiform appendix",
+              "Pyloric canal",
+              "Gallbladder"
+            ],
+            "correctIndex": 1,
+            "explanation": "The vermiform appendix exhibits a small irregular star-shaped lumen, absence of villi, shallow crypts, and a ring of large lymphoid follicles completely effacing the lamina propria and submucosa.",
+            "keyConcept": "Appendix: narrow stellate lumen with a circumferential ring of prominent lymphoid follicles.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/appendix_lymphoid_lm.webp",
+              "caption": "Practical Spotter Examination — Station 6"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0007",
+            "type": "mcq",
+            "lecture": 2,
+            "text": "In this section from the anterior two-thirds of the lingual dorsum, identify the conical pointed mucosal projections covered by keratinized stratified squamous epithelium lacking taste buds:",
+            "options": [
+              "Fungiform papillae",
+              "Circumvallate papillae",
+              "Filiform papillae",
+              "Foliate papillae"
             ],
             "correctIndex": 2,
-            "explanation": "The vermiform appendix possesses a complete outer longitudinal muscle coat (no taeniae coli) and massive, confluent lymphoid follicles with germinal centers effacing the lamina propria and submucosa.",
-            "keyConcept": "Appendix: circular continuous longitudinal coat + dense circumferential lymphoid ring.",
+            "explanation": "Filiform papillae are the most numerous lingual papillae. They have a pointed conical keratinized shape and serve a mechanical role in food manipulation, uniquely lacking taste buds.",
+            "keyConcept": "Filiform papillae: pointed keratinized projections providing mechanical friction, devoid of taste buds.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/histology/colon_vs_appendix_he.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/tongue_filiform_lm.webp",
+              "caption": "Practical Spotter Examination — Station 7"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0008",
+            "type": "mcq",
+            "lecture": 2,
+            "text": "This histological section demonstrates three distinct transitional regions: outer skin with hair follicles, an intermediate red vermilion border with high dermal papillae, and an inner mucous zone. Identify this organ:",
+            "options": [
+              "Eyelid (Palpebra)",
+              "Hard palate mucosa",
+              "Anal transition zone",
+              "Lip (Labium)"
+            ],
+            "correctIndex": 3,
+            "explanation": "The lip features cutaneous skin externally, an intermediate vermilion zone with high vascular papillae and eleidin-rich translucent stratum corneum, and internal oral non-keratinized mucosa over skeletal orbicularis oris.",
+            "keyConcept": "Lip: transition from external hairy skin to translucent vermilion margin and internal oral mucosa.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/lip_histology_lm.webp",
+              "caption": "Practical Spotter Examination — Station 8"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0009",
+            "type": "mcq",
+            "lecture": 3,
+            "text": "Examine this gastric mucosal biopsy displaying shallow gastric pits occupying the upper quarter of the mucosa, with straight tubular glands densely packed with acidophilic fried-egg-shaped cells. Identify the region:",
+            "options": [
+              "Fundus and body of stomach",
+              "Pyloric region of stomach",
+              "Cardia region of stomach",
+              "Duodenal bulb mucosa"
+            ],
+            "correctIndex": 0,
+            "explanation": "The gastric fundus and body display shallow gastric pits (1/4 of mucosal depth) and long straight glands packed with eosinophilic parietal (oxyntic) cells and basophilic chief (peptic) cells.",
+            "keyConcept": "Gastric fundus/body: shallow pits with straight glands rich in parietal and chief cells.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/stomach_fundus_lm.webp",
+              "caption": "Practical Spotter Examination — Station 9"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0010",
+            "type": "mcq",
+            "lecture": 3,
+            "text": "This gastric histological specimen demonstrates deep, branched gastric pits extending through half of the mucosal thickness, with coiled mucus-secreting glands and absence of parietal cells. Identify the region:",
+            "options": [
+              "Fundus of stomach",
+              "Pylorus of stomach",
+              "Corpus of stomach",
+              "Esophageal junction"
+            ],
+            "correctIndex": 1,
+            "explanation": "The pyloric mucosa is characterized by deep gastric pits (extending 1/2 or more into mucosal depth) leading into branched, coiled pyloric glands lined almost exclusively by pale mucus-secreting cells.",
+            "keyConcept": "Pylorus: deep branching gastric pits leading into coiled, mucus-secreting tubular glands.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/stomach_pylorus_lm.webp",
+              "caption": "Practical Spotter Examination — Station 10"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0011",
+            "type": "mcq",
+            "lecture": 3,
+            "text": "Examine this hepatic histological section displaying cords of polyhedral hepatocytes radiating from a central vein toward peripheral connective tissue tracts containing a triad. Identify this structural unit:",
+            "options": [
+              "Portal lobule unit",
+              "Hepatic acinus of Rappaport",
+              "Classical liver lobule",
+              "Splenic red pulp cord"
+            ],
+            "correctIndex": 2,
+            "explanation": "The classical liver lobule is a hexagonal prism centered on a central vein, with radiating hepatocyte plates separated by sinusoidal capillaries and bounded at angles by portal triads.",
+            "keyConcept": "Classical liver lobule: hexagonal structural unit centered on a terminal central venule.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/liver_lobule_lm.webp",
+              "caption": "Practical Spotter Examination — Station 11"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0012",
+            "type": "mcq",
+            "lecture": 3,
+            "text": "Identify this digestive organ wall showing an extensively folded mucosa lined by tall simple columnar cells with microvilli, absence of muscularis mucosae and submucosa, and an outer fibromuscular coat:",
+            "options": [
+              "Urinary bladder",
+              "Ampulla of ductus deferens",
+              "Uterine fallopian tube",
+              "Gallbladder"
+            ],
+            "correctIndex": 3,
+            "explanation": "The gallbladder wall uniquely lacks both a muscularis mucosae and a submucosa. Its highly folded mucosa rests directly upon an irregular fibromuscular coat, adapted for bile concentration.",
+            "keyConcept": "Gallbladder: tall columnar epithelium with folded mucosa lacking muscularis mucosae and submucosa.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/liver_gallbladder_lm.webp",
+              "caption": "Practical Spotter Examination — Station 12"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0013",
+            "type": "mcq",
+            "lecture": 4,
+            "text": "Examine this section of a major salivary gland exhibiting mixed seromucous acini with clear serous predominance (~80% serous), serous demilunes of Giannuzzi, and prominent striated ducts. Identify the gland:",
+            "options": [
+              "Submandibular gland",
+              "Parotid salivary gland",
+              "Sublingual salivary gland",
+              "Exocrine pancreas"
+            ],
+            "correctIndex": 0,
+            "explanation": "The submandibular gland is a mixed tubuloacinar gland with marked serous predominance and characteristic crescentic serous demilunes capping mucous acini, accompanied by well-developed striated ducts.",
+            "keyConcept": "Submandibular gland: serous-predominant mixed acini with classic demilunes of Giannuzzi.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/submandibular_gland_lm.webp",
+              "caption": "Practical Spotter Examination — Station 13"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0014",
+            "type": "mcq",
+            "lecture": 4,
+            "text": "This histological section shows purely serous secretory acini with intra-acinar centroacinar cells, absence of striated ducts, and pale spherical neuroendocrine cell clusters. Identify this organ:",
+            "options": [
+              "Parotid salivary gland",
+              "Pancreas",
+              "Submandibular gland",
+              "Thyroid gland tissue"
+            ],
+            "correctIndex": 1,
+            "explanation": "The pancreas is distinguished from the parotid gland by the presence of centroacinar cells within its serous acinar lumens, absence of striated ducts, and pale endocrine Islets of Langerhans.",
+            "keyConcept": "Pancreas: purely serous acini with centroacinar cells and endocrine Islets of Langerhans.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/pancreas_islets_lm.webp",
+              "caption": "Practical Spotter Examination — Station 14"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0015",
+            "type": "mcq",
+            "lecture": 4,
+            "text": "In this high-resolution scanning electron micrograph (SEM) of the dorsal tongue surface, identify the pointed, hook-shaped conical surface structures that provide tactile friction for mechanical mastication:",
+            "options": [
+              "Fungiform papillae",
+              "Circumvallate papillae",
+              "Filiform papillae",
+              "Foliate papillae"
+            ],
+            "correctIndex": 2,
+            "explanation": "Scanning electron microscopy reveals filiform papillae as tapering conical or claw-like keratinized projections that grip food particles and guide them toward the pharynx during chewing.",
+            "keyConcept": "Filiform papillae SEM: pointed mechanical projections forming an abrasive abrasive dorsal surface.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/sem_filiform_papillae.webp",
+              "caption": "Practical Spotter Examination — Station 15"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0016",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "In this transmission electron micrograph (TEM) of an intraepithelial taste bud, identify the narrow apical opening through which sensory microvilli contact chemical tastants dissolved in saliva:",
+            "options": [
+              "Striated border canal",
+              "Bile canaliculus cleft",
+              "Junctional complex gate",
+              "Taste pore"
+            ],
+            "correctIndex": 3,
+            "explanation": "The taste pore is the constricted apical aperture of the taste bud through which microvilli of type I, II, and III neuroepithelial cells project into the oral cavity to bind tastant molecules.",
+            "keyConcept": "Taste pore: apical microvillar opening mediating chemical contact between tastants and gustatory receptors.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/taste_bud_tem.webp",
+              "caption": "Practical Spotter Examination — Station 16"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0017",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "Examine this transmission electron micrograph (TEM) of a salivary secretory unit displaying a basally flattened, heterochromatic nucleus and cytoplasm filled with pale, electron-lucent confluent droplets. Identify the unit:",
+            "options": [
+              "Mucous acinus",
+              "Serous acinus",
+              "Parietal oxyntic cell",
+              "Pancreatic acinar cell"
+            ],
+            "correctIndex": 0,
+            "explanation": "Mucous acinar cells possess flattened basal nuclei compressed against the basement membrane, with apical cytoplasm distended by light, electron-lucent mucinogen secretory granules that wash out during preparation.",
+            "keyConcept": "Mucous acinus TEM: basally flattened nucleus with electron-lucent, pale mucinogen droplets.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/mucous_acinus_tem.webp",
+              "caption": "Practical Spotter Examination — Station 17"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0018",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "In this TEM of a salivary acinus, identify the cell characterized by a rounded euchromatic basal nucleus, extensive parallel stacks of rough endoplasmic reticulum, and dense apical zymogen granules:",
+            "options": [
+              "Mucous acinar cell",
+              "Serous acinar cell",
+              "Intestinal goblet cell",
+              "Enteroendocrine cell"
+            ],
+            "correctIndex": 1,
+            "explanation": "Serous cells synthesize enzymatic proteins (amylase, lysozyme). They exhibit extensive basal rough ER cisternae, a supranuclear Golgi apparatus, and round, dark, electron-dense apical zymogen granules.",
+            "keyConcept": "Serous acinus TEM: prominent basal rough ER stacks with apical electron-dense zymogen granules.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/serous_acinus_tem.webp",
+              "caption": "Practical Spotter Examination — Station 18"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0019",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "Examine this transmission electron micrograph (TEM) of a gastric fundic cell packed with packed mitochondria, an extensive intracellular secretory canaliculus, and a tubulovesicular system. Identify this cell:",
+            "options": [
+              "Chief (Peptic) cell",
+              "Mucous neck cell",
+              "Parietal (Oxyntic) cell",
+              "Enterochromaffin cell"
+            ],
+            "correctIndex": 2,
+            "explanation": "Gastric parietal cells are specialized for hydrochloric acid and intrinsic factor secretion. Their cytoplasm contains vast arrays of mitochondria supplying ATP for H+/K+ ATPase pumps and deep canalicular invaginations.",
+            "keyConcept": "Parietal cell TEM: deep intracellular secretory canaliculi, tubulovesicles, and dense mitochondria.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/parietal_cell_tem.webp",
+              "caption": "Practical Spotter Examination — Station 19"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0020",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "In this TEM of the gastrointestinal epithelium, identify this specialized endocrine cell that extends directly to the gut lumen with apical microvilli acting as chemoreceptors, and basal secretory granules:",
+            "options": [
+              "Closed-type enteroendocrine cell",
+              "Absorptive enterocyte cell",
+              "Crypt Paneth granule cell",
+              "Open-type enteroendocrine cell"
+            ],
+            "correctIndex": 3,
+            "explanation": "Open-type enteroendocrine cells contact the gut lumen via apical microvilli equipped with nutrient receptors, releasing regulatory peptide hormones into underlying capillaries from basal secretory granules.",
+            "keyConcept": "Open enteroendocrine cell: apical sensory microvilli sampling luminal contents with basal secretory granules.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/enteroendocrine_open_tem.webp",
+              "caption": "Practical Spotter Examination — Station 20"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0021",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "Examine this TEM of an intestinal epithelial endocrine cell resting along the basal lamina without apical luminal contact, responding to mechanical stretch or neural cues. Identify this cell:",
+            "options": [
+              "Closed-type enteroendocrine cell",
+              "Open-type enteroendocrine cell",
+              "Intestinal goblet cell",
+              "Parietal oxyntic cell"
+            ],
+            "correctIndex": 0,
+            "explanation": "Closed-type enteroendocrine cells are insulated from the gut lumen by adjacent enterocytes. They rest upon the basal lamina and respond to paracrine, neural, or mechanical stimuli rather than luminal contents.",
+            "keyConcept": "Closed enteroendocrine cell: basally situated endocrine cell lacking direct apical luminal contact.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/enteroendocrine_closed_tem.webp",
+              "caption": "Practical Spotter Examination — Station 21"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0022",
+            "type": "mcq",
+            "lecture": 6,
+            "text": "In this TEM of adjacent hepatocyte membranes, identify the narrow intercellular channel bounded by microvilli and sealed at both lateral margins by tight junctional complexes (zonulae occludentes):",
+            "options": [
+              "Sinusoidal capillary lumen",
+              "Bile canaliculus",
+              "Perisinusoidal space of Disse",
+              "Terminal central venule"
+            ],
+            "correctIndex": 1,
+            "explanation": "Bile canaliculi are intercellular channels formed by grooves in the plasma membranes of adjacent hepatocytes, sealed by occluding tight junctions to prevent bile regurgitation into the bloodstream.",
+            "keyConcept": "Bile canaliculus: intercellular bile channel sealed by tight junctions between adjacent hepatocytes.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/bile_canaliculus_tem.webp",
+              "caption": "Practical Spotter Examination — Station 22"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0023",
+            "type": "mcq",
+            "lecture": 6,
+            "text": "Identify this sub-endothelial space seen on TEM located between fenestrated hepatic sinusoidal endothelial cells and hepatocyte microvilli, housing fat-storing hepatic stellate (Ito) cells:",
+            "options": [
+              "Canal of Hering lumen",
+              "Interlobular bile duct",
+              "Perisinusoidal space of Disse",
+              "Subcapsular hepatic cleft"
+            ],
+            "correctIndex": 2,
+            "explanation": "The perisinusoidal space of Disse allows free exchange of nutrients between sinusoidal plasma and hepatocyte microvilli. It contains Ito cells, which store vitamin A and synthesize collagen when activated.",
+            "keyConcept": "Space of Disse: perisinusoidal microvillar compartment containing vitamin A-storing Ito cells.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/space_of_disse_tem.webp",
+              "caption": "Practical Spotter Examination — Station 23"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0024",
+            "type": "mcq",
+            "lecture": 6,
+            "text": "This scanning electron micrograph (SEM) demonstrates clusters of transcellular fenestrations lacking diaphragms in hepatic sinusoidal endothelium. Identify these structural clusters:",
+            "options": [
+              "Basal infoldings canaliculi",
+              "Canaliculi of Hering",
+              "Macula adherens desmosomes",
+              "Endothelial sieve plates"
+            ],
+            "correctIndex": 3,
+            "explanation": "Hepatic sinusoidal endothelial cells feature grouped transcellular fenestrae (100–150 nm in diameter) organized into sieve plates, permitting bidirectional passage of proteins into the space of Disse.",
+            "keyConcept": "Sieve plates: clustered sinusoidal endothelial fenestrations facilitating macromolecular hepatic exchange.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/sinusoid_sieve_plates_sem.webp",
+              "caption": "Practical Spotter Examination — Station 24"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0025",
+            "type": "mcq",
+            "lecture": 6,
+            "text": "In this transmission electron micrograph of an exocrine pancreatic acinar cell, identify the electron-dense apical spherical organelles storing digestive proenzymes prior to exocytosis:",
+            "options": [
+              "Zymogen secretory granules",
+              "Mucinogen pale droplets",
+              "Secondary lipofuscin granules",
+              "Glycogen storage rosettes"
+            ],
+            "correctIndex": 0,
+            "explanation": "Pancreatic acinar cells store inactive digestive enzymes (trypsinogen, chymotrypsinogen, amylase, lipase) in membrane-bound, electron-dense apical zymogen granules awaiting cholecystokinin stimulation.",
+            "keyConcept": "Zymogen granules: electron-dense apical secretory organelles storing proenzyme digestive cascades.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/pancreatic_acinar_tem.webp",
+              "caption": "Practical Spotter Examination — Station 25"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0026",
+            "type": "mcq",
+            "lecture": 6,
+            "text": "Examine this high-magnification TEM of the enterocyte apical pole. Identify the dense, uniform parallel cylindrical microvilli anchored into the underlying actin-rich terminal web:",
+            "options": [
+              "Motile ciliary apparatus",
+              "Striated (Brush) border",
+              "Stereociliary projections",
+              "Basolateral interdigitations"
+            ],
+            "correctIndex": 1,
+            "explanation": "The striated border is formed by thousands of closely packed, parallel microvilli (each containing a bundle of actin filaments anchored in the terminal web), multiplying absorptive surface area 20-fold.",
+            "keyConcept": "Striated border: dense parallel microvilli anchored to terminal web, dramatically increasing absorptive surface.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/striated_border_tem.webp",
+              "caption": "Practical Spotter Examination — Station 26"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0027",
+            "type": "mcq",
+            "lecture": 6,
+            "text": "In this TEM of the small intestinal villous epithelium, identify this unicellular mucus-secreting gland displaying a narrow basal stem and an expanded apical theca filled with mucin droplets:",
+            "options": [
+              "Paneth cell of Lieberkuhn",
+              "Enteroendocrine cell",
+              "Intestinal goblet cell",
+              "Absorptive columnar cell"
+            ],
+            "correctIndex": 2,
+            "explanation": "Goblet cells are polarized unicellular glands with a basally compressed nucleus and an expanded apical cup (theca) packed with electron-lucent mucinogen granules that lubricate and protect the gut mucosa.",
+            "keyConcept": "Goblet cell: apical cup filled with mucinogen granules providing protective lubricating mucosal barrier.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/goblet_cell_tem.webp",
+              "caption": "Practical Spotter Examination — Station 27"
+            }
+          },
+          {
+            "id": "MGL3-CH301-HIST-0028",
+            "type": "mcq",
+            "lecture": 6,
+            "text": "Examine this TEM of the base of an intestinal crypt of Lieberkuhn. Identify these pyramidal cells packed with massive, highly electron-dense apical granules containing lysozyme and alpha-defensins:",
+            "options": [
+              "Chief peptic cells",
+              "Parietal oxyntic cells",
+              "Mucous neck cells",
+              "Paneth cells"
+            ],
+            "correctIndex": 3,
+            "explanation": "Paneth cells reside in the deepest bases of the crypts of Lieberkuhn. Their large, intensely eosinophilic (electron-dense) apical granules discharge lysozyme, defensins, and zinc to regulate microflora.",
+            "keyConcept": "Paneth cells: crypt-base cells with prominent antimicrobial granules secreting lysozyme and defensins.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/histology/paneth_cells_tem.webp",
+              "caption": "Practical Spotter Examination — Station 28"
             }
           }
         ]
@@ -274,133 +726,849 @@
   {
     "id": 303,
     "title": "Practical — Parasitology",
-    "subtitle": "GIT Parasites, Eggs, Adults & Snail Vectors",
-    "emoji": "🐛",
-    "page": 2,
-    "lectureRange": "Stations 1–6",
+    "subtitle": "Helminths, Protozoa, Vectors, Eggs & Clinical Stations",
+    "emoji": "🪱",
+    "page": 711,
+    "lectureRange": "Stations 1–41",
     "bankSection": "practical",
     "subjects": [
       {
         "id": "parasitology",
         "name": "Parasitology",
         "iconName": "Bug",
-        "lectures": "Stations 1–6",
-        "lectureCount": 6,
+        "lectures": "Stations 1–41",
+        "lectureCount": 10,
         "lectureNames": [
-          "Schistosoma mansoni Egg & Adult",
-          "Fasciola gigantica & Fasciola hepatica",
-          "Biomphalaria alexandrina & Lymnea Snails",
-          "Echinococcus granulosus Hydatid Wall",
-          "Enterobius vermicularis (Pinworm) Egg",
-          "Trichuris trichiura (Whipworm) Egg"
+          "Adult Flukes & Nematodes (Fasciola, Trichuris, Schistosoma, Enterobius)",
+          "Tapeworms, Hookworms & Strongyloides Adults",
+          "Cestode Scolices, Segments & Cercariae",
+          "Larval Cysts (Cysticercus, Hydatid) & Rhabditiform Larvae",
+          "Intestinal Protozoa: Trophozoites (Balantidium, Giardia, Entamoeba)",
+          "Intestinal Protozoa: Cysts & Oocysts (Acid-Fast Cryptosporidium)",
+          "Snail Intermediate Hosts & Diagnostic Helminth Eggs",
+          "Clinical Spotter Stations: Hydatid, Strongyloides & Schistosoma",
+          "Clinical Spotter Stations: Ascaris & Cryptosporidiosis",
+          "Clinical Spotter Stations: Giardia, Fasciola, Enterobius & Hookworm"
         ],
         "questions": [
           {
             "id": "MGL3-CH303-PARA-0001",
             "type": "mcq",
             "lecture": 1,
-            "text": "Identify this parasite egg recovered from the stool of a patient with dysentery. What morphological feature definitively identifies Schistosoma mansoni?",
+            "text": "Examine this whole-mount microscopic slide of a large, flat, leaf-shaped digenetic trematode exhibiting a prominent cephalic cone, broad shoulders, and dendritic, highly branched intestinal ceca and testes. Identify this parasite:",
             "options": [
-              "Small oval yellowish-brown operculated shell containing a ciliated miracidium",
-              "Spherical thick-shelled brown egg bearing a conspicuous terminal spine",
-              "Barrel-shaped golden egg with translucent protruding bipolar mucoid plugs",
-              "Large elongated oval translucent shell bearing a prominent sharp lateral spine"
+              "Fasciolopsis buski (Adult)",
+              "Fasciola hepatica (Adult)",
+              "Heterophyes heterophyes (Adult)",
+              "Schistosoma mansoni (Adult)"
             ],
-            "correctIndex": 3,
-            "explanation": "Schistosoma mansoni eggs measure 114–180 µm by 45–70 µm and feature a prominent sharp lateral spine near the posterior pole, in contrast to S. haematobium (terminal spine).",
-            "keyConcept": "Schistosoma mansoni egg = prominent sharp lateral spine.",
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Large flat leaf-like body (20–30 mm) with distinct anterior cone and wide shoulders; intestinal ceca with extensive lateral and medial branching; dendritic tandem testes; habitat in hepatic bile ducts.",
+            "keyConcept": "Fasciola hepatica adult: cephalic cone, distinct shoulders, highly branched ceca and dendritic testes.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/parasitology/schistosoma_mansoni_egg.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/fasciola_flukes_adults.webp",
+              "caption": "Practical Spotter Examination — Station 1"
             }
           },
           {
             "id": "MGL3-CH303-PARA-0002",
             "type": "mcq",
-            "lecture": 2,
-            "text": "Identify this adult liver fluke recovered from a biliary tract prosection. Which feature differentiates Fasciola gigantica from Fasciola hepatica?",
+            "lecture": 1,
+            "text": "Identify this adult nematode showing a characteristic whip-like contour where the anterior three-fifths is attenuated and thread-like (containing a stichosome) and the posterior two-fifths is stout, with a coiled male tail:",
             "options": [
-              "Presence of a third specialized genital sucker (gonotyl) around genital pore",
-              "Complete absence of anterior oral and ventral fixation acetabula",
-              "Elongated body (up to 7.5 cm) with nearly parallel margins and faint shoulders",
-              "Unbranched simple tubular intestinal ceca extending to the posterior tip"
+              "Enterobius vermicularis (Adult)",
+              "Ancylostoma duodenale (Adult)",
+              "Trichuris trichiura (Whipworm adult)",
+              "Strongyloides stercoralis (Adult)"
             ],
             "correctIndex": 2,
-            "explanation": "Fasciola gigantica is significantly longer (25–75 mm) than F. hepatica (20–30 mm), possesses nearly parallel lateral margins, and displays a less prominent cephalic cone and indistinct shoulders.",
-            "keyConcept": "Fasciola gigantica: large size (up to 7.5 cm), parallel borders, faint shoulders.",
+            "explanation": "Criteria of Identification: Whip-like shape with thin capillary anterior 3/5 (containing stichosome esophagus) and stout posterior 2/5 housing reproductive organs; male posterior is coiled 360 degrees with a single spicule; habitat in cecum.",
+            "keyConcept": "Trichuris trichiura adult: whip-like body with attenuated anterior 3/5 (stichosome) and stout posterior 2/5.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/parasitology/fasciola_gigantica_adult.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/trichuris_male_female.webp",
+              "caption": "Practical Spotter Examination — Station 2"
             }
           },
           {
             "id": "MGL3-CH303-PARA-0003",
             "type": "mcq",
-            "lecture": 3,
-            "text": "Identify this freshwater snail shell collected from Egyptian water channels. What morphological criteria confirm Biomphalaria alexandrina?",
+            "lecture": 1,
+            "text": "In this microscopic slide of a dioecious blood fluke, identify the stout male worm covered with cuticular tuberculations, whose lateral margins fold ventrally to form the gynaecophoric canal holding the slender female:",
             "options": [
-              "Dextral conical shell with a sharp pointed apex and very large body whorl",
-              "Sinistral, discoidal shell coiled horizontally like a disk with aperture to left",
-              "Tall turreted spiral shell with an elongated narrow aperture on the right",
-              "Globular thick operculated shell with prominent concentric exterior ridges"
+              "Fasciola gigantica (Adult)",
+              "Heterophyes heterophyes (Adult)",
+              "Taenia saginata (Adult fluke)",
+              "Schistosoma mansoni (Adults in copula)"
             ],
-            "correctIndex": 1,
-            "explanation": "Biomphalaria alexandrina is the intermediate snail host of Schistosoma mansoni in Egypt; its shell is planorboid (discoidal, flat whorls) and sinistral (aperture opens to the left).",
-            "keyConcept": "Biomphalaria alexandrina: discoidal, sinistral shell; vector for S. mansoni.",
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Dioecious trematodes; male is stout (6–12 mm) with dorsal tuberculations and ventral gynaecophoric canal; female is slender, cylindrical (7–17 mm) carried within the canal; habitat in mesenteric venules.",
+            "keyConcept": "Schistosoma mansoni adults: tuberculated male with ventral gynaecophoric canal enclosing slender female.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/parasitology/biomphalaria_alexandrina_snail.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/schistosoma_male_female_adult.webp",
+              "caption": "Practical Spotter Examination — Station 3"
             }
           },
           {
             "id": "MGL3-CH303-PARA-0004",
             "type": "mcq",
-            "lecture": 4,
-            "text": "Examine this histological section of a hepatic hydatid cyst (Echinococcus granulosus). Identify the distinctive acellular parasite layer:",
+            "lecture": 1,
+            "text": "Examine this small spindle-shaped adult female nematode (8-13 mm) displaying bilateral cephalic alae at the anterior end, a double-bulb esophagus, and a long, sharply pointed pin-like tail. Identify this specimen:",
             "options": [
-              "Acellular, chitinous laminated (cuticular) membrane with fine striations",
-              "Inner nucleated germinal layer actively generating scolices and brood capsules",
-              "Dense outer vascularized fibrous pseudocapsule synthesized by the host liver",
-              "Calcified calcareous corpuscle layer lining the internal cyst cavity"
+              "Enterobius vermicularis (Pinworm female)",
+              "Ascaris lumbricoides (Female)",
+              "Trichuris trichiura (Female)",
+              "Necator americanus (Female)"
             ],
             "correctIndex": 0,
-            "explanation": "The hydatid cyst wall consists of an outer acellular laminated cuticular membrane (secreted by the parasite, appearing hyaline and striated) and an inner cellular germinal layer that buds brood capsules.",
-            "keyConcept": "Hydatid wall: outer acellular laminated layer + inner nucleated germinal layer.",
+            "explanation": "Criteria of Identification: Small white spindle-shaped worm (8–13 mm); lateral cuticular cephalic alae; characteristic muscular double-bulb esophagus; long, straight, pointed pin-like tail forming 1/3 of body length; habitat in cecum/perianal.",
+            "keyConcept": "Enterobius vermicularis female: cephalic alae, double-bulb esophagus, and sharp pointed pin-like tail.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/parasitology/hydatid_cyst_wall_he.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/enterobius_female_adult.webp",
+              "caption": "Practical Spotter Examination — Station 4"
             }
           },
           {
             "id": "MGL3-CH303-PARA-0005",
             "type": "mcq",
-            "lecture": 5,
-            "text": "Identify this parasite egg collected by perianal Scotch tape swab in a child with nocturnal pruritus ani:",
+            "lecture": 2,
+            "text": "Identify this minute adult tapeworm (3-6 mm total length) consisting of only a scolex with four suckers and a double crown of hooks, followed by an immature, a mature, and a single large terminal gravid proglottid:",
             "options": [
-              "Planoconvex D-shaped transparent egg of Enterobius vermicularis",
-              "Thick-shelled corticated egg of Ascaris lumbricoides with wavy coat",
-              "Thin-shelled oval egg of Ancylostoma duodenale with clear space",
-              "Lemon-shaped egg of Trichuris trichiura with two polar plugs"
+              "Hymenolepis nana (Adult)",
+              "Echinococcus granulosus (Adult)",
+              "Taenia solium (Adult)",
+              "Diphyllobothrium latum (Adult)"
             ],
-            "correctIndex": 0,
-            "explanation": "Enterobius vermicularis (pinworm) eggs are colorless, translucent, 50–60 µm long, and characteristically planoconvex (D-shaped, flattened on one side and convex on the other).",
-            "keyConcept": "Enterobius vermicularis egg: planoconvex (D-shaped), colorless, transparent shell.",
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Minute cyclophyllidean cestode (3–6 mm); scolex with 4 suckers and rostellum with double row of hooks; strobila contains only 3–4 proglottids, terminal gravid proglottid exceeds half the worm length; habitat in canine small bowel.",
+            "keyConcept": "Echinococcus granulosus adult: tiny 3–4 segmented tapeworm with armed scolex and massive gravid proglottid.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/parasitology/enterobius_vermicularis_egg.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/tapeworms_h_nana_echinococcus.webp",
+              "caption": "Practical Spotter Examination — Station 5"
             }
           },
           {
             "id": "MGL3-CH303-PARA-0006",
             "type": "mcq",
-            "lecture": 6,
-            "text": "Identify this parasite egg found in a stool wet mount from an anemic patient. What morphological hallmark identifies Trichuris trichiura?",
+            "lecture": 2,
+            "text": "Examine this minute pear-shaped intestinal fluke (1-1.7 mm) displaying scale-like cuticular spines, an oral sucker, a ventral sucker, and a unique third genital sucker (gonotyl) armed with chitinous rodlets. Identify this parasite:",
             "options": [
-              "Yellow operculated oval shell with an abopercular thickening and miracidium",
-              "Spherical brown egg with a thick radially striated embryophore and hooklets",
-              "Golden-brown barrel-shaped shell with prominent transparent bipolar mucoid plugs",
-              "Ovoid thin-shelled transparent egg containing an unsegmented granular ovum"
+              "Metagonimus yokogawai (Adult)",
+              "Fasciolopsis buski (Adult)",
+              "Heterophyes heterophyes (Adult)",
+              "Clonorchis sinensis (Adult)"
             ],
             "correctIndex": 2,
-            "explanation": "Trichuris trichiura (whipworm) eggs are barrel-shaped (50–54 µm by 22 µm), golden-brown, with a thick smooth shell and two characteristic translucent mucoid plugs protruding from both poles.",
-            "keyConcept": "Trichuris trichiura egg: barrel-shaped with bipolar mucoid plugs.",
+            "explanation": "Criteria of Identification: Minute pyriform body (1.0–1.7 mm); scaly spine-bearing cuticle; three suckers: oral, ventral, and a sublateral genital sucker (gonotyl) bearing 70–80 chitinous teeth; two oval testes at posterior end; habitat in small intestine.",
+            "keyConcept": "Heterophyes heterophyes adult: minute pear-shaped fluke with three suckers including a rodlet-armed gonotyl.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/parasitology/trichuris_trichiura_egg.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/heterophyes_metagonimus_adults.webp",
+              "caption": "Practical Spotter Examination — Station 6"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0007",
+            "type": "mcq",
+            "lecture": 2,
+            "text": "In this high-power micrograph of an adult hookworm buccal capsule, identify the genus characterized by two pairs of curved, sharp ventral cutting teeth on the upper anterior margin:",
+            "options": [
+              "Necator americanus",
+              "Strongyloides stercoralis",
+              "Trichuris trichiura",
+              "Ancylostoma duodenale"
+            ],
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Heavily chitinized oval buccal capsule bearing two pairs of curved ventral teeth on upper border (vs. semilunar cutting plates in Necator); male copulatory bursa supported by tripartite dorsal ray; habitat in duodenum/jejunum.",
+            "keyConcept": "Ancylostoma duodenale buccal capsule: two pairs of sharp, curved ventral teeth on the anterior margin.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/hookworm_teeth_bursa.webp",
+              "caption": "Practical Spotter Examination — Station 7"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0008",
+            "type": "mcq",
+            "lecture": 2,
+            "text": "Identify this slender, microscopic parasitic parthenogenetic female nematode (2-2.5 mm) exhibiting an elongated cylindrical filariform esophagus extending through one-third of the body, and an amphidelphic uterus with thin-shelled eggs:",
+            "options": [
+              "Strongyloides stercoralis (Parasitic female)",
+              "Enterobius vermicularis (Female)",
+              "Trichinella spiralis (Female)",
+              "Ancylostoma duodenale (Female)"
+            ],
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: Slender transparent nematode (2.2 mm); long cylindrical esophagus without bulb extending 1/3 of body length; divergent (amphidelphic) uterus containing a single row of 5–8 thin-shelled eggs; habitat in duodenal mucosa.",
+            "keyConcept": "Strongyloides stercoralis female: microscopic parthenogenetic nematode with long filariform esophagus.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/strongyloides_female_adult.webp",
+              "caption": "Practical Spotter Examination — Station 8"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0009",
+            "type": "mcq",
+            "lecture": 3,
+            "text": "Examine this cestode scolex displaying four cup-shaped muscular suckers, a prominent rostellum, and a double crown of alternating large and small chitinous sickle-shaped hooks. Identify this species:",
+            "options": [
+              "Taenia saginata (Unarmed scolex)",
+              "Taenia solium (Armed scolex)",
+              "Diphyllobothrium latum (Bothria)",
+              "Hymenolepis diminuta (Scolex)"
+            ],
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Globular quadrate scolex (1 mm) with 4 hemispherical suckers and a rounded rostellum armed with a double crown of 22–32 hooks (armed scolex; vs. unarmed T. saginata lacking rostellum/hooks).",
+            "keyConcept": "Taenia solium scolex: quadrate armed scolex with 4 suckers and a double row of rostellar hooklets.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/cestode_scolices_comparison.webp",
+              "caption": "Practical Spotter Examination — Station 9"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0010",
+            "type": "mcq",
+            "lecture": 3,
+            "text": "Identify this broad cestode mature proglottid displaying a width significantly greater than its length, a centrally placed rosette-shaped coiled uterus, and a median uterine pore (tocostome):",
+            "options": [
+              "Taenia saginata (Mature segment)",
+              "Taenia solium (Mature segment)",
+              "Diphyllobothrium latum (Mature segment)",
+              "Dipylidium caninum (Segment)"
+            ],
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: Transversely elongated proglottid (broader than long); centrally located dark rosette-like coiled uterus; central uterine pore (tocostome) discharging unembryonated operculated eggs; lateral follicular vitellaria.",
+            "keyConcept": "Diphyllobothrium latum mature segment: broader than long with a diagnostic central rosette-shaped uterus.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/mature_segments_comparison.webp",
+              "caption": "Practical Spotter Examination — Station 10"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0011",
+            "type": "mcq",
+            "lecture": 3,
+            "text": "In this stained gravid tapeworm proglottid, identify the species characterized by an elongated rectangular segment containing a central uterine stem with 15 to 30 lateral dichotomous branches on each side:",
+            "options": [
+              "Taenia solium (Gravid proglottid)",
+              "Diphyllobothrium latum (Gravid)",
+              "Hymenolepis nana (Gravid)",
+              "Taenia saginata (Gravid proglottid)"
+            ],
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Elongated rectangular proglottid (longer than broad); central uterine trunk with 15–30 main lateral branches on each side branching dichotomously (tree-like); actively motile, crawls out singly through anus.",
+            "keyConcept": "Taenia saginata gravid segment: 15–30 lateral main uterine branches per side branching dichotomously.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/gravid_segments_taenia.webp",
+              "caption": "Practical Spotter Examination — Station 11"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0012",
+            "type": "mcq",
+            "lecture": 3,
+            "text": "Examine this larval trematode stage possessing an elongated cylindrical body with anterior penetration glands, oral and ventral suckers, and a characteristic bifurcated (forked) tail. Identify this cercaria:",
+            "options": [
+              "Furcocercus cercaria of Schistosoma",
+              "Leptocercus cercaria of Fasciola",
+              "Microcercous cercaria of Paragonimus",
+              "Lophocercous cercaria of Clonorchis"
+            ],
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: Forked-tailed (furcocercus) cercaria; body has oral sucker, ventral acetabulum, and cephalic penetration glands; tail stem divides into two distal furcae; infective stage to humans via transcutaneous penetration.",
+            "keyConcept": "Furcocercus cercaria: forked-tailed cercaria of Schistosoma penetrating unbroken human skin in freshwater.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/cercariae_leptocercus_furcocercus.webp",
+              "caption": "Practical Spotter Examination — Station 12"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0013",
+            "type": "mcq",
+            "lecture": 4,
+            "text": "Identify this larval cestode stage (bladder worm) found in measly beef, consisting of a fluid-filled translucent oval vesicle enclosing a single invaginated unarmed scolex with four suckers:",
+            "options": [
+              "Cysticercus cellulosae",
+              "Cysticercus bovis",
+              "Hydatid cyst of Echinococcus",
+              "Cenurus cerebralis larva"
+            ],
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Oval translucent bladder (7–10 mm) containing fluid and an invaginated scolex with 4 suckers and NO rostellum or hooks (unarmed); larval stage of Taenia saginata in cattle striated muscle.",
+            "keyConcept": "Cysticercus bovis: unarmed larval cyst of Taenia saginata encysted in beef skeletal muscle.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/cysticercus_bovis_cellulosae.webp",
+              "caption": "Practical Spotter Examination — Station 13"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0014",
+            "type": "mcq",
+            "lecture": 4,
+            "text": "In this histological section of a hydatid cyst wall, identify the middle non-nucleated, elastic, acellular cuticular layer displaying distinct parallel concentric laminations:",
+            "options": [
+              "Inner germinal endocyst layer",
+              "Outer host fibrous pericyst",
+              "Laminated ectocyst layer",
+              "Brood capsule cellular wall"
+            ],
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: Acellular, chitinous, refractile layer with parallel concentric striations (laminated membrane / ectocyst); secreted by the inner cellular germinal layer (endocyst); non-nucleated elastic supportive barrier.",
+            "keyConcept": "Hydatid ectocyst: thick, acellular, concentrically laminated cuticular membrane of Echinococcus granulosus.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/hydatid_cyst_wall_sand.webp",
+              "caption": "Practical Spotter Examination — Station 14"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0015",
+            "type": "mcq",
+            "lecture": 4,
+            "text": "Examine this diagnostic larva passed in freshly voided feces (200-250 micrometers). It exhibits a short buccal cavity (stoma), a muscular rhabditiform double-bulb esophagus, and a prominent oval genital primordium. Identify the larva:",
+            "options": [
+              "Hookworm rhabditiform larva",
+              "Enterobius vermicularis larva",
+              "Trichostrongylus first larva",
+              "Strongyloides stercoralis rhabditiform larva"
+            ],
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Length 200–250 um; short buccal cavity (shorter than head width); double-bulb rhabditiform esophagus; large conspicuous oval genital primordium at midbody (vs. hookworm larva which has long cavity, tiny primordium).",
+            "keyConcept": "Strongyloides rhabditiform larva: short buccal cavity with a large, prominent genital primordium in stool.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/strongyloides_rhabditiform_larva.webp",
+              "caption": "Practical Spotter Examination — Station 15"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0016",
+            "type": "mcq",
+            "lecture": 4,
+            "text": "In this cross-section of an inflamed vermiform appendix, identify these small nematodes within the lumen characterized by lateral cuticular triangular alae (crests) and uterus packed with plano-convex eggs:",
+            "options": [
+              "Enterobius vermicularis in appendix",
+              "Ascaris lumbricoides in bowel",
+              "Trichuris trichiura in cecum",
+              "Ancylostoma duodenale in gut"
+            ],
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: Nematode cross-sections showing bilateral triangular cuticular alae projecting from lateral fields; meromyarian somatic muscle cells; gravid females packed with characteristic asymmetrical D-shaped eggs.",
+            "keyConcept": "Enterobius in appendix: distinct bilateral triangular lateral cuticular alae projecting into appendiceal lumen.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/worms_in_appendix_section.webp",
+              "caption": "Practical Spotter Examination — Station 16"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0017",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "Examine this colonic biopsy showing flask-shaped mucosal ulceration containing giant ciliated protozoan trophozoites (50-100 micrometers) with a prominent kidney-shaped macronucleus. Identify this organism:",
+            "options": [
+              "Entamoeba histolytica trophozoite",
+              "Balantidium coli trophozoite",
+              "Giardia lamblia trophozoite",
+              "Cryptosporidium parvum schizont"
+            ],
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Giant ciliate (50–100 um); surface pellicle lined by longitudinal rows of uniform cilia; anterior cytostome (cell mouth); large dense bean-shaped macronucleus with adjacent micronucleus; invasive in colon.",
+            "keyConcept": "Balantidium coli trophozoite: giant ciliated intestinal protozoan with a pathognomonic kidney-shaped macronucleus.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/balantidium_trophozoites_intestine.webp",
+              "caption": "Practical Spotter Examination — Station 17"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0018",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "In this stained fecal smear from a patient with watery diarrhea, identify this pear-shaped, binucleated flagellate displaying bilateral symmetry, a ventral suction disk, and four pairs of flagella:",
+            "options": [
+              "Trichomonas hominis (Trophozoite)",
+              "Entamoeba histolytica (Trophozoite)",
+              "Giardia lamblia (Trophozoite)",
+              "Chilomastix mesnili (Trophozoite)"
+            ],
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: Pyriform body (10–20 um) with bilateral symmetry; concave ventral sucking disk; two identical spherical nuclei with central karyosomes (face-like appearance); central axostyle; 8 flagella; falling-leaf motility.",
+            "keyConcept": "Giardia lamblia trophozoite: bilaterally symmetrical pear-shaped flagellate with two nuclei and ventral sucking disk.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/giardia_trophozoite_smear.webp",
+              "caption": "Practical Spotter Examination — Station 18"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0019",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "Examine this fresh stool trophozoite from a patient with bloody mucoid dysentery. Identify the pathognomonic diagnostic feature that confirms invasive Entamoeba histolytica rather than non-pathogenic amoebae:",
+            "options": [
+              "Multiple pulsatile contractile vacuoles",
+              "Prominent ventral adhesive sucking disk",
+              "Dense surface rows of longitudinal cilia",
+              "Phagocytosed red blood cells in cytoplasm"
+            ],
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Size 20–40 um; active directional monopodial pseudopodia; spherical nucleus with delicate peripheral chromatin and pinpoint central karyosome; pathognomonic presence of ingested red blood cells (erythrophagocytosis).",
+            "keyConcept": "Entamoeba histolytica trophozoite: pathognomonic erythrophagocytosis (ingested RBCs) confirming invasive amebiasis.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/entamoeba_trophozoites_smear.webp",
+              "caption": "Practical Spotter Examination — Station 19"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0020",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "In this high-magnification wet preparation of Balantidium coli, identify the dense nuclear structure whose concave notch houses the spherical micronucleus:",
+            "options": [
+              "Reniform (Bean-shaped) macronucleus",
+              "Pinpoint central karyosome",
+              "Kinetoplast mitochondrial disk",
+              "Cigar-shaped chromatoid bar"
+            ],
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: Balantidium coli possesses dimorphic nuclei: a massive somatic polyploid kidney/bean-shaped macronucleus governing vegetative metabolism, and a tiny diploid micronucleus tucked in its concavity.",
+            "keyConcept": "Balantidium macronucleus: large kidney/bean-shaped nuclear mass governing cellular vegetative metabolism.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/balantidium_trophozoite_highmag.webp",
+              "caption": "Practical Spotter Examination — Station 20"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0021",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "Examine this iodine-stained cyst from formed feces (8-12 micrometers). It displays an ellipsoidal shape, a refractive double wall, four clustered nuclei, curved median bodies, and a longitudinal axostyle. Identify this cyst:",
+            "options": [
+              "Entamoeba histolytica cyst",
+              "Giardia lamblia cyst",
+              "Entamoeba coli cyst",
+              "Balantidium coli cyst"
+            ],
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Oval shape (8–12 um) with distinct double-contoured wall; 4 spherical nuclei typically grouped at one pole; central longitudinal axostyle fibrils; curved claw-hammer shaped median bodies in cytoplasm.",
+            "keyConcept": "Giardia lamblia cyst: oval quadranucleate cyst with longitudinal axostyle and distinct double wall.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/giardia_cysts_smear.webp",
+              "caption": "Practical Spotter Examination — Station 21"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0022",
+            "type": "mcq",
+            "lecture": 6,
+            "text": "In this iodine wet mount of a mature fecal cyst (12-15 micrometers), identify the diagnostic features that distinguish Entamoeba histolytica from Entamoeba coli:",
+            "options": [
+              "Eight nuclei with eccentric karyosomes and splintered chromatoid bars",
+              "Single massive kidney-shaped nucleus with contractile vacuoles",
+              "Four nuclei with central karyosomes and smooth cigar-shaped chromatoid bars",
+              "Two nuclei with axostyle fibrils and polar claw-hammer bodies"
+            ],
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: E. histolytica mature cyst has 4 nuclei, central pinpoint karyosome, fine even peripheral chromatin, and thick chromatoid bars with rounded, blunt ends (vs. E. coli: 8 nuclei, eccentric karyosome, splintered bars).",
+            "keyConcept": "Entamoeba histolytica cyst: 4 nuclei with central pinpoint karyosomes and rounded cigar-shaped chromatoid bars.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/entamoeba_cysts_comparison.webp",
+              "caption": "Practical Spotter Examination — Station 22"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0023",
+            "type": "mcq",
+            "lecture": 6,
+            "text": "Identify this large spherical to subspherical cyst (50-70 micrometers) found in pig feces and human stool, showing a thick refractive double wall and retaining a characteristic large bean-shaped macronucleus:",
+            "options": [
+              "Entamoeba coli cyst",
+              "Giardia lamblia cyst",
+              "Isospora belli oocyst",
+              "Balantidium coli cyst"
+            ],
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Large round to oval cyst (50–70 um); thick yellowish-green double wall; cytoplasm contains the persistent large kidney-shaped macronucleus, retracted cilia, and a contractile vacuole.",
+            "keyConcept": "Balantidium coli cyst: large 50–70 um spherical double-walled cyst with persistent bean-shaped macronucleus.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/balantidium_cyst_smear.webp",
+              "caption": "Practical Spotter Examination — Station 23"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0024",
+            "type": "mcq",
+            "lecture": 6,
+            "text": "Examine this fecal smear stained by the modified Ziehl-Neelsen (Kinyoun) acid-fast technique. Identify these small spherical bright-red (magenta) oocysts (4-5 micrometers) containing four naked sporozoites:",
+            "options": [
+              "Cryptosporidium parvum oocysts",
+              "Blastocystis hominis cysts",
+              "Cyclospora cayetanensis oocysts",
+              "Cystoisospora belli oocysts"
+            ],
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: Small spherical oocysts (4–5 um); acid-fast positive (stain bright magenta-red against blue background); contain 4 slender naked sporozoites and a residual body; fully sporulated and infective when passed.",
+            "keyConcept": "Cryptosporidium parvum oocysts: 4–5 um acid-fast bright red spherical oocysts containing 4 sporozoites.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/cryptosporidium_oocysts_acidfast.webp",
+              "caption": "Practical Spotter Examination — Station 24"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0025",
+            "type": "mcq",
+            "lecture": 6,
+            "text": "Identify this freshwater molluscan shell displaying a discoidal, planorbid flat coil in a single plane, serving as the essential intermediate host for Schistosoma mansoni in Egypt:",
+            "options": [
+              "Bulinus truncatus snail",
+              "Biomphalaria alexandrina snail",
+              "Lymnaea cailliaudi snail",
+              "Pirenella conica snail"
+            ],
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Planorbid snail; shell coiled in a single horizontal plane (discoidal/flat-coiled); sinistral aperture; obligate intermediate host transmitting Schistosoma mansoni miracidia to furcocercous cercariae.",
+            "keyConcept": "Biomphalaria alexandrina: flat planorbid discoidal snail vector transmitting intestinal Schistosoma mansoni.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/snail_vectors_comparison.webp",
+              "caption": "Practical Spotter Examination — Station 25"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0026",
+            "type": "mcq",
+            "lecture": 7,
+            "text": "Examine this microscopic field comparing operculated helminth eggs. Identify the giant operculated egg (130-150 by 60-90 micrometers) with an unsegmented ovum surrounded by vitelline cells, passed in bile and stool:",
+            "options": [
+              "Diphyllobothrium latum egg",
+              "Heterophyes heterophyes egg",
+              "Fasciola hepatica egg",
+              "Paragonimus westermani egg"
+            ],
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: Giant yellowish-brown operculated egg (130–150 um, largest in human stool); indistinct operculum at one pole; filled with unsegmented ovum and numerous yolk vitelline cells; unembryonated when laid.",
+            "keyConcept": "Fasciola hepatica egg: giant yellowish-brown operculated unsegmented egg (130–150 um).",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/operculated_eggs_comparison.webp",
+              "caption": "Practical Spotter Examination — Station 26"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0027",
+            "type": "mcq",
+            "lecture": 7,
+            "text": "Identify this diagnostic helminth egg in a stool smear, characterized by an elongated oval shape (115-175 micrometers), a transparent golden shell, and a prominent, sharp lateral spine near the posterior pole:",
+            "options": [
+              "Schistosoma haematobium egg",
+              "Schistosoma japonicum egg",
+              "Fasciola gigantica egg",
+              "Schistosoma mansoni egg"
+            ],
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Large oval egg (115–175 um); transparent golden shell; pathognomonic large sharp lateral spine pointing posteriorly; contains a fully formed ciliated miracidium; passed in feces.",
+            "keyConcept": "Schistosoma mansoni egg: large elongated oval egg with a pathognomonic prominent lateral spine.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/schistosoma_mansoni_egg_spine.webp",
+              "caption": "Practical Spotter Examination — Station 27"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0028",
+            "type": "mcq",
+            "lecture": 7,
+            "text": "Examine this thin-shelled, oval helminth egg (55-65 by 35-40 micrometers) with bluntly rounded poles, a transparent colorless shell, and an internal segmenting ovum at the 4 to 8 blastomere (morula) stage:",
+            "options": [
+              "Hookworm egg (Ancylostoma / Necator)",
+              "Ascaris lumbricoides egg",
+              "Trichostrongylus egg",
+              "Strongyloides stercoralis egg"
+            ],
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: Elliptical shape (60 um); blunt rounded ends; extremely thin transparent shell appearing as a delicate black line; clear space between shell and 4–8 segmenting blastomeres (morula stage).",
+            "keyConcept": "Hookworm egg: extremely thin, transparent shell enclosing an internal 4–8 cell segmenting morula.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/hookworm_egg_morula.webp",
+              "caption": "Practical Spotter Examination — Station 28"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0029",
+            "type": "mcq",
+            "lecture": 7,
+            "text": "In this comparison of spherical eggs, identify the species possessing a spherical shape (30-40 micrometers), a thick yellowish-brown shell with prominent radial striations (embryophore), and a six-hooked oncosphere:",
+            "options": [
+              "Hymenolepis nana egg",
+              "Taenia species egg",
+              "Ascaris lumbricoides egg",
+              "Toxocara canis egg"
+            ],
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Spherical shape (30–40 um); thick brown shell with diagnostic radial striations (embryophore); contains fully developed hexacanth embryo (oncosphere with 6 refractile hooklets); indistinguishable between T. solium and T. saginata.",
+            "keyConcept": "Taenia egg: thick brown shell with prominent radial striations enclosing a 6-hooked hexacanth embryo.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/rounded_eggs_comparison.webp",
+              "caption": "Practical Spotter Examination — Station 29"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0030",
+            "type": "mcq",
+            "lecture": 7,
+            "text": "Examine this barrel-shaped (lemon-shaped) helminth egg (50-54 by 22 micrometers) displaying a thick golden-brown smooth shell and a prominent, clear, transparent mucoid plug at each pole:",
+            "options": [
+              "Enterobius vermicularis egg",
+              "Capillaria hepatica egg",
+              "Trichuris trichiura egg",
+              "Ascaris unfertilized egg"
+            ],
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: Barrel/lemon-shaped (50–54 um); golden-brown triple-layered shell; diagnostic clear transparent bipolar mucoid plugs protruding at both ends; contains unsegmented single-celled ovum.",
+            "keyConcept": "Trichuris trichiura egg: barrel-shaped golden egg with pathognomonic transparent bipolar mucoid plugs.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/plugged_dshaped_eggs.webp",
+              "caption": "Practical Spotter Examination — Station 30"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0031",
+            "type": "mcq",
+            "lecture": 8,
+            "text": "Spotter examination: Identify this cestode scolex possessing four lateral cup-like muscular suckers and an anterior prominent conical rostellum bearing a double alternating crown of 22 to 32 sharp hooklets:",
+            "options": [
+              "Taenia saginata (Beef tapeworm scolex)",
+              "Diphyllobothrium latum (Fish scolex)",
+              "Hymenolepis diminuta (Rat tapeworm scolex)",
+              "Taenia solium (Pork tapeworm scolex)"
+            ],
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Armed scolex (1 mm) with 4 cup suckers and rostellum with 2 rows of hooks; distinguishing landmark from unarmed Taenia saginata which lacks rostellar hooks; ingestion of eggs causes human cysticercosis.",
+            "keyConcept": "Taenia solium scolex: 4 muscular suckers with a double crown of alternating chitinous rostellar hooks.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/taenia_solium_scolex_spotter.webp",
+              "caption": "Practical Spotter Examination — Station 31"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0032",
+            "type": "mcq",
+            "lecture": 8,
+            "text": "Clinical Case Station 1: A 42-year-old sheep farmer presents with right upper quadrant fullness. Abdominal ultrasound reveals a well-defined calcified unilocular hepatic cyst. Why is diagnostic needle aspiration contraindicated?",
+            "options": [
+              "Risk of fatal anaphylactic shock and secondary intraperitoneal seeding",
+              "Impossibility of obtaining diagnostic hydatid fluid or hooklets",
+              "Certainty of causing acute severe portal venous thrombosis",
+              "Risk of triggering uncontrollable biliary fistulization"
+            ],
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: Hydatid cyst of Echinococcus granulosus; puncture risks catastrophic spillage of highly antigenic hydatid fluid, provoking lethal IgE-mediated anaphylaxis and multiple secondary peritoneal hydatid implants.",
+            "keyConcept": "Hydatid cyst aspiration: strictly contraindicated due to risk of lethal anaphylactic shock and secondary seeding.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/clinical_case_1_hydatid.webp",
+              "caption": "Practical Spotter Examination — Station 32"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0033",
+            "type": "mcq",
+            "lecture": 8,
+            "text": "Clinical Case Station 2: A renal transplant recipient on high-dose corticosteroids develops paralytic ileus, severe diarrhea, and gram-negative sepsis. Stool reveals active rhabditiform larvae. What is the underlying mechanism?",
+            "options": [
+              "Massive exogenous reinfection through contaminated soil",
+              "Internal autoinfection leading to hyperinfection syndrome",
+              "Malignant transformation of dormant encysted larvae",
+              "Superinfection by swallowed adult Enterobius pinworms"
+            ],
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Strongyloides stercoralis hyperinfection; immunosuppression accelerates internal autoinfection where non-infective rhabditiform larvae rapidly molt into invasive filariform larvae within the bowel lumen.",
+            "keyConcept": "Strongyloides hyperinfection: internal autoinfection triggered by immunosuppression causing systemic larval dissemination.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/clinical_case_2_strongyloides.webp",
+              "caption": "Practical Spotter Examination — Station 33"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0034",
+            "type": "mcq",
+            "lecture": 9,
+            "text": "Clinical Case Station 3: A 30-year-old farmer from the Nile Delta presents with hematemesis, splenomegaly, and ascites. Liver ultrasound shows Symmers' pipestem periportal fibrosis. Rectal biopsy shows eggs with large lateral spines. What is the etiology?",
+            "options": [
+              "Direct occlusion of the main portal vein trunk by adult flukes",
+              "Toxic necrosis of hepatocytes caused by adult worm excreta",
+              "Granulomatous response to Schistosoma mansoni soluble egg antigens",
+              "Autoimmune destruction of interlobular intrahepatic bile ducts"
+            ],
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: Schistosoma mansoni; eggs trapped in periportal venules release soluble egg antigens (SEA), stimulating CD4+ Th2 delayed-type hypersensitivity granulomas and periportal fibrosis without true cirrhosis.",
+            "keyConcept": "Symmers' pipestem fibrosis: granulomatous response to trapped Schistosoma mansoni lateral-spined eggs in portal tracts.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/clinical_case_3_schistosoma.webp",
+              "caption": "Practical Spotter Examination — Station 34"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0035",
+            "type": "mcq",
+            "lecture": 9,
+            "text": "Clinical Case Station 4: A 6-year-old child presents with colicky abdominal pain, vomiting, and abdominal distension. Plain radiography demonstrates mechanical intestinal obstruction caused by a tangled mass of large roundworms. Identify the parasite:",
+            "options": [
+              "Enterobius vermicularis",
+              "Ancylostoma duodenale",
+              "Trichuris trichiura",
+              "Ascaris lumbricoides"
+            ],
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Ascaris lumbricoides; largest human intestinal nematode (adults 15–35 cm); large worm burden tangles into a bolus causing mechanical small bowel obstruction, volvulus, or intussusception in children.",
+            "keyConcept": "Ascaris lumbricoides: giant intestinal roundworm capable of forming obstructive boluses in the ileocecal region.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/clinical_case_4_ascaris.webp",
+              "caption": "Practical Spotter Examination — Station 35"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0036",
+            "type": "mcq",
+            "lecture": 9,
+            "text": "Clinical Case Station 5: An AIDS patient with CD4 count of 45 cells/microliter suffers from relentless cholera-like watery diarrhea (10 L/day). Modified acid-fast staining of stool demonstrates 4-5 micrometer round pink oocysts. What is the cellular niche of this parasite?",
+            "options": [
+              "Intracellular but extracytoplasmic at the enterocyte brush border",
+              "Obligate intranuclear replication inside lamina propria macrophages",
+              "Free extracellular swimming within the intestinal lumen fluid",
+              "Deep cytoplasmic residency in crypt-base Paneth secretory cells"
+            ],
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: Cryptosporidium parvum; resides within a parasitophorous vacuole at the apical enterocyte border: intracellular (enclosed by host membrane) but extracytoplasmic (outside host cytoplasm).",
+            "keyConcept": "Cryptosporidium cellular niche: intracellular but extracytoplasmic localization in enterocyte brush borders.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/clinical_case_5_cryptosporidium.webp",
+              "caption": "Practical Spotter Examination — Station 36"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0037",
+            "type": "mcq",
+            "lecture": 10,
+            "text": "Clinical Case Station 6: A hiker develops foul-smelling, fatty, floating diarrhea (steatorrhea), flatulence, and epigastric cramping after drinking untreated stream water. Microscopic stool exam shows binucleate flagellated trophozoites. What causes the malabsorption?",
+            "options": [
+              "Deep mucosal ulceration with transmural transmigration into blood",
+              "Mechanical coating and brush border flattening by ventral suction disks",
+              "Direct enterotoxin stimulation of cyclic AMP chloride secretion",
+              "Massive granulomatous destruction of mesenteric lacteal channels"
+            ],
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Giardia lamblia trophozoites adhere via ventral sucking disks to duodenal/jejunal microvilli, causing villous blunting, brush border enzyme deficiency, and fat malabsorption without mucosal invasion.",
+            "keyConcept": "Giardia malabsorption: mechanical mucosal adherence via suction disks causing diffuse brush-border impairment.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/clinical_case_6_giardia.webp",
+              "caption": "Practical Spotter Examination — Station 37"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0038",
+            "type": "mcq",
+            "lecture": 10,
+            "text": "Clinical Case Station 7: A 38-year-old patient who routinely ingests raw wild watercress salad develops prolonged fever, tender hepatomegaly, marked eosinophilia (50%), and high serum transaminases. What was the infective stage ingested?",
+            "options": [
+              "Free-swimming furcocercous cercariae in water",
+              "Unembryonated operculated eggs in soil",
+              "Encysted metacercariae on aquatic vegetation",
+              "Rhabditiform larvae crawling on vegetation"
+            ],
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: Fasciola hepatica / gigantica; human infection occurs by ingesting freshwater plants (watercress) harboring encysted metacercariae; juvenile flukes excyst in duodenum and migrate through liver capsule.",
+            "keyConcept": "Fasciola transmission: ingestion of encysted metacercariae on aquatic plants (watercress).",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/clinical_case_7_fasciola.webp",
+              "caption": "Practical Spotter Examination — Station 38"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0039",
+            "type": "mcq",
+            "lecture": 10,
+            "text": "Clinical Case Station 8: A 4-year-old child presents with intense nocturnal perianal pruritus and insomnia. A cellophane adhesive tape swab taken in the early morning demonstrates asymmetrical plano-convex eggs. Why is routine stool analysis usually negative?",
+            "options": [
+              "Eggs dissolve rapidly in alkaline intestinal fecal secretions",
+              "Gravid females migrate out of the anus to oviposit directly on perianal skin",
+              "Eggs are exclusively passed through the urinary bladder mucosa",
+              "The parasites reproduce exclusively via tissue asexual budding"
+            ],
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Enterobius vermicularis; gravid females migrate out through the anal sphincter at night and oviposit in the perianal folds rather than in the stool stream; diagnosis is made via Scotch tape perianal swab.",
+            "keyConcept": "Enterobius diagnosis: perianal tape swab is required because females oviposit on perianal skin, not in feces.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/clinical_case_8_enterobius.webp",
+              "caption": "Practical Spotter Examination — Station 39"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0040",
+            "type": "mcq",
+            "lecture": 10,
+            "text": "Clinical Case Station 9: A 45-year-old traveler develops high swinging fever, right upper quadrant pain, and leukocytosis. Imaging reveals a solitary 8 cm hypoechoic abscess in the right liver lobe. Aspiration yields sterile anchovy-sauce-like fluid. Identify the causative agent:",
+            "options": [
+              "Echinococcus granulosus",
+              "Ascaris lumbricoides",
+              "Entamoeba histolytica",
+              "Cryptosporidium parvum"
+            ],
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: Amebic liver abscess (Entamoeba histolytica); trophozoites reach liver via portal vein from colonic ulcers, releasing pore-forming peptides (amebapores) and cysteine proteinases causing liquefactive anchovy-sauce necrosis.",
+            "keyConcept": "Amebic liver abscess: Entamoeba histolytica trophozoites causing sterile liquefactive anchovy-paste liver necrosis.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/clinical_case_9_entamoeba.webp",
+              "caption": "Practical Spotter Examination — Station 40"
+            }
+          },
+          {
+            "id": "MGL3-CH303-PARA-0041",
+            "type": "mcq",
+            "lecture": 10,
+            "text": "Clinical Case Station 10: A barefoot agricultural worker presents with severe pallor, exertional fatigue, and epigastric discomfort. Lab work reveals microcytic hypochromic iron-deficiency anemia (Hb 5.8 g/dL). Stool shows thin-shelled 4-8 cell segmenting eggs. What is the source of blood loss?",
+            "options": [
+              "Chronic hemolysis caused by circulating parasite cytolytic toxins",
+              "Laceration of duodenal mucosa and active blood ingestion by adult worms",
+              "Autoimmune destruction of bone marrow erythroid progenitor cells",
+              "Splenic sequestration of red blood cells secondary to portal block"
+            ],
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Hookworm disease (Ancylostoma duodenale / Necator americanus); adult worms attach to duodenal mucosa with teeth/cutting plates, releasing anticoagulants and sucking blood (0.15–0.26 mL blood/worm/day).",
+            "keyConcept": "Hookworm anemia: mechanical duodenal mucosal laceration and active blood-sucking causing severe iron deficiency.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/parasitology/clinical_case_12_hookworm.webp",
+              "caption": "Practical Spotter Examination — Station 41"
             }
           }
         ]
@@ -410,76 +1578,769 @@
   {
     "id": 304,
     "title": "Practical — Anatomy",
-    "subtitle": "Cadaveric Prosections, Vessels & Inguinal Canal",
+    "subtitle": "Gross Specimens, Viscera, Vessels, Osteology & Cross Sections",
     "emoji": "🦴",
-    "page": 904,
-    "lectureRange": "Stations 1–3",
+    "page": 731,
+    "lectureRange": "Stations 1–37",
     "bankSection": "practical",
     "subjects": [
       {
         "id": "anatomy",
         "name": "Anatomy",
         "iconName": "Bone",
-        "lectures": "Stations 1–3",
-        "lectureCount": 3,
+        "lectures": "Stations 1–37",
+        "lectureCount": 10,
         "lectureNames": [
-          "Celiac Trunk & Branches",
-          "Inguinal Canal Boundaries & Conjoint Tendon",
-          "Porta Hepatis Spatial Relationships"
+          "Sagittal Head & Neck (Oral Cavity, Pharynx & Tonsillar Bed)",
+          "Salivary Glands Topography & Ducts",
+          "Anterior & Posterior Abdominal Wall Dissections",
+          "Retroperitoneal Great Vessels & Lumbar Plexus Topography",
+          "Stomach, Omenta & Peritoneal Spaces",
+          "Liver Lobes, Surfaces & Biliary Apparatus",
+          "Small & Large Intestines & Anal Canal",
+          "Blood Supply of Gut (Celiac Trunk, SMA, IMA & Portal Vein)",
+          "Osteology (Palatine Bones, Pelvis & Lumbar Vertebrae)",
+          "Congenital Anomalies & Cross-Sectional Axial CT Anatomy"
         ],
         "questions": [
           {
             "id": "MGL3-CH304-ANAT-0001",
             "type": "mcq",
             "lecture": 1,
-            "text": "In a cadaveric prosection of the celiac trunk at the level of T12, which of the following is an immediate primary branch of the trunk?",
+            "text": "In this sagittal section of the oral cavity and pharynx, identify the lymphoid structure situated in the triangular fossa bounded anteriorly by the palatoglossal arch and posteriorly by the palatopharyngeal arch:",
             "options": [
-              "Gastroduodenal artery arising behind the first part of the duodenum",
-              "Splenic artery coursing tortuously along the upper border of pancreas",
-              "Right gastric artery running along the lesser curvature of stomach",
-              "Superior mesenteric artery descending anterior to the third part of duodenum"
+              "Palatine tonsil",
+              "Pharyngeal adenoid tonsil",
+              "Lingual follicular tonsil",
+              "Tubal mucosal tonsil"
             ],
-            "correctIndex": 1,
-            "explanation": "The celiac trunk trifurcates into the left gastric artery, splenic artery (running along the upper pancreatic border to the spleen), and common hepatic artery.",
-            "keyConcept": "Celiac trunk trifurcation: Left gastric, Splenic, and Common hepatic arteries.",
+            "correctIndex": 0,
+            "explanation": "The palatine tonsil occupies the tonsillar sinus (fossa) between the palatoglossal arch (anterior pillar) and palatopharyngeal arch (posterior pillar), covered by non-keratinized stratified squamous epithelium.",
+            "keyConcept": "Palatine tonsil: lymphoid organ situated in the tonsillar fossa between palatoglossal and palatopharyngeal arches.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/anatomy/celiac_trunk_anatomy.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/sagittal_mouth_pharynx.webp",
+              "caption": "Practical Spotter Examination — Station 1"
             }
           },
           {
             "id": "MGL3-CH304-ANAT-0002",
             "type": "mcq",
-            "lecture": 2,
-            "text": "During dissection of the inguinal canal, identify the structure that reinforces the posterior wall in its medial third:",
+            "lecture": 1,
+            "text": "Examine this deep dissection of the palatine tonsillar bed. Identify the principal cranial nerve that traverses the bed and is vulnerable to injury during tonsillectomy, mediating taste to the posterior third of the tongue:",
             "options": [
-              "Aponeurosis of the external oblique muscle with its intercrural fibers",
-              "Curved shelving border of the inguinal ligament (Poupart ligament)",
-              "Reflected triangular pectineal ligament (Cooper ligament) on pecten pubis",
-              "Conjoint tendon (falx inguinalis) behind the superficial inguinal ring"
+              "Hypoglossal motor nerve (CN XII)",
+              "Glossopharyngeal nerve (CN IX)",
+              "Lingual sensory nerve (V3)",
+              "Accessory motor nerve (CN XI)"
             ],
-            "correctIndex": 3,
-            "explanation": "The posterior wall of the inguinal canal is formed in its lateral two-thirds by the fascia transversalis and in its medial third by the conjoint tendon (falx inguinalis) formed by internal oblique and transversus abdominis.",
-            "keyConcept": "Inguinal canal posterior wall: Fascia transversalis (lateral) + Conjoint tendon (medial).",
+            "correctIndex": 1,
+            "explanation": "The glossopharyngeal nerve (CN IX) courses along the lateral muscular wall of the pharynx immediately deep to the tonsillar bed, posing a critical clinical risk during surgical tonsillectomy.",
+            "keyConcept": "Glossopharyngeal nerve: traverses tonsillar bed supplying general sensation and taste to posterior 1/3 of tongue.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/anatomy/inguinal_canal_anatomy.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/palatine_tonsil_bed.webp",
+              "caption": "Practical Spotter Examination — Station 2"
             }
           },
           {
             "id": "MGL3-CH304-ANAT-0003",
             "type": "mcq",
-            "lecture": 3,
-            "text": "At the porta hepatis (free margin of the lesser omentum), what is the correct spatial arrangement of the structures from anterior to posterior?",
+            "lecture": 1,
+            "text": "Examine the dorsal surface of this dissected tongue. Identify the V-shaped groove whose apex points posteriorly to the foramen cecum, demarcating the junction between the anterior two-thirds and posterior one-third:",
             "options": [
-              "Portal vein (anterior), Hepatic artery proper (middle), Bile duct (posterior)",
-              "Bile duct (anterior-right), Hepatic artery proper (anterior-left), Portal vein (posterior)",
-              "Hepatic artery proper (anterior), Portal vein (middle), Bile duct (posterior)",
-              "Inferior vena cava (anterior), Bile duct (middle), Hepatic artery (posterior)"
+              "Median lingual sulcus",
+              "Glossoepiglottic fold",
+              "Sulcus terminalis",
+              "Sublingual fold margin"
+            ],
+            "correctIndex": 2,
+            "explanation": "The sulcus terminalis is the anatomical boundary between the presulcal oral part (anterior 2/3, 1st arch) and postsulcal pharyngeal part (posterior 1/3, 3rd arch), immediately flanked by circumvallate papillae.",
+            "keyConcept": "Sulcus terminalis: V-shaped groove separating oral and pharyngeal tongue segments.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/tongue_dorsum_papillae.webp",
+              "caption": "Practical Spotter Examination — Station 3"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0004",
+            "type": "mcq",
+            "lecture": 2,
+            "text": "In this lateral head and neck dissection demonstrating the topography of the major salivary glands, identify the large gland wedged in the retromandibular fossa anterior to the mastoid process and sternocleidomastoid muscle:",
+            "options": [
+              "Submandibular gland",
+              "Sublingual salivary gland",
+              "Thyroid glandular lobe",
+              "Parotid salivary gland"
+            ],
+            "correctIndex": 3,
+            "explanation": "The parotid gland occupies the retromandibular fossa, enclosed by the dense parotid fascia derived from the investing layer of deep cervical fascia, wrapping around the ramus of the mandible.",
+            "keyConcept": "Parotid gland: largest salivary gland situated in retromandibular space anterior to sternocleidomastoid.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/salivary_glands_topography.webp",
+              "caption": "Practical Spotter Examination — Station 4"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0005",
+            "type": "mcq",
+            "lecture": 2,
+            "text": "Examine this superficial facial dissection. Identify the excretory duct that crosses superficial to the masseter muscle, pierces the buccinator, and opens into the oral vestibule opposite the crown of the upper second molar:",
+            "options": [
+              "Parotid duct (Stensen's duct)",
+              "Submandibular duct of Wharton",
+              "Major sublingual duct of Rivinus",
+              "Nasolacrimal drainage duct"
+            ],
+            "correctIndex": 0,
+            "explanation": "Stensen's duct arises from the anterior border of the parotid gland, runs horizontally across the masseter, pierces the buccal fat pad and buccinator muscle, and terminates opposite the maxillary second molar.",
+            "keyConcept": "Parotid duct: traverses masseter and pierces buccinator to open opposite the upper second molar.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/parotid_gland_stensen_duct.webp",
+              "caption": "Practical Spotter Examination — Station 5"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0006",
+            "type": "mcq",
+            "lecture": 2,
+            "text": "In this submandibular triangle dissection, identify the major vascular structure that arches upward from the neck, grooves the deep and posterior surface of the submandibular gland, and curves over the mandibular base:",
+            "options": [
+              "Lingual arterial trunk",
+              "Facial artery",
+              "Superficial temporal artery",
+              "Maxillary branch artery"
             ],
             "correctIndex": 1,
-            "explanation": "In the free edge of the lesser omentum: the common bile duct lies anterolaterally to the right, the hepatic artery proper lies anteromedially to the left, and the portal vein lies posteriorly.",
-            "keyConcept": "Porta hepatis relation: Duct on Right, Artery on Left, Portal Vein Behind.",
+            "explanation": "The facial artery arises from the external carotid artery, loops deep to the posterior belly of the digastric, grooves the posterior pole of the submandibular gland, and enters the face at the anterior border of the masseter.",
+            "keyConcept": "Facial artery: intimately grooves the posterosuperior aspect of the submandibular salivary gland.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/anatomy/porta_hepatis_anatomy.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/submandibular_gland_digastric.webp",
+              "caption": "Practical Spotter Examination — Station 6"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0007",
+            "type": "mcq",
+            "lecture": 3,
+            "text": "Examine the superficial layer of the anterior abdominal wall. Identify the triangular opening in the external oblique aponeurosis transmitting the spermatic cord or round ligament of the uterus:",
+            "options": [
+              "Deep internal inguinal ring",
+              "Femoral canal ring orifice",
+              "Superficial inguinal ring",
+              "Saphenous opening hiatus"
+            ],
+            "correctIndex": 2,
+            "explanation": "The superficial inguinal ring is a triangular hiatus in the external oblique aponeurosis located superolateral to the pubic crest, bounded by the medial and lateral crura and intercrural fibers.",
+            "keyConcept": "Superficial inguinal ring: aponeurotic defect in external oblique through which the spermatic cord exits.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/external_oblique_inguinal_ring.webp",
+              "caption": "Practical Spotter Examination — Station 7"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0008",
+            "type": "mcq",
+            "lecture": 3,
+            "text": "In this anterior abdominal wall dissection, identify the composite aponeurotic structure formed by the fusion of the lower arching aponeurotic fibers of the internal oblique and transversus abdominis inserting into the pubic crest:",
+            "options": [
+              "Inguinal ligament of Poupart",
+              "Lacunar ligament of Gimbernat",
+              "Pectineal ligament of Cooper",
+              "Conjoint tendon (Falx inguinalis)"
+            ],
+            "correctIndex": 3,
+            "explanation": "The conjoint tendon (falx inguinalis) is formed by the fused aponeuroses of the internal oblique and transversus abdominis muscles, inserting into the pubic crest and pectineal line to reinforce the posterior inguinal canal wall.",
+            "keyConcept": "Conjoint tendon: fused aponeurotic arch of internal oblique and transversus inserting into the pubis.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/internal_oblique_rectus.webp",
+              "caption": "Practical Spotter Examination — Station 8"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0009",
+            "type": "mcq",
+            "lecture": 3,
+            "text": "Examine the posterior layer of the rectus sheath. Identify the curved horizontal boundary below which the posterior sheath is absent, allowing the rectus abdominis muscle to rest directly on transversalis fascia:",
+            "options": [
+              "Arcuate line (Line of Douglas)",
+              "Linea alba central margin",
+              "Linea semilunaris lateral groove",
+              "Transpyloric anatomical plane"
+            ],
+            "correctIndex": 0,
+            "explanation": "The arcuate line marks the lower limit of the posterior rectus sheath (midway between umbilicus and pubic crest). Inferior to it, all aponeurotic layers pass anterior to the rectus abdominis muscle.",
+            "keyConcept": "Arcuate line: inferior border of posterior rectus sheath where aponeuroses shift entirely anteriorly.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/transversus_abdominis.webp",
+              "caption": "Practical Spotter Examination — Station 9"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0010",
+            "type": "mcq",
+            "lecture": 3,
+            "text": "In this posterior abdominal wall dissection, identify the thick fleshy muscle that arises from the transverse processes and bodies of T12–L5 vertebrae, courses along the pelvic brim, and forms the bed of the lumbar plexus:",
+            "options": [
+              "Quadratus lumborum muscle",
+              "Psoas major muscle",
+              "Transversus abdominis",
+              "Iliacus muscle of pelvis"
+            ],
+            "correctIndex": 1,
+            "explanation": "The psoas major originates from the lumbar vertebral bodies, discs, and transverse processes, descending inferolaterally to insert onto the lesser trochanter. The lumbar nerve plexus develops within its substance.",
+            "keyConcept": "Psoas major: medial posterior abdominal wall muscle arising from lumbar spine, housing lumbar plexus.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/posterior_wall_muscles.webp",
+              "caption": "Practical Spotter Examination — Station 10"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0011",
+            "type": "mcq",
+            "lecture": 4,
+            "text": "Examine the retroperitoneal great vessels. At which vertebral level does the abdominal aorta bifurcate into the right and left common iliac arteries, corresponding on the anterior abdominal wall to the level of the umbilicus?",
+            "options": [
+              "L2 vertebral body",
+              "L3 vertebral body",
+              "L4 vertebral body",
+              "L5 vertebral body"
+            ],
+            "correctIndex": 2,
+            "explanation": "The abdominal aorta bifurcates into the common iliac arteries at the level of the L4 vertebra, approximately 2–3 cm below the umbilicus, just superior to the formation of the IVC at L5.",
+            "keyConcept": "Aortic bifurcation: occurs at L4 vertebral level, slightly superior to IVC confluence at L5.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/aorta_ivc_relations.webp",
+              "caption": "Practical Spotter Examination — Station 11"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0012",
+            "type": "mcq",
+            "lecture": 4,
+            "text": "In this posterior abdominal wall dissection, identify the somatic nerve emerging through the anterior muscular surface of the psoas major, descending into the pelvis to provide genital and femoral cutaneous sensory branches:",
+            "options": [
+              "Ilioinguinal somatic nerve (L1)",
+              "Lateral femoral cutaneous nerve",
+              "Femoral anterior motor trunk",
+              "Genitofemoral nerve (L1, L2)"
+            ],
+            "correctIndex": 3,
+            "explanation": "The genitofemoral nerve uniquely pierces the ventral fleshy belly of the psoas major muscle, descending on its anterior surface before dividing into genital and femoral branches.",
+            "keyConcept": "Genitofemoral nerve: only lumbar plexus nerve piercing and descending on the anterior surface of psoas major.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/lumbar_plexus_nerves.webp",
+              "caption": "Practical Spotter Examination — Station 12"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0013",
+            "type": "mcq",
+            "lecture": 4,
+            "text": "Examine this gross specimen of the stomach. Identify the prominent anatomical notch located along the lesser curvature that marks the junction between the gastric body and the pyloric antrum:",
+            "options": [
+              "Incisura angularis (Angular notch)",
+              "Cardiac notch of stomach",
+              "Sulcus intermedius groove",
+              "Pyloric muscular sphincter"
+            ],
+            "correctIndex": 0,
+            "explanation": "The incisura angularis is an acute indentation on the lower part of the lesser curvature that indicates the anatomical boundary between the body of the stomach and the pyloric antrum.",
+            "keyConcept": "Incisura angularis: angular notch on the lesser curvature separating the gastric body from the pyloric antrum.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/stomach_parts_anatomy.webp",
+              "caption": "Practical Spotter Examination — Station 13"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0014",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "In this dissection of the peritoneal cavity, identify the free right margin of the lesser omentum (hepatoduodenal ligament) containing the portal triad. Which foramen does it bound anteriorly?",
+            "options": [
+              "Greater sciatic foramen",
+              "Epiploic foramen of Winslow",
+              "Obturator vascular canal",
+              "Incisura angularis margin"
+            ],
+            "correctIndex": 1,
+            "explanation": "The epiploic foramen (of Winslow) connects the greater and lesser peritoneal sacs. Its anterior boundary is the hepatoduodenal ligament containing the portal vein, proper hepatic artery, and common bile duct.",
+            "keyConcept": "Epiploic foramen: peritoneal entrance to lesser sac bounded anteriorly by the portal triad in lesser omentum.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/lesser_greater_omenta.webp",
+              "caption": "Practical Spotter Examination — Station 14"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0015",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "Examine this gross specimen showing the retroperitoneal relationships of the pancreas and duodenum. Identify the hook-like inferior projection of the pancreatic head that passes posterior to the superior mesenteric vessels:",
+            "options": [
+              "Pancreatic neck region",
+              "Pancreatic tail tip",
+              "Uncinate process",
+              "Major duodenal papilla"
+            ],
+            "correctIndex": 2,
+            "explanation": "The uncinate process is a medial and inferior extension of the lower part of the pancreatic head that projects medially behind the superior mesenteric vessels and in front of the aorta and IVC.",
+            "keyConcept": "Uncinate process: lower pancreatic head extension coursing posterior to superior mesenteric artery and vein.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/pancreas_duodenum_relations.webp",
+              "caption": "Practical Spotter Examination — Station 15"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0016",
+            "type": "mcq",
+            "lecture": 5,
+            "text": "Identify the sickle-shaped peritoneal fold connecting the diaphragmatic and anterior surfaces of the liver to the anterior abdominal wall and diaphragm, containing the obliterated umbilical vein in its inferior free edge:",
+            "options": [
+              "Coronary liver ligament",
+              "Right triangular ligament",
+              "Hepatoduodenal ligament",
+              "Falciform ligament"
+            ],
+            "correctIndex": 3,
+            "explanation": "The falciform ligament is a double-layered peritoneal fold anchoring the liver to the anterior wall and diaphragm. Its free lower border carries the ligamentum teres hepatis (obliterated left umbilical vein).",
+            "keyConcept": "Falciform ligament: peritoneal fold carrying ligamentum teres hepatis in its inferior free edge.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/liver_anterior_falciform.webp",
+              "caption": "Practical Spotter Examination — Station 16"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0017",
+            "type": "mcq",
+            "lecture": 6,
+            "text": "Examine the posterior diaphragmatic surface of this liver specimen. Identify the triangular non-peritoneal area directly resting on the diaphragm, bounded by the superior and inferior layers of the coronary ligament:",
+            "options": [
+              "Bare area of the liver",
+              "Porta hepatis portal fissure",
+              "Gallbladder fossa bed",
+              "Fissure for ligamentum venosum"
+            ],
+            "correctIndex": 0,
+            "explanation": "The bare area of the liver is devoid of peritoneal covering, resting in direct apposition with the diaphragm. It is bounded by the coronary and triangular ligaments and contains the groove for the IVC.",
+            "keyConcept": "Bare area: non-peritoneal posterior hepatic surface bounded by coronary ligaments resting against diaphragm.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/liver_posterior_surface_relations.webp",
+              "caption": "Practical Spotter Examination — Station 17"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0018",
+            "type": "mcq",
+            "lecture": 6,
+            "text": "In this inferior visceral view of the liver, identify the rectangular lobe bounded on the right by the gallbladder fossa, on the left by the fissure for ligamentum teres, and posteriorly by the porta hepatis:",
+            "options": [
+              "Caudate anatomical lobe",
+              "Quadrate lobe",
+              "Right hepatic lateral lobe",
+              "Left anatomical lobe"
+            ],
+            "correctIndex": 1,
+            "explanation": "The quadrate lobe is located on the visceral hepatic surface, bounded anteriorly by the inferior border, posteriorly by the porta hepatis, right by the gallbladder, and left by the ligamentum teres.",
+            "keyConcept": "Quadrate lobe: visceral hepatic lobe located between gallbladder fossa and fissure for ligamentum teres.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/liver_inferior_visceral_surface.webp",
+              "caption": "Practical Spotter Examination — Station 18"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0019",
+            "type": "mcq",
+            "lecture": 6,
+            "text": "Examine this biliary tree dissection. Identify the common muscular dilation formed by the confluence of the bile duct and the main pancreatic duct (of Wirsung) before discharging into the descending duodenum:",
+            "options": [
+              "Hartmann's gallbladder pouch",
+              "Cystic duct spiral valve",
+              "Ampulla of Vater (Hepatopancreatic)",
+              "Duct of Santorini accessory"
+            ],
+            "correctIndex": 2,
+            "explanation": "The ampulla of Vater is formed by the union of the common bile duct and main pancreatic duct within the duodenal wall, opening at the major duodenal papilla guarded by the sphincter of Oddi.",
+            "keyConcept": "Ampulla of Vater: hepatopancreatic dilation discharging combined bile and pancreatic juice into duodenum.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/biliary_tree_anatomy.webp",
+              "caption": "Practical Spotter Examination — Station 19"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0020",
+            "type": "mcq",
+            "lecture": 7,
+            "text": "Compare the macroscopic features of the jejunum and ileum shown in this small intestinal specimen. Which anatomical characteristic definitively distinguishes the jejunum from the ileum?",
+            "options": [
+              "More abundant mesenteric fat encroaching the bowel wall",
+              "More numerous tiers of complex arterial mesenteric arcades",
+              "Abundant visible aggregated Peyer's lymphoid nodules",
+              "Taller, closely packed plicae circulares and longer vasa recta"
+            ],
+            "correctIndex": 3,
+            "explanation": "The jejunum has a wider caliber, thicker hypervascular wall, prominent plicae circulares, and simple arterial arcades (1–2 tiers) giving off long straight vasa recta, with clear translucent mesenteric windows.",
+            "keyConcept": "Jejunum characteristics: prominent plicae, simpler arcades with long vasa recta, and less mesenteric fat.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/small_intestine_jejunum_ileum.webp",
+              "caption": "Practical Spotter Examination — Station 20"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0021",
+            "type": "mcq",
+            "lecture": 7,
+            "text": "Examine this gross specimen of the large bowel. Identify the three longitudinal ribbons of thickened outer muscularis externa that converge at the base of the vermiform appendix:",
+            "options": [
+              "Taeniae coli",
+              "Plicae semilunares",
+              "Appendices epiploicae",
+              "Haustra sacculations"
+            ],
+            "correctIndex": 0,
+            "explanation": "Taeniae coli are three narrow, distinct bands of outer longitudinal smooth muscle (taenia libera, mesocolica, and omentalis) that traverse the large intestine and converge at the root of the appendix.",
+            "keyConcept": "Taeniae coli: three longitudinal smooth muscle bands converging at the base of the vermiform appendix.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/large_intestine_anatomy.webp",
+              "caption": "Practical Spotter Examination — Station 21"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0022",
+            "type": "mcq",
+            "lecture": 7,
+            "text": "In this coronal section of the anal canal, identify the horizontal undulating boundary that demarcates the transition between upper endodermal (visceral) and lower ectodermal (somatic) mucosa:",
+            "options": [
+              "Hilton's white line",
+              "Pectinate (Dentate) line",
+              "Anocutaneous junction line",
+              "Intersphincteric anal groove"
+            ],
+            "correctIndex": 1,
+            "explanation": "The pectinate (dentate) line represents the embryological junction of the hindgut endoderm and proctodeal ectoderm, dividing autonomic painless mucosa above from somatic exquisitely sensitive mucosa below.",
+            "keyConcept": "Pectinate line: embryological watershed dividing visceral innervation and drainage from somatic.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/rectum_anal_canal.webp",
+              "caption": "Practical Spotter Examination — Station 22"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0023",
+            "type": "mcq",
+            "lecture": 8,
+            "text": "Examine this arterial dissection of the upper abdomen. Identify the short, wide ventral branch arising from the abdominal aorta at the level of T12 immediately below the aortic hiatus of the diaphragm:",
+            "options": [
+              "Superior mesenteric artery",
+              "Inferior mesenteric artery",
+              "Celiac trunk",
+              "Renal arterial trunk"
+            ],
+            "correctIndex": 2,
+            "explanation": "The celiac trunk arises from the ventral aspect of the abdominal aorta at T12, immediately dividing into three branches: left gastric artery, splenic artery, and common hepatic artery, supplying the foregut.",
+            "keyConcept": "Celiac trunk: foregut artery arising from aorta at T12 giving left gastric, splenic, and common hepatic arteries.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/celiac_trunk_arteries.webp",
+              "caption": "Practical Spotter Examination — Station 23"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0024",
+            "type": "mcq",
+            "lecture": 8,
+            "text": "In this stomach arterial arcade dissection, identify the tortuous artery coursing along the upper border of the pancreas and delivering short gastric and left gastroepiploic arteries to the stomach:",
+            "options": [
+              "Left gastric artery",
+              "Gastroduodenal artery",
+              "Common hepatic trunk",
+              "Splenic artery"
+            ],
+            "correctIndex": 3,
+            "explanation": "The splenic artery is the largest branch of the celiac trunk. It takes a characteristic undulating tortuous path along the superior margin of the pancreas before reaching the splenic hilum and greater gastric curvature.",
+            "keyConcept": "Splenic artery: tortuous celiac branch traveling along upper border of pancreas toward spleen and stomach.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/stomach_arterial_arcade.webp",
+              "caption": "Practical Spotter Examination — Station 24"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0025",
+            "type": "mcq",
+            "lecture": 8,
+            "text": "Identify this major midgut artery arising from the abdominal aorta at the level of L1, descending anterior to the horizontal (third) part of the duodenum and giving off branches to the small bowel and proximal colon:",
+            "options": [
+              "Superior mesenteric artery",
+              "Inferior mesenteric artery",
+              "Celiac vascular trunk",
+              "Common iliac artery"
+            ],
+            "correctIndex": 0,
+            "explanation": "The superior mesenteric artery arises at L1 behind the pancreatic neck, crosses in front of the uncinate process and 3rd part of the duodenum, and enters the root of the mesentery to supply the entire midgut.",
+            "keyConcept": "Superior mesenteric artery: midgut arterial supply crossing anterior to the 3rd part of the duodenum.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/sma_artery_branches.webp",
+              "caption": "Practical Spotter Examination — Station 25"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0026",
+            "type": "mcq",
+            "lecture": 8,
+            "text": "Examine these arterial loops in the small intestinal mesentery. Identify the segment demonstrating multiple overlapping tiers (3 to 5 levels) of complex arterial arcades with short vasa recta:",
+            "options": [
+              "Jejunal mesenteric arcades",
+              "Ileal mesenteric arcades",
+              "Middle colic arcades",
+              "Marginal artery of Drummond"
+            ],
+            "correctIndex": 1,
+            "explanation": "The ileal mesentery is characterized by multiple rows (tiers 3–5) of small, crowded arterial arcades giving off short straight terminal vasa recta, accompanied by abundant mesenteric adipose tissue.",
+            "keyConcept": "Ileal arcades: multiple complex tiers (3–5 arcades) with short vasa recta and heavy mesenteric fat.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/jejunal_ileal_arcades.webp",
+              "caption": "Practical Spotter Examination — Station 26"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0027",
+            "type": "mcq",
+            "lecture": 8,
+            "text": "In this dissection of the transverse mesocolon, identify the first major colic branch of the superior mesenteric artery that ascends to supply the transverse colon:",
+            "options": [
+              "Right colic artery",
+              "Ileocolic artery",
+              "Middle colic artery",
+              "Left colic artery"
+            ],
+            "correctIndex": 2,
+            "explanation": "The middle colic artery arises from the anterior surface of the SMA just below the pancreas, enters the transverse mesocolon, and divides into right and left branches to supply the transverse colon.",
+            "keyConcept": "Middle colic artery: SMA branch running through transverse mesocolon to supply the transverse colon.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/colic_arteries_sma.webp",
+              "caption": "Practical Spotter Examination — Station 27"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0028",
+            "type": "mcq",
+            "lecture": 8,
+            "text": "Identify this hindgut artery arising from the anterior aorta at the level of L3, descending to give off the left colic and sigmoid branches before terminating as the superior rectal artery:",
+            "options": [
+              "Superior mesenteric artery",
+              "Middle colic branch",
+              "Median sacral trunk",
+              "Inferior mesenteric artery"
+            ],
+            "correctIndex": 3,
+            "explanation": "The inferior mesenteric artery arises at L3 and supplies the hindgut (distal 1/3 of transverse colon to upper anal canal), branching into the left colic, sigmoid arteries, and the superior rectal artery.",
+            "keyConcept": "Inferior mesenteric artery: hindgut artery arising at L3 terminating as the superior rectal artery.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/ima_branches_colon.webp",
+              "caption": "Practical Spotter Examination — Station 28"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0029",
+            "type": "mcq",
+            "lecture": 9,
+            "text": "Examine this venous dissection behind the neck of the pancreas. Identify the large venous trunk formed by the union of the splenic vein and the superior mesenteric vein:",
+            "options": [
+              "Hepatic portal vein",
+              "Inferior vena cava",
+              "Left renal vein",
+              "Right gonadal vein"
+            ],
+            "correctIndex": 0,
+            "explanation": "The portal vein is formed behind the neck of the pancreas by the confluence of the superior mesenteric vein and the splenic vein, conveying nutrient-rich blood from the digestive tract to the hepatic sinusoids.",
+            "keyConcept": "Portal vein: formed behind pancreatic neck by the union of splenic vein and superior mesenteric vein.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/portal_vein_tributaries.webp",
+              "caption": "Practical Spotter Examination — Station 29"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0030",
+            "type": "mcq",
+            "lecture": 9,
+            "text": "In this inferior view of the bony palate (oral aspect), identify the bilateral posterolateral foramina located on the horizontal plates of the palatine bones that transmit the greater palatine nerves and vessels:",
+            "options": [
+              "Incisive fossa canal",
+              "Greater palatine foramina",
+              "Lesser palatine foramina",
+              "Jugular cranial foramen"
+            ],
+            "correctIndex": 1,
+            "explanation": "The greater palatine foramina pierce the horizontal plate of the palatine bone near the posterior alveolar margin, transmitting the greater palatine nerve and vessels forward to the hard palate mucosa.",
+            "keyConcept": "Greater palatine foramina: posterolateral bony palate apertures transmitting neurovascular supply to hard palate.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/bony_palate_foramina.webp",
+              "caption": "Practical Spotter Examination — Station 30"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0031",
+            "type": "mcq",
+            "lecture": 9,
+            "text": "Examine this dissected bony iliac crest specimen. Which muscle of the anterior abdominal wall attaches to the intermediate line of the iliac crest between its outer and inner lips?",
+            "options": [
+              "External oblique muscle",
+              "Transversus abdominis",
+              "Internal oblique muscle",
+              "Quadratus lumborum"
+            ],
+            "correctIndex": 2,
+            "explanation": "The iliac crest provides muscular attachments in three zones: the outer lip attaches the external oblique, the intermediate line attaches the internal oblique, and the inner lip attaches transversus abdominis.",
+            "keyConcept": "Intermediate line of iliac crest: site of muscular origin for the internal oblique abdominal muscle.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/iliac_crest_muscles.webp",
+              "caption": "Practical Spotter Examination — Station 31"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0032",
+            "type": "mcq",
+            "lecture": 9,
+            "text": "In this osteological pelvis specimen, identify the muscular structure that takes origin from the pubic crest and pubic tubercle, ascending vertically within the rectus sheath toward the costal margin:",
+            "options": [
+              "Pectineus adductor muscle",
+              "Pyramidalis anterior belly",
+              "Iliopsoas pelvic tendon",
+              "Rectus abdominis muscle"
+            ],
+            "correctIndex": 3,
+            "explanation": "The rectus abdominis originates by two heads from the pubic crest and pubic symphysis, ascending within the rectus sheath to insert onto the xiphoid process and 5th to 7th costal cartilages.",
+            "keyConcept": "Rectus abdominis: vertical strap muscle arising from pubic crest and symphysis ascending to costal margin.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/pubic_crest_attachments.webp",
+              "caption": "Practical Spotter Examination — Station 32"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0033",
+            "type": "mcq",
+            "lecture": 9,
+            "text": "Examine this typical lumbar vertebra (L1–L4). Identify the hatchet-shaped horizontal posterior projection that serves as an attachment site for the supraspinous and interspinous ligaments:",
+            "options": [
+              "Lumbar spinous process",
+              "Mamillary process projection",
+              "Accessory tubercle process",
+              "Costiform transverse process"
+            ],
+            "correctIndex": 0,
+            "explanation": "Typical lumbar vertebrae possess a thick, quadrangular, hatchet-shaped spinous process that projects almost horizontally backwards, facilitating lumbar puncture between adjacent spines.",
+            "keyConcept": "Lumbar spinous process: broad, horizontal hatchet-shaped process providing interspinous ligamentous anchor.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/lumbar_vertebra_ligaments.webp",
+              "caption": "Practical Spotter Examination — Station 33"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0034",
+            "type": "mcq",
+            "lecture": 9,
+            "text": "In this osteological specimen of the atypical fifth lumbar vertebra (L5), identify the defining morphological feature that distinguishes it from typical upper lumbar vertebrae:",
+            "options": [
+              "Circular rather than triangular vertebral canal",
+              "Massive conical transverse process attached directly to the pedicle and body",
+              "Bifid spinous process with posterior hook",
+              "Absence of superior articular facets"
+            ],
+            "correctIndex": 1,
+            "explanation": "The L5 vertebra is atypical because its massive, stout, conical transverse processes arise directly from both the pedicle and the lateral surface of the body to anchor the robust iliolumbar ligaments.",
+            "keyConcept": "L5 vertebra: distinguished by massive conical transverse processes attached directly to the pedicle and body.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/atypical_l5_vertebra.webp",
+              "caption": "Practical Spotter Examination — Station 34"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0035",
+            "type": "mcq",
+            "lecture": 10,
+            "text": "Examine this clinical photograph demonstrating a unilateral cleft lip. This congenital defect results from the failure of fusion between which two embryonic prominences?",
+            "options": [
+              "Mandibular prominence and lateral nasal prominence",
+              "Lateral palatine process and nasal septum",
+              "Maxillary prominence and medial nasal prominence",
+              "Frontonasal prominence and mandibular arch"
+            ],
+            "correctIndex": 2,
+            "explanation": "Cleft lip occurs when the maxillary prominence of the 1st pharyngeal arch fails to fuse with the medial nasal prominence (intermaxillary segment), resulting in a persistent groove or cleft in the upper lip.",
+            "keyConcept": "Cleft lip: developmental failure of fusion between the maxillary prominence and medial nasal prominence.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/cleft_lip_palate_anomaly.webp",
+              "caption": "Practical Spotter Examination — Station 35"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0036",
+            "type": "mcq",
+            "lecture": 10,
+            "text": "In this diagram of congenital tracheoesophageal anomalies, identify the most common anatomical variant (Type C / Vogt IIIb, ~85-90% of cases):",
+            "options": [
+              "Isolated esophageal atresia without fistula",
+              "Proximal tracheoesophageal fistula with distal atresia",
+              "Isolated H-type tracheoesophageal fistula",
+              "Proximal esophageal atresia with distal tracheoesophageal fistula"
+            ],
+            "correctIndex": 3,
+            "explanation": "The most frequent anomaly (Type C, ~85%) consists of a blind proximal esophageal pouch (atresia) and a distal esophageal segment that communicates with the trachea near the carina, causing air in the stomach.",
+            "keyConcept": "Tracheoesophageal fistula: Type C (blind upper esophageal pouch with distal fistula) is the most common form.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/tef_anomalies_types.webp",
+              "caption": "Practical Spotter Examination — Station 36"
+            }
+          },
+          {
+            "id": "MGL3-CH304-ANAT-0037",
+            "type": "mcq",
+            "lecture": 10,
+            "text": "Examine this axial abdominal CT scan at the transpyloric plane (T12-L1). Identify the large visceral organ crossing the midline whose neck lies immediately anterior to the superior mesenteric vessels:",
+            "options": [
+              "Pancreas",
+              "Transverse colon loop",
+              "Duodenojejunal flexure",
+              "Left renal cortex parenchyma"
+            ],
+            "correctIndex": 0,
+            "explanation": "At the transpyloric plane (T12–L1), the pancreas lies transversely across the retroperitoneum, with its neck situated directly in front of the origin of the superior mesenteric vein and artery.",
+            "keyConcept": "Pancreas on axial CT: elongated retroperitoneal organ whose neck crosses anterior to mesenteric vessels at L1.",
+            "media": {
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/anatomy/axial_ct_abdomen_t12_l1.webp",
+              "caption": "Practical Spotter Examination — Station 37"
             }
           }
         ]

@@ -821,7 +821,9 @@ export interface ModuleQuestionCounts {
 }
 
 export function getModuleQuestionCounts(moduleCode: string): ModuleQuestionCounts {
-  const pCount = moduleCode === 'MGL-3' ? 29 : 0;
+  const pCount = moduleCode === 'MGL-3'
+    ? (mgl3PracticalChapters as any[]).reduce((acc, ch) => acc + (ch.subjects || []).reduce((sAcc: number, s: any) => sAcc + (s.questions || []).length, 0), 0)
+    : 0;
   const attachPractical = (res: ModuleQuestionCounts) => {
     if (pCount > 0) {
       Object.defineProperty(res, 'practicalCount', {

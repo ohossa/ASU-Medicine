@@ -8,7 +8,7 @@ describe('GIT (MGL-3) Practical Exam Bank & Engine Integration', () => {
     fs.readFileSync(path.resolve(__dirname, '../../app/data/practical/mgl-3-practical.json'), 'utf8')
   );
 
-  it('contains the 8 designated practical chapters with IDs 301 to 308', () => {
+  it('contains the 8 designated practical chapters with IDs 301 to 308 and exact question counts', () => {
     expect(practicalChapters).toHaveLength(8);
 
     const ids = practicalChapters.map((c: any) => c.id);
@@ -23,9 +23,25 @@ describe('GIT (MGL-3) Practical Exam Bank & Engine Integration', () => {
     expect(titles).toContain('Practical — Biochemistry');
     expect(titles).toContain('Practical — Microbiology');
     expect(titles).toContain('Practical — Clinical');
+
+    const expectedCountsByChapter: Record<number, number> = {
+      301: 28, // Histology
+      302: 6,  // Pathology
+      303: 41, // Parasitology
+      304: 37, // Anatomy
+      305: 2,  // Physiology
+      306: 2,  // Biochemistry
+      307: 2,  // Microbiology
+      308: 2   // Clinical
+    };
+
+    for (const ch of practicalChapters) {
+      const qCount = ch.subjects.reduce((sum: number, s: any) => sum + s.questions.length, 0);
+      expect(qCount, `Chapter ${ch.id} (${ch.title}) count mismatch`).toBe(expectedCountsByChapter[ch.id]);
+    }
   });
 
-  it('every practical question has an imageUrl and points to an existing WebP asset', () => {
+  it('every practical question has an imageUrl and points to an existing WebP asset > 1KB on disk', () => {
     let questionCount = 0;
 
     for (const chapter of practicalChapters) {
@@ -44,10 +60,10 @@ describe('GIT (MGL-3) Practical Exam Bank & Engine Integration', () => {
       }
     }
 
-    expect(questionCount).toBe(29);
+    expect(questionCount).toBe(120);
   });
 
-  it('distributes correct answer indices (A, B, C, D) evenly without answer cueing bias', () => {
+  it('distributes correct answer indices (A, B, C, D) with exact 25% balance (30 each) without cueing bias', () => {
     const counts: Record<number, number> = { 0: 0, 1: 0, 2: 0, 3: 0 };
 
     for (const chapter of practicalChapters) {
@@ -61,23 +77,32 @@ describe('GIT (MGL-3) Practical Exam Bank & Engine Integration', () => {
       }
     }
 
-    // Verify balance across A (0), B (1), C (2), D (3): each letter should have 7-8 occurrences
-    expect(counts[0]).toBeGreaterThanOrEqual(6);
-    expect(counts[1]).toBeGreaterThanOrEqual(6);
-    expect(counts[2]).toBeGreaterThanOrEqual(6);
-    expect(counts[3]).toBeGreaterThanOrEqual(6);
+    // Verify perfect balance: exactly 30 of each choice (A, B, C, D)
+    expect(counts[0]).toBe(30);
+    expect(counts[1]).toBe(30);
+    expect(counts[2]).toBe(30);
+    expect(counts[3]).toBe(30);
   });
 
-  it('getModuleQuestionCounts reports practicalCount accurately', () => {
+  it('includes explicit Criteria of Identification in all Parasitology questions', () => {
+    const paraChapter = practicalChapters.find((c: any) => c.id === 303);
+    expect(paraChapter).toBeDefined();
+
+    for (const q of paraChapter.subjects[0].questions) {
+      expect(q.explanation).toMatch(/Criteria of Identification/i);
+    }
+  });
+
+  it('getModuleQuestionCounts reports practicalCount accurately as 120', () => {
     const counts = getModuleQuestionCounts('MGL-3');
-    expect(counts.practicalCount).toBe(29);
+    expect(counts.practicalCount).toBe(120);
     expect(counts.totalCount).toBeGreaterThan(6000);
   });
 
   it('getChaptersForModuleAndMode isolates practical chapters from normal MCQ practice', () => {
-    const practicalChapters = getChaptersForModuleAndMode('MGL-3', 'practical');
-    expect(practicalChapters).toHaveLength(8);
-    for (const ch of practicalChapters) {
+    const practicalChaptersList = getChaptersForModuleAndMode('MGL-3', 'practical');
+    expect(practicalChaptersList).toHaveLength(8);
+    for (const ch of practicalChaptersList) {
       expect(ch.bankSection).toBe('practical');
     }
 
