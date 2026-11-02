@@ -27,16 +27,16 @@
             "id": "MGL3-CH301-HIST-0001",
             "type": "mcq",
             "lecture": 1,
-            "text": "Examine this low-power histological section of the alimentary canal. Identify this organ:",
+            "text": "Examine this low-power histological section of the alimentary canal. Identify the characteristic diagnostic feature of this organ:",
             "options": [
-              "Esophagus",
-              "Duodenum",
-              "Pyloric stomach",
-              "Jejunum"
+              "Non-keratinized stratified squamous epithelium and submucosal esophageal glands proper",
+              "Simple columnar epithelium with branched Brunner's glands in the submucosa",
+              "Simple columnar epithelium with prominent Peyer's patches in the lamina propria and submucosa",
+              "Simple columnar epithelium with deep regular crypts and complete absence of villi"
             ],
             "correctIndex": 0,
-            "explanation": "Criteria of Identification: Non-keratinized stratified squamous epithelium, prominent muscularis mucosae, and submucosal tubuloacinar esophageal glands proper.",
-            "keyConcept": "Esophagus: non-keratinized stratified squamous epithelium with submucosal esophageal glands proper.",
+            "explanation": "Criteria of Identification: The esophagus is characterized by a thick protective non-keratinized stratified squamous epithelium, a prominent muscularis mucosae, and branched tubuloacinar esophageal glands proper situated in the submucosa.",
+            "keyConcept": "Esophagus: non-keratinized stratified squamous epithelium + submucosal esophageal glands proper.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/esophagus_lm.webp",
@@ -47,16 +47,16 @@
             "id": "MGL3-CH301-HIST-0002",
             "type": "mcq",
             "lecture": 1,
-            "text": "Examine this histological section of the small intestine. Identify this specific segment:",
+            "text": "Examine this histological section of the small intestine. Identify the characteristic diagnostic feature of this segment:",
             "options": [
-              "Ileum",
-              "Duodenum",
-              "Jejunum",
-              "Vermiform appendix"
+              "Aggregated lymphoid nodules (Peyer's patches) occupying the antimesenteric submucosa",
+              "Submucosal branched tubuloacinar Brunner's glands",
+              "Tall finger-like mucosal villi with complete absence of submucosal glands",
+              "Thick non-keratinized stratified squamous epithelium with submucosal glands"
             ],
             "correctIndex": 1,
-            "explanation": "Criteria of Identification: Intestinal villi and crypts with pathognomonic submucosal branched Brunner's glands secreting alkaline bicarbonate-rich mucus.",
-            "keyConcept": "Duodenum: diagnostic submucosal Brunner's glands producing protective alkaline mucus.",
+            "explanation": "Criteria of Identification: Duodenum is definitively identified by the presence of branched tubuloacinar Brunner's glands situated in the submucosa (beneath the muscularis mucosae), which secrete alkaline bicarbonate-rich fluid to neutralize acidic gastric chyme.",
+            "keyConcept": "Duodenum: mucosal villi + submucosal branched mucous Brunner's glands.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/duodenum_brunner_lm.webp",
@@ -72,11 +72,11 @@
               "Duodenum",
               "Ileum",
               "Jejunum",
-              "Cecum"
+              "Colon"
             ],
             "correctIndex": 2,
-            "explanation": "Criteria of Identification: Exceptionally tall, slender mucosal villi and prominent plicae circulares, lacking both submucosal Brunner's glands and aggregated Peyer's patches.",
-            "keyConcept": "Jejunum: tall, well-developed villi without Brunner's glands or prominent Peyer's patches.",
+            "explanation": "Criteria of Identification: Jejunum displays tall, well-developed, finger-like mucosal villi with central lacteals and well-developed plicae circulares, but lacks both submucosal Brunner's glands (distinguishing it from duodenum) and aggregated Peyer's patches (distinguishing it from ileum).",
+            "keyConcept": "Jejunum: tall mucosal villi with lacteals; absence of Brunner's glands and absence of Peyer's patches.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/jejunum_villi_lm.webp",
@@ -87,16 +87,16 @@
             "id": "MGL3-CH301-HIST-0004",
             "type": "mcq",
             "lecture": 1,
-            "text": "Examine this histological section of the distal small intestine. Identify the diagnostic lymphoid aggregates indicated:",
+            "text": "Examine this histological section of the distal small intestine. Identify the characteristic diagnostic lymphoid aggregates shown:",
             "options": [
-              "Brunner's glands in duodenum",
-              "Taeniae coli in large colon",
-              "Demilunes in salivary gland",
-              "Peyer's patches in the ileum"
+              "Brunner's glands occupying the submucosa",
+              "Isolated solitary lymphatic follicles distributed evenly all around the circumference",
+              "Paneth cell clusters restricted to the basal lamina",
+              "Peyer's patches on the antimesenteric border"
             ],
             "correctIndex": 3,
-            "explanation": "Criteria of Identification: Large aggregates of secondary lymphoid follicles (Peyer's patches) occupying lamina propria and submucosa on the antimesenteric border.",
-            "keyConcept": "Ileum: hallmark aggregated lymphoid nodules (Peyer's patches) along the antimesenteric wall.",
+            "explanation": "Criteria of Identification: Ileum is characterized by aggregated lymphoid nodules (Peyer's patches) that occupy the lamina propria and extend into the submucosa, located exclusively on the antimesenteric border.",
+            "keyConcept": "Ileum: Peyer's patches (aggregated lymphoid nodules occupying lamina propria and submucosa on the antimesenteric side).",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/ileum_peyer_lm.webp",
@@ -106,17 +106,17 @@
           {
             "id": "MGL3-CH301-HIST-0005",
             "type": "mcq",
-            "lecture": 2,
-            "text": "Examine this histological section of the lower gastrointestinal tract. Identify this specimen:",
+            "lecture": 1,
+            "text": "Examine this histological section of the lower gastrointestinal tract. Identify the characteristic diagnostic feature of this organ:",
             "options": [
-              "Colon (Large intestine)",
-              "Jejunum (Small intestine)",
-              "Duodenum (Small intestine)",
-              "Gastric body mucosa"
+              "Deep regular straight mucosal crypts lined by abundant goblet cells and complete absence of villi",
+              "Mucosal finger-like villi lined by enterocytes and central lacteals",
+              "Complete circular ring of lymphoid nodules occupying the entire circumference",
+              "Non-keratinized stratified squamous epithelium and submucosal mucous glands"
             ],
             "correctIndex": 0,
-            "explanation": "Criteria of Identification: Flat mucosal surface without villi, straight parallel crypts of Lieberkuhn densely lined by goblet cells, and outer longitudinal taeniae coli.",
-            "keyConcept": "Colon: absence of villi with straight parallel crypts densely populated by goblet cells.",
+            "explanation": "Criteria of Identification: Large intestine (colon) is distinguished by a flat luminal surface devoid of villi, containing long, straight, parallel mucosal crypts of Lieberkühn densely populated with mucus-secreting goblet cells.",
+            "keyConcept": "Colon: long straight mucosal crypts packed with goblet cells; villi and submucosal glands are absent.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/colon_crypts_lm.webp",
@@ -126,17 +126,17 @@
           {
             "id": "MGL3-CH301-HIST-0006",
             "type": "mcq",
-            "lecture": 2,
-            "text": "Examine this cross-section of a tubular gastrointestinal organ. Identify this specimen:",
+            "lecture": 1,
+            "text": "Examine this cross-section of a tubular gastrointestinal organ. Identify the characteristic diagnostic feature of this specimen:",
             "options": [
-              "Sigmoid colon",
-              "Vermiform appendix",
-              "Pyloric canal",
-              "Gallbladder"
+              "Peyer's patches restricted exclusively to the antimesenteric border",
+              "Complete uninterrupted circular ring of lymphoid follicles in the wall with a narrow stellate lumen",
+              "Submucosal branched tubuloacinar Brunner's glands",
+              "Deep mucosal crypts without lymphoid tissue and wide open circular lumen"
             ],
             "correctIndex": 1,
-            "explanation": "Criteria of Identification: Narrow, irregular star-shaped lumen, absent villi, shallow crypts, and a complete confluent ring of prominent lymphoid follicles effacing the submucosa.",
-            "keyConcept": "Appendix: narrow stellate lumen with a circumferential ring of prominent lymphoid follicles.",
+            "explanation": "Criteria of Identification: The vermiform appendix exhibits a small, irregular, stellate lumen and a continuous, confluent ring of lymphoid nodules occupying the lamina propria and submucosa around its entire circumference.",
+            "keyConcept": "Appendix: narrow stellate lumen with a continuous ring of lymphoid follicles in the mucosa and submucosa.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/appendix_lymphoid_lm.webp",
@@ -147,7 +147,7 @@
             "id": "MGL3-CH301-HIST-0007",
             "type": "mcq",
             "lecture": 2,
-            "text": "Examine this histological section from the dorsal lingual mucosa. Identify these pointed surface papillae:",
+            "text": "Examine this histological section of the dorsal lingual mucosa. Identify these pointed surface projections:",
             "options": [
               "Fungiform papillae",
               "Circumvallate papillae",
@@ -155,8 +155,8 @@
               "Foliate papillae"
             ],
             "correctIndex": 2,
-            "explanation": "Criteria of Identification: Pointed conical projections covered by keratinized stratified squamous epithelium, serving a mechanical role and uniquely lacking taste buds.",
-            "keyConcept": "Filiform papillae: pointed keratinized projections providing mechanical friction, devoid of taste buds.",
+            "explanation": "Criteria of Identification: Filiform papillae are the most abundant lingual papillae, recognized by their pointed, conical shape and covering of partially keratinized stratified squamous epithelium; they provide mechanical friction and lack taste buds.",
+            "keyConcept": "Filiform papillae: most numerous, pointed conical keratinized papillae lacking taste buds.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/tongue_filiform_lm.webp",
@@ -167,16 +167,16 @@
             "id": "MGL3-CH301-HIST-0008",
             "type": "mcq",
             "lecture": 2,
-            "text": "Examine this sagittal histological section showing a mucocutaneous transition. Identify this organ:",
+            "text": "Examine this sagittal histological section of the lip. Identify the three characteristic anatomical zones of this organ:",
             "options": [
-              "Eyelid (Palpebra)",
-              "Hard palate mucosa",
-              "Anal transition zone",
-              "Lip (Labium)"
+              "Outer keratinized epidermis, middle cartilaginous plate, and inner ciliated columnar mucosa",
+              "Outer non-keratinized mucosa, middle serous acini, and inner skeletal muscle core",
+              "Outer skin with sweat glands, middle fibrous septum, and inner stratified columnar mucosa",
+              "Outer skin with hair follicles, vermilion red margin, and inner oral mucosa with labial glands"
             ],
             "correctIndex": 3,
-            "explanation": "Criteria of Identification: External hairy skin, intermediate vermilion red margin with high vascular papillae and translucent stratum corneum, and internal oral mucosa over orbicularis oris.",
-            "keyConcept": "Lip: transition from external hairy skin to translucent vermilion margin and internal oral mucosa.",
+            "explanation": "Criteria of Identification: The lip displays a tripartite structure: an outer cutaneous surface (thin skin with hair follicles and sebaceous glands), a transitional vermilion border (tall vascular dermal papillae imparting red color), and an inner oral mucosal surface (thick non-keratinized stratified squamous epithelium with submucosal labial glands).",
+            "keyConcept": "Lip: skin surface (hair & sebaceous glands), vermilion red margin (tall dermal papillae), and mucosal surface (labial mucous glands).",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/lip_histology_lm.webp",
@@ -186,17 +186,17 @@
           {
             "id": "MGL3-CH301-HIST-0009",
             "type": "mcq",
-            "lecture": 3,
-            "text": "Examine this histological section of the gastric wall. Identify this specific anatomical region:",
+            "lecture": 2,
+            "text": "Examine this histological section of the gastric mucosa. Identify the characteristic mucosal architecture of this anatomical region:",
             "options": [
-              "Fundus and body of stomach",
-              "Pyloric region of stomach",
-              "Cardia region of stomach",
-              "Duodenal bulb mucosa"
+              "Short narrow gastric pits (occupying 1/4 of mucosal thickness) and long straight tubular fundic glands",
+              "Deep wide branched gastric pits (occupying 1/2 of mucosal thickness) and coiled mucous glands",
+              "Mucosal finger-like villi lined by enterocytes and goblet cells",
+              "Non-keratinized stratified squamous epithelium with submucosal mucous glands"
             ],
             "correctIndex": 0,
-            "explanation": "Criteria of Identification: Shallow gastric pits (1/4 of mucosal thickness) and straight tubular glands densely packed with acidophilic parietal cells and basophilic chief cells.",
-            "keyConcept": "Gastric fundus/body: shallow pits with straight glands rich in parietal and chief cells.",
+            "explanation": "Criteria of Identification: Gastric fundus/body exhibits shallow, narrow gastric pits occupying approximately one-fourth of the mucosal thickness, leading into long, straight, tightly packed tubular fundic glands containing abundant acid-producing parietal cells and enzyme-producing chief cells.",
+            "keyConcept": "Fundus / body of stomach: short narrow pits (1/4 mucosal depth) + straight tubular glands packed with parietal and chief cells.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/stomach_fundus_lm.webp",
@@ -206,17 +206,17 @@
           {
             "id": "MGL3-CH301-HIST-0010",
             "type": "mcq",
-            "lecture": 3,
-            "text": "Examine this gastric histological section. Identify this specific anatomical region:",
+            "lecture": 2,
+            "text": "Examine this histological section of the gastric mucosa. Identify the characteristic mucosal architecture of this anatomical region:",
             "options": [
-              "Fundus of stomach",
-              "Pylorus of stomach",
-              "Corpus of stomach",
-              "Esophageal junction"
+              "Short narrow gastric pits (occupying 1/4 of mucosal thickness) and straight tubular glands",
+              "Deep wide branched gastric pits (occupying 1/2 of mucosal thickness) and coiled branched mucous glands",
+              "Mucosal villi with submucosal branched tubuloacinar Brunner's glands",
+              "Absence of surface pits with deep crypts lined predominantly by goblet cells"
             ],
             "correctIndex": 1,
-            "explanation": "Criteria of Identification: Deep, branched gastric pits (extending 1/2 or more into mucosal depth) and branched, coiled tubular glands lined by pale mucus-secreting cells.",
-            "keyConcept": "Pylorus: deep branching gastric pits leading into coiled, mucus-secreting tubular glands.",
+            "explanation": "Criteria of Identification: Pyloric stomach is characterized by deep, wide, branched gastric pits extending through half or more of the mucosal thickness, leading into coiled, branched tubular pyloric glands that secrete protective alkaline mucus.",
+            "keyConcept": "Pylorus: deep wide branched pits (1/2 mucosal depth) + branched coiled mucous glands with mucus-secreting cells and G cells.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/stomach_pylorus_lm.webp",
@@ -227,16 +227,16 @@
             "id": "MGL3-CH301-HIST-0011",
             "type": "mcq",
             "lecture": 3,
-            "text": "Examine this histological section of liver parenchyma. Identify this structural unit:",
+            "text": "Examine this histological section of parenchymal digestive tissue. Identify this organ:",
             "options": [
-              "Portal lobule unit",
-              "Hepatic acinus of Rappaport",
-              "Classical liver lobule",
-              "Splenic red pulp cord"
+              "Pancreas",
+              "Spleen",
+              "Liver",
+              "Lymph node"
             ],
             "correctIndex": 2,
-            "explanation": "Criteria of Identification: Hexagonal structural prism centered on a terminal central venule, with radiating hepatocyte plates separated by vascular sinusoids toward portal triads.",
-            "keyConcept": "Classical liver lobule: hexagonal structural unit centered on a terminal central venule.",
+            "explanation": "Criteria of Identification: Liver parenchyma is organized into classic hexagonal lobules centered around a central vein, from which cords and plates of hepatocytes radiate outward, separated by vascular sinusoids and bounded peripherally by portal triads (portal vein branch, hepatic artery branch, bile ductule).",
+            "keyConcept": "Liver: classic hexagonal hepatic lobules centered on central veins with radiating plates of hepatocytes and peripheral portal triads.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/liver_lobule_lm.webp",
@@ -247,16 +247,16 @@
             "id": "MGL3-CH301-HIST-0012",
             "type": "mcq",
             "lecture": 3,
-            "text": "Examine this histological section of a hollow digestive organ wall. Identify this organ:",
+            "text": "Examine this histological section of the gallbladder wall. Identify the characteristic architectural feature of this organ:",
             "options": [
-              "Urinary bladder",
-              "Ampulla of ductus deferens",
-              "Uterine fallopian tube",
-              "Gallbladder"
+              "Flat mucosal lining, well-developed submucosa with mucous glands, and distinct muscularis mucosae",
+              "Stratified squamous epithelium, prominent muscularis mucosae, and thick submucosa",
+              "Mucosal villi, prominent submucosa with Brunner's glands, and serosa",
+              "Highly folded mucosa lined by simple columnar absorptive cells, complete absence of submucosa, and a fibromuscular coat"
             ],
             "correctIndex": 3,
-            "explanation": "Criteria of Identification: Highly folded mucosa lined by tall simple columnar epithelium with brush border, resting directly on a fibromuscular coat without muscularis mucosae or submucosa.",
-            "keyConcept": "Gallbladder: tall columnar epithelium with folded mucosa lacking muscularis mucosae and submucosa.",
+            "explanation": "Criteria of Identification: Gallbladder wall possesses prominent, branching mucosal rugae lined by tall simple columnar cells with microvilli; uniquely, it lacks a muscularis mucosae and submucosa, so the lamina propria rests directly against an irregular fibromuscular layer.",
+            "keyConcept": "Gallbladder: branched mucosal folds lined by tall simple columnar cells; lacks muscularis mucosae and lacks submucosa.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/liver_gallbladder_lm.webp",
@@ -267,16 +267,16 @@
             "id": "MGL3-CH301-HIST-0013",
             "type": "mcq",
             "lecture": 4,
-            "text": "Examine this histological section of a major salivary gland. Identify this gland:",
+            "text": "Examine this histological section of a major salivary gland. What is the characteristic secretory feature of this gland?",
             "options": [
-              "Submandibular gland",
-              "Parotid salivary gland",
-              "Sublingual salivary gland",
-              "Exocrine pancreas"
+              "Mixed seromucous gland with serous demilunes capping mucous acini and predominant serous units",
+              "Pure serous acinar gland with abundant fat cells and no mucous units",
+              "Pure mucous gland with flat basal nuclei and no serous elements",
+              "Endocrine cords separated by fenestrated capillaries without ducts"
             ],
             "correctIndex": 0,
-            "explanation": "Criteria of Identification: Mixed seromucous gland with serous predominance (~80%), crescentic serous demilunes of Giannuzzi capping mucous acini, and prominent striated ducts.",
-            "keyConcept": "Submandibular gland: serous-predominant mixed acini with classic demilunes of Giannuzzi.",
+            "explanation": "Criteria of Identification: Submandibular salivary gland is a compound tubuloacinar gland containing mixed secretory units, predominantly serous acini interspersed with mucous acini capped by crescentic serous demilunes (demilunes of Giannuzzi).",
+            "keyConcept": "Submandibular gland: mixed seromucous salivary gland with serous demilunes (crescents of Giannuzzi) and predominantly serous acini.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/submandibular_gland_lm.webp",
@@ -287,16 +287,16 @@
             "id": "MGL3-CH301-HIST-0014",
             "type": "mcq",
             "lecture": 4,
-            "text": "Examine this histological section of a parenchymal digestive organ. Identify this organ:",
+            "text": "Examine this histological section of the pancreas. What histological feature distinguishes it from the parotid salivary gland?",
             "options": [
-              "Parotid salivary gland",
-              "Pancreas",
-              "Submandibular gland",
-              "Thyroid gland tissue"
+              "Prominent striated intralobular ducts and abundant adipose tissue infiltration",
+              "Islets of Langerhans and centroacinar cells within serous acini, with absence of striated ducts",
+              "Serous demilunes capping mucous acini and branched excretory ducts",
+              "Submucosal tubuloacinar glands and lymphoid nodules"
             ],
             "correctIndex": 1,
-            "explanation": "Criteria of Identification: Purely serous secretory acini with intra-acinar centroacinar cells, absence of striated ducts, and pale endocrine Islets of Langerhans.",
-            "keyConcept": "Pancreas: purely serous acini with centroacinar cells and endocrine Islets of Langerhans.",
+            "explanation": "Criteria of Identification: The exocrine pancreas resembles the parotid gland in possessing pure serous acini, but is definitively distinguished by the presence of pale endocrine Islets of Langerhans, centroacinar cells extending into acinar lumina, and the complete absence of striated ducts.",
+            "keyConcept": "Pancreas: pure serous exocrine acini with centroacinar cells + endocrine Islets of Langerhans; lacks striated ducts.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/pancreas_islets_lm.webp",
@@ -306,8 +306,8 @@
           {
             "id": "MGL3-CH301-HIST-0015",
             "type": "mcq",
-            "lecture": 4,
-            "text": "In this high-resolution scanning electron micrograph (SEM) of the dorsal tongue, identify these surface papillae:",
+            "lecture": 5,
+            "text": "In this scanning electron micrograph (SEM) of the dorsal tongue, identify these pointed surface papillae:",
             "options": [
               "Fungiform papillae",
               "Circumvallate papillae",
@@ -315,8 +315,8 @@
               "Foliate papillae"
             ],
             "correctIndex": 2,
-            "explanation": "Criteria of Identification: Tapering conical, hook-like keratinized projections providing abrasive mechanical grip for food manipulation without taste receptors.",
-            "keyConcept": "Filiform papillae SEM: pointed mechanical projections forming an abrasive dorsal surface.",
+            "explanation": "Criteria of Identification: High-power scanning electron microscopy demonstrates the characteristic slender, claw-like conical architecture of filiform papillae covering the dorsal lingual surface.",
+            "keyConcept": "Filiform papillae (SEM): conical tapered keratinized surface projections lacking taste buds.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/sem_filiform_papillae.webp",
@@ -327,16 +327,16 @@
             "id": "MGL3-CH301-HIST-0016",
             "type": "mcq",
             "lecture": 5,
-            "text": "In this transmission electron micrograph (TEM) of an intraepithelial taste bud, identify the apical sensory opening:",
+            "text": "In this transmission electron micrograph (TEM), identify this intraepithelial sensory receptor:",
             "options": [
-              "Striated border canal",
-              "Bile canaliculus cleft",
-              "Junctional complex gate",
-              "Taste pore"
+              "Meissner's corpuscle",
+              "Pacinian corpuscle",
+              "Olfactory vesicle",
+              "Taste bud"
             ],
             "correctIndex": 3,
-            "explanation": "Criteria of Identification: Constricted apical mucosal opening through which microvilli of sensory gustatory cells contact dissolved chemical tastants.",
-            "keyConcept": "Taste pore: apical microvillar opening mediating chemical contact between tastants and gustatory receptors.",
+            "explanation": "Criteria of Identification: Transmission electron microscopy demonstrates an intraepithelial, barrel-shaped sensory end-organ spanning the epithelial thickness, composed of elongate supporting cells, gustatory sensory cells with apical microvilli, and basal stem cells.",
+            "keyConcept": "Taste bud (TEM): intraepithelial sensory end-organ with gustatory cells and apical microvilli reaching a taste pore.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/taste_bud_tem.webp",
@@ -347,16 +347,16 @@
             "id": "MGL3-CH301-HIST-0017",
             "type": "mcq",
             "lecture": 5,
-            "text": "Examine this transmission electron micrograph (TEM) of a salivary secretory unit. Identify this structure:",
+            "text": "In this transmission electron micrograph (TEM) of a salivary secretory unit, identify this structure:",
             "options": [
               "Mucous acinus",
               "Serous acinus",
               "Parietal oxyntic cell",
-              "Pancreatic acinar cell"
+              "Striated duct cell"
             ],
             "correctIndex": 0,
-            "explanation": "Criteria of Identification: Basally flattened heterochromatic nucleus compressed against basement membrane, with cytoplasm packed with electron-lucent mucinogen droplets.",
-            "keyConcept": "Mucous acinus TEM: basally flattened nucleus with electron-lucent, pale mucinogen droplets.",
+            "explanation": "Criteria of Identification: Mucous acinar cells show basally flattened, heterochromatic nuclei compressed against the basement membrane by abundant, crowded apical electron-lucent mucigen droplets.",
+            "keyConcept": "Mucous acinus (TEM): compressed flat basal nuclei + apical electron-lucent mucigen droplets.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/mucous_acinus_tem.webp",
@@ -367,16 +367,16 @@
             "id": "MGL3-CH301-HIST-0018",
             "type": "mcq",
             "lecture": 5,
-            "text": "Examine this transmission electron micrograph (TEM) of a salivary acinar cell. Identify this cell:",
+            "text": "In this transmission electron micrograph (TEM) of a salivary acinus, identify this cell type:",
             "options": [
               "Mucous acinar cell",
               "Serous acinar cell",
-              "Intestinal goblet cell",
-              "Enteroendocrine cell"
+              "Myoepithelial basket cell",
+              "Centroacinar duct cell"
             ],
             "correctIndex": 1,
-            "explanation": "Criteria of Identification: Rounded euchromatic basal nucleus, extensive parallel stacks of rough endoplasmic reticulum, and dense apical zymogen secretory granules.",
-            "keyConcept": "Serous acinus TEM: prominent basal rough ER stacks with apical electron-dense zymogen granules.",
+            "explanation": "Criteria of Identification: Serous acinar cells display a spherical, euchromatic basal nucleus, extensive parallel cisternae of rough endoplasmic reticulum (rER) in the basal cytoplasm, and prominent, spherical, electron-dense zymogen granules stored apically.",
+            "keyConcept": "Serous cell (TEM): round basal nucleus + extensive basal rER + apical electron-dense zymogen granules.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/serous_acinus_tem.webp",
@@ -387,16 +387,16 @@
             "id": "MGL3-CH301-HIST-0019",
             "type": "mcq",
             "lecture": 5,
-            "text": "Examine this transmission electron micrograph (TEM) of a gastric epithelial cell. Identify this cell:",
+            "text": "In this transmission electron micrograph (TEM) of a gastric gland cell, identify this cell type:",
             "options": [
-              "Chief (Peptic) cell",
+              "Chief (peptic) cell",
               "Mucous neck cell",
-              "Parietal (Oxyntic) cell",
-              "Enterochromaffin cell"
+              "Parietal (oxyntic) cell",
+              "Enterochromaffin-like cell"
             ],
             "correctIndex": 2,
-            "explanation": "Criteria of Identification: Deep intracellular secretory canaliculi lined by microvilli, tubulovesicular membrane system, and abundant mitochondria supplying ATP for H+/K+ ATPase pumps.",
-            "keyConcept": "Parietal cell TEM: deep intracellular secretory canaliculi, tubulovesicles, and dense mitochondria.",
+            "explanation": "Criteria of Identification: Parietal (oxyntic) cells are characterized by deep, branching intracellular secretory canaliculi lined by dense microvilli, a tubulovesicular membrane system, and an extraordinary abundance of large mitochondria with dense cristae required for active H+/K+-ATPase proton pumping.",
+            "keyConcept": "Parietal cell (TEM): intracellular canaliculi with microvilli + tubulovesicular system + abundant mitochondria.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/parietal_cell_tem.webp",
@@ -406,17 +406,17 @@
           {
             "id": "MGL3-CH301-HIST-0020",
             "type": "mcq",
-            "lecture": 5,
-            "text": "In this transmission electron micrograph (TEM) of gut epithelium, identify this sensory endocrine cell:",
+            "lecture": 6,
+            "text": "In this transmission electron micrograph (TEM) of intestinal epithelium, identify this neuroendocrine cell:",
             "options": [
-              "Closed-type enteroendocrine cell",
-              "Absorptive enterocyte cell",
-              "Crypt Paneth granule cell",
-              "Open-type enteroendocrine cell"
+              "Closed enteroendocrine cell",
+              "Paneth cell",
+              "Absorptive enterocyte",
+              "Open enteroendocrine cell"
             ],
             "correctIndex": 3,
-            "explanation": "Criteria of Identification: Reaches the intestinal lumen via apical microvilli acting as chemoreceptors, with basal neuroendocrine granules directed toward lamina propria capillaries.",
-            "keyConcept": "Open enteroendocrine cell: apical sensory microvilli sampling luminal contents with basal secretory granules.",
+            "explanation": "Criteria of Identification: Open enteroendocrine cells are bottle-shaped cells whose narrow apical process reaches the intestinal lumen with sensory microvilli (sampling luminal contents), while membrane-bound dense-core neurosecretory granules are polarized toward the basal lamina for paracrine release into capillaries.",
+            "keyConcept": "Open enteroendocrine cell (TEM): apical pole reaches lumen with sensory microvilli + basal dense-core granules.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/enteroendocrine_open_tem.webp",
@@ -426,17 +426,17 @@
           {
             "id": "MGL3-CH301-HIST-0021",
             "type": "mcq",
-            "lecture": 5,
-            "text": "In this transmission electron micrograph (TEM) of intestinal epithelium, identify this basal endocrine cell:",
+            "lecture": 6,
+            "text": "In this transmission electron micrograph (TEM) of gut epithelium, identify this neuroendocrine cell:",
             "options": [
-              "Closed-type enteroendocrine cell",
-              "Open-type enteroendocrine cell",
-              "Intestinal goblet cell",
-              "Parietal oxyntic cell"
+              "Closed enteroendocrine cell",
+              "Open enteroendocrine cell",
+              "Goblet cell",
+              "M-cell (microfold cell)"
             ],
             "correctIndex": 0,
-            "explanation": "Criteria of Identification: Rests along the basal lamina without apical luminal contact, responding to mechanical stretch or paracrine cues, with basal secretory granules.",
-            "keyConcept": "Closed enteroendocrine cell: basally situated endocrine cell lacking direct apical luminal contact.",
+            "explanation": "Criteria of Identification: Closed enteroendocrine cells rest directly upon the basal lamina and do not extend to the mucosal lumen, responding primarily to mechanical stretch or neurocrine signals and storing secretory granules in their basal cytoplasm.",
+            "keyConcept": "Closed enteroendocrine cell (TEM): rests on basement membrane without contacting the intestinal lumen.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/enteroendocrine_closed_tem.webp",
@@ -447,16 +447,16 @@
             "id": "MGL3-CH301-HIST-0022",
             "type": "mcq",
             "lecture": 6,
-            "text": "In this transmission electron micrograph (TEM) between adjacent hepatocytes, identify this intercellular channel:",
+            "text": "In this transmission electron micrograph (TEM) between adjacent hepatocytes, identify this intercellular conduit:",
             "options": [
-              "Sinusoidal capillary lumen",
+              "Space of Disse",
               "Bile canaliculus",
-              "Perisinusoidal space of Disse",
-              "Terminal central venule"
+              "Hepatic sinusoid lumen",
+              "Periductal lymph vessel"
             ],
             "correctIndex": 1,
-            "explanation": "Criteria of Identification: Intercellular channel formed by plasma membranes of adjacent hepatocytes, lined by short microvilli and sealed by tight junctional complexes (zonulae occludentes).",
-            "keyConcept": "Bile canaliculus: intercellular bile channel sealed by tight junctions between adjacent hepatocytes.",
+            "explanation": "Criteria of Identification: The bile canaliculus is an intercellular channel formed by apposed plasma membranes of adjacent hepatocytes, sealed by tight junctional complexes (zonulae occludentes) and containing short, projecting microvilli into its lumen.",
+            "keyConcept": "Bile canaliculus (TEM): intercellular groove between hepatocytes sealed by tight junctions with microvilli.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/bile_canaliculus_tem.webp",
@@ -467,16 +467,16 @@
             "id": "MGL3-CH301-HIST-0023",
             "type": "mcq",
             "lecture": 6,
-            "text": "In this transmission electron micrograph (TEM) of hepatic parenchyma, identify this perisinusoidal compartment:",
+            "text": "In this transmission electron micrograph (TEM) of hepatic parenchyma, identify this subendothelial compartment:",
             "options": [
-              "Canal of Hering lumen",
-              "Interlobular bile duct",
-              "Perisinusoidal space of Disse",
-              "Subcapsular hepatic cleft"
+              "Bile canaliculus",
+              "Sinusoidal lumen",
+              "Space of Disse",
+              "Portal canal of Hering"
             ],
             "correctIndex": 2,
-            "explanation": "Criteria of Identification: Sub-endothelial gap between fenestrated sinusoidal endothelial cells and hepatocyte microvilli, containing fat- and vitamin A-storing Ito (hepatic stellate) cells.",
-            "keyConcept": "Space of Disse: perisinusoidal microvillar compartment containing vitamin A-storing Ito cells.",
+            "explanation": "Criteria of Identification: The perisinusoidal space of Disse is the extracellular microenvironment between sinusoidal endothelial cells and hepatocyte microvillar basolateral surfaces; it contains blood plasma, reticular fiber meshwork, and fat-storing hepatic stellate (Ito) cells.",
+            "keyConcept": "Space of Disse (TEM): perisinusoidal compartment containing hepatocyte microvilli and Ito cells.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/space_of_disse_tem.webp",
@@ -489,14 +489,14 @@
             "lecture": 6,
             "text": "In this scanning electron micrograph (SEM) of hepatic sinusoidal endothelium, identify these clustered fenestrations:",
             "options": [
-              "Basal infoldings canaliculi",
-              "Canaliculi of Hering",
-              "Macula adherens desmosomes",
+              "Tight junctional belts",
+              "Desmosomal plaques",
+              "Gap junction arrays",
               "Endothelial sieve plates"
             ],
             "correctIndex": 3,
-            "explanation": "Criteria of Identification: Grouped transcellular fenestrations lacking diaphragms organized into sieve plates, facilitating macromolecular exchange with the space of Disse.",
-            "keyConcept": "Sieve plates: clustered sinusoidal endothelial fenestrations facilitating macromolecular hepatic exchange.",
+            "explanation": "Criteria of Identification: Hepatic sinusoidal endothelial cells display clustered, transcellular pores (fenestrae) lacking diaphragms, grouped together into sieve plates that permit bidirectional macromolecular exchange between sinusoidal blood and hepatocyte microvilli.",
+            "keyConcept": "Endothelial sieve plates (SEM): clustered transcellular fenestrae lacking diaphragms in sinusoidal lining.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/sinusoid_sieve_plates_sem.webp",
@@ -507,16 +507,16 @@
             "id": "MGL3-CH301-HIST-0025",
             "type": "mcq",
             "lecture": 6,
-            "text": "In this transmission electron micrograph (TEM) of pancreatic tissue, identify these apical secretory organelles:",
+            "text": "In this transmission electron micrograph (TEM) of a pancreatic exocrine cell, identify these apical electron-dense organelles:",
             "options": [
-              "Zymogen secretory granules",
-              "Mucinogen pale droplets",
-              "Secondary lipofuscin granules",
-              "Glycogen storage rosettes"
+              "Zymogen granules",
+              "Mitochondria with tubular cristae",
+              "Lipid storage droplets",
+              "Multivesicular lysosomes"
             ],
             "correctIndex": 0,
-            "explanation": "Criteria of Identification: Round, electron-dense membrane-bound apical granules storing digestive proenzymes (trypsinogen, chymotrypsinogen, amylase) awaiting exocytosis.",
-            "keyConcept": "Zymogen granules: electron-dense apical secretory organelles storing proenzyme digestive cascades.",
+            "explanation": "Criteria of Identification: Pancreatic acinar cells store digestive proenzymes within large, spherical, membrane-bound, intensely electron-dense zymogen granules clustered in the apical cytoplasm awaiting cholecystokinin-stimulated exocytosis.",
+            "keyConcept": "Zymogen granules (TEM): apical membrane-bound electron-dense condensing vacuoles containing proenzymes.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/pancreatic_acinar_tem.webp",
@@ -527,16 +527,16 @@
             "id": "MGL3-CH301-HIST-0026",
             "type": "mcq",
             "lecture": 6,
-            "text": "In this transmission electron micrograph (TEM) of the enterocyte apical pole, identify this specialized surface border:",
+            "text": "In this transmission electron micrograph (TEM) of an absorptive intestinal cell, identify this apical surface specialization:",
             "options": [
-              "Motile ciliary apparatus",
-              "Striated (Brush) border",
-              "Stereociliary projections",
-              "Basolateral interdigitations"
+              "Motile respiratory cilia",
+              "Striated (brush) border / microvilli",
+              "Epididymal stereocilia",
+              "Basolateral membrane infoldings"
             ],
             "correctIndex": 1,
-            "explanation": "Criteria of Identification: Dense, parallel cylindrical microvilli anchored into the underlying actin-rich terminal web, multiplying absorptive surface area 20-fold.",
-            "keyConcept": "Striated border: dense parallel microvilli anchored to terminal web, dramatically increasing absorptive surface.",
+            "explanation": "Criteria of Identification: The enterocyte striated border consists of thousands of parallel, closely packed, cylindrical microvilli (~1 µm tall) containing central axial bundles of cross-linked actin microfilaments anchored into the terminal web.",
+            "keyConcept": "Striated border (TEM): dense array of parallel microvilli containing actin cores anchored into terminal web.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/striated_border_tem.webp",
@@ -547,16 +547,16 @@
             "id": "MGL3-CH301-HIST-0027",
             "type": "mcq",
             "lecture": 6,
-            "text": "In this transmission electron micrograph (TEM) of intestinal epithelium, identify this mucus-secreting cell:",
+            "text": "In this transmission electron micrograph (TEM) of intestinal epithelium, identify this unicellular mucus-secreting gland:",
             "options": [
-              "Paneth cell of Lieberkuhn",
-              "Enteroendocrine cell",
-              "Intestinal goblet cell",
-              "Absorptive columnar cell"
+              "Paneth cell",
+              "Absorptive enterocyte",
+              "Goblet cell",
+              "Tuft (brush) cell"
             ],
             "correctIndex": 2,
-            "explanation": "Criteria of Identification: Polarized unicellular gland with narrow basal stem and expanded apical theca filled with electron-lucent mucinogen granules that lubricate the mucosa.",
-            "keyConcept": "Goblet cell: apical cup filled with mucinogen granules providing protective lubricating mucosal barrier.",
+            "explanation": "Criteria of Identification: Goblet cells exhibit a characteristic cup- or chalice-shaped apical theca packed with pale, coalescing, electron-lucent mucinogen granules, resting upon a narrow stem containing a flattened basal nucleus and prominent Golgi apparatus.",
+            "keyConcept": "Goblet cell (TEM): apical theca packed with electron-lucent mucigen droplets + basal stem with compressed nucleus.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/goblet_cell_tem.webp",
@@ -567,16 +567,16 @@
             "id": "MGL3-CH301-HIST-0028",
             "type": "mcq",
             "lecture": 6,
-            "text": "In this transmission electron micrograph (TEM) of an intestinal crypt base, identify these granule-filled cells:",
+            "text": "In this transmission electron micrograph (TEM) at the base of an intestinal crypt, identify these cells:",
             "options": [
-              "Chief peptic cells",
-              "Parietal oxyntic cells",
-              "Mucous neck cells",
+              "Basal stem cells",
+              "Enteroendocrine cells",
+              "Plasma cells",
               "Paneth cells"
             ],
             "correctIndex": 3,
-            "explanation": "Criteria of Identification: Pyramidal cells residing at the base of crypts of Lieberkuhn containing large, intensely electron-dense apical granules discharging lysozyme, defensins, and zinc.",
-            "keyConcept": "Paneth cells: crypt-base cells with prominent antimicrobial granules secreting lysozyme and defensins.",
+            "explanation": "Criteria of Identification: Paneth cells reside at the base of crypts of Lieberkühn and are recognized by their pyramidal shape and prominent, large, spherical, intensely electron-dense apical secretory granules containing antimicrobial lysozyme, defensins (cryptdins), and TNF-alpha.",
+            "keyConcept": "Paneth cells (TEM): crypt base cells packed with large, electron-dense apical antibacterial/lysozyme granules.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/histology/paneth_cells_tem.webp",
@@ -591,7 +591,7 @@
     "id": 302,
     "title": "Practical — Pathology",
     "subtitle": "Gross Pathology Museum Jars & Histopathology",
-    "emoji": "🧫",
+    "emoji": "🧪",
     "page": 457,
     "lectureRange": "Stations 1–6",
     "bankSection": "practical",
@@ -603,7 +603,7 @@
         "lectures": "Stations 1–6",
         "lectureCount": 6,
         "lectureNames": [
-          "Barrett Esophagus & Dysplasia",
+          "Barrett Esophagus & Metaplasia",
           "Pleomorphic Adenoma & Salivary Tumors",
           "Warthin Tumor Histopathology",
           "Liver Cirrhosis (Masson Trichrome)",
@@ -615,108 +615,120 @@
             "id": "MGL3-CH302-PATH-0001",
             "type": "mcq",
             "lecture": 1,
-            "text": "This endoscopic biopsy from the distal esophagus of a patient with chronic reflux demonstrates epithelial replacement. What is the pathognomonic diagnostic finding?",
+            "text": "Examine this endoscopic esophageal biopsy stained with H&E. Identify this pathological condition:",
             "options": [
-              "Columnar intestinal metaplasia containing alcian blue-positive goblet cells",
-              "Severe squamous cell dysplasia with intact underlying basal membrane",
-              "Eosinophilic microabscesses without glandular or goblet cell conversion",
-              "Dense submucosal lymphoid follicles with reactive germinal centers"
+              "Barrett esophagus (intestinal metaplasia with goblet cells)",
+              "Squamous cell carcinoma of the esophagus",
+              "Candida esophagitis with fungal pseudohyphae",
+              "Reflux esophagitis without metaplasia"
             ],
             "correctIndex": 0,
-            "explanation": "Barrett esophagus is defined histologically by intestinal metaplasia where normal squamous epithelium is replaced by columnar cells containing true goblet cells, conferring risk for adenocarcinoma.",
-            "keyConcept": "Barrett esophagus: intestinal metaplasia with true goblet cells above GE junction.",
+            "explanation": "Criteria of Identification: Barrett esophagus is defined by intestinal columnar metaplasia where normal stratified squamous epithelium is replaced by columnar cells containing alcian blue-positive mucin-filled goblet cells, conferring risk of esophageal adenocarcinoma.",
+            "keyConcept": "Barrett esophagus: intestinal columnar metaplasia with true goblet cells in distal esophagus.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/pathology/barretts_esophagus_he.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/pathology/barretts_esophagus_he.webp",
+              "caption": "Practical Spotter Examination — Station 1"
             }
           },
           {
             "id": "MGL3-CH302-PATH-0002",
             "type": "mcq",
             "lecture": 2,
-            "text": "Examine this section from a benign parotid neoplasm (pleomorphic adenoma). What dual histological components define this mixed tumor?",
+            "text": "Examine this histopathological section of a benign parotid salivary neoplasm. Identify this tumor:",
             "options": [
-              "Bilayered oncocytic columnar cells overlying dense lymphoid stroma",
-              "Solid sheets of poorly differentiated clear cells with vascular invasion",
-              "Sheets of mature signet ring cells filled with abundant intracellular mucin",
-              "Epithelial ductal structures embedded in myxoid and chondroid stroma"
+              "Warthin tumor (papillary cystadenoma lymphomatosum)",
+              "Pleomorphic adenoma (benign mixed tumor)",
+              "Mucoepidermoid carcinoma",
+              "Adenoid cystic carcinoma"
             ],
-            "correctIndex": 3,
-            "explanation": "Pleomorphic adenoma (mixed tumor) displays epithelial ductal structures and sheets intermingled with myxoid, chondroid, or fibrous mesenchymal-like stroma elaborated by neoplastic myoepithelial cells.",
-            "keyConcept": "Pleomorphic adenoma = epithelial ducts embedded in myxochondroid matrix.",
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Pleomorphic adenoma is a benign mixed salivary gland tumor displaying a characteristic biphasic pattern: epithelial/myoepithelial ductal structures and sheets intermingled with loose myxoid, chondroid, or fibrous mesenchymal-like stroma.",
+            "keyConcept": "Pleomorphic adenoma: epithelial ductal elements embedded within myxochondroid mesenchymal-like stroma.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/pathology/pleomorphic_adenoma_he.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/pathology/pleomorphic_adenoma_he.webp",
+              "caption": "Practical Spotter Examination — Station 2"
             }
           },
           {
             "id": "MGL3-CH302-PATH-0003",
             "type": "mcq",
             "lecture": 3,
-            "text": "This photomicrograph demonstrates Warthin tumor (papillary cystadenoma lymphomatosum). What microscopic architecture establishes the diagnosis?",
+            "text": "Examine this histopathological section of a cystic parotid tumor with lymphoid stroma. Identify this neoplasm:",
             "options": [
-              "Malignant stratified squamous islands surrounded by marked desmoplasia",
-              "Acellular laminated chitinous membranes with calcified brood capsules",
-              "Bilayered oncocytic epithelium lining cysts over lymphoid stroma with follicles",
-              "Mucin-secreting signet ring cells infiltrating the parotid gland capsule"
+              "Pleomorphic adenoma",
+              "Oncocytoma",
+              "Warthin tumor (papillary cystadenoma lymphomatosum)",
+              "Acinic cell carcinoma"
             ],
             "correctIndex": 2,
-            "explanation": "Warthin tumor consists of cystic spaces with papillary foldings lined by a uniform double layer of pink oncocytic columnar cells resting upon a dense lymphoid stroma with germinal centers.",
-            "keyConcept": "Warthin tumor: bilayered oncocytic epithelium + lymphoid stroma with germinal centers.",
+            "explanation": "Criteria of Identification: Warthin tumor consists of cystic spaces with papillary projections lined by a uniform double layer of pink oncocytic columnar cells with eosinophilic granular cytoplasm, resting upon a dense lymphoid stroma with lymphoid follicles and germinal centers.",
+            "keyConcept": "Warthin tumor: bilayered oncocytic epithelium lining cysts over dense lymphoid stroma with germinal centers.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/pathology/warthin_tumor_he.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/pathology/warthin_tumor_he.webp",
+              "caption": "Practical Spotter Examination — Station 3"
             }
           },
           {
             "id": "MGL3-CH302-PATH-0004",
             "type": "mcq",
             "lecture": 4,
-            "text": "This liver biopsy stained with Masson trichrome demonstrates blue-staining fibrous bands. What pathological triad defines liver cirrhosis?",
+            "text": "Examine this liver biopsy stained with Masson's trichrome demonstrating blue-staining fibrous septa. Identify this pathological condition:",
             "options": [
-              "Diffuse bridging fibrosis, architectural disruption, and regenerative nodules",
-              "Focal portal triaditis, central vein thrombosis, and preserved liver plates",
-              "Centrilobular macrovesicular steatosis without significant fibrous septation",
-              "Non-caseating granulomas with complete preservation of lobular architecture"
+              "Acute viral hepatitis with spotty lobular necrosis",
+              "Non-alcoholic fatty liver disease (steatohepatitis)",
+              "Centrilobular passive hepatic congestion",
+              "Liver cirrhosis (with regenerative nodule formation)"
             ],
-            "correctIndex": 0,
-            "explanation": "Cirrhosis is defined pathologically by diffuse bridging fibrosis (blue on Masson trichrome), complete loss of normal lobular architecture, and parenchymal nodular regeneration.",
-            "keyConcept": "Cirrhosis triad: diffuse fibrosis + regenerative nodules + architectural disruption.",
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Cirrhosis is defined by diffuse bridging fibrous septa (staining bright blue with Masson trichrome) encircling hepatocyte clusters, causing complete disruption of normal lobular architecture and formation of regenerative parenchymal nodules.",
+            "keyConcept": "Cirrhosis: diffuse bridging fibrous septa (blue on MT) + architectural distortion + parenchymal regenerative nodules.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/pathology/liver_cirrhosis_masson_trichrome.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/pathology/liver_cirrhosis_masson_trichrome.webp",
+              "caption": "Practical Spotter Examination — Station 4"
             }
           },
           {
             "id": "MGL3-CH302-PATH-0005",
             "type": "mcq",
             "lecture": 5,
-            "text": "A patient with cirrhosis develops a liver mass showing malignant hepatocytes. Which histological feature confirms hepatocellular carcinoma (HCC)?",
+            "text": "Examine this malignant hepatic neoplasm occurring on a background of cirrhosis. Identify this tumor:",
             "options": [
-              "Orderly single-cell thick cords bordered by normal sinusoidal endothelial cells",
-              "Malignant glandular tubules producing abundant intracytoplasmic mucin",
-              "Small uniform round blue neuroendocrine cells with salt-and-pepper chromatin",
-              "Markedly thickened liver cell trabeculae (>3 cells thick) with atypical mitoses"
+              "Hepatocellular carcinoma (HCC)",
+              "Cholangiocarcinoma",
+              "Cavernous hemangioma",
+              "Hepatic focal nodular hyperplasia"
             ],
-            "correctIndex": 3,
-            "explanation": "Hepatocellular carcinoma (HCC) is characterized by loss of reticulin framework, markedly thickened trabeculae (>3 cells thick), pseudoacinar architecture, pleomorphic nuclei, and atypical mitoses.",
-            "keyConcept": "HCC: thick trabeculae (>3 cells), nuclear atypia, and loss of reticulin network.",
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: Hepatocellular carcinoma (HCC) is characterized by malignant hepatocytes arranged in thickened trabeculae (>3 cells thick), loss of reticulin network, nuclear pleomorphism, atypical mitoses, and pseudoacinar glandular structures.",
+            "keyConcept": "HCC: thickened hepatocyte trabeculae (>3 cells), loss of reticulin framework, and marked nuclear atypia.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/pathology/hcc_on_cirrhosis_he.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/pathology/hcc_on_cirrhosis_he.webp",
+              "caption": "Practical Spotter Examination — Station 5"
             }
           },
           {
             "id": "MGL3-CH302-PATH-0006",
             "type": "mcq",
             "lecture": 6,
-            "text": "Examine this hepatic bilharziasis specimen (Symmers clay-pipe-stem fibrosis). What distinguishes schistosomal hepatic fibrosis from true cirrhosis?",
+            "text": "Examine this gross liver section showing dense white periportal fibrosis around portal tracts. Identify this chronic hepatic condition:",
             "options": [
-              "Widespread hepatocellular necrosis with diffuse micro-nodular regeneration",
-              "Preservation of normal lobular architecture and absence of regenerative nodules",
-              "Severe diffuse macrovesicular fatty change affecting all lobular zones",
-              "Primary obliteration of major hepatic veins with centrilobular congestion"
+              "Micronodular alcoholic cirrhosis (Laennec's cirrhosis)",
+              "Schistosomal periportal (Symmers clay-pipe-stem) fibrosis",
+              "Primary biliary cholangitis",
+              "Budd-Chiari syndrome (hepatic vein thrombosis)"
             ],
             "correctIndex": 1,
-            "explanation": "In Symmers clay-pipe-stem fibrosis, granulomatous and dense fibrosis is restricted to periportal spaces, while lobular architecture and central veins are preserved without regenerative nodules.",
-            "keyConcept": "Symmers fibrosis: periportal fibrosis with preserved lobular architecture (non-cirrhotic).",
+            "explanation": "Criteria of Identification: Symmers clay-pipe-stem fibrosis is caused by Schistosoma mansoni ova embolizing into portal venules, inciting intense granulomatous inflammation and dense pipe-stem fibrosis confined to periportal spaces, while preserving hepatic lobular architecture without regenerative nodules.",
+            "keyConcept": "Symmers fibrosis: periportal fibrosis with preserved lobular architecture and absence of nodular regeneration.",
             "media": {
-              "imageUrl": "/images/practical/mgl-3/pathology/schistosomal_clay_pipe_stem_fibrosis.webp"
+              "type": "image",
+              "imageUrl": "/images/practical/mgl-3/pathology/schistosomal_clay_pipe_stem_fibrosis.webp",
+              "caption": "Practical Spotter Examination — Station 6"
             }
           }
         ]
@@ -758,11 +770,11 @@
             "text": "Examine this whole-mount microscopic slide of an adult trematode. Identify this parasite:",
             "options": [
               "Fasciolopsis buski (Adult)",
-              "Fasciola hepatica (Adult)",
               "Heterophyes heterophyes (Adult)",
+              "Fasciola hepatica (Adult)",
               "Schistosoma mansoni (Adult)"
             ],
-            "correctIndex": 1,
+            "correctIndex": 2,
             "explanation": "Criteria of Identification: Large flat leaf-like body (20–30 mm) with distinct anterior cone and wide shoulders; intestinal ceca with extensive lateral and medial branching; dendritic tandem testes; habitat in hepatic bile ducts.",
             "keyConcept": "Fasciola hepatica adult: cephalic cone, distinct shoulders, highly branched ceca and dendritic testes.",
             "media": {
@@ -779,10 +791,10 @@
             "options": [
               "Enterobius vermicularis (Adult)",
               "Ancylostoma duodenale (Adult)",
-              "Trichuris trichiura (Whipworm adult)",
-              "Strongyloides stercoralis (Adult)"
+              "Strongyloides stercoralis (Adult)",
+              "Trichuris trichiura (Whipworm adult)"
             ],
-            "correctIndex": 2,
+            "correctIndex": 3,
             "explanation": "Criteria of Identification: Whip-like shape with thin capillary anterior 3/5 (containing stichosome esophagus) and stout posterior 2/5 housing reproductive organs; male posterior is coiled 360 degrees with a single spicule; habitat in cecum.",
             "keyConcept": "Trichuris trichiura adult: whip-like body with attenuated anterior 3/5 (stichosome) and stout posterior 2/5.",
             "media": {
@@ -797,12 +809,12 @@
             "lecture": 1,
             "text": "Examine this dioecious blood fluke slide. Identify these adult parasites:",
             "options": [
+              "Schistosoma mansoni (Adults in copula)",
               "Fasciola gigantica (Adult)",
               "Heterophyes heterophyes (Adult)",
-              "Taenia saginata (Adult fluke)",
-              "Schistosoma mansoni (Adults in copula)"
+              "Taenia saginata (Adult fluke)"
             ],
-            "correctIndex": 3,
+            "correctIndex": 0,
             "explanation": "Criteria of Identification: Dioecious trematodes; male is stout (6–12 mm) with dorsal tuberculations and ventral gynaecophoric canal; female is slender, cylindrical (7–17 mm) carried within the canal; habitat in mesenteric venules.",
             "keyConcept": "Schistosoma mansoni adults: tuberculated male with ventral gynaecophoric canal enclosing slender female.",
             "media": {
@@ -817,12 +829,12 @@
             "lecture": 1,
             "text": "Examine this adult female roundworm specimen. Identify this species:",
             "options": [
-              "Enterobius vermicularis (Pinworm female)",
               "Ascaris lumbricoides (Female)",
+              "Enterobius vermicularis (Pinworm female)",
               "Trichuris trichiura (Female)",
               "Necator americanus (Female)"
             ],
-            "correctIndex": 0,
+            "correctIndex": 1,
             "explanation": "Criteria of Identification: Small white spindle-shaped worm (8–13 mm); lateral cuticular cephalic alae; characteristic muscular double-bulb esophagus; long, straight, pointed pin-like tail forming 1/3 of body length; habitat in cecum/perianal.",
             "keyConcept": "Enterobius vermicularis female: cephalic alae, double-bulb esophagus, and sharp pointed pin-like tail.",
             "media": {
@@ -838,11 +850,11 @@
             "text": "Examine this minute adult tapeworm (3-6 mm). Identify this species:",
             "options": [
               "Hymenolepis nana (Adult)",
-              "Echinococcus granulosus (Adult)",
               "Taenia solium (Adult)",
+              "Echinococcus granulosus (Adult)",
               "Diphyllobothrium latum (Adult)"
             ],
-            "correctIndex": 1,
+            "correctIndex": 2,
             "explanation": "Criteria of Identification: Minute cyclophyllidean cestode (3–6 mm); scolex with 4 suckers and rostellum with double row of hooks; strobila contains only 3–4 proglottids, terminal gravid proglottid exceeds half the worm length; habitat in canine small bowel.",
             "keyConcept": "Echinococcus granulosus adult: tiny 3–4 segmented tapeworm with armed scolex and massive gravid proglottid.",
             "media": {
@@ -859,10 +871,10 @@
             "options": [
               "Metagonimus yokogawai (Adult)",
               "Fasciolopsis buski (Adult)",
-              "Heterophyes heterophyes (Adult)",
-              "Clonorchis sinensis (Adult)"
+              "Clonorchis sinensis (Adult)",
+              "Heterophyes heterophyes (Adult)"
             ],
-            "correctIndex": 2,
+            "correctIndex": 3,
             "explanation": "Criteria of Identification: Minute pyriform body (1.0–1.7 mm); scaly spine-bearing cuticle; three suckers: oral, ventral, and a sublateral genital sucker (gonotyl) bearing 70–80 chitinous teeth; two oval testes at posterior end; habitat in small intestine.",
             "keyConcept": "Heterophyes heterophyes adult: minute pear-shaped fluke with three suckers including a rodlet-armed gonotyl.",
             "media": {
@@ -877,12 +889,12 @@
             "lecture": 2,
             "text": "In this high-power micrograph of a hookworm buccal capsule, identify the genus shown:",
             "options": [
+              "Ancylostoma duodenale",
               "Necator americanus",
               "Strongyloides stercoralis",
-              "Trichuris trichiura",
-              "Ancylostoma duodenale"
+              "Trichuris trichiura"
             ],
-            "correctIndex": 3,
+            "correctIndex": 0,
             "explanation": "Criteria of Identification: Heavily chitinized oval buccal capsule bearing two pairs of curved ventral teeth on upper border (vs. semilunar cutting plates in Necator); male copulatory bursa supported by tripartite dorsal ray; habitat in duodenum/jejunum.",
             "keyConcept": "Ancylostoma duodenale buccal capsule: two pairs of sharp, curved ventral teeth on the anterior margin.",
             "media": {
@@ -897,12 +909,12 @@
             "lecture": 2,
             "text": "Examine this microscopic parasitic female nematode. Identify this species:",
             "options": [
-              "Strongyloides stercoralis (Parasitic female)",
               "Enterobius vermicularis (Female)",
+              "Strongyloides stercoralis (Parasitic female)",
               "Trichinella spiralis (Female)",
               "Ancylostoma duodenale (Female)"
             ],
-            "correctIndex": 0,
+            "correctIndex": 1,
             "explanation": "Criteria of Identification: Slender transparent nematode (2.2 mm); long cylindrical esophagus without bulb extending 1/3 of body length; divergent (amphidelphic) uterus containing a single row of 5–8 thin-shelled eggs; habitat in duodenal mucosa.",
             "keyConcept": "Strongyloides stercoralis female: microscopic parthenogenetic nematode with long filariform esophagus.",
             "media": {
@@ -918,11 +930,11 @@
             "text": "Examine this cestode scolex under the microscope. Identify this species:",
             "options": [
               "Taenia saginata (Unarmed scolex)",
-              "Taenia solium (Armed scolex)",
               "Diphyllobothrium latum (Bothria)",
+              "Taenia solium (Armed scolex)",
               "Hymenolepis diminuta (Scolex)"
             ],
-            "correctIndex": 1,
+            "correctIndex": 2,
             "explanation": "Criteria of Identification: Globular quadrate scolex (1 mm) with 4 hemispherical suckers and a rounded rostellum armed with a double crown of 22–32 hooks (armed scolex; vs. unarmed T. saginata lacking rostellum/hooks).",
             "keyConcept": "Taenia solium scolex: quadrate armed scolex with 4 suckers and a double row of rostellar hooklets.",
             "media": {
@@ -939,10 +951,10 @@
             "options": [
               "Taenia saginata (Mature segment)",
               "Taenia solium (Mature segment)",
-              "Diphyllobothrium latum (Mature segment)",
-              "Dipylidium caninum (Segment)"
+              "Dipylidium caninum (Segment)",
+              "Diphyllobothrium latum (Mature segment)"
             ],
-            "correctIndex": 2,
+            "correctIndex": 3,
             "explanation": "Criteria of Identification: Transversely elongated proglottid (broader than long); centrally located dark rosette-like coiled uterus; central uterine pore (tocostome) discharging unembryonated operculated eggs; lateral follicular vitellaria.",
             "keyConcept": "Diphyllobothrium latum mature segment: broader than long with a diagnostic central rosette-shaped uterus.",
             "media": {
@@ -957,12 +969,12 @@
             "lecture": 3,
             "text": "Examine this stained gravid tapeworm proglottid. Identify this species:",
             "options": [
+              "Taenia saginata (Gravid proglottid)",
               "Taenia solium (Gravid proglottid)",
               "Diphyllobothrium latum (Gravid)",
-              "Hymenolepis nana (Gravid)",
-              "Taenia saginata (Gravid proglottid)"
+              "Hymenolepis nana (Gravid)"
             ],
-            "correctIndex": 3,
+            "correctIndex": 0,
             "explanation": "Criteria of Identification: Elongated rectangular proglottid (longer than broad); central uterine trunk with 15–30 main lateral branches on each side branching dichotomously (tree-like); actively motile, crawls out singly through anus.",
             "keyConcept": "Taenia saginata gravid segment: 15–30 lateral main uterine branches per side branching dichotomously.",
             "media": {
@@ -977,12 +989,12 @@
             "lecture": 3,
             "text": "Examine this larval trematode stage. Identify this cercaria:",
             "options": [
-              "Furcocercus cercaria of Schistosoma",
               "Leptocercus cercaria of Fasciola",
+              "Furcocercus cercaria of Schistosoma",
               "Microcercous cercaria of Paragonimus",
               "Lophocercous cercaria of Clonorchis"
             ],
-            "correctIndex": 0,
+            "correctIndex": 1,
             "explanation": "Criteria of Identification: Forked-tailed (furcocercus) cercaria; body has oral sucker, ventral acetabulum, and cephalic penetration glands; tail stem divides into two distal furcae; infective stage to humans via transcutaneous penetration.",
             "keyConcept": "Furcocercus cercaria: forked-tailed cercaria of Schistosoma penetrating unbroken human skin in freshwater.",
             "media": {
@@ -998,11 +1010,11 @@
             "text": "Examine this larval cestode bladder worm. Identify this stage:",
             "options": [
               "Cysticercus cellulosae",
-              "Cysticercus bovis",
               "Hydatid cyst of Echinococcus",
+              "Cysticercus bovis",
               "Cenurus cerebralis larva"
             ],
-            "correctIndex": 1,
+            "correctIndex": 2,
             "explanation": "Criteria of Identification: Oval translucent bladder (7–10 mm) containing fluid and an invaginated scolex with 4 suckers and NO rostellum or hooks (unarmed); larval stage of Taenia saginata in cattle striated muscle.",
             "keyConcept": "Cysticercus bovis: unarmed larval cyst of Taenia saginata encysted in beef skeletal muscle.",
             "media": {
@@ -1019,10 +1031,10 @@
             "options": [
               "Inner germinal endocyst layer",
               "Outer host fibrous pericyst",
-              "Laminated ectocyst layer",
-              "Brood capsule cellular wall"
+              "Brood capsule cellular wall",
+              "Laminated ectocyst layer"
             ],
-            "correctIndex": 2,
+            "correctIndex": 3,
             "explanation": "Criteria of Identification: Acellular, chitinous, refractile layer with parallel concentric striations (laminated membrane / ectocyst); secreted by the inner cellular germinal layer (endocyst); non-nucleated elastic supportive barrier.",
             "keyConcept": "Hydatid ectocyst: thick, acellular, concentrically laminated cuticular membrane of Echinococcus granulosus.",
             "media": {
@@ -1037,12 +1049,12 @@
             "lecture": 4,
             "text": "Examine this diagnostic larva passed in freshly voided stool. Identify this larva:",
             "options": [
+              "Strongyloides stercoralis rhabditiform larva",
               "Hookworm rhabditiform larva",
               "Enterobius vermicularis larva",
-              "Trichostrongylus first larva",
-              "Strongyloides stercoralis rhabditiform larva"
+              "Trichostrongylus first larva"
             ],
-            "correctIndex": 3,
+            "correctIndex": 0,
             "explanation": "Criteria of Identification: Length 200–250 um; short buccal cavity (shorter than head width); double-bulb rhabditiform esophagus; large conspicuous oval genital primordium at midbody (vs. hookworm larva which has long cavity, tiny primordium).",
             "keyConcept": "Strongyloides rhabditiform larva: short buccal cavity with a large, prominent genital primordium in stool.",
             "media": {
@@ -1057,12 +1069,12 @@
             "lecture": 4,
             "text": "In this appendiceal cross-section, identify these parasitic nematodes in the lumen:",
             "options": [
-              "Enterobius vermicularis in appendix",
               "Ascaris lumbricoides in bowel",
+              "Enterobius vermicularis in appendix",
               "Trichuris trichiura in cecum",
               "Ancylostoma duodenale in gut"
             ],
-            "correctIndex": 0,
+            "correctIndex": 1,
             "explanation": "Criteria of Identification: Nematode cross-sections showing bilateral triangular cuticular alae projecting from lateral fields; meromyarian somatic muscle cells; gravid females packed with characteristic asymmetrical D-shaped eggs.",
             "keyConcept": "Enterobius in appendix: distinct bilateral triangular lateral cuticular alae projecting into appendiceal lumen.",
             "media": {
@@ -1078,11 +1090,11 @@
             "text": "In this colonic biopsy, identify these giant ciliated trophozoites:",
             "options": [
               "Entamoeba histolytica trophozoite",
-              "Balantidium coli trophozoite",
               "Giardia lamblia trophozoite",
+              "Balantidium coli trophozoite",
               "Cryptosporidium parvum schizont"
             ],
-            "correctIndex": 1,
+            "correctIndex": 2,
             "explanation": "Criteria of Identification: Giant ciliate (50–100 um); surface pellicle lined by longitudinal rows of uniform cilia; anterior cytostome (cell mouth); large dense bean-shaped macronucleus with adjacent micronucleus; invasive in colon.",
             "keyConcept": "Balantidium coli trophozoite: giant ciliated intestinal protozoan with a pathognomonic kidney-shaped macronucleus.",
             "media": {
@@ -1099,10 +1111,10 @@
             "options": [
               "Trichomonas hominis (Trophozoite)",
               "Entamoeba histolytica (Trophozoite)",
-              "Giardia lamblia (Trophozoite)",
-              "Chilomastix mesnili (Trophozoite)"
+              "Chilomastix mesnili (Trophozoite)",
+              "Giardia lamblia (Trophozoite)"
             ],
-            "correctIndex": 2,
+            "correctIndex": 3,
             "explanation": "Criteria of Identification: Pyriform body (10–20 um) with bilateral symmetry; concave ventral sucking disk; two identical spherical nuclei with central karyosomes (face-like appearance); central axostyle; 8 flagella; falling-leaf motility.",
             "keyConcept": "Giardia lamblia trophozoite: bilaterally symmetrical pear-shaped flagellate with two nuclei and ventral sucking disk.",
             "media": {
@@ -1117,12 +1129,12 @@
             "lecture": 5,
             "text": "In this fresh stool dysenteric smear, identify the pathognomonic diagnostic feature:",
             "options": [
+              "Phagocytosed red blood cells in cytoplasm",
               "Multiple pulsatile contractile vacuoles",
               "Prominent ventral adhesive sucking disk",
-              "Dense surface rows of longitudinal cilia",
-              "Phagocytosed red blood cells in cytoplasm"
+              "Dense surface rows of longitudinal cilia"
             ],
-            "correctIndex": 3,
+            "correctIndex": 0,
             "explanation": "Criteria of Identification: Size 20–40 um; active directional monopodial pseudopodia; spherical nucleus with delicate peripheral chromatin and pinpoint central karyosome; pathognomonic presence of ingested red blood cells (erythrophagocytosis).",
             "keyConcept": "Entamoeba histolytica trophozoite: pathognomonic erythrophagocytosis (ingested RBCs) confirming invasive amebiasis.",
             "media": {
@@ -1137,12 +1149,12 @@
             "lecture": 5,
             "text": "In this Balantidium coli preparation, identify the prominent nuclear mass:",
             "options": [
-              "Reniform (Bean-shaped) macronucleus",
               "Pinpoint central karyosome",
+              "Reniform (Bean-shaped) macronucleus",
               "Kinetoplast mitochondrial disk",
               "Cigar-shaped chromatoid bar"
             ],
-            "correctIndex": 0,
+            "correctIndex": 1,
             "explanation": "Criteria of Identification: Balantidium coli possesses dimorphic nuclei: a massive somatic polyploid kidney/bean-shaped macronucleus governing vegetative metabolism, and a tiny diploid micronucleus tucked in its concavity.",
             "keyConcept": "Balantidium macronucleus: large kidney/bean-shaped nuclear mass governing cellular vegetative metabolism.",
             "media": {
@@ -1158,11 +1170,11 @@
             "text": "In this iodine-stained fecal mount, identify this quadranucleate cyst:",
             "options": [
               "Entamoeba histolytica cyst",
-              "Giardia lamblia cyst",
               "Entamoeba coli cyst",
+              "Giardia lamblia cyst",
               "Balantidium coli cyst"
             ],
-            "correctIndex": 1,
+            "correctIndex": 2,
             "explanation": "Criteria of Identification: Oval shape (8–12 um) with distinct double-contoured wall; 4 spherical nuclei typically grouped at one pole; central longitudinal axostyle fibrils; curved claw-hammer shaped median bodies in cytoplasm.",
             "keyConcept": "Giardia lamblia cyst: oval quadranucleate cyst with longitudinal axostyle and distinct double wall.",
             "media": {
@@ -1179,10 +1191,10 @@
             "options": [
               "Eight nuclei with eccentric karyosomes and splintered chromatoid bars",
               "Single massive kidney-shaped nucleus with contractile vacuoles",
-              "Four nuclei with central karyosomes and smooth cigar-shaped chromatoid bars",
-              "Two nuclei with axostyle fibrils and polar claw-hammer bodies"
+              "Two nuclei with axostyle fibrils and polar claw-hammer bodies",
+              "Four nuclei with central karyosomes and smooth cigar-shaped chromatoid bars"
             ],
-            "correctIndex": 2,
+            "correctIndex": 3,
             "explanation": "Criteria of Identification: E. histolytica mature cyst has 4 nuclei, central pinpoint karyosome, fine even peripheral chromatin, and thick chromatoid bars with rounded, blunt ends (vs. E. coli: 8 nuclei, eccentric karyosome, splintered bars).",
             "keyConcept": "Entamoeba histolytica cyst: 4 nuclei with central pinpoint karyosomes and rounded cigar-shaped chromatoid bars.",
             "media": {
@@ -1197,12 +1209,12 @@
             "lecture": 6,
             "text": "Examine this large spherical double-walled cyst. Identify this species:",
             "options": [
+              "Balantidium coli cyst",
               "Entamoeba coli cyst",
               "Giardia lamblia cyst",
-              "Isospora belli oocyst",
-              "Balantidium coli cyst"
+              "Isospora belli oocyst"
             ],
-            "correctIndex": 3,
+            "correctIndex": 0,
             "explanation": "Criteria of Identification: Large round to oval cyst (50–70 um); thick yellowish-green double wall; cytoplasm contains the persistent large kidney-shaped macronucleus, retracted cilia, and a contractile vacuole.",
             "keyConcept": "Balantidium coli cyst: large 50–70 um spherical double-walled cyst with persistent bean-shaped macronucleus.",
             "media": {
@@ -1217,12 +1229,12 @@
             "lecture": 6,
             "text": "In this modified acid-fast fecal smear, identify these bright-red oocysts:",
             "options": [
-              "Cryptosporidium parvum oocysts",
               "Blastocystis hominis cysts",
+              "Cryptosporidium parvum oocysts",
               "Cyclospora cayetanensis oocysts",
               "Cystoisospora belli oocysts"
             ],
-            "correctIndex": 0,
+            "correctIndex": 1,
             "explanation": "Criteria of Identification: Small spherical oocysts (4–5 um); acid-fast positive (stain bright magenta-red against blue background); contain 4 slender naked sporozoites and a residual body; fully sporulated and infective when passed.",
             "keyConcept": "Cryptosporidium parvum oocysts: 4–5 um acid-fast bright red spherical oocysts containing 4 sporozoites.",
             "media": {
@@ -1238,11 +1250,11 @@
             "text": "Identify this freshwater molluscan shell vector:",
             "options": [
               "Bulinus truncatus snail",
-              "Biomphalaria alexandrina snail",
               "Lymnaea cailliaudi snail",
+              "Biomphalaria alexandrina snail",
               "Pirenella conica snail"
             ],
-            "correctIndex": 1,
+            "correctIndex": 2,
             "explanation": "Criteria of Identification: Planorbid snail; shell coiled in a single horizontal plane (discoidal/flat-coiled); sinistral aperture; obligate intermediate host transmitting Schistosoma mansoni miracidia to furcocercous cercariae.",
             "keyConcept": "Biomphalaria alexandrina: flat planorbid discoidal snail vector transmitting intestinal Schistosoma mansoni.",
             "media": {
@@ -1259,10 +1271,10 @@
             "options": [
               "Diphyllobothrium latum egg",
               "Heterophyes heterophyes egg",
-              "Fasciola hepatica egg",
-              "Paragonimus westermani egg"
+              "Paragonimus westermani egg",
+              "Fasciola hepatica egg"
             ],
-            "correctIndex": 2,
+            "correctIndex": 3,
             "explanation": "Criteria of Identification: Giant yellowish-brown operculated egg (130–150 um, largest in human stool); indistinct operculum at one pole; filled with unsegmented ovum and numerous yolk vitelline cells; unembryonated when laid.",
             "keyConcept": "Fasciola hepatica egg: giant yellowish-brown operculated unsegmented egg (130–150 um).",
             "media": {
@@ -1277,12 +1289,12 @@
             "lecture": 7,
             "text": "Examine this diagnostic egg in stool microscopy. Identify this species:",
             "options": [
+              "Schistosoma mansoni egg",
               "Schistosoma haematobium egg",
               "Schistosoma japonicum egg",
-              "Fasciola gigantica egg",
-              "Schistosoma mansoni egg"
+              "Fasciola gigantica egg"
             ],
-            "correctIndex": 3,
+            "correctIndex": 0,
             "explanation": "Criteria of Identification: Large oval egg (115–175 um); transparent golden shell; pathognomonic large sharp lateral spine pointing posteriorly; contains a fully formed ciliated miracidium; passed in feces.",
             "keyConcept": "Schistosoma mansoni egg: large elongated oval egg with a pathognomonic prominent lateral spine.",
             "media": {
@@ -1297,12 +1309,12 @@
             "lecture": 7,
             "text": "Examine this thin-shelled segmenting morula egg. Identify this species:",
             "options": [
-              "Hookworm egg (Ancylostoma / Necator)",
               "Ascaris lumbricoides egg",
+              "Hookworm egg (Ancylostoma / Necator)",
               "Trichostrongylus egg",
               "Strongyloides stercoralis egg"
             ],
-            "correctIndex": 0,
+            "correctIndex": 1,
             "explanation": "Criteria of Identification: Elliptical shape (60 um); blunt rounded ends; extremely thin transparent shell appearing as a delicate black line; clear space between shell and 4–8 segmenting blastomeres (morula stage).",
             "keyConcept": "Hookworm egg: extremely thin, transparent shell enclosing an internal 4–8 cell segmenting morula.",
             "media": {
@@ -1318,11 +1330,11 @@
             "text": "In this comparison of spherical eggs, identify the radially striated egg:",
             "options": [
               "Hymenolepis nana egg",
-              "Taenia species egg",
               "Ascaris lumbricoides egg",
+              "Taenia species egg",
               "Toxocara canis egg"
             ],
-            "correctIndex": 1,
+            "correctIndex": 2,
             "explanation": "Criteria of Identification: Spherical shape (30–40 um); thick brown shell with diagnostic radial striations (embryophore); contains fully developed hexacanth embryo (oncosphere with 6 refractile hooklets); indistinguishable between T. solium and T. saginata.",
             "keyConcept": "Taenia egg: thick brown shell with prominent radial striations enclosing a 6-hooked hexacanth embryo.",
             "media": {
@@ -1339,10 +1351,10 @@
             "options": [
               "Enterobius vermicularis egg",
               "Capillaria hepatica egg",
-              "Trichuris trichiura egg",
-              "Ascaris unfertilized egg"
+              "Ascaris unfertilized egg",
+              "Trichuris trichiura egg"
             ],
-            "correctIndex": 2,
+            "correctIndex": 3,
             "explanation": "Criteria of Identification: Barrel/lemon-shaped (50–54 um); golden-brown triple-layered shell; diagnostic clear transparent bipolar mucoid plugs protruding at both ends; contains unsegmented single-celled ovum.",
             "keyConcept": "Trichuris trichiura egg: barrel-shaped golden egg with pathognomonic transparent bipolar mucoid plugs.",
             "media": {
@@ -1357,12 +1369,12 @@
             "lecture": 8,
             "text": "Spotter examination: Identify this armed cestode scolex:",
             "options": [
+              "Taenia solium (Pork tapeworm scolex)",
               "Taenia saginata (Beef tapeworm scolex)",
               "Diphyllobothrium latum (Fish scolex)",
-              "Hymenolepis diminuta (Rat tapeworm scolex)",
-              "Taenia solium (Pork tapeworm scolex)"
+              "Hymenolepis diminuta (Rat tapeworm scolex)"
             ],
-            "correctIndex": 3,
+            "correctIndex": 0,
             "explanation": "Criteria of Identification: Armed scolex (1 mm) with 4 cup suckers and rostellum with 2 rows of hooks; distinguishing landmark from unarmed Taenia saginata which lacks rostellar hooks; ingestion of eggs causes human cysticercosis.",
             "keyConcept": "Taenia solium scolex: 4 muscular suckers with a double crown of alternating chitinous rostellar hooks.",
             "media": {
@@ -1377,12 +1389,12 @@
             "lecture": 8,
             "text": "Clinical Case Station 1: A 42-year-old sheep farmer presents with right upper quadrant fullness. Abdominal ultrasound reveals a well-defined calcified unilocular hepatic cyst. Why is diagnostic needle aspiration contraindicated?",
             "options": [
-              "Risk of fatal anaphylactic shock and secondary intraperitoneal seeding",
               "Impossibility of obtaining diagnostic hydatid fluid or hooklets",
+              "Risk of fatal anaphylactic shock and secondary intraperitoneal seeding",
               "Certainty of causing acute severe portal venous thrombosis",
               "Risk of triggering uncontrollable biliary fistulization"
             ],
-            "correctIndex": 0,
+            "correctIndex": 1,
             "explanation": "Criteria of Identification: Hydatid cyst of Echinococcus granulosus; puncture risks catastrophic spillage of highly antigenic hydatid fluid, provoking lethal IgE-mediated anaphylaxis and multiple secondary peritoneal hydatid implants.",
             "keyConcept": "Hydatid cyst aspiration: strictly contraindicated due to risk of lethal anaphylactic shock and secondary seeding.",
             "media": {
@@ -1398,11 +1410,11 @@
             "text": "Clinical Case Station 2: A renal transplant recipient on high-dose corticosteroids develops paralytic ileus, severe diarrhea, and gram-negative sepsis. Stool reveals active rhabditiform larvae. What is the underlying mechanism?",
             "options": [
               "Massive exogenous reinfection through contaminated soil",
-              "Internal autoinfection leading to hyperinfection syndrome",
               "Malignant transformation of dormant encysted larvae",
+              "Internal autoinfection leading to hyperinfection syndrome",
               "Superinfection by swallowed adult Enterobius pinworms"
             ],
-            "correctIndex": 1,
+            "correctIndex": 2,
             "explanation": "Criteria of Identification: Strongyloides stercoralis hyperinfection; immunosuppression accelerates internal autoinfection where non-infective rhabditiform larvae rapidly molt into invasive filariform larvae within the bowel lumen.",
             "keyConcept": "Strongyloides hyperinfection: internal autoinfection triggered by immunosuppression causing systemic larval dissemination.",
             "media": {
@@ -1419,10 +1431,10 @@
             "options": [
               "Direct occlusion of the main portal vein trunk by adult flukes",
               "Toxic necrosis of hepatocytes caused by adult worm excreta",
-              "Granulomatous response to Schistosoma mansoni soluble egg antigens",
-              "Autoimmune destruction of interlobular intrahepatic bile ducts"
+              "Autoimmune destruction of interlobular intrahepatic bile ducts",
+              "Granulomatous response to Schistosoma mansoni soluble egg antigens"
             ],
-            "correctIndex": 2,
+            "correctIndex": 3,
             "explanation": "Criteria of Identification: Schistosoma mansoni; eggs trapped in periportal venules release soluble egg antigens (SEA), stimulating CD4+ Th2 delayed-type hypersensitivity granulomas and periportal fibrosis without true cirrhosis.",
             "keyConcept": "Symmers' pipestem fibrosis: granulomatous response to trapped Schistosoma mansoni lateral-spined eggs in portal tracts.",
             "media": {
@@ -1437,12 +1449,12 @@
             "lecture": 9,
             "text": "Clinical Case Station 4: A 6-year-old child presents with colicky abdominal pain, vomiting, and abdominal distension. Plain radiography demonstrates mechanical intestinal obstruction caused by a tangled mass of large roundworms. Identify the parasite:",
             "options": [
+              "Ascaris lumbricoides",
               "Enterobius vermicularis",
               "Ancylostoma duodenale",
-              "Trichuris trichiura",
-              "Ascaris lumbricoides"
+              "Trichuris trichiura"
             ],
-            "correctIndex": 3,
+            "correctIndex": 0,
             "explanation": "Criteria of Identification: Ascaris lumbricoides; largest human intestinal nematode (adults 15–35 cm); large worm burden tangles into a bolus causing mechanical small bowel obstruction, volvulus, or intussusception in children.",
             "keyConcept": "Ascaris lumbricoides: giant intestinal roundworm capable of forming obstructive boluses in the ileocecal region.",
             "media": {
@@ -1457,12 +1469,12 @@
             "lecture": 9,
             "text": "Clinical Case Station 5: An AIDS patient with CD4 count of 45 cells/microliter suffers from relentless cholera-like watery diarrhea (10 L/day). Modified acid-fast staining of stool demonstrates 4-5 micrometer round pink oocysts. What is the cellular niche of this parasite?",
             "options": [
-              "Intracellular but extracytoplasmic at the enterocyte brush border",
               "Obligate intranuclear replication inside lamina propria macrophages",
+              "Intracellular but extracytoplasmic at the enterocyte brush border",
               "Free extracellular swimming within the intestinal lumen fluid",
               "Deep cytoplasmic residency in crypt-base Paneth secretory cells"
             ],
-            "correctIndex": 0,
+            "correctIndex": 1,
             "explanation": "Criteria of Identification: Cryptosporidium parvum; resides within a parasitophorous vacuole at the apical enterocyte border: intracellular (enclosed by host membrane) but extracytoplasmic (outside host cytoplasm).",
             "keyConcept": "Cryptosporidium cellular niche: intracellular but extracytoplasmic localization in enterocyte brush borders.",
             "media": {
@@ -1478,11 +1490,11 @@
             "text": "Clinical Case Station 6: A hiker develops foul-smelling, fatty, floating diarrhea (steatorrhea), flatulence, and epigastric cramping after drinking untreated stream water. Microscopic stool exam shows binucleate flagellated trophozoites. What causes the malabsorption?",
             "options": [
               "Deep mucosal ulceration with transmural transmigration into blood",
-              "Mechanical coating and brush border flattening by ventral suction disks",
               "Direct enterotoxin stimulation of cyclic AMP chloride secretion",
+              "Mechanical coating and brush border flattening by ventral suction disks",
               "Massive granulomatous destruction of mesenteric lacteal channels"
             ],
-            "correctIndex": 1,
+            "correctIndex": 2,
             "explanation": "Criteria of Identification: Giardia lamblia trophozoites adhere via ventral sucking disks to duodenal/jejunal microvilli, causing villous blunting, brush border enzyme deficiency, and fat malabsorption without mucosal invasion.",
             "keyConcept": "Giardia malabsorption: mechanical mucosal adherence via suction disks causing diffuse brush-border impairment.",
             "media": {
@@ -1499,10 +1511,10 @@
             "options": [
               "Free-swimming furcocercous cercariae in water",
               "Unembryonated operculated eggs in soil",
-              "Encysted metacercariae on aquatic vegetation",
-              "Rhabditiform larvae crawling on vegetation"
+              "Rhabditiform larvae crawling on vegetation",
+              "Encysted metacercariae on aquatic vegetation"
             ],
-            "correctIndex": 2,
+            "correctIndex": 3,
             "explanation": "Criteria of Identification: Fasciola hepatica / gigantica; human infection occurs by ingesting freshwater plants (watercress) harboring encysted metacercariae; juvenile flukes excyst in duodenum and migrate through liver capsule.",
             "keyConcept": "Fasciola transmission: ingestion of encysted metacercariae on aquatic plants (watercress).",
             "media": {
@@ -1517,12 +1529,12 @@
             "lecture": 10,
             "text": "Clinical Case Station 8: A 4-year-old child presents with intense nocturnal perianal pruritus and insomnia. A cellophane adhesive tape swab taken in the early morning demonstrates asymmetrical plano-convex eggs. Why is routine stool analysis usually negative?",
             "options": [
-              "Eggs dissolve rapidly in alkaline intestinal fecal secretions",
               "Gravid females migrate out of the anus to oviposit directly on perianal skin",
+              "Eggs dissolve rapidly in alkaline intestinal fecal secretions",
               "Eggs are exclusively passed through the urinary bladder mucosa",
               "The parasites reproduce exclusively via tissue asexual budding"
             ],
-            "correctIndex": 1,
+            "correctIndex": 0,
             "explanation": "Criteria of Identification: Enterobius vermicularis; gravid females migrate out through the anal sphincter at night and oviposit in the perianal folds rather than in the stool stream; diagnosis is made via Scotch tape perianal swab.",
             "keyConcept": "Enterobius diagnosis: perianal tape swab is required because females oviposit on perianal skin, not in feces.",
             "media": {
@@ -1538,11 +1550,11 @@
             "text": "Clinical Case Station 9: A 45-year-old traveler develops high swinging fever, right upper quadrant pain, and leukocytosis. Imaging reveals a solitary 8 cm hypoechoic abscess in the right liver lobe. Aspiration yields sterile anchovy-sauce-like fluid. Identify the causative agent:",
             "options": [
               "Echinococcus granulosus",
-              "Ascaris lumbricoides",
               "Entamoeba histolytica",
+              "Ascaris lumbricoides",
               "Cryptosporidium parvum"
             ],
-            "correctIndex": 2,
+            "correctIndex": 1,
             "explanation": "Criteria of Identification: Amebic liver abscess (Entamoeba histolytica); trophozoites reach liver via portal vein from colonic ulcers, releasing pore-forming peptides (amebapores) and cysteine proteinases causing liquefactive anchovy-sauce necrosis.",
             "keyConcept": "Amebic liver abscess: Entamoeba histolytica trophozoites causing sterile liquefactive anchovy-paste liver necrosis.",
             "media": {
@@ -1558,11 +1570,11 @@
             "text": "Clinical Case Station 10: A barefoot agricultural worker presents with severe pallor, exertional fatigue, and epigastric discomfort. Lab work reveals microcytic hypochromic iron-deficiency anemia (Hb 5.8 g/dL). Stool shows thin-shelled 4-8 cell segmenting eggs. What is the source of blood loss?",
             "options": [
               "Chronic hemolysis caused by circulating parasite cytolytic toxins",
-              "Laceration of duodenal mucosa and active blood ingestion by adult worms",
               "Autoimmune destruction of bone marrow erythroid progenitor cells",
+              "Laceration of duodenal mucosa and active blood ingestion by adult worms",
               "Splenic sequestration of red blood cells secondary to portal block"
             ],
-            "correctIndex": 1,
+            "correctIndex": 2,
             "explanation": "Criteria of Identification: Hookworm disease (Ancylostoma duodenale / Necator americanus); adult worms attach to duodenal mucosa with teeth/cutting plates, releasing anticoagulants and sucking blood (0.15–0.26 mL blood/worm/day).",
             "keyConcept": "Hookworm anemia: mechanical duodenal mucosal laceration and active blood-sucking causing severe iron deficiency.",
             "media": {
@@ -1607,14 +1619,14 @@
             "id": "MGL3-CH304-ANAT-0001",
             "type": "mcq",
             "lecture": 1,
-            "text": "In this sagittal section of the oral cavity and pharynx, identify the lymphoid structure in the tonsillar fossa:",
+            "text": "In this sagittal head and neck dissection, identify the labeled structure situated in the tonsillar fossa:",
             "options": [
-              "Palatine tonsil",
               "Pharyngeal adenoid tonsil",
               "Lingual follicular tonsil",
-              "Tubal mucosal tonsil"
+              "Tubal mucosal tonsil",
+              "Palatine tonsil"
             ],
-            "correctIndex": 0,
+            "correctIndex": 3,
             "explanation": "Criteria of Identification: Situated in the tonsillar fossa between the palatoglossal arch (anterior pillar) and palatopharyngeal arch (posterior pillar).",
             "keyConcept": "Palatine tonsil: lymphoid organ situated in the tonsillar fossa between palatoglossal and palatopharyngeal arches.",
             "media": {
@@ -1627,14 +1639,14 @@
             "id": "MGL3-CH304-ANAT-0002",
             "type": "mcq",
             "lecture": 1,
-            "text": "In this deep dissection of the palatine tonsillar bed, identify the cranial nerve traversing the bed:",
+            "text": "In this deep dissection of the palatine tonsillar bed, identify the labeled cranial nerve traversing the bed:",
             "options": [
-              "Hypoglossal motor nerve (CN XII)",
               "Glossopharyngeal nerve (CN IX)",
+              "Hypoglossal motor nerve (CN XII)",
               "Lingual sensory nerve (V3)",
               "Accessory motor nerve (CN XI)"
             ],
-            "correctIndex": 1,
+            "correctIndex": 0,
             "explanation": "Criteria of Identification: The glossopharyngeal nerve (CN IX) courses along the lateral pharyngeal wall deep to the tonsillar bed, vulnerable to injury during tonsillectomy.",
             "keyConcept": "Glossopharyngeal nerve: traverses tonsillar bed supplying general sensation and taste to posterior 1/3 of tongue.",
             "media": {
@@ -1647,14 +1659,14 @@
             "id": "MGL3-CH304-ANAT-0003",
             "type": "mcq",
             "lecture": 1,
-            "text": "On the dorsal surface of this dissected tongue, identify this V-shaped groove:",
+            "text": "On the dorsal surface of this dissected tongue, identify the labeled V-shaped groove:",
             "options": [
               "Median lingual sulcus",
-              "Glossoepiglottic fold",
               "Sulcus terminalis",
+              "Glossoepiglottic fold",
               "Sublingual fold margin"
             ],
-            "correctIndex": 2,
+            "correctIndex": 1,
             "explanation": "Criteria of Identification: V-shaped sulcus with apex at foramen cecum, demarcating the boundary between anterior 2/3 and posterior 1/3 of the tongue.",
             "keyConcept": "Sulcus terminalis: V-shaped groove separating oral and pharyngeal tongue segments.",
             "media": {
@@ -1667,16 +1679,16 @@
             "id": "MGL3-CH304-ANAT-0004",
             "type": "mcq",
             "lecture": 2,
-            "text": "In this lateral head and neck dissection, identify the largest salivary gland shown:",
+            "text": "In this lateral facial dissection, identify the labeled major salivary gland:",
             "options": [
               "Submandibular gland",
               "Sublingual salivary gland",
-              "Thyroid glandular lobe",
-              "Parotid salivary gland"
+              "Parotid salivary gland",
+              "Buccal mucosal gland"
             ],
-            "correctIndex": 3,
-            "explanation": "Criteria of Identification: Occupies the retromandibular fossa anterior to the mastoid process and sternocleidomastoid muscle, enclosed by deep investing fascia.",
-            "keyConcept": "Parotid gland: largest salivary gland situated in retromandibular space anterior to sternocleidomastoid.",
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: Largest salivary gland, wedged anteroinferior to external acoustic meatus between ramus of mandible and sternocleidomastoid.",
+            "keyConcept": "Parotid gland: largest salivary gland, wedged between mandibular ramus and mastoid process.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/salivary_glands_topography.webp",
@@ -1687,16 +1699,16 @@
             "id": "MGL3-CH304-ANAT-0005",
             "type": "mcq",
             "lecture": 2,
-            "text": "In this superficial facial dissection, identify the excretory duct crossing the masseter muscle:",
+            "text": "In this superficial facial dissection, identify the labeled excretory duct crossing the masseter muscle:",
             "options": [
-              "Parotid duct (Stensen's duct)",
-              "Submandibular duct of Wharton",
-              "Major sublingual duct of Rivinus",
-              "Nasolacrimal drainage duct"
+              "Submandibular duct (Wharton's)",
+              "Major sublingual duct (Bartholin's)",
+              "Facial vein confluence",
+              "Parotid duct (Stensen's duct)"
             ],
-            "correctIndex": 0,
-            "explanation": "Criteria of Identification: Arises from anterior border of parotid, crosses superficial to masseter, pierces buccinator, and opens opposite the upper second molar.",
-            "keyConcept": "Parotid duct: traverses masseter and pierces buccinator to open opposite the upper second molar.",
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Emerges from the anterior border of the parotid gland, runs horizontally across masseter, pierces buccinator, and opens opposite upper second molar.",
+            "keyConcept": "Parotid duct (Stensen's): crosses masseter, pierces buccinator, opens opposite upper 2nd molar tooth.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/parotid_gland_stensen_duct.webp",
@@ -1707,16 +1719,16 @@
             "id": "MGL3-CH304-ANAT-0006",
             "type": "mcq",
             "lecture": 2,
-            "text": "In this submandibular triangle dissection, identify the artery grooving the submandibular gland:",
+            "text": "In this submandibular triangle dissection, identify the labeled tortuous artery grooving the submandibular gland:",
             "options": [
-              "Lingual arterial trunk",
               "Facial artery",
+              "Lingual artery branch",
               "Superficial temporal artery",
-              "Maxillary branch artery"
+              "Maxillary deep artery"
             ],
-            "correctIndex": 1,
-            "explanation": "Criteria of Identification: Arises from external carotid, loops deep to digastric, grooves the posterior pole of submandibular gland, and enters face at anterior border of masseter.",
-            "keyConcept": "Facial artery: intimately grooves the posterosuperior aspect of the submandibular salivary gland.",
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: Arises from external carotid, hooks over submandibular gland, arches across inferior border of mandible at anterior border of masseter to enter face.",
+            "keyConcept": "Facial artery: grooves submandibular gland, crosses inferior border of mandible at anterior margin of masseter.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/submandibular_gland_digastric.webp",
@@ -1727,16 +1739,16 @@
             "id": "MGL3-CH304-ANAT-0007",
             "type": "mcq",
             "lecture": 3,
-            "text": "In this anterior abdominal wall dissection, identify the aponeurotic opening indicated:",
+            "text": "In this anterior abdominal wall dissection, identify the labeled triangular opening in the external oblique aponeurosis:",
             "options": [
               "Deep internal inguinal ring",
-              "Femoral canal ring orifice",
               "Superficial inguinal ring",
-              "Saphenous opening hiatus"
+              "Saphenous venous opening",
+              "Femoral vascular canal"
             ],
-            "correctIndex": 2,
-            "explanation": "Criteria of Identification: Triangular defect in external oblique aponeurosis located superolateral to pubic crest, transmitting spermatic cord or round ligament.",
-            "keyConcept": "Superficial inguinal ring: aponeurotic defect in external oblique through which the spermatic cord exits.",
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Triangular defect in external oblique aponeurosis lying superior and lateral to pubic crest, transmitting spermatic cord (or round ligament).",
+            "keyConcept": "Superficial inguinal ring: triangular opening in external oblique aponeurosis transmitting spermatic cord.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/external_oblique_inguinal_ring.webp",
@@ -1747,16 +1759,16 @@
             "id": "MGL3-CH304-ANAT-0008",
             "type": "mcq",
             "lecture": 3,
-            "text": "In this anterior abdominal wall dissection, identify the conjoint aponeurotic insertion indicated:",
+            "text": "In this anterior abdominal wall dissection, identify the labeled conjoint aponeurotic insertion:",
             "options": [
-              "Inguinal ligament of Poupart",
-              "Lacunar ligament of Gimbernat",
-              "Pectineal ligament of Cooper",
-              "Conjoint tendon (Falx inguinalis)"
+              "Inguinal ligament (Poupart's)",
+              "Lacunar ligament (Gimbernat's)",
+              "Conjoint tendon (Falx inguinalis)",
+              "Reflected inguinal ligament"
             ],
-            "correctIndex": 3,
-            "explanation": "Criteria of Identification: Fused lower arching aponeurotic fibers of internal oblique and transversus abdominis inserting into pubic crest and pectineal line.",
-            "keyConcept": "Conjoint tendon: fused aponeurotic arch of internal oblique and transversus inserting into the pubis.",
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: Formed by lower arching aponeurotic fibers of internal oblique and transversus abdominis inserting together onto pubic crest and pectineal line.",
+            "keyConcept": "Conjoint tendon: fusion of internal oblique and transversus abdominis inserting into pubic crest/pectineal line.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/internal_oblique_rectus.webp",
@@ -1767,16 +1779,16 @@
             "id": "MGL3-CH304-ANAT-0009",
             "type": "mcq",
             "lecture": 3,
-            "text": "On the posterior layer of the rectus sheath, identify this horizontal curved boundary:",
+            "text": "On the posterior layer of this rectus sheath, identify the labeled curved horizontal boundary line:",
             "options": [
-              "Arcuate line (Line of Douglas)",
-              "Linea alba central margin",
-              "Linea semilunaris lateral groove",
-              "Transpyloric anatomical plane"
+              "Linea alba central line",
+              "Linea semilunaris margin",
+              "Transpyloric reference line",
+              "Arcuate line (Line of Douglas)"
             ],
-            "correctIndex": 0,
-            "explanation": "Criteria of Identification: Curved inferior margin of the posterior rectus sheath midway between umbilicus and pubic crest, below which all aponeuroses pass anteriorly.",
-            "keyConcept": "Arcuate line: inferior border of posterior rectus sheath where aponeuroses shift entirely anteriorly.",
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Crescentic horizontal lower margin of the posterior rectus sheath midway between umbilicus and pubic crest, below which all aponeuroses pass anterior to rectus abdominis.",
+            "keyConcept": "Arcuate line: inferior border of posterior rectus sheath where inferior epigastric vessels enter sheath.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/transversus_abdominis.webp",
@@ -1787,16 +1799,16 @@
             "id": "MGL3-CH304-ANAT-0010",
             "type": "mcq",
             "lecture": 3,
-            "text": "In this posterior abdominal wall dissection, identify this large medial muscle:",
+            "text": "In this posterior abdominal wall dissection, identify the labeled large medial fusiform muscle:",
             "options": [
-              "Quadratus lumborum muscle",
               "Psoas major muscle",
-              "Transversus abdominis",
-              "Iliacus muscle of pelvis"
+              "Quadratus lumborum muscle",
+              "Iliacus pelvic muscle",
+              "Psoas minor tendon"
             ],
-            "correctIndex": 1,
-            "explanation": "Criteria of Identification: Fleshy muscle arising from lumbar vertebral bodies, transverse processes, and discs, descending to insert on the lesser trochanter.",
-            "keyConcept": "Psoas major: medial posterior abdominal wall muscle arising from lumbar spine, housing lumbar plexus.",
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: Originates from T12-L5 bodies and transverse processes, passes beneath inguinal ligament to insert onto lesser trochanter of femur.",
+            "keyConcept": "Psoas major: thick retroperitoneal muscle originating from lumbar spine and inserting on lesser trochanter.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/posterior_wall_muscles.webp",
@@ -1807,16 +1819,16 @@
             "id": "MGL3-CH304-ANAT-0011",
             "type": "mcq",
             "lecture": 4,
-            "text": "On this posterior abdominal wall specimen, identify the vertebral level of the aortic bifurcation:",
+            "text": "On this posterior abdominal wall specimen, identify the labeled vertebral level of the abdominal aortic bifurcation:",
             "options": [
-              "L2 vertebral body",
-              "L3 vertebral body",
+              "T12 aortic hiatus",
               "L4 vertebral body",
-              "L5 vertebral body"
+              "L1 transpyloric level",
+              "L5 sacral promontory"
             ],
-            "correctIndex": 2,
-            "explanation": "Criteria of Identification: The abdominal aorta bifurcates into common iliac arteries at L4, approximately 2–3 cm below the umbilicus, just superior to IVC confluence at L5.",
-            "keyConcept": "Aortic bifurcation: occurs at L4 vertebral level, slightly superior to IVC confluence at L5.",
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Abdominal aorta bifurcates into right and left common iliac arteries at the lower border of L4 vertebra (supra-cristal line).",
+            "keyConcept": "Aorta bifurcates at L4 vertebral level into right and left common iliac arteries.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/aorta_ivc_relations.webp",
@@ -1827,16 +1839,16 @@
             "id": "MGL3-CH304-ANAT-0012",
             "type": "mcq",
             "lecture": 4,
-            "text": "In this lumbar plexus dissection, identify the nerve piercing the anterior belly of psoas major:",
+            "text": "In this lumbar plexus dissection, identify the labeled nerve piercing the anterior surface of psoas major:",
             "options": [
-              "Ilioinguinal somatic nerve (L1)",
-              "Lateral femoral cutaneous nerve",
-              "Femoral anterior motor trunk",
-              "Genitofemoral nerve (L1, L2)"
+              "Ilioinguinal nerve (L1)",
+              "Lateral femoral cutaneous nerve (L2, L3)",
+              "Genitofemoral nerve (L1, L2)",
+              "Femoral main trunk (L2-L4)"
             ],
-            "correctIndex": 3,
-            "explanation": "Criteria of Identification: Only lumbar plexus nerve that pierces the anterior muscular surface of psoas major, descending before branching into genital and femoral nerves.",
-            "keyConcept": "Genitofemoral nerve: only lumbar plexus nerve piercing and descending on the anterior surface of psoas major.",
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: Emerging on the anterior belly of psoas major, dividing into genital (cremasteric) and femoral (skin of femoral triangle) branches.",
+            "keyConcept": "Genitofemoral nerve (L1, L2): only lumbar plexus nerve piercing the anterior surface of psoas major.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/lumbar_plexus_nerves.webp",
@@ -1846,17 +1858,17 @@
           {
             "id": "MGL3-CH304-ANAT-0013",
             "type": "mcq",
-            "lecture": 4,
-            "text": "On this gross stomach specimen, identify the notch indicated on the lesser curvature:",
+            "lecture": 5,
+            "text": "On this gross stomach specimen, identify the labeled notch indicated on the lesser curvature:",
             "options": [
-              "Incisura angularis (Angular notch)",
-              "Cardiac notch of stomach",
+              "Cardiac incisure notch",
               "Sulcus intermedius groove",
-              "Pyloric muscular sphincter"
+              "Duodenopyloric constriction",
+              "Incisura angularis (Angular notch)"
             ],
-            "correctIndex": 0,
-            "explanation": "Criteria of Identification: Acute notch on the lower part of the lesser curvature demarcating the anatomical boundary between the body and the pyloric antrum.",
-            "keyConcept": "Incisura angularis: angular notch on the lesser curvature separating the gastric body from the pyloric antrum.",
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Sharp indentation on the lower part of the lesser curvature, marking the anatomical boundary between body and pyloric antrum.",
+            "keyConcept": "Incisura angularis: notch on lesser curvature demarcating gastric body from pyloric antrum.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/stomach_parts_anatomy.webp",
@@ -1867,16 +1879,16 @@
             "id": "MGL3-CH304-ANAT-0014",
             "type": "mcq",
             "lecture": 5,
-            "text": "In this peritoneal dissection, identify the foramen bounded anteriorly by the lesser omentum:",
+            "text": "In this peritoneal dissection, identify the labeled foramen bounded anteriorly by the lesser omentum:",
             "options": [
-              "Greater sciatic foramen",
               "Epiploic foramen of Winslow",
-              "Obturator vascular canal",
-              "Incisura angularis margin"
+              "Retrocecal peritoneal recess",
+              "Infraduodenal fossa recess",
+              "Intersigmoid peritoneal fossa"
             ],
-            "correctIndex": 1,
-            "explanation": "Criteria of Identification: Peritoneal aperture connecting greater and lesser sacs, bounded anteriorly by the hepatoduodenal ligament containing the portal triad.",
-            "keyConcept": "Epiploic foramen: peritoneal entrance to lesser sac bounded anteriorly by the portal triad in lesser omentum.",
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: Natural communication between greater and lesser peritoneal sacs; bounded anteriorly by free edge of lesser omentum (portal triad), posteriorly by IVC, superiorly by caudate lobe, inferiorly by 1st part of duodenum.",
+            "keyConcept": "Epiploic foramen (Winslow): opening into lesser sac bounded anteriorly by free edge of lesser omentum.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/lesser_greater_omenta.webp",
@@ -1887,16 +1899,16 @@
             "id": "MGL3-CH304-ANAT-0015",
             "type": "mcq",
             "lecture": 5,
-            "text": "On this pancreas and duodenum gross specimen, identify the projection passing behind mesenteric vessels:",
+            "text": "On this gross specimen of pancreas and duodenum, identify the labeled projection passing behind mesenteric vessels:",
             "options": [
-              "Pancreatic neck region",
-              "Pancreatic tail tip",
+              "Neck of the pancreas",
               "Uncinate process",
-              "Major duodenal papilla"
+              "Tail of the pancreas",
+              "Minor duodenal papilla"
             ],
-            "correctIndex": 2,
-            "explanation": "Criteria of Identification: Medial and inferior hook-like projection of the pancreatic head passing posterior to the superior mesenteric artery and vein.",
-            "keyConcept": "Uncinate process: lower pancreatic head extension coursing posterior to superior mesenteric artery and vein.",
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Hook-like posteromedial projection from lower part of head of pancreas, passing posterior to superior mesenteric artery and vein.",
+            "keyConcept": "Uncinate process: lower projection of pancreatic head passing posterior to superior mesenteric vessels.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/pancreas_duodenum_relations.webp",
@@ -1906,17 +1918,17 @@
           {
             "id": "MGL3-CH304-ANAT-0016",
             "type": "mcq",
-            "lecture": 5,
-            "text": "On this gross liver specimen, identify the sickle-shaped peritoneal fold indicated:",
+            "lecture": 6,
+            "text": "On this gross liver specimen, identify the labeled sickle-shaped peritoneal fold on the diaphragmatic surface:",
             "options": [
-              "Coronary liver ligament",
-              "Right triangular ligament",
-              "Hepatoduodenal ligament",
-              "Falciform ligament"
+              "Coronary ligament layer",
+              "Left triangular ligament",
+              "Falciform ligament",
+              "Ligamentum venosum fold"
             ],
-            "correctIndex": 3,
-            "explanation": "Criteria of Identification: Two-layered peritoneal fold connecting anterior liver surface to anterior abdominal wall and diaphragm, carrying ligamentum teres in free edge.",
-            "keyConcept": "Falciform ligament: peritoneal fold carrying ligamentum teres hepatis in its inferior free edge.",
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: Sickle-shaped peritoneal fold attaching anterior and superior surfaces of liver to anterior abdominal wall and diaphragm, carrying ligamentum teres in free margin.",
+            "keyConcept": "Falciform ligament: connects diaphragmatic surface of liver to anterior abdominal wall; contains ligamentum teres.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/liver_anterior_falciform.webp",
@@ -1927,16 +1939,16 @@
             "id": "MGL3-CH304-ANAT-0017",
             "type": "mcq",
             "lecture": 6,
-            "text": "On the posterior surface of this liver specimen, identify the non-peritoneal area indicated:",
+            "text": "On the posterior surface of this liver specimen, identify the labeled non-peritoneal area:",
             "options": [
-              "Bare area of the liver",
-              "Porta hepatis portal fissure",
-              "Gallbladder fossa bed",
-              "Fissure for ligamentum venosum"
+              "Caudate lobe surface",
+              "Fossa for the gallbladder",
+              "Groove for inferior vena cava",
+              "Bare area of the liver"
             ],
-            "correctIndex": 0,
-            "explanation": "Criteria of Identification: Non-peritoneal triangular posterior surface directly resting on the diaphragm, bounded by the coronary and triangular ligaments.",
-            "keyConcept": "Bare area: non-peritoneal posterior hepatic surface bounded by coronary ligaments resting against diaphragm.",
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Triangular non-peritoneal area on diaphragmatic surface of right lobe, bounded by superior and inferior layers of coronary ligament.",
+            "keyConcept": "Bare area of liver: triangular area on posterior surface devoid of peritoneum, in direct contact with diaphragm.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/liver_posterior_surface_relations.webp",
@@ -1947,16 +1959,16 @@
             "id": "MGL3-CH304-ANAT-0018",
             "type": "mcq",
             "lecture": 6,
-            "text": "On the inferior visceral surface of this liver specimen, identify this rectangular lobe:",
+            "text": "On the inferior visceral surface of this liver specimen, identify the labeled rectangular lobe:",
             "options": [
-              "Caudate anatomical lobe",
               "Quadrate lobe",
-              "Right hepatic lateral lobe",
-              "Left anatomical lobe"
+              "Caudate lobe (Spigelian)",
+              "Left anatomical lobe",
+              "Right posterior segment"
             ],
-            "correctIndex": 1,
-            "explanation": "Criteria of Identification: Rectangular lobe bounded on right by gallbladder fossa, left by fissure for ligamentum teres, and posteriorly by porta hepatis.",
-            "keyConcept": "Quadrate lobe: visceral hepatic lobe located between gallbladder fossa and fissure for ligamentum teres.",
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: Rectangular lobe on visceral surface bounded anteriorly by inferior border, posteriorly by porta hepatis, on the right by gallbladder fossa, on the left by fissure for ligamentum teres.",
+            "keyConcept": "Quadrate lobe: situated on visceral surface between gallbladder fossa and fissure for ligamentum teres.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/liver_inferior_visceral_surface.webp",
@@ -1967,16 +1979,16 @@
             "id": "MGL3-CH304-ANAT-0019",
             "type": "mcq",
             "lecture": 6,
-            "text": "In this extrahepatic biliary tree specimen, identify the hepatopancreatic ampulla indicated:",
+            "text": "In this extrahepatic biliary tree specimen, identify the labeled hepatopancreatic junction:",
             "options": [
-              "Hartmann's gallbladder pouch",
-              "Cystic duct spiral valve",
+              "Cystic duct junction",
               "Ampulla of Vater (Hepatopancreatic)",
-              "Duct of Santorini accessory"
+              "Spiral valve (Heister's)",
+              "Accessory pancreatic duct"
             ],
-            "correctIndex": 2,
-            "explanation": "Criteria of Identification: Dilation formed by confluence of common bile duct and main pancreatic duct within duodenal wall, discharging at major duodenal papilla.",
-            "keyConcept": "Ampulla of Vater: hepatopancreatic dilation discharging combined bile and pancreatic juice into duodenum.",
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Dilatation formed by union of bile duct and main pancreatic duct within medial wall of 2nd part of duodenum, opening onto major duodenal papilla.",
+            "keyConcept": "Ampulla of Vater: union of common bile duct and main pancreatic duct opening at major duodenal papilla.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/biliary_tree_anatomy.webp",
@@ -1987,16 +1999,16 @@
             "id": "MGL3-CH304-ANAT-0020",
             "type": "mcq",
             "lecture": 7,
-            "text": "Examine this small intestinal gross specimen. Which anatomical characteristic distinguishes jejunum from ileum?",
+            "text": "Examine this small intestinal gross specimen. Which anatomical characteristic distinguishes the labeled jejunum from ileum?",
             "options": [
-              "More abundant mesenteric fat encroaching the bowel wall",
-              "More numerous tiers of complex arterial mesenteric arcades",
-              "Abundant visible aggregated Peyer's lymphoid nodules",
-              "Taller, closely packed plicae circulares and longer vasa recta"
+              "More abundant mesenteric fat encroaching directly on bowel wall",
+              "Complex arterial arcades (4-5 tiers) with short vasa recta",
+              "Taller, closely packed plicae circulares and longer vasa recta",
+              "Abundant visible Peyer's patches on the antimesenteric border"
             ],
-            "correctIndex": 3,
-            "explanation": "Criteria of Identification: Jejunum possesses wider caliber, thicker wall, prominent plicae circulares, simpler arcades (1–2 tiers), and longer straight vasa recta.",
-            "keyConcept": "Jejunum characteristics: prominent plicae, simpler arcades with long vasa recta, and less mesenteric fat.",
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: Jejunum has a thicker, more vascular wall, taller and more crowded circular folds (plicae circulares), simpler arterial arcades (1-2 tiers), and longer vasa recta than ileum.",
+            "keyConcept": "Jejunum vs Ileum: jejunum has taller/crowded plicae circulares, simpler arcades, and longer vasa recta.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/small_intestine_jejunum_ileum.webp",
@@ -2007,16 +2019,16 @@
             "id": "MGL3-CH304-ANAT-0021",
             "type": "mcq",
             "lecture": 7,
-            "text": "On this large bowel specimen, identify these longitudinal outer muscular bands:",
+            "text": "On this large bowel specimen, identify the labeled longitudinal outer muscular bands:",
             "options": [
-              "Taeniae coli",
-              "Plicae semilunares",
-              "Appendices epiploicae",
-              "Haustra sacculations"
+              "Appendices epiploicae tags",
+              "Haustrations (sacculations)",
+              "Plicae semilunares folds",
+              "Taeniae coli"
             ],
-            "correctIndex": 0,
-            "explanation": "Criteria of Identification: Three ribbons of thickened outer longitudinal smooth muscle (free, mesocolic, omental) converging at the root of the vermiform appendix.",
-            "keyConcept": "Taeniae coli: three longitudinal smooth muscle bands converging at the base of the vermiform appendix.",
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Three distinct ribbon-like bands of outer longitudinal smooth muscle (taenia libera, mesocolica, omentalis) that converge at the base of the appendix.",
+            "keyConcept": "Taeniae coli: three longitudinal smooth muscle bands converging at the appendix base, creating haustrations.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/large_intestine_anatomy.webp",
@@ -2027,16 +2039,16 @@
             "id": "MGL3-CH304-ANAT-0022",
             "type": "mcq",
             "lecture": 7,
-            "text": "In this coronal section of the anal canal, identify this mucosal boundary line:",
+            "text": "In this coronal section of the anal canal, identify the labeled transitional mucosal boundary line:",
             "options": [
-              "Hilton's white line",
               "Pectinate (Dentate) line",
-              "Anocutaneous junction line",
-              "Intersphincteric anal groove"
+              "Intersphincteric white line (Hilton's)",
+              "Anocutaneous line junction",
+              "Anal valve margin"
             ],
-            "correctIndex": 1,
-            "explanation": "Criteria of Identification: Undulating line marking junction of hindgut endoderm and proctodeal ectoderm, dividing visceral innervation/drainage from somatic.",
-            "keyConcept": "Pectinate line: embryological watershed dividing visceral innervation and drainage from somatic.",
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: Serrated line formed by anal valves, demarcating upper 2/3 (endodermal hindgut, autonomic nerve supply, portal venous drainage) from lower 1/3 (ectodermal proctodeum, somatic nerve supply, systemic venous drainage).",
+            "keyConcept": "Pectinate line: embryological junction of hindgut and proctodeum; demarcates nerve, vascular, and lymphatic drainage.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/rectum_anal_canal.webp",
@@ -2047,16 +2059,16 @@
             "id": "MGL3-CH304-ANAT-0023",
             "type": "mcq",
             "lecture": 8,
-            "text": "In this arterial dissection of the abdomen, identify this primary foregut arterial trunk:",
+            "text": "In this abdominal arterial dissection, identify the labeled primary foregut arterial trunk:",
             "options": [
               "Superior mesenteric artery",
-              "Inferior mesenteric artery",
               "Celiac trunk",
-              "Renal arterial trunk"
+              "Inferior phrenic artery",
+              "Middle suprarenal trunk"
             ],
-            "correctIndex": 2,
-            "explanation": "Criteria of Identification: Short ventral branch arising from abdominal aorta at T12, giving off left gastric, common hepatic, and splenic arteries.",
-            "keyConcept": "Celiac trunk: foregut artery arising from aorta at T12 giving left gastric, splenic, and common hepatic arteries.",
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Unpaired anterior branch of abdominal aorta arising at T12 immediately below aortic hiatus, dividing into left gastric, common hepatic, and splenic arteries.",
+            "keyConcept": "Celiac trunk: foregut artery arising from aorta at T12, giving off left gastric, common hepatic, and splenic arteries.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/celiac_trunk_arteries.webp",
@@ -2067,16 +2079,16 @@
             "id": "MGL3-CH304-ANAT-0024",
             "type": "mcq",
             "lecture": 8,
-            "text": "In this stomach arterial arcade dissection, identify this tortuous artery on the pancreas:",
+            "text": "In this arterial dissection, identify the labeled tortuous artery coursing along the upper border of the pancreas:",
             "options": [
-              "Left gastric artery",
-              "Gastroduodenal artery",
-              "Common hepatic trunk",
-              "Splenic artery"
+              "Common hepatic artery",
+              "Left gastric artery trunk",
+              "Splenic artery",
+              "Gastroduodenal branch"
             ],
-            "correctIndex": 3,
-            "explanation": "Criteria of Identification: Largest celiac branch, characterized by a tortuous course along the superior margin of the pancreas toward the splenic hilum.",
-            "keyConcept": "Splenic artery: tortuous celiac branch traveling along upper border of pancreas toward spleen and stomach.",
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: Largest branch of celiac trunk, running a strikingly tortuous course along superior border of pancreas toward splenorenal ligament.",
+            "keyConcept": "Splenic artery: tortuous branch of celiac trunk running along upper border of pancreas to spleen.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/stomach_arterial_arcade.webp",
@@ -2087,16 +2099,16 @@
             "id": "MGL3-CH304-ANAT-0025",
             "type": "mcq",
             "lecture": 8,
-            "text": "In this abdominal dissection, identify this midgut artery crossing the 3rd part of the duodenum:",
+            "text": "In this abdominal dissection, identify the labeled midgut arterial trunk crossing anterior to the 3rd part of duodenum:",
             "options": [
-              "Superior mesenteric artery",
-              "Inferior mesenteric artery",
-              "Celiac vascular trunk",
-              "Common iliac artery"
+              "Inferior mesenteric trunk",
+              "Proper hepatic artery",
+              "Left renal artery trunk",
+              "Superior mesenteric artery"
             ],
-            "correctIndex": 0,
-            "explanation": "Criteria of Identification: Midgut arterial trunk arising at L1, crossing anterior to the uncinate process and 3rd part of the duodenum to enter root of mesentery.",
-            "keyConcept": "Superior mesenteric artery: midgut arterial supply crossing anterior to the 3rd part of the duodenum.",
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Arises from anterior aspect of aorta at L1 behind neck of pancreas, emerges over uncinate process, and crosses anterior to third (horizontal) part of duodenum.",
+            "keyConcept": "SMA: midgut artery arising at L1, crossing anterior to 3rd part of duodenum and uncinate process.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/sma_artery_branches.webp",
@@ -2107,16 +2119,16 @@
             "id": "MGL3-CH304-ANAT-0026",
             "type": "mcq",
             "lecture": 8,
-            "text": "Examine these mesenteric arterial arcades. Identify the small intestinal segment shown:",
+            "text": "Examine these mesenteric arterial arcades. Identify the labeled intestinal segment shown with short vasa recta:",
             "options": [
-              "Jejunal mesenteric arcades",
               "Ileal mesenteric arcades",
-              "Middle colic arcades",
-              "Marginal artery of Drummond"
+              "Jejunal arterial arcades",
+              "Marginal artery of Drummond",
+              "Middle colic anastomotic loop"
             ],
-            "correctIndex": 1,
-            "explanation": "Criteria of Identification: Multiple overlapping tiers (3 to 5 arcades) with short straight vasa recta and fat-laden mesentery encroaching on the bowel wall.",
-            "keyConcept": "Ileal arcades: multiple complex tiers (3–5 arcades) with short vasa recta and heavy mesenteric fat.",
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: Characterized by multiple complex tiers of arterial arcades (3-5 tiers) giving off short, numerous vasa recta, typical of ileum.",
+            "keyConcept": "Ileal mesentery: multiple tiers of arcades (3-5 rows) giving rise to short, numerous vasa recta.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/jejunal_ileal_arcades.webp",
@@ -2127,16 +2139,16 @@
             "id": "MGL3-CH304-ANAT-0027",
             "type": "mcq",
             "lecture": 8,
-            "text": "In this transverse mesocolon dissection, identify the colic artery indicated:",
+            "text": "In this transverse mesocolon dissection, identify the labeled colic arterial branch arising from the SMA:",
             "options": [
-              "Right colic artery",
-              "Ileocolic artery",
+              "Right colic artery branch",
               "Middle colic artery",
-              "Left colic artery"
+              "Ileocolic artery trunk",
+              "Left colic artery branch"
             ],
-            "correctIndex": 2,
-            "explanation": "Criteria of Identification: First colic branch of the SMA, ascending between layers of transverse mesocolon to supply the transverse colon.",
-            "keyConcept": "Middle colic artery: SMA branch running through transverse mesocolon to supply the transverse colon.",
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Arises from anterior surface of SMA below pancreas, enters transverse mesocolon, divides into right and left branches to supply transverse colon.",
+            "keyConcept": "Middle colic artery: branch of SMA entering transverse mesocolon to supply transverse colon.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/colic_arteries_sma.webp",
@@ -2147,16 +2159,16 @@
             "id": "MGL3-CH304-ANAT-0028",
             "type": "mcq",
             "lecture": 8,
-            "text": "In this lower abdominal dissection, identify this hindgut arterial trunk:",
+            "text": "In this lower abdominal dissection, identify the labeled hindgut arterial trunk arising at L3:",
             "options": [
-              "Superior mesenteric artery",
-              "Middle colic branch",
-              "Median sacral trunk",
-              "Inferior mesenteric artery"
+              "Median sacral artery",
+              "Superior rectal terminal artery",
+              "Inferior mesenteric artery",
+              "Left testicular / ovarian artery"
             ],
-            "correctIndex": 3,
-            "explanation": "Criteria of Identification: Hindgut trunk arising from aorta at L3, giving left colic and sigmoid branches before continuing as superior rectal artery.",
-            "keyConcept": "Inferior mesenteric artery: hindgut artery arising at L3 terminating as the superior rectal artery.",
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: Arises from anterior aorta at L3 vertebral level (3-4 cm above bifurcation), giving off left colic, sigmoid arteries, and terminating as superior rectal artery.",
+            "keyConcept": "IMA: hindgut artery arising at L3, giving off left colic, sigmoid branches, and superior rectal artery.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/ima_branches_colon.webp",
@@ -2166,17 +2178,17 @@
           {
             "id": "MGL3-CH304-ANAT-0029",
             "type": "mcq",
-            "lecture": 9,
-            "text": "Behind the neck of the pancreas, identify the venous trunk formed by the union shown:",
+            "lecture": 8,
+            "text": "Behind the neck of the pancreas, identify the labeled large venous trunk formed by this union:",
             "options": [
-              "Hepatic portal vein",
-              "Inferior vena cava",
-              "Left renal vein",
-              "Right gonadal vein"
+              "Inferior vena cava (IVC)",
+              "Superior mesenteric vein",
+              "Splenic drainage vein",
+              "Hepatic portal vein"
             ],
-            "correctIndex": 0,
-            "explanation": "Criteria of Identification: Large venous trunk formed behind pancreatic neck by confluence of splenic vein and superior mesenteric vein, entering porta hepatis.",
-            "keyConcept": "Portal vein: formed behind pancreatic neck by the union of splenic vein and superior mesenteric vein.",
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Formed behind neck of pancreas at L2 by the union of splenic vein and superior mesenteric vein, ascending in free margin of lesser omentum to porta hepatis.",
+            "keyConcept": "Portal vein: formed behind pancreatic neck at L2 by union of splenic vein and superior mesenteric vein.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/portal_vein_tributaries.webp",
@@ -2187,16 +2199,16 @@
             "id": "MGL3-CH304-ANAT-0030",
             "type": "mcq",
             "lecture": 9,
-            "text": "On the inferior aspect of this bony palate, identify the posterolateral foramina indicated:",
+            "text": "On the inferior aspect of this bony palate, identify the labeled posterolateral bilateral foramina:",
             "options": [
-              "Incisive fossa canal",
               "Greater palatine foramina",
+              "Incisive fossa canal",
               "Lesser palatine foramina",
-              "Jugular cranial foramen"
+              "Sphenopalatine notch"
             ],
-            "correctIndex": 1,
-            "explanation": "Criteria of Identification: Posterolateral bilateral foramina piercing the horizontal plates of palatine bones transmitting greater palatine nerve and vessels.",
-            "keyConcept": "Greater palatine foramina: posterolateral bony palate apertures transmitting neurovascular supply to hard palate.",
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: Located in posterolateral corner of hard palate medial to last molar tooth, transmitting greater palatine nerve and vessels.",
+            "keyConcept": "Greater palatine foramen: transmits greater palatine nerve and vessels to mucosa of hard palate.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/bony_palate_foramina.webp",
@@ -2207,16 +2219,16 @@
             "id": "MGL3-CH304-ANAT-0031",
             "type": "mcq",
             "lecture": 9,
-            "text": "On this bony iliac crest specimen, identify the muscle attaching to the intermediate line:",
+            "text": "On this bony iliac crest specimen, identify the labeled muscle attaching to the intermediate line:",
             "options": [
               "External oblique muscle",
-              "Transversus abdominis",
               "Internal oblique muscle",
-              "Quadratus lumborum"
+              "Transversus abdominis muscle",
+              "Tensor fasciae latae muscle"
             ],
-            "correctIndex": 2,
-            "explanation": "Criteria of Identification: The intermediate line of the iliac crest provides origin for the internal oblique (between outer external oblique and inner transversus).",
-            "keyConcept": "Intermediate line of iliac crest: site of muscular origin for the internal oblique abdominal muscle.",
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: The iliac crest anterior 2/3 presents an outer lip (external oblique), intermediate line (internal oblique), and inner lip (transversus abdominis).",
+            "keyConcept": "Iliac crest intermediate line: site of origin of internal oblique muscle.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/iliac_crest_muscles.webp",
@@ -2227,16 +2239,16 @@
             "id": "MGL3-CH304-ANAT-0032",
             "type": "mcq",
             "lecture": 9,
-            "text": "On this osteological pelvis specimen, identify the muscle originating from the pubic crest:",
+            "text": "On this osteological pelvis specimen, identify the labeled muscle originating from the pubic crest:",
             "options": [
               "Pectineus adductor muscle",
-              "Pyramidalis anterior belly",
-              "Iliopsoas pelvic tendon",
-              "Rectus abdominis muscle"
+              "Psoas minor tendon insertion",
+              "Rectus abdominis muscle",
+              "Adductor longus tendon"
             ],
-            "correctIndex": 3,
-            "explanation": "Criteria of Identification: Vertical strap muscle arising by two heads from pubic crest and pubic symphysis, ascending within the rectus sheath.",
-            "keyConcept": "Rectus abdominis: vertical strap muscle arising from pubic crest and symphysis ascending to costal margin.",
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: Rectus abdominis originates by two heads from pubic crest and pubic symphysis, inserting onto costal cartilages 5-7 and xiphoid process.",
+            "keyConcept": "Rectus abdominis: originates from pubic crest and symphysis, inserting onto costal cartilages 5-7.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/pubic_crest_attachments.webp",
@@ -2247,16 +2259,16 @@
             "id": "MGL3-CH304-ANAT-0033",
             "type": "mcq",
             "lecture": 9,
-            "text": "On this typical lumbar vertebra, identify the horizontal posterior process indicated:",
+            "text": "On this typical lumbar vertebra, identify the labeled horizontal, hatchet-shaped posterior process:",
             "options": [
-              "Lumbar spinous process",
-              "Mamillary process projection",
-              "Accessory tubercle process",
-              "Costiform transverse process"
+              "Superior articular facet",
+              "Transverse costiform process",
+              "Accessory posterior tubercle",
+              "Lumbar spinous process"
             ],
-            "correctIndex": 0,
-            "explanation": "Criteria of Identification: Thick, horizontal quadrangular hatchet-shaped process providing attachment for interspinous and supraspinous ligaments.",
-            "keyConcept": "Lumbar spinous process: broad, horizontal hatchet-shaped process providing interspinous ligamentous anchor.",
+            "correctIndex": 3,
+            "explanation": "Criteria of Identification: Lumbar spinous process is broad, thick, quadrangular/hatchet-shaped, projecting directly backwards horizontally.",
+            "keyConcept": "Lumbar spinous process: broad, quadrangular, horizontal plate projecting directly backward.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/lumbar_vertebra_ligaments.webp",
@@ -2267,16 +2279,16 @@
             "id": "MGL3-CH304-ANAT-0034",
             "type": "mcq",
             "lecture": 9,
-            "text": "On this atypical fifth lumbar vertebra (L5), identify the defining morphological feature:",
+            "text": "On this atypical fifth lumbar vertebra (L5), identify the labeled defining morphological feature:",
             "options": [
-              "Circular rather than triangular vertebral canal",
               "Massive conical transverse process attached directly to the pedicle and body",
-              "Bifid spinous process with posterior hook",
-              "Absence of superior articular facets"
+              "Bifid spinous process with posterior divergence",
+              "Costal articular facets on posterolateral body aspect",
+              "Heart-shaped body with circular vertebral foramen"
             ],
-            "correctIndex": 1,
-            "explanation": "Criteria of Identification: L5 is characterized by massive conical transverse processes arising directly from both the pedicle and body for the iliolumbar ligament.",
-            "keyConcept": "L5 vertebra: distinguished by massive conical transverse processes attached directly to the pedicle and body.",
+            "correctIndex": 0,
+            "explanation": "Criteria of Identification: L5 is distinguished by massive, conical transverse processes that attach broadly to both the pedicle and side of the vertebral body, providing attachment for iliolumbar ligaments.",
+            "keyConcept": "L5 vertebra: massive transverse processes attached to both pedicle and body for iliolumbar ligament.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/atypical_l5_vertebra.webp",
@@ -2287,16 +2299,16 @@
             "id": "MGL3-CH304-ANAT-0035",
             "type": "mcq",
             "lecture": 10,
-            "text": "Examine this clinical photograph. Identify the embryological cause of this anomaly:",
+            "text": "Examine this clinical photograph. Identify the labeled embryological defect responsible for this unilateral facial cleft:",
             "options": [
-              "Failure of fusion between mandibular and lateral nasal prominences",
-              "Failure of fusion between lateral palatine processes and nasal septum",
+              "Failure of fusion between lateral palatine processes",
               "Failure of fusion between maxillary and medial nasal prominences",
-              "Failure of migration of cranial neural crest cells into 2nd arch"
+              "Defective migration of second pharyngeal arch mesenchyme",
+              "Incomplete development of frontonasal prominence"
             ],
-            "correctIndex": 2,
-            "explanation": "Criteria of Identification: Unilateral cleft lip results from failure of the maxillary prominence to fuse with the medial nasal prominence (intermaxillary segment).",
-            "keyConcept": "Cleft lip: developmental failure of fusion between the maxillary prominence and medial nasal prominence.",
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: Cleft lip results from failure of the maxillary prominence to fuse with the intermaxillary segment (derived from fused medial nasal prominences).",
+            "keyConcept": "Cleft lip: failure of fusion between maxillary prominence and medial nasal prominence.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/cleft_lip_palate_anomaly.webp",
@@ -2307,16 +2319,16 @@
             "id": "MGL3-CH304-ANAT-0036",
             "type": "mcq",
             "lecture": 10,
-            "text": "In this diagram of tracheoesophageal anomalies, identify the most common anatomical variant:",
+            "text": "In this diagram of tracheoesophageal malformations, identify the labeled most common anatomical variant (85%):",
             "options": [
-              "Isolated esophageal atresia without fistula",
-              "Proximal tracheoesophageal fistula with distal atresia",
-              "Isolated H-type tracheoesophageal fistula",
-              "Proximal esophageal atresia with distal tracheoesophageal fistula"
+              "Isolated esophageal atresia without fistula (Type A)",
+              "Isolated H-type tracheoesophageal fistula (Type E)",
+              "Proximal esophageal atresia with distal tracheoesophageal fistula",
+              "Proximal fistula with distal esophageal atresia (Type B)"
             ],
-            "correctIndex": 3,
-            "explanation": "Criteria of Identification: Type C (~85% of cases) comprises a blind proximal esophageal pouch and a distal esophageal fistula connecting to the carina.",
-            "keyConcept": "Tracheoesophageal fistula: Type C (blind upper esophageal pouch with distal fistula) is the most common form.",
+            "correctIndex": 2,
+            "explanation": "Criteria of Identification: The classic presentation (Type C) comprises a blind-ending proximal esophageal pouch with a fistula connecting the distal esophagus to the carina/trachea.",
+            "keyConcept": "Most common TEF variant (85%): blind proximal esophageal pouch + fistula between distal esophagus and trachea.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/tef_anomalies_types.webp",
@@ -2327,16 +2339,16 @@
             "id": "MGL3-CH304-ANAT-0037",
             "type": "mcq",
             "lecture": 10,
-            "text": "On this axial abdominal CT scan at the transpyloric plane (T12-L1), identify the organ crossing the midline:",
+            "text": "On this axial abdominal CT scan at the transpyloric plane (T12-L1), identify the labeled retroperitoneal organ crossing the midline:",
             "options": [
+              "Spleen",
               "Pancreas",
-              "Transverse colon loop",
-              "Duodenojejunal flexure",
-              "Left renal cortex parenchyma"
+              "Left adrenal gland",
+              "Transverse colon"
             ],
-            "correctIndex": 0,
-            "explanation": "Criteria of Identification: Elongated retroperitoneal parenchymal organ crossing the midline anterior to the aorta, IVC, and superior mesenteric vessels.",
-            "keyConcept": "Pancreas on axial CT: elongated retroperitoneal organ whose neck crosses anterior to mesenteric vessels at L1.",
+            "correctIndex": 1,
+            "explanation": "Criteria of Identification: The body and tail of the pancreas lie obliquely across the retroperitoneum, anterior to the splenic vein, aorta, and left kidney, extending toward the splenic hilum.",
+            "keyConcept": "Pancreas on CT: elongated organ crossing anterior to splenic vein, aorta, and superior mesenteric artery.",
             "media": {
               "type": "image",
               "imageUrl": "/images/practical/mgl-3/anatomy/axial_ct_abdomen_t12_l1.webp",

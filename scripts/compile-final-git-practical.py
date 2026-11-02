@@ -1,20 +1,32 @@
 #!/usr/bin/env python3
 """
 ASU Medical Portal — GIT (MGL-3) Comprehensive Practical Exam Compiler
-Assembles the complete 120 questions across 8 chapters with:
-- Balanced answer keys (exactly 30 A, 30 B, 30 C, 30 D)
+Assembles the complete 120 questions across all 8 chapters:
+- Histology (Chapter 301, 28 questions)
+- Pathology (Chapter 302, 6 questions)
+- Parasitology (Chapter 303, 41 questions)
+- Anatomy (Chapter 304, 37 questions)
+- Physiology (Chapter 305, 2 questions)
+- Biochemistry (Chapter 306, 2 questions)
+- Microbiology (Chapter 307, 2 questions)
+- Clinical (Chapter 308, 2 questions)
+
+Enforces:
+- Perfect answer key balance (exactly 30 A, 30 B, 30 C, 30 D across 120 questions)
 - Verified image assets on disk
-- Balanced distractor lengths
-- High-yield medical explanations
+- High-yield medical explanations & criteria of identification
 """
 
 import json
 import os
 import sys
 
+sys.path.insert(0, os.path.dirname(__file__))
+
 from data_histology import HISTOLOGY_QUESTIONS
-from data_anatomy import ANATOMY_QUESTIONS
+from data_pathology import PATHOLOGY_QUESTIONS
 from data_parasitology import PARASITOLOGY_QUESTIONS
+from data_anatomy import ANATOMY_QUESTIONS
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 PRACTICAL_JSON_PATH = os.path.join(ROOT_DIR, "src/app/data/practical/mgl-3-practical.json")
@@ -24,20 +36,20 @@ def load_preserved_chapters():
         existing = json.load(f)
     preserved = {}
     for ch in existing:
-        if ch["id"] in [302, 305, 306, 307, 308]:
+        if ch["id"] in [305, 306, 307, 308]:
             preserved[ch["id"]] = ch
     return preserved
 
 def main():
     preserved_chapters = load_preserved_chapters()
     
-    # Count preserved indices
+    # Count preserved indices in 305-308 (8 questions)
     preserved_counts = {0: 0, 1: 0, 2: 0, 3: 0}
     for cid, ch in preserved_chapters.items():
         for q in ch["subjects"][0]["questions"]:
             preserved_counts[q["correctIndex"]] += 1
             
-    print(f"Preserved questions: {sum(preserved_counts.values())}")
+    print(f"Preserved questions (Ch 305-308): {sum(preserved_counts.values())}")
     print(f"Preserved index distribution: {preserved_counts}")
     
     # Target across all 120 questions is 30 each
@@ -47,20 +59,19 @@ def main():
         2: 30 - preserved_counts[2],
         3: 30 - preserved_counts[3]
     }
-    print(f"Indices needed for new questions (106 total): {targets_needed}")
+    print(f"Indices needed for new questions (112 total): {targets_needed}")
     total_needed = sum(targets_needed.values())
-    assert total_needed == 106, f"Expected 106, got {total_needed}"
+    assert total_needed == 112, f"Expected 112, got {total_needed}"
 
-    # Plan index allocations across Histology (28), Anatomy (37), Parasitology (41)
-    # We will distribute systematically
-    pool = []
-    for idx, count in targets_needed.items():
-        pool.extend([idx] * count)
+    # Plan index allocations across Histology (28), Pathology (6), Parasitology (41), Anatomy (37) = 112 total
+    sub_pools = {
+        0: [0] * targets_needed[0],
+        1: [1] * targets_needed[1],
+        2: [2] * targets_needed[2],
+        3: [3] * targets_needed[3]
+    }
     
-    # Deterministic interleave so each subject has balanced distribution
-    # Sort pool so [0, 1, 2, 3, 0, 1, 2, 3, ...]
     interleaved = []
-    sub_pools = {0: [0]*targets_needed[0], 1: [1]*targets_needed[1], 2: [2]*targets_needed[2], 3: [3]*targets_needed[3]}
     while any(len(v) > 0 for v in sub_pools.values()):
         for i in [0, 1, 2, 3]:
             if sub_pools[i]:
@@ -69,13 +80,16 @@ def main():
     print(f"Interleaved {len(interleaved)} targets for new questions.")
     
     # Distribute:
+    # 28 Histology, 6 Pathology, 41 Parasitology, 37 Anatomy
     histo_targets = interleaved[:28]
-    anat_targets = interleaved[28:28+37]
-    para_targets = interleaved[28+37:]
+    path_targets = interleaved[28:28+6]
+    para_targets = interleaved[28+6:28+6+41]
+    anat_targets = interleaved[28+6+41:]
     
     assert len(histo_targets) == 28
-    assert len(anat_targets) == 37
+    assert len(path_targets) == 6
     assert len(para_targets) == 41
+    assert len(anat_targets) == 37
 
     def build_question_obj(q_raw, target_idx, ch_id, subj_code):
         qid = f"MGL3-CH{ch_id}-{subj_code}-{q_raw['seq']:04d}"
@@ -144,7 +158,40 @@ def main():
         ]
     }
 
-    # 2. Build Parasitology Chapter (303)
+    # 2. Build Pathology Chapter (302)
+    path_questions = []
+    for q_raw, target_idx in zip(PATHOLOGY_QUESTIONS, path_targets):
+        path_questions.append(build_question_obj(q_raw, target_idx, 302, "PATH"))
+
+    path_chapter = {
+        "id": 302,
+        "title": "Practical — Pathology",
+        "subtitle": "Gross Pathology Museum Jars & Histopathology",
+        "emoji": "🧪",
+        "page": 457,
+        "lectureRange": "Stations 1–6",
+        "bankSection": "practical",
+        "subjects": [
+            {
+                "id": "pathology",
+                "name": "Pathology",
+                "iconName": "Activity",
+                "lectures": "Stations 1–6",
+                "lectureCount": 6,
+                "lectureNames": [
+                    "Barrett Esophagus & Metaplasia",
+                    "Pleomorphic Adenoma & Salivary Tumors",
+                    "Warthin Tumor Histopathology",
+                    "Liver Cirrhosis (Masson Trichrome)",
+                    "Hepatocellular Carcinoma on Cirrhosis",
+                    "Schistosomal Clay-Pipe-Stem Fibrosis"
+                ],
+                "questions": path_questions
+            }
+        ]
+    }
+
+    # 3. Build Parasitology Chapter (303)
     para_questions = []
     for q_raw, target_idx in zip(PARASITOLOGY_QUESTIONS, para_targets):
         para_questions.append(build_question_obj(q_raw, target_idx, 303, "PARA"))
@@ -181,7 +228,7 @@ def main():
         ]
     }
 
-    # 3. Build Anatomy Chapter (304)
+    # 4. Build Anatomy Chapter (304)
     anat_questions = []
     for q_raw, target_idx in zip(ANATOMY_QUESTIONS, anat_targets):
         anat_questions.append(build_question_obj(q_raw, target_idx, 304, "ANAT"))
@@ -221,7 +268,7 @@ def main():
     # Assemble all 8 chapters in canonical numerical order: 301 to 308
     full_bank = [
         histo_chapter,
-        preserved_chapters[302],
+        path_chapter,
         para_chapter,
         anat_chapter,
         preserved_chapters[305],
