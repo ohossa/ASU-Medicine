@@ -247,7 +247,7 @@ function QuizFlowWrapper({
     <>
       {screen === 'chapters' && (
         <Suspense fallback={<LoadingScreen compact label="Opening this view…"/>}>
-          {selectedModule.code === 'MGL-3' ? <GitBankSelect
+          {selectedModule.code === 'MGL-3' && studyMode !== 'practical' ? <GitBankSelect
             chapters={activeChapters}
             collection={gitCollection}
             examPeriod={gitExamPeriod}
@@ -290,7 +290,7 @@ function QuizFlowWrapper({
             selectedBranch={selectedPracticeBranch}
             onBranchChange={setSelectedPracticeBranch}
             moduleCode={selectedModule.code}
-            breadcrumbPath={selectedModule.code === 'MGL-3' ? [...gitCollectionCrumbs, { label: selectedChapter.subjects[0]?.name || selectedChapter.title.replace(/^(?:Past exams|CA-[12])\s*[—–-]\s*/, '') }] : [
+            breadcrumbPath={selectedModule.code === 'MGL-3' && studyMode !== 'practical' ? [...gitCollectionCrumbs, { label: selectedChapter.subjects[0]?.name || selectedChapter.title.replace(/^(?:Past exams|CA-[12])\s*[—–-]\s*/, '') }] : [
               { label: t('portal') || 'Portal', onClick: () => navigate('/') },
               { label: t(`year${selectedYear || 2}`) || `Year ${selectedYear || 2}`, onClick: () => navigate(`/year-${selectedYear || 2}`) },
               { label: selectedModule?.name || '', onClick: () => {
@@ -320,7 +320,7 @@ function QuizFlowWrapper({
             userButton={customUserButton}
             savedSession={quizPayload.savedSession}
             childAnchor={quizPayload.childAnchor}
-            breadcrumbPath={selectedModule.code === 'MGL-3' ? [
+            breadcrumbPath={selectedModule.code === 'MGL-3' && studyMode !== 'practical' ? [
               ...gitCollectionCrumbs,
               { label: quizPayload.chapter.subjects[0]?.name || quizPayload.chapter.title.replace(/^(?:Past exams|CA-[12])\s*[—–-]\s*/, ''), onClick: () => setScreen('subjects') },
               { label: quizPayload.subject?.name ?? 'All topics' },
@@ -363,7 +363,7 @@ function QuizFlowWrapper({
               }
             }}
             userButton={customUserButton}
-            breadcrumbPath={selectedModule.code === 'MGL-3' ? [
+            breadcrumbPath={selectedModule.code === 'MGL-3' && studyMode !== 'practical' ? [
               ...gitCollectionCrumbs,
               { label: resultPayload.chapter.subjects[0]?.name || resultPayload.chapter.title.replace(/^(?:Past exams|CA-[12])\s*[—–-]\s*/, ''), onClick: () => setScreen('subjects') },
               { label: resultPayload.subject?.name ?? 'All topics', onClick: () => setScreen('subjects') },
