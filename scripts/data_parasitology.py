@@ -1,15 +1,15 @@
 # scripts/data_parasitology.py
 """
 Official 41 Parasitology Practical Revision Questions for Year 3 GIT (MGL-3).
-Source: GIT Practical Final Lab 7.pdf (107 pages)
-Includes explicit Criteria of Identification (diagnostic stage, morphological hallmarks, habitat, differential diagnosis).
+All questions are authentic spotter exam questions with NO giveaways in question stems.
+All images have all species names, stage names, and labels completely blanked out.
 """
 
 PARASITOLOGY_QUESTIONS = [
     {
         "seq": 1,
         "lecture": 1,
-        "text": "Examine this whole-mount microscopic slide of a large, flat, leaf-shaped digenetic trematode exhibiting a prominent cephalic cone, broad shoulders, and dendritic, highly branched intestinal ceca and testes. Identify this parasite:",
+        "text": "Examine this whole-mount microscopic slide of an adult trematode. Identify this parasite:",
         "correct_answer": "Fasciola hepatica (Adult)",
         "distractors": [
             "Fasciolopsis buski (Adult)",
@@ -23,7 +23,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 2,
         "lecture": 1,
-        "text": "Identify this adult nematode showing a characteristic whip-like contour where the anterior three-fifths is attenuated and thread-like (containing a stichosome) and the posterior two-fifths is stout, with a coiled male tail:",
+        "text": "Examine this adult nematode specimen. Identify this parasite:",
         "correct_answer": "Trichuris trichiura (Whipworm adult)",
         "distractors": [
             "Enterobius vermicularis (Adult)",
@@ -37,7 +37,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 3,
         "lecture": 1,
-        "text": "In this microscopic slide of a dioecious blood fluke, identify the stout male worm covered with cuticular tuberculations, whose lateral margins fold ventrally to form the gynaecophoric canal holding the slender female:",
+        "text": "Examine this dioecious blood fluke slide. Identify these adult parasites:",
         "correct_answer": "Schistosoma mansoni (Adults in copula)",
         "distractors": [
             "Fasciola gigantica (Adult)",
@@ -51,7 +51,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 4,
         "lecture": 1,
-        "text": "Examine this small spindle-shaped adult female nematode (8-13 mm) displaying bilateral cephalic alae at the anterior end, a double-bulb esophagus, and a long, sharply pointed pin-like tail. Identify this specimen:",
+        "text": "Examine this adult female roundworm specimen. Identify this species:",
         "correct_answer": "Enterobius vermicularis (Pinworm female)",
         "distractors": [
             "Ascaris lumbricoides (Female)",
@@ -65,7 +65,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 5,
         "lecture": 2,
-        "text": "Identify this minute adult tapeworm (3-6 mm total length) consisting of only a scolex with four suckers and a double crown of hooks, followed by an immature, a mature, and a single large terminal gravid proglottid:",
+        "text": "Examine this minute adult tapeworm (3-6 mm). Identify this species:",
         "correct_answer": "Echinococcus granulosus (Adult)",
         "distractors": [
             "Hymenolepis nana (Adult)",
@@ -79,7 +79,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 6,
         "lecture": 2,
-        "text": "Examine this minute pear-shaped intestinal fluke (1-1.7 mm) displaying scale-like cuticular spines, an oral sucker, a ventral sucker, and a unique third genital sucker (gonotyl) armed with chitinous rodlets. Identify this parasite:",
+        "text": "Examine this minute pear-shaped intestinal fluke (1-1.7 mm). Identify this parasite:",
         "correct_answer": "Heterophyes heterophyes (Adult)",
         "distractors": [
             "Metagonimus yokogawai (Adult)",
@@ -93,7 +93,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 7,
         "lecture": 2,
-        "text": "In this high-power micrograph of an adult hookworm buccal capsule, identify the genus characterized by two pairs of curved, sharp ventral cutting teeth on the upper anterior margin:",
+        "text": "In this high-power micrograph of a hookworm buccal capsule, identify the genus shown:",
         "correct_answer": "Ancylostoma duodenale",
         "distractors": [
             "Necator americanus",
@@ -107,7 +107,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 8,
         "lecture": 2,
-        "text": "Identify this slender, microscopic parasitic parthenogenetic female nematode (2-2.5 mm) exhibiting an elongated cylindrical filariform esophagus extending through one-third of the body, and an amphidelphic uterus with thin-shelled eggs:",
+        "text": "Examine this microscopic parasitic female nematode. Identify this species:",
         "correct_answer": "Strongyloides stercoralis (Parasitic female)",
         "distractors": [
             "Enterobius vermicularis (Female)",
@@ -121,7 +121,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 9,
         "lecture": 3,
-        "text": "Examine this cestode scolex displaying four cup-shaped muscular suckers, a prominent rostellum, and a double crown of alternating large and small chitinous sickle-shaped hooks. Identify this species:",
+        "text": "Examine this cestode scolex under the microscope. Identify this species:",
         "correct_answer": "Taenia solium (Armed scolex)",
         "distractors": [
             "Taenia saginata (Unarmed scolex)",
@@ -135,7 +135,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 10,
         "lecture": 3,
-        "text": "Identify this broad cestode mature proglottid displaying a width significantly greater than its length, a centrally placed rosette-shaped coiled uterus, and a median uterine pore (tocostome):",
+        "text": "Examine this tapeworm mature proglottid. Identify this species:",
         "correct_answer": "Diphyllobothrium latum (Mature segment)",
         "distractors": [
             "Taenia saginata (Mature segment)",
@@ -149,7 +149,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 11,
         "lecture": 3,
-        "text": "In this stained gravid tapeworm proglottid, identify the species characterized by an elongated rectangular segment containing a central uterine stem with 15 to 30 lateral dichotomous branches on each side:",
+        "text": "Examine this stained gravid tapeworm proglottid. Identify this species:",
         "correct_answer": "Taenia saginata (Gravid proglottid)",
         "distractors": [
             "Taenia solium (Gravid proglottid)",
@@ -163,7 +163,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 12,
         "lecture": 3,
-        "text": "Examine this larval trematode stage possessing an elongated cylindrical body with anterior penetration glands, oral and ventral suckers, and a characteristic bifurcated (forked) tail. Identify this cercaria:",
+        "text": "Examine this larval trematode stage. Identify this cercaria:",
         "correct_answer": "Furcocercus cercaria of Schistosoma",
         "distractors": [
             "Leptocercus cercaria of Fasciola",
@@ -177,7 +177,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 13,
         "lecture": 4,
-        "text": "Identify this larval cestode stage (bladder worm) found in measly beef, consisting of a fluid-filled translucent oval vesicle enclosing a single invaginated unarmed scolex with four suckers:",
+        "text": "Examine this larval cestode bladder worm. Identify this stage:",
         "correct_answer": "Cysticercus bovis",
         "distractors": [
             "Cysticercus cellulosae",
@@ -191,7 +191,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 14,
         "lecture": 4,
-        "text": "In this histological section of a hydatid cyst wall, identify the middle non-nucleated, elastic, acellular cuticular layer displaying distinct parallel concentric laminations:",
+        "text": "In this histological section of a cyst wall, identify the middle laminated layer indicated:",
         "correct_answer": "Laminated ectocyst layer",
         "distractors": [
             "Inner germinal endocyst layer",
@@ -205,7 +205,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 15,
         "lecture": 4,
-        "text": "Examine this diagnostic larva passed in freshly voided feces (200-250 micrometers). It exhibits a short buccal cavity (stoma), a muscular rhabditiform double-bulb esophagus, and a prominent oval genital primordium. Identify the larva:",
+        "text": "Examine this diagnostic larva passed in freshly voided stool. Identify this larva:",
         "correct_answer": "Strongyloides stercoralis rhabditiform larva",
         "distractors": [
             "Hookworm rhabditiform larva",
@@ -219,7 +219,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 16,
         "lecture": 4,
-        "text": "In this cross-section of an inflamed vermiform appendix, identify these small nematodes within the lumen characterized by lateral cuticular triangular alae (crests) and uterus packed with plano-convex eggs:",
+        "text": "In this appendiceal cross-section, identify these parasitic nematodes in the lumen:",
         "correct_answer": "Enterobius vermicularis in appendix",
         "distractors": [
             "Ascaris lumbricoides in bowel",
@@ -233,7 +233,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 17,
         "lecture": 5,
-        "text": "Examine this colonic biopsy showing flask-shaped mucosal ulceration containing giant ciliated protozoan trophozoites (50-100 micrometers) with a prominent kidney-shaped macronucleus. Identify this organism:",
+        "text": "In this colonic biopsy, identify these giant ciliated trophozoites:",
         "correct_answer": "Balantidium coli trophozoite",
         "distractors": [
             "Entamoeba histolytica trophozoite",
@@ -247,7 +247,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 18,
         "lecture": 5,
-        "text": "In this stained fecal smear from a patient with watery diarrhea, identify this pear-shaped, binucleated flagellate displaying bilateral symmetry, a ventral suction disk, and four pairs of flagella:",
+        "text": "In this fecal smear, identify this binucleated flagellated trophozoite:",
         "correct_answer": "Giardia lamblia (Trophozoite)",
         "distractors": [
             "Trichomonas hominis (Trophozoite)",
@@ -261,7 +261,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 19,
         "lecture": 5,
-        "text": "Examine this fresh stool trophozoite from a patient with bloody mucoid dysentery. Identify the pathognomonic diagnostic feature that confirms invasive Entamoeba histolytica rather than non-pathogenic amoebae:",
+        "text": "In this fresh stool dysenteric smear, identify the pathognomonic diagnostic feature:",
         "correct_answer": "Phagocytosed red blood cells in cytoplasm",
         "distractors": [
             "Multiple pulsatile contractile vacuoles",
@@ -275,7 +275,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 20,
         "lecture": 5,
-        "text": "In this high-magnification wet preparation of Balantidium coli, identify the dense nuclear structure whose concave notch houses the spherical micronucleus:",
+        "text": "In this Balantidium coli preparation, identify the prominent nuclear mass:",
         "correct_answer": "Reniform (Bean-shaped) macronucleus",
         "distractors": [
             "Pinpoint central karyosome",
@@ -289,7 +289,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 21,
         "lecture": 5,
-        "text": "Examine this iodine-stained cyst from formed feces (8-12 micrometers). It displays an ellipsoidal shape, a refractive double wall, four clustered nuclei, curved median bodies, and a longitudinal axostyle. Identify this cyst:",
+        "text": "In this iodine-stained fecal mount, identify this quadranucleate cyst:",
         "correct_answer": "Giardia lamblia cyst",
         "distractors": [
             "Entamoeba histolytica cyst",
@@ -303,7 +303,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 22,
         "lecture": 6,
-        "text": "In this iodine wet mount of a mature fecal cyst (12-15 micrometers), identify the diagnostic features that distinguish Entamoeba histolytica from Entamoeba coli:",
+        "text": "In this fecal cyst comparison, identify the diagnostic features of Entamoeba histolytica:",
         "correct_answer": "Four nuclei with central karyosomes and smooth cigar-shaped chromatoid bars",
         "distractors": [
             "Eight nuclei with eccentric karyosomes and splintered chromatoid bars",
@@ -317,7 +317,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 23,
         "lecture": 6,
-        "text": "Identify this large spherical to subspherical cyst (50-70 micrometers) found in pig feces and human stool, showing a thick refractive double wall and retaining a characteristic large bean-shaped macronucleus:",
+        "text": "Examine this large spherical double-walled cyst. Identify this species:",
         "correct_answer": "Balantidium coli cyst",
         "distractors": [
             "Entamoeba coli cyst",
@@ -331,7 +331,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 24,
         "lecture": 6,
-        "text": "Examine this fecal smear stained by the modified Ziehl-Neelsen (Kinyoun) acid-fast technique. Identify these small spherical bright-red (magenta) oocysts (4-5 micrometers) containing four naked sporozoites:",
+        "text": "In this modified acid-fast fecal smear, identify these bright-red oocysts:",
         "correct_answer": "Cryptosporidium parvum oocysts",
         "distractors": [
             "Blastocystis hominis cysts",
@@ -345,7 +345,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 25,
         "lecture": 6,
-        "text": "Identify this freshwater molluscan shell displaying a discoidal, planorbid flat coil in a single plane, serving as the essential intermediate host for Schistosoma mansoni in Egypt:",
+        "text": "Identify this freshwater molluscan shell vector:",
         "correct_answer": "Biomphalaria alexandrina snail",
         "distractors": [
             "Bulinus truncatus snail",
@@ -359,7 +359,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 26,
         "lecture": 7,
-        "text": "Examine this microscopic field comparing operculated helminth eggs. Identify the giant operculated egg (130-150 by 60-90 micrometers) with an unsegmented ovum surrounded by vitelline cells, passed in bile and stool:",
+        "text": "In this comparison of operculated eggs, identify the giant egg shown:",
         "correct_answer": "Fasciola hepatica egg",
         "distractors": [
             "Diphyllobothrium latum egg",
@@ -373,7 +373,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 27,
         "lecture": 7,
-        "text": "Identify this diagnostic helminth egg in a stool smear, characterized by an elongated oval shape (115-175 micrometers), a transparent golden shell, and a prominent, sharp lateral spine near the posterior pole:",
+        "text": "Examine this diagnostic egg in stool microscopy. Identify this species:",
         "correct_answer": "Schistosoma mansoni egg",
         "distractors": [
             "Schistosoma haematobium egg",
@@ -387,7 +387,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 28,
         "lecture": 7,
-        "text": "Examine this thin-shelled, oval helminth egg (55-65 by 35-40 micrometers) with bluntly rounded poles, a transparent colorless shell, and an internal segmenting ovum at the 4 to 8 blastomere (morula) stage:",
+        "text": "Examine this thin-shelled segmenting morula egg. Identify this species:",
         "correct_answer": "Hookworm egg (Ancylostoma / Necator)",
         "distractors": [
             "Ascaris lumbricoides egg",
@@ -401,7 +401,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 29,
         "lecture": 7,
-        "text": "In this comparison of spherical eggs, identify the species possessing a spherical shape (30-40 micrometers), a thick yellowish-brown shell with prominent radial striations (embryophore), and a six-hooked oncosphere:",
+        "text": "In this comparison of spherical eggs, identify the radially striated egg:",
         "correct_answer": "Taenia species egg",
         "distractors": [
             "Hymenolepis nana egg",
@@ -415,7 +415,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 30,
         "lecture": 7,
-        "text": "Examine this barrel-shaped (lemon-shaped) helminth egg (50-54 by 22 micrometers) displaying a thick golden-brown smooth shell and a prominent, clear, transparent mucoid plug at each pole:",
+        "text": "Examine this barrel-shaped egg with bipolar plugs. Identify this species:",
         "correct_answer": "Trichuris trichiura egg",
         "distractors": [
             "Enterobius vermicularis egg",
@@ -429,7 +429,7 @@ PARASITOLOGY_QUESTIONS = [
     {
         "seq": 31,
         "lecture": 8,
-        "text": "Spotter examination: Identify this cestode scolex possessing four lateral cup-like muscular suckers and an anterior prominent conical rostellum bearing a double alternating crown of 22 to 32 sharp hooklets:",
+        "text": "Spotter examination: Identify this armed cestode scolex:",
         "correct_answer": "Taenia solium (Pork tapeworm scolex)",
         "distractors": [
             "Taenia saginata (Beef tapeworm scolex)",
