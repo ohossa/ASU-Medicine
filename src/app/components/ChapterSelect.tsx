@@ -1,7 +1,7 @@
 import {questionCountLabel} from '../learning/practiceNavigation';
-import {FlowBreadcrumbs} from './FlowBreadcrumbs';
+import { FlowBreadcrumbs } from './FlowBreadcrumbs';
 import { isPastExamSection, visiblePracticeChapters } from "../lib/practiceOrder";
-import {useSyncedHistory} from '../hooks/useSyncedHistory';
+import { useSyncedHistory } from '../hooks/useSyncedHistory';
 import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
 import React, { useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router';
@@ -12,6 +12,7 @@ import type { QuizResult } from '../utils/storage';
 import { clearQuizHistory } from '../utils/storage';
 import { useLanguage } from '../hooks/useLanguage';
 import { PortalFooter } from './PortalFooter';
+import { ChapterPracticePicker } from './ChapterPracticePicker';
 
 /* ------------------------------------------------------------------ */
 /* Types                                                               */
@@ -32,6 +33,7 @@ interface Props {
   onBackToModeSelect: () => void;
   userButton?: React.ReactNode;
   breadcrumbPath?: BreadcrumbItem[];
+  onStartCustomPractice?: (virtualChapter: ChapterData, subject: SubjectData, questions: Question[]) => void;
 }
 
 /* ------------------------------------------------------------------ */
@@ -194,6 +196,7 @@ export function ChapterSelect({
   onBackToModeSelect,
   userButton,
   breadcrumbPath,
+  onStartCustomPractice,
 }: Props) {
   const chapters = useMemo(() => visiblePracticeChapters(allChapters), [allChapters]);
   const { t, language } = useLanguage();
@@ -234,114 +237,6 @@ export function ChapterSelect({
     (sum, c) => sum + c.subjects.reduce((s, sub) => s + sub.questions.length, 0),
     0,
   );
-
-  const mixedChapter = useMemo(() => {
-    if (chapters.length <= 1) return null;
-
-    const subjectsMap: Record<string, {
-      id: SubjectColor;
-      name: string;
-      iconName?: string;
-      lectures: string;
-      lectureCount: number;
-      questions: Question[];
-    }> = {};
-    chapters.forEach(ch => {
-      ch.subjects.forEach(sub => {
-        if (!subjectsMap[sub.id]) {
-          subjectsMap[sub.id] = {
-            id: sub.id,
-            name: sub.name,
-            iconName: sub.iconName,
-            lectures: language === 'en' ? 'All Lectures' : 'جميع المحاضرات',
-            lectureCount: 0,
-            questions: [],
-          };
-        }
-        subjectsMap[sub.id].questions = [
-          ...subjectsMap[sub.id].questions,
-          ...sub.questions
-        ];
-        subjectsMap[sub.id].lectureCount += sub.lectureCount;
-      });
-    });
-
-    const mergedSubjects = Object.values(subjectsMap).filter((s) => s.questions.length > 0);
-    if (mergedSubjects.length === 0) return null;
-
-    return {
-      id: 0,
-      title: language === 'en' ? 'All Chapters (Mixed)' : 'الموديول كاملاً (مختلط)',
-      subtitle: language === 'en' 
-        ? 'Practice questions from all chapters and subjects combined' 
-        : 'تدرب على أسئلة جميع الفصول والمواد مجتمعة',
-      emoji: '📚',
-      page: 1,
-      lectureRange: language === 'en' ? 'All Sections' : 'جميع الأقسام',
-      accentColor: 'clinical' as SubjectColor,
-      subjects: mergedSubjects as SubjectData[],
-    };
-  }, [chapters, language]);
-
-  const renderMixedCard = (mCh: ChapterData) => {
-    const accent = mCh.accentColor;
-    return (
-      <article
-        onClick={() => onSelectChapter(mCh)}
-        className="cs-enter group relative overflow-hidden bg-gradient-to-r from-card to-secondary/30 border border-border dark:border-white/[0.06] glass-panel rounded-[28px] p-6 sm:p-8 transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1 hover:border-gray-300 dark:hover:border-white/[0.14] mb-6 cursor-pointer"
-        style={{ animationDelay: '100ms' }}
-      >
-        <div
-          aria-hidden
-          className={`pointer-events-none absolute -right-12 -top-12 h-44 w-44 rounded-full bg-gradient-to-br ${cornerGradient[accent] || 'from-clinical/5'} to-transparent blur-2xl`}
-        />
-
-        <div className="relative flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-          <div className="space-y-2 max-w-xl text-left rtl:text-right">
-            <div className="flex items-center gap-2.5">
-              <span className="text-3xl">{mCh.emoji}</span>
-              <span className="rounded-full bg-clinical/10 px-2.5 py-0.5 text-[10px] font-extrabold uppercase tracking-widest text-clinical dark:text-clinical/90">
-                {isRTL ? 'مختلط كاملاً' : 'Full Mixed'}
-              </span>
-            </div>
-            <h2 className="text-xl font-bold text-foreground dark:text-white tracking-tight">
-              {mCh.title}
-            </h2>
-
-            {mCh.subjects.length > 0 && (
-              <div className="mt-3 flex flex-wrap gap-1.5 pt-1">
-                {mCh.subjects.map((s) => (
-                  <span key={s.id} className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${badgeColors[s.id]}`}>
-                    {s.name}
-                  </span>
-                ))}
-              </div>
-            )}
-          </div>
-
-          <div className="flex items-center justify-between sm:justify-end shrink-0 gap-4 border-t border-border/50 sm:border-0 pt-4 sm:pt-0">
-            <div className="text-start sm:text-right rtl:text-right">
-              <span className="block text-[11px] text-muted-foreground dark:text-white/40 font-medium">
-                {mCh.subjects.length} {isRTL?label('subjects'):mCh.subjects.length===1?'Subject':'Subjects'}
-              </span>
-              <span className="block text-xs font-bold text-foreground/80 dark:text-white/75 mt-0.5">
-                {questionCountLabel(mCh.subjects.reduce((sum,s)=>sum+s.questions.length,0),isRTL)}
-              </span>
-            </div>
-
-            <button
-              type="button"
-              onClick={() => onSelectChapter(mCh)}
-              aria-label={`${label('start')}: ${mCh.title}`}
-              className="flex h-12 w-12 items-center justify-center rounded-full text-white dark:text-black shadow-lg transition-all hover:scale-110 active:scale-95 bg-clinical hover:bg-clinical-dark cursor-pointer shrink-0"
-            >
-              <StartArrow size={20} strokeWidth={2.5} />
-            </button>
-          </div>
-        </div>
-      </article>
-    );
-  };
 
   const crumbs: BreadcrumbItem[] = breadcrumbPath ?? [
     { label: label('portal'), onClick: onBackToModeSelect },
@@ -509,7 +404,20 @@ export function ChapterSelect({
               <h3 className="mb-4 text-sm font-bold tracking-wider uppercase text-muted-foreground border-s-4 border-clinical ps-3">{isRTL ? 'الامتحانات السابقة' : 'Past Exams'}</h3>
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">{pastChapters.map(chapter=>renderChapterCard(chapter,chapters.indexOf(chapter)))}</div>
             </section>}
-            {chapters.length > 0 && mixedChapter && renderMixedCard(mixedChapter)}
+            {chapters.length > 0 && (
+              <ChapterPracticePicker
+                chapters={chapters}
+                moduleName={moduleName}
+                moduleCode={moduleCode}
+                onStart={(virtualChapter, subject, questions) => {
+                  if (onStartCustomPractice) {
+                    onStartCustomPractice(virtualChapter, subject, questions);
+                  } else {
+                    onSelectChapter(virtualChapter);
+                  }
+                }}
+              />
+            )}
             {chapters.length === 0 ? (
               <div className="cs-enter rounded-[28px] border border-dashed border-border dark:border-white/[0.1] py-16 text-center text-sm text-muted-foreground dark:text-white/40">
                 {label('noChapters')}

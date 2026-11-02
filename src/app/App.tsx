@@ -1,5 +1,5 @@
 import {findTopicPracticeSession} from './learning/topicPracticeSession';
-import {topicScores,questionScore,resumeCustomPractice,selectedPractice,practiceTopics,type TopicScore} from './learning/customPractice';
+import {topicScores,questionScore,resumeCustomPractice,resumeMultiChapterPractice,selectedPractice,practiceTopics,type TopicScore} from './learning/customPractice';
 import {RouteDataGate} from './loading/RouteDataGate';
 import {resolveStudyLink} from './utils/studyLinks';
 import {LearningProvider,useLearning} from './learning/LearningProvider';
@@ -102,6 +102,7 @@ import {
   getChaptersForModuleAndMode,
   findQuestionById,
   SYLLABUS_MODULES,
+  getModuleAcademicYear,
   bankManifest
 } from './data';
 import type { ModuleInfo } from './data';
@@ -165,7 +166,8 @@ function QuizFlowWrapper({
   isFromHistory,
   setIsFromHistory,
   historySource,
-  t
+  t,
+  onStartCustomPractice,
 }: {
   selectedModule: ModuleInfo | null;
   setSelectedModule: (m: ModuleInfo | null) => void;
@@ -193,6 +195,7 @@ function QuizFlowWrapper({
   setIsFromHistory: (b: boolean) => void;
   historySource: 'chapters' | 'history' | null;
   t: (key: string) => string;
+  onStartCustomPractice?: (virtualChapter: ChapterData, subject: SubjectData, questions: Question[]) => void;
 }) {
   const navigate = useNavigate();
   const { code, mode } = useParams<{ code: string; mode: string }>();
@@ -267,6 +270,7 @@ function QuizFlowWrapper({
             moduleName={selectedModule.name}
             moduleCode={selectedModule.code}
             onSelectChapter={handleSelectChapter}
+            onStartCustomPractice={onStartCustomPractice}
             onSelectHistory={(res) => handleSelectHistory(res, 'chapters')}
             onBackToModeSelect={() => {
               const match = location.pathname.match(/\/year-(\d+)/);
@@ -314,7 +318,13 @@ function QuizFlowWrapper({
             chapter={quizPayload.chapter}
             subject={quizPayload.subject}
             questions={quizPayload.questions}
-            onBack={() => setScreen('subjects')}
+            onBack={() => {
+              if (quizPayload.chapter.id === 0 || selectedChapter?.id === 0) {
+                setScreen('chapters');
+              } else {
+                setScreen('subjects');
+              }
+            }}
             onFinish={handleFinishQuiz}
             onAnswer={handleAnswerXP}
             userButton={customUserButton}
@@ -708,6 +718,10 @@ function MainApp() {
   };
 
   const handleSelectSubject = (subject: SubjectData, questions: Question[]) => {
+    const targetYear = getModuleAcademicYear(selectedModule?.code, selectedYear);
+    if (targetYear && studentYear !== targetYear) {
+      void setStudentYear(targetYear).catch(() => {});
+    }
     const saved = findTopicPracticeSession(subject,questions,key=>loadQuizSession(transformedChapter!.id,key));
     if (saved && !saved.finished && (saved.questionIds ? sessionMatchesQuestions(questions, saved) : selectedModule?.code !== 'MGL-3')) {
       setResumePayload(saved);
@@ -720,6 +734,10 @@ function MainApp() {
   };
 
   const handleQuickStart = (questions: Question[]) => {
+    const targetYear = getModuleAcademicYear(selectedModule?.code, selectedYear);
+    if (targetYear && studentYear !== targetYear) {
+      void setStudentYear(targetYear).catch(() => {});
+    }
     const saved = loadQuizSession(transformedChapter!.id, 'all');
     if (saved && !saved.finished && (saved.questionIds ? sessionMatchesQuestions(questions, saved) : selectedModule?.code !== 'MGL-3')) {
       setResumePayload(saved);
@@ -730,6 +748,26 @@ function MainApp() {
       setScreen('quiz');
     });
   };
+
+  const handleStartCustomPractice = (virtualChapter: ChapterData, subject: SubjectData, questions: Question[]) => {
+    const targetYear = getModuleAcademicYear(selectedModule?.code, selectedYear);
+    if (targetYear && studentYear !== targetYear) {
+      void setStudentYear(targetYear).catch(() => {});
+    }
+    transitionTo(() => {
+      setSelectedChapter(virtualChapter);
+      setQuizPayload({ chapter: virtualChapter, subject, questions: prepareQuestions(questions) });
+      setScreen('quiz');
+    });
+  };
+
+  useEffect(() => {
+    if (screen !== 'quiz') return;
+    const targetYear = getModuleAcademicYear(selectedModule?.code, selectedYear);
+    if (targetYear && studentYear !== targetYear) {
+      void setStudentYear(targetYear).catch(() => {});
+    }
+  }, [screen, selectedModule?.code, selectedYear, studentYear, setStudentYear]);
 
   const learning = useLearning();
   const openedStudyLink=useRef('');
@@ -777,10 +815,14 @@ function MainApp() {
 
   const handleAnswerXP = useCallback((q: Question, answer: QuizAnswer) => {
     if (!selectedModule) return;
+    const targetYear = getModuleAcademicYear(selectedModule.code, selectedYear);
+    if (targetYear && studentYear !== targetYear) {
+      void setStudentYear(targetYear).catch(() => {});
+    }
     answerBufferRef.current.push({ questionId: String(q.id), answer });
     if (answerFlushTimerRef.current) clearTimeout(answerFlushTimerRef.current);
     answerFlushTimerRef.current = setTimeout(flushAnswerBuffer, 2500);
-  }, [selectedModule, flushAnswerBuffer]);
+  }, [selectedModule, selectedYear, studentYear, setStudentYear, flushAnswerBuffer]);
 
   useEffect(() => {
     return () => {
@@ -1226,6 +1268,7 @@ function MainApp() {
                     setIsFromHistory={setIsFromHistory}
                     historySource={historySource}
                     t={t}
+                    onStartCustomPractice={handleStartCustomPractice}
                   />
                 </FeatureErrorBoundary>
               } />
@@ -1332,7 +1375,9 @@ function MainApp() {
             answeredCount={Object.values(resumePayload.answers).filter(a => a !== undefined && a !== null).length}
             onResume={() => {
               if (!resumePayload || !transformedChapter) return;
-              const custom=resumeCustomPractice(transformedChapter,resumePayload,selectedModule?.code);
+              const custom = (transformedChapter.id === 0
+                ? resumeMultiChapterPractice(activeChapters, resumePayload, selectedModule?.code, language)
+                : resumeCustomPractice(transformedChapter, resumePayload, selectedModule?.code)) ?? resumeMultiChapterPractice(activeChapters, resumePayload, selectedModule?.code, language);
               const subject = custom?.subject??transformedChapter.subjects.find(s => s.name === resumePayload.subjectName) ?? null;
               const questions = custom?.questions??(subject ? subject.questions : transformedChapter.subjects.flatMap(s => s.questions));
               transitionTo(() => {
@@ -1344,7 +1389,9 @@ function MainApp() {
             onRestart={() => {
               if (!transformedChapter || !resumePayload) return;
               clearQuizSession(transformedChapter.id, resumePayload.subjectName);
-              const custom=resumeCustomPractice(transformedChapter,resumePayload,selectedModule?.code);
+              const custom = (transformedChapter.id === 0
+                ? resumeMultiChapterPractice(activeChapters, resumePayload, selectedModule?.code, language)
+                : resumeCustomPractice(transformedChapter, resumePayload, selectedModule?.code)) ?? resumeMultiChapterPractice(activeChapters, resumePayload, selectedModule?.code, language);
               const subject = custom?.subject??transformedChapter.subjects.find(s => s.name === resumePayload.subjectName) ?? null;
               const questions = custom?.questions??(subject ? subject.questions : transformedChapter.subjects.flatMap(s => s.questions));
               setResumePayload(null);

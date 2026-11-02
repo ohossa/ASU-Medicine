@@ -447,6 +447,28 @@ export const SYLLABUS_MODULES: Record<number, Record<number, ModuleInfo[]>> = {
   }
 };
 
+/** Resolves the academic year (1-5) for a given module code or fallback route year. */
+export function getModuleAcademicYear(moduleCode?: string | null, fallbackYear?: number | null): number | null {
+  if (fallbackYear && Number.isInteger(fallbackYear) && fallbackYear >= 1 && fallbackYear <= 5) {
+    return fallbackYear;
+  }
+  if (!moduleCode) return null;
+  const match = moduleCode.match(/-([1-5])$/);
+  if (match) {
+    return Number(match[1]);
+  }
+  const normalized = moduleCode.toLowerCase();
+  for (const [yearStr, semesters] of Object.entries(SYLLABUS_MODULES)) {
+    for (const modules of Object.values(semesters)) {
+      if (modules.some(m => m.code.toLowerCase() === normalized)) {
+        const y = Number(yearStr);
+        if (y >= 1 && y <= 5) return y;
+      }
+    }
+  }
+  return null;
+}
+
 // ── Dynamic Loader ─────────────────────────────────────────────────────────────
 
 interface LoadedDatabases {

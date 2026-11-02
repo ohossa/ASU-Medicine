@@ -49,6 +49,86 @@ export function resumeCustomPractice(chapter:ChapterData,saved:{subjectName:stri
  if(byId.size!==saved.questionIds.length||run.subject.sessionKey!==saved.subjectName)return null;
  return {...run,questions:saved.questionIds.map(id=>byId.get(String(id))!)};
 }
+
+export function selectedMultiChapterPractice(
+  chapters: ChapterData[],
+  selectedIds: Set<string>,
+  moduleCode = '',
+  language = 'en'
+): { virtualChapter: ChapterData; subject: SubjectData; questions: Question[] } {
+  const isAr = language === 'ar';
+  const allTopics = chapters.flatMap(ch => practiceTopics(ch, moduleCode));
+  const seen = new Set<string>();
+  const questions = allTopics.flatMap(topic =>
+    topic.questions.flatMap(q => {
+      const id = String(q.id);
+      if (!selectedIds.has(id) || seen.has(id)) return [];
+      seen.add(id);
+      return [{ ...q, practiceTopic: { key: topic.key, title: topic.title, subjectName: topic.subjectName } }];
+    })
+  );
+
+  const topicCount = new Set(questions.map(q => q.practiceTopic!.key)).size;
+  const signature = JSON.stringify(questions.map(q => String(q.id)).sort());
+  let hash = 0xcbf29ce484222325n;
+  for (const char of signature) {
+    hash = BigInt.asUintN(64, (hash ^ BigInt(char.codePointAt(0)!)) * 0x100000001b3n);
+  }
+  const sessionKey = 'custom:' + questions.length + ':' + hash.toString(16);
+
+  const selectedChapters = chapters.filter(ch =>
+    ch.subjects.some(s => s.questions.some(q => seen.has(String(q.id))))
+  );
+
+  const primaryAccent = selectedChapters[0]?.accentColor ?? 'clinical';
+  const virtualChapter: ChapterData = {
+    id: 0,
+    title: isAr ? 'تدريب مخصص عبر الفصول' : 'Multi-Chapter Custom Practice',
+    subtitle:
+      selectedChapters.length === 1
+        ? selectedChapters[0].title
+        : isAr
+        ? `${topicCount} موضوعات عبر ${selectedChapters.length} فصول`
+        : `${topicCount} topics across ${selectedChapters.length} chapters`,
+    emoji: '🎯',
+    page: 1,
+    lectureRange: isAr ? 'فصول متعددة' : 'Multiple Chapters',
+    accentColor: primaryAccent,
+    subjects: selectedChapters.flatMap(c => c.subjects),
+  };
+
+  const subjectName =
+    topicCount === 1
+      ? questions[0].practiceTopic!.title
+      : isAr
+      ? `تدريب مخصص · ${topicCount} موضوعات`
+      : `Custom practice · ${topicCount} topics`;
+
+  const subject: SubjectData = {
+    id: primaryAccent,
+    name: subjectName,
+    sessionKey,
+    iconName: 'ListChecks',
+    lectures: isAr ? 'موضوعات مختارة' : 'Selected topics',
+    lectureCount: topicCount,
+    questions,
+  };
+
+  return { virtualChapter, subject, questions };
+}
+
+export function resumeMultiChapterPractice(
+  chapters: ChapterData[],
+  saved: { subjectName: string; questionIds?: (string | number)[] },
+  moduleCode = '',
+  language = 'en'
+) {
+  if (!saved.subjectName.startsWith('custom:') || !saved.questionIds?.length) return null;
+  const run = selectedMultiChapterPractice(chapters, new Set(saved.questionIds.map(String)), moduleCode, language);
+  const byId = new Map(run.questions.map(q => [String(q.id), q]));
+  if (byId.size !== saved.questionIds.length || run.subject.sessionKey !== saved.subjectName) return null;
+  return { ...run, questions: saved.questionIds.map(id => byId.get(String(id))!) };
+}
 export function latestTopicResult(history:QuizResult[],chapterId:number,title:string,moduleCode?:string,topicKey?:string,allowLegacy=true){
  for(const result of history){
  if(result.chapterId!==chapterId||(moduleCode&&result.moduleCode!==moduleCode))continue;

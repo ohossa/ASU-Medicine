@@ -7,7 +7,7 @@ import {ShuffleSwitch} from '../preferences/ShuffleSwitch';
 import {useLanguage} from '../hooks/useLanguage';
 import {questionCountLabel,topicCountLabel} from '../learning/practiceNavigation';
 import './topic-practice.css';
-function SelectionBox({checked,partial,onChange,label,disabled=false}:{disabled?:boolean;checked:boolean;partial:boolean;onChange:()=>void;label:string}){
+export function SelectionBox({checked,partial,onChange,label,disabled=false}:{disabled?:boolean;checked:boolean;partial:boolean;onChange:()=>void;label:string}){
  const ref=useRef<HTMLInputElement>(null);useEffect(()=>{if(ref.current)ref.current.indeterminate=partial;},[partial]);
  return <input ref={ref} disabled={disabled} type="checkbox" checked={checked} aria-label={label} onChange={onChange}/>;
 }

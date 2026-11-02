@@ -3474,15 +3474,15 @@
     "semantic_hash": "d8e43899c485b61f0e1254edd49094d0"
   },
   "server/learning-service.ts": {
-    "mtime": 1793369074.5697079,
-    "seen": 1793556141.2966511,
-    "ast_hash": "43c8065eea4bc464a543bd5b4a33fa02",
+    "mtime": 1793560970.1873696,
+    "seen": 1793652043.502718,
+    "ast_hash": "1267faccf2a80741b27c64b09e80ffae",
     "semantic_hash": ""
   },
   "server/learning-store.ts": {
-    "mtime": 1793551763.8532155,
-    "seen": 1793556141.296652,
-    "ast_hash": "76efc1bcb79d0b2c15172132b8bcab95",
+    "mtime": 1793562957.6605759,
+    "seen": 1793652043.502719,
+    "ast_hash": "05a8d488bb48fa05818579eb61afe146",
     "semantic_hash": ""
   },
   "server/local-api.ts": {
@@ -3636,9 +3636,9 @@
     "semantic_hash": ""
   },
   "src/app/App.tsx": {
-    "mtime": 1793555558.317547,
-    "seen": 1793556141.2970932,
-    "ast_hash": "36614be7a13d2ba6a664e3704646c7d1",
+    "mtime": 1793651551.7415535,
+    "seen": 1793652043.503196,
+    "ast_hash": "761a65ad20436d2acacdb82c6c8ecb22",
     "semantic_hash": ""
   },
   "src/app/biochemistry-bank.integration.test.ts": {
@@ -3684,9 +3684,9 @@
     "semantic_hash": "eec6beca8ab832ef94faa37875ad31bb"
   },
   "src/app/components/ChapterSelect.tsx": {
-    "mtime": 1793124350.0033877,
-    "seen": 1793216141.856462,
-    "ast_hash": "916152c990d993ff3c954c7c5c11e236",
+    "mtime": 1793651230.494817,
+    "seen": 1793652043.503335,
+    "ast_hash": "5d31951ce6cd8d1a282ffebc250d4acb",
     "semantic_hash": ""
   },
   "src/app/components/ChapterTopicList.tsx": {
@@ -3696,10 +3696,10 @@
     "semantic_hash": "793dde49a7e104531882942e0d9a304c"
   },
   "src/app/components/ClerkThemeTogglePortal.tsx": {
-    "mtime": 1781432576.492962,
-    "seen": 1792747204.53458,
-    "ast_hash": "0cd7b88f967c8ae2195b08bfde6a8ee5",
-    "semantic_hash": "0cd7b88f967c8ae2195b08bfde6a8ee5"
+    "mtime": 1793565416.677568,
+    "seen": 1793652043.5033548,
+    "ast_hash": "5e60fdf3077787427abdb31c63bc736c",
+    "semantic_hash": ""
   },
   "src/app/components/ClinicalCaseSolver.images.test.tsx": {
     "mtime": 1791454035.3679109,
@@ -3846,9 +3846,9 @@
     "semantic_hash": "f8bad939cc5f38ae97e50e1a76538f0f"
   },
   "src/app/components/PortalControls.test.tsx": {
-    "mtime": 1793124350.012596,
-    "seen": 1793216141.856961,
-    "ast_hash": "15e863eb1d19f2dc01e30669afdcc3c5",
+    "mtime": 1793564596.8442562,
+    "seen": 1793652043.5038788,
+    "ast_hash": "149fae5e84a5590f6a12c3095103678f",
     "semantic_hash": ""
   },
   "src/app/components/PortalFooter.tsx": {
@@ -3888,9 +3888,9 @@
     "semantic_hash": "85ea48729b3a34a1e9077b36a555ee14"
   },
   "src/app/components/QuizInterface.tsx": {
-    "mtime": 1793553524.5296361,
-    "seen": 1793556141.298121,
-    "ast_hash": "e5f2e3d2a821b5696f82987f087efd66",
+    "mtime": 1793567001.8716886,
+    "seen": 1793652043.504016,
+    "ast_hash": "36389abb570442de520339bb0bc54a06",
     "semantic_hash": ""
   },
   "src/app/components/QuizQuestionFormatting.test.tsx": {
@@ -3924,9 +3924,9 @@
     "semantic_hash": "5df14bcacd8e049589ed855d569ecbaa"
   },
   "src/app/components/ResultsDashboard.tsx": {
-    "mtime": 1793124350.0151906,
-    "seen": 1793216141.857158,
-    "ast_hash": "685456c04db400865e86509537fa1947",
+    "mtime": 1793564559.9045355,
+    "seen": 1793652043.504114,
+    "ast_hash": "a697fb72ea9416139e4d6288a28a9967",
     "semantic_hash": ""
   },
   "src/app/components/SiteUpdateNotice.test.tsx": {
@@ -4014,10 +4014,10 @@
     "semantic_hash": "0083a35e5b98c4abc58e1fbdc4e7ae05"
   },
   "src/app/components/TopicPracticePicker.tsx": {
-    "mtime": 1793084901.9284678,
-    "seen": 1793085010.5021272,
-    "ast_hash": "2d57cb6e5d0925057350b0f2f2930904",
-    "semantic_hash": "2d57cb6e5d0925057350b0f2f2930904"
+    "mtime": 1793651057.9543226,
+    "seen": 1793652043.50443,
+    "ast_hash": "eff142fb90ddc6ac320b34532f4e1588",
+    "semantic_hash": ""
   },
   "src/app/components/TopicSessionPicker.tsx": {
     "mtime": 1793084901.9285462,
@@ -4056,10 +4056,10 @@
     "semantic_hash": "122a8d5b02c631039ee50fb9f1705f6c"
   },
   "src/app/components/profile/AcademicYearProfilePage.tsx": {
-    "mtime": 1793084901.9297574,
-    "seen": 1793085010.502195,
-    "ast_hash": "b762f97c9a40befda0fd3c544741bd7d",
-    "semantic_hash": "b762f97c9a40befda0fd3c544741bd7d"
+    "mtime": 1793567667.8896272,
+    "seen": 1793652043.5045729,
+    "ast_hash": "6aa532d8744ddc9a154494a64682f16a",
+    "semantic_hash": ""
   },
   "src/app/components/profile/LanguageProfilePage.tsx": {
     "mtime": 1793084901.9300253,
@@ -4122,16 +4122,16 @@
     "semantic_hash": "0432308307cf4590c01c33796be3de0b"
   },
   "src/app/context/ThemeContext.tsx": {
-    "mtime": 1793363921.9282496,
-    "seen": 1793556141.300027,
-    "ast_hash": "d3d5b2be11841ff34bb458fdeedc9147",
+    "mtime": 1793565504.7028344,
+    "seen": 1793652043.504871,
+    "ast_hash": "eba72bf8863a3a1b3e3511e70d1b089d",
     "semantic_hash": ""
   },
   "src/app/context/ThemeContextValue.ts": {
-    "mtime": 1781867886.8491607,
-    "seen": 1792747204.534626,
-    "ast_hash": "523e81e66a8e5941bb3819f681f66253",
-    "semantic_hash": "523e81e66a8e5941bb3819f681f66253"
+    "mtime": 1793563887.6331275,
+    "seen": 1793652043.5048718,
+    "ast_hash": "0396bc92f84633c1cb340c6d5d2bf886",
+    "semantic_hash": ""
   },
   "src/app/data.test.ts": {
     "mtime": 1793124350.0214581,
@@ -4140,9 +4140,9 @@
     "semantic_hash": ""
   },
   "src/app/data.ts": {
-    "mtime": 1793124350.0217104,
-    "seen": 1793216141.857853,
-    "ast_hash": "edd483007280c01193e3fde9800b7d0c",
+    "mtime": 1793651016.0265167,
+    "seen": 1793652043.504891,
+    "ast_hash": "85d9aa3b1b0722df47ec183596aec371",
     "semantic_hash": ""
   },
   "src/app/ethics-bank.integration.test.ts": {
@@ -4152,8 +4152,8 @@
     "semantic_hash": "2ffa3b85e60c5e009954037ddbb13a79"
   },
   "src/app/generated/bankManifest.json": {
-    "mtime": 1793553607.8012638,
-    "seen": 1793556141.30026,
+    "mtime": 1793651865.4446487,
+    "seen": 1793652043.504912,
     "ast_hash": "a45df74e17b53cee3bf9b8611fbf8f87",
     "semantic_hash": ""
   },
@@ -4308,9 +4308,9 @@
     "semantic_hash": "cd2d65c7dd4d906b3200230d94f212c2"
   },
   "src/app/learning/LearningProvider.tsx": {
-    "mtime": 1793389973.3436875,
-    "seen": 1793556141.301188,
-    "ast_hash": "97b8f020c2665a14cf256c6d3ae3c5e5",
+    "mtime": 1793561144.297796,
+    "seen": 1793652043.505461,
+    "ast_hash": "a15a604ca05bb02fee6fa7254388fe0e",
     "semantic_hash": ""
   },
   "src/app/learning/XPAwardBubble.tsx": {
@@ -4362,10 +4362,10 @@
     "semantic_hash": "1ac37f89554a55dbb51322f34e95c210"
   },
   "src/app/learning/customPractice.ts": {
-    "mtime": 1793084901.9354916,
-    "seen": 1793085010.502657,
-    "ast_hash": "a7881891eec5f98b5afc31e3b78577b9",
-    "semantic_hash": "a7881891eec5f98b5afc31e3b78577b9"
+    "mtime": 1793651043.803317,
+    "seen": 1793652043.505617,
+    "ast_hash": "eeae57747f8a77a4bbfd4419a861a8b3",
+    "semantic_hash": ""
   },
   "src/app/learning/facts.ts": {
     "mtime": 1793084901.9355698,
@@ -4806,9 +4806,9 @@
     "semantic_hash": "d0cbfdcce0bc515c66f3280fed5c45e9"
   },
   "src/app/types.ts": {
-    "mtime": 1793124350.036502,
-    "seen": 1793216141.859891,
-    "ast_hash": "fbb7b70eee569af5e2c7aa8912ef5935",
+    "mtime": 1793567656.0155687,
+    "seen": 1793652043.50717,
+    "ast_hash": "07b316e7c10091e00a9fb2e240a4fb95",
     "semantic_hash": ""
   },
   "src/app/types/view-transitions.d.ts": {
@@ -5250,9 +5250,9 @@
     "semantic_hash": "8c5136fbb3e3c402b0050b303ac9fca3"
   },
   "src/pages/LearningHub.tsx": {
-    "mtime": 1793552338.8583305,
-    "seen": 1793556141.304605,
-    "ast_hash": "dc8f8c0fd6c4ab5c9fb71c458529fb88",
+    "mtime": 1793564374.600297,
+    "seen": 1793652043.5084019,
+    "ast_hash": "4f9ccd95d79058487b234e1388c68012",
     "semantic_hash": ""
   },
   "src/pages/ReportReplyComposer.tsx": {
@@ -5262,9 +5262,9 @@
     "semantic_hash": ""
   },
   "src/pages/StudyMode.tsx": {
-    "mtime": 1793124350.176106,
-    "seen": 1793216141.86096,
-    "ast_hash": "7ad2c029db28f551c828b7beab566b1a",
+    "mtime": 1793566781.6529675,
+    "seen": 1793652043.508457,
+    "ast_hash": "7df8cbbe7d6f6e130d6a297da4c6cede",
     "semantic_hash": ""
   },
   "src/pages/SyllabusTrackerPage.tsx": {
@@ -5298,9 +5298,9 @@
     "semantic_hash": ""
   },
   "src/pages/support/SupportPage.tsx": {
-    "mtime": 1793124350.1801128,
-    "seen": 1793216141.861023,
-    "ast_hash": "a48605cdba88848081a39e8cd2a49b3e",
+    "mtime": 1793565479.1930401,
+    "seen": 1793652043.508648,
+    "ast_hash": "b5722698800431faa264a8f9982075c8",
     "semantic_hash": ""
   },
   "src/pages/support/config.ts": {
@@ -12372,9 +12372,9 @@
     "semantic_hash": ""
   },
   "src/pages/legal/LegalLayout.tsx": {
-    "mtime": 1793124350.1788514,
-    "seen": 1793216141.8610182,
-    "ast_hash": "72665821b24cdca669580f1b9a0044aa",
+    "mtime": 1793565456.0993583,
+    "seen": 1793652043.50855,
+    "ast_hash": "aa7d880dd3950c5840d2c647411d70e8",
     "semantic_hash": ""
   },
   "src/pages/legal/LegalPages.test.tsx": {
@@ -12414,9 +12414,9 @@
     "semantic_hash": ""
   },
   "docs/ARCHITECTURE_ENCYCLOPEDIA.md": {
-    "mtime": 1793555759.7804332,
-    "seen": 1793556141.326182,
-    "ast_hash": "9e0cce8de4fb05381caf4ec335eec7a2",
+    "mtime": 1793604414.9684198,
+    "seen": 1793652043.53455,
+    "ast_hash": "f15295d8a5faf745a7236c825404ae7f",
     "semantic_hash": ""
   },
   "docs/MASTER_FORENSIC_AUDIT_REPORT.md": {
@@ -12510,9 +12510,9 @@
     "semantic_hash": ""
   },
   "server/admin-analytics-service.ts": {
-    "mtime": 1793551814.7195969,
-    "seen": 1793556141.296631,
-    "ast_hash": "ac2466275b9343edf037a889fd85a2aa",
+    "mtime": 1793559803.2132342,
+    "seen": 1793652043.502683,
+    "ast_hash": "0221fa8aa0e46f6f26246380003f5174",
     "semantic_hash": ""
   },
   "server/presence-service.ts": {
@@ -13080,9 +13080,9 @@
     "semantic_hash": ""
   },
   "public/version.json": {
-    "mtime": 1793553607.8436975,
-    "seen": 1793556141.295171,
-    "ast_hash": "44d4d935bb0e1c443fa19db92f57f27f",
+    "mtime": 1793651865.4908082,
+    "seen": 1793652043.5014982,
+    "ast_hash": "330bbf40538fa1e30339d18cf5e57c0c",
     "semantic_hash": ""
   },
   "scripts/generate-version.mjs": {
@@ -13092,9 +13092,9 @@
     "semantic_hash": ""
   },
   "src/app/generated/version.json": {
-    "mtime": 1793553607.8439586,
-    "seen": 1793556141.300262,
-    "ast_hash": "44d4d935bb0e1c443fa19db92f57f27f",
+    "mtime": 1793651865.491001,
+    "seen": 1793652043.5049129,
+    "ast_hash": "330bbf40538fa1e30339d18cf5e57c0c",
     "semantic_hash": ""
   },
   "src/app/hooks/useVersionCheck.ts": {
@@ -13110,27 +13110,27 @@
     "semantic_hash": ""
   },
   "src/app/data/ankiDecks.ts": {
-    "mtime": 1793363921.9292183,
-    "seen": 1793556141.300226,
-    "ast_hash": "64031c0571fcc7b68ea91b05b40e37f9",
+    "mtime": 1793557448.3297327,
+    "seen": 1793652043.5048919,
+    "ast_hash": "3dbfc120b56164996e5376200d3a128c",
     "semantic_hash": ""
   },
   "src/pages/AnkiDecksPage.tsx": {
-    "mtime": 1793363921.9355428,
-    "seen": 1793556141.3045518,
-    "ast_hash": "fd89b80a538227e2142bce28676dbd32",
+    "mtime": 1793557560.4736705,
+    "seen": 1793652043.508328,
+    "ast_hash": "b3e495cba8280a10682b72aea80ff358",
     "semantic_hash": ""
   },
   "src/test/anki/AnkiDecksPage.test.tsx": {
-    "mtime": 1793363921.9389148,
-    "seen": 1793556141.304936,
-    "ast_hash": "6481967c1c78d053e41d16c6a445f14b",
+    "mtime": 1793557631.2647,
+    "seen": 1793652043.508688,
+    "ast_hash": "997c0522cdd4d99a9659300e7d711af1",
     "semantic_hash": ""
   },
   "src/test/anki/anki-decks.test.ts": {
-    "mtime": 1793363921.9392889,
-    "seen": 1793556141.304937,
-    "ast_hash": "374b7c61c6322702cceac8f4c7025fcb",
+    "mtime": 1793557606.2926152,
+    "seen": 1793652043.508689,
+    "ast_hash": "1837e9b9318dc658f59306ad78c343ea",
     "semantic_hash": ""
   },
   "public/luro-anki-logo.png": {
@@ -13311,6 +13311,984 @@
     "mtime": 1793552402.332209,
     "seen": 1793556141.336287,
     "ast_hash": "77a0bd391e2fa2629d3215af7f778007",
+    "semantic_hash": ""
+  },
+  "QUESTION_IMPORT_JOBS/2026-11-01-mgl3-practical/mgl3_practical_chapters.json": {
+    "mtime": 1793566516.079183,
+    "seen": 1793652043.493472,
+    "ast_hash": "cb26980098a5fe04bc5019b1b57b942d",
+    "semantic_hash": ""
+  },
+  "QUESTION_IMPORT_JOBS/2026-11-01-mgl3-practical/practical_extracted_manifest.json": {
+    "mtime": 1793566346.8687992,
+    "seen": 1793652043.493474,
+    "ast_hash": "d5fcb89af445792d78d048b45f2789f0",
+    "semantic_hash": ""
+  },
+  "scripts/build-git-practical-bank.py": {
+    "mtime": 1793566497.873097,
+    "seen": 1793652043.501736,
+    "ast_hash": "22ac0eae34cba64870a2695b64e86285",
+    "semantic_hash": ""
+  },
+  "scripts/compile-final-git-practical.py": {
+    "mtime": 1793647919.206083,
+    "seen": 1793652043.5018759,
+    "ast_hash": "ae0227d7e45f72a04d12a362419088f5",
+    "semantic_hash": ""
+  },
+  "scripts/data_anatomy.py": {
+    "mtime": 1793647750.240556,
+    "seen": 1793652043.501911,
+    "ast_hash": "33ee4a8797d98d5a753863dc126063a2",
+    "semantic_hash": ""
+  },
+  "scripts/data_histology.py": {
+    "mtime": 1793647643.1905112,
+    "seen": 1793652043.501912,
+    "ast_hash": "5d2cdf47ec94794a8ce9ca6b4e484f78",
+    "semantic_hash": ""
+  },
+  "scripts/data_parasitology.py": {
+    "mtime": 1793606720.7925124,
+    "seen": 1793652043.501913,
+    "ast_hash": "41f9ee2a89400325e5ba6974847322d5",
+    "semantic_hash": ""
+  },
+  "scripts/data_pathology.py": {
+    "mtime": 1793647880.8833601,
+    "seen": 1793652043.501914,
+    "ast_hash": "f846086548a5e0a0f87b25bde68f2d20",
+    "semantic_hash": ""
+  },
+  "scripts/extract-all-practical-images.py": {
+    "mtime": 1793603810.3287888,
+    "seen": 1793652043.502066,
+    "ast_hash": "8af25d66fb88108a574ea2b6ed05f681",
+    "semantic_hash": ""
+  },
+  "scripts/extract-git-practical.py": {
+    "mtime": 1793566333.0819416,
+    "seen": 1793652043.5020669,
+    "ast_hash": "0dc299900879c9aedd830d821ab12570",
+    "semantic_hash": ""
+  },
+  "scripts/redact-all-practical-images.py": {
+    "mtime": 1793623710.0284758,
+    "seen": 1793652043.502433,
+    "ast_hash": "5e5857b6cfcbffd2e88e54cc0da19830",
+    "semantic_hash": ""
+  },
+  "scripts/restore-to-new-supabase.mjs": {
+    "mtime": 1793556540.91535,
+    "seen": 1793652043.502466,
+    "ast_hash": "17e0e9dca4c1e061d2cf943d23d86d4e",
+    "semantic_hash": ""
+  },
+  "scripts/sanitize-all-practical-images.py": {
+    "mtime": 1793606471.902839,
+    "seen": 1793652043.502484,
+    "ast_hash": "63ffcc74855511ab88b556d4b9aa71c9",
+    "semantic_hash": ""
+  },
+  "src/app/components/ChapterPracticePicker.test.tsx": {
+    "mtime": 1793651835.124166,
+    "seen": 1793652043.503293,
+    "ast_hash": "f0491834c8dce1b73da1610452fa6dab",
+    "semantic_hash": ""
+  },
+  "src/app/components/ChapterPracticePicker.tsx": {
+    "mtime": 1793651617.8591678,
+    "seen": 1793652043.503294,
+    "ast_hash": "433443a2a0897d3ec118b08c4dbc18df",
+    "semantic_hash": ""
+  },
+  "src/app/components/SpecimenViewer.tsx": {
+    "mtime": 1793566895.3151646,
+    "seen": 1793652043.504213,
+    "ast_hash": "b0dc5fcfd11f3baae385d3f133f1cbdc",
+    "semantic_hash": ""
+  },
+  "src/app/components/StarlightAtmosphere.tsx": {
+    "mtime": 1793564008.7460513,
+    "seen": 1793652043.504214,
+    "ast_hash": "fb35d989aaf10b2a39b9350ded8d93fd",
+    "semantic_hash": ""
+  },
+  "src/app/components/StarlightCelebration.tsx": {
+    "mtime": 1793564024.2573242,
+    "seen": 1793652043.504214,
+    "ast_hash": "c9bd07c29a59b8e8ae92b5f01cf1fc0d",
+    "semantic_hash": ""
+  },
+  "src/app/components/StarlightToggle.tsx": {
+    "mtime": 1793567802.8945885,
+    "seen": 1793652043.504215,
+    "ast_hash": "72c659efbc80bf9c9014789db1c5014b",
+    "semantic_hash": ""
+  },
+  "src/app/config/secretThemes.ts": {
+    "mtime": 1793563854.0938804,
+    "seen": 1793652043.504829,
+    "ast_hash": "a4b35ff35b0f89366003511e5c1971a6",
+    "semantic_hash": ""
+  },
+  "src/app/data/practical/mgl-3-practical.json": {
+    "mtime": 1793647936.8446226,
+    "seen": 1793652043.5048928,
+    "ast_hash": "18a8bd8cb8bf9a31090f97ce8275c89b",
+    "semantic_hash": ""
+  },
+  "src/app/learning/moduleAcademicYear.test.ts": {
+    "mtime": 1793651674.117578,
+    "seen": 1793652043.5056572,
+    "ast_hash": "dcf66da3342c64ab17ff1d7d0011d9d2",
+    "semantic_hash": ""
+  },
+  "src/app/learning/multiChapterPractice.test.ts": {
+    "mtime": 1793651853.6262484,
+    "seen": 1793652043.5056581,
+    "ast_hash": "651249abd806742718149eaa71fa7226",
+    "semantic_hash": ""
+  },
+  "src/test/practical/git-practical.test.ts": {
+    "mtime": 1793604343.5567904,
+    "seen": 1793652043.5087512,
+    "ast_hash": "bc94e0c7f08f9cec6d70c97887b2fbe5",
+    "semantic_hash": ""
+  },
+  "src/test/theme/secret-theme.test.ts": {
+    "mtime": 1793564624.0014942,
+    "seen": 1793652043.509917,
+    "ast_hash": "dc637949d6af7d7e9d7e2bbd8c5553cd",
+    "semantic_hash": ""
+  },
+  "src/test/theme/starlight-atmosphere.test.tsx": {
+    "mtime": 1793564636.0345886,
+    "seen": 1793652043.509918,
+    "ast_hash": "39440a060799f4daf1e6e7409570ca34",
+    "semantic_hash": ""
+  },
+  "src/test/theme/starlight-ui.test.tsx": {
+    "mtime": 1793565528.8851402,
+    "seen": 1793652043.509919,
+    "ast_hash": "31c88d343c4db81ac58dfc5654965d81",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/aorta_ivc_relations.webp": {
+    "mtime": 1793606485.851484,
+    "seen": 1793652043.5428631,
+    "ast_hash": "877fe05f91ccc46b861c40c33f6cacc6",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/atypical_l5_vertebra.webp": {
+    "mtime": 1793606489.6048949,
+    "seen": 1793652043.5428638,
+    "ast_hash": "6c4346dcf4050213e79ff8f6fb256906",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/axial_ct_abdomen_t12_l1.webp": {
+    "mtime": 1793624172.5460575,
+    "seen": 1793652043.5428648,
+    "ast_hash": "bf9c0c9eaec85dd809be480241d28732",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/biliary_tree_anatomy.webp": {
+    "mtime": 1793623795.6459954,
+    "seen": 1793652043.542866,
+    "ast_hash": "d4d63c692b16ed53df403cd4ccb907b2",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/bony_palate_foramina.webp": {
+    "mtime": 1793606488.986641,
+    "seen": 1793652043.542866,
+    "ast_hash": "39326ad3a7afc374daddea139c17f2e5",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/celiac_trunk_anatomy.webp": {
+    "mtime": 1793566345.776798,
+    "seen": 1793652043.542867,
+    "ast_hash": "8def0dfddfeb622a2dfe37d8c8820287",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/celiac_trunk_arteries.webp": {
+    "mtime": 1793606487.8573482,
+    "seen": 1793652043.542868,
+    "ast_hash": "8d2d0f43935bdd4ddd07b1ef154b7773",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/cleft_lip_palate_anomaly.webp": {
+    "mtime": 1793606489.7871954,
+    "seen": 1793652043.542868,
+    "ast_hash": "dc7f92fb050bbc081c825acdbc5fa2f3",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/colic_arteries_sma.webp": {
+    "mtime": 1793623796.7786763,
+    "seen": 1793652043.542869,
+    "ast_hash": "15b75b84db2c42b5669816aa10524953",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/external_oblique_inguinal_ring.webp": {
+    "mtime": 1793606485.210165,
+    "seen": 1793652043.54287,
+    "ast_hash": "615c1ab86fefc406629c3f926630a0bb",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/iliac_crest_muscles.webp": {
+    "mtime": 1793606489.123084,
+    "seen": 1793652043.542871,
+    "ast_hash": "013f538af30022a56cd02dd484dcbcd0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/ima_branches_colon.webp": {
+    "mtime": 1793624172.580872,
+    "seen": 1793652043.542872,
+    "ast_hash": "7eb34f6af71edf8adeb1fea091a53fa1",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/inguinal_canal_anatomy.webp": {
+    "mtime": 1793566345.9150157,
+    "seen": 1793652043.542872,
+    "ast_hash": "4fc4bb75afd92fe0fa228f380d1de6a2",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/internal_oblique_rectus.webp": {
+    "mtime": 1793606485.354514,
+    "seen": 1793652043.5428731,
+    "ast_hash": "76d6dbc34eb451dc3ffa363a4f3141e9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/jejunal_ileal_arcades.webp": {
+    "mtime": 1793606488.2881613,
+    "seen": 1793652043.542874,
+    "ast_hash": "3a17a631b86e861f62783ba43a4181b3",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/large_intestine_anatomy.webp": {
+    "mtime": 1793623795.9951835,
+    "seen": 1793652043.5428748,
+    "ast_hash": "a0277debedbdac15c87c51117b76d2c9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/lesser_greater_omenta.webp": {
+    "mtime": 1793623816.5810475,
+    "seen": 1793652043.542876,
+    "ast_hash": "dbff7288b724735dc869cb4b5fb7dbb0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/liver_anterior_falciform.webp": {
+    "mtime": 1793606486.6949408,
+    "seen": 1793652043.542877,
+    "ast_hash": "8a28dbc3ed7ca550281dc4b07bf56858",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/liver_inferior_visceral_surface.webp": {
+    "mtime": 1793623795.452397,
+    "seen": 1793652043.542878,
+    "ast_hash": "68af650f69acc87e4413380b31a24045",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/liver_posterior_surface_relations.webp": {
+    "mtime": 1793623795.3175209,
+    "seen": 1793652043.542878,
+    "ast_hash": "3088d13953a5678a1d63622b9c714473",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/lumbar_plexus_nerves.webp": {
+    "mtime": 1793606486.0284674,
+    "seen": 1793652043.5428789,
+    "ast_hash": "06b033141acf310d311d7c8eda2651ef",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/lumbar_vertebra_ligaments.webp": {
+    "mtime": 1793606489.4698105,
+    "seen": 1793652043.54288,
+    "ast_hash": "18e5c665b2452ce8040df73dae654383",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/palatine_tonsil_bed.webp": {
+    "mtime": 1793606484.3519142,
+    "seen": 1793652043.54288,
+    "ast_hash": "9064add4cba8a9c7ebaf95d5247ee137",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pancreas_duodenum_relations.webp": {
+    "mtime": 1793623794.9571114,
+    "seen": 1793652043.542881,
+    "ast_hash": "037c5ad40a0d1b931dbe1dd51322ce45",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/parotid_gland_stensen_duct.webp": {
+    "mtime": 1793606484.9207897,
+    "seen": 1793652043.542882,
+    "ast_hash": "53eb3f648d6c2cb0fcbbe651d069dd90",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/porta_hepatis_anatomy.webp": {
+    "mtime": 1793566346.0478256,
+    "seen": 1793652043.5428832,
+    "ast_hash": "757dea88fc239def0e173cb2488117a6",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/portal_vein_tributaries.webp": {
+    "mtime": 1793606488.8392155,
+    "seen": 1793652043.542884,
+    "ast_hash": "8ae65deea02796fac9c876c2c32ca8e3",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/posterior_wall_muscles.webp": {
+    "mtime": 1793606485.674646,
+    "seen": 1793652043.542884,
+    "ast_hash": "3afbbdc1333d4fe82f1b8de9402f97aa",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pubic_crest_attachments.webp": {
+    "mtime": 1793623797.467378,
+    "seen": 1793652043.542885,
+    "ast_hash": "41f668545ee112582f840b9854ca427b",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/rectum_anal_canal.webp": {
+    "mtime": 1793606487.7013113,
+    "seen": 1793652043.5428858,
+    "ast_hash": "554bff9fe4126deaddd663e2febde14b",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/sagittal_mouth_pharynx.webp": {
+    "mtime": 1793606484.1975484,
+    "seen": 1793652043.542887,
+    "ast_hash": "2842ed7003183c7474d1d9e062eec3dd",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/salivary_glands_topography.webp": {
+    "mtime": 1793606484.702519,
+    "seen": 1793652043.542888,
+    "ast_hash": "5bbfa25ab7be989b3fe3d8d6027ee524",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/sma_artery_branches.webp": {
+    "mtime": 1793606488.1451938,
+    "seen": 1793652043.542888,
+    "ast_hash": "2c424d4dc9f096859162170b14537500",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/small_intestine_jejunum_ileum.webp": {
+    "mtime": 1793606487.3760512,
+    "seen": 1793652043.5428889,
+    "ast_hash": "4ddb168716a75b2092dae4ecfce72329",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/stomach_arterial_arcade.webp": {
+    "mtime": 1793606488.0089595,
+    "seen": 1793652043.5428889,
+    "ast_hash": "c80bae3eed655b87d3601acd3d67df86",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/stomach_parts_anatomy.webp": {
+    "mtime": 1793623794.4718702,
+    "seen": 1793652043.54289,
+    "ast_hash": "264b415d759cc4b27c6e6827ebdc9e33",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/submandibular_gland_digastric.webp": {
+    "mtime": 1793606485.0632043,
+    "seen": 1793652043.542891,
+    "ast_hash": "5449f8b5f3cf3154472af8ae2e6c9a79",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/tef_anomalies_types.webp": {
+    "mtime": 1793606489.9287357,
+    "seen": 1793652043.542892,
+    "ast_hash": "2a9df18da55b4674a3b937e5fc32d135",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/tongue_dorsum_papillae.webp": {
+    "mtime": 1793606484.5238464,
+    "seen": 1793652043.5428932,
+    "ast_hash": "a773c0c9a04b6bf93cb5e7f2b5e93cbd",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/transversus_abdominis.webp": {
+    "mtime": 1793606485.492059,
+    "seen": 1793652043.5428932,
+    "ast_hash": "5b3e396f84d00c4d7317814d4f24c597",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/jaundice_lft_markers.webp": {
+    "mtime": 1793566346.43075,
+    "seen": 1793652043.5428941,
+    "ast_hash": "418125f04c6b54afbcfb610f9693d94b",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/wilson_disease_cbl.webp": {
+    "mtime": 1793566346.321541,
+    "seen": 1793652043.542895,
+    "ast_hash": "7e33482fd8367105e20dbc58319d218f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/peptic_ulcer_endoscopy_case.webp": {
+    "mtime": 1793566346.767265,
+    "seen": 1793652043.542896,
+    "ast_hash": "05302b562783ae1a6a53b3ebd025d233",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/portal_hypertension_cirrhosis.webp": {
+    "mtime": 1793566346.868165,
+    "seen": 1793652043.542897,
+    "ast_hash": "e090979bf5f45d0f3c53719d8590f55e",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/appendix_lymphoid_lm.webp": {
+    "mtime": 1793606482.5046163,
+    "seen": 1793652043.542898,
+    "ast_hash": "e6ba6a67c4a25c5adb83426a452556f6",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/bile_canaliculus_tem.webp": {
+    "mtime": 1793606483.4794483,
+    "seen": 1793652043.542898,
+    "ast_hash": "23fc2905a25f599fa3fb81513932c8d4",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/colon_crypts_lm.webp": {
+    "mtime": 1793606482.397512,
+    "seen": 1793652043.542899,
+    "ast_hash": "8249c7395979164b0b08a9e2b6e6aede",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/colon_vs_appendix_he.webp": {
+    "mtime": 1793566343.9248028,
+    "seen": 1793652043.5429,
+    "ast_hash": "27bfc74f5edf0e8d304a8ecd224a872f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/duodenum_brunner_glands_he.webp": {
+    "mtime": 1793566343.7436814,
+    "seen": 1793652043.542901,
+    "ast_hash": "071ac54fa1374fcd161dc68d2e0d97dc",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/duodenum_brunner_lm.webp": {
+    "mtime": 1793606482.1082215,
+    "seen": 1793652043.542901,
+    "ast_hash": "372efb5841eab1c1e48314184db02208",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/enteroendocrine_closed_tem.webp": {
+    "mtime": 1793606483.4038608,
+    "seen": 1793652043.542902,
+    "ast_hash": "df293016ec9e0a9ca9643695eb3e88d5",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/enteroendocrine_open_tem.webp": {
+    "mtime": 1793606483.3234327,
+    "seen": 1793652043.542903,
+    "ast_hash": "08c4c63da3ab32e59f7955e3e02bd1a3",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/esophagus_lm.webp": {
+    "mtime": 1793606482.014945,
+    "seen": 1793652043.5429041,
+    "ast_hash": "47d3ac969dfbea6a268efb8898d8adca",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/gastroesophageal_junction_lm.webp": {
+    "mtime": 1793603817.2474792,
+    "seen": 1793652043.542905,
+    "ast_hash": "d58be7b3ca9ee03ebd39b5cfd4a006f0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/goblet_cell_tem.webp": {
+    "mtime": 1793606483.9306612,
+    "seen": 1793652043.542905,
+    "ast_hash": "d7994aa4d354bc49049d7b1d3f8b0042",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/ileum_peyer_lm.webp": {
+    "mtime": 1793606482.2935631,
+    "seen": 1793652043.542906,
+    "ast_hash": "7cc4cf726744e3b1c54b7d9e22e78a63",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/jejunum_villi_lm.webp": {
+    "mtime": 1793606482.2042077,
+    "seen": 1793652043.5429068,
+    "ast_hash": "10491907c336ed239290f8eee108a4d9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/lip_histology_lm.webp": {
+    "mtime": 1793623789.70024,
+    "seen": 1793652043.542908,
+    "ast_hash": "019576f64d07e221ce23326fa9b83b11",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/liver_gallbladder_lm.webp": {
+    "mtime": 1793606482.8055432,
+    "seen": 1793652043.542908,
+    "ast_hash": "40110b2afd011cde330bb44f6ef63cd5",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/liver_lobule_lm.webp": {
+    "mtime": 1793606482.7810905,
+    "seen": 1793652043.542909,
+    "ast_hash": "70b4bd85b268c7147ef1c2b605211dd3",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/mucous_acinus_tem.webp": {
+    "mtime": 1793606483.0926328,
+    "seen": 1793652043.5429099,
+    "ast_hash": "12fb43177b684ee4372664fb2f66fdbb",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/pancreas_islets_lm.webp": {
+    "mtime": 1793606483.017039,
+    "seen": 1793652043.542911,
+    "ast_hash": "5a8a1460df1d832e3cac466b47641f26",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/pancreatic_acinar_tem.webp": {
+    "mtime": 1793606483.8939774,
+    "seen": 1793652043.542911,
+    "ast_hash": "fbeafe7693a4871097d3737856e1c4d5",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/paneth_cells_tem.webp": {
+    "mtime": 1793606483.9961429,
+    "seen": 1793652043.542912,
+    "ast_hash": "d93cfb7a3345c96a953048f30408a2c0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/parietal_cell_tem.webp": {
+    "mtime": 1793606483.231178,
+    "seen": 1793652043.542913,
+    "ast_hash": "2cfcca92272ec2174cdf37f52f9f4d47",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/parotid_gland_he.webp": {
+    "mtime": 1793566343.669866,
+    "seen": 1793652043.5429142,
+    "ast_hash": "0718fc0cae82412fdf09f423d8888cfb",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/sem_filiform_papillae.webp": {
+    "mtime": 1793606483.0391192,
+    "seen": 1793652043.5429142,
+    "ast_hash": "fb15aa03cf9263ff122c7e3ca7d5e427",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/serous_acinus_tem.webp": {
+    "mtime": 1793606483.1146772,
+    "seen": 1793652043.542915,
+    "ast_hash": "0e98eadd2c7f2fa335734a819987062d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/sinusoid_sieve_plates_sem.webp": {
+    "mtime": 1793606483.8489761,
+    "seen": 1793652043.542916,
+    "ast_hash": "86045d07d24d0740592f2f3665c9a28f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/space_of_disse_tem.webp": {
+    "mtime": 1793606483.7710297,
+    "seen": 1793652043.542916,
+    "ast_hash": "2707e35d61f202a41fdcae040baa4193",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/stomach_fundus_lm.webp": {
+    "mtime": 1793606482.611046,
+    "seen": 1793652043.542917,
+    "ast_hash": "d8b31594339baadd752e8cec5f4e4e77",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/stomach_pylorus_lm.webp": {
+    "mtime": 1793623790.1800122,
+    "seen": 1793652043.542918,
+    "ast_hash": "faed7513ee60cd7049aeb93aff1e9b24",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/striated_border_tem.webp": {
+    "mtime": 1793606483.9132252,
+    "seen": 1793652043.542919,
+    "ast_hash": "f60114cec492ca4f4c522aef450082e9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/submandibular_gland_lm.webp": {
+    "mtime": 1793623816.3862329,
+    "seen": 1793652043.542919,
+    "ast_hash": "83dd5fbe539952f884ffc7e1c17969c1",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/taste_bud_tem.webp": {
+    "mtime": 1793606483.0651479,
+    "seen": 1793652043.5429199,
+    "ast_hash": "168d64e98590f73bfe193709c103362f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/taste_bud_tem_masked.webp": {
+    "mtime": 1793566343.5315807,
+    "seen": 1793652043.542921,
+    "ast_hash": "bac814216a50b8ce548f1e2a21acbc1a",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/taste_bud_tem_masked_b.webp": {
+    "mtime": 1793566343.602377,
+    "seen": 1793652043.542921,
+    "ast_hash": "bac814216a50b8ce548f1e2a21acbc1a",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/tongue_filiform_lm.webp": {
+    "mtime": 1793606482.531039,
+    "seen": 1793652043.542922,
+    "ast_hash": "ea0ba8840f09a3dd61e2972c87cf7a9d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/macconkey_agar_stool_culture.webp": {
+    "mtime": 1793566346.581887,
+    "seen": 1793652043.542923,
+    "ast_hash": "8c8d4044b67e0398677d68419ddb6639",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/tcbs_agar_vibrio_cholerae.webp": {
+    "mtime": 1793566346.701467,
+    "seen": 1793652043.542923,
+    "ast_hash": "ef53eabead8be0bb77e1d63526deb4c9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/balantidium_cyst_smear.webp": {
+    "mtime": 1793624745.7753322,
+    "seen": 1793652043.542924,
+    "ast_hash": "9f6ee49cbb91e84b3e5903116c9c7463",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/balantidium_trophozoite_highmag.webp": {
+    "mtime": 1793624745.2541778,
+    "seen": 1793652043.5429251,
+    "ast_hash": "09cf0e44e7fd17d6019c380b3da49030",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/balantidium_trophozoites_intestine.webp": {
+    "mtime": 1793624746.4623535,
+    "seen": 1793652043.5429251,
+    "ast_hash": "34cd288253c9e7f32397edc04194d192",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/biomphalaria_alexandrina_snail.webp": {
+    "mtime": 1793624744.5920525,
+    "seen": 1793652043.542926,
+    "ast_hash": "c405c99102b40d2689dd942778fc1501",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/cercariae_leptocercus_furcocercus.webp": {
+    "mtime": 1793624745.4228735,
+    "seen": 1793652043.542927,
+    "ast_hash": "04753bd787adaf7a781e477e2ded41d0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/cestode_scolices_comparison.webp": {
+    "mtime": 1793624744.9528062,
+    "seen": 1793652043.542927,
+    "ast_hash": "c7b520259fd0df5a717cd96446473979",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/clinical_case_12_hookworm.webp": {
+    "mtime": 1793624745.9833474,
+    "seen": 1793652043.542928,
+    "ast_hash": "355fa9a2de42edd7bcc54557aba6c54c",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/clinical_case_1_hydatid.webp": {
+    "mtime": 1793624745.73306,
+    "seen": 1793652043.542929,
+    "ast_hash": "9ff61604ac79d3414323fa32d8e92b55",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/clinical_case_2_strongyloides.webp": {
+    "mtime": 1793624747.080856,
+    "seen": 1793652043.54293,
+    "ast_hash": "f994ccf7b79ebd8500f989200dfd2d1a",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/clinical_case_3_schistosoma.webp": {
+    "mtime": 1793624746.2925727,
+    "seen": 1793652043.54293,
+    "ast_hash": "e4ddbef711f9a17da91fa432f6d63d59",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/clinical_case_4_ascaris.webp": {
+    "mtime": 1793624746.2394032,
+    "seen": 1793652043.5429308,
+    "ast_hash": "353cdc8bd75f23fcce68cd139f2561e0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/clinical_case_5_cryptosporidium.webp": {
+    "mtime": 1793624745.873408,
+    "seen": 1793652043.542932,
+    "ast_hash": "f34cee792e10daf701ef3a9ae4fc3a74",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/clinical_case_6_giardia.webp": {
+    "mtime": 1793624745.6853364,
+    "seen": 1793652043.542933,
+    "ast_hash": "71e7c3334189a799ea0047187a2b0234",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/clinical_case_7_fasciola.webp": {
+    "mtime": 1793624747.2127557,
+    "seen": 1793652043.542933,
+    "ast_hash": "4915fa4ba5cbcc7743c056ba471a13b3",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/clinical_case_8_enterobius.webp": {
+    "mtime": 1793645385.6705008,
+    "seen": 1793652043.542934,
+    "ast_hash": "390658e2e97d520aa4d9d39633c5f8c4",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/clinical_case_9_entamoeba.webp": {
+    "mtime": 1793624746.887373,
+    "seen": 1793652043.5429351,
+    "ast_hash": "637ed025bd20ac2cfd3a047c5dc6f4c6",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/cryptosporidium_oocysts_acidfast.webp": {
+    "mtime": 1793624746.1288176,
+    "seen": 1793652043.542936,
+    "ast_hash": "30f772c5d736a06d62eb6f0848466281",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/cysticercus_bovis_cellulosae.webp": {
+    "mtime": 1793624746.5114229,
+    "seen": 1793652043.542936,
+    "ast_hash": "819a8a68868dd0861ab03447f44024d7",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/entamoeba_cysts_comparison.webp": {
+    "mtime": 1793624745.0661058,
+    "seen": 1793652043.542937,
+    "ast_hash": "a674e6edee8e7f165fc2a82e16c55818",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/entamoeba_trophozoites_smear.webp": {
+    "mtime": 1793624745.3737347,
+    "seen": 1793652043.542938,
+    "ast_hash": "af040db2f14ce83b46a8690d98449bd7",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/enterobius_female_adult.webp": {
+    "mtime": 1793624746.635401,
+    "seen": 1793652043.542939,
+    "ast_hash": "21fe390fd37ff76dd5fd443c49eba420",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/enterobius_vermicularis_egg.webp": {
+    "mtime": 1793624746.9734097,
+    "seen": 1793652043.542939,
+    "ast_hash": "8a312bccc47ca2eaec582ce29af1d50a",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/fasciola_flukes_adults.webp": {
+    "mtime": 1793624745.5375812,
+    "seen": 1793652043.54294,
+    "ast_hash": "0a2b552e0d38d8ae20b6419127407b87",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/fasciola_gigantica_adult.webp": {
+    "mtime": 1793624746.0763972,
+    "seen": 1793652043.5429409,
+    "ast_hash": "8a562ef26b17ab3b83efcf5dfa7ccf74",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/giardia_cysts_smear.webp": {
+    "mtime": 1793624746.4029262,
+    "seen": 1793652043.5429409,
+    "ast_hash": "5fc564fe0cce19a1063b71bfac38f297",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/giardia_trophozoite_smear.webp": {
+    "mtime": 1793624745.3200793,
+    "seen": 1793652043.542942,
+    "ast_hash": "69a9049a38b64717458e3c690695cd23",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/gravid_segments_taenia.webp": {
+    "mtime": 1793624745.8253143,
+    "seen": 1793652043.542943,
+    "ast_hash": "ed577e49171abe99a2d1ab8a2f8468f7",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/heterophyes_metagonimus_adults.webp": {
+    "mtime": 1793624746.8354228,
+    "seen": 1793652043.542943,
+    "ast_hash": "dab15358840733b94017a1c4560e6659",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/hookworm_egg_morula.webp": {
+    "mtime": 1793624745.0999846,
+    "seen": 1793652043.542944,
+    "ast_hash": "5418e324ac4247460aa80d54dc6e4d6a",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/hookworm_teeth_bursa.webp": {
+    "mtime": 1793624746.7664096,
+    "seen": 1793652043.542945,
+    "ast_hash": "bd29a320f7736261a783ec8777c0dc48",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/hydatid_cyst_wall_he.webp": {
+    "mtime": 1793624747.1625588,
+    "seen": 1793652043.542946,
+    "ast_hash": "a9756e6f44671cd7d01ecdbef5b58e78",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/hydatid_cyst_wall_sand.webp": {
+    "mtime": 1793624744.662371,
+    "seen": 1793652043.542946,
+    "ast_hash": "36658a27f0c175b3e412a4c0294029f0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/mature_segments_comparison.webp": {
+    "mtime": 1793624745.1522355,
+    "seen": 1793652043.542947,
+    "ast_hash": "c8a251cc0269b8dc2d2b1e1bdfed2d3f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/operculated_eggs_comparison.webp": {
+    "mtime": 1793624744.9082747,
+    "seen": 1793652043.542948,
+    "ast_hash": "b9d97b2af285bac7675fd677e7a3f148",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/plugged_dshaped_eggs.webp": {
+    "mtime": 1793624744.7241182,
+    "seen": 1793652043.542948,
+    "ast_hash": "1ccf27f9964b0bdb89febcc803c0f00d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/rounded_eggs_comparison.webp": {
+    "mtime": 1793624745.4810114,
+    "seen": 1793652043.5429492,
+    "ast_hash": "1de9ee92a469f65e683f8e2f82120b98",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/schistosoma_male_female_adult.webp": {
+    "mtime": 1793624745.9297645,
+    "seen": 1793652043.54295,
+    "ast_hash": "d9b95d690ac84cc46d561b6dbabe2f61",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/schistosoma_mansoni_egg.webp": {
+    "mtime": 1793624744.842915,
+    "seen": 1793652043.5429509,
+    "ast_hash": "4d6d7132e117e7b1185a1c9d02a1b4cf",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/schistosoma_mansoni_egg_spine.webp": {
+    "mtime": 1793624746.7963712,
+    "seen": 1793652043.5429509,
+    "ast_hash": "620911deadf9ad7cbcd2d919af232182",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/snail_vectors_comparison.webp": {
+    "mtime": 1793624745.2032363,
+    "seen": 1793652043.5429518,
+    "ast_hash": "54a29382634af52a4129f5921538e47a",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/strongyloides_female_adult.webp": {
+    "mtime": 1793624746.1805356,
+    "seen": 1793652043.542953,
+    "ast_hash": "c68e9f6b82569f9eebb1f78b171993ee",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/strongyloides_rhabditiform_larva.webp": {
+    "mtime": 1793624747.0273683,
+    "seen": 1793652043.542954,
+    "ast_hash": "737bc08f7000e37b101840d2e20d4e9f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/taenia_solium_scolex_spotter.webp": {
+    "mtime": 1793624746.3404453,
+    "seen": 1793652043.542954,
+    "ast_hash": "1d834a2739e1dc83a5ec163f3e5d591c",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/tapeworms_h_nana_echinococcus.webp": {
+    "mtime": 1793624745.0126388,
+    "seen": 1793652043.542955,
+    "ast_hash": "9bf8500436eee91ef61e873c10b79f4d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/trichuris_male_female.webp": {
+    "mtime": 1793624745.6346045,
+    "seen": 1793652043.542955,
+    "ast_hash": "64a10cb63d62b555a69e5a96c9c0a80f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/trichuris_trichiura_egg.webp": {
+    "mtime": 1793624746.6073217,
+    "seen": 1793652043.542956,
+    "ast_hash": "a321a973d673142541ddf699dbc8dfdb",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/worms_in_appendix_section.webp": {
+    "mtime": 1793646319.4987268,
+    "seen": 1793652043.542957,
+    "ast_hash": "3561694755ee45fd2a4889948f562a90",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/barretts_esophagus_he.webp": {
+    "mtime": 1793647378.4736764,
+    "seen": 1793652043.542958,
+    "ast_hash": "f40ba7d91838744f74ca8fb10bedbfb1",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/hcc_on_cirrhosis_he.webp": {
+    "mtime": 1793647378.7604918,
+    "seen": 1793652043.542958,
+    "ast_hash": "ffacd85b80868a2fb0366f68c1a5b452",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/liver_cirrhosis_masson_trichrome.webp": {
+    "mtime": 1793647378.689005,
+    "seen": 1793652043.5429592,
+    "ast_hash": "4c08708a4856aff0a905ff7957efb7fc",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/pleomorphic_adenoma_he.webp": {
+    "mtime": 1793647378.4991033,
+    "seen": 1793652043.5429602,
+    "ast_hash": "1cc7342e8ecb0b3d78e277efd107e0c4",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/schistosomal_clay_pipe_stem_fibrosis.webp": {
+    "mtime": 1793647378.8230205,
+    "seen": 1793652043.5429602,
+    "ast_hash": "f3a6c25307bc336e01190d5043633034",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/warthin_tumor_he.webp": {
+    "mtime": 1793647378.5395684,
+    "seen": 1793652043.542961,
+    "ast_hash": "14c48b97c6345e64f12cb12fb26c5524",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/achalasia_manometry_case.webp": {
+    "mtime": 1793566346.1541014,
+    "seen": 1793652043.5429618,
+    "ast_hash": "646c42c933647eb0ba313f769eb3a9c7",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/pancreatic_hormonal_regulation.webp": {
+    "mtime": 1793566346.2605367,
+    "seen": 1793652043.542963,
+    "ast_hash": "3fd04078537e31512f189c27c9c474b8",
+    "semantic_hash": ""
+  },
+  "public/images/practical/test/taste_bud_masked_test.webp": {
+    "mtime": 1793566159.602349,
+    "seen": 1793652043.542963,
+    "ast_hash": "0724a73827d21bdccda7edaae0ed5eb8",
     "semantic_hash": ""
   }
 }
