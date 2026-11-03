@@ -1,10 +1,11 @@
-import { describe, it, expect, vi, beforeAll } from 'vitest';
+import { describe, it, expect, vi, beforeAll, beforeEach } from 'vitest';
 import { render, screen, fireEvent, within } from '@testing-library/react';
 import { MemoryRouter, Routes, Route } from 'react-router';
 import Dashboard from './Dashboard';
 import YearModules from './YearModules';
 import { ensureDataLoaded } from '../app/data';
 beforeAll(async () => { await ensureDataLoaded(); });
+beforeEach(() => { localStorage.clear(); });
 
 vi.mock('../app/components/PortalShell', () => ({ PortalShell: ({ children }: any) => <>{children}</> }));
 vi.mock('../components/cards/PremiumCards', () => ({ CardShell: ({ children, onClick }: any) => <article onClick={onClick}>{children}</article> }));

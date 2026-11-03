@@ -3624,9 +3624,9 @@
     "semantic_hash": ""
   },
   "src/PortalEntry.tsx": {
-    "mtime": 1793124349.997865,
-    "seen": 1793216141.856321,
-    "ast_hash": "9702972358be764f0eae8a9a2e9e3441",
+    "mtime": 1793686875.1244373,
+    "seen": 1793687993.0420952,
+    "ast_hash": "6a160792cf1cc9a947a230549400879d",
     "semantic_hash": ""
   },
   "src/StudyEntry.tsx": {
@@ -3636,9 +3636,9 @@
     "semantic_hash": ""
   },
   "src/app/App.tsx": {
-    "mtime": 1793651551.7415535,
-    "seen": 1793652043.503196,
-    "ast_hash": "761a65ad20436d2acacdb82c6c8ecb22",
+    "mtime": 1793687734.13767,
+    "seen": 1793687993.042113,
+    "ast_hash": "945de64919bd0b77d68df5acc6fb7575",
     "semantic_hash": ""
   },
   "src/app/biochemistry-bank.integration.test.ts": {
@@ -4152,8 +4152,8 @@
     "semantic_hash": "2ffa3b85e60c5e009954037ddbb13a79"
   },
   "src/app/generated/bankManifest.json": {
-    "mtime": 1793651865.4446487,
-    "seen": 1793652043.504912,
+    "mtime": 1793687875.4259653,
+    "seen": 1793687993.044429,
     "ast_hash": "a45df74e17b53cee3bf9b8611fbf8f87",
     "semantic_hash": ""
   },
@@ -4632,9 +4632,9 @@
     "semantic_hash": "a51640b29842591b8433099439753819"
   },
   "src/app/preferences/useAcademicYear.ts": {
-    "mtime": 1793374455.0619328,
-    "seen": 1793556141.302423,
-    "ast_hash": "d252819fe28ca336962e5dc76c267907",
+    "mtime": 1793686669.948213,
+    "seen": 1793687993.0461981,
+    "ast_hash": "e1d3bf00c23099968f07151950293169",
     "semantic_hash": ""
   },
   "src/app/preferences/useShufflePreference.ts": {
@@ -5232,15 +5232,15 @@
     "semantic_hash": ""
   },
   "src/pages/Dashboard.git-navigation.test.tsx": {
-    "mtime": 1793363921.9364388,
-    "seen": 1793556141.3045518,
-    "ast_hash": "5e28bfeb98d19e7384edec30c28f2b87",
+    "mtime": 1793687355.4023347,
+    "seen": 1793687993.0481,
+    "ast_hash": "5013c3dd184daed4669f358876fbbe6a",
     "semantic_hash": ""
   },
   "src/pages/Dashboard.tsx": {
-    "mtime": 1793363921.9371202,
-    "seen": 1793556141.304553,
-    "ast_hash": "3e671a8c00f616d105044d716772b2e9",
+    "mtime": 1793687265.506576,
+    "seen": 1793687993.048102,
+    "ast_hash": "0095365939b6e34077cfcc55b5355638",
     "semantic_hash": ""
   },
   "src/pages/LearningActivity.tsx": {
@@ -5604,9 +5604,9 @@
     "semantic_hash": ""
   },
   "vite.config.ts": {
-    "mtime": 1793552562.7381637,
-    "seen": 1793556141.306207,
-    "ast_hash": "1c00cfad38ae86feed1a33a6eaaf19f1",
+    "mtime": 1793687638.7387516,
+    "seen": 1793687993.050174,
+    "ast_hash": "51da3e96a2d1e87b97840d6b4441ba11",
     "semantic_hash": ""
   },
   ".agent/skills/openspec-apply-change/SKILL.md": {
@@ -12546,9 +12546,9 @@
     "semantic_hash": ""
   },
   "src/app/hooks/usePresence.ts": {
-    "mtime": 1793166362.1420166,
-    "seen": 1793216141.85802,
-    "ast_hash": "23dffcbe49918ea805e4290f6c4f35e5",
+    "mtime": 1793687580.4778354,
+    "seen": 1793687993.044748,
+    "ast_hash": "a9ac5ffdcf9136632caba754e2332891",
     "semantic_hash": ""
   },
   "src/app/services/cloudSyncState.ts": {
@@ -13080,9 +13080,9 @@
     "semantic_hash": ""
   },
   "public/version.json": {
-    "mtime": 1793651865.4908082,
-    "seen": 1793652043.5014982,
-    "ast_hash": "330bbf40538fa1e30339d18cf5e57c0c",
+    "mtime": 1793687875.4732237,
+    "seen": 1793687993.040128,
+    "ast_hash": "d143457b5f6e79c5509a23136c855ec0",
     "semantic_hash": ""
   },
   "scripts/generate-version.mjs": {
@@ -13092,15 +13092,15 @@
     "semantic_hash": ""
   },
   "src/app/generated/version.json": {
-    "mtime": 1793651865.491001,
-    "seen": 1793652043.5049129,
-    "ast_hash": "330bbf40538fa1e30339d18cf5e57c0c",
+    "mtime": 1793687875.4734178,
+    "seen": 1793687993.04443,
+    "ast_hash": "d143457b5f6e79c5509a23136c855ec0",
     "semantic_hash": ""
   },
   "src/app/hooks/useVersionCheck.ts": {
-    "mtime": 1793363921.929663,
-    "seen": 1793556141.301104,
-    "ast_hash": "582267b9109adab74c93e696f51de3e5",
+    "mtime": 1793687615.2041383,
+    "seen": 1793687993.044987,
+    "ast_hash": "86deff4104e545e3f72be095960074ce",
     "semantic_hash": ""
   },
   "src/test/lifecycle/version-check.test.ts": {
@@ -14289,6 +14289,42 @@
     "mtime": 1793566159.602349,
     "seen": 1793652043.542963,
     "ast_hash": "0724a73827d21bdccda7edaae0ed5eb8",
+    "semantic_hash": ""
+  },
+  "src/app/App.optimisticAuth.test.tsx": {
+    "mtime": 1793687833.071232,
+    "seen": 1793687993.042112,
+    "ast_hash": "5ef4d89697ee079035566efa654dd8cc",
+    "semantic_hash": ""
+  },
+  "src/app/auth/cachedSession.test.ts": {
+    "mtime": 1793686549.6306446,
+    "seen": 1793687993.042115,
+    "ast_hash": "fbdf0c546ea19285a7897f7e9f10cc87",
+    "semantic_hash": ""
+  },
+  "src/app/auth/cachedSession.ts": {
+    "mtime": 1793686538.5075915,
+    "seen": 1793687993.0421162,
+    "ast_hash": "a984528f2dbea025679b4c5763002a8b",
+    "semantic_hash": ""
+  },
+  "src/app/cache/homeSnapshot.test.ts": {
+    "mtime": 1793686590.9007185,
+    "seen": 1793687993.042165,
+    "ast_hash": "89e8183d89aba4bfe9f724ef5e0af286",
+    "semantic_hash": ""
+  },
+  "src/app/cache/homeSnapshot.ts": {
+    "mtime": 1793686577.3542423,
+    "seen": 1793687993.042166,
+    "ast_hash": "a26e82657853e5d6698bb1544e72bf22",
+    "semantic_hash": ""
+  },
+  "src/pages/Dashboard.homeSnapshot.test.tsx": {
+    "mtime": 1793687376.9372852,
+    "seen": 1793687993.0481012,
+    "ast_hash": "1af0f7df54a4a88ccc6222271ed6dadc",
     "semantic_hash": ""
   }
 }

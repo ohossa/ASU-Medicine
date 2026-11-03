@@ -98,8 +98,10 @@ export function useVersionCheck(options?: { isQuizActive?: boolean }) {
   }, [options?.isQuizActive]);
 
   useEffect(() => {
-    // 1. Check version on mount
-    checkVersion();
+    // 1. Check version in background, deferred by 5s to avoid initial load contention
+    const initialTimer = setTimeout(() => {
+      void checkVersion();
+    }, 5000);
 
     // 2. Check version on window focus and iPad visibility change
     const onFocus = () => checkVersion();
@@ -126,6 +128,7 @@ export function useVersionCheck(options?: { isQuizActive?: boolean }) {
     window.addEventListener("asu:sw-update-available", onSwUpdate);
 
     return () => {
+      clearTimeout(initialTimer);
       window.removeEventListener("focus", onFocus);
       document.removeEventListener("visibilitychange", onVisibility);
       window.removeEventListener("asu:sw-update-available", onSwUpdate);

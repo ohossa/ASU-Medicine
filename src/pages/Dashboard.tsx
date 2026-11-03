@@ -11,6 +11,7 @@ import { pulse } from '../app/lib/pulseEngine';
 import { CardShell } from '../components/cards/PremiumCards';
 import { motion } from 'motion/react';
 import { pageVariants } from '../app/lib/motion';
+import { getHomeSnapshot, saveHomeSnapshot } from '../app/cache/homeSnapshot';
 
 /* ────────────────────────────────────────────────
    DATA — real content, no lorem ipsum
@@ -54,13 +55,27 @@ interface DashboardProps {
 export default function Dashboard({ userButton, onOpenTrackerSelector, studentYear }: DashboardProps) {
   const navigate = useNavigate();
   const { language } = useLanguage();
-  const [activeIdx, setActiveIdx] = useState((studentYear ?? 3) - 1);
-  useEffect(() => { setActiveIdx((studentYear ?? 3) - 1); }, [studentYear]);
+  const [activeIdx, setActiveIdx] = useState(() => {
+    const snap = getHomeSnapshot();
+    const yr = studentYear ?? snap.studentYear ?? 3;
+    const initialIndex = snap.activeCarouselIndex ?? (yr - 1);
+    return Math.max(0, Math.min(YEARS.length - 1, initialIndex));
+  });
+
+  useEffect(() => {
+    if (studentYear != null) {
+      const idx = Math.max(0, Math.min(YEARS.length - 1, studentYear - 1));
+      setActiveIdx(idx);
+      saveHomeSnapshot({ studentYear, activeCarouselIndex: idx });
+    }
+  }, [studentYear]);
   const dragX = useRef<number | null>(null);
 
   useEffect(() => {
     // On year focus: applySubjectTheme so the background re-skins
-    applySubjectTheme('year' + YEARS[activeIdx].id);
+    const currentYear = YEARS[activeIdx]?.id ?? 3;
+    applySubjectTheme('year' + currentYear);
+    saveHomeSnapshot({ activeCarouselIndex: activeIdx, studentYear: currentYear });
   }, [activeIdx]);
 
   /* Route prefetching for faster navigation */

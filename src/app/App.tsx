@@ -25,10 +25,12 @@ import { ClerkThemeTogglePortal } from './components/ClerkThemeTogglePortal';
 import { LanguageProfilePage } from './components/profile/LanguageProfilePage';
 import { AcademicYearProfilePage } from './components/profile/AcademicYearProfilePage';
 
+import Dashboard from '../pages/Dashboard';
+import { isOptimisticallyAuthenticated, setCachedSession, clearCachedSession } from './auth/cachedSession';
+
 // Lazy-loaded components for routing/modals
 const AdminPortal = lazy(() => import('../pages/AdminPortal'));
 const LearningHub = lazy(() => import('../pages/LearningHub'));
-const Dashboard = lazy(() => import('../pages/Dashboard'));
 const YearModules = lazy(() => import('../pages/YearModules'));
 const StudyMode = lazy(() => import('../pages/StudyMode'));
 const SubjectSelect = lazy(() => import('./components/SubjectSelect').then(m => ({ default: m.SubjectSelect })));
@@ -1190,12 +1192,10 @@ function MainApp() {
           <RouteDataGate year={activeStudentYear}><Routes location={location}>
             {/* Main Dashboard page */}
             <Route path="/" element={
-              <Suspense fallback={<div className="fixed inset-0 bg-background pointer-events-none" />}>
-                {yearLoading ? <div role="status" className="p-8 text-center text-muted-foreground">Loading your saved year…</div> : <Dashboard studentYear={activeStudentYear}
-                  userButton={customUserButton} 
-                  onOpenTrackerSelector={() => navigate('/learning')}
-                />}
-              </Suspense>
+              <Dashboard studentYear={activeStudentYear ?? 3}
+                userButton={customUserButton} 
+                onOpenTrackerSelector={() => navigate('/learning')}
+              />
             } />
 
             {/* Year Modules page */}
@@ -1739,22 +1739,56 @@ function MainApp() {
 }
 
 export default function App() {
-  const {isLoaded,isSignedIn}=useAuth();
-  const deferredMounted=useDeferredMount();
+  const { isLoaded, isSignedIn } = useAuth();
+  const { user } = useUser();
+  const deferredMounted = useDeferredMount();
   const isDevPreview = Boolean(
     import.meta.env.DEV &&
     typeof window !== "undefined" &&
     window.location.search.includes("__preview=1")
   );
-  useEffect(()=>{void import('../pages/Dashboard');void import('../pages/YearModules');},[]);
-  useEffect(()=>{if(isLoaded&&isSignedIn){performance.mark('asu:shell-ready');void startCorrectionsRefresh();}},[isLoaded,isSignedIn]);
+
+  const [optimisticAuth, setOptimisticAuth] = useState(() => isOptimisticallyAuthenticated());
+
+  useEffect(() => {
+    if (isLoaded) {
+      if (isSignedIn) {
+        setOptimisticAuth(true);
+      } else {
+        setOptimisticAuth(false);
+        clearCachedSession();
+      }
+    }
+  }, [isLoaded, isSignedIn]);
+
+  useEffect(() => {
+    if (isLoaded && isSignedIn && user) {
+      setCachedSession({
+        userId: user.id,
+        firstName: user.firstName,
+        username: user.username,
+        fullName: user.fullName,
+        email: user.primaryEmailAddress?.emailAddress,
+        imageUrl: user.imageUrl,
+      });
+    }
+  }, [isLoaded, isSignedIn, user]);
+
+  useEffect(() => { void import('../pages/YearModules'); }, []);
+  useEffect(() => {
+    if (isLoaded && isSignedIn) {
+      performance.mark('asu:shell-ready');
+      void startCorrectionsRefresh();
+    }
+  }, [isLoaded, isSignedIn]);
+
+  const isAuthenticated = isSignedIn || isDevPreview || (optimisticAuth && !isLoaded);
 
   return (
     <ThemeProvider>
-      {!isLoaded && !isDevPreview && <LoadingScreen/>}
-      {(isLoaded || isDevPreview) && (
+      {!isLoaded && !isAuthenticated && !isDevPreview && <LoadingScreen/>}
+      {(isAuthenticated || isLoaded) && (
         <>
-
           {/* Apple HIG Pure Medical Ambient Mesh Gradients (Zero CPU & Zero GPU 3D Load) */}
           <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none select-none" style={{ contain: 'strict', transform: 'translateZ(0)' }}>
             {FX.DEFERRED_FX ? (
@@ -1774,7 +1808,7 @@ export default function App() {
             <div className="absolute bottom-[-10%] right-[-5%] h-[50vw] w-[50vw] rounded-full bg-[radial-gradient(circle_at_center,_rgba(59,130,246,0.08)_0%,_transparent_70%)] dark:bg-[radial-gradient(circle_at_center,_rgba(59,130,246,0.04)_0%,_transparent_70%)] pointer-events-none" style={{ transform: 'translateZ(0)' }} />
           </div>
 
-          {(isSignedIn || isDevPreview) ? (
+          {isAuthenticated ? (
             <BrowserRouter>
               <ReportProvider><LearningProvider><ProgressProvider>
                 <MainApp />

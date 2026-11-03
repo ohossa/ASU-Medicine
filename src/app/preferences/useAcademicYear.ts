@@ -34,7 +34,7 @@ export function useAcademicYear(){
  const {userId,isLoaded,getToken}=useAuth();
  const id=userId??'guest';const currentId=useRef(id);currentId.current=id;
  const tokenRef=useRef(getToken);tokenRef.current=getToken;
- const [state,setState]=useState<{id:string;year:number|null;loading:boolean;error:string|null}>(()=>{const saved=isLoaded?cached(academicYearKey(id)):null;return {id,year:saved?.year??null,loading:!isLoaded||(!saved&&!hasFreshRead(academicYearKey(id),saved)),error:null};});
+ const [state,setState]=useState<{id:string;year:number|null;loading:boolean;error:string|null}>(()=>{const saved=cached(academicYearKey(id));return {id,year:saved?.year??null,loading:!saved&&!hasFreshRead(academicYearKey(id),saved),error:null};});
  const [reload,setReload]=useState(0);
  useEffect(()=>{
   if(!isLoaded)return;
@@ -75,5 +75,5 @@ export function useAcademicYear(){
   try{localStorage.setItem(key,JSON.stringify(preference));localStorage.setItem('asu_medical_student_year',String(year));}catch{/* Cloud save has already succeeded. */}
   setState({id,year,loading:false,error:null});
  },[id,userId,localPreview]);
- return {localPreview,year:state.id===id?state.year:null,loading:!isLoaded||state.id!==id||state.loading,error:state.id===id?state.error:null,saveYear,retry:()=>setReload(n=>n+1)};
+ return {localPreview,year:state.id===id?state.year:null,loading:(!state.year && !isLoaded)||state.id!==id||state.loading,error:state.id===id?state.error:null,saveYear,retry:()=>setReload(n=>n+1)};
 }

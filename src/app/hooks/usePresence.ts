@@ -42,13 +42,14 @@ export function usePresence() {
       }
     };
 
-    // Initial ping on session start
-    ping();
+    // Defer initial ping by 4s to prevent network contention during initial page render
+    const initialTimer = setTimeout(ping, 4000);
 
     // Ping every 3 minutes (180s) instead of 60s to reduce Redis network bandwidth by 70%+
     timer = setInterval(ping, 180000);
 
     return () => {
+      clearTimeout(initialTimer);
       if (timer) clearInterval(timer);
     };
   }, [user?.id, isSignedIn]);

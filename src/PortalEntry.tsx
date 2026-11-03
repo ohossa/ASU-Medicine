@@ -3,11 +3,12 @@ import { MotionConfig } from "motion/react";
 import LoadingScreen from "./app/components/LoadingScreen";
 import { ThemeProvider } from "./app/context/ThemeContext";
 import { LanguageProvider } from "./app/context/LanguageContext";
+import StudyEntry from "./StudyEntry";
+
 const SupportPage = lazy(() => import("./pages/support/SupportPage"));
 const TermsPage = lazy(() => import("./pages/legal/TermsPage"));
 const PrivacyPage = lazy(() => import("./pages/legal/PrivacyPage"));
 const MedicalDisclaimerPage = lazy(() => import("./pages/legal/MedicalDisclaimerPage"));
-const StudyEntry = lazy(() => import("./StudyEntry"));
 
 export function isSupportPath(path: string) {
   return path.replace(/\/+$/, "") === "/support";
@@ -32,22 +33,36 @@ export function PortalEntry({
   let content = <StudyEntry />;
 
   if (isSupportPath(normalizedPath)) {
-    content = <SupportPage />;
+    content = (
+      <Suspense fallback={<LoadingScreen compact label="Opening Support…" />}>
+        <SupportPage />
+      </Suspense>
+    );
   } else if (isTermsPath(normalizedPath)) {
-    content = <TermsPage />;
+    content = (
+      <Suspense fallback={<LoadingScreen compact label="Opening Terms…" />}>
+        <TermsPage />
+      </Suspense>
+    );
   } else if (isPrivacyPath(normalizedPath)) {
-    content = <PrivacyPage />;
+    content = (
+      <Suspense fallback={<LoadingScreen compact label="Opening Privacy Policy…" />}>
+        <PrivacyPage />
+      </Suspense>
+    );
   } else if (isDisclaimerPath(normalizedPath)) {
-    content = <MedicalDisclaimerPage />;
+    content = (
+      <Suspense fallback={<LoadingScreen compact label="Opening Disclaimer…" />}>
+        <MedicalDisclaimerPage />
+      </Suspense>
+    );
   }
 
   return (
     <MotionConfig reducedMotion="user">
-      <Suspense fallback={<LoadingScreen />}>
-        <LanguageProvider>
-          <ThemeProvider>{content}</ThemeProvider>
-        </LanguageProvider>
-      </Suspense>
+      <LanguageProvider>
+        <ThemeProvider>{content}</ThemeProvider>
+      </LanguageProvider>
     </MotionConfig>
   );
 }

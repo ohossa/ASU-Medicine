@@ -49,7 +49,7 @@ const config: UserConfig & { test: InlineConfig } = {
             handler: 'NetworkFirst',
             options: {
               cacheName: 'asu-navigation-v2',
-              networkTimeoutSeconds: 2,
+              networkTimeoutSeconds: 0.5,
               precacheFallback: {
                 fallbackURL: '/index.html',
               },
