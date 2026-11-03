@@ -4152,8 +4152,8 @@
     "semantic_hash": "2ffa3b85e60c5e009954037ddbb13a79"
   },
   "src/app/generated/bankManifest.json": {
-    "mtime": 1793687875.4259653,
-    "seen": 1793687993.044429,
+    "mtime": 1793701691.2100053,
+    "seen": 1793701794.642486,
     "ast_hash": "a45df74e17b53cee3bf9b8611fbf8f87",
     "semantic_hash": ""
   },
@@ -13080,9 +13080,9 @@
     "semantic_hash": ""
   },
   "public/version.json": {
-    "mtime": 1793687875.4732237,
-    "seen": 1793687993.040128,
-    "ast_hash": "d143457b5f6e79c5509a23136c855ec0",
+    "mtime": 1793701691.2542408,
+    "seen": 1793701794.638419,
+    "ast_hash": "1e1ed888875f4f647c2ccfbfcef72ac1",
     "semantic_hash": ""
   },
   "scripts/generate-version.mjs": {
@@ -13092,9 +13092,9 @@
     "semantic_hash": ""
   },
   "src/app/generated/version.json": {
-    "mtime": 1793687875.4734178,
-    "seen": 1793687993.04443,
-    "ast_hash": "d143457b5f6e79c5509a23136c855ec0",
+    "mtime": 1793701691.2545693,
+    "seen": 1793701794.642487,
+    "ast_hash": "1e1ed888875f4f647c2ccfbfcef72ac1",
     "semantic_hash": ""
   },
   "src/app/hooks/useVersionCheck.ts": {
@@ -13332,9 +13332,9 @@
     "semantic_hash": ""
   },
   "scripts/compile-final-git-practical.py": {
-    "mtime": 1793647919.206083,
-    "seen": 1793652043.5018759,
-    "ast_hash": "ae0227d7e45f72a04d12a362419088f5",
+    "mtime": 1793701489.4847686,
+    "seen": 1793701794.638759,
+    "ast_hash": "5928acf65477108c029017881ef77e20",
     "semantic_hash": ""
   },
   "scripts/data_anatomy.py": {
@@ -13356,9 +13356,9 @@
     "semantic_hash": ""
   },
   "scripts/data_pathology.py": {
-    "mtime": 1793647880.8833601,
-    "seen": 1793652043.501914,
-    "ast_hash": "f846086548a5e0a0f87b25bde68f2d20",
+    "mtime": 1793700245.1051843,
+    "seen": 1793701794.6388638,
+    "ast_hash": "ecd762decc4f73b560fd6d9ad8e05225",
     "semantic_hash": ""
   },
   "scripts/extract-all-practical-images.py": {
@@ -13404,9 +13404,9 @@
     "semantic_hash": ""
   },
   "src/app/components/SpecimenViewer.tsx": {
-    "mtime": 1793566895.3151646,
-    "seen": 1793652043.504213,
-    "ast_hash": "b0dc5fcfd11f3baae385d3f133f1cbdc",
+    "mtime": 1793701399.888733,
+    "seen": 1793701794.641631,
+    "ast_hash": "ace2940d1d0c923b600433187473ee3d",
     "semantic_hash": ""
   },
   "src/app/components/StarlightAtmosphere.tsx": {
@@ -13434,9 +13434,9 @@
     "semantic_hash": ""
   },
   "src/app/data/practical/mgl-3-practical.json": {
-    "mtime": 1793647936.8446226,
-    "seen": 1793652043.5048928,
-    "ast_hash": "18a8bd8cb8bf9a31090f97ce8275c89b",
+    "mtime": 1793701498.339749,
+    "seen": 1793701794.6424682,
+    "ast_hash": "1cebe52d6e583eb06435eb72aa702f3b",
     "semantic_hash": ""
   },
   "src/app/learning/moduleAcademicYear.test.ts": {
@@ -13452,9 +13452,9 @@
     "semantic_hash": ""
   },
   "src/test/practical/git-practical.test.ts": {
-    "mtime": 1793604343.5567904,
-    "seen": 1793652043.5087512,
-    "ast_hash": "bc94e0c7f08f9cec6d70c97887b2fbe5",
+    "mtime": 1793701541.6374106,
+    "seen": 1793701794.646485,
+    "ast_hash": "853b6b71bda5bcfce7fef4ba5d9bbbb3",
     "semantic_hash": ""
   },
   "src/test/theme/secret-theme.test.ts": {
@@ -14325,6 +14325,426 @@
     "mtime": 1793687376.9372852,
     "seen": 1793687993.0481012,
     "ast_hash": "1af0f7df54a4a88ccc6222271ed6dadc",
+    "semantic_hash": ""
+  },
+  "scripts/data_biochemistry.py": {
+    "mtime": 1793699941.5409217,
+    "seen": 1793701794.638818,
+    "ast_hash": "f8eed7fcad1b0c1e7b03febfdc2a3215",
+    "semantic_hash": ""
+  },
+  "scripts/data_clinical.py": {
+    "mtime": 1793700165.382596,
+    "seen": 1793701794.6388202,
+    "ast_hash": "21469026e9828e77274c6ed700405aa2",
+    "semantic_hash": ""
+  },
+  "scripts/data_microbiology.py": {
+    "mtime": 1793699814.234093,
+    "seen": 1793701794.638845,
+    "ast_hash": "0e07540b34d16e5f1e111105910a727b",
+    "semantic_hash": ""
+  },
+  "scripts/data_physiology.py": {
+    "mtime": 1793700069.0739799,
+    "seen": 1793701794.638865,
+    "ast_hash": "47a53d55b826ab5d6c34357bcc164c76",
+    "semantic_hash": ""
+  },
+  "scripts/extract-new-practical-images.py": {
+    "mtime": 1793699675.5551276,
+    "seen": 1793701794.6390631,
+    "ast_hash": "fa099a16fa8da42075f9a5d7a925f8f5",
+    "semantic_hash": ""
+  },
+  "src/test/practical/git-practical-exhaustive.test.ts": {
+    "mtime": 1793701625.8618543,
+    "seen": 1793701794.646483,
+    "ast_hash": "5a2947fb94b23a045b7b57b59ac637ec",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/bmi_whr_body_composition.webp": {
+    "mtime": 1793701279.7701654,
+    "seen": 1793701794.6743329,
+    "ast_hash": "5e37bad0d6b5cef6c87a550d5d77471e",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/caloric_activity_sheet.webp": {
+    "mtime": 1793701280.137004,
+    "seen": 1793701794.674334,
+    "ast_hash": "dc2d95417d612596741d6aafc87c809f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/jaundice_metabolism_pathway.webp": {
+    "mtime": 1793701280.4965308,
+    "seen": 1793701794.67436,
+    "ast_hash": "1e4ab0a73ce8bec2125552561d6a5eef",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/kayser_fleischer_ring.webp": {
+    "mtime": 1793701357.6415174,
+    "seen": 1793701794.674361,
+    "ast_hash": "4ec9675a16d9179d1b47649338ec2d23",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/liver_cirrhosis_ascites_edema.webp": {
+    "mtime": 1793701280.960582,
+    "seen": 1793701794.6743622,
+    "ast_hash": "e49cb02b963b0e4fa0dafb6485096930",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/liver_enzymes_alt_alp.webp": {
+    "mtime": 1793701281.4195554,
+    "seen": 1793701794.674363,
+    "ast_hash": "4b8f04ceda7df6dad3f6018028bb5c9d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/spectrophotometer_cuvette_setup.webp": {
+    "mtime": 1793699683.7477183,
+    "seen": 1793701794.6743639,
+    "ast_hash": "681554bf3788b288e1cd3aac662e739f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/spectrophotometer_tubes_b_s_t.webp": {
+    "mtime": 1793701281.6049395,
+    "seen": 1793701794.674365,
+    "ast_hash": "923b5fada819ff7452f37b3bf65baffd",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/vandenbergh_reaction_tubes.webp": {
+    "mtime": 1793701357.870367,
+    "seen": 1793701794.674366,
+    "ast_hash": "27ec54a946dd91833a57eeb8807b505d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/wilson_mri_basal_ganglia.webp": {
+    "mtime": 1793701358.0527794,
+    "seen": 1793701794.674391,
+    "ast_hash": "f02c29f237e920c73223bcf448020554",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/case_presentation_gerd_pud.webp": {
+    "mtime": 1793701282.4844346,
+    "seen": 1793701794.674392,
+    "ast_hash": "c0e1b30ffd359d6a26e528ef0d68e86d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/endoscopy_gastric_vs_duodenal_ulcer.webp": {
+    "mtime": 1793701358.3026187,
+    "seen": 1793701794.6743932,
+    "ast_hash": "294daba07e4999a5c6518aa6d2890cff",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/esophageal_varices_endoscopy.webp": {
+    "mtime": 1793701358.4941347,
+    "seen": 1793701794.6743941,
+    "ast_hash": "adc859662080186782fce130a1cd79e9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/gerd_erosive_esophagitis_endoscopy.webp": {
+    "mtime": 1793701358.7086413,
+    "seen": 1793701794.6743941,
+    "ast_hash": "9785f0b8f3d460bd6f42bfa34d5ca45e",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/perforated_peptic_ulcer_xray.webp": {
+    "mtime": 1793701284.4680834,
+    "seen": 1793701794.6744199,
+    "ast_hash": "159c13c872ed98947959c1be995a2519",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/portal_hypertension_collaterals.webp": {
+    "mtime": 1793701358.9272065,
+    "seen": 1793701794.674444,
+    "ast_hash": "535dd3347f1641c852be0d5729489605",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/pud_acid_suppression_algorithm.webp": {
+    "mtime": 1793701359.1063044,
+    "seen": 1793701794.6744452,
+    "ast_hash": "7b4656fe0832186cc101e20c50a82abb",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/stigmata_chronic_liver_disease.webp": {
+    "mtime": 1793701285.5628078,
+    "seen": 1793701794.674446,
+    "ast_hash": "55ff6d35aada8c7f82dce0ba860f411c",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/urea_breath_test_device.webp": {
+    "mtime": 1793701285.854337,
+    "seen": 1793701794.674447,
+    "ast_hash": "fdc358160bf3fcfec5c79c1c1df49559",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/viral_hepatitis_phases_chart.webp": {
+    "mtime": 1793701359.4056213,
+    "seen": 1793701794.6744478,
+    "ast_hash": "31d3f12c7637dd8fbc6882fe8e1f1339",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/gram_negative_bacilli.webp": {
+    "mtime": 1793701359.6559968,
+    "seen": 1793701794.675211,
+    "ast_hash": "2c6c39d5763372514ca6db78b9f17956",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/gram_positive_staph.webp": {
+    "mtime": 1793701287.4542973,
+    "seen": 1793701794.675211,
+    "ast_hash": "3bffbbd5bcf39208fd9d52fdcc6e9518",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/macconkey_lf_nlf.webp": {
+    "mtime": 1793701359.8350196,
+    "seen": 1793701794.675236,
+    "ast_hash": "e12b69b073c3d2a42ca9af3134595ff2",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/mannitol_salt_agar.webp": {
+    "mtime": 1793701287.9418252,
+    "seen": 1793701794.675238,
+    "ast_hash": "b194baf97dbe4dbed528cc9fa9cc8122",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/oxidase_test_reaction.webp": {
+    "mtime": 1793701288.313285,
+    "seen": 1793701794.675238,
+    "ast_hash": "f1f6e032cab8f536dd7129a5f6f5a42d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/salmonella_slide_agglutination.webp": {
+    "mtime": 1793701288.6775432,
+    "seen": 1793701794.6752388,
+    "ast_hash": "1d80b2eda2f7e14c618f2baf8119a8e7",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/stewart_cary_blair_transport.webp": {
+    "mtime": 1793701289.0039704,
+    "seen": 1793701794.67524,
+    "ast_hash": "9aa357a2648c4f0bbf7c3170ffbc8a6f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/tcbs_cholera_colonies.webp": {
+    "mtime": 1793701289.4071982,
+    "seen": 1793701794.675273,
+    "ast_hash": "c707a4b783ddf57f892290f3547ce292",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/tsi_reactions_comparison.webp": {
+    "mtime": 1793699681.8350632,
+    "seen": 1793701794.675274,
+    "ast_hash": "fc1cfee941beb34432251b76e975f645",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/urease_test_reaction.webp": {
+    "mtime": 1793701289.9020925,
+    "seen": 1793701794.675275,
+    "ast_hash": "a2c6745be9642a43837f5797db38f3bc",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/widal_slide_agglutination.webp": {
+    "mtime": 1793701290.267597,
+    "seen": 1793701794.675276,
+    "ast_hash": "baeba819ca62d5f254abbfa3b3ea7767",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/widal_tube_titration.webp": {
+    "mtime": 1793701360.1348183,
+    "seen": 1793701794.675277,
+    "ast_hash": "e933b983a3539be089bb3a60f256f431",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/acute_appendicitis_gross.webp": {
+    "mtime": 1793701360.4188569,
+    "seen": 1793701794.6764219,
+    "ast_hash": "167d90ffd1ab7c2f086edfe94bccaffb",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/amoebic_ulcers_colon_gross.webp": {
+    "mtime": 1793701360.7169826,
+    "seen": 1793701794.6764228,
+    "ast_hash": "f8ff02a7ef5c718c97415837894b71e4",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/chronic_active_hepatitis_micro.webp": {
+    "mtime": 1793701291.9616146,
+    "seen": 1793701794.676448,
+    "ast_hash": "7874ab2dab4fa467f1a0edbf2da0c1c9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/chronic_cholecystitis_gallstones_gross.webp": {
+    "mtime": 1793701292.309834,
+    "seen": 1793701794.676449,
+    "ast_hash": "d6c0e2b8c4fa66acb17cc207d57fd8ca",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/cirrhosis_with_hcc_gross.webp": {
+    "mtime": 1793701292.5678444,
+    "seen": 1793701794.67645,
+    "ast_hash": "c4c14761bcff80a64f247cfa1552a8b7",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/colorectal_adenocarcinoma_micro.webp": {
+    "mtime": 1793701292.923503,
+    "seen": 1793701794.676451,
+    "ast_hash": "ae3b1285ffe81ee4805f9856f5a85402",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/colorectal_annular_carcinoma_gross.webp": {
+    "mtime": 1793701361.0340545,
+    "seen": 1793701794.6764522,
+    "ast_hash": "f7a2ac45c48f1b1287907cfd42afddb0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/colorectal_fungating_carcinoma_gross.webp": {
+    "mtime": 1793701129.3998785,
+    "seen": 1793701794.676453,
+    "ast_hash": "96fe627a6e972875245514c571d133f9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/juvenile_retention_polyp_micro.webp": {
+    "mtime": 1793701293.901368,
+    "seen": 1793701794.676477,
+    "ast_hash": "3304af24a387bcb294409f747ffcd14f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/linitis_plastica_gross.webp": {
+    "mtime": 1793699687.6514523,
+    "seen": 1793701794.676478,
+    "ast_hash": "a12ae88f6e7239d1954f45bbc327ca2c",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/macronodular_cirrhosis_gross.webp": {
+    "mtime": 1793701361.31228,
+    "seen": 1793701794.676501,
+    "ast_hash": "dd1c1971ca5aa5dc95cae0aa730a38c9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/malignant_gastric_ulcer_gross.webp": {
+    "mtime": 1793701294.8975382,
+    "seen": 1793701794.676502,
+    "ast_hash": "2c58e012d12fdb42a2c318b3b6fc99a5",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/meckel_diverticulum_gross.webp": {
+    "mtime": 1793701295.1689181,
+    "seen": 1793701794.676503,
+    "ast_hash": "0c6ddfb9660e263adacd0f95f5663017",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/micronodular_cirrhosis_gross.webp": {
+    "mtime": 1793701295.5505996,
+    "seen": 1793701794.676503,
+    "ast_hash": "39bce675900acf9defd61b8328bc7eee",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/mucinous_adenocarcinoma_micro.webp": {
+    "mtime": 1793701295.956457,
+    "seen": 1793701794.6765041,
+    "ast_hash": "5608cc370198f4d78d1dffbbcda2c4a7",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/peptic_ulcer_gross_punched_out.webp": {
+    "mtime": 1793701296.2873878,
+    "seen": 1793701794.676505,
+    "ast_hash": "629b5ec92c9bcae58d0740ff1c74ffe9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/tuberculous_ulcers_ileum_gross.webp": {
+    "mtime": 1793701296.9657128,
+    "seen": 1793701794.6765509,
+    "ast_hash": "e0e3897c995e7f54e20e80af76cb3ca9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/tubular_adenoma_colon_micro.webp": {
+    "mtime": 1793701297.4422772,
+    "seen": 1793701794.6765509,
+    "ast_hash": "cb264c648ddc797236a1248e2c513e3d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/typhoid_ulcers_ileum_gross.webp": {
+    "mtime": 1793701361.6110404,
+    "seen": 1793701794.6765518,
+    "ast_hash": "ba846a820074aca6c264815ff35f0533",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/villous_adenoma_colon_micro.webp": {
+    "mtime": 1793701298.400506,
+    "seen": 1793701794.676553,
+    "ast_hash": "921201531cfa0f6318b6a4dc5a457b55",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/barium_swallow_bird_beak.webp": {
+    "mtime": 1793701298.7678547,
+    "seen": 1793701794.676606,
+    "ast_hash": "4d4d24b238853ea4f3a53ba2217d3112",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/bile_salts_micelle_emulsification.webp": {
+    "mtime": 1793701361.8160248,
+    "seen": 1793701794.676607,
+    "ast_hash": "2259981e822bf445417555164e38d249",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/colonic_scfa_fermentation.webp": {
+    "mtime": 1793701299.5286512,
+    "seen": 1793701794.676608,
+    "ast_hash": "c5a5f6a02e7988cb704f939fd307c1f1",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/esophageal_manometry_tracing.webp": {
+    "mtime": 1793701362.0681899,
+    "seen": 1793701794.676608,
+    "ast_hash": "b7bdc33ab378514c91b1d6894a1cecee",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/gastric_emptying_curves.webp": {
+    "mtime": 1793701300.3650846,
+    "seen": 1793701794.676609,
+    "ast_hash": "c2ae44acee60bc18caceaa48224745ec",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/gerd_ph_monitoring_tracing.webp": {
+    "mtime": 1793701300.8264258,
+    "seen": 1793701794.67661,
+    "ast_hash": "19852b2f7e8169d52be97e8ed0a01c7a",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/iron_ferroportin_hepcidin.webp": {
+    "mtime": 1793701301.362287,
+    "seen": 1793701794.67661,
+    "ast_hash": "7dece75865f98e0f69ecaef3cde01b74",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/parietal_cell_acid_secretion.webp": {
+    "mtime": 1793701301.6750722,
+    "seen": 1793701794.676639,
+    "ast_hash": "d79e201d25737bdf2ae41f0a055f03d8",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/sglt1_glucose_absorption.webp": {
+    "mtime": 1793701302.1795328,
+    "seen": 1793701794.67664,
+    "ast_hash": "b3a27cc300858d3d0825359bb4e3f033",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/swallowing_stages_coordination.webp": {
+    "mtime": 1793701362.292339,
+    "seen": 1793701794.67664,
+    "ast_hash": "5e31d4778b2556468585f2ea38c1c5d8",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/vomiting_reflex_pathway.webp": {
+    "mtime": 1793701303.2257736,
+    "seen": 1793701794.676641,
+    "ast_hash": "f25fa892113c40ccfe7a3330be6e20e0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/zenker_diverticulum_barium.webp": {
+    "mtime": 1793701130.2130263,
+    "seen": 1793701794.676642,
+    "ast_hash": "a336779e6265ba871686f72dbd138c31",
     "semantic_hash": ""
   }
 }

@@ -24,6 +24,8 @@ export function SpecimenViewer({ imageUrl, altText = 'Practical exam specimen', 
   const [isDragging, setIsDragging] = useState(false);
   const dragStart = useRef({ x: 0, y: 0 });
 
+  const resolvedSrc = imageUrl ? (imageUrl.includes('?') ? imageUrl : `${imageUrl}?v=20261103v2`) : '';
+
   // Reset pan when scale returns to 1
   useEffect(() => {
     if (scale <= 1) {
@@ -80,7 +82,7 @@ export function SpecimenViewer({ imageUrl, altText = 'Practical exam specimen', 
       onMouseLeave={handleMouseUp}
     >
       <motion.img
-        src={imageUrl}
+        src={resolvedSrc}
         alt={altText}
         animate={{
           scale,
