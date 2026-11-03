@@ -418,10 +418,10 @@ def get_physiology_questions():
             "lecture": 2,
             "text": "What is the physiological mechanism of 'Alkaline Tide' observed in systemic and renal venous blood following a meal?",
             "options": [
-                "For every H+ ion pumped into the gastric lumen by the parietal cell, one bicarbonate (HCO3-) ion is extruded across the basolateral membrane into gastric venous capillaries via the Cl-/HCO3- exchanger",
-                "Duodenal bicarbonate absorption exceeds secretin stimulation",
-                "Pancreatic acini secrete protons into mesenteric lymphatics",
-                "Hepatic deamination of amino acids generates ammonium ions"
+                "Extrusion of bicarbonate (HCO3-) across the basolateral membrane of parietal cells into gastric venous blood via Cl-/HCO3- exchange during active H+ secretion",
+                "Massive absorption of sodium bicarbonate across duodenal villi into superior mesenteric venous blood following secretin stimulation",
+                "Extrusion of hydrogen ions across basolateral membranes of pancreatic ductal cells into portal venous tributaries",
+                "Hepatic deamination of amino acids generating excess ammonium and bicarbonate ions into hepatic sinusoidal blood"
             ],
             "correctIndex": 0,
             "explanation": "Criteria of Identification: Carbonic anhydrase in parietal cells hydrates CO2 to H2CO3, which dissociates into H+ and HCO3-. As H+ is pumped into the lumen, the generated HCO3- is transported across the basolateral membrane into the capillary blood via an anion exchanger (AE2, Cl-/HCO3- exchanger). This influx of bicarbonate temporarily raises gastric venous and urinary pH (postprandial alkaline tide).",

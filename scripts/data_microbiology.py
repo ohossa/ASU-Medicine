@@ -1267,9 +1267,9 @@ NET_NEW_MICROBIOLOGY = [
         "text": "A hospitalized patient develops pseudomembranous colitis following clindamycin therapy. Stool testing utilizes a two-step diagnostic algorithm. What initial screening enzyme and subsequent confirmatory targets are detected?",
         "options": [
             "Glutamate Dehydrogenase (GDH) screening antigen, followed by Enzyme Immunoassay (EIA) or PCR for Toxin A (enterotoxin) and Toxin B (cytotoxin)",
-            "Lactose fermentation followed by Gram stain",
-            "Widal agglutination for O and H antigens",
-            "Van den Bergh diazo coupling"
+            "Lactose fermentation on MacConkey agar, followed by slide agglutination typing for O and H somatic antigens",
+            "Widal febrile agglutination measuring serum antibodies, followed by clot culture for enteric Salmonella",
+            "Van den Bergh diazo coupling assay, followed by sulfanilic acid spectrophotometric absorbance quantification"
         ],
         "correctIndex": 0,
         "explanation": "Criteria of Identification: Clostridioides difficile diagnostic guidelines mandate: 1) initial sensitive screening for C. difficile common Glutamate Dehydrogenase (GDH) antigen in stool, followed if positive by 2) specific enzyme immunoassay (EIA) or nucleic acid amplification test (NAAT/PCR) targeting Toxin A (enterotoxin causing mucosal fluid secretion) and Toxin B (potent cytotoxin disrupting actin cytoskeleton).",

@@ -36,7 +36,7 @@ def get_biochemistry_questions():
             "lecture": 1,
             "text": "What is the primary circulating copper-binding alpha-2 globulin synthesized by hepatocytes that typically demonstrates severely diminished serum levels in Wilson disease?",
             "options": [
-                "Ceruloplasmin (typically < 20 mg/dL, often < 5 mg/dL)",
+                "Ceruloplasmin",
                 "Transferrin",
                 "Haptoglobin",
                 "Hemopexin"

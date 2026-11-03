@@ -73,7 +73,7 @@ def build_raw_question_obj(q_raw, target_idx, ch_id, subj_code):
         } if img_rel else None
     }
 
-def rebalance_authored_question(q, target_idx):
+def rebalance_authored_question(q, target_idx, seq_num):
     q_copy = dict(q)
     opts = list(q["options"])
     old_idx = q["correctIndex"]
@@ -84,6 +84,11 @@ def rebalance_authored_question(q, target_idx):
     
     if q_copy.get("media") and q_copy["media"].get("imageUrl"):
         verify_image(q_copy["media"]["imageUrl"])
+        q_copy["media"] = {
+            "type": "image",
+            "imageUrl": q_copy["media"]["imageUrl"],
+            "caption": f"Practical Spotter Examination — Station {seq_num}"
+        }
         
     return q_copy
 
@@ -237,7 +242,7 @@ def main():
     # 5. Chapter 305: Physiology (65 stations)
     phys_raw = get_physiology_questions()
     phys_questions = [
-        rebalance_authored_question(q, i % 4)
+        rebalance_authored_question(q, i % 4, i + 1)
         for i, q in enumerate(phys_raw)
     ]
     phys_chapter = {
@@ -268,7 +273,7 @@ def main():
     # 6. Chapter 306: Biochemistry (65 stations)
     bioc_raw = get_biochemistry_questions()
     bioc_questions = [
-        rebalance_authored_question(q, i % 4)
+        rebalance_authored_question(q, i % 4, i + 1)
         for i, q in enumerate(bioc_raw)
     ]
     bioc_chapter = {
@@ -300,7 +305,7 @@ def main():
     # 7. Chapter 307: Microbiology (65 stations)
     micr_raw = get_microbiology_questions()
     micr_questions = [
-        rebalance_authored_question(q, i % 4)
+        rebalance_authored_question(q, i % 4, i + 1)
         for i, q in enumerate(micr_raw)
     ]
     micr_chapter = {
@@ -331,7 +336,7 @@ def main():
     # 8. Chapter 308: Clinical & Pharmacology (55 stations)
     clin_raw = get_clinical_questions()
     clin_questions = [
-        rebalance_authored_question(q, i % 4)
+        rebalance_authored_question(q, i % 4, i + 1)
         for i, q in enumerate(clin_raw)
     ]
     clin_chapter = {

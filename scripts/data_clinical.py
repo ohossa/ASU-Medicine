@@ -1064,9 +1064,9 @@ NET_NEW_CLINICAL = [
         "text": "What is the unique mechanism of action of Vedolizumab in inflammatory bowel disease, and why is it devoid of the Progressive Multifocal Leukoencephalopathy (PML) risk associated with natalizumab?",
         "options": [
             "Humanized monoclonal antibody that selectively blocks alpha-4-beta-7 integrin on gut-homing T cells, preventing interaction with mucosal MAdCAM-1 without affecting CNS alpha-4-beta-1",
-            "Soluble receptor decoy trapping circulating TNF-alpha",
-            "Blockade of interleukin-12 and interleukin-23 p40 subunit",
-            "JAK1 and JAK3 kinase inhibitor"
+            "Soluble recombinant TNF receptor-Fc decoy protein that binds circulating TNF-alpha without entering the central nervous system",
+            "Fully human IgG1 monoclonal antibody targeting the shared p40 subunit of interleukin-12 and interleukin-23 without CNS tropism",
+            "Oral small-molecule Janus kinase (JAK) inhibitor selectively blocking intracellular ATP phosphorylation of JAK1 and JAK3"
         ],
         "correctIndex": 0,
         "explanation": "Criteria of Identification: Natalizumab non-selectively blocks both alpha-4-beta-1 (CNS homing via VCAM-1) and alpha-4-beta-7 (gut homing), predisposing to opportunistic JC virus reactivation and fatal PML in the brain. Vedolizumab is gut-selective: it targets only the alpha-4-beta-7 heterodimer, preventing leukocyte extravasation into the intestinal mucosa by blocking adhesion to MAdCAM-1 exclusively in gut endothelium, conferring no risk of CNS immunosuppression or PML.",
