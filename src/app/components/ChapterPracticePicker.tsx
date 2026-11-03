@@ -1,7 +1,12 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { ListChecks, Search, X, ChevronDown } from 'lucide-react';
+import { ListChecks, Search, X, ChevronDown, Award, Timer, BookOpen } from 'lucide-react';
 import type { ChapterData, SubjectData, Question } from '../types';
 import { practiceTopics, selectedMultiChapterPractice } from '../learning/customPractice';
+import {
+  MRS_CONTINUOUS_II_CONFIG,
+  filterMrsContinuousChapters,
+  generateMrsContinuousMockExam,
+} from '../learning/mrsContinuousExam';
 import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
 import { useLanguage } from '../hooks/useLanguage';
 import { questionCountLabel, topicCountLabel } from '../learning/practiceNavigation';
@@ -18,7 +23,10 @@ interface Props {
 export function ChapterPracticePicker({ chapters, moduleName, moduleCode, onStart }: Props) {
   const { language } = useLanguage();
   const ar = language === 'ar';
+  const hasContinuous = moduleCode === 'MRS-2';
+
   const [open, setOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState<'all' | 'continuous-ii'>('all');
   const [selected, setSelected] = useState(new Set<string>());
   const [search, setSearch] = useState('');
   const [expandedChapters, setExpandedChapters] = useState(new Set<number>());
@@ -26,9 +34,17 @@ export function ChapterPracticePicker({ chapters, moduleName, moduleCode, onStar
   const dialog = useRef<HTMLDialogElement>(null);
   const trigger = useRef<HTMLButtonElement>(null);
 
-  // Pre-calculate topics for each chapter
+  // Scoped chapters based on active tab
+  const scopedChapters = useMemo(() => {
+    if (hasContinuous && activeTab === 'continuous-ii') {
+      return filterMrsContinuousChapters(chapters, moduleCode);
+    }
+    return chapters;
+  }, [chapters, moduleCode, hasContinuous, activeTab]);
+
+  // Pre-calculate topics for each chapter in the current scope
   const chapterDataMap = useMemo(() => {
-    return chapters.map(chapter => {
+    return scopedChapters.map(chapter => {
       const topics = practiceTopics(chapter, moduleCode);
       const questionIds = topics.flatMap(t => t.questions.map(q => String(q.id)));
       return {
@@ -38,12 +54,12 @@ export function ChapterPracticePicker({ chapters, moduleName, moduleCode, onStar
         totalQuestions: questionIds.length,
       };
     });
-  }, [chapters, moduleCode]);
+  }, [scopedChapters, moduleCode]);
 
   // Selected session payload
   const run = useMemo(
-    () => selectedMultiChapterPractice(chapters, selected, moduleCode, language),
-    [chapters, selected, moduleCode, language]
+    () => selectedMultiChapterPractice(scopedChapters, selected, moduleCode, language),
+    [scopedChapters, selected, moduleCode, language]
   );
 
   // Filtered chapters according to search input
@@ -59,6 +75,15 @@ export function ChapterPracticePicker({ chapters, moduleName, moduleCode, onStar
       return matchTitle || matchTopic;
     });
   }, [chapterDataMap, query]);
+
+  // Switch tab and reset selection cleanly
+  const handleTabChange = (tab: 'all' | 'continuous-ii') => {
+    if (tab !== activeTab) {
+      setActiveTab(tab);
+      setSelected(new Set());
+      setSearch('');
+    }
+  };
 
   // Handle native dialog open/close lifecycle and focus restore
   useEffect(() => {
@@ -102,7 +127,7 @@ export function ChapterPracticePicker({ chapters, moduleName, moduleCode, onStar
     });
   };
 
-  // Select all questions across all chapters
+  // Select all questions across all currently scoped chapters
   const handleSelectAll = () => {
     const all = new Set<string>();
     chapterDataMap.forEach(({ questionIds }) => {
@@ -116,10 +141,31 @@ export function ChapterPracticePicker({ chapters, moduleName, moduleCode, onStar
     setSelected(new Set());
   };
 
+  // Start custom practice from selected topics
   const handleStart = () => {
     if (run.questions.length === 0) return;
     setOpen(false);
-    onStart(run.virtualChapter, run.subject, run.questions);
+    if (hasContinuous && activeTab === 'continuous-ii') {
+      const customCa2Chapter: ChapterData = {
+        ...run.virtualChapter,
+        title: ar
+          ? 'تدريب مخصص — التقييم المستمر الثاني (CA-2)'
+          : 'Continuous II Custom Practice (CA-2)',
+        subtitle: ar
+          ? `مخطط التقييم المستمر الثاني · ${run.questions.length} سؤالاً محدداً`
+          : `Continuous II Assessment · ${run.questions.length} selected questions`,
+      };
+      onStart(customCa2Chapter, run.subject, run.questions);
+    } else {
+      onStart(run.virtualChapter, run.subject, run.questions);
+    }
+  };
+
+  // Launch official 38-MCQ Blueprint Mock Exam
+  const handleStartMockExam = () => {
+    const mock = generateMrsContinuousMockExam(chapters, language);
+    setOpen(false);
+    onStart(mock.virtualChapter, mock.subject, mock.questions);
   };
 
   return (
@@ -139,15 +185,35 @@ export function ChapterPracticePicker({ chapters, moduleName, moduleCode, onStar
             </p>
           </div>
         </div>
-        <button
-          ref={trigger}
-          type="button"
-          className="report-primary"
-          aria-haspopup="dialog"
-          onClick={() => setOpen(true)}
-        >
-          {ar ? 'اختر الفصول' : 'Choose chapters'}
-        </button>
+        <div className="topic-practice-banner-actions">
+          {hasContinuous && (
+            <button
+              type="button"
+              className="topic-practice-ca2-badge"
+              onClick={() => {
+                setActiveTab('continuous-ii');
+                setSelected(new Set());
+                setOpen(true);
+              }}
+            >
+              <Award size={18} aria-hidden="true" />
+              <span>{ar ? '🎯 التقييم المستمر الثاني (CA-2)' : '🎯 Continuous II Exam (CA-2)'}</span>
+            </button>
+          )}
+          <button
+            ref={trigger}
+            type="button"
+            className="report-primary"
+            aria-haspopup="dialog"
+            onClick={() => {
+              setActiveTab('all');
+              setSelected(new Set());
+              setOpen(true);
+            }}
+          >
+            {ar ? 'اختر الفصول' : 'Choose chapters'}
+          </button>
+        </div>
       </section>
 
       {/* ── Modal Dialog ── */}
@@ -169,8 +235,17 @@ export function ChapterPracticePicker({ chapters, moduleName, moduleCode, onStar
           {/* Dialog Header */}
           <header>
             <div>
-              <p className="topic-practice-eyebrow">{moduleName} · {moduleCode}</p>
-              <h2 id="chapter-picker-title">{ar ? 'اختر تدريبك عبر الفصول' : 'Choose your practice'}</h2>
+              <p className="topic-practice-eyebrow">
+                {moduleName} · {moduleCode}
+                {hasContinuous && activeTab === 'continuous-ii' && (
+                  <span> · {ar ? 'التقييم المستمر الثاني' : 'Continuous II'}</span>
+                )}
+              </p>
+              <h2 id="chapter-picker-title">
+                {hasContinuous && activeTab === 'continuous-ii'
+                  ? (ar ? 'اختر موضوعات التقييم المستمر الثاني' : 'Continuous II Assessment Practice')
+                  : (ar ? 'اختر تدريبك عبر الفصول' : 'Choose your practice')}
+              </h2>
             </div>
             <button
               type="button"
@@ -180,6 +255,93 @@ export function ChapterPracticePicker({ chapters, moduleName, moduleCode, onStar
               <X size={22} />
             </button>
           </header>
+
+          {/* Module Tabs (when module has Continuous assessment) */}
+          {hasContinuous && (
+            <div
+              className="topic-practice-tabs"
+              role="tablist"
+              aria-label={ar ? 'أقسام التدريب' : 'Practice tabs'}
+            >
+              <button
+                type="button"
+                role="tab"
+                id="tab-all"
+                aria-controls="tabpanel-all"
+                aria-selected={activeTab === 'all'}
+                data-active={activeTab === 'all'}
+                className="topic-practice-tab"
+                onClick={() => handleTabChange('all')}
+              >
+                <BookOpen size={16} aria-hidden="true" />
+                <span>{ar ? 'جميع محتويات الموديول' : 'All Module Content'}</span>
+              </button>
+              <button
+                type="button"
+                role="tab"
+                id="tab-ca2"
+                aria-controls="tabpanel-ca2"
+                aria-selected={activeTab === 'continuous-ii'}
+                data-active={activeTab === 'continuous-ii'}
+                data-variant="ca2"
+                className="topic-practice-tab"
+                onClick={() => handleTabChange('continuous-ii')}
+              >
+                <Award size={16} aria-hidden="true" />
+                <span>{ar ? 'مخطط التقييم المستمر الثاني (CA-2)' : 'Continuous II Blueprint (CA-2)'}</span>
+              </button>
+            </div>
+          )}
+
+          {/* Continuous II Blueprint Banner (when on continuous-ii tab) */}
+          {hasContinuous && activeTab === 'continuous-ii' && (
+            <div
+              className="topic-practice-blueprint"
+              role="region"
+              aria-label={ar ? 'تفاصيل التقييم المستمر الثاني' : 'Continuous II blueprint details'}
+            >
+              <div className="topic-practice-blueprint-header">
+                <div>
+                  <h4>
+                    <Award size={18} className="text-primary" aria-hidden="true" />
+                    <span>{ar ? MRS_CONTINUOUS_II_CONFIG.examTitleAr : MRS_CONTINUOUS_II_CONFIG.examTitle}</span>
+                  </h4>
+                  <p>
+                    {ar
+                      ? `السبت 7 نوفمبر 2026 · ${MRS_CONTINUOUS_II_CONFIG.totalLectures} محاضرة رسمية (الأسابيع 1-3) · ${MRS_CONTINUOUS_II_CONFIG.totalMarks} درجة · ${MRS_CONTINUOUS_II_CONFIG.durationMinutes} دقيقة`
+                      : `${MRS_CONTINUOUS_II_CONFIG.dateStr} · ${MRS_CONTINUOUS_II_CONFIG.totalLectures} Lectures (Weeks 1-3) · ${MRS_CONTINUOUS_II_CONFIG.totalMarks} Marks · ${MRS_CONTINUOUS_II_CONFIG.durationMinutes} min`}
+                  </p>
+                </div>
+              </div>
+
+              <div
+                className="topic-practice-blueprint-units"
+                aria-label={ar ? 'توزيع الوحدات والدرجات' : 'Blueprint unit distribution'}
+              >
+                {MRS_CONTINUOUS_II_CONFIG.units.map(unit => (
+                  <span key={unit.id} className="topic-practice-unit-pill">
+                    <span>{ar ? unit.nameAr : unit.name}</span>
+                    <strong>{unit.marks} {ar ? 'درجات' : 'marks'}</strong>
+                  </span>
+                ))}
+              </div>
+
+              <div className="topic-practice-blueprint-actions">
+                <button
+                  type="button"
+                  className="topic-practice-mock-btn"
+                  onClick={handleStartMockExam}
+                >
+                  <Timer size={16} aria-hidden="true" />
+                  <span>
+                    {ar
+                      ? 'بدء محاكاة الاختبار الرسمي (38 سؤالاً · 49 دقيقة)'
+                      : 'Start 38-MCQ Blueprint Mock Exam (49 min)'}
+                  </span>
+                </button>
+              </div>
+            </div>
+          )}
 
           {/* Tools: Search + Action Buttons */}
           <div className="topic-picker-tools">
