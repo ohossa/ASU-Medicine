@@ -400,3 +400,526 @@ HISTOLOGY_QUESTIONS = [
         "imageUrl": "/images/practical/mgl-3/histology/paneth_cells_tem.webp"
     }
 ]
+
+NET_NEW_HISTOLOGY = [
+    {
+        "seq": 29,
+        "lecture": 1,
+        "text": "Examine this histological section of the gastrointestinal junction. Identify the abrupt epithelial transition indicated:",
+        "correct_answer": "Non-keratinized stratified squamous to simple columnar epithelium (Gastroesophageal junction)",
+        "distractors": [
+            "Simple columnar to stratified squamous keratinized epithelium (Anorectal junction)",
+            "Pseudostratified ciliated columnar to stratified squamous epithelium (Laryngeal transition)",
+            "Simple columnar with microvilli to transitional epithelium (Ureterovesical junction)"
+        ],
+        "explanation": "Criteria of Identification: The gastroesophageal junction (Z-line) is characterized by a sharp, microscopic boundary where the multi-layered non-keratinized stratified squamous epithelium of the esophagus transitions abruptly into the single-layered mucus-secreting simple columnar epithelium of the gastric cardia.",
+        "keyConcept": "GE junction: abrupt transition from stratified squamous non-keratinized epithelium of esophagus to simple columnar epithelium of stomach cardia.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0029.webp"
+    },
+    {
+        "seq": 30,
+        "lecture": 2,
+        "text": "In this transmission electron micrograph (TEM) of a gastric fundic gland cell, identify this cell characterized by extensive intracellular canaliculi and abundant mitochondria:",
+        "correct_answer": "Parietal (oxyntic) cell",
+        "distractors": [
+            "Chief (peptic) cell",
+            "Enteroendocrine G cell",
+            "Mucous neck cell"
+        ],
+        "explanation": "Criteria of Identification: Parietal cells are identified on TEM by deep, branching intracellular canaliculi lined by microvilli, a dynamic tubulovesicular system, and exceptionally high mitochondrial density (occupying ~40% of cytoplasmic volume) to fuel the H+/K+ ATPase proton pump.",
+        "keyConcept": "Parietal cell (TEM): deep intracellular secretory canaliculi + dense packing of cristae-rich mitochondria.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0030.webp"
+    },
+    {
+        "seq": 31,
+        "lecture": 2,
+        "text": "In this transmission electron micrograph (TEM) of a secretory acinar cell, identify the parallel basal cisternae and apical secretory vesicles:",
+        "correct_answer": "Chief (peptic) cell with extensive rough endoplasmic reticulum and zymogen granules",
+        "distractors": [
+            "Parietal cell with intracellular canaliculi and smooth ER",
+            "Adipocyte with large lipid droplet and flattened nucleus",
+            "Plasma cell with clock-face chromatin and Russell bodies"
+        ],
+        "explanation": "Criteria of Identification: Chief cells (and serous acinar cells) are dedicated protein-synthesizing cells characterized on TEM by extensive parallel arrays of rough endoplasmic reticulum in the basal cytoplasm and large spherical apical zymogen granules containing pepsinogen awaiting exocytosis.",
+        "keyConcept": "Chief cell (TEM): extensive parallel basal rER cisternae + apical electron-dense zymogen granules.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0031.webp"
+    },
+    {
+        "seq": 32,
+        "lecture": 2,
+        "text": "Examine this histological section of the gastric mucosa. Identify this region based on the deep gastric pits occupying more than half the mucosal depth:",
+        "correct_answer": "Pyloric stomach",
+        "distractors": [
+            "Gastric fundus / body",
+            "Duodenum",
+            "Jejunum"
+        ],
+        "explanation": "Criteria of Identification: Pyloric stomach is definitively identified by deep, branched, wide gastric pits extending through more than half (1/2 to 2/3) of the mucosal thickness, with short, tortuous, branched mucous pyloric glands in the remaining basal lamina propria.",
+        "keyConcept": "Pyloric stomach: deep wide gastric pits (> 1/2 mucosal height) + branched mucous coiled glands.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0032.webp"
+    },
+    {
+        "seq": 33,
+        "lecture": 3,
+        "text": "Examine this high-power micrograph of the duodenal submucosa. Identify these branched coiled glands lying deep to the muscularis mucosae:",
+        "correct_answer": "Brunner's glands",
+        "distractors": [
+            "Esophageal cardiac glands",
+            "Crypts of Lieberkühn",
+            "Peyer's patches"
+        ],
+        "explanation": "Criteria of Identification: Brunner's glands are branched tubuloacinar submucosal glands found exclusively in the duodenum that produce an alkaline, bicarbonate-rich mucus (pH 8.1–9.3) and epidermal growth factor (urogastrone) to protect the duodenal mucosa against acidic gastric chyme.",
+        "keyConcept": "Brunner's glands: submucosal branched tubuloacinar glands producing alkaline bicarbonate-rich mucus.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0033.webp"
+    },
+    {
+        "seq": 34,
+        "lecture": 3,
+        "text": "In this transmission electron micrograph (TEM) of an intestinal mucosal cell, identify this cell featuring a dense apical brush border and basal nucleus:",
+        "correct_answer": "Absorptive enterocyte",
+        "distractors": [
+            "Paneth cell",
+            "Goblet cell",
+            "M cell (microfold cell)"
+        ],
+        "explanation": "Criteria of Identification: Absorptive enterocytes are tall columnar cells displaying an apical striated border of ~3,000 tightly packed microvilli coated with thick glycocalyx enzymes, an apical terminal web, and lateral interdigitations with junctional complexes for selective nutrient uptake.",
+        "keyConcept": "Enterocyte (TEM): tall columnar absorptive cell with dense microvillar brush border and apical junctional complex.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0034.webp"
+    },
+    {
+        "seq": 35,
+        "lecture": 3,
+        "text": "Examine this micrograph taken at the bottom of the intestinal crypts of Lieberkühn. Identify the cells with intensely eosinophilic apical granules:",
+        "correct_answer": "Paneth cells",
+        "distractors": [
+            "Enteroendocrine cells",
+            "Stem cells",
+            "Eosinophils"
+        ],
+        "explanation": "Criteria of Identification: Paneth cells reside exclusively at the base of small intestinal crypts and contain prominent, refringent, bright eosinophilic apical granules packed with antimicrobial lysozyme, defensins (cryptdins), and phospholipase A2.",
+        "keyConcept": "Paneth cells: crypt base cells with bright eosinophilic apical antibacterial granules (lysozyme/defensins).",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0035.webp"
+    },
+    {
+        "seq": 36,
+        "lecture": 3,
+        "text": "In this transmission electron micrograph (TEM), identify this epithelial cell whose apical pole reaches the intestinal lumen with sensory microvilli while containing basal neurosecretory granules:",
+        "correct_answer": "Open-type enteroendocrine cell",
+        "distractors": [
+            "Closed-type enteroendocrine cell",
+            "Paneth cell",
+            "Tuft cell"
+        ],
+        "explanation": "Criteria of Identification: Open-type enteroendocrine cells are bottle-shaped cells that span the full height of the epithelium, contacting the gut lumen via apical microvilli acting as chemoreceptors and discharging peptide hormones (e.g., CCK, secretin, GIP) from infranuclear basal granules into the underlying fenestrated capillaries.",
+        "keyConcept": "Open-type enteroendocrine cell (TEM): apical microvillar luminal contact + infranuclear basal endocrine granules.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0036.webp"
+    },
+    {
+        "seq": 37,
+        "lecture": 3,
+        "text": "Examine this small intestinal histological section showing exceptionally tall, slender mucosal villi and prominent plicae circulares without submucosal glands or Peyer's patches. Identify this segment:",
+        "correct_answer": "Jejunum",
+        "distractors": [
+            "Duodenum",
+            "Ileum",
+            "Vermiform appendix"
+        ],
+        "explanation": "Criteria of Identification: The jejunum exhibits the tallest, most developed finger-shaped intestinal villi, the deepest crypts of Lieberkühn, and well-developed plicae circulares (valves of Kerckring), distinguished definitively by the complete absence of submucosal Brunner's glands and aggregated Peyer's patches.",
+        "keyConcept": "Jejunum: tall slender villi + plicae circulares without Brunner's glands or prominent Peyer's patches.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0037.webp"
+    },
+    {
+        "seq": 38,
+        "lecture": 3,
+        "text": "In this histological section of the distal small intestine, identify the diagnostic aggregated lymphoid follicles occupying the antimesenteric submucosa:",
+        "correct_answer": "Peyer's patches in the ileum",
+        "distractors": [
+            "Solitary lymphoid nodules in colon",
+            "Germinal centers in tonsils",
+            "Brunner's glands in duodenum"
+        ],
+        "explanation": "Criteria of Identification: Peyer's patches are large confluent macroscopic aggregations of 10 to 30 lymphoid follicles situated on the antimesenteric border of the ileum, extending from the lamina propria through the muscularis mucosae into the submucosa, covered by specialized follicle-associated epithelium containing M-cells.",
+        "keyConcept": "Peyer's patches: antimesenteric aggregated lymphoid follicles in lamina propria and submucosa of ileum.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0038.webp"
+    },
+    {
+        "seq": 39,
+        "lecture": 3,
+        "text": "Examine this low-power cross-section of a narrow tubular gut structure. Identify this organ based on the circumferential ring of lymphoid nodules and absence of villi:",
+        "correct_answer": "Vermiform appendix",
+        "distractors": [
+            "Colon",
+            "Ileum",
+            "Esophagus"
+        ],
+        "explanation": "Criteria of Identification: The vermiform appendix is recognized by its small circular lumen, flat mucosal surface completely devoid of villi, shallow straight crypts, and a dense, confluent, continuous ring of lymphoid follicles occupying the entire circumference of the lamina propria and submucosa.",
+        "keyConcept": "Appendix: narrow lumen + complete circumferential ring of lymphoid follicles without mucosal villi.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0039.webp"
+    },
+    {
+        "seq": 40,
+        "lecture": 3,
+        "text": "Examine this large intestinal histological section. Identify the characteristic mucosal architecture:",
+        "correct_answer": "Straight, parallel tubular crypts packed with abundant goblet cells without mucosal villi",
+        "distractors": [
+            "Tall mucosal villi with central lacteals and Paneth cells",
+            "Stratified squamous non-keratinized epithelium with submucosal glands",
+            "Branched tubuloacinar mucous glands extending through the submucosa"
+        ],
+        "explanation": "Criteria of Identification: The large intestine (colon) exhibits a smooth, flat mucosal surface without mucosal villi or plicae circulares, densely packed with long, straight, test-tube-like parallel crypts of Lieberkühn lined predominantly by mucus-secreting goblet cells and absorptive colonocytes.",
+        "keyConcept": "Colon: flat mucosal surface + straight parallel crypts with high density of goblet cells and no villi.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0040.webp"
+    },
+    {
+        "seq": 41,
+        "lecture": 3,
+        "text": "Examine this high-power micrograph of the colonic mucosal crypts. Identify the predominant pale-staining secretory cell lining these crypts:",
+        "correct_answer": "Goblet cells",
+        "distractors": [
+            "Paneth cells",
+            "Parietal cells",
+            "Chief cells"
+        ],
+        "explanation": "Criteria of Identification: Goblet cells in the colonic crypts appear as pale, vacuolated, mucin-rich cells whose numbers progressively increase from the cecum to the rectum to provide vital lubrication for dehydrating feces.",
+        "keyConcept": "Colonic crypts: dominated by abundant mucin-producing goblet cells for luminal lubrication.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0041.webp"
+    },
+    {
+        "seq": 42,
+        "lecture": 3,
+        "text": "Examine this histological section of the terminal gastrointestinal canal. Identify this transition from simple columnar epithelium to non-keratinized stratified squamous epithelium:",
+        "correct_answer": "Anorectal (pectinate) line",
+        "distractors": [
+            "Gastroesophageal junction",
+            "Gastroduodenal junction",
+            "Ileocecal valve"
+        ],
+        "explanation": "Criteria of Identification: The anorectal junction (pectinate / dentate line) marks the embryological boundary between the endoderm-derived rectum (simple columnar epithelium with deep crypts) and the ectoderm-derived anal pecten (non-keratinized stratified squamous epithelium).",
+        "keyConcept": "Anorectal junction: transition from simple columnar colonic epithelium to stratified squamous non-keratinized epithelium.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0042.webp"
+    },
+    {
+        "seq": 43,
+        "lecture": 4,
+        "text": "Examine this histological section of the lip. Identify the central structural core:",
+        "correct_answer": "Striated skeletal muscle (Orbicularis oris muscle)",
+        "distractors": [
+            "Dense irregular collagenous tendon",
+            "Hyaline cartilage plate",
+            "Smooth muscle bundles"
+        ],
+        "explanation": "Criteria of Identification: The lip is characterized by a central core of skeletal muscle bundles (orbicularis oris) bounded by three distinct zones: outer thin skin (with hair follicles and sebaceous glands), transitional vermilion border (red margin with high vascular dermal papillae), and inner oral mucous membrane (with non-keratinized stratified squamous epithelium and labial salivary glands).",
+        "keyConcept": "Lip: central core of orbicularis oris skeletal muscle between skin surface and oral mucous membrane.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0043.webp"
+    },
+    {
+        "seq": 44,
+        "lecture": 4,
+        "text": "Examine this histological section of a major salivary gland showing purely serous acini with darkly basophilic cytoplasm and absence of mucous elements. Identify this gland:",
+        "correct_answer": "Parotid gland",
+        "distractors": [
+            "Sublingual gland",
+            "Submandibular gland",
+            "Exocrine pancreas"
+        ],
+        "explanation": "Criteria of Identification: The parotid gland is an entirely serous branched tubuloacinar gland characterized by intensely basophilic serous acini with central round nuclei, prominent intercalated and striated ducts, and interspersed unilocular adipocytes that increase with age.",
+        "keyConcept": "Parotid gland: purely serous acini + prominent striated/intercalated ducts + adipocytes.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0044.webp"
+    },
+    {
+        "seq": 45,
+        "lecture": 4,
+        "text": "Examine this histological section of a major salivary gland showing predominantly pale-staining mucous acini with flattened basal nuclei and occasional serous demilunes. Identify this gland:",
+        "correct_answer": "Sublingual gland",
+        "distractors": [
+            "Parotid gland",
+            "Submandibular gland",
+            "Lacrimal gland"
+        ],
+        "explanation": "Criteria of Identification: The sublingual gland is a mixed but predominantly mucous (60–70% mucous) tubuloacinar salivary gland recognized by pale, vacuolated mucous tubules with peripheral flattened nuclei and occasional serous demilunes of Giannuzzi.",
+        "keyConcept": "Sublingual gland: predominantly mucous acini with flattened basal nuclei and scarce serous demilunes.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0045.webp"
+    },
+    {
+        "seq": 46,
+        "lecture": 4,
+        "text": "Examine this histological section of a major salivary gland showing mixed acini with a predominance of serous acini (80%) and mucous tubules capped by serous demilunes. Identify this gland:",
+        "correct_answer": "Submandibular gland",
+        "distractors": [
+            "Parotid gland",
+            "Sublingual gland",
+            "Exocrine pancreas"
+        ],
+        "explanation": "Criteria of Identification: The submandibular gland is a mixed seromucous gland dominated by serous acini (~80%) alongside mucous acini capped by crescent-shaped serous demilunes of Giannuzzi, with prominent striated intralobular ducts.",
+        "keyConcept": "Submandibular gland: mixed gland dominated by serous acini (~80%) with mucous acini and serous demilunes.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0046.webp"
+    },
+    {
+        "seq": 47,
+        "lecture": 4,
+        "text": "In this high-power micrograph of a salivary intralobular duct, identify the duct characterized by intense eosinophilia and basal striations:",
+        "correct_answer": "Striated duct",
+        "distractors": [
+            "Intercalated duct",
+            "Excretory interlobular duct",
+            "Main parotid duct"
+        ],
+        "explanation": "Criteria of Identification: Striated ducts are lined by simple columnar epithelium displaying pronounced basal vertical striations corresponding to extensive plasma membrane infoldings packed with vertically aligned mitochondria that drive active Na+ reabsorption and K+/HCO3- secretion.",
+        "keyConcept": "Striated duct: simple columnar duct with basal mitochondrial membrane infoldings for electrolyte modification.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0047.webp"
+    },
+    {
+        "seq": 48,
+        "lecture": 5,
+        "text": "Examine this low-power histological section of the liver parenchyma. Identify the structural center of the classic hepatic lobule:",
+        "correct_answer": "Central vein (terminal hepatic venule)",
+        "distractors": [
+            "Portal vein tributary",
+            "Interlobular bile duct",
+            "Hepatic artery branch"
+        ],
+        "explanation": "Criteria of Identification: In the classic hepatic lobule, anastomosing plates of hepatocytes and sinusoids radiate outward from a thin-walled, endothelial-lined central vein (terminal hepatic venule) toward the peripheral portal spaces.",
+        "keyConcept": "Classic liver lobule: hexagonal unit centered around a central vein with portal triads at the periphery.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0048.webp"
+    },
+    {
+        "seq": 49,
+        "lecture": 5,
+        "text": "Examine this high-power micrograph of a portal space (portal canal). Identify the three canonical structures comprising the portal triad:",
+        "correct_answer": "Branch of portal vein, branch of hepatic artery, and interlobular bile duct",
+        "distractors": [
+            "Central vein, lymph vessel, and interlobular nerve",
+            "Bile canaliculus, hepatic vein, and sinusoids",
+            "Cystic duct, hepatic artery, and vagus nerve"
+        ],
+        "explanation": "Criteria of Identification: The portal triad within Glisson's capsule connective tissue contains: 1) a large, thin-walled portal venule branch, 2) a smaller, thick-walled muscular hepatic arteriole branch, and 3) an interlobular bile ductule lined by simple cuboidal epithelium.",
+        "keyConcept": "Portal triad: portal venule + hepatic arteriole + cuboidal interlobular bile duct.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0049.webp"
+    },
+    {
+        "seq": 50,
+        "lecture": 5,
+        "text": "In this scanning electron micrograph (SEM) of the hepatic sinusoidal wall, identify the discontinuous vascular lining containing sieve plates:",
+        "correct_answer": "Fenestrated sinusoidal endothelial cells",
+        "distractors": [
+            "Continuous capillary endothelium",
+            "Glomerular podocyte slit diaphragms",
+            "Alveolar type I pneumocytes"
+        ],
+        "explanation": "Criteria of Identification: Hepatic sinusoids are lined by specialized discontinuous endothelial cells grouped with transcellular fenestrae (sieve plates, 100–200 nm) lacking diaphragms and resting upon a discontinuous basal lamina, permitting plasma to bathe hepatocyte microvilli freely in the space of Disse.",
+        "keyConcept": "Hepatic sinusoids (SEM): discontinuous fenestrated endothelial cells with sieve plates lacking basal lamina.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0050.webp"
+    },
+    {
+        "seq": 51,
+        "lecture": 5,
+        "text": "In this transmission electron micrograph (TEM) of the liver, identify the narrow subendothelial gap between sinusoidal lining and hepatocyte microvilli:",
+        "correct_answer": "Space of Disse (perisinusoidal space)",
+        "distractors": [
+            "Bile canaliculus",
+            "Canal of Hering",
+            "Space of Mall"
+        ],
+        "explanation": "Criteria of Identification: The space of Disse (perisinusoidal space) lies between the fenestrated sinusoidal endothelial cells and the microvillar basolateral membrane of hepatocytes; it contains blood plasma, reticular fibers, and fat-storing hepatic stellate cells (Ito cells).",
+        "keyConcept": "Space of Disse (TEM): perisinusoidal space where plasma bathes hepatocyte microvilli; site of Ito cells.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0051.webp"
+    },
+    {
+        "seq": 52,
+        "lecture": 5,
+        "text": "In this transmission electron micrograph (TEM), identify the microscopic intercellular channel formed by grooves in apical hepatocyte membranes sealed by tight junctions:",
+        "correct_answer": "Bile canaliculus",
+        "distractors": [
+            "Hepatic sinusoid",
+            "Space of Disse",
+            "Interlobular ductule"
+        ],
+        "explanation": "Criteria of Identification: Bile canaliculi are 1–2 µm wide non-endothelialized tubular spaces formed by apposed grooved apical membranes of neighboring hepatocytes, sealed circumferentially by tight junctions (zonulae occludentes) to prevent bile regurgitation into the parenchyma.",
+        "keyConcept": "Bile canaliculus (TEM): intercellular lumen between adjacent hepatocytes sealed by tight junctions.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0052.webp"
+    },
+    {
+        "seq": 53,
+        "lecture": 5,
+        "text": "Examine this histological section of the gallbladder wall. Identify the characteristic morphological feature:",
+        "correct_answer": "Tall simple columnar epithelium with deeply folded mucosa and complete absence of submucosa and muscularis mucosae",
+        "distractors": [
+            "Stratified squamous epithelium with a thick submucosal glandular layer",
+            "Simple columnar epithelium with goblet cells, villi, and crypts",
+            "Pseudostratified ciliated epithelium with a continuous submucosa"
+        ],
+        "explanation": "Criteria of Identification: The gallbladder wall is characterized by a tall simple columnar absorptive epithelium with microvilli, highly branched mucosal rugae forming Rokitansky-Aschoff diverticula, a rich vascular lamina propria, and a fibromuscular coat, definitively lacking both a muscularis mucosae and a submucosa.",
+        "keyConcept": "Gallbladder: tall simple columnar epithelium + folded mucosa; lacks muscularis mucosae and submucosa.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0053.webp"
+    },
+    {
+        "seq": 54,
+        "lecture": 6,
+        "text": "Examine this histological section of the exocrine pancreas. Identify the pale-staining initial duct cells invaginating into the lumen of the serous acinus:",
+        "correct_answer": "Centroacinar cells",
+        "distractors": [
+            "Kupffer cells",
+            "Paneth cells",
+            "Enterochromaffin cells"
+        ],
+        "explanation": "Criteria of Identification: Centroacinar cells are pale-staining, cuboidal-to-flattened epithelial cells that represent the terminal intra-acinar extension of the intercalated duct system, unique to the exocrine pancreas.",
+        "keyConcept": "Centroacinar cells: pale intra-acinar duct cells characteristic of exocrine pancreatic acini.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0054.webp"
+    },
+    {
+        "seq": 55,
+        "lecture": 6,
+        "text": "Examine this pancreatic section showing a pale, highly vascularized spherical cellular cluster embedded among dark serous acini. Identify this endocrine structure:",
+        "correct_answer": "Islet of Langerhans",
+        "distractors": [
+            "Lymphoid follicle",
+            "Pancreatic lobule",
+            "Parathyroid gland"
+        ],
+        "explanation": "Criteria of Identification: Islets of Langerhans are pale-staining, round-to-oval endocrine clusters (~100–200 µm) comprising anastomosing cellular cords (Beta, Alpha, Delta, PP cells) intimately enveloped by a fenestrated capillary meshwork surrounded by dark exocrine serous acini.",
+        "keyConcept": "Islet of Langerhans: pale spherical endocrine cluster surrounded by dark exocrine pancreatic acini.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0055.webp"
+    },
+    {
+        "seq": 56,
+        "lecture": 6,
+        "text": "In this transmission electron micrograph (TEM) of a pancreatic acinar cell, identify the cellular polarity displaying basal rough ER and apical secretory vesicles:",
+        "correct_answer": "Protein-synthesizing acinar cell with basal rER, Golgi complex, and apical zymogen granules",
+        "distractors": [
+            "Mucus-secreting goblet cell with electron-lucent droplets",
+            "Steroid-synthesizing adrenal cortical cell with lipid droplets and sER",
+            "Ion-transporting striated duct cell with basal mitochondria"
+        ],
+        "explanation": "Criteria of Identification: Pancreatic acinar cells demonstrate textbook secretory polarity: spherical euchromatic nucleus surrounded by parallel basal rER cisternae, supranuclear Golgi, and apical cluster of dense zymogen granules containing proelastase, trypsinogen, and amylase.",
+        "keyConcept": "Pancreatic acinar cell (TEM): basal rER stacks + supranuclear Golgi + apical dense zymogen granules.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0056.webp"
+    },
+    {
+        "seq": 57,
+        "lecture": 4,
+        "text": "Examine this histological section of the lingual mucosa showing a massive papilla sunken into a circular moat lined by taste buds. Identify this papilla:",
+        "correct_answer": "Circumvallate (vallate) papilla",
+        "distractors": [
+            "Filiform papilla",
+            "Fungiform papilla",
+            "Foliate papilla"
+        ],
+        "explanation": "Criteria of Identification: Circumvallate papillae are 8 to 12 large dome-shaped papillae located anterior to the sulcus terminalis, submerged into a deep epithelial trench or moat containing intraepithelial barrel-shaped taste buds along their lateral walls and serous glands of von Ebner at the trench base.",
+        "keyConcept": "Circumvallate papilla: large papilla surrounded by circular trench with lateral taste buds and von Ebner serous glands.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0057.webp"
+    },
+    {
+        "seq": 58,
+        "lecture": 4,
+        "text": "Examine this micrograph of the dorsal tongue mucosa showing pointed conical projections covered by cornified stratified squamous epithelium lacking taste buds. Identify these papillae:",
+        "correct_answer": "Filiform papillae",
+        "distractors": [
+            "Fungiform papillae",
+            "Circumvallate papillae",
+            "Foliate papillae"
+        ],
+        "explanation": "Criteria of Identification: Filiform papillae are the smallest and most numerous tongue papillae, appearing as elongated, conical, curved projections covered by heavily keratinized stratified squamous epithelium providing abrasive mechanical friction without taste buds.",
+        "keyConcept": "Filiform papillae: keratinized conical spikes providing mechanical friction; completely lack taste buds.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0058.webp"
+    },
+    {
+        "seq": 59,
+        "lecture": 4,
+        "text": "Examine this section through the body of the tongue. Identify the interlacing muscle bundles coursing in three orthogonal planes:",
+        "correct_answer": "Intrinsic and extrinsic skeletal muscle fibers",
+        "distractors": [
+            "Smooth muscle layers",
+            "Dense regular collagenous connective tissue",
+            "Elastic cartilage plates"
+        ],
+        "explanation": "Criteria of Identification: The tongue body is unique in having cross-striated skeletal muscle bundles running in all three orthogonal dimensions (longitudinal, transverse, and vertical), interspersed with adipose tissue and lingual salivary glands.",
+        "keyConcept": "Tongue body: skeletal muscle bundles intersecting in three orthogonal planes (longitudinal, transverse, vertical).",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0059.webp"
+    },
+    {
+        "seq": 60,
+        "lecture": 2,
+        "text": "In this high-magnification TEM of an activated parietal cell, identify the specialized membrane system that expands during active acid secretion:",
+        "correct_answer": "Intracellular canaliculi lined by microvilli fusing with the tubulovesicular network",
+        "distractors": [
+            "Endoplasmic reticulum cisternae",
+            "Outer mitochondrial cristae",
+            "Nuclear envelope pores"
+        ],
+        "explanation": "Criteria of Identification: Upon stimulation by histamine, gastrin, or acetylcholine, parietal tubulovesicles fuse with the apical plasma membrane, increasing the surface area of the intracellular canaliculi five- to tenfold and displaying dense arrays of elongated microvilli harboring H+/K+ ATPases.",
+        "keyConcept": "Parietal cell canaliculi (TEM): dramatic microvillar membrane expansion derived from tubulovesicle fusion.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0060.webp"
+    },
+    {
+        "seq": 61,
+        "lecture": 2,
+        "text": "In this transmission electron micrograph (TEM), identify the spherical, electron-dense membrane-bound secretory organelles storing pepsinogen in a gastric chief cell:",
+        "correct_answer": "Zymogen granules",
+        "distractors": [
+            "Peroxisomes",
+            "Lipid droplets",
+            "Autophagic lysosomes"
+        ],
+        "explanation": "Criteria of Identification: Zymogen granules are intensely electron-dense, membrane-delimited spherical vesicles concentrated in the apical cytoplasm of chief cells, containing inactive pepsinogen proenzymes ready for exocytosis upon vagal or secretin stimulation.",
+        "keyConcept": "Zymogen granules (TEM): dense apical membrane-bound condensing vesicles containing digestive proenzymes.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0061.webp"
+    },
+    {
+        "seq": 62,
+        "lecture": 3,
+        "text": "In this transmission electron micrograph (TEM) of the apical pole of adjacent enterocytes, identify the junctional complex sealing the intercellular space:",
+        "correct_answer": "Zonula occludens (tight junction), zonula adherens, and macula adherens (desmosome)",
+        "distractors": [
+            "Gap junctions and hemidesmosomes only",
+            "Intercellular canaliculi and fenestrae",
+            "Basal lamina anchoring fibrils"
+        ],
+        "explanation": "Criteria of Identification: The apical junctional complex of intestinal enterocytes consists from apical to basal of: 1) zonula occludens (tight junction sealing paracellular permeability), 2) zonula adherens (anchoring actin microfilaments), and 3) macula adherens (desmosome providing mechanical cohesion via intermediate filaments).",
+        "keyConcept": "Junctional complex (TEM): zonula occludens (tight) + zonula adherens (belt) + macula adherens (desmosome).",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0062.webp"
+    },
+    {
+        "seq": 63,
+        "lecture": 3,
+        "text": "In this transmission electron micrograph (TEM), identify the large supranuclear electron-dense granule with a characteristic bipartite halo in a crypt-base cell:",
+        "correct_answer": "Paneth cell secretory granule containing defensins and lysozyme",
+        "distractors": [
+            "Enteroendocrine dense-core granule",
+            "Mucin droplet of goblet cell",
+            "Melanosome of melanocyte"
+        ],
+        "explanation": "Criteria of Identification: Paneth cell granules are massive (up to 1.5 µm), electron-dense spherical granules surrounded by a distinctive halo, containing alpha-defensins (cryptdins) and lysozyme that destroy invading bacterial cell walls.",
+        "keyConcept": "Paneth granule (TEM): large electron-dense antimicrobial granule with peripheral halo at crypt base.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0063.webp"
+    },
+    {
+        "seq": 64,
+        "lecture": 5,
+        "text": "In this transmission electron micrograph (TEM) of the hepatic perisinusoidal space, identify this star-shaped cell containing cytoplasmic lipid droplets storing vitamin A:",
+        "correct_answer": "Hepatic Stellate (Ito) cell",
+        "distractors": [
+            "Kupffer cell",
+            "Endothelial cell",
+            "Hepatocyte"
+        ],
+        "explanation": "Criteria of Identification: Hepatic stellate cells (Ito cells / lipocytes) reside within the space of Disse, characterized on TEM by prominent cytoplasmic lipid droplets that store ~80% of the body's retinoids (vitamin A); in chronic injury, they transdifferentiate into collagen-producing myofibroblasts driving cirrhosis.",
+        "keyConcept": "Ito cell (TEM): perisinusoidal stellate cell in space of Disse containing lipid droplets storing vitamin A.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0064.webp"
+    },
+    {
+        "seq": 65,
+        "lecture": 5,
+        "text": "In this transmission electron micrograph (TEM), identify the resident macrophage anchored inside the lumen of the hepatic sinusoid containing phagocytosed debris:",
+        "correct_answer": "Kupffer cell",
+        "distractors": [
+            "Ito cell",
+            "Sinusoidal endothelial cell",
+            "Hepatocyte"
+        ],
+        "explanation": "Criteria of Identification: Kupffer cells are specialized resident stellate macrophages attached to the luminal surface of sinusoidal endothelial cells, recognized on TEM by irregular pseudopodia, large lysosomes, phagosomes containing degraded erythrocytes, and absence of lipid droplets.",
+        "keyConcept": "Kupffer cell (TEM): intravascular resident macrophage in hepatic sinusoid lumen with phagolysosomes.",
+        "imageUrl": "/images/practical/mgl-3/histology/img_hist_0065.webp"
+    }
+]
+
+HISTOLOGY_QUESTIONS = HISTOLOGY_QUESTIONS + NET_NEW_HISTOLOGY

@@ -88,9 +88,9 @@ def rebalance_authored_question(q, target_idx):
     return q_copy
 
 def main():
-    print("Compiling 286 Comprehensive GIT Practical Exam Stations...")
+    print("Compiling 530 Comprehensive GIT Practical Exam Stations...")
     
-    # 1. Chapter 301: Histology (28 stations)
+    # 1. Chapter 301: Histology (65 stations)
     histo_targets = [i % 4 for i in range(len(HISTOLOGY_QUESTIONS))]
     histo_questions = [
         build_raw_question_obj(q, t, 301, "HIST")
@@ -102,14 +102,14 @@ def main():
         "subtitle": "Micrographs & Electron Microscopy (TEM/SEM)",
         "emoji": "🔬",
         "page": 661,
-        "lectureRange": "Stations 1–28",
+        "lectureRange": "Stations 1–65",
         "bankSection": "practical",
         "subjects": [
             {
                 "id": "histology",
                 "name": "Histology",
                 "iconName": "Microscope",
-                "lectures": "Stations 1–28",
+                "lectures": "Stations 1–65",
                 "lectureCount": 6,
                 "lectureNames": [
                     "Alimentary Canal: Esophagus to Large Intestine",
@@ -124,7 +124,7 @@ def main():
         ]
     }
 
-    # 2. Chapter 302: Pathology (30 stations)
+    # 2. Chapter 302: Pathology (65 stations)
     path_targets = [i % 4 for i in range(len(PATHOLOGY_QUESTIONS))]
     path_questions = [
         build_raw_question_obj(q, t, 302, "PATH")
@@ -136,14 +136,14 @@ def main():
         "subtitle": "Gross Pathology Museum Jars & Histopathology Slides",
         "emoji": "🧪",
         "page": 457,
-        "lectureRange": "Stations 1–30",
+        "lectureRange": "Stations 1–65",
         "bankSection": "practical",
         "subjects": [
             {
                 "id": "pathology",
                 "name": "Pathology",
                 "iconName": "Activity",
-                "lectures": "Stations 1–30",
+                "lectures": "Stations 1–65",
                 "lectureCount": 6,
                 "lectureNames": [
                     "Stomach & Esophagus (Ulcers, Barrett's, Carcinoma)",
@@ -158,7 +158,7 @@ def main():
         ]
     }
 
-    # 3. Chapter 303: Parasitology (41 stations)
+    # 3. Chapter 303: Parasitology (75 stations)
     para_targets = [i % 4 for i in range(len(PARASITOLOGY_QUESTIONS))]
     para_questions = [
         build_raw_question_obj(q, t, 303, "PARA")
@@ -170,14 +170,14 @@ def main():
         "subtitle": "Helminths, Protozoa, Vectors, Eggs & Clinical Stations",
         "emoji": "🪱",
         "page": 711,
-        "lectureRange": "Stations 1–41",
+        "lectureRange": "Stations 1–75",
         "bankSection": "practical",
         "subjects": [
             {
                 "id": "parasitology",
                 "name": "Parasitology",
                 "iconName": "Bug",
-                "lectures": "Stations 1–41",
+                "lectures": "Stations 1–75",
                 "lectureCount": 10,
                 "lectureNames": [
                     "Adult Flukes & Nematodes (Fasciola, Trichuris, Schistosoma, Enterobius)",
@@ -196,7 +196,7 @@ def main():
         ]
     }
 
-    # 4. Chapter 304: Anatomy (37 stations)
+    # 4. Chapter 304: Anatomy (75 stations)
     anat_targets = [i % 4 for i in range(len(ANATOMY_QUESTIONS))]
     anat_questions = [
         build_raw_question_obj(q, t, 304, "ANAT")
@@ -208,14 +208,14 @@ def main():
         "subtitle": "Gross Specimens, Viscera, Vessels, Osteology & Cross Sections",
         "emoji": "🦴",
         "page": 731,
-        "lectureRange": "Stations 1–37",
+        "lectureRange": "Stations 1–75",
         "bankSection": "practical",
         "subjects": [
             {
                 "id": "anatomy",
                 "name": "Anatomy",
                 "iconName": "Bone",
-                "lectures": "Stations 1–37",
+                "lectures": "Stations 1–75",
                 "lectureCount": 10,
                 "lectureNames": [
                     "Sagittal Head & Neck (Oral Cavity, Pharynx & Tonsillar Bed)",
@@ -234,7 +234,7 @@ def main():
         ]
     }
 
-    # 5. Chapter 305: Physiology (40 stations)
+    # 5. Chapter 305: Physiology (65 stations)
     phys_raw = get_physiology_questions()
     phys_questions = [
         rebalance_authored_question(q, i % 4)
@@ -246,14 +246,14 @@ def main():
         "subtitle": "Lab Cases, Manometry, Secretions & Motility Curves",
         "emoji": "⚡",
         "page": 929,
-        "lectureRange": "Stations 1–40",
+        "lectureRange": "Stations 1–65",
         "bankSection": "practical",
         "subjects": [
             {
                 "id": "physiology",
                 "name": "Physiology",
                 "iconName": "Zap",
-                "lectures": "Stations 1–40",
+                "lectures": "Stations 1–65",
                 "lectureCount": 3,
                 "lectureNames": [
                     "Lab 1: Swallowing, Esophageal Motility & Manometry (Achalasia, GERD, Zenker)",
@@ -265,7 +265,7 @@ def main():
         ]
     }
 
-    # 6. Chapter 306: Biochemistry (40 stations)
+    # 6. Chapter 306: Biochemistry (65 stations)
     bioc_raw = get_biochemistry_questions()
     bioc_questions = [
         rebalance_authored_question(q, i % 4)
@@ -277,14 +277,14 @@ def main():
         "subtitle": "Clinical Chemistry, Spectrophotometry & Metabolic Labs",
         "emoji": "🧬",
         "page": 1097,
-        "lectureRange": "Stations 1–40",
+        "lectureRange": "Stations 1–65",
         "bankSection": "practical",
         "subjects": [
             {
                 "id": "biochemistry",
                 "name": "Biochemistry",
                 "iconName": "TestTube",
-                "lectures": "Stations 1–40",
+                "lectures": "Stations 1–65",
                 "lectureCount": 4,
                 "lectureNames": [
                     "Wilson's Disease & Copper Metabolism (KF Ring, Ceruloplasmin)",
@@ -297,7 +297,7 @@ def main():
         ]
     }
 
-    # 7. Chapter 307: Microbiology (40 stations)
+    # 7. Chapter 307: Microbiology (65 stations)
     micr_raw = get_microbiology_questions()
     micr_questions = [
         rebalance_authored_question(q, i % 4)
@@ -309,27 +309,26 @@ def main():
         "subtitle": "Diagnostic Cultures, Biochemical Tests & Serology",
         "emoji": "🧫",
         "page": 1200,
-        "lectureRange": "Stations 1–40",
+        "lectureRange": "Stations 1–65",
         "bankSection": "practical",
         "subjects": [
             {
                 "id": "microbiology",
                 "name": "Microbiology",
                 "iconName": "Sparkles",
-                "lectures": "Stations 1–40",
-                "lectureCount": 4,
+                "lectures": "Stations 1–65",
+                "lectureCount": 3,
                 "lectureNames": [
                     "Culture Media & Colony Morphology (MacConkey LF/NLF, TCBS, MSA)",
                     "Biochemical Identification Tests (TSI, Oxidase, Urease, Indole)",
-                    "Serological Diagnosis (Widal Agglutination & Salmonella Typing)",
-                    "Stool Specimen Transport, Food Poisoning Cases & Typhoid Carriers"
+                    "Serology, Stool Transport & Enteric Pathogen Cases (Widal, Typhoid, Food Poisoning)"
                 ],
                 "questions": micr_questions
             }
         ]
     }
 
-    # 8. Chapter 308: Clinical & Pharmacology (30 stations)
+    # 8. Chapter 308: Clinical & Pharmacology (55 stations)
     clin_raw = get_clinical_questions()
     clin_questions = [
         rebalance_authored_question(q, i % 4)
@@ -341,14 +340,14 @@ def main():
         "subtitle": "Endoscopy, Imaging, Therapeutics & Emergencies",
         "emoji": "🩺",
         "page": 1272,
-        "lectureRange": "Stations 1–30",
+        "lectureRange": "Stations 1–55",
         "bankSection": "practical",
         "subjects": [
             {
                 "id": "clinical",
                 "name": "Clinical & Pharmacology",
                 "iconName": "Stethoscope",
-                "lectures": "Stations 1–30",
+                "lectures": "Stations 1–55",
                 "lectureCount": 3,
                 "lectureNames": [
                     "GERD, Peptic Ulcer Disease & Endoscopic Diagnosis",
@@ -389,12 +388,12 @@ def main():
         print(f"  Ch {c['id']} ({c['title']}): {ch_q} stations | Keys: {ch_counts}")
     print(f"Overall Answer Key Distribution: {final_counts}")
 
-    assert total_q == 286, f"Expected 286 stations, found {total_q}"
+    assert total_q == 530, f"Expected 530 stations, found {total_q}"
 
     # Write to PRACTICAL_JSON_PATH
     with open(PRACTICAL_JSON_PATH, "w", encoding="utf-8") as f:
         json.dump(full_bank, f, indent=2, ensure_ascii=False)
-    print(f"\n✓ Successfully compiled and saved 286 stations to {PRACTICAL_JSON_PATH}")
+    print(f"\n✓ Successfully compiled and saved 530 stations to {PRACTICAL_JSON_PATH}")
 
 if __name__ == "__main__":
     main()

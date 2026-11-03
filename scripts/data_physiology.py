@@ -815,4 +815,516 @@ def get_physiology_questions():
             }
         }
     ]
-    return questions
+    return questions + NET_NEW_PHYSIOLOGY
+
+# NET_NEW_PHYSIOLOGY for stations 41 to 65
+
+NET_NEW_PHYSIOLOGY = [
+    {
+        "id": "MGL3-CH305-PHYS-0041",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "Examine this high-resolution esophageal manometry (HRM) pressure topography plot. The integrated relaxation pressure (IRP) is elevated at 26 mmHg (normal < 15 mmHg), 100% of swallows demonstrate absent peristalsis, and there is no pan-esophageal pressurization. According to the Chicago Classification v4.0, identify this specific subtype:",
+        "options": [
+            "Type I Achalasia (Classic Achalasia)",
+            "Type II Achalasia (with compression)",
+            "Type III Achalasia (Spastic)",
+            "Distal Esophageal Spasm"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: According to the Chicago Classification v4.0, Type I (classic) Achalasia is defined by: 1) elevated median integrated relaxation pressure (IRP > 15 mmHg), 2) 100% failed peristalsis in the esophageal body, and 3) no esophageal pressurization (pan-esophageal pressurization in < 20% of swallows).",
+        "keyConcept": "Type I Achalasia: elevated IRP (> 15 mmHg) + 100% failed peristalsis with negligible esophageal pressurization.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0041.webp",
+            "caption": "Station 41 — Type I Classic Achalasia HRM Topography"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0042",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "Examine this high-resolution manometry tracing displaying an elevated median IRP of 28 mmHg, 100% aperistalsis, and uniform isobaric pan-esophageal pressurization extending from the UES to LES in > 20% of swallows. Identify this subtype, known for the highest clinical response rate to pneumatic balloon dilatation or POEM:",
+        "options": [
+            "Type II Achalasia (Pan-esophageal pressurization)",
+            "Type I Achalasia",
+            "Type III Achalasia",
+            "Hypercontractile (Jackhammer) esophagus"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Type II Achalasia is defined by elevated IRP (> 15 mmHg), 100% failed peristalsis, and rapid pan-esophageal pressurization (> 30 mmHg) spanning the entire tubular esophagus in $>= 20%$ of swallows. It carries the most favorable prognosis and best therapeutic response to endoscopic or surgical myotomy.",
+        "keyConcept": "Type II Achalasia: elevated IRP + 100% failed peristalsis with pan-esophageal pressurization; best therapeutic response.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0042.webp",
+            "caption": "Station 42 — Type II Achalasia with Pan-Esophageal Pressurization"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0043",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "Examine this high-resolution esophageal manometry plot demonstrating an elevated IRP (24 mmHg), absent normal peristalsis, and premature, high-amplitude spastic contractions with reduced distal latency in > 20% of swallows. Identify this subtype:",
+        "options": [
+            "Type III Achalasia (Spastic Achalasia)",
+            "Type I Achalasia",
+            "Type II Achalasia",
+            "Ineffective esophageal motility"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Type III (spastic) Achalasia is defined by an elevated IRP (> 15 mmHg) accompanied by absent peristalsis and premature spastic contractions (distal contractile integral DCI > 450 mmHg-s-cm with distal latency < 4.5 seconds) in $>= 20%$ of test swallows, often causing severe chest pain mimicking cardiac angina.",
+        "keyConcept": "Type III Achalasia: elevated IRP + absent peristalsis with premature spastic contractions (DCI > 450).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0043.webp",
+            "caption": "Station 43 — Type III Spastic Achalasia Manometry Tracing"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0044",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "Examine this manometry tracing from a 50-year-old presenting with episodic non-cardiac retrosternal chest pain and dysphagia. The median IRP at the esophagogastric junction is completely normal (10 mmHg), but 30% of wet swallows display premature contractions with a distal latency < 4.5 seconds. Identify this primary motility disorder:",
+        "options": [
+            "Distal Esophageal Spasm (DES)",
+            "Type I Achalasia",
+            "Absent contractility / Scleroderma",
+            "Gastroesophageal reflux disease"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Distal Esophageal Spasm (DES) is defined by normal deglutitive lower esophageal sphincter relaxation (normal IRP < 15 mmHg) paired with premature contractions (distal latency DL < 4.5 seconds) in $>= 20%$ of swallows, representing uncoordinated simultaneous smooth muscle spasms in the distal two-thirds of the esophagus.",
+        "keyConcept": "Distal Esophageal Spasm: normal LES relaxation (normal IRP) + $>= 20%$ premature contractions (distal latency < 4.5 s).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0044.webp",
+            "caption": "Station 44 — Distal Esophageal Spasm HRM Topography"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0045",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "Examine this high-resolution manometry tracing displaying an extremely high distal contractile integral (DCI > 8,000 mmHg-s-cm) in > 20% of swallows with normal IRP. Identify this hypercontractile motility disorder:",
+        "options": [
+            "Hypercontractile (Jackhammer / Nutcracker) esophagus",
+            "Type II Achalasia",
+            "Distal esophageal spasm",
+            "Esophageal atresia"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Hypercontractile (Jackhammer / Nutcracker) esophagus is defined manometrically by normal LES relaxation (normal IRP) with $>= 20%$ of swallows demonstrating hypercontractile peristaltic waves characterized by a Distal Contractile Integral (DCI) exceeding 8,000 mmHg-s-cm.",
+        "keyConcept": "Jackhammer esophagus: normal IRP + hypercontractile peristalsis with DCI > 8,000 mmHg-s-cm in $>= 20%$ of swallows.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0045.webp",
+            "caption": "Station 45 — Jackhammer Esophagus Extreme DCI Waveform"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0046",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "Examine this esophageal manometry tracing from a patient with systemic sclerosis (CREST syndrome) presenting with severe refractory heartburn. The tracing reveals profound hypotonia of the lower esophageal sphincter (LES resting pressure < 5 mmHg) and 100% failed peristalsis (aperistalsis) in the distal smooth muscle esophagus. Identify this entity:",
+        "correct_answer": "Scleroderma esophagus (Absent contractility)",
+        "distractors": [
+            "Type I Achalasia",
+            "Distal esophageal spasm",
+            "Zenker diverticulum"
+        ],
+        "options": [
+            "Scleroderma esophagus (Absent contractility)",
+            "Type I Achalasia",
+            "Distal esophageal spasm",
+            "Zenker diverticulum"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Scleroderma esophagus is characterized by progressive smooth muscle atrophy and collagenous fibrosis of the distal two-thirds of the esophagus, causing severe LES hypotension (free gastroesophageal reflux) and complete aperistalsis in the smooth muscle body, while the proximal striated esophagus remains spared.",
+        "keyConcept": "Scleroderma esophagus: marked LES hypotonia (< 5 mmHg) + 100% aperistalsis in distal smooth muscle esophagus.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0046.webp",
+            "caption": "Station 46 — Scleroderma Esophagus Profound Hypotonia Tracing"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0047",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "Examine this 24-hour ambulatory esophageal pH monitoring tracing from a patient with chronic reflux symptoms. Which parameters confirm pathological acid reflux according to international consensus?",
+        "options": [
+            "Total acid exposure time (% time pH < 4.0) > 6.0% and composite DeMeester score > 14.72",
+            "Esophageal pH > 7.0 for more than 10% of recording time",
+            "Reflux events limited exclusively to the supine sleep period with DeMeester < 10",
+            "Total acid exposure time < 2.0% with DeMeester score < 14.72"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Pathological gastroesophageal acid reflux is definitively established when 24-hour ambulatory pH monitoring demonstrates an esophageal acid exposure time (AET, percentage of total 24h recording where intraluminal pH is < 4.0) exceeding 6.0%, or a composite DeMeester score exceeding the threshold of 14.72.",
+        "keyConcept": "GERD pH monitoring: AET (% time pH < 4.0) > 6.0% and DeMeester score > 14.72 confirm pathological reflux.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0047.webp",
+            "caption": "Station 47 — 24-Hour Ambulatory Esophageal pH Tracing"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0048",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "Examine this barium swallow fluoroscopic esophagogram displaying prominent, repetitive, non-propulsive tertiary contractions dividing the esophageal lumen into multiple sacculations ('corkscrew esophagus' or 'rosary-bead esophagus'). Identify the underlying condition:",
+        "options": [
+            "Diffuse Esophageal Spasm (DES)",
+            "Type I Achalasia",
+            "Reflux esophagitis with stricture",
+            "Sliding hiatus hernia"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Tertiary contractions are non-propulsive, simultaneous, disorganized circular smooth muscle contractions that deform the esophageal column on barium swallow into alternating outpouchings and narrow segments, producing the classic 'corkscrew' or 'rosary-bead' esophagus pathognomonic of Diffuse Esophageal Spasm.",
+        "keyConcept": "'Corkscrew esophagus': fluoroscopic hallmark of Diffuse Esophageal Spasm due to uncoordinated tertiary contractions.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0048.webp",
+            "caption": "Station 48 — Corkscrew Esophagus Barium Fluoroscopy"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0049",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "Examine this schematic diagram of gastric parietal cell acid secretion. Which of the following correctly pairs the three physiological secretagogues with their specific basolateral membrane receptors and intracellular secondary messengers?",
+        "options": [
+            "Histamine (H2 receptor -> cAMP); Gastrin (CCK-B receptor -> IP3/Ca2+); Acetylcholine (M3 receptor -> IP3/Ca2+)",
+            "Histamine (H1 receptor -> cGMP); Gastrin (Secretin receptor -> cAMP); Acetylcholine (Nicotinic -> Na+)",
+            "Histamine (H2 receptor -> IP3/Ca2+); Gastrin (CCK-A receptor -> cAMP); Acetylcholine (M2 -> cAMP)",
+            "Histamine (H3 receptor -> Gi); Gastrin (Gastrin receptor -> cGMP); Acetylcholine (M1 -> NO)"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Gastric parietal cells are stimulated by three distinct secretagogues acting synergistically: 1) Histamine binds basolateral H2 receptors linked to Gs, activating adenylate cyclase to raise cAMP, 2) Gastrin binds CCK-B (CCK-2) receptors linked to Gq, activating phospholipase C to raise IP3/DAG and intracellular Ca2+, and 3) Acetylcholine (vagus) binds M3 muscarinic receptors linked to Gq, raising IP3 and intracellular Ca2+.",
+        "keyConcept": "Parietal secretagogues: Histamine (H2 -> cAMP), Gastrin (CCK-B -> Ca2+), Acetylcholine (M3 -> Ca2+).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0049.webp",
+            "caption": "Station 49 — Parietal Cell Secretagogue Signaling Cascade"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0050",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "What is the primary physiological negative feedback hormone released by antral D-cells when intragastric pH falls below 3.0 that acts directly on parietal and G-cells to terminate acid secretion?",
+        "options": [
+            "Somatostatin",
+            "Secretin",
+            "Vasoactive intestinal peptide (VIP)",
+            "Cholecystokinin (CCK)"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Somatostatin is the principal physiological inhibitor of gastric acid secretion. When luminal pH falls below 3.0, antral D-cells release somatostatin, which acts in a paracrine fashion via SSTR2 receptors coupled to Gi to directly inhibit parietal cell adenylate cyclase and simultaneously suppress G-cell gastrin release.",
+        "keyConcept": "Somatostatin: paracrine acid-sensing inhibitor released by D-cells at pH < 3.0 acting via Gi to halt acid secretion.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0050.webp",
+            "caption": "Station 50 — Antral Somatostatin Negative Feedback Loop"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0051",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "What physiological phenomenon explains the transient increase in systemic venous blood pH and urinary bicarbonate excretion observed immediately following ingestion of a protein meal ('Postprandial Alkaline Tide')?",
+        "options": [
+            "Extrusion of bicarbonate ions into venous blood via basolateral Cl-/HCO3- exchangers during active H+ secretion into the gastric lumen",
+            "Direct absorption of alkaline pancreatic juice into portal blood",
+            "Hyperventilation-induced respiratory alkalosis during mastication",
+            "Renal tubular acidosis induced by dietary amino acid load"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: In active parietal cells, intracellular carbonic anhydrase converts CO2 and H2O into H+ and HCO3-. For every H+ pumped into the gastric lumen by the apical H+/K+ ATPase, one HCO3- is transported out across the basolateral membrane into gastric venous blood via an electroneutral Cl-/HCO3- anion exchanger (AE2), causing the physiological postprandial 'alkaline tide'.",
+        "keyConcept": "Alkaline tide: basolateral Cl-/HCO3- exchange during gastric H+ secretion raises gastric venous and urinary pH.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0051.webp",
+            "caption": "Station 51 — Cellular Basis of the Postprandial Alkaline Tide"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0052",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "Trace the physiological absorption sequence of dietary Vitamin B12 (cobalamin). What is the essential transport protein secreted by gastric parietal cells that binds cobalamin in the duodenum and mediates its receptor-mediated endocytosis in the terminal ileum?",
+        "options": [
+            "Intrinsic Factor (IF)",
+            "Haptocorrin (R-protein)",
+            "Trans渡balamin II",
+            "Apolipoprotein B-48"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Dietary Vitamin B12 is initially protected in the stomach by binding salivary R-protein (haptocorrin). In the alkaline duodenum, pancreatic proteases degrade haptocorrin, allowing B12 to bind gastric Intrinsic Factor (IF). The IF-B12 complex is resistant to digestion and travels to the terminal ileum, where it binds specific mucosal cubam receptors (cubilin-amnionless) for receptor-mediated endocytosis.",
+        "keyConcept": "Vitamin B12 absorption: binds Intrinsic Factor in duodenum; absorbed via cubam receptor endocytosis in terminal ileum.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0052.webp",
+            "caption": "Station 52 — Intrinsic Factor & Vitamin B12 Absorption Pathway"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0053",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "When acidic chyme entering the duodenum drops intraluminal pH below 4.5, which hormone is discharged from duodenal S-cells to evoke a copious, watery, bicarbonate-rich pancreatic secretion?",
+        "options": [
+            "Secretin",
+            "Cholecystokinin (CCK)",
+            "Gastric Inhibitory Peptide (GIP)",
+            "Motilin"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Secretin is released by mucosal S-cells in the duodenum and upper jejunum in response to intraluminal H+ (pH < 4.5) and fatty acids. Secretin acts on pancreatic ductal epithelial cells via Gs-coupled receptors to stimulate CFTR Cl- channels and apical Cl-/HCO3- exchangers, secreting large volumes of watery, alkaline (high HCO3-) fluid that neutralizes duodenal acid.",
+        "keyConcept": "Secretin: released by duodenal S-cells at pH < 4.5; stimulates pancreatic ductal bicarbonate and water secretion.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0053.webp",
+            "caption": "Station 53 — Secretin Ductal Bicarbonate Secretory Cascade"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0054",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "Which intestinal hormone is released from duodenal I-cells in response to dietary long-chain fatty acids and peptides to stimulate gallbladder contraction, relaxation of the sphincter of Oddi, and discharge of digestive zymogens from pancreatic acinar cells?",
+        "options": [
+            "Cholecystokinin (CCK)",
+            "Secretin",
+            "Gastrin",
+            "Vasoactive intestinal peptide (VIP)"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Cholecystokinin (CCK) is released by neuroendocrine I-cells in the duodenal and jejunal mucosa upon sensing luminal digestion products of fat (monoglycerides, free fatty acids) and protein. CCK acts on CCK-1 (CCK-A) receptors to evoke vigorous gallbladder contraction, sphincter of Oddi relaxation, and exocytosis of enzyme-rich zymogen granules from pancreatic acinar cells.",
+        "keyConcept": "CCK: released by I-cells in response to fats/peptides; contracts gallbladder, relaxes sphincter of Oddi, stimulates pancreatic enzymes.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0054.webp",
+            "caption": "Station 54 — Cholecystokinin Gallbladder & Acinar Stimulation"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0055",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "What is the crucial brush-border enzyme anchored to the duodenal enterocyte membrane that activates inactive pancreatic trypsinogen to active trypsin, initiating the proteolytic digestive cascade in the gut lumen?",
+        "options": [
+            "Enteropeptidase (Enterokinase)",
+            "Aminopeptidase N",
+            "Carboxypeptidase A",
+            "Pepsin"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Enteropeptidase (enterokinase) is an integral transmembrane serine protease located on the brush border of duodenal and jejunal enterocytes. It specifically cleaves the acidic hexapeptide (Asp-Asp-Asp-Asp-Lys) from the N-terminus of trypsinogen, converting it to active trypsin, which then autocatalytically activates all remaining proenzymes (chymotrypsinogen, proelastase, procarboxypeptidases).",
+        "keyConcept": "Enteropeptidase: duodenal brush-border protease that activates trypsinogen to trypsin, triggering the enzyme cascade.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0055.webp",
+            "caption": "Station 55 — Enteropeptidase Cascade Activation Mechanism"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0056",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "Approximately 95% of bile acids secreted into the gut lumen are reabsorbed and returned to the liver via the enterohepatic circulation. Where does active, high-affinity sodium-dependent reabsorption of conjugated bile salts take place?",
+        "options": [
+            "Terminal ileum via the Apical Sodium-dependent Bile Acid Transporter (ASBT)",
+            "Duodenum via passive non-ionic diffusion",
+            "Proximal jejunum via facilitated GLUT2 transport",
+            "Descending colon via active H+/K+ exchange"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: While unconjugated bile acids can undergo minor passive absorption throughout the intestine, > 95% of conjugated bile salts are actively and selectively absorbed exclusively in the terminal ileum by the apical sodium-dependent bile acid transporter (ASBT / SLC10A2), exported basolaterally via OSTalpha/OSTbeta into the portal circulation back to hepatocytes.",
+        "keyConcept": "Enterohepatic circulation: active sodium-dependent bile salt absorption occurs in the terminal ileum via ASBT.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0056.webp",
+            "caption": "Station 56 — Enterohepatic Bile Acid Transporter Architecture"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0057",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "Examine this diagram of intestinal carbohydrate absorption. What is the primary apical transporter responsible for secondary active, sodium-coupled uptake of D-glucose and D-galactose across the enterocyte brush border?",
+        "options": [
+            "Sodium-Glucose Cotransporter-1 (SGLT-1)",
+            "Glucose Transporter-2 (GLUT-2)",
+            "Glucose Transporter-5 (GLUT-5)",
+            "Sodium-Hydrogen Exchanger-3 (NHE-3)"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: SGLT-1 (SLC5A1) is a high-affinity secondary active symporter on the apical microvillar membrane of small intestinal enterocytes that cotransports 2 Na+ ions along their electrochemical gradient (maintained by basolateral Na+/K+ ATPase) together with 1 molecule of D-glucose or D-galactose against their concentration gradient.",
+        "keyConcept": "SGLT-1: apical secondary active symporter transporting 2 Na+ with 1 glucose or galactose into enterocytes.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0057.webp",
+            "caption": "Station 57 — SGLT-1 Secondary Active Carbohydrate Cotransport"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0058",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "Which facilitative hexose transporter located on the basolateral membrane of enterocytes exports intracellular glucose, galactose, and fructose down their concentration gradients into the interstitial space and capillary blood?",
+        "options": [
+            "GLUT-2",
+            "GLUT-4",
+            "GLUT-5",
+            "SGLT-2"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: GLUT-2 (SLC2A2) is a low-affinity, high-capacity facilitated diffusion uniporter located constitutively on the basolateral membrane of enterocytes that transports all three dietary monosaccharides (glucose, galactose, and fructose) out of the cell into the interstitial fluid and lamina propria capillaries.",
+        "keyConcept": "GLUT-2: basolateral facilitated diffusion transporter exporting glucose, galactose, and fructose into blood.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0058.webp",
+            "caption": "Station 58 — Basolateral GLUT-2 Monosaccharide Exit Architecture"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0059",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "More than 60% of dietary protein is absorbed across the enterocyte apical membrane not as free amino acids, but as dipeptides and tripeptides. Which specialized apical transporter mediates this uptake driven by an electrogenic H+ gradient?",
+        "options": [
+            "Peptide Transporter-1 (PepT1)",
+            "System B0 neutral amino acid transporter",
+            "SGLT-1 cotransporter",
+            "Cystine-dibasic amino acid transporter (rBAT)"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: PepT1 (SLC15A1) is an apical electrogenic tertiary active symporter that transports intact dipeptides and tripeptides coupled to H+ inward movement driven by an apical transmembrane proton gradient (established by apical Na+/H+ exchanger NHE3), accounting for the majority of dietary nitrogen absorption.",
+        "keyConcept": "PepT1: apical H+-coupled symporter transporting dipeptides and tripeptides into enterocytes.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0059.webp",
+            "caption": "Station 59 — PepT1 Oligopeptide H+-Coupled Transporter"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0060",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "Trace the pathway of dietary long-chain lipid absorption in the small intestine. What is the fundamental lipoprotein particle synthesized in the smooth endoplasmic reticulum and Golgi of enterocytes that is exocytosed into central mucosal lacteals?",
+        "options": [
+            "Chylomicrons",
+            "Very Low-Density Lipoproteins (VLDL)",
+            "High-Density Lipoproteins (HDL)",
+            "Mixed bile salt micelles"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Following micellar delivery and passive/facilitated uptake, fatty acids and 2-monoglycerides are re-esterified into triglycerides in the sER of enterocytes, packaged with cholesterol, phospholipids, and Apolipoprotein B-48 into chylomicrons, which are too large to cross continuous blood capillaries and therefore enter permeable fenestrated central lacteals of intestinal villi.",
+        "keyConcept": "Chylomicrons: triglyceride-rich ApoB-48 lipoproteins assembled in enterocytes and exocytosed into lacteals.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0060.webp",
+            "caption": "Station 60 — Enterocyte Chylomicron Synthesis & Lacteal Delivery"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0061",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "Examine this schematic of intestinal crypt fluid secretion. In cholera diarrhea, Vibrio cholerae enterotoxin causes irreversible ADP-ribosylation of Gs-alpha, persistently activating adenylate cyclase. What apical channel is opened by elevated cAMP to drive massive chloride and water secretion?",
+        "options": [
+            "Cystic Fibrosis Transmembrane Conductance Regulator (CFTR)",
+            "Calcium-activated Chloride Channel (TMEM16A)",
+            "Epithelial Sodium Channel (ENaC)",
+            "Aquaporin-1 water channel"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Cholera toxin locks Gs-alpha in its active GTP-bound state, continuously stimulating adenylate cyclase to produce intracellular cAMP, which activates protein kinase A (PKA). PKA phosphorylates and opens the CFTR chloride channel on the apical membrane of crypt cells, discharging massive amounts of Cl- into the lumen, dragging Na+ and water paracellularly to cause life-threatening rice-water diarrhea.",
+        "keyConcept": "Cholera pathophysiology: persistent Gs activation -> high cAMP -> opens apical CFTR Cl- channels in crypts.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0061.webp",
+            "caption": "Station 61 — CFTR-Mediated Crypt Secretory Cascade"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0062",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "A patient presents with severe watery diarrhea. Fecal electrolyte analysis reveals: Stool [Na+] = 30 mmol/L, Stool [K+] = 25 mmol/L. Assuming normal stool osmolality of 290 mOsm/kg, calculate the Fecal Osmotic Gap (FOG) and identify the mechanism:",
+        "options": [
+            "FOG = 180 mOsm/kg; indicates Osmotic Diarrhea (poorly absorbable solute)",
+            "FOG = 35 mOsm/kg; indicates Secretory Diarrhea (active ion secretion)",
+            "FOG = 0 mOsm/kg; indicates Factitious Diarrhea",
+            "FOG = 235 mOsm/kg; indicates Inflammatory Diarrhea"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Fecal Osmotic Gap is calculated as: FOG = 290 - 2 x ([Na+] + [K+]). Here, FOG = 290 - 2 x (30 + 25) = 290 - 110 = 180 mOsm/kg. An osmotic gap > 100 mOsm/kg defines Osmotic Diarrhea (e.g., lactase deficiency, osmotic laxatives), which characteristically ceases upon fasting.",
+        "keyConcept": "Fecal Osmotic Gap: FOG = 290 - 2 x (Na+ + K+). FOG > 100 mOsm/kg = Osmotic; FOG < 50 mOsm/kg = Secretory.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0062.webp",
+            "caption": "Station 62 — Fecal Osmotic Gap Diagnostic Calculation"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0063",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "What is the primary neurohormonal mechanism of the Gastrocolic Reflex that induces mass propulsive contractions in the colon 15 to 30 minutes following ingestion of a meal?",
+        "options": [
+            "Gastric distension triggers long vagovagal parasympathetic reflexes reinforced by postprandial release of gastrin and CCK",
+            "Direct mechanical compression of the transverse colon by the full stomach",
+            "Sympathetic splanchnic activation causing haustral segmentation",
+            "Local release of nitric oxide by colonic mucosal enterocytes"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: The gastrocolic reflex is a physiological propulsive response mediated by long vagovagal parasympathetic pathways triggered by gastric wall distension and chemical sensing of nutrients in the duodenum, augmented hormonally by gastrin and cholecystokinin (CCK), producing coordinated mass contractions in the transverse and sigmoid colon.",
+        "keyConcept": "Gastrocolic reflex: vagovagal parasympathetic reflex + gastrin/CCK triggering mass colonic movements after meals.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0063.webp",
+            "caption": "Station 63 — Gastrocolic Reflex Neurohormonal Circuit"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0064",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "During the physiological defecation reflex, distension of the rectal ampulla triggers the rectoanal inhibitory reflex (RAIR). Which smooth muscle structure involuntarily relaxes in response to myenteric nitric oxide release?",
+        "options": [
+            "Internal anal sphincter",
+            "External anal sphincter",
+            "Puborectalis muscle",
+            "Ileocecal sphincter"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: The rectoanal inhibitory reflex (RAIR) is an intrinsic myenteric reflex where rectal distension evokes involuntary transient relaxation of the internal anal sphincter (composed of circular smooth muscle) mediated by VIP and nitric oxide, allowing rectal contents to contact the sensitive anal transition zone for sensory 'sampling'.",
+        "keyConcept": "RAIR: rectal distension causes involuntary relaxation of internal anal sphincter via myenteric NO/VIP.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0064.webp",
+            "caption": "Station 64 — Rectoanal Inhibitory Reflex (RAIR) Tracing"
+        }
+    },
+    {
+        "id": "MGL3-CH305-PHYS-0065",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "Examine this neural diagram of the emetic pathway. Which specialized circumventricular organ situated in the floor of the 4th ventricle lacks a blood-brain barrier and senses circulating emetogenic chemicals via dopamine D2 and serotonin 5-HT3 receptors?",
+        "options": [
+            "Chemoreceptor Trigger Zone (CTZ / Area postrema)",
+            "Nucleus tractus solitarius (NTS)",
+            "Vomiting center in reticular formation",
+            "Subfornical organ"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: The Chemoreceptor Trigger Zone (CTZ) resides within the area postrema in the floor of the fourth ventricle. Because it lacks a continuous blood-brain barrier, it is directly exposed to blood-borne and CSF-borne toxins, chemotherapeutic drugs, and metabolites, signaling via dopamine D2, serotonin 5-HT3, neurokinin-1 (NK-1), and opioid receptors to the central vomiting center.",
+        "keyConcept": "CTZ (area postrema): circumventricular organ lacking BBB that senses emetogens via 5-HT3 and D2 receptors.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/physiology/img_phys_0065.webp",
+            "caption": "Station 65 — Emetic Pathway & Chemoreceptor Trigger Zone"
+        }
+    }
+]
+

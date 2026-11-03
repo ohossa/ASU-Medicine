@@ -815,4 +815,510 @@ def get_microbiology_questions():
             }
         }
     ]
-    return questions
+    return questions + NET_NEW_MICROBIOLOGY
+
+# NET_NEW_MICROBIOLOGY for stations 41 to 65
+
+NET_NEW_MICROBIOLOGY = [
+    {
+        "id": "MGL3-CH307-MICR-0041",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "Examine this stool culture on MacConkey agar demonstrating deep pink/magenta colonies with bile precipitation on the left versus translucent, colorless colonies on the right. What biochemical property and mechanism explains this differential reaction?",
+        "options": [
+            "Lactose fermentation; lactic acid lowers pH, causing the neutral red indicator to turn pink",
+            "Sucrose fermentation; alkaline ammonia production turns phenol red purple",
+            "Hydrogen sulfide (H2S) production reacting with ferric citrate",
+            "Urease hydrolysis raising pH above 8.4"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: MacConkey agar is both selective and differential: bile salts and crystal violet inhibit Gram-positive bacteria. Neutral red is the pH indicator (red/pink at pH < 6.8). Lactose fermenters (e.g., E. coli, Klebsiella) produce organic acids from lactose, dropping the pH and precipitating bile salts to yield bright pink colonies; non-lactose fermenters (e.g., Salmonella, Shigella) utilize peptones, raising pH and remaining colorless/translucent.",
+        "keyConcept": "MacConkey agar: neutral red turns pink upon lactose fermentation (E. coli); non-lactose fermenters remain colorless (Salmonella).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0041.webp",
+            "caption": "Station 41 — MacConkey Agar LF vs NLF Differential Reaction"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0042",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "Examine this stool culture on Eosin Methylene Blue (EMB) agar. Dark, nucleated colonies exhibit an unmistakable, brilliant green metallic sheen under reflected light. Identify the organism responsible for this vigorous fermentation:",
+        "options": [
+            "Escherichia coli",
+            "Salmonella enterica",
+            "Shigella sonnei",
+            "Proteus vulgaris"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Eosin Methylene Blue (EMB) agar contains aniline dyes (eosin Y and methylene blue) that inhibit Gram-positive organisms and act as indicators. Rapid, vigorous lactose fermentation by Escherichia coli generates high acid concentrations, precipitating the eosin-methylene blue dye complex onto the colony surface to produce a pathognomonic bright green metallic sheen.",
+        "keyConcept": "EMB agar: vigorous lactose fermentation by E. coli produces a characteristic green metallic sheen.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0042.webp",
+            "caption": "Station 42 — E. coli Green Metallic Sheen on EMB Agar"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0043",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "Examine this stool culture from a patient with voluminous 'rice-water' diarrhea plated on Thiosulfate-Citrate-Bile Salts-Sucrose (TCBS) agar. Large, smooth, elevated golden-yellow colonies grow luxuriantly against the dark green agar. Identify this pathogen and the metabolic reaction:",
+        "options": [
+            "Vibrio cholerae; ferments sucrose, dropping pH and turning thymol blue / bromothymol blue yellow",
+            "Vibrio parahaemolyticus; non-sucrose fermenter",
+            "Campylobacter jejuni; produces alkaline ammonia",
+            "Pseudomonas aeruginosa; pigments pyocyanin"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: TCBS agar is a highly selective and differential medium (pH 8.6) for isolation of pathogenic Vibrio species. Vibrio cholerae ferments sucrose present in the medium, generating acid that changes the dual pH indicator system (thymol blue and bromothymol blue) from dark green to bright golden yellow, yielding characteristic large yellow colonies.",
+        "keyConcept": "TCBS agar: Vibrio cholerae ferments sucrose to form large golden-yellow colonies on dark green agar.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0043.webp",
+            "caption": "Station 43 — Vibrio cholerae Yellow Colonies on TCBS Agar"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0044",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "Examine this stool culture on TCBS agar from a coastal seafood worker presenting with acute food poisoning. The colonies appear blue-green (non-sucrose fermenters) with dark centers. Identify this halophilic bacterium:",
+        "options": [
+            "Vibrio parahaemolyticus",
+            "Vibrio cholerae",
+            "Salmonella enterica",
+            "Helicobacter pylori"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Vibrio parahaemolyticus is a halophilic marine Vibrio requiring 2–4% NaCl for optimal growth. Unlike V. cholerae, it does not ferment sucrose; on TCBS agar, it utilizes peptones and leaves the bromothymol blue indicator unchanged, forming round, translucent blue-green colonies.",
+        "keyConcept": "TCBS agar: Vibrio parahaemolyticus is sucrose-negative, forming distinct blue-green colonies.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0044.webp",
+            "caption": "Station 44 — Vibrio parahaemolyticus Sucrose-Negative Colonies"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0045",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "Examine this Salmonella-Shigella (SS) agar plate. Colorless colonies display prominent jet-black centers. What biochemical reaction causes this black pigmentation, and which pathogen does it identify?",
+        "options": [
+            "Hydrogen sulfide (H2S) reduction from sodium thiosulfate reacting with ferric ammonium citrate; indicates Salmonella",
+            "Lactose fermentation with neutral red reduction; indicates Shigella",
+            "Urease cleavage of urea to ammonia; indicates Proteus",
+            "Oxidase enzyme oxidation of phenylenediamine; indicates Pseudomonas"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: SS agar contains sodium thiosulfate (sulfur source) and ferric ammonium citrate (indicator). Salmonella species reduce thiosulfate to hydrogen sulfide gas (H2S), which combines with iron to form insoluble black ferrous sulfide (FeS) precipitate in colony centers. Shigella does not produce H2S and forms completely translucent colonies without black centers.",
+        "keyConcept": "SS agar: Salmonella forms colorless colonies with black centers (H2S+); Shigella forms colorless colonies without black centers (H2S-).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0045.webp",
+            "caption": "Station 45 — SS Agar Salmonella H2S Black Centers"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0046",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "Examine this stool culture on Hektoen Enteric (HE) agar. Colonies of Shigella appear green-to-blue-green without black centers, whereas Salmonella colonies appear blue-green with dense black centers. Why are Shigella colonies green on this medium?",
+        "options": [
+            "Shigella does not ferment lactose, sucrose, or salicin and does not produce H2S, leaving bromothymol blue green",
+            "Shigella ferments lactose vigorously to produce green acid pigments",
+            "Shigella produces pyoverdine fluorescent pigment",
+            "Shigella hydrolyzes bile salts to precipitate green bile acids"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Hektoen Enteric agar contains bile salts, carbohydrates (lactose, sucrose, salicin), bromothymol blue / acid fuchsin indicators, and iron indicators. Shigella does not ferment any of the carbohydrates and does not produce H2S; it raises pH by peptone breakdown, appearing as green-blue translucent colonies without black centers.",
+        "keyConcept": "Hektoen Enteric agar: Shigella = green translucent colonies (no sugar fermentation, no H2S); Salmonella = green with black centers.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0046.webp",
+            "caption": "Station 46 — Hektoen Enteric Agar Shigella vs Salmonella"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0047",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "A child presents with bloody diarrhea and hemolytic uremic syndrome (HUS). Stool culture on Sorbitol MacConkey (SMAC) agar yields colorless, translucent colonies, while normal commensal E. coli strains form bright pink colonies. Identify this specific Shiga-toxin producing serotype:",
+        "options": [
+            "Enterohemorrhagic E. coli (EHEC O157:H7)",
+            "Enterotoxigenic E. coli (ETEC)",
+            "Enteropathogenic E. coli (EPEC)",
+            "Enteroinvasive E. coli (EIEC)"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Sorbitol MacConkey (SMAC) agar substitutes D-sorbitol for lactose. Approximately 95% of commensal E. coli ferment sorbitol within 24 hours, forming pink colonies. Enterohemorrhagic E. coli (EHEC O157:H7) is unique among E. coli in being sorbitol-negative (delayed > 48h), forming pathognomonic colorless/translucent colonies on SMAC.",
+        "keyConcept": "SMAC agar: EHEC O157:H7 is sorbitol-negative (colorless colonies), differentiating it from sorbitol-fermenting commensal E. coli (pink).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0047.webp",
+            "caption": "Station 47 — Sorbitol MacConkey Agar EHEC O157:H7 Isolation"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0048",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "A selective blood agar plate (Campy-BAP) incubated at 42°C under microaerophilic conditions (5% O2, 10% CO2, 85% N2) yields non-hemolytic, effuse, spreading grey colonies. Gram stain reveals curved, seagull-winged Gram-negative bacilli exhibiting darting motility. Identify this enteropathogen:",
+        "options": [
+            "Campylobacter jejuni",
+            "Helicobacter pylori",
+            "Vibrio cholerae",
+            "Pseudomonas aeruginosa"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Campylobacter jejuni is a thermophilic microaerophile requiring 42°C (which inhibits other fecal flora) and reduced oxygen (5% O2, 10% CO2). Gram-stain displays pathognomonic curved, S-shaped, or 'gull-wing' Gram-negative rods with a single polar flagellum producing rapid darting 'corkscrew' motility.",
+        "keyConcept": "Campylobacter jejuni: isolated at 42°C under microaerophilic conditions; gull-wing Gram-negative rods with darting motility.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0048.webp",
+            "caption": "Station 48 — Campylobacter jejuni 42°C Microaerophilic Culture"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0049",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "Examine this culture on Mannitol Salt Agar (MSA) containing 7.5% NaCl. Golden-yellow colonies surrounded by bright yellow halos are observed, while surrounding uninoculated agar is red. Identify this foodborne enterotoxin producer:",
+        "options": [
+            "Staphylococcus aureus",
+            "Staphylococcus epidermidis",
+            "Streptococcus pyogenes",
+            "Bacillus cereus"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Mannitol Salt Agar contains 7.5% NaCl, which selectively inhibits non-staphylococcal organisms. Staphylococcus aureus is distinguished from coagulase-negative staphylococci (e.g., S. epidermidis) by its ability to ferment mannitol, producing acid that turns the phenol red indicator from red to golden yellow.",
+        "keyConcept": "MSA: 7.5% NaCl selects for Staphylococci; S. aureus ferments mannitol turning phenol red yellow.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0049.webp",
+            "caption": "Station 49 — Mannitol Salt Agar S. aureus Yellow Fermentation"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0050",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "Stool from an adolescent with acute mesenteric adenitis mimicking acute appendicitis is inoculated onto Cefsulodin-Irgasan-Novobiocin (CIN) agar and incubated at 28°C. Small, smooth colonies with a distinctive deep red center surrounded by a transparent border ('bull's-eye' appearance) appear. Identify this organism:",
+        "options": [
+            "Yersinia enterocolitica",
+            "Salmonella Enteritidis",
+            "Escherichia coli",
+            "Listeria monocytogenes"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Yersinia enterocolitica is psychrotrophic, growing optimally at room temperature (25–28°C). On CIN selective agar, it ferments mannitol in the presence of neutral red, generating localized acid precipitation that produces pathognomonic 'bull's-eye' colonies (deep red center with a clear translucent outer rim).",
+        "keyConcept": "CIN agar: Yersinia enterocolitica forms distinctive 'bull's-eye' colonies (deep red center, clear border) at 28°C.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0050.webp",
+            "caption": "Station 50 — CIN Agar Yersinia Bull's-Eye Colonies"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0051",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "Examine this Triple Sugar Iron (TSI) agar slant tube inoculated with an enteric pathogen. The slant is alkaline (red), the butt is acid (yellow) with gas cracks, and there is extensive black precipitate (H2S+) throughout the deep butt: K/A, gas (+), H2S (+). Identify this pathogen:",
+        "options": [
+            "Salmonella serotype (e.g., Salmonella Typhimurium)",
+            "Shigella flexneri",
+            "Escherichia coli",
+            "Pseudomonas aeruginosa"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: In TSI agar, an alkaline slant / acid butt (K/A, red/yellow) indicates glucose fermentation only (0.1% glucose exhausted, amino acid oxidation on slant yields red amine products). Gas bubbles indicate glucose fermentation with CO2/H2 gas. Blackening indicates hydrogen sulfide (H2S) reduction reacting with iron salts. K/A, Gas (+), H2S (+) is the classic TSI profile of Salmonella.",
+        "keyConcept": "TSI reading: K/A (red/yellow) + Gas (+) + H2S (+) = Salmonella.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0051.webp",
+            "caption": "Station 51 — TSI Reaction K/A Gas+ H2S+ in Salmonella"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0052",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "Examine this Triple Sugar Iron (TSI) agar tube demonstrating an alkaline red slant, acid yellow butt, complete absence of gas, and no blackening: K/A, gas (-), H2S (-). Identify this dysentery-causing pathogen:",
+        "options": [
+            "Shigella species (e.g., Shigella dysenteriae)",
+            "Salmonella Typhi",
+            "Proteus mirabilis",
+            "Klebsiella pneumoniae"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Shigella species ferment glucose only (yielding an acid yellow butt), do not ferment lactose or sucrose (yielding an alkaline red slant: K/A), do not produce gas from glucose (butt remains intact without fissures), and do not produce H2S (butt remains yellow without blackening). Profile: K/A, Gas (-), H2S (-).",
+        "keyConcept": "TSI reading: K/A (red/yellow) without gas and without H2S = Shigella.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0052.webp",
+            "caption": "Station 52 — TSI Reaction K/A Gas- H2S- in Shigella"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0053",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "Examine this Triple Sugar Iron (TSI) agar tube displaying an acid yellow slant, acid yellow butt, abundant gas pushing the agar up from the tube bottom, and no H2S: A/A, gas (+), H2S (-). Identify this coliform organism:",
+        "options": [
+            "Escherichia coli or Klebsiella pneumoniae",
+            "Salmonella enterica",
+            "Shigella dysenteriae",
+            "Pseudomonas aeruginosa"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: An acid slant / acid butt (A/A, yellow/yellow) indicates that the organism ferments glucose as well as high concentrations (1.0%) of lactose and/or sucrose, generating sustained organic acids that keep both slant and butt yellow. Splitting or lifting of agar indicates heavy gas production without H2S, characteristic of coliforms (E. coli, Klebsiella).",
+        "keyConcept": "TSI reading: A/A (yellow/yellow) + abundant gas + no H2S = E. coli or Klebsiella.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0053.webp",
+            "caption": "Station 53 — TSI Reaction A/A Gas+ H2S- in E. coli"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0054",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "Examine this Triple Sugar Iron (TSI) agar tube showing an alkaline red slant, alkaline red butt, and no change in the medium: K/K, gas (-), H2S (-). Identify this non-fermenting Gram-negative rod:",
+        "options": [
+            "Pseudomonas aeruginosa",
+            "Escherichia coli",
+            "Salmonella Typhi",
+            "Vibrio cholerae"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: An alkaline slant / alkaline butt (K/K, red/red) indicates that the organism is an obligate aerobe and non-fermenter unable to ferment glucose, lactose, or sucrose. It oxidizes peptones oxidatively on the surface, yielding alkaline amines that turn the entire tube deep red, characteristic of Pseudomonas aeruginosa and Acinetobacter.",
+        "keyConcept": "TSI reading: K/K (red/red) = non-fermenter (Pseudomonas aeruginosa).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0054.webp",
+            "caption": "Station 54 — TSI Reaction K/K Non-Fermenter in Pseudomonas"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0055",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "Examine this filter paper disk test impregnated with 1% tetramethyl-p-phenylenediamine dihydrochloride. A colony rubbed onto the paper turns deep dark purple within 15 seconds. Identify this test and an important gastrointestinal pathogen that is positive:",
+        "options": [
+            "Oxidase test; positive in Vibrio cholerae",
+            "Catalase test; positive in Streptococcus",
+            "Indole test; positive in Klebsiella",
+            "Urease test; positive in Salmonella"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: The cytochrome c oxidase test uses tetramethyl-p-phenylenediamine as an artificial electron donor. Oxidation by bacterial cytochrome c oxidase produces a dark purple indophenol blue within 10–30 seconds. Vibrio cholerae, Campylobacter jejuni, and Pseudomonas are strongly oxidase-positive, whereas all Enterobacteriaceae are strictly oxidase-negative.",
+        "keyConcept": "Oxidase test: rapid purple color (cytochrome c oxidase+); Vibrio and Campylobacter are positive, Enterobacteriaceae are negative.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0055.webp",
+            "caption": "Station 55 — Rapid Cytochrome c Oxidase Filter Paper Test"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0056",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "Examine this Christensen's urea agar slant inoculated with a gastric antral biopsy isolate. The medium has turned from pale yellow-orange to an intense, vibrant pink/magenta throughout within 20 minutes. Identify this reaction and the enzyme responsible:",
+        "options": [
+            "Urease test; bacterial urease hydrolyzes urea to ammonia, raising pH above 8.1 to turn phenol red magenta (Helicobacter pylori)",
+            "Lactose fermentation; lactic acid lowers pH below 6.8",
+            "Tryptophanase test; produces indole",
+            "Gelatinase liquefaction"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Christensen's urea medium contains urea and phenol red pH indicator (yellow at pH 6.8, magenta at pH > 8.1). Bacterial urease hydrolyzes urea into carbon dioxide and ammonia (NH3); accumulation of alkaline ammonium ions raises the pH, turning the agar bright fuchsia/magenta. Helicobacter pylori and Proteus produce potent, rapid urease.",
+        "keyConcept": "Urease test: hydrolyzes urea into NH3, raising pH to turn phenol red bright magenta (H. pylori, Proteus).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0056.webp",
+            "caption": "Station 56 — Christensen's Urea Agar Rapid Magenta Reaction"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0057",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "A drop of 3% hydrogen peroxide (H2O2) is placed onto a bacterial colony on a glass slide, resulting in immediate, vigorous bubbling and gas effervescence. What enzyme is present, and which genus does it identify?",
+        "options": [
+            "Catalase; differentiates Staphylococcus (positive) from Streptococcus / Enterococcus (negative)",
+            "Coagulase; differentiates S. aureus from S. epidermidis",
+            "Oxidase; differentiates Vibrio from Salmonella",
+            "Peroxidase; identifies anaerobic Clostridium"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: The catalase test detects the enzyme catalase, which decomposes toxic hydrogen peroxide into water and molecular oxygen gas (2 H2O2 -> 2 H2O + O2), producing visible bubbling. Catalase distinguishes catalase-positive Staphylococci and Listeria from catalase-negative Streptococci and Enterococci.",
+        "keyConcept": "Catalase test: breakdown of H2O2 produces immediate O2 gas bubbles; differentiates Staph (+) from Strep (-).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0057.webp",
+            "caption": "Station 57 — Catalase Hydrogen Peroxide Effervescence Test"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0058",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "Following incubation in tryptone broth, Kovac's reagent (p-dimethylaminobenzaldehyde in isoamyl alcohol) is added to the tube, producing an immediate cherry-red surface ring. Identify this test and an enterobacterium that is positive:",
+        "options": [
+            "Indole test; positive in Escherichia coli",
+            "Methyl red test; positive in Enterobacter",
+            "Voges-Proskauer test; positive in Klebsiella",
+            "Citrate test; positive in Salmonella"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: The indole test detects the enzyme tryptophanase, which hydrolyzes tryptophan into indole, pyruvic acid, and ammonia. Indole reacts with p-dimethylaminobenzaldehyde in Kovac's reagent to form a rosindole dye (cherry-red ring at the meniscus). E. coli is indole-positive (part of the IMViC series: ++--), whereas Klebsiella pneumoniae is indole-negative.",
+        "keyConcept": "Indole test: Kovac's reagent yields cherry-red surface ring; E. coli is indole (+), Klebsiella is indole (-).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0058.webp",
+            "caption": "Station 58 — Indole Test Cherry-Red Ring in E. coli"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0059",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "Examine this Simmons Citrate agar slant. The medium has changed from its original forest green color to an intense Prussian blue along the entire slant. What does this color change signify?",
+        "options": [
+            "Citrate utilization as sole carbon source; produces alkaline sodium carbonate, turning bromothymol blue to Prussian blue",
+            "Acidification of the medium from glucose fermentation",
+            "Production of hydrogen sulfide gas",
+            "Bile salt precipitation"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Simmons citrate agar tests the ability of an organism to utilize citrate as its sole carbon source and ammonium dihydrogen phosphate as its sole nitrogen source. Metabolism of citrate produces alkaline carbonates and bicarbonates, raising the pH > 7.6 and turning the bromothymol blue indicator from green to vivid Prussian blue (e.g., Klebsiella, Salmonella, Enterobacter).",
+        "keyConcept": "Citrate test: growth and alkaline conversion turn bromothymol blue from green to intense Prussian blue.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0059.webp",
+            "caption": "Station 59 — Simmons Citrate Prussian Blue Positive Reaction"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0060",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "Examine this serial tube dilution Widal agglutination test for enteric (typhoid) fever. In endemic regions like Egypt, what minimal serum agglutinin titer threshold is considered diagnostically significant for active current typhoid infection?",
+        "options": [
+            "Anti-O (somatic) titer >= 1:160 and Anti-H (flagellar) titer >= 1:160",
+            "Anti-O titer = 1:20 and Anti-H = 1:40",
+            "Anti-Vi titer >= 1:10 only",
+            "Total agglutination at 1:10 dilution"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: The Widal agglutination test measures antibodies against Salmonella enterica serotype Typhi somatic (O) and flagellar (H) antigens. In endemic areas, basal background titers exist; therefore, a single diagnostic titer requires Anti-O >= 1:160 (indicates active acute infection, appears early and disappears in months) and/or Anti-H >= 1:160 (indicates past infection, immunization, or late active stage), or ideally a 4-fold rising titer in paired sera.",
+        "keyConcept": "Widal test: Anti-O >= 1:160 confirms acute typhoid fever; Anti-H >= 1:160 indicates past infection or immunization.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0060.webp",
+            "caption": "Station 60 — Widal Serial Tube Titration Diagnostic Rack"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0061",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "In the Kauffmann-White antigenic classification scheme, what two primary surface antigens are used for serotyping Salmonella isolates using polyvalent and monovalent antisera on glass slides?",
+        "options": [
+            "Somatic (O) lipopolysaccharide antigens and Flagellar (H) phase 1 / phase 2 protein antigens",
+            "Capsular (K) antigens and Peptidoglycan (M) antigens only",
+            "Teichoic acid and Outer membrane porins",
+            "Exotoxin A and Enterotoxin B"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: The Kauffmann-White serological classification scheme identifies > 2,500 Salmonella serotypes based on: 1) Somatic (O) heat-stable polysaccharide antigens on the outer lipopolysaccharide cell wall (defining serogroups A, B, C1, C2, D, E), and 2) Flagellar (H) heat-labile protein antigens (diphasic: Phase 1 specific and Phase 2 non-specific). S. Typhi also possesses the capsular Vi (virulence) antigen.",
+        "keyConcept": "Kauffmann-White classification: serotypes Salmonella using somatic O antigens and flagellar H phase 1/2 antigens.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0061.webp",
+            "caption": "Station 61 — Kauffmann-White Salmonella Serotyping Slide Agglutination"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0062",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "Examine this Gram-stained gastric biopsy smear showing curved, spiral, gull-winged Gram-negative rods. What biochemical diagnostic triad characteristically identifies Helicobacter pylori?",
+        "options": [
+            "Urease-positive, Catalase-positive, and Oxidase-positive",
+            "Urease-negative, Lactose-fermenter, and Indole-positive",
+            "Oxidase-negative, H2S-positive, and Citrate-positive",
+            "Coagulase-positive, Catalase-negative, and Bile-soluble"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Helicobacter pylori is a microaerophilic, spiral, S-shaped Gram-negative bacillus (0.5 x 3 µm) with multiple unipolar sheathed flagella. It is definitively characterized biochemically by the rapid diagnostic triad: Urease-positive (potent), Catalase-positive, and Cytochrome c Oxidase-positive.",
+        "keyConcept": "Helicobacter pylori: spiral Gram-negative rod characterized by the triad of Urease (+), Catalase (+), and Oxidase (+).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0062.webp",
+            "caption": "Station 62 — Helicobacter pylori Spiral Morphology & Enzyme Triad"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0063",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "A hospitalized patient develops pseudomembranous colitis following clindamycin therapy. Stool testing utilizes a two-step diagnostic algorithm. What initial screening enzyme and subsequent confirmatory targets are detected?",
+        "options": [
+            "Glutamate Dehydrogenase (GDH) screening antigen, followed by Enzyme Immunoassay (EIA) or PCR for Toxin A (enterotoxin) and Toxin B (cytotoxin)",
+            "Lactose fermentation followed by Gram stain",
+            "Widal agglutination for O and H antigens",
+            "Van den Bergh diazo coupling"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Clostridioides difficile diagnostic guidelines mandate: 1) initial sensitive screening for C. difficile common Glutamate Dehydrogenase (GDH) antigen in stool, followed if positive by 2) specific enzyme immunoassay (EIA) or nucleic acid amplification test (NAAT/PCR) targeting Toxin A (enterotoxin causing mucosal fluid secretion) and Toxin B (potent cytotoxin disrupting actin cytoskeleton).",
+        "keyConcept": "C. difficile diagnosis: initial GDH screening antigen confirmed by EIA or PCR for Toxin A and Toxin B.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0063.webp",
+            "caption": "Station 63 — Clostridioides difficile GDH & Toxin A/B Diagnostic Algorithm"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0064",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "Two hours after consuming reheated Chinese fried rice, a student develops sudden nausea and profuse vomiting without diarrhea. What spore-forming organism and toxin is responsible for this short-incubation emetic food poisoning?",
+        "options": [
+            "Bacillus cereus; preformed heat-stable cyclic peptide toxin (Cereulide)",
+            "Bacillus cereus; heat-labile enterotoxin produced in the intestine",
+            "Clostridium perfringens enterotoxin",
+            "Salmonella enterica"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Bacillus cereus causes two distinct syndromes: 1) Emetic syndrome: rapid incubation (1–6 hours), caused by preformed, heat-stable toxin (cereulide) that survives cooking of boiled/fried rice; 2) Diarrheal syndrome: longer incubation (8–16 hours), caused by heat-labile enterotoxins produced in vivo following ingestion of spores in contaminated meat or vegetables.",
+        "keyConcept": "Bacillus cereus: emetic syndrome (1–6h, fried rice) caused by preformed heat-stable cereulide toxin.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0064.webp",
+            "caption": "Station 64 — Bacillus cereus Food Poisoning Pathogenesis"
+        }
+    },
+    {
+        "id": "MGL3-CH307-MICR-0065",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "Examine this transmission electron micrograph (TEM) of fecal fluid from a 10-month-old infant with acute dehydrating watery diarrhea. Distinctive non-enveloped, double-shelled spherical 70 nm viral particles resembling 'cartwheels' with sharply defined radiating spokes are seen. Identify this viral pathogen:",
+        "options": [
+            "Rotavirus (Group A)",
+            "Norovirus (Norwalk virus)",
+            "Adenovirus serotypes 40/41",
+            "Astrovirus"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Rotaviruses (Reoviridae, segmented double-stranded RNA) exhibit pathognomonic morphology on negative-stain electron microscopy: 70 nm naked icosahedral particles with a triple-layered capsid; the inner core and outer radiating capsomers give the appearance of a cartwheel (Latin 'rota' = wheel), representing the leading cause of severe dehydrating infantile diarrhea worldwide.",
+        "keyConcept": "Rotavirus (TEM): 70 nm wheel-like ('cartwheel') particles with sharp radiating spokes; leading cause of infantile diarrhea.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/img_micr_0065.webp",
+            "caption": "Station 65 — Rotavirus Cartwheel Ultrastructure on TEM"
+        }
+    }
+]
+

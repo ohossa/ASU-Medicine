@@ -8,7 +8,7 @@ describe('GIT (MGL-3) Practical Exam Bank & Engine Integration', () => {
     fs.readFileSync(path.resolve(__dirname, '../../app/data/practical/mgl-3-practical.json'), 'utf8')
   );
 
-  it('contains the 8 designated practical chapters with IDs 301 to 308 and exact question counts (286 total stations)', () => {
+  it('contains the 8 designated practical chapters with IDs 301 to 308 and exact question counts (530 total stations)', () => {
     expect(practicalChapters).toHaveLength(8);
 
     const ids = practicalChapters.map((c: any) => c.id);
@@ -25,14 +25,14 @@ describe('GIT (MGL-3) Practical Exam Bank & Engine Integration', () => {
     expect(titles).toContain('Practical — Clinical & Pharmacology');
 
     const expectedCountsByChapter: Record<number, number> = {
-      301: 28, // Histology
-      302: 30, // Pathology
-      303: 41, // Parasitology
-      304: 37, // Anatomy
-      305: 40, // Physiology
-      306: 40, // Biochemistry
-      307: 40, // Microbiology
-      308: 30  // Clinical & Pharmacology
+      301: 65, // Histology
+      302: 65, // Pathology
+      303: 75, // Parasitology
+      304: 75, // Anatomy
+      305: 65, // Physiology
+      306: 65, // Biochemistry
+      307: 65, // Microbiology
+      308: 55  // Clinical & Pharmacology
     };
 
     let totalCalculated = 0;
@@ -41,7 +41,7 @@ describe('GIT (MGL-3) Practical Exam Bank & Engine Integration', () => {
       expect(qCount, `Chapter ${ch.id} (${ch.title}) count mismatch`).toBe(expectedCountsByChapter[ch.id]);
       totalCalculated += qCount;
     }
-    expect(totalCalculated).toBe(286);
+    expect(totalCalculated).toBe(530);
   });
 
   it('every practical question has an imageUrl and points to an existing WebP asset > 1KB on disk', () => {
@@ -63,7 +63,7 @@ describe('GIT (MGL-3) Practical Exam Bank & Engine Integration', () => {
       }
     }
 
-    expect(questionCount).toBe(286);
+    expect(questionCount).toBe(530);
   });
 
   it('distributes correct answer indices (A, B, C, D) with balanced distribution without cueing bias', () => {
@@ -80,11 +80,11 @@ describe('GIT (MGL-3) Practical Exam Bank & Engine Integration', () => {
       }
     }
 
-    // Verify balance across all 286 questions (74 A, 72 B, 70 C, 70 D)
-    expect(counts[0]).toBe(74);
-    expect(counts[1]).toBe(72);
-    expect(counts[2]).toBe(70);
-    expect(counts[3]).toBe(70);
+    // Verify balance across all 530 questions (137 A, 132 B, 132 C, 129 D)
+    expect(counts[0]).toBe(137);
+    expect(counts[1]).toBe(132);
+    expect(counts[2]).toBe(132);
+    expect(counts[3]).toBe(129);
   });
 
   it('includes explicit Criteria of Identification in all Parasitology questions', () => {
@@ -96,9 +96,9 @@ describe('GIT (MGL-3) Practical Exam Bank & Engine Integration', () => {
     }
   });
 
-  it('getModuleQuestionCounts reports practicalCount accurately as 286', () => {
+  it('getModuleQuestionCounts reports practicalCount accurately as 530', () => {
     const counts = getModuleQuestionCounts('MGL-3');
-    expect(counts.practicalCount).toBe(286);
+    expect(counts.practicalCount).toBe(530);
     expect(counts.totalCount).toBeGreaterThan(6000);
   });
 

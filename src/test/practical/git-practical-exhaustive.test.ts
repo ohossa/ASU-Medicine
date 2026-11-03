@@ -37,7 +37,7 @@ interface PracticalChapter {
   }>;
 }
 
-describe('GIT Practical Bank Exhaustive Verification (286 Authentic Stations)', () => {
+describe('GIT Practical Bank Exhaustive Verification (530 Authentic Stations)', () => {
   const practicalBank: PracticalChapter[] = JSON.parse(
     fs.readFileSync(path.resolve(__dirname, '../../app/data/practical/mgl-3-practical.json'), 'utf8')
   );
@@ -84,7 +84,7 @@ describe('GIT Practical Bank Exhaustive Verification (286 Authentic Stations)', 
       }
     }
 
-    expect(allIds.size).toBe(286);
+    expect(allIds.size).toBe(530);
   });
 
   it('verifies all referenced images exist on disk, are valid WebP, and non-empty (>1 KB)', () => {
@@ -107,7 +107,7 @@ describe('GIT Practical Bank Exhaustive Verification (286 Authentic Stations)', 
       }
     }
 
-    expect(imagesChecked).toBe(286);
+    expect(imagesChecked).toBe(530);
   });
 
   it('verifies Biochemistry calculation stations (Chapter 306)', () => {
@@ -115,7 +115,7 @@ describe('GIT Practical Bank Exhaustive Verification (286 Authentic Stations)', 
     expect(biocChapter).toBeDefined();
 
     const questions = biocChapter!.subjects[0].questions;
-    expect(questions).toHaveLength(40);
+    expect(questions).toHaveLength(65);
 
     // Filter calculation & clinical chemistry stations
     const calcQuestions = questions.filter(q =>
@@ -140,7 +140,7 @@ describe('GIT Practical Bank Exhaustive Verification (286 Authentic Stations)', 
     expect(microChapter).toBeDefined();
 
     const questions = microChapter!.subjects[0].questions;
-    expect(questions).toHaveLength(40);
+    expect(questions).toHaveLength(65);
 
     const mediaQuestions = questions.filter(q =>
       q.text.toLowerCase().includes('macconkey') ||
@@ -158,7 +158,7 @@ describe('GIT Practical Bank Exhaustive Verification (286 Authentic Stations)', 
     expect(physChapter).toBeDefined();
 
     const questions = physChapter!.subjects[0].questions;
-    expect(questions).toHaveLength(40);
+    expect(questions).toHaveLength(65);
 
     const labQuestions = questions.filter(q =>
       q.text.toLowerCase().includes('manometry') ||
@@ -180,7 +180,7 @@ describe('GIT Practical Bank Exhaustive Verification (286 Authentic Stations)', 
     expect(clinChapter).toBeDefined();
 
     const questions = clinChapter!.subjects[0].questions;
-    expect(questions).toHaveLength(30);
+    expect(questions).toHaveLength(55);
 
     const clinTopics = questions.filter(q =>
       q.text.toLowerCase().includes('endoscopy') ||

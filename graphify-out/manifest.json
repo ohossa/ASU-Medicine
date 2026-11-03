@@ -4152,8 +4152,8 @@
     "semantic_hash": "2ffa3b85e60c5e009954037ddbb13a79"
   },
   "src/app/generated/bankManifest.json": {
-    "mtime": 1793701691.2100053,
-    "seen": 1793701794.642486,
+    "mtime": 1793721287.461567,
+    "seen": 1793721419.62014,
     "ast_hash": "a45df74e17b53cee3bf9b8611fbf8f87",
     "semantic_hash": ""
   },
@@ -13080,9 +13080,9 @@
     "semantic_hash": ""
   },
   "public/version.json": {
-    "mtime": 1793701691.2542408,
-    "seen": 1793701794.638419,
-    "ast_hash": "1e1ed888875f4f647c2ccfbfcef72ac1",
+    "mtime": 1793721287.5075743,
+    "seen": 1793721419.614764,
+    "ast_hash": "29efc11064b4da64075d0c774748b73b",
     "semantic_hash": ""
   },
   "scripts/generate-version.mjs": {
@@ -13092,9 +13092,9 @@
     "semantic_hash": ""
   },
   "src/app/generated/version.json": {
-    "mtime": 1793701691.2545693,
-    "seen": 1793701794.642487,
-    "ast_hash": "1e1ed888875f4f647c2ccfbfcef72ac1",
+    "mtime": 1793721287.5077837,
+    "seen": 1793721419.620141,
+    "ast_hash": "29efc11064b4da64075d0c774748b73b",
     "semantic_hash": ""
   },
   "src/app/hooks/useVersionCheck.ts": {
@@ -13332,33 +13332,33 @@
     "semantic_hash": ""
   },
   "scripts/compile-final-git-practical.py": {
-    "mtime": 1793701489.4847686,
-    "seen": 1793701794.638759,
-    "ast_hash": "5928acf65477108c029017881ef77e20",
+    "mtime": 1793721100.6798022,
+    "seen": 1793721419.615096,
+    "ast_hash": "28bcb85d57a91914d8f50adcf4a5fbe6",
     "semantic_hash": ""
   },
   "scripts/data_anatomy.py": {
-    "mtime": 1793647750.240556,
-    "seen": 1793652043.501911,
-    "ast_hash": "33ee4a8797d98d5a753863dc126063a2",
+    "mtime": 1793720063.6669502,
+    "seen": 1793721419.615131,
+    "ast_hash": "339b48a55a55e114d79f2d68282bc444",
     "semantic_hash": ""
   },
   "scripts/data_histology.py": {
-    "mtime": 1793647643.1905112,
-    "seen": 1793652043.501912,
-    "ast_hash": "5d2cdf47ec94794a8ce9ca6b4e484f78",
+    "mtime": 1793719755.9362857,
+    "seen": 1793721419.615136,
+    "ast_hash": "2bfbc1784bdc914a94762bd70f4cabaf",
     "semantic_hash": ""
   },
   "scripts/data_parasitology.py": {
-    "mtime": 1793606720.7925124,
-    "seen": 1793652043.501913,
-    "ast_hash": "41f9ee2a89400325e5ba6974847322d5",
+    "mtime": 1793719972.8320255,
+    "seen": 1793721419.615137,
+    "ast_hash": "2f8b3529f423aaa6ff93ecb83ded1d82",
     "semantic_hash": ""
   },
   "scripts/data_pathology.py": {
-    "mtime": 1793700245.1051843,
-    "seen": 1793701794.6388638,
-    "ast_hash": "ecd762decc4f73b560fd6d9ad8e05225",
+    "mtime": 1793719876.8496552,
+    "seen": 1793721419.615138,
+    "ast_hash": "a2b226e955a4e3dbbf9ba8bdfec69381",
     "semantic_hash": ""
   },
   "scripts/extract-all-practical-images.py": {
@@ -13434,9 +13434,9 @@
     "semantic_hash": ""
   },
   "src/app/data/practical/mgl-3-practical.json": {
-    "mtime": 1793701498.339749,
-    "seen": 1793701794.6424682,
-    "ast_hash": "1cebe52d6e583eb06435eb72aa702f3b",
+    "mtime": 1793721106.8074837,
+    "seen": 1793721419.620119,
+    "ast_hash": "bffd9daf24ed3a4e9e893445acacfa24",
     "semantic_hash": ""
   },
   "src/app/learning/moduleAcademicYear.test.ts": {
@@ -13452,9 +13452,9 @@
     "semantic_hash": ""
   },
   "src/test/practical/git-practical.test.ts": {
-    "mtime": 1793701541.6374106,
-    "seen": 1793701794.646485,
-    "ast_hash": "853b6b71bda5bcfce7fef4ba5d9bbbb3",
+    "mtime": 1793721162.1777415,
+    "seen": 1793721419.6253068,
+    "ast_hash": "e125c541968b769d774aa5728bcdb141",
     "semantic_hash": ""
   },
   "src/test/theme/secret-theme.test.ts": {
@@ -14328,27 +14328,27 @@
     "semantic_hash": ""
   },
   "scripts/data_biochemistry.py": {
-    "mtime": 1793699941.5409217,
-    "seen": 1793701794.638818,
-    "ast_hash": "f8eed7fcad1b0c1e7b03febfdc2a3215",
+    "mtime": 1793720304.0884027,
+    "seen": 1793721419.615133,
+    "ast_hash": "431b5ee7f9d34ad31ef0b341eae18f40",
     "semantic_hash": ""
   },
   "scripts/data_clinical.py": {
-    "mtime": 1793700165.382596,
-    "seen": 1793701794.6388202,
-    "ast_hash": "21469026e9828e77274c6ed700405aa2",
+    "mtime": 1793720519.1772048,
+    "seen": 1793721419.615135,
+    "ast_hash": "9693271d320128748ec727ef1829471d",
     "semantic_hash": ""
   },
   "scripts/data_microbiology.py": {
-    "mtime": 1793699814.234093,
-    "seen": 1793701794.638845,
-    "ast_hash": "0e07540b34d16e5f1e111105910a727b",
+    "mtime": 1793720407.8813498,
+    "seen": 1793721419.615137,
+    "ast_hash": "1d33789c23d9c99caa229d7b11e2e9cb",
     "semantic_hash": ""
   },
   "scripts/data_physiology.py": {
-    "mtime": 1793700069.0739799,
-    "seen": 1793701794.638865,
-    "ast_hash": "47a53d55b826ab5d6c34357bcc164c76",
+    "mtime": 1793721008.5535784,
+    "seen": 1793721419.615139,
+    "ast_hash": "7fc203316ac488455f0b38cd21828368",
     "semantic_hash": ""
   },
   "scripts/extract-new-practical-images.py": {
@@ -14358,9 +14358,9 @@
     "semantic_hash": ""
   },
   "src/test/practical/git-practical-exhaustive.test.ts": {
-    "mtime": 1793701625.8618543,
-    "seen": 1793701794.646483,
-    "ast_hash": "5a2947fb94b23a045b7b57b59ac637ec",
+    "mtime": 1793721190.5541408,
+    "seen": 1793721419.6253052,
+    "ast_hash": "26426995e751179c6e6663166caa7e88",
     "semantic_hash": ""
   },
   "public/images/practical/mgl-3/biochemistry/bmi_whr_body_composition.webp": {
@@ -14745,6 +14745,1476 @@
     "mtime": 1793701130.2130263,
     "seen": 1793701794.676642,
     "ast_hash": "a336779e6265ba871686f72dbd138c31",
+    "semantic_hash": ""
+  },
+  "scripts/generate_all_244_images.py": {
+    "mtime": 1793719598.2097304,
+    "seen": 1793721419.615472,
+    "ast_hash": "6a398b0a2bb9af6e9c1b6add85a7e893",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0038.webp": {
+    "mtime": 1793719605.3433673,
+    "seen": 1793721419.6526341,
+    "ast_hash": "eff05dadc2919ca9f71660fdaf7405ab",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0039.webp": {
+    "mtime": 1793719607.442807,
+    "seen": 1793721419.6526349,
+    "ast_hash": "5ad274436c302006d0ab1628db2172f2",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0040.webp": {
+    "mtime": 1793719609.0615032,
+    "seen": 1793721419.6526358,
+    "ast_hash": "fa5e1bf4702bdd4b48c838d37ec0e25f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0041.webp": {
+    "mtime": 1793719610.9232752,
+    "seen": 1793721419.652637,
+    "ast_hash": "ca264d59efa9faa5a14dfe6284598eee",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0042.webp": {
+    "mtime": 1793719613.1622384,
+    "seen": 1793721419.652638,
+    "ast_hash": "e30b0a7c98768729c7cfc2a102ee2b69",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0043.webp": {
+    "mtime": 1793719614.825014,
+    "seen": 1793721419.652639,
+    "ast_hash": "a50ad63159365700e98c5e48f4f1d767",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0044.webp": {
+    "mtime": 1793719616.6267543,
+    "seen": 1793721419.65264,
+    "ast_hash": "d22c3fee197a78b90f98a47fe8f42ef1",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0045.webp": {
+    "mtime": 1793719618.1923177,
+    "seen": 1793721419.65264,
+    "ast_hash": "de55e328d1c9da1f414740c17dd068f4",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0046.webp": {
+    "mtime": 1793719620.0141497,
+    "seen": 1793721419.652641,
+    "ast_hash": "3c9475f514ffbb6083c36f37c1359dce",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0047.webp": {
+    "mtime": 1793719621.835111,
+    "seen": 1793721419.652642,
+    "ast_hash": "a7f188b66821b28c97330c816fd03008",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0048.webp": {
+    "mtime": 1793719623.447493,
+    "seen": 1793721419.652643,
+    "ast_hash": "8d82425abbe1d66292ad2f9ac995a9c3",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0049.webp": {
+    "mtime": 1793719625.5700443,
+    "seen": 1793721419.6526442,
+    "ast_hash": "3490246fb35a490253175c2a24b231fa",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0050.webp": {
+    "mtime": 1793719627.2945635,
+    "seen": 1793721419.6526442,
+    "ast_hash": "c980e5cd1c912c430c4d9306af948fc2",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0051.webp": {
+    "mtime": 1793719628.9062455,
+    "seen": 1793721419.652645,
+    "ast_hash": "e904529c39f6254b1fc5e7c526fa8a53",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0052.webp": {
+    "mtime": 1793719630.9918873,
+    "seen": 1793721419.6526458,
+    "ast_hash": "a56412bf6f4aa1f912cadf881d707fcc",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0053.webp": {
+    "mtime": 1793719632.7771945,
+    "seen": 1793721419.652647,
+    "ast_hash": "f2726029ace5778916bf1813d7ea3583",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0054.webp": {
+    "mtime": 1793719634.4626486,
+    "seen": 1793721419.652648,
+    "ast_hash": "fcfd6300b341c35c3b66831afe8b5254",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0055.webp": {
+    "mtime": 1793719636.149541,
+    "seen": 1793721419.652648,
+    "ast_hash": "1800a03dbd0e303eef765c9e982bd414",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0056.webp": {
+    "mtime": 1793719637.9285312,
+    "seen": 1793721419.652649,
+    "ast_hash": "a3ba1118a8cc3e91a6c66795e8e7e86c",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0057.webp": {
+    "mtime": 1793719640.2571907,
+    "seen": 1793721419.6526499,
+    "ast_hash": "71cc3f06c550d271f615922c4ec7640b",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0058.webp": {
+    "mtime": 1793719642.4324002,
+    "seen": 1793721419.652651,
+    "ast_hash": "ed38eddb9cd72fa0ecbf13943ceec868",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0059.webp": {
+    "mtime": 1793719644.2976828,
+    "seen": 1793721419.652651,
+    "ast_hash": "4de23d53c5e617c3df3ce2b388340f6d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0060.webp": {
+    "mtime": 1793719646.0131483,
+    "seen": 1793721419.652652,
+    "ast_hash": "175a0a225911fe8b4987f07f542cb20a",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0061.webp": {
+    "mtime": 1793719647.5801034,
+    "seen": 1793721419.652653,
+    "ast_hash": "207f9636e61972f35444c39692153052",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0062.webp": {
+    "mtime": 1793719649.3082042,
+    "seen": 1793721419.652653,
+    "ast_hash": "6f859eb80505dfc4cbf0d7fae7de8263",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0063.webp": {
+    "mtime": 1793719651.1121418,
+    "seen": 1793721419.6526542,
+    "ast_hash": "8fbbda89c18bb79c8e9d3ea1507aa0c4",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0064.webp": {
+    "mtime": 1793719652.9242876,
+    "seen": 1793721419.6526551,
+    "ast_hash": "e66d53c49f4c9226583f1e8f58e4e91d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0065.webp": {
+    "mtime": 1793719655.3167655,
+    "seen": 1793721419.652656,
+    "ast_hash": "dbfb7ac4ef7dbeba2759301820248c60",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0066.webp": {
+    "mtime": 1793719657.1108975,
+    "seen": 1793721419.652656,
+    "ast_hash": "9ecb30403e09e53272a82b11943fda4f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0067.webp": {
+    "mtime": 1793719658.930635,
+    "seen": 1793721419.6526568,
+    "ast_hash": "cb83d20fd3baeb2c623b9c7125ff0bd9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0068.webp": {
+    "mtime": 1793719660.424522,
+    "seen": 1793721419.652658,
+    "ast_hash": "f4a377284251465bf584b16bcb14ec98",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0069.webp": {
+    "mtime": 1793719662.7335865,
+    "seen": 1793721419.652659,
+    "ast_hash": "411cbe4379492850d666eafba3c22066",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0070.webp": {
+    "mtime": 1793719665.1170895,
+    "seen": 1793721419.652659,
+    "ast_hash": "9a63ee3e7b2576e9645e7153576b5b11",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0071.webp": {
+    "mtime": 1793719667.54627,
+    "seen": 1793721419.65266,
+    "ast_hash": "c79b0674b102d05d30efb628881a2039",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0072.webp": {
+    "mtime": 1793719669.157226,
+    "seen": 1793721419.652661,
+    "ast_hash": "9b6566e7c6ecab167a309ba5adec89c0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0073.webp": {
+    "mtime": 1793719671.1305811,
+    "seen": 1793721419.652661,
+    "ast_hash": "793927a4a74fef45d369aeef3e994aae",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0074.webp": {
+    "mtime": 1793719672.679612,
+    "seen": 1793721419.652662,
+    "ast_hash": "758b571ece780c6daabf2c9413c505a3",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/anatomy/pinned_anat_0075.webp": {
+    "mtime": 1793719674.6992,
+    "seen": 1793721419.652663,
+    "ast_hash": "1fb58ae3bb2b1ec7f6802b7c9517f861",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0041.webp": {
+    "mtime": 1793719694.4257002,
+    "seen": 1793721419.653058,
+    "ast_hash": "2211947d61f3a40c325a12fcec5db02f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0042.webp": {
+    "mtime": 1793719694.4877977,
+    "seen": 1793721419.653059,
+    "ast_hash": "2e24567377856cca461dd8052566d987",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0043.webp": {
+    "mtime": 1793719694.5320778,
+    "seen": 1793721419.6530602,
+    "ast_hash": "e8bade1b0359e81797dbf23beaff8ad7",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0044.webp": {
+    "mtime": 1793719694.6045878,
+    "seen": 1793721419.6530602,
+    "ast_hash": "2965b804cf854e96c65652c2196b5568",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0045.webp": {
+    "mtime": 1793719694.8092685,
+    "seen": 1793721419.6530612,
+    "ast_hash": "9d3db5fd3f3f43cc5605b607fc69d3e4",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0046.webp": {
+    "mtime": 1793719694.9237876,
+    "seen": 1793721419.6530619,
+    "ast_hash": "66adac703b8c9ba487cb401149f3111b",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0047.webp": {
+    "mtime": 1793719694.9904568,
+    "seen": 1793721419.6530628,
+    "ast_hash": "333e4bba70f9ae2702d35ae977a1f6e7",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0048.webp": {
+    "mtime": 1793719695.0536098,
+    "seen": 1793721419.6530628,
+    "ast_hash": "bd6f733d8851f43521597b5d80762b8d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0049.webp": {
+    "mtime": 1793719695.1148896,
+    "seen": 1793721419.653064,
+    "ast_hash": "ef8483d299a82c3531f59f9c59e2d5a0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0050.webp": {
+    "mtime": 1793719695.2153943,
+    "seen": 1793721419.653065,
+    "ast_hash": "ace440dd5135ac5196e121424969c87f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0051.webp": {
+    "mtime": 1793719695.3101134,
+    "seen": 1793721419.653066,
+    "ast_hash": "b7cde8a1515efc24567b4fd990ecddd9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0052.webp": {
+    "mtime": 1793719695.378128,
+    "seen": 1793721419.653067,
+    "ast_hash": "dd93c63dc5ef8e1ee5ae0358890875da",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0053.webp": {
+    "mtime": 1793719695.4849317,
+    "seen": 1793721419.653067,
+    "ast_hash": "e560414380253ed38c6ff61dd7bf3d31",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0054.webp": {
+    "mtime": 1793719695.5928674,
+    "seen": 1793721419.653068,
+    "ast_hash": "ba6d38c8673f45edbf6f6e02bd61e5da",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0055.webp": {
+    "mtime": 1793719695.673049,
+    "seen": 1793721419.653069,
+    "ast_hash": "307da42eba84e11044dfb5d4c8ec30b5",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0056.webp": {
+    "mtime": 1793719695.7457364,
+    "seen": 1793721419.65307,
+    "ast_hash": "d8fcad75946eb15ffac48ef695a27a9d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0057.webp": {
+    "mtime": 1793719695.824331,
+    "seen": 1793721419.65307,
+    "ast_hash": "ebd63a594227871360e08868e9083417",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0058.webp": {
+    "mtime": 1793719695.9076357,
+    "seen": 1793721419.6530712,
+    "ast_hash": "4183d5e82f24bca614c7509498b311ed",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0059.webp": {
+    "mtime": 1793719695.9740422,
+    "seen": 1793721419.6530719,
+    "ast_hash": "cd3fbccc96acc8f4fc9e7d7cb7db53a0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0060.webp": {
+    "mtime": 1793719696.0224738,
+    "seen": 1793721419.6530728,
+    "ast_hash": "04c347ecf2ac0fc86fd395fb53f79062",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0061.webp": {
+    "mtime": 1793719696.087427,
+    "seen": 1793721419.653074,
+    "ast_hash": "621f3d2b524d5ee3fa684cbac201ac30",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0062.webp": {
+    "mtime": 1793719696.1591227,
+    "seen": 1793721419.653074,
+    "ast_hash": "09cae6353f3024c6b9831deb6625d18d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0063.webp": {
+    "mtime": 1793719696.2376952,
+    "seen": 1793721419.653075,
+    "ast_hash": "fd5982c462e26cc3a363ece6bc8f6727",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0064.webp": {
+    "mtime": 1793719696.3548918,
+    "seen": 1793721419.653076,
+    "ast_hash": "9b1d44cdbb2fa960e300db45a9ebcf9c",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/biochemistry/img_bioc_0065.webp": {
+    "mtime": 1793719696.4364567,
+    "seen": 1793721419.653076,
+    "ast_hash": "3fce3dc57b3ac3ea681ea136bb50b075",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0031.webp": {
+    "mtime": 1793719699.6053433,
+    "seen": 1793721419.653389,
+    "ast_hash": "0dda7b9c94026422d962e36a6e95ef3f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0032.webp": {
+    "mtime": 1793719699.7016716,
+    "seen": 1793721419.6533902,
+    "ast_hash": "98df332581ddf424a7ebbb5c39e584d6",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0033.webp": {
+    "mtime": 1793719699.7803197,
+    "seen": 1793721419.6533911,
+    "ast_hash": "ea79e527394c86ed136f90e1f8b7f77f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0034.webp": {
+    "mtime": 1793719699.8351684,
+    "seen": 1793721419.6533918,
+    "ast_hash": "506b81bf3b2f8ac3c2b06f2b9f04bb85",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0035.webp": {
+    "mtime": 1793719699.9328327,
+    "seen": 1793721419.6533928,
+    "ast_hash": "76449e341b9fc43f7414466d420ea3c3",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0036.webp": {
+    "mtime": 1793719700.0176566,
+    "seen": 1793721419.6533928,
+    "ast_hash": "fc98cedc5ece334d2e8496b0814f69c9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0037.webp": {
+    "mtime": 1793719700.1120682,
+    "seen": 1793721419.653394,
+    "ast_hash": "70c0e0017902e21ce7561db060d92886",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0038.webp": {
+    "mtime": 1793719700.204041,
+    "seen": 1793721419.653395,
+    "ast_hash": "da566146c15f55a7becff494618737e4",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0039.webp": {
+    "mtime": 1793719700.3123894,
+    "seen": 1793721419.653396,
+    "ast_hash": "1c48bb45fc12298f683d0f7475ac9717",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0040.webp": {
+    "mtime": 1793719700.4276388,
+    "seen": 1793721419.653396,
+    "ast_hash": "e509055fb451eb38bffd00c85e7a4ab1",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0041.webp": {
+    "mtime": 1793719700.5279148,
+    "seen": 1793721419.653397,
+    "ast_hash": "ffd79fc2556e2db58d39e872d7c4fe9e",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0042.webp": {
+    "mtime": 1793719700.646811,
+    "seen": 1793721419.653398,
+    "ast_hash": "f1d76f9c79f9b8719b37967ee1bc420e",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0043.webp": {
+    "mtime": 1793719700.7505186,
+    "seen": 1793721419.653399,
+    "ast_hash": "145824e5e42eac8203e0aa9e5c7e24db",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0044.webp": {
+    "mtime": 1793719700.8574111,
+    "seen": 1793721419.6534002,
+    "ast_hash": "59c0d2183eb465d7190d04a2286bc53e",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0045.webp": {
+    "mtime": 1793719700.951337,
+    "seen": 1793721419.6534002,
+    "ast_hash": "fccb608982e9c4d1dc31eb63a8b3e528",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0046.webp": {
+    "mtime": 1793719701.064527,
+    "seen": 1793721419.6534011,
+    "ast_hash": "cd5324c4c0c6fa659d7feaff534e6e74",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0047.webp": {
+    "mtime": 1793719701.2058756,
+    "seen": 1793721419.653402,
+    "ast_hash": "09cd4c74237214f66103e8bdcc396ad5",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0048.webp": {
+    "mtime": 1793719701.3153248,
+    "seen": 1793721419.653402,
+    "ast_hash": "59fd8ba4c158ffd4fe29a3a935128171",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0049.webp": {
+    "mtime": 1793719701.4297335,
+    "seen": 1793721419.6534028,
+    "ast_hash": "29b327bee1d35c6362b93e415ddb1aad",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0050.webp": {
+    "mtime": 1793719701.5112357,
+    "seen": 1793721419.653404,
+    "ast_hash": "6d9e44889a0f2ab6bb26e927550cb591",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0051.webp": {
+    "mtime": 1793719701.5566506,
+    "seen": 1793721419.653405,
+    "ast_hash": "fb81dcd54087b3c5772b8db7d6f6eac0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0052.webp": {
+    "mtime": 1793719701.6466398,
+    "seen": 1793721419.653405,
+    "ast_hash": "0f52e5877520aa90e13c3fc48bad053c",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0053.webp": {
+    "mtime": 1793719701.7470927,
+    "seen": 1793721419.653406,
+    "ast_hash": "ecee7c55f4385f31765e40c23fc1d981",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0054.webp": {
+    "mtime": 1793719701.8472822,
+    "seen": 1793721419.6534069,
+    "ast_hash": "d696e5662d9eb9d7f7d67bd2aabc48eb",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/clinical/img_clin_0055.webp": {
+    "mtime": 1793719701.9439497,
+    "seen": 1793721419.6534069,
+    "ast_hash": "8b51009a1d0fa48f0d1db595c659a2ec",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0029.webp": {
+    "mtime": 1793719674.8311598,
+    "seen": 1793721419.6538491,
+    "ast_hash": "5a0459a6d33ade3c0921382ee93859c1",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0030.webp": {
+    "mtime": 1793719675.0069606,
+    "seen": 1793721419.65385,
+    "ast_hash": "fa47c661bfea30c2da740b409812c203",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0031.webp": {
+    "mtime": 1793719675.0983508,
+    "seen": 1793721419.6538508,
+    "ast_hash": "a22b48a759ae1ca7b959b79aba82c07f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0032.webp": {
+    "mtime": 1793719675.2341692,
+    "seen": 1793721419.653852,
+    "ast_hash": "ac416a695b10c37dd2b5c6e21caa16c6",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0033.webp": {
+    "mtime": 1793719675.3889432,
+    "seen": 1793721419.653852,
+    "ast_hash": "684751f84eb6b903e436ae7f8ac0ff62",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0034.webp": {
+    "mtime": 1793719675.5046198,
+    "seen": 1793721419.653853,
+    "ast_hash": "09c3c179f25f9886895bbc2718c08eef",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0035.webp": {
+    "mtime": 1793719675.5980814,
+    "seen": 1793721419.653854,
+    "ast_hash": "ce88d4657da072441481e8f2f13685bf",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0036.webp": {
+    "mtime": 1793719675.752717,
+    "seen": 1793721419.653854,
+    "ast_hash": "081de6b1097fab4f722a9857d035011a",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0037.webp": {
+    "mtime": 1793719675.9013934,
+    "seen": 1793721419.653855,
+    "ast_hash": "a02fd7b7ed674a765735dfca5a40dceb",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0038.webp": {
+    "mtime": 1793719676.0783553,
+    "seen": 1793721419.653856,
+    "ast_hash": "cd84e02663d0291e37a4fbf916f9d067",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0039.webp": {
+    "mtime": 1793719676.2546766,
+    "seen": 1793721419.653857,
+    "ast_hash": "dab10a314f53e64a1571c1c285529584",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0040.webp": {
+    "mtime": 1793719676.4317803,
+    "seen": 1793721419.653858,
+    "ast_hash": "c9218d6e707c324ea25e363d82345ebf",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0041.webp": {
+    "mtime": 1793719676.5054717,
+    "seen": 1793721419.653858,
+    "ast_hash": "59e2259000f35b917bcf01f701f212c0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0042.webp": {
+    "mtime": 1793719676.611116,
+    "seen": 1793721419.6538591,
+    "ast_hash": "18a663129bd6621f6661fd4ea89995d9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0043.webp": {
+    "mtime": 1793719676.724015,
+    "seen": 1793721419.65386,
+    "ast_hash": "3b640af132437839cb7ef8c747f41974",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0044.webp": {
+    "mtime": 1793719676.8754046,
+    "seen": 1793721419.653861,
+    "ast_hash": "543b9b06643c07b13cb341e0fc1067b3",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0045.webp": {
+    "mtime": 1793719676.996955,
+    "seen": 1793721419.653861,
+    "ast_hash": "fb61014b6a0843fb057059db348e4a1b",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0046.webp": {
+    "mtime": 1793719677.1551359,
+    "seen": 1793721419.653862,
+    "ast_hash": "a60e9594de687750378672f481ad81e5",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0047.webp": {
+    "mtime": 1793719677.298575,
+    "seen": 1793721419.653863,
+    "ast_hash": "a60e9594de687750378672f481ad81e5",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0048.webp": {
+    "mtime": 1793719677.4416351,
+    "seen": 1793721419.653864,
+    "ast_hash": "6a40fa6103e79aa4afe3c2c0574b489d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0049.webp": {
+    "mtime": 1793719677.6024659,
+    "seen": 1793721419.653864,
+    "ast_hash": "ccc2dd97ee096d6bb279da091a6fffbe",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0050.webp": {
+    "mtime": 1793719677.704717,
+    "seen": 1793721419.6538649,
+    "ast_hash": "193307f1d973f212b1cd50f193246e50",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0051.webp": {
+    "mtime": 1793719677.89487,
+    "seen": 1793721419.653866,
+    "ast_hash": "d5afe01bab2f7d13a10e39f03a1abc24",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0052.webp": {
+    "mtime": 1793719678.0788789,
+    "seen": 1793721419.653867,
+    "ast_hash": "d558908c711a5aad33885f20da43e37e",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0053.webp": {
+    "mtime": 1793719678.178516,
+    "seen": 1793721419.653867,
+    "ast_hash": "1c832ecd0d636c9edae40e4951435311",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0054.webp": {
+    "mtime": 1793719678.3314831,
+    "seen": 1793721419.653868,
+    "ast_hash": "305b7825666b640b13ca473d2cd8d3a3",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0055.webp": {
+    "mtime": 1793719678.468661,
+    "seen": 1793721419.6538692,
+    "ast_hash": "305b7825666b640b13ca473d2cd8d3a3",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0056.webp": {
+    "mtime": 1793719678.5731652,
+    "seen": 1793721419.6538692,
+    "ast_hash": "d885209b85e7fa4148792f2be594cc52",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0057.webp": {
+    "mtime": 1793719678.6975515,
+    "seen": 1793721419.65387,
+    "ast_hash": "a308d34e41e0bb6eec0a8e13978cfd90",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0058.webp": {
+    "mtime": 1793719678.791514,
+    "seen": 1793721419.653871,
+    "ast_hash": "4381a579034080b489cc9787541dbda8",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0059.webp": {
+    "mtime": 1793719678.877314,
+    "seen": 1793721419.653871,
+    "ast_hash": "4381a579034080b489cc9787541dbda8",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0060.webp": {
+    "mtime": 1793719679.002761,
+    "seen": 1793721419.653872,
+    "ast_hash": "7b8f2c74ccc698cdccf83f4ef4f048e8",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0061.webp": {
+    "mtime": 1793719679.1082764,
+    "seen": 1793721419.653873,
+    "ast_hash": "fda2f3a35b12828fde4dc58a1cf4f86c",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0062.webp": {
+    "mtime": 1793719679.22588,
+    "seen": 1793721419.653874,
+    "ast_hash": "63f9c377f9760674531e150cf0f16261",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0063.webp": {
+    "mtime": 1793719679.3586671,
+    "seen": 1793721419.653874,
+    "ast_hash": "4d72bcf7a448498fe29bbb02da5b4e08",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0064.webp": {
+    "mtime": 1793719679.52313,
+    "seen": 1793721419.6538749,
+    "ast_hash": "776299250d9827e6e95688af3b331a52",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/histology/img_hist_0065.webp": {
+    "mtime": 1793719679.6408455,
+    "seen": 1793721419.653876,
+    "ast_hash": "78b549c3ddbaed8e3645703063ffc7b0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0041.webp": {
+    "mtime": 1793719696.5431037,
+    "seen": 1793721419.654399,
+    "ast_hash": "38f4aefede18dd1253121b855cf2c7dd",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0042.webp": {
+    "mtime": 1793719696.766987,
+    "seen": 1793721419.6544,
+    "ast_hash": "c00addae5379c899b12d7d70b2103020",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0043.webp": {
+    "mtime": 1793719696.884261,
+    "seen": 1793721419.654401,
+    "ast_hash": "f15924c8de61541f319c2d125f7878a0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0044.webp": {
+    "mtime": 1793719696.9924622,
+    "seen": 1793721419.654402,
+    "ast_hash": "0b76a6123d2eede5b106c31874455e86",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0045.webp": {
+    "mtime": 1793719697.094506,
+    "seen": 1793721419.654402,
+    "ast_hash": "e247b96fa6849b430dfc37c37a51f4e9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0046.webp": {
+    "mtime": 1793719697.1899247,
+    "seen": 1793721419.654403,
+    "ast_hash": "44f4ef96892654174383a0ae849ff280",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0047.webp": {
+    "mtime": 1793719697.2628055,
+    "seen": 1793721419.6544042,
+    "ast_hash": "ecd0ba616f143a36bc7f5984110288f8",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0048.webp": {
+    "mtime": 1793719697.3380458,
+    "seen": 1793721419.6544042,
+    "ast_hash": "4c619b5705fa28a5a61ed5cdff156463",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0049.webp": {
+    "mtime": 1793719697.4632447,
+    "seen": 1793721419.654405,
+    "ast_hash": "3d52bb5ecf2fbacbceb64b3158a6baac",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0050.webp": {
+    "mtime": 1793719697.5768292,
+    "seen": 1793721419.6544058,
+    "ast_hash": "2979db35fa660498c6d4e08aed46b518",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0051.webp": {
+    "mtime": 1793719697.6614661,
+    "seen": 1793721419.6544058,
+    "ast_hash": "718b2083d955545ddeea84b0461e6950",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0052.webp": {
+    "mtime": 1793719697.7578619,
+    "seen": 1793721419.654407,
+    "ast_hash": "871cf5658a2025d094cc752b2d4f0971",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0053.webp": {
+    "mtime": 1793719697.872253,
+    "seen": 1793721419.654408,
+    "ast_hash": "acdba1f81d5e5a34a5e7706e7737560c",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0054.webp": {
+    "mtime": 1793719697.946341,
+    "seen": 1793721419.654409,
+    "ast_hash": "4c619b5705fa28a5a61ed5cdff156463",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0055.webp": {
+    "mtime": 1793719698.0526724,
+    "seen": 1793721419.65441,
+    "ast_hash": "77cf9c746465df3ae3997ae6d3e216ef",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0056.webp": {
+    "mtime": 1793719698.2004933,
+    "seen": 1793721419.654411,
+    "ast_hash": "4c81ea898d0b5e0a9e1eed11c233fe0c",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0057.webp": {
+    "mtime": 1793719698.3280082,
+    "seen": 1793721419.654411,
+    "ast_hash": "900d9b48db862c5f06c0a09679f3732d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0058.webp": {
+    "mtime": 1793719698.4782586,
+    "seen": 1793721419.654412,
+    "ast_hash": "a8e754e053a8d7eecda5a0b747bc20d9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0059.webp": {
+    "mtime": 1793719698.6419563,
+    "seen": 1793721419.654413,
+    "ast_hash": "7311e3f1edea29d91cc2f70136d61298",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0060.webp": {
+    "mtime": 1793719698.8190186,
+    "seen": 1793721419.654413,
+    "ast_hash": "90d5ac2cec07df6203b738f389c802ce",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0061.webp": {
+    "mtime": 1793719698.9640737,
+    "seen": 1793721419.6544142,
+    "ast_hash": "14fb599124865bd5f93c951751a6bb1f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0062.webp": {
+    "mtime": 1793719699.1195245,
+    "seen": 1793721419.6544151,
+    "ast_hash": "65ed201a6839b6923cdb0c88e51821e2",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0063.webp": {
+    "mtime": 1793719699.2723012,
+    "seen": 1793721419.6544151,
+    "ast_hash": "11b0b2610dde328b8fd256acb3b300de",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0064.webp": {
+    "mtime": 1793719699.3933935,
+    "seen": 1793721419.6544158,
+    "ast_hash": "86145dd766b7b7c88641a6c82d4952b2",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/microbiology/img_micr_0065.webp": {
+    "mtime": 1793719699.5136085,
+    "seen": 1793721419.6544168,
+    "ast_hash": "52191abb8fd393d9b17effc300d5d57c",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0042.webp": {
+    "mtime": 1793719686.0882618,
+    "seen": 1793721419.6553862,
+    "ast_hash": "e96751d90633e578adfcbdcb67ecb7d7",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0043.webp": {
+    "mtime": 1793719686.189034,
+    "seen": 1793721419.655387,
+    "ast_hash": "bbfe77e87f60ed326cc5e436366db718",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0044.webp": {
+    "mtime": 1793719686.3113418,
+    "seen": 1793721419.6553879,
+    "ast_hash": "5e362a2d9bbbb4bb74b825a8c2e5180d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0045.webp": {
+    "mtime": 1793719686.4269722,
+    "seen": 1793721419.6553879,
+    "ast_hash": "bb45f95439b938f19b14d267709cb897",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0046.webp": {
+    "mtime": 1793719686.5358467,
+    "seen": 1793721419.6553888,
+    "ast_hash": "3622679e659636b49a72d994b8fed581",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0047.webp": {
+    "mtime": 1793719686.7675092,
+    "seen": 1793721419.65539,
+    "ast_hash": "863fd074ef6189277672eb94fc078a6d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0048.webp": {
+    "mtime": 1793719687.0771277,
+    "seen": 1793721419.655391,
+    "ast_hash": "bdc41ae8aab85a03d051aaa1a95d399e",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0049.webp": {
+    "mtime": 1793719687.277025,
+    "seen": 1793721419.655392,
+    "ast_hash": "0cb6af316c54fef8eb5c261c3c3c6749",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0050.webp": {
+    "mtime": 1793719687.4288108,
+    "seen": 1793721419.655392,
+    "ast_hash": "191a8dc1d011326b19d24dfa30888a4e",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0051.webp": {
+    "mtime": 1793719687.6633189,
+    "seen": 1793721419.6553931,
+    "ast_hash": "373479c68233d67e2be1e5c8cc616af0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0052.webp": {
+    "mtime": 1793719687.8851073,
+    "seen": 1793721419.655394,
+    "ast_hash": "d0f5aebca6877eeb0e23cb42facedd7c",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0053.webp": {
+    "mtime": 1793719688.1178827,
+    "seen": 1793721419.655394,
+    "ast_hash": "b2581b8c279dc05fc3a4735f2e2de8e3",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0054.webp": {
+    "mtime": 1793719688.3265245,
+    "seen": 1793721419.655395,
+    "ast_hash": "7f6b2217824c47be1fe48c3f64a224de",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0055.webp": {
+    "mtime": 1793719688.4206884,
+    "seen": 1793721419.655396,
+    "ast_hash": "a1871813b0956faf7b8eb9828417201e",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0056.webp": {
+    "mtime": 1793719688.5298858,
+    "seen": 1793721419.655396,
+    "ast_hash": "8fa67d2e93dde6748fe91b9951875beb",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0057.webp": {
+    "mtime": 1793719688.7471766,
+    "seen": 1793721419.6553972,
+    "ast_hash": "cb701dca86954829b398172c0fd47471",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0058.webp": {
+    "mtime": 1793719688.9471416,
+    "seen": 1793721419.655398,
+    "ast_hash": "c1ab76ca0638182a692a1712dcd84189",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0059.webp": {
+    "mtime": 1793719689.185546,
+    "seen": 1793721419.655398,
+    "ast_hash": "8711f8aa52c5d900d98ffde590d62bfe",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0060.webp": {
+    "mtime": 1793719689.436536,
+    "seen": 1793721419.6553988,
+    "ast_hash": "18eafed7e7ed76250b96a84776bb4c19",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0061.webp": {
+    "mtime": 1793719689.5363505,
+    "seen": 1793721419.6554,
+    "ast_hash": "3a35384151b2be4e0e069da159f7579c",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0062.webp": {
+    "mtime": 1793719689.7724712,
+    "seen": 1793721419.6554,
+    "ast_hash": "514a0ff5c3fb3868dd7c494e4b37f63e",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0063.webp": {
+    "mtime": 1793719690.017352,
+    "seen": 1793721419.655401,
+    "ast_hash": "16cb78b777aae35955fdfc03e0b98f31",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0064.webp": {
+    "mtime": 1793719690.2777176,
+    "seen": 1793721419.655402,
+    "ast_hash": "300e0fd163bd344cba077967311f67b5",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0065.webp": {
+    "mtime": 1793719690.3633962,
+    "seen": 1793721419.655403,
+    "ast_hash": "a2844ab352920ec86f31c86764a9fd16",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0066.webp": {
+    "mtime": 1793719690.5628862,
+    "seen": 1793721419.655403,
+    "ast_hash": "30584f42f10a7a14187841d7d2669a4f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0067.webp": {
+    "mtime": 1793719690.701499,
+    "seen": 1793721419.655404,
+    "ast_hash": "c2611e44ada0018884190cec029d79ef",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0068.webp": {
+    "mtime": 1793719690.8655834,
+    "seen": 1793721419.655405,
+    "ast_hash": "2f47d9f537f6cddf50cf7e9d241b7cbb",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0069.webp": {
+    "mtime": 1793719691.0425618,
+    "seen": 1793721419.655405,
+    "ast_hash": "c80ac0eefc1b3ed860eb780fdd9b6eb8",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0070.webp": {
+    "mtime": 1793719691.2087462,
+    "seen": 1793721419.655406,
+    "ast_hash": "247af85acd853c97aae9f737f2f62f9c",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0071.webp": {
+    "mtime": 1793719691.3017242,
+    "seen": 1793721419.6554072,
+    "ast_hash": "c36b430a2df8e2ae7918840c5bae130b",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0072.webp": {
+    "mtime": 1793719691.4057977,
+    "seen": 1793721419.6554081,
+    "ast_hash": "57b972c43b2f00b39f794528777c7ba9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0073.webp": {
+    "mtime": 1793719691.504979,
+    "seen": 1793721419.6554081,
+    "ast_hash": "13659658e9838c6b2481a064a3b6cc8b",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0074.webp": {
+    "mtime": 1793719691.6440573,
+    "seen": 1793721419.6554089,
+    "ast_hash": "e98812c1236ca16f417f855bd1c70b55",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/parasitology/img_para_0075.webp": {
+    "mtime": 1793719691.7671728,
+    "seen": 1793721419.6554098,
+    "ast_hash": "faa273b34a9d53e890ae3b6ecb9d6ae1",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0031.webp": {
+    "mtime": 1793719679.8038013,
+    "seen": 1793721419.655961,
+    "ast_hash": "bfa7d47af530e348fc62765d529a65ff",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0032.webp": {
+    "mtime": 1793719679.9651558,
+    "seen": 1793721419.6559622,
+    "ast_hash": "782a757dc0ded113da92ba0f435dcff1",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0033.webp": {
+    "mtime": 1793719680.212096,
+    "seen": 1793721419.655963,
+    "ast_hash": "9653782c056fed2ae66f19239a424d49",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0034.webp": {
+    "mtime": 1793719680.3967197,
+    "seen": 1793721419.655964,
+    "ast_hash": "087441f24b07c3b68920641f5104632c",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0035.webp": {
+    "mtime": 1793719680.587281,
+    "seen": 1793721419.655964,
+    "ast_hash": "1be201234c9455c638853d366915a87c",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0036.webp": {
+    "mtime": 1793719680.763359,
+    "seen": 1793721419.6559649,
+    "ast_hash": "178ea5f6f147d098f5905fa8579db4fa",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0037.webp": {
+    "mtime": 1793719680.9407644,
+    "seen": 1793721419.655966,
+    "ast_hash": "4c36edf9850e5bc5d29aa71b612eed64",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0038.webp": {
+    "mtime": 1793719681.1123536,
+    "seen": 1793721419.655967,
+    "ast_hash": "fef44e8a72e3b79faee27679e691e003",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0039.webp": {
+    "mtime": 1793719681.3333154,
+    "seen": 1793721419.655967,
+    "ast_hash": "9db4e47759e9ef86087c5f0c5ca41fe9",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0040.webp": {
+    "mtime": 1793719681.5357742,
+    "seen": 1793721419.655968,
+    "ast_hash": "5c2d1b6edc97b48771e90014890b87b6",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0041.webp": {
+    "mtime": 1793719681.6530118,
+    "seen": 1793721419.6559691,
+    "ast_hash": "d30ccf060695b1b4a7b348dfae3b16f0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0042.webp": {
+    "mtime": 1793719681.8004708,
+    "seen": 1793721419.65597,
+    "ast_hash": "34a83197b85f92942a62ef18a29540c8",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0043.webp": {
+    "mtime": 1793719681.9344556,
+    "seen": 1793721419.65597,
+    "ast_hash": "117e81858a07b9e94b4914e6bd6eff53",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0044.webp": {
+    "mtime": 1793719682.1231618,
+    "seen": 1793721419.655971,
+    "ast_hash": "7f3808e2bc22b152ffca576007da7f0e",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0045.webp": {
+    "mtime": 1793719682.276034,
+    "seen": 1793721419.655972,
+    "ast_hash": "00671b6d7a602e0641a06146b82080ed",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0046.webp": {
+    "mtime": 1793719682.5045466,
+    "seen": 1793721419.6559732,
+    "ast_hash": "e48565de5ad30e3ca1da2f695302b1e3",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0047.webp": {
+    "mtime": 1793719682.7170906,
+    "seen": 1793721419.6559732,
+    "ast_hash": "3e3f68f4674b64192d2e45ae9db1bc38",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0048.webp": {
+    "mtime": 1793719682.8791554,
+    "seen": 1793721419.655974,
+    "ast_hash": "64280a68aa59477013d6c91a6899021e",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0049.webp": {
+    "mtime": 1793719683.0948749,
+    "seen": 1793721419.6559749,
+    "ast_hash": "be3691fe414210d843fa520b1f5257b3",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0050.webp": {
+    "mtime": 1793719683.3003623,
+    "seen": 1793721419.6559758,
+    "ast_hash": "b13e53c0b647f1e786178659f74d6996",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0051.webp": {
+    "mtime": 1793719683.472134,
+    "seen": 1793721419.6559758,
+    "ast_hash": "4b1db48df44e1a09fca5ff5feb1ea949",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0052.webp": {
+    "mtime": 1793719683.603828,
+    "seen": 1793721419.655977,
+    "ast_hash": "8e3dfa1d7d2e4947294e2dd8bfe7b196",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0053.webp": {
+    "mtime": 1793719683.7705557,
+    "seen": 1793721419.655978,
+    "ast_hash": "755360069985e386dae4ba908da53073",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0054.webp": {
+    "mtime": 1793719683.9343426,
+    "seen": 1793721419.655978,
+    "ast_hash": "bf7a0f9fbd32a51cdd3375ce513b64f6",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0055.webp": {
+    "mtime": 1793719684.0899417,
+    "seen": 1793721419.655979,
+    "ast_hash": "805b000fbf6b86ab7a0c0e7cef688123",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0056.webp": {
+    "mtime": 1793719684.305812,
+    "seen": 1793721419.65598,
+    "ast_hash": "1594d36340996d1d751da24a74779d93",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0057.webp": {
+    "mtime": 1793719684.4255998,
+    "seen": 1793721419.655981,
+    "ast_hash": "2949282e469fd47c1f0eb4c50d077a77",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0058.webp": {
+    "mtime": 1793719684.5428011,
+    "seen": 1793721419.655981,
+    "ast_hash": "532f6e83f5f9305a2dc71e1a46f3124b",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0059.webp": {
+    "mtime": 1793719684.7102666,
+    "seen": 1793721419.655982,
+    "ast_hash": "47a70f1260c22001f4519c348c64cbd4",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0060.webp": {
+    "mtime": 1793719684.9115367,
+    "seen": 1793721419.6559832,
+    "ast_hash": "557ee2bfb420cc101c3001f5393c505a",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0061.webp": {
+    "mtime": 1793719685.0154238,
+    "seen": 1793721419.6559832,
+    "ast_hash": "d98e15ebf6d3b80a2e6c9b590b1c4d76",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0062.webp": {
+    "mtime": 1793719685.2350621,
+    "seen": 1793721419.6559842,
+    "ast_hash": "1b94ca1e2c1d7d0bfce1f55c24b56332",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0063.webp": {
+    "mtime": 1793719685.5688622,
+    "seen": 1793721419.6559849,
+    "ast_hash": "4c4a1864b1870853cec2bbc9acc82b43",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0064.webp": {
+    "mtime": 1793719685.7575614,
+    "seen": 1793721419.6559858,
+    "ast_hash": "03662971184474067d2211d053a579ed",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/pathology/img_path_0065.webp": {
+    "mtime": 1793719685.8863094,
+    "seen": 1793721419.6559858,
+    "ast_hash": "77f534ddae554252cc1e52d9616cf73b",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0041.webp": {
+    "mtime": 1793719691.9117157,
+    "seen": 1793721419.656493,
+    "ast_hash": "67cd76138501bab6ae0bb0d55ddec13f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0042.webp": {
+    "mtime": 1793719692.0207596,
+    "seen": 1793721419.656493,
+    "ast_hash": "d8ff3b59b587b126af0089a1ba21e434",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0043.webp": {
+    "mtime": 1793719692.1281056,
+    "seen": 1793721419.6564941,
+    "ast_hash": "eb16b51cc6a68a5de9f9b2c9eeeb9f76",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0044.webp": {
+    "mtime": 1793719692.2343345,
+    "seen": 1793721419.656495,
+    "ast_hash": "4e865d7545ab68933d5a729def34dbbb",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0045.webp": {
+    "mtime": 1793719692.3460746,
+    "seen": 1793721419.656496,
+    "ast_hash": "949a495c0a47d176278a689206b81b65",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0046.webp": {
+    "mtime": 1793719692.4586656,
+    "seen": 1793721419.656496,
+    "ast_hash": "51f725898747eebad7fcb5582f8cf13d",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0047.webp": {
+    "mtime": 1793719692.5600488,
+    "seen": 1793721419.656497,
+    "ast_hash": "deb725f3808719fd7db3bf22d4a379a0",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0048.webp": {
+    "mtime": 1793719692.6472027,
+    "seen": 1793721419.656498,
+    "ast_hash": "1d5a8b65c54cec9b9ba171dae758c2e2",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0049.webp": {
+    "mtime": 1793719692.7299645,
+    "seen": 1793721419.656499,
+    "ast_hash": "ad214fa30c156f14ef6e9d8a5c8949b2",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0050.webp": {
+    "mtime": 1793719692.8347948,
+    "seen": 1793721419.656499,
+    "ast_hash": "214fe5b369a25a46beaada4f2590a2da",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0051.webp": {
+    "mtime": 1793719692.9663467,
+    "seen": 1793721419.6564999,
+    "ast_hash": "0e7ce3e9732f4b07ab07e5b777b3e9fa",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0052.webp": {
+    "mtime": 1793719693.0545819,
+    "seen": 1793721419.656501,
+    "ast_hash": "b45c2edb3041976c56a5e22bff9e1102",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0053.webp": {
+    "mtime": 1793719693.1874678,
+    "seen": 1793721419.656501,
+    "ast_hash": "2d4081197ef76ac853bedd0814435dc5",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0054.webp": {
+    "mtime": 1793719693.3052979,
+    "seen": 1793721419.656502,
+    "ast_hash": "20ff0a026c0f9a0d2036ef9197860ace",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0055.webp": {
+    "mtime": 1793719693.392405,
+    "seen": 1793721419.656503,
+    "ast_hash": "ff09ceea8e08816156c937d4554bc8b5",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0056.webp": {
+    "mtime": 1793719693.476311,
+    "seen": 1793721419.656503,
+    "ast_hash": "a3045b3bd4587997d447397b23ac03ca",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0057.webp": {
+    "mtime": 1793719693.5863967,
+    "seen": 1793721419.6565042,
+    "ast_hash": "04a170baf93b1d17782fe3b6084e8a71",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0058.webp": {
+    "mtime": 1793719693.677922,
+    "seen": 1793721419.656505,
+    "ast_hash": "5336dc52b316b45d3c22df14008c1e44",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0059.webp": {
+    "mtime": 1793719693.782247,
+    "seen": 1793721419.656506,
+    "ast_hash": "fa11c3fd576ba50a2a0251bc30189d9a",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0060.webp": {
+    "mtime": 1793719693.870882,
+    "seen": 1793721419.656506,
+    "ast_hash": "eb5804ba96b4337749e95b07bae4c30f",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0061.webp": {
+    "mtime": 1793719693.9711282,
+    "seen": 1793721419.6565068,
+    "ast_hash": "4ecbc49334031909038a2cceb7d8bd45",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0062.webp": {
+    "mtime": 1793719694.062129,
+    "seen": 1793721419.656508,
+    "ast_hash": "8cfca856a3708f87e42ea5b5bb3a6039",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0063.webp": {
+    "mtime": 1793719694.1421053,
+    "seen": 1793721419.656509,
+    "ast_hash": "9b86f19bd456714c0d3474de9c5dd9e7",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0064.webp": {
+    "mtime": 1793719694.2436788,
+    "seen": 1793721419.656509,
+    "ast_hash": "f31ca15040b2cd5a3a3080c9948fa53b",
+    "semantic_hash": ""
+  },
+  "public/images/practical/mgl-3/physiology/img_phys_0065.webp": {
+    "mtime": 1793719694.3344338,
+    "seen": 1793721419.6565099,
+    "ast_hash": "4ecbc49334031909038a2cceb7d8bd45",
     "semantic_hash": ""
   }
 }

@@ -581,3 +581,487 @@ PARASITOLOGY_QUESTIONS = [
         "imageUrl": "/images/practical/mgl-3/parasitology/clinical_case_12_hookworm.webp"
     }
 ]
+
+# NET_NEW_PARASITOLOGY for stations 42 to 75
+
+NET_NEW_PARASITOLOGY = [
+    {
+        "seq": 42,
+        "lecture": 1,
+        "text": "Examine this microscopic mount of blood flukes. Identify this adult worm pair demonstrating the female held within the gynecophoric canal of the male:",
+        "correct_answer": "Schistosoma mansoni adult worm pair in copula",
+        "distractors": [
+            "Fasciola hepatica adult worms",
+            "Ancylostoma duodenale copulating pair",
+            "Enterobius vermicularis adult worms"
+        ],
+        "explanation": "Criteria of Identification: Schistosoma mansoni adults are dioecious trematodes; the stouter male (6–10 mm) has a ventral longitudinal groove (gynecophoric canal) with a tuberculated cuticle and 8–9 testes, embracing the longer, slender, cylindrical female (10–14 mm) within the canal.",
+        "keyConcept": "S. mansoni adults: stouter tuberculated male with gynecophoric canal embracing slender cylindrical female.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0042.webp"
+    },
+    {
+        "seq": 43,
+        "lecture": 1,
+        "text": "Examine this freshwater snail shell. Identify this discoidal, flattened snail acting as the intermediate host for Schistosoma mansoni:",
+        "correct_answer": "Biomphalaria alexandrina",
+        "distractors": [
+            "Bulinus truncatus",
+            "Lymnaea cailliaudi",
+            "Cleopatra bulimoides"
+        ],
+        "explanation": "Criteria of Identification: Biomphalaria alexandrina is a planorbid freshwater snail recognized by its flat, discoidal shell coiled in a single plane (wheel-shaped) without an elevated spire, serving as the obligate intermediate host for Schistosoma mansoni in Egypt.",
+        "keyConcept": "Biomphalaria alexandrina: discoidal, flat wheel-shaped shell without spire; intermediate host of S. mansoni.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0043.webp"
+    },
+    {
+        "seq": 44,
+        "lecture": 1,
+        "text": "Examine this freshwater snail shell showing a globular shape with an elevated spire and left-sided (sinistral) aperture. Identify this intermediate host:",
+        "correct_answer": "Bulinus truncatus",
+        "distractors": [
+            "Biomphalaria alexandrina",
+            "Lymnaea cailliaudi",
+            "Lanistes carinatus"
+        ],
+        "explanation": "Criteria of Identification: Bulinus truncatus has a globular or ovate shell with a blunt spire and a sinistral (left-sided) opening when viewed with the spire facing upwards, serving as the intermediate host for Schistosoma haematobium in Egypt.",
+        "keyConcept": "Bulinus truncatus: globular shell with sinistral (left-sided) aperture; intermediate host of S. haematobium.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0044.webp"
+    },
+    {
+        "seq": 45,
+        "lecture": 1,
+        "text": "Examine this freshwater snail shell showing an elongated cone with a tall pointed spire and a large right-sided (dextral) aperture. Identify this intermediate host:",
+        "correct_answer": "Lymnaea cailliaudi (Lymnaea natalensis)",
+        "distractors": [
+            "Biomphalaria alexandrina",
+            "Bulinus truncatus",
+            "Cleopatra bulimoides"
+        ],
+        "explanation": "Criteria of Identification: Lymnaea cailliaudi possesses an elongated, thin, horn-shaped shell with a tall sharply pointed spire, few rapid-expanding whorls, and a large dextral (right-sided) opening, acting as the intermediate host for Fasciola gigantica in Egypt.",
+        "keyConcept": "Lymnaea cailliaudi: tall pointed spire with large dextral aperture; intermediate host of Fasciola gigantica.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0045.webp"
+    },
+    {
+        "seq": 46,
+        "lecture": 1,
+        "text": "Examine this small operculated freshwater snail shell with a solid conical spire. Identify this intermediate host for Heterophyes heterophyes:",
+        "correct_answer": "Cleopatra bulimoides (Pirenella conica)",
+        "distractors": [
+            "Biomphalaria alexandrina",
+            "Lymnaea cailliaudi",
+            "Bulinus truncatus"
+        ],
+        "explanation": "Criteria of Identification: Cleopatra bulimoides (freshwater) and Pirenella conica (brackish water lakes Manzala and Idku) are small conical operculated snails with thick, turreted shells that act as the first intermediate host for Heterophyes heterophyes in Egypt.",
+        "keyConcept": "Cleopatra bulimoides / Pirenella conica: small conical operculated snails; first intermediate host of H. heterophyes.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0046.webp"
+    },
+    {
+        "seq": 47,
+        "lecture": 1,
+        "text": "Examine this macroscopic mounted liver fluke. Identify this large, leaf-shaped parasite featuring a distinct conical anterior projection (cephalic cone) and branched intestinal caeca:",
+        "correct_answer": "Fasciola gigantica adult worm",
+        "distractors": [
+            "Heterophyes heterophyes adult worm",
+            "Schistosoma mansoni adult worm",
+            "Dicrocoelium dendriticum adult worm"
+        ],
+        "explanation": "Criteria of Identification: Fasciola gigantica is a massive leaf-shaped liver fluke (2.5–7.5 cm long) featuring an anterior conical projection (cephalic cone), less prominent shoulders than F. hepatica, highly branched intestinal caeca, and profusely dendritic testes filling the posterior body.",
+        "keyConcept": "Fasciola gigantica: large leaf-shaped fluke with anterior cephalic cone and highly branched intestinal caeca.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0047.webp"
+    },
+    {
+        "seq": 48,
+        "lecture": 2,
+        "text": "Examine this microscopic slide of a minute pyriform intestinal fluke (< 2 mm). Identify this organism possessing three suckers, including a specialized genital sucker (gonotyl):",
+        "correct_answer": "Heterophyes heterophyes adult worm",
+        "distractors": [
+            "Fasciola hepatica adult worm",
+            "Enterobius vermicularis adult worm",
+            "Schistosoma haematobium adult worm"
+        ],
+        "explanation": "Criteria of Identification: Heterophyes heterophyes is a microscopic, tear-drop shaped fluke (1.0–1.7 mm) equipped with 3 suckers: oral sucker, ventral sucker (acetabulum), and a distinctive third genital sucker (gonotyl) armed with 70–80 chitinous rodlets located posterolateral to the ventral sucker.",
+        "keyConcept": "Heterophyes heterophyes: minute pyriform fluke (< 2 mm) armed with three suckers including a genital gonotyl.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0048.webp"
+    },
+    {
+        "seq": 49,
+        "lecture": 2,
+        "text": "Examine this microscopic stool preparation showing a tiny golden-yellow operculated ovum (30 x 15 µm) with distinct opercular shoulders and a small knob at the abopercular pole. Identify this egg:",
+        "correct_answer": "Heterophyes heterophyes egg",
+        "distractors": [
+            "Fasciola gigantica egg",
+            "Schistosoma mansoni egg",
+            "Ascaris lumbricoides egg"
+        ],
+        "explanation": "Criteria of Identification: Heterophyes heterophyes eggs are minute (28–30 x 15–17 µm), oval, golden-yellow, thick-shelled eggs possessing a distinct convex operculum resting upon opercular shoulders, a small thickened knob at the posterior abopercular pole, and containing a fully formed ciliated miracidium.",
+        "keyConcept": "Heterophyes egg: tiny golden-yellow operculated egg (30 x 15 µm) with shoulders and abopercular knob containing miracidium.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0049.webp"
+    },
+    {
+        "seq": 50,
+        "lecture": 2,
+        "text": "Examine this microscopic stool mount showing an asymmetrical, dark brown, thick-shelled operculated egg containing a miracidium with two conspicuous round eyespots. Identify this parasite ovum:",
+        "correct_answer": "Dicrocoelium dendriticum (lancet fluke) egg",
+        "distractors": [
+            "Fasciola hepatica egg",
+            "Heterophyes heterophyes egg",
+            "Clonorchis sinensis egg"
+        ],
+        "explanation": "Criteria of Identification: Dicrocoelium dendriticum produces small (38–45 x 22–30 µm), thick-shelled, dark brown asymmetrical (one side flattened) operculated eggs containing a fully developed miracidium characterized by two prominent pigmented circular eyespots.",
+        "keyConcept": "Dicrocoelium egg: asymmetrical dark brown operculated egg containing a miracidium with two distinct eyespots.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0050.webp"
+    },
+    {
+        "seq": 51,
+        "lecture": 3,
+        "text": "Examine this mounted tapeworm scolex. Identify this quadrate head possessing four large cup-shaped suckers, without a rostellum and devoid of hooklets (unarmed scolex):",
+        "correct_answer": "Taenia saginata scolex (Beef tapeworm)",
+        "distractors": [
+            "Taenia solium scolex",
+            "Hymenolepis nana scolex",
+            "Dipylidium caninum scolex"
+        ],
+        "explanation": "Criteria of Identification: The adult scolex of Taenia saginata (beef tapeworm) is square/quadrangular in outline (1.5–2 mm across), possessing four large hemispherical suckers, but completely lacks a rostellum and hooks (unarmed scolex), distinguishing it from T. solium.",
+        "keyConcept": "Taenia saginata scolex: quadrangular with 4 suckers; unarmed (no rostellum, no hooks).",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0051.webp"
+    },
+    {
+        "seq": 52,
+        "lecture": 3,
+        "text": "Examine this mounted tapeworm scolex. Identify this globular head possessing four suckers and a prominent rostellum armed with a double crown of alternating hooklets:",
+        "correct_answer": "Taenia solium scolex (Pork tapeworm)",
+        "distractors": [
+            "Taenia saginata scolex",
+            "Diphyllobothrium latum scolex",
+            "Echinococcus granulosus scolex"
+        ],
+        "explanation": "Criteria of Identification: Taenia solium (pork tapeworm) has a globular scolex (~1 mm) armed with four suckers and a prominent, rounded rostellum bearing a double circle of 22 to 32 alternating large and small chitinous sickle-shaped hooklets.",
+        "keyConcept": "Taenia solium scolex: globular head armed with 4 suckers and a rostellum with double crown of hooklets.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0052.webp"
+    },
+    {
+        "seq": 53,
+        "lecture": 3,
+        "text": "Examine this cleared gravid tapeworm proglottid. Identify this segment showing a central longitudinal uterine stem giving off 15 to 30 fine, dichotomous lateral branches on each side:",
+        "correct_answer": "Taenia saginata gravid proglottid",
+        "distractors": [
+            "Taenia solium gravid proglottid",
+            "Diphyllobothrium latum proglottid",
+            "Dipylidium caninum proglottid"
+        ],
+        "explanation": "Criteria of Identification: Gravid proglottids of Taenia saginata are longer than wide (16–20 x 5–7 mm) and feature a central longitudinal uterine trunk bearing 15 to 30 main lateral branches on each side that divide dichotomously, filled with thousands of eggs.",
+        "keyConcept": "Taenia saginata gravid segment: 15 to 30 fine lateral uterine branches on each side dividing dichotomously.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0053.webp"
+    },
+    {
+        "seq": 54,
+        "lecture": 3,
+        "text": "Examine this cleared gravid tapeworm proglottid. Identify this segment showing a central uterine stem giving off 7 to 12 coarse, dendritic lateral branches on each side:",
+        "correct_answer": "Taenia solium gravid proglottid",
+        "distractors": [
+            "Taenia saginata gravid proglottid",
+            "Hymenolepis diminuta proglottid",
+            "Echinococcus proglottid"
+        ],
+        "explanation": "Criteria of Identification: Gravid segments of Taenia solium are longer than wide (10–12 x 5–6 mm) and are distinguished definitively from T. saginata by having only 7 to 12 main lateral uterine branches on each side, which branch coarsely in a dendritic fashion.",
+        "keyConcept": "Taenia solium gravid segment: 7 to 12 coarse, dendritic lateral uterine branches on each side.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0054.webp"
+    },
+    {
+        "seq": 55,
+        "lecture": 3,
+        "text": "Examine this tapeworm proglottid displaying an elongated, barrel- or cucumber-seed shape with two genital pores situated symmetrically on opposite lateral margins. Identify this segment:",
+        "correct_answer": "Dipylidium caninum gravid proglottid",
+        "distractors": [
+            "Taenia saginata proglottid",
+            "Hymenolepis nana proglottid",
+            "Diphyllobothrium latum proglottid"
+        ],
+        "explanation": "Criteria of Identification: Dipylidium caninum (dog tapeworm) gravid proglottids resemble cucumber seeds or grains of rice (12 x 3 mm) with two sets of reproductive organs and bilateral lateral genital pores (one on each lateral margin), filled with egg packets containing 8–15 oncospheres each.",
+        "keyConcept": "Dipylidium caninum: barrel-shaped 'cucumber seed' proglottid with bilateral dual lateral genital pores.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0055.webp"
+    },
+    {
+        "seq": 56,
+        "lecture": 3,
+        "text": "Examine this microscopic stool mount showing a large, circular, yellowish-brown egg (70–85 µm) containing a six-hooked oncosphere devoid of polar filaments. Identify this cestode ovum:",
+        "correct_answer": "Hymenolepis diminuta egg",
+        "distractors": [
+            "Hymenolepis nana egg",
+            "Taenia species egg",
+            "Ascaris lumbricoides egg"
+        ],
+        "explanation": "Criteria of Identification: Hymenolepis diminuta eggs are large, nearly spherical (70–85 µm), with a thick yellowish outer shell and an inner membrane enclosing a hexacanth oncosphere; they are distinguished definitively from H. nana (which has polar filaments) by the complete absence of polar filaments.",
+        "keyConcept": "Hymenolepis diminuta egg: large round egg (70–85 µm) with hexacanth embryo lacking polar filaments.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0056.webp"
+    },
+    {
+        "seq": 57,
+        "lecture": 3,
+        "text": "Examine this histopathological section of a hepatic cyst wall showing an outer, thick, acellular, eosinophilic, laminated chitinous cuticular layer resting upon an inner cellular germinal epithelium. Identify this parasite lesion:",
+        "correct_answer": "Hydatid cyst wall (Echinococcus granulosus)",
+        "distractors": [
+            "Amoebic abscess capsule",
+            "Biliary cystadenoma wall",
+            "Schistosomal fibrous pseudocapsule"
+        ],
+        "explanation": "Criteria of Identification: The hydatid cyst wall of Echinococcus granulosus consists of: 1) host fibrous adventitia (pericyst), 2) intermediate thick, acellular, non-nucleated, gelatinous laminated layer (cuticle) staining pale pink, and 3) thin, nucleated inner germinal layer producing brood capsules and scolices.",
+        "keyConcept": "Hydatid cyst wall: acellular eosinophilic laminated cuticular layer lined by cellular inner germinal epithelium.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0057.webp"
+    },
+    {
+        "seq": 58,
+        "lecture": 3,
+        "text": "Examine this wet mount of aspirated clear cyst fluid ('hydatid sand'). Identify these microscopic structures showing invaginated scolices bearing circular suckers and refractile chitinous hooklets:",
+        "correct_answer": "Echinococcus granulosus protoscolices and hooklets",
+        "distractors": [
+            "Fasciola metacercariae",
+            "Schistosoma miracidia",
+            "Taenia cysticercus cellulosae"
+        ],
+        "explanation": "Criteria of Identification: Hydatid sand consists of loose components precipitated within the hydatid cyst cavity, containing free invaginated or evaginated protoscolices (each equipped with 4 suckers and a rostellum of hooks), detached brood capsules, and loose refractile sickle-shaped hooklets.",
+        "keyConcept": "Hydatid sand: aspirated cyst sediment containing invaginated protoscolices with rostellar hooklets and suckers.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0058.webp"
+    },
+    {
+        "seq": 59,
+        "lecture": 4,
+        "text": "Examine this microscopic stool mount showing a golden-brown, broadly oval ovum (60 x 45 µm) with a thick shell covered by an irregular, coarsely tuberculated (mammillated) albuminous coat, containing an unsegmented central ovum. Identify this egg:",
+        "correct_answer": "Fertilized Ascaris lumbricoides egg",
+        "distractors": [
+            "Unfertilized Ascaris egg",
+            "Decorticated Ascaris egg",
+            "Trichuris trichiura egg"
+        ],
+        "explanation": "Criteria of Identification: Fertilized Ascaris lumbricoides eggs are round-to-oval (45–75 x 35–50 µm), bile-stained golden-brown, with a thick shell surrounded by a heavy, coarsely tuberculated (mammillated) external albuminous layer enclosing a single unsegmented ovum surrounded by crescentic clear spaces at each pole.",
+        "keyConcept": "Fertilized Ascaris egg: round-oval, thick shell with coarse tuberculated mammillated coat enclosing unsegmented ovum.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0059.webp"
+    },
+    {
+        "seq": 60,
+        "lecture": 4,
+        "text": "Examine this microscopic stool mount showing an elongated, narrower ovum (90 x 40 µm) with a thin shell and an irregular, disorganized, heavily mammillated coat completely filled with disorganized refractile yolk granules. Identify this egg:",
+        "correct_answer": "Unfertilized Ascaris lumbricoides egg",
+        "distractors": [
+            "Fertilized Ascaris egg",
+            "Decorticated Ascaris egg",
+            "Hookworm egg"
+        ],
+        "explanation": "Criteria of Identification: Unfertilized Ascaris lumbricoides eggs are longer and narrower than fertilized eggs (85–95 x 38–45 µm), with a thinner shell, prominent irregular scalloped mammillated coat, and an internal cavity completely packed with amorphous, highly refractile lecithin/yolk granules without clear spaces.",
+        "keyConcept": "Unfertilized Ascaris egg: elongated, thin shell with irregular mammillations packed with disorganized refractile granules.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0060.webp"
+    },
+    {
+        "seq": 61,
+        "lecture": 4,
+        "text": "Examine this microscopic stool mount showing an oval, transparent, smooth-shelled egg containing an unsegmented ovum, lacking any external mammillated albuminous layer. Identify this variant:",
+        "correct_answer": "Decorticated Ascaris lumbricoides egg",
+        "distractors": [
+            "Hookworm egg",
+            "Enterobius vermicularis egg",
+            "Trichostrongylus egg"
+        ],
+        "explanation": "Criteria of Identification: Decorticated Ascaris eggs are fertilized or unfertilized eggs that have lost their external coarse, tuberculated albuminous coat, displaying a smooth, thick, clear, colorless-to-pale-yellow shell containing the typical central ovum.",
+        "keyConcept": "Decorticated Ascaris egg: smooth transparent shell that has lost its outer tuberculated mammillated albuminous coat.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0061.webp"
+    },
+    {
+        "seq": 62,
+        "lecture": 4,
+        "text": "Examine this microscopic preparation of an adult nematode's anterior end. Identify this worm featuring a large buccal capsule armed with two pairs of curved, sharp ventral teeth:",
+        "correct_answer": "Ancylostoma duodenale adult (Old World Hookworm)",
+        "distractors": [
+            "Necator americanus adult",
+            "Ascaris lumbricoides adult",
+            "Strongyloides stercoralis adult"
+        ],
+        "explanation": "Criteria of Identification: Ancylostoma duodenale is distinguished by its anterior head bent gently dorsally, opening into an enlarged cup-shaped buccal capsule armed with two pairs of curved ventral teeth (upper pair larger) on the anterior ventral margin.",
+        "keyConcept": "Ancylostoma duodenale: buccal capsule armed with two pairs of sharp, curved ventral teeth.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0062.webp"
+    },
+    {
+        "seq": 63,
+        "lecture": 4,
+        "text": "Examine this microscopic preparation of an adult nematode's anterior end. Identify this hookworm featuring a deep dorsal flexure and a buccal capsule armed with a pair of semilunar ventral cutting plates:",
+        "correct_answer": "Necator americanus adult (New World Hookworm)",
+        "distractors": [
+            "Ancylostoma duodenale adult",
+            "Enterobius vermicularis adult",
+            "Trichuris trichiura adult"
+        ],
+        "explanation": "Criteria of Identification: Necator americanus has an anterior end bent sharply backwards (dorsally) in a hook-like flexure, and its smaller buccal capsule is armed with a pair of sharp, chitinous semilunar cutting plates on the ventral margin instead of teeth.",
+        "keyConcept": "Necator americanus: anterior hook-like flexure with buccal capsule armed with semilunar cutting plates.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0063.webp"
+    },
+    {
+        "seq": 64,
+        "lecture": 4,
+        "text": "Examine this microscopic stool mount showing an oval, blunt-ended ovum (60 x 40 µm) with an extremely thin, transparent shell and a clear space separating the shell from an internal 4-to-8 cell morula. Identify this egg:",
+        "correct_answer": "Hookworm egg (Ancylostoma / Necator)",
+        "distractors": [
+            "Ascaris lumbricoides egg",
+            "Enterobius vermicularis egg",
+            "Hymenolepis nana egg"
+        ],
+        "explanation": "Criteria of Identification: Hookworm eggs (indistinguishable between Ancylostoma duodenale and Necator americanus) are oval with blunt rounded ends (55–65 x 35–40 µm), characterized by an extremely thin, smooth, transparent, colorless hyaline shell separated by a wide clear space from an internal 4- to 8-cell morula stage.",
+        "keyConcept": "Hookworm egg: oval, thin transparent shell with wide clear space enclosing 4-to-8 cell morula.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0064.webp"
+    },
+    {
+        "seq": 65,
+        "lecture": 4,
+        "text": "Examine this microscopic stool preparation showing an elongated oval ovum (85 x 45 µm) with one pole pointed and one rounded, a thin transparent shell, and an advanced morula stage (16–32 cells). Identify this egg:",
+        "correct_answer": "Trichostrongylus species egg",
+        "distractors": [
+            "Hookworm egg",
+            "Ascaris egg",
+            "Heterophyes egg"
+        ],
+        "explanation": "Criteria of Identification: Trichostrongylus eggs closely resemble hookworm eggs but are significantly larger (75–95 x 40–50 µm), more elongated with one distinctly tapered/pointed pole and one rounded pole, and are passed in stool containing a more advanced morula stage (16 to 32 cells).",
+        "keyConcept": "Trichostrongylus egg: elongated with one tapered pointed pole, larger than hookworm, contains advanced morula (16–32 cells).",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0065.webp"
+    },
+    {
+        "seq": 66,
+        "lecture": 4,
+        "text": "Examine this microscopic stool preparation showing a peanut-shaped ovum (45 x 21 µm) with a thick, striated shell and two flattened, non-prominent bipolar plugs. Identify this parasite causing protein-losing enteropathy:",
+        "correct_answer": "Capillaria philippinensis egg",
+        "distractors": [
+            "Trichuris trichiura egg",
+            "Enterobius vermicularis egg",
+            "Strongyloides stercoralis larva"
+        ],
+        "explanation": "Criteria of Identification: Capillaria philippinensis eggs are peanut- or barrel-shaped (36–45 x 20 µm) with a thick, striated outer shell and flattened, non-protruding bipolar plugs (unlike the prominent projecting translucent plugs of Trichuris trichiura), causing severe malabsorption, intractable diarrhea, and fatal protein-losing enteropathy.",
+        "keyConcept": "Capillaria egg: peanut-shaped with thick striated shell and flattened, non-protruding bipolar plugs.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0066.webp"
+    },
+    {
+        "seq": 67,
+        "lecture": 5,
+        "text": "Examine this iodine-stained stool mount showing a spherical protozoan cyst (12 µm) containing four round nuclei, each displaying a central pinpoint karyosome and fine regular peripheral chromatin, alongside blunt-ended chromatoid bars. Identify this organism:",
+        "correct_answer": "Entamoeba histolytica mature cyst",
+        "distractors": [
+            "Entamoeba coli cyst",
+            "Giardia lamblia cyst",
+            "Balantidium coli cyst"
+        ],
+        "explanation": "Criteria of Identification: Mature cysts of Entamoeba histolytica are spherical (10–15 µm) containing exactly 1 to 4 nuclei, each with a central pinpoint karyosome and delicate, uniformly distributed peripheral chromatin beads, accompanied in immature stages by smooth, rounded, sausage-shaped (cigar-shaped) chromatoid bars with blunt ends.",
+        "keyConcept": "E. histolytica cyst: spherical (10–15 µm), 1–4 nuclei with central pinpoint karyosome and blunt-ended chromatoid bars.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0067.webp"
+    },
+    {
+        "seq": 68,
+        "lecture": 5,
+        "text": "Examine this iodine-stained stool mount showing a large spherical protozoan cyst (20 µm) containing eight nuclei, each displaying an eccentric karyosome and coarse irregular peripheral chromatin, alongside splinter-like pointed chromatoid bodies. Identify this commensal:",
+        "correct_answer": "Entamoeba coli mature cyst",
+        "distractors": [
+            "Entamoeba histolytica cyst",
+            "Endolimax nana cyst",
+            "Iodamoeba bütschlii cyst"
+        ],
+        "explanation": "Criteria of Identification: Entamoeba coli cysts are large (15–30 µm), containing 8 nuclei (occasionally 16) when mature; each nucleus possesses an eccentric, off-center karyosome and coarse, irregularly clumped peripheral chromatin, with splinter-like chromatoid bodies having sharply pointed or frayed ends.",
+        "keyConcept": "Entamoeba coli cyst: large (15–30 µm) with 8 nuclei, eccentric karyosomes, and splinter-like pointed chromatoid bodies.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0068.webp"
+    },
+    {
+        "seq": 69,
+        "lecture": 5,
+        "text": "Examine this Giemsa-stained duodenal aspirate smear showing a tear-drop shaped, flagellated protozoan with bilateral symmetry, two anterior oval nuclei, a central axostyle, and a large ventral concave suction disc. Identify this trophozoite:",
+        "correct_answer": "Giardia lamblia trophozoite",
+        "distractors": [
+            "Trichomonas hominis trophozoite",
+            "Chilomastix mesnili trophozoite",
+            "Entamoeba histolytica trophozoite"
+        ],
+        "explanation": "Criteria of Identification: Giardia lamblia (duodenalis) trophozoites are pear- or tear-drop shaped (10–20 x 5–15 µm) with bilateral symmetry, convex dorsal surface, concave ventral surface forming an adhesive suction disc, two anterior oval nuclei with prominent karyosomes (giving a 'face with glasses' appearance), a central axostyle, and four pairs of flagella.",
+        "keyConcept": "Giardia trophozoite: tear-drop shape, bilateral symmetry, 2 nuclei resembling 'face/glasses', ventral suction disc.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0069.webp"
+    },
+    {
+        "seq": 70,
+        "lecture": 5,
+        "text": "Examine this iodine-stained stool mount showing an oval protozoan cyst (10 x 7 µm) with a smooth, well-defined cyst wall, four nuclei clustered at one pole, and prominent internal longitudinal curved flagellar axonemes. Identify this cyst:",
+        "correct_answer": "Giardia lamblia mature cyst",
+        "distractors": [
+            "Entamoeba histolytica cyst",
+            "Chilomastix mesnili cyst",
+            "Blastocystis hominis cyst"
+        ],
+        "explanation": "Criteria of Identification: Giardia lamblia cysts are oval or ellipsoidal (8–14 x 7–10 µm) surrounded by a distinct, double-contoured refractile wall, containing 4 small nuclei clustered predominantly at one pole, with remnants of flagellar axonemes and curved parabasal bodies traversing the cyst longitudinally.",
+        "keyConcept": "Giardia cyst: oval (8–12 µm) with 4 nuclei at one pole and internal longitudinal curved flagellar axonemes.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0070.webp"
+    },
+    {
+        "seq": 71,
+        "lecture": 6,
+        "text": "Examine this modified Ziehl-Neelsen (acid-fast) stained fecal smear from an immunocompromised patient with chronic watery diarrhea. Identify these small spherical oocysts (4–5 µm) staining bright magenta-red against a pale blue background:",
+        "correct_answer": "Cryptosporidium parvum oocysts",
+        "distractors": [
+            "Cystoisospora belli oocysts",
+            "Cyclospora cayetanensis oocysts",
+            "Candida albicans blastospores"
+        ],
+        "explanation": "Criteria of Identification: Cryptosporidium parvum oocysts are small, spherical-to-ovoid bodies measuring 4 to 5 µm in diameter that are acid-fast positive, staining intensely bright magenta-pink to deep red against a malachite green or methylene blue counterstained background, each containing four naked sporozoites.",
+        "keyConcept": "Cryptosporidium oocyst: tiny spherical bodies (4–5 µm) staining acid-fast bright magenta-red against blue background.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0071.webp"
+    },
+    {
+        "seq": 72,
+        "lecture": 6,
+        "text": "Examine this fecal smear examined under ultraviolet fluorescence microscopy showing large, elongated, elliptical oocysts (30 x 12 µm) with tapered ends containing one or two spherical sporoblasts. Identify this coccidian parasite:",
+        "correct_answer": "Cystoisospora (Isospora) belli oocyst",
+        "distractors": [
+            "Cryptosporidium parvum oocyst",
+            "Cyclospora cayetanensis oocyst",
+            "Toxoplasma gondii oocyst"
+        ],
+        "explanation": "Criteria of Identification: Cystoisospora belli produces large, elongated spindle- or bottle-shaped oocysts (25–35 x 10–15 µm) with tapered ends, surrounded by a smooth double-layered colorless wall enclosing one unsegmented granular sporoblast (or two sporoblasts when mature), exhibiting bright autofluorescence under UV light.",
+        "keyConcept": "Cystoisospora belli: large spindle-shaped elliptical oocyst (30 x 12 µm) containing 1–2 sporoblasts, autofluorescent under UV.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0072.webp"
+    },
+    {
+        "seq": 73,
+        "lecture": 6,
+        "text": "Examine this modified acid-fast stained fecal smear from a traveler returning with prolonged diarrhea. Identify these spherical oocysts measuring 8 to 10 µm displaying variable acid-fast staining (from colorless 'ghosts' to deep red) and autofluorescing bright blue under UV 365 nm:",
+        "correct_answer": "Cyclospora cayetanensis oocysts",
+        "distractors": [
+            "Cryptosporidium parvum oocysts",
+            "Cystoisospora belli oocysts",
+            "Microsporidia spores"
+        ],
+        "explanation": "Criteria of Identification: Cyclospora cayetanensis oocysts are spherical, measuring 8 to 10 µm (twice the diameter of Cryptosporidium), exhibiting variable 'patchy' acid-fast staining with Kinyoun stain (ranging from non-staining glassy ghosts to deep pink/red) and characteristic bright blue autofluorescence under UV epifluorescence (365 nm).",
+        "keyConcept": "Cyclospora oocyst: round bodies (8–10 µm) with variable acid-fast staining and bright blue UV autofluorescence.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0073.webp"
+    },
+    {
+        "seq": 74,
+        "lecture": 6,
+        "text": "Examine this trichrome-stained fecal smear showing a round-to-oval polymorphic organism (10–15 µm) characterized by a massive central fluid-filled vacuole compressing a narrow peripheral rim of cytoplasm containing tiny nuclei. Identify this organism:",
+        "correct_answer": "Blastocystis hominis (Vacuolar form)",
+        "distractors": [
+            "Entamoeba histolytica cyst",
+            "Endolimax nana cyst",
+            "Dientamoeba fragilis trophozoite"
+        ],
+        "explanation": "Criteria of Identification: The classic vacuolar form of Blastocystis hominis is spherical (6–40 µm, typically 10–15 µm) recognized by a gigantic central vacuole (occupying ~90% of the cell volume) that displaces and compresses a thin rim of peripheral cytoplasm containing 1 to 4 tiny nuclei.",
+        "keyConcept": "Blastocystis hominis: round organism dominated by a massive central vacuole compressing a narrow rim of peripheral nuclei.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0074.webp"
+    },
+    {
+        "seq": 75,
+        "lecture": 6,
+        "text": "Examine this microscopic stool mount showing a gigantic ciliated protozoan (60–100 µm) with a visible cytostome (cell mouth), contractile vacuoles, and a massive, conspicuous kidney-shaped (reniform) macronucleus. Identify this organism:",
+        "correct_answer": "Balantidium coli trophozoite",
+        "distractors": [
+            "Entamoeba histolytica trophozoite",
+            "Giardia lamblia trophozoite",
+            "Trichomonas tenax trophozoite"
+        ],
+        "explanation": "Criteria of Identification: Balantidium coli is the largest protozoan parasite infecting humans (50–150 x 40–70 µm), easily identified by its ovoid body covered in spiraling rows of longitudinal cilia, an anterior conical funnel-shaped cytostome (peristome), and a prominent, dense, kidney- or bean-shaped macronucleus adjacent to a spherical micronucleus.",
+        "keyConcept": "Balantidium coli: gigantic ciliated protozoan (50–100 µm) with anterior cytostome and large kidney-shaped macronucleus.",
+        "imageUrl": "/images/practical/mgl-3/parasitology/img_para_0075.webp"
+    }
+]
+
+
+PARASITOLOGY_QUESTIONS = PARASITOLOGY_QUESTIONS + NET_NEW_PARASITOLOGY
