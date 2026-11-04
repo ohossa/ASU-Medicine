@@ -1,17 +1,23 @@
 {
-  "name": "ASU Medical Portal",
-  "short_name": "ASU Portal",
-  "description": "Master the ASU medical syllabus through structured assessment, clinical case solvers, and interactive quizzes.",
+  "name": "asu.codes — Independent Medical Study Companion",
+  "short_name": "asu.codes",
+  "description": "Independent question bank and interactive study companion for medical students.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f8f9fc",
-  "theme_color": "#0c0e16",
+  "background_color": "#080c16",
+  "theme_color": "#080c16",
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en",
   "icons": [
     {
       "src": "/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-128.png",
       "sizes": "128x128",
       "type": "image/png",
       "purpose": "any"
