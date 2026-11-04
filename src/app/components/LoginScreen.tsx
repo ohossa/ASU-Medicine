@@ -145,10 +145,9 @@ export function LoginScreen() {
                 &ldquo;Dude I genuinely don&apos;t know how to thank you enough.&rdquo;
               </blockquote>
               <div className="split-author-row">
-                <div className="split-author-avatar">MI</div>
+                <div className="split-author-avatar">MS</div>
                 <div>
-                  <div className="split-author-name">Mohamed Ibrahim</div>
-                  <div className="split-author-role">Year 2 Medical Student</div>
+                  <div className="split-author-name">Year 2 Medical Student</div>
                 </div>
               </div>
             </div>

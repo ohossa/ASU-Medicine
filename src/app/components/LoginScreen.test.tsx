@@ -52,11 +52,11 @@ describe("LoginScreen Component", () => {
     expect(screen.getByText("asu.codes")).toBeInTheDocument();
     expect(screen.getByText("Independent Project")).toBeInTheDocument();
 
-    // Mohamed Ibrahim testimonial
+    // Anonymous student testimonial
     expect(
       screen.getByText(/dude i genuinely don't know how to thank you enough/i),
     ).toBeInTheDocument();
-    expect(screen.getByText("Mohamed Ibrahim")).toBeInTheDocument();
+    expect(screen.queryByText("Mohamed Ibrahim")).toBeNull();
     expect(screen.getByText("Year 2 Medical Student")).toBeInTheDocument();
 
     // Core 3 features
