@@ -339,20 +339,28 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 1.25rem;
+  gap: 0.75rem;
   font-size: 0.85rem;
   margin-bottom: 2rem;
 }
 
+.split-form-top-label {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
 .split-form-top-link {
-  color: #4d6eff;
+  color: #718eff;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 .split-form-top-link:hover {
-  color: #718eff;
+  color: #a5b7ff;
   text-decoration: underline;
 }
 
@@ -381,6 +389,403 @@
 /* Auth Card / Clerk Styling */
 .split-auth-card-region {
   margin-top: 2rem;
+}
+
+/* ── SPLIT LOGIN CLERK DEEP DARK THEME OVERRIDES ── */
+
+/* Force CSS custom properties for all Clerk elements inside split login */
+.split-auth-container .split-clerk-container,
+.split-auth-container .split-clerk-container [class^="cl-"],
+.split-auth-container .split-clerk-container [class*=" cl-"] {
+  --cl-colorBackground: transparent !important;
+  --cl-colorText: #ffffff !important;
+  --cl-colorTextSecondary: #8c97ad !important;
+  --cl-colorInputBackground: #0f1524 !important;
+  --cl-colorInputText: #ffffff !important;
+  --cl-colorBorder: #1f2a40 !important;
+  --cl-colorPrimary: #2743ff !important;
+  --cl-colorTextOnPrimaryBackground: #ffffff !important;
+  --cl-colorDanger: #ef4444 !important;
+  --cl-colorSuccess: #10b981 !important;
+  --cl-colorWarning: #f59e0b !important;
+}
+
+/* Base Card & Structural Containers */
+.split-auth-container .split-clerk-container .cl-card,
+.split-auth-container .split-clerk-container .cl-rootBox,
+.split-auth-container .split-clerk-container .cl-main,
+.split-auth-container .split-clerk-container .cl-signIn {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Neutralize all unwanted backgrounds/borders from Clerk internal divs */
+.split-auth-container .split-clerk-container [class^="cl-"]:not(.cl-formFieldInput):not(.cl-socialButtonsBlockButton):not(.cl-formButtonPrimary):not(.cl-identityPreview):not(.cl-otpCodeFieldInput):not(.cl-alert):not(.cl-socialButtonsBlockButtonBadge):not(.cl-socialButtonsBlockButton__badge),
+.split-auth-container .split-clerk-container [class*=" cl-"]:not(.cl-formFieldInput):not(.cl-socialButtonsBlockButton):not(.cl-formButtonPrimary):not(.cl-identityPreview):not(.cl-otpCodeFieldInput):not(.cl-alert):not(.cl-socialButtonsBlockButtonBadge):not(.cl-socialButtonsBlockButton__badge) {
+  background-color: transparent !important;
+  border-color: #1f2a40 !important;
+  box-shadow: none !important;
+}
+
+/* Header & Logo */
+.split-auth-container .split-clerk-container .cl-headerLogo {
+  display: none !important;
+}
+
+.split-auth-container .split-clerk-container .cl-header {
+  padding-top: 0 !important;
+  margin-bottom: 1rem !important;
+}
+
+.split-auth-container .split-clerk-container .cl-headerTitle {
+  color: #ffffff !important;
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif !important;
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.split-auth-container .split-clerk-container .cl-headerSubtitle {
+  color: #8c97ad !important;
+  font-size: 0.85rem !important;
+  margin-top: 0.25rem !important;
+}
+
+/* Social Login Buttons (Google SSO) */
+.split-auth-container .split-clerk-container .cl-socialButtons {
+  width: 100% !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.split-auth-container .split-clerk-container .cl-socialButtonsBlockButton {
+  background-color: #0f1524 !important;
+  border: 1px solid #1f2a40 !important;
+  color: #ffffff !important;
+  min-height: 48px !important;
+  border-radius: 12px !important;
+  width: 100% !important;
+  cursor: pointer !important;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.65rem !important;
+  padding: 0 1.25rem !important;
+  transition: all 0.15s ease !important;
+}
+
+.split-auth-container .split-clerk-container .cl-socialButtonsBlockButton:hover {
+  background-color: #151e33 !important;
+  border-color: #2743ff !important;
+  box-shadow: 0 0 0 1px #2743ff !important;
+  color: #ffffff !important;
+}
+
+.split-auth-container .split-clerk-container .cl-socialButtonsBlockButtonText {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 0.875rem !important;
+  letter-spacing: 0.01em !important;
+}
+
+.split-auth-container .split-clerk-container .cl-socialButtonsProviderIcon {
+  width: 18px !important;
+  height: 18px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Social Buttons "Last used" Badge */
+.split-auth-container .split-clerk-container .cl-socialButtonsBlockButtonBadge,
+.split-auth-container .split-clerk-container .cl-socialButtonsBlockButton__badge {
+  position: absolute !important;
+  top: 0 !important;
+  right: 14px !important;
+  transform: translateY(-50%) !important;
+  background-color: rgba(39, 67, 255, 0.22) !important;
+  border: 1px solid rgba(39, 67, 255, 0.5) !important;
+  color: #8fa5ff !important;
+  font-size: 9.5px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+  padding: 2px 7px !important;
+  border-radius: 9999px !important;
+  line-height: 1.1 !important;
+  z-index: 5 !important;
+}
+
+/* Divider Row */
+.split-auth-container .split-clerk-container .cl-dividerRow {
+  margin: 1.5rem 0 !important;
+}
+
+.split-auth-container .split-clerk-container .cl-dividerLine {
+  background-color: #1b2438 !important;
+  height: 1px !important;
+}
+
+.split-auth-container .split-clerk-container .cl-dividerText {
+  color: #8c97ad !important;
+  font-size: 0.725rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  padding: 0 10px !important;
+  background-color: var(--dark-form-bg) !important;
+}
+
+/* Form Fields & Labels */
+.split-auth-container .split-clerk-container .cl-form {
+  gap: 1.25rem !important;
+}
+
+.split-auth-container .split-clerk-container .cl-formField {
+  margin-bottom: 0.75rem !important;
+}
+
+.split-auth-container .split-clerk-container .cl-formFieldLabel {
+  color: #cbd5e1 !important;
+  font-size: 0.8125rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.01em !important;
+  margin-bottom: 0.375rem !important;
+  display: block !important;
+}
+
+/* Inputs — Default, Focus (Edit Mode), Autofill */
+.split-auth-container .split-clerk-container .cl-formFieldInput {
+  background-color: #0f1524 !important;
+  border: 1px solid #1f2a40 !important;
+  color: #ffffff !important;
+  font-size: 0.875rem !important;
+  min-height: 46px !important;
+  border-radius: 12px !important;
+  padding: 0 14px !important;
+  transition: all 0.15s ease !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.split-auth-container .split-clerk-container .cl-formFieldInput::placeholder {
+  color: #5f6b85 !important;
+}
+
+.split-auth-container .split-clerk-container .cl-formFieldInput:hover {
+  border-color: #2b3956 !important;
+  background-color: #12192b !important;
+}
+
+.split-auth-container .split-clerk-container .cl-formFieldInput:focus,
+.split-auth-container .split-clerk-container .cl-formFieldInput:focus-visible {
+  border-color: #2743ff !important;
+  background-color: #12192b !important;
+  box-shadow: 0 0 0 3px rgba(39, 67, 255, 0.25) !important;
+  outline: none !important;
+  color: #ffffff !important;
+}
+
+.split-auth-container .split-clerk-container input:-webkit-autofill,
+.split-auth-container .split-clerk-container input:-webkit-autofill:hover,
+.split-auth-container .split-clerk-container input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #0f1524 inset !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+/* Identity Preview — Edit Mode & Verified Identity Box */
+.split-auth-container .split-clerk-container .cl-identityPreview {
+  background-color: #0f1524 !important;
+  border: 1px solid #1f2a40 !important;
+  border-radius: 12px !important;
+  padding: 10px 14px !important;
+  margin-bottom: 1.25rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 0.75rem !important;
+}
+
+.split-auth-container .split-clerk-container .cl-identityPreviewText {
+  color: #ffffff !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  word-break: break-all !important;
+}
+
+.split-auth-container .split-clerk-container .cl-identityPreviewEditButton {
+  color: #718eff !important;
+  font-size: 0.8125rem !important;
+  font-weight: 600 !important;
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  padding: 4px 8px !important;
+  border-radius: 6px !important;
+  transition: all 0.15s ease !important;
+}
+
+.split-auth-container .split-clerk-container .cl-identityPreviewEditButton:hover {
+  color: #a5b7ff !important;
+  background-color: rgba(39, 67, 255, 0.12) !important;
+  text-decoration: underline !important;
+}
+
+.split-auth-container .split-clerk-container .cl-identityPreviewEditButtonIcon {
+  color: #718eff !important;
+  width: 14px !important;
+  height: 14px !important;
+}
+
+/* Password Form Field & Show/Hide / Forgot Password Actions */
+.split-auth-container .split-clerk-container .cl-formFieldAction,
+.split-auth-container .split-clerk-container .cl-formFieldActionLink {
+  color: #718eff !important;
+  font-size: 0.8125rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease !important;
+  cursor: pointer !important;
+}
+
+.split-auth-container .split-clerk-container .cl-formFieldAction:hover,
+.split-auth-container .split-clerk-container .cl-formFieldActionLink:hover {
+  color: #a5b7ff !important;
+  text-decoration: underline !important;
+}
+
+.split-auth-container .split-clerk-container .cl-formFieldAction__password {
+  color: #8c97ad !important;
+}
+
+.split-auth-container .split-clerk-container .cl-formFieldAction__password:hover {
+  color: #ffffff !important;
+}
+
+/* OTP Code Inputs */
+.split-auth-container .split-clerk-container .cl-otpCodeFieldInputs {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  margin: 1.25rem 0 !important;
+}
+
+.split-auth-container .split-clerk-container .cl-otpCodeFieldInput {
+  background-color: #0f1524 !important;
+  border: 1.5px solid #1f2a40 !important;
+  color: #ffffff !important;
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+  width: 44px !important;
+  height: 52px !important;
+  border-radius: 10px !important;
+  text-align: center !important;
+  transition: all 0.15s ease !important;
+}
+
+.split-auth-container .split-clerk-container .cl-otpCodeFieldInput:focus {
+  border-color: #2743ff !important;
+  box-shadow: 0 0 0 3px rgba(39, 67, 255, 0.25) !important;
+  background-color: #12192b !important;
+  outline: none !important;
+}
+
+/* Primary Submit Button ("Continue" / "Sign in") */
+.split-auth-container .split-clerk-container .cl-formButtonPrimary {
+  background-color: #2743ff !important;
+  color: #ffffff !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  min-height: 46px !important;
+  border-radius: 12px !important;
+  border: none !important;
+  width: 100% !important;
+  margin-top: 1.25rem !important;
+  transition: all 0.15s ease !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 14px rgba(39, 67, 255, 0.25) !important;
+}
+
+.split-auth-container .split-clerk-container .cl-formButtonPrimary:hover {
+  background-color: #1f38db !important;
+  box-shadow: 0 6px 18px rgba(39, 67, 255, 0.35) !important;
+}
+
+.split-auth-container .split-clerk-container .cl-formButtonPrimary:active {
+  transform: scale(0.99) !important;
+}
+
+/* Footer Actions & Links */
+.split-auth-container .split-clerk-container .cl-footer {
+  margin-top: 1.5rem !important;
+  border-top: 1px solid #1b2438 !important;
+  padding-top: 1rem !important;
+}
+
+.split-auth-container .split-clerk-container .cl-footerActionText {
+  color: #8c97ad !important;
+  font-size: 0.8125rem !important;
+}
+
+.split-auth-container .split-clerk-container .cl-footerActionLink {
+  color: #718eff !important;
+  font-weight: 600 !important;
+  font-size: 0.8125rem !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease !important;
+}
+
+.split-auth-container .split-clerk-container .cl-footerActionLink:hover {
+  color: #a5b7ff !important;
+  text-decoration: underline !important;
+}
+
+.split-auth-container .split-clerk-container .cl-footerPages,
+.split-auth-container .split-clerk-container .cl-internal-b3fm6y {
+  color: #5f6b85 !important;
+  font-size: 0.75rem !important;
+}
+
+/* Error Alerts & Messages */
+.split-auth-container .split-clerk-container .cl-alert,
+.split-auth-container .split-clerk-container .cl-alertDanger {
+  background-color: rgba(239, 68, 68, 0.12) !important;
+  border: 1px solid rgba(239, 68, 68, 0.35) !important;
+  border-radius: 10px !important;
+  color: #fca5a5 !important;
+  padding: 10px 14px !important;
+  font-size: 0.8125rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.split-auth-container .split-clerk-container .cl-alertText {
+  color: #fca5a5 !important;
+}
+
+.split-auth-container .split-clerk-container .cl-formFieldErrorText {
+  color: #ef4444 !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  margin-top: 4px !important;
+}
+
+/* Back Button */
+.split-auth-container .split-clerk-container .cl-backButton {
+  color: #8c97ad !important;
+  transition: color 0.15s ease !important;
+}
+
+.split-auth-container .split-clerk-container .cl-backButton:hover {
+  color: #ffffff !important;
 }
 
 .split-form-footnote {

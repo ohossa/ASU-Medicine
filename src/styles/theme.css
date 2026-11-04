@@ -527,10 +527,10 @@
   --cl-colorWarning: #F59E0B !important;
 }
 
-/* Force light mode backgrounds globally on Clerk cards, popovers, and main modals */
+/* Force light mode backgrounds globally on Clerk cards, popovers, and main modals (excluding dark login containers) */
 .cl-userButtonPopoverCard,
 .cl-userProfile-root,
-.cl-card,
+:not(.clerk-dark-theme-container):not(.split-clerk-container) > .cl-card,
 .cl-dialog,
 .cl-navbar,
 .cl-scrollBox,
@@ -540,7 +540,7 @@
 .cl-userButtonPopoverFooter,
 .dark .cl-userButtonPopoverCard,
 .dark .cl-userProfile-root,
-.dark .cl-card,
+:not(.clerk-dark-theme-container):not(.split-clerk-container) .dark .cl-card,
 .dark .cl-dialog,
 .dark .cl-navbar,
 .dark .cl-scrollBox,
@@ -634,8 +634,8 @@
   --cl-colorInputBackground: rgba(255, 255, 255, 0.04) !important;
   --cl-colorInputText: #ffffff !important;
   --cl-colorBorder: rgba(255, 255, 255, 0.08) !important;
-  --cl-colorPrimary: #2dd4bf !important;
-  --cl-colorTextOnPrimaryBackground: #000000 !important;
+  --cl-colorPrimary: #2743ff !important;
+  --cl-colorTextOnPrimaryBackground: #ffffff !important;
 }
 
 .clerk-dark-theme-container .cl-card,
@@ -680,8 +680,8 @@
   transition: all 0.2s ease !important;
 }
 .cl-otpCodeFieldInput:focus {
-  border-color: #10B981 !important;
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.18) !important;
+  border-color: #2743ff !important;
+  box-shadow: 0 0 0 3px rgba(39, 67, 255, 0.18) !important;
   outline: none !important;
 }
 
@@ -695,8 +695,8 @@
 }
 .dark .clerk-dark-theme-container .cl-otpCodeFieldInput:focus,
 .clerk-dark-theme-container .cl-otpCodeFieldInput:focus {
-  border-color: #2dd4bf !important;
-  box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.28) !important;
+  border-color: #2743ff !important;
+  box-shadow: 0 0 0 3px rgba(39, 67, 255, 0.28) !important;
 }
 
 
@@ -726,17 +726,18 @@
 }
 
 .clerk-dark-theme-container .cl-formFieldInput:focus {
-  border-color: rgba(45, 212, 191, 0.5) !important;
+  border-color: rgba(39, 67, 255, 0.5) !important;
 }
 
 .clerk-dark-theme-container .cl-formButtonPrimary {
-  background-color: #ffffff !important;
-  color: #0b0b0c !important;
+  background-color: #2743ff !important;
+  color: #ffffff !important;
   font-weight: 600 !important;
 }
 
 .clerk-dark-theme-container .cl-formButtonPrimary:hover {
-  opacity: 0.9 !important;
+  background-color: #1f38db !important;
+  opacity: 0.95 !important;
 }
 
 .clerk-dark-theme-container .cl-socialButtonsBlockButton {
@@ -762,11 +763,11 @@
 }
 
 .clerk-dark-theme-container .cl-footerActionLink {
-  color: #2dd4bf !important;
+  color: #718eff !important;
 }
 
 .clerk-dark-theme-container .cl-footerActionLink:hover {
-  color: rgba(45, 212, 191, 0.8) !important;
+  color: #a5b7ff !important;
 }
 
 .clerk-dark-theme-container .cl-internal-b3fm6y {
@@ -793,9 +794,9 @@
   top: 0 !important;
   right: 16px !important;
   transform: translateY(-50%) !important;
-  background-color: rgba(45, 212, 191, 0.15) !important;
-  border: 1px solid rgba(45, 212, 191, 0.35) !important;
-  color: #2dd4bf !important;
+  background-color: rgba(39, 67, 255, 0.2) !important;
+  border: 1px solid rgba(39, 67, 255, 0.45) !important;
+  color: #8fa5ff !important;
   font-size: 8.5px !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;

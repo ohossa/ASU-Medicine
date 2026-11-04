@@ -36,31 +36,39 @@ export function LoginScreen() {
       colorTextSecondary: "#8c97ad",
       colorInputBackground: "#0f1524",
       colorInputText: "#ffffff",
-      borderRadius: "10px",
+      borderRadius: "12px",
       fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
     },
     elements: {
-      rootBox: "w-full",
+      rootBox: "w-full max-w-full",
       card: "bg-transparent shadow-none w-full p-0 border-0",
-      headerTitle: "hidden",
-      headerSubtitle: "hidden",
+      headerLogo: "hidden",
+      headerTitle: "text-white font-semibold text-lg tracking-tight",
+      headerSubtitle: "text-zinc-400 text-xs mt-1",
       socialButtonsBlockButton:
-        "border border-[#1b2438] bg-[#0f1524] text-white hover:bg-[#151e33] hover:border-[#273550] transition-all min-h-[46px] rounded-xl font-medium shadow-none text-sm relative",
-      socialButtonsBlockButtonText: "text-white font-medium text-sm",
+        "border border-[#1f2a40] bg-[#0f1524] text-white hover:bg-[#151e33] hover:border-[#2743ff] transition-all min-h-[46px] rounded-xl font-semibold shadow-none text-sm relative flex items-center justify-center",
+      socialButtonsBlockButtonText: "text-white font-semibold text-sm",
       socialButtonsBlockButtonBadge:
-        "!absolute !top-0 !right-4 !-translate-y-1/2 !bg-[#2743ff]/15 !border !border-[#2743ff]/30 !text-[#718eff] !text-[10px] !font-bold !uppercase !px-2 !py-0.5 !rounded-full",
+        "!absolute !top-0 !right-4 !-translate-y-1/2 !bg-[#2743ff]/20 !border !border-[#2743ff]/45 !text-[#8fa5ff] !text-[10px] !font-bold !uppercase !px-2 !py-0.5 !rounded-full !tracking-wide",
       dividerLine: "bg-[#1b2438]",
-      dividerText: "text-[#8c97ad] text-xs font-normal uppercase tracking-wider",
+      dividerText: "text-[#8c97ad] text-xs font-semibold uppercase tracking-wider bg-[#080c16] px-2",
       formFieldLabel: "text-zinc-200 text-xs font-semibold tracking-wide mb-1.5",
       formFieldInput:
-        "border border-[#1b2438] bg-[#0f1524] text-white focus:border-[#3b5bfd] focus:ring-4 focus:ring-[#2743ff]/20 min-h-[44px] rounded-xl text-sm transition-all",
+        "border border-[#1f2a40] bg-[#0f1524] text-white placeholder-[#5f6b85] focus:border-[#2743ff] focus:ring-4 focus:ring-[#2743ff]/25 min-h-[46px] rounded-xl text-sm transition-all",
       formButtonPrimary:
-        "bg-[#2743ff] text-white font-semibold min-h-[46px] rounded-xl hover:bg-[#1f38db] transition-all shadow-none text-sm active:scale-[0.99]",
+        "bg-[#2743ff] text-white font-semibold min-h-[46px] rounded-xl hover:bg-[#1f38db] transition-all shadow-md shadow-[#2743ff]/20 text-sm active:scale-[0.99] cursor-pointer",
       footerActionText: "text-[#8c97ad] text-xs",
-      footerActionLink: "text-[#4d6eff] hover:underline font-semibold text-xs",
-      identityPreviewText: "text-white",
-      identityPreviewEditButton: "text-[#4d6eff] hover:underline",
-      formFieldAction: "text-[#4d6eff] hover:underline text-xs font-medium",
+      footerActionLink: "text-[#718eff] hover:text-[#a5b7ff] hover:underline font-semibold text-xs",
+      identityPreview: "border border-[#1f2a40] bg-[#0f1524] rounded-xl p-3 text-white flex items-center justify-between",
+      identityPreviewText: "text-white font-medium text-sm",
+      identityPreviewEditButton: "text-[#718eff] hover:text-[#a5b7ff] hover:underline font-semibold text-xs transition-colors",
+      formFieldAction: "text-[#718eff] hover:text-[#a5b7ff] hover:underline text-xs font-semibold",
+      otpCodeFieldInputs: "gap-2 justify-center",
+      otpCodeFieldInput:
+        "border border-[#1f2a40] bg-[#0f1524] text-white focus:border-[#2743ff] focus:ring-[#2743ff]/25 rounded-xl text-center text-lg font-bold transition-all",
+      alert: "bg-red-500/10 border border-red-500/30 text-red-300 rounded-xl p-3",
+      alertText: "text-red-300 text-xs",
+      formFieldErrorText: "text-red-400 text-xs font-medium mt-1",
     },
   };
 
@@ -162,9 +170,13 @@ export function LoginScreen() {
       {/* ── RIGHT: CRISP DARK AUTH FORM COLUMN (#080c16) ── */}
       <section className="split-form-panel" aria-label="Sign In Form">
         <div className="split-form-top">
-          <span className="text-zinc-500">Need help?</span>
-          <a href="/support" className="split-form-top-link">
-            Student Support →
+          <span className="split-form-top-label">Support the project</span>
+          <a
+            href="/support"
+            className="split-form-top-link"
+            title="Help cover server costs and keep the project free"
+          >
+            Support asu.codes 🤍 →
           </a>
         </div>
 
@@ -175,7 +187,9 @@ export function LoginScreen() {
           </p>
 
           <div className="split-auth-card-region">
-            <SignIn routing="virtual" appearance={clerkAppearance} />
+            <div className="split-clerk-container clerk-dark-theme-container">
+              <SignIn routing="virtual" appearance={clerkAppearance} />
+            </div>
           </div>
 
           <div className="split-form-footnote">
