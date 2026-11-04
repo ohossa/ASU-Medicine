@@ -1,64 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
-    <radialGradient id="bgObsidian" cx="50%" cy="35%" r="75%">
-      <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="60%" stop-color="#080c16" />
-      <stop offset="100%" stop-color="#04060b" />
-    </radialGradient>
-
-    <!-- Electric Cobalt Gradient -->
+    <!-- Premium Electric Cobalt Depth Gradient -->
     <linearGradient id="cobaltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4d6eff" />
-      <stop offset="60%" stop-color="#2743ff" />
-      <stop offset="100%" stop-color="#1b2ec9" />
+      <stop offset="0%" stop-color="#385bfd" />
+      <stop offset="50%" stop-color="#2743ff" />
+      <stop offset="100%" stop-color="#1832cc" />
     </linearGradient>
 
-    <!-- Warm Apricot Accent -->
+    <!-- Warm Glowing Apricot Dot -->
     <linearGradient id="apricotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffd580" />
-      <stop offset="100%" stop-color="#ffc95c" />
+      <stop offset="0%" stop-color="#ffd985" />
+      <stop offset="100%" stop-color="#ffbe3b" />
     </linearGradient>
 
-    <!-- Squircle Border Stroke Gradient -->
-    <linearGradient id="borderStroke" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="rgba(77, 110, 255, 0.45)" />
-      <stop offset="50%" stop-color="rgba(39, 67, 255, 0.2)" />
-      <stop offset="100%" stop-color="rgba(255, 201, 92, 0.15)" />
-    </linearGradient>
-
-    <!-- Subtle Outer Glow -->
-    <filter id="cobaltGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="10" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <!-- Subtle Depth Drop Shadow -->
+    <filter id="subtleDepth" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="rgba(10, 20, 60, 0.35)" />
     </filter>
   </defs>
 
-  <!-- iOS-Style Smooth Squircle Base (#080c16 Obsidian) -->
-  <rect x="20" y="20" width="472" height="472" rx="112" fill="url(#bgObsidian)" stroke="url(#borderStroke)" stroke-width="6" />
+  <!-- Full-bleed Vibrant Cobalt Squircle (Apple 22% Continuous Curvature) -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#cobaltGrad)" />
 
-  <!-- Background Soft Radial Core Glow -->
-  <circle cx="256" cy="240" r="140" fill="#2743ff" opacity="0.12" filter="blur(30px)" />
+  <!-- Inner High-Contrast Pure White Emblem Group -->
+  <g filter="url(#subtleDepth)">
+    <!-- Left Bracket { -->
+    <path d="M150 142 C120 142, 114 172, 114 212 C114 240, 88 256, 88 256 C88 256, 114 272, 114 300 C114 340, 120 370, 150 370" 
+          fill="none" stroke="#ffffff" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
 
-  <!-- Main Symbol: Interlocking Code Bracket & Medical Pulse Shield -->
-  <g filter="url(#cobaltGlow)">
-    <!-- Left Code Bracket '{' Path -->
-    <path d="M190 150 C150 150, 150 190, 150 215 C150 240, 125 256, 125 256 C125 256, 150 272, 150 297 C150 322, 150 362, 190 362" 
-          fill="none" stroke="url(#cobaltGrad)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Right Bracket } -->
+    <path d="M362 142 C392 142, 398 172, 398 212 C398 240, 424 256, 424 256 C424 256, 398 272, 398 300 C398 340, 392 370, 362 370" 
+          fill="none" stroke="#ffffff" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
 
-    <!-- Right Code Bracket '}' Path -->
-    <path d="M322 150 C362 150, 362 190, 362 215 C362 240, 387 256, 387 256 C387 256, 362 272, 362 297 C362 322, 362 362, 322 362" 
-          fill="none" stroke="url(#cobaltGrad)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Center: Precision Heartbeat Pulse Line -->
+    <path d="M165 256 L195 256 L212 288 L244 162 L276 350 L298 228 L312 256 L350 256" 
+          fill="none" stroke="#ffffff" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
 
-    <!-- Central Precision Medical Cross with Rounded Terminals -->
-    <path d="M256 186 L256 326 M186 256 L326 256" 
-          fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" opacity="0.95" />
+    <!-- Medical Plus Vertical Accent at x=332 -->
+    <path d="M332 220 L332 292" 
+          fill="none" stroke="#ffffff" stroke-width="32" stroke-linecap="round" />
 
-    <!-- Central Pulse Electrocardiogram Accent (Heartbeat vector) in Electric Cobalt & Warm Apricot -->
-    <path d="M170 256 L220 256 L238 210 L256 305 L274 235 L286 270 L298 256 L342 256" 
-          fill="none" stroke="url(#cobaltGrad)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
-
-    <!-- Apricot Dot Accent (The 'codes' dot) -->
-    <circle cx="256" cy="144" r="14" fill="url(#apricotGrad)" />
+    <!-- Detached Warm Apricot Status Dot -->
+    <circle cx="406" cy="106" r="24" fill="url(#apricotGrad)" stroke="#ffffff" stroke-width="5" />
   </g>
 </svg>
