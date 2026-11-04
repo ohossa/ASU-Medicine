@@ -1,0 +1,403 @@
+/* Modern 50/50 Split Screen Auth Page — Electric Cobalt & Crisp White */
+
+:root {
+  --cobalt-solid: #2743ff;
+  --cobalt-dark-dot: #1b34c9;
+  --apricot-accent: #ffc95c;
+  --ink-primary: #0d1220;
+  --ink-muted: #5b6478;
+  --border-light: #dfe2ea;
+  --divider-hairline: #e6e8ee;
+}
+
+.split-auth-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: var(--ink-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+@media (min-width: 1024px) {
+  .split-auth-container {
+    flex-direction: row;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+}
+
+/* ── LEFT ELECTRIC COBALT BRAND PANEL ── */
+.split-brand-panel {
+  position: relative;
+  width: 100%;
+  background-color: var(--cobalt-solid);
+  color: #ffffff;
+  padding: 2.25rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  z-index: 10;
+}
+
+@media (min-width: 1024px) {
+  .split-brand-panel {
+    width: 50%;
+    height: 100%;
+    padding: 3.5rem 4rem;
+    overflow-y: auto;
+  }
+}
+
+/* Faint Low-Contrast Dot Grid */
+.split-dot-grid {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, var(--cobalt-dark-dot) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.split-brand-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Wordmark & Brand Badge */
+.split-brand-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.split-wordmark {
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.split-pill-independent {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.split-pill-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background-color: var(--apricot-accent);
+}
+
+/* Middle Block: Oversized Value-Prop Headline */
+.split-headline-wrap {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.split-headline {
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 2.25rem;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: #ffffff;
+}
+
+@media (min-width: 1024px) {
+  .split-headline {
+    font-size: 3.25rem;
+  }
+}
+
+/* Exactly One Underlined Word with Apricot Swipe */
+.apricot-underline {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.apricot-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 6px;
+  background-color: var(--apricot-accent);
+  border-radius: 2px;
+  z-index: -1;
+  opacity: 0.95;
+}
+
+.split-supporting-line {
+  margin-top: 1.25rem;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 32rem;
+}
+
+/* Feature Highlights (from old page) */
+.split-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.split-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.2s ease;
+}
+
+.split-feature-item:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.split-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.split-feature-title {
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.925rem;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+.split-feature-desc {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 0.2rem;
+}
+
+/* Inline Testimonial Unit with Apricot Stars */
+.split-testimonial {
+  padding: 1.15rem 1.35rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.split-stars-row {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--apricot-accent);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.split-quote {
+  font-size: 0.885rem;
+  line-height: 1.45;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.split-author-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 0.75rem;
+}
+
+.split-author-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.split-author-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.split-author-role {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Bottom Trusted Engine Wordmarks */
+.split-trust-block {
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  padding-top: 1.25rem;
+}
+
+.split-trust-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 0.75rem;
+}
+
+.split-wordmarks-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem 1.75rem;
+}
+
+.split-wordmark-item {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+
+/* ── RIGHT CRISP WHITE AUTH FORM COLUMN ── */
+.split-form-panel {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2.5rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+@media (min-width: 1024px) {
+  .split-form-panel {
+    width: 50%;
+    height: 100%;
+    padding: 3.5rem 5rem;
+  }
+}
+
+.split-form-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.25rem;
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.split-form-top-link {
+  color: var(--cobalt-solid);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.split-form-top-link:hover {
+  text-decoration: underline;
+}
+
+.split-form-center {
+  max-width: 420px;
+  width: 100%;
+  margin: auto;
+}
+
+.split-welcome-heading {
+  font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+  color: var(--ink-primary);
+  line-height: 1.15;
+}
+
+.split-welcome-subhead {
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+  line-height: 1.45;
+}
+
+/* Auth Card / Clerk Styling */
+.split-auth-card-region {
+  margin-top: 2rem;
+}
+
+.split-form-footnote {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  line-height: 1.5;
+}
+
+.split-form-footnote a {
+  color: var(--cobalt-solid);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.split-form-footnote a:hover {
+  text-decoration: underline;
+}
+
+.split-form-legal {
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  color: #8c95a6;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.split-form-legal a {
+  color: var(--ink-muted);
+  text-decoration: underline;
+}
