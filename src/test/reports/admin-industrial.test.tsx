@@ -119,7 +119,7 @@ describe("AdminIndustrialDashboard", () => {
   it("renders the brand header, KPI cards, and HUD workspace", async () => {
     renderDashboard();
 
-    expect(screen.getByText("ASU Medicine")).toBeInTheDocument();
+    expect(screen.getByText("asu.codes")).toBeInTheDocument();
     expect(screen.getByText("Admin Telemetry")).toBeInTheDocument();
     expect(screen.getByText("Question Bank")).toBeInTheDocument();
     expect(screen.getByText("Active Sessions")).toBeInTheDocument();

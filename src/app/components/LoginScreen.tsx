@@ -1,45 +1,12 @@
 import { useState } from "react";
 import { SignIn } from "@clerk/clerk-react";
 import { dark } from "@clerk/themes";
-import {
-  GraduationCap,
-  Layers,
-  ArrowRight,
-  ShieldCheck,
-  Brain,
-  Microscope,
-  CheckCircle2,
-} from "lucide-react";
+import { GraduationCap } from "lucide-react";
 import { SYLLABUS_MODULES } from "../data";
 import "./luxury-landing.css";
 
-const FEATURES = [
-  {
-    icon: Layers,
-    title: "42 Integrated Modules",
-    desc: "Complete, syllabus-aligned coverage of Year 1 through Year 5 Ain Shams medical curriculum.",
-  },
-  {
-    icon: Brain,
-    title: "Smart Spaced Repetition",
-    desc: "Built-in FSRS memory optimization algorithm, Anki flashcards sync, and retention analytics.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "100% Faculty Verified",
-    desc: "Evidence-grounded question review with clinical rationale, zero spoilers, and continuous blueprint quotas.",
-  },
-  {
-    icon: Microscope,
-    title: "Clinical Spotter Simulator",
-    desc: "530+ high-definition specimens, pinned anatomical callouts, and timer examination modes.",
-  },
-];
-
 export function LoginScreen() {
   const [activeYear, setActiveYear] = useState<number>(2);
-  const [digestEmail, setDigestEmail] = useState("");
-  const [digestSent, setDigestSent] = useState(false);
 
   const clerkAppearance = {
     baseTheme: dark,
@@ -74,12 +41,6 @@ export function LoginScreen() {
     },
   };
 
-  const handleDigestSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!digestEmail.trim()) return;
-    setDigestSent(true);
-  };
-
   const currentYearModules = Object.values(SYLLABUS_MODULES[activeYear] || {}).flat();
 
   return (
@@ -94,42 +55,44 @@ export function LoginScreen() {
       <header className="luxury-navbar">
         <a href="/" className="luxury-nav-brand">
           <div className="luxury-nav-monogram">
-            <span>ASU</span>
+            <span>asu.codes</span>
           </div>
-          <span className="luxury-nav-brand-text">ASU Medicine</span>
+          <span className="text-[11px] font-mono tracking-wider uppercase text-zinc-500 border border-zinc-800 px-2 py-0.5 rounded-full">
+            Independent
+          </span>
         </a>
 
         <nav className="luxury-nav-links" aria-label="Main Navigation">
           <a href="#curriculum" className="luxury-nav-link">Curriculum</a>
-          <a href="#features" className="luxury-nav-link">Features</a>
-          <a href="#standards" className="luxury-nav-link">Standards</a>
-          <a href="/anki" className="luxury-nav-link">Anki Flashcards</a>
-          <a href="/marks-calculator" className="luxury-nav-link">Calculator</a>
+          <a href="/anki" className="luxury-nav-link">Anki Decks</a>
+          <a href="/marks-calculator" className="luxury-nav-link">Marks Calculator</a>
+          <a href="/support" className="luxury-nav-link">Support</a>
         </nav>
 
         <a href="#auth-portal" className="luxury-nav-cta">
           <GraduationCap size={16} />
-          <span>Enter Portal</span>
+          <span>Sign In</span>
         </a>
       </header>
 
       {/* ── 2. Hero Section ── */}
       <section className="luxury-hero-section">
-        {/* Live Notification Pill */}
+        {/* Independent Companion Pill */}
         <div className="luxury-live-pill" role="status">
           <span className="luxury-live-dot" />
-          <span className="luxury-live-tag">LIVE</span>
-          <span className="luxury-live-text">1,420+ Ain Shams Medical Students Active</span>
+          <span className="luxury-live-tag">INDEPENDENT</span>
+          <span className="luxury-live-text">Student-Built Medical Study Companion</span>
         </div>
 
-        {/* Editorial Headline */}
+        {/* Minimalist Editorial Headline */}
         <h1 className="luxury-headline">
-          The Academic Standard for <span className="luxury-headline-gold">Modern Medicine.</span>
+          Medicine, simplified. <br />
+          <span className="luxury-headline-gold">Practice on your own terms.</span>
         </h1>
 
         <p className="luxury-subheadline">
-          Ain Shams University Faculty of Medicine&apos;s digital examination platform.
-          Master 42 integrated modules, 12,800+ faculty-verified MCQs, and continuous assessment mock blueprints.
+          An ad-free, student-led question bank and exam simulator. Practice chapter MCQs,
+          simulate continuous assessments, and review spaced repetition flashcards without institutional clutter.
         </p>
 
         {/* ── 3. Neural Network Stage & Central Node ── */}
@@ -144,38 +107,38 @@ export function LoginScreen() {
               </linearGradient>
             </defs>
 
-            {/* Path 1: Central to Top-Left (MRS-2 Satellite) */}
+            {/* Path 1: Central to Top-Left */}
             <path d="M 320 250 C 220 220, 150 140, 160 80" className="node-line" />
             <path d="M 320 250 C 220 220, 150 140, 160 80" className="node-line-flow" />
 
-            {/* Path 2: Central to Top-Right (MGL-3 Satellite) */}
+            {/* Path 2: Central to Top-Right */}
             <path d="M 680 250 C 760 210, 840 130, 830 70" className="node-line" />
             <path d="M 680 250 C 760 210, 840 130, 830 70" className="node-line-flow" />
 
-            {/* Path 3: Central to Bottom-Right (FSRS Satellite) */}
+            {/* Path 3: Central to Bottom-Right */}
             <path d="M 680 320 C 780 350, 820 400, 810 440" className="node-line" />
             <path d="M 680 320 C 780 350, 820 400, 810 440" className="node-line-flow" />
           </svg>
 
-          {/* Satellite Card 1: Top-Left (MRS-2 Continuous II) */}
+          {/* Satellite Card 1: Top-Left */}
           <div className="luxury-satellite-card satellite-top-left">
-            <div className="satellite-eyebrow">Year 2 · Continuous II</div>
-            <div className="satellite-title">Respiratory System (MRS-2)</div>
-            <div className="satellite-meta">38 MCQs Blueprint · 1,282 Questions Pool</div>
+            <div className="satellite-eyebrow">Exams & Mocks</div>
+            <div className="satellite-title">Continuous II Blueprint Practice</div>
+            <div className="satellite-meta">Timed solving with instant answer rationale</div>
           </div>
 
-          {/* Satellite Card 2: Top-Right (MGL-3 Clinical Spotter) */}
+          {/* Satellite Card 2: Top-Right */}
           <div className="luxury-satellite-card satellite-top-right">
-            <div className="satellite-eyebrow">Year 3 · Clinical Spotter</div>
-            <div className="satellite-title">GIT Examination (MGL-3)</div>
-            <div className="satellite-meta">530 Stations · Pinned Anatomical Specimens</div>
+            <div className="satellite-eyebrow">Practical Review</div>
+            <div className="satellite-title">Clinical Spotters & Specimens</div>
+            <div className="satellite-meta">Pinned anatomical specimens and stations</div>
           </div>
 
-          {/* Satellite Card 3: Bottom-Right (FSRS & Anki) */}
+          {/* Satellite Card 3: Bottom-Right */}
           <div className="luxury-satellite-card satellite-bottom-right">
-            <div className="satellite-eyebrow">Smart Spaced Repetition</div>
-            <div className="satellite-title">FSRS & Anki Cloud Sync</div>
-            <div className="satellite-meta">Evidence-based long-term retention</div>
+            <div className="satellite-eyebrow">Spaced Repetition</div>
+            <div className="satellite-title">FSRS & Anki Synchronization</div>
+            <div className="satellite-meta">Adaptive intervals for long-term retention</div>
           </div>
 
           {/* Central Interactive Glass Node: Clerk Sign In */}
@@ -183,51 +146,35 @@ export function LoginScreen() {
             <div className="luxury-node-header">
               <div className="luxury-node-brand">
                 <div className="luxury-nav-monogram">
-                  <span>ASU</span>
+                  <span>asu.codes</span>
                 </div>
                 <div>
-                  <h2>Student Access Portal</h2>
-                  <p>Ain Shams University</p>
+                  <h2>Student Workspace</h2>
+                  <p>Sign in to continue your practice</p>
                 </div>
               </div>
-              <span className="luxury-node-badge">Official Portal</span>
+              <span className="luxury-node-badge">Free Project</span>
             </div>
 
             <div className="clerk-dark-theme-container flex items-center justify-center">
               <SignIn routing="virtual" appearance={clerkAppearance} />
             </div>
+
+            <p className="text-[11px] text-zinc-500 text-center mt-4 border-t border-zinc-800/60 pt-3">
+              Independent study platform · Sign in with any Google account
+            </p>
           </div>
         </div>
       </section>
 
-      {/* ── 4. Features Grid ── */}
-      <section className="luxury-features-section" id="features">
-        <div className="luxury-section-head">
-          <div className="luxury-section-eyebrow">Rigorous Academic Architecture</div>
-          <h2 className="luxury-section-title">Built for Serious Medical Education</h2>
-        </div>
-
-        <div className="luxury-features-grid">
-          {FEATURES.map((f) => {
-            const Icon = f.icon;
-            return (
-              <div key={f.title} className="luxury-feature-card">
-                <div className="luxury-icon-box">
-                  <Icon size={22} />
-                </div>
-                <h3 className="luxury-feature-title">{f.title}</h3>
-                <p className="luxury-feature-desc">{f.desc}</p>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* ── 5. Curriculum Explorer Section ── */}
+      {/* ── 4. Curriculum Explorer Section ── */}
       <section className="luxury-curriculum-section" id="curriculum">
         <div className="luxury-section-head">
-          <div className="luxury-section-eyebrow">All 42 Academic Modules</div>
-          <h2 className="luxury-section-title">Explore the 5-Year Medical Pathway</h2>
+          <div className="luxury-section-eyebrow">Curriculum Navigator</div>
+          <h2 className="luxury-section-title">Browse by Academic Year</h2>
+          <p className="text-sm text-zinc-400 mt-2 max-w-xl mx-auto">
+            Explore modules across all five years of the medical curriculum.
+          </p>
         </div>
 
         {/* Year Switcher Tabs */}
@@ -242,7 +189,7 @@ export function LoginScreen() {
               className="luxury-year-tab"
               onClick={() => setActiveYear(yr)}
             >
-              Year {yr} Curriculum
+              Year {yr}
             </button>
           ))}
         </div>
@@ -267,133 +214,63 @@ export function LoginScreen() {
         </div>
       </section>
 
-      {/* ── 6. Faculty Standards & Quality Framework ── */}
-      <section className="luxury-features-section" id="standards">
-        <div className="luxury-section-head">
-          <div className="luxury-section-eyebrow">Medical Integrity Protocol</div>
-          <h2 className="luxury-section-title">Zero Compromise on Medical Accuracy</h2>
-        </div>
-
-        <div className="max-w-3xl mx-auto p-8 rounded-3xl bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.08)] backdrop-blur-xl">
-          <div className="space-y-6">
-            <div className="flex items-start gap-4">
-              <CheckCircle2 size={20} className="text-[#c9b8a0] shrink-0 mt-1" />
-              <div>
-                <h4 className="text-base font-semibold text-white">4-Gate Semantic Intake Pipeline</h4>
-                <p className="text-sm text-zinc-400 mt-1">
-                  Every imported question undergoes occurrence anchoring, duplicate reconciliation,
-                  and faculty key verification before entering the active student pool.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <CheckCircle2 size={20} className="text-[#c9b8a0] shrink-0 mt-1" />
-              <div>
-                <h4 className="text-base font-semibold text-white">Authentic Assessment Blueprints</h4>
-                <p className="text-sm text-zinc-400 mt-1">
-                  Mock examinations strictly mirror official faculty quotas (e.g. 38 MCQs, 49 minutes)
-                  with unit-weighted mark distributions.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <CheckCircle2 size={20} className="text-[#c9b8a0] shrink-0 mt-1" />
-              <div>
-                <h4 className="text-base font-semibold text-white">Zero Spoiler Clinical Spotters</h4>
-                <p className="text-sm text-zinc-400 mt-1">
-                  High-definition specimen images with neutralized station captions and length-balanced
-                  distractors to simulate realistic practical examinations.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── 7. Luxury 5-Column Footer ── */}
+      {/* ── 5. Minimalist Footer ── */}
       <footer className="luxury-footer">
         <div className="luxury-footer-inner">
-          {/* Brand Col */}
+          {/* Brand & Independence Statement */}
           <div className="luxury-footer-brand">
-            <h3>ASU Medicine</h3>
-            <p>
-              Ain Shams University Faculty of Medicine examination and curriculum mastery platform.
+            <h3>asu.codes</h3>
+            <p className="text-zinc-400 text-sm leading-relaxed mb-4">
+              An independent, student-led study companion designed to make medical question practice,
+              spotter review, and exam prep straightforward and ad-free.
             </p>
+            <div className="p-3.5 rounded-xl bg-white/[0.02] border border-white/[0.06] text-[11.5px] text-zinc-400 leading-normal">
+              <strong className="text-zinc-300 block mb-0.5">Disclaimer:</strong>
+              asu.codes is an independent, non-commercial student project. It is not affiliated with, endorsed by, or operated by Ain Shams University or the Faculty of Medicine.
+            </div>
           </div>
 
           {/* Col 1: Curriculum */}
           <div className="luxury-footer-col">
             <h4>Curriculum</h4>
             <ul>
-              <li><a href="#curriculum">Year 1 Modules</a></li>
-              <li><a href="#curriculum">Year 2 Modules</a></li>
-              <li><a href="#curriculum">Year 3 Modules</a></li>
-              <li><a href="#curriculum">Year 4 Modules</a></li>
-              <li><a href="#curriculum">Year 5 Modules</a></li>
+              <li><a href="#curriculum" onClick={() => setActiveYear(1)}>Year 1 Modules</a></li>
+              <li><a href="#curriculum" onClick={() => setActiveYear(2)}>Year 2 Modules</a></li>
+              <li><a href="#curriculum" onClick={() => setActiveYear(3)}>Year 3 Modules</a></li>
+              <li><a href="#curriculum" onClick={() => setActiveYear(4)}>Year 4 Modules</a></li>
+              <li><a href="#curriculum" onClick={() => setActiveYear(5)}>Year 5 Modules</a></li>
             </ul>
           </div>
 
-          {/* Col 2: Academic Tools */}
+          {/* Col 2: Study Tools */}
           <div className="luxury-footer-col">
-            <h4>Tools</h4>
+            <h4>Study Tools</h4>
             <ul>
               <li><a href="/anki">Anki Flashcards</a></li>
               <li><a href="/marks-calculator">Marks Calculator</a></li>
-              <li><a href="#standards">Medical Standards</a></li>
-              <li><a href="/support">Academic Support</a></li>
+              <li><a href="/support">Feedback & Support</a></li>
             </ul>
           </div>
 
-          {/* Col 3: Legal */}
+          {/* Col 3: Legal & Policies */}
           <div className="luxury-footer-col">
-            <h4>Legal</h4>
+            <h4>Legal & Policies</h4>
             <ul>
               <li><a href="/terms">Terms of Service</a></li>
               <li><a href="/privacy">Privacy Policy</a></li>
               <li><a href="/disclaimer">Medical Disclaimer</a></li>
             </ul>
           </div>
-
-          {/* Col 4: Digest Input */}
-          <div className="luxury-footer-col">
-            <h4>Academic Digest</h4>
-            <div className="luxury-digest-box">
-              <p className="text-xs text-zinc-400">
-                Receive weekly high-yield clinical summaries and assessment blueprint updates.
-              </p>
-              {digestSent ? (
-                <p className="text-xs text-[#10b981] font-semibold">
-                  ✓ Thank you. You are subscribed to updates.
-                </p>
-              ) : (
-                <form onSubmit={handleDigestSubmit} className="luxury-digest-input-wrap">
-                  <input
-                    type="email"
-                    required
-                    placeholder="student@med.asu.edu.eg"
-                    aria-label="Email address for academic digest"
-                    value={digestEmail}
-                    onChange={(e) => setDigestEmail(e.target.value)}
-                    className="luxury-digest-input"
-                  />
-                  <button type="submit" aria-label="Subscribe" className="luxury-digest-btn">
-                    <ArrowRight size={16} />
-                  </button>
-                </form>
-              )}
-            </div>
-          </div>
         </div>
 
         {/* Footer Bottom */}
         <div className="luxury-footer-bottom">
-          <span>© {new Date().getFullYear()} Ain Shams University Faculty of Medicine. All rights reserved.</span>
-          <span>Designed with Apple Human Interface Guidelines for Academic Excellence.</span>
+          <span>© {new Date().getFullYear()} asu.codes · Independent Student Project.</span>
+          <span>Built for medical students to study at their own pace.</span>
         </div>
       </footer>
     </div>
   );
 }
+
 export default LoginScreen;

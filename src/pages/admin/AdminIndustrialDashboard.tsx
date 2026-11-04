@@ -224,7 +224,7 @@ export default function AdminIndustrialDashboard({
         <div className="ind-sidebar-brand">
           <div className="ind-monogram-badge">ASU</div>
           <div className="ind-brand-text">
-            <h2>ASU Medicine</h2>
+            <h2>asu.codes</h2>
             <p>Admin Telemetry</p>
           </div>
         </div>
