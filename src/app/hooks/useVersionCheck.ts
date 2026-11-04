@@ -74,7 +74,7 @@ export function applyAppUpdate(): void {
   }, 100);
 }
 
-export function useVersionCheck(options?: { isQuizActive?: boolean }) {
+export function useVersionCheck(_options?: { isQuizActive?: boolean }) {
   const [updateAvailable, setUpdateAvailable] = useState(false);
   const [remoteVersion, setRemoteVersion] = useState<AppVersionInfo | null>(
     null,
@@ -84,18 +84,10 @@ export function useVersionCheck(options?: { isQuizActive?: boolean }) {
     const remote = await fetchRemoteVersion();
     if (remote && isNewerVersion(remote, CURRENT_BUILD_VERSION)) {
       setRemoteVersion(remote);
-      const isQuiz =
-        options?.isQuizActive ??
-        sessionStorage.getItem("asu:active-quiz") === "1";
-      if (isQuiz) {
-        // If in an active quiz, hold update and show subtle Apple HIG pill
-        setUpdateAvailable(true);
-      } else {
-        // Not in quiz: silently perform seamless background update!
-        applyAppUpdate();
-      }
+      // Surface the non-disruptive update notification pill so the user has control
+      setUpdateAvailable(true);
     }
-  }, [options?.isQuizActive]);
+  }, []);
 
   useEffect(() => {
     // 1. Check version in background, deferred by 5s to avoid initial load contention
@@ -113,14 +105,7 @@ export function useVersionCheck(options?: { isQuizActive?: boolean }) {
 
     // 3. Listen to service worker update notification
     const onSwUpdate = () => {
-      const isQuiz =
-        options?.isQuizActive ??
-        sessionStorage.getItem("asu:active-quiz") === "1";
-      if (isQuiz) {
-        setUpdateAvailable(true);
-      } else {
-        applyAppUpdate();
-      }
+      setUpdateAvailable(true);
     };
 
     window.addEventListener("focus", onFocus);
@@ -133,7 +118,7 @@ export function useVersionCheck(options?: { isQuizActive?: boolean }) {
       document.removeEventListener("visibilitychange", onVisibility);
       window.removeEventListener("asu:sw-update-available", onSwUpdate);
     };
-  }, [checkVersion, options?.isQuizActive]);
+  }, [checkVersion]);
 
   return {
     updateAvailable,

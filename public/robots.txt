@@ -1,0 +1,19 @@
+# Robots.txt for ASU Medicine Portal (https://asu.codes)
+# Allows search engines to index public modules, tools, and academic guides.
+
+User-agent: *
+Allow: /
+Allow: /year-*
+Allow: /anki
+Allow: /marks-calculator
+Allow: /support
+Allow: /terms
+Allow: /privacy
+Allow: /disclaimer
+
+# Disallow private and administrative areas
+Disallow: /admin
+Disallow: /admin/
+Disallow: /api/
+
+Sitemap: https://asu.codes/sitemap.xml

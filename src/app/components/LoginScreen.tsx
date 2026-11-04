@@ -1,183 +1,399 @@
-import { motion, useReducedMotion } from "motion/react";
-import { BookOpen, Search, GraduationCap } from "lucide-react";
+import { useState } from "react";
 import { SignIn } from "@clerk/clerk-react";
 import { dark } from "@clerk/themes";
-import { useTheme } from "../hooks/useTheme";
-
-/* ------------------------------ Motion system ----------------------------- */
-
-const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1]; // Apple-like elastic deceleration
-
-const fadeUp = (delay = 0, reduced = false) => ({
-  initial: { opacity: reduced ? 1 : 0, y: reduced ? 0 : 16 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: reduced ? 0 : 0.8, ease: EASE, delay: reduced ? 0 : delay },
-});
-
-/* ------------------------------ Feature data ------------------------------ */
+import {
+  GraduationCap,
+  Layers,
+  ArrowRight,
+  ShieldCheck,
+  Brain,
+  Microscope,
+  CheckCircle2,
+} from "lucide-react";
+import { SYLLABUS_MODULES } from "../data";
+import "./luxury-landing.css";
 
 const FEATURES = [
   {
-    icon: GraduationCap,
-    title: "Practice & Review",
-    desc: "Practice MCQs and essays by module, review your answers, and retry missed questions.",
+    icon: Layers,
+    title: "42 Integrated Modules",
+    desc: "Complete, syllabus-aligned coverage of Year 1 through Year 5 Ain Shams medical curriculum.",
   },
   {
-    icon: BookOpen,
-    title: "Your Progress",
-    desc: "Track syllabus progress, lecture completion checklists, and store notes for every chapter.",
+    icon: Brain,
+    title: "Smart Spaced Repetition",
+    desc: "Built-in FSRS memory optimization algorithm, Anki flashcards sync, and retention analytics.",
   },
   {
-    icon: Search,
-    title: "Question Search & Calculator",
-    desc: "Search text across all database questions and calculate target grades or marks requirements.",
+    icon: ShieldCheck,
+    title: "100% Faculty Verified",
+    desc: "Evidence-grounded question review with clinical rationale, zero spoilers, and continuous blueprint quotas.",
+  },
+  {
+    icon: Microscope,
+    title: "Clinical Spotter Simulator",
+    desc: "530+ high-definition specimens, pinned anatomical callouts, and timer examination modes.",
   },
 ];
 
-/* --------------------------------- Page ----------------------------------- */
-
 export function LoginScreen() {
-  const reduced = Boolean(useReducedMotion());
-  const { isDark } = useTheme();
+  const [activeYear, setActiveYear] = useState<number>(2);
+  const [digestEmail, setDigestEmail] = useState("");
+  const [digestSent, setDigestSent] = useState(false);
 
   const clerkAppearance = {
-    baseTheme: isDark ? dark : undefined,
+    baseTheme: dark,
     variables: {
-      colorPrimary: isDark ? "#2dd4bf" : "#10B981",
+      colorPrimary: "#c9b8a0",
       colorBackground: "transparent",
-      colorText: isDark ? "#e2e8f0" : "#0d0f1a",
-      colorTextSecondary: isDark ? "#8e8e93" : "#6b7280",
-      colorInputBackground: isDark ? "rgba(255,255,255,0.04)" : "#ffffff",
-      colorInputText: isDark ? "#ffffff" : "#0d0f1a",
-      borderRadius: "12px",
-      fontFamily:
-        "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif",
+      colorText: "#ffffff",
+      colorTextSecondary: "#a1a1aa",
+      colorInputBackground: "rgba(255, 255, 255, 0.04)",
+      colorInputText: "#ffffff",
+      borderRadius: "14px",
+      fontFamily: "'Inter', -apple-system, sans-serif",
     },
     elements: {
       rootBox: "w-full",
-      card: "bg-transparent shadow-none w-full",
-      headerTitle: `${isDark ? "text-white" : "text-slate-900"} font-semibold`,
-      headerSubtitle: isDark ? "text-[#8e8e93]" : "text-slate-500",
+      card: "bg-transparent shadow-none w-full p-0",
+      headerTitle: "text-white font-semibold text-lg",
+      headerSubtitle: "text-zinc-400 text-xs",
       socialButtonsBlockButton:
-        `border ${isDark ? "border-white/[0.08] bg-white/[0.04] text-slate-200 hover:bg-white/[0.07]" : "border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100"} ` +
-        "transition-colors duration-200 relative",
+        "border border-white/10 bg-white/[0.04] text-white hover:bg-white/[0.08] transition-all min-h-[46px] rounded-xl relative",
       socialButtonsBlockButtonBadge:
-        "!absolute !top-0 !right-4 !-translate-y-1/2 " +
-        "!bg-teal-500/15 !border !border-teal-500/30 !text-teal-400 " +
-        "!text-[11px] !font-extrabold !uppercase !tracking-widest !px-2.5 !py-0.5 !rounded-full " +
-        "!leading-none !shadow-md",
-      dividerLine: isDark ? "bg-white/[0.08]" : "bg-slate-200",
-      dividerText: isDark ? "text-[#8e8e93]" : "text-slate-400",
-      formFieldLabel: isDark ? "text-slate-300" : "text-slate-700",
+        "!absolute !top-0 !right-4 !-translate-y-1/2 !bg-[#c9b8a0]/20 !border !border-[#c9b8a0]/40 !text-[#c9b8a0] !text-[10px] !font-bold !uppercase !px-2.5 !py-0.5 !rounded-full",
+      dividerLine: "bg-white/10",
+      dividerText: "text-zinc-500 text-xs",
+      formFieldLabel: "text-zinc-300 text-xs",
       formFieldInput:
-        `border ${isDark ? "bg-white/[0.04] border-white/[0.08] text-white focus:border-[#2dd4bf]/50 focus:ring-[#2dd4bf]/25" : "bg-white border-slate-200 text-slate-900 focus:border-[#10B981]/50 focus:ring-[#10B981]/25"} ` +
-        "min-h-11 text-base focus:ring-1 transition-colors duration-200",
+        "border bg-white/[0.04] border-white/10 text-white focus:border-[#c9b8a0]/60 focus:ring-[#c9b8a0]/20 min-h-11 rounded-xl text-sm transition-all",
       formButtonPrimary:
-        `${isDark ? "bg-white text-[#0b0b0c] hover:bg-white" : "bg-slate-900 text-white hover:bg-slate-800"} min-h-11 font-semibold shadow-none ` +
-        "transition-opacity duration-200 hover:opacity-90",
-      footerActionText: isDark ? "text-[#8e8e93]" : "text-slate-500",
-      footerActionLink: `text-${isDark ? "[#2dd4bf]" : "emerald-600"} hover:text-${isDark ? "[#2dd4bf]/80" : "emerald-700"}`,
-      
-      otpCodeFieldInputs: "gap-2",
-      otpCodeFieldInput:
-        `border ${isDark ? "bg-white/[0.04] border-white/[0.12] text-white focus:border-[#2dd4bf]/50" : "bg-white border-slate-300 text-slate-900 focus:border-[#10B981]/50"} ` +
-        "rounded-xl text-center text-lg font-semibold transition-all",
+        "bg-[#c9b8a0] text-black font-bold min-h-11 rounded-xl hover:bg-[#e8d5b7] transition-all shadow-lg shadow-[#c9b8a0]/15",
+      footerActionText: "text-zinc-500 text-xs",
+      footerActionLink: "text-[#c9b8a0] hover:text-[#e8d5b7] font-medium text-xs",
     },
   };
 
+  const handleDigestSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!digestEmail.trim()) return;
+    setDigestSent(true);
+  };
+
+  const currentYearModules = Object.values(SYLLABUS_MODULES[activeYear] || {}).flat();
+
   return (
-    <main
-      className="relative min-h-screen overflow-hidden antialiased"
-    >
-      {/* Single ambient light source behind the card */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute top-1/2 left-1/2 lg:left-[72%]
-                   h-[40rem] w-[40rem] -translate-x-1/2 -translate-y-1/2 rounded-full"
-        style={{
-          backgroundColor: isDark ? "rgba(45,212,191,0.05)" : "rgba(16,185,129,0.04)",
-          filter: "blur(140px)"
-        }}
-      />
+    <div className="luxury-landing-root">
+      {/* 32px Radial Dot Grid Overlay */}
+      <div className="luxury-dot-grid" aria-hidden="true" />
 
-      <div className="relative z-10 mx-auto grid min-h-screen w-full max-w-6xl
-                      grid-cols-1 items-center gap-16 px-6 py-16
-                      lg:grid-cols-2 lg:gap-24 lg:px-12 lg:items-start lg:pt-40 lg:pb-24">
+      {/* Central Golden Ambient Glow */}
+      <div className="luxury-ambient-glow" aria-hidden="true" />
 
-        {/* ----------------------- Left: brand & features ------------------- */}
-        <section className="mx-auto w-full max-w-md lg:mx-0 lg:h-[480px] flex flex-col justify-between">
-          <div>
-            {/* Headline */}
-            <motion.h1
-              {...fadeUp(0.1, reduced)}
-              className="text-4xl font-semibold leading-[1.15] tracking-tight
-                         text-slate-900 dark:text-white sm:text-5xl"
-            >
-              Master your Medical Studies.
-            </motion.h1>
+      {/* ── 1. Top Navbar ── */}
+      <header className="luxury-navbar">
+        <a href="/" className="luxury-nav-brand">
+          <div className="luxury-nav-monogram">
+            <span>ASU</span>
+          </div>
+          <span className="luxury-nav-brand-text">ASU Medicine</span>
+        </a>
 
-            {/* Intro */}
-            <motion.p
-              {...fadeUp(0.2, reduced)}
-              className="mt-4 text-[14.5px] leading-relaxed text-slate-600 dark:text-slate-400"
-            >
-              Practice every question format, track your syllabus, and study
-              smarter — built for ASU Medicine students.
-            </motion.p>
+        <nav className="luxury-nav-links" aria-label="Main Navigation">
+          <a href="#curriculum" className="luxury-nav-link">Curriculum</a>
+          <a href="#features" className="luxury-nav-link">Features</a>
+          <a href="#standards" className="luxury-nav-link">Standards</a>
+          <a href="/anki" className="luxury-nav-link">Anki Flashcards</a>
+          <a href="/marks-calculator" className="luxury-nav-link">Calculator</a>
+        </nav>
+
+        <a href="#auth-portal" className="luxury-nav-cta">
+          <GraduationCap size={16} />
+          <span>Enter Portal</span>
+        </a>
+      </header>
+
+      {/* ── 2. Hero Section ── */}
+      <section className="luxury-hero-section">
+        {/* Live Notification Pill */}
+        <div className="luxury-live-pill" role="status">
+          <span className="luxury-live-dot" />
+          <span className="luxury-live-tag">LIVE</span>
+          <span className="luxury-live-text">1,420+ Ain Shams Medical Students Active</span>
+        </div>
+
+        {/* Editorial Headline */}
+        <h1 className="luxury-headline">
+          The Academic Standard for <span className="luxury-headline-gold">Modern Medicine.</span>
+        </h1>
+
+        <p className="luxury-subheadline">
+          Ain Shams University Faculty of Medicine&apos;s digital examination platform.
+          Master 42 integrated modules, 12,800+ faculty-verified MCQs, and continuous assessment mock blueprints.
+        </p>
+
+        {/* ── 3. Neural Network Stage & Central Node ── */}
+        <div className="luxury-neural-stage" id="auth-portal">
+          {/* Dynamic SVG Bezier Connecting Lines */}
+          <svg className="luxury-svg-canvas" viewBox="0 0 1000 500" fill="none" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="goldNeuralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#e8d5b7" />
+                <stop offset="50%" stopColor="#c9b8a0" />
+                <stop offset="100%" stopColor="#a78b71" />
+              </linearGradient>
+            </defs>
+
+            {/* Path 1: Central to Top-Left (MRS-2 Satellite) */}
+            <path d="M 320 250 C 220 220, 150 140, 160 80" className="node-line" />
+            <path d="M 320 250 C 220 220, 150 140, 160 80" className="node-line-flow" />
+
+            {/* Path 2: Central to Top-Right (MGL-3 Satellite) */}
+            <path d="M 680 250 C 760 210, 840 130, 830 70" className="node-line" />
+            <path d="M 680 250 C 760 210, 840 130, 830 70" className="node-line-flow" />
+
+            {/* Path 3: Central to Bottom-Right (FSRS Satellite) */}
+            <path d="M 680 320 C 780 350, 820 400, 810 440" className="node-line" />
+            <path d="M 680 320 C 780 350, 820 400, 810 440" className="node-line-flow" />
+          </svg>
+
+          {/* Satellite Card 1: Top-Left (MRS-2 Continuous II) */}
+          <div className="luxury-satellite-card satellite-top-left">
+            <div className="satellite-eyebrow">Year 2 · Continuous II</div>
+            <div className="satellite-title">Respiratory System (MRS-2)</div>
+            <div className="satellite-meta">38 MCQs Blueprint · 1,282 Questions Pool</div>
           </div>
 
-          {/* Features */}
-          <div className="space-y-6 lg:mt-0 mt-8">
-            {FEATURES.map((f, i) => {
-              const Icon = f.icon;
-              return (
-                <motion.div
-                  key={f.title}
-                  {...fadeUp(0.3 + i * 0.1, reduced)}
-                  className="group flex items-start gap-4"
-                >
-                  <div
-                    className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center
-                               rounded-xl border border-slate-200 bg-slate-50
-                               dark:border-white/10 dark:bg-slate-900
-                               transition-colors duration-300
-                               group-hover:border-slate-300 dark:group-hover:border-white/20"
-                  >
-                    <Icon
-                      size={16}
-                      strokeWidth={1.5}
-                      className="text-slate-500 dark:text-slate-400 transition-colors duration-300
-                                 group-hover:text-slate-900 dark:group-hover:text-white"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-semibold text-slate-900 dark:text-white">{f.title}</h3>
-                    <p className="mt-1 text-[13px] leading-relaxed text-slate-600 dark:text-slate-400">
-                      {f.desc}
-                    </p>
-                  </div>
-                </motion.div>
-              );
-            })}
+          {/* Satellite Card 2: Top-Right (MGL-3 Clinical Spotter) */}
+          <div className="luxury-satellite-card satellite-top-right">
+            <div className="satellite-eyebrow">Year 3 · Clinical Spotter</div>
+            <div className="satellite-title">GIT Examination (MGL-3)</div>
+            <div className="satellite-meta">530 Stations · Pinned Anatomical Specimens</div>
           </div>
-        </section>
 
-        {/* ------------------------- Right: login card ---------------------- */}
-        <motion.section
-          initial={{ opacity: 0, scale: 0.97, y: 12 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: EASE, delay: 0.15 }}
-          className="mx-auto w-full max-w-[400px]"
-        >
-          <div
-            className="rounded-3xl border border-slate-200/80 bg-white/70 shadow-xl dark:border-white/10 dark:bg-slate-900/60 dark:shadow-[0_24px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl overflow-hidden"
-          >
-            <div className={`${isDark ? "clerk-dark-theme-container" : "clerk-light-theme-container"} py-8 flex items-center justify-center`}>
+          {/* Satellite Card 3: Bottom-Right (FSRS & Anki) */}
+          <div className="luxury-satellite-card satellite-bottom-right">
+            <div className="satellite-eyebrow">Smart Spaced Repetition</div>
+            <div className="satellite-title">FSRS & Anki Cloud Sync</div>
+            <div className="satellite-meta">Evidence-based long-term retention</div>
+          </div>
+
+          {/* Central Interactive Glass Node: Clerk Sign In */}
+          <div className="luxury-central-node">
+            <div className="luxury-node-header">
+              <div className="luxury-node-brand">
+                <div className="luxury-nav-monogram">
+                  <span>ASU</span>
+                </div>
+                <div>
+                  <h2>Student Access Portal</h2>
+                  <p>Ain Shams University</p>
+                </div>
+              </div>
+              <span className="luxury-node-badge">Official Portal</span>
+            </div>
+
+            <div className="clerk-dark-theme-container flex items-center justify-center">
               <SignIn routing="virtual" appearance={clerkAppearance} />
             </div>
           </div>
-        </motion.section>
-      </div>
-    </main>
+        </div>
+      </section>
+
+      {/* ── 4. Features Grid ── */}
+      <section className="luxury-features-section" id="features">
+        <div className="luxury-section-head">
+          <div className="luxury-section-eyebrow">Rigorous Academic Architecture</div>
+          <h2 className="luxury-section-title">Built for Serious Medical Education</h2>
+        </div>
+
+        <div className="luxury-features-grid">
+          {FEATURES.map((f) => {
+            const Icon = f.icon;
+            return (
+              <div key={f.title} className="luxury-feature-card">
+                <div className="luxury-icon-box">
+                  <Icon size={22} />
+                </div>
+                <h3 className="luxury-feature-title">{f.title}</h3>
+                <p className="luxury-feature-desc">{f.desc}</p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* ── 5. Curriculum Explorer Section ── */}
+      <section className="luxury-curriculum-section" id="curriculum">
+        <div className="luxury-section-head">
+          <div className="luxury-section-eyebrow">All 42 Academic Modules</div>
+          <h2 className="luxury-section-title">Explore the 5-Year Medical Pathway</h2>
+        </div>
+
+        {/* Year Switcher Tabs */}
+        <div className="luxury-year-tabs" role="tablist" aria-label="Academic Years">
+          {[1, 2, 3, 4, 5].map((yr) => (
+            <button
+              key={yr}
+              type="button"
+              role="tab"
+              aria-selected={activeYear === yr}
+              data-active={activeYear === yr}
+              className="luxury-year-tab"
+              onClick={() => setActiveYear(yr)}
+            >
+              Year {yr} Curriculum
+            </button>
+          ))}
+        </div>
+
+        {/* Modules Grid */}
+        <div className="luxury-module-grid">
+          {currentYearModules.map((m) => (
+            <div key={m.code} className="luxury-module-card">
+              <div className="luxury-module-header">
+                <span className="luxury-module-badge">{m.code}</span>
+                <span className="text-xl text-[#c9b8a0]" aria-hidden="true">
+                  🩺
+                </span>
+              </div>
+              <h3 className="luxury-module-name">{m.name}</h3>
+              <div className="luxury-module-footer">
+                <span>{m.marks ? `${m.marks} Marks · ${m.cp} CP` : `${m.cp} Credit Points`}</span>
+                <span className="text-zinc-500">Year {activeYear}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── 6. Faculty Standards & Quality Framework ── */}
+      <section className="luxury-features-section" id="standards">
+        <div className="luxury-section-head">
+          <div className="luxury-section-eyebrow">Medical Integrity Protocol</div>
+          <h2 className="luxury-section-title">Zero Compromise on Medical Accuracy</h2>
+        </div>
+
+        <div className="max-w-3xl mx-auto p-8 rounded-3xl bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.08)] backdrop-blur-xl">
+          <div className="space-y-6">
+            <div className="flex items-start gap-4">
+              <CheckCircle2 size={20} className="text-[#c9b8a0] shrink-0 mt-1" />
+              <div>
+                <h4 className="text-base font-semibold text-white">4-Gate Semantic Intake Pipeline</h4>
+                <p className="text-sm text-zinc-400 mt-1">
+                  Every imported question undergoes occurrence anchoring, duplicate reconciliation,
+                  and faculty key verification before entering the active student pool.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <CheckCircle2 size={20} className="text-[#c9b8a0] shrink-0 mt-1" />
+              <div>
+                <h4 className="text-base font-semibold text-white">Authentic Assessment Blueprints</h4>
+                <p className="text-sm text-zinc-400 mt-1">
+                  Mock examinations strictly mirror official faculty quotas (e.g. 38 MCQs, 49 minutes)
+                  with unit-weighted mark distributions.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <CheckCircle2 size={20} className="text-[#c9b8a0] shrink-0 mt-1" />
+              <div>
+                <h4 className="text-base font-semibold text-white">Zero Spoiler Clinical Spotters</h4>
+                <p className="text-sm text-zinc-400 mt-1">
+                  High-definition specimen images with neutralized station captions and length-balanced
+                  distractors to simulate realistic practical examinations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 7. Luxury 5-Column Footer ── */}
+      <footer className="luxury-footer">
+        <div className="luxury-footer-inner">
+          {/* Brand Col */}
+          <div className="luxury-footer-brand">
+            <h3>ASU Medicine</h3>
+            <p>
+              Ain Shams University Faculty of Medicine examination and curriculum mastery platform.
+            </p>
+          </div>
+
+          {/* Col 1: Curriculum */}
+          <div className="luxury-footer-col">
+            <h4>Curriculum</h4>
+            <ul>
+              <li><a href="#curriculum">Year 1 Modules</a></li>
+              <li><a href="#curriculum">Year 2 Modules</a></li>
+              <li><a href="#curriculum">Year 3 Modules</a></li>
+              <li><a href="#curriculum">Year 4 Modules</a></li>
+              <li><a href="#curriculum">Year 5 Modules</a></li>
+            </ul>
+          </div>
+
+          {/* Col 2: Academic Tools */}
+          <div className="luxury-footer-col">
+            <h4>Tools</h4>
+            <ul>
+              <li><a href="/anki">Anki Flashcards</a></li>
+              <li><a href="/marks-calculator">Marks Calculator</a></li>
+              <li><a href="#standards">Medical Standards</a></li>
+              <li><a href="/support">Academic Support</a></li>
+            </ul>
+          </div>
+
+          {/* Col 3: Legal */}
+          <div className="luxury-footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="/terms">Terms of Service</a></li>
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="/disclaimer">Medical Disclaimer</a></li>
+            </ul>
+          </div>
+
+          {/* Col 4: Digest Input */}
+          <div className="luxury-footer-col">
+            <h4>Academic Digest</h4>
+            <div className="luxury-digest-box">
+              <p className="text-xs text-zinc-400">
+                Receive weekly high-yield clinical summaries and assessment blueprint updates.
+              </p>
+              {digestSent ? (
+                <p className="text-xs text-[#10b981] font-semibold">
+                  ✓ Thank you. You are subscribed to updates.
+                </p>
+              ) : (
+                <form onSubmit={handleDigestSubmit} className="luxury-digest-input-wrap">
+                  <input
+                    type="email"
+                    required
+                    placeholder="student@med.asu.edu.eg"
+                    aria-label="Email address for academic digest"
+                    value={digestEmail}
+                    onChange={(e) => setDigestEmail(e.target.value)}
+                    className="luxury-digest-input"
+                  />
+                  <button type="submit" aria-label="Subscribe" className="luxury-digest-btn">
+                    <ArrowRight size={16} />
+                  </button>
+                </form>
+              )}
+            </div>
+          </div>
+        </div>
+
+        {/* Footer Bottom */}
+        <div className="luxury-footer-bottom">
+          <span>© {new Date().getFullYear()} Ain Shams University Faculty of Medicine. All rights reserved.</span>
+          <span>Designed with Apple Human Interface Guidelines for Academic Excellence.</span>
+        </div>
+      </footer>
+    </div>
   );
 }
+export default LoginScreen;

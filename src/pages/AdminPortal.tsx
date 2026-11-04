@@ -46,6 +46,7 @@ import {
 import "../app/reports/reports.css";
 import AdminOverviewPanel from "./AdminOverviewPanel";
 import AdminAnalyticsView from "./admin/AdminAnalyticsView";
+import AdminIndustrialDashboard from "./admin/AdminIndustrialDashboard";
 import { InlineQuestionEditor } from "../app/components/InlineQuestionEditor";
 import { DeleteQuestionModal } from "../app/components/DeleteQuestionModal";
 
@@ -66,6 +67,8 @@ export default function AdminPortal({
   const { getToken } = useAuth();
   const { user } = useUser();
   const navigate = useNavigate();
+  const location = useLocation();
+  const [params] = useSearchParams();
   const tokenRef = useRef(getToken);
   tokenRef.current = getToken;
   const [access, setAccess] = useState<{ userId?: string; error?: string }>({});
@@ -89,6 +92,18 @@ export default function AdminPortal({
       });
     return () => controller.abort();
   }, [user?.id]);
+
+  const isAuthorized = Boolean(access.userId && access.userId === user?.id);
+  const isOverview = location.pathname === "/admin" || location.pathname === "/admin/";
+  const forceClassic = params.get("view") === "classic";
+
+  if (isAuthorized && isOverview && !forceClassic) {
+    return (
+      <AdminIndustrialDashboard
+        onNavigateTab={(tab) => navigate(tab === "overview" ? "/admin" : `/admin/${tab}`)}
+      />
+    );
+  }
 
   return (
     <PortalShell

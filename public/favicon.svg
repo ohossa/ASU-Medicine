@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1c1917" />
+      <stop offset="100%" stop-color="#09090b" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8d5b7" />
+      <stop offset="50%" stop-color="#c9b8a0" />
+      <stop offset="100%" stop-color="#a78b71" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(232, 213, 183, 0.6)" />
+      <stop offset="100%" stop-color="rgba(167, 139, 113, 0.2)" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base -->
+  <rect x="16" y="16" width="480" height="480" rx="120" fill="url(#bgGlow)" stroke="url(#borderGrad)" stroke-width="8" />
+
+  <!-- Monogram Glyph: Interlocking ASU with Pulse Electrocardiogram Line -->
+  <g id="asu-monogram" filter="url(#glow)">
+    <!-- A -->
+    <path d="M120 340 L190 160 L260 340 M145 285 L235 285" fill="none" stroke="url(#goldGrad)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- S -->
+    <path d="M340 180 C340 160, 310 155, 290 165 C260 180, 260 215, 295 230 C335 245, 345 280, 315 305 C285 325, 250 310, 250 290" fill="none" stroke="url(#goldGrad)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- U -->
+    <path d="M350 160 L350 270 C350 320, 420 320, 420 270 L420 160" fill="none" stroke="url(#goldGrad)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Heartbeat / ECG Rhythm Accent -->
+    <path d="M80 380 L180 380 L200 340 L220 420 L245 360 L265 395 L280 380 L440 380" fill="none" stroke="#10b981" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.95" />
+  </g>
+</svg>

@@ -29,6 +29,10 @@ dist-ssr
 *.sln
 *.sw?
 
+# Python
+__pycache__/
+*.pyc
+
 # PDF Guide
 Student Guide 2024.pdf
 
