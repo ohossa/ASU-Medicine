@@ -1,4 +1,4 @@
-const CACHE_NAME = "asu-portal-cache-v2";
+const CACHE_NAME = "asu-codes-cache-v3";
 
 // Core static assets to cache immediately upon installation
 const PRECACHE_ASSETS = [
@@ -6,7 +6,7 @@ const PRECACHE_ASSETS = [
   "/index.html",
   "/manifest.json",
   "/favicon.png",
-  "/asu-medicine-logo.webp",
+  "/favicon-512.png",
   "/icons.svg"
 ];
 
