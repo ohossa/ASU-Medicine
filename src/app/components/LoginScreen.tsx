@@ -134,13 +134,13 @@ export function LoginScreen() {
                 ★★★★★
               </div>
               <blockquote className="split-quote">
-                &ldquo;The fastest way to test yourself before exam week. High-yield, clean, and zero distractions.&rdquo;
+                &ldquo;Dude I genuinely don&apos;t know how to thank you enough.&rdquo;
               </blockquote>
               <div className="split-author-row">
-                <div className="split-author-avatar">MS</div>
+                <div className="split-author-avatar">MI</div>
                 <div>
-                  <div className="split-author-name">Medical Student, Year 3</div>
-                  <div className="split-author-role">Clinical Phase · Independent User</div>
+                  <div className="split-author-name">Mohamed Ibrahim</div>
+                  <div className="split-author-role">Year 2 Medical Student</div>
                 </div>
               </div>
             </div>
