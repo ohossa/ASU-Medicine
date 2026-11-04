@@ -1,5 +1,6 @@
 import { motion, useReducedMotion } from "motion/react";
 import { SignIn } from "@clerk/clerk-react";
+import { dark } from "@clerk/themes";
 import { GraduationCap, BookOpen, Search } from "lucide-react";
 import "./split-login.css";
 
@@ -9,17 +10,17 @@ const FEATURES = [
   {
     icon: GraduationCap,
     title: "Chapter Practice & Review",
-    desc: "Practice MCQs and essays by module, review your answers, and retry missed questions with full explanations.",
+    desc: "Practice MCQs and questions by module, review your answers, and retry missed questions with full explanations.",
   },
   {
     icon: BookOpen,
     title: "Syllabus Progress & Retention",
-    desc: "Track completed lectures, monitor your spaced repetition intervals, and bookmark high-yield questions.",
+    desc: "Track completed lectures, monitor your study intervals, and bookmark questions for quick review.",
   },
   {
     icon: Search,
-    title: "Question Search & Calculator",
-    desc: "Instantly search questions across all modules and calculate exam grades with blueprint weighting.",
+    title: "Question Search & Calculators",
+    desc: "Instantly search questions across all modules and calculate your exam marks and grade distributions.",
   },
 ];
 
@@ -27,13 +28,14 @@ export function LoginScreen() {
   const reduced = Boolean(useReducedMotion());
 
   const clerkAppearance = {
+    baseTheme: dark,
     variables: {
       colorPrimary: "#2743ff",
-      colorBackground: "#ffffff",
-      colorText: "#0d1220",
-      colorTextSecondary: "#5b6478",
-      colorInputBackground: "#ffffff",
-      colorInputText: "#0d1220",
+      colorBackground: "transparent",
+      colorText: "#ffffff",
+      colorTextSecondary: "#8c97ad",
+      colorInputBackground: "#0f1524",
+      colorInputText: "#ffffff",
       borderRadius: "10px",
       fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
     },
@@ -43,30 +45,30 @@ export function LoginScreen() {
       headerTitle: "hidden",
       headerSubtitle: "hidden",
       socialButtonsBlockButton:
-        "border border-[#dfe2ea] bg-white text-[#0d1220] hover:bg-[#f8f9fc] hover:border-[#cfd4e0] transition-all min-h-[46px] rounded-xl font-medium shadow-none text-sm relative",
-      socialButtonsBlockButtonText: "text-[#0d1220] font-semibold text-sm",
+        "border border-[#1b2438] bg-[#0f1524] text-white hover:bg-[#151e33] hover:border-[#273550] transition-all min-h-[46px] rounded-xl font-medium shadow-none text-sm relative",
+      socialButtonsBlockButtonText: "text-white font-medium text-sm",
       socialButtonsBlockButtonBadge:
-        "!absolute !top-0 !right-4 !-translate-y-1/2 !bg-[#2743ff]/10 !border !border-[#2743ff]/20 !text-[#2743ff] !text-[10px] !font-bold !uppercase !px-2 !py-0.5 !rounded-full",
-      dividerLine: "bg-[#e6e8ee]",
-      dividerText: "text-[#5b6478] text-xs font-normal uppercase tracking-wider",
-      formFieldLabel: "text-[#0d1220] text-xs font-semibold tracking-wide mb-1.5",
+        "!absolute !top-0 !right-4 !-translate-y-1/2 !bg-[#2743ff]/15 !border !border-[#2743ff]/30 !text-[#718eff] !text-[10px] !font-bold !uppercase !px-2 !py-0.5 !rounded-full",
+      dividerLine: "bg-[#1b2438]",
+      dividerText: "text-[#8c97ad] text-xs font-normal uppercase tracking-wider",
+      formFieldLabel: "text-zinc-200 text-xs font-semibold tracking-wide mb-1.5",
       formFieldInput:
-        "border border-[#dfe2ea] bg-white text-[#0d1220] focus:border-[#2743ff] focus:ring-4 focus:ring-[#2743ff]/15 min-h-[44px] rounded-xl text-sm transition-all",
+        "border border-[#1b2438] bg-[#0f1524] text-white focus:border-[#3b5bfd] focus:ring-4 focus:ring-[#2743ff]/20 min-h-[44px] rounded-xl text-sm transition-all",
       formButtonPrimary:
-        "bg-[#2743ff] text-white font-semibold min-h-[46px] rounded-xl hover:bg-[#1b34c9] transition-all shadow-none text-sm active:scale-[0.99]",
-      footerActionText: "text-[#5b6478] text-xs",
-      footerActionLink: "text-[#2743ff] hover:underline font-semibold text-xs",
-      identityPreviewText: "text-[#0d1220]",
-      identityPreviewEditButton: "text-[#2743ff] hover:underline",
-      formFieldAction: "text-[#2743ff] hover:underline text-xs font-medium",
+        "bg-[#2743ff] text-white font-semibold min-h-[46px] rounded-xl hover:bg-[#1f38db] transition-all shadow-none text-sm active:scale-[0.99]",
+      footerActionText: "text-[#8c97ad] text-xs",
+      footerActionLink: "text-[#4d6eff] hover:underline font-semibold text-xs",
+      identityPreviewText: "text-white",
+      identityPreviewEditButton: "text-[#4d6eff] hover:underline",
+      formFieldAction: "text-[#4d6eff] hover:underline text-xs font-medium",
     },
   };
 
   return (
     <div className="split-auth-container">
-      {/* ── LEFT: SOLID ELECTRIC-COBALT BRAND PANEL (#2743ff) ── */}
+      {/* ── LEFT: SOLID ELECTRIC-COBALT BRAND PANEL (#0d1536) ── */}
       <section className="split-brand-panel" aria-label="Brand Overview">
-        {/* Faint #1b34c9 dot grid */}
+        {/* Faint dot grid */}
         <div className="split-dot-grid" aria-hidden="true" />
 
         <div className="split-brand-content">
@@ -89,7 +91,7 @@ export function LoginScreen() {
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               className="split-headline"
             >
-              Ship your best work, <span className="apricot-underline">faster.</span>
+              Master your medical studies, <span className="apricot-underline">smarter.</span>
             </motion.h1>
 
             <motion.p
@@ -98,11 +100,11 @@ export function LoginScreen() {
               transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="split-supporting-line"
             >
-              The unified, ad-free question bank and exam simulator for medical students.
-              Solve chapter questions, practice continuous assessment mocks, and retain high-yield concepts.
+              The independent question bank built by medical students. Solve chapter MCQs,
+              review detailed explanations, and test your knowledge at your own pace.
             </motion.p>
 
-            {/* 3 Core Features (from old page) */}
+            {/* 3 Core Features (from original page) */}
             <div className="split-features-list">
               {FEATURES.map((f, i) => {
                 const Icon = f.icon;
@@ -132,12 +134,12 @@ export function LoginScreen() {
                 ★★★★★
               </div>
               <blockquote className="split-quote">
-                &ldquo;The fastest way to test yourself before continuous exams. High-yield, clean, and zero distractions.&rdquo;
+                &ldquo;The fastest way to test yourself before exam week. High-yield, clean, and zero distractions.&rdquo;
               </blockquote>
               <div className="split-author-row">
                 <div className="split-author-avatar">MS</div>
                 <div>
-                  <div className="split-author-name">Medical Student, Class of &apos;26</div>
+                  <div className="split-author-name">Medical Student, Year 3</div>
                   <div className="split-author-role">Clinical Phase · Independent User</div>
                 </div>
               </div>
@@ -146,18 +148,18 @@ export function LoginScreen() {
 
           {/* Bottom: Trusted Engine Wordmarks */}
           <div className="split-trust-block">
-            <div className="split-trust-eyebrow">STUDENT STUDY ENGINE</div>
+            <div className="split-trust-eyebrow">INDEPENDENT STUDY SUITE</div>
             <div className="split-wordmarks-row">
-              <span className="split-wordmark-item">MCQ PRACTICE</span>
-              <span className="split-wordmark-item">CLINICAL SPOTTERS</span>
-              <span className="split-wordmark-item">FSRS ANKI</span>
-              <span className="split-wordmark-item">SYLLABUS TRACKER</span>
+              <span className="split-wordmark-item">CHAPTER MCQS</span>
+              <span className="split-wordmark-item">DETAILED EXPLANATIONS</span>
+              <span className="split-wordmark-item">SPACED REPETITION</span>
+              <span className="split-wordmark-item">EXAM SIMULATOR</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── RIGHT: CRISP WHITE AUTH FORM (#ffffff) ── */}
+      {/* ── RIGHT: CRISP DARK AUTH FORM COLUMN (#080c16) ── */}
       <section className="split-form-panel" aria-label="Sign In Form">
         <div className="split-form-top">
           <span className="text-zinc-500">Need help?</span>
@@ -188,7 +190,7 @@ export function LoginScreen() {
           </div>
         </div>
 
-        <div className="text-center text-[11px] text-zinc-400 mt-8 pt-4 border-t border-[#e6e8ee]">
+        <div className="text-center text-[11px] text-zinc-500 mt-8 pt-4 border-t border-[#1b2438]">
           © {new Date().getFullYear()} asu.codes · Independent student project. Not affiliated with Ain Shams University.
         </div>
       </section>
