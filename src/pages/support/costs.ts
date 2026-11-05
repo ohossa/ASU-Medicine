@@ -6,8 +6,8 @@ export const RUNNING_COSTS = [
   { en: 'Domain (monthly average)', ar: 'النطاق (متوسط شهري)', monthlyUsd: 70 / 12 },
 ] as const;
 export const COST_CONVERSION = {
-  egpPerUsd: 52.46,
-  checkedOn: '2026-10-09',
+  egpPerUsd: 54.77,
+  checkedOn: '2026-11-05',
   sourceUrl: 'https://egrates.com/en/banks/13',
 } as const;
 export const MONTHLY_TOTAL_USD = RUNNING_COSTS.reduce((total, item) => total + item.monthlyUsd, 0);

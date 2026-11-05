@@ -227,7 +227,7 @@ Aesthetic: Apple Fitness / Health summary meets Linear analytics. High-contrast 
 
 #### Layout Architecture
 * **Header:** Hero title: *"Support A-Plus (asu.codes)"* with subtitle: *"Built by a medical student, for medical students. 100% free, always."*
-* **Monthly Cost Ledger Table:** Real, honest, verified costs ($50.83 / ~2,666 EGP monthly) showing Supabase database, Vercel hosting, Resend email, and annual domain renewal.
+* **Monthly Cost Ledger Table:** Real, honest, verified costs ($50.83 / ~2,784 EGP monthly) showing Supabase database, Vercel hosting, Resend email, and annual domain renewal.
 * **InstaPay & Vodafone Cash Payment Panel:**
   * Recipient: `Omar HossamEldin Maged`
   * InstaPay IPA Address: `omarhossa_@instapay` (with copy button)
@@ -245,7 +245,7 @@ HERO SECTION:
 - Headline: "Support the project." Subhead: "A-Plus is built by a medical student, for medical students. Every question and feature stays 100% free for everyone, always."
 
 TRANSPARENCY COST LEDGER (Clean financial table):
-- Card showing actual monthly server costs ($50.83 / ~2,666 EGP):
+- Card showing actual monthly server costs ($50.83 / ~2,784 EGP):
   - Supabase Pro Database: $25.00
   - Vercel Edge Hosting: $20.00
   - Domain (asu.codes): $5.83

@@ -34,7 +34,7 @@ describe("Support ASUCodes", () => {
     render(<SupportPage />);
     const table = screen.getByRole("table", { name: "Monthly running costs" });
     expect(table).toHaveTextContent("$50.83");
-    expect(table).toHaveTextContent("2,666.72");
+    expect(table).toHaveTextContent("2,784.14");
     expect(table).toHaveTextContent("$5.83");
     expect(screen.getByText(/Domain is billed at \$70 per year/)).toBeInTheDocument();
     fireEvent.click(screen.getByRole("button", { name: "العربية" }));

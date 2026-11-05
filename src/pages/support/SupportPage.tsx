@@ -462,7 +462,7 @@ export default function SupportPage() {
               "Domain is billed at $70 per year; $5.83 is its monthly average. These are current running-cost estimates and may change with usage.",
               "تجديد النطاق يُدفع سنوياً بمبلغ 70 دولاراً؛ 5.83 دولار هو المتوسط الشهري. هذه تقديرات تكاليف التشغيل الحالية وقد تتغير حسب الاستخدام.",
             )}</p>
-            <p className="support-cost-footnote">{t("EGP estimates use", "التقديرات بالجنيه تستخدم")} <bdi>1 USD ≈ 52.46 EGP</bdi>. {t("Checked 9 October 2026.", "تم التحقق في 9 أكتوبر 2026.")} <a href={COST_CONVERSION.sourceUrl} target="_blank" rel="noopener noreferrer">{t("Exchange-rate reference", "مرجع سعر الصرف")}</a>. {t("Your bank’s rate and fees may differ.", "قد يختلف سعر البنك ورسومه.")}</p>
+            <p className="support-cost-footnote">{t("EGP estimates use", "التقديرات بالجنيه تستخدم")} <bdi>1 USD ≈ {costAmount(COST_CONVERSION.egpPerUsd)} EGP</bdi>. {t("Checked 5 November 2026.", "تم التحقق في 5 نوفمبر 2026.")} <a href={COST_CONVERSION.sourceUrl} target="_blank" rel="noopener noreferrer">{t("Exchange-rate reference", "مرجع سعر الصرف")}</a>. {t("Your bank’s rate and fees may differ.", "قد يختلف سعر البنك ورسومه.")}</p>
           </aside>
         </section>
         <section className="support-bottom">
