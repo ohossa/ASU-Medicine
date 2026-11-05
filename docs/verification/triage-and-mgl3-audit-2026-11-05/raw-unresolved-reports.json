@@ -1,0 +1,2147 @@
+[
+  {
+    "id": "r_7dd96406cf7362d886ca70b73388cd058f8704aa",
+    "request_hash": "745d93c22438bf6b92ad7469048ace40c52fdbb4a3c3ce7fd817de18b23c7223",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "question 2",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-0887",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "079ed1b6dc1c7ac93accd11ae58bb840c46f797f368f16e7ae8f75c8275bcb72",
+      "question": {
+        "id": "MGL3-CH5-PATH-0887",
+        "text": "13 - Regarding 2ry biliary cirrhosis the following is not true :",
+        "type": "mcq",
+        "lecture": 18,
+        "options": [
+          "It is due to extrahepatic biliary obstruction",
+          "It is micronodular cirrhosis",
+          "The liver is enlarged and bile-stained",
+          "The hepatocytes show ground glass appearance"
+        ],
+        "explanation": "Secondary biliary cirrhosis follows prolonged extrahepatic obstruction and causes cholestasis; ground-glass hepatocytes instead suggest HBV.",
+        "correctIndex": 3
+      },
+      "chapterId": 5,
+      "topicName": "Cirrhosis & cholestasis",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18850-ab15-72dd-bcb1-5caa612f4280"
+    },
+    "created_at": "2026-10-29T15:39:10.285+00:00",
+    "updated_at": "2026-10-29T15:39:10.285+00:00"
+  },
+  {
+    "id": "r_45ad7977d733e0dcf8561757d4ab6c8d617f5e02",
+    "request_hash": "5f37ac2998d61f9bcb9430a618a5413ef08c2c7a6240977996f798eb2aec3216",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-0895",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "621702a167f01aa9cb195d8d1097f724eac3c244ebbfdec65d8b1cdf1914016e",
+      "question": {
+        "id": "MGL3-CH5-PATH-0895",
+        "text": "22- A 53-year-old male came to emergency department. Because of marked hematemesis that had continued for 3 hours. He had a distended abdomen with a fluid wave and the splenic tip was palpable. Which of the following liver diseases is most likely to be present in this patient:",
+        "type": "mcq",
+        "lecture": 18,
+        "options": [
+          "Cholangiocarcinoma.",
+          "Cirrhosis.",
+          "Fatty change.",
+          "Massive hepatic necrosis."
+        ],
+        "explanation": "Cirrhosis impairs hepatic blood flow and synthetic function, causing portal hypertension, ascites, splenomegaly, and variceal hemorrhage.",
+        "correctIndex": 1
+      },
+      "chapterId": 5,
+      "topicName": "Cirrhosis & cholestasis",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18853-f2ce-72ff-b0dc-99b4c12f06da"
+    },
+    "created_at": "2026-10-29T15:42:45.01+00:00",
+    "updated_at": "2026-10-29T15:42:45.01+00:00"
+  },
+  {
+    "id": "r_9a82f5646a37eae2db382c30d24a386254039dd4",
+    "request_hash": "7db69754edaf211dd59c7fe44cb6944cd28ddad12ff67ae63d7ce27585cb6e10",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-0902",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "07bc5ad98f774e1b81f3225fe867d1b57de5d91e50711cdbc159b069eee95826",
+      "question": {
+        "id": "MGL3-CH5-PATH-0902",
+        "text": "The most dangerous complication of portal hypertension is:",
+        "type": "mcq",
+        "lecture": 18,
+        "options": [
+          "Ascites.",
+          "Esophogeal varices.",
+          "Piles.",
+          "Splenomegaly.",
+          "Caput medusa."
+        ],
+        "explanation": "Esophageal variceal hemorrhage is the most dangerous portal-hypertension complication because bleeding can be sudden and fatal.",
+        "correctIndex": 1
+      },
+      "chapterId": 5,
+      "topicName": "Cirrhosis & cholestasis",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18855-13ed-76fa-b9b0-e8e906035c8e"
+    },
+    "created_at": "2026-10-29T15:43:59.066+00:00",
+    "updated_at": "2026-10-29T15:43:59.066+00:00"
+  },
+  {
+    "id": "r_2c96972f2d4d18f728ebb9051a2a88c828a38e4b",
+    "request_hash": "ef0eaf5eceddfd3be307d8c66559fba345af3c5325efb37c1db443f174623d30",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "formatting",
+    "explanation": "and its also duplicated",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-0903",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "d6d81978456a70b9000789a5d96ed82e5c9c3e2027e6fa1cab756951a53eda28",
+      "question": {
+        "id": "MGL3-CH5-PATH-0903",
+        "text": "10.A 53 year old male came to emergency department, because of marked hematemesis\nthat had continued for 3 hours. He had a distended abdomen with a fluid wave and the\nsplenic tip was palpable. Which of the following liver diseases is most likely to be\npresent in this patient:",
+        "type": "mcq",
+        "lecture": 18,
+        "options": [
+          "Cholangiocarcinoma",
+          "Cirrhosis",
+          "Fatty change",
+          "Massive hepatic necrosis",
+          "HAV infection"
+        ],
+        "revision": 0,
+        "explanation": "Cirrhosis causes portal hypertension and varices; hematemesis with ascites and splenomegaly signals decompensated chronic liver disease.",
+        "correctIndex": 1
+      },
+      "chapterId": 5,
+      "topicName": "Cirrhosis & cholestasis",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18855-7aa4-7383-b989-787228086f2d"
+    },
+    "created_at": "2026-10-29T15:44:25.385+00:00",
+    "updated_at": "2026-10-29T15:44:25.385+00:00"
+  },
+  {
+    "id": "r_15d1936ffba356e5f5f8face68aeb6c38a3514e1",
+    "request_hash": "52e54409d010bc88940c64961a0c4eb2d2a6c1f56725f7b55d371531988885c6",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-0904",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "76f7e8b102680173f8d8cd9d6568195b4c0a32c2245fc8ef3c825553588ac044",
+      "question": {
+        "id": "MGL3-CH5-PATH-0904",
+        "text": "27. A 54-year-old farmer has a history of gastrointestinal bilharziasis. He\ndeveloped ascites, hepatomegaly, and splenomegaly with hematemesis.\nWhat is the most likely diagnosis?",
+        "type": "mcq",
+        "lecture": 18,
+        "options": [
+          "Amoebic liver absess",
+          "Portal hypertension",
+          "Cholelithiasis",
+          "Leukemia",
+          "Chronic acive hepatitis"
+        ],
+        "explanation": "Schistosomal periportal fibrosis causes presinusoidal portal hypertension, explaining ascites, hepatosplenomegaly, and hematemesis from varices.",
+        "correctIndex": 1
+      },
+      "chapterId": 5,
+      "topicName": "Cirrhosis & cholestasis",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18855-ac24-75bf-8882-52199cb417fd"
+    },
+    "created_at": "2026-10-29T15:44:37.992+00:00",
+    "updated_at": "2026-10-29T15:44:37.992+00:00"
+  },
+  {
+    "id": "r_faa795d0026d72738ea802fcda0bfe6a394b2be2",
+    "request_hash": "68257539e44a62dcbe92be5a4a049929f5bd17f5fdea27d120aeebe68f9ba8b6",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-0905",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "ae09c65af173b015c8ee7a6652eae0f6f44ec87170e6d5d1433f6740deb6bb7d",
+      "question": {
+        "id": "MGL3-CH5-PATH-0905",
+        "text": "A 53 year old male came to emergency department because of marked hematemesis that had continued for 3 hours. He had a distended abdomen with a fluid wave and the splenic\ntip was palpable. Which of the following liver diseases is most likely to be present in this\npatient:",
+        "type": "mcq",
+        "lecture": 18,
+        "options": [
+          "Cholangiocarcinoma.",
+          "Cirrhosis.",
+          "Fatty change.",
+          "Massive hepatic necrosis.",
+          "HAV infection."
+        ],
+        "explanation": "Cirrhosis causes portal hypertension, impaired albumin synthesis, ascites, splenomegaly, and variceal bleeding.",
+        "correctIndex": 1
+      },
+      "chapterId": 5,
+      "topicName": "Cirrhosis & cholestasis",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18855-e2a9-7638-9f1d-90dcebef146f"
+    },
+    "created_at": "2026-10-29T15:44:52.157+00:00",
+    "updated_at": "2026-10-29T15:44:52.157+00:00"
+  },
+  {
+    "id": "r_84fd7469b07c6189ea5d33f0db12625cd6e7a84a",
+    "request_hash": "3f94b83b14edf7580be2bdee175540f8c2cb758eb16a0589519ea501dc7fe2f2",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-0917",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "798542790613a323a78ca1a3113d72c480e3d9cf510c3e524e14ef600423f4a2",
+      "question": {
+        "id": "MGL3-CH5-PATH-0917",
+        "text": "An 84 year old male is found at autopsy to have a cirrhotic liver in which the size of the liver nodules averages 2 to 3 mm, microscopically, the liver shows regenerative nodules with extensive fibrosis along with scattered lymphocytes, fatty change, Mallory's bodies and bile duct proliferation. Which of the following etiologies best explains the appearance of the cirrhosis in this case?",
+        "type": "mcq",
+        "lecture": 18,
+        "options": [
+          "Alpha 1 antitrypsin deficiency.",
+          "Hepatitis B infection.",
+          "Biliary atresia.",
+          "Wilson's disease.",
+          "Chronic alcoholism."
+        ],
+        "explanation": "Small regenerative nodules, steatosis, and Mallory-Denk bodies are classic clues to alcohol-related cirrhosis.",
+        "correctIndex": 4
+      },
+      "chapterId": 5,
+      "topicName": "Cirrhosis & cholestasis",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18857-ae7c-7a74-9e7f-bdc014f97da9"
+    },
+    "created_at": "2026-10-29T15:46:49.452+00:00",
+    "updated_at": "2026-10-29T15:46:49.452+00:00"
+  },
+  {
+    "id": "r_9df2891fc4803393f8ebc4a44bb0eac422f32dee",
+    "request_hash": "3589ddb62408a80f537aea264b93bfa98cea76e02974ae19c0fa44684bfcde66",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-0923",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "f8549611d9fd204fe7e78563c39e91d9badd921a795c0a981ae94ba82afee8a9",
+      "question": {
+        "id": "MGL3-CH5-PATH-0923",
+        "text": "2. The most dangerous complication of portal hypertension is:",
+        "type": "mcq",
+        "lecture": 18,
+        "options": [
+          "Ascites",
+          "Esophageal varices",
+          "Piles",
+          "Splenomegaly",
+          "Caput medusa"
+        ],
+        "explanation": "Esophageal variceal hemorrhage is the most dangerous portal-hypertension complication because bleeding can be sudden and fatal.",
+        "correctIndex": 1
+      },
+      "chapterId": 5,
+      "topicName": "Cirrhosis & cholestasis",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18858-4915-7cd7-a41e-ba2bc51de5bc"
+    },
+    "created_at": "2026-10-29T15:47:29.38+00:00",
+    "updated_at": "2026-10-29T15:47:29.38+00:00"
+  },
+  {
+    "id": "r_148c430b57ad3c09781c406d5fb1f97028494934",
+    "request_hash": "6817b2b91fd2fa0d24914efba8d51e3ed2c92d6c7fc814d8c5a392d7c4f34d2a",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-0936",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "413dc9dd863a476bab84404cf8aae17030a08bd6a5e56cda6e6091255b1367cc",
+      "question": {
+        "id": "MGL3-CH5-PATH-0936",
+        "text": "(1197) Encircle True or False:\nBilharziasis leads to liver cirrhosis. ( T - F )",
+        "type": "truefalse",
+        "lecture": 18,
+        "options": [
+          "True",
+          "False"
+        ],
+        "explanation": "Schistosomal periportal fibrosis can cause portal hypertension without the regenerative nodules and diffuse fibrosis of cirrhosis.",
+        "correctIndex": 1
+      },
+      "chapterId": 5,
+      "topicName": "Cirrhosis & cholestasis",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a1885b-b351-75cd-a0ee-2bd161ad9e63"
+    },
+    "created_at": "2026-10-29T15:51:13.098+00:00",
+    "updated_at": "2026-10-29T15:51:13.098+00:00"
+  },
+  {
+    "id": "r_1b663c9b7ea1eb142187b96be5589681dfa250a9",
+    "request_hash": "c9ec2c42dbcfc950798a8b580d08cbbbd94c101d547114e9c2ed54a6ca4e4b98",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-0939",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "3af30bacb0fc0bbb6eb3ccc0002c1403e6b982140497188c7a1f7639d13c6ef0",
+      "question": {
+        "id": "MGL3-CH5-PATH-0939",
+        "text": "(1181) Choose the correct answer:\nThe most dangerous complication of portal hypertension is:",
+        "type": "mcq",
+        "lecture": 18,
+        "options": [
+          "Ascites.",
+          "Esophageal varices.",
+          "Piles.",
+          "Splenomegaly.",
+          "Caput medusae."
+        ],
+        "explanation": "Esophageal varices are a major dangerous complication of portal hypertension because rupture can rapidly cause fatal hemorrhage.",
+        "correctIndex": 1
+      },
+      "chapterId": 5,
+      "topicName": "Cirrhosis & cholestasis",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a1885b-d8a2-7a1c-ac11-fd6b16b6fa6c"
+    },
+    "created_at": "2026-10-29T15:51:22.678+00:00",
+    "updated_at": "2026-10-29T15:51:22.678+00:00"
+  },
+  {
+    "id": "r_d5aad2db17be09bc34473ece18257740337f0bd8",
+    "request_hash": "f8d522513fcefb661db83243f973ede455d4007918d3418dc72e2e09eee71cff",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-0973",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "9eeb8ee94834ccd09169a6cc4c2b8ef8199ffb48fde7c983ee62754c7d44722a",
+      "question": {
+        "id": "MGL3-CH5-PATH-0973",
+        "text": "1-Aspiration of a cystic lesion in the right lobe of the liver reveals grayishbrown, pasty material, with streaks of blood, resembling Anchovy sauce. Microscopic examination of this material reveals necrotic debris but no neutrophils and no pus cells. Which of the following is the most likely diagnosis?",
+        "type": "mcq",
+        "lecture": 19,
+        "options": [
+          "Hepatic amoebiasis",
+          "Echinococcosis",
+          "Pyogenic abscess",
+          "Solitary unilocular cyst",
+          "Cavernous hemangioma"
+        ],
+        "explanation": "Anchovy-sauce aspirate with necrotic debris but few neutrophils is classic for an amoebic liver abscess caused by Entamoeba histolytica.",
+        "correctIndex": 0
+      },
+      "chapterId": 5,
+      "topicName": "Metabolic & Infectious diseases",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18865-2377-7466-b9a0-1c8e7c2be4e3"
+    },
+    "created_at": "2026-10-29T16:01:31.799+00:00",
+    "updated_at": "2026-10-29T16:01:31.799+00:00"
+  },
+  {
+    "id": "r_3f2ae11409ab82446ecbd5c5df79809f31148c10",
+    "request_hash": "55e37245777a0b971e16e2c4d3b920d0a3277d4c882386a6ad3b10237ac73029",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "formatting",
+    "explanation": "back to back and this dude duplicated",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-0978",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "a66d3b489676530c199a5630eb55e0336dcafa439e2a06a160f249ab5f3d2e4f",
+      "question": {
+        "id": "MGL3-CH5-PATH-0978",
+        "text": "7. A 30 years old female presented with jaundice. Blood examination showed\nelevated serum bilirubin. Abdominal US revealed a cirrhotic liver Liver biopsy\nshowed accumulation of PAS positive globules in the hepatocytes. The most\npossible diagnosis\nis:",
+        "type": "mcq",
+        "lecture": 19,
+        "options": [
+          "Hemochromatosis",
+          "Wilson's disease",
+          "a 1 antitrypsin deficiency d ) Alcoholic cirrhosis e ) Primary biliary cirrhosis"
+        ],
+        "explanation": "PAS-positive diastase-resistant hepatocyte globules are misfolded alpha-1 antitrypsin accumulating in the endoplasmic reticulum.",
+        "correctIndex": 2
+      },
+      "chapterId": 5,
+      "topicName": "Metabolic & Infectious diseases",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a1886b-4acc-731a-8582-581a447885ec"
+    },
+    "created_at": "2026-10-29T16:08:15.138+00:00",
+    "updated_at": "2026-10-29T16:08:15.138+00:00"
+  },
+  {
+    "id": "r_5b099e69af0c9dfdd1e170b37dce61cbfc54624b",
+    "request_hash": "913fc9922dcbb916bab463f7f183396ee4f021f47be190972373afe4af5668c4",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-0979",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "220dbfa546b1e2ee3dc8339a4598e11b75edb0ec8416ce0e7c00410cef2d0a05",
+      "question": {
+        "id": "MGL3-CH5-PATH-0979",
+        "text": "31. A 42 -year-old, fatty female presents with discomfort related to the\nright hypochondrium. Her laboratory investigations are all within\nnormal range. Abdominal ultrasound reveals enlargement of liver.\nWhat is the most likely diagnosis?",
+        "type": "mcq",
+        "lecture": 19,
+        "options": [
+          "Posthepatitic cirrhosis",
+          "Fatty liver",
+          "Haemochromatosis",
+          "Biliary cirrhosis",
+          "Non of the above"
+        ],
+        "explanation": "An obese patient with hepatomegaly and normal routine tests commonly has fatty liver from triglyceride accumulation in hepatocytes.",
+        "correctIndex": 1
+      },
+      "chapterId": 5,
+      "topicName": "Metabolic & Infectious diseases",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a1886c-727e-75e6-a4e2-8fbf59d07039"
+    },
+    "created_at": "2026-10-29T16:09:30.578+00:00",
+    "updated_at": "2026-10-29T16:09:30.578+00:00"
+  },
+  {
+    "id": "r_c38eaf8761c49454565979fc4aac8cd9b4bd1714",
+    "request_hash": "99f413c1b264f24e5495441998b8f6a85dceadac44044a28a7fd4d880ec15c84",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-1001",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "ffbeb54dbecd57f92558012527e92e694c4dc6d7f4e1e66b9d5beae606d398e3",
+      "question": {
+        "id": "MGL3-CH5-PATH-1001",
+        "text": "19 - An 18 years old male presented with elevated liver enzymes . He has negative\nviral markers. Negative ANA and ASMA with decrease in serum level of\nceruloplasmin . A liver biopsy was done and revealed deposition of brownish\npigment in the hepatocytes. The most possible diagnosis is :",
+        "type": "mcq",
+        "lecture": 19,
+        "options": [
+          "Hemochromatosis",
+          "Wilson's disease",
+          "Alpha 1 antitrypsin deficiency",
+          "Autoimmune hepatitis",
+          "Primary biliary cirrhosis"
+        ],
+        "explanation": "Wilson disease results from impaired copper transport, leading to low ceruloplasmin and copper accumulation in liver and brain.",
+        "correctIndex": 1
+      },
+      "chapterId": 5,
+      "topicName": "Metabolic & Infectious diseases",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18878-634f-72db-9137-639442a32bc6"
+    },
+    "created_at": "2026-10-29T16:22:33.342+00:00",
+    "updated_at": "2026-10-29T16:22:33.342+00:00"
+  },
+  {
+    "id": "r_1009fbf93a56d1ab7f8b8a0f8d758f317583fe4e",
+    "request_hash": "663c73eaff0c9311ae20666488133d37a19e1194094497f39a2b5732063f9c4f",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-1002",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "c91d2c613c9fb475803dfb3000b30402ce143b0be6b5d2d693709d34b3088c54",
+      "question": {
+        "id": "MGL3-CH5-PATH-1002",
+        "text": "An 18 years old male presented with elevated liver enzymes. He has negative viral markers. Negative ANA and ASMA with decrease in serum level of ceruloplasmin. A liver biopsy was done and revealed deposition of brownish pigment in the hepatocytes. The most possible diagnosis is",
+        "type": "mcq",
+        "lecture": 19,
+        "options": [
+          "Hemochromatosis.",
+          "Wilson's disease.",
+          "Alpha 1 antitrypsin deficiency.",
+          "Autoimmune hepatitis.",
+          "Primary biliary cirrhosis."
+        ],
+        "explanation": "Low ceruloplasmin and hepatic brown pigment in a young adult point to Wilson disease, a copper storage disorder.",
+        "correctIndex": 1
+      },
+      "chapterId": 5,
+      "topicName": "Metabolic & Infectious diseases",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18878-83df-750f-afc2-0ae9a87608b7"
+    },
+    "created_at": "2026-10-29T16:22:41.723+00:00",
+    "updated_at": "2026-10-29T16:22:41.723+00:00"
+  },
+  {
+    "id": "r_7c0cf6a5f774c1f60e70c1bb488074f14d6f5839",
+    "request_hash": "1de93101a1f5ce5a0e9f44f5d1385a795890e47982609e586e4231bd9102a6dc",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-1036",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "a4d61affaf34338a2f5106e6a0f91ef262a4ee598cffffe43b11167ff4ada009",
+      "question": {
+        "id": "MGL3-CH5-PATH-1036",
+        "text": "(1167) Choose the correct answer:\nThe most common tumor of the liver is:",
+        "type": "mcq",
+        "lecture": 20,
+        "options": [
+          "Liver cell adenoma",
+          "Hepatocellular carcinoma",
+          "Hepatoblastoma",
+          "Bile duct carcinoma",
+          "Metastatic tumors"
+        ],
+        "explanation": "Metastatic tumors are more common in the liver than primary hepatic malignancies because portal and systemic blood flows deliver tumor cells there.",
+        "correctIndex": 4
+      },
+      "chapterId": 5,
+      "topicName": "Tumor of Liver",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18880-ad8d-74f0-b25e-adbd4219179b"
+    },
+    "created_at": "2026-10-29T16:31:36.556+00:00",
+    "updated_at": "2026-10-29T16:31:36.556+00:00"
+  },
+  {
+    "id": "r_0a6923ccc110be320c83806b38b405ff945a09b5",
+    "request_hash": "871f6cb21c7b274e5264f654e4fcc94510904d0794747a805e76810abd83e485",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-1038",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "31e1bf8f0650611dc18f0909b3d66519593919c0ac84cb4316f677c8aea4fcf2",
+      "question": {
+        "id": "MGL3-CH5-PATH-1038",
+        "text": "20.The most common primary hepatic tumor in children is hepatoblastoma",
+        "type": "truefalse",
+        "lecture": 20,
+        "options": [
+          "True",
+          "False"
+        ],
+        "explanation": "The same pediatric pattern applies: hepatoblastoma is the commonest primary hepatic malignancy in children.",
+        "correctIndex": 0
+      },
+      "chapterId": 5,
+      "topicName": "Tumor of Liver",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18880-d987-7df4-98ad-68e720e9d370"
+    },
+    "created_at": "2026-10-29T16:31:47.878+00:00",
+    "updated_at": "2026-10-29T16:31:47.878+00:00"
+  },
+  {
+    "id": "r_9ba1af7a40986224ba7ec463f6134f44d555fa38",
+    "request_hash": "3279d44ded58d0c7c0402898b70831844b1a58ab60ad617d3c005d5dca9f4127",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-1044",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "5a58507d1e9ac7288d1580816f225d3676be0c40cf2f7a5d64a6e7bbc7d80ba6",
+      "question": {
+        "id": "MGL3-CH5-PATH-1044",
+        "text": "24- A 48-year-old female taking oral contraceptive pills for 16 years. During routine check up. Abdominal US revealed a small rounded well-circumscribed subcapsular lesion in right hepatic lobe. What is the most likely diagnosis:",
+        "type": "mcq",
+        "lecture": 20,
+        "options": [
+          "Cholangiocarcinoma.",
+          "Hepatocellular carcinoma.",
+          "Liver cell adenoma.",
+          "Metastasis in liver.",
+          "Hepatoblastoma."
+        ],
+        "explanation": "A subcapsular, well-defined lesion in a woman with prolonged oral contraceptive use suggests hepatocellular adenoma.",
+        "correctIndex": 2
+      },
+      "chapterId": 5,
+      "topicName": "Tumor of Liver",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18881-b8f1-7116-8c52-e826e20bfc9a"
+    },
+    "created_at": "2026-10-29T16:32:43.735+00:00",
+    "updated_at": "2026-10-29T16:32:43.735+00:00"
+  },
+  {
+    "id": "r_47761feafd56f756eb0c328c44e77c584d70bbd1",
+    "request_hash": "3df494de8e3f4ad47212588cd382e53c2a06860140405de002a4fe87f3c3c670",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "duplicate",
+    "explanation": "",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-1050",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "44caf24cba74dddb45ef481c01db72b95e022a9fd44dca618726601132484e0c",
+      "question": {
+        "id": "MGL3-CH5-PATH-1050",
+        "text": "2-The autopsy of a 40-yearo1d woman reveals a subcapsular mass in the right hepatic lobe. The mass is partially encapsulated, lighter in colour and the adjacent liver parenchyma appears compressed. Histologically, the lesion is composed of normal hepatocytes, but not arranged in a lobular architecture, with absent portal tracts and central venules. Which of the following is the most important predisposing factor for this lesion?",
+        "type": "mcq",
+        "lecture": 20,
+        "options": [
+          "Aflatoxin exposure",
+          "Hepatitis B virus infection",
+          "Oral contraceptive use",
+          "Steroid hormones",
+          "Cirrhosis."
+        ],
+        "explanation": "A partially encapsulated mass of hepatocytes lacking portal tracts and central veins is a hepatic adenoma, associated with oral contraceptive use.",
+        "correctIndex": 2
+      },
+      "chapterId": 5,
+      "topicName": "Tumor of Liver",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18884-0e73-7690-9504-a1de497c9fad"
+    },
+    "created_at": "2026-10-29T16:35:18.029+00:00",
+    "updated_at": "2026-10-29T16:35:18.029+00:00"
+  },
+  {
+    "id": "r_324b034d6acca278461a3a35ee033d97c758240a",
+    "request_hash": "7be8eb4caaca5cac8a73f49b4b75b609044c2705b2f9ec1ca8881222f7a5824b",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "other",
+    "explanation": "I think this a biochem question",
+    "module_code": "MGL-3",
+    "chapter_id": 2,
+    "question_id": "MGL3-CH2-PHYS-0432",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "2cbb807d151fef3040ad7b6958f58bf1f2d5c227e72e61379fe9f548b543e35e",
+      "question": {
+        "id": "MGL3-CH2-PHYS-0432",
+        "text": "Case A female patient 45 years old presented to her physician complaining of pain in the right shoulder and sense of discomfort after fatty meals. On clinical examination, there was yellowish discoloration of skin & mucous membranes liver function tests were normal. Ultrasonography revealed multiple gall bladder stones and one stone in the common bile duct. Mark the following statements as T if true or F if false. Cholebilirubin will be detected in urine.",
+        "type": "truefalse",
+        "lecture": 5,
+        "options": [
+          "True",
+          "False"
+        ],
+        "explanation": "A common-bile-duct stone raises conjugated bilirubin, which is water-soluble and appears in urine; this produces obstructive jaundice.",
+        "correctIndex": 0
+      },
+      "chapterId": 2,
+      "topicName": "Physiology Of Pancreas & Liver",
+      "moduleCode": "MGL-3",
+      "subjectName": "Physiology",
+      "chapterTitle": "Physiology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18969-8d17-7ee5-b3f7-902859ac09cd"
+    },
+    "created_at": "2026-10-29T20:45:58.211+00:00",
+    "updated_at": "2026-10-29T20:45:58.211+00:00"
+  },
+  {
+    "id": "r_888b3420ac65dcf89c6ccbdaa96b405123945cb9",
+    "request_hash": "af6e8b5e00caa02fe787dcab00e78b2d3aacd961854cc9a7842f43a347540759",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "other",
+    "explanation": "I think this a biochem question too",
+    "module_code": "MGL-3",
+    "chapter_id": 2,
+    "question_id": "MGL3-CH2-PHYS-0433",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "85f46a2ac264ef70a8cc1ff2afa788473b7d7132b0a6a34be053210ac15da9ef",
+      "question": {
+        "id": "MGL3-CH2-PHYS-0433",
+        "text": "Case A female patient 45 years old presented to her physician complaining of pain in the right shoulder and sense of discomfort after fatty meals. On clinical examination, there was yellowish discoloration of skin & mucous membranes liver function tests were normal. Ultrasonography revealed multiple gall bladder stones and one stone in the common bile duct. Mark the following statements as T if true or F if false. Level of unconjugated bilirubin is expected to be high in this patient.",
+        "type": "truefalse",
+        "lecture": 5,
+        "options": [
+          "True",
+          "False"
+        ],
+        "explanation": "Common-bile-duct obstruction blocks conjugated bilirubin excretion, raising direct bilirubin in plasma and urine; unconjugated bilirubin does not rise as the primary change.",
+        "correctIndex": 1
+      },
+      "chapterId": 2,
+      "topicName": "Physiology Of Pancreas & Liver",
+      "moduleCode": "MGL-3",
+      "subjectName": "Physiology",
+      "chapterTitle": "Physiology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18969-fe0c-76e2-8981-44a7e56df2f6"
+    },
+    "created_at": "2026-10-29T20:46:27.088+00:00",
+    "updated_at": "2026-10-29T20:46:27.088+00:00"
+  },
+  {
+    "id": "r_e1d15b8658af9288714551bc15c471e7c44586f0",
+    "request_hash": "8292f45187a394d11002340200f92ee64bc156ea4343082f0ca03476642d2036",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "other",
+    "explanation": "Biochem",
+    "module_code": "MGL-3",
+    "chapter_id": 2,
+    "question_id": "MGL3-CH2-PHYS-0445",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "6917ad38e82a8f4451905311c9823c30e920aaeadd7af4834df2d00a1c0fbdde",
+      "question": {
+        "id": "MGL3-CH2-PHYS-0445",
+        "text": "Lab report of liver function tests of a patient with jaundice showed increased levels of conjugated bilirubin. Which one of the following is the cause of this finding?",
+        "type": "mcq",
+        "lecture": 5,
+        "options": [
+          "Acute hemolytic crises in sickle cell disease",
+          "Hemolysis due to Rh incompatibility",
+          "Obstructive jaundice due to tumor of common bile duct",
+          "Physiological jaundice of the newborn"
+        ],
+        "explanation": "A common-duct tumor blocks bile flow and raises conjugated bilirubin in blood; this water-soluble form is excreted in urine.",
+        "correctIndex": 2
+      },
+      "chapterId": 2,
+      "topicName": "Physiology Of Pancreas & Liver",
+      "moduleCode": "MGL-3",
+      "subjectName": "Physiology",
+      "chapterTitle": "Physiology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a1896d-7595-72cc-ad8d-2d3d19cf0327"
+    },
+    "created_at": "2026-10-29T20:50:13.678+00:00",
+    "updated_at": "2026-10-29T20:50:13.678+00:00"
+  },
+  {
+    "id": "r_e63cd6e5c64db9b85b719e755639e6fbbe0d987c",
+    "request_hash": "9f3d779d3d0f3f6661de66ece245c693e09317213b3c6d62f0a79fa86758b975",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "other",
+    "explanation": "dont mind the answer I put but I think this biochem",
+    "module_code": "MGL-3",
+    "chapter_id": 2,
+    "question_id": "MGL3-CH2-PHYS-0447",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "3fc548f490600f18fb906089d4b3eac15de7a13ca51c465d0e0172a926966831",
+      "question": {
+        "id": "MGL3-CH2-PHYS-0447",
+        "text": "38. Functions in the liver include production of:",
+        "type": "mcq",
+        "lecture": 5,
+        "options": [
+          "Digestive enzymes",
+          "Secondary bile acids",
+          "Stercobilinogen",
+          "CCK",
+          "Taurocholic acid"
+        ],
+        "explanation": "The liver synthesizes primary bile acids and conjugates them with taurine to form taurocholic acid; gut bacteria produce secondary bile acids.",
+        "correctIndex": 4
+      },
+      "chapterId": 2,
+      "topicName": "Physiology Of Pancreas & Liver",
+      "moduleCode": "MGL-3",
+      "subjectName": "Physiology",
+      "chapterTitle": "Physiology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a1896e-6ffe-7169-be61-16b4c0431f86"
+    },
+    "created_at": "2026-10-29T20:51:18.114+00:00",
+    "updated_at": "2026-10-29T20:51:18.114+00:00"
+  },
+  {
+    "id": "r_05ffc6d985504a47bc7ccadf2c119dc7318817fc",
+    "request_hash": "bbf73655e93918c2b7fae6d0dd875380afb596685b6be3edd5f8fd34d5aac724",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "other",
+    "explanation": "biochem",
+    "module_code": "MGL-3",
+    "chapter_id": 2,
+    "question_id": "MGL3-CH2-PHYS-0464",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "6f30a91736a775bd4d2201978964ff2e5a2f383ac4df7c0dc9ab0b08b9eb1f87",
+      "question": {
+        "id": "MGL3-CH2-PHYS-0464",
+        "text": "Case A female patient 45 years old presented to her physician complaining of pain in the right shoulder and sense of discomfort after fatty meals. On clinical examination, there was yellowish discoloration of skin & mucous membranes liver function tests were normal. Ultrasonography revealed multiple gall bladder stones and one stone in the common bile duct. Mark the following statements as T if true or F if false. Urine urobilinogen level is expected to be increased.",
+        "type": "truefalse",
+        "lecture": 5,
+        "options": [
+          "True",
+          "False"
+        ],
+        "explanation": "False: common-duct obstruction prevents conjugated bilirubin from reaching gut bacteria, so urinary urobilinogen is reduced or absent rather than increased.",
+        "correctIndex": 1
+      },
+      "chapterId": 2,
+      "topicName": "Physiology Of Pancreas & Liver",
+      "moduleCode": "MGL-3",
+      "subjectName": "Physiology",
+      "chapterTitle": "Physiology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18971-d729-7896-8b17-6f8640b19b4c"
+    },
+    "created_at": "2026-10-29T20:55:01.287+00:00",
+    "updated_at": "2026-10-29T20:55:01.287+00:00"
+  },
+  {
+    "id": "r_592625932cfc28ddd3cac43ec8b5e3c247d00f97",
+    "request_hash": "b6deb49fc081772171eecaee10ee76ca14976d3dd6902f6e2490509f86cd0022",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "other",
+    "explanation": "bochem",
+    "module_code": "MGL-3",
+    "chapter_id": 2,
+    "question_id": "MGL3-CH2-PHYS-0465",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "a22e9bd3927ab59adb30c598f18e4bb747dc24d6a00d0d959ba196d6d8471b4f",
+      "question": {
+        "id": "MGL3-CH2-PHYS-0465",
+        "text": "Acute obstruction of the common bile duct produced experimentally will produce which of the following changes in plasma and urine bilirubin levels: [Column order: Free bilirubin Plasma; Conjugated bilirubin Plasma; Conjugated bilirubin Urine]",
+        "type": "mcq",
+        "lecture": 5,
+        "options": [
+          "Increase; No change; Increase",
+          "No change; Increase; Increase",
+          "Decrease; Decrease; Decrease",
+          "Increase; Increase; Increase",
+          "Decrease; Increase; Increase"
+        ],
+        "explanation": "Obstruction raises conjugated bilirubin in plasma and urine because water-soluble bilirubin backs up from bile ducts; unconjugated bilirubin may remain near baseline.",
+        "correctIndex": 1
+      },
+      "chapterId": 2,
+      "topicName": "Physiology Of Pancreas & Liver",
+      "moduleCode": "MGL-3",
+      "subjectName": "Physiology",
+      "chapterTitle": "Physiology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18972-a623-7c0e-9e35-71c161a63a3d"
+    },
+    "created_at": "2026-10-29T20:55:54.272+00:00",
+    "updated_at": "2026-10-29T20:55:54.272+00:00"
+  },
+  {
+    "id": "r_35e6848c0a6d2690446e1366c2d3bbe7a7af5c22",
+    "request_hash": "159fc8ef4527344f0975977941092260e4c0980cdb340be7941d758445a7bc6f",
+    "reporter_id": "user_3F5DCNAfpdqcNDs62ClyenO5gc6",
+    "reporter": {
+      "name": "Yahia Elserafy",
+      "email": "yahiaelserafy@gmail.com",
+      "username": "serafy",
+      "emailVerified": true
+    },
+    "category": "other",
+    "explanation": "biochem",
+    "module_code": "MGL-3",
+    "chapter_id": 2,
+    "question_id": "MGL3-CH2-PHYS-0466",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "6f45a7b08f89a447eba75c05d893c7dbc1f7eb402c763e05b301d7485dd37331",
+      "question": {
+        "id": "MGL3-CH2-PHYS-0466",
+        "text": "Case A female patient 45 years old presented to her physician complaining of pain in the right shoulder and sense of discomfort after fatty meals. On clinical examination, there was yellowish discoloration of skin & mucous membranes liver function tests were normal. Ultrasonography revealed multiple gall bladder stones and one stone in the common bile duct. Mark the following statements as T if true or F if false. The most probable diagnosis of this case is obstructive jaundice.",
+        "type": "truefalse",
+        "lecture": 5,
+        "options": [
+          "True",
+          "False"
+        ],
+        "explanation": "A common bile duct stone blocks bile flow to the intestine and can cause conjugated hyperbilirubinemia and jaundice, even if hepatocyte tests are otherwise preserved.",
+        "correctIndex": 0
+      },
+      "chapterId": 2,
+      "topicName": "Physiology Of Pancreas & Liver",
+      "moduleCode": "MGL-3",
+      "subjectName": "Physiology",
+      "chapterTitle": "Physiology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18972-f038-7625-84df-ca55a6bcdab4"
+    },
+    "created_at": "2026-10-29T20:56:13.437+00:00",
+    "updated_at": "2026-10-29T20:56:13.437+00:00"
+  },
+  {
+    "id": "r_04b0eabe53c69673f72623fb56918cec221321f5",
+    "request_hash": "7a131cd72324259477c0ca03d4df9e23a8c351ab851c04e22f3daec40dfcf578",
+    "reporter_id": "user_3F5B8kruE09NxAarcpvSK58SGSd",
+    "reporter": {
+      "name": "Ali Mahmoud",
+      "email": "alymahmoud7988@gmail.com",
+      "username": "lulu",
+      "emailVerified": true
+    },
+    "category": "other",
+    "explanation": "same here, not for this chapter (i guess...)",
+    "module_code": "MGL-3",
+    "chapter_id": 206,
+    "question_id": "MGL3-CH6-PHAR-0678",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "0d775313904bd3191df4321cd869368c41c4471128a45b61717bfba69bf8bcba",
+      "question": {
+        "id": "MGL3-CH6-PHAR-0678",
+        "text": "Which of the following adverse effects is particularly associated with aminoglycosides?",
+        "type": "mcq",
+        "lecture": 6,
+        "options": [
+          "Hepatotoxicity",
+          "Nephrotoxicity",
+          "Hyperglycemia",
+          "Constipation",
+          "Gingival hyperplasia"
+        ],
+        "explanation": "Nephrotoxicity is the major, dose-limiting adverse effect of calcineurin inhibitors (cyclosporine and tacrolimus). It results from renal afferent arteriolar vasoconstriction, leading to reduced glomerular filtration and progressive interstitial fibrosis.",
+        "correctIndex": 1
+      },
+      "chapterId": 206,
+      "topicName": "Pharmacology of Liver",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pharmacology",
+      "chapterTitle": "CA-2 — Pharmacology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18d24-93c9-7f3b-afc8-65f427dccd2e"
+    },
+    "created_at": "2026-10-30T14:09:06.84+00:00",
+    "updated_at": "2026-10-30T14:09:06.84+00:00"
+  },
+  {
+    "id": "r_25264e3e0ffeb3f59d0c4c762e436341bcf813d9",
+    "request_hash": "6648958abe532c3fb54fd74cc0f87809c4d0e45df5caee8b3ad7c9cad10e4e79",
+    "reporter_id": "user_3F5B8kruE09NxAarcpvSK58SGSd",
+    "reporter": {
+      "name": "Ali Mahmoud",
+      "email": "alymahmoud7988@gmail.com",
+      "username": "lulu",
+      "emailVerified": true
+    },
+    "category": "unclear_wording",
+    "explanation": "didnt understand the question",
+    "module_code": "MGL-3",
+    "chapter_id": 206,
+    "question_id": "MGL3-CH6-PHAR-0680",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "a2c9b60ca86f309b405c0c1eb09acacf336b1feddb42a441cb0c0e47217d0209",
+      "question": {
+        "id": "MGL3-CH6-PHAR-0680",
+        "text": "Following liver transplantation, the complete cessation or avoidance of corticosteroid usage is most closely evaluated or managed in patients undergoing transplantation for which underlying condition?",
+        "type": "mcq",
+        "lecture": 6,
+        "options": [
+          "Autoimmune disease",
+          "Viral hepatitis B cirrhosis",
+          "Hepatocellular carcinoma",
+          "Alcoholic liver disease",
+          "Acute acetaminophen toxicity"
+        ],
+        "explanation": "In liver transplant recipients whose primary liver disease was autoimmune (such as autoimmune hepatitis or primary biliary cholangitis), complete cessation of corticosteroids or immunosuppression carries a high risk of late disease recurrence in the allograft.",
+        "correctIndex": 0
+      },
+      "chapterId": 206,
+      "topicName": "Pharmacology of Liver",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pharmacology",
+      "chapterTitle": "CA-2 — Pharmacology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18d25-ea04-7737-bae0-bc6b6b3fa855"
+    },
+    "created_at": "2026-10-30T14:10:34.43+00:00",
+    "updated_at": "2026-10-30T14:10:34.43+00:00"
+  },
+  {
+    "id": "r_1d116fc82239f84d7c68fee69cabb491fc0a5f1b",
+    "request_hash": "83709772cf05bc5e8f41ada40a0f1db489e71580df984673b522a55d8abf275e",
+    "reporter_id": "user_3F5B8kruE09NxAarcpvSK58SGSd",
+    "reporter": {
+      "name": "Ali Mahmoud",
+      "email": "alymahmoud7988@gmail.com",
+      "username": "lulu",
+      "emailVerified": true
+    },
+    "category": "other",
+    "explanation": "i am solving Histology of the liver, so i guess the answer is gall bladder.....\ncool",
+    "module_code": "MGL-3",
+    "chapter_id": 203,
+    "question_id": "MGL3-CH3-HIST-1119",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "d652e06ae097ae39c1df6f70f2f3ebc5811c9f3820891f775e9d65ade7ecf801",
+      "question": {
+        "id": "MGL3-CH3-HIST-1119",
+        "text": "Which of the following structures contains mucin- secreting glands located specifically within its neck region?",
+        "type": "mcq",
+        "lecture": 8,
+        "options": [
+          "Duodenum",
+          "Gallbladder",
+          "Esophagus",
+          "Urinary bladder",
+          "Submandibular gland"
+        ],
+        "explanation": "The gallbladder mucosa is lined by simple columnar epithelium. Mucus-secreting tubuloacinar glands are normally found in the lamina propria of the gallbladder neck and cystic duct, secreting protective mucin to lubricate bile flow.",
+        "correctIndex": 1
+      },
+      "chapterId": 203,
+      "topicName": "Histology of Liver",
+      "moduleCode": "MGL-3",
+      "subjectName": "Histology",
+      "chapterTitle": "CA-2 — Histology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18d2a-5058-7e5b-9525-5678a770246d"
+    },
+    "created_at": "2026-10-30T14:15:21.188+00:00",
+    "updated_at": "2026-10-30T14:15:21.188+00:00"
+  },
+  {
+    "id": "r_94ed7e614a4218bb0f6b27629c9f21112ef2b446",
+    "request_hash": "b2d1c1bae6012f2b518279e85e5fb5814e5e3c9e5d7ed682a1062a1ec59ed402",
+    "reporter_id": "user_3F5B8kruE09NxAarcpvSK58SGSd",
+    "reporter": {
+      "name": "Ali Mahmoud",
+      "email": "alymahmoud7988@gmail.com",
+      "username": "lulu",
+      "emailVerified": true
+    },
+    "category": "unclear_wording",
+    "explanation": "2 questions actually",
+    "module_code": "MGL-3",
+    "chapter_id": 203,
+    "question_id": "MGL3-CH3-HIST-1120",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "d97545eeefc7677e17c545e35e1c285c4c89e4aa16995702fa1a4c9b6c2f9bc4",
+      "question": {
+        "id": "MGL3-CH3-HIST-1120",
+        "text": "​Which of the following cellular features is characteristic of hepatic stellate cells (Ito cells), which are responsible for liver fibrosis in chronic bilharziasis (schistosomiasis)?",
+        "type": "mcq",
+        "lecture": 8,
+        "options": [
+          "Abundant glycogen granules",
+          "Intracellular lipid droplets",
+          "Hemosiderin pigment deposits",
+          "High concentration of mucopolysaccharides",
+          "Extracellular calcium crystals"
+        ],
+        "explanation": "Hepatic stellate cells (Ito cells) are identified histologically in the space of Disse by their characteristic intracellular lipid droplets containing retinyl esters (vitamin A). Gold chloride or lipid stains highlight these diagnostic droplets.",
+        "correctIndex": 1
+      },
+      "chapterId": 203,
+      "topicName": "Histology of Liver",
+      "moduleCode": "MGL-3",
+      "subjectName": "Histology",
+      "chapterTitle": "CA-2 — Histology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18d2b-d0e6-77c9-bbd3-be4e5cd8a99b"
+    },
+    "created_at": "2026-10-30T14:16:52.042+00:00",
+    "updated_at": "2026-10-30T14:16:52.042+00:00"
+  },
+  {
+    "id": "r_bac3955608cee2a7054e635bd2b7f29859b92066",
+    "request_hash": "2699e268ccebb8e768a361b2e3ba9ccf2385d46ddcf0f81f537b820be5b06e7d",
+    "reporter_id": "user_3F5B8kruE09NxAarcpvSK58SGSd",
+    "reporter": {
+      "name": "Ali Mahmoud",
+      "email": "alymahmoud7988@gmail.com",
+      "username": "lulu",
+      "emailVerified": true
+    },
+    "category": "other",
+    "explanation": "thats too kedaho",
+    "module_code": "MGL-3",
+    "chapter_id": 203,
+    "question_id": "MGL3-CH3-HIST-1127",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "cd3e7214f02ceeed0667261a5ae6d9da55b22c3d3dbb0b44044b6e4628ecbfac",
+      "question": {
+        "id": "MGL3-CH3-HIST-1127",
+        "text": "A histological section of an organ of the digestive system shows acini with pale-staining cells located in the center of some acini. Which organ is being examined?",
+        "type": "mcq",
+        "lecture": 10,
+        "options": [
+          "Liver",
+          "Pancreas",
+          "Parotid gland",
+          "Gallbladder",
+          "Stomach"
+        ],
+        "explanation": "The pancreas is a dual organ: the exocrine component consists of serous acini with eosinophilic zymogen granules and pale centroacinar cells, while the endocrine component consists of vascularized islets of Langerhans scattered throughout the parenchyma.",
+        "correctIndex": 1
+      },
+      "chapterId": 203,
+      "topicName": "Histology of pancreas",
+      "moduleCode": "MGL-3",
+      "subjectName": "Histology",
+      "chapterTitle": "CA-2 — Histology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18d2e-b8ca-79a0-92a0-ee3aeca39a25"
+    },
+    "created_at": "2026-10-30T14:20:10.918+00:00",
+    "updated_at": "2026-10-30T14:20:10.918+00:00"
+  },
+  {
+    "id": "r_48bc7adc29cd5bc424765b9be2136035127c83b7",
+    "request_hash": "07c235f79bd1b8a43279042bb54119e9828dca3440e8c904dc416dbf0e2552f6",
+    "reporter_id": "user_3F5B8kruE09NxAarcpvSK58SGSd",
+    "reporter": {
+      "name": "Ali Mahmoud",
+      "email": "alymahmoud7988@gmail.com",
+      "username": "lulu",
+      "emailVerified": true
+    },
+    "category": "other",
+    "explanation": "same  idiot wording",
+    "module_code": "MGL-3",
+    "chapter_id": 203,
+    "question_id": "MGL3-CH3-HIST-1129",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "8a78e2e2446b0b792f51fea0149442326c531c1bea2dbee724171cb52b01f301",
+      "question": {
+        "id": "MGL3-CH3-HIST-1129",
+        "text": "Centroacinar cells are characteristic of the:",
+        "type": "mcq",
+        "lecture": 10,
+        "options": [
+          "Liver",
+          "Pancreas",
+          "Salivary glands",
+          "Gallbladder",
+          "Stomach"
+        ],
+        "explanation": "Centroacinar cells are a unique histological hallmark of the exocrine pancreas. They are completely absent in the parotid gland and other serous glands, serving as the definitive distinguishing feature.",
+        "correctIndex": 1
+      },
+      "chapterId": 203,
+      "topicName": "Histology of pancreas",
+      "moduleCode": "MGL-3",
+      "subjectName": "Histology",
+      "chapterTitle": "CA-2 — Histology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18d2f-bbb8-75f2-a5c8-77452d45fe47"
+    },
+    "created_at": "2026-10-30T14:21:17.821+00:00",
+    "updated_at": "2026-10-30T14:21:17.821+00:00"
+  },
+  {
+    "id": "r_99018a571d410b88f33a47e8bb5ca300dbe187e9",
+    "request_hash": "0221e056fb04d2e3f07a19e60d069527d1aae5025f5dbebde978c2bf4d6862ac",
+    "reporter_id": "user_3FT6LrbevRJKRHIcbc2mAjw2XcM",
+    "reporter": {
+      "name": "Hussein Salah",
+      "email": "hsalah2906@gmail.com",
+      "username": "7sein",
+      "emailVerified": true
+    },
+    "category": "wrong_answer",
+    "explanation": "eosinophillia in toxocara is persistent not transient",
+    "module_code": "MGL-3",
+    "chapter_id": 8,
+    "question_id": "MGL3-CH8-PARA-0629",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "a27aed3613622a412929b29163be30f6ffde4479ee43d65f660ab9e76d22783a",
+      "question": {
+        "id": "MGL3-CH8-PARA-0629",
+        "text": "Transient eosinophilia is present in which of the following nematodes?",
+        "type": "mcq",
+        "lecture": 8,
+        "options": [
+          "Ascaris",
+          "Ancylostoma",
+          "Trichostrongylus",
+          "All of the above",
+          "Toxocara"
+        ],
+        "explanation": "Larval migration through tissues can cause transient eosinophilia in Ascaris, hookworm, and Trichostrongylus infections.",
+        "correctIndex": 3
+      },
+      "chapterId": 8,
+      "topicName": "Ascariasis",
+      "moduleCode": "MGL-3",
+      "subjectName": "Parasitology",
+      "chapterTitle": "Parasitology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18d3d-8823-7adb-bddd-534186a7d9e8"
+    },
+    "created_at": "2026-10-30T14:36:21.85+00:00",
+    "updated_at": "2026-10-30T14:36:21.85+00:00"
+  },
+  {
+    "id": "r_d3ece1f7ffbcf62c34f592223968d88d731aee00",
+    "request_hash": "e63596f0548936d1f8e02569367b5efb7e2694e35a7a921c486b7b0401059981",
+    "reporter_id": "user_3FT6LrbevRJKRHIcbc2mAjw2XcM",
+    "reporter": {
+      "name": "Hussein Salah",
+      "email": "hsalah2906@gmail.com",
+      "username": "7sein",
+      "emailVerified": true
+    },
+    "category": "wrong_answer",
+    "explanation": "ascaris is treated using sunlight, also correct. Ancylostoma need chemical treatment",
+    "module_code": "MGL-3",
+    "chapter_id": 8,
+    "question_id": "MGL3-CH8-PARA-0679",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "bce5410c4ee13b67d762f1adae1485a7541aa12d8e32946b3f4c58cefef53fd7",
+      "question": {
+        "id": "MGL3-CH8-PARA-0679",
+        "text": "Treatment of human excreta by exposure to sunlight & raising temperature to 51 C is used in prevention of which of the following nematodes?",
+        "type": "mcq",
+        "lecture": 9,
+        "options": [
+          "Ascaris",
+          "Ancylostoma",
+          "Trichostrongylus",
+          "Toxocara",
+          "b&c"
+        ],
+        "explanation": "Sunlight and heat treatment reduce viable hookworm and Trichostrongylus stages in human excreta before they become infective.",
+        "correctIndex": 4
+      },
+      "chapterId": 8,
+      "topicName": "Human Hookworms",
+      "moduleCode": "MGL-3",
+      "subjectName": "Parasitology",
+      "chapterTitle": "Parasitology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18d49-ca09-7cd9-8219-3d94fce2a06d"
+    },
+    "created_at": "2026-10-30T14:49:45.523+00:00",
+    "updated_at": "2026-10-30T14:49:45.523+00:00"
+  },
+  {
+    "id": "r_95de5049815aa5efb4885dfc798a3fcbeaddfb5d",
+    "request_hash": "aa5390a55b250634902e1ea14da0133e84a1c9e283f685f79777efd8c5eca7dd",
+    "reporter_id": "user_3F5B8kruE09NxAarcpvSK58SGSd",
+    "reporter": {
+      "name": "Ali Mahmoud",
+      "email": "alymahmoud7988@gmail.com",
+      "username": "lulu",
+      "emailVerified": true
+    },
+    "category": "other",
+    "explanation": "the answer is in the question already hehe",
+    "module_code": "MGL-3",
+    "chapter_id": 205,
+    "question_id": "MGL3-CH5-PATH-1254",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "c5a2c5057bae6635d6a3670f66ba8db060a8a9e12ae9bc2af56cff30b3250098",
+      "question": {
+        "id": "MGL3-CH5-PATH-1254",
+        "text": "A 32-year-old woman presents for a routine physical examination and mild right upper quadrant abdominal discomfort. An abdominal ultrasound reveals a well- circumscribed, solitary 4 cm hypervascular liver mass without evidence of cirrhosis. History reveals she has taken oral estrogen-progestin combination pills daily for the past 10 years. Biopsy of the lesion confirms a hepatocellular adenoma. Which of the following is the most significant predisposing factor for the development of this patient's liver lesion?",
+        "type": "mcq",
+        "lecture": 18,
+        "options": [
+          "Chronic alcohol consumption",
+          "Combined oral contraceptive use",
+          "Chronic hepatitis C infection",
+          "Non-alcoholic fatty liver disease",
+          "Hemochromatosis"
+        ],
+        "explanation": "Hepatic adenoma is strongly associated with long-term combined oral contraceptive pill (OCP) use, with risk increasing with dose and duration. The tumor is estrogen-sensitive, often regressing after OCP discontinuation but carrying risks of rupture, hemoperitoneum, and malignant transformation.",
+        "correctIndex": 1
+      },
+      "chapterId": 205,
+      "topicName": "Cirrhosis & cholestasis",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "CA-2 — Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18e1f-f092-7c78-8e9a-c150d13548b2"
+    },
+    "created_at": "2026-10-30T18:43:40.065+00:00",
+    "updated_at": "2026-10-30T18:43:40.065+00:00"
+  },
+  {
+    "id": "r_fbd7df3dafe60b15fc561ada4c50bddf77eb8681",
+    "request_hash": "c623842b21d7176f1ce62a34dfcfbf1bee40086c085f78af04e1f3013e35a54b",
+    "reporter_id": "user_3F5B8kruE09NxAarcpvSK58SGSd",
+    "reporter": {
+      "name": "Ali Mahmoud",
+      "email": "alymahmoud7988@gmail.com",
+      "username": "lulu",
+      "emailVerified": true
+    },
+    "category": "other",
+    "explanation": "me no understand",
+    "module_code": "MGL-3",
+    "chapter_id": 205,
+    "question_id": "MGL3-CH5-PATH-1271",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "59c33fab20244578e6afe2f1e7984af9f404d268a05873eb1d0aaf6262f01c3a",
+      "question": {
+        "id": "MGL3-CH5-PATH-1271",
+        "text": "Which factor has directly contributed to the observed increase in the incidence of Hepatocellular Carcinoma (HCC)?",
+        "type": "mcq",
+        "lecture": 20,
+        "options": [
+          "Decreased screening rates for viral hepatitis",
+          "Increased survival of cirrhotic patients",
+          "Widespread administration of HBV vaccination",
+          "Eradication of Schistosomiasis in rural regions",
+          "Decreased prevalence of non-alcoholic fatty liver disease"
+        ],
+        "explanation": "Advances in the clinical management of cirrhosis (such as screening for varices, treating ascites, and antiviral suppression) have prolonged the lifespan of cirrhotic patients, allowing more time for cumulative mutational hits to precipitate hepatocellular carcinoma.",
+        "correctIndex": 1
+      },
+      "chapterId": 205,
+      "topicName": "Tumor of Liver",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "CA-2 — Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18e2a-f941-7317-a765-394990dd9ba1"
+    },
+    "created_at": "2026-10-30T18:55:43.161+00:00",
+    "updated_at": "2026-10-30T18:55:43.161+00:00"
+  },
+  {
+    "id": "r_6c33a40509d3fd41724d5222ed6865d86389b88c",
+    "request_hash": "b09666a8ada45e441a13080844055d3f30d9c51d493834d4042106090e181183",
+    "reporter_id": "user_3F5wklwXDxbF1PYQGN0v2x8hcFf",
+    "reporter": {
+      "name": "Hailala Ahmed",
+      "email": "hailalagalal@yahoo.com",
+      "username": "lala",
+      "emailVerified": true
+    },
+    "category": "wrong_answer",
+    "explanation": "It’s supposed to lack neutrophils and pus",
+    "module_code": "MGL-3",
+    "chapter_id": 205,
+    "question_id": "MGL3-CH5-PATH-1248",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "a9449af55d927c9bee618670f812ff088f1293804e6a3c42950c1f1bea6ab604",
+      "question": {
+        "id": "MGL3-CH5-PATH-1248",
+        "text": "Which cellular elements are characteristically least likely to be found in an amebic liver abscess compared to typical pyogenic abscesses?",
+        "type": "mcq",
+        "lecture": 18,
+        "options": [
+          "Macrophages and lymphocytes",
+          "Necrotic debris and amebic trophozoites",
+          "Neutrophil and pus",
+          "Fibrous connective tissue capsule",
+          "Extravasated red blood cells"
+        ],
+        "explanation": "Hepatic adenomas are benign monoclonal epithelial neoplasms composed of cords of normal-appearing hepatocytes without portal tracts, central veins, or bile ducts. They characteristically lack the prominent inflammatory infiltrates (macrophages and lymphocytes) seen in inflammatory hepatic lesions.",
+        "correctIndex": 2
+      },
+      "chapterId": 205,
+      "topicName": "Cirrhosis & cholestasis",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "CA-2 — Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18e92-1f7f-7bac-81e7-2aff98b5405d"
+    },
+    "created_at": "2026-10-30T20:48:23.204+00:00",
+    "updated_at": "2026-10-30T20:48:23.204+00:00"
+  },
+  {
+    "id": "r_eae89eeff2c34de7712f50b3324cb1f7faaffee3",
+    "request_hash": "af21de478adab4cb5e23fa6be65a2c0dc6318351d5241c9cb0ebf7ff3abb28b3",
+    "reporter_id": "user_3F5wklwXDxbF1PYQGN0v2x8hcFf",
+    "reporter": {
+      "name": "Hailala Ahmed",
+      "email": "hailalagalal@yahoo.com",
+      "username": "lala",
+      "emailVerified": true
+    },
+    "category": "wrong_answer",
+    "explanation": "It’s in the chronic hepatitis",
+    "module_code": "MGL-3",
+    "chapter_id": 205,
+    "question_id": "MGL3-CH5-PATH-1266",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "cfbd1093f698e6f36d72961efb9406412a40a3cd5ce6874c5a3a8267c5f17dd2",
+      "question": {
+        "id": "MGL3-CH5-PATH-1266",
+        "text": "Which of the following conditions is characteristically associated with bridging fibrosis?",
+        "type": "mcq",
+        "lecture": 18,
+        "options": [
+          "Chronic active hepatitis",
+          "Acute viral hepatitis",
+          "Simple hepatic steatosis",
+          "Focal nodular hyperplasia",
+          "Gilbert syndrome"
+        ],
+        "explanation": "Acute viral hepatitis is pathologically characterized by diffuse hepatocyte ballooning degeneration, scattered Councilman (apoptotic) bodies, spotty lobular necrosis, and Kupffer cell hyperplasia without fibrous septa or regenerative nodules.",
+        "correctIndex": 0
+      },
+      "chapterId": 205,
+      "topicName": "Cirrhosis & cholestasis",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "CA-2 — Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18e98-a150-708b-ab83-d59c94d4a8ad"
+    },
+    "created_at": "2026-10-30T20:55:29.661+00:00",
+    "updated_at": "2026-10-30T20:55:29.661+00:00"
+  },
+  {
+    "id": "r_28d9b0b365d9a91d0eda28ec7ed0b75cf4c22bed",
+    "request_hash": "af497023c495755e73bb290b11bc7d8f8390b060d3ca2d9ae04c6c751a2f153a",
+    "reporter_id": "user_3LKw6cRO1zgJ9l5rHJLgKwjuOQ0",
+    "reporter": {
+      "name": "Farida Elshazley",
+      "email": "elshazleyfarida@gmail.com",
+      "username": "fero",
+      "emailVerified": true
+    },
+    "category": "other",
+    "explanation": "It says I'm wrong but it shows the answer I oicked is the correct one at the same time",
+    "module_code": "MIM-1",
+    "chapter_id": 2,
+    "question_id": "MIM1-CH2-MICR-0007",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "cbe28e2e21b81cd1e43b5db44173431457e5b85bf1ebaf95bfd09c710e74b41f",
+      "question": {
+        "id": "MIM1-CH2-MICR-0007",
+        "text": "Which of the following cytokines acts an endogenous pyrogen?",
+        "type": "mcq",
+        "lecture": 1,
+        "options": [
+          "IL-1",
+          "IL-2",
+          "IL-3",
+          "IL-4",
+          "IL-5"
+        ],
+        "explanation": "IL-1 is an endogenous pyrogen. Together with TNF-α and IL-6, it mediates systemic inflammatory responses including fever.",
+        "correctIndex": 0,
+        "contentVersion": "1390e524760c4f14754d95313690eccff5920bc7101bc18de78f9841f1f2c15a"
+      },
+      "chapterId": 2,
+      "topicName": "Inflammation and leukocyte recruitment",
+      "moduleCode": "MIM-1",
+      "subjectName": "Microbiology",
+      "chapterTitle": "Innate Immunity"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18e99-d1da-725c-ade4-fbac8664657b"
+    },
+    "created_at": "2026-10-30T20:56:47.471+00:00",
+    "updated_at": "2026-10-30T20:56:47.471+00:00"
+  },
+  {
+    "id": "r_9d68c5c290200beca0d360ca46d2c9876e4b4270",
+    "request_hash": "89a1fa3500d4ae33ba8fccd878ad5e8f91f084dcea8670548f41793c9ffef161",
+    "reporter_id": "user_3FT6LrbevRJKRHIcbc2mAjw2XcM",
+    "reporter": {
+      "name": "Hussein Salah",
+      "email": "hsalah2906@gmail.com",
+      "username": "7sein",
+      "emailVerified": true
+    },
+    "category": "wrong_answer",
+    "explanation": "wrong answer zude",
+    "module_code": "MGL-3",
+    "chapter_id": 5,
+    "question_id": "MGL3-CH5-PATH-0802",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "e0ac8e32dc12c2cec705643ca2dc866a9afe956e577d556e0870e7e8971cca27",
+      "question": {
+        "id": "MGL3-CH5-PATH-0802",
+        "text": "6. A 49 year old woman presents with increasing fatigue and is found to have\nelevated\nliver enzymes .Viral markers are not elevated . The biopsy reveals portal\ninflammation\nthat focally destroys limiting plate. Anti-smooth muscle antibody & antinuclear\nantibody are found in patient serum",
+        "type": "mcq",
+        "lecture": 17,
+        "options": [
+          "Hemochromatosis",
+          "Wilson's disease",
+          "a 1 antitrypsin deficiency",
+          "Autoimmune hepatitis",
+          "Primary biliary cirrhosis"
+        ],
+        "revision": 0,
+        "explanation": "Interface hepatitis, plasma-cell-rich portal inflammation, and ANA/anti-smooth-muscle antibodies support autoimmune hepatitis.",
+        "correctIndex": 3
+      },
+      "chapterId": 5,
+      "topicName": "Hepatitis",
+      "moduleCode": "MGL-3",
+      "subjectName": "Pathology",
+      "chapterTitle": "Pathology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a18ea6-952d-789f-8723-949b50d86658"
+    },
+    "created_at": "2026-10-30T21:10:44.021+00:00",
+    "updated_at": "2026-10-30T21:10:44.021+00:00"
+  },
+  {
+    "id": "r_4f5e54d0465ff78ed07f5215368a627646de2bb9",
+    "request_hash": "d7e44dafcf170a2822f060ba4fc832fb6192e12ce26d86253800daa6668ba9d2",
+    "reporter_id": "user_3LbVWkfY1fXAVTbyVe5EqFVYAc0",
+    "reporter": {
+      "name": "Omar Khaled",
+      "email": "overshothailplayz@gmail.com",
+      "username": "omarkhaled",
+      "emailVerified": true
+    },
+    "category": "unclear_wording",
+    "explanation": "",
+    "module_code": "MRS-2",
+    "chapter_id": 2,
+    "question_id": "MRS2-CH2-PHYS-0022",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "6d93e08f58f2cc58829a94731122147db4822fbce5dbca1c6c6959ce3e8444a9",
+      "question": {
+        "id": "MRS2-CH2-PHYS-0022",
+        "text": "The pleural pressure of a normal 56-year-old woman is approximately -5 mmHg during resting conditions immediately before inspiration.",
+        "type": "mcq",
+        "lecture": 1,
+        "options": [
+          "+1",
+          "+4",
+          ", at the end of expiration). What is the pleural pressure (in mmHg) during normal inspiration?",
+          "-3",
+          "-7"
+        ],
+        "keyConcept": "Inspiration makes intrapleural pressure more negative and raises transpulmonary pressure, while alveolar pressure briefly falls below atmospheric pressure to draw air inward. Exam focus: The pleural pressure of a normal 56-year- old woman is approximately -5 mmHg during resting conditions immediately before….",
+        "explanation": "-7 is correct because it is the physiologic consequence or definition specified in the stem. Inspiration makes intrapleural pressure more negative and raises transpulmonary pressure, while alveolar pressure briefly falls below atmospheric pressure to draw air inward. The alternative “, at the end of expiration); What is the pleural pressure (in mmHg) during normal inspiration” is less appropriate because it does not satisfy that relationship in this context.",
+        "modelAnswer": null,
+        "correctIndex": 4,
+        "contentVersion": "2c6d997a708a174cd3ab20f5e1cca8f57e81de9a671c9c4b868843cac1f5f15c"
+      },
+      "chapterId": 2,
+      "topicName": "Mechanics of Breathing, Compliance & Surfactant",
+      "moduleCode": "MRS-2",
+      "subjectName": "Physiology",
+      "chapterTitle": "Pulmonary Physiology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a1a23e-3747-710a-b58b-b9b69484be36"
+    },
+    "created_at": "2026-11-03T16:29:08.296+00:00",
+    "updated_at": "2026-11-03T16:29:08.296+00:00"
+  },
+  {
+    "id": "r_7d248e62b8b9fcc4330496e4ea2c198040803a63",
+    "request_hash": "3c55fd52dcad7e08e38fe74d48a41dfb5e641ff3e0f95dc2affdc8b2e3901d34",
+    "reporter_id": "user_3LbVWkfY1fXAVTbyVe5EqFVYAc0",
+    "reporter": {
+      "name": "Omar Khaled",
+      "email": "overshothailplayz@gmail.com",
+      "username": "omarkhaled",
+      "emailVerified": true
+    },
+    "category": "wrong_answer",
+    "explanation": "",
+    "module_code": "MRS-2",
+    "chapter_id": 2,
+    "question_id": "MRS2-CH2-PHYS-0091",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "dc0645966ad3b65a223d9ed66fee8a4491499d26d90ecd07b4fb4363ba67a499",
+      "question": {
+        "id": "MRS2-CH2-PHYS-0091",
+        "text": "Which of the following decreases the anatomical dead space",
+        "type": "mcq",
+        "lecture": 2,
+        "options": [
+          "Bronchodilatation",
+          "Breathing through tube",
+          "Increase in respiratory rate",
+          "Sympathetic stimulation of airway smooth muscles",
+          "Endotracheal intubation."
+        ],
+        "keyConcept": "Anatomic dead space is conducting-airway volume, while physiologic dead space adds ventilated but underperfused alveoli; only tidal volume minus dead space participates in alveolar ventilation. Exam focus: of the following decreases the anatomical dead space.",
+        "explanation": "Increase in respiratory rate is correct because it is the physiologic consequence or definition specified in the stem. Anatomic dead space is conducting-airway volume, while physiologic dead space adds ventilated but underperfused alveoli; only tidal volume minus dead space participates in alveolar ventilation. The alternative “Bronchodilatation” is less appropriate because it does not satisfy that relationship in this context.",
+        "modelAnswer": null,
+        "correctIndex": 2,
+        "contentVersion": "5f85e263ff5a230bd364e415a96f2b5cdb187c065ff1c7edc06b520c1f6ec32b"
+      },
+      "chapterId": 2,
+      "topicName": "Lung Volumes, Capacities & Spirometry",
+      "moduleCode": "MRS-2",
+      "subjectName": "Physiology",
+      "chapterTitle": "Pulmonary Physiology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a1a2a9-a5f9-709a-964c-30cc1f6287d4"
+    },
+    "created_at": "2026-11-03T18:26:29.138+00:00",
+    "updated_at": "2026-11-03T18:26:29.138+00:00"
+  },
+  {
+    "id": "r_3555e697917669eef9dc9c0fcf6e884c3759a8e9",
+    "request_hash": "b366c2f675a9087fed6adabea1575ad6ae33f88788ac01111452957457784128",
+    "reporter_id": "user_3FiMDoUGT9WtdmUl6eMCs34jToo",
+    "reporter": {
+      "name": "MI M",
+      "email": "mohamed200774@gmail.com",
+      "username": "mim123",
+      "emailVerified": true
+    },
+    "category": "wrong_answer",
+    "explanation": "",
+    "module_code": "MRS-2",
+    "chapter_id": 3,
+    "question_id": "MRS2-CH3-MICR-0191",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "42f9610122e30866eb99d9a0cefbaf64434093354fdee10db1c53f2ff6cab8d0",
+      "question": {
+        "id": "MRS2-CH3-MICR-0191",
+        "text": "The urgent treatment of diphtheria among the listed choices is:",
+        "type": "mcq",
+        "lecture": 1,
+        "options": [
+          "Surgical excision of the pseudomembrane",
+          "Immediate injection of diphtheria toxoid",
+          "Injection of penicillin G",
+          "All of the above",
+          "None of the above"
+        ],
+        "keyConcept": "None of the above — the decisive fact for “The urgent treatment of diphtheria among the listed choices is.”",
+        "explanation": "Urgent management requires diphtheria antitoxin plus antibiotics and airway support; none of the listed single choices provides the required immediate antitoxin treatment.",
+        "modelAnswer": null,
+        "correctIndex": 4,
+        "contentVersion": "1fc6113b0454e7c0f20625325e1c1d86483199a67fcbcf5f2e7b8486507bc4f7"
+      },
+      "chapterId": 3,
+      "topicName": "Upper Respiratory Bacterial Infections (Diphtheria, Pertussis, Streptococci)",
+      "moduleCode": "MRS-2",
+      "subjectName": "Microbiology",
+      "chapterTitle": "Respiratory Pathologies & Pharmacology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a1a696-4290-7683-90ee-57fd60818486"
+    },
+    "created_at": "2026-11-04T12:43:47.164+00:00",
+    "updated_at": "2026-11-04T12:43:47.164+00:00"
+  },
+  {
+    "id": "r_68521ca1f339aac85b01f8c19e98639ce0d060b0",
+    "request_hash": "3a1507f601ab895099965e1a462169d95e0abd7252a62476d98d9232f9585a61",
+    "reporter_id": "user_3FiMDoUGT9WtdmUl6eMCs34jToo",
+    "reporter": {
+      "name": "MI M",
+      "email": "mohamed200774@gmail.com",
+      "username": "mim123",
+      "emailVerified": true
+    },
+    "category": "wrong_answer",
+    "explanation": "Diphteria never invade. Only the toxin circulates",
+    "module_code": "MRS-2",
+    "chapter_id": 3,
+    "question_id": "MRS2-CH3-PATH-0262",
+    "sub_question_id": null,
+    "snapshot": {
+      "version": "a9e62153e0439428859e74f473d96ef300dddaef6407840eb3e945ad3907f7f5",
+      "question": {
+        "id": "MRS2-CH3-PATH-0262",
+        "text": "The systemic complications of diphtheria are due to circulation of the organism in the blood.",
+        "type": "truefalse",
+        "lecture": 1,
+        "options": [
+          "True",
+          "False"
+        ],
+        "keyConcept": "False: The systemic complications of diphtheria are due to circulation of the organism in the blood.",
+        "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. False: The systemic complications of diphtheria are due to circulation of the organism in the blood.",
+        "modelAnswer": null,
+        "correctIndex": 0,
+        "contentVersion": "ca1dc2954266073f3ea938509da19aecafd71421bebabceb3480709a4ca11f65"
+      },
+      "chapterId": 3,
+      "topicName": "Obstructive & Restrictive Lung Diseases (COPD, Asthma, Bronchiectasis, Fibrosis)",
+      "moduleCode": "MRS-2",
+      "subjectName": "Pathology",
+      "chapterTitle": "Respiratory Pathologies & Pharmacology"
+    },
+    "status": "new",
+    "notes": "",
+    "revision": 1,
+    "notification": {
+      "state": "sent",
+      "providerId": "01a1a6b2-bad7-70d4-be58-a0833e4308b1"
+    },
+    "created_at": "2026-11-04T13:14:53.153+00:00",
+    "updated_at": "2026-11-04T13:14:53.153+00:00"
+  }
+]

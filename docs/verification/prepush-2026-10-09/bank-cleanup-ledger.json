@@ -716,47 +716,6 @@
   },
   {
     "module": "MRS-2",
-    "id": "MRS2-CH2-PHYS-0022",
-    "action": "display-cleanup",
-    "reason": "Repair unclosed parenthesis and OCR fragment in stem",
-    "original": {
-      "id": "MRS2-CH2-PHYS-0022",
-      "type": "mcq",
-      "lecture": 2,
-      "text": "The pleural pressure of a normal 56-year- old woman is approximately -5 mmHg during resting conditions immediately before inspiration (i.",
-      "explanation": "-7 is correct because it is the physiologic consequence or definition specified in the stem. Inspiration makes intrapleural pressure more negative and raises transpulmonary pressure, while alveolar pressure briefly falls below atmospheric pressure to draw air inward. The alternative “, at the end of expiration); What is the pleural pressure (in mmHg) during normal inspiration” is less appropriate because it does not satisfy that relationship in this context.",
-      "keyConcept": "Inspiration makes intrapleural pressure more negative and raises transpulmonary pressure, while alveolar pressure briefly falls below atmospheric pressure to draw air inward. Exam focus: The pleural pressure of a normal 56-year- old woman is approximately -5 mmHg during resting conditions immediately before….",
-      "options": [
-        "+1",
-        "+4",
-        ", at the end of expiration). What is the pleural pressure (in mmHg) during normal inspiration?",
-        "-3",
-        "-7"
-      ],
-      "correctIndex": 4,
-      "modelAnswer": null
-    },
-    "updated": {
-      "id": "MRS2-CH2-PHYS-0022",
-      "type": "mcq",
-      "lecture": 1,
-      "text": "The pleural pressure of a normal 56-year-old woman is approximately -5 mmHg during resting conditions immediately before inspiration.",
-      "explanation": "-7 is correct because it is the physiologic consequence or definition specified in the stem. Inspiration makes intrapleural pressure more negative and raises transpulmonary pressure, while alveolar pressure briefly falls below atmospheric pressure to draw air inward. The alternative “, at the end of expiration); What is the pleural pressure (in mmHg) during normal inspiration” is less appropriate because it does not satisfy that relationship in this context.",
-      "keyConcept": "Inspiration makes intrapleural pressure more negative and raises transpulmonary pressure, while alveolar pressure briefly falls below atmospheric pressure to draw air inward. Exam focus: The pleural pressure of a normal 56-year- old woman is approximately -5 mmHg during resting conditions immediately before….",
-      "options": [
-        "+1",
-        "+4",
-        ", at the end of expiration). What is the pleural pressure (in mmHg) during normal inspiration?",
-        "-3",
-        "-7"
-      ],
-      "correctIndex": 4,
-      "modelAnswer": null,
-      "contentVersion": "2c6d997a708a174cd3ab20f5e1cca8f57e81de9a671c9c4b868843cac1f5f15c"
-    }
-  },
-  {
-    "module": "MRS-2",
     "id": "MRS2-CH2-PHYS-0105",
     "action": "display-cleanup",
     "reason": "Repair unclosed parentheses in stem",
@@ -1637,41 +1596,6 @@
       "correctIndex": 0,
       "modelAnswer": null,
       "contentVersion": "8743c7205eab636c5360d526c594ad28d54e4f2107026c5ce5ba1cbaea8a86f9"
-    }
-  },
-  {
-    "module": "MRS-2",
-    "id": "MRS2-CH3-PATH-0262",
-    "action": "display-cleanup",
-    "reason": "Forensic medical correction: verify True statement answer key",
-    "original": {
-      "id": "MRS2-CH3-PATH-0262",
-      "type": "truefalse",
-      "lecture": 3,
-      "text": "The systemic complications of diphtheria are due to circulation of the organism in the blood.",
-      "explanation": "Diphtheria's systemic complications (myocarditis, neuropathy) are due to absorbed exotoxin circulating in the blood, not bacteraemia, since C. diphtheriae remains localized to the pseudomembrane.",
-      "keyConcept": "False: The systemic complications of diphtheria are due to circulation of the organism in the blood.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "correctIndex": 1,
-      "modelAnswer": null
-    },
-    "updated": {
-      "id": "MRS2-CH3-PATH-0262",
-      "type": "truefalse",
-      "lecture": 1,
-      "text": "The systemic complications of diphtheria are due to circulation of the organism in the blood.",
-      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. False: The systemic complications of diphtheria are due to circulation of the organism in the blood.",
-      "keyConcept": "False: The systemic complications of diphtheria are due to circulation of the organism in the blood.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "correctIndex": 0,
-      "modelAnswer": null,
-      "contentVersion": "ca1dc2954266073f3ea938509da19aecafd71421bebabceb3480709a4ca11f65"
     }
   },
   {
@@ -3034,6 +2958,164 @@
       ],
       "correctIndex": 0,
       "modelAnswer": null
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0022",
+    "action": "medical-triage",
+    "reason": "Student report forensic triage: verified correction for MRS2-CH2-PHYS-0022",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0022",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The pleural pressure of a normal 56-year- old woman is approximately -5 mmHg during resting conditions immediately before inspiration (i.",
+      "explanation": "-7 is correct because it is the physiologic consequence or definition specified in the stem. Inspiration makes intrapleural pressure more negative and raises transpulmonary pressure, while alveolar pressure briefly falls below atmospheric pressure to draw air inward. The alternative “, at the end of expiration); What is the pleural pressure (in mmHg) during normal inspiration” is less appropriate because it does not satisfy that relationship in this context.",
+      "keyConcept": "Inspiration makes intrapleural pressure more negative and raises transpulmonary pressure, while alveolar pressure briefly falls below atmospheric pressure to draw air inward. Exam focus: The pleural pressure of a normal 56-year- old woman is approximately -5 mmHg during resting conditions immediately before….",
+      "options": [
+        "+1",
+        "+4",
+        ", at the end of expiration). What is the pleural pressure (in mmHg) during normal inspiration?",
+        "-3",
+        "-7"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0022",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The pleural pressure of a normal 56-year-old woman is approximately -5 mmHg during resting conditions immediately before inspiration (i.e. at the end of expiration). What is the pleural pressure (in mmHg) during normal inspiration?",
+      "explanation": "Mechanism: Intrapleural pressure is normally -5 cmH2O at FRC and decreases to approximately -7.5 cmH2O (or -7 mmHg) during resting inspiration due to thoracic expansion. Distractors: Positive pressures (+1, +4) occur during forced expiration. 📌 Key Takeaway: Intrapleural pressure drops to ~ -7 mmHg during resting inspiration.",
+      "keyConcept": "Inspiration makes intrapleural pressure more negative and raises transpulmonary pressure, while alveolar pressure briefly falls below atmospheric pressure to draw air inward. Exam focus: The pleural pressure of a normal 56-year- old woman is approximately -5 mmHg during resting conditions immediately before….",
+      "options": [
+        "+1",
+        "+4",
+        "-1",
+        "-3",
+        "-7"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "contentVersion": "74f0959ca976ab8f1a0dbb7776918713aa0aa02842b9cd06b6d827e9a66e8e2d"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0091",
+    "action": "medical-triage",
+    "reason": "Student report forensic triage: verified correction for MRS2-CH2-PHYS-0091",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0091",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which of the following decreases the anatomical dead space",
+      "explanation": "Increase in respiratory rate is correct because it is the physiologic consequence or definition specified in the stem. Anatomic dead space is conducting-airway volume, while physiologic dead space adds ventilated but underperfused alveoli; only tidal volume minus dead space participates in alveolar ventilation. The alternative “Bronchodilatation” is less appropriate because it does not satisfy that relationship in this context.",
+      "keyConcept": "Anatomic dead space is conducting-airway volume, while physiologic dead space adds ventilated but underperfused alveoli; only tidal volume minus dead space participates in alveolar ventilation. Exam focus: of the following decreases the anatomical dead space.",
+      "options": [
+        "Bronchodilatation",
+        "Breathing through tube",
+        "Increase in respiratory rate",
+        "Sympathetic stimulation of airway smooth muscles",
+        "Endotracheal intubation."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0091",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which of the following decreases the anatomical dead space?",
+      "explanation": "Mechanism: Endotracheal intubation and tracheostomy bypass the upper respiratory tract (nose, pharynx, larynx), reducing anatomical dead space by ~50%. Distractors: Bronchodilatation and sympathetic stimulation increase dead space volume. Tachypnea affects alveolar ventilation, not dead space volume. 📌 Key Takeaway: Endotracheal intubation decreases anatomical dead space.",
+      "keyConcept": "Anatomic dead space is conducting-airway volume, while physiologic dead space adds ventilated but underperfused alveoli; only tidal volume minus dead space participates in alveolar ventilation. Exam focus: of the following decreases the anatomical dead space.",
+      "options": [
+        "Bronchodilatation",
+        "Breathing through tube",
+        "Increase in respiratory rate",
+        "Sympathetic stimulation of airway smooth muscles",
+        "Endotracheal intubation"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "contentVersion": "d8060c3b7496890ba2b026623b7faf6c10cca193c70f1f57ced4712a38646256"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-MICR-0191",
+    "action": "medical-triage",
+    "reason": "Student report forensic triage: verified correction for MRS2-CH3-MICR-0191",
+    "original": {
+      "id": "MRS2-CH3-MICR-0191",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "The urgent treatment of diphtheria among the listed choices is:",
+      "explanation": "Urgent management requires diphtheria antitoxin plus antibiotics and airway support; none of the listed single choices provides the required immediate antitoxin treatment.",
+      "keyConcept": "None of the above — the decisive fact for “The urgent treatment of diphtheria among the listed choices is.”",
+      "options": [
+        "Surgical excision of the pseudomembrane",
+        "Immediate injection of diphtheria toxoid",
+        "Injection of penicillin G",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-MICR-0191",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The urgent treatment of diphtheria among the listed choices is:",
+      "explanation": "Mechanism: Urgent life-saving therapy requires immediate Diphtheria Antitoxin (DAT) to neutralize circulating exotoxin before it enters myocytes and nerve cells. Distractors: Penicillin G kills bacteria to stop further toxin production but does not neutralize existing toxin. Toxoid is useless in acute illness. 📌 Key Takeaway: Immediate antitoxin administration is the urgent treatment for diphtheria.",
+      "keyConcept": "None of the above — the decisive fact for “The urgent treatment of diphtheria among the listed choices is.”",
+      "options": [
+        "Surgical excision of the pseudomembrane",
+        "Immediate injection of diphtheria toxoid",
+        "Injection of penicillin G",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "contentVersion": "4c2ee6bf6ae7d347c63f02a8b2d3b536d96b77d8495eba6e45bc1ccc0e3d55b7"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0262",
+    "action": "medical-triage",
+    "reason": "Student report forensic triage: verified correction for MRS2-CH3-PATH-0262",
+    "original": {
+      "id": "MRS2-CH3-PATH-0262",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "The systemic complications of diphtheria are due to circulation of the organism in the blood.",
+      "explanation": "Diphtheria's systemic complications (myocarditis, neuropathy) are due to absorbed exotoxin circulating in the blood, not bacteraemia, since C. diphtheriae remains localized to the pseudomembrane.",
+      "keyConcept": "False: The systemic complications of diphtheria are due to circulation of the organism in the blood.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0262",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "The systemic complications of diphtheria are due to circulation of the organism in the blood.",
+      "explanation": "False. Mechanism: Corynebacterium diphtheriae does not invade tissue or circulate in the bloodstream (no bacteremia). Its severe systemic complications (toxic myocarditis, polyneuritis) are caused entirely by blood-borne diphtheria exotoxin (toxemia). 📌 Key Takeaway: Diphtheria complications result from circulating exotoxin, not bacteremia.",
+      "keyConcept": "False: The systemic complications of diphtheria are due to circulation of the organism in the blood.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "contentVersion": "43b0463af045f30a0e65973f41c1222254de20471ead7a9e9d35a3cd6a4b892a"
     }
   }
 ]

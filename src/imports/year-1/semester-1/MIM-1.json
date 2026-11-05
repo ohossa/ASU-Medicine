@@ -551,10 +551,10 @@
                 "IL-5"
               ],
               "correctIndex": 0,
-              "explanation": "IL-1 is an endogenous pyrogen. Together with TNF-α and IL-6, it mediates systemic inflammatory responses including fever.",
+              "explanation": "Mechanism: Interleukin-1 (IL-1), along with TNF-α and IL-6, acts directly on the hypothalamic preoptic nucleus as an endogenous pyrogen, stimulating local PGE2 synthesis to raise the hypothalamic temperature set-point. Distractors: IL-2 drives T-cell proliferation; IL-4/IL-5 induce B-cell class switching and eosinophil activation. 📌 Key Takeaway: IL-1 is the primary endogenous pyrogen.",
               "id": "MIM1-CH2-MICR-0007",
               "lecture": 1,
-              "contentVersion": "1390e524760c4f14754d95313690eccff5920bc7101bc18de78f9841f1f2c15a"
+              "contentVersion": "aa71b1b62c49bb2f4a5ce7b05cc3efec7b4adb46311512632c7cab63ecaff94a"
             },
             {
               "type": "mcq",
