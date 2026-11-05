@@ -20,11 +20,11 @@ it('shows true/false defaults and matching or blank keys without inventing missi
  expect(q({type:'mcq',text:'Missing key'})).toContain('Not recorded');
 });
 
-it('renders ASUCodes Question Review header and plain ASUCodes footer without official university claims',()=>{
+it('renders A-Plus · asu.codes Question Review header and plain A-Plus · asu.codes footer without official university claims',()=>{
  const c=replyContext(report)!;
  const e=renderReplyEmail('Thanks. We corrected it.',c);
- expect(e.html).toContain('ASUCodes · Question Review');
+ expect(e.html).toContain('A-Plus · asu.codes · Question Review');
  expect(e.html).not.toContain('Faculty Review');
- expect(e.html).toContain('>ASUCodes</div>');
+ expect(e.html).toContain('>A-Plus · asu.codes</div>');
  expect(e.html).not.toContain('Ain Shams University Faculty of Medicine · ASUCodes');
 });

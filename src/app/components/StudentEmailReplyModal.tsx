@@ -27,36 +27,36 @@ export function StudentEmailReplyModal({
   const isQuestionReport = Boolean(questionId);
 
   const defaultSubject = isQuestionReport
-    ? `[ASUCodes] Follow-up on your report for ${moduleCode || "Question Bank"} (Q#${questionId})`
-    : `[ASUCodes] Academic Guidance & Performance`;
+    ? `[A-Plus · asu.codes] Follow-up on your report for ${moduleCode || "Question Bank"} (Q#${questionId})`
+    : `[A-Plus · asu.codes] Academic Guidance & Performance`;
 
   const templates = isQuestionReport
     ? [
         {
           title: "Question Corrected & Verified",
-          body: `Dear ${studentName},\n\nThank you for taking the time to report an issue with Question #${questionId} in ${moduleCode || "your module"}.\n\nOur question review has verified your feedback, and the question text / answer key has now been updated on the live website.\n\nThank you for helping us maintain the highest standard of academic accuracy.\n\nBest regards,\nOmar HossamEldin Maged\nASUCodes`,
+          body: `Dear ${studentName},\n\nThank you for taking the time to report an issue with Question #${questionId} in ${moduleCode || "your module"}.\n\nOur question review has verified your feedback, and the question text / answer key has now been updated on the live website.\n\nThank you for helping us maintain the highest standard of academic accuracy.\n\nBest regards,\nOmar Hossam\nA-Plus · asu.codes`,
         },
         {
           title: "Explanation Clarification",
-          body: `Dear ${studentName},\n\nThank you for reaching out regarding Question #${questionId} in ${moduleCode || "your module"}.\n\nWe carefully reviewed the curriculum textbooks and lecture references for this topic. We have enriched the detailed explanation on the platform to clarify this clinical concept.\n\nKeep up the great work with your studies!\n\nBest regards,\nOmar HossamEldin Maged\nASUCodes`,
+          body: `Dear ${studentName},\n\nThank you for reaching out regarding Question #${questionId} in ${moduleCode || "your module"}.\n\nWe carefully reviewed the curriculum textbooks and lecture references for this topic. We have enriched the detailed explanation on the platform to clarify this clinical concept.\n\nKeep up the great work with your studies!\n\nBest regards,\nOmar Hossam\nA-Plus · asu.codes`,
         },
         {
           title: "Curriculum Source Grounding",
-          body: `Dear ${studentName},\n\nRegarding your note on Question #${questionId} in ${moduleCode || "your module"}:\n\nThis question aligns directly with the official Ain Shams University department lecture notes and past exam key. We have added extra reference notes to help clarify the distinction.\n\nWarm regards,\nOmar HossamEldin Maged\nASUCodes`,
+          body: `Dear ${studentName},\n\nRegarding your note on Question #${questionId} in ${moduleCode || "your module"}:\n\nThis question aligns directly with the official Ain Shams University department lecture notes and past exam key. We have added extra reference notes to help clarify the distinction.\n\nWarm regards,\nOmar Hossam\nA-Plus · asu.codes`,
         },
       ]
     : [
         {
           title: "Academic Recognition (Top Performer)",
-          body: `Dear ${studentName},\n\nCongratulations on your outstanding performance on the ASUCodes medical platform! Your high consistency, accuracy, and study streak place you among the top performers on the portal.\n\nWe are proud of your dedication and wish you continued excellence in your Ain Shams medical studies.\n\nWarm regards,\nOmar HossamEldin Maged\nASUCodes`,
+          body: `Dear ${studentName},\n\nCongratulations on your outstanding performance on the A-Plus (asu.codes) medical platform! Your high consistency, accuracy, and study streak place you among the top performers on the portal.\n\nWe are proud of your dedication and wish you continued excellence in your Ain Shams medical studies.\n\nWarm regards,\nOmar Hossam\nA-Plus · asu.codes`,
         },
         {
           title: "Study Guidance & Module Support",
-          body: `Dear ${studentName},\n\nWe noticed your active practice and dedication across your medical question banks on ASUCodes.\n\nIf you ever need additional high-yield explanations, reference materials, or past exam question walk-throughs for any specific topics, feel free to reply directly to this email.\n\nBest of luck with your continuous assessments!\n\nBest regards,\nOmar HossamEldin Maged\nASUCodes`,
+          body: `Dear ${studentName},\n\nWe noticed your active practice and dedication across your medical question banks on A-Plus (asu.codes).\n\nIf you ever need additional high-yield explanations, reference materials, or past exam question walk-throughs for any specific topics, feel free to reply directly to this email.\n\nBest of luck with your continuous assessments!\n\nBest regards,\nOmar Hossam\nA-Plus · asu.codes`,
         },
         {
           title: "Feedback & Inquiries",
-          body: `Dear ${studentName},\n\nThank you for being an active learner on ASUCodes.\n\nWe are constantly improving the platform to best support your studies at Ain Shams University Faculty of Medicine. Please let us know if there is anything we can do to further enhance your preparation.\n\nWarm regards,\nOmar HossamEldin Maged\nASUCodes`,
+          body: `Dear ${studentName},\n\nThank you for being an active learner on A-Plus (asu.codes).\n\nWe are constantly improving the platform to best support your studies at Ain Shams University Faculty of Medicine. Please let us know if there is anything we can do to further enhance your preparation.\n\nWarm regards,\nOmar Hossam\nA-Plus · asu.codes`,
         },
       ];
 

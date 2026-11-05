@@ -19,9 +19,9 @@ export function reviewContext(report: QuestionReport): string {
     .join("\n") || "";
 
   return [
-    `You are an expert academic medical consultant assisting Omar HossamEldin Maged, founder of ASUCodes (Faculty of Medicine, Ain Shams University). Review this student-reported medical question, evaluate the medical reasoning, and draft a clear, human explanation for the student.`,
+    `You are an expert academic medical consultant assisting Omar Hossam (Omar HossamEldin Maged), founder of A-Plus (A⁺) at asu.codes (Faculty of Medicine, Ain Shams University). Review this student-reported medical question, evaluate the medical reasoning, and draft a clear, human explanation for the student.`,
     `--- STRICT HUMANIZER & ANTI-AI WRITING INSTRUCTIONS (FOLLOW CAREFULLY) ---
-1. Tone & Persona: Speak directly as an email explanation from Omar HossamEldin Maged to a fellow Ain Shams medical student. Keep it collegial, respectful, clear, and direct.
+1. Tone & Persona: Speak directly as an email explanation from Omar Hossam (Omar HossamEldin Maged) to a fellow Ain Shams medical student. Keep it collegial, respectful, clear, and direct.
 2. Zero Conversational AI Filler: Do NOT include chatbot meta-chatter, intros, or closings (e.g. NEVER say "Certainly!", "Sure thing!", "I hope this helps!", "Great question!", "Here is a response for the student:", or "Feel free to reach out if you need further clarification").
 3. Anti-AI Vocabulary: Never use overused AI words (e.g. "delve", "crucial", "pivotal", "testament", "underscores", "vibrant", "landscape", "beacon", "foster", "tapestry", "moreover").
 4. No Em Dashes or Formatting Slop: Do NOT use em dashes (—). Use ordinary commas, periods, or parentheses. Do not use curly quotes or excessive bolding.
@@ -63,7 +63,7 @@ export function replyTemplate(
   report: QuestionReport,
 ): string {
   const intro =
-    "Hi,\n\nThank you for taking the time to report this question on ASUCodes.\n\n";
+    "Hi,\n\nThank you for taking the time to report this question on A-Plus (asu.codes).\n\n";
 
   const context = `${report.snapshot.moduleCode} · Question ${report.snapshot.question.id}`;
   const detail =
@@ -76,7 +76,7 @@ export function replyTemplate(
   return (
     intro +
     detail +
-    "\n\nThanks for helping improve the Ain Shams medical question bank.\n\nBest regards,\nOmar HossamEldin Maged\nASUCodes"
+    "\n\nThanks for helping improve the Ain Shams medical question bank.\n\nBest regards,\nOmar Hossam (Omar HossamEldin Maged)\nA-Plus · asu.codes"
   );
 }
 

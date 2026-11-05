@@ -31,7 +31,7 @@ export function ReplyComposer({
     null,
   );
   const [subject, setSubject] = useState(
-    `Your ASUCodes report · ${report.snapshot.moduleCode} · ${report.snapshot.question.id}`,
+    `Your A-Plus (asu.codes) report · ${report.snapshot.moduleCode} · ${report.snapshot.question.id}`,
   );
   const [body, setBody] = useState("");
   const [revision, setRevision] = useState(0);
@@ -117,7 +117,7 @@ export function ReplyComposer({
           if (c.draft) {
             setSubject(
               c.draft.subject ||
-                `Your ASUCodes report · ${report.snapshot.moduleCode} · ${report.snapshot.question.id}`,
+                `Your A-Plus (asu.codes) report · ${report.snapshot.moduleCode} · ${report.snapshot.question.id}`,
             );
             setBody(c.draft.body);
           }
