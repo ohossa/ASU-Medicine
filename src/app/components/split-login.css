@@ -91,15 +91,32 @@
 }
 
 .split-wordmark {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.split-wordmark-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.split-wordmark-title {
   font-family: 'Bricolage Grotesque', 'Inter', sans-serif;
   font-weight: 800;
   font-size: 1.35rem;
   letter-spacing: -0.03em;
   color: #ffffff;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+}
+
+.split-wordmark-domain {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .split-pill-independent {

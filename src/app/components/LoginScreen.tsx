@@ -82,8 +82,16 @@ export function LoginScreen() {
         <div className="split-brand-content">
           {/* Top: Wordmark & Independent Badge */}
           <div className="split-brand-top">
-            <a href="/" className="split-wordmark" title="asu.codes Home">
-              <span>asu.codes</span>
+            <a href="/" className="split-wordmark" title="A-Plus (asu.codes) Home">
+              <img
+                src="/favicon.png"
+                alt="A-Plus Logo"
+                className="w-10 h-10 rounded-xl shadow-md shrink-0 object-contain"
+              />
+              <div className="split-wordmark-text">
+                <span className="split-wordmark-title">A-Plus</span>
+                <span className="split-wordmark-domain">asu.codes</span>
+              </div>
             </a>
             <div className="split-pill-independent">
               <span className="split-pill-dot" />
@@ -204,7 +212,7 @@ export function LoginScreen() {
         </div>
 
         <div className="text-center text-[11px] text-zinc-500 mt-8 pt-4 border-t border-[#1b2438]">
-          © {new Date().getFullYear()} asu.codes · Independent student project. Not affiliated with Ain Shams University.
+          © {new Date().getFullYear()} A-Plus (asu.codes) · Independent student project. Not affiliated with Ain Shams University.
         </div>
       </section>
     </div>
