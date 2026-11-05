@@ -88,7 +88,7 @@ Creator, A-Plus (asu.codes)
 
 ---
 
-## 4. Reply to H. Salah (`hsalah2906@gmail.com`)
+## 4. Reply to Hussein Salah (`hsalah2906@gmail.com`)
 
 * **Subject:** Key correction and explanation upgrades on your reported questions (Autoimmune Hepatitis & Parasitology)
 * **Total Reports Filed:** 3 reports (`MGL3-CH5-PATH-0802`, `MGL3-CH8-PARA-0629`, `MGL3-CH8-PARA-0679`)
@@ -96,7 +96,7 @@ Creator, A-Plus (asu.codes)
 
 ### Draft Message Body:
 ```text
-Hi Salah,
+Hi Hussein,
 
 Thanks for your feedback on MGL-3. Here are the updates applied:
 
@@ -185,6 +185,8 @@ Thank you for reaching out regarding the cytokine question in Innate Immunity (M
 The correct answer is indeed IL-1 (Option A), as it acts directly on the hypothalamic preoptic nucleus alongside TNF-α and IL-6 to induce fever. When an incorrect option is selected in practice mode, the quiz interface highlights the chosen option in red and reveals the correct answer (IL-1) in green.
 
 We've expanded the explanation with a full Amboss-grade mechanism covering IL-1, TNF-α, and IL-6 to make the feedback crystal clear.
+
+If this ever happens again where the interface seems to mark your selection as wrong while highlighting the same choice, please snap a quick screenshot and send it over to me so I can inspect the exact browser state!
 
 Best of luck in your microbiology studies!
 
