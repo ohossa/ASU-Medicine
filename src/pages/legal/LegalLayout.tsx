@@ -1,9 +1,10 @@
-import type { ReactNode } from "react";
+import { useEffect, type ReactNode } from "react";
 import { ArrowLeft, Shield, FileText, AlertTriangle } from "lucide-react";
 import { ThemeToggle } from "../../app/components/ThemeToggle";
 import { StarlightToggle } from "../../app/components/StarlightToggle";
 import { LanguageToggle } from "../../app/components/LanguageToggle";
 import { PortalFooter } from "../../app/components/PortalFooter";
+import { updateDocumentTitle } from "../../app/utils/pageTitle";
 import "./legal.css";
 
 interface LegalLayoutProps {
@@ -14,6 +15,16 @@ interface LegalLayoutProps {
 
 export default function LegalLayout({ currentTab, children, arabic = false }: LegalLayoutProps) {
   const t = (en: string, ar: string) => (arabic ? ar : en);
+
+  useEffect(() => {
+    const titles: Record<string, { en: string; ar: string }> = {
+      terms: { en: "Terms of Service", ar: "شروط الاستخدام" },
+      privacy: { en: "Privacy Policy", ar: "سياسة الخصوصية" },
+      disclaimer: { en: "Medical Disclaimer", ar: "إخلاء المسؤولية الطبية" },
+    };
+    const tab = titles[currentTab] || { en: "Legal", ar: "قانوني" };
+    updateDocumentTitle(arabic ? tab.ar : tab.en);
+  }, [currentTab, arabic]);
 
   return (
     <div className="legal-container" dir={arabic ? "rtl" : "ltr"}>
@@ -65,7 +76,7 @@ export default function LegalLayout({ currentTab, children, arabic = false }: Le
 
         <main className="legal-card">{children}</main>
         <div style={{ marginTop: "3rem" }}>
-          <PortalFooter />
+          <PortalFooter lang={arabic ? "ar" : "en"} />
         </div>
       </div>
     </div>

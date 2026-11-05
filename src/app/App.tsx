@@ -27,6 +27,7 @@ import { AcademicYearProfilePage } from './components/profile/AcademicYearProfil
 
 import Dashboard from '../pages/Dashboard';
 import { isOptimisticallyAuthenticated, setCachedSession, clearCachedSession } from './auth/cachedSession';
+import { updateDocumentTitle } from './utils/pageTitle';
 
 // Lazy-loaded components for routing/modals
 const AdminPortal = lazy(() => import('../pages/AdminPortal'));
@@ -494,6 +495,62 @@ function MainApp() {
       return 'yearSelect';
     } catch { return 'yearSelect'; }
   });
+
+  // Dynamic Browser Tab Title Sync
+  useEffect(() => {
+    const path = location.pathname;
+    let title = '';
+
+    if (path === '/' || path === '') {
+      title = '';
+    } else if (path.startsWith('/admin')) {
+      if (path.includes('/reports')) title = 'Reports Inbox';
+      else if (path.includes('/questions')) title = 'Question Studio';
+      else if (path.includes('/analytics')) title = 'Portal Analytics';
+      else title = 'Admin Operations';
+    } else if (path.startsWith('/learning')) {
+      title = 'Learning Hub';
+    } else if (path.startsWith('/anki')) {
+      title = 'Anki Decks';
+    } else if (path.startsWith('/marks-calculator')) {
+      title = 'Marks Calculator';
+    } else if (path.startsWith('/question-search')) {
+      title = 'Question Search';
+    } else if (path.startsWith('/flagged-questions')) {
+      title = 'Flagged Questions';
+    } else {
+      const trackerMatch = path.match(/^\/year-\d+\/([a-zA-Z0-9-]+)\/tracker/);
+      if (trackerMatch) {
+        title = `${trackerMatch[1].toUpperCase()} Tracker`;
+      } else {
+        const modeMatch = path.match(/^\/year-\d+\/([a-zA-Z0-9-]+)\/([a-zA-Z0-9-]+)/);
+        if (modeMatch) {
+          const code = modeMatch[1].toUpperCase();
+          const mode = modeMatch[2].toLowerCase();
+          const modeLabel = mode === 'mcq' ? 'MCQ' : mode === 'case' ? 'Cases' : mode === 'oral' ? 'Oral' : 'Practice';
+          if (screen === 'quiz') {
+            title = `${code} Quiz`;
+          } else if (screen === 'results') {
+            title = `${code} Results`;
+          } else {
+            title = `${code} ${modeLabel}`;
+          }
+        } else {
+          const modMatch = path.match(/^\/year-\d+\/([a-zA-Z0-9-]+)/);
+          if (modMatch) {
+            title = modMatch[1].toUpperCase();
+          } else {
+            const yrMatch = path.match(/^\/year-(\d+)/);
+            if (yrMatch) {
+              title = `Year ${yrMatch[1]} Modules`;
+            }
+          }
+        }
+      }
+    }
+
+    updateDocumentTitle(title);
+  }, [location.pathname, screen]);
   const [isFromHistory, setIsFromHistory] = useState(false);
   const [historySource, setHistorySource] = useState<'chapters' | 'history' | null>(null);
   const [selectedYear, setSelectedYear] = useState<number | null>(() => {

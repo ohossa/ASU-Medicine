@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
 import { motion } from 'motion/react';
 import {
@@ -9,6 +9,7 @@ import {
   Activity,
   AlertTriangle,
 } from 'lucide-react';
+import { updateDocumentTitle } from '../app/utils/pageTitle';
 
 /**
  * NotFoundPage.tsx — "Anti-Average" 404 Experience
@@ -23,6 +24,10 @@ export const NotFoundPage: React.FC = () => {
   const navigate = useNavigate();
   const [pulseCount, setPulseCount] = useState(72);
   const [isResuscitating, setIsResuscitating] = useState(false);
+
+  useEffect(() => {
+    updateDocumentTitle("Page Not Found");
+  }, []);
 
   const handleDefibrillate = () => {
     setIsResuscitating(true);

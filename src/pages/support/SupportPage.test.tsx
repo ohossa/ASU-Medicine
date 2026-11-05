@@ -88,4 +88,15 @@ describe("Support ASUCodes", () => {
     expect(container.querySelector("main")).toHaveAttribute("dir", "rtl");
     expect(screen.getByText(SUPPORT.ipa)).toHaveAttribute("dir", "ltr");
   });
+  it("sets the compact browser tab title and updates with language toggle", () => {
+    render(<SupportPage />);
+    expect(document.title).toBe("Support · A-Plus");
+    fireEvent.click(screen.getByRole("button", { name: "العربية" }));
+    expect(document.title).toBe("الدعم · A-Plus");
+  });
+  it("renders the unified PortalFooter with Contact trigger and brand tagline", () => {
+    render(<SupportPage />);
+    expect(screen.getByRole("button", { name: "Contact" })).toBeInTheDocument();
+    expect(screen.getByText(/built by Omar Hossam\. Free to use, always\./)).toBeInTheDocument();
+  });
 });

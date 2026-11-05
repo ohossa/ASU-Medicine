@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   ArrowDown,
   ArrowLeft,
@@ -20,6 +20,8 @@ import { RUNNING_COSTS, COST_CONVERSION, MONTHLY_TOTAL_USD, costAmount } from ".
 import { ThemeToggle } from "../../app/components/ThemeToggle";
 import { StarlightToggle } from "../../app/components/StarlightToggle";
 import { LanguageToggle } from "../../app/components/LanguageToggle";
+import { PortalFooter } from "../../app/components/PortalFooter";
+import { updateDocumentTitle } from "../../app/utils/pageTitle";
 import "./support.css";
 type Method = "instapay" | "vodafone" | "card";
 const FAQs = [
@@ -31,13 +33,13 @@ const FAQs = [
   ],
   [
     "Is this an official university service?",
-    "ASUCodes is an independent student project. It is not an official university service.",
+    "A-Plus (asu.codes) is an independent student project. It is not an official university service.",
     "هل الموقع تابع للجامعة؟",
-    "ASUCodes مشروع طلابي مستقل، وليس خدمة رسمية تابعة للجامعة.",
+    "A-Plus (asu.codes) مشروع طلابي مستقل، وليس خدمة رسمية تابعة للجامعة.",
   ],
   [
     "Will this page confirm my transfer?",
-    "Your payment app provides the transfer confirmation. ASUCodes does not automatically track local transfers.",
+    "Your payment app provides the transfer confirmation. A-Plus does not automatically track local transfers.",
     "هل الصفحة تؤكد وصول التحويل؟",
     "تطبيق الدفع يؤكد عملية التحويل. الموقع لا يتتبع التحويلات المحلية تلقائياً.",
   ],
@@ -59,6 +61,11 @@ export default function SupportPage() {
     [method, setMethod] = useState<Method>("instapay"),
     [status, setStatus] = useState("");
   const t = (en: string, arabic: string) => (ar ? arabic : en);
+
+  useEffect(() => {
+    updateDocumentTitle(ar ? "الدعم" : "Support");
+  }, [ar]);
+
   async function copy(value: string, label: string) {
     try {
       if (!navigator.clipboard?.writeText) throw Error("Clipboard unavailable");
@@ -100,7 +107,7 @@ export default function SupportPage() {
           <a
             href="/"
             className="support-brand"
-            aria-label={t("ASUCodes home", "الصفحة الرئيسية")}
+            aria-label={t("A-Plus home", "الصفحة الرئيسية")}
           >
             <span>{t("Support the project", "دعم المشروع")}</span>
           </a>
@@ -138,8 +145,8 @@ export default function SupportPage() {
             </h1>
             <p className="support-intro">
               {t(
-                "ASUCodes is built by a medical student, for medical students. If it helps you study, you can help keep it running. Every question stays free for everyone.",
-                "ASUCodes من طالب طب لطلاب الطب. لو الموقع بيساعدك في المذاكرة، تقدر تساهم في استمرار تشغيله. كل الأسئلة تفضل مجانية للجميع.",
+                "A-Plus is built by a medical student, for medical students. If it helps you study, you can help keep it running. Every question stays free for everyone.",
+                "A-Plus من طالب طب لطلاب الطب. لو الموقع بيساعدك في المذاكرة، تقدر تساهم في استمرار تشغيله. كل الأسئلة تفضل مجانية للجميع.",
               )}
             </p>
             <div className="support-hero-actions">
@@ -181,8 +188,8 @@ export default function SupportPage() {
           <blockquote>
             <p>
               {t(
-                "During IGCSE, we had plenty of practice questions organized by topic, and that made revision much easier. I wished I had something like that in my first years of university, so I built ASUCodes to help us spend more time learning and less time searching for questions. I keep it free and work on it alongside medical school. Your support helps keep it online and improve it for everyone.",
-                "أيام الـIGCSE كان عندنا أسئلة كتير متقسمة حسب كل موضوع، وده كان بيسهّل المراجعة. كنت أتمنى ألاقي حاجة زي كده في أول سنين الجامعة، فعملت ASUCodes علشان وقتنا يروح للمذاكرة بدل ما يضيع في تجميع الأسئلة. الموقع مجاني، وبطوره جنب دراسة الطب. دعمك بيساعد في تشغيله وتطويره لينا كلنا.",
+                "During IGCSE, we had plenty of practice questions organized by topic, and that made revision much easier. I wished I had something like that in my first years of university, so I built A-Plus (asu.codes) to help us spend more time learning and less time searching for questions. I keep it free and work on it alongside medical school. Your support helps keep it online and improve it for everyone.",
+                "أيام الـIGCSE كان عندنا أسئلة كتير متقسمة حسب كل موضوع، وده كان بيسهّل المراجعة. كنت أتمنى ألاقي حاجة زي كده في أول سنين الجامعة، فعملت A-Plus (asu.codes) علشان وقتنا يروح للمذاكرة بدل ما يضيع في تجميع الأسئلة. الموقع مجاني، وبطوره جنب دراسة الطب. دعمك بيساعد في تشغيله وتطويره لينا كلنا.",
               )}
             </p>
             <footer>
@@ -210,8 +217,8 @@ export default function SupportPage() {
             </h2>
             <p>
               {t(
-                "Choose whichever method is easiest for you. Support helps cover the costs of running ASUCodes.",
-                "اختر الطريقة الأنسب لك. الدعم يساعد في تغطية تكاليف تشغيل ASUCodes.",
+                "Choose whichever method is easiest for you. Support helps cover the costs of running A-Plus (asu.codes).",
+                "اختر الطريقة الأنسب لك. الدعم يساعد في تغطية تكاليف تشغيل A-Plus (asu.codes).",
               )}
             </p>
           </div>
@@ -318,7 +325,7 @@ export default function SupportPage() {
                   <p className="support-transfer-note">
                     <ShieldCheck size={18} />
                     {t(
-                      "Check the recipient name and amount in your payment app before confirming. ASUCodes will never ask for a PIN or OTP.",
+                      "Check the recipient name and amount in your payment app before confirming. A-Plus will never ask for a PIN or OTP.",
                       "تأكد من اسم المستفيد والمبلغ في تطبيق الدفع قبل التأكيد. الموقع لن يطلب الرقم السري أو رمز OTP.",
                     )}
                   </p>
@@ -504,26 +511,14 @@ export default function SupportPage() {
             ))}
           </div>
         </section>
-        <footer className="support-footer">
-          <p>
-            {t(
-              "ASUCodes is an independent student project. Free to use, always.",
-              "ASUCodes مشروع طلابي مستقل. الاستخدام مجاني دائماً.",
-            )}
-          </p>
-          <nav className="support-footer-legal" aria-label={t("Legal documents", "المستندات القانونية")}>
-            <a href="/terms">{t("Terms of Service", "شروط الاستخدام")}</a>
-            <span aria-hidden="true">•</span>
-            <a href="/privacy">{t("Privacy Policy", "سياسة الخصوصية")}</a>
-            <span aria-hidden="true">•</span>
-            <a href="/disclaimer">{t("Medical Disclaimer", "إخلاء المسؤولية الطبية")}</a>
-          </nav>
+        <div className="support-back-row">
           <a href="/" className="support-footer-back">
             {t("Back to studying", "العودة للمذاكرة")}
             <ArrowLeft size={16} />
           </a>
-        </footer>
+        </div>
       </div>
+      <PortalFooter lang={ar ? "ar" : "en"} />
     </main>
   );
 }

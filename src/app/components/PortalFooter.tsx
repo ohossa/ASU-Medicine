@@ -3,8 +3,9 @@ import { HeartHandshake, Mail, MessageCircle, X } from 'lucide-react';
 import { useLanguage } from '../hooks/useLanguage';
 import './portal-footer.css';
 
-export function PortalFooter() {
-  const { language } = useLanguage();
+export function PortalFooter({ lang }: { lang?: 'en' | 'ar' } = {}) {
+  const { language: ctxLanguage } = useLanguage();
+  const language = lang || ctxLanguage || 'en';
   const ar = language === 'ar';
   const [contact, setContact] = useState(false);
   const dialog = useRef<HTMLDialogElement>(null);
