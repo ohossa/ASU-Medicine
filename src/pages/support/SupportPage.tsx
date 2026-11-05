@@ -296,6 +296,25 @@ export default function SupportPage() {
                       <span>{t("Copy", "نسخ")}</span>
                     </button>
                   </div>
+                  {method === "instapay" && (
+                    <div className="support-transfer-row">
+                      <div>
+                        <span>{t("InstaPay mobile number", "رقم موبايل InstaPay")}</span>
+                        <p dir="ltr">{SUPPORT.phone}</p>
+                      </div>
+                      <button
+                        type="button"
+                        className="support-copy"
+                        aria-label={t("Copy InstaPay mobile number", "نسخ رقم موبايل InstaPay")}
+                        onClick={() =>
+                          void copy(SUPPORT.phone, "InstaPay mobile number")
+                        }
+                      >
+                        <Copy size={19} />
+                        <span>{t("Copy", "نسخ")}</span>
+                      </button>
+                    </div>
+                  )}
                   <p className="support-transfer-note">
                     <ShieldCheck size={18} />
                     {t(
