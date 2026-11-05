@@ -28,6 +28,7 @@ import { AcademicYearProfilePage } from './components/profile/AcademicYearProfil
 import Dashboard from '../pages/Dashboard';
 import { isOptimisticallyAuthenticated, setCachedSession, clearCachedSession } from './auth/cachedSession';
 import { updateDocumentTitle } from './utils/pageTitle';
+import { usePageTracking } from './hooks/usePageTracking';
 
 // Lazy-loaded components for routing/modals
 const AdminPortal = lazy(() => import('../pages/AdminPortal'));
@@ -404,6 +405,7 @@ function MainApp() {
   // Initialize automatic cloud synchronization
   useCloudSync();
   usePresence();
+  usePageTracking();
 
   // Startup cleanup: remove stale quiz sessions and local drafts (>7 days old or finished)
   useEffect(() => {

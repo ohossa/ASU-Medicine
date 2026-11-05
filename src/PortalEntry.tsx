@@ -1,8 +1,9 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { MotionConfig } from "motion/react";
 import LoadingScreen from "./app/components/LoadingScreen";
 import { ThemeProvider } from "./app/context/ThemeContext";
 import { LanguageProvider } from "./app/context/LanguageContext";
+import { trackPageView } from "./app/lib/analytics";
 import StudyEntry from "./StudyEntry";
 
 const SupportPage = lazy(() => import("./pages/support/SupportPage"));
@@ -29,6 +30,17 @@ export function PortalEntry({
   pathname?: string;
 }) {
   const normalizedPath = pathname.replace(/\/+$/, "");
+
+  useEffect(() => {
+    if (
+      isSupportPath(normalizedPath) ||
+      isTermsPath(normalizedPath) ||
+      isPrivacyPath(normalizedPath) ||
+      isDisclaimerPath(normalizedPath)
+    ) {
+      trackPageView(normalizedPath);
+    }
+  }, [normalizedPath]);
 
   let content = <StudyEntry />;
 

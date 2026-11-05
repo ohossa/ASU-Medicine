@@ -22,7 +22,12 @@ import {
   Target,
   Mail,
   X,
+  Globe,
+  ExternalLink,
+  Activity,
+  FileText,
 } from "lucide-react";
+import { getMeasurementId, getGoogleSiteVerification } from "../../app/lib/analytics";
 import type { FullAdminAnalytics, StudentAnalytics } from "../../../server/admin-analytics-service";
 import { InlineQuestionEditor } from "../../app/components/InlineQuestionEditor";
 import { StudentEmailReplyModal } from "../../app/components/StudentEmailReplyModal";
@@ -34,7 +39,7 @@ export default function AdminAnalyticsView() {
   const [data, setData] = useState<FullAdminAnalytics | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const [activeTab, setActiveTab] = useState<"overview" | "students" | "modules" | "hardest">("overview");
+  const [activeTab, setActiveTab] = useState<"overview" | "students" | "modules" | "hardest" | "search">("overview");
 
   // Filters & State
   const [studentSearch, setStudentSearch] = useState("");
@@ -224,6 +229,7 @@ export default function AdminAnalyticsView() {
             { id: "students", label: `Master Leaderboard (${data?.students.length || 0})`, icon: Trophy },
             { id: "modules", label: `Module Deep-Dive (${data?.modules.length || 42})`, icon: BookOpen },
             { id: "hardest", label: `Challenging Questions (${data?.hardestQuestions.length || 0})`, icon: AlertTriangle },
+            { id: "search", label: "Google Search & Sitemaps", icon: Globe },
           ].map((tab) => {
             const Icon = tab.icon;
             const active = activeTab === tab.id;
@@ -1262,6 +1268,267 @@ export default function AdminAnalyticsView() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      )}
+
+      {/* Google Search & Sitemaps Analytics Hub */}
+      {activeTab === "search" && (
+        <div className="space-y-6">
+          {/* Header Card */}
+          <div className="rounded-3xl border border-stone-200/80 bg-white/80 p-6 shadow-sm backdrop-blur-xl dark:border-stone-800 dark:bg-stone-900/80">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <div className="flex items-center gap-2 mb-1.5">
+                  <span className="inline-flex items-center gap-1 rounded-full bg-blue-50 px-2.5 py-0.5 text-xs font-semibold text-blue-800 dark:bg-blue-950/60 dark:text-blue-300 border border-blue-200/60 dark:border-blue-800/60">
+                    <Globe size={12} />
+                    Search Engine &amp; AI Intelligence
+                  </span>
+                  <span className="inline-flex items-center rounded-full bg-emerald-50 px-2 py-0.5 text-[11px] font-medium text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300">
+                    Sitemap Active (50 URLs)
+                  </span>
+                </div>
+                <h2 className="text-xl font-bold tracking-tight text-stone-900 dark:text-stone-100 sm:text-2xl">
+                  Google Search Console &amp; Analytics Hub
+                </h2>
+                <p className="text-xs sm:text-sm text-stone-500 dark:text-stone-400 mt-1">
+                  Monitor search impressions, student clicks, Google indexing, and real-time behavioral telemetry for asu.codes.
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                <a
+                  href="https://search.google.com/search-console/sitemaps?resource_id=https%3A%2F%2Fasu.codes%2F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 px-4 py-2 text-xs font-semibold text-white shadow-sm hover:bg-blue-500 transition-colors"
+                >
+                  <Globe size={13} />
+                  Open Search Console
+                  <ExternalLink size={12} />
+                </a>
+                <a
+                  href="https://analytics.google.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-xl border border-stone-200 bg-stone-50 px-4 py-2 text-xs font-semibold text-stone-700 hover:bg-stone-100 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-200 transition-colors"
+                >
+                  <Activity size={13} />
+                  Open GA4
+                  <ExternalLink size={12} />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Grid of Control Panels */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Panel 1: Google Search Console */}
+            <div className="rounded-3xl border border-stone-200/80 bg-white/80 p-6 shadow-sm backdrop-blur-xl dark:border-stone-800 dark:bg-stone-900/80 space-y-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-50 text-blue-600 dark:bg-blue-950/60 dark:text-blue-400">
+                    <Globe size={18} />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-bold text-stone-900 dark:text-stone-100">Google Search Console</h3>
+                    <p className="text-xs text-stone-500 dark:text-stone-400">Domain Property: asu.codes</p>
+                  </div>
+                </div>
+                <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-semibold text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300">
+                  Ready
+                </span>
+              </div>
+
+              <div className="rounded-2xl border border-stone-100 bg-stone-50/60 p-4 dark:border-stone-800 dark:bg-stone-800/40 text-xs space-y-2">
+                <div className="flex justify-between items-center py-1 border-b border-stone-200/60 dark:border-stone-700/60">
+                  <span className="text-stone-500 dark:text-stone-400">Target Sitemap:</span>
+                  <a href="/sitemap.xml" target="_blank" className="font-mono text-blue-600 dark:text-blue-400 hover:underline">
+                    https://asu.codes/sitemap.xml
+                  </a>
+                </div>
+                <div className="flex justify-between items-center py-1 border-b border-stone-200/60 dark:border-stone-700/60">
+                  <span className="text-stone-500 dark:text-stone-400">Indexed Modules:</span>
+                  <span className="font-semibold text-stone-800 dark:text-stone-200">42 Curricular Units</span>
+                </div>
+                <div className="flex justify-between items-center py-1 border-b border-stone-200/60 dark:border-stone-700/60">
+                  <span className="text-stone-500 dark:text-stone-400">Total Sitemap URLs:</span>
+                  <span className="font-semibold text-stone-800 dark:text-stone-200">50 Verified Paths</span>
+                </div>
+                <div className="flex justify-between items-center py-1">
+                  <span className="text-stone-500 dark:text-stone-400">Verification Token:</span>
+                  <span className="font-mono text-stone-800 dark:text-stone-200">
+                    {getGoogleSiteVerification() ? "Configured ✓" : "Automatic via GA4 / DNS"}
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-2 pt-2">
+                <a
+                  href="https://search.google.com/search-console/sitemaps?resource_id=https%3A%2F%2Fasu.codes%2F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center rounded-xl bg-blue-50 py-2.5 px-3 text-xs font-semibold text-blue-700 dark:bg-blue-950/60 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900/60 transition-colors"
+                >
+                  Check Sitemaps in GSC
+                </a>
+                <a
+                  href="https://search.google.com/search-console/performance/search-analytics?resource_id=https%3A%2F%2Fasu.codes%2F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center rounded-xl bg-stone-100 py-2.5 px-3 text-xs font-semibold text-stone-700 dark:bg-stone-800 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700 transition-colors"
+                >
+                  View Search Queries
+                </a>
+              </div>
+            </div>
+
+            {/* Panel 2: Google Analytics 4 */}
+            <div className="rounded-3xl border border-stone-200/80 bg-white/80 p-6 shadow-sm backdrop-blur-xl dark:border-stone-800 dark:bg-stone-900/80 space-y-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-amber-50 text-amber-600 dark:bg-amber-950/60 dark:text-amber-400">
+                    <Activity size={18} />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-bold text-stone-900 dark:text-stone-100">Google Analytics 4 (GA4)</h3>
+                    <p className="text-xs text-stone-500 dark:text-stone-400">Client-Side Behavioral Telemetry</p>
+                  </div>
+                </div>
+                <span
+                  className={`rounded-full px-2 py-0.5 text-xs font-semibold ${
+                    getMeasurementId()
+                      ? "bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300"
+                      : "bg-amber-50 text-amber-700 dark:bg-amber-950/60 dark:text-amber-300"
+                  }`}
+                >
+                  {getMeasurementId() ? "Tracking Active" : "Config Ready"}
+                </span>
+              </div>
+
+              <div className="rounded-2xl border border-stone-100 bg-stone-50/60 p-4 dark:border-stone-800 dark:bg-stone-800/40 text-xs space-y-2">
+                <div className="flex justify-between items-center py-1 border-b border-stone-200/60 dark:border-stone-700/60">
+                  <span className="text-stone-500 dark:text-stone-400">Measurement ID:</span>
+                  <span className="font-mono font-semibold text-stone-800 dark:text-stone-200">
+                    {getMeasurementId() || "VITE_GA_MEASUREMENT_ID (set in .env)"}
+                  </span>
+                </div>
+                <div className="flex justify-between items-center py-1 border-b border-stone-200/60 dark:border-stone-700/60">
+                  <span className="text-stone-500 dark:text-stone-400">SPA Route Tracking:</span>
+                  <span className="font-semibold text-emerald-600 dark:text-emerald-400">Enabled (Automatic)</span>
+                </div>
+                <div className="flex justify-between items-center py-1 border-b border-stone-200/60 dark:border-stone-700/60">
+                  <span className="text-stone-500 dark:text-stone-400">Core Web Vitals:</span>
+                  <span className="font-semibold text-emerald-600 dark:text-emerald-400">Forwarded (LCP, INP, CLS)</span>
+                </div>
+                <div className="flex justify-between items-center py-1">
+                  <span className="text-stone-500 dark:text-stone-400">Events Tracked:</span>
+                  <span className="font-semibold text-stone-800 dark:text-stone-200">quiz_start, answer, complete, search</span>
+                </div>
+              </div>
+
+              <div className="pt-2">
+                <a
+                  href="https://analytics.google.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center rounded-xl bg-amber-50 py-2.5 px-3 text-xs font-semibold text-amber-800 dark:bg-amber-950/60 dark:text-amber-300 hover:bg-amber-100 dark:hover:bg-amber-900/60 transition-colors"
+                >
+                  Open Google Analytics Realtime Dashboard
+                </a>
+              </div>
+            </div>
+
+            {/* Panel 3: Live Public Feeds */}
+            <div className="rounded-3xl border border-stone-200/80 bg-white/80 p-6 shadow-sm backdrop-blur-xl dark:border-stone-800 dark:bg-stone-900/80 space-y-4">
+              <div className="flex items-center gap-2">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 dark:bg-emerald-950/60 dark:text-emerald-400">
+                  <FileText size={18} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-bold text-stone-900 dark:text-stone-100">Live Crawl &amp; Index Feeds</h3>
+                  <p className="text-xs text-stone-500 dark:text-stone-400">Public search assets served on edge</p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-2 text-xs">
+                <a
+                  href="/sitemap.xml"
+                  target="_blank"
+                  className="flex items-center justify-between p-3 rounded-2xl border border-stone-200/70 dark:border-stone-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors"
+                >
+                  <div>
+                    <div className="font-semibold text-stone-800 dark:text-stone-200">Sitemap XML</div>
+                    <div className="text-[11px] text-stone-400">50 verified URLs</div>
+                  </div>
+                  <ExternalLink size={13} className="text-stone-400" />
+                </a>
+
+                <a
+                  href="/robots.txt"
+                  target="_blank"
+                  className="flex items-center justify-between p-3 rounded-2xl border border-stone-200/70 dark:border-stone-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors"
+                >
+                  <div>
+                    <div className="font-semibold text-stone-800 dark:text-stone-200">Robots.txt</div>
+                    <div className="text-[11px] text-stone-400">28 AI bots allowed</div>
+                  </div>
+                  <ExternalLink size={13} className="text-stone-400" />
+                </a>
+
+                <a
+                  href="/llms.txt"
+                  target="_blank"
+                  className="flex items-center justify-between p-3 rounded-2xl border border-stone-200/70 dark:border-stone-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors"
+                >
+                  <div>
+                    <div className="font-semibold text-stone-800 dark:text-stone-200">LLMs.txt</div>
+                    <div className="text-[11px] text-stone-400">AI Search Documentation</div>
+                  </div>
+                  <ExternalLink size={13} className="text-stone-400" />
+                </a>
+
+                <a
+                  href="/ai/summary.json"
+                  target="_blank"
+                  className="flex items-center justify-between p-3 rounded-2xl border border-stone-200/70 dark:border-stone-800 hover:border-blue-400 dark:hover:border-blue-600 transition-colors"
+                >
+                  <div>
+                    <div className="font-semibold text-stone-800 dark:text-stone-200">AI Catalog Feed</div>
+                    <div className="text-[11px] text-stone-400">Machine-readable JSON</div>
+                  </div>
+                  <ExternalLink size={13} className="text-stone-400" />
+                </a>
+              </div>
+            </div>
+
+            {/* Panel 4: 2-Click GA4 + Search Console Linking */}
+            <div className="rounded-3xl border border-stone-200/80 bg-white/80 p-6 shadow-sm backdrop-blur-xl dark:border-stone-800 dark:bg-stone-900/80 space-y-4">
+              <div className="flex items-center gap-2">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-purple-50 text-purple-600 dark:bg-purple-950/60 dark:text-purple-400">
+                  <Globe size={18} />
+                </div>
+                <div>
+                  <h3 className="text-sm font-bold text-stone-900 dark:text-stone-100">Connect GSC + GA4 Together</h3>
+                  <p className="text-xs text-stone-500 dark:text-stone-400">View Search Queries inside Google Analytics</p>
+                </div>
+              </div>
+
+              <div className="rounded-2xl bg-purple-50/50 dark:bg-purple-950/30 p-4 border border-purple-100 dark:border-purple-900/40 text-xs text-stone-600 dark:text-stone-300 space-y-2">
+                <p className="font-medium text-purple-900 dark:text-purple-300">
+                  How to link Search Console with Google Analytics:
+                </p>
+                <ol className="list-decimal list-inside space-y-1 text-[11px] text-stone-600 dark:text-stone-400">
+                  <li>In Google Analytics, click <strong>Admin (Gear icon)</strong> at bottom left.</li>
+                  <li>Under <strong>Product links</strong>, click <strong>Search Console Links</strong>.</li>
+                  <li>Click <strong>Link</strong> and select your verified property <strong>https://asu.codes</strong>.</li>
+                  <li>Select your Web stream and confirm.</li>
+                </ol>
+                <p className="text-[11px] text-stone-500 dark:text-stone-400 pt-1">
+                  Once linked, the <em>"Search Console"</em> report will appear in GA4 under <strong>Reports &gt; Search Console &gt; Queries</strong>, showing real Egyptian medical student search terms!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       )}

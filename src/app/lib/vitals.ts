@@ -35,12 +35,14 @@ export function initWebVitals(onReport?: (metric: Metric) => void) {
       rating: getRating(name, value),
     };
 
-    if (onReport) {
-      onReport(metric);
-    } else if (import.meta.env.DEV) {
+    if (import.meta.env.DEV) {
       const color =
         metric.rating === "good" ? "#10b981" : metric.rating === "needs-improvement" ? "#f59e0b" : "#ef4444";
       console.log(`%c[Web Vitals] ${metric.name}: ${metric.value} (${metric.rating})`, `color: ${color}; font-weight: bold;`);
+    }
+
+    if (onReport) {
+      onReport(metric);
     }
   };
 
