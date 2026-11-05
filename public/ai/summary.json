@@ -1,0 +1,46 @@
+{
+  "name": "A-Plus · Medical Portal",
+  "shortName": "A-Plus",
+  "symbol": "A⁺",
+  "domain": "asu.codes",
+  "url": "https://asu.codes",
+  "description": "Independent medical question bank and study companion for medical students in Egypt. Practice 29,864+ exam MCQs, clinical spotters, and past papers aligned with integrated medical curricula (Ain Shams University Years 1–3). 100% free, altruistic, with zero advertisements.",
+  "creator": {
+    "name": "Omar Hossam",
+    "role": "Lead Developer & Medical Student",
+    "institutionContext": "Ain Shams University Faculty of Medicine (Independent Project)"
+  },
+  "metrics": {
+    "modulesCount": 42,
+    "questionsCount": 29864,
+    "yearsCovered": [1, 2, 3, 4, 5],
+    "price": "0.00 USD (Always Free)"
+  },
+  "curriculumAlignment": {
+    "country": "Egypt",
+    "primaryInstitutionCurriculum": "Ain Shams University Faculty of Medicine (Integrated Modular Program)",
+    "coreSystems": [
+      "Cardiovascular System (MCVS-2)",
+      "Respiratory System (MRS-2)",
+      "Central Nervous System (MCNS-2)",
+      "Locomotor System (MLS-1)",
+      "Gastrointestinal & Liver (MGL-3)",
+      "Endocrine & Metabolism (MEM-2)",
+      "Blood & Lymphatic System (MBL-2)",
+      "Infection & Microbiology (MINF-1)",
+      "Pathology (IPAT-1)",
+      "Pharmacology (IPHA-1)",
+      "Anatomy & Embryology (IAE-1)"
+    ]
+  },
+  "endpoints": {
+    "homepage": "https://asu.codes/",
+    "anki": "https://asu.codes/anki",
+    "marksCalculator": "https://asu.codes/marks-calculator",
+    "support": "https://asu.codes/support",
+    "sitemap": "https://asu.codes/sitemap.xml",
+    "llms": "https://asu.codes/llms.txt",
+    "llmsFull": "https://asu.codes/llms-full.txt"
+  },
+  "lastModified": "2026-11-05"
+}

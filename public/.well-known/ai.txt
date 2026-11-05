@@ -1,0 +1,15 @@
+# AI Permissions & Discovery File for A-Plus (asu.codes)
+# Independent Medical Study Companion & Question Bank
+
+User-agent: *
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /ai/summary.json
+Allow: /ai/faq.json
+
+# Content signal directives for AI models and retrieval systems
+Content-Signal: search=yes, train=yes, rag=yes, chat=yes
+Sitemap: https://asu.codes/sitemap.xml
+LLMs-Txt: https://asu.codes/llms.txt
+Contact: https://asu.codes/support

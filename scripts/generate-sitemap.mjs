@@ -15,6 +15,7 @@ async function generate() {
     { loc: "https://asu.codes/", priority: "1.0", changefreq: "daily" },
     { loc: "https://asu.codes/anki", priority: "0.8", changefreq: "weekly" },
     { loc: "https://asu.codes/marks-calculator", priority: "0.8", changefreq: "monthly" },
+    { loc: "https://asu.codes/learning", priority: "0.8", changefreq: "weekly" },
     { loc: "https://asu.codes/support", priority: "0.6", changefreq: "monthly" },
     { loc: "https://asu.codes/terms", priority: "0.4", changefreq: "yearly" },
     { loc: "https://asu.codes/privacy", priority: "0.4", changefreq: "yearly" },
