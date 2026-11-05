@@ -144,18 +144,6 @@ export function LoginScreen() {
               })}
             </div>
 
-            {/* Official Brand Banner Preview */}
-            <div className="overflow-hidden rounded-2xl border border-white/10 shadow-2xl my-4 bg-black/40">
-              <img
-                src="/social-preview.webp"
-                alt="A-Plus Independent Medical Study Companion"
-                className="w-full h-auto object-cover rounded-2xl"
-                width={1200}
-                height={630}
-                loading="eager"
-              />
-            </div>
-
             {/* Inline Testimonial Unit with Apricot Stars */}
             <div className="split-testimonial">
               <div className="split-stars-row" aria-label="5 stars rating">

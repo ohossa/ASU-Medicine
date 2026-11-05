@@ -18,9 +18,10 @@ describe("SEO & AI Search Assets Verification", () => {
       expect(content).toContain("User-agent: Google-Extended");
       expect(content).toContain("User-agent: Applebot-Extended");
 
-      // Verify discovery links
+      // Verify standard directives and exclusion of non-standard directives flagged by Lighthouse
       expect(content).toContain("Sitemap: https://asu.codes/sitemap.xml");
-      expect(content).toContain("LLMs-Txt: https://asu.codes/llms.txt");
+      expect(content).toContain("Allow: /llms.txt");
+      expect(content).not.toContain("LLMs-Txt:");
     });
   });
 
@@ -57,6 +58,24 @@ describe("SEO & AI Search Assets Verification", () => {
   });
 
   describe("public/ai JSON feeds", () => {
+    it("ARD manifest (.well-known/ard.json) conforms to Agentic Resource Discovery spec", () => {
+      const ardPath = path.join(root, "public/.well-known/ard.json");
+      expect(fs.existsSync(ardPath)).toBe(true);
+      const content = fs.readFileSync(ardPath, "utf-8");
+      const ard = JSON.parse(content);
+
+      expect(ard.specVersion).toBe("0.91");
+      expect(ard.host.displayName).toContain("A-Plus");
+      expect(Array.isArray(ard.entries)).toBe(true);
+      expect(ard.entries.length).toBeGreaterThanOrEqual(2);
+
+      for (const entry of ard.entries) {
+        expect(entry.identifier).toMatch(/^urn:air:asu\.codes:/);
+        expect(entry.displayName).toBeTruthy();
+        expect(entry.url).toMatch(/^https:\/\/asu\.codes\//);
+      }
+    });
+
     it("summary.json is valid and contains curriculum metadata", () => {
       const summaryPath = path.join(root, "public/ai/summary.json");
       expect(fs.existsSync(summaryPath)).toBe(true);

@@ -1,0 +1,46 @@
+{
+  "specVersion": "0.91",
+  "host": {
+    "displayName": "A-Plus Medical Portal (asu.codes)",
+    "documentationUrl": "https://asu.codes/llms.txt"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:asu.codes:api:medical-question-catalog",
+      "displayName": "A-Plus Medical Question Bank & Curriculum Catalog",
+      "type": "application/json",
+      "url": "https://asu.codes/ai/summary.json",
+      "description": "Comprehensive structured catalog of 42 medical modules, 29,864+ practice MCQs, clinical spotters, and past papers aligned with Egyptian medical curricula (Ain Shams University Years 1–3).",
+      "representativeQueries": [
+        "Medical question banks for Ain Shams University year 1",
+        "Practice MCQs for CVS, CNS, and Respiratory modules Egypt",
+        "Clinical spotters and medical past papers Egypt"
+      ],
+      "tags": ["medical", "education", "mcq", "question-bank", "egypt", "curriculum"]
+    },
+    {
+      "identifier": "urn:air:asu.codes:doc:llms-manifest",
+      "displayName": "A-Plus LLMs AI Documentation & Module Sitemap",
+      "type": "text/markdown",
+      "url": "https://asu.codes/llms.txt",
+      "description": "System documentation and topic directory for AI search engines, citation agents, and autonomous medical study assistants.",
+      "representativeQueries": [
+        "What modules are included in the A-Plus medical question bank?",
+        "How is the Egyptian integrated medical curriculum structured?"
+      ],
+      "tags": ["llmstxt", "documentation", "curriculum", "syllabus"]
+    },
+    {
+      "identifier": "urn:air:asu.codes:feed:ai-faq",
+      "displayName": "A-Plus Bilingual Medical Portal FAQ Feed",
+      "type": "application/json",
+      "url": "https://asu.codes/ai/faq.json",
+      "description": "Bilingual (English and Arabic) frequently asked questions, medical disclaimers, and study methodology for AI answer engines.",
+      "representativeQueries": [
+        "Is the A-Plus medical question bank free?",
+        "هل بنك اسئلة طب عين شمس مجاني؟"
+      ],
+      "tags": ["faq", "bilingual", "arabic", "medical-education"]
+    }
+  ]
+}
