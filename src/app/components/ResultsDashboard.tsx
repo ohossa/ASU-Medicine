@@ -660,6 +660,15 @@ export function ResultsDashboard({
           </div>
         </div>
 
+        {/* Subtle Nonchalant Creator Stamp */}
+        <div className="mb-8 flex items-center justify-between px-2 text-[11px] text-gray-400 dark:text-white/30 tracking-wide font-mono select-none">
+          <span className="flex items-center gap-1.5">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#2743ff]" />
+            A⁺ · asu.codes
+          </span>
+          <span>Crafted by Omar Hossam · Independent &amp; Free</span>
+        </div>
+
         {/* ── Section C: Control Action Links ──────────────────────────────── */}
         <div className="mb-12 flex flex-wrap items-center justify-center gap-3">
           {onRetryMissed && missedQuestions.length > 0 && <button

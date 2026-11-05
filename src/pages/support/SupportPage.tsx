@@ -191,8 +191,8 @@ export default function SupportPage() {
                 <strong>{t("Omar HossamEldin Maged", "عمر حسام الدين ماجد")}</strong>
                 <span>
                   {t(
-                    "3rd Year medical student. Creator of ASUCodes.",
-                    "طالب طب بالفرقة الثالثة، ومطور ASUCodes.",
+                    "3rd Year medical student. Creator of A-Plus (asu.codes).",
+                    "طالب طب بالفرقة الثالثة، ومطور A-Plus (asu.codes).",
                   )}
                 </span>
               </div>

@@ -23,7 +23,7 @@ it('keeps an accessible footer with legal, support, contact destinations and ind
   expect(screen.getByRole('link',{name:'Privacy Policy'})).toHaveAttribute('href','/privacy');
   expect(screen.getByRole('link',{name:'Medical Disclaimer'})).toHaveAttribute('href','/disclaimer');
   expect(screen.getByRole('link',{name:'Support'})).toHaveAttribute('href','/support');
-  expect(screen.getByText('A-Plus (asu.codes) is an independent student project. Free to use, always.')).toBeInTheDocument();
+  expect(screen.getByText('A-Plus (asu.codes) is an independent student project built by Omar Hossam. Free to use, always.')).toBeInTheDocument();
   expect(screen.queryByText(/Ain Shams University/)).toBeNull();
 });
 

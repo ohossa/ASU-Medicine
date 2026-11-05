@@ -29,6 +29,7 @@ Read `WEBSITE_UI_WORKFLOW.md` before changing study navigation or quiz controls.
 ## Knowledge Graph & Architectural Encyclopedia
 
 This repository contains a complete, verified 8,024-node knowledge graph and master architectural documentation:
+- **Master Brand Identity Specification:** [`docs/BRANDING.md`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/docs/BRANDING.md) — Canonical guide for A-Plus (A⁺), design tokens, typography, creator credits, and 10 agent commandments.
 - **Master Architecture Encyclopedia:** [`docs/ARCHITECTURE_ENCYCLOPEDIA.md`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/docs/ARCHITECTURE_ENCYCLOPEDIA.md) — Complete breakdown of all core subsystems, runtime state contracts, PostgreSQL 15 Supabase schema, the intake pipeline, and the 42 module catalog.
 - **Interactive Visualizer:** [`graphify-out/graph.html`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/graphify-out/graph.html) — Browser-based visualization of the 1,137 community clusters.
 - **Agent Knowledge Wiki:** [`graphify-out/wiki/index.md`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/graphify-out/wiki/index.md) — 1,147 articles crawlable by AI agents.

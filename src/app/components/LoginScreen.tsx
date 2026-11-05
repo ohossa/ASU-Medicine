@@ -212,7 +212,7 @@ export function LoginScreen() {
         </div>
 
         <div className="text-center text-[11px] text-zinc-500 mt-8 pt-4 border-t border-[#1b2438]">
-          © {new Date().getFullYear()} A-Plus (asu.codes) · Independent student project. Not affiliated with Ain Shams University.
+          © {new Date().getFullYear()} A-Plus (asu.codes) · Built by Omar Hossam for Ain Shams Medical Students · Independent &amp; Free
         </div>
       </section>
     </div>

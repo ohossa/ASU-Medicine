@@ -30,8 +30,8 @@ export function PortalFooter() {
           <span className="portal-footer-brand">A-Plus (asu.codes)</span>
           <p className="portal-footer-tagline">
             {ar
-              ? 'A-Plus (asu.codes) مشروع طلابي مستقل. مجاني للاستخدام دائماً.'
-              : 'A-Plus (asu.codes) is an independent student project. Free to use, always.'}
+              ? 'A-Plus (asu.codes) مشروع طلابي مستقل طوّره عمر حسام. مجاني للاستخدام دائماً.'
+              : 'A-Plus (asu.codes) is an independent student project built by Omar Hossam. Free to use, always.'}
           </p>
         </div>
         <nav aria-label={ar ? 'روابط الموقع' : 'Footer links'}>
