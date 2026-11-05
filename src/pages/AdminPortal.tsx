@@ -95,9 +95,9 @@ export default function AdminPortal({
 
   const isAuthorized = Boolean(access.userId && access.userId === user?.id);
   const isOverview = location.pathname === "/admin" || location.pathname === "/admin/";
-  const forceClassic = params.get("view") === "classic";
+  const showIndustrial = params.get("view") === "industrial";
 
-  if (isAuthorized && isOverview && !forceClassic) {
+  if (isAuthorized && isOverview && showIndustrial) {
     return (
       <AdminIndustrialDashboard
         onNavigateTab={(tab) => navigate(tab === "overview" ? "/admin" : `/admin/${tab}`)}
