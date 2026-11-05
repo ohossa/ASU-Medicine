@@ -11,7 +11,6 @@ import {
   Globe,
   Server,
   ShieldCheck,
-  Stethoscope,
   MessageCircle,
   Wallet,
 } from "lucide-react";
@@ -159,23 +158,16 @@ export default function SupportPage() {
               </a>
             </div>
           </div>
-          <div className="support-art" aria-hidden="true">
-            <div className="support-book support-book-back" />
-            <div className="support-book support-book-middle" />
-            <div className="support-book support-book-front">
-              <div className="support-book-top">
-                <Stethoscope size={32} />
-                <span>•••</span>
-              </div>
-              <div className="support-study-line" />
-              <div className="support-study-line" />
-              <div className="support-study-line" />
-              <div className="support-study-line" />
-              <div className="support-book-bottom">
-                <span>{t("Learning, together.", "نتعلم معاً.")}</span>
-                <HeartHandshake size={19} />
-              </div>
-            </div>
+          <div className="support-banner-wrap" aria-hidden="true">
+            <div className="support-banner-glow" />
+            <img
+              src="/social-preview.webp"
+              alt="A-Plus Independent Medical Study Companion"
+              className="support-banner-img"
+              width={1200}
+              height={630}
+              loading="eager"
+            />
           </div>
         </section>
         <section

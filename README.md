@@ -1,78 +1,58 @@
-# React + TypeScript + Vite
+<p align="center">
+  <img src="public/social-preview.png" alt="A-Plus — Independent Medical Study Companion" width="100%" style="max-width: 900px; border-radius: 16px;" />
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# A-Plus (`A⁺`) — Independent Medical Study Companion
 
-Currently, two official plugins are available:
+> **Canonical Web Platform:** [asu.codes](https://asu.codes)  
+> *An independent, peer-maintained clinical study engine and question bank for medical students.*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A-Plus is a high-speed, altruistic medical training portal built to solve fragmented PDF question banks. It provides chapter-by-chapter MCQs, clinical spotters, detailed explanations, and spaced repetition.
 
-## Expanding the ESLint configuration
+- **29,864+ Medically Audited Questions** across 42 modules (Years 1–3).
+- **100% Free & Altruistic** — Zero paywalls, zero ads, zero corporate tracking.
+- **Independent Student Initiative** — Built and maintained by Omar Hossam (Ain Shams Medical Student).
+- **Apple Studio UI/UX** — Designed under [Apple Human Interface Guidelines](.agents/skills/apple-design/SKILL.md) for focus and high-contrast clinical scanning.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Technology Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Frontend:** React 19, TypeScript, Vite, Tailwind CSS, Lucide Icons, Framer Motion
+- **Database & Sync:** Supabase (PostgreSQL 15), Row-Level Security (RLS)
+- **Authentication:** Clerk Auth with custom Obsidian branding
+- **AI Medical Tutor:** Groq Llama 3.3 70B Versatile (real-time clinical explanations)
+- **Deployment:** Vercel Edge Network (`https://asu.codes`)
+- **Testing:** Vitest (171 test suites, 999 tests)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## Quick Start
+
+```bash
+# Install dependencies
+npm install
+
+# Start local development server
+npm run dev
+
+# Run comprehensive test suite
+npm test
+
+# Typecheck and build for production
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-## Maintainer workflows
+## Documentation & Maintainer Guides
 
 - [Question intake and verified release](QUESTION_IMPORT_WORKFLOW.md)
 - [Website navigation, Apple design and release checks](WEBSITE_UI_WORKFLOW.md)
+- [Brand identity specification & design system](docs/BRANDING.md)
+- [Master architecture encyclopedia](docs/ARCHITECTURE_ENCYCLOPEDIA.md)
+- [Question schema & importer specification](data-format-v2/schema.md)

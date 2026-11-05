@@ -99,6 +99,8 @@ All production assets live in `/public`:
 | `public/apple-touch-icon.png` | 180×180 PNG | 100% Alpha | iOS Apple Touch Home Screen icon |
 | `public/clerk-logo.png` | 512×512 PNG | 100% Alpha | Clerk Dashboard Brand Logo |
 | `public/clerk-favicon.png` | 64×64 PNG | 100% Alpha | Clerk Dashboard Favicon |
+| `public/social-preview.png` | 1200×630 PNG | sRGB (lossless) | Open Graph / WhatsApp / Telegram / Twitter preview banner |
+| `public/social-preview.webp` | 1200×630 WebP | Modern WebP (51 KB) | In-app login screen & student support banner |
 
 ---
 
@@ -114,3 +116,4 @@ All production assets live in `/public`:
 8. **Honor the Module Taxonomy:** Preserve the strict catalog structure (`Year → Semester → Module → Chapter → Subject → Topic`).
 9. **Never Push Git Remotes Automatically:** Always follow the user rule: commits are local only unless `git push` is explicitly requested.
 10. **Keep Documentation Synchronized:** Any branding, schema, or routing change must be immediately documented across `docs/` and knowledge graph (`graphify`).
+11. **Strict University Separation:** Never put university/faculty names ("Ain Shams University", "Faculty of Medicine") on social banners, preview cards, or public marketing badges to protect the platform's independent student identity. Subtitle is strictly: `"INDEPENDENT MEDICAL STUDY COMPANION"`.
