@@ -49,7 +49,7 @@ describe('MRS-2 Continuous II Assessment Blueprint Engine', () => {
 
   it('filters all module topics down to exactly the 13 Continuous II topics with 1,282 questions', () => {
     const allTopics = chapters.flatMap(ch => practiceTopics(ch, 'MRS-2'));
-    expect(allTopics.length).toBe(27); // Total 27 topics in full module
+    expect(allTopics.length).toBe(31); // 27 core topics + 4 past exam topics
 
     const continuousTopics = filterMrsContinuousTopics(allTopics, 'MRS-2');
     expect(continuousTopics.length).toBe(13);

@@ -35820,6 +35820,1226 @@
         }
       ],
       "keywords": []
+    },
+    {
+      "id": 4,
+      "title": "Past Exams & Assessments",
+      "subtitle": "Verified past exam papers and formative assessments for Year 2 Respiratory System, with comprehensive medical explanations",
+      "emoji": "📝",
+      "page": 1,
+      "lectureRange": "All Lectures",
+      "keywords": [
+        "past exams",
+        "formative",
+        "assessment",
+        "microbiology",
+        "physiology",
+        "respiratory exam"
+      ],
+      "subjects": [
+        {
+          "id": "microbiology",
+          "name": "Microbiology",
+          "iconName": "Bug",
+          "lectures": "Past Exams, Formative Exam",
+          "lectureCount": 2,
+          "lectureNames": [
+            "Past Exams",
+            "Formative Exam"
+          ],
+          "questions": [
+            {
+              "id": "MRS2-PE-MIC-001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "One of the reasons that there is no effective vaccine for rhinoviruses is that:",
+              "options": [
+                "The virus mutates too rapidly after infection",
+                "It has many serotypes",
+                "It causes a mild infection that does not require vaccination",
+                "It replicates only inside nerve cells",
+                "It is resistant to neutralizing antibodies"
+              ],
+              "correctIndex": 1,
+              "explanation": "Human rhinoviruses (Picornaviridae family) possess more than 160 distinct antigenically distinct serotypes. Immunity following infection is serotype-specific, meaning neutralizing antibodies generated against one serotype confer virtually no cross-protection against others. This enormous antigenic diversity makes developing a universal, broadly protective vaccine practically impossible.\n\nOption A is incorrect because rapid within-host mutation after infection is characteristic of retroviruses like HIV or segmented RNA viruses during antigenic shift/drift, but rhinovirus serotype diversity predates individual exposure.\nOption C is incorrect because despite causing common colds, rhinovirus infections cause significant morbidity, work absenteeism, and acute exacerbations of asthma and COPD.\nOption D is incorrect because rhinoviruses replicate exclusively in respiratory ciliated epithelial cells at 33°C to 35°C, not in nerve cells.\nOption E is incorrect because type-specific neutralizing antibodies against rhinovirus VP1–VP4 capsid proteins are protective against that specific serotype.",
+              "keyConcept": "Rhinoviruses have >160 antigenic serotypes; serotype-specific neutralizing antibodies do not provide cross-protection.",
+              "source": "ASU-2018-Assessment"
+            },
+            {
+              "id": "MRS2-PE-MIC-002",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A child presents with fever, sore throat, skin rash, and fatigue for 5 days. On examination, he has enlarged cervical lymph nodes and mild hepatosplenomegaly. He is diagnosed with infectious mononucleosis. Which of the following serological markers indicates recent EBV infection?",
+              "options": [
+                "Anti-CMV IgG",
+                "Anti-CMV IgM",
+                "VCA - IgG",
+                "VCA - IgM",
+                "EBV DNA"
+              ],
+              "correctIndex": 3,
+              "explanation": "In acute Epstein-Barr virus (EBV) infectious mononucleosis, anti-Viral Capsid Antigen IgM (VCA-IgM) is the definitive serological marker of acute or recent primary infection. VCA-IgM appears very early in the course of the disease (detectable at clinical presentation) and rapidly declines over 4 to 6 weeks, rarely persisting beyond 3 months.\n\nOption A and B are incorrect because Cytomegalovirus (CMV) is a different herpesvirus; although CMV causes a mononucleosis-like syndrome, this child was diagnosed with EBV mononucleosis.\nOption C is incorrect because VCA-IgG appears in the acute phase and persists for life, indicating past exposure or immunity, not uniquely acute/recent infection.\nOption E is incorrect because quantitative EBV DNA PCR is primarily utilized in immunocompromised patients (such as post-transplant lymphoproliferative disorder) rather than routine diagnosis of immunocompetent childhood primary mononucleosis.",
+              "keyConcept": "Anti-VCA IgM is transient (peaks in acute phase, vanishes in 4–6 weeks), confirming acute/recent EBV infection.",
+              "source": "ASU-2018-Assessment"
+            },
+            {
+              "id": "MRS2-PE-MIC-003",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which one of the following is a reliable method to confirm the diagnosis of streptococcal pharyngitis?",
+              "options": [
+                "Throat swab culture",
+                "Radiography",
+                "Cultivation on Loeffler's serum medium",
+                "Bronchoalveolar lavage",
+                "Monospot test"
+              ],
+              "correctIndex": 0,
+              "explanation": "Throat swab culture on 5% sheep blood agar is the gold standard diagnostic test to confirm Streptococcus pyogenes (Group A Streptococcus, GAS) acute pharyngitis. It reveals characteristic small colonies surrounded by clear zones of beta-hemolysis that are uniquely susceptible to bacitracin (0.04-unit A disc) and positive for pyrrolidonyl arylamidase (PYR).\n\nOption B is incorrect because neck or chest radiography does not diagnose bacterial pharyngitis.\nOption C is incorrect because Loeffler's serum slant (and potassium tellurite agar) is used specifically to culture Corynebacterium diphtheriae, not Streptococcus pyogenes.\nOption D is incorrect because bronchoalveolar lavage samples the lower respiratory alveolar spaces and is inappropriately invasive for upper airway pharyngitis.\nOption E is incorrect because the Monospot test detects heterophile antibodies in EBV infectious mononucleosis.",
+              "keyConcept": "Throat swab cultured on 5% sheep blood agar is the gold standard for diagnosing Group A Streptococcal pharyngitis.",
+              "source": "ASU-2018-Assessment"
+            },
+            {
+              "id": "MRS2-PE-MIC-004",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A 6-year-old child presents with sudden fever, sore throat, and painful small vesicles on the soft palate and tonsillar pillars. The lesions soon turn into shallow ulcers. No skin rash is present. What is the most likely causative agent?",
+              "options": [
+                "Epstein-Barr virus",
+                "Coxsackie A virus",
+                "Cytomegalovirus",
+                "Haemophilus influenzae",
+                "Parainfluenza virus"
+              ],
+              "correctIndex": 1,
+              "explanation": "The clinical presentation of acute high fever, sore throat, dysphagia, and discrete small 1–2 mm vesicles that rupture into shallow greyish-white ulcers with erythematous halos localized to the posterior oropharynx (soft palate, uvula, and anterior tonsillar pillars) in a young child without cutaneous rash is classic for Herpangina. Herpangina is caused by group A Coxsackieviruses (primarily serotypes A1–A10, A16, and A22; genus Enterovirus, family Picornaviridae).\n\nOption A and C are incorrect because EBV and CMV cause exudative tonsillitis with generalized lymphadenopathy and splenomegaly, not discrete vesicular enanthems on the soft palate.\nOption D is incorrect because Haemophilus influenzae type b causes severe supraglottic swelling (acute epiglottitis) with drooling and stridor, not intraoral mucosal vesicles.\nOption E is incorrect because Parainfluenza virus causes subglottic edema resulting in croup (barking cough and stridor).",
+              "keyConcept": "Coxsackie A virus causes herpangina: vesicular enanthem on the soft palate and tonsillar pillars that ulcerate.",
+              "source": "ASU-2023-Final"
+            },
+            {
+              "id": "MRS2-PE-MIC-005",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A 3-year-old boy presents with fever, cough, hoarseness, and inspiratory stridor. A throat swab sample is sent for viral isolation. Cultured cell monolayers demonstrate cytopathic effect (CPE) with multinucleated syncytia formation. What is the most likely causative agent?",
+              "options": [
+                "Epstein-Barr virus",
+                "Coxsackie A virus",
+                "Cytomegalovirus",
+                "Haemophilus influenzae",
+                "Parainfluenza virus"
+              ],
+              "correctIndex": 4,
+              "explanation": "The clinical triad of barking cough, hoarseness, and inspiratory stridor in a 3-year-old child represents acute laryngotracheobronchitis (Croup). Human Parainfluenza Viruses (HPIV, especially type 1 and type 2) are the primary etiologic agents of croup. HPIVs belong to the Paramyxoviridae family; their viral envelope contains the fusion (F) glycoprotein, which promotes cell-to-cell membrane fusion and produces multinucleated giant cells (syncytia) in tissue cultures.\n\nOption A is incorrect because EBV infects B lymphocytes and does not cause subglottic laryngotracheobronchial stridor.\nOption B is incorrect because Coxsackie A causes herpangina and hand-foot-and-mouth disease.\nOption C is incorrect because CMV produces intranuclear owl's-eye inclusion bodies and cytomegaly rather than syncytial croup.\nOption D is incorrect because Haemophilus influenzae is a bacterium that causes acute supraglottic epiglottitis, not viral CPE.",
+              "keyConcept": "Parainfluenza virus (Paramyxoviridae) causes croup (inspiratory stridor, hoarseness) and produces multinucleated syncytia via its fusion (F) protein.",
+              "source": "ASU-2019-Assessment"
+            },
+            {
+              "id": "MRS2-PE-MIC-006",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which one of the following is a virulence factor of Corynebacterium diphtheriae?",
+              "options": [
+                "IgA proteases",
+                "Antiphagocytic polysaccharide capsule",
+                "Exotoxin production",
+                "Endotoxin formation",
+                "Erythrogenic toxin production"
+              ],
+              "correctIndex": 2,
+              "explanation": "The principal virulence determinant of Corynebacterium diphtheriae is diphtheria toxin, a potent heat-labile A-B subunit protein exotoxin. The structural gene (tox) is encoded on a lysogenic temperate bacteriophage (corynephage beta). The B subunit binds the heparin-binding EGF-like growth factor receptor and facilitates entry; the active A subunit catalyses the ADP-ribosylation of elongation factor 2 (EF-2), permanently arresting eukaryotic peptide chain elongation and causing mucosal pseudomembrane necrosis, severe myocarditis, and polyneuropathies.\n\nOption A is incorrect because IgA proteases are produced by Streptococcus pneumoniae, Haemophilus influenzae, and Neisseria species.\nOption B is incorrect because C. diphtheriae is non-encapsulated.\nOption D is incorrect because C. diphtheriae is a Gram-positive bacillus and completely lacks lipopolysaccharide endotoxin.\nOption E is incorrect because erythrogenic (pyrogenic) exotoxin is produced by Streptococcus pyogenes, causing scarlet fever.",
+              "keyConcept": "Corynebacterium diphtheriae virulence is mediated by diphtheria exotoxin (encoded by lysogenic beta-phage) which inactivates EF-2 via ADP-ribosylation.",
+              "source": "ASU-2019-Assessment"
+            },
+            {
+              "id": "MRS2-PE-MIC-007",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following are virulence factors of Streptococcus pyogenes?",
+              "options": [
+                "Intracellular survival and invasiveness",
+                "Capsule and endotoxins",
+                "Pili and IgA protease",
+                "Fibrinolysin and streptodornase",
+                "None of the above"
+              ],
+              "correctIndex": 3,
+              "explanation": "Streptococcus pyogenes (Group A Streptococcus) secretes two major extracellular spreading enzymes: fibrinolysin (streptokinase) and streptodornase (deoxyribonuclease / DNase B). Streptokinase converts host plasminogen into active plasmin, which lyses fibrin clots that would otherwise wall off the infection. Streptodornase hydrolyzes viscous extracellular DNA released from lysed host neutrophils, liquefying purulent exudate and accelerating bacterial dissemination through tissue planes.\n\nOption A is incorrect because S. pyogenes is classically an extracellular pyogenic pathogen.\nOption B is incorrect because as a Gram-positive bacterium, S. pyogenes contains no lipopolysaccharide endotoxin.\nOption C is incorrect because S. pyogenes does not produce IgA protease (which is characteristic of S. pneumoniae, H. influenzae, and Neisseria meningitidis).",
+              "keyConcept": "S. pyogenes elaborates streptokinase (fibrinolysin) to digest fibrin barriers and streptodornase (DNase B) to liquefy pus, promoting rapid tissue spread.",
+              "source": "ASU-2019-Final"
+            },
+            {
+              "id": "MRS2-PE-MIC-008",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A 5-year-old boy presents with high fever, drooling, and difficulty breathing. Examination shows inspiratory stridor, severe throat pain, and tripod posturing. The child is diagnosed with epiglottitis. Blood culture reveals small Gram-negative pleomorphic rods. Which of the following is the primary virulence factor of the causative organism?",
+              "options": [
+                "Endotoxin (LPS)",
+                "Hyaluronidase",
+                "Exotoxin production",
+                "Antiphagocytic polysaccharide capsule",
+                "Flagellar antigen"
+              ],
+              "correctIndex": 3,
+              "explanation": "Acute epiglottitis characterized by high fever, severe dysphagia, drooling, tripod positioning, and small Gram-negative pleomorphic coccobacilli on culture is caused by Haemophilus influenzae type b (Hib). The primary virulence determinant of invasive Hib strains is its antiphagocytic polyribosylribitol phosphate (PRP) capsule. The PRP capsule confers resistance against opsonophagocytosis and complement-mediated lysis, allowing invasive bacteremia, epiglottitis, and meningitis.\n\nOption A is incorrect because although H. influenzae has lipooligosaccharide (LOS), its primary determinant of invasive disease and specific vaccine target is the PRP polysaccharide capsule.\nOption B is incorrect because hyaluronidase is produced by Streptococcus pyogenes and Staphylococcus aureus.\nOption C is incorrect because H. influenzae does not produce a pathogenic exotoxin.\nOption E is incorrect because H. influenzae is non-motile and lacks flagella.",
+              "keyConcept": "Haemophilus influenzae type b virulence is mediated primarily by its polyribosylribitol phosphate (PRP) antiphagocytic capsule.",
+              "source": "ASU-2023-Assessment"
+            },
+            {
+              "id": "MRS2-PE-MIC-009",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Hemagglutinin-neuraminidase (HN) protein is a surface glycoprotein found in which of the following pathogens?",
+              "options": [
+                "Rhinovirus",
+                "Parainfluenza virus",
+                "Coxsackie A virus",
+                "Epstein-Barr virus",
+                "Haemophilus influenzae"
+              ],
+              "correctIndex": 1,
+              "explanation": "Human Parainfluenza Viruses (HPIV, family Paramyxoviridae) and Mumps virus express a single multifunctional surface envelope glycoprotein spike designated HN (Hemagglutinin-Neuraminidase). The hemagglutinin domain mediates viral attachment by binding to sialic acid residues on host cell surface glycolipids and glycoproteins, while the neuraminidase activity cleaves sialic acid to prevent self-aggregation and facilitate release of nascent viral progeny.\n\nOption A and C are incorrect because Rhinoviruses and Coxsackie viruses belong to the Picornaviridae family, which are non-enveloped RNA viruses and do not possess envelope glycoprotein spikes like HN.\nOption D is incorrect because Epstein-Barr virus is a herpesvirus that uses envelope glycoproteins gp350/220 to bind CD21 (CR2) on B cells, not HN spikes.\nOption E is incorrect because Haemophilus influenzae is a bacterium, not an HN-bearing virus.",
+              "keyConcept": "Parainfluenza virus envelope expresses a dual-function Hemagglutinin-Neuraminidase (HN) glycoprotein.",
+              "source": "ASU-2023-Assessment"
+            },
+            {
+              "id": "MRS2-PE-MIC-010",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The causative agent of laryngitis / laryngotracheitis (croup) is a member of which of the following viral families?",
+              "options": [
+                "Adenoviridae",
+                "Coronaviridae",
+                "Myxoviridae",
+                "Paramyxoviridae",
+                "Picornaviridae"
+              ],
+              "correctIndex": 3,
+              "explanation": "Acute laryngitis and viral laryngotracheobronchitis (croup) are primarily caused by Human Parainfluenza Viruses (HPIV, especially types 1 and 2), which belong to the Paramyxoviridae family (enveloped, non-segmented, negative-sense single-stranded RNA viruses). Other members of Paramyxoviridae include Respiratory Syncytial Virus (RSV, Pneumoviridae), Measles virus, and Mumps virus.\n\nOption A is incorrect because Adenoviridae viruses cause pharyngoconjunctival fever and follicular pharyngitis.\nOption B is incorrect because Coronaviridae cause common colds and lower respiratory syndromes (SARS, MERS, COVID-19).\nOption C is incorrect because 'Myxoviridae' is an obsolete term; the family for influenza is Orthomyxoviridae.\nOption E is incorrect because Picornaviridae (rhinovirus, enterovirus) cause common colds, herpangina, and aseptic meningitis.",
+              "keyConcept": "Parainfluenza virus belongs to Paramyxoviridae and is the predominant cause of pediatric croup and laryngitis.",
+              "source": "Formative – first week"
+            },
+            {
+              "id": "MRS2-PE-MIC-011",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Which of the following is the most common bacterial cause of acute epiglottitis?",
+              "options": [
+                "Coronaviruses",
+                "Haemophilus influenzae",
+                "Influenza virus",
+                "Rhinoviruses",
+                "Streptococcus pyogenes"
+              ],
+              "correctIndex": 1,
+              "explanation": "Haemophilus influenzae type b (Hib) is historically and classically the most common and critical bacterial cause of acute, life-threatening epiglottitis (supraglottitis) in children. Even in regions with widespread Hib conjugate vaccination, Hib remains the classic textbook pathogen tested in medical curricula; non-typeable H. influenzae, Streptococcus pneumoniae, and GAS can also occasionally cause adult cases.\n\nOptions A, C, and D are incorrect because Coronaviruses, Influenza, and Rhinoviruses cause mucosal rhinitis, pharyngitis, or tracheobronchitis, but do not cause acute supraglottic cellulitis/epiglottitis.\nOption E is incorrect because while S. pyogenes causes pharyngitis, peritonsillar abscess, and occasionally secondary epiglottitis, H. influenzae is the principal primary etiology.",
+              "keyConcept": "Haemophilus influenzae (type b) is the premier causative organism of acute epiglottitis.",
+              "source": "Formative – first week"
+            },
+            {
+              "id": "MRS2-PE-MIC-012",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Which of the following is the main virulence factor of Corynebacterium diphtheriae?",
+              "options": [
+                "Exotoxin production",
+                "Intracellular multiplication",
+                "Invasiveness",
+                "Polysaccharide capsule",
+                "Transient bacteremia"
+              ],
+              "correctIndex": 0,
+              "explanation": "Corynebacterium diphtheriae is a non-invasive bacterium that remains confined to the superficial epithelial mucosal layer of the upper respiratory tract. Its pathogenicity is almost entirely dependent upon the elaboration of diphtheria exotoxin, a 62-kDa A-B polypeptide exotoxin encoded by lysogenic corynephage beta. The toxin enters systemic circulation, arresting protein synthesis in target tissues (cardiac myocytes, Schwann cells, adrenal glands) by ADP-ribosylating EF-2.\n\nOption B and C are incorrect because C. diphtheriae does not multiply intracellularly and is virtually non-invasive into deep tissues.\nOption D is incorrect because C. diphtheriae lacks a polysaccharide capsule.\nOption E is incorrect because bacteremia is extraordinarily rare in diphtheria; clinical pathology is toxin-mediated.",
+              "keyConcept": "C. diphtheriae exerts its clinical virulence strictly via local and systemic actions of diphtheria exotoxin.",
+              "source": "Formative – first week / ASU-2019-Assessment"
+            },
+            {
+              "id": "MRS2-PE-MIC-013",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The Monospot test is used in the diagnosis of infections caused by which of the following pathogens?",
+              "options": [
+                "Adenoviruses",
+                "Influenza virus",
+                "Epstein-Barr virus",
+                "Rhinoviruses",
+                "Coxsackievirus A"
+              ],
+              "correctIndex": 2,
+              "explanation": "The Monospot test (heterophile antibody latex agglutination test) is specifically employed for the rapid screening and presumptive diagnosis of acute infectious mononucleosis caused by Epstein-Barr virus (EBV). Primary EBV infection stimulates polyclonal B-cell activation, generating IgM heterophile antibodies that non-specifically agglutinate sheep, horse, or bovine red blood cells without reacting against EBV viral antigens themselves.\n\nOptions A, B, D, and E are incorrect because Adenovirus, Influenza, Rhinovirus, and Coxsackie A do not induce polyclonal B-cell activation producing Paul-Bunnell heterophile antibodies.",
+              "keyConcept": "The Monospot test detects heterophile antibodies produced during acute EBV infectious mononucleosis.",
+              "source": "Formative – first week"
+            },
+            {
+              "id": "MRS2-PE-MIC-014",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Which of the following acts as a spreading factor in the pathogenesis of Streptococcus pyogenes infections?",
+              "options": [
+                "Endotoxin",
+                "Hyaluronidase enzyme",
+                "IgA protease",
+                "M protein",
+                "Polysaccharide capsule"
+              ],
+              "correctIndex": 1,
+              "explanation": "Hyaluronidase enzyme, produced by Streptococcus pyogenes, cleaves the glycosidic bonds of hyaluronic acid—a major constituent of the ground substance and extracellular matrix of mammalian connective tissue. By breaking down this intercellular barrier, hyaluronidase facilitates the rapid lateral and deep spreading of the organism and its toxins through subcutaneous tissue and fascia (classically seen in erysipelas, cellulitis, and necrotizing fasciitis), earning its designation as the 'spreading factor'.\n\nOption A is incorrect because Gram-positive bacteria lack endotoxin.\nOption C is incorrect because S. pyogenes does not produce IgA protease.\nOption D is incorrect because M protein is an antiphagocytic surface fibril, not a spreading enzyme.\nOption E is incorrect because S. pyogenes has a hyaluronic acid capsule that provides antiphagocytic disguise, but does not act as an enzymatic spreading factor.",
+              "keyConcept": "Hyaluronidase digests connective tissue ground substance, serving as the classic 'spreading factor' of S. pyogenes.",
+              "source": "Formative – first week"
+            },
+            {
+              "id": "MRS2-PE-MIC-015",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "On histopathological examination of biopsy material obtained from an infected paranasal sinus by a fungus, broad hyphae with uneven thickness and wide branching at nearly right angles were visualized by Periodic acid–Schiff (PAS) and silver stains. This infection is caused by which of the following?",
+              "options": [
+                "Aspergillus niger",
+                "Coccidioides immitis",
+                "Histoplasma capsulatum",
+                "Mucor spp.",
+                "Mycobacterium tuberculosis"
+              ],
+              "correctIndex": 3,
+              "explanation": "The histological hallmark of Mucorales (Mucor spp., Rhizopus, Lichtheimia) is broad, ribbon-like, non-septate (coenocytic or sparsely septate) hyphae with irregular contour and wide branching at right angles (approx. 90°). These opportunistic molds cause devastating, rapidly progressive rhinocerebral mucormycosis in diabetic ketoacidosis and severely immunocompromised or neutropenic patients.\n\nOption A is incorrect because Aspergillus species exhibit narrow (3–5 µm), uniformly septate hyphae with acute-angle (45°) dichotomous branching.\nOption B is incorrect because Coccidioides produces thick-walled spherules containing endospores in tissue.\nOption C is incorrect because Histoplasma capsulatum appears as small (2–4 µm) intracellular oval budding yeasts within macrophages.\nOption E is incorrect because Mycobacterium tuberculosis is an acid-fast bacterium (rod), not a fungal mold with hyphae.",
+              "keyConcept": "Mucor exhibits broad, non-septate, ribbon-like hyphae branching at wide/right angles (~90°), causing acute rhinocerebral mucormycosis.",
+              "source": "Formative – first week"
+            },
+            {
+              "id": "MRS2-PE-MIC-016",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The presence of atypical reactive lymphocytes (Downey cells) in the peripheral blood film is a characteristic finding in infections caused by which of the following?",
+              "options": [
+                "Adenoviruses",
+                "Influenza virus",
+                "Epstein-Barr virus",
+                "Rhinoviruses",
+                "Coxsackievirus A"
+              ],
+              "correctIndex": 2,
+              "explanation": "Atypical lymphocytes (Downey cells) are a defining hematologic feature of infectious mononucleosis caused by Epstein-Barr virus (EBV). Although EBV infects and immortalizes B lymphocytes via CD21, the atypical lymphocytes seen on peripheral blood smears are actually reactive, antigen-stimulated cytotoxic CD8+ T lymphocytes responding vigorously to eliminate the virally infected B cells. They feature abundant pale-blue cytoplasm that drapes or scallops around adjacent erythrocytes.\n\nOptions A, B, D, and E are incorrect because Adenovirus, Influenza, Rhinovirus, and Coxsackievirus do not produce the exuberant CD8+ T-cell reactive lymphocytosis that characterizes EBV primary mononucleosis.",
+              "keyConcept": "Atypical lymphocytes in infectious mononucleosis are reactive cytotoxic CD8+ T cells battling EBV-infected B cells.",
+              "source": "Formative – first week"
+            },
+            {
+              "id": "MRS2-PE-MIC-017",
+              "type": "essay",
+              "lecture": 2,
+              "text": "Enumerate three virulence factors of Streptococcus pyogenes and describe the role of each in the pathogenesis of streptococcal infections.",
+              "modelAnswer": "Key virulence factors of Streptococcus pyogenes (Group A Streptococcus, GAS) include:\n\n1. M Protein (Cell-Wall Surface Fibril):\n   - Role: Major antiphagocytic factor. It binds host complement factor H and fibrinogen, preventing C3b deposition and complement-mediated opsonization and phagocytosis. Also mediates adherence to host pharyngeal epithelium.\n\n2. Streptokinase (Fibrinolysin):\n   - Role: Catalyzes the conversion of host plasminogen into active plasmin. Plasmin digests fibrin clots and extracellular matrix barriers, enabling the bacterium to break free from localized thrombi and spread through tissue planes.\n\n3. Hyaluronidase ('Spreading Factor'):\n   - Role: Enzymatically hydrolyzes hyaluronic acid in the ground substance of host connective tissue, facilitating rapid, unchecked bacterial penetration and lateral dissemination.\n\n4. Streptodornase (DNase B):\n   - Role: Depolymerizes extracellular viscous DNA released from lysed host neutrophils, liquefying thick purulent exudate and aiding tissue invasion.\n\n5. Streptococcal Pyrogenic Exotoxins (SpeA, SpeB, SpeC / Erythrogenic Toxins):\n   - Role: Act as superantigens that non-specifically cross-link MHC class II on antigen-presenting cells with the Vbeta chain of T-cell receptors, triggering massive polyclonal cytokine storm (IL-1, TNF-alpha, IFN-gamma). Responsible for the diffuse rash of scarlet fever and streptococcal toxic shock-like syndrome (STSS).\n\n6. Streptolysins O and S:\n   - Role: Pore-forming cytolysins that disrupt cell membranes of erythrocytes, leukocytes, and platelets. Streptolysin O is oxygen-labile and highly immunogenic (basis of ASO titer); Streptolysin S is oxygen-stable and non-immunogenic.",
+              "explanation": "Streptococcus pyogenes possesses an arsenal of structural (capsule, M protein, lipoteichoic acid, protein F) and secreted factors (streptokinase, hyaluronidase, DNase B, pyrogenic exotoxins, streptolysins O/S) that coordinate immune evasion, adherence, tissue destruction, and toxin-mediated systemic disease.",
+              "keyConcept": "S. pyogenes virulence combines antiphagocytic structures (M protein), spreading enzymes (streptokinase, hyaluronidase, DNase), and superantigenic exotoxins (SpeA/C).",
+              "source": "Formative – first week"
+            },
+            {
+              "id": "MRS2-PE-MIC-018",
+              "type": "essay",
+              "lecture": 2,
+              "text": "Mention the essential growth requirements of Haemophilus influenzae, the best culture medium used for its laboratory isolation, and the phenomenon of satellitism.",
+              "modelAnswer": "1. Essential Growth Requirements:\n   - Factor X (Hemin / Hematin): A heat-stable iron-containing porphyrin compound essential for the synthesis of iron-containing respiratory enzymes (cytochromes, catalase, peroxidase).\n   - Factor V (NAD / NADP - Nicotinamide Adenine Dinucleotide): A heat-labile coenzyme vital for cellular oxidation-reduction reactions and electron transport.\n\n2. Best Culture Medium:\n   - Chocolate Agar: Prepared by heating fresh blood agar to ~80°C to lyse red blood cells, releasing Factors X and V into the medium and inactivating endogenous NADases that would otherwise destroy Factor V.\n   - Optimal Incubation: Incubated at 35–37°C in a humidified atmosphere enriched with 5–10% CO2 (candle jar or CO2 incubator) for 24–48 hours.\n\n3. Satellitism Phenomenon:\n   - When plated on plain unheated sheep blood agar, H. influenzae cannot grow alone because Factor V is contained intracellularly within erythrocytes and sheep blood contains active NADases.\n   - However, if the blood agar is cross-streaked with a beta-hemolytic organism such as Staphylococcus aureus, S. aureus lyses RBCs (releasing Factor X) and secretes excess Factor V as a metabolic byproduct.\n   - Consequently, tiny satellite colonies of H. influenzae grow in close proximity around the S. aureus streak line, confirming Factor V dependence.",
+              "explanation": "Haemophilus ('blood-loving') influenzae is a fastidious Gram-negative coccobacillus whose metabolic auxotrophy requires both Factor X (hemin) and Factor V (NAD). Chocolate agar provides both factors freely; satellitism on blood agar around S. aureus is a classic diagnostic confirmation.",
+              "keyConcept": "H. influenzae requires Factor X (hemin) and Factor V (NAD); best grown on chocolate agar or via satellitism around S. aureus on blood agar.",
+              "source": "Formative – first week"
+            }
+          ]
+        },
+        {
+          "id": "physiology",
+          "name": "Physiology",
+          "iconName": "Activity",
+          "lectures": "Past Exams, Formative Exam",
+          "lectureCount": 2,
+          "lectureNames": [
+            "Past Exams",
+            "Formative Exam"
+          ],
+          "questions": [
+            {
+              "id": "MRS2-PE-PHY-001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "One of the non-respiratory metabolic and endocrine functions of the lung is:",
+              "options": [
+                "Secretion of surfactant by type I pneumocytes",
+                "Conversion of angiotensin I to angiotensin II by ACE in pulmonary endothelium",
+                "Production of erythropoietin in response to hypoxia",
+                "Regulation of plasma glucose by glucagon secretion",
+                "Synthesis of aldosterone in response to renin"
+              ],
+              "correctIndex": 1,
+              "explanation": "The pulmonary capillary endothelium constitutes the principal site for the activation of angiotensin I to the potent vasoconstrictor and dipsogenic octapeptide angiotensin II. This cleavage is catalyzed by angiotensin-converting enzyme (ACE / kininase II), an ectoenzyme located abundantly on the luminal surface of pulmonary capillary endothelial cells. The lungs receive 100% of the cardiac output, making the pulmonary bed exceptionally positioned for rapid systemic endocrine processing.\n\nOption A is incorrect because surfactant is synthesized and secreted exclusively by type II alveolar epithelial cells (granular pneumocytes), whereas type I pneumocytes are squamous cells optimized for gas exchange.\nOption C is incorrect because erythropoietin (EPO) is synthesized by peritubular interstitial fibroblasts in the renal cortex in response to hypoxia, not by the lung.\nOption D is incorrect because glucagon is secreted by alpha cells of the pancreatic islets of Langerhans.\nOption E is incorrect because aldosterone is synthesized and secreted by the zona glomerulosa of the adrenal cortex.",
+              "keyConcept": "Pulmonary capillary endothelium expresses ACE, converting angiotensin I into angiotensin II and inactivating bradykinin.",
+              "source": "ASU – Final – 2023"
+            },
+            {
+              "id": "MRS2-PE-PHY-002",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "During quiet normal expiration in a healthy adult:",
+              "options": [
+                "Diaphragm contracts actively",
+                "Internal intercostal muscles contract",
+                "It requires significant metabolic energy expenditure",
+                "It is an active process driven by muscle contraction",
+                "It occurs passively due to elastic recoil of lungs and chest wall"
+              ],
+              "correctIndex": 4,
+              "explanation": "Normal quiet expiration is an entirely passive mechanical process that requires zero active muscular contraction or metabolic energy expenditure. During quiet inspiration, the inspiratory muscles (primarily the diaphragm and external intercostals) stretch the elastic tissues of the lungs and chest wall, storing potential elastic energy. When inspiratory motor nerve discharge ceases, the elastic recoil of the lungs (inward pull) and thoracic cage (outward recoil returning to resting position) causes lung volume to decrease, raising alveolar pressure slightly above atmospheric (+1 mmHg) and driving air out of the lungs.\n\nOption A is incorrect because the diaphragm relaxes and ascends during expiration.\nOption B is incorrect because internal intercostal muscles contract only during forced, active expiration (such as exercise, coughing, or blowing).\nOptions C and D are incorrect because resting quiet expiration consumes no ATP; work is performed entirely by passive elastic recoil.",
+              "keyConcept": "Quiet expiration is passive, powered solely by the elastic recoil of the stretched lungs and thoracic wall without muscular contraction.",
+              "source": "ASU – Final – 2023"
+            },
+            {
+              "id": "MRS2-PE-PHY-003",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A significant decrease or deficiency in pulmonary surfactant causes which of the following mechanical consequences?",
+              "options": [
+                "Dilation of bronchioles",
+                "Collapse of small alveoli (atelectasis)",
+                "Increase in lung compliance",
+                "Decrease in airway resistance",
+                "Expansion of alveoli during expiration"
+              ],
+              "correctIndex": 1,
+              "explanation": "Pulmonary surfactant (composed of dipalmitoylphosphatidylcholine [DPPC], apoproteins SP-A/B/C/D, and lipids) reduces surface tension at the air-liquid alveolar interface. According to the Law of Laplace for a sphere ($P = 2T / r$), smaller alveoli ($r$) have a higher collapse pressure than larger alveoli if surface tension ($T$) were constant. Surfactant molecules concentrate more densely in smaller alveoli during deflation, lowering surface tension disproportionately and equalizing pressure across interconnected alveoli. When surfactant is deficient, surface tension rises dramatically, causing instability: small alveoli empty their air into larger alveoli and collapse completely (diffuse microatelectasis), sharply decreasing compliance and causing severe shunt.\n\nOption A and D are incorrect because surfactant deficiency does not dilate bronchioles or lower resistance; on the contrary, lung volume loss increases airway resistance.\nOption C is incorrect because surfactant deficiency markedly decreases lung compliance, making the lungs stiff and requiring massive transpulmonary pressures to expand.\nOption E is incorrect because alveoli collapse rather than expand during expiration in surfactant deficiency.",
+              "keyConcept": "Surfactant reduces surface tension to prevent alveolar collapse (atelectasis) and maintain alveolar stability according to Laplace's Law.",
+              "source": "ASU – Final – 2023"
+            },
+            {
+              "id": "MRS2-PE-PHY-004",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Diffusion of respiratory gases across the alveolar-capillary membrane increases with which of the following physiological factors?",
+              "options": [
+                "Decreased surface area of the lungs",
+                "Thickening of the respiratory membrane",
+                "Deep breathing that increases alveolar surface area",
+                "Decreased pulmonary blood flow",
+                "Low alveolar ventilation"
+              ],
+              "correctIndex": 2,
+              "explanation": "According to Fick's Law of Diffusion, the rate of gas transfer across a tissue barrier is directly proportional to the surface area ($A$) of the membrane and the partial pressure gradient ($Delta P$), and inversely proportional to membrane thickness ($T$):\n$$\\dot{V}_{gas} = \\frac{A \\cdot D \\cdot \\Delta P}{T}$$\nDuring deep inspiration, alveoli are recruited and expanded, which substantially increases the total functional surface area available for gas exchange and simultaneously stretches and thins the alveolar-capillary membrane. Furthermore, increased cardiac output and pulmonary arterial pressure recruit previously unperfused apical pulmonary capillaries, expanding effective exchange surface area and increasing diffusing capacity ($D_L$).\n\nOption A is incorrect because reducing surface area (e.g., in emphysema or pneumonectomy) decreases diffusion.\nOption B is incorrect because thickening of the membrane (e.g., pulmonary fibrosis, interstitial edema) increases diffusion distance, impairing gas diffusion.\nOption D and E are incorrect because decreased blood flow or hypoventilation reduces the diffusion gradient ($Delta P$) and impairs exchange.",
+              "keyConcept": "Fick's law dictates that increasing surface area and decreasing membrane thickness (as during deep breathing) enhances gas diffusion.",
+              "source": "ASU – Final – 2023"
+            },
+            {
+              "id": "MRS2-PE-PHY-005",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A recognized non-respiratory endocrine/metabolic function of the pulmonary circulation includes:",
+              "options": [
+                "Secretion of renin",
+                "Synthesis of plasminogen activator",
+                "Production of erythropoietin",
+                "Secretion of aldosterone",
+                "Synthesis of thyroxine"
+              ],
+              "correctIndex": 1,
+              "explanation": "The pulmonary vascular bed acts as a dynamic mechanical and biochemical filter for the entire circulating blood volume. Pulmonary endothelial cells continuously synthesize and release tissue plasminogen activator (tPA). tPA converts the proenzyme plasminogen into active plasmin, which lyses fibrin networks in microthrombi and emboli that become trapped in the pulmonary microcirculation, preventing them from entering systemic arterial circulation.\n\nOption A is incorrect because renin is secreted by the juxtaglomerular cells of the kidney.\nOption C is incorrect because erythropoietin is produced primarily by renal interstitial peritubular fibroblasts in response to hypoxia.\nOption D is incorrect because aldosterone is secreted by the adrenal cortex.\nOption E is incorrect because thyroxine (T4) is synthesized exclusively by thyroid follicular cells.",
+              "keyConcept": "Pulmonary endothelial cells synthesize tPA to dissolve microthrombi trapped in the pulmonary capillary bed.",
+              "source": "ASU – Final – 2018"
+            },
+            {
+              "id": "MRS2-PE-PHY-006",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Deep (forced) active expiration involves the coordinated contraction of which of the following muscle groups?",
+              "options": [
+                "Diaphragm and external intercostal muscles",
+                "Diaphragm and internal intercostal muscles",
+                "Internal intercostal and anterior abdominal muscles",
+                "External intercostal and scalene muscles",
+                "Sternocleidomastoid and diaphragm"
+              ],
+              "correctIndex": 2,
+              "explanation": "While quiet expiration is passive, forced expiration is an active muscular effort requiring two major muscle sets:\n1. Anterior Abdominal Wall Muscles (rectus abdominis, external oblique, internal oblique, transversus abdominis): Contraction increases intra-abdominal pressure, forcing the relaxed diaphragm upward into the thoracic cavity and pulling the lower ribs downward and inward.\n2. Internal Intercostal Muscles: Their fibers run obliquely downward and backward; when they contract, they depress the ribs downward and inward, decreasing both anteroposterior and transverse thoracic diameters.\n\nOptions A, B, and E are incorrect because the diaphragm is strictly an inspiratory muscle; it must relax during expiration.\nOption D is incorrect because external intercostals and scalenes are inspiratory muscles that elevate ribs.",
+              "keyConcept": "Forced expiration is powered by the anterior abdominal muscles (pushing the diaphragm up) and internal intercostals (depressing the ribs).",
+              "source": "ASU – Final – 2018"
+            },
+            {
+              "id": "MRS2-PE-PHY-007",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Stimulation of which of the following autonomic receptors produces bronchodilation and decreases airway resistance?",
+              "options": [
+                "Alpha-adrenergic receptors",
+                "Muscarinic receptors",
+                "Beta₂-adrenergic receptors",
+                "Nicotinic receptors",
+                "Histamine H₁ receptors"
+              ],
+              "correctIndex": 2,
+              "explanation": "Airway smooth muscle tone is regulated by the autonomic nervous system. Stimulation of beta-2 adrenergic receptors ($G_s$ protein-coupled) by circulating epinephrine or beta-2 agonists activates adenylyl cyclase, raising intracellular cyclic AMP (cAMP). Elevated cAMP activates Protein Kinase A (PKA), which phosphorylates and inactivates myosin light-chain kinase (MLCK) and enhances $Ca^{2+}$ extrusion, causing relaxation of bronchial smooth muscle (bronchodilation) and reducing airway resistance.\n\nOption A is incorrect because alpha-1 adrenergic stimulation produces mild bronchoconstriction or vasoconstriction.\nOption B is incorrect because muscarinic $M_3$ receptor stimulation via acetylcholine causes potent bronchoconstriction and mucus hypersecretion.\nOption D is incorrect because nicotinic receptors are located at autonomic ganglia and the neuromuscular junction.\nOption E is incorrect because histamine $H_1$ receptor stimulation induces severe bronchoconstriction.",
+              "keyConcept": "Beta-2 adrenergic receptor stimulation raises cAMP, producing bronchial smooth muscle relaxation and decreasing airway resistance.",
+              "source": "ASU – Final – 2018"
+            },
+            {
+              "id": "MRS2-PE-PHY-008",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Static lung compliance is increased in which of the following conditions?",
+              "options": [
+                "Pulmonary fibrosis",
+                "Old age",
+                "Neonates",
+                "Pulmonary edema",
+                "Atelectasis"
+              ],
+              "correctIndex": 1,
+              "explanation": "Lung compliance ($C = Delta V / Delta P$) measures the distensibility of the lungs—the volume change per unit change in transpulmonary pressure. Compliance is inversely related to the inward elastic recoil of the lungs. In normal healthy aging (and pathologically in emphysema), there is progressive loss and structural alteration of alveolar elastic fibers. Because elastic recoil decreases, the lung becomes looser and more distensible, causing compliance to increase (the lung expands more easily, though it recoils poorly during expiration).\n\nOption A is incorrect because pulmonary fibrosis deposits stiff collagen in the interstitium, dramatically decreasing compliance.\nOption C is incorrect because neonates have smaller lung volumes and relatively stiffer lungs compared to adults.\nOption D and E are incorrect because alveolar edema fluid and alveolar collapse (atelectasis) sharply decrease compliance.",
+              "keyConcept": "Loss of pulmonary elastic recoil in normal aging and emphysema causes an increase in lung compliance.",
+              "source": "ASU – Final – 2018"
+            },
+            {
+              "id": "MRS2-PE-PHY-009",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The primary physiological function of pulmonary surfactant is to:",
+              "options": [
+                "Increase surface tension to aid elastic recoil",
+                "Reduce lung compliance during inspiration",
+                "Promote uniform collapse of alveoli during expiration",
+                "Facilitate diffusion of gases across the alveolar membrane",
+                "Equalize pressure between large and small alveoli to prevent collapse"
+              ],
+              "correctIndex": 4,
+              "explanation": "According to the Law of Laplace ($P = 2T / r$), if surface tension ($T$) were constant across all alveoli, smaller alveoli (smaller radius $r$) would generate a much higher internal collapsing pressure ($P$) than larger alveoli. In an interconnected alveolar network, air would rush from small alveoli into large alveoli, causing widespread collapse of small units (atelectasis) and hyperinflation of large units. Pulmonary surfactant solves this by lowering surface tension dynamically: as an alveolus deflates and shrinks, surfactant molecules pack more tightly together, lowering surface tension ($T$) much more dramatically in the small alveolus than in the large one. This equalizes collapsing pressures across all alveolar sizes and stabilizes the lung.\n\nOption A and B are incorrect because surfactant decreases surface tension and increases compliance.\nOption C is incorrect because surfactant prevents collapse rather than promoting it.\nOption D is incorrect because surfactant is not an active transport facilitator for diffusion.",
+              "keyConcept": "Surfactant reduces surface tension in proportion to alveolar radius, equalizing transmural pressures and stabilizing alveoli.",
+              "source": "ASU – Final – 2018"
+            },
+            {
+              "id": "MRS2-PE-PHY-010",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The metabolic work of breathing is lowest during which of the following breathing patterns?",
+              "options": [
+                "Forced expiration",
+                "Deep inspiration",
+                "Rapid shallow breathing",
+                "Normal quiet breathing",
+                "Labored breathing in airway obstruction"
+              ],
+              "correctIndex": 3,
+              "explanation": "The total work of breathing represents the mechanical energy expended by respiratory muscles to overcome elastic resistance (lung and chest wall compliance) and non-elastic resistance (airway resistance and tissue friction). Total work forms a U-shaped curve when plotted against respiratory frequency. At normal quiet resting breathing (rate of 12–15 breaths/min, tidal volume ~500 mL), total work is minimized, consuming only 1–2% of total body basal oxygen consumption.\n\nOption A and B are incorrect because forced expiration and deep inspiration require substantial muscular recruitment, markedly increasing work.\nOption C is incorrect because rapid shallow breathing wastes excessive ventilation on anatomic dead space and increases non-elastic flow work.\nOption E is incorrect because airway obstruction forces respiratory muscles to expend enormous energy against resistive flow.",
+              "keyConcept": "Normal quiet breathing minimizes the sum of elastic and resistive work, requiring minimal metabolic energy.",
+              "source": "ASU – Final – 2018"
+            },
+            {
+              "id": "MRS2-PE-PHY-011",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The volume of gas remaining in the lungs after a maximal forceful expiration is defined as the:",
+              "options": [
+                "Tidal volume",
+                "Expiratory reserve volume",
+                "Residual volume",
+                "Functional residual capacity",
+                "Vital capacity"
+              ],
+              "correctIndex": 2,
+              "explanation": "Residual volume (RV) is the volume of air remaining in the lungs even after a maximal, forceful expiration (approximately 1,200 mL in an average adult). Because residual volume cannot be expelled voluntarily, it prevents complete alveolar collapse and maintains continuous capillary gas exchange between breaths. RV cannot be measured by simple direct spirometry; it requires gas dilution techniques (helium dilution, nitrogen washout) or body plethysmography.\n\nOption A is incorrect because tidal volume (TV, ~500 mL) is the volume moved during a normal quiet breath.\nOption B is incorrect because expiratory reserve volume (ERV, ~1,100 mL) is the extra volume that can be exhaled below resting tidal volume.\nOption D is incorrect because functional residual capacity (FRC = ERV + RV, ~2,300 mL) is the air remaining after a normal quiet expiration.\nOption E is incorrect because vital capacity (VC = IRV + TV + ERV, ~4,600 mL) is the maximal volume that can be exhaled after a maximal inspiration.",
+              "keyConcept": "Residual Volume (RV) is the air trapped in the lungs after maximal exhalation and cannot be measured by simple spirometry.",
+              "source": "ASU – Final – 2018"
+            },
+            {
+              "id": "MRS2-PE-PHY-012",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In which of the following clinical conditions is the FEV₁/FVC ratio typically normal or increased?",
+              "options": [
+                "Bronchial asthma",
+                "Chronic obstructive pulmonary disease (COPD)",
+                "Pulmonary fibrosis",
+                "Emphysema",
+                "Chronic bronchitis"
+              ],
+              "correctIndex": 2,
+              "explanation": "In restrictive pulmonary diseases such as idiopathic pulmonary fibrosis, the lungs become stiff due to excessive collagen deposition, reducing all lung volumes (decreased TLC, decreased FVC). However, because airway caliber is preserved or even held widely open by radial traction exerted by the stiff fibrotic parenchyma, airflow during expiration is rapid. Consequently, both FEV1 and FVC decrease proportionally, so the ratio of FEV1 to FVC remains normal (approx. 80%) or is often supranormal (>85–90%).\n\nOptions A, B, D, and E are incorrect because asthma, COPD, emphysema, and chronic bronchitis are obstructive lung diseases characterized by expiratory flow limitation, causing FEV1 to fall much more drastically than FVC, yielding a reduced FEV1/FVC ratio (<70%).",
+              "keyConcept": "Restrictive lung diseases (e.g. pulmonary fibrosis) exhibit a normal or elevated FEV1/FVC ratio alongside reduced lung volumes.",
+              "source": "ASU – Final – 2018"
+            },
+            {
+              "id": "MRS2-PE-PHY-013",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In which of the following respiratory conditions is the FEV₁/FVC ratio characteristically decreased below 70%?",
+              "options": [
+                "Pulmonary fibrosis",
+                "Pneumonia",
+                "Emphysema",
+                "Pulmonary edema",
+                "Pleural effusion"
+              ],
+              "correctIndex": 2,
+              "explanation": "A reduced FEV1/FVC ratio (<0.70 or <70%) is the defining spirometric hallmark of an obstructive ventilatory defect. In emphysema, destruction of alveolar walls and loss of elastic tethering that holds small non-cartilaginous airways open causes premature dynamic airway collapse during forced expiration. As a result, forced expiratory volume in 1 second (FEV1) is disproportionately impaired relative to forced vital capacity (FVC).\n\nOptions A, B, D, and E are incorrect because pulmonary fibrosis, pneumonia, alveolar pulmonary edema, and pleural effusion are restrictive or filling processes where FEV1 and FVC drop in parallel, preserving a normal FEV1/FVC ratio.",
+              "keyConcept": "Obstructive ventilatory defects (such as emphysema) are formally defined by a post-bronchodilator FEV1/FVC ratio < 0.70.",
+              "source": "ASU – Assessment – 2019"
+            },
+            {
+              "id": "MRS2-PE-PHY-014",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In which of the following disorders is Total Lung Capacity (TLC) characteristically decreased?",
+              "options": [
+                "Emphysema",
+                "Bronchial asthma",
+                "Pulmonary fibrosis",
+                "Chronic bronchitis",
+                "Normal aging"
+              ],
+              "correctIndex": 2,
+              "explanation": "Total Lung Capacity (TLC < 80% of predicted) is the definitive diagnostic gold standard for establishing a restrictive lung defect. In diffuse parenchymal lung diseases like idiopathic pulmonary fibrosis, extensive fibrotic scarring increases elastic recoil and renders the lungs non-compliant ('stiff'), preventing full inspiratory expansion and shrinking TLC, FVC, and FRC.\n\nOptions A, B, and D are incorrect because in obstructive airway diseases (emphysema, asthma, chronic bronchitis), air trapping and loss of elastic recoil lead to hyperinflation, which increases or preserves TLC.\nOption E is incorrect because normal aging causes mild loss of elastic recoil, which slightly increases or preserves TLC.",
+              "keyConcept": "Reduced Total Lung Capacity (<80% predicted) is the physiological definition of a restrictive pulmonary defect.",
+              "source": "ASU – Assessment – 2019"
+            },
+            {
+              "id": "MRS2-PE-PHY-015",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following statements is true regarding pressures in the respiratory system during normal quiet breathing?",
+              "options": [
+                "Intrapleural pressure equals atmospheric pressure",
+                "Intrapleural pressure becomes positive during inspiration",
+                "Intra-alveolar pressure is always negative",
+                "Intrapleural and intra-alveolar pressures are equal at end-expiration",
+                "Intrapleural pressure is less than intra-alveolar pressure"
+              ],
+              "correctIndex": 4,
+              "explanation": "Throughout the entirety of normal quiet breathing, intrapleural pressure ($P_{ip}$) remains subatmospheric (negative relative to atmosphere: approximately -5 cmH2O at rest, dropping to -8 cmH2O during inspiration), whereas intra-alveolar pressure ($P_{alv}$) fluctuates around 0 cmH2O (from -1 cmH2O during inspiration to +1 cmH2O during expiration). Consequently, intrapleural pressure is always strictly less than intra-alveolar pressure. The difference between them is the transpulmonary pressure ($P_L = P_{alv} - P_{ip}$), which is always positive (+3 to +8 cmH2O), keeping the lungs held open against the chest wall.\n\nOption A and D are incorrect because if $P_{ip}$ equaled atmospheric or alveolar pressure, transpulmonary pressure would drop to zero and the lung would collapse.\nOption B is incorrect because $P_{ip}$ becomes more negative during inspiration, not positive.\nOption C is incorrect because alveolar pressure becomes positive (+1 cmH2O) during quiet expiration.",
+              "keyConcept": "Intrapleural pressure is always lower than intra-alveolar pressure during quiet breathing, maintaining a positive transpulmonary distending pressure.",
+              "source": "ASU – Assessment – 2019"
+            },
+            {
+              "id": "MRS2-PE-PHY-016",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following physical changes occurs when pulmonary surfactant concentration decreases?",
+              "options": [
+                "Increase alveolar surface tension",
+                "Increase lung compliance",
+                "Decrease alveolar surface tension",
+                "Decrease elastic recoil",
+                "Increase alveolar stability"
+              ],
+              "correctIndex": 0,
+              "explanation": "Surfactant acts as a biological detergent that disrupts the intermolecular hydrogen bonding among water molecules lining the alveolar fluid layer. Therefore, when surfactant is deficient, alveolar surface tension ($T$) increases dramatically toward that of pure water (~70 dynes/cm compared to <5–10 dynes/cm with surfactant). This high surface tension increases the collapsing pressure of alveoli, drastically decreases lung compliance, and increases the work required to expand the lungs.\n\nOption B is incorrect because compliance decreases (lungs become stiff).\nOption C is incorrect because surface tension increases.\nOption D is incorrect because increased surface tension adds to total inward collapsing force (elastic recoil).\nOption E is incorrect because alveolar stability is lost, leading to atelectasis.",
+              "keyConcept": "Surfactant deficiency causes an immediate, dangerous rise in alveolar surface tension, promoting alveolar collapse.",
+              "source": "ASU – Assessment – 2019"
+            },
+            {
+              "id": "MRS2-PE-PHY-017",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following conditions pathologically increases static lung compliance?",
+              "options": [
+                "Pulmonary fibrosis",
+                "Pneumonia",
+                "Emphysema",
+                "Pulmonary edema",
+                "Atelectasis"
+              ],
+              "correctIndex": 2,
+              "explanation": "Static lung compliance ($Delta V / Delta P$) is pathologically increased in pulmonary emphysema. In emphysema, inflammatory proteases (principally neutrophil elastase uninhibited by alpha-1 antitrypsin) destroy the alveolar septa and break down the extracellular elastin fiber network. With the loss of elastic tissue, the lungs lose their inward elastic recoil, becoming excessively distensible and floppy. While they inflate at low transpulmonary pressures (high compliance), they fail to recoil during exhalation, causing air trapping.\n\nOptions A, B, D, and E are incorrect because fibrotic scarring, alveolar consolidation, pulmonary interstitial/alveolar edema, and atelectasis all make the lungs stiff, significantly decreasing compliance.",
+              "keyConcept": "Emphysema destroys alveolar elastance and septa, pathologically increasing static lung compliance.",
+              "source": "ASU – Assessment – 2018"
+            },
+            {
+              "id": "MRS2-PE-PHY-018",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following pulmonary function abnormalities is the hallmark of restrictive lung disease?",
+              "options": [
+                "Increased airway resistance",
+                "Decreased total lung capacity",
+                "Increased lung compliance",
+                "Increased residual volume",
+                "Normal tidal volume"
+              ],
+              "correctIndex": 1,
+              "explanation": "Restrictive lung disease is formally defined by a reduction in Total Lung Capacity (TLC < 80% of predicted). This can arise from intrinsic parenchymal diseases (idiopathic pulmonary fibrosis, sarcoidosis) or extrinsic chest wall / neuromuscular disorders (scoliosis, obesity hypoventilation, myasthenia gravis, ALS) that physically restrict lung expansion.\n\nOption A and D are incorrect because increased airway resistance and increased residual volume (air trapping) characterize obstructive lung disease (e.g., asthma, COPD).\nOption C is incorrect because lung compliance is decreased in intrinsic restrictive diseases.",
+              "keyConcept": "A documented reduction in Total Lung Capacity (TLC) is the physiological hallmark of restrictive lung disease.",
+              "source": "ASU – Assessment – 2018"
+            },
+            {
+              "id": "MRS2-PE-PHY-019",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following statements is true regarding the pressure relationship across the lung wall (transpulmonary pressure)?",
+              "options": [
+                "Intrapleural pressure equals intraalveolar pressure",
+                "Intrapleural pressure is greater than intraalveolar pressure",
+                "Intraalveolar pressure is always negative",
+                "Intrapleural pressure is less than intraalveolar pressure",
+                "Intrapleural and atmospheric pressures are identical"
+              ],
+              "correctIndex": 3,
+              "explanation": "Transpulmonary pressure ($P_L$) is defined as the pressure difference across the alveolar wall: $P_L = P_{alv} - P_{ip}$. In a stable, non-collapsed lung, transpulmonary pressure must remain positive, which mathematically dictates that intrapleural pressure ($P_{ip}$) must be less than intra-alveolar pressure ($P_{alv}$). This subatmospheric intrapleural pressure is maintained by the opposing mechanical tendencies of the lung (which wants to recoil inward) and the chest wall (which wants to spring outward).\n\nOption A and E are incorrect because intrapleural pressure is subatmospheric (-3 to -8 mmHg), whereas atmospheric is 0 mmHg and alveolar oscillates around 0 mmHg.\nOption B is incorrect because if $P_{ip}$ exceeded $P_{alv}$, the transpulmonary pressure would become negative and the lung would immediately collapse.",
+              "keyConcept": "Intrapleural pressure remains subatmospheric and less than intra-alveolar pressure, ensuring positive distending pressure.",
+              "source": "ASU – Assessment – 2018"
+            },
+            {
+              "id": "MRS2-PE-PHY-020",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A premature newborn develops severe tachypnea, grunting, and cyanosis shortly after birth. Chest imaging and examination demonstrate diffuse alveolar atelectasis due to developmental deficiency of pulmonary surfactant. Which of the following pathophysiological changes is expected?",
+              "options": [
+                "Decreased alveolar surface tension",
+                "Increased alveolar surface tension",
+                "Increased lung compliance",
+                "Normal gas exchange",
+                "Decreased work of breathing"
+              ],
+              "correctIndex": 1,
+              "explanation": "In Neonatal Respiratory Distress Syndrome (NRDS / Hyaline Membrane Disease), premature delivery before gestational week 34 results in inadequate surfactant production by immature type II pneumocytes. Absence of surfactant causes alveolar surface tension to rise sharply. This produces high collapsing pressures in small alveoli ($P = 2T / r$), causing widespread diffuse microatelectasis, severe ventilation-perfusion mismatch, intrapulmonary right-to-left shunting, and profoundly decreased lung compliance (stiff lungs) that dramatically escalates the work of breathing.\n\nOption A is incorrect because surface tension increases.\nOption C is incorrect because compliance plummets.\nOption D and E are incorrect because gas exchange is severely impaired and the work of breathing is massively elevated.",
+              "keyConcept": "Surfactant deficiency in neonates causes high alveolar surface tension, leading to microatelectasis and NRDS.",
+              "source": "ASU – Assessment – 2018"
+            },
+            {
+              "id": "MRS2-PE-PHY-021",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "How does the pulmonary circulation functionally contribute to filtering the bloodstream from small thromboemboli?",
+              "options": [
+                "By secreting renin",
+                "By releasing aldosterone",
+                "By producing erythropoietin",
+                "By increasing surfactant secretion",
+                "By synthesizing tissue plasminogen activator"
+              ],
+              "correctIndex": 4,
+              "explanation": "The entire cardiac output passes through the extensive pulmonary capillary bed, which acts as a sieve to trap small venous microthrombi and air emboli before they can enter systemic arterial circulation and cause cerebral or coronary infarctions. To prevent these trapped microclots from permanently occluding the pulmonary vascular bed, pulmonary endothelial cells synthesize and release tissue plasminogen activator (tPA), which activates local fibrinolysis to rapidly dissolve the clots.\n\nOptions A, B, and C are incorrect because renin and EPO are renal hormones and aldosterone is an adrenal steroid.\nOption D is incorrect because surfactant regulates alveolar surface tension, not intravascular fibrinolysis.",
+              "keyConcept": "The lung traps venous microthrombi and dissolves them via endothelial secretion of tissue plasminogen activator (tPA).",
+              "source": "ASU – Final – 2019"
+            },
+            {
+              "id": "MRS2-PE-PHY-022",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following statements is true regarding intrapulmonary (intra-alveolar) pressure during the inspiratory phase of quiet breathing?",
+              "options": [
+                "Equals atmospheric pressure throughout",
+                "Becomes positive relative to atmosphere",
+                "Becomes subatmospheric during inspiration",
+                "Always remains higher than atmospheric pressure",
+                "Does not change throughout the cycle"
+              ],
+              "correctIndex": 2,
+              "explanation": "At rest prior to inspiration, the glottis is open and no airflow occurs, so intrapulmonary (intra-alveolar) pressure is exactly 0 mmHg (equal to atmospheric pressure). When inspiratory muscles contract, thoracic volume expands. In accordance with Boyle's Law ($P_1V_1 = P_2V_2$), the increase in alveolar volume causes intrapulmonary pressure to drop below atmospheric pressure (to approximately -1 mmHg / -1 cmH2O). This subatmospheric pressure gradient between the airway opening (0) and alveoli (-1) draws ambient air into the lungs until pressures equilibrate at end-inspiration.\n\nOption B is incorrect because intrapulmonary pressure becomes positive (+1 mmHg) during expiration, not inspiration.",
+              "keyConcept": "During inspiration, alveolar expansion lowers intrapulmonary pressure to subatmospheric (-1 mmHg), driving inward airflow.",
+              "source": "ASU – Final – 2019"
+            },
+            {
+              "id": "MRS2-PE-PHY-023",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following conditions is associated with an increase in static lung compliance?",
+              "options": [
+                "Pulmonary fibrosis",
+                "Pulmonary edema",
+                "Pneumonia",
+                "Old age",
+                "Infantile atelectasis"
+              ],
+              "correctIndex": 3,
+              "explanation": "Aging is characterized by structural remodeling of pulmonary connective tissue, including degeneration and disorganization of alveolar elastin fibers. As inward elastic recoil declines, the lung offers less resistance to stretch, resulting in increased static lung compliance (the lung is more easily distended at a given pressure). However, chest wall compliance simultaneously decreases due to rib calcification and stiffened costochondral joints, so total respiratory system compliance remains relatively stable.\n\nOptions A, B, C, and E are incorrect because fibrotic tissue, fluid accumulation, inflammatory consolidation, and alveolar collapse all significantly reduce lung compliance.",
+              "keyConcept": "Old age decreases alveolar elastic recoil, leading to increased static lung compliance.",
+              "source": "ASU – Final – 2019"
+            },
+            {
+              "id": "MRS2-PE-PHY-024",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The volume of gas remaining in the lungs at the end of a normal, quiet expiration is termed the:",
+              "options": [
+                "Functional residual capacity",
+                "Residual volume",
+                "Expiratory reserve volume",
+                "Vital capacity",
+                "Total lung capacity"
+              ],
+              "correctIndex": 0,
+              "explanation": "Functional Residual Capacity (FRC) is the volume of air residing in the lungs at the end of a normal, unforced expiration (approximately 2,200–2,400 mL in a healthy adult). It represents the resting equilibrium point of the respiratory system, where the inward elastic recoil of the lungs exactly balances the outward elastic recoil of the chest wall. FRC is composed of Expiratory Reserve Volume (ERV) plus Residual Volume (RV):\n$$FRC = ERV + RV$$\n\nOption B is incorrect because residual volume is the air remaining after a maximal forced exhalation.\nOption C is incorrect because expiratory reserve volume is the maximal extra volume that can be exhaled below FRC.\nOption D is incorrect because vital capacity is the total volume exhaled from maximal inspiration to maximal expiration.\nOption E is incorrect because total lung capacity is the entire gas volume present after maximal inspiration.",
+              "keyConcept": "Functional Residual Capacity (FRC = ERV + RV) is the volume of air in the lungs at end-expiratory resting equilibrium.",
+              "source": "ASU – Final – 2019"
+            },
+            {
+              "id": "MRS2-PE-PHY-025",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A patient diagnosed with severe pulmonary emphysema is expected to demonstrate which of the following spirometric patterns?",
+              "options": [
+                "Increased FEV₁/FVC ratio",
+                "Decreased FEV₁/FVC ratio",
+                "Normal FEV₁/FVC ratio",
+                "Increased forced vital capacity (FVC)",
+                "Decreased total lung compliance"
+              ],
+              "correctIndex": 1,
+              "explanation": "Emphysema is a prototype of chronic obstructive pulmonary disease. Destruction of alveolar elastin reduces radial traction on non-cartilaginous small airways, allowing them to collapse prematurely during forced expiration. This severe expiratory flow limitation disproportionately curtails forced expiratory volume in 1 second (FEV1), reducing the FEV1/FVC ratio to well below 0.70 (70%).\n\nOption A and C are incorrect because a normal or high FEV1/FVC ratio is seen in restrictive defects.\nOption D is incorrect because air trapping and hyperinflation typically reduce FVC.\nOption E is incorrect because emphysema is characterized by increased (not decreased) lung compliance due to alveolar septal destruction.",
+              "keyConcept": "Emphysema causes premature expiratory airway collapse, resulting in a marked reduction in the FEV1/FVC ratio (<70%).",
+              "source": "ASU – Final – 2019"
+            },
+            {
+              "id": "MRS2-PE-PHY-026",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following describes the behavior of intra-alveolar pressure during quiet inspiration?",
+              "options": [
+                "Equals atmospheric pressure throughout inspiration",
+                "Becomes positive relative to atmosphere",
+                "Remains higher than intrapleural pressure",
+                "Becomes sub-atmospheric during inspiration",
+                "Remains constant during the respiratory cycle"
+              ],
+              "correctIndex": 3,
+              "explanation": "During quiet inspiration, contraction and descent of the diaphragm and expansion of the thoracic cage enlarge alveolar volume. By Boyle's Law ($P \\propto 1/V$), expansion of alveolar gas lowers intra-alveolar pressure to approximately -1 mmHg (-1 cmH2O) relative to atmospheric pressure (0 mmHg). This subatmospheric pressure gradient sucks atmospheric air into the lungs until end-inspiration, when alveolar pressure returns to 0 mmHg.\n\nOption A is incorrect because alveolar pressure only equals atmospheric at the transition points (end-inspiration and end-expiration).\nOption B is incorrect because alveolar pressure becomes positive (+1 mmHg) during expiration.\nNote: While intra-alveolar pressure is indeed higher than intrapleural pressure, option D is the primary and direct description of its inspiratory behavior.",
+              "keyConcept": "Intra-alveolar pressure becomes sub-atmospheric (-1 mmHg) during inspiration to pull ambient air into the lungs.",
+              "source": "ASU – Final – 2019"
+            },
+            {
+              "id": "MRS2-PE-PHY-027",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following substances or interventions increases airflow through the bronchioles by reducing airway resistance?",
+              "options": [
+                "Histamine",
+                "Acetylcholine",
+                "Adrenaline",
+                "Cold air",
+                "Parasympathetic stimulation"
+              ],
+              "correctIndex": 2,
+              "explanation": "Adrenaline (epinephrine) is a potent circulating catecholamine that binds with high affinity to beta-2 adrenergic receptors on bronchial smooth muscle. Activation of beta-2 receptors stimulates adenylyl cyclase, elevating intracellular cAMP, which in turn leads to smooth muscle relaxation, prominent bronchodilation, and a marked decrease in airway resistance, maximizing airflow.\n\nOptions A, B, D, and E are incorrect because histamine, acetylcholine, cold dry air, and parasympathetic (vagal) stimulation all cause bronchoconstriction and stimulate mucus secretion, significantly increasing airway resistance and diminishing airflow.",
+              "keyConcept": "Adrenaline relaxes bronchial smooth muscle via beta-2 adrenergic receptors, expanding airway caliber and boosting airflow.",
+              "source": "ASU – Final – 2019"
+            },
+            {
+              "id": "MRS2-PE-PHY-028",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following mechanical and structural changes is characteristic of pulmonary emphysema?",
+              "options": [
+                "Decreased lung compliance",
+                "Increased lung compliance",
+                "Increased elastic recoil",
+                "Decreased total lung capacity",
+                "Increased airway resistance with low compliance"
+              ],
+              "correctIndex": 1,
+              "explanation": "Emphysema is characterized by enzymatic destruction of the alveolar septal walls and loss of pulmonary elastic fibers. Consequently, the inward elastic recoil of the lung is diminished, and static lung compliance ($Delta V / Delta P$) is increased. The lung is easily stretched, but cannot passively recoil during expiration, leading to dynamic expiratory airway collapse, air trapping, and hyperinflation (elevated FRC, RV, and TLC).\n\nOptions A and C are incorrect because compliance is increased and elastic recoil is decreased.\nOption D is incorrect because TLC is increased or normal in emphysema.",
+              "keyConcept": "Emphysema is characterized by destruction of elastic tissues, resulting in increased lung compliance and decreased elastic recoil.",
+              "source": "ASU – Final – 2019"
+            },
+            {
+              "id": "MRS2-PE-PHY-029",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "What is the primary physiological function of pulmonary surfactant in alveolar mechanics?",
+              "options": [
+                "Increase surface tension",
+                "Promote alveolar collapse",
+                "Increase airway resistance",
+                "Reduce lung compliance",
+                "Stabilize alveolar size by reducing surface tension"
+              ],
+              "correctIndex": 4,
+              "explanation": "The primary function of pulmonary surfactant is to stabilize alveolar size and prevent alveolar collapse by reducing surface tension. By lowering surface tension ($T$) more effectively in smaller alveoli than in larger ones as they deflate, surfactant equalizes collapsing pressure ($P = 2T / r$) across alveoli of different sizes. This prevents small alveoli from collapsing into large ones, stabilizes the alveolar architecture, increases overall lung compliance, and decreases the muscular work of breathing.\n\nOptions A, B, C, and D are incorrect because surfactant decreases surface tension, prevents collapse, does not raise airway resistance, and increases (not reduces) lung compliance.",
+              "keyConcept": "Surfactant stabilizes alveoli and prevents atelectasis by lowering surface tension dynamically in proportion to radius.",
+              "source": "ASU – Final – 2019"
+            },
+            {
+              "id": "MRS2-PE-PHY-030",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Approximately 35% of the total work of breathing during quiet respiration is expended to overcome:",
+              "options": [
+                "Elastic recoil of the lungs",
+                "Tissue friction during chest wall movement",
+                "Resistive work needed to overcome airway resistance",
+                "Energy used for surfactant secretion",
+                "Alveolar gas exchange process"
+              ],
+              "correctIndex": 2,
+              "explanation": "The total mechanical work of breathing is partitioned into two main components:\n1. Elastic Work (~65%): Energy required to overcome the elastic recoil forces of the lung tissue and chest wall, and to stretch the air-liquid interface.\n2. Non-elastic / Resistive Work (~35%): Energy required to overcome friction. This consists primarily of Airway Resistance Work (~28% of total, overcoming frictional resistance to gas flow through the tracheobronchial tree) and Tissue Resistance Work (~7% of total, overcoming viscous resistance of sliding thoracic and pulmonary tissues).\n\nOption A is incorrect because elastic work constitutes the majority (~65%) of total work.\nOption D and E are incorrect because metabolic cellular processes do not constitute mechanical respiratory work.",
+              "keyConcept": "Roughly 65% of breathing work is elastic work, while ~35% is non-elastic resistive work (predominantly airway flow resistance).",
+              "source": "ASU – Assessment – 2022"
+            },
+            {
+              "id": "MRS2-PE-PHY-031",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following physiological factors directly facilitates lung expansion during inspiration?",
+              "options": [
+                "Increased airway resistance",
+                "Surfactant secretion by type II pneumocytes",
+                "High alveolar surface tension",
+                "Decreased intrapleural negativity",
+                "Reduced lung compliance"
+              ],
+              "correctIndex": 1,
+              "explanation": "Surfactant secretion by type II pneumocytes significantly lowers surface tension at the alveolar air-liquid interface. By lowering surface tension, surfactant dramatically reduces the collapsing pressure opposing alveolar inflation, thereby increasing lung compliance and allowing the lung to expand easily in response to normal inspiratory drops in intrapleural pressure.\n\nOptions A, C, D, and E are incorrect because increased airway resistance, high surface tension, decreased intrapleural negativity, and reduced compliance all severely hinder lung expansion.",
+              "keyConcept": "Type II pneumocytes secrete surfactant, reducing surface tension and facilitating easy alveolar inflation during inspiration.",
+              "source": "ASU – Assessment – 2022"
+            },
+            {
+              "id": "MRS2-PE-PHY-032",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "An improvement or increase in lung compliance produces which of the following mechanical effects?",
+              "options": [
+                "Easier lung expansion during inspiration",
+                "Increased work of breathing",
+                "Higher alveolar surface tension",
+                "Reduced airflow during inspiration",
+                "Increased resistance in small bronchioles"
+              ],
+              "correctIndex": 0,
+              "explanation": "Compliance is the measure of lung distensibility ($Delta V / Delta P$). High or improved compliance means that a given change in transpulmonary pressure produces a larger increase in lung volume. Therefore, the inspiratory muscles need to generate less tension to inflate the lungs, making lung expansion significantly easier during inspiration and reducing the elastic work of breathing.\n\nOption B is incorrect because higher compliance reduces the elastic work of breathing.\nOptions C, D, and E are incorrect because compliance is inversely related to surface tension and does not directly impair airflow or elevate bronchiolar resistance.",
+              "keyConcept": "Higher lung compliance means the lungs are more distensible and require less muscular effort to expand during inspiration.",
+              "source": "ASU – Assessment – 2022"
+            },
+            {
+              "id": "MRS2-PE-PHY-033",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Recurrent, reversible episodes of airway narrowing and bronchospasm are the clinical hallmark of:",
+              "options": [
+                "Pulmonary fibrosis",
+                "Asthma",
+                "Emphysema",
+                "Pneumonia",
+                "Bronchiectasis"
+              ],
+              "correctIndex": 1,
+              "explanation": "Bronchial asthma is a chronic inflammatory disorder of the airways characterized by bronchial hyperresponsiveness and episodic, reversible airway obstruction. Triggers (allergens, viral infections, exercise, cold air) stimulate mast cell degranulation and release of histamine, leukotrienes ($LTC_4, LTD_4$), and acetylcholine, leading to smooth muscle bronchoconstriction, mucosal edema, and mucus plugging.\n\nOption A is incorrect because pulmonary fibrosis is a restrictive, non-reversible parenchymal disease.\nOption C is incorrect because emphysema features irreversible destruction of alveolar walls and airflow limitation.\nOption D is incorrect because pneumonia is an acute infectious consolidation.\nOption E is incorrect because bronchiectasis involves permanent, irreversible abnormal dilatation of bronchi.",
+              "keyConcept": "Asthma is characterized by episodic, reversible airway narrowing triggered by airway hyperresponsiveness.",
+              "source": "ASU – Assessment – 2022"
+            },
+            {
+              "id": "MRS2-PE-PHY-034",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "During quiet inspiration, what happens to intrapleural pressure?",
+              "options": [
+                "It becomes more positive",
+                "It remains equal to atmospheric pressure",
+                "It becomes more negative",
+                "It becomes higher than alveolar pressure",
+                "It does not change significantly"
+              ],
+              "correctIndex": 2,
+              "explanation": "At resting end-expiration, intrapleural pressure is already subatmospheric (approximately -5 cmH2O / -2.5 to -3 mmHg) due to the opposing elastic recoils of the lung and chest wall. As inspiration begins, active contraction of the diaphragm and external intercostals expands the thoracic cage. This outward thoracic pull increases the tension on the pleural space, causing intrapleural pressure to become significantly more negative (falling from -5 cmH2O down to -8 cmH2O / -6 mmHg at peak inspiration).\n\nOption A is incorrect because intrapleural pressure becomes positive only during forced expiration or coughing.\nOption B and D are incorrect because intrapleural pressure remains subatmospheric and strictly lower than alveolar pressure.",
+              "keyConcept": "Intrapleural pressure drops from -5 cmH2O to -8 cmH2O (becomes more negative) during quiet inspiration.",
+              "source": "ASU – Assessment – 2023"
+            },
+            {
+              "id": "MRS2-PE-PHY-035",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In the human tracheobronchial tree, the highest airway resistance to airflow is encountered in the:",
+              "options": [
+                "Trachea",
+                "Small terminal bronchioles",
+                "Medium-sized bronchi",
+                "Alveolar ducts",
+                "Respiratory bronchioles"
+              ],
+              "correctIndex": 2,
+              "explanation": "The site of highest airway resistance in the respiratory system is the medium-sized bronchi (branching generations 4 through 7 or 8, measuring roughly 2 to 5 mm in diameter). By Poiseuille's law, resistance in an individual tube is inversely proportional to radius to the fourth power ($R \\propto 1/r^4$). While small terminal bronchioles have very small individual radii, they are arranged in an immense parallel network of millions of branches. Consequently, the total aggregate cross-sectional area in terminal bronchioles expands exponentially (>10,000 cm2), which drops total resistance in small peripheral airways to less than 20% of total airway resistance. Medium-sized bronchi lack both vast individual caliber and huge parallel numbers, making their net resistance the highest.\n\nOption A is incorrect because the trachea has a very large single cross-sectional area.\nOption B and E are incorrect because terminal and respiratory bronchioles have massive parallel cross-sectional area, creating the 'silent zone' of minimal resistance.",
+              "keyConcept": "Medium-sized bronchi (generations 4–8) exhibit the highest airway resistance due to an intermediate diameter and limited parallel branching.",
+              "source": "ASU – Assessment – 2023"
+            },
+            {
+              "id": "MRS2-PE-PHY-036",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In neonatal respiratory distress syndrome (NRDS), the primary pathophysiological abnormality is:",
+              "options": [
+                "Increased surfactant secretion",
+                "Decreased alveolar surface tension",
+                "Impaired gas exchange due to surfactant deficiency",
+                "Increased alveolar compliance",
+                "Diminished work of breathing"
+              ],
+              "correctIndex": 2,
+              "explanation": "The primary pathophysiological abnormality in neonatal RDS (hyaline membrane disease) is quantitative and qualitative deficiency of pulmonary surfactant secondary to immaturity of type II pneumocytes. Surfactant deficiency elevates alveolar surface tension, leading to widespread microatelectasis, severe ventilation-perfusion mismatch, intrapulmonary shunting, hypoxemia, and secondary respiratory failure.\n\nOptions A, B, and D are incorrect because surfactant is deficient, surface tension is elevated, and compliance is severely reduced.\nOption E is incorrect because work of breathing is drastically increased.",
+              "keyConcept": "Neonatal RDS stems primarily from surfactant deficiency, which produces alveolar collapse and profound hypoxemia.",
+              "source": "ASU – Assessment – 2023"
+            },
+            {
+              "id": "MRS2-PE-PHY-037",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Obstructive lung diseases are classically characterized by a decrease in which of the following spirometric parameters?",
+              "options": [
+                "FEV₁/FVC ratio",
+                "Total lung capacity",
+                "Tidal volume",
+                "Functional residual capacity",
+                "Alveolar ventilation rate"
+              ],
+              "correctIndex": 0,
+              "explanation": "Obstructive lung diseases (asthma, COPD, chronic bronchitis, emphysema, bronchiectasis) are fundamentally defined by expiratory airflow limitation. Because airway resistance is elevated and dynamic collapse occurs during expiration, forced expiratory volume in 1 second (FEV1) declines far more than forced vital capacity (FVC). Thus, a reduced FEV1/FVC ratio (<0.70 or <70%) is the hallmark criterion for obstruction.\n\nOption B and D are incorrect because in obstructive disease, air trapping typically increases or maintains TLC and FRC.\nOption C is incorrect because resting tidal volume is usually preserved.",
+              "keyConcept": "A decreased FEV1/FVC ratio (<70%) is the definitive diagnostic hallmark of obstructive lung disease.",
+              "source": "ASU – Assessment – 2023"
+            },
+            {
+              "id": "MRS2-PE-PHY-038",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A patient has a respiratory rate (RR) of 15 breaths per minute, a tidal volume (V_T) of 650 mL, and an anatomical dead space (V_D) of 150 mL. What is this patient's alveolar ventilation per minute?",
+              "options": [
+                "5.0 L/min",
+                "6.0 L/min",
+                "7.5 L/min",
+                "8.5 L/min",
+                "9.0 L/min"
+              ],
+              "correctIndex": 2,
+              "explanation": "Alveolar ventilation ($\\dot{V}_A$) represents the volume of fresh ambient air that enters the respiratory gas exchange zone each minute. It is calculated by multiplying the respiratory rate by the effective volume reaching alveoli per breath (Tidal Volume minus Dead Space Volume):\n$$\\dot{V}_A = RR \\times (V_T - V_D)$$\nSubstituting the values:\n$$\\dot{V}_A = 15 \\text{ breaths/min} \\times (650 \\text{ mL} - 150 \\text{ mL}) = 15 \\times 500 \\text{ mL} = 7,500 \\text{ mL/min} = 7.5 \\text{ L/min}$$\n\nTotal pulmonary (minute) ventilation would be $15 \\times 650 = 9,750 \\text{ mL/min} = 9.75 \\text{ L/min}$. Subtracting dead space ventilation ($15 \\times 150 = 2.25 \\text{ L/min}$) yields $7.5 \\text{ L/min}$.",
+              "keyConcept": "Alveolar ventilation = Respiratory Rate x (Tidal Volume - Dead Space Volume) = 15 x (650 - 150) = 7.5 L/min.",
+              "source": "ASU – Assessment – 2023"
+            },
+            {
+              "id": "MRS2-PE-PHY-039",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following acute events occurs in the affected hemithorax in an open (sucking) pneumothorax?",
+              "options": [
+                "Overexpansion of the affected lung",
+                "Collapse of the affected lung",
+                "Increase in venous return to the heart",
+                "Improved alveolar ventilation",
+                "Increased intrapleural negativity"
+              ],
+              "correctIndex": 1,
+              "explanation": "In an open pneumothorax (e.g., penetrating chest wall wound), free communication between the pleural cavity and atmospheric air abolishes the normal subatmospheric intrapleural pressure, causing intrapleural pressure on the affected side to equilibrate with atmospheric pressure (0 mmHg). Because transpulmonary pressure ($P_L = P_{alv} - P_{ip}$) drops to zero, the natural inward elastic recoil of the lung is unopposed, causing the affected lung to collapse immediately (atelectasis).\n\nOption A and E are incorrect because intrapleural negativity is lost and the lung collapses.\nOption C is incorrect because mediastinal flutter and loss of thoracic negative pressure impair venous return to the right heart.\nOption D is incorrect because ventilation is severely compromised.",
+              "keyConcept": "In an open pneumothorax, loss of intrapleural negativity drops transpulmonary pressure to zero, collapsing the affected lung.",
+              "source": "ASU – Assessment – 2023"
+            },
+            {
+              "id": "MRS2-PE-PHY-040",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is true regarding airflow and resistance in the small peripheral bronchioles?",
+              "options": [
+                "Airflow rate decreases due to high resistance",
+                "Total airway resistance is low because total cross-sectional area is large",
+                "Airflow rate remains constant throughout the airways",
+                "Airflow rate increases due to turbulent flow",
+                "Airflow rate decreases because velocity is high"
+              ],
+              "correctIndex": 1,
+              "explanation": "Although each individual small bronchiole has a very small diameter, the repeated branching of the tracheobronchial tree creates millions of parallel bronchiolar pathways. This parallel arrangement causes the total aggregate cross-sectional area of the small peripheral airways to expand dramatically (reaching >10,000 cm2). According to hemodynamic/aerodynamic principles of parallel resistances ($1/R_{total} = sum 1/R_i$), total resistance in small peripheral bronchioles is remarkably low, contributing less than 20% to total airway resistance, and linear gas velocity decreases significantly to allow laminar diffusion.\n\nOption A is incorrect because resistance is low, not high.\nOption D is incorrect because flow in small bronchioles is laminar, not turbulent.\nOption E is incorrect because linear velocity is very low in peripheral airways.",
+              "keyConcept": "Total resistance in small bronchioles is very low because millions of parallel branches provide an enormous aggregate cross-sectional area.",
+              "source": "ASU – Assessment – 2023"
+            },
+            {
+              "id": "MRS2-PE-PHY-041",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "When comparing small peripheral bronchioles to large central bronchi, which of the following statements is correct regarding airflow and resistance?",
+              "options": [
+                "Airflow rate is lower in small bronchioles because velocity is high",
+                "Airflow resistance is higher in large bronchi due to less total cross-sectional area",
+                "Total airflow resistance is lower in small bronchioles because total cross-sectional area is large",
+                "Airflow rate is equal in both small bronchioles and large bronchi",
+                "Airflow in small bronchioles becomes turbulent, increasing resistance"
+              ],
+              "correctIndex": 2,
+              "explanation": "Small peripheral bronchioles (<2 mm in diameter) have an enormous total collective cross-sectional area because there are tens of thousands of branches arranged in parallel. Consequently, their combined flow resistance is much lower than that of the medium and large central bronchi. In fact, because small airways contribute so little to total airway resistance, extensive disease in peripheral airways can develop before routine spirometry detects an abnormality (the 'silent zone' of the lungs).\n\nOption A is incorrect because linear gas velocity is lowest in small bronchioles ($v = dot{Q} / A$).\nOption E is incorrect because airflow in small peripheral airways is streamline and laminar.",
+              "keyConcept": "Small bronchioles have low aggregate resistance and slow laminar flow due to their immense combined cross-sectional area.",
+              "source": "ASU – Assessment – 2023"
+            },
+            {
+              "id": "MRS2-PE-PHY-042",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following lung volume changes is characteristically seen in advanced chronic obstructive pulmonary disease (COPD)?",
+              "options": [
+                "Decreased residual volume",
+                "Increased residual volume",
+                "Decreased total lung capacity",
+                "Decreased functional residual capacity",
+                "Normal residual volume"
+              ],
+              "correctIndex": 1,
+              "explanation": "In COPD (emphysema and chronic bronchitis), two mechanisms produce severe air trapping: 1) loss of alveolar elastic recoil reduces the outward radial traction on small airways, and 2) inflammatory luminal narrowing and mucus increase resistance. During expiration, the positive pleural pressure compresses small airways, causing premature airway closure before full exhalation is completed. This air trapping significantly increases Residual Volume (RV) and Functional Residual Capacity (FRC), leading to pulmonary hyperinflation and a barrel chest deformity.\n\nOptions A, C, and D are incorrect because RV, FRC, and often TLC are increased in COPD, not decreased.",
+              "keyConcept": "Air trapping from premature airway closure in COPD characteristically causes an elevated Residual Volume (RV).",
+              "source": "ASU – Assessment – 2023"
+            },
+            {
+              "id": "MRS2-PE-PHY-043",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Stimulation of cholinergic (parasympathetic) muscarinic receptors in the bronchial tree leads to which of the following mechanical effects?",
+              "options": [
+                "Decreased resistive work",
+                "Increased resistive work of breathing",
+                "Increased surfactant secretion",
+                "Decreased mucus production",
+                "Relaxation of airway smooth muscle"
+              ],
+              "correctIndex": 1,
+              "explanation": "Parasympathetic innervation of the lungs travels via the vagus nerve. Postganglionic cholinergic fibers release acetylcholine, which binds to muscarinic M3 receptors on bronchial smooth muscle and submucosal glands. Activation of M3 receptors stimulates the $G_q$ protein pathway, causing IP3-mediated intracellular calcium release that triggers potent bronchoconstriction and stimulates copious mucus secretion. Narrowing of airway caliber markedly elevates non-elastic airway resistance, significantly increasing the resistive work of breathing.\n\nOptions A and E are incorrect because bronchoconstriction increases resistive work; it does not relax smooth muscle.\nOption C is incorrect because surfactant secretion is stimulated by beta-2 adrenergic agonists and deep breathing/stretch, not cholinergic stimulation.\nOption D is incorrect because cholinergic stimulation increases mucus production.",
+              "keyConcept": "Vagal cholinergic stimulation of M3 receptors causes bronchoconstriction and mucus secretion, increasing resistive work of breathing.",
+              "source": "ASU – Assessment – 2023"
+            },
+            {
+              "id": "MRS2-PE-PHY-044",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Intrapleural pressure normally becomes positive (exceeding atmospheric pressure) during which of the following respiratory events?",
+              "options": [
+                "At the end of normal inspiration",
+                "During quiet expiration",
+                "At the end of forced expiration",
+                "At the beginning of inspiration",
+                "During resting tidal breathing"
+              ],
+              "correctIndex": 2,
+              "explanation": "CRITICAL PHYSIOLOGICAL MECHANICS:\nDuring quiet resting respiration, intrapleural pressure is ALWAYS subatmospheric (negative relative to atmosphere): it drops to -6 to -8 cmH2O during inspiration and returns to -3 to -5 cmH2O during expiration. It NEVER becomes positive during quiet breathing.\n\nIntrapleural pressure becomes positive (>0 mmHg, reaching +20 to +50 mmHg or more) ONLY during active, forced expiration (such as coughing, sneezing, straining, Valsalva maneuver, or maximal forced expiratory maneuvers). During forced expiration, vigorous contraction of the anterior abdominal wall muscles and internal intercostal muscles forcefully compresses the thoracic contents, elevating intrapleural pressure well above atmospheric levels.\n\n[Clinical & Exam Note]: Some source answer keys erroneously label 'quiet expiration' as the answer; however, quiet expiration remains strictly subatmospheric. The true physiological fact tested is that intrapleural pressure becomes positive only during active, forced expiratory efforts.",
+              "keyConcept": "Intrapleural pressure is always negative in quiet breathing; it only becomes positive during active forced expiration or coughing.",
+              "source": "ASU – Assessment – 2023 [Medically Verified & Corrected]"
+            },
+            {
+              "id": "MRS2-PE-PHY-045",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "During normal quiet respiration, which of the following physiological statements is true?",
+              "options": [
+                "Internal intercostal muscles contract in the expiratory phase",
+                "Intra-alveolar pressure is always subatmospheric",
+                "Intra-pleural pressure is always subatmospheric",
+                "Volume of air left in the lungs at the end of expiration constitutes the residual volume",
+                "Volume of air left in the lungs at the end of inspiration constitutes the vital capacity"
+              ],
+              "correctIndex": 2,
+              "explanation": "Throughout the entirety of quiet, resting respiration, intrapleural pressure remains subatmospheric (negative relative to atmospheric pressure): it measures approximately -5 cmH2O (-3 mmHg) at the start of inspiration, falls to -8 cmH2O (-6 mmHg) at peak inspiration, and returns to -5 cmH2O at end-expiration. This continuous negative pressure keeps the lungs distended against the chest wall.\n\nOption A is incorrect because quiet expiration is passive; internal intercostals contract only in forced expiration.\nOption B is incorrect because intra-alveolar pressure becomes positive (+1 cmH2O) during expiration to drive air out.\nOption D is incorrect because the volume remaining after quiet expiration is Functional Residual Capacity (FRC), not Residual Volume (RV).\nOption E is incorrect because vital capacity is the volume expired from maximal inspiration to maximal expiration, not the volume remaining.",
+              "keyConcept": "In quiet breathing, intrapleural pressure is always subatmospheric, whereas alveolar pressure fluctuates between -1 and +1 cmH2O.",
+              "source": "Formative – week 1"
+            },
+            {
+              "id": "MRS2-PE-PHY-046",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "A 22-year-old man sustains a penetrating stab wound to the left anterior chest wall during an altercation. Which of the following is expected to occur in the left hemithorax?",
+              "options": [
+                "The thoracic wall is compressed",
+                "The left lung gets hyperinflated",
+                "The left lung gets collapsed",
+                "Intrathoracic pressure becomes more negative",
+                "Intrapleural pressure becomes higher than intra-alveolar pressure"
+              ],
+              "correctIndex": 2,
+              "explanation": "The penetrating chest stab wound disrupts the parietal pleura, creating a communication between the atmospheric air and the intrapleural space (open pneumothorax). Air rushes into the pleural cavity until intrapleural pressure equilibrates with atmospheric pressure (0 mmHg). This abolishes the subatmospheric intrapleural pressure, dropping transpulmonary pressure ($P_L = P_{alv} - P_{ip}$) to zero. Without a positive distending pressure, the natural inward elastic recoil of the lung causes the affected left lung to collapse completely (atelectasis).\n\nOption B is incorrect because the lung collapses, while the chest wall springs outward.\nOption D is incorrect because negative pressure is lost.\nOption E is incorrect because intrapleural pressure equilibrates with atmospheric and alveolar pressure (0 mmHg).",
+              "keyConcept": "Loss of pleural integrity allows air into the pleural space, eliminating intrapleural negativity and collapsing the lung.",
+              "source": "Formative – week 1"
+            },
+            {
+              "id": "MRS2-PE-PHY-047",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "During the inspiratory phase of normal respiration, which of the following pressures increases?",
+              "options": [
+                "Intra-pulmonary pressure",
+                "Intra-pleural pressure",
+                "Intrathoracic pressure",
+                "Intra-abdominal pressure",
+                "Intra-esophageal pressure"
+              ],
+              "correctIndex": 3,
+              "explanation": "During inspiration, contraction of the diaphragm causes its central tendon to descend downward toward the abdominal cavity (like a piston). This descent enlarges the thoracic cavity (lowering intrathoracic, intrapleural, and intra-pulmonary pressures) while simultaneously compressing the abdominal viscera and contents downward. Because the abdominal cavity is largely enclosed by the pelvic floor and abdominal wall muscles, diaphragmatic descent causes a marked increase in intra-abdominal pressure.\n\nOptions A, B, C, and E are incorrect because intrapulmonary, intrapleural, intrathoracic, and intra-esophageal pressures all decrease (become more negative) during inspiration.",
+              "keyConcept": "Diaphragmatic descent during inspiration expands the thorax (reducing thoracic pressure) while compressing abdominal viscera (increasing intra-abdominal pressure).",
+              "source": "Formative – week 1"
+            },
+            {
+              "id": "MRS2-PE-PHY-048",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The physiological process of forced active expiration requires the contraction of which muscle groups?",
+              "options": [
+                "Contraction of diaphragm and internal intercostal muscles",
+                "Contraction of external intercostal muscles",
+                "Contraction of internal intercostal and abdominal muscles",
+                "Relaxation of diaphragm and external intercostal muscles only",
+                "Relaxation of diaphragm and contraction of abdominal muscles"
+              ],
+              "correctIndex": 2,
+              "explanation": "Forced expiration is an active muscular process involving two synergistic muscle groups:\n1. Internal Intercostal Muscles: Arranged downward and backward, their contraction pulls the ribs downward and inward, compressing the thoracic cavity.\n2. Anterior Abdominal Wall Muscles (rectus abdominis, obliques, transversus abdominis): Their contraction sharply elevates intra-abdominal pressure, forcing the relaxed diaphragm upward into the thoracic cage and depressing the lower ribs.\n\nOption A is incorrect because the diaphragm contracts during inspiration, not expiration.\nOption B is incorrect because external intercostals are inspiratory muscles.\nOption D describes passive expiration, not forced active expiration.",
+              "keyConcept": "Forced expiration is executed by active contraction of the internal intercostal and anterior abdominal wall muscles.",
+              "source": "Formative – week 1"
+            },
+            {
+              "id": "MRS2-PE-PHY-049",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The conducting zone of the respiratory system (nose to terminal bronchioles) performs which of the following essential functions?",
+              "options": [
+                "Synthesis of pulmonary surfactant",
+                "Air conditioning (warming, humidification, and filtration)",
+                "Vascular reservoir for systemic circulation",
+                "Increasing venous return during expiration",
+                "Maintenance of acid-base balance"
+              ],
+              "correctIndex": 1,
+              "explanation": "The conducting zone comprises the nose, pharynx, larynx, trachea, bronchi, and bronchioles down to terminal bronchioles. Its primary function is 'air conditioning' of inspired air prior to reaching fragile alveoli:\n1. Warming: Blood flow through extensive mucosal venous plexuses warms inhaled air to core body temperature (37°C).\n2. Humidification: Seromucous secretions saturate the air with water vapor (100% relative humidity at 37°C, $P_{H2O} = 47 \\text{ mmHg}$).\n3. Filtration and Cleansing: Mucus traps particulate matter (>5–10 µm) and the mucociliary escalator transports it upward to the pharynx.\n\nOption A is incorrect because surfactant is synthesized by type II pneumocytes in the respiratory zone (alveoli).\nOption C and E are incorrect because vascular reservoir and acid-base regulation occur in pulmonary capillaries and through gas exchange.",
+              "keyConcept": "The conducting zone conditions inspired air by warming to 37°C, humidifying to 100%, and filtering particulates.",
+              "source": "Formative – week 1"
+            },
+            {
+              "id": "MRS2-PE-PHY-050",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "During maximal forced inspiration against a high resistance, intrapleural pressure can reach which of the following values?",
+              "options": [
+                "-30 mmHg",
+                "-6 mmHg",
+                "-4 mmHg",
+                "0 mmHg",
+                "+30 mmHg"
+              ],
+              "correctIndex": 0,
+              "explanation": "During normal quiet inspiration, intrapleural pressure decreases from resting -2.5 mmHg (-5 cmH2O) to about -6 mmHg (-8 cmH2O). However, during maximal forced inspiratory effort (such as inspiration against a closed glottis in Müller's maneuver or deep inhalation against severe airway resistance), vigorous contraction of the diaphragm and accessory muscles (scalenes, sternocleidomastoids) can generate extreme negative pressures, driving intrapleural pressure down to -30 mmHg (-40 cmH2O) or even -50 mmHg.\n\nOption B and C (-6 and -4 mmHg) represent normal resting quiet respiratory values.\nOption D (0 mmHg) is atmospheric pressure seen in pneumothorax.\nOption E (+30 mmHg) is positive pressure seen during forced expiration or coughing.",
+              "keyConcept": "Maximal forced inspiratory efforts can drop intrapleural pressure to extreme negative levels of -30 to -40 mmHg.",
+              "source": "Formative – week 1"
+            },
+            {
+              "id": "MRS2-PE-PHY-051",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "During normal quiet inspiration in a healthy subject, which of the following events occurs?",
+              "options": [
+                "Contraction of abdominal muscles",
+                "Intrapulmonary pressure becomes negative",
+                "Intrapleural pressure becomes positive",
+                "Contraction of the internal intercostal muscles",
+                "Decrease of the transmural pressure gradient across the lungs"
+              ],
+              "correctIndex": 1,
+              "explanation": "During quiet inspiration, contraction of the diaphragm expands the thoracic cavity. By Boyle's Law, this volume expansion causes intrapulmonary (intra-alveolar) pressure to fall below atmospheric pressure (to approximately -1 cmH2O / -1 mmHg), establishing the pressure gradient that draws ambient air into the lungs.\n\nOption A and D are incorrect because abdominal muscles and internal intercostals contract during forced expiration.\nOption C is incorrect because intrapleural pressure becomes more negative (-8 cmH2O), not positive.\nOption E is incorrect because transpulmonary pressure ($P_L = P_{alv} - P_{ip}$) increases during inspiration to expand the lungs.",
+              "keyConcept": "Quiet inspiration lowers intrapulmonary pressure to subatmospheric (-1 mmHg) to drive inward airflow.",
+              "source": "Formative – week 1"
+            },
+            {
+              "id": "MRS2-PE-PHY-052",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Removal, uptake, and metabolic inactivation of which of the following vasoactive substances is efficiently achieved by the pulmonary capillary endothelium?",
+              "options": [
+                "Surfactant",
+                "Angiotensin II",
+                "Histamine",
+                "Serotonin (5-hydroxytryptamine)",
+                "Tissue plasminogen activator"
+              ],
+              "correctIndex": 3,
+              "explanation": "The pulmonary capillary endothelium possesses specific carrier-mediated active transport systems and intracellular enzymes that clear and inactivate circulating vasoactive biological substances in a single pass:\n- Serotonin (5-HT): Up to 90–95% of circulating serotonin is extracted by pulmonary endothelial uptake and metabolized by monoamine oxidase (MAO).\n- Bradykinin: Up to 80% is inactivated by ACE (kininase II).\n- Norepinephrine: Roughly 30% is taken up and inactivated.\n\nIn contrast:\n- Angiotensin I is converted to Angiotensin II by ACE (it is activated, not removed).\n- Angiotensin II, epinephrine, dopamine, and histamine pass through the pulmonary circulation virtually unaltered without significant extraction.\n- Surfactant is cleared by alveolar macrophages and reabsorbed by type II pneumocytes, not by pulmonary capillary endothelial removal.\n- tPA is synthesized and secreted by the endothelium, not removed.",
+              "keyConcept": "Pulmonary capillary endothelium removes and inactivates ~90% of circulating serotonin (5-HT) in a single pass.",
+              "source": "Formative – week 1"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

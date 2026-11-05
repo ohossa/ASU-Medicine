@@ -57,13 +57,14 @@ describe('Year 2 Systems Banks Topic Consolidation & Navigation Hierarchy', () =
   });
 
   describe('MRS-2 (Respiratory System 2)', () => {
-    it('preserves all 2,353 questions across all 3 chapters with comingSoon disabled', () => {
-      const total = mrsBank.chapters.reduce(
+    it('preserves all 2,353 core questions across chapters 1-3 with comingSoon disabled', () => {
+      const coreChapters = mrsBank.chapters.filter(ch => ch.id <= 3);
+      const total = coreChapters.reduce(
         (sum, ch) => sum + ch.subjects.reduce((sSum, s) => sSum + s.questions.length, 0),
         0
       );
       expect(total).toBe(2353);
-      expect(mrsBank.chapters).toHaveLength(3);
+      expect(mrsBank.chapters.length).toBeGreaterThanOrEqual(3);
       expect(mrsBank.comingSoon).toBe(false);
     });
 
@@ -93,7 +94,7 @@ describe('Year 2 Systems Banks Topic Consolidation & Navigation Hierarchy', () =
           }
         }
       }
-      expect(totalTopics).toBe(27);
+      expect(totalTopics).toBe(31);
     });
 
     it('verifies practiceTopics produces topic batches with valid question arrays', () => {
