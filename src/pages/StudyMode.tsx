@@ -101,7 +101,7 @@ export default function StudyMode({ userButton, onStartStudyMode, onOpenSyllabus
         return counts.essayCount > 0;
       }
       if (mode.type === 'practical') {
-        return (counts.practicalCount ?? 0) > 0 || moduleCode === 'MGL-3';
+        return (counts.practicalCount ?? 0) > 0;
       }
       return true;
     });
