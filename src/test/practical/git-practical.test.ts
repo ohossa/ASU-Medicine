@@ -132,7 +132,7 @@ describe('GIT (MGL-3) Practical Question Bank Rebuild & Verification', () => {
         }
       }
     }
-    expect(imageCount).toBe(746);
+    expect(imageCount).toBe(759);
   });
 
   it('getModuleQuestionCounts reports practicalCount as exactly 826 for MGL-3', () => {
