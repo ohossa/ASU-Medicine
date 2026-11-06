@@ -1,0 +1,953 @@
+import json
+
+questions = [
+    {
+        "id": "MGL3-PRAC-MIC-0001",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "A stool sample was received in your lab from a patient complaining of bloody diarrhea. Macroscopic appearance showed unformed stool with blood and mucus. Microscopic examination of the sample was done and revealed Gram-negative bacilli. What is the next step to identify the causative organism?",
+        "options": [
+            "Performing indole test",
+            "Performing oxidase test",
+            "Performing urease test",
+            "Performing citrate test"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: When a Gram-negative bacillus is visualized from a stool specimen causing bloody diarrhea (dysentery), the primary rapid biochemical step to differentiate Enterobacteriaceae (which are strictly oxidase-negative) from other Gram-negative enteric pathogens (such as Vibrio, Campylobacter, or Pseudomonas, which are oxidase-positive) is the oxidase test.\n\nOption A, C, and D (indole, urease, citrate) are secondary biochemical reactions (part of the IMViC and differential panels) carried out only after confirming family placement and isolating pure colonies on differential/selective media.",
+        "keyConcept": "Oxidase test differentiates oxidase-negative Enterobacteriaceae (Shigella, Salmonella, E. coli) from oxidase-positive bacilli (Vibrio, Campylobacter, Pseudomonas).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q01_gram_negative_bacilli.webp",
+            "caption": "Gram stain of stool specimen showing Gram-negative bacilli"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0002",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "After isolation of the previous stool sample, the following results were obtained: Oxidase negative, TSI showing alkaline slant / acid butt (K/A, red slant / yellow butt) with no gas and no H2S production, Citrate negative, and Motility negative. The causative agent is most likely:",
+        "options": [
+            "ETEC",
+            "EHEC",
+            "Staph. aureus",
+            "Shigella dysenteriae (\"Bacillary dysentery\")"
+        ],
+        "correctIndex": 3,
+        "explanation": "Criteria of Identification: Shigella species are non-motile, non-lactose fermenting Gram-negative bacilli that produce an alkaline slant / acid butt (K/A) on Triple Sugar Iron (TSI) agar without gas formation (glucose fermented without gas) and without H2S production. They are citrate-negative and oxidase-negative. Clinically, Shigella dysenteriae invades the colonic mucosa, producing acute bacillary dysentery characterized by painful cramps, tenesmus, and frequent stools containing blood, pus, and mucus.\n\nOption A and B (ETEC, EHEC) are lactose fermenters (A/A on TSI with gas). Option C (Staph. aureus) is a Gram-positive coccus.",
+        "keyConcept": "Shigella dysenteriae: Non-motile, non-lactose fermenter, TSI K/A (no gas, no H2S), citrate-negative, causes bacillary dysentery.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q02_shigella_biochemical_panel.webp",
+            "caption": "Biochemical reactions: Oxidase negative, TSI K/A (no gas, no H2S), Citrate negative"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0003",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "To trace the source of the previous Shigella infection during an outbreak (epidemiological typing), which of the following can be used?",
+        "options": [
+            "Colicin typing",
+            "Phage typing",
+            "Widal test",
+            "Serology"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Colicin typing (bacteriocin typing) is the established phenotypic method utilized for epidemiological source tracing and strain differentiation in outbreaks of Shigella sonnei and Shigella dysenteriae. Colicins are bacteriocins produced by certain bacterial strains that inhibit or kill closely related indicator strains.\n\nOption B (Phage typing) is primarily used for Staphylococcus aureus and Salmonella typhi. Option C (Widal test) is an agglutination test for enteric fever (Salmonella). Option D (Serology) identifies O serogroups (A, B, C, D) but is insufficient alone for fine-scale epidemiological strain tracing.",
+        "keyConcept": "Colicin typing is the specific bacteriocin typing method used for epidemiological tracing of Shigella outbreaks.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q02_shigella_biochemical_panel.webp",
+            "caption": "Biochemical panel of Shigella dysenteriae"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0004",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "If isolation of the previous stool sample from a patient with bloody diarrhea had shown the following results instead: Oxidase negative, TSI showing acid slant / acid butt (A/A, yellow/yellow) with gas production, Indole positive (red ring), and Citrate negative, the causative agent would most likely be:",
+        "options": [
+            "ETEC",
+            "EHEC",
+            "Staph. aureus",
+            "Shigella dysenteriae"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: Enterohemorrhagic Escherichia coli (EHEC, classic serotype O157:H7) produces Shiga toxins (Stx1/Stx2) that cause hemorrhagic colitis (grossly bloody diarrhea) with severe abdominal cramps. Biochemically, as an E. coli strain, it is a lactose fermenter producing an acid slant / acid butt (A/A) with gas on TSI, is indole-positive, and citrate-negative. Because the clinical presentation is bloody diarrhea (hemorrhagic colitis), the diagnosis is EHEC rather than ETEC (which causes watery diarrhea).\n\nOption A (ETEC) causes secretory watery diarrhea without blood. Option C (Staph. aureus) causes food poisoning with vomiting. Option D (Shigella) is a non-lactose fermenter (K/A, no gas).",
+        "keyConcept": "EHEC (e.g. O157:H7): Causes bloody diarrhea (hemorrhagic colitis), lactose fermenter (TSI A/A + gas), indole-positive, citrate-negative.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q04_ehec_biochemical_panel.webp",
+            "caption": "Biochemical panel: TSI A/A with gas, Indole positive (red ring), Citrate negative"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0005",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "The suitable selective and differential culture medium for isolation and screening of Enterohemorrhagic E. coli (EHEC O157:H7) from stool would be:",
+        "options": [
+            "DCA agar",
+            "Sorbitol MacConkey agar",
+            "SS agar",
+            "TCBS Agar"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: Sorbitol MacConkey (SMAC) agar is the standard selective and differential medium for EHEC O157:H7. Unlike ~95% of commensal E. coli strains which rapidly ferment sorbitol (forming pink/red colonies), E. coli O157:H7 does not ferment sorbitol within 24 hours, forming distinctive colorless/pale colonies on SMAC.\n\nOption A (DCA) and Option C (SS agar) are selective for Salmonella and Shigella. Option D (TCBS) is selective for Vibrio cholerae.",
+        "keyConcept": "Sorbitol MacConkey (SMAC) agar: EHEC O157:H7 forms colorless/pale colonies because it is sorbitol-negative (non-sorbitol fermenter).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q04_ehec_biochemical_panel.webp",
+            "caption": "Biochemical confirmation of EHEC isolate"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0006",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "A stool sample was received in your lab from a patient complaining of bloody diarrhea. Macroscopic appearance showed unformed stool with blood and mucus. Microscopic examination of the sample revealed non-motile Gram-negative bacilli. What is your provisional diagnosis?",
+        "options": [
+            "ETEC",
+            "EHEC",
+            "Staph. aureus",
+            "Shigella dysenteriae (\"Bacillary dysentery\")"
+        ],
+        "correctIndex": 3,
+        "explanation": "Criteria of Identification: The combination of acute dysentery (stool containing blood, mucus, and inflammatory cells) and microscopic detection of non-motile Gram-negative bacilli is pathognomonic for Shigella dysenteriae (Bacillary dysentery). Shigella lacks flagella and is strictly non-motile.\n\nOption A (ETEC) and Option B (EHEC) are motile peritrichous bacilli, and ETEC produces watery diarrhea. Option C (Staph. aureus) is a Gram-positive coccus.",
+        "keyConcept": "Non-motile Gram-negative bacilli in bloody diarrhea = Shigella dysenteriae (Bacillary dysentery).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q01_gram_negative_bacilli.webp",
+            "caption": "Microscopic examination showing non-motile Gram-negative bacilli"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0007",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "A stool sample was received in your lab from a patient complaining of bloody diarrhea. Macroscopic appearance showed unformed stool with blood and mucus. Microscopic examination of the sample revealed non-motile Gram-negative bacilli. The next step in isolation would be:",
+        "options": [
+            "Subculture on blood agar",
+            "Subculture on MacConkey’s agar",
+            "Isolate on an enrichment medium \"selenite broth\" followed by subculture on DCA agar"
+        ],
+        "correctIndex": 2,
+        "explanation": "Criteria of Identification: Because stool contains overwhelming numbers of normal coliform flora (e.g. commensal E. coli, Klebsiella), isolating pathogens like Shigella or Salmonella requires initial enrichment in a liquid medium such as Selenite F broth (which suppresses coliform growth) followed by subculturing onto selective differential solid media such as Deoxycholate Citrate Agar (DCA) or MacConkey agar.\n\nOption A (Blood agar) is non-selective and will be completely overgrown by coliforms and Proteus swarming. Option B alone misses the critical enrichment step necessary to recover low pathogen counts.",
+        "keyConcept": "Stool pathogen isolation protocol: Inoculation into enrichment medium (Selenite F broth) followed by selective plating on DCA agar.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q01_gram_negative_bacilli.webp",
+            "caption": "Gram stain of stool specimen"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0008",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "You are provided with a stool sample from a patient complaining of severe rice-water diarrhea. Direct microscopic examination revealed comma-shaped motile organisms. The organism was isolated and showed yellow colonies on a green agar plate. What is your next biochemical step?",
+        "options": [
+            "Performing indole test",
+            "Performing oxidase test",
+            "Performing urease test",
+            "Performing citrate test"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: Vibrio cholerae produces large, smooth, yellow colonies on Thiosulfate-Citrate-Bile Salts-Sucrose (TCBS) agar due to sucrose fermentation. The key diagnostic biochemical test to rapidly confirm Vibrio cholerae from suspicious colonies is the oxidase test, which is strongly and immediately POSITIVE (dark purple within 10 seconds).\n\nOption A, C, and D: Indole, urease, and citrate do not distinguish Vibrio from other sucrose fermenters as rapidly or specifically as the oxidase reaction.",
+        "keyConcept": "Vibrio cholerae is strongly oxidase-positive and ferments sucrose on TCBS agar to form yellow colonies.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q08_vibrio_tcbs.webp",
+            "caption": "Gram-negative curved bacilli and yellow sucrose-fermenting colonies on TCBS agar"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0009",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "You are provided with a stool sample from a patient complaining of severe rice-water diarrhea. Direct microscopic examination revealed comma-shaped motile organisms. The organism was isolated on TCBS. How can you definitively confirm your diagnosis?",
+        "options": [
+            "Colicin typing",
+            "Phage typing",
+            "Widal test",
+            "Agglutination tests to detect O antigens"
+        ],
+        "correctIndex": 3,
+        "explanation": "Criteria of Identification: Definitive serological confirmation of Vibrio cholerae is achieved by slide agglutination using polyvalent O1 antiserum and O139 antiserum. Agglutination confirms epidemic/pandemic toxigenic cholera strains (V. cholerae O1 serotypes Ogawa, Inaba, Hikojima, or V. cholerae O139 Bengal).\n\nOption A (Colicin typing) is for Shigella. Option B (Phage typing) is for Staph aureus and Salmonella typhi. Option C (Widal test) is for typhoid fever antibodies.",
+        "keyConcept": "Definitive confirmation of Vibrio cholerae is performed via slide agglutination using specific O1 and O139 antisera.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q08_vibrio_tcbs.webp",
+            "caption": "TCBS agar and microscopy of Vibrio cholerae"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0010",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "You are provided with a stool sample from a patient complaining of severe rice-water diarrhea. Direct microscopic examination revealed comma-shaped motile organisms. The organism was isolated and showed yellow colonies on TCBS agar. What is your provisional diagnosis?",
+        "options": [
+            "ETEC",
+            "EPEC",
+            "Staph. aureus",
+            "Vibrio cholerae"
+        ],
+        "correctIndex": 3,
+        "explanation": "Criteria of Identification: The classic triad of profuse painless 'rice-water' stool (translucent watery fluid with flecks of mucus and epithelial cells), actively motile comma-shaped Gram-negative rods with darting motility, and yellow sucrose-fermenting colonies on TCBS agar establishes the provisional diagnosis of Vibrio cholerae.\n\nOption A (ETEC) and Option B (EPEC) are straight rods and do not grow as yellow colonies on TCBS. Option C (Staph. aureus) causes food poisoning with prominent vomiting and does not grow on TCBS.",
+        "keyConcept": "Rice-water diarrhea + comma-shaped motile rods + yellow colonies on TCBS = Vibrio cholerae.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q08_vibrio_tcbs.webp",
+            "caption": "Vibrio cholerae morphology and TCBS growth"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0011",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "You are provided with a stool sample from a patient complaining of severe rice-water diarrhea. Direct microscopic examination revealed comma-shaped motile organisms. Name the specific enrichment medium used in diagnosis:",
+        "options": [
+            "Alkaline peptone water",
+            "Selenite broth",
+            "Tetrathionate broth",
+            "Peptone water"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Alkaline Peptone Water (APW, pH 8.6) is the specific enrichment broth for Vibrio cholerae. V. cholerae tolerates high alkalinity (pH 8.6–9.0) and multiplies rapidly at the surface pellicle within 6–8 hours, while the high pH strongly suppresses normal intestinal flora.\n\nOption B (Selenite broth) and Option C (Tetrathionate broth) are enrichment media for Salmonella and Shigella. Option D (Plain peptone water) is not sufficiently alkaline to suppress commensals.",
+        "keyConcept": "Alkaline Peptone Water (APW, pH 8.6) is the gold-standard enrichment fluid medium for Vibrio cholerae.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q08_vibrio_tcbs.webp",
+            "caption": "Diagnostic pathway for Vibrio cholerae"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0012",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "In your lab, you received a stool sample from a patient complaining of watery diarrhea. Macroscopic appearance shows watery stool without blood or mucus. The causative agent was isolated on MacConkey agar showing rose-pink colonies. What is your provisional diagnosis?",
+        "options": [
+            "ETEC",
+            "EHEC",
+            "Staph. aureus",
+            "Vibrio cholerae"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Enterotoxigenic Escherichia coli (ETEC) is the leading bacterial cause of watery traveler's diarrhea (secretory diarrhea without blood or pus). On MacConkey agar, E. coli ferments lactose, producing acidic byproducts that turn the neutral red indicator into distinct rose-pink colonies surrounded by precipitated bile salts.\n\nOption B (EHEC) causes bloody diarrhea (hemorrhagic colitis). Option C (Staph. aureus) causes food poisoning with vomiting and does not grow on MacConkey agar. Option D (Vibrio cholerae) is a non-lactose fermenter and forms pale colonies on MacConkey.",
+        "keyConcept": "Watery diarrhea + rose-pink colonies on MacConkey agar (lactose fermenter) = ETEC (Enterotoxigenic E. coli).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q12_macconkey_lactose_fermenting.webp",
+            "caption": "MacConkey agar showing rose-pink lactose-fermenting colonies"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0013",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "In your lab, you received a stool sample from a patient complaining of watery diarrhea. Macroscopic appearance shows watery stool without blood or mucus. The causative organism was isolated on MacConkey agar (rose-pink colonies) and showed Gram-negative bacilli. If the organism is lactose fermenting, what is the next discriminatory step?",
+        "options": [
+            "Perform oxidase test",
+            "Perform catalase test",
+            "Perform indole test",
+            "Perform hippurate hydrolysis test"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: When a lactose-fermenting Gram-negative rod is recovered from stool, performing the oxidase test is the essential first step to confirm membership in the family Enterobacteriaceae (which are oxidase-negative). This excludes oxidase-positive lactose-fermenting organisms such as Aeromonas hydrophila or Plesiomonas shigelloides.\n\nOption B (Catalase) is ubiquitous among aerobic Gram-negative rods. Option C (Indole) is performed later as part of IMViC profiling. Option D (Hippurate hydrolysis) is used for Campylobacter jejuni or Group B Streptococcus.",
+        "keyConcept": "Oxidase test confirms Enterobacteriaceae status (oxidase-negative) and rules out oxidase-positive lookalikes (Aeromonas).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q13_macconkey_and_gram.webp",
+            "caption": "MacConkey agar plate with pink colonies alongside Gram stain showing Gram-negative bacilli"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0014",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "In your lab, you received a stool sample from a patient complaining of watery diarrhea. The causative organism was isolated as a lactose-fermenting Gram-negative rod on MacConkey agar. This organism (E. coli) will most likely be:",
+        "options": [
+            "Urease +ve",
+            "Citrate +ve",
+            "Indole +ve",
+            "Produces alkaline butt on TSI"
+        ],
+        "correctIndex": 2,
+        "explanation": "Criteria of Identification: Escherichia coli displays the classic IMViC signature ++--:\n1. Indole: POSITIVE (tryptophan converted to indole, forming a bright red ring with Kovac's reagent)\n2. Methyl Red: POSITIVE (mixed acid fermentation)\n3. Voges-Proskauer: NEGATIVE\n4. Citrate: NEGATIVE (cannot use citrate as sole carbon source, medium remains green).\nOn TSI, E. coli ferments lactose, sucrose, and glucose, producing an acid slant / acid butt (A/A) with gas.\n\nOption A is incorrect because E. coli is urease-negative (unlike Proteus). Option B is incorrect because E. coli is citrate-negative. Option D is incorrect because E. coli produces an acid (yellow) butt, not alkaline.",
+        "keyConcept": "E. coli biochemical profile: Indole positive, Methyl red positive, VP negative, Citrate negative (IMViC ++--), TSI A/A with gas.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q12_macconkey_lactose_fermenting.webp",
+            "caption": "Lactose-fermenting colonies of E. coli on MacConkey agar"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0015",
+        "type": "mcq",
+        "lecture": 4,
+        "text": "Four hours after consuming potato and rice meals at a restaurant, 5 friends developed severe nausea and projectile vomiting. Remnants of the food were tested. Direct microscopy revealed Gram-positive cocci in clusters, catalase-positive. Culture showed beta-hemolytic colonies on blood agar and yellow colonies on Mannitol Salt Agar (MSA). What is your provisional diagnosis?",
+        "options": [
+            "ETEC",
+            "EHEC",
+            "Staph. aureus",
+            "Vibrio cholerae"
+        ],
+        "correctIndex": 2,
+        "explanation": "Criteria of Identification: Staphylococcal food poisoning has a rapid onset (1 to 6 hours, characteristically ~4 hours) mediated by preformed heat-stable enterotoxin (Enterotoxins A–E). Symptoms are dominated by violent vomiting, nausea, and abdominal cramps without fever. Staphylococcus aureus is a Gram-positive coccus in grape-like clusters, catalase-positive, coagulase-positive, produces beta-hemolysis on blood agar, and ferments mannitol on MSA turning the medium yellow.\n\nOption A and B (ETEC, EHEC) are Gram-negative bacilli with incubation periods of 1–3 days. Option D (Vibrio cholerae) has an incubation period of 1–3 days and causes painless rice-water diarrhea.",
+        "keyConcept": "Rapid food poisoning (1–6 hrs, vomiting) + Gram-positive cocci in clusters + golden yellow colonies on MSA = Staph. aureus.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q15_staph_blood_msa.webp",
+            "caption": "Staph. aureus: Beta-hemolysis on blood agar and mannitol-fermenting yellow colonies on MSA"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0016",
+        "type": "mcq",
+        "lecture": 4,
+        "text": "Four hours after consuming potatoes and rice meals in a restaurant, 5 friends developed symptoms of food poisoning. S. aureus was isolated from the food remnants. The following test grid was set up to trace the source of infection among kitchen workers. How can you trace the source of infection?",
+        "options": [
+            "Colicin typing",
+            "Phage typing",
+            "Widal test",
+            "Agglutination tests to detect O antigens"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: Bacteriophage typing (phage typing) is the classical epidemiological tool for Staphylococcus aureus. A standardized grid of specific staphylococcal bacteriophages (Groups I, II, III, IV) is applied to an agar lawn inoculated with the isolate. Lytic plaques identify the precise phage pattern of the strain, matching food isolates to the asymptomatic carrier (e.g., food handler's nasal or skin carriage).\n\nOption A (Colicin typing) is for Shigella. Option C (Widal test) is for enteric fever. Option D (O antigens) is for Gram-negative enteric rods.",
+        "keyConcept": "Bacteriophage typing (phage typing) is the definitive epidemiological method for tracing Staphylococcus aureus outbreaks.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q16_staph_phage_typing.webp",
+            "caption": "Phage typing grid showing specific lytic plaque patterns for Staph. aureus"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0017",
+        "type": "mcq",
+        "lecture": 4,
+        "text": "Staphylococcus aureus cultured on Mannitol Salt Agar (MSA) produces which characteristic appearance?",
+        "options": [
+            "Non-mannitol fermenter with clear colonies",
+            "Mannitol fermenter with clear colonies",
+            "Non-mannitol fermenter with yellow colonies",
+            "Mannitol fermenter with yellow colonies"
+        ],
+        "correctIndex": 3,
+        "explanation": "Criteria of Identification: Mannitol Salt Agar contains 7.5% NaCl (which inhibits non-staphylococci), mannitol (carbohydrate), and phenol red (pH indicator). Staphylococcus aureus actively ferments mannitol, generating acids that lower the pH and shift phenol red from red to bright yellow, yielding yellow colonies surrounded by bright yellow zones.\n\nOption A and C are incorrect because S. aureus ferments mannitol. Option B is incorrect because mannitol fermentation produces yellow, not clear colonies (Staphylococcus epidermidis produces clear colonies with red medium).",
+        "keyConcept": "Staph. aureus on MSA: Halotolerant, ferments mannitol, turning phenol red from red to yellow.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q17_staph_msa_yellow.webp",
+            "caption": "Mannitol Salt Agar: Yellow coloration confirms mannitol fermentation by S. aureus"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0018",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "A 15-year-old girl presented with high stepladder fever, abdominal pain, and constipation for 7 days. Your preliminary diagnosis for this case is enteric fever (typhoid fever). The most appropriate diagnostic specimen at this stage (Day 7 / 1st week) would be:",
+        "options": [
+            "Blood sample",
+            "Urine sample",
+            "Serum sample",
+            "Stool sample"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: In enteric fever (Salmonella enterica serovar Typhi/Paratyphi), the primary diagnostic specimen correlates with disease chronometry:\n- 1st week: Blood culture has the highest diagnostic yield (80–90% positive) because primary bacteremia is occurring.\n- 2nd–3rd week: Stool and urine culture yield rises as organisms are shed into the biliary tract and urine.\n- Late 2nd–3rd week: Serum for Widal serological test reaches diagnostic titer.\nAt Day 7, a blood sample for culture is the gold standard.",
+        "keyConcept": "Enteric fever chronometry: 1st week = Blood culture (80–90% sensitivity); 2nd–3rd week = Stool/Urine culture; 3rd week = Serum (Widal).",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0019",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "A 15-year-old girl presented with fever, abdominal pain, and constipation for 7 days. Isolation of the blood culture isolate revealed: TSI showing alkaline slant / acid butt (K/A) with abundant gas and black H2S precipitate, Indole negative, Urease negative, and Simmon's Citrate POSITIVE (tube turned royal blue). The causative agent is most likely:",
+        "options": [
+            "Salmonella paratyphi A",
+            "Salmonella paratyphi B",
+            "Shigella sonnei",
+            "Salmonella typhi"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: Salmonella paratyphi B (Salmonella enterica serovar Paratyphi B / Schottmülleri) is distinguished biochemically by:\n1. TSI: Alkaline slant / acid butt (K/A) with abundant gas and heavy black H2S production.\n2. Citrate: POSITIVE (Simmons citrate agar turns from green to royal blue due to alkaline pH from citrate utilization).\n3. Indole: Negative.\n4. Urease: Negative.\n\nOption A (S. paratyphi A) is citrate-negative, H2S-negative, and produces gas. Option D (S. typhi) is citrate-NEGATIVE, produces NO gas, and produces only a modest trace ring of H2S. Option C (Shigella) produces no H2S, no gas, and is citrate-negative.",
+        "keyConcept": "Salmonella paratyphi B: TSI K/A + gas + heavy H2S, and strictly Citrate POSITIVE (blue tube).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q19_paratyphi_b_biochemical.webp",
+            "caption": "Biochemical reactions: TSI K/A + gas + H2S, Indole negative, Urease negative, Citrate positive (blue)"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0020",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "A 15-year-old girl presented with fever, abdominal pain, and constipation for 7 days. Isolation was done and revealed: TSI showing alkaline slant / acid butt (K/A) with a faint black ring of H2S at the slant/butt junction, NO gas, Indole negative, Urease negative, and Citrate NEGATIVE (medium remains green). The causative agent is most likely:",
+        "options": [
+            "Salmonella paratyphi A",
+            "Salmonella paratyphi B",
+            "Shigella sonnei",
+            "Salmonella typhi"
+        ],
+        "correctIndex": 3,
+        "explanation": "Criteria of Identification: Salmonella typhi possesses a unique biochemical fingerprint:\n1. TSI: Alkaline slant / acid butt (K/A) with only a faint/trace black ring of H2S at the junction, and complete ABSENCE of gas production (anaerogenic glucose fermentation).\n2. Simmons Citrate: NEGATIVE (medium remains green).\n3. Indole: Negative.\n4. Urease: Negative.\n\nOption B (S. paratyphi B) produces abundant gas, heavy H2S, and is citrate-positive (blue). Option A (S. paratyphi A) produces gas and no H2S. Option C (Shigella) produces no H2S at all.",
+        "keyConcept": "Salmonella typhi: TSI K/A, trace H2S ring, NO gas, Indole negative, Urease negative, Citrate NEGATIVE (green tube).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q20_salmonella_typhi_biochemical.webp",
+            "caption": "Biochemical panel of S. typhi: TSI K/A with trace H2S and no gas, Citrate negative (green)"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0021",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "A 15-year-old girl presented with fever, abdominal pain, and constipation for 12 days. Your preliminary diagnosis for this case is enteric fever. The appropriate specimen for isolation at this stage (Day 12 / 2nd week) would be:",
+        "options": [
+            "Blood sample",
+            "Anal swab",
+            "Serum sample",
+            "Stool sample"
+        ],
+        "correctIndex": 3,
+        "explanation": "Criteria of Identification: By the second week (Days 8–14) of typhoid fever, Salmonella bacilli reach the liver via the bloodstream, multiply in the gallbladder and Peyer's patches, and are heavily excreted into the intestinal lumen via bile. Consequently, stool culture positivity increases significantly (yielding 70–80% positive isolates in the 2nd and 3rd weeks).\n\nOption A (Blood) has declining sensitivity by Day 12 compared to week 1. Option B (Anal swab) is inadequate for culture yield. Option C (Serum) is for serological antibody testing (Widal), not organism isolation.",
+        "keyConcept": "In the 2nd and 3rd weeks of enteric fever, stool culture yield rises dramatically as bacteria are excreted from the gallbladder into feces.",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0022",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "A 15-year-old girl presented with fever, abdominal pain, and constipation for 3 weeks. Your preliminary diagnosis for this case is enteric fever. The appropriate sample(s) for diagnostic testing would be:",
+        "options": [
+            "Blood sample",
+            "Anal swab",
+            "Serum sample",
+            "Stool sample",
+            "C & D"
+        ],
+        "correctIndex": 4,
+        "explanation": "Criteria of Identification: In the 3rd week of enteric fever, two complementary diagnostic approaches are appropriate:\n1. Serum sample: For the Widal agglutination test, as circulating anti-O and anti-H agglutinins reach peak diagnostic titers.\n2. Stool sample: For culture, as biliary shedding remains maximal.\nTherefore, both Serum (C) and Stool (D) are appropriate diagnostic specimens.",
+        "keyConcept": "3rd week of enteric fever: Serum (peak Widal antibody titer) and Stool (persistent excretion) are the optimal diagnostic samples.",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0023",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "A 15-year-old girl presented with fever, abdominal pain, and constipation for 12 days. Enteric fever is suspected. After collection of the stool specimen, primary inoculation and enrichment should be done FIRST on:",
+        "options": [
+            "DCA agar",
+            "Blood agar",
+            "MacConkey’s agar",
+            "Selenite broth"
+        ],
+        "correctIndex": 3,
+        "explanation": "Criteria of Identification: Stool contains millions of commensal bacteria (E. coli, enterococci, Proteus) per gram. Inoculating stool directly onto solid agar risks overgrowing Salmonella. Selenite F broth (or tetrathionate broth) is an enrichment fluid medium containing sodium selenite, which selectively inhibits commensal coliforms during the first 12–18 hours of incubation, allowing Salmonella to multiply rapidly before subculture onto solid selective media.\n\nOption A and C are solid plating media used after enrichment. Option B (Blood agar) is non-selective.",
+        "keyConcept": "Fecal isolation of Salmonella begins with enrichment in Selenite F broth to suppress coliform overgrowth.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q23_selenite_dca.webp",
+            "caption": "Enrichment protocol: Selenite broth tube followed by subculture on DCA / SS agar"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0024",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "A 15-year-old girl presented with fever, abdominal pain, and constipation for 12 days. Enteric fever is suspected. After enrichment of the stool specimen in selenite broth, the proper selective differential solid medium for plating and isolation of Salmonella is:",
+        "options": [
+            "DCA agar",
+            "Blood agar",
+            "MacConkey’s agar",
+            "TCBS agar"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Deoxycholate Citrate Agar (DCA) and Salmonella-Shigella (SS) agar are highly selective and differential media for Salmonella. Sodium deoxycholate and citrate inhibit Gram-positive bacteria and most coliforms. Salmonella does not ferment lactose (forming pale, translucent colonies) and produces H2S from sodium thiosulfate, which reacts with ferric citrate to produce characteristic black centers.\n\nOption B (Blood agar) is non-selective. Option C (MacConkey) is only moderately selective. Option D (TCBS) is selective for Vibrio cholerae.",
+        "keyConcept": "DCA and SS agar: Selective for Salmonella, producing pale (non-lactose fermenting) colonies with black centers (H2S positive).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q23_selenite_dca.webp",
+            "caption": "Selenite broth followed by plating onto DCA/SS agar"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0025",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "You are provided with the following qualitative Widal slide agglutination test showing visible granular agglutination with O antigen and floccular agglutination with H antigen, while AH and BH show no clumping. Negative control (NC) is clear and positive control (PC) is clumped. What is your interpretation?",
+        "options": [
+            "-ve for Salmonella typhi",
+            "+ve for O & H antigens",
+            "+ve for O antigen only",
+            "No need to perform a quantitative test"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: The slide shows distinct clumping in both the Somatic O well (compact granular agglutination) and the Flagellar H well (loose floccular agglutination) of Salmonella typhi, with no agglutination in the Paratyphi A (AH) or Paratyphi B (BH) wells. Therefore, the screening test is positive for both O and H antigens of S. typhi, requiring a quantitative tube agglutination test to determine diagnostic titers.\n\nOption A is incorrect because clumping is clearly present. Option C is incorrect because H is also positive. Option D is incorrect because a positive qualitative slide must always be followed by quantitative tube titration.",
+        "keyConcept": "Qualitative Widal: Clumping with both O and H antigens indicates presumptive positive S. typhi reaction, mandating quantitative titration.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q25_qualitative_widal.webp",
+            "caption": "Qualitative Widal slide agglutination test: Clumping in O and H wells, clear in AH and BH"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0026",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "You are provided with the following quantitative Widal tube agglutination rack. The highest serum dilution showing visible agglutination (indicated by the arrow) is the 4th tube (1/160), with clearing of supernatant. What is the antibody titer?",
+        "options": [
+            "1/20",
+            "1/40",
+            "1/80",
+            "1/160"
+        ],
+        "correctIndex": 3,
+        "explanation": "Criteria of Identification: In a quantitative Widal tube agglutination test, doubling serial dilutions of patient serum are prepared (1/20, 1/40, 1/80, 1/160, 1/320...). The antibody titer is defined as the reciprocal of the highest dilution of serum that produces visible agglutination (clumping of bacteria with clearing of the supernatant). Here, agglutination is evident up to tube 4 (1/160), establishing a titer of 1/160 (clinically significant in endemic areas).\n\nOptions A, B, and C are lower dilutions that showed clumping, but the titer is defined by the endpoint (highest dilution).",
+        "keyConcept": "Widal titer is the highest serum dilution demonstrating visible agglutination (here, 1/160).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q26_quantitative_widal_titer.webp",
+            "caption": "Quantitative Widal tube agglutination test indicating an endpoint titer of 1/160"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0027",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "You are provided with a quantitative Widal test. Which of the following type-specific antigens is used to differentiate specific serotypes of Salmonella (e.g. Typhi vs. Paratyphi A vs. Paratyphi B)?",
+        "options": [
+            "Somatic O",
+            "Flagellar H",
+            "Capsule K",
+            "Pili"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: Salmonella antigenic structure comprises:\n- Somatic O antigen (lipopolysaccharide): Group-specific (defines serogroups A, B, C, D).\n- Flagellar H antigen (protein): Type-specific (defines individual serotypes within a group, e.g. H-d for S. typhi, H-a for S. paratyphi A, H-b for S. paratyphi B).\n- Vi antigen: Capsular polysaccharide found in S. typhi.\nTherefore, the Flagellar H antigen is the type-specific antigen that differentiates Salmonella serotypes.\n\nOption A (Somatic O) is group-specific. Option C and D are not used to differentiate serotypes in the Widal panel.",
+        "keyConcept": "In Salmonella serology: Somatic O is group-specific; Flagellar H is type-specific.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q26_quantitative_widal_titer.webp",
+            "caption": "Widal tube rack demonstrating separate testing of O, H, HA, and HB antigens"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0028",
+        "type": "mcq",
+        "lecture": 6,
+        "text": "All of the following statements regarding stool collection and transport for microbiological culture are true EXCEPT:",
+        "options": [
+            "Rectal swab is superior to stool sample in diagnosis of infectious diarrhea",
+            "We use a clean universal container",
+            "Rapid transport to the lab",
+            "If delayed more than one hour, it must be refrigerated and put in a transport medium containing glycerol."
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: A fresh natural stool specimen is far superior to a rectal swab because a stool sample contains a vastly higher bacterial load and preserves mucus flakes/pus where pathogens congregate. Rectal swabs carry only minuscule amounts of fecal material and dry out rapidly; they are reserved only for infants, debilitated patients, or anal carriage screening.\n\nOptions B, C, and D are standard correct microbiological practices: clean wide-mouthed universal containers are used, transport should occur within 1 hour, and if delayed, buffered glycerol saline (or Cary-Blair medium) and refrigeration at 4°C prevent overgrowth by normal coliforms.",
+        "keyConcept": "Fresh stool is vastly superior to rectal swabs for isolating diarrheal bacterial pathogens.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q28_stool_container.webp",
+            "caption": "Clean wide-mouthed universal container with spoon for stool collection"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0029",
+        "type": "mcq",
+        "lecture": 6,
+        "text": "Which of the following is TRUE regarding the proper handling of stool samples submitted for microbiological investigation?",
+        "options": [
+            "Rectal swab is superior to stool sample in diagnosis of infectious diarrhea",
+            "We use a sterile container",
+            "Sample should not be refrigerated in case of delay",
+            "If delayed more than one hour, it must be refrigerated and put in a transport medium containing glycerol."
+        ],
+        "correctIndex": 3,
+        "explanation": "Criteria of Identification: When transport of a fecal specimen to the laboratory cannot occur within 1 hour, the specimen must be preserved in a transport medium such as Buffered Glycerol Saline (or Cary-Blair) and refrigerated at 4°C. This arrests the metabolic multiplication of commensal coliforms and prevents acidification from killing delicate pathogens like Shigella and Salmonella.\n\nOption A is false (stool is superior to swabs). Option B is false (stool containers must be clean and leakproof, but absolute surgical sterility is not required because stool is inherently non-sterile). Option C is false (refrigeration at 4°C is mandatory when transport is delayed).",
+        "keyConcept": "Stool delayed > 1 hour requires buffered glycerol saline transport medium and refrigeration at 4°C.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q28_stool_container.webp",
+            "caption": "Universal stool collection container"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0030",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "After primary blood culture incubation in bile broth for suspected Salmonella typhi, subculture is carried out on:",
+        "options": [
+            "DCA agar",
+            "MacConkey’s agar",
+            "TCBS agar",
+            "Nutrient agar"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: Blood is normally a sterile fluid. When blood culture broth flags positive, high-toxicity selective media like DCA (which contain heavy bile salts and citrate) are unnecessary and may inhibit stressed, sub-lethally injured Salmonella cells. MacConkey agar is moderately selective and differential, allowing Salmonella to grow reliably as non-lactose fermenting pale/colorless colonies.\n\nOption A (DCA) is reserved for stool subculture where heavy coliform suppression is required. Option C (TCBS) is for Vibrio. Option D (Nutrient agar) is non-differential.",
+        "keyConcept": "Blood culture for Salmonella is subcultured on MacConkey agar (moderately selective), not DCA (too inhibitory for sterile blood isolates).",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0031",
+        "type": "mcq",
+        "lecture": 4,
+        "text": "Four hours after consuming potato and rice meals at a restaurant, 5 friends developed acute symptoms of food poisoning. Remnants of the food were stained and revealed Gram-positive cocci in clusters. What is the immediate next enzymatic test to confirm the genus?",
+        "options": [
+            "Performing indole test",
+            "Performing oxidase test",
+            "Performing catalase test",
+            "Performing Coagulase test"
+        ],
+        "correctIndex": 2,
+        "explanation": "Criteria of Identification: When Gram-positive cocci are observed microscopically, the initial discriminatory test is the Catalase test. Catalase breaks down hydrogen peroxide into water and oxygen bubbles:\n- Staphylococci are Catalase-POSITIVE.\n- Streptococci and Enterococci are Catalase-NEGATIVE.\nOnce catalase positivity confirms Staphylococcus, the Coagulase test is performed next to identify S. aureus.\n\nOption A and B are for Gram-negative bacilli. Option D (Coagulase) is performed after confirming catalase positivity.",
+        "keyConcept": "Catalase test differentiates Staphylococci (catalase-positive) from Streptococci (catalase-negative).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q31_staph_gram_stain.webp",
+            "caption": "Gram stain showing Gram-positive spherical cocci arranged in grape-like clusters"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0032",
+        "type": "mcq",
+        "lecture": 4,
+        "text": "A student developed severe vomiting a few hours after a meal, and several colleagues developed the same symptoms. The organism isolated from the food remnants fermented mannitol on Mannitol Salt Agar, producing golden yellow colonies. If a Gram stain is done, it will show:",
+        "options": [
+            "Gram +ve cocci in clusters",
+            "Gram +ve cocci in chains",
+            "Gram –ve bacilli",
+            "Gram –ve comma-shaped bacilli"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: The organism isolated on MSA is Staphylococcus aureus, characterized morphologically as Gram-positive spherical cocci arranged in irregular grape-like clusters (due to cell division in three successive perpendicular planes).\n\nOption B (Gram +ve cocci in chains) is Streptococcus. Option C (Gram -ve bacilli) includes E. coli and Salmonella. Option D (Gram -ve comma-shaped bacilli) is Vibrio cholerae.",
+        "keyConcept": "Staph. aureus morphology: Gram-positive cocci arranged in irregular clusters (grape-like).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q17_staph_msa_yellow.webp",
+            "caption": "Mannitol Salt Agar plate displaying mannitol fermentation by Staph. aureus"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0033",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "A patient presented with severe rice-water diarrhea. Direct microscopic examination of the stool showed Gram-negative comma-shaped bacilli. The most suitable selective culture medium for isolation of this organism is:",
+        "options": [
+            "DCA agar",
+            "Sorbitol MacConkey agar",
+            "TCBS agar",
+            "Mannitol salt agar"
+        ],
+        "correctIndex": 2,
+        "explanation": "Criteria of Identification: Thiosulfate-Citrate-Bile Salts-Sucrose (TCBS) agar is the selective and differential medium of choice for isolating Vibrio cholerae. The high pH (8.6), bile salts, and sodium citrate inhibit enterobacteria and Gram-positive cocci. V. cholerae ferments sucrose, producing yellow colonies against the deep green background of the agar.\n\nOption A (DCA) is for Salmonella/Shigella. Option B (SMAC) is for EHEC. Option D (MSA) is for Staph aureus.",
+        "keyConcept": "TCBS agar: Selective and differential medium for Vibrio cholerae (yellow sucrose-fermenting colonies).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q33_vibrio_gram_stain.webp",
+            "caption": "Gram stain of stool showing curved Gram-negative bacilli (comma-shaped)"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0034",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "A patient with suspected enteric fever had a non-lactose-fermenting isolate that showed: TSI K/A with a faint ring of H2S at the junction and no gas, Indole negative, Urease negative, and Citrate negative. The causative organism is most likely:",
+        "options": [
+            "Salmonella paratyphi A",
+            "Salmonella paratyphi B",
+            "Salmonella typhi",
+            "Shigella sonnei"
+        ],
+        "correctIndex": 2,
+        "explanation": "Criteria of Identification: This is the classic biochemical profile of Salmonella typhi:\n- TSI: Alkaline slant / acid butt (K/A), faint H2S ring, no gas bubbles.\n- Indole: Negative.\n- Urease: Negative.\n- Simmons Citrate: Negative (tube remains green).\n\nOption A (Paratyphi A) produces gas and no H2S. Option B (Paratyphi B) produces abundant gas, heavy H2S, and is citrate-positive (blue). Option D (Shigella) produces no H2S.",
+        "keyConcept": "Salmonella typhi: TSI K/A, no gas, trace H2S, Citrate negative.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q20_salmonella_typhi_biochemical.webp",
+            "caption": "Biochemical tubes of Salmonella typhi"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0035",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "A stool sample was cultured on MacConkey’s agar, and the isolated organism is a lactose fermenter (e.g. E. coli). Its colonies on MacConkey’s agar will appear:",
+        "options": [
+            "Pale (colourless)",
+            "Rose pink",
+            "Yellow",
+            "Black-centred"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: MacConkey agar contains lactose, bile salts, and the pH indicator neutral red. When bacteria ferment lactose, lactic acid and other acids lower the pH below 6.8. At acidic pH, neutral red turns bright rose-pink, coloring the colonies and causing localized precipitation of bile salts.\n\nOption A (Pale/colourless) is the appearance of non-lactose fermenters (Salmonella, Shigella, Proteus). Option C (Yellow) is seen on TCBS or MSA, not MacConkey. Option D (Black-centred) is seen on SS or DCA agar.",
+        "keyConcept": "Lactose fermenters (e.g. E. coli, Klebsiella) produce rose-pink colonies on MacConkey agar.",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0036",
+        "type": "mcq",
+        "lecture": 6,
+        "text": "A stool sample was collected for bacterial culture from a patient with gastroenteritis, but its delivery to the laboratory will be delayed for several hours. What should be done with the sample?",
+        "options": [
+            "Keep it in the incubator at 37 °C",
+            "Put it in a transport medium containing glycerol (buffered glycerol saline)",
+            "Leave it at room temperature",
+            "Add formalin to it"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: When stool delivery is delayed beyond 1 hour, placing the sample into Buffered Glycerol Saline (or Cary-Blair transport medium) prevents fragile enteropathogens (particularly Shigella) from being killed by the acidic metabolites generated by rapidly multiplying coliforms.\n\nOption A and C accelerate the proliferation of commensal bacteria and overgrow pathogens. Option D (Formalin) fixes and kills bacteria, rendering culture impossible (formalin is used for parasitology only).",
+        "keyConcept": "Delayed stool culture specimens must be preserved in buffered glycerol saline transport medium at 4°C.",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q28_stool_container.webp",
+            "caption": "Stool collection container"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0037",
+        "type": "mcq",
+        "lecture": 1,
+        "text": "An outbreak of bloody diarrhea (bacillary dysentery) occurred among school children. Which of the following epidemiological methods is used to trace the source of infection?",
+        "options": [
+            "Phage typing",
+            "Colicin typing",
+            "Widal test",
+            "Coagulase test"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: Colicin typing (bacteriocin typing) is the standard method for strain discrimination and source tracing in outbreaks of bacillary dysentery caused by Shigella sonnei.\n\nOption A (Phage typing) is used for S. aureus and S. typhi. Option C (Widal test) is a diagnostic serological test for typhoid fever, not an epidemiological typing tool. Option D (Coagulase test) is for S. aureus.",
+        "keyConcept": "Colicin typing is the specific epidemiological typing system for tracing Shigella dysentery outbreaks.",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0038",
+        "type": "mcq",
+        "lecture": 6,
+        "text": "The provided tube contains a clear fluid medium (Selenite F broth) used in stool culture. This medium is classified as an:",
+        "options": [
+            "Enriched medium",
+            "Enrichment medium",
+            "Differential solid medium",
+            "Transport medium"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: An enrichment medium is a liquid fluid medium designed to selectively promote the multiplication of a targeted pathogen from a mixed specimen while suppressing non-target flora. Selenite F broth selectively enriches Salmonella while inhibiting normal coliforms.\n\nOption A (Enriched medium) is a solid or liquid medium with added nutrients (blood, serum) supporting fastidious organisms without selective inhibition (e.g. blood agar, chocolate agar). Option C is solid (e.g. MacConkey agar). Option D (Transport medium) maintains viability without allowing multiplication (e.g. Cary-Blair).",
+        "keyConcept": "Enrichment medium: A liquid medium that selectively enriches specific pathogens while inhibiting commensal background flora (e.g. Selenite F broth).",
+        "media": {
+            "type": "image",
+            "imageUrl": "/images/practical/mgl-3/microbiology/micro_q38_enrichment_fluid_medium.webp",
+            "caption": "Tube containing clear liquid enrichment medium (Selenite F broth)"
+        }
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0039",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "A food handler recovered from typhoid fever one year ago and is now suspected to be a chronic fecal carrier. Before collecting the stool sample for culture, which of the following is administered to increase the diagnostic yield?",
+        "options": [
+            "Saline purge",
+            "Fasting for 24 hours",
+            "A short course of antibiotics",
+            "Collecting a swab from the anus"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: In chronic typhoid carriers, Salmonella typhi resides and multiplies chronically within the biliary tree and gallbladder lumen, but shedding into the feces can be intermittent. Administering a saline purge (e.g. magnesium sulfate or sodium sulfate) stimulates rapid biliary evacuation into the intestine, significantly increasing the concentration of excreted bacilli in the purged stool specimen.\n\nOption B and D do not enhance biliary emptying. Option C (Antibiotics) suppresses bacterial viability and causes false-negative culture results.",
+        "keyConcept": "Saline purge triggers gallbladder evacuation, maximizing Salmonella recovery in chronic fecal carriers.",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0040",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "The stool sample of the suspected typhoid carrier in the previous question was inoculated into selenite broth. Because of the very low number of organisms shed by chronic carriers, the enrichment broth is incubated and subcultured for up to:",
+        "options": [
+            "6 hours",
+            "12 hours",
+            "24 hours",
+            "72 hours"
+        ],
+        "correctIndex": 3,
+        "explanation": "Criteria of Identification: While routine acute gastroenteritis stool samples in selenite broth are subcultured after 12–18 hours, carrier investigations involve extremely low initial bacterial counts. In carrier screening protocols, incubation is prolonged and repeated subcultures are made at 24 hours, 48 hours, and up to 72 hours to ensure sparse organisms multiply to detectable thresholds.\n\nOptions A, B, and C represent standard acute culture times that may miss low carrier inoculum.",
+        "keyConcept": "In chronic carriers with low bacterial counts, enrichment broth incubation and subculture are extended up to 72 hours.",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0041",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "A patient is suspected to be a chronic urinary carrier of Salmonella typhi (frequently associated with urinary schistosomiasis). The urinary carrier state is detected by:",
+        "options": [
+            "Widal test",
+            "Culture of the urine deposit",
+            "Blood culture",
+            "Gram stain of the urine"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: Detection of a urinary typhoid carrier requires centrifuging a clean-catch midstream urine sample and culturing the centrifuged urine deposit (sediment) on MacConkey or DCA agar. Centrifugation concentrates the intermittently excreted Salmonella bacilli.\n\nOption A (Widal) reflects past exposure or antibodies, not active carriage. Option C (Blood culture) is negative in chronic carriers because bacteremia is absent. Option D (Gram stain) lacks sensitivity.",
+        "keyConcept": "Urinary carrier state of Salmonella typhi is diagnosed by culturing the centrifuged urine deposit.",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0042",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "A clot culture was requested for a patient in the first week of enteric fever. The blood was allowed to clot and the serum was separated for antibody testing. The clot is subsequently lysed to release trapped bacteria by adding:",
+        "options": [
+            "Streptokinase",
+            "Bile salts",
+            "Sodium citrate",
+            "Saline"
+        ],
+        "correctIndex": 0,
+        "explanation": "Criteria of Identification: Clot culture offers a dual advantage: the serum is saved for Widal serology, and the blood clot (which contains concentrated phagocytosed and trapped Salmonella bacilli) is digested. Adding streptokinase (a fibrinolytic enzyme) to the bile broth dissolves the fibrin meshwork of the clot, freeing the trapped bacteria into the nutrient medium to accelerate growth.\n\nOption B (Bile salts) acts as a selective/nutritive agent, not a fibrinolytic. Option C (Sodium citrate) prevents clotting if added beforehand, but does not lyse preformed clots.",
+        "keyConcept": "Clot culture: Streptokinase is added to lyse the fibrin clot and release trapped Salmonella bacilli for culture.",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0043",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "During a cholera epidemic, a fresh stool smear was examined under the dark-ground microscope and showed actively motile comma-shaped organisms with 'darting' motility. In the cholera immobilization test, adding specific V. cholerae O1/O139 antiserum will:",
+        "options": [
+            "Increase the motility of the organisms",
+            "Stop the motility due to agglutination of the organisms",
+            "Lyse the organisms",
+            "Change the colour of the smear"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: The Cholera Immobilization Test is a rapid, specific diagnostic test. A drop of dark-field illuminated stool showing classic darting ('shooting star') motility is mixed with a drop of specific V. cholerae polyvalent O1/O139 antiserum. The bivalent antibodies instantly cross-link the flagellar and somatic surface antigens, causing immediate cessation of motility and visible agglutination within 1 to 2 minutes.\n\nOption A is contrary to antibody action. Option C (Lysis) requires complement, which is absent in heat-inactivated diagnostic typing antiserum. Option D is irrelevant.",
+        "keyConcept": "Cholera immobilization test: Addition of specific O1/O139 antiserum immediately arrests darting motility via cross-linking agglutination.",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0044",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "A suspected cholera carrier is investigated after administration of a saline purge. Before plating on selective TCBS agar, repeated enrichment subculture is done in:",
+        "options": [
+            "Selenite broth",
+            "Alkaline peptone water",
+            "Tetrathionate broth",
+            "Nutrient broth"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: Because cholera carriers shed very few Vibrio cells, sequential enrichment in Alkaline Peptone Water (APW, pH 8.6) is performed: the specimen is incubated in APW for 6 hours, then a loopful from the surface pellicle is transferred into a second tube of APW for another 6 hours before final streaking onto TCBS agar.\n\nOption A (Selenite broth) and Option C (Tetrathionate) are for Salmonella. Option D (Nutrient broth) is not alkaline.",
+        "keyConcept": "Cholera carrier detection relies on repeated serial enrichment in Alkaline Peptone Water (pH 8.6).",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0045",
+        "type": "mcq",
+        "lecture": 4,
+        "text": "In an outbreak of suspected Staphylococcal food poisoning, laboratory confirmation requires detecting the preformed enterotoxin in food remnants. All of the following methods can directly detect the enterotoxin EXCEPT:",
+        "options": [
+            "ELISA",
+            "Reverse latex agglutination",
+            "PCR",
+            "Coagulase test"
+        ],
+        "correctIndex": 3,
+        "explanation": "Criteria of Identification: Staphylococcal food poisoning is an intoxication caused by ingesting preformed staphylococcal enterotoxins (SE A–E). Detecting the toxin protein or its coding genes in food remnants is achieved by immunological methods (ELISA, reverse passive latex agglutination [RPLA]) or molecular detection (PCR). In contrast, the Coagulase test assesses the enzymatic ability of live bacterial cells to clot plasma; it tests the organism, NOT the preformed toxin itself.\n\nOptions A, B, and C are recognized techniques for enterotoxin protein or gene identification in suspected food.",
+        "keyConcept": "Coagulase tests the enzymatic activity of bacterial cells, not the preformed enterotoxin in food.",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0046",
+        "type": "mcq",
+        "lecture": 4,
+        "text": "In an outbreak of Staphylococcus aureus food poisoning, the source of infection among kitchen workers is to be traced. All of the following epidemiological typing methods can be used EXCEPT:",
+        "options": [
+            "Phage typing",
+            "Biotyping",
+            "Antibiotic susceptibility patterns",
+            "Colicin typing"
+        ],
+        "correctIndex": 3,
+        "explanation": "Criteria of Identification: Colicin typing (bacteriocin typing) is specific for colicins produced by Enterobacteriaceae (specifically Escherichia coli and Shigella species). It is completely inapplicable to Gram-positive cocci like Staphylococcus aureus.\n\nOptions A, B, and C (bacteriophage typing, biotyping, and antibiogram patterns) are all recognized epidemiological typing methods for Staph. aureus.",
+        "keyConcept": "Colicin typing applies exclusively to Gram-negative enteric bacilli (Shigella, E. coli), never to Staph. aureus.",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0047",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "A Widal agglutination test was performed for a febrile patient. A false-positive Widal test result may occur in all of the following conditions EXCEPT:",
+        "options": [
+            "Liver disease",
+            "Malaria",
+            "Rheumatic fever",
+            "Early in the course of the disease"
+        ],
+        "correctIndex": 3,
+        "explanation": "Criteria of Identification: Testing early in the course of enteric fever (e.g. during the first week) results in a false-NEGATIVE Widal test because detectable agglutinins (anti-O and anti-H) take 7 to 10 days to appear in significant serum concentrations.\n\nIn contrast, false-positive Widal results are well-documented in:\n- Chronic liver disease (hypergammaglobulinemia and impaired hepatic clearance of enteric antigens)\n- Malaria (polyclonal B-cell activation)\n- Rheumatic fever and autoimmune connective tissue diseases (cross-reacting heterophile antibodies).",
+        "keyConcept": "Testing early in enteric fever produces a false-negative result, not a false-positive.",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0048",
+        "type": "mcq",
+        "lecture": 5,
+        "text": "A Widal test was done for an individual who had received the TAB vaccine (containing killed S. typhi, S. paratyphi A, and S. paratyphi B). The expected post-vaccination serological pattern is:",
+        "options": [
+            "A high titre against a single antigen only",
+            "Low titres against more than one Salmonella antigen",
+            "A completely negative test",
+            "A positive test for the K antigen"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: The TAB vaccine immunizes against Salmonella typhi, Paratyphi A, and Paratyphi B simultaneously. Consequently, vaccinated individuals develop circulating antibodies against multiple antigens simultaneously (H, AH, and BH, along with variable low-titer O antibodies), typically present at stable, modest low titers (e.g., 1/40 to 1/80) without a rising fourfold trajectory.\n\nOption A (high titer against single antigen) indicates active clinical infection. Option C is incorrect because vaccination induces antibodies. Option D is incorrect because K antigen is not part of the TAB Widal panel.",
+        "keyConcept": "TAB vaccination produces low, stable antibody titers against multiple Salmonella antigens (H, AH, BH) simultaneously.",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0049",
+        "type": "mcq",
+        "lecture": 6,
+        "text": "A direct Gram-stained smear of stool is usually of limited clinical diagnostic value because of the vast background of normal intestinal commensal bacteria. Direct fecal microscopy is clinically beneficial primarily in the rapid diagnosis of:",
+        "options": [
+            "Shigella and E. coli",
+            "Vibrio cholerae and Campylobacter",
+            "Salmonella and Shigella",
+            "Staph. aureus and Bacillus cereus"
+        ],
+        "correctIndex": 1,
+        "explanation": "Criteria of Identification: Normal feces contains 10^11 bacteria/gram, predominantly Gram-negative straight rods (E. coli, Bacteroides). Therefore, Salmonella, Shigella, and pathotypes of E. coli cannot be distinguished from normal commensals on direct Gram stain. In contrast, Vibrio cholerae (curved comma-shaped rods) and Campylobacter jejuni (curved seagull-winged / spiral rods) display distinctive non-coliform morphologies readily identified by experienced microscopists.\n\nOptions A, C, and D are masked by normal fecal flora.",
+        "keyConcept": "Direct fecal Gram staining is informative primarily for morphologically distinct curved bacilli: Vibrio (comma-shaped) and Campylobacter (seagull-winged).",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0050",
+        "type": "mcq",
+        "lecture": 6,
+        "text": "Among the Gram-negative bacilli that infect the human gastrointestinal tract, which of the following is oxidase POSITIVE?",
+        "options": [
+            "E. coli",
+            "Salmonella",
+            "Campylobacter",
+            "Shigella"
+        ],
+        "correctIndex": 2,
+        "explanation": "Criteria of Identification: Campylobacter species (e.g., Campylobacter jejuni) and Vibrio species are oxidase-POSITIVE (possessing cytochrome c oxidase). In contrast, all members of the family Enterobacteriaceae (including E. coli, Salmonella, Shigella, Klebsiella, Yersinia, and Proteus) are strictly oxidase-NEGATIVE.\n\nOptions A, B, and D are all oxidase-negative Enterobacteriaceae.",
+        "keyConcept": "Campylobacter and Vibrio are oxidase-positive; Enterobacteriaceae (E. coli, Salmonella, Shigella) are oxidase-negative.",
+        "media": None
+    },
+    {
+        "id": "MGL3-PRAC-MIC-0051",
+        "type": "mcq",
+        "lecture": 2,
+        "text": "During a cholera outbreak, a rice-water stool sample was received in the laboratory and a rapid bedside/laboratory diagnosis is urgently required. Which of the following is the definitive rapid diagnostic method for Vibrio cholerae?",
+        "options": [
+            "Widal test",
+            "Colicin typing",
+            "Using antibodies against O1 and O139 antigens (cholera immobilization test)",
+            "Phage typing"
+        ],
+        "correctIndex": 2,
+        "explanation": "Criteria of Identification: In cholera epidemics, the Cholera Immobilization Test provides a definitive answer within minutes. A stool droplet with darting motility under dark-field microscopy is exposed to specific V. cholerae O1 and O139 antisera. Immediate antibody-mediated immobilization and agglutination of the bacilli provides rapid, life-saving confirmation prior to culture results.\n\nOption A (Widal) is for enteric fever. Option B (Colicin) and Option D (Phage) are retrospective epidemiological typing tools.",
+        "keyConcept": "Rapid diagnosis of Vibrio cholerae is achieved by the cholera immobilization test using specific O1 and O139 antisera.",
+        "media": None
+    }
+]
+
+with open("/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/src/app/data/practical/mgl-3-micro-practical.json", "w", encoding="utf-8") as f:
+    json.dump(questions, f, indent=2, ensure_ascii=False)
+
+print(f"Saved {len(questions)} verified microbiology questions to mgl-3-micro-practical.json")
