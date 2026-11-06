@@ -19,11 +19,11 @@ describe('GIT (MGL-3) Practical Question Bank Rebuild & Verification', () => {
     await ensurePracticalDataLoaded('MGL-3');
   });
 
-  it('mgl-3-practical.json exists on disk and contains exactly 6 chapters totaling 826 questions with combined Pathology', () => {
+  it('mgl-3-practical.json exists on disk and contains exactly 7 chapters totaling 891 questions with combined Pathology', () => {
     const raw = fs.readFileSync(practicalJsonPath, 'utf8');
     const parsed = JSON.parse(raw);
     expect(Array.isArray(parsed)).toBe(true);
-    expect(parsed).toHaveLength(6);
+    expect(parsed).toHaveLength(7);
 
     const chapterCounts = parsed.map((ch: any) => ({
       id: ch.id,
@@ -39,10 +39,11 @@ describe('GIT (MGL-3) Practical Question Bank Rebuild & Verification', () => {
       { id: 304, title: 'Practical — Parasitology', count: 84, topicsCount: 1 },
       { id: 305, title: 'Practical — Microbiology', count: 51, topicsCount: 1 },
       { id: 306, title: 'Practical — Physiology', count: 48, topicsCount: 1 },
+      { id: 307, title: 'Practical — Biochemistry', count: 65, topicsCount: 4 },
     ]);
 
     const totalQuestions = chapterCounts.reduce((acc: number, c: any) => acc + c.count, 0);
-    expect(totalQuestions).toBe(826);
+    expect(totalQuestions).toBe(891);
   });
 
   it('Pathology chapter cleanly splits into Pathology Museum (95 Qs) and Pathology Lab (50 Qs) topics in UI', () => {
@@ -135,15 +136,15 @@ describe('GIT (MGL-3) Practical Question Bank Rebuild & Verification', () => {
     expect(imageCount).toBe(759);
   });
 
-  it('getModuleQuestionCounts reports practicalCount as exactly 826 for MGL-3', () => {
+  it('getModuleQuestionCounts reports practicalCount as exactly 891 for MGL-3', () => {
     const counts = getModuleQuestionCounts('MGL-3');
-    expect(counts.practicalCount).toBe(826);
+    expect(counts.practicalCount).toBe(891);
     expect(counts.mcqCount).toBeGreaterThan(5000);
   });
 
-  it('getChaptersForModuleAndMode returns all 6 practical chapters with correct accent colors in practical mode', () => {
+  it('getChaptersForModuleAndMode returns all 7 practical chapters with correct accent colors in practical mode', () => {
     const practicalChaptersList = getChaptersForModuleAndMode('MGL-3', 'practical');
-    expect(practicalChaptersList).toHaveLength(6);
+    expect(practicalChaptersList).toHaveLength(7);
     expect(practicalChaptersList[0].title).toBe('Practical — Anatomy');
     expect(practicalChaptersList[0].accentColor).toBe('anatomy');
     expect(practicalChaptersList[1].accentColor).toBe('histology');
@@ -151,6 +152,7 @@ describe('GIT (MGL-3) Practical Question Bank Rebuild & Verification', () => {
     expect(practicalChaptersList[3].accentColor).toBe('parasitology');
     expect(practicalChaptersList[4].accentColor).toBe('microbiology');
     expect(practicalChaptersList[5].accentColor).toBe('physiology');
+    expect(practicalChaptersList[6].accentColor).toBe('biochem');
   });
 
   it('getChaptersForModuleAndMode isolates MCQ practice without any practical sections', () => {

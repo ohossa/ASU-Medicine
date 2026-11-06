@@ -1,0 +1,1045 @@
+[
+  {
+    "id": "MGL3-PRAC-BIO-001",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A 45-year-old woman has generalized edema. Serum albumin is 2.3 g/dL, while ALT, AST, bilirubin and prothrombin time are all within normal limits. Urine shows heavy protein loss. What is the most likely cause of her low serum albumin?",
+    "options": [
+      "Shortened plasma half-life of albumin",
+      "Protein loss through the kidneys",
+      "Poor dietary intake of protein",
+      "Reduced albumin synthesis by hepatocytes",
+      "Expanded volume of distribution from ascites"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The combination of profound hypoalbuminemia (2.3 g/dL) with massive proteinuria and generalized edema in the presence of completely normal liver synthetic markers (normal ALT, AST, bilirubin, and PT) is the classic hallmark of nephrotic syndrome. In nephrotic syndrome, disruption of the glomerular filtration barrier leads to heavy urinary loss of albumin exceeding hepatic compensatory synthesis.",
+    "keyConcept": "Nephrotic syndrome: Glomerular proteinuria causing hypoalbuminemia, decreased oncotic pressure, and third-space edema with preserved liver synthetic function."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-002",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A patient with acute viral hepatitis of 5 days' duration has markedly raised transaminases but a normal serum albumin. Which property of albumin best explains this finding?",
+    "options": [
+      "Its synthesis rises as an acute phase response",
+      "Its loss is offset by renal reabsorption",
+      "Its synthesis mainly occurs outside the liver",
+      "Its production exceeds 50 grams per day",
+      "Its long plasma half-life of about 20 days"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: Serum albumin has a long physiological half-life of approximately 20 days in humans. Consequently, in acute liver diseases of short duration (e.g., acute viral hepatitis lasting 5 days), cessation or reduction of hepatic albumin synthesis has not had sufficient time to produce a noticeable decline in circulating albumin levels.",
+    "keyConcept": "Albumin kinetics: Long plasma half-life of ~20 days makes albumin a marker of chronic (not acute) liver disease."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-003",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "In addition to decreased hepatic synthesis, which mechanism contributes to hypoalbuminemia in chronic liver disease?",
+    "options": [
+      "Binding of albumin to excess circulating bilirubin",
+      "Urinary loss of albumin through damaged glomeruli",
+      "Increased volume of distribution from fluid retention",
+      "Accelerated breakdown of albumin by Kupffer cells",
+      "Impaired intestinal absorption of dietary amino acids"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: In chronic liver disease with portal hypertension, splanchnic arterial vasodilation triggers neurohumoral sodium and water retention (renin-angiotensin-aldosterone and ADH activation), leading to ascites and peripheral edema. This marked expansion of the extracellular fluid volume significantly increases the volume of distribution for albumin, diluting its serum concentration.",
+    "keyConcept": "Hypoalbuminemia in cirrhosis: Caused by both impaired hepatic protein synthesis and hemodilution from expanded plasma volume and ascites."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-004",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A healthy-appearing adult has a serum albumin of 6.2 g/dL. Which condition is the only recognized cause of this finding in humans?",
+    "options": [
+      "High-protein diet",
+      "Chronic inflammation",
+      "Dehydration",
+      "Increased hepatic synthesis",
+      "Glucocorticoid therapy"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Dehydration (hemoconcentration) is the only clinically recognized cause of hyperalbuminemia in humans. The liver does not hypersecrete albumin above normal physiological reference limits (3.5–5.0 g/dL); an elevated concentration (e.g., 6.2 g/dL) invariably reflects relative loss of plasma water.",
+    "keyConcept": "Hyperalbuminemia: Exclusively caused by dehydration and hemoconcentration, never by hepatic hyperproduction."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-005",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Plasma albumin helps maintain colloidal oncotic pressure largely because it strongly attracts which ion, which in turn draws water into the vascular space?",
+    "options": [
+      "Potassium",
+      "Calcium",
+      "Bicarbonate",
+      "Chloride",
+      "Sodium"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: Albumin has a net negative charge (-17 to -19 mEq) at physiological blood pH (7.40). Due to the Gibbs-Donnan effect, this strong polyanionic charge attracts and binds positively charged sodium ions (Na+) in the intravascular compartment. The osmotic pull of these trapped sodium ions accounts for approximately one-third of the total colloidal oncotic pressure exerted by albumin.",
+    "keyConcept": "Gibbs-Donnan effect: Negative net charge of albumin attracts intravascular Na+, enhancing its colloidal oncotic pressure."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-006",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Approximately how much albumin does the normal adult liver synthesize each day?",
+    "options": [
+      "About 1 gram",
+      "About 5 grams",
+      "About 10 grams",
+      "About 25 grams",
+      "About 50 grams"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: In a healthy adult, the liver synthesizes approximately 10 to 15 grams of albumin per day (about 120–200 mg/kg/day), which represents roughly 50% of total hepatic protein output.",
+    "keyConcept": "Hepatic albumin synthesis: Normal adult liver produces 10–15 grams of albumin daily, representing ~50% of total export protein synthesis."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-007",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Which of the following compounds would give a positive biuret reaction?",
+    "options": [
+      "Ala-Gly-Ser tripeptide",
+      "Glucosamine",
+      "Glutamine",
+      "Free glycine",
+      "Free glutamate"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The biuret reaction requires the presence of at least two peptide bonds in a molecule to coordinate with cupric ions (Cu2+) in an alkaline solution. A tripeptide contains two peptide bonds and thus yields a positive violet complex, whereas free amino acids and dipeptides (which have only one peptide bond) are biuret-negative.",
+    "keyConcept": "Biuret principle: Requires a minimum of two peptide bonds (tripeptides or larger) to form a violet coordination complex with alkaline cupric ions."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-008",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "In the biuret method for serum albumin, what are the color of the reagent before the reaction and the color of the final product, respectively?",
+    "options": [
+      "Colorless, then violet",
+      "Blue, then pink",
+      "Pink, then violet",
+      "Violet, then blue",
+      "Blue, then violet"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: Biuret reagent contains copper sulfate (CuSO4) in alkaline sodium hydroxide (NaOH) with potassium sodium tartrate (to keep copper in solution) and potassium iodide (as stabilizer), giving the unreacted reagent a characteristic light blue color. When peptide bonds coordinate with Cu2+ ions in alkaline medium, the solution turns violet (purple).",
+    "keyConcept": "Biuret reaction color: Transition from blue (unreacted alkaline copper sulfate) to violet (cupric-peptide coordination complex)."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-009",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "In the albumin estimation lab, after mixing the tubes by inversion, what are the correct incubation conditions before reading?",
+    "options": [
+      "20 minutes at room temperature",
+      "30 minutes in a boiling water bath",
+      "10 minutes at 37 degrees C",
+      "5 minutes at room temperature",
+      "20 minutes at 37 degrees C"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: In standard clinical biochemistry laboratory protocols for the biuret protein assay, after adding the biuret reagent to the serum and standard tubes and mixing by inversion, the reaction mixture is incubated for 10 minutes at 37°C (or 20–30 minutes at room temperature 20–25°C) to allow full, stable development of the violet copper-peptide coordination complex.",
+    "keyConcept": "Biuret assay incubation: Requires 10 minutes at 37°C for complete and stable chromophore development before spectrophotometric measurement."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-010",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "At which wavelength are the test and standard absorbances read against the blank in the biuret albumin method?",
+    "options": [
+      "340 nm",
+      "450 nm",
+      "530 nm",
+      "550 nm",
+      "620 nm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: The violet biuret complex absorbs light maximally in the green-yellow region of the visible spectrum, with an absorption peak between 540 and 560 nm (standardized at 545–550 nm in automated and manual spectrophotometers).",
+    "keyConcept": "Biuret spectrophotometry: Peak absorbance of the purple coordination complex is measured between 540 and 560 nm (standard 550 nm)."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-011",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Which combination correctly describes the contents of the BLANK tube in the biuret albumin experiment?",
+    "options": [
+      "1.0 mL standard solution + 5.0 mL distilled water",
+      "1.0 mL distilled water + 5.0 mL biuret reagent",
+      "5.0 mL distilled water + 1.0 mL biuret reagent",
+      "1.0 mL serum sample + 5.0 mL distilled water",
+      "1.0 mL distilled water + 1.0 mL biuret reagent"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The blank tube in colorimetric assays corrects for the intrinsic absorbance of the reagents. It contains identical volume of the biuret reagent (5.0 mL) combined with distilled water (1.0 mL or designated sample volume) without any serum protein, ensuring the spectrophotometer is zeroed solely on the reagent background.",
+    "keyConcept": "Colorimetric blank: Distilled water plus reagent; zeros out background reagent absorbance to isolate sample chromophore optical density."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-012",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "In the biuret method, the test tube absorbance is 0.36 and the standard absorbance is 0.48. The standard contains 6 g/dL albumin. What is the albumin concentration and how is it interpreted?",
+    "options": [
+      "3.0 g/dL, consistent with hypoalbuminemia",
+      "2.9 g/dL, within the normal range",
+      "4.5 g/dL, consistent with hypoalbuminemia",
+      "8.0 g/dL, consistent with dehydration",
+      "4.5 g/dL, within the normal range"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: Applying Beer-Lambert's law: Concentration of Test = (Absorbance of Test / Absorbance of Standard) * Concentration of Standard = (0.36 / 0.48) * 6.0 g/dL = 0.75 * 6.0 = 4.5 g/dL. The standard adult reference range for serum albumin is 3.5 to 5.0 g/dL, placing 4.5 g/dL squarely within normal physiological limits.",
+    "keyConcept": "Albumin calculation: (A_test / A_std) * C_std yields 4.5 g/dL, which is within the normal adult reference interval (3.5–5.0 g/dL)."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-013",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A patient's test tube absorbance is 0.21 and the standard absorbance is 0.42 (standard = 6 g/dL). Liver enzymes and bilirubin are normal, and the patient has chronic diarrhea with steatorrhea. Which explanation fits best?",
+    "options": [
+      "3.0 g/dL, reduced hepatic synthesis",
+      "3.0 g/dL, a normal finding for this patient",
+      "12.0 g/dL, hemoconcentration from diarrhea",
+      "3.0 g/dL, protein loss from malabsorption",
+      "1.5 g/dL, increased volume of distribution"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Concentration = (0.21 / 0.42) * 6.0 g/dL = 0.5 * 6.0 = 3.0 g/dL (hypoalbuminemia). Because liver transaminases and bilirubin are entirely normal, hepatic synthetic capacity is intact. The patient's chronic diarrhea with steatorrhea indicates intestinal malabsorption (e.g., celiac sprue or protein-losing enteropathy) leading to failure of dietary amino acid uptake and protein loss.",
+    "keyConcept": "Malabsorptive hypoalbuminemia: Chronic steatorrhea leads to protein malnutrition and enteric protein loss with normal hepatic enzymes."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-014",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Which liver test is classified as a test of METABOLIC CAPACITY rather than synthetic, excretory, or integrity function?",
+    "options": [
+      "Galactose tolerance test",
+      "Prothrombin time",
+      "Serum bile salts",
+      "Serum 5'-nucleotidase",
+      "Blood ammonia level"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Liver function tests are categorized functionally: synthetic (albumin, PT/coagulation factors), excretory (bilirubin, bile acids), integrity/necrosis (ALT, AST), and metabolic capacity (galactose elimination capacity, antipyrine clearance, aminopyrine breath test). The galactose tolerance test specifically measures the metabolic capacity of functional hepatocytes to phosphorylate and convert galactose to glucose via the Leloir pathway.",
+    "keyConcept": "Hepatic metabolic capacity: Assessed by galactose tolerance test and clearance of exogenously administered metabolized compounds."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-015",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Which of the following is grouped with tests of SYNTHETIC function rather than tests of hepatocyte integrity?",
+    "options": [
+      "Prothrombin time",
+      "Lactate dehydrogenase",
+      "Aspartate transaminase",
+      "Alkaline phosphatase",
+      "5'-nucleotidase"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Prothrombin time (PT) reflects the synthetic function of the liver, as the liver synthesizes all vitamin K-dependent clotting factors (II, VII, IX, X) as well as factor V and fibrinogen. In contrast, AST, ALT, and LDH reflect cellular integrity/leakage, and ALP and 5'-nucleotidase reflect cholestasis/excretory biliary function.",
+    "keyConcept": "Liver synthetic tests: Serum albumin and prothrombin time (PT/INR) are the two primary clinical markers of true hepatic synthetic capacity."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-016",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "The cholesterol to cholesteryl ester ratio is used to assess which category of liver function?",
+    "options": [
+      "Synthetic function",
+      "Excretory function",
+      "Hepatocyte integrity",
+      "Metabolic capacity",
+      "Detoxification"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Esterification of free cholesterol with fatty acids to form cholesteryl esters is catalyzed by the enzyme lecithin:cholesterol acyltransferase (LCAT), which is produced by hepatocytes. Evaluating the ratio of free cholesterol to esterified cholesterol provides a measure of hepatic metabolic and enzymatic esterifying capacity.",
+    "keyConcept": "Cholesterol esterification: Assesses hepatic metabolic enzymatic capacity mediated by liver-derived LCAT."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-017",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "A 62-year-old man presents with crushing chest pain. His AST is markedly elevated while ALT is normal. What best explains this pattern?",
+    "options": [
+      "Early stage of acute viral hepatitis",
+      "Release of enzymes from lysed erythrocytes",
+      "Release of AST from damaged cardiac muscle",
+      "Reduced hepatic clearance of circulating AST",
+      "Extrahepatic obstruction of the bile duct"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Aspartate transaminase (AST) is not liver-specific; it is present in high concentrations in cardiac myocardium, skeletal muscle, kidneys, and brain. In acute myocardial infarction presenting with crushing chest pain, damaged cardiomyocytes necrotic membrane rupture releases large amounts of AST into the circulation, while ALT (which is much more liver-specific) remains normal.",
+    "keyConcept": "AST tissue distribution: Abundant in myocardium; elevated AST with normal ALT in chest pain points to acute myocardial infarction, not liver disease."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-018",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Which statement correctly contrasts ALT and AST?",
+    "options": [
+      "ALT is mainly cardiac; AST is mainly hepatic in origin",
+      "AST is more liver-specific than ALT in hepatitis",
+      "Both are confined to the cytoplasm of hepatocytes",
+      "ALT is cytoplasmic; AST is cytoplasmic and mitochondrial",
+      "ALT is mitochondrial; AST is found in cytoplasm only"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Alanine transaminase (ALT) is purely a cytosolic enzyme. In contrast, aspartate transaminase (AST) exists as two distinct isoenzymes: cytosolic (cAST, ~20% of activity) and mitochondrial (mAST, ~80% of activity). Severe necrotic injuries (such as ischemic hepatitis or toxic/alcoholic injury) release mitochondrial AST, shifting the AST/ALT ratio.",
+    "keyConcept": "Transaminase subcellular location: ALT is exclusively cytoplasmic, whereas AST is found in both cytoplasm and mitochondria (80% mitochondrial)."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-019",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "In acute inflammatory liver conditions, which aminotransferase pattern is typically seen?",
+    "options": [
+      "ALT rises higher than AST",
+      "Only AST rises, ALT is normal",
+      "AST rises higher than ALT",
+      "Both remain normal, ALP rises",
+      "Both fall below normal values"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: In most forms of acute inflammatory hepatocellular injury (such as acute viral hepatitis A, B, or E), ALT rises substantially higher than AST, producing a De Ritis ratio (AST/ALT) of less than 1.0 (typically 0.3–0.7). This is because ALT has a longer circulating half-life (~47 hours vs ~17 hours for AST) and is released continuously from inflamed cytoplasm.",
+    "keyConcept": "De Ritis ratio in acute hepatitis: ALT > AST (AST/ALT < 1.0) due to longer plasma half-life and predominant cytosolic release."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-020",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "A woman in her third trimester of pregnancy has an elevated alkaline phosphatase, with normal bilirubin, ALT and AST. What is the most likely source of the extra ALP?",
+    "options": [
+      "Erythrocytes",
+      "Hepatocyte cytoplasm",
+      "Skeletal muscle",
+      "Placenta",
+      "Cardiac muscle"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Alkaline phosphatase (ALP) consists of several tissue isoenzymes: liver, bone, intestinal, and placental. During the third trimester of normal pregnancy, the syncytiotrophoblast of the placenta synthesizes and releases large amounts of heat-stable placental ALP into maternal circulation, causing a physiological rise in total ALP without hepatic or biliary pathology.",
+    "keyConcept": "Placental ALP: Heat-stable isoenzyme produced by syncytiotrophoblast; causes physiological isolated ALP elevation in third-trimester pregnancy."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-021",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "In obstructive jaundice, alkaline phosphatase is usually raised above approximately how many times the upper normal limit?",
+    "options": [
+      "1.2 times",
+      "1.5 times",
+      "2.5 times",
+      "5 times",
+      "10 times"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: In biliary tract obstruction (obstructive/cholestatic jaundice), bile duct epithelial cells and canalicular hepatocytes upregulate ALP synthesis in response to accumulated bile acids. Serum ALP characteristically rises markedly to greater than 2.5 to 3.0 times the upper limit of normal, whereas in uncomplicated hepatocellular injury it rarely exceeds 2 to 3 times normal.",
+    "keyConcept": "Cholestatic ALP threshold: Biliary obstruction characteristically elevates ALP to > 2.5–3.0 times the upper reference limit."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-022",
+    "type": "mcq",
+    "lecture": 3,
+    "text": "A serum sample produces no color with diazo reagent until methanol is added, after which a pink color appears. What does this indicate?",
+    "options": [
+      "Excess urobilinogen in the serum",
+      "A completely normal bilirubin level",
+      "Predominantly unconjugated bilirubin",
+      "A biphasic van den Bergh reaction",
+      "Predominantly conjugated bilirubin"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Unconjugated (indirect) bilirubin is non-polar and water-insoluble, being tightly bound to albumin; it cannot react directly with aqueous diazo reagent. Adding an organic accelerator such as methanol disrupts albumin binding and dissolves the unconjugated pigment, allowing it to react and produce the characteristic pink azobilirubin color (Indirect Van den Bergh positive).",
+    "keyConcept": "Indirect Van den Bergh: Detects unconjugated (water-insoluble) bilirubin, which requires alcohol/methanol accelerator to react with diazo reagent."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-023",
+    "type": "mcq",
+    "lecture": 3,
+    "text": "In the van den Bergh reaction, bilirubin reacts with diazo reagent to form which product?",
+    "options": [
+      "Azobilirubin, violet",
+      "Urobilin, yellow",
+      "Biliverdin, green",
+      "Azobilirubin, pink",
+      "Stercobilin, brown"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: In the Van den Bergh reaction, bilirubin molecules are cleaved and coupled with diazotized sulfanilic acid (diazo reagent) in acidic medium to form two molecules of dipyrrolic azobilirubin, which displays an intense pink to reddish-purple color that can be quantitated spectrophotometrically at 540 nm.",
+    "keyConcept": "Van den Bergh reaction product: Cleavage of tetrapyrrole bilirubin by diazo reagent yields pink/reddish-purple dipyrrolic azobilirubin."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-024",
+    "type": "mcq",
+    "lecture": 3,
+    "text": "Which of the following laboratory results is ABNORMAL according to the reference ranges used in the lab?",
+    "options": [
+      "Total bilirubin 1.1 mg/dL",
+      "Serum albumin 5.3 g/dL",
+      "Direct bilirubin 0.45 mg/dL",
+      "Indirect bilirubin 0.65 mg/dL",
+      "Total bilirubin 0.9 mg/dL"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Normal reference ranges in clinical biochemistry: Total bilirubin is 0.2–1.2 mg/dL, direct (conjugated) bilirubin is 0.0–0.3 mg/dL, indirect (unconjugated) is 0.2–0.8 mg/dL, and serum albumin is 3.5–5.0 g/dL. A direct bilirubin of 0.45 mg/dL exceeds the normal physiological threshold (< 0.3 mg/dL) and indicates abnormal conjugated hyperbilirubinemia.",
+    "keyConcept": "Bilirubin reference ranges: Normal direct (conjugated) bilirubin is strictly < 0.3 mg/dL; 0.45 mg/dL represents abnormal conjugated hyperbilirubinemia."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-025",
+    "type": "mcq",
+    "lecture": 3,
+    "text": "After uptake into the hepatocyte, unconjugated bilirubin is carried to the site of conjugation by which protein?",
+    "options": [
+      "Ligandin",
+      "Albumin",
+      "Ceruloplasmin",
+      "Transferrin",
+      "Haptoglobin"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Following dissociation from albumin at the sinusoidal hepatocyte membrane, unconjugated bilirubin enters the hepatocyte via facilitated diffusion (OATP1B1/OATP1B3 transporters). In the cytosol, it is immediately bound by ligandin (glutathione S-transferase B / Y protein) and protein Z, which prevent its efflux back into the sinusoidal blood and deliver it to the smooth endoplasmic reticulum for glucuronidation.",
+    "keyConcept": "Intracellular bilirubin transport: Ligandin (Y-protein / GST) binds unconjugated bilirubin in hepatocyte cytoplasm, escorting it to the SER."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-026",
+    "type": "mcq",
+    "lecture": 3,
+    "text": "Conjugated bilirubin is converted to urobilinogen in the intestine by which of the following?",
+    "options": [
+      "Brush border peptidases",
+      "Hepatic glucuronyl transferase",
+      "Pancreatic lipase",
+      "Heme oxygenase",
+      "Bacterial proteases"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: In the terminal ileum and colon, conjugated bilirubin glucuronides are deconjugated by bacterial beta-glucuronidases and subsequently reduced by anaerobic intestinal microflora (colonic bacteria) into colorless tetrapyrrolic compounds known as urobilinogens (stercobilinogen, urobilinogen).",
+    "keyConcept": "Urobilinogen formation: Colonic bacterial flora deconjugate and reduce bilirubin glucuronide into urobilinogen and stercobilinogen."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-027",
+    "type": "mcq",
+    "lecture": 3,
+    "text": "A patient's results: van den Bergh direct positive, total bilirubin 17.2 mg/dL, conjugated 15.9 mg/dL, unconjugated 1.3 mg/dL, ALT 42 IU/L (N 0-40), ALP 410 IU/L (N 30-95). What is the most likely diagnosis?",
+    "options": [
+      "Normal biochemical pattern",
+      "Hepatocellular jaundice from hepatitis",
+      "Hemolytic jaundice from RBC destruction",
+      "Intrahepatic hepatocellular cirrhosis",
+      "Extrahepatic obstructive jaundice"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: The laboratory profile shows massive conjugated hyperbilirubinemia (conjugated 15.9 mg/dL out of 17.2 total, direct Van den Bergh positive), striking elevation of alkaline phosphatase (410 IU/L, > 4x normal), and near-normal transaminases (ALT 42 IU/L). This profound cholestatic pattern with minimal hepatocellular necrosis is diagnostic of extrahepatic biliary tract obstruction (e.g., choledocholithiasis or pancreatic head malignancy).",
+    "keyConcept": "Extrahepatic obstruction: Predominant direct (conjugated) hyperbilirubinemia with marked ALP elevation (> 3x) and near-normal transaminases."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-028",
+    "type": "mcq",
+    "lecture": 3,
+    "text": "A patient's results: van den Bergh direct positive, total bilirubin 12.8 mg/dL, conjugated 6.2 mg/dL, unconjugated 6.6 mg/dL, ALT 318 IU/L (N 0-45), AST 290 IU/L (N 0-40). What is the most likely diagnosis?",
+    "options": [
+      "Hepatocellular jaundice",
+      "Extrahepatic obstructive jaundice",
+      "Hemolytic jaundice",
+      "Normal biochemical pattern",
+      "Gallstone obstruction of the CBD"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Marked elevation of transaminases (ALT 318 IU/L, AST 290 IU/L; both > 7x normal) combined with a mixed hyperbilirubinemia (conjugated 6.2 mg/dL, unconjugated 6.6 mg/dL; biphasic/direct positive) reflects widespread hepatocellular injury and inflammation (hepatitis) causing both impaired canalicular excretion and impaired conjugation.",
+    "keyConcept": "Hepatocellular jaundice: Markedly elevated transaminases (ALT/AST in hundreds or thousands) with mixed (conjugated and unconjugated) hyperbilirubinemia."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-029",
+    "type": "mcq",
+    "lecture": 3,
+    "text": "A patient's results: van den Bergh indirect positive, total bilirubin 11.9 mg/dL, conjugated 0.7 mg/dL, unconjugated 11.2 mg/dL, ALT 33 IU/L, AST 29 IU/L. Which additional finding would you most expect?",
+    "options": [
+      "ALP above 2.5 times normal",
+      "Markedly elevated serum ALT",
+      "Pale clay-colored stools",
+      "Increased urinary urobilinogen",
+      "Bilirubin present in the urine"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Pure unconjugated hyperbilirubinemia (unconjugated 11.2 mg/dL out of 11.9 mg/dL, indirect positive) with completely normal liver transaminases (ALT 33, AST 29) indicates hemolytic jaundice. Massive RBC destruction floods the liver with unconjugated bilirubin; the liver conjugates it at maximal capacity, producing enormous amounts of intestinal urobilinogen. Increased urobilinogen is reabsorbed into the portal circulation and filtered by the kidneys, resulting in increased urinary urobilinogen with no urinary bilirubin.",
+    "keyConcept": "Hemolytic jaundice urine findings: Increased urinary urobilinogen with ABSENT urinary bilirubin (unconjugated bilirubin cannot be filtered by glomeruli)."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-030",
+    "type": "mcq",
+    "lecture": 3,
+    "text": "A patient's results: van den Bergh indirect positive, total bilirubin 0.9 mg/dL, conjugated 0.24 mg/dL, unconjugated 0.68 mg/dL, ALT 38 IU/L (N 0-45), AST 31 IU/L (N 0-40). How should this be interpreted?",
+    "options": [
+      "Early hepatocellular jaundice",
+      "Early obstructive jaundice",
+      "Biphasic hyperbilirubinemia",
+      "Normal pattern",
+      "Early hemolytic jaundice"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Total bilirubin of 0.9 mg/dL (normal < 1.2 mg/dL), conjugated 0.24 mg/dL (normal < 0.3 mg/dL), unconjugated 0.68 mg/dL (normal 0.2–0.8 mg/dL), ALT 38 IU/L (normal < 45), and AST 31 IU/L (normal < 40). In healthy individuals, 70–85% of circulating bilirubin is unconjugated; all parameters are within normal physiological reference intervals.",
+    "keyConcept": "Normal LFT profile: Total bilirubin < 1.2 mg/dL, direct < 0.3 mg/dL, and normal transaminases reflect healthy liver and biliary function."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-031",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "Under normal conditions, which plasma protein carries about 10% of circulating copper?",
+    "options": [
+      "Transferrin",
+      "Metallothionein",
+      "Albumin",
+      "Ferritin",
+      "Ceruloplasmin"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: In human plasma, approximately 90–95% of circulating copper is tightly and covalently incorporated into ceruloplasmin. The remaining 5–10% is non-ceruloplasmin-bound copper, which is loosely bound to serum albumin (and to a lesser degree histidine/amino acids) and represents the readily exchangeable, biologically active and diffusible copper pool.",
+    "keyConcept": "Circulating copper fractions: ~90% tightly incorporated in ceruloplasmin; ~10% loosely bound to albumin as the exchangeable tissue pool."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-032",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "Metallothioneins protect the body against the damaging effects of which mineral?",
+    "options": [
+      "Copper",
+      "Iron",
+      "Manganese",
+      "Calcium",
+      "Magnesium"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Metallothioneins are small, cysteine-rich intracellular proteins synthesized primarily in the liver, kidney, and intestinal mucosa. Their high thiol (-SH) content allows them to chelate and detoxify heavy metal ions, particularly copper (Cu+) and zinc (Zn2+), buffering free intracellular copper and protecting cellular organelles from oxidative damage.",
+    "keyConcept": "Metallothionein: Cysteine-rich intracellular chelator that binds and sequesters free copper and heavy metals to prevent oxidative stress."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-033",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "Where is ceruloplasmin synthesized?",
+    "options": [
+      "Intestinal mucosa",
+      "Renal tubular cells",
+      "Biliary epithelium",
+      "Bone marrow",
+      "Hepatocytes"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: Ceruloplasmin (an alpha-2 globulin and blue copper-carrying ferroxidase) is synthesized exclusively by hepatocytes in the liver. Within the trans-Golgi network of hepatocytes, copper is incorporated into apoceruloplasmin by the ATP7B copper-transporting ATPase before holoceruloplasmin is secreted into the blood.",
+    "keyConcept": "Ceruloplasmin synthesis: Exclusively synthesized in hepatocytes; copper incorporation occurs in the trans-Golgi network via ATP7B."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-034",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "In Wilson disease, the low serum ceruloplasmin is best explained by which defect?",
+    "options": [
+      "Failure to load copper onto apoceruloplasmin in the Golgi",
+      "Impaired intestinal absorption of dietary copper ions",
+      "Increased urinary loss of intact ceruloplasmin protein",
+      "Accelerated degradation of ceruloplasmin by free radicals",
+      "Reduced transcription of the hepatic ceruloplasmin gene"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: In Wilson disease, loss-of-function mutations in the ATP7B gene abolish copper transport into the secretory pathway (trans-Golgi network) of hepatocytes. Consequently, apoceruloplasmin (the copper-free precursor) is secreted into the circulation; apoceruloplasmin is structurally unstable and undergoes rapid proteolytic degradation, leading to a markedly low serum ceruloplasmin concentration.",
+    "keyConcept": "Wilson disease ceruloplasmin defect: Absent ATP7B prevents copper loading into apoceruloplasmin; unstable apoprotein is rapidly cleared from plasma."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-035",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "The protein mutated in Wilson disease is best described as which of the following?",
+    "options": [
+      "A hepatic copper-transporting ATPase",
+      "An intestinal copper-transporting ATPase",
+      "A renal tubular copper reabsorption channel",
+      "A plasma copper-binding glycoprotein",
+      "A cytosolic copper-binding metallothionein"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The ATP7B gene on chromosome 13q14.3 encodes a P-type transmembrane copper-transporting ATPase (ATP7B) expressed predominantly on the trans-Golgi network and canalicular membranes of hepatocytes. It functions to transport copper into the secretory pathway for ceruloplasmin incorporation and into bile canaliculi for biliary excretion.",
+    "keyConcept": "ATP7B function: P-type copper-transporting ATPase in hepatocytes responsible for copper incorporation into ceruloplasmin and biliary excretion."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-036",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "which combination of findings is diagnostic for Wilson disease?",
+    "options": [
+      "Liver copper over 100 ug/g dry weight with ceruloplasmin under 10 mg/dL",
+      "Liver copper over 250 ug/g dry weight with ceruloplasmin under 40 mg/dL",
+      "Liver copper over 250 ug/g dry weight with ceruloplasmin under 20 mg/dL",
+      "Liver copper over 500 ug/g dry weight with ceruloplasmin under 30 mg/dL",
+      "Liver copper over 50 ug/g dry weight with ceruloplasmin under 20 mg/dL"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: The gold standard diagnostic criteria for Wilson disease (AASLD and EASL consensus guidelines) include a quantitative liver biopsy copper concentration greater than 250 µg/g dry weight (normal < 50 µg/g) combined with a low serum ceruloplasmin (< 20 mg/dL, normal 20–40 mg/dL) and elevated 24-hour urinary copper excretion (> 100 µg/24h).",
+    "keyConcept": "Wilson disease diagnostic criteria: Hepatic copper > 250 µg/g dry tissue weight and serum ceruloplasmin < 20 mg/dL (often < 10 mg/dL)."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-037",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "How does penicillamine lower body copper in Wilson disease?",
+    "options": [
+      "It restores ATP7B transport activity",
+      "It chelates copper for urinary excretion",
+      "It blocks intestinal copper absorption",
+      "It increases ceruloplasmin synthesis",
+      "It chelates copper for biliary excretion"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: D-penicillamine (dimethylcysteine) is a thiol-containing chelating agent. Its sulfhydryl group binds free copper in plasma and tissues to form a stable, soluble, water-soluble copper-penicillamine coordination complex that is readily filtered by renal glomeruli and excreted in the urine (producing massive cupriuria).",
+    "keyConcept": "Penicillamine mechanism: Thiol chelator that binds tissue copper and promotes its renal excretion in urine (cupriuria)."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-038",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "Which of the following is considered CURATIVE treatment for Wilson disease?",
+    "options": [
+      "Lifelong penicillamine",
+      "Penicillamine plus pyridoxine",
+      "Low-copper diet",
+      "Pyridoxine supplementation",
+      "Liver transplantation"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: Orthotopic liver transplantation replaces the genetically defective host liver with a donor liver possessing intact, wild-type ATP7B copper-transporting ATPases. This permanently restores normal biliary copper excretion and ceruloplasmin synthesis, curing the underlying metabolic defect.",
+    "keyConcept": "Wilson disease curative therapy: Liver transplantation permanently cures the metabolic defect by providing functional donor ATP7B."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-039",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "Renal tubular dysfunction from copper deposition in Wilson disease characteristically produces which urinary findings?",
+    "options": [
+      "Proteinuria and hematuria",
+      "Ketonuria and glucosuria",
+      "Glucosuria and aminoaciduria",
+      "Hematuria and pyuria",
+      "Bilirubinuria and urobilinuria"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Chronic accumulation and toxic deposition of free copper in renal proximal tubular epithelial cells causes secondary Fanconi syndrome (proximal renal tubular acidosis). This presents with impaired proximal tubular reabsorption characterized by glucosuria (with normal blood glucose), generalized aminoaciduria, phosphaturia, and uricosuria.",
+    "keyConcept": "Renal Wilson disease: Proximal tubular copper toxicity causes Fanconi syndrome presenting with glucosuria and aminoaciduria."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-040",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "Why is excess free copper in tissues harmful?",
+    "options": [
+      "It oxidizes proteins, lipids and nucleic acids",
+      "It inhibits cytochrome c oxidase in mitochondria",
+      "It competitively displaces zinc from DNA in nuclei",
+      "It blocks hepatic synthesis of all plasma proteins",
+      "It chelates pyridoxal phosphate in the tissues"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Unbound (free) copper is a redox-active transition metal (Cu+ / Cu2+). Through Fenton and Haber-Weiss reactions with hydrogen peroxide, it generates highly reactive hydroxyl free radicals (•OH), which trigger lipid peroxidation of cell membranes, cross-linking and inactivation of proteins, and mitochondrial and DNA cleavage, leading to tissue necrosis.",
+    "keyConcept": "Copper toxicity mechanism: Redox cycling of free copper catalyzes hydroxyl radical generation, causing lipid peroxidation and cell necrosis."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-041",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "Which of the following enzymes is copper-dependent?",
+    "options": [
+      "Carbonic anhydrase",
+      "Glutathione peroxidase",
+      "Xanthine oxidase",
+      "Lysyl oxidase",
+      "Mitochondrial superoxide dismutase"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Lysyl oxidase is a copper-dependent amine oxidase essential for cross-linking collagen and elastin fibrils in the extracellular matrix. Other copper-dependent enzymes include cytochrome c oxidase, superoxide dismutase (Cu/Zn-SOD), dopamine beta-hydroxylase, and tyrosinase.",
+    "keyConcept": "Copper-dependent enzymes: Lysyl oxidase (collagen cross-linking), cytochrome c oxidase (ETC), tyrosinase (melanin), and ceruloplasmin (ferroxidase)."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-042",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "A child on penicillamine for Wilson disease develops neuropathy and glossitis. By what mechanism does penicillamine cause this?",
+    "options": [
+      "It chelates copper needed for pyridoxine phosphate oxidase enzyme activity",
+      "It binds pyridoxal phosphate, forming an inactive derivative lost in urine",
+      "It inhibits pyridoxal kinase, blocking phosphorylation of dietary vitamin B6",
+      "It enhances phosphatase activity, converting PLP back into free pyridoxal",
+      "It reduces intestinal absorption of pyridoxine from the jejunal lumen"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: D-penicillamine possesses both a free sulfhydryl group and an amino group. It reacts non-enzymatically with the aldehyde group of pyridoxal 5'-phosphate (PLP, active vitamin B6) to form a stable thiazolidine derivative, inactivating PLP and promoting its rapid urinary excretion, resulting in clinical vitamin B6 deficiency (neuropathy, glossitis).",
+    "keyConcept": "Penicillamine B6 interaction: Chemically binds pyridoxal phosphate to form an inactive thiazolidine complex, causing secondary B6 deficiency."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-043",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "Besides penicillamine, which drug is a recognized cause of vitamin B6 deficiency?",
+    "options": [
+      "Rifampicin",
+      "Metformin",
+      "Isoniazid",
+      "Warfarin",
+      "Omeprazole"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Isoniazid (INH), a cornerstone antimycobacterial drug used for tuberculosis, forms inactive hydrazone complexes with pyridoxal phosphate and competitively inhibits pyridoxal kinase. Supplemental pyridoxine (vitamin B6) must be routinely co-prescribed with INH to prevent peripheral neuropathy.",
+    "keyConcept": "Drug-induced B6 deficiency: Isoniazid and penicillamine both bind and inactivate pyridoxal phosphate, necessitating B6 co-supplementation."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-044",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "Why was plasma pyridoxal phosphate chosen as the indicator of vitamin B6 status in this case?",
+    "options": [
+      "It is the form of vitamin B6 found in plant foods",
+      "It is the urinary excretion product of vitamin B6",
+      "It is the only form of vitamin B6 absorbed in the gut",
+      "It is the main storage form of vitamin B6 in liver",
+      "It is the biologically active form of vitamin B6"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: Pyridoxal 5'-phosphate (PLP) is the coenzymatically active form of vitamin B6 that serves as a cofactor for over 140 metabolic reactions (including aminotransferases, decarboxylases, and heme synthesis). Circulating plasma PLP reflects total body stores and is the gold-standard biochemical marker of functional vitamin B6 status.",
+    "keyConcept": "Pyridoxal phosphate (PLP): The biologically active coenzyme form of vitamin B6; plasma PLP is the standard indicator of B6 nutritional status."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-045",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "Which enzyme converts pyridoxamine phosphate (PMP) into pyridoxal phosphate (PLP)?",
+    "options": [
+      "Pyridoxal kinase",
+      "Pyridoxine phosphate kinase",
+      "Pyridoxamine aminotransferase",
+      "Pyridoxal phosphate phosphatase",
+      "Pyridoxine phosphate oxidase"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: In vitamin B6 salvage and activation pathways, dietary pyridoxine and pyridoxamine are first phosphorylated by pyridoxal kinase into PNP and PMP. Both PNP and PMP are subsequently converted to the active cofactor pyridoxal 5'-phosphate (PLP) by the FMN-dependent flavoprotein enzyme pyridoxine 5'-phosphate oxidase (PPOX).",
+    "keyConcept": "PPOX enzyme: Flavin-dependent pyridoxine phosphate oxidase catalyzes oxidation of PMP and PNP into active PLP."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-046",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "Which form of vitamin B6 is obtained mainly from plant sources?",
+    "options": [
+      "Pyridoxal",
+      "Pyridoxal phosphate",
+      "Pyridoxamine",
+      "Pyridoxamine phosphate",
+      "Pyridoxine"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: Dietary forms of vitamin B6 differ by source: plant foods (whole grains, legumes, vegetables) contain predominantly pyridoxine (and its glucoside conjugate pyridoxine-5'-beta-D-glucoside), whereas animal tissues (meat, poultry, fish) contain predominantly pyridoxal and pyridoxamine and their phosphorylated derivatives.",
+    "keyConcept": "Dietary vitamin B6 forms: Plants primarily provide pyridoxine; animal products provide pyridoxal and pyridoxamine."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-047",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "Pyridoxine HCl tablets were added to the child's regimen. Which instruction accompanied them?",
+    "options": [
+      "They should replace penicillamine once copper levels normalize",
+      "They should be given only intramuscularly to avoid chelation",
+      "They should be taken together with penicillamine in one dose",
+      "They should not be taken at the same time as penicillamine",
+      "They should be stopped once the low-copper diet is started"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Because D-penicillamine directly reacts with and chelates pyridoxine/pyridoxal in the gastrointestinal tract and blood to form an inactive thiazolidine complex, supplemental pyridoxine tablets must be taken at least 2 hours apart from the penicillamine dose to ensure optimal absorption and prevent mutual inactivation.",
+    "keyConcept": "Penicillamine administration timing: Pyridoxine supplements must be taken at least 2 hours apart from penicillamine to avoid in vivo chelation."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-048",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "A 60 kg sedentary woman eats 250 g carbohydrate, 60 g protein and 70 g fat daily. What is her caloric intake and expected weight trend?",
+    "options": [
+      "1870 kcal/day, stable weight",
+      "2310 kcal/day, gaining weight",
+      "1530 kcal/day, losing weight",
+      "1870 kcal/day, losing weight",
+      "1870 kcal/day, gaining weight"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Caloric intake calculation: Carbohydrate: 250 g * 4 kcal/g = 1000 kcal; Protein: 60 g * 4 kcal/g = 240 kcal; Fat: 70 g * 9 kcal/g = 630 kcal. Total Energy Intake = 1000 + 240 + 630 = 1870 kcal/day. For a 60 kg sedentary adult woman, total daily energy expenditure is approximately 30 kcal/kg/day = 1800 kcal/day. Because caloric intake closely matches expenditure, her weight will remain stable.",
+    "keyConcept": "Caloric calculation: CHO and protein yield 4 kcal/g, fat yields 9 kcal/g; 1870 kcal matches expenditure for a 60 kg sedentary female."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-049",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "An adult eats 300 g carbohydrate, 50 g protein and 40 g fat daily. Which statement about his diet relative to the AMDR is correct?",
+    "options": [
+      "Carbohydrate is above its AMDR upper limit",
+      "All three are within their AMDR ranges",
+      "Fat is above its AMDR upper limit",
+      "Protein is below its AMDR lower limit",
+      "Fat is below its AMDR lower limit"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Energy calculation on a 2200 kcal/day diet: Protein = 50 g * 4 kcal/g = 200 kcal; (200 / 2200) * 100 = 9.1% of total calories. Acceptable Macronutrient Distribution Ranges (AMDR): Protein is 10% to 35% of total calories; Carbohydrates: 45% to 65%; Fat: 20% to 35%. Because protein accounts for only 9.1%, it falls below the minimum recommended AMDR floor (10%).",
+    "keyConcept": "AMDR standards: Protein 10–35%, Fat 20–35%, Carbohydrate 45–65%; 50g protein on 2200 kcal diet yields 9.1%, which is below the 10% AMDR threshold."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-050",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "An 80 kg very active man needs how many kilocalories per day according to the lab's daily caloric needs?",
+    "options": [
+      "2400 kcal/day",
+      "2800 kcal/day",
+      "3200 kcal/day",
+      "3600 kcal/day",
+      "4000 kcal/day"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Daily caloric requirement for adults is estimated based on body weight and physical activity level: Sedentary: 30 kcal/kg/day; Moderately active: 35 kcal/kg/day; Very active / heavy physical labor: 40 kcal/kg/day. For an 80 kg very active male: 80 kg * 40 kcal/kg/day = 3200 kcal/day.",
+    "keyConcept": "Energy expenditure estimation: Very active individuals require approximately 40 kcal/kg/day; 80 kg * 40 = 3200 kcal/day."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-051",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "A man weighs 85 kg and is 1.68 m tall. What is his BMI and classification?",
+    "options": [
+      "28.4 kg/m2, overweight",
+      "30.1 kg/m2, overweight",
+      "25.3 kg/m2, overweight",
+      "30.1 kg/m2, obese",
+      "50.6 kg/m2, obese"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Body Mass Index (BMI) = Weight (kg) / [Height (m)]^2 = 85 / (1.68)^2 = 85 / 2.8224 = 30.11 kg/m2. According to WHO classification: BMI < 18.5 is underweight, 18.5–24.9 is normal weight, 25.0–29.9 is overweight, and >= 30.0 kg/m2 is classified as Obese (Class I Obesity: 30.0–34.9 kg/m2).",
+    "keyConcept": "BMI classification: BMI = kg/m^2; >= 30.0 kg/m^2 constitutes clinical obesity (WHO Class I: 30.0–34.9 kg/m^2)."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-052",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "A woman has a waist circumference of 84 cm and a hip circumference of 100 cm. According to the WHR cut-offs taught in the lab, how is her fat distribution classified?",
+    "options": [
+      "Android, since her WHR exceeds 0.8",
+      "Android, since her WHR exceeds 1.0",
+      "Gynoid, since her WHR is below 1.0",
+      "Normal, since her waist is below 88 cm",
+      "Gynoid, since her WHR is below 0.9"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Waist-to-Hip Ratio (WHR) = Waist circumference / Hip circumference = 84 cm / 100 cm = 0.84. In females, a WHR greater than 0.80 indicates central/upper-body visceral fat distribution (android or apple-shaped obesity), which carries heightened cardiovascular and metabolic disease risk.",
+    "keyConcept": "Waist-to-hip ratio in females: WHR > 0.80 indicates android (central/visceral) fat distribution with elevated cardiometabolic risk."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-053",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "A man has a waist circumference of 96 cm and a hip circumference of 102 cm. Based on the WHR cut-offs taught, how is he classified?",
+    "options": [
+      "Gynoid, since his hip exceeds his waist",
+      "Gynoid, since his WHR is below 0.8",
+      "Android, since his waist exceeds 94 cm",
+      "Android, since his WHR exceeds 0.8",
+      "Below the male android cut-off"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: According to international cardiovascular and metabolic guidelines (IDF/WHO), abdominal obesity in men is defined by a waist circumference of >= 94 cm (or WHR >= 0.90), which indicates increased metabolic risk. A waist of 96 cm places this male in the android obesity risk category.",
+    "keyConcept": "Male abdominal obesity: Waist circumference >= 94 cm indicates android adipose accumulation and elevated metabolic risk."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-054",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "Which component accounts for the LARGEST share of total energy expenditure in a typical adult?",
+    "options": [
+      "Physical activity",
+      "Resting energy expenditure",
+      "Growth and tissue repair",
+      "Digestion and absorption",
+      "Thermic effect of food"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: In a non-athlete adult, Resting Energy Expenditure (REE / Basal Metabolic Rate) accounts for the largest proportion of Total Energy Expenditure (TEE), contributing approximately 60% to 75%. Physical activity accounts for 15% to 30%, and the thermic effect of food contributes roughly 10%.",
+    "keyConcept": "Components of energy expenditure: REE/BMR is the largest component of TEE, accounting for 60–75% of total daily caloric expenditure."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-055",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "The thermic effect of food represents approximately what percentage of total energy expenditure?",
+    "options": [
+      "5%",
+      "10%",
+      "20%",
+      "30%",
+      "60%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The thermic effect of food (TEF), also known as diet-induced thermogenesis, represents the metabolic energy required for the digestion, absorption, transport, and assimilation of ingested nutrients. It accounts for approximately 10% of total daily energy expenditure on a balanced mixed diet.",
+    "keyConcept": "Thermic effect of food: Diet-induced thermogenesis represents approximately 10% of total daily energy expenditure."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-056",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "What is the recommended daily dietary fiber intake for an adult male?",
+    "options": [
+      "18 g/day",
+      "25 g/day",
+      "30 g/day",
+      "38 g/day",
+      "50 g/day"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: According to dietary reference intakes (Institute of Medicine / Dietary Guidelines), the Adequate Intake (AI) for total dietary fiber is 14 grams per 1,000 kcal consumed. For adult men aged 19–50 years, this corresponds to 38 grams per day (compared to 25 grams per day for adult women).",
+    "keyConcept": "Dietary fiber recommendations: Adequate intake is 38 g/day for adult men and 25 g/day for adult women (14 g/1000 kcal)."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-057",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "Which feature correctly describes gynoid (pear-shaped) obesity?",
+    "options": [
+      "More common in men than in women",
+      "Excess fat mainly accumulated on the abdomen",
+      "Waist-to-hip ratio above 1.0 in most patients",
+      "No significant link to metabolic syndrome",
+      "Strong correlation with insulin resistance"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Gynoid (pear-shaped, gluteofemoral) obesity is characterized by subcutaneous adipose tissue accumulation in the hips, thighs, and buttocks. Subcutaneous adipose tissue possesses higher lipoprotein lipase activity and lower lipolytic rate, sequestering fatty acids safely and exhibiting no significant association with insulin resistance, atherogenic dyslipidemia, or metabolic syndrome compared to visceral android fat.",
+    "keyConcept": "Gynoid fat phenotype: Gluteofemoral subcutaneous fat does not confer high risk for metabolic syndrome or insulin resistance."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-058",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "Micronutrients are defined as nutrients needed by the body in amounts of:",
+    "options": [
+      "1 to 5 g per day",
+      "More than 1 g per day",
+      "Less than 100 mg per week",
+      "Less than 1 g per day",
+      "Less than 10 g per day"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Micronutrients (vitamins and trace minerals) are dietary compounds required by the human body in amounts of less than 1 gram per day (typically milligrams [mg] or micrograms [µg]), whereas macronutrients (carbohydrates, proteins, fats) are required in large quantities exceeding several grams to hundreds of grams per day.",
+    "keyConcept": "Micronutrient definition: Essential dietary compounds required in amounts < 1 gram/day (measured in mg or µg)."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-059",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "A 28-year-old man comes to the physician for the evaluation of a progressively worsening tremor in his hands and multiple falls over the past 3 months. The tremor occurs both at rest and with movement. He also reports decreased concentration and a loss of interest in his normal activities over this time period. He has no history of serious medical illness and takes no medications. He drinks two alcoholic beverages daily and does not use illicit drugs. Vital signs are within normal limits. Physical exam shows mild jaundice, a flapping tremor, and a broad-based gait. Serum studies show:",
+    "options": [
+      "Tenofovir",
+      "Prednisolone",
+      "Levodopa",
+      "Deferoxamine",
+      "Penicillamine"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: The clinical presentation of a young adult (28yo) with signs of liver disease (mild jaundice), basal ganglia involvement (broad-based gait, flapping tremor/asterixis), and neuropsychiatric symptoms is classic for Wilson disease (hepatolenticular degeneration). First-line medical therapy to chelate accumulated toxic copper is D-penicillamine (or trientine).",
+    "keyConcept": "Wilson disease clinical vignette: Young adult with hepatic dysfunction and movement disorder; treated with copper chelator D-penicillamine."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-060",
+    "type": "mcq",
+    "lecture": 4,
+    "text": "A 28-year-old woman is brought to the physician because of progressive difficulty walking, slowed speech, and a tremor for the past 5 months. Her grandfather died of bleeding esophageal varices at the age of 42 years. She does not drink alcohol. She is alert and oriented but has a flat affect. Her speech is slurred and monotonous. Examination shows a broad-based gait and a low-frequency tremor of her left hand. Abdominal examination shows hepatosplenomegaly. A photograph of the patient's left eye is shown. Further evaluation of this patient is most likely to show which of the following findings?",
+    "options": [
+      "Skin deposits of lipid-laden macrophages",
+      "Increased number of CAG repeats",
+      "Positive anti-hepatitis B virus IgG antibodies",
+      "Low serum ceruloplasmin concentration",
+      "Destruction of lobular bile ducts on liver biopsy"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: The clinical vignette describes a young woman with extrapyramidal movement disorders (gait disturbance, tremor, dysarthria), psychiatric features (flat affect), hepatosplenomegaly, family history of young cirrhosis, and a Kayser-Fleischer ring on eye photography (copper deposition in Descemet's membrane of the cornea). Diagnostic biochemical evaluation will reveal a characteristically low serum ceruloplasmin concentration (< 20 mg/dL).",
+    "keyConcept": "Kayser-Fleischer rings & Wilson disease: Pathognomonic corneal copper deposition accompanied by low serum ceruloplasmin (< 20 mg/dL)."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-061",
+    "type": "mcq",
+    "lecture": 3,
+    "text": "A 49-year-old man comes to the physician because of a 1-week history of yellowish discoloration of his skin and generalized pruritus. Examination shows jaundice of the skin and scleral icterus. Urinalysis shows an elevated concentration of bilirubin and a low concentration of urobilinogen. Which of the following is the most likely underlying cause of these findings?",
+    "options": [
+      "Absent UDP-glucuronosyltransferase activity",
+      "Increased hemoglobin breakdown",
+      "Malignant growth in the pancreatic body",
+      "Increased intestinal bilirubin reabsorption",
+      "Defective hepatic bile excretion",
+      "Presence of stones within the gallbladder"
+    ],
+    "correctIndex": 5,
+    "explanation": "Criteria of Identification: The combination of jaundice, generalized pruritus (due to bile salt accumulation in skin), dark urine containing conjugated bilirubin, and low urinary urobilinogen indicates post-hepatic obstructive (cholestatic) jaundice. Gallstone obstruction of the extrahepatic biliary tree (choledocholithiasis) prevents conjugated bile from reaching the intestine, abolishing intestinal urobilinogen formation and shunting water-soluble direct bilirubin into the urine.",
+    "keyConcept": "Obstructive jaundice urinalysis: High urinary conjugated bilirubin with absent/low urinary urobilinogen and pruritus from retained bile salts."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-062",
+    "type": "mcq",
+    "lecture": 3,
+    "text": "A 3-day-old girl is brought to the physician by her mother because of difficulty feeding and lethargy for 1 day. She had jaundice after birth and was scheduled for a follow-up visit the next day. Her hemoglobin is 18.5 g/dL, total bilirubin is 38.1 mg/dL, and direct bilirubin is 0.1 mg/dL. Despite appropriate measures, the infant dies. At autopsy, examination of the brain shows deep yellow staining of the basal ganglia and subthalamic nuclei bilaterally. Which of the following is the most likely cause of this infant's findings?",
+    "options": [
+      "Defective intracellular bilirubin transport",
+      "Increased degradation of red blood cells",
+      "Extrahepatic obliteration of the biliary tree",
+      "Impaired glucuronidation of bilirubin",
+      "Decreased bilirubin uptake in hepatocytes"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Severe neonatal unconjugated hyperbilirubinemia (total bilirubin 38.1 mg/dL, direct 0.1 mg/dL) presenting in the first few days of life with lethal kernicterus (bilirubin encephalopathy with yellow pigmentation of the basal ganglia and subthalamic nuclei) is caused by severe inherited deficiency of bilirubin UDP-glucuronosyltransferase (UGT1A1), as seen in Crigler-Najjar syndrome Type I.",
+    "keyConcept": "Kernicterus & Crigler-Najjar: Absent UGT1A1 causes massive unconjugated hyperbilirubinemia crossing the blood-brain barrier into basal ganglia."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-063",
+    "type": "mcq",
+    "lecture": 3,
+    "text": "Two days after undergoing surgical aortic valve replacement with a porcine valve, a 59-year-old man develops yellow discoloration of his eyes. He had a similar episode 40 years ago after running a marathon but the discoloration resolved spontaneously. He has a history of calcific aortic stenosis. His vital signs are within normal limits. Physical examination shows scleral icterus. Abdominal examination shows no abnormalities. Laboratory studies show:",
+    "options": [
+      "Impaired bilirubin conjugation",
+      "Mechanical erythrocyte damage",
+      "Drug-induced toxicity",
+      "Absent hepatic glucuronosyltransferase",
+      "Impaired bilirubin excretion"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Acute onset of jaundice and scleral icterus following surgical aortic valve replacement is caused by microangiopathic hemolytic anemia due to mechanical sheer stress and turbulence destroying erythrocytes across the prosthetic valve. Intravascular erythrocyte destruction releases excess heme, producing unconjugated hyperbilirubinemia.",
+    "keyConcept": "Prosthetic valve hemolysis: Mechanical erythrocyte fragmentation causes hemolytic jaundice with predominant unconjugated bilirubin."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-064",
+    "type": "mcq",
+    "lecture": 3,
+    "text": "Two days after delivery, a 4500-g (9-lb 10-oz) male newborn develops poor feeding and irritability. He was born at 38 weeks' gestation. Delivery was complicated by a prolonged second stage of labor and vacuum extraction was performed. He appears lethargic. Physical examination shows yellow discoloration of the skin and mucous membranes. There is a swelling in the occipital region. His total serum bilirubin concentration is 21.5 mg/dL. The newborn is placed in an incubator with a non-UV, blue-green light. Two days later, his total serum bilirubin concentration is within the reference range. Which of the following processes best explains the decrease of this newborn's total bilirubin concentration?",
+    "options": [
+      "Oxidation of conjugated bilirubin molecules",
+      "Reduction of conjugated bilirubin molecules",
+      "Isomerization of unconjugated bilirubin molecules",
+      "Photolysis of conjugated bilirubin molecules",
+      "Glucuronidation of unconjugated bilirubin molecules"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Phototherapy with blue-green light (wavelength 460–490 nm) acts by converting native, hydrophobic 4Z,15Z-bilirubin into water-soluble configurational isomers (4Z,15E-bilirubin) and structural isomers (lumirubin) via photoisomerization. These photoisomers are polar and can be readily excreted in bile and urine without requiring hepatic glucuronide conjugation.",
+    "keyConcept": "Phototherapy mechanism: Photoisomerization converts toxic hydrophobic unconjugated bilirubin into water-soluble lumirubin excreted without conjugation."
+  },
+  {
+    "id": "MGL3-PRAC-BIO-065",
+    "type": "mcq",
+    "lecture": 3,
+    "text": "A 5-day-old male newborn is brought to the physician by his mother because of yellowish discoloration of the skin for the past 2 days. The discoloration first appeared on his face and then spread to his trunk. He was born at 38 weeks' gestation via uncomplicated vaginal delivery and weighed 3500 g (7.7 lb); he currently weighs 3600 g (7.9 lb). He is exclusively breastfed every 2-3 hours. Examination shows scleral icterus and jaundice of the face, chest, and abdomen. Laboratory studies show:",
+    "options": [
+      "Congenital hypothyroidism",
+      "Rhesus incompatibility",
+      "Dubin-Johnson syndrome",
+      "Physiological neonatal jaundice",
+      "Breastfeeding jaundice",
+      "Biliary atresia",
+      "ABO hemolytic disease of the newborn"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Mild to moderate jaundice appearing on days 2–5 of life in a healthy, thriving, full-term newborn who is gaining weight and feeding well is characteristic of physiological neonatal jaundice. It results from a combination of increased red cell turnover (fetal hemoglobin degradation), relative immaturity of hepatic UGT1A1 enzyme activity, and increased enterohepatic circulation of bilirubin.",
+    "keyConcept": "Physiological neonatal jaundice: Benign, self-limited unconjugated hyperbilirubinemia peaking on days 3–5 due to hepatic enzyme immaturity and RBC turnover."
+  }
+]

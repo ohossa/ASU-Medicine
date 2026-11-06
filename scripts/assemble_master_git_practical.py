@@ -32,8 +32,12 @@ micro_questions = micro_ch["subjects"][0]["questions"]
 physio_ch = next(c for c in current_bank if c["id"] == 306)
 physio_questions = physio_ch["subjects"][0]["questions"]
 
+# 6. Load Biochemistry (65 Qs)
+with open("scripts/adjudicated_biochemistry.json", "r", encoding="utf-8") as f:
+    bio_questions = json.load(f)
+
 # Enhance all keyConcepts to be at least 20 chars
-for q_list in [anat_questions, histo_questions, patho_questions, para_questions, micro_questions, physio_questions]:
+for q_list in [anat_questions, histo_questions, patho_questions, para_questions, micro_questions, physio_questions, bio_questions]:
     for q in q_list:
         kc = q.get("keyConcept", "").strip()
         if len(kc) < 18:
@@ -139,6 +143,25 @@ master_bank = [
                     "Clinical Gastroenterology Physiology Cases"
                 ],
                 "questions": physio_questions
+            }
+        ]
+    },
+    {
+        "id": 307,
+        "title": "Practical — Biochemistry",
+        "bankSection": "practical",
+        "accentColor": "biochem",
+        "subjects": [
+            {
+                "id": "biochemistry",
+                "name": "Biochemistry",
+                "lectureNames": [
+                    "Lab 1: Serum Albumin & Total Protein (Biuret Assay)",
+                    "Lab 2: Liver Function Tests & Diagnostic Enzymes (LFTs)",
+                    "Lab 3: Bilirubin Metabolism, Jaundice & Van den Bergh Test",
+                    "Lab 4: Nutritional Assessment, BMI & Clinical Case Vignettes"
+                ],
+                "questions": bio_questions
             }
         ]
     }
