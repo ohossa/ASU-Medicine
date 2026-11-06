@@ -1,0 +1,1714 @@
+[
+  {
+    "id": "MGL3-PRAC-PARA-0001",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Identify the adult worm and how it causes internal autoinfection:",
+    "options": [
+      "Echinococcus granulosus - a ruptured hydatid cyst releases protoscolices that grow into adults",
+      "Diphyllobothrium latum - plerocercoids develop in the intestinal wall",
+      "Taenia saginata - reverse peristalsis carries gravid segments to the stomach",
+      "Hymenolepis nana - eggs hatch in the intestine and oncospheres develop into cysticercoids in the villi",
+      "Hymenolepis nana - it does not cause autoinfection; a flea or beetle intermediate host is obligatory"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Hymenolepis nana (dwarf tapeworm) is the only human cestode capable of internal autoinfection: eggs released in the small intestine can hatch prematurely without exiting the body. The released hexacanth oncospheres penetrate the intestinal villi, develop into cysticercoids, and re-emerge into the lumen to mature into adult worms, perpetuating heavy worm burdens.\n\nOption A is incorrect because hydatid cyst protoscolices develop into adults only in canine definitive hosts. Option C is incorrect because T. saginata does not cause human cysticercosis or autoinfection.",
+    "keyConcept": "Hymenolepis nana: Only cestode with internal autoinfection (eggs hatch in lumen, cysticercoids in villi).",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q1_eed968d00f.webp",
+      "caption": "Practical Spotter Examination — Station 1"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0002",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Structure 2 in this specimen is composed of:",
+    "options": [
+      "A single bilobed ovary",
+      "6-9 testes arranged in a mass",
+      "Numerous follicular testes scattered in the body",
+      "Vitelline glands",
+      "Two deeply lobed testes"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The male Schistosoma mansoni possesses 6 to 9 testes arranged in a compact zigzag cluster situated dorsally near the anterior end behind the ventral sucker. In contrast, S. haematobium has 4 to 5 testes in a straight line.\n\nOption A describes female flukes. Option C describes cestodes. Option E describes Fasciola (two deeply branched testes).",
+    "keyConcept": "Male Schistosoma mansoni is characterized by 6–9 testes clustered behind the ventral sucker.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q2_c36b0958ae.webp",
+      "caption": "Practical Spotter Examination — Station 2"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0003",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A carrier of an adult tapeworm developed cysticercosis through autoinfection. Which figure shows the gravid segment of his worm?",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q3_opt1_81c68524b3.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q3_opt2_ab23f8daae.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q3_opt3_0b0c74c055.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q3_opt4_c260fa5191.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q3_opt5_a804aea612.webp)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Human cysticercosis occurs exclusively with Taenia solium (the pork tapeworm), never Taenia saginata. A patient harboring an adult T. solium can develop cysticercosis through external autoinfection (fecal-oral ingestion of gravid eggs) or internal autoinfection (reverse peristalsis carrying gravid segments into the stomach, where gastric acid digests the egg shell).",
+    "keyConcept": "Taenia solium causes human cysticercosis via autoinfection; T. saginata does not.",
+    "media": null
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0004",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Rectal prolapse is a complication of heavy infection with this worm. Interpret.",
+    "options": [
+      "Chronic blood loss causes atrophy of the anal sphincter",
+      "Gravid females migrate out at night, causing straining during sleep",
+      "A bolus of entangled adult worms obstructs the rectum and pushes it outwards",
+      "Flask-shaped ulcers weaken the rectal wall",
+      "The worm is deeply embedded in the mucosa by its thin anterior part, causing loss of muscle tone in heavy infection"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Rectal prolapse is a hallmark complication of heavy Trichuris trichiura (whipworm) infection (Trichuris Dysentery Syndrome) in malnourished children. Thousands of adult worms embed their thread-like anterior ends into the cecal and rectal mucosa, causing intense inflammation, tenesmus, and chronic straining that precipitates rectal prolapse.",
+    "keyConcept": "Heavy Trichuris trichiura (whipworm) infection causes rectal prolapse in children due to severe tenesmus.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q4_a6b5ec29c3.webp",
+      "caption": "Practical Spotter Examination — Station 4"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0005",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Identify the station and its identifying criterion:",
+    "options": [
+      "Entamoeba coli cyst - up to 8 nuclei with eccentric karyosomes",
+      "Entamoeba histolytica cyst - 1-4 nuclei with central karyosomes",
+      "Giardia lamblia cyst - 4 nuclei and axostyles",
+      "Balantidium coli cyst - kidney-shaped macronucleus",
+      "Entamoeba histolytica cyst - up to 8 nuclei with central karyosomes"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The mature cyst of Entamoeba histolytica measures 10–15 µm, contains 1 to 4 vesicular nuclei with fine, centrally placed karyosomes and evenly distributed peripheral chromatin, and often displays rod-shaped chromatoid bars with rounded ends. Entamoeba coli cysts contain up to 8 nuclei with eccentric karyosomes.",
+    "keyConcept": "Entamoeba histolytica cyst: 1–4 nuclei, small central karyosome, rounded chromatoid bodies.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q5_36700245e7.webp",
+      "caption": "Practical Spotter Examination — Station 5"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0006",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Identify the station and its relevance to man:",
+    "options": [
+      "Cysticercus bovis - it causes human cysticercosis after eating the eggs",
+      "Hydatid cyst - man is an accidental intermediate host",
+      "Cysticercoid of H. nana - it develops in the human intestinal villi",
+      "Cysticercus cellulosae - it can develop in the human brain",
+      "Cysticercus bovis - man is infected by eating it in undercooked beef, but it does not develop in man"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Hydatid disease (cystic echinococcosis) is caused by the larval stage of Echinococcus granulosus. Dogs and canids are the definitive hosts harboring adult worms; sheep and herbivores are natural intermediate hosts. Humans become accidental intermediate hosts by ingesting eggs passed in dog feces.",
+    "keyConcept": "Echinococcus granulosus: Humans are accidental dead-end intermediate hosts harboring hydatid cysts.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q6_38e92e08e5.webp",
+      "caption": "Practical Spotter Examination — Station 6"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0007",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This parasite may cause megaloblastic anemia. Interpret.",
+    "options": [
+      "The adult worm sucks blood from the intestinal mucosa",
+      "The adult worm in the small intestine takes up large amounts of dietary vitamin B12",
+      "The eggs embolize to the bone marrow",
+      "The plerocercoid releases a hemolysin",
+      "Larvae invade the stomach and destroy the parietal cells"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Diphyllobothrium latum (the broad fish tapeworm) resides in the ileum and actively absorbs massive quantities of host dietary vitamin B12 (up to 80–100%), depriving the human host and producing megaloblastic / pernicious-like anemia with subacute combined degeneration of the spinal cord.",
+    "keyConcept": "Diphyllobothrium latum causes megaloblastic anemia by competing for dietary vitamin B12 in the ileum.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q7_d4e6a5490a.webp",
+      "caption": "Practical Spotter Examination — Station 7"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0008",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "All of the following eggs are mature EXCEPT:",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q8_opt1_1033fda6b3.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q8_opt2_beaca9f72f.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q8_opt3_723f499704.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q8_opt4_70f17560ba.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q8_opt5_52f0c6a32a.webp)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Fasciola and Ascaris eggs are passed unembryonated (immature) in fresh stool, requiring external development in water or moist soil before becoming infective. In contrast, Enterobius and Heterophyes eggs are passed fully embryonated (mature).",
+    "keyConcept": "Fasciola, Ascaris, and Hookworm eggs are passed immature (unsegmented) in stool.",
+    "media": null
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0009",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Food handlers are a serious source of this infection. Yes or No? Justify.",
+    "options": [
+      "No - the infection is transmitted only through water",
+      "No - the cyst must mature in soil before it becomes infective",
+      "Yes - asymptomatic carriers pass mature quadrinucleate cysts that are infective on passage and contaminate food",
+      "Yes - trophozoites survive on food and invade the colon",
+      "No - only trophozoites are passed, and they die quickly outside the body"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Cysts of Entamoeba histolytica and Giardia lamblia are immediately infective upon excretion and are resistant to environmental chlorination. Chronic carriers working as food handlers readily transmit cysts to food or beverages via contaminated, unwashed hands.",
+    "keyConcept": "Entamoeba and Giardia cysts are directly infective upon passage, making food handlers key vectors.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q9_aaa7ece6b5.webp",
+      "caption": "Practical Spotter Examination — Station 9"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0010",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Structure 3 in this specimen is the:",
+    "options": [
+      "Gynecophoric canal",
+      "Excretory canal",
+      "Intestinal caecum",
+      "Lateral cuticular ala",
+      "Uterus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The gynecophoric canal is the deep longitudinal ventral groove formed by the folded lateral margins of the male Schistosoma worm, in which the slender female fluke is embraced during copulation and egg laying.",
+    "keyConcept": "Schistosoma male: Gynecophoric canal embraces the slender female during copulation.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q10_3c559f3289.webp",
+      "caption": "Practical Spotter Examination — Station 10"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0011",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This patient was admitted with diarrhea and abdominal pain. His skin had a diffuse, rapidly moving, erythematous reticular rash from the anal margin to the upper legs. Which figure represents the stage found on stool examination?",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q11_opt1_d544dc2404.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q11_opt2_e397edf7f1.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q11_opt3_47f0a1e1db.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q11_opt4_9739a0623b.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q11_opt5_f931a1ba6b.webp)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Trophozoites of Giardia lamblia colonize the duodenal and jejunal brush border, causing malabsorption, foul-smelling steatorrhea, and epigastric cramping without mucosal ulceration or blood.",
+    "keyConcept": "Giardia lamblia: Duodenal colonization causes watery/fatty non-bloody diarrhea and malabsorption.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q11_aaf6928c00.webp",
+      "caption": "Practical Spotter Examination — Station 11"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0012",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Identify the station and the main reservoir of infection:",
+    "options": [
+      "Entamoeba histolytica cyst - pigs",
+      "Balantidium coli cyst - pigs",
+      "Entamoeba coli cyst - pigs",
+      "Balantidium coli cyst - dogs",
+      "Giardia lamblia cyst - cattle"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Balantidium coli is the largest protozoan and the only pathogenic ciliate infecting humans. Domestic pigs serve as the primary animal reservoir. Human infection occurs via ingestion of large cysts contaminating water or vegetables in pig-farming areas.",
+    "keyConcept": "Balantidium coli: Giant ciliated protozoan; pigs are the main natural reservoir host.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q12_d2627252bf.webp",
+      "caption": "Practical Spotter Examination — Station 12"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0013",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A 31-year-old HIV-infected woman presents with severe watery diarrhea and dizziness. Which figure represents the stage found on stool examination?",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q13_opt1_923e65fbe5.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q13_opt2_c14953e899.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q13_opt3_1b1bbf2883.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q13_opt4_8a92b3abcd.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q13_opt5_8e3f1cca81.webp)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Cryptosporidium parvum is an opportunistic apicomplexan protozoan causing chronic, life-threatening, cholera-like watery diarrhea and severe dehydration in immunocompromised patients (especially HIV with CD4 < 100/µL). Diagnosis is made by identifying 4–5 µm acid-fast spherical oocysts.",
+    "keyConcept": "Cryptosporidium parvum causes chronic intractable watery diarrhea in immunocompromised / HIV patients.",
+    "media": null
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0014",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Identify this egg:",
+    "options": [
+      "Hookworm egg",
+      "Enterobius vermicularis egg",
+      "Trichocephalus trichiurus egg",
+      "Diphyllobothrium latum egg",
+      "Decorticated Ascaris egg"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Enterobius vermicularis (pinworm) eggs are characteristically planoconvex (flattened on one side and convex on the other, 'D-shaped'), measuring 50–60 × 20–30 µm, possessing a smooth double-contoured translucent shell containing a fully formed tadpole-like coiled larva.",
+    "keyConcept": "Enterobius vermicularis egg: D-shaped (planoconvex), colorless translucent shell with coiled larva.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q14_525e58927a.webp",
+      "caption": "Practical Spotter Examination — Station 14"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0015",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Identify the station and the arrowed structure:",
+    "options": [
+      "Taenia spp. mature segment - bilobed ovary",
+      "Taenia saginata gravid segment - central uterine stem",
+      "Taenia solium gravid segment - lateral uterine branches",
+      "Diphyllobothrium latum mature segment - rosette-shaped uterus",
+      "Diphyllobothrium latum mature segment - bilobed ovary"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: In mature proglottids of Taenia, the female reproductive organs are dominated by a prominent bilobed ovary situated in the posterior third of the segment, along with numerous follicular testes scattered throughout and a lateral genital pore.",
+    "keyConcept": "Taenia mature segment: Bilobed ovary, median tubular uterus, and scattered follicular testes.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q15_1f617269b1.webp",
+      "caption": "Practical Spotter Examination — Station 15"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0016",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Identify the station:",
+    "options": [
+      "Taenia saginata gravid segment",
+      "Taenia solium gravid segment",
+      "Echinococcus granulosus gravid segment",
+      "Taenia spp. mature segment",
+      "Diphyllobothrium latum mature segment"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Gravid proglottids of Taenia saginata are distinguished from Taenia solium by counting the primary lateral uterine branches on each side of the central stem: T. saginata has 15 to 30 branches (dichotomous branching), whereas T. solium has only 7 to 12 branches (dendritic branching).",
+    "keyConcept": "Taenia saginata gravid segment: 15–30 main lateral uterine branches on each side.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q16_65df76ec92.webp",
+      "caption": "Practical Spotter Examination — Station 16"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0017",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A child presents with appendicitis. Which of the following parasites can cause it?",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q17_opt1_2691b9e11a.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q17_opt2_e0bb7f8daa.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q17_opt3_eda4cc12a3.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q17_opt4_7d563b5535.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q17_opt5_e7f3d1ab26.webp)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Adult Enterobius vermicularis pinworms frequently inhabit the cecum and vermiform appendix. In children presenting with symptoms of acute or subacute appendicitis, pinworms in the appendiceal lumen can cause mechanical obstruction or mucosal pin-prick lesions mimicking appendicitis.",
+    "keyConcept": "Enterobius vermicularis is the most common helminth discovered inside surgical appendectomy specimens.",
+    "media": null
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0018",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "An Egyptian farmer presented with hematemesis, hepatosplenomegaly and ascites. Sonography showed severe periportal fibrosis. Which figure represents the stage found on stool examination during the acute stage?",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q18_opt1_c10eb247fb.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q18_opt2_e378818f34.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q18_opt3_73db7c0af1.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q18_opt4_a35ad167fd.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q18_opt5_af35aee57b.webp)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Schistosoma mansoni adult worms reside in the inferior mesenteric veins. Embolized eggs lodge in the periportal hepatic venules, triggering granulomatous inflammation, Symmers' clay-pipe-stem fibrosis, non-cirrhotic presinusoidal portal hypertension, splenomegaly, and bleeding esophageal varices (hematemesis).",
+    "keyConcept": "Schistosoma mansoni causes Symmers' clay-pipe-stem portal fibrosis, splenomegaly, and esophageal varices.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q18_9f98fbd79b.webp",
+      "caption": "Practical Spotter Examination — Station 18"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0019",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Identify the station:",
+    "options": [
+      "Balantidium coli cyst invading the mucosa",
+      "Cryptosporidium parvum stages on the brush border",
+      "Balantidium coli trophozoite at the brush border",
+      "Balantidium coli cyst at the brush border",
+      "Balantidium coli trophozoites invading the mucosa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Cryptosporidium parvum occupies an intracellular but extracytoplasmic position directly within the brush border of intestinal epithelial enterocytes, enclosed in a host-derived parasitophorous vacuole that blunts microvilli and impairs absorption.",
+    "keyConcept": "Cryptosporidium parvum lives intracellularly but extracytoplasmically on the enterocyte brush border.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q19_b1d4a41af4.webp",
+      "caption": "Practical Spotter Examination — Station 19"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0020",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "The structure indicated by the upper arrow is the:",
+    "options": [
+      "Buccal capsule with teeth",
+      "Rhabditiform esophagus",
+      "Double-bulbed esophagus",
+      "Genital primordium",
+      "Cephalic ala"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Ancylostoma duodenale possesses a large chitinous buccal capsule equipped on its ventral margin with two pairs of curved pointed teeth, used to lacerate mucosal villi and ingest blood from the small intestinal mucosa.",
+    "keyConcept": "Ancylostoma duodenale buccal capsule contains two pairs of sharp ventral teeth.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q20_3b61bb3292.webp",
+      "caption": "Practical Spotter Examination — Station 20"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0021",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This parasitic stage emerges from:",
+    "options": [
+      "Biomphalaria alexandrina",
+      "Lymnea cailliaudi",
+      "Segmentina",
+      "Pirenella conica",
+      "Melanoides tuberculata"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Furcocercous (forked-tail) cercariae of Schistosoma mansoni emerge directly from the freshwater snail Biomphalaria alexandrina (discoidal flat snail) and actively penetrate human intact skin in canal water.",
+    "keyConcept": "Schistosoma mansoni forked-tail cercariae emerge from the intermediate snail Biomphalaria alexandrina.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q21_d4237bb287.webp",
+      "caption": "Practical Spotter Examination — Station 21"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0022",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Which of the following eggs is passed mature?",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q22_opt1_274aedbaa4.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q22_opt2_44dca40cb5.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q22_opt3_180ea16b18.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q22_opt4_0a61236e73.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q22_opt5_17d2387560.webp)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Enterobius vermicularis and Heterophyes heterophyes eggs are passed fully mature (containing a fully developed larva or miracidium) and are immediately infective.",
+    "keyConcept": "Enterobius and Heterophyes eggs are passed mature (containing fully developed embryos).",
+    "media": null
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0023",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Chronic blood loss in this infection is multifactorial. Interpret.",
+    "options": [
+      "The worm competes with the host for vitamin B12 and folate in the jejunum",
+      "The worm sucks blood, and leaving bleeding points",
+      "Larvae damage the lung capillaries, causing repeated hemoptysis",
+      "Larvae migrate through the liver, causing bleeding esophageal varices",
+      "The worm secretes a hemolysin that lyses red cells inside the portal vessels"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Hookworms cause microcytic hypochromic iron-deficiency anemia through two synergistic mechanisms: direct ingestion of blood by the worm (0.15–0.2 mL/day per worm) and persistent capillary oozing from mucosal bite sites due to secreted anticoagulant (acetylcholinesterase and calreticulin).",
+    "keyConcept": "Hookworm anemia: Mechanical villous laceration, active blood ingestion, and anticoagulant-mediated oozing.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q23_8b3a5a2523.webp",
+      "caption": "Practical Spotter Examination — Station 23"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0024",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Identify the station and the feature that identifies it:",
+    "options": [
+      "Trichocephalus trichiurus in the appendix - bacillary band",
+      "Enterobius vermicularis in the appendix - double-bulbed esophagus seen in section",
+      "Enterobius vermicularis in the appendix - lateral cuticular alae",
+      "Ascaris lumbricoides in the appendix - thick cuticle",
+      "Strongyloides stercoralis in the mucosa - eggs in the uterus"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: On histological transverse sections of the appendix, Enterobius vermicularis is definitively identified by two diagnostic lateral cuticular alae (cristae) extending along the body and a muscular double-bulbed esophagus (corpus, isthmus, and spherical posterior bulb).",
+    "keyConcept": "Enterobius vermicularis in appendix section: Bilateral pointed cuticular alae and double-bulbed esophagus.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q24_b4ce5b3ae4.webp",
+      "caption": "Practical Spotter Examination — Station 24"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0025",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Perianal swabbing is the method of choice for diagnosing infection with this egg. Interpret.",
+    "options": [
+      "The eggs are very light and are lost from the surface of the stool sample",
+      "The gravid female migrates out of the anus at night and lays her eggs on the perianal skin,",
+      "Larvae from these eggs penetrate the perianal skin and stay there",
+      "The eggs hatch inside the colon, so only larvae reach the stool",
+      "The eggs are digested by colonic bacteria before they are passed"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Gravid female Enterobius vermicularis worms migrate out through the anal sphincter at night (when body temperature drops and the host rests) to deposit up to 15,000 sticky eggs on the perianal and perineal skin folds. Because eggs are laid outside the rectum, routine fecal examination is negative in 95% of cases.",
+    "keyConcept": "Scotch tape test is diagnostic for Enterobius because gravid females oviposit on perianal skin at night.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q25_d95a08c1fa.webp",
+      "caption": "Practical Spotter Examination — Station 25"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0026",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Identify the arrowed stage. Why is it infective as soon as it is passed?",
+    "options": [
+      "Giardia lamblia cyst - it already has 4 nuclei",
+      "Entamoeba histolytica cyst - it is mature with 4 nuclei",
+      "Cryptosporidium parvum oocyst - it sporulates in the colon after 24 hours",
+      "Cryptosporidium parvum oocyst - it is passed already sporulated, containing 4 sporozoites",
+      "Cryptosporidium parvum oocyst - it contains 8 merozoites"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The mature infective cyst of Giardia lamblia is oval, measures 8–12 µm, possesses a distinct smooth cyst wall separated from the cytoplasm by a clear space, and contains 4 spherical nuclei along with longitudinal curved axostyles and claw-shaped median bodies.",
+    "keyConcept": "Giardia lamblia mature cyst: Oval shape, distinct cyst wall, 4 nuclei, and curved central axostyles.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q26_281fd27097.webp",
+      "caption": "Practical Spotter Examination — Station 26"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0027",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "The stage found inside this egg is:",
+    "options": [
+      "Mature larva",
+      "Hexacanth embryo (oncosphere)",
+      "One-cell ovum",
+      "Miracidium",
+      "Segmented ovum (morula)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Inside the thick, radially striated, brown embryophore of a Taenia egg lies a spherical hexacanth embryo (oncosphere) bearing 6 chitinous hooklets (3 pairs).",
+    "keyConcept": "Taenia egg contains a hexacanth embryo (oncosphere) equipped with 6 hooklets.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q27_73c28171e3.webp",
+      "caption": "Practical Spotter Examination — Station 27"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0028",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Identify the station and what this stage does after leaving the snail:",
+    "options": [
+      "Leptocercus cercaria of Heterophyes - encysts in fish muscle",
+      "Leptocercus cercaria of Fasciola - penetrates human skin",
+      "Furcocercus cercaria of Schistosoma - encysts on aquatic plants",
+      "Furcocercus cercaria of Schistosoma - penetrates human skin",
+      "Leptocercus cercaria of Fasciola - encysts on aquatic plants as a metacercaria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The lophocercous (pleurocercous) cercaria of Heterophyes heterophyes possesses a dorsal natatory fin-fold. After emerging from Pirenella conica snails, it penetrates and encysts as an infective metacercaria in the flesh of brackish-water fish (Bouri / mullet and Bolti / tilapia).",
+    "keyConcept": "Heterophyes heterophyes cercaria encysts as infective metacercariae in freshwater/brackish fish.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q28_6df4ad2bd4.webp",
+      "caption": "Practical Spotter Examination — Station 28"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0029",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A patient has fever, tenesmus and dysentery. Sigmoidoscopy shows ulcers with a narrow opening, raised edge and wide base. Which figure represents the stage found in the ulcer biopsy?",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q29_opt1_35436523e6.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q29_opt2_21ff02e760.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q29_opt3_9466a9c5f7.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q29_opt4_b2965edef5.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q29_opt5_afd1c603c2.webp)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Acute amoebic dysentery presents with bloody-mucoid stool, lower abdominal cramping, and tenesmus without high toxic fever, demonstrating flask-shaped mucosal ulcers on sigmoidoscopy.",
+    "keyConcept": "Amoebic dysentery: Stool with blood and mucus, flask-shaped ulcers, trophozoites with ingested RBCs.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q29_426090c2a9.webp",
+      "caption": "Practical Spotter Examination — Station 29"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0030",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Growth retardation may be a manifestation of this parasitic infection. Interpret.",
+    "options": [
+      "Continuous blood and plasma loss",
+      "A bolus of adult worms causes intestinal obstruction",
+      "The adult worm absorbs most of the dietary vitamin B12",
+      "Autoinfective larvae destroy the intestinal villi",
+      "Egg granulomas cause periportal hepatic fibrosis"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: In children, heavy Ascaris lumbricoides worm loads contribute to protein-energy malnutrition, vitamin A deficiency, and stunting due to mechanical competition for ingested nutrients and antiprotease enzyme secretion.",
+    "keyConcept": "Heavy Ascaris burden leads to growth stunting and malnutrition in infected children.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q30_426a6ab342.webp",
+      "caption": "Practical Spotter Examination — Station 30"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0031",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Autoinfection is a recognized means of transmission of this parasite. Yes or No? Justify.",
+    "options": [
+      "No - the egg must pass through a snail intermediate host",
+      "No - the egg must embryonate in moist soil for 2-3 weeks before it is infective",
+      "Yes - the larva inside the egg becomes infective within about 6 hours on the perianal skin, and scratching carries eggs to the mouth",
+      "Yes - rhabditiform larvae become filariform larvae inside the intestine",
+      "Yes - the egg hatches in the colon and the larva penetrates the colonic wall"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Enterobius vermicularis undergoes external autoinfection (hand-to-mouth via pruritus ani fingernail scratching) because eggs embryonate and become infective within 4–6 hours of oviposition on the warm perianal skin.",
+    "keyConcept": "Enterobius vermicularis: Rapid perianal embryonation (4–6 hrs) drives hand-to-mouth autoinfection.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q31_874e9603bb.webp",
+      "caption": "Practical Spotter Examination — Station 31"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0032",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Identify the station and the arrowed structure:",
+    "options": [
+      "Diphyllobothrium latum scolex - slit-like sucker (bothrium)",
+      "Hymenolepis nana scolex - rostellum",
+      "Taenia saginata scolex - cup-shaped sucker",
+      "Anterior end of Enterobius - cephalic ala",
+      "Diphyllobothrium latum scolex - rostellum"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The scolex of Diphyllobothrium latum is elongated and almond-shaped, lacking cup-like suckers and rostellum, characterized instead by two deep longitudinal suction grooves called bothria (one dorsal, one ventral).",
+    "keyConcept": "Diphyllobothrium latum scolex: Almond-shaped with two longitudinal sucking grooves (bothria).",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q32_b496dadc52.webp",
+      "caption": "Practical Spotter Examination — Station 32"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0033",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This parasite causes flask-shaped intestinal ulcers and extra-intestinal manifestations. Interpret.",
+    "options": [
+      "Trophozoites lyse the mucosa with proteolytic enzymes, spread laterally in the submucosa, and reach the liver through the portal vein",
+      "Eggs lodge in the bowel wall and cause granulomas that ulcerate",
+      "Adult worms embed their anterior ends deep in the mucosa",
+      "Trophozoites burrow with their cilia and invade the lymphatics",
+      "Cysts excyst in the submucosa and grow into large colonies"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Entamoeba histolytica trophozoites adhere to colonic mucin via Gal/GalNAc lectin, secrete pore-forming amoebapore and cysteine proteases (histolysin) to lyse epithelial cells, and expand laterally in the loose submucosa, generating classic flask-shaped ulcers.",
+    "keyConcept": "Entamoeba histolytica produces flask-shaped colonic ulcers via cysteine proteases and amoebapore.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q33_36f03c6c84.webp",
+      "caption": "Practical Spotter Examination — Station 33"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0034",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "The middle arrow points to a structure that distinguishes this fluke from Metagonimus yokogawai. It is the:",
+    "options": [
+      "Ovary",
+      "Genital sucker",
+      "Ventral sucker",
+      "Seminal receptacle",
+      "Oral sucker"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The egg of Hymenolepis nana is round to oval, measures 45–50 µm, has two membranes (thin outer shell and thick inner embryophore), and is definitively identified by 4 to 8 hair-like polar filaments originating from mammillated polar thickenings and spreading into the space between membranes.",
+    "keyConcept": "Hymenolepis nana egg: Hexacanth embryo with 4–8 wavy polar filaments emerging from polar knobs.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q34_e0c46424b5.webp",
+      "caption": "Practical Spotter Examination — Station 34"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0035",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "The stage found inside this egg is:",
+    "options": [
+      "Mature larva",
+      "Unsegmented ovum",
+      "Hexacanth embryo (oncosphere)",
+      "Cysticercoid",
+      "Miracidium"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Pirenella conica is a small, elongated, turreted conical brackish-water snail inhabiting Northern Egyptian lakes (Manzala, Burullus, Edku) that acts as the essential first intermediate host of Heterophyes heterophyes.",
+    "keyConcept": "Pirenella conica is the first intermediate snail host of Heterophyes heterophyes in Egyptian lakes.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q35_03c9a9da1b.webp",
+      "caption": "Practical Spotter Examination — Station 35"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0036",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Identify the station:",
+    "options": [
+      "Female Trichocephalus trichiurus",
+      "Filariform larva of Strongyloides stercoralis",
+      "Female of Strongyloides stercoralis with eggs in uterus",
+      "Female of Enterobius vermicularis with eggs in uterus",
+      "Female hookworm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The scolex of Hymenolepis nana is tiny (0.3 mm), subglobular, featuring 4 cup-like suckers and a single prominent retractable rostellum armed with a single circle of 20 to 30 tuning-fork hooklets.",
+    "keyConcept": "Hymenolepis nana scolex: 4 spherical suckers and a retractable rostellum with 20–30 hooklets.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q36_ab5b7b7895.webp",
+      "caption": "Practical Spotter Examination — Station 36"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0037",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Structure 1 in this segment is the:",
+    "options": [
+      "Lateral uterine branch",
+      "Uterine pore",
+      "Bilobed ovary",
+      "Common genital pore",
+      "Lateral excretory canal"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The posterior end of the male Ancylostoma duodenale expands into an umbrella-shaped membranous copulatory bursa supported by fleshy rays (1 dorsal, 2 lateral lobes) and two long, slender spicules used during mating.",
+    "keyConcept": "Male hookworm is identified by its posterior umbrella-shaped copulatory bursa supported by rays.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q37_dc698db1a7.webp",
+      "caption": "Practical Spotter Examination — Station 37"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0038",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "The stage found inside this egg is:",
+    "options": [
+      "Miracidium",
+      "Mature larva",
+      "Immature ovum surrounded by yolk cells",
+      "Redia",
+      "Hexacanth embryo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The egg of Trichuris trichiura is brown, barrel-shaped (lemon-shaped), measures 50 × 22 µm, possesses a thick smooth triple-layered shell, and is characterized by a prominent transparent mucoid plug at each pole.",
+    "keyConcept": "Trichuris trichiura egg: Barrel-shaped, brown, with clear bipolar mucoid plugs.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q38_a347986128.webp",
+      "caption": "Practical Spotter Examination — Station 38"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0039",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "An abdominal CT of a shepherd with right upper abdominal pain and no fever shows multiple cystic lesions of different sizes in both liver lobes. Which figure represents the stage found when the cyst fluid is examined?",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q39_opt1_7abb90815f.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q39_opt2_923011094d.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q39_opt3_6cd0de8fd9.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q39_opt4_43a4e9b575.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q39_opt5_4e82fc7fa7.webp)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Typical fertilized Ascaris lumbricoides eggs are oval, measure 60–75 × 40–50 µm, enclosed by a thick transparent shell surrounded by a characteristic coarse, golden-brown, bile-stained mamillated albuminous outer coat.",
+    "keyConcept": "Ascaris lumbricoides fertilized egg: Golden-brown, bile-stained, with a coarse mamillated coat.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q39_913ed911c3.webp",
+      "caption": "Practical Spotter Examination — Station 39"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0040",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "All of the following parasites can cause appendicitis EXCEPT:",
+    "options": [
+      "Giardia lamblia",
+      "Schistosoma mansoni",
+      "Ascaris lumbricoides",
+      "Enterobius vermicularis",
+      "Trichocephalus trichiurus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The scolex of Taenia saginata (beef tapeworm) is quadrate (1.5–2 mm), equipped with 4 prominent hemispherical suckers, but is completely UNARMED (lacks both a rostellum and hooklets), distinguishing it from T. solium.",
+    "keyConcept": "Taenia saginata scolex: 4 suckers, unarmed (no rostellum, no hooks).",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q40_5061c13e6e.webp",
+      "caption": "Practical Spotter Examination — Station 40"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0041",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Identify the station and the arrowed structure:",
+    "options": [
+      "Entamoeba histolytica cyst - nucleus with central karyosome",
+      "Entamoeba histolytica trophozoite - nucleus with central karyosome",
+      "Entamoeba coli trophozoite - nucleus with eccentric karyosome",
+      "Entamoeba coli trophozoite - nucleus with central karyosome",
+      "Balantidium coli trophozoite - macronucleus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The egg of Schistosoma mansoni is large (115–175 × 45–70 µm), non-operculated, golden-yellow, and features a prominent, sharp, backward-pointing LATERAL spine near the posterior pole, containing a fully formed miracidium.",
+    "keyConcept": "Schistosoma mansoni egg: Large, oval, golden-yellow, with a sharp prominent LATERAL spine.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q41_dbf8d5dc5d.webp",
+      "caption": "Practical Spotter Examination — Station 41"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0042",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A patient has hepatomegaly and jaundice. Three months ago he had fever, right upper quadrant pain and eosinophilia after eating green salads. Which figure represents the stage found on stool examination?",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q42_opt1_bef68ab18b.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q42_opt2_dbdcdb2bc4.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q42_opt3_8d46657f28.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q42_opt4_f2d6d3368f.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q42_opt5_ff98504da8.webp)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Fasciola gigantica is a giant liver fluke measuring 25–75 × 12 mm, characterized by an elongated lanceolate leaf-like body, a small cephalic cone with indistinct shoulders, and extensively branched intestinal caeca and testes.",
+    "keyConcept": "Fasciola gigantica: Giant leaf-like fluke with cephalic cone, branched caeca, and branched testes.",
+    "media": null
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0043",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the station and the arrowed structure:",
+    "options": [
+      "Taenia solium scolex - cup-shaped sucker",
+      "Hymenolepis nana scolex - retractile rostellum",
+      "Echinococcus granulosus scolex - rostellum with hooks",
+      "Taenia saginata scolex - rostellum with hooks",
+      "Taenia solium scolex - rostellum with hooks"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The gravid segment of Taenia solium contains a central longitudinal uterine stem giving off only 7 to 12 thick primary lateral branches on each side, which branch dendritically.",
+    "keyConcept": "Taenia solium gravid segment: 7–12 lateral uterine branches per side (tree-like / dendritic).",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q43_a5d672624d.webp",
+      "caption": "Practical Spotter Examination — Station 43"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0044",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Finding this egg in a stool sample does NOT identify the species of the infecting worm. Interpret.",
+    "options": [
+      "The egg is passed unembryonated, so the hexacanth embryo cannot be examined",
+      "The striated shell is dissolved by stool preservatives before examination",
+      "Eggs of T. saginata and T. solium are morphologically identical, so the gravid segment or scolex is needed",
+      "The egg is identical to the H. nana egg, which is the commonest cause",
+      "Eggs of T. solium are passed only in patients with cysticercosis"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Ascaris lumbricoides is the largest intestinal nematode of humans (females 20–35 cm, males 15–30 cm with curved tail), pale pink/creamy white, cylindrical with pointed ends, bearing three sensory lips around the anterior mouth.",
+    "keyConcept": "Ascaris lumbricoides adult: Giant creamy cylindrical roundworm with three anterior sensory lips.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q44_0b4fd6ea0c.webp",
+      "caption": "Practical Spotter Examination — Station 44"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0045",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "This snail is the first intermediate host of:",
+    "options": [
+      "Fasciola gigantica",
+      "Fasciolopsis buski",
+      "Metagonimus yokogawai",
+      "Heterophyes heterophyes",
+      "Schistosoma mansoni"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Lymnaea cailliaudi (Lymnaea natalensis) is a freshwater snail with a conical, dextral spiral shell that serves as the intermediate host of Fasciola hepatica and Fasciola gigantica in Egypt.",
+    "keyConcept": "Lymnaea cailliaudi: Freshwater dextral conical snail, essential host of Fasciola.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q45_55460cbc3a.webp",
+      "caption": "Practical Spotter Examination — Station 45"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0046",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "A 4-year-old child has pruritus ani, insomnia and nocturnal enuresis. Which figure represents the stage recovered by perianal swab?",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q46_opt1_cd25184310.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q46_opt2_cf1fe4f3c8.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q46_opt3_ac8b7a80e3.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q46_opt4_c8e63613f0.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q46_opt5_4e4e0a3feb.webp)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Nocturnal perianal pruritus (pruritus ani), restlessness, and sleep disturbances in young children are caused by migrating female Enterobius vermicularis worms discharging eggs onto the perianal skin.",
+    "keyConcept": "Pruritus ani and sleep disturbance in young children = Enterobius vermicularis (pinworm).",
+    "media": null
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0047",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "A 4-year-old child has diarrhea with pale, loose, offensive, fatty stools and no mucus or blood. Which figure represents the stage found in a fresh diarrheic stool?",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q47_opt1_69f6089c31.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q47_opt2_09af5f8055.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q47_opt3_a359339be1.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q47_opt4_48ff72d70a.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q47_opt5_a039691d31.webp)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Pale, frothy, greasy, malodorous diarrhea floating in water (steatorrhea) accompanied by abdominal distension and flatulence is the hallmark of Giardia lamblia duodenitis / malabsorption.",
+    "keyConcept": "Pale greasy floating diarrhea (steatorrhea) + flatulence = Giardia lamblia trophozoites.",
+    "media": null
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0048",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "All of the following eggs are passed immature EXCEPT:",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q48_opt1_7e4ccd097c.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q48_opt2_bf56773792.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q48_opt3_d3b222f4f6.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q48_opt4_496d929d9c.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q48_opt5_dffed44fa4.webp)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Enterobius vermicularis eggs are fully embryonated (mature) when deposited, whereas Ascaris, Trichuris, and Fasciola eggs are passed unembryonated (immature).",
+    "keyConcept": "Enterobius eggs are passed fully mature; Ascaris, Trichuris, and Fasciola eggs are immature.",
+    "media": null
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0049",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Structure 2 in this segment is the:",
+    "options": [
+      "Testes",
+      "Vitelline gland",
+      "Rosette-shaped uterus",
+      "Common genital pore",
+      "Bilobed ovary"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The lateral fields of Fasciola are densely packed with highly branched, granular vitelline follicles extending from the ventral sucker to the posterior tip of the fluke.",
+    "keyConcept": "Lateral fields of Fasciola are occupied by extensive branched follicular vitelline glands.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q49_c503b695ed.webp",
+      "caption": "Practical Spotter Examination — Station 49"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0050",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Finding this egg in a single stool sample does not always mean active infection. Interpret.",
+    "options": [
+      "The egg is a degenerated form that has lost its operculum",
+      "The egg is shed only in the acute (invasive) stage of the disease",
+      "The egg may pass transiently after eating infected raw liver , so stool is re-examined after a liver-free diet",
+      "The egg is shed only in bile, so duodenal aspirate is needed",
+      "The egg is identical to the Heterophyes egg, so serology is required"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Finding Fasciola eggs in a single stool sample does not necessarily prove active hepatic infection; it may represent spurious (false) infection following the ingestion of cooked or raw infected sheep or cattle liver containing unabsorbed passing eggs. Re-examination after a 3-day liver-free diet confirms true infection.",
+    "keyConcept": "Spurious Fasciola infection: Liver ingestion causes false-positive stool eggs; repeat after 3-day liver-free diet.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q50_6be5305c23.webp",
+      "caption": "Practical Spotter Examination — Station 50"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0051",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "The arrowed structure in this larva is the:",
+    "options": [
+      "Nerve ring",
+      "Rhabditiform esophageal bulb",
+      "Anal pore",
+      "Buccal cavity",
+      "Genital primordium"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The rhabditiform larva of nematodes features a characteristic muscular rhabditiform esophagus consisting of an anterior cylindrical corpus, a constricted isthmus, and a swollen posterior bulb.",
+    "keyConcept": "Rhabditiform larva possesses a muscular esophagus with a posterior spherical bulb.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q51_3adb9f2f45.webp",
+      "caption": "Practical Spotter Examination — Station 51"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0052",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the specimen and the feature indicated by the lower arrow:",
+    "options": [
+      "Strongyloides stercoralis female - tapering posterior end",
+      "Hookworm male - copulatory bursa",
+      "Trichocephalus trichiurus female - blunt posterior end",
+      "Enterobius vermicularis male - pointed tail",
+      "Enterobius vermicularis female - pointed tail"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The male hookworm is recognized by its broad, fan-like copulatory bursa supported by rays, contrasting with the simple tapering pointed tail of female worms.",
+    "keyConcept": "Male hookworm tail features a specialized expanded copulatory bursa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q52_6853855c48.webp",
+      "caption": "Practical Spotter Examination — Station 52"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0053",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "In this cyst aspirate, the arrowed structures are the hooks of:",
+    "options": [
+      "Cysticercus cellulosae",
+      "Invaginated protoscolices",
+      "Oncospheres of Taenia eggs",
+      "Daughter cysts",
+      "The rostellum of H. nana"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Microscopic examination of clear hydatid fluid reveals 'hydatid sand', comprising thousands of free and brood-capsule-derived invaginated protoscolices, each bearing 4 suckers and a crown of chitinous hooklets.",
+    "keyConcept": "Hydatid sand consists of invaginated protoscolices and detached hooklets from Echinococcus.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q53_1bbd06628c.webp",
+      "caption": "Practical Spotter Examination — Station 53"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0054",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "A child presents with appendicitis. Which figure represents the diagnostic stage?",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q54_opt1_4691d3ee47.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q54_opt2_b4f8edd081.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q54_opt3_f1f03e17dc.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q54_opt4_bf8296692c.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q54_opt5_4b4886d629.webp)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Cross-section of vermiform appendix revealing cross-sections of Enterobius vermicularis worms with pointed lateral cuticular crests inside the appendiceal lumen.",
+    "keyConcept": "Enterobius vermicularis in appendiceal cross-section showing characteristic lateral cuticular crests.",
+    "media": null
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0055",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the station and the arrowed structure:",
+    "options": [
+      "Entamoeba histolytica cyst - chromatoid body",
+      "Entamoeba histolytica trophozoite - pseudopodium",
+      "Entamoeba coli trophozoite - pseudopodium",
+      "Giardia lamblia trophozoite - flagellum",
+      "Balantidium coli trophozoite - cilia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Immature and mature cysts of Entamoeba histolytica frequently contain cylindrical, rod-like chromatoid bodies with characteristically blunt, rounded, cigar-shaped ends (condensed RNA/ribosomes).",
+    "keyConcept": "Entamoeba histolytica chromatoid bodies have blunt, rounded, cigar-shaped ends.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q55_36cfda5294.webp",
+      "caption": "Practical Spotter Examination — Station 55"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0056",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the egg and the source of infection:",
+    "options": [
+      "Diphyllobothrium latum egg - aquatic plants",
+      "Heterophyes heterophyes egg - raw or undercooked fish",
+      "Fasciola egg - raw or undercooked fish",
+      "Heterophyes heterophyes egg - aquatic plants such as watercress",
+      "Fasciola egg - undercooked pork"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Heterophyes heterophyes eggs are small (28–30 × 15–17 µm), operculated, yellowish-brown with a light bulb appearance. Human infection results from consuming raw, insufficiently salted, or undercooked brackish-water fish (e.g., Fesikh, mullet, tilapia) containing encysted metacercariae.",
+    "keyConcept": "Heterophyes heterophyes: Ingestion of raw/pickled brackish fish (Fesikh) containing metacercariae.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q56_fc914d89ff.webp",
+      "caption": "Practical Spotter Examination — Station 56"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0057",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "This parasite can be transmitted to humans by autoinfection. Yes or No? Justify.",
+    "options": [
+      "No - this parasite infects only by larval skin penetration",
+      "Yes - the egg is infective on passage and is carried from the anus to the mouth",
+      "No - the egg can only infect after passing through Cyclops",
+      "Yes - the egg hatches in the small intestine and the larva migrates through the lungs again",
+      "No - the egg is passed with a one-cell ovum and needs about 2-3 weeks in soil to become embryonated"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Strongyloides stercoralis undergoes internal autoinfection: non-infective rhabditiform larvae in the intestinal lumen can molt into infective filariform larvae before excretion. These filariform larvae immediately penetrate the perianal skin or colonic mucosa, entering the circulation to perpetuate infection for decades.",
+    "keyConcept": "Strongyloides stercoralis causes internal autoinfection when rhabditiform larvae molt into filariform larvae in the gut.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q57_24877a0491.webp",
+      "caption": "Practical Spotter Examination — Station 57"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0058",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "The stage found inside this egg is:",
+    "options": [
+      "Mature larva",
+      "Segmented ovum (morula)",
+      "Miracidium",
+      "Hexacanth embryo",
+      "One-cell (unsegmented) ovum"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The egg of Enterobius vermicularis contains a fully developed, coiled, tadpole-like vermiform larva when shed onto perianal skin.",
+    "keyConcept": "Enterobius vermicularis egg contains a fully formed mature larva.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q58_b4abbf55e0.webp",
+      "caption": "Practical Spotter Examination — Station 58"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0059",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Structure 2 in this egg is the:",
+    "options": [
+      "Mucoid plug",
+      "Thick mamillated albuminous coat",
+      "Operculum",
+      "Striated shell (embryophore)",
+      "Polar filaments"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Structure 2 represents the thick, irregular, tuberculated mamillated albuminous coat secreted by the uterine wall, which stains golden-brown from fecal bile pigments.",
+    "keyConcept": "Ascaris outer shell: Coarse, uneven, bile-stained mamillated albuminous coat.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q59_f3f2ff1227.webp",
+      "caption": "Practical Spotter Examination — Station 59"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0060",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Layer 1 in this section is the:",
+    "options": [
+      "Host inflammatory layer",
+      "Laminated layer",
+      "Wall of a daughter cyst",
+      "Germinal layer",
+      "Fibrous (adventitial) layer"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The wall of a hydatid cyst comprises an outer host-derived fibrous capsule (pericyst), a middle thick, milky-white, acellular laminated cuticular layer (ectocyst), and an inner thin, nucleated cellular germinal layer (endocyst) that buds off brood capsules.",
+    "keyConcept": "Hydatid cyst wall: Outer acellular laminated layer and inner nucleated germinal layer.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q60_bb885704a5.webp",
+      "caption": "Practical Spotter Examination — Station 60"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0061",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "The stage found inside this egg is:",
+    "options": [
+      "Segmented ovum (morula)",
+      "One-cell ovum",
+      "Miracidium",
+      "Hexacanth embryo",
+      "Mature larva"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The fertilized Ascaris egg contains an unsegmented spherical one-cell ovum surrounded by a clear perivitelline space at each pole.",
+    "keyConcept": "Fertilized Ascaris egg contains an unsegmented one-cell zygote.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q61_6ef67652ee.webp",
+      "caption": "Practical Spotter Examination — Station 61"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0062",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "This worm came out through the nose of a child after general anesthesia. Which figure represents the stage found on his stool examination?",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q62_opt1_e97b41f232.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q62_opt2_22b574c9a9.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q62_opt3_736b2d9e02.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q62_opt4_ab1882d43b.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q62_opt5_092ece4939.webp)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: In high fevers, anesthesia, or anthelmintic irritation, adult Ascaris lumbricoides worms exhibit wandering erratic behavior, migrating retrograde into the stomach, esophagus, and emerging through the mouth or nose, or obstructing the bile duct.",
+    "keyConcept": "Erratic Ascaris lumbricoides migration causes adult worms to emerge through the mouth or nostrils.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q62_acfdee3a51.webp",
+      "caption": "Practical Spotter Examination — Station 62"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0063",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the station. Why can man harbor this stage?",
+    "options": [
+      "Cysticercus cellulosae - man can act as an intermediate host",
+      "Cysticercus cellulosae - man is infected only by eating undercooked pork",
+      "Cysticercus bovis - reverse peristalsis brings gravid segments to the stomach",
+      "Hydatid cyst - man swallows eggs from dog feces",
+      "Cysticercus bovis - man is the normal intermediate host"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Cysticercus cellulosae is the larval stage of Taenia solium. Humans act as accidental intermediate hosts when they ingest T. solium eggs (via contaminated food/water or autoinfection). Oncospheres hatch in the intestine and encyst in the brain (neurocysticercosis), subcutaneous tissues, and eye.",
+    "keyConcept": "Humans develop cysticercosis by acting as intermediate hosts harboring Cysticercus cellulosae.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q63_997840486a.webp",
+      "caption": "Practical Spotter Examination — Station 63"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0064",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the station:",
+    "options": [
+      "Taenia saginata scolex",
+      "Hymenolepis nana scolex",
+      "Taenia solium scolex",
+      "Echinococcus granulosus scolex",
+      "Diphyllobothrium latum scolex"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Scolex of Taenia saginata: Quadrate shape, 4 cup-like muscular suckers, lacks rostellum and hooks (unarmed).",
+    "keyConcept": "Taenia saginata scolex: 4 muscular suckers, unarmed (no rostellum, no hooklets).",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q64_efb002b4c2.webp",
+      "caption": "Practical Spotter Examination — Station 64"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0065",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the station and the arrowed part:",
+    "options": [
+      "Echinococcus granulosus adult - mature segment",
+      "Hymenolepis nana adult - gravid segment",
+      "Echinococcus granulosus adult - gravid segment",
+      "Taenia solium - gravid segment",
+      "Echinococcus granulosus adult - immature segment"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The adult Echinococcus granulosus is minute (3–6 mm long) and consists of a pyriform scolex with 4 suckers and a rostellum of hooks, followed by only 3 proglottids: one immature, one mature, and one large gravid segment.",
+    "keyConcept": "Echinococcus granulosus adult is 3–6 mm long with only 3 segments (immature, mature, gravid).",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q65_82e51e25c2.webp",
+      "caption": "Practical Spotter Examination — Station 65"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0066",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "This parasitic stage is the pathogenic stage of:",
+    "options": [
+      "Echinococcosis",
+      "Metagonimiasis",
+      "Fascioliasis",
+      "Heterophyiasis",
+      "Fasciolopsiasis"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The hydatid cyst (larval stage) is the pathogenic stage responsible for human cystic echinococcosis, forming space-occupying lesions in the liver (70%) and lungs (20%).",
+    "keyConcept": "Hydatid cyst is the pathogenic stage causing human echinococcosis.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q66_5322f4fcb9.webp",
+      "caption": "Practical Spotter Examination — Station 66"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0067",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "This parasitic stage represents the infective stage of a case of:",
+    "options": [
+      "Cryptosporidiosis",
+      "Amoebiasis",
+      "Ascariasis",
+      "Giardiasis",
+      "Balantidiasis"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The thick-walled spherical oocyst (4–5 µm) containing 4 naked sporozoites is the infective stage of Cryptosporidium parvum, excreted in feces and resistant to chlorine.",
+    "keyConcept": "Cryptosporidium infective stage: Thick-walled sporulated oocyst containing 4 sporozoites.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q67_cd0abe0ea1.webp",
+      "caption": "Practical Spotter Examination — Station 67"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0068",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "The stage found inside this egg is:",
+    "options": [
+      "Mature larva",
+      "Unsegmented ovum",
+      "Segmented ovum (morula)",
+      "Miracidium",
+      "Hexacanth embryo"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Hookworm (Ancylostoma / Necator) eggs are passed in feces at the 4 to 8 cell segmented stage (morula), surrounded by a thin, smooth, colorless shell with a wide clear space.",
+    "keyConcept": "Hookworm egg is passed at the 4–8 cell segmented morula stage with a wide clear space.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q68_9b305df188.webp",
+      "caption": "Practical Spotter Examination — Station 68"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0069",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Which feature distinguishes this fluke from Fasciola spp.?",
+    "options": [
+      "Separate sexes with a gynecophoric canal",
+      "Branched intestinal caeca with a cephalic cone",
+      "Simple, unbranched intestinal caeca and no cephalic cone",
+      "A genital sucker beside the ventral sucker",
+      "A ventral sucker displaced to one side"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Unlike hermaphroditic trematodes like Fasciola (which have flattened leaf-like bodies containing both male and female organs), Schistosomes are unique flukes with separate sexes (dioecious), where the cylindrical female resides within the male's gynecophoric canal.",
+    "keyConcept": "Schistosomes are dioecious (separate sexes) with male gynecophoric canal; Fasciola is hermaphroditic.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q69_f1a06c0690.webp",
+      "caption": "Practical Spotter Examination — Station 69"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0070",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Autoinfection is a means of transmission of this parasite. Yes or No? Justify.",
+    "options": [
+      "No - infection occurs only by skin penetration by filariform larvae",
+      "Yes - the egg hatches in the colon and the larvae re-invade the mucosa",
+      "No - man is only an accidental host of this worm",
+      "No - the egg is passed with an unsegmented ovum and must embryonate in soil before it becomes infective",
+      "Yes - the mucoid plugs dissolve on the perianal skin and release infective larvae"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Hymenolepis nana eggs can hatch inside the intestinal lumen without reaching the outside world; oncospheres penetrate the intestinal villi to form cysticercoids that return to the lumen as adult worms.",
+    "keyConcept": "Hymenolepis nana autoinfection: Eggs hatch in lumen, oncospheres develop in mucosal villi.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q70_93fc60c5b6.webp",
+      "caption": "Practical Spotter Examination — Station 70"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0071",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "The stage found inside this egg is:",
+    "options": [
+      "Immature ovum surrounded by yolk cells",
+      "Mature larva",
+      "Miracidium",
+      "Segmented ovum (morula)",
+      "One-cell ovum"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Fasciola eggs are passed unembryonated, containing an unsegmented ovum surrounded by numerous yellowish-brown vitelline/yolk cells, with an indistinct opercular cap at one pole.",
+    "keyConcept": "Fasciola egg contains an unsegmented ovum surrounded by granular yolk cells with an operculum.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q71_7978e7a4f7.webp",
+      "caption": "Practical Spotter Examination — Station 71"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0072",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "The stage found inside this egg is:",
+    "options": [
+      "Segmented ovum (morula)",
+      "Hexacanth embryo",
+      "Miracidium",
+      "Mature larva",
+      "One-cell ovum"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: A spherical oncosphere with 6 embryonic hooklets (hexacanth embryo) enclosed in a thick, radially striated brown embryophore.",
+    "keyConcept": "Taenia egg contains a hexacanth embryo with 6 hooklets inside a striated embryophore.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q72_f28f675533.webp",
+      "caption": "Practical Spotter Examination — Station 72"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0073",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "This snail is the intermediate host of:",
+    "options": [
+      "Schistosoma mansoni",
+      "Heterophyes heterophyes",
+      "Fasciolopsis buski",
+      "Fasciola gigantica",
+      "Schistosoma haematobium"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Biomphalaria alexandrina is a freshwater pulmonate snail with a flat, discoidal, planorbid shell that serves as the intermediate host for Schistosoma mansoni in the Nile delta and valley.",
+    "keyConcept": "Biomphalaria alexandrina: Flat discoidal planorbid snail, host of Schistosoma mansoni.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q73_b1964554bd.webp",
+      "caption": "Practical Spotter Examination — Station 73"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0074",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "All of the following eggs are passed mature (embryonated) EXCEPT:",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q74_opt1_8c78f80be5.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q74_opt2_517fc6de3c.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q74_opt3_041c5dd131.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q74_opt4_0f9785c8b5.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q74_opt5_f74bb597aa.webp)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Fasciola and Ascaris eggs require external incubation in water or soil to develop, whereas Enterobius and Heterophyes eggs are passed fully mature with infective embryos.",
+    "keyConcept": "Fasciola eggs are passed immature; Enterobius and Heterophyes eggs are passed mature.",
+    "media": null
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0075",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "The stage found inside this egg is:",
+    "options": [
+      "Immature ovum surrounded by yolk cells",
+      "Miracidium",
+      "Mature larva",
+      "Hexacanth embryo",
+      "Segmented ovum (morula)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: When excreted in feces, the mature Schistosoma mansoni egg contains a fully developed, active, ciliated miracidium equipped with cephalic glands and flame cells, ready to hatch upon contact with fresh water.",
+    "keyConcept": "Mature Schistosoma mansoni egg contains a fully formed, ciliated miracidium.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q75_8b2ea21401.webp",
+      "caption": "Practical Spotter Examination — Station 75"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0076",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "The stage found inside this egg is:",
+    "options": [
+      "Segmented ovum (morula)",
+      "Miracidium",
+      "Immature ovum surrounded by yolk cells",
+      "Hexacanth embryo",
+      "Mature larva"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Ancylostoma and Necator eggs in fresh feces contain an unhatched segmented ovum consisting of 4 to 8 dark blastomeres (morula stage).",
+    "keyConcept": "Fresh hookworm egg contains a segmented morula of 4–8 blastomeres.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q76_de8d5667ab.webp",
+      "caption": "Practical Spotter Examination — Station 76"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0077",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Which of these stages can cause internal autoinfection, so that the whole life cycle is completed inside one human host?",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q77_opt1_916ac9f959.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q77_opt2_f09de77017.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q77_opt3_9138da205d.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q77_opt4_f2ff3442a7.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q77_opt5_95d9a7526a.webp)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Hymenolepis nana and Strongyloides stercoralis are the two classic parasites capable of true internal autoinfection within the human alimentary canal.",
+    "keyConcept": "Hymenolepis nana and Strongyloides stercoralis undergo internal autoinfection in the intestine.",
+    "media": null
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0078",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "A patient has pallor, puffy eyes and swollen feet. Which figure represents the stage that can be detected in his stool?",
+    "options": [
+      "A (/images/practical/mgl-3/parasitology/para_q78_opt1_38e82fed03.webp)",
+      "B (/images/practical/mgl-3/parasitology/para_q78_opt2_23ce1c26bd.webp)",
+      "C (/images/practical/mgl-3/parasitology/para_q78_opt3_da1821f41f.webp)",
+      "D (/images/practical/mgl-3/parasitology/para_q78_opt4_fd24eb2fd3.webp)",
+      "E (/images/practical/mgl-3/parasitology/para_q78_opt5_ce68e04ac1.webp)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Severe chronic Ancylostoma duodenale infection leads to severe iron deficiency anemia (pallor, fatigue) and protein-losing enteropathy (hypoalbuminemia causing dependent pedal edema and periorbital puffiness).",
+    "keyConcept": "Hookworm disease causes severe microcytic anemia, hypoalbuminemia, and periorbital/pedal edema.",
+    "media": null
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0079",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the station and the type of anemia this parasite causes:",
+    "options": [
+      "Anterior end of Strongyloides female - microcytic hypochromic anemia",
+      "Anterior end of Enterobius - normocytic normochromic anemia",
+      "Hookworm buccal capsule - microcytic hypochromic anemia",
+      "Hookworm buccal capsule - macrocytic megaloblastic anemia",
+      "Hookworm copulatory bursa - microcytic hypochromic anemia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The anterior end of Ancylostoma duodenale features a bent dorsal hook-like neck and a chitinous buccal capsule with 2 pairs of curved teeth that lacerate mucosal vessels, producing severe microcytic hypochromic iron-deficiency anemia.",
+    "keyConcept": "Ancylostoma duodenale: Ventral teeth in buccal capsule cause severe microcytic hypochromic anemia.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q79_72006b2a3f.webp",
+      "caption": "Practical Spotter Examination — Station 79"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0080",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Autoinfection is a means of transmission of this parasite. Yes or No? Justify.",
+    "options": [
+      "No - the egg must embryonate in soil for weeks",
+      "Yes - the egg is infective when passed and can hatch in the intestine, where the oncosphere develops into a cysticercoid in the villi",
+      "Yes - rhabditiform larvae become filariform larvae in the intestine",
+      "Yes - the egg needs about 6 hours on the perianal skin before it becomes infective",
+      "No - an insect intermediate host is always needed"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: H. nana eggs can hatch in the small bowel; released hexacanth larvae penetrate intestinal villi, transform into cysticercoids, and emerge into the lumen to attach as mature adults.",
+    "keyConcept": "Hymenolepis nana: Direct autoinfection via cysticercoid development in intestinal villi.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q80_7a4c2b158f.webp",
+      "caption": "Practical Spotter Examination — Station 80"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0081",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "The stage found inside this egg is:",
+    "options": [
+      "Miracidium",
+      "Hexacanth embryo",
+      "Immature ovum surrounded by yolk cells",
+      "Coracidium",
+      "Mature larva"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The viable Schistosoma mansoni egg contains a ciliated miracidium with prominent apical papilla and primitive gut.",
+    "keyConcept": "Schistosoma mansoni egg contains an active ciliated miracidium.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q81_ff433489fc.webp",
+      "caption": "Practical Spotter Examination — Station 81"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0082",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "The snail that harbors the larval stages of this parasite is:",
+    "options": [
+      "Lymnea cailliaudi",
+      "Segmentina",
+      "Biomphalaria alexandrina",
+      "Pirenella conica",
+      "Bulinus truncatus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Lymnaea cailliaudi harbors the sporocyst, rediae, and cercarial stages of Fasciola flukes in Egypt.",
+    "keyConcept": "Lymnaea cailliaudi supports sporocyst, rediae, and cercarial development of Fasciola.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q82_cc95db6192.webp",
+      "caption": "Practical Spotter Examination — Station 82"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0083",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Fatal hyperinfection with this parasite can occur in patients on corticosteroids. Interpret.",
+    "options": [
+      "Eggs hatch in the stomach and release thousands of larvae",
+      "Larvae encyst in muscles and are released by steroids",
+      "Rhabditiform larvae turn into filariform larvae inside the gut and re-invade (autoinfection), so the worm load rises sharply when immunity falls",
+      "Adult worms multiply asexually in the liver",
+      "Steroids stimulate the female to lay unembryonated eggs"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: In immunocompromised patients or those receiving systemic corticosteroids, Strongyloides internal autoinfection accelerates uncontrollably into 'hyperinfection syndrome' and disseminated strongyloidiasis: millions of filariform larvae penetrate the bowel wall and invade the lungs, liver, and brain, carrying enteric Gram-negative bacteria that cause fatal sepsis and meningitis.",
+    "keyConcept": "Strongyloides hyperinfection: Steroid therapy triggers massive larval dissemination and fatal sepsis.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q83_fbd175ab48.webp",
+      "caption": "Practical Spotter Examination — Station 83"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-PARA-0084",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the egg and its arrowed content:",
+    "options": [
+      "Ascaris egg (decorticated) - one-cell ovum",
+      "Hookworm egg - segmented ovum (morula)",
+      "Schistosoma mansoni egg - miracidium",
+      "Fasciola egg - immature ovum",
+      "Enterobius egg - mature larva"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: A decorticated fertilized Ascaris egg lacks the rough brown mamillated albuminous coat (lost during passage or preparation), revealing a smooth, thick, transparent shell enclosing a single unsegmented ovum with crescentic spaces at both poles.",
+    "keyConcept": "Decorticated Ascaris egg: Smooth colorless shell enclosing a single unsegmented ovum.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/parasitology/para_q84_51600ce9a3.webp",
+      "caption": "Practical Spotter Examination — Station 84"
+    }
+  }
+]

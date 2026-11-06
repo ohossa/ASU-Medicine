@@ -7,7 +7,29 @@ import { cleanQuestionStem } from './utils/questionStem';
 import { applyPublishedEdits } from './lib/publishedEdits';
 import type { ChapterData, Question, SubjectColor, SubjectData, SubQuestion } from './types';
 import { assignDefaultDifficulty, assignDefaultBloomLevel } from './lib/assignDefaultDifficulty';
-import mgl3PracticalChapters from './data/practical/mgl-3-practical.json';
+
+// ── Practical Bank Lazy Loading (MGL-3) ──────────────────────────────────────────
+let mgl3PracticalChapters: any[] = [];
+let practicalLoadingPromise: Promise<void> | null = null;
+
+export const isPracticalDataLoaded = (code: string) =>
+  code.toUpperCase() !== 'MGL-3' || mgl3PracticalChapters.length > 0;
+
+export async function ensurePracticalDataLoaded(code: string): Promise<void> {
+  if (code.toUpperCase() !== 'MGL-3') return;
+  if (mgl3PracticalChapters.length > 0) return;
+  if (!practicalLoadingPromise) {
+    practicalLoadingPromise = import('./data/practical/mgl-3-practical.json')
+      .then((mod) => {
+        mgl3PracticalChapters = (mod.default || mod) as any[];
+      })
+      .catch((err) => {
+        practicalLoadingPromise = null;
+        throw err;
+      });
+  }
+  await practicalLoadingPromise;
+}
 
 // Glob all JSON files under src/imports recursively at build time (lazy)
 const globbedFiles = import.meta.glob('../imports/**/*.json');
@@ -844,7 +866,9 @@ export interface ModuleQuestionCounts {
 
 export function getModuleQuestionCounts(moduleCode: string): ModuleQuestionCounts {
   const pCount = moduleCode === 'MGL-3'
-    ? (mgl3PracticalChapters as any[]).reduce((acc, ch) => acc + (ch.subjects || []).reduce((sAcc: number, s: any) => sAcc + (s.questions || []).length, 0), 0)
+    ? (mgl3PracticalChapters.length > 0
+        ? (mgl3PracticalChapters as any[]).reduce((acc, ch) => acc + (ch.subjects || []).reduce((sAcc: number, s: any) => sAcc + (s.questions || []).length, 0), 0)
+        : 826)
     : 0;
   const attachPractical = (res: ModuleQuestionCounts) => {
     if (pCount > 0) {

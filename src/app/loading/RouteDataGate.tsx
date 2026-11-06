@@ -1,6 +1,6 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { useLocation } from "react-router";
-import { ensureModuleDataLoaded, ensureDataLoaded } from "../data";
+import { ensureModuleDataLoaded, ensureDataLoaded, ensurePracticalDataLoaded } from "../data";
 import LoadingScreen from "../components/LoadingScreen";
 export function RouteDataGate({
   children,
@@ -9,11 +9,11 @@ export function RouteDataGate({
   children: ReactNode;
 }) {
   const { pathname } = useLocation();
-  const code = pathname
-    .match(/^\/year-\d+\/([^/]+)\/(?:mcq|essay|mixed|tracker)$/)?.[1]
-    .toUpperCase();
+  const routeMatch = pathname.match(/^\/year-\d+\/([^/]+)\/(mcq|essay|mixed|tracker|practical)$/);
+  const code = routeMatch?.[1]?.toUpperCase();
+  const routeMode = routeMatch?.[2]?.toLowerCase();
   const scope = code
-    ? "module:" + code
+    ? "module:" + code + (routeMode ? ":" + routeMode : "")
     : pathname === "/flagged-questions"
       ? "all"
       : "";
@@ -27,7 +27,9 @@ export function RouteDataGate({
     }
     setState({ scope, ready: false, error: "" });
     const load = code
-      ? ensureModuleDataLoaded(code)
+      ? (routeMode === 'practical'
+          ? Promise.all([ensureModuleDataLoaded(code), ensurePracticalDataLoaded(code)])
+          : ensureModuleDataLoaded(code))
       : scope === "all"
         ? ensureDataLoaded()
         : Promise.resolve();

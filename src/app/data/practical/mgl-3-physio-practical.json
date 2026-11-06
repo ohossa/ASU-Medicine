@@ -1,0 +1,770 @@
+[
+  {
+    "id": "MGL3-PRAC-PHY-0001",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A 70-year-old woman has difficulty swallowing both solids and liquids, weight loss, and regurgitation of undigested food. Her chest X-ray shows an air-fluid level in a dilated esophagus. The regurgitated food is undigested mainly because it:",
+    "options": [
+      "Was not mixed with pancreatic enzymes in the duodenum",
+      "Lacked salivary amylase due to dry mouth",
+      "Passed too quickly through the stomach to be digested",
+      "Never reached the stomach and stagnated above the gastroesophageal junction",
+      "Was exposed to gastric acid but not to pepsin"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: In achalasia, incomplete relaxation of the lower esophageal sphincter (LES) combined with aperistalsis in the esophageal body prevents food boluses from traversing the gastroesophageal junction. Ingested food remains pooled in the dilated thoracic esophagus above the tight sphincter for hours or days without ever coming into contact with gastric acid, pepsin, or pancreatico-duodenal enzymes, so it is regurgitated as completely undigested, neutral-pH food particles.\n\nOptions A, B, C, and E are incorrect because digestion of proteins and lipids requires entry into the stomach and small intestine.",
+    "keyConcept": "Achalasia: Impaired LES relaxation causes food stagnation in the dilated esophagus above the GE junction, resulting in regurgitation of undigested, non-acidic food."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0002",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "In the same patient, frequent coughing and aspiration while eating and during sleep is best explained by:",
+    "options": [
+      "Overflow of retained esophageal contents into the airway",
+      "Paralysis of the pharyngeal constrictor muscles",
+      "Damage to the swallowing center causing loss of reflex apnea",
+      "Acid reflux from the stomach into the larynx",
+      "Failure of the upper esophageal sphincter to open"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: When the dilated esophagus reaches capacity with retained secretions and stagnant food, contents overflow retrograde into the pharynx and spill into the adjacent laryngeal inlet, especially in the recumbent position during sleep when gravitational containment is lost and protective pharyngeal swallowing reflexes are blunted.\n\nOptions B and C are incorrect because the primary pathology is esophageal aperistalsis and LES hypertonicity, not pharyngeal paralysis or brainstem swallowing center damage.",
+    "keyConcept": "Complications of achalasia: Nocturnal coughing and aspiration pneumonia result from overflow of stagnant esophageal pool into the trachea."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0003",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "The basic defect in achalasia is degeneration of which neurons?",
+    "options": [
+      "Sympathetic postganglionic fibers to the gastroesophageal junction",
+      "Inhibitory enteric neurons in the lower esophageal sphincter",
+      "Motor neurons of the nucleus ambiguus supplying the pharynx",
+      "Vagal preganglionic neurons in the dorsal motor nucleus",
+      "Excitatory cholinergic myenteric neurons of the esophageal body"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Achalasia is a primary neurodegenerative disorder of the enteric nervous system characterized by selective loss and degeneration of postganglionic inhibitory myenteric (Auerbach's) neurons located in the lower esophageal sphincter and distal esophagus. These inhibitory neurons normally release nitric oxide (NO) and vasoactive intestinal peptide (VIP) to mediate LES relaxation during deglutition.\n\nOption E is incorrect because loss of cholinergic neurons would cause hypotension, whereas achalasia features unopposed cholinergic baseline tone.",
+    "keyConcept": "Pathophysiology: Degeneration of NO- and VIP-producing inhibitory myenteric neurons causes failure of LES receptive relaxation."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0004",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A drug that would theoretically replace the deficient transmitter in achalasia is:",
+    "options": [
+      "A cholinergic muscarinic agonist",
+      "A nitric oxide donor",
+      "A gastrin analogue",
+      "A substance P analogue",
+      "A motilin receptor agonist"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Because the primary physiological deficiency in achalasia is the lack of nitric oxide (NO) synthesis by degenerated inhibitory enteric neurons, exogenous nitric oxide donors (such as isosorbide dinitrate, nitroglycerin) or calcium channel blockers directly relax the hypertensive vascular and visceral smooth muscle of the lower esophageal sphincter.\n\nOption A (cholinergic muscarinic agonist) would exacerbate LES spasm by increasing contraction.",
+    "keyConcept": "Pharmacotherapy: Nitric oxide donors (e.g. isosorbide dinitrate) substitute for deficient neuronal NO, lowering LES resting tone."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0005",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Achalasia and gastroesophageal reflux disease (GERD) differ mainly in that:",
+    "options": [
+      "Both are failures of LES relaxation, but GERD also involves the UES",
+      "Achalasia affects the swallowing center, while GERD affects the enteric neurons",
+      "Achalasia is failure of LES contraction, while GERD is failure of LES relaxation",
+      "Achalasia is failure of LES relaxation, while GERD is failure of LES contraction",
+      "Achalasia is a mechanical stricture, while GERD is a motility disorder"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Achalasia and GERD represent opposite mechanical dysfunctions of the lower esophageal sphincter: achalasia is characterized by failure of LES relaxation (elevated resting tone >45 mmHg with absent swallow-induced receptive relaxation), whereas GERD is characterized by incompetence and failure of LES contraction / hypotensive baseline LES tone (<10 mmHg or transient inappropriate relaxations) permitting acid backwash into the esophagus.\n\nOption D is incorrect because primary achalasia is a functional motility neuropathy, not an extrinsic mechanical stricture.",
+    "keyConcept": "Differential Physiology: Achalasia = failure of LES relaxation; GERD = failure of LES contraction (incompetent/hypotonic barrier)."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0006",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Which of the following swallowing events does NOT need the swallowing center to coordinate it?",
+    "options": [
+      "Opening of the upper esophageal sphincter",
+      "Closure of the posterior nares and the larynx",
+      "Secondary esophageal peristalsis",
+      "Primary esophageal peristalsis",
+      "Reflex apnea"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Secondary esophageal peristalsis is an entirely involuntary, locally mediated reflex coordinated by the intrinsic enteric nervous system (myenteric plexus) in response to local mechanical stretch or distension of the esophageal wall by retained food or refluxed gastric acid. It operates autonomously even after bilateral cervical vagotomy or brainstem isolation. In contrast, primary peristalsis and the pharyngeal phase require central coordination by the medullary swallowing center via cranial nerves V, IX, X, and XII.",
+    "keyConcept": "Secondary peristalsis is triggered locally by luminal distension and mediated intrinsically by the enteric nervous system without central swallowing center coordination."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0007",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "The involuntary pharyngeal phase of swallowing is triggered by stimulation of:",
+    "options": [
+      "Pressure receptors in the pharynx",
+      "Taste receptors on the tongue",
+      "Stretch receptors in the esophageal body",
+      "Tactile receptors in the anterior mouth",
+      "Visual and auditory receptors by food cues"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The pharyngeal phase of swallowing is initiated involuntarily when a food bolus is propelled posteriorly by the tongue against tactile/pressure mechanoreceptors located in the mucosa around the pharyngeal opening, especially the palatoglossal and palatopharyngeal arches and tonsillar pillars. Afferent impulses travel via cranial nerves V, IX, and X to the swallowing center in the medulla oblongata.",
+    "keyConcept": "Initiation of pharyngeal deglutition: Bolus activates tactile/pressure mechanoreceptors on the tonsillar pillars and posterior pharyngeal wall."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0008",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Stimulation of the pharyngeal receptors by a bolus causes all of the following EXCEPT:",
+    "options": [
+      "A fall in pressure of the upper esophageal sphincter",
+      "A peristaltic wave along the pharynx",
+      "A peristaltic wave along the esophagus",
+      "Relaxation of the smooth muscle of the lower esophageal sphincter",
+      "Contraction of the proximal part of the stomach"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: Stimulation of pharyngeal swallowing receptors initiates a vagally mediated inhibitory reflex called 'receptive relaxation of the stomach' (fundus and corpus expand their volume with minimal pressure increase to accommodate incoming food). It causes relaxation, NOT contraction, of the proximal stomach. It simultaneously triggers UES opening, pharyngeal peristalsis, primary esophageal peristalsis, and LES relaxation.",
+    "keyConcept": "Gastric receptive relaxation: Swallowing triggers reflex relaxation of the proximal gastric reservoir (fundus) via vagal inhibitory non-adrenergic non-cholinergic (NANC) fibers."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0009",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "In the pancreatic secretion experiment, hormone 1 raised both the secretion rate and HCO3- concentration (from about 65 to 115 mmol/L), with almost no change in amylase. Hormone 1 acts mainly on:",
+    "options": [
+      "Acinar cells to increase zymogen granule synthesis",
+      "Duct epithelial cells to increase aqueous alkaline secretion",
+      "Acinar cells through a calcium-dependent pathway",
+      "Delta cells to increase somatostatin release",
+      "Islet beta cells to increase insulin release"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Secretin is released by mucosal S cells in the duodenum and upper jejunum in response to acidic chyme (pH < 4.5). It acts via Gs protein-coupled receptors on pancreatic ductal epithelial cells, activating adenylyl cyclase and cAMP to stimulate cystic fibrosis transmembrane conductance regulator (CFTR) Cl- channels and apical Cl-/HCO3- exchangers, producing high-volume, watery, enzyme-poor alkaline juice rich in HCO3- (up to 120–140 mmol/L).",
+    "keyConcept": "Secretin: Stimulates ductal epithelial cells to secrete large volumes of watery, bicarbonate-rich pancreatic juice."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0010",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Hormone 2 in the same experiment caused a large rise in amylase but only a small rise in secretion rate. The primary stimulus for its release is:",
+    "options": [
+      "Fat in the duodenum",
+      "Acid chyme in the duodenum",
+      "Distension of the gastric antrum",
+      "Glucose in the duodenum",
+      "Bile salts in the terminal ileum"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Hormone 2 is cholecystokinin (CCK), which acts on pancreatic acinar cells via CCK-1 (CCK-A) receptors to trigger exocytosis of digestive zymogen granules (amylase, lipase, trypsinogen). The most potent physiological stimulants for CCK secretion by duodenal and jejunal I cells are dietary long-chain fatty acids, monoglycerides, peptides, and amino acids entering the duodenum.",
+    "keyConcept": "Cholecystokinin (CCK): Stimulated primarily by luminal fat and protein breakdown products, stimulating acinar enzyme release."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0011",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Which combination correctly describes the effects of secretin?",
+    "options": [
+      "Increases gastric secretion; decreases hepatic bile secretion",
+      "No gastric effect; increases bile salt secretion by hepatocytes",
+      "Decreases gastric secretion and emptying; increases watery alkaline hepatic bile",
+      "Increases gastric secretion and emptying; increases watery alkaline hepatic bile",
+      "Decreases gastric secretion and emptying; contracts the gallbladder"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Secretin functions as 'nature's antacid': it decreases gastric acid secretion (inhibits gastrin and parietal cells), inhibits gastric emptying (preventing duodenal acid overload), and stimulates cholangiocytes in the biliary tree to secrete a watery, bicarbonate-rich alkaline hepatic bile. It does not cause gallbladder smooth muscle contraction (which is mediated by CCK).",
+    "keyConcept": "Secretin actions: Inhibits gastric acid secretion and motility, while stimulating ductal bicarbonate secretion in pancreas and biliary tree."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0012",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Which combination correctly describes the effects of cholecystokinin (CCK)?",
+    "options": [
+      "Decreases gastric emptying and relaxes the gallbladder",
+      "Increases gastric secretion and relaxes the gallbladder",
+      "No gastric effect, and increases watery alkaline hepatic bile",
+      "Decreases gastric secretion and emptying, and empties the gallbladder",
+      "Increases gastric emptying and contracts the gallbladder"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: CCK promotes digestion by causing vigorous gallbladder contraction and simultaneous relaxation of the sphincter of Oddi (emptying bile into the duodenum), stimulating pancreatic acinar enzyme secretion, and exerting a negative feedback on the stomach by decreasing gastric emptying and acid secretion to allow adequate time for intestinal digestion.",
+    "keyConcept": "CCK actions: Empties the gallbladder, relaxes the sphincter of Oddi, stimulates pancreatic enzyme exocytosis, and slows gastric emptying."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0013",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A person eats meat, eggs, toast, and orange juice. The toast mainly causes release of a duodenal hormone whose main pancreatic effect is:",
+    "options": [
+      "Decreased enzyme secretion through somatostatin",
+      "Increased output of enzymes, especially amylase",
+      "Increased lipase relative to other enzymes",
+      "Increased aqueous alkaline secretion",
+      "Increased insulin secretion"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: Toast is rich in carbohydrates (starch). The digestion of starch yields luminal glucose, which is the potent physiological trigger for the release of glucose-dependent insulinotropic polypeptide (GIP / incretin) from duodenal K cells. GIP targets the endocrine pancreas (beta cells of the islets of Langerhans) to stimulate glucose-dependent insulin secretion, anticipatorily preparing the body for postprandial glucose uptake.",
+    "keyConcept": "Incretin effect: Luminal carbohydrates stimulate duodenal GIP and GLP-1 release, which stimulate endocrine pancreatic insulin secretion."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0014",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "For the same meal, which statement about pancreatic enzyme secretion is correct?",
+    "options": [
+      "Toast raises the proportion of amylase in the juice",
+      "Meat raises the proportion of proteases in the juice",
+      "Carbohydrate is the strongest stimulus for total enzyme output",
+      "The proportion of enzymes stays constant; only the total amount changes",
+      "Eggs raise the proportion of lipase in the juice"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Pancreatic acinar cells package enzymes together within common zymogen granules. Upon stimulation by neurohormonal agonists (CCK and ACh), exocytosis releases the entire preformed granule contents in fixed, parallel proportions. While chronic dietary shifts alter genetic expression over weeks, during a single meal the proportion of individual enzymes stays constant; only the total magnitude of enzyme secretion changes.",
+    "keyConcept": "Parallel secretion: Pancreatic acinar enzymes are co-packaged in zymogen granules, keeping relative enzyme proportions constant during a meal."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0015",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A 62-year-old woman has a stone in the main pancreatic duct, weight loss and intermittent diarrhea. The diarrhea is best explained by:",
+    "options": [
+      "Undigested food in the lumen creating an osmotic gradient that draws water in",
+      "Increased motility caused by epigastric pain",
+      "Bacterial infection of the dilated pancreatic duct",
+      "Secretory diarrhea caused by inflammatory mediators",
+      "Lack of bile salts due to obstruction of the common bile duct"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Complete or partial obstruction of the main pancreatic duct halts the delivery of pancreatic lipase, amylase, and proteases into the duodenum. Undigested macronutrients (especially dietary triglycerides and starches) remain in the intestinal lumen, creating a powerful hyperosmolar gradient that obligates osmotic water retention and pulls fluid from plasma into the lumen, causing osmotic malabsorptive diarrhea.",
+    "keyConcept": "Pancreatic insufficiency: Undigested luminal macronutrients exert an osmotic force, drawing fluid into the intestinal lumen (osmotic diarrhea)."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0016",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "In pancreatic enzyme deficiency, the digestion of which nutrient is most severely affected?",
+    "options": [
+      "All nutrients equally, because all pancreatic enzymes are released together",
+      "Fat, because other enzymes can partly compensate for carbohydrate and protein digestion",
+      "Proteins, because trypsin is needed to activate all other proteases",
+      "Starch, because pancreatic amylase is its only digestive enzyme",
+      "Disaccharides, because brush border enzymes depend on pancreatic juice"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Fat digestion is uniquely vulnerable because pancreatic lipase accounts for >90% of total dietary triglyceride hydrolysis. While salivary amylase and brush border disaccharidases can digest carbohydrates, and gastric pepsin plus intestinal brush border peptidases can hydrolyze proteins, lingual and gastric lipases have extremely limited capacity and cannot digest long-chain triglycerides in neutral intestinal environments.",
+    "keyConcept": "Enzyme deficit vulnerability: Fat digestion is most severely disrupted because pancreatic lipase lacks adequate compensatory backups."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0017",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "The patient's liver function tests were normal. This finding suggests that her steatorrhea is mainly caused by:",
+    "options": [
+      "Failure of chylomicron formation",
+      "Loss of ileal bile salt reabsorption",
+      "Deficiency of bile salts",
+      "Deficiency of bile pigments",
+      "Deficiency of pancreatic lipase"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: Normal liver function tests and patent extrahepatic bile ducts confirm normal hepatocyte bile salt synthesis, normal conjugation, and unrestricted delivery of bile salts into the intestinal lumen. Therefore, the isolated clinical triad of ductal stone, normal liver tests, and steatorrhea localizes the defect exclusively to exocrine pancreatic insufficiency with deficiency of pancreatic lipase.",
+    "keyConcept": "Steatorrhea with normal liver function points directly to pancreatic lipase insufficiency."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0018",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "If the pancreatic duct obstruction continues, all of the following are expected EXCEPT:",
+    "options": [
+      "Weight loss",
+      "Steatorrhea",
+      "Increased bone density",
+      "Prolonged whole blood clotting time",
+      "Osteoporosis"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Chronic steatorrhea causes massive malabsorption of fat-soluble vitamins (A, D, E, and K). Malabsorption of vitamin D impairs intestinal calcium and phosphate uptake, causing secondary hyperparathyroidism, systemic calcium mobilization, osteomalacia, and osteoporosis (decreased, never increased, bone density). Vitamin K malabsorption prolongs clotting time.",
+    "keyConcept": "Chronic pancreatic obstruction causes fat-soluble vitamin malabsorption, leading to osteoporosis/osteomalacia (never increased bone density)."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0019",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A patient with liver failure has bleeding. Using a thrombopoietin receptor antagonist would NOT help him because:",
+    "options": [
+      "The liver normally makes thrombopoietin, so blocking its receptor would reduce platelet production further",
+      "The bleeding in liver failure is caused only by vitamin K deficiency",
+      "Thrombopoietin inhibits clotting factor synthesis in the liver",
+      "Platelets in liver failure are destroyed by the spleen, not underproduced",
+      "Thrombopoietin receptor antagonists raise the levels of vitamin K-dependent factors"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Thrombopoietin (TPO) is constitutively synthesized and secreted by hepatocytes into the circulation to stimulate megakaryocytopoiesis and platelet production in bone marrow. In liver failure, endogenous TPO synthesis is already severely depressed, contributing to baseline thrombocytopenia. Administering an antagonist against TPO receptors would further block platelet generation, severely worsening hemorrhagic risk.",
+    "keyConcept": "Thrombopoietin: Hepatocyte-derived hormone that drives megakaryocyte differentiation; antagonists worsen liver failure thrombocytopenia."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0020",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "The active form of vitamin D is reduced in liver failure because the liver performs:",
+    "options": [
+      "Conjugation of vitamin D with glucuronic acid",
+      "Photoconversion of 7-dehydrocholesterol",
+      "25-hydroxylation of vitamin D",
+      "24-hydroxylation of vitamin D",
+      "1-alpha hydroxylation of vitamin D"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Dietary and skin-derived cholecalciferol (vitamin D3) is biologically inert. The obligatory first metabolic step in its activation is 25-hydroxylation, carried out constitutively in hepatocyte microsomes and mitochondria by 25-hydroxylase (CYP2R1) to form 25-hydroxycholecalciferol [calcidiol]. Calcidiol is subsequently converted in the renal proximal tubules to active 1,25-dihydroxycholecalciferol [calcitriol].",
+    "keyConcept": "Hepatic vitamin D metabolism: Hepatocytes perform obligatory 25-hydroxylation to produce calcidiol [25(OH)D]."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0021",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Clinical signs of liver failure usually appear only after destruction of more than about what percentage of the liver?",
+    "options": [
+      "30%",
+      "50%",
+      "70%",
+      "85%",
+      "95%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: The liver has an enormous functional reserve capacity and regenerative potential. Normal metabolic, synthetic, and excretory equilibrium is maintained until approximately 70% to 80% of functional hepatic parenchymal volume has been destroyed by acute necrosis or progressive cirrhosis.",
+    "keyConcept": "Hepatic functional reserve: Clinical manifestations of hepatic decompensation manifest only after destruction of >70% of hepatocytes."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0022",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Swelling of the face and extremities in liver failure is mainly caused by:",
+    "options": [
+      "Lymphatic obstruction by the cirrhotic liver",
+      "Lower plasma oncotic pressure because less albumin is made",
+      "Higher capillary hydrostatic pressure from sodium retention alone",
+      "Higher capillary permeability caused by bilirubin",
+      "Higher interstitial oncotic pressure from leaking globulins"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Albumin is synthesized exclusively by hepatocytes and accounts for 75–80% of total plasma colloid oncotic (osmotic) pressure. In advanced liver failure, profound hypoalbuminemia (<2.5 g/dL) drastically lowers intravascular oncotic pressure, disrupting Starling equilibrium and shifting fluid from capillaries into the interstitial tissue spaces.",
+    "keyConcept": "Starling forces in liver failure: Hypoalbuminemia decreases plasma colloid oncotic pressure, causing generalized interstitial edema and ascites."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0023",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A patient with liver failure is better treated with intravenous rather than oral calcium because:",
+    "options": [
+      "Low albumin prevents calcium from being absorbed",
+      "Bile salt deficiency precipitates calcium in the intestine",
+      "High parathyroid hormone blocks intestinal calcium uptake",
+      "The liver normally secretes a calcium carrier protein into bile",
+      "Low active vitamin D reduces intestinal calcium absorption"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: Intestinal absorption of dietary calcium across the enterocyte apical membrane (via TRPV6 channels and calbindin-D9k) strictly depends on active vitamin D [calcitriol]. In liver failure, impaired 25-hydroxylation leads to deficient calcitriol production, blunting intestinal calcium absorption and rendering oral calcium therapy largely unabsorbed and excreted in feces.",
+    "keyConcept": "Calcium bioavailability: Low active vitamin D in liver failure prevents intestinal calcium transport, requiring intravenous bypass."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0024",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Which sequence correctly explains osteomalacia in liver failure?",
+    "options": [
+      "Low active vitamin D > high blood Ca2+ > low PTH > Ca2+ removed from bone",
+      "Low active vitamin D > high renal Ca2+ reabsorption > high PTH > bone deposition",
+      "Low albumin > low total Ca2+ > low PTH > bone loss",
+      "Low active vitamin D > low intestinal Ca2+ absorption > low blood Ca2+ > high PTH > Ca2+ removed from bone",
+      "High PTH > low active vitamin D > high intestinal Ca2+ absorption > bone loss"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Liver failure impairs hepatic 25-hydroxylase -> deficiency of 25(OH)D and calcitriol -> reduced intestinal absorption of calcium and phosphate -> systemic hypocalcemia -> secondary hyperparathyroidism (elevated PTH) -> osteoclastic bone resorption and defective matrix mineralization, producing osteomalacia and pathological fractures.",
+    "keyConcept": "Pathogenesis of hepatic osteodystrophy: Low active Vit D -> low intestinal Ca2+ absorption -> hypocalcemia -> high PTH -> bone demineralization."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0025",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A 39-year-old man had 80% of his ileum removed. He now has pale, oily, foul-smelling stools, with normal liver function. The direct cause of his steatorrhea is a deficiency of:",
+    "options": [
+      "Alkaline pancreatic juice",
+      "Bile pigments",
+      "Bile salt synthesis by the liver",
+      "Pancreatic lipase",
+      "Bile salts in the intestinal lumen"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: The terminal ileum is the exclusive anatomical site for active, sodium-dependent reabsorption of conjugated bile salts via the apical sodium-dependent bile acid transporter (ASBT). Resection of 80% of the ileum abolishes the enterohepatic circulation. Despite maximal hepatic synthesis, bile salt losses in feces exceed hepatic replacement capacity, dropping luminal bile salt concentration below the critical micellar concentration (CMC) required to emulsify fats and form mixed micelles.",
+    "keyConcept": "Short bowel syndrome: Resection of the ileum depletes the luminal bile salt pool below the critical micellar concentration, causing severe steatorrhea."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0026",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "In this patient, bile salt deficiency is mainly due to the loss of bile salt:",
+    "options": [
+      "Secretion by the liver",
+      "Synthesis by the liver",
+      "Passive absorption in the upper intestine",
+      "Active absorption in the terminal ileum",
+      "Storage in the gallbladder"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Active absorption of conjugated bile salts in the terminal ileum recovers >95% of the secreted bile acid pool per cycle. Loss of this active transporter bed directly disrupts the enterohepatic circuit.",
+    "keyConcept": "Bile salt physiology: Active transport in the terminal ileum (via ASBT) is the indispensable engine of the enterohepatic circulation."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0027",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This patient's anemia is most likely due to deficiency of:",
+    "options": [
+      "Iron",
+      "Vitamin B12",
+      "Cobalt",
+      "Folic acid",
+      "Copper"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Vitamin B12 (cobalamin) bound to gastric intrinsic factor (IF) is absorbed exclusively in the terminal ileum via receptor-mediated endocytosis at the cubam receptor complex (cubilin-amnionless). Resection of the terminal ileum completely halts vitamin B12 assimilation, resulting in macrocytic megaloblastic anemia after liver cobalamin stores are exhausted.",
+    "keyConcept": "Terminal ileal absorption: Site of vitamin B12-intrinsic factor absorption; ileal resection results in vitamin B12 deficiency anemia."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0028",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "The bile salt pool (about 3-4 g) recycles through the enterohepatic circulation about how many times per day?",
+    "options": [
+      "1-2 times",
+      "3-4 times",
+      "6-8 times",
+      "10-12 times",
+      "15-20 times"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: The total human bile salt pool is approximately 3 to 4 grams. To digest and absorb 80–100 g of dietary lipid ingested daily across multiple meals, this pool must be recirculated through the liver, biliary tree, intestine, and portal vein approximately 6 to 8 times every 24 hours (translating to a daily total bile salt flux of 18–24 g).",
+    "keyConcept": "Enterohepatic turnover: The 3–4 g bile salt pool recycles 6–8 times daily to meet digestive demands."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0029",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "About what percentage of secreted bile salts is reabsorbed from the intestine?",
+    "options": [
+      "5%",
+      "25%",
+      "65%",
+      "95%",
+      "100%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: The enterohepatic circulation operates with extraordinary physiological efficiency: approximately 95% of secreted bile salts are actively reabsorbed in the terminal ileum and returned to the liver via the portal circulation. Only about 5% (~0.2 to 0.6 g/day) escapes into the colon to be excreted in feces, which equals the daily rate of de novo hepatic bile acid synthesis.",
+    "keyConcept": "Enterohepatic conservation: ~95% of intestinal bile salts are reabsorbed and reused; only ~5% is lost in stool daily."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0030",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "All of the following are functions of the enterohepatic circulation of bile salts EXCEPT:",
+    "options": [
+      "Reducing the need for new bile salt synthesis by the liver",
+      "Reducing bile salt loss in the stools",
+      "Reducing the absorption of fat-soluble vitamins",
+      "Maintaining a constant bile salt pool",
+      "Stimulating hepatocytes to secrete more bile (choleretic action)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Enterohepatic cycling of bile salts is essential for preserving the micellar pool that PROMOTES (not reduces) the intestinal absorption of dietary lipids and fat-soluble vitamins (A, D, E, K). It reduces the metabolic burden of de novo hepatic bile acid synthesis, limits fecal loss, and exerts a potent choleretic feedback on hepatocytes.",
+    "keyConcept": "Enterohepatic circulation: Maintains micelle formation, dramatically facilitating the absorption of fat-soluble vitamins."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0031",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "The role of bile salts in fat digestion is to:",
+    "options": [
+      "Emulsify fat globules",
+      "Stimulate pancreatic bicarbonate secretion",
+      "Stimulate pancreatic enzyme secretion",
+      "Protect pancreatic lipase from being digested",
+      "Activate pancreatic lipase"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Bile salts are amphipathic molecules possessing both hydrophobic and hydrophilic faces. In the duodenal lumen, mechanical agitation by intestinal motility breaks large fat globules into minute droplets, which bile salts coat to prevent coalescence. This emulsification increases the surface area of lipids by thousands of times, allowing water-soluble colipase-pancreatic lipase complexes to access and hydrolyze ester bonds.",
+    "keyConcept": "Emulsification: Amphipathic bile salts break large fat droplets into emulsion particles, expanding lipid surface area for lipase action."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0032",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "The ileal resection patient is at higher risk of gallstones because:",
+    "options": [
+      "Unabsorbed calcium is redirected into bile",
+      "Too few bile salts keep cholesterol dissolved, so it precipitates",
+      "Excess bile pigments precipitate in the gallbladder",
+      "The liver makes more cholesterol to replace lost bile salts",
+      "The gallbladder no longer receives CCK stimulation"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Cholesterol is insoluble in water and must be maintained in stable liquid-crystalline micellar solution in bile by adequate concentrations of bile salts and phospholipids. When ileal resection depletes the circulating bile salt pool, bile becomes supersaturated with cholesterol (lithogenic bile), causing cholesterol microcrystals to nucleate and aggregate into radiolucent cholesterol gallstones.",
+    "keyConcept": "Lithogenesis in ileal disease: Bile salt depletion shifts the lithogenic index, causing cholesterol supersaturation and gallstone formation."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0033",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Which blood test is expected to be abnormal in this patient?",
+    "options": [
+      "Bleeding time",
+      "Cross matching",
+      "Blood grouping",
+      "Whole blood clotting time",
+      "Osmotic fragility test"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Chronic bile salt depletion and fat malabsorption impair the absorption of vitamin K, a fat-soluble cofactor essential for hepatic gamma-glutamyl carboxylase to carboxylate clotting factors II, VII, IX, and X. Vitamin K deficiency impairs coagulation cascade activation, leading to prolongation of the whole blood clotting time and prothrombin time (PT/INR).",
+    "keyConcept": "Coagulation pathophysiology: Vitamin K malabsorption secondary to bile salt deficiency prolongs clotting time (PT/INR)."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0034",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "If the patient is left untreated, all of the following are expected EXCEPT:",
+    "options": [
+      "Reduced parathyroid hormone secretion",
+      "Reduced intestinal Ca2+ absorption",
+      "Vitamin D deficiency",
+      "Reduced bone density",
+      "Low blood Ca2+"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Chronic steatorrhea leads to unabsorbed fatty acids binding luminal ionized calcium to form insoluble calcium soaps. Combined with vitamin D malabsorption, systemic blood Ca2+ falls. Hypocalcemia directly stimulates the parathyroid glands via calcium-sensing receptors (CaSR) to hypersecrete parathyroid hormone (secondary hyperparathyroidism). Therefore, PTH secretion is ELEVATED, not reduced.",
+    "keyConcept": "Calcium homeostasis: Hypocalcemia from fat malabsorption stimulates secondary hyperparathyroidism (elevated PTH)."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0035",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "In the terminal ileum, bile salts are absorbed by:",
+    "options": [
+      "Passive paracellular diffusion",
+      "Primary active transport by an ATPase",
+      "Pinocytosis into enterocytes",
+      "Facilitated diffusion through GLUT carriers",
+      "Secondary active transport with Na+ (symport)"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: Conjugated bile salts are negatively charged anions that cannot cross lipid bilayers by simple diffusion. In the terminal ileum, they are actively absorbed via secondary active transport coupled to the downhill inward sodium gradient across the brush border via the apical sodium-dependent bile acid transporter (ASBT / SLC10A2), driven by the basolateral Na+/K+ ATPase.",
+    "keyConcept": "ASBT transporter: Conjugated bile salts are transported across the terminal ileal enterocyte brush border via secondary active Na+ symport."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0036",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This patient's liver function is normal, yet he is still bile salt deficient. This is because:",
+    "options": [
+      "Bile salts are absorbed passively in the jejunum and lost in urine",
+      "The liver makes bile pigments instead of bile salts",
+      "Liver synthesis cannot keep up with the large fecal loss when ileal reabsorption fails",
+      "The liver stops making bile salts once ileal feedback is lost",
+      "The gallbladder breaks down the bile salts it stores"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Under physiological conditions, the rate-limiting enzyme in bile acid synthesis, cholesterol 7alpha-hydroxylase (CYP7A1), produces ~0.5 g/day. When ileal reabsorption fails completely, fecal losses exceed 3–5 g/day. Even when negative feedback upregulates hepatic CYP7A1 to its maximum synthetic velocity (approximately 3 to 5 times basal), hepatic synthesis cannot compensate for the massive continuous fecal loss.",
+    "keyConcept": "Synthesis ceiling: Maximum hepatic de novo bile acid synthesis capacity cannot match the massive continuous fecal loss after total ileal loss."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0037",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A 21-year-old student develops bloating, cramps, gas and diarrhea about 1 hour after drinking milk. Her parents also cannot drink milk. Her diarrhea is caused by deficiency of:",
+    "options": [
+      "Pancreatic amylase",
+      "Maltase",
+      "Lactase",
+      "Salivary amylase",
+      "Sucrase"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Lactase (lactase-phlorizin hydrolase) is an apical brush border disaccharidase in the small intestine that hydrolyzes dietary lactose (milk sugar) into glucose and galactose. Primary adult-type hypolactasia results in unhydrolyzed lactose remaining in the intestinal lumen, causing osmotic fluid influx and bacterial fermentation into lactic acid, methane, and hydrogen gas.",
+    "keyConcept": "Lactase deficiency: Absence of brush-border lactase prevents lactose cleavage, precipitating osmotic diarrhea and gas."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0038",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This patient's abdominal distension and gas are explained by all of the following EXCEPT:",
+    "options": [
+      "Reduced intestinal motility",
+      "Bacterial fermentation of undigested lactose",
+      "A higher osmotic gradient in the intestine",
+      "Accumulation of undigested lactose in the intestine",
+      "Water drawn into the intestinal lumen"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: In lactose intolerance, unabsorbed lactose pulls water into the lumen by osmosis, distending the small intestine. Distension mechanically activates myenteric stretch reflexes, causing hypermotility and rapid transit (not reduced motility). In the colon, bacteria rapidly ferment lactose into hydrogen, methane, CO2, and short-chain fatty acids, producing flatulence and distension.",
+    "keyConcept": "Lactose intolerance mechanics: Osmotic load accelerates motility (hyperperistalsis) rather than reducing it."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0039",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Lactose intolerance like this patient's typically first appears in:",
+    "options": [
+      "1-year-old infants",
+      "2-year-old infants",
+      "3-year-old children",
+      "4-year-old children",
+      "Children older than 4 years"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: While congenital alactasia is exceptionally rare, adult-type hypolactasia (lactase non-persistence) is the normal genetically programmed phenotype in most world populations. Intestinal lactase expression is maximal during infancy to digest breast milk and begins a progressive, down-regulated decline following weaning, typically manifesting clinically in children older than 4 to 6 years of age or during adolescence.",
+    "keyConcept": "Lactase non-persistence: Genetically programmed down-regulation of lactase activity typically manifests after age 4–5 years."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0040",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "After sucrase digests sucrose at the brush border, fructose enters the intestinal cell by:",
+    "options": [
+      "Facilitated diffusion through GLUT-2 on the luminal membrane",
+      "Secondary active transport through SGLT-1",
+      "Na+-dependent symport with glucose",
+      "Facilitated diffusion through GLUT-5",
+      "Primary active transport with K+"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Sucrose is hydrolyzed at the enterocyte brush border by sucrase into glucose and fructose. Unlike glucose and galactose (which enter enterocytes via secondary active transport with Na+ via SGLT-1), fructose enters the luminal apical membrane strictly via facilitated diffusion mediated by the specific carrier GLUT-5. Both hexoses exit into the portal blood via GLUT-2.",
+    "keyConcept": "Carbohydrate transport: Fructose is absorbed across the enterocyte apical membrane via facilitated diffusion through GLUT-5."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0041",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Absorption in the small intestine becomes clearly impaired only after removal of:",
+    "options": [
+      "10-20% of its length",
+      "20-30% of its length",
+      "30-40% of its length",
+      "40-50% of its length",
+      "More than 50% of its length"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: The small intestine possesses vast anatomical and physiological reserve for digestion and absorption. In surgical short bowel scenarios, clinically manifest malabsorption of macronutrients and electrolyte balance disturbances typically emerge only after resection of more than 50% (and particularly >70–75%) of the total small intestinal length.",
+    "keyConcept": "Intestinal functional reserve: Clinically overt malabsorption manifests only when more than 50% of the small bowel is resected."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0042",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "In psychogenic diarrhea, the mechanism is:",
+    "options": [
+      "Malabsorption",
+      "Irritation of the intestinal mucosa",
+      "Maldigestion",
+      "Increased secretion of digestive juices",
+      "Increased intestinal motility"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: Acute emotional stress, anxiety, or psychogenic arousal activates central limbic and hypothalamic centers, stimulating intense parasympathetic vagal and pelvic nerve outflow to the gastrointestinal tract. This excessive cholinergic stimulation markedly accelerates intestinal transit and peristaltic motility, propelling luminal contents into the rectum before mucosal water reabsorption can be completed.",
+    "keyConcept": "Psychogenic diarrhea: Stress-induced parasympathetic (cholinergic) hyperactivity causes intestinal hypermotility and rapid transit."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0043",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "In most adults and children, the reflex that starts the urge to defecate after breakfast is:",
+    "options": [
+      "The enterogastric reflex",
+      "The gastrocolic reflex",
+      "A conditioned reflex",
+      "A vagovagal reflex",
+      "The gastroileal reflex"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The gastrocolic reflex is a physiological long vagovagal and neuroendocrine reflex triggered by gastric distension and mucosal exposure to food (especially lipids and coffee) during or immediately after a meal (commonly breakfast). It elicits powerful mass movements in the colon that sweep fecal material from the transverse and descending colon into the rectal ampulla, triggering the defecation urge.",
+    "keyConcept": "Gastrocolic reflex: Meal-induced gastric distension elicits colonic mass peristalsis, filling the rectum and initiating the defecation urge."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0044",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "A man has fecal incontinence 6 months after anorectal surgery, with an injured internal anal sphincter that has low tone. Which statement about this sphincter is correct?",
+    "options": [
+      "It relaxes only when the cerebral cortex facilitates defecation",
+      "It is skeletal muscle supplied by somatic nerves",
+      "It contracts reflexly when the rectum is distended",
+      "It is a thickening of the longitudinal muscle layer",
+      "It is tonically contracted and relaxes during defecation"
+    ],
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: The internal anal sphincter (IAS) is an involuntary smooth muscle thickening of the circular muscular layer of the anorectum. Under baseline conditions, it is tonically contracted via sympathetic hypogastric outflow, generating 70–80% of resting anal canal closure pressure to prevent passive fecal leakage. During the defecation reflex, rectal distension triggers parasympathetic pelvic nerves to relax the IAS (rectoanal inhibitory reflex).",
+    "keyConcept": "Internal anal sphincter: Involuntary smooth muscle generating tonic resting closure pressure; relaxes reflexively upon rectal distension."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0045",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "In an adult, the act of defecation is integrated at the:",
+    "options": [
+      "Cerebral cortex only",
+      "Spinal defecation center and cerebral cortex",
+      "Enteric plexus and spinal center only",
+      "Enteric nerve plexus only",
+      "Spinal defecation center only"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Normal voluntary defecation in continent adults requires dual neurological integration: the involuntary parasympathetic defecation reflex is integrated at the sacral spinal cord (S2, S3, S4 conus medullaris center), while voluntary continence and deliberate initiation of the act (straining, Valsalva, and somatic relaxation of the puborectalis and external anal sphincter via pudendal nerves) are integrated at the cerebral cortex and brainstem centers.",
+    "keyConcept": "Defecation integration: Dual integration involving involuntary sacral spinal reflex centers (S2–S4) under voluntary cerebral cortical control."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0046",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "All of the following happen during defecation EXCEPT:",
+    "options": [
+      "Peristalsis in the rectum",
+      "Peristalsis in the sigmoid colon",
+      "Contraction of the external anal sphincter when conditions are favorable",
+      "Contraction of the abdominal muscles",
+      "Relaxation of the internal anal sphincter"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: During the execution of defecation when social conditions are appropriate, the voluntary external anal sphincter (EAS) and puborectalis muscles are consciously RELAXED (inhibited via somatic pudendal motor neurons), straightening the anorectal angle and allowing feces to pass. It contracts only to postpone defecation when conditions are unfavorable.",
+    "keyConcept": "Defecation mechanics: Defecation requires voluntary relaxation (not contraction) of the external anal sphincter and puborectalis."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0047",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "In the defecation reflex, the efferent nerves that cause rectal contraction and the nerves that control the external anal sphincter are, respectively:",
+    "options": [
+      "Parasympathetic pelvic nerves; skeletal (somatic) motor nerves",
+      "Skeletal motor nerves; parasympathetic pelvic nerves",
+      "Enteric neurons only; vagal efferents",
+      "Sympathetic hypogastric nerves; parasympathetic pelvic nerves",
+      "Vagal efferents; sympathetic lumbar nerves"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Rectal smooth muscle contraction and internal anal sphincter relaxation are mediated by parasympathetic preganglionic fibers traveling in the pelvic splanchnic nerves (nervi erigentes) from S2–S4 sacral segments. In contrast, the striated voluntary external anal sphincter is controlled by somatic motor fibers running in the pudendal nerves (also derived from S2–S4 Onuf's nucleus).",
+    "keyConcept": "Innervation: Rectal peristalsis is driven by parasympathetic pelvic splanchnic nerves; the external anal sphincter is driven by somatic pudendal nerves."
+  },
+  {
+    "id": "MGL3-PRAC-PHY-0048",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "The bacteria of the large intestine are characterized by all of the following EXCEPT:",
+    "options": [
+      "Breaking down dietary fiber",
+      "Producing vitamins K and B12",
+      "Producing short-chain fatty acids",
+      "Being highly pathogenic",
+      "Giving stool its normal color"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: The colonic microbiome comprises >10^14 commensal and mutualistic anaerobic and aerobic microorganisms. They perform indispensable physiological functions: fermenting dietary fiber into protective short-chain fatty acids (acetate, propionate, butyrate), synthesizing essential micronutrients (vitamin K, vitamin B12, biotin), metabolizing bilirubin into stercobilin (giving stool its characteristic brown color), and providing colonization resistance against enteric pathogens. They are mutualistic commensals, NOT highly pathogenic under normal conditions.",
+    "keyConcept": "Colonic microbiota: Mutualistic symbionts that synthesize vitamins and ferment fiber; they are non-pathogenic in their normal ecological niche."
+  }
+]

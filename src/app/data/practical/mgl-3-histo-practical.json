@@ -1,0 +1,3662 @@
+[
+  {
+    "id": "MGL3-PRAC-HIST-1001",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 3?",
+    "options": [
+      "Serous acini",
+      "Mucous acini",
+      "Interlobular CT",
+      "Ducts"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Light-staining mucous acini with pale, foamy cytoplasm and flattened nuclei compressed against the basal lamina, in contrast to darker-staining pyramidal serous acini with rounded basal nuclei.",
+    "keyConcept": "Mucous acini appear pale/frothy with flattened basal nuclei; serous acini are basophilic with round nuclei.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q1_b37f78f4af.webp",
+      "caption": "Histology Spotter — Part 1, Station 1"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1002",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 2?",
+    "options": [
+      "Mitochondria",
+      "Lumen of acinus",
+      "Apical electron lucent mucin granules",
+      "Basal nucleus"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Transmission electron micrograph of a mucous cell reveals abundant electron-lucent mucin droplets/granules occupying the apical cytoplasm, which push the nucleus and organelles basally.",
+    "keyConcept": "Mucous cells on TEM: Abundant apical electron-lucent mucinogen droplets.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q2_1898a57569.webp",
+      "caption": "Histology Spotter — Part 1, Station 2"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1003",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 3?",
+    "options": [
+      "Epithelium",
+      "Lamina propria",
+      "Submucosa",
+      "Muscularis mucosa"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: The submucosa is the dense irregular connective tissue layer situated directly beneath the muscularis mucosae, carrying larger blood vessels, lymphatics, and the submucosal (Meissner's) plexus.",
+    "keyConcept": "Histological layer: Submucosa contains vascular networks and Meissner's nerve plexus beneath the muscularis mucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q3_d3e83a111a.webp",
+      "caption": "Histology Spotter — Part 1, Station 3"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1004",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This section is taken from which gland?",
+    "options": [
+      "Parotid gland",
+      "Sublingual gland",
+      "Submandibular gland",
+      "Lingual glands"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The parotid gland is purely serous, characterized by closely packed round serous acini with dark basophilic basal cytoplasm (RER) and apical eosinophilic zymogen granules, prominent striated ducts, and intervening adipocytes, with NO mucous acini.",
+    "keyConcept": "Parotid gland: Purely serous acini with prominent striated and intercalated ducts, no mucous units.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q4_00a8e96ae4.webp",
+      "caption": "Histology Spotter — Part 1, Station 4"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1005",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 5?",
+    "options": [
+      "Thin skin",
+      "Mucosa",
+      "Serosa",
+      "Red margin"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: The red (vermilion) margin of the lip is a transitional zone covered by thin, non-keratinized or lightly keratinized stratified squamous epithelium with high, vascular dermal connective tissue papillae close to the surface, lacking sweat and sebaceous glands.",
+    "keyConcept": "Vermilion border (red margin) of lip: High vascular dermal papillae close to the thin epithelium give it a characteristic red hue.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q5_820b810e68.webp",
+      "caption": "Histology Spotter — Part 1, Station 5"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1006",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 1?",
+    "options": [
+      "Striated duct",
+      "Interlobular duct",
+      "Mucous acini",
+      "Serous acini"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Striated ducts are lined by simple columnar epithelium with centrally placed spherical nuclei, intensely eosinophilic cytoplasm, and distinct basal vertical striations corresponding to deep basal plasma membrane infoldings packed with vertically oriented elongated mitochondria for active electrolyte reabsorption (Na+) and secretion (K+, HCO3-).",
+    "keyConcept": "Striated ducts: Columnar cells with basal plasma membrane infoldings and mitochondria that modify primary saliva.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q6_60cb2e647a.webp",
+      "caption": "Histology Spotter — Part 1, Station 6"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1007",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is the structure labeled 1?",
+    "options": [
+      "Labial glands",
+      "Esophageal glands",
+      "Lingual glands",
+      "Sublingual gland"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Labial glands are mixed seromucous minor salivary glands situated in the submucosa of the internal (mucous) surface of the lip, embedded between the mucosa and the fibers of the orbicularis oris muscle.",
+    "keyConcept": "Labial glands: Minor seromucous salivary glands situated in the inner submucosal layer of the lip.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q7_9371bdcfa7.webp",
+      "caption": "Histology Spotter — Part 1, Station 7"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1008",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What type of acini is shown?",
+    "options": [
+      "Purely serous acini",
+      "Mixed acini with serous demilunes",
+      "Purely mucous acini",
+      "Serous acini with striated ducts"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Purely serous acini appear as spherical clusters of pyramidal epithelial cells surrounding an inconspicuous central lumen. Cells feature intensely basophilic basal cytoplasm rich in rough endoplasmic reticulum and apical acidophilic secretory zymogen granules.",
+    "keyConcept": "Purely serous acini: Basophilic basal RER, apical eosinophilic zymogen granules, round central lumen.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q8_2ee8f39162.webp",
+      "caption": "Histology Spotter — Part 1, Station 8"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1009",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 4?",
+    "options": [
+      "Mucous membrane",
+      "Free margin",
+      "Thin skin",
+      "Lamina propria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Mucous membrane.",
+    "keyConcept": "Histological identification: Mucous membrane.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q9_24d62aefb7.webp",
+      "caption": "Histology Spotter — Part 1, Station 9"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1010",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What do the arrows labeled 2 point to?",
+    "options": [
+      "Lumen",
+      "Basal cells",
+      "Supporting cells",
+      "Taste pore"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Taste buds are pale, barrel-shaped intraepithelial sensory organs embedded within the stratified squamous epithelium of gustatory papillae, opening to the mucosal surface via an apical taste pore and containing neuroepithelial taste cells, supporting cells, and basal stem cells.",
+    "keyConcept": "Taste buds: Pale barrel-shaped sensory intraepithelial structures with an apical taste pore and receptor cells.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q10_cb727969c6.webp",
+      "caption": "Histology Spotter — Part 1, Station 10"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1011",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 1?",
+    "options": [
+      "Lingual gland",
+      "Labial gland",
+      "Esophageal gland",
+      "Serous demilune"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Serous demilunes (of Giannuzzi) are crescent-shaped caps of serous cells located at the blind ends of tubular mucous acini in mixed salivary glands (especially submandibular and sublingual glands).",
+    "keyConcept": "Serous demilune of Giannuzzi: Crescent-shaped cap of serous cells over a mucous acinus.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q11_dcfc6db47e.webp",
+      "caption": "Histology Spotter — Part 1, Station 11"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1012",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 3?",
+    "options": [
+      "Mucous membrane",
+      "Lamina propria",
+      "Submucosa",
+      "Adventitia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Mucous membrane.",
+    "keyConcept": "Histological identification: Mucous membrane.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q12_491259d30c.webp",
+      "caption": "Histology Spotter — Part 1, Station 12"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1013",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 1?",
+    "options": [
+      "Taste pore",
+      "Basal nucleus",
+      "Lumen of acinus",
+      "Apical electron lucent mucin granules"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Taste buds are pale, barrel-shaped intraepithelial sensory organs embedded within the stratified squamous epithelium of gustatory papillae, opening to the mucosal surface via an apical taste pore and containing neuroepithelial taste cells, supporting cells, and basal stem cells.",
+    "keyConcept": "Taste buds: Pale barrel-shaped sensory intraepithelial structures with an apical taste pore and receptor cells.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q13_5641a5b408.webp",
+      "caption": "Histology Spotter — Part 1, Station 13"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1014",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What does the single line at the upper left point to?",
+    "options": [
+      "Duct",
+      "Serous acinus",
+      "Mucous acinus",
+      "Serous demilune"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Serous demilunes (of Giannuzzi) are crescent-shaped caps of serous cells located at the blind ends of tubular mucous acini in mixed salivary glands (especially submandibular and sublingual glands).",
+    "keyConcept": "Serous demilune of Giannuzzi: Crescent-shaped cap of serous cells over a mucous acinus.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q14_ba26efd847.webp",
+      "caption": "Histology Spotter — Part 1, Station 14"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1015",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is layer 4?",
+    "options": [
+      "Submucosa",
+      "Mucosa",
+      "Muscularis externa",
+      "Serosa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Submucosa.",
+    "keyConcept": "Histological identification: Submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q15_f58be2f0f8.webp",
+      "caption": "Histology Spotter — Part 1, Station 15"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1016",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This section is taken from which gland?",
+    "options": [
+      "Parotid gland",
+      "Sublingual gland",
+      "Submandibular gland",
+      "Lingual glands"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The parotid gland is purely serous, characterized by closely packed round serous acini with dark basophilic basal cytoplasm (RER) and apical eosinophilic zymogen granules, prominent striated ducts, and intervening adipocytes, with NO mucous acini.",
+    "keyConcept": "Parotid gland: Purely serous acini with prominent striated and intercalated ducts, no mucous units.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q16_9f5cb6d0f8.webp",
+      "caption": "Histology Spotter — Part 1, Station 16"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1017",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 2?",
+    "options": [
+      "Sensory cells",
+      "Basal cells",
+      "Supporting cells",
+      "Serous cells"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Sensory cells.",
+    "keyConcept": "Histological identification: Sensory cells.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q17_6905efa27d.webp",
+      "caption": "Histology Spotter — Part 1, Station 17"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1018",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 3?",
+    "options": [
+      "Capsule",
+      "Trabecula",
+      "Interlobular CT",
+      "Interlobular duct"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Capsule.",
+    "keyConcept": "Histological identification: Capsule.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q18_ff557e3f0f.webp",
+      "caption": "Histology Spotter — Part 1, Station 18"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1019",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 4?",
+    "options": [
+      "Supporting cells",
+      "Basal cells",
+      "Sensory cells",
+      "Plasma cells"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Supporting cells.",
+    "keyConcept": "Histological identification: Supporting cells.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q19_acfd32ff17.webp",
+      "caption": "Histology Spotter — Part 1, Station 19"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1020",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This section is taken from which gland?",
+    "options": [
+      "Sublingual gland",
+      "Submandibular gland",
+      "Parotid gland",
+      "Lingual glands"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The submandibular (submaxillary) gland is a mixed seromucous gland with serous predominance (~90% serous acini, ~10% mucous acini capped by serous demilunes of Giannuzzi) and well-developed striated ducts.",
+    "keyConcept": "Submandibular gland: Mixed gland with overwhelming serous predominance and serous demilunes.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q20_228acbe4ca.webp",
+      "caption": "Histology Spotter — Part 1, Station 20"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1021",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What do the arrows at the bottom point to?",
+    "options": [
+      "Connective tissue papillae",
+      "Taste buds",
+      "Von Ebner's glands",
+      "Muscularis mucosa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Connective tissue papillae.",
+    "keyConcept": "Histological identification: Connective tissue papillae.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q21_04c086e641.webp",
+      "caption": "Histology Spotter — Part 1, Station 21"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1022",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 2?",
+    "options": [
+      "Muscularis externa",
+      "Muscularis mucosa",
+      "Orbicularis oris muscle",
+      "Inner circular layer"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Muscularis externa.",
+    "keyConcept": "Histological identification: Muscularis externa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q22_17711018d5.webp",
+      "caption": "Histology Spotter — Part 1, Station 22"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1023",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This section is taken from which gland?",
+    "options": [
+      "Sublingual gland",
+      "Parotid gland",
+      "Submandibular gland",
+      "Lingual glands"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The sublingual gland is a mixed gland with mucous predominance, dominated by pale, tubular mucous acini with occasional serous demilunes and few striated ducts.",
+    "keyConcept": "Sublingual gland: Mixed gland dominated by mucous acini with serous demilunes; striated ducts are scarce.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q23_117704bd23.webp",
+      "caption": "Histology Spotter — Part 1, Station 23"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1024",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What are the structures labeled 1?",
+    "options": [
+      "Taste buds",
+      "Labial glands",
+      "Hair follicles",
+      "Striated ducts"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Labial glands are mixed seromucous minor salivary glands situated in the submucosa of the internal (mucous) surface of the lip, embedded between the mucosa and the fibers of the orbicularis oris muscle.",
+    "keyConcept": "Labial glands: Minor seromucous salivary glands situated in the inner submucosal layer of the lip.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q24_7997fe4065.webp",
+      "caption": "Histology Spotter — Part 1, Station 24"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1025",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "The cell outlined in yellow belongs to which structure?",
+    "options": [
+      "Serous acinus",
+      "Taste bud",
+      "Mucous acinus",
+      "Striated duct"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Striated ducts are lined by simple columnar epithelium with centrally placed spherical nuclei, intensely eosinophilic cytoplasm, and distinct basal vertical striations corresponding to deep basal plasma membrane infoldings packed with vertically oriented elongated mitochondria for active electrolyte reabsorption (Na+) and secretion (K+, HCO3-).",
+    "keyConcept": "Striated ducts: Columnar cells with basal plasma membrane infoldings and mitochondria that modify primary saliva.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q25_f3ac5f46b6.webp",
+      "caption": "Histology Spotter — Part 1, Station 25"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1026",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is the structure outlined in yellow?",
+    "options": [
+      "Mucous acinus",
+      "Taste bud",
+      "Serous acinus",
+      "Serous demilune"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Taste buds are pale, barrel-shaped intraepithelial sensory organs embedded within the stratified squamous epithelium of gustatory papillae, opening to the mucosal surface via an apical taste pore and containing neuroepithelial taste cells, supporting cells, and basal stem cells.",
+    "keyConcept": "Taste buds: Pale barrel-shaped sensory intraepithelial structures with an apical taste pore and receptor cells.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q26_9cb612677d.webp",
+      "caption": "Histology Spotter — Part 1, Station 26"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1027",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 3?",
+    "options": [
+      "Lumen of acinus",
+      "Apical electron dense granules",
+      "Apical electron lucent mucin granules",
+      "Basal nucleus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Lumen of acinus.",
+    "keyConcept": "Histological identification: Lumen of acinus.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q27_a644408db7.webp",
+      "caption": "Histology Spotter — Part 1, Station 27"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1028",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 3?",
+    "options": [
+      "Lingual glands",
+      "Labial glands",
+      "Esophageal glands",
+      "Von Ebner's glands"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Labial glands are mixed seromucous minor salivary glands situated in the submucosa of the internal (mucous) surface of the lip, embedded between the mucosa and the fibers of the orbicularis oris muscle.",
+    "keyConcept": "Labial glands: Minor seromucous salivary glands situated in the inner submucosal layer of the lip.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q28_e54f89c64e.webp",
+      "caption": "Histology Spotter — Part 1, Station 28"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1029",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 1?",
+    "options": [
+      "Epithelium",
+      "Lamina propria",
+      "Lumen",
+      "Taste pore"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Taste buds are pale, barrel-shaped intraepithelial sensory organs embedded within the stratified squamous epithelium of gustatory papillae, opening to the mucosal surface via an apical taste pore and containing neuroepithelial taste cells, supporting cells, and basal stem cells.",
+    "keyConcept": "Taste buds: Pale barrel-shaped sensory intraepithelial structures with an apical taste pore and receptor cells.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q29_1de98a796b.webp",
+      "caption": "Histology Spotter — Part 1, Station 29"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1030",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 6?",
+    "options": [
+      "Lamina propria",
+      "Mucous membrane",
+      "Thin skin",
+      "Submucosa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Lamina propria.",
+    "keyConcept": "Histological identification: Lamina propria.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q30_bdb5c9a365.webp",
+      "caption": "Histology Spotter — Part 1, Station 30"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1031",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 1?",
+    "options": [
+      "Serous acini",
+      "Mucous acini",
+      "Interlobular CT",
+      "Ducts"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Serous acini.",
+    "keyConcept": "Histological identification: Serous acini.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q31_55a62b3c63.webp",
+      "caption": "Histology Spotter — Part 1, Station 31"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1032",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is layer 4?",
+    "options": [
+      "Mucosa",
+      "Submucosa",
+      "Muscularis externa",
+      "Serosa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Mucosa.",
+    "keyConcept": "Histological identification: Mucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q32_240a521abc.webp",
+      "caption": "Histology Spotter — Part 1, Station 32"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1033",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What do the lines at the bottom point to?",
+    "options": [
+      "Serous cells",
+      "Supporting cells",
+      "Sensory cells",
+      "Mucus-secreting cells"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Serous cells.",
+    "keyConcept": "Histological identification: Serous cells.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q33_16159cf817.webp",
+      "caption": "Histology Spotter — Part 1, Station 33"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1034",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What are the predominant secretory units shown?",
+    "options": [
+      "Serous acini",
+      "Mixed acini",
+      "Mucous acini",
+      "Serous demilunes"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Serous acini.",
+    "keyConcept": "Histological identification: Serous acini.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q34_d784ee4fef.webp",
+      "caption": "Histology Spotter — Part 1, Station 34"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1035",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This section is taken from which gland?",
+    "options": [
+      "Parotid gland",
+      "Sublingual gland",
+      "Submandibular gland",
+      "Lingual glands"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The parotid gland is purely serous, characterized by closely packed round serous acini with dark basophilic basal cytoplasm (RER) and apical eosinophilic zymogen granules, prominent striated ducts, and intervening adipocytes, with NO mucous acini.",
+    "keyConcept": "Parotid gland: Purely serous acini with prominent striated and intercalated ducts, no mucous units.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q35_e66eef522c.webp",
+      "caption": "Histology Spotter — Part 1, Station 35"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1036",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Which type of lingual papilla is shown?",
+    "options": [
+      "Fungiform",
+      "Foliate",
+      "Circumvallate",
+      "Filiform"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Circumvallate (vallate) papillae are large, dome-shaped structures sunken into the tongue surface, surrounded by a deep circular moat or trench. Abundant taste buds line the lateral trench walls, and serous von Ebner's glands empty watery secretions into the base of the trench to flush out food particles.",
+    "keyConcept": "Circumvallate papilla: Surrounded by a deep circular moat containing lateral taste buds and serous von Ebner's gland ducts.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q36_aebe3af55b.webp",
+      "caption": "Histology Spotter — Part 1, Station 36"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1037",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 1?",
+    "options": [
+      "Apical electron dense granules",
+      "Apical electron lucent mucin granules",
+      "Lumen of acinus",
+      "Basal nucleus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Apical electron dense granules.",
+    "keyConcept": "Histological identification: Apical electron dense granules.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q37_6bc82270e9.webp",
+      "caption": "Histology Spotter — Part 1, Station 37"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1038",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 1?",
+    "options": [
+      "Fungiform papillae",
+      "Filiform papillae",
+      "Foliate papillae",
+      "Circumvallate papillae"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Fungiform papillae.",
+    "keyConcept": "Histological identification: Fungiform papillae.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q38_9fc2df94e3.webp",
+      "caption": "Histology Spotter — Part 1, Station 38"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1039",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This section is taken from which gland?",
+    "options": [
+      "Parotid gland",
+      "Submandibular gland",
+      "Lingual glands",
+      "Sublingual gland"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: The sublingual gland is a mixed gland with mucous predominance, dominated by pale, tubular mucous acini with occasional serous demilunes and few striated ducts.",
+    "keyConcept": "Sublingual gland: Mixed gland dominated by mucous acini with serous demilunes; striated ducts are scarce.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q39_d168dc1e74.webp",
+      "caption": "Histology Spotter — Part 1, Station 39"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1040",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This section is taken from which gland?",
+    "options": [
+      "Submandibular gland",
+      "Parotid gland",
+      "Sublingual gland",
+      "Lingual glands"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The submandibular (submaxillary) gland is a mixed seromucous gland with serous predominance (~90% serous acini, ~10% mucous acini capped by serous demilunes of Giannuzzi) and well-developed striated ducts.",
+    "keyConcept": "Submandibular gland: Mixed gland with overwhelming serous predominance and serous demilunes.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q40_d698020dd0.webp",
+      "caption": "Histology Spotter — Part 1, Station 40"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1041",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is the structure outlined by the dashed line?",
+    "options": [
+      "Mucous acinus",
+      "Serous acinus",
+      "Taste bud",
+      "Serous demilune"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Taste buds are pale, barrel-shaped intraepithelial sensory organs embedded within the stratified squamous epithelium of gustatory papillae, opening to the mucosal surface via an apical taste pore and containing neuroepithelial taste cells, supporting cells, and basal stem cells.",
+    "keyConcept": "Taste buds: Pale barrel-shaped sensory intraepithelial structures with an apical taste pore and receptor cells.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q41_d57250baa9.webp",
+      "caption": "Histology Spotter — Part 1, Station 41"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1042",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is layer 2?",
+    "options": [
+      "Mucosa",
+      "Muscularis externa",
+      "Submucosa",
+      "Serosa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Mucosa.",
+    "keyConcept": "Histological identification: Mucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q42_0cc6139e43.webp",
+      "caption": "Histology Spotter — Part 1, Station 42"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1043",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is layer 1?",
+    "options": [
+      "Submucosa",
+      "Mucosa",
+      "Muscularis externa",
+      "Serosa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Submucosa.",
+    "keyConcept": "Histological identification: Submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q43_4336afdabf.webp",
+      "caption": "Histology Spotter — Part 1, Station 43"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1044",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 2?",
+    "options": [
+      "Interlobular duct",
+      "Striated duct",
+      "Serous acinus",
+      "Mucous acinus"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Striated ducts are lined by simple columnar epithelium with centrally placed spherical nuclei, intensely eosinophilic cytoplasm, and distinct basal vertical striations corresponding to deep basal plasma membrane infoldings packed with vertically oriented elongated mitochondria for active electrolyte reabsorption (Na+) and secretion (K+, HCO3-).",
+    "keyConcept": "Striated ducts: Columnar cells with basal plasma membrane infoldings and mitochondria that modify primary saliva.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q44_903a668df1.webp",
+      "caption": "Histology Spotter — Part 1, Station 44"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1045",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is layer 3?",
+    "options": [
+      "Mucosa",
+      "Muscularis externa",
+      "Adventitia",
+      "Submucosa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Mucosa.",
+    "keyConcept": "Histological identification: Mucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q45_bf48ba1330.webp",
+      "caption": "Histology Spotter — Part 1, Station 45"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1046",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This section is taken from which structure?",
+    "options": [
+      "Tongue",
+      "Lip",
+      "Esophagus",
+      "Parotid gland"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Tongue.",
+    "keyConcept": "Histological identification: Tongue.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q46_2cb96a8b37.webp",
+      "caption": "Histology Spotter — Part 1, Station 46"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1047",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 1?",
+    "options": [
+      "Striated duct",
+      "Interlobular duct",
+      "Mucous acini",
+      "Serous acini"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Striated ducts are lined by simple columnar epithelium with centrally placed spherical nuclei, intensely eosinophilic cytoplasm, and distinct basal vertical striations corresponding to deep basal plasma membrane infoldings packed with vertically oriented elongated mitochondria for active electrolyte reabsorption (Na+) and secretion (K+, HCO3-).",
+    "keyConcept": "Striated ducts: Columnar cells with basal plasma membrane infoldings and mitochondria that modify primary saliva.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q47_eebd6f0956.webp",
+      "caption": "Histology Spotter — Part 1, Station 47"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1048",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 1?",
+    "options": [
+      "Mucous acini",
+      "Mixed acini",
+      "Serous acini",
+      "Serous demilunes"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Mucous acini.",
+    "keyConcept": "Histological identification: Mucous acini.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q48_c6e28599a5.webp",
+      "caption": "Histology Spotter — Part 1, Station 48"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1049",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 2?",
+    "options": [
+      "Duct",
+      "Lymphoid aggregation",
+      "Submucosal plexus",
+      "Striated duct"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Striated ducts are lined by simple columnar epithelium with centrally placed spherical nuclei, intensely eosinophilic cytoplasm, and distinct basal vertical striations corresponding to deep basal plasma membrane infoldings packed with vertically oriented elongated mitochondria for active electrolyte reabsorption (Na+) and secretion (K+, HCO3-).",
+    "keyConcept": "Striated ducts: Columnar cells with basal plasma membrane infoldings and mitochondria that modify primary saliva.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q49_41d3d5abaf.webp",
+      "caption": "Histology Spotter — Part 1, Station 49"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1050",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 2?",
+    "options": [
+      "Serous acini",
+      "Mucous acini",
+      "Striated duct",
+      "Mixed acinus"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Striated ducts are lined by simple columnar epithelium with centrally placed spherical nuclei, intensely eosinophilic cytoplasm, and distinct basal vertical striations corresponding to deep basal plasma membrane infoldings packed with vertically oriented elongated mitochondria for active electrolyte reabsorption (Na+) and secretion (K+, HCO3-).",
+    "keyConcept": "Striated ducts: Columnar cells with basal plasma membrane infoldings and mitochondria that modify primary saliva.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q50_cbc0106f3a.webp",
+      "caption": "Histology Spotter — Part 1, Station 50"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1051",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 1?",
+    "options": [
+      "Serous demilune",
+      "Mucous acinus",
+      "Striated duct",
+      "Basal cells"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Striated ducts are lined by simple columnar epithelium with centrally placed spherical nuclei, intensely eosinophilic cytoplasm, and distinct basal vertical striations corresponding to deep basal plasma membrane infoldings packed with vertically oriented elongated mitochondria for active electrolyte reabsorption (Na+) and secretion (K+, HCO3-).",
+    "keyConcept": "Striated ducts: Columnar cells with basal plasma membrane infoldings and mitochondria that modify primary saliva.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q51_e0135d113c.webp",
+      "caption": "Histology Spotter — Part 1, Station 51"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1052",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is the structure enclosed by the circle?",
+    "options": [
+      "Serous acinus",
+      "Mucous acinus",
+      "Mixed acinus",
+      "Taste bud"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Taste buds are pale, barrel-shaped intraepithelial sensory organs embedded within the stratified squamous epithelium of gustatory papillae, opening to the mucosal surface via an apical taste pore and containing neuroepithelial taste cells, supporting cells, and basal stem cells.",
+    "keyConcept": "Taste buds: Pale barrel-shaped sensory intraepithelial structures with an apical taste pore and receptor cells.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q52_3df48a7732.webp",
+      "caption": "Histology Spotter — Part 1, Station 52"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1053",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This section is taken from which structure?",
+    "options": [
+      "Tongue",
+      "Lip",
+      "Esophagus",
+      "Sublingual gland"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Tongue.",
+    "keyConcept": "Histological identification: Tongue.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q53_13b789cdd1.webp",
+      "caption": "Histology Spotter — Part 1, Station 53"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1054",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 2?",
+    "options": [
+      "Hair follicle",
+      "Mucous gland",
+      "Taste bud",
+      "Striated duct"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Striated ducts are lined by simple columnar epithelium with centrally placed spherical nuclei, intensely eosinophilic cytoplasm, and distinct basal vertical striations corresponding to deep basal plasma membrane infoldings packed with vertically oriented elongated mitochondria for active electrolyte reabsorption (Na+) and secretion (K+, HCO3-).",
+    "keyConcept": "Striated ducts: Columnar cells with basal plasma membrane infoldings and mitochondria that modify primary saliva.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q54_c54ea3129c.webp",
+      "caption": "Histology Spotter — Part 1, Station 54"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1055",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 2?",
+    "options": [
+      "Lobule with serous acini",
+      "Lobule with mixed acini",
+      "Lobule with striated ducts",
+      "Lobule with mucous acini"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Lobule with serous acini.",
+    "keyConcept": "Histological identification: Lobule with serous acini.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q55_27181e315d.webp",
+      "caption": "Histology Spotter — Part 1, Station 55"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1056",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 1?",
+    "options": [
+      "Taste pore",
+      "Lumen of acinus",
+      "Basal nucleus",
+      "Duct"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Taste buds are pale, barrel-shaped intraepithelial sensory organs embedded within the stratified squamous epithelium of gustatory papillae, opening to the mucosal surface via an apical taste pore and containing neuroepithelial taste cells, supporting cells, and basal stem cells.",
+    "keyConcept": "Taste buds: Pale barrel-shaped sensory intraepithelial structures with an apical taste pore and receptor cells.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q56_1accff5ba9.webp",
+      "caption": "Histology Spotter — Part 1, Station 56"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1057",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 3?",
+    "options": [
+      "Supporting cells",
+      "Basal cells",
+      "Mucus-secreting cells",
+      "Sensory cells"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Supporting cells.",
+    "keyConcept": "Histological identification: Supporting cells.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q57_f6bbd2337a.webp",
+      "caption": "Histology Spotter — Part 1, Station 57"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1058",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 1?",
+    "options": [
+      "Mucous membrane",
+      "Free margin",
+      "Skin",
+      "Red margin"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Mucous membrane.",
+    "keyConcept": "Histological identification: Mucous membrane.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q58_e825c2f8cb.webp",
+      "caption": "Histology Spotter — Part 1, Station 58"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1059",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 1?",
+    "options": [
+      "Simple columnar epithelium",
+      "Stratified squamous epithelium",
+      "Lamina propria",
+      "Muscularis mucosa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Simple columnar epithelium.",
+    "keyConcept": "Histological identification: Simple columnar epithelium.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q59_48c6e09da5.webp",
+      "caption": "Histology Spotter — Part 1, Station 59"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1060",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Which type of lingual papilla is shown?",
+    "options": [
+      "Filiform",
+      "Foliate",
+      "Fungiform",
+      "Circumvallate"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Circumvallate (vallate) papillae are large, dome-shaped structures sunken into the tongue surface, surrounded by a deep circular moat or trench. Abundant taste buds line the lateral trench walls, and serous von Ebner's glands empty watery secretions into the base of the trench to flush out food particles.",
+    "keyConcept": "Circumvallate papilla: Surrounded by a deep circular moat containing lateral taste buds and serous von Ebner's gland ducts.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q60_3d2ac6ed02.webp",
+      "caption": "Histology Spotter — Part 1, Station 60"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1061",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 2?",
+    "options": [
+      "Mucous acini",
+      "Serous acini",
+      "Mixed acini",
+      "Ducts"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Mucous acini.",
+    "keyConcept": "Histological identification: Mucous acini.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q61_5166cf5397.webp",
+      "caption": "Histology Spotter — Part 1, Station 61"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1062",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 4?",
+    "options": [
+      "Lingual glands",
+      "Labial glands",
+      "Von Ebner's glands",
+      "Esophageal glands"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Labial glands are mixed seromucous minor salivary glands situated in the submucosa of the internal (mucous) surface of the lip, embedded between the mucosa and the fibers of the orbicularis oris muscle.",
+    "keyConcept": "Labial glands: Minor seromucous salivary glands situated in the inner submucosal layer of the lip.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q62_18c5513a2b.webp",
+      "caption": "Histology Spotter — Part 1, Station 62"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1063",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is layer 3?",
+    "options": [
+      "Muscularis externa",
+      "Submucosa",
+      "Mucosa",
+      "Serosa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Muscularis externa.",
+    "keyConcept": "Histological identification: Muscularis externa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q63_5e42e14d59.webp",
+      "caption": "Histology Spotter — Part 1, Station 63"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1064",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is shown in this image?",
+    "options": [
+      "Mucous acini",
+      "Serous acini",
+      "Mixed acini",
+      "Striated ducts"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Mucous acini.",
+    "keyConcept": "Histological identification: Mucous acini.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q64_0e5ecb4100.webp",
+      "caption": "Histology Spotter — Part 1, Station 64"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1065",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 2?",
+    "options": [
+      "Submucosa",
+      "Muscularis mucosa",
+      "Lamina propria",
+      "Esophageal glands"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Submucosa.",
+    "keyConcept": "Histological identification: Submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q65_3bfba07f01.webp",
+      "caption": "Histology Spotter — Part 1, Station 65"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1066",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This section is taken from which structure?",
+    "options": [
+      "Lip",
+      "Esophagus",
+      "Tongue",
+      "Sublingual gland"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Lip.",
+    "keyConcept": "Histological identification: Lip.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q66_60ab0a0ead.webp",
+      "caption": "Histology Spotter — Part 1, Station 66"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1067",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What do the three lines on the right point to?",
+    "options": [
+      "Serous acini",
+      "Mucous acini",
+      "Mixed acini",
+      "Striated ducts"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Serous acini.",
+    "keyConcept": "Histological identification: Serous acini.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q67_4f82f9e6a7.webp",
+      "caption": "Histology Spotter — Part 1, Station 67"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1068",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "what type of epithelium makes up structure (2)",
+    "options": [
+      "Simple columnar epithelium",
+      "Stratified squamous epithelium",
+      "Simple squamous epithelium",
+      "Stratified columnar"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Simple columnar epithelium.",
+    "keyConcept": "Histological identification: Simple columnar epithelium.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q68_bc83d0f7ff.webp",
+      "caption": "Histology Spotter — Part 1, Station 68"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1069",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 4?",
+    "options": [
+      "Mucosa",
+      "Submucosa",
+      "Thin skin",
+      "Lamina propria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Mucosa.",
+    "keyConcept": "Histological identification: Mucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q69_3b292eb1e6.webp",
+      "caption": "Histology Spotter — Part 1, Station 69"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1070",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 3?",
+    "options": [
+      "Lingual glands",
+      "Smooth muscle",
+      "Muscularis mucosa",
+      "Skeletal muscle"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Lingual glands.",
+    "keyConcept": "Histological identification: Lingual glands.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q70_fde561f8d9.webp",
+      "caption": "Histology Spotter — Part 1, Station 70"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1071",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Which type of lingual papilla is shown?",
+    "options": [
+      "Fungiform",
+      "Circumvallate",
+      "Foliate",
+      "Filiform"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Circumvallate (vallate) papillae are large, dome-shaped structures sunken into the tongue surface, surrounded by a deep circular moat or trench. Abundant taste buds line the lateral trench walls, and serous von Ebner's glands empty watery secretions into the base of the trench to flush out food particles.",
+    "keyConcept": "Circumvallate papilla: Surrounded by a deep circular moat containing lateral taste buds and serous von Ebner's gland ducts.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q71_d8007da647.webp",
+      "caption": "Histology Spotter — Part 1, Station 71"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1072",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This section is taken from which structure?",
+    "options": [
+      "Tongue",
+      "Esophagus",
+      "Lip",
+      "Parotid gland"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Tongue.",
+    "keyConcept": "Histological identification: Tongue.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q72_c5bd23636c.webp",
+      "caption": "Histology Spotter — Part 1, Station 72"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1073",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "The cell outlined in yellow belongs to which structure?",
+    "options": [
+      "Serous acinus",
+      "Mucous acinus",
+      "Taste bud",
+      "Striated duct"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Striated ducts are lined by simple columnar epithelium with centrally placed spherical nuclei, intensely eosinophilic cytoplasm, and distinct basal vertical striations corresponding to deep basal plasma membrane infoldings packed with vertically oriented elongated mitochondria for active electrolyte reabsorption (Na+) and secretion (K+, HCO3-).",
+    "keyConcept": "Striated ducts: Columnar cells with basal plasma membrane infoldings and mitochondria that modify primary saliva.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q73_7b052636c2.webp",
+      "caption": "Histology Spotter — Part 1, Station 73"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1074",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 5?",
+    "options": [
+      "Serous acini",
+      "Lingual glands",
+      "Mucous glands",
+      "Esophageal glands"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Serous acini.",
+    "keyConcept": "Histological identification: Serous acini.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q74_93ecf98128.webp",
+      "caption": "Histology Spotter — Part 1, Station 74"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1075",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 1?",
+    "options": [
+      "Basal cells",
+      "Serous demilune",
+      "Nuclei",
+      "Plasma cells"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Serous demilunes (of Giannuzzi) are crescent-shaped caps of serous cells located at the blind ends of tubular mucous acini in mixed salivary glands (especially submandibular and sublingual glands).",
+    "keyConcept": "Serous demilune of Giannuzzi: Crescent-shaped cap of serous cells over a mucous acinus.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q75_3d3da796fb.webp",
+      "caption": "Histology Spotter — Part 1, Station 75"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1076",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 3?",
+    "options": [
+      "Muscularis mucosa",
+      "Muscularis externa",
+      "Lamina propria",
+      "Esophageal glands"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Muscularis mucosa.",
+    "keyConcept": "Histological identification: Muscularis mucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q76_45d6d5382f.webp",
+      "caption": "Histology Spotter — Part 1, Station 76"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1077",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 2?",
+    "options": [
+      "Apical electron lucent mucin granules",
+      "Apical electron dense granules",
+      "Lumen of acinus",
+      "Basal nucleus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Transmission electron micrograph of a mucous cell reveals abundant electron-lucent mucin droplets/granules occupying the apical cytoplasm, which push the nucleus and organelles basally.",
+    "keyConcept": "Mucous cells on TEM: Abundant apical electron-lucent mucinogen droplets.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q77_a275218eec.webp",
+      "caption": "Histology Spotter — Part 1, Station 77"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1078",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This section is taken from which gland?",
+    "options": [
+      "Submandibular gland",
+      "Parotid gland",
+      "Sublingual gland",
+      "Lingual glands"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: The sublingual gland is a mixed gland with mucous predominance, dominated by pale, tubular mucous acini with occasional serous demilunes and few striated ducts.",
+    "keyConcept": "Sublingual gland: Mixed gland dominated by mucous acini with serous demilunes; striated ducts are scarce.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q78_ec10da15df.webp",
+      "caption": "Histology Spotter — Part 1, Station 78"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1079",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is shown in this image?",
+    "options": [
+      "Serous acini",
+      "Mixed acini",
+      "Striated ducts",
+      "Mucous acini"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Serous acini.",
+    "keyConcept": "Histological identification: Serous acini.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q79_456af71d7f.webp",
+      "caption": "Histology Spotter — Part 1, Station 79"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1080",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Which type of lingual papilla is shown?",
+    "options": [
+      "Foliate",
+      "Fungiform",
+      "Filiform",
+      "Circumvallate"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Circumvallate (vallate) papillae are large, dome-shaped structures sunken into the tongue surface, surrounded by a deep circular moat or trench. Abundant taste buds line the lateral trench walls, and serous von Ebner's glands empty watery secretions into the base of the trench to flush out food particles.",
+    "keyConcept": "Circumvallate papilla: Surrounded by a deep circular moat containing lateral taste buds and serous von Ebner's gland ducts.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q80_e492a335d3.webp",
+      "caption": "Histology Spotter — Part 1, Station 80"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1081",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 2?",
+    "options": [
+      "Smooth muscle",
+      "Muscularis mucosa",
+      "Orbicularis oris muscle",
+      "Skeletal muscle"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Smooth muscle.",
+    "keyConcept": "Histological identification: Smooth muscle.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q81_b54bef67ea.webp",
+      "caption": "Histology Spotter — Part 1, Station 81"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1082",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What do the lines at the center of the circle point to?",
+    "options": [
+      "Taste pore",
+      "Striated duct",
+      "Interlobular duct",
+      "Lumen"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Striated ducts are lined by simple columnar epithelium with centrally placed spherical nuclei, intensely eosinophilic cytoplasm, and distinct basal vertical striations corresponding to deep basal plasma membrane infoldings packed with vertically oriented elongated mitochondria for active electrolyte reabsorption (Na+) and secretion (K+, HCO3-).",
+    "keyConcept": "Striated ducts: Columnar cells with basal plasma membrane infoldings and mitochondria that modify primary saliva.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q82_cb4fc9bde1.webp",
+      "caption": "Histology Spotter — Part 1, Station 82"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1083",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "Which structure is shown in this SEM photomicrograph?",
+    "options": [
+      "Fungiform papillae",
+      "Circumvallate papillae",
+      "Filiform papillae",
+      "Foliate papillae"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Fungiform papillae.",
+    "keyConcept": "Histological identification: Fungiform papillae.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q83_0ceb51bdd3.webp",
+      "caption": "Histology Spotter — Part 1, Station 83"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1084",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 2?",
+    "options": [
+      "Serous acinus",
+      "Interlobular duct",
+      "Striated duct",
+      "Mucous acinus"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Striated ducts are lined by simple columnar epithelium with centrally placed spherical nuclei, intensely eosinophilic cytoplasm, and distinct basal vertical striations corresponding to deep basal plasma membrane infoldings packed with vertically oriented elongated mitochondria for active electrolyte reabsorption (Na+) and secretion (K+, HCO3-).",
+    "keyConcept": "Striated ducts: Columnar cells with basal plasma membrane infoldings and mitochondria that modify primary saliva.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q84_3c8c01d7be.webp",
+      "caption": "Histology Spotter — Part 1, Station 84"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1085",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "What is structure 3?",
+    "options": [
+      "Mucous acini",
+      "Mixed acinus",
+      "Serous acini",
+      "Interlobular duct"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Light-staining mucous acini with pale, foamy cytoplasm and flattened nuclei compressed against the basal lamina, in contrast to darker-staining pyramidal serous acini with rounded basal nuclei.",
+    "keyConcept": "Mucous acini appear pale/frothy with flattened basal nuclei; serous acini are basophilic with round nuclei.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q85_616acfee46.webp",
+      "caption": "Histology Spotter — Part 1, Station 85"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-1086",
+    "type": "mcq",
+    "lecture": 1,
+    "text": "This section is taken from which structure?",
+    "options": [
+      "Esophagus",
+      "Tongue",
+      "Lip",
+      "Submandibular gland"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified based on architectural organization and cellular morphology: Esophagus.",
+    "keyConcept": "Histological identification: Esophagus.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo1_q86_5bd482ba55.webp",
+      "caption": "Histology Spotter — Part 1, Station 86"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2001",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 1?",
+    "options": [
+      "Crypts",
+      "Brunner's glands",
+      "Villi",
+      "Short villi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Brunner's glands are branched, coiled tubular submucosal glands found exclusively in the duodenum that produce alkaline mucus (pH 8.1–9.3) containing bicarbonate and epidermal growth factor to neutralize acidic gastric chyme.",
+    "keyConcept": "Brunner's glands: Coiled branched tubular mucous glands situated in the duodenal submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q1_b018dcc762.webp",
+      "caption": "Histology Spotter — Part 2, Station 1"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2002",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Duodenum",
+      "Appendix",
+      "Jejunum",
+      "Colon"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The duodenum is characterized pathognomonically by the presence of branched coiled tubular mucous Brunner's glands filling the submucosa, which secrete alkaline bicarbonate-rich mucus, along with broad, leaf-like villi and crypts of Lieberkühn.",
+    "keyConcept": "Duodenum: Submucosal Brunner's glands are the definitive pathognomonic hallmark.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q2_1f19e9349e.webp",
+      "caption": "Histology Spotter — Part 2, Station 2"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2003",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the cell shown in this TEM photo.",
+    "options": [
+      "Chief cell",
+      "Parietal cell",
+      "Enteroendocrine cell",
+      "Pancreatic acinar cell"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: On transmission electron microscopy (TEM), parietal (oxyntic) cells are characterized pathognomonically by deep, branching intracellular secretory canaliculi lined by microvilli, an extensive tubulovesicular membrane system in the apical cytoplasm, and a vast abundance of large mitochondria packed with cristae to power H+/K+ ATPase pumps.",
+    "keyConcept": "Parietal cell TEM: Deep intracellular canaliculi, tubulovesicular system, and massive mitochondrial density.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q3_deb1b57391.webp",
+      "caption": "Histology Spotter — Part 2, Station 3"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2004",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Fundus",
+      "Gastroesophageal junction",
+      "Duodenum",
+      "Pylorus"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The gastroesophageal junction shows an abrupt histological epithelial transition (the Z-line) from non-keratinized stratified squamous epithelium of the esophagus to simple columnar mucus-secreting epithelium of the gastric cardia, with esophageal cardiac glands in the lamina propria.",
+    "keyConcept": "Gastroesophageal junction: Abrupt transition from stratified squamous non-keratinized epithelium to simple columnar epithelium.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q4_329cca7c1b.webp",
+      "caption": "Histology Spotter — Part 2, Station 4"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2005",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Ileum",
+      "Duodenum",
+      "Jejunum",
+      "Appendix"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The duodenum is characterized pathognomonically by the presence of branched coiled tubular mucous Brunner's glands filling the submucosa, which secrete alkaline bicarbonate-rich mucus, along with broad, leaf-like villi and crypts of Lieberkühn.",
+    "keyConcept": "Duodenum: Submucosal Brunner's glands are the definitive pathognomonic hallmark.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q5_1cc6413e4d.webp",
+      "caption": "Histology Spotter — Part 2, Station 5"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2006",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Duodenum",
+      "Ileum",
+      "Jejunum",
+      "Colon"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The ileum is characterized by prominent aggregated lymphoid nodules (Peyer's patches) situated primarily in the lamina propria and expanding widely through the muscularis mucosa into the submucosa on the antimesenteric border, accompanied by shorter, finger-like villi.",
+    "keyConcept": "Ileum: Peyer's patches (aggregated lymphoid follicles) occupying lamina propria and submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q6_f434d7de26.webp",
+      "caption": "Histology Spotter — Part 2, Station 6"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2007",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Jejunum",
+      "Ileum",
+      "Pylorus",
+      "Duodenum"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The jejunum displays the tallest, most well-developed finger-like mucosal villi and deepest crypts, prominent plicae circulares (valves of Kerckring), and NO Brunner's glands in the submucosa and NO aggregated Peyer's patches.",
+    "keyConcept": "Jejunum: Tall finger-like villi, well-developed plicae circulares, negative for Brunner's glands and Peyer's patches.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q7_433a5a0aa5.webp",
+      "caption": "Histology Spotter — Part 2, Station 7"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2008",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 1?",
+    "options": [
+      "Central lacteal",
+      "Crypt",
+      "Goblet cell",
+      "Smooth muscle cells"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Goblet cells are specialized mucus-secreting simple columnar epithelial cells with a distended apical 'theca' packed with mucinogen droplets and a narrow basal stem containing the nucleus.",
+    "keyConcept": "Goblet cells: Unicellular mucous glands whose numbers increase progressively along the intestine toward the rectum.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q8_0723de37c6.webp",
+      "caption": "Histology Spotter — Part 2, Station 8"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2009",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Liver H&E",
+      "Liver silver",
+      "Pancreas H&E",
+      "Liver pig"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Pig liver is histologically distinctive because individual classic hepatic lobules are completely demarcated and bounded by prominent, dense interlobular connective tissue septa, unlike human liver where connective tissue is minimal.",
+    "keyConcept": "Pig liver: Complete connective tissue septa clearly delineating hexagonal classic liver lobules.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q9_478774a4bc.webp",
+      "caption": "Histology Spotter — Part 2, Station 9"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2010",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Ileum",
+      "Pylorus",
+      "Duodenum",
+      "Jejunum"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: The duodenum is characterized pathognomonically by the presence of branched coiled tubular mucous Brunner's glands filling the submucosa, which secrete alkaline bicarbonate-rich mucus, along with broad, leaf-like villi and crypts of Lieberkühn.",
+    "keyConcept": "Duodenum: Submucosal Brunner's glands are the definitive pathognomonic hallmark.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q10_101cddc18b.webp",
+      "caption": "Histology Spotter — Part 2, Station 10"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2011",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What are the structures marked 1?",
+    "options": [
+      "Lymphatic nodules",
+      "Brunner's glands",
+      "Mucosal crypts",
+      "Short villi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Brunner's glands are branched, coiled tubular submucosal glands found exclusively in the duodenum that produce alkaline mucus (pH 8.1–9.3) containing bicarbonate and epidermal growth factor to neutralize acidic gastric chyme.",
+    "keyConcept": "Brunner's glands: Coiled branched tubular mucous glands situated in the duodenal submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q11_d232f06087.webp",
+      "caption": "Histology Spotter — Part 2, Station 11"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2012",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is the third covered label from the top?",
+    "options": [
+      "Zonula adherens",
+      "Desmosome",
+      "Microvilli",
+      "Zonula occludens"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Zonula adherens based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Zonula adherens.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q12_41d97d0157.webp",
+      "caption": "Histology Spotter — Part 2, Station 12"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2013",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What are the cells marked 1?",
+    "options": [
+      "Goblet cells",
+      "Paneth cells",
+      "Enterocytes",
+      "Columnar absorptive cells"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Goblet cells based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Goblet cells.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q13_8fb7919009.webp",
+      "caption": "Histology Spotter — Part 2, Station 13"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2014",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Colon",
+      "Ileum",
+      "Jejunum",
+      "Appendix"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Section identified by its pathognomonic mucosal and organ architecture: Colon.",
+    "keyConcept": "Organ identification: Colon.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q14_a377c2af4a.webp",
+      "caption": "Histology Spotter — Part 2, Station 14"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2015",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 1 in this SEM photo?",
+    "options": [
+      "Crypt",
+      "Villus",
+      "Goblet cell",
+      "Opening of crypt"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Goblet cells are specialized mucus-secreting simple columnar epithelial cells with a distended apical 'theca' packed with mucinogen droplets and a narrow basal stem containing the nucleus.",
+    "keyConcept": "Goblet cells: Unicellular mucous glands whose numbers increase progressively along the intestine toward the rectum.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q15_b65c22b77f.webp",
+      "caption": "Histology Spotter — Part 2, Station 15"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2016",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is the layer marked by the long lower bracket?",
+    "options": [
+      "Submucosa",
+      "Lamina propria",
+      "Musculosa",
+      "Muscularis mucosa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Submucosa based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q16_0b80680bb1.webp",
+      "caption": "Histology Spotter — Part 2, Station 16"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2017",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Pylorus",
+      "Rectoanal junction",
+      "Fundus",
+      "Gastroesophageal junction"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The pylorus features deep, branched gastric pits extending more than half (>50%) the depth of the mucosa, leading into short, coiled, branched tubular pyloric glands composed predominantly of mucus-secreting cells (with enteroendocrine G cells), and a markedly thickened circular muscularis externa (pyloric sphincter).",
+    "keyConcept": "Pylorus: Deep gastric pits (>50% depth) and branched, coiled, purely mucus-secreting glands.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q17_a9c8d3fde1.webp",
+      "caption": "Histology Spotter — Part 2, Station 17"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2018",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 2?",
+    "options": [
+      "Muscularis mucosa",
+      "Submucosa",
+      "Muscularis externa",
+      "Lamina propria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Muscularis mucosa based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Muscularis mucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q18_783803c25d.webp",
+      "caption": "Histology Spotter — Part 2, Station 18"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2019",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What are the structures marked 2?",
+    "options": [
+      "Villi",
+      "Lymphatic nodules",
+      "Crypts",
+      "Brunner's glands"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Brunner's glands are branched, coiled tubular submucosal glands found exclusively in the duodenum that produce alkaline mucus (pH 8.1–9.3) containing bicarbonate and epidermal growth factor to neutralize acidic gastric chyme.",
+    "keyConcept": "Brunner's glands: Coiled branched tubular mucous glands situated in the duodenal submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q19_08aa5bf2dc.webp",
+      "caption": "Histology Spotter — Part 2, Station 19"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2020",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 2?",
+    "options": [
+      "Villi",
+      "Lymphatic nodules",
+      "Crypts",
+      "Brunner's glands"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Brunner's glands are branched, coiled tubular submucosal glands found exclusively in the duodenum that produce alkaline mucus (pH 8.1–9.3) containing bicarbonate and epidermal growth factor to neutralize acidic gastric chyme.",
+    "keyConcept": "Brunner's glands: Coiled branched tubular mucous glands situated in the duodenal submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q20_7d02b07329.webp",
+      "caption": "Histology Spotter — Part 2, Station 20"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2021",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 2?",
+    "options": [
+      "Microvilli",
+      "Tight junction",
+      "Mitochondria",
+      "SER"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Microvilli based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Microvilli.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q21_23668dba42.webp",
+      "caption": "Histology Spotter — Part 2, Station 21"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2022",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 3?",
+    "options": [
+      "SER",
+      "Nucleus",
+      "Microvilli",
+      "Mitochondria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: SER based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: SER.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q22_53654d1cdc.webp",
+      "caption": "Histology Spotter — Part 2, Station 22"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2023",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 1?",
+    "options": [
+      "Pyloric glands",
+      "Cardiac glands",
+      "Fundic glands",
+      "Brunner's glands"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Brunner's glands are branched, coiled tubular submucosal glands found exclusively in the duodenum that produce alkaline mucus (pH 8.1–9.3) containing bicarbonate and epidermal growth factor to neutralize acidic gastric chyme.",
+    "keyConcept": "Brunner's glands: Coiled branched tubular mucous glands situated in the duodenal submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q23_7b84def4bd.webp",
+      "caption": "Histology Spotter — Part 2, Station 23"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2024",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Jejunum",
+      "Duodenum",
+      "Ileum",
+      "Pylorus"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: The pylorus features deep, branched gastric pits extending more than half (>50%) the depth of the mucosa, leading into short, coiled, branched tubular pyloric glands composed predominantly of mucus-secreting cells (with enteroendocrine G cells), and a markedly thickened circular muscularis externa (pyloric sphincter).",
+    "keyConcept": "Pylorus: Deep gastric pits (>50% depth) and branched, coiled, purely mucus-secreting glands.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q24_fa2f17fe55.webp",
+      "caption": "Histology Spotter — Part 2, Station 24"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2025",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is shown in this SEM photo?",
+    "options": [
+      "Openings of the crypts",
+      "Bile canaliculi",
+      "Fenestrated sinusoid",
+      "Space of Disse"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Openings of the crypts based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Openings of the crypts.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q25_9ad9bcdeef.webp",
+      "caption": "Histology Spotter — Part 2, Station 25"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2026",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 2?",
+    "options": [
+      "Microvilli of hepatocyte",
+      "Tight junction",
+      "Bile canaliculus",
+      "cilia of hepatocyte"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Microvilli of hepatocyte based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Microvilli of hepatocyte.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q26_23bce49f27.webp",
+      "caption": "Histology Spotter — Part 2, Station 26"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2027",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the cell shown in this TEM photo.",
+    "options": [
+      "Parietal cell",
+      "Mucous neck cell",
+      "Enteroendocrine cell",
+      "Chief cell"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: On transmission electron microscopy (TEM), parietal (oxyntic) cells are characterized pathognomonically by deep, branching intracellular secretory canaliculi lined by microvilli, an extensive tubulovesicular membrane system in the apical cytoplasm, and a vast abundance of large mitochondria packed with cristae to power H+/K+ ATPase pumps.",
+    "keyConcept": "Parietal cell TEM: Deep intracellular canaliculi, tubulovesicular system, and massive mitochondrial density.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q27_02cd71fab5.webp",
+      "caption": "Histology Spotter — Part 2, Station 27"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2028",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is the layer marked by the lowest bracket?",
+    "options": [
+      "Muscularis externa",
+      "Submucosa",
+      "Muscularis mucosa",
+      "Lamina propria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Muscularis externa based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Muscularis externa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q28_a2a382012f.webp",
+      "caption": "Histology Spotter — Part 2, Station 28"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2029",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the cell shown in this TEM photo.",
+    "options": [
+      "Goblet cell",
+      "Paneth cell",
+      "Enterocyte",
+      "Enteroendocrine cell"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Paneth cells are pyramid-shaped innate immune cells situated at the very base of the crypts of Lieberkühn in the small intestine. They are characterized by intensely acidophilic (bright red/orange) apical secretory granules containing antimicrobial lysozyme, defensins (cryptdins), and zinc.",
+    "keyConcept": "Paneth cells: Located at the base of intestinal crypts; contain prominent apical eosinophilic granules with lysozyme and defensins.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q29_488521b76b.webp",
+      "caption": "Histology Spotter — Part 2, Station 29"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2030",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the cell shown in this TEM photo.",
+    "options": [
+      "Paneth cell",
+      "Pancreatic acinar cell",
+      "Parietal cell",
+      "Chief cell"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: On transmission electron microscopy (TEM), parietal (oxyntic) cells are characterized pathognomonically by deep, branching intracellular secretory canaliculi lined by microvilli, an extensive tubulovesicular membrane system in the apical cytoplasm, and a vast abundance of large mitochondria packed with cristae to power H+/K+ ATPase pumps.",
+    "keyConcept": "Parietal cell TEM: Deep intracellular canaliculi, tubulovesicular system, and massive mitochondrial density.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q30_c7fdb3b6de.webp",
+      "caption": "Histology Spotter — Part 2, Station 30"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2031",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the structure shown in this TEM photo.",
+    "options": [
+      "Blood sinusoid",
+      "Space of Disse",
+      "Bile canaliculus",
+      "Pancreatic acinus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Blood sinusoid based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Blood sinusoid.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q31_8de794a822.webp",
+      "caption": "Histology Spotter — Part 2, Station 31"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2032",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Duodenum",
+      "Jejunum",
+      "Ileum",
+      "Colon"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Section identified by its pathognomonic mucosal and organ architecture: Duodenum.",
+    "keyConcept": "Organ identification: Duodenum.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q32_2a498f2556.webp",
+      "caption": "Histology Spotter — Part 2, Station 32"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2033",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Ileum",
+      "Duodenum",
+      "Jejunum",
+      "Appendix"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Section identified by its pathognomonic mucosal and organ architecture: Ileum.",
+    "keyConcept": "Organ identification: Ileum.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q33_6cdf11c51a.webp",
+      "caption": "Histology Spotter — Part 2, Station 33"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2034",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What are the structures marked 3?",
+    "options": [
+      "Mucous glands",
+      "Fundic glands",
+      "Brunner's glands",
+      "Pyloric glands"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Brunner's glands are branched, coiled tubular submucosal glands found exclusively in the duodenum that produce alkaline mucus (pH 8.1–9.3) containing bicarbonate and epidermal growth factor to neutralize acidic gastric chyme.",
+    "keyConcept": "Brunner's glands: Coiled branched tubular mucous glands situated in the duodenal submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q34_2eaf80cba2.webp",
+      "caption": "Histology Spotter — Part 2, Station 34"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2035",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the cell shown in this TEM photo.",
+    "options": [
+      "Pancreatic acinar cell",
+      "Goblet cell",
+      "Paneth cell",
+      "Enteroendocrine cell"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Paneth cells are pyramid-shaped innate immune cells situated at the very base of the crypts of Lieberkühn in the small intestine. They are characterized by intensely acidophilic (bright red/orange) apical secretory granules containing antimicrobial lysozyme, defensins (cryptdins), and zinc.",
+    "keyConcept": "Paneth cells: Located at the base of intestinal crypts; contain prominent apical eosinophilic granules with lysozyme and defensins.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q35_b97ebfcec5.webp",
+      "caption": "Histology Spotter — Part 2, Station 35"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2036",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 2?",
+    "options": [
+      "Pit",
+      "Crypt",
+      "Gland",
+      "Villus"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Crypts of Lieberkühn (intestinal glands) are simple tubular invaginations of the intestinal epithelium extending down to the muscularis mucosae, housing regenerative stem cells, Paneth cells, goblet cells, and enteroendocrine cells.",
+    "keyConcept": "Crypts of Lieberkühn: Tubular epithelial invaginations serving as the stem cell and proliferative compartment of the gut.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q36_7ade53038b.webp",
+      "caption": "Histology Spotter — Part 2, Station 36"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2037",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Rectoanal junction",
+      "Gastroesophageal junction",
+      "Pylorus",
+      "Fundus"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: The pylorus features deep, branched gastric pits extending more than half (>50%) the depth of the mucosa, leading into short, coiled, branched tubular pyloric glands composed predominantly of mucus-secreting cells (with enteroendocrine G cells), and a markedly thickened circular muscularis externa (pyloric sphincter).",
+    "keyConcept": "Pylorus: Deep gastric pits (>50% depth) and branched, coiled, purely mucus-secreting glands.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q37_ad7f8c3ae3.webp",
+      "caption": "Histology Spotter — Part 2, Station 37"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2038",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the cell shown in this TEM photo.",
+    "options": [
+      "Paneth cell",
+      "Goblet cell",
+      "Enteroendocrine cell",
+      "Enterocyte"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Paneth cells are pyramid-shaped innate immune cells situated at the very base of the crypts of Lieberkühn in the small intestine. They are characterized by intensely acidophilic (bright red/orange) apical secretory granules containing antimicrobial lysozyme, defensins (cryptdins), and zinc.",
+    "keyConcept": "Paneth cells: Located at the base of intestinal crypts; contain prominent apical eosinophilic granules with lysozyme and defensins.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q38_af8b1bf7e2.webp",
+      "caption": "Histology Spotter — Part 2, Station 38"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2039",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is the lowest covered label?",
+    "options": [
+      "Zonula occludens",
+      "Desmosome",
+      "Zonula adherens",
+      "Glycocalyx"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Zonula occludens based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Zonula occludens.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q39_3c1f297dcf.webp",
+      "caption": "Histology Spotter — Part 2, Station 39"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2040",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is cell 1?",
+    "options": [
+      "Kupffer cell",
+      "Endothelial cell",
+      "Ito cell",
+      "Hepatocyte"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Kupffer cells are resident hepatic macrophages derived from monocytes, anchored to the luminal surface of endothelial cells within the hepatic sinusoids. They exhibit irregular cytoplasmic processes, phagocytic vacuoles, lysosomes, and phagocytosed erythrocytes and hemosiderin pigment.",
+    "keyConcept": "Kupffer cells: Resident sinusoidal macrophages anchored within hepatic sinusoid lumens.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q40_bf0471b988.webp",
+      "caption": "Histology Spotter — Part 2, Station 40"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2041",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is the pale cluster of cells in the center?",
+    "options": [
+      "Pancreatic acinus",
+      "Pancreatic duct",
+      "Blood sinusoid",
+      "Islets of Langerhans"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Pancreatic acinus based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Pancreatic acinus.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q41_8ec23ae5eb.webp",
+      "caption": "Histology Spotter — Part 2, Station 41"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2042",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 2?",
+    "options": [
+      "Secretory mucinogen granules",
+      "Apical granules",
+      "Basal granules",
+      "Short microvilli"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Secretory mucinogen granules based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Secretory mucinogen granules.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q42_1c2c48536b.webp",
+      "caption": "Histology Spotter — Part 2, Station 42"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2043",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Fundus",
+      "Duodenum",
+      "Pylorus",
+      "Colon"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: The pylorus features deep, branched gastric pits extending more than half (>50%) the depth of the mucosa, leading into short, coiled, branched tubular pyloric glands composed predominantly of mucus-secreting cells (with enteroendocrine G cells), and a markedly thickened circular muscularis externa (pyloric sphincter).",
+    "keyConcept": "Pylorus: Deep gastric pits (>50% depth) and branched, coiled, purely mucus-secreting glands.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q43_27376d94f2.webp",
+      "caption": "Histology Spotter — Part 2, Station 43"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2044",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is the covered label on the left?",
+    "options": [
+      "Simple columnar epithelium",
+      "Stratified squamous keratinized ep.",
+      "Columnar absorptive cells",
+      "Stratified squamous non keratinized ep."
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Simple columnar epithelium based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Simple columnar epithelium.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q44_633acf232e.webp",
+      "caption": "Histology Spotter — Part 2, Station 44"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2045",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is cell 2?",
+    "options": [
+      "Paneth cell",
+      "Enteroendocrine cell",
+      "Goblet cell",
+      "Colonocyte"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Paneth cells are pyramid-shaped innate immune cells situated at the very base of the crypts of Lieberkühn in the small intestine. They are characterized by intensely acidophilic (bright red/orange) apical secretory granules containing antimicrobial lysozyme, defensins (cryptdins), and zinc.",
+    "keyConcept": "Paneth cells: Located at the base of intestinal crypts; contain prominent apical eosinophilic granules with lysozyme and defensins.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q45_6cc65d9634.webp",
+      "caption": "Histology Spotter — Part 2, Station 45"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2046",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Jejunum",
+      "Colon",
+      "Appendix",
+      "Ileum"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Section identified by its pathognomonic mucosal and organ architecture: Jejunum.",
+    "keyConcept": "Organ identification: Jejunum.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q46_a48739cea2.webp",
+      "caption": "Histology Spotter — Part 2, Station 46"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2047",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Liver & gall bladder",
+      "Liver pig",
+      "Pancreas H&E",
+      "Liver silver"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Silver impregnation (Gömöri or Gordon & Sweets) selectively stains the delicate black reticular fiber network (type III collagen) supporting hepatocytes and the walls of hepatic sinusoids.",
+    "keyConcept": "Liver silver stain: Reticular fiber meshwork supporting liver sinusoids and hepatocyte plates stained black.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q47_a49fa68d78.webp",
+      "caption": "Histology Spotter — Part 2, Station 47"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2048",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is cell 1?",
+    "options": [
+      "Kupffer cell",
+      "Endothelial cell",
+      "Hepatic stellate cell (Ito cell)",
+      "Hepatocyte"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Kupffer cells are resident hepatic macrophages derived from monocytes, anchored to the luminal surface of endothelial cells within the hepatic sinusoids. They exhibit irregular cytoplasmic processes, phagocytic vacuoles, lysosomes, and phagocytosed erythrocytes and hemosiderin pigment.",
+    "keyConcept": "Kupffer cells: Resident sinusoidal macrophages anchored within hepatic sinusoid lumens.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q48_0d47e1d831.webp",
+      "caption": "Histology Spotter — Part 2, Station 48"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2049",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 3?",
+    "options": [
+      "Lumen of bile canaliculus",
+      "Hepatocyte microvilli",
+      "Tight junction",
+      "Ito cell"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Hepatic stellate (Ito) cells reside in the perisinusoidal space of Disse between hepatocytes and sinusoidal endothelial cells. Under physiological conditions, they store lipid droplets containing vitamin A (retinol); in chronic liver injury, they transdifferentiate into myofibroblasts that synthesize collagen, driving hepatic fibrosis.",
+    "keyConcept": "Ito (hepatic stellate) cells: Perisinusoidal cells in the space of Disse storing vitamin A; mediate hepatic fibrosis.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q49_d86c4e9788.webp",
+      "caption": "Histology Spotter — Part 2, Station 49"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2050",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What are the structures marked 1 in this SEM photo?",
+    "options": [
+      "Openings of the crypts",
+      "Goblet cells",
+      "Villi",
+      "Crypts of large intestine"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Intestinal villi are finger-like or leaf-like projections of the mucosa (epithelium and lamina propria) into the intestinal lumen that drastically amplify absorptive surface area.",
+    "keyConcept": "Intestinal villi: Mucosal projections found exclusively in the small intestine to maximize absorption.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q50_0bb68ee2d3.webp",
+      "caption": "Histology Spotter — Part 2, Station 50"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2051",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Pancreas H&E",
+      "Liver H&E",
+      "Liver silver",
+      "Liver pig"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Pig liver is histologically distinctive because individual classic hepatic lobules are completely demarcated and bounded by prominent, dense interlobular connective tissue septa, unlike human liver where connective tissue is minimal.",
+    "keyConcept": "Pig liver: Complete connective tissue septa clearly delineating hexagonal classic liver lobules.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q51_901c6fb3a4.webp",
+      "caption": "Histology Spotter — Part 2, Station 51"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2052",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is cell 2?",
+    "options": [
+      "Endothelial cell",
+      "Ito cell",
+      "Hepatocyte",
+      "Kupffer cell"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Kupffer cells are resident hepatic macrophages derived from monocytes, anchored to the luminal surface of endothelial cells within the hepatic sinusoids. They exhibit irregular cytoplasmic processes, phagocytic vacuoles, lysosomes, and phagocytosed erythrocytes and hemosiderin pigment.",
+    "keyConcept": "Kupffer cells: Resident sinusoidal macrophages anchored within hepatic sinusoid lumens.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q52_c315cd278b.webp",
+      "caption": "Histology Spotter — Part 2, Station 52"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2053",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 1?",
+    "options": [
+      "RER",
+      "SER",
+      "Golgi apparatus",
+      "Mitochondria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: RER based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: RER.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q53_68d29c7990.webp",
+      "caption": "Histology Spotter — Part 2, Station 53"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2054",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 1?",
+    "options": [
+      "Broad-leaf like villi",
+      "Short villi",
+      "Crypts",
+      "Brunner's glands"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Brunner's glands are branched, coiled tubular submucosal glands found exclusively in the duodenum that produce alkaline mucus (pH 8.1–9.3) containing bicarbonate and epidermal growth factor to neutralize acidic gastric chyme.",
+    "keyConcept": "Brunner's glands: Coiled branched tubular mucous glands situated in the duodenal submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q54_249fd6b0af.webp",
+      "caption": "Histology Spotter — Part 2, Station 54"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2055",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is cell 1?",
+    "options": [
+      "Enteroendocrine cell",
+      "Goblet cell",
+      "Paneth cell",
+      "Enterocyte"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Paneth cells are pyramid-shaped innate immune cells situated at the very base of the crypts of Lieberkühn in the small intestine. They are characterized by intensely acidophilic (bright red/orange) apical secretory granules containing antimicrobial lysozyme, defensins (cryptdins), and zinc.",
+    "keyConcept": "Paneth cells: Located at the base of intestinal crypts; contain prominent apical eosinophilic granules with lysozyme and defensins.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q55_54c99e3f6a.webp",
+      "caption": "Histology Spotter — Part 2, Station 55"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2056",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 2?",
+    "options": [
+      "Villi",
+      "Crypts",
+      "Peyer's patches",
+      "Brunner's glands"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Brunner's glands are branched, coiled tubular submucosal glands found exclusively in the duodenum that produce alkaline mucus (pH 8.1–9.3) containing bicarbonate and epidermal growth factor to neutralize acidic gastric chyme.",
+    "keyConcept": "Brunner's glands: Coiled branched tubular mucous glands situated in the duodenal submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q56_0a1f1357ab.webp",
+      "caption": "Histology Spotter — Part 2, Station 56"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2057",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Pylorus",
+      "Fundus",
+      "Gastroesophageal junction",
+      "Jejunum"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The fundus/body of the stomach has shallow gastric pits (occupying the upper 1/4 of mucosal depth) leading into long, straight, tubular gastric glands containing abundant acidophilic, fried-egg shaped parietal (oxyntic) cells in the neck/isthmus and basophilic chief (zymogenic) cells at the base.",
+    "keyConcept": "Gastric fundus: Shallow gastric pits (<25% depth) and long tubular glands packed with parietal and chief cells.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q57_d9a6827f1c.webp",
+      "caption": "Histology Spotter — Part 2, Station 57"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2058",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the cell shown in this TEM photo.",
+    "options": [
+      "Enteroendocrine cell (open type)",
+      "Paneth cell",
+      "Parietal cell",
+      "Enteroendocrine cell (closed type)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: On transmission electron microscopy (TEM), parietal (oxyntic) cells are characterized pathognomonically by deep, branching intracellular secretory canaliculi lined by microvilli, an extensive tubulovesicular membrane system in the apical cytoplasm, and a vast abundance of large mitochondria packed with cristae to power H+/K+ ATPase pumps.",
+    "keyConcept": "Parietal cell TEM: Deep intracellular canaliculi, tubulovesicular system, and massive mitochondrial density.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q58_0f149f9c38.webp",
+      "caption": "Histology Spotter — Part 2, Station 58"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2059",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Liver H&E",
+      "Pancreas H&E",
+      "Liver silver",
+      "Parotid gland"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Silver impregnation (Gömöri or Gordon & Sweets) selectively stains the delicate black reticular fiber network (type III collagen) supporting hepatocytes and the walls of hepatic sinusoids.",
+    "keyConcept": "Liver silver stain: Reticular fiber meshwork supporting liver sinusoids and hepatocyte plates stained black.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q59_589de0402e.webp",
+      "caption": "Histology Spotter — Part 2, Station 59"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2060",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 2?",
+    "options": [
+      "Lateral membrane infoldings",
+      "RER",
+      "Golgi apparatus",
+      "SER"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Lateral membrane infoldings based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Lateral membrane infoldings.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q60_a9c45af0a9.webp",
+      "caption": "Histology Spotter — Part 2, Station 60"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2061",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is the uppermost covered label?",
+    "options": [
+      "Glycocalyx",
+      "Microvilli",
+      "Zonula occludens",
+      "Desmosome"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Glycocalyx based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Glycocalyx.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q61_23f5984de1.webp",
+      "caption": "Histology Spotter — Part 2, Station 61"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2062",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Gastroesophageal junction",
+      "Rectoanal junction",
+      "Pylorus",
+      "Fundus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The gastroesophageal junction shows an abrupt histological epithelial transition (the Z-line) from non-keratinized stratified squamous epithelium of the esophagus to simple columnar mucus-secreting epithelium of the gastric cardia, with esophageal cardiac glands in the lamina propria.",
+    "keyConcept": "Gastroesophageal junction: Abrupt transition from stratified squamous non-keratinized epithelium to simple columnar epithelium.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q62_240321f43e.webp",
+      "caption": "Histology Spotter — Part 2, Station 62"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2063",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 1?",
+    "options": [
+      "Glycocalyx",
+      "Short microvilli",
+      "Zonula occludens",
+      "Desmosome"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Glycocalyx based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Glycocalyx.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q63_a44ccc4ca0.webp",
+      "caption": "Histology Spotter — Part 2, Station 63"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2064",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is the structure marked by the uppermost bracket?",
+    "options": [
+      "Villi",
+      "Crypts",
+      "Brunner's glands",
+      "Peyer's patches"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Brunner's glands are branched, coiled tubular submucosal glands found exclusively in the duodenum that produce alkaline mucus (pH 8.1–9.3) containing bicarbonate and epidermal growth factor to neutralize acidic gastric chyme.",
+    "keyConcept": "Brunner's glands: Coiled branched tubular mucous glands situated in the duodenal submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q64_5fb1e2ee38.webp",
+      "caption": "Histology Spotter — Part 2, Station 64"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2065",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is cell 1?",
+    "options": [
+      "Ito cell",
+      "Kupffer cell",
+      "Endothelial cell",
+      "Hepatocyte"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Kupffer cells are resident hepatic macrophages derived from monocytes, anchored to the luminal surface of endothelial cells within the hepatic sinusoids. They exhibit irregular cytoplasmic processes, phagocytic vacuoles, lysosomes, and phagocytosed erythrocytes and hemosiderin pigment.",
+    "keyConcept": "Kupffer cells: Resident sinusoidal macrophages anchored within hepatic sinusoid lumens.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q65_0563a28121.webp",
+      "caption": "Histology Spotter — Part 2, Station 65"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2066",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the cell shown in this TEM photo.",
+    "options": [
+      "Enteroendocrine cell (open type)",
+      "Enteroendocrine cell (closed type)",
+      "Paneth cell",
+      "Parietal cell"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: On transmission electron microscopy (TEM), parietal (oxyntic) cells are characterized pathognomonically by deep, branching intracellular secretory canaliculi lined by microvilli, an extensive tubulovesicular membrane system in the apical cytoplasm, and a vast abundance of large mitochondria packed with cristae to power H+/K+ ATPase pumps.",
+    "keyConcept": "Parietal cell TEM: Deep intracellular canaliculi, tubulovesicular system, and massive mitochondrial density.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q66_acf2c9d548.webp",
+      "caption": "Histology Spotter — Part 2, Station 66"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2067",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Fundus",
+      "Pylorus",
+      "Duodenum",
+      "Gastroesophageal junction"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The fundus/body of the stomach has shallow gastric pits (occupying the upper 1/4 of mucosal depth) leading into long, straight, tubular gastric glands containing abundant acidophilic, fried-egg shaped parietal (oxyntic) cells in the neck/isthmus and basophilic chief (zymogenic) cells at the base.",
+    "keyConcept": "Gastric fundus: Shallow gastric pits (<25% depth) and long tubular glands packed with parietal and chief cells.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q67_1ecbe87712.webp",
+      "caption": "Histology Spotter — Part 2, Station 67"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2068",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 1 in this SEM photo?",
+    "options": [
+      "Crypt of small intestine",
+      "Villus of small intestine",
+      "Crypt of large intestine",
+      "Villus of large intestine"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Crypt of small intestine based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Crypt of small intestine.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q68_036b47eebe.webp",
+      "caption": "Histology Spotter — Part 2, Station 68"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2069",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 3?",
+    "options": [
+      "Peyer's patches",
+      "Crypts",
+      "Pyloric glands",
+      "Brunner's glands"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Brunner's glands are branched, coiled tubular submucosal glands found exclusively in the duodenum that produce alkaline mucus (pH 8.1–9.3) containing bicarbonate and epidermal growth factor to neutralize acidic gastric chyme.",
+    "keyConcept": "Brunner's glands: Coiled branched tubular mucous glands situated in the duodenal submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q69_c55bf940a3.webp",
+      "caption": "Histology Spotter — Part 2, Station 69"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2070",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What does the arrow marked A point toward?",
+    "options": [
+      "Rectal side",
+      "Gastric side",
+      "Anal side",
+      "Esophagus side"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Rectal side based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Rectal side.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q70_d05873ec76.webp",
+      "caption": "Histology Spotter — Part 2, Station 70"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2071",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is cell 2?",
+    "options": [
+      "Ito cell",
+      "Kupffer cell",
+      "Endothelial cell",
+      "Hepatocyte"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Kupffer cells are resident hepatic macrophages derived from monocytes, anchored to the luminal surface of endothelial cells within the hepatic sinusoids. They exhibit irregular cytoplasmic processes, phagocytic vacuoles, lysosomes, and phagocytosed erythrocytes and hemosiderin pigment.",
+    "keyConcept": "Kupffer cells: Resident sinusoidal macrophages anchored within hepatic sinusoid lumens.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q71_8c985fa2fb.webp",
+      "caption": "Histology Spotter — Part 2, Station 71"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2072",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What are the structures marked 4?",
+    "options": [
+      "Lymphatic nodules",
+      "Mucous glands",
+      "Blood vessels",
+      "Bile ducts"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Lymphatic nodules based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Lymphatic nodules.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q72_f4fecb5f2d.webp",
+      "caption": "Histology Spotter — Part 2, Station 72"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2073",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What do the granules marked by the red line represent?",
+    "options": [
+      "Basal granules",
+      "Mucinogen granules",
+      "Apical granules",
+      "Glycocalyx granules"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Basal granules based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Basal granules.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q73_6c910e30ee.webp",
+      "caption": "Histology Spotter — Part 2, Station 73"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2074",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Duodenum",
+      "Jejunum",
+      "Ileum",
+      "Pylorus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The duodenum is characterized pathognomonically by the presence of branched coiled tubular mucous Brunner's glands filling the submucosa, which secrete alkaline bicarbonate-rich mucus, along with broad, leaf-like villi and crypts of Lieberkühn.",
+    "keyConcept": "Duodenum: Submucosal Brunner's glands are the definitive pathognomonic hallmark.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q74_fbb1ced9e3.webp",
+      "caption": "Histology Spotter — Part 2, Station 74"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2075",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is the layer marked 2?",
+    "options": [
+      "Muscularis externa",
+      "Submucosa",
+      "Lamina propria",
+      "Muscularis mucosa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Muscularis externa based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Muscularis externa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q75_565f92d1ff.webp",
+      "caption": "Histology Spotter — Part 2, Station 75"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2076",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Ileum",
+      "Colon",
+      "Appendix",
+      "Jejunum"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: The ileum is characterized by prominent aggregated lymphoid nodules (Peyer's patches) situated primarily in the lamina propria and expanding widely through the muscularis mucosa into the submucosa on the antimesenteric border, accompanied by shorter, finger-like villi.",
+    "keyConcept": "Ileum: Peyer's patches (aggregated lymphoid follicles) occupying lamina propria and submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q76_16f2ed08ce.webp",
+      "caption": "Histology Spotter — Part 2, Station 76"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2077",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is the structure marked by the 2nd bracket from the top?",
+    "options": [
+      "Villi",
+      "Crypt",
+      "Brunner's gland",
+      "Peyer's patch"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Brunner's glands are branched, coiled tubular submucosal glands found exclusively in the duodenum that produce alkaline mucus (pH 8.1–9.3) containing bicarbonate and epidermal growth factor to neutralize acidic gastric chyme.",
+    "keyConcept": "Brunner's glands: Coiled branched tubular mucous glands situated in the duodenal submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q77_ef76b64a24.webp",
+      "caption": "Histology Spotter — Part 2, Station 77"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2078",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the central cell in this TEM photo.",
+    "options": [
+      "Paneth cell",
+      "Goblet cell",
+      "Enteroendocrine cell",
+      "Enterocyte"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Paneth cells are pyramid-shaped innate immune cells situated at the very base of the crypts of Lieberkühn in the small intestine. They are characterized by intensely acidophilic (bright red/orange) apical secretory granules containing antimicrobial lysozyme, defensins (cryptdins), and zinc.",
+    "keyConcept": "Paneth cells: Located at the base of intestinal crypts; contain prominent apical eosinophilic granules with lysozyme and defensins.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q78_3b7074b912.webp",
+      "caption": "Histology Spotter — Part 2, Station 78"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2079",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Rectoanal junction",
+      "Gastroesophageal junction",
+      "Appendix",
+      "Colon"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: The vermiform appendix is recognized by its narrow, star-shaped or irregular lumen, complete absence of true intestinal villi, shallow straight crypts, and a continuous ring of large lymphoid follicles with germinal centers occupying the entire lamina propria and submucosa.",
+    "keyConcept": "Vermiform appendix: Small irregular lumen, no villi, ring of lymphoid follicles obliterating the submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q79_69cad4af77.webp",
+      "caption": "Histology Spotter — Part 2, Station 79"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2080",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 1?",
+    "options": [
+      "Gland",
+      "Pit",
+      "Crypt",
+      "Villus"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Crypts of Lieberkühn (intestinal glands) are simple tubular invaginations of the intestinal epithelium extending down to the muscularis mucosae, housing regenerative stem cells, Paneth cells, goblet cells, and enteroendocrine cells.",
+    "keyConcept": "Crypts of Lieberkühn: Tubular epithelial invaginations serving as the stem cell and proliferative compartment of the gut.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q80_d67d8a9fbd.webp",
+      "caption": "Histology Spotter — Part 2, Station 80"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2081",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Liver H&E",
+      "Liver pig",
+      "Liver silver",
+      "Pancreas H&E"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Pig liver is histologically distinctive because individual classic hepatic lobules are completely demarcated and bounded by prominent, dense interlobular connective tissue septa, unlike human liver where connective tissue is minimal.",
+    "keyConcept": "Pig liver: Complete connective tissue septa clearly delineating hexagonal classic liver lobules.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q81_2d54489c58.webp",
+      "caption": "Histology Spotter — Part 2, Station 81"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2082",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What are the structures marked 1?",
+    "options": [
+      "Short villi",
+      "Villi",
+      "Goblet cells",
+      "Crypts"
+    ],
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Crypts of Lieberkühn (intestinal glands) are simple tubular invaginations of the intestinal epithelium extending down to the muscularis mucosae, housing regenerative stem cells, Paneth cells, goblet cells, and enteroendocrine cells.",
+    "keyConcept": "Crypts of Lieberkühn: Tubular epithelial invaginations serving as the stem cell and proliferative compartment of the gut.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q82_47762eeed4.webp",
+      "caption": "Histology Spotter — Part 2, Station 82"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2083",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is the layer marked 3?",
+    "options": [
+      "Muscularis mucosa",
+      "Lamina propria",
+      "Muscularis externa",
+      "Submucosa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Muscularis mucosa based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Muscularis mucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q83_d5634c916a.webp",
+      "caption": "Histology Spotter — Part 2, Station 83"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2084",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Colon",
+      "Appendix",
+      "Ileum",
+      "Rectoanal junction"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The vermiform appendix is recognized by its narrow, star-shaped or irregular lumen, complete absence of true intestinal villi, shallow straight crypts, and a continuous ring of large lymphoid follicles with germinal centers occupying the entire lamina propria and submucosa.",
+    "keyConcept": "Vermiform appendix: Small irregular lumen, no villi, ring of lymphoid follicles obliterating the submucosa.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q84_d79fa90a68.webp",
+      "caption": "Histology Spotter — Part 2, Station 84"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2085",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 1?",
+    "options": [
+      "Desmosome",
+      "Tight junction",
+      "Microvilli",
+      "Mitochondria"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Desmosome based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Desmosome.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q85_4172f94004.webp",
+      "caption": "Histology Spotter — Part 2, Station 85"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2086",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What are the structures marked 2 in this SEM photo?",
+    "options": [
+      "Goblet cells",
+      "Villi",
+      "Openings of the crypts",
+      "Crypts of small intestine"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Intestinal villi are finger-like or leaf-like projections of the mucosa (epithelium and lamina propria) into the intestinal lumen that drastically amplify absorptive surface area.",
+    "keyConcept": "Intestinal villi: Mucosal projections found exclusively in the small intestine to maximize absorption.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q86_759689b0c8.webp",
+      "caption": "Histology Spotter — Part 2, Station 86"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2087",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is the layer marked by the middle bracket?",
+    "options": [
+      "Lamina propria",
+      "Muscularis mucosa",
+      "Submucosa",
+      "Musculosa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Lamina propria based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Lamina propria.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q87_b7299e2a49.webp",
+      "caption": "Histology Spotter — Part 2, Station 87"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2088",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What are the cells marked 2?",
+    "options": [
+      "Goblet cells",
+      "Columnar absorptive cells",
+      "Paneth cells",
+      "Enteroendocrine cells"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: Goblet cells based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: Goblet cells.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q88_158897625d.webp",
+      "caption": "Histology Spotter — Part 2, Station 88"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2089",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 2 in this SEM photo?",
+    "options": [
+      "Villus",
+      "Goblet cell",
+      "Crypt",
+      "Microvilli"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Goblet cells are specialized mucus-secreting simple columnar epithelial cells with a distended apical 'theca' packed with mucinogen droplets and a narrow basal stem containing the nucleus.",
+    "keyConcept": "Goblet cells: Unicellular mucous glands whose numbers increase progressively along the intestine toward the rectum.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q89_aae94790ae.webp",
+      "caption": "Histology Spotter — Part 2, Station 89"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2090",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Gastroesophageal junction",
+      "Rectoanal junction",
+      "Colon",
+      "Appendix"
+    ],
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: The large intestine (colon) exhibits NO mucosal villi, long straight parallel crypts of Lieberkühn resembling test tubes in a rack lined by an abundance of goblet cells, and an outer muscularis externa segregated into three longitudinal bands (teniae coli).",
+    "keyConcept": "Colon: Complete absence of villi, straight parallel crypts packed with goblet cells, and teniae coli.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q90_b607005505.webp",
+      "caption": "Histology Spotter — Part 2, Station 90"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2091",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 2?",
+    "options": [
+      "Enterocytes",
+      "Central lacteal",
+      "Smooth muscle cells",
+      "Goblet cells"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The central lacteal is a blind-ended lymphatic capillary running in the connective tissue core of each intestinal villus, surrounded by smooth muscle cells; it absorbs lipid emulsions (chylomicrons) into the lymphatic system.",
+    "keyConcept": "Central lacteal: Blind-ended villous lymphatic capillary responsible for chylomicron absorption.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q91_0140ad1d3b.webp",
+      "caption": "Histology Spotter — Part 2, Station 91"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2092",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Appendix",
+      "Jejunum",
+      "Colon",
+      "Duodenum"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The jejunum displays the tallest, most well-developed finger-like mucosal villi and deepest crypts, prominent plicae circulares (valves of Kerckring), and NO Brunner's glands in the submucosa and NO aggregated Peyer's patches.",
+    "keyConcept": "Jejunum: Tall finger-like villi, well-developed plicae circulares, negative for Brunner's glands and Peyer's patches.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q92_3f43c1b91a.webp",
+      "caption": "Histology Spotter — Part 2, Station 92"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2093",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify this section.",
+    "options": [
+      "Pylorus",
+      "Fundus",
+      "Gastroesophageal junction",
+      "Duodenum"
+    ],
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: The fundus/body of the stomach has shallow gastric pits (occupying the upper 1/4 of mucosal depth) leading into long, straight, tubular gastric glands containing abundant acidophilic, fried-egg shaped parietal (oxyntic) cells in the neck/isthmus and basophilic chief (zymogenic) cells at the base.",
+    "keyConcept": "Gastric fundus: Shallow gastric pits (<25% depth) and long tubular glands packed with parietal and chief cells.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q93_8737554571.webp",
+      "caption": "Histology Spotter — Part 2, Station 93"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2094",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is cell 2?",
+    "options": [
+      "Kupffer cell",
+      "Hepatic stellate cell (Ito cell)",
+      "Endothelial cell",
+      "Hepatocyte"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Kupffer cells are resident hepatic macrophages derived from monocytes, anchored to the luminal surface of endothelial cells within the hepatic sinusoids. They exhibit irregular cytoplasmic processes, phagocytic vacuoles, lysosomes, and phagocytosed erythrocytes and hemosiderin pigment.",
+    "keyConcept": "Kupffer cells: Resident sinusoidal macrophages anchored within hepatic sinusoid lumens.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q94_633c1681db.webp",
+      "caption": "Histology Spotter — Part 2, Station 94"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2095",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is cell 1?",
+    "options": [
+      "Kupffer cell",
+      "Endothelial cell",
+      "Ito cell",
+      "Hepatocyte"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Kupffer cells are resident hepatic macrophages derived from monocytes, anchored to the luminal surface of endothelial cells within the hepatic sinusoids. They exhibit irregular cytoplasmic processes, phagocytic vacuoles, lysosomes, and phagocytosed erythrocytes and hemosiderin pigment.",
+    "keyConcept": "Kupffer cells: Resident sinusoidal macrophages anchored within hepatic sinusoid lumens.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q95_2833b1a49e.webp",
+      "caption": "Histology Spotter — Part 2, Station 95"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2096",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "What is structure 3?",
+    "options": [
+      "SER",
+      "Golgi apparatus",
+      "RER",
+      "Nucleus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: Histological feature correctly identified: SER based on cellular and tissue characteristics.",
+    "keyConcept": "Histological identification: SER.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q96_98bc13e147.webp",
+      "caption": "Histology Spotter — Part 2, Station 96"
+    }
+  },
+  {
+    "id": "MGL3-PRAC-HIST-2097",
+    "type": "mcq",
+    "lecture": 2,
+    "text": "Identify the cell shown in this TEM photo.",
+    "options": [
+      "Parietal cell",
+      "Enteroendocrine cell (closed type)",
+      "Enteroendocrine cell (open type)",
+      "Goblet cell"
+    ],
+    "correctIndex": 0,
+    "explanation": "Criteria of Identification: On transmission electron microscopy (TEM), parietal (oxyntic) cells are characterized pathognomonically by deep, branching intracellular secretory canaliculi lined by microvilli, an extensive tubulovesicular membrane system in the apical cytoplasm, and a vast abundance of large mitochondria packed with cristae to power H+/K+ ATPase pumps.",
+    "keyConcept": "Parietal cell TEM: Deep intracellular canaliculi, tubulovesicular system, and massive mitochondrial density.",
+    "media": {
+      "type": "image",
+      "imageUrl": "/images/practical/mgl-3/histology/histo2_q97_26e31beed8.webp",
+      "caption": "Histology Spotter — Part 2, Station 97"
+    }
+  }
+]

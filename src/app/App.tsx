@@ -225,7 +225,7 @@ function QuizFlowWrapper({
       }
     }
     if (mode) {
-      setStudyMode(mode as 'mcq' | 'essay' | 'mixed');
+      setStudyMode(mode as 'mcq' | 'essay' | 'mixed' | 'practical');
     }
     if (screen !== 'chapters' && screen !== 'subjects' && screen !== 'quiz' && screen !== 'results') {
       setScreen('chapters');
