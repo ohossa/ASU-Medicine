@@ -1,0 +1,56 @@
+{
+  "1004360739": {
+    "index": 60,
+    "target": "Gastroschisis",
+    "explanation": "Criteria of Identification: Full-thickness abdominal wall defect located immediately lateral (typically right) to the intact umbilical cord insertion, through which bowel loops herniate freely without a covering peritoneal or amniotic sac.",
+    "keyConcept": "Gastroschisis is a congenital abdominal wall defect caused by failure of lateral abdominal fold fusion or vascular disruption, leaving herniated viscera exposed directly to amniotic fluid without an enclosing membrane."
+  },
+  "1370262847": {
+    "index": 61,
+    "target": "Omphalocele",
+    "explanation": "Criteria of Identification: Midline anterior abdominal wall defect at the base of the umbilical ring, where herniated abdominal contents are enclosed within a translucent membranous sac of peritoneum and amnion with the umbilical cord inserting at its apex.",
+    "keyConcept": "Omphalocele occurs when midgut loops fail to return from the physiological umbilical hernia during the 10th-11th gestational week; unlike gastroschisis, it is midline, covered by a peritoneal-amniotic sac, and strongly associated with karyotypic and cardiac anomalies."
+  },
+  "1069317710": {
+    "index": 62,
+    "target": "Imperforate anus",
+    "explanation": "Criteria of Identification: Absence of a patent anal orifice at the anatomical perineal verge, with smooth or dimpled skin overlying the expected anal region.",
+    "keyConcept": "Imperforate anus (anorectal malformation) results from failure of the anal membrane to perforate or abnormal development/partitioning of the embryonic cloaca and urorectal septum."
+  },
+  "1179411942": {
+    "index": 63,
+    "target": "Recto-urethral fistula",
+    "explanation": "Criteria of Identification: Sagittal section of the male pelvis demonstrating a persistent fistulous communication connecting the blind-ending terminal rectum to the posterior aspect of the prostatic urethra, with an imperforate perineal anus.",
+    "keyConcept": "Rectourethral fistula is the most common anorectal malformation in males, occurring due to incomplete caudal division of the cloaca by the urorectal septum, leading to meconium-stained urine."
+  },
+  "1555906724": {
+    "index": 64,
+    "target": "Recto-vagainal fistula",
+    "explanation": "Criteria of Identification: Sagittal section of the female pelvis demonstrating a fistulous communication between the anterior wall of the terminal rectum and the posterior wall of the vagina, accompanied by an imperforate anus.",
+    "keyConcept": "Rectovaginal fistula develops when the urorectal septum fails to completely partition the cloaca between the rectum and the developing uterovaginal canal, allowing meconium and feces to pass through the vaginal introitus."
+  },
+  "1038875922": {
+    "index": 65,
+    "target": "Recto-vesical fistula",
+    "explanation": "Criteria of Identification: Sagittal pelvic section demonstrating a high anorectal defect where a persistent fistulous tract connects the rectum directly into the base/posterior wall of the urinary bladder (above the prostate), with an imperforate perineal anus.",
+    "keyConcept": "Rectovesical fistula is a high-type anorectal malformation resulting from early arrest of the urorectal septum's descent, creating direct communication between the hindgut and the urinary bladder cavity."
+  },
+  "1347171890": {
+    "index": 66,
+    "target": "Double Gall bladder",
+    "explanation": "Criteria of Identification: Diagram of the biliary apparatus demonstrating a duplicated/bifurcated gallbladder containing two distinct gallbladder bodies/lumens arising from the cystic duct.",
+    "keyConcept": "Double gallbladder (vesica fellea duplex) is a congenital anatomical variant caused by premature bifurcated branching or supernumerary budding of the cystic diverticulum from the common bile duct."
+  },
+  "402002475": {
+    "index": 67,
+    "target": "Bile duct obliterated",
+    "explanation": "Criteria of Identification: Biliary tract diagram showing severe narrowing and fibrous cord obliteration of the common bile duct terminating toward the second part of the duodenum.",
+    "keyConcept": "Obliteration of the bile duct (extrahepatic biliary atresia) results from failure of the embryonic biliary cords to recanalize or progressive perinatal inflammatory fibrosis, causing persistent neonatal cholestasis, acholic stools, and dark urine."
+  },
+  "1494007233": {
+    "index": 68,
+    "target": "Doudenal atresia",
+    "explanation": "Criteria of Identification: Gastroduodenal diagram showing complete luminal occlusion (atresia) of the duodenum with marked compensatory dilation of the proximal duodenal bulb and stomach.",
+    "keyConcept": "Duodenal atresia arises from failure of the solid-stage duodenal lumen to recanalize during the 8th to 10th weeks of gestation; classically produces neonatal bilious vomiting and the radiologic 'double-bubble' sign, and is strongly associated with Down syndrome (Trisomy 21)."
+  }
+}

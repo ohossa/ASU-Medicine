@@ -1,0 +1,122 @@
+{
+  "270736732": {
+    "index": 4,
+    "target": "RT gastric Artery",
+    "explanation": "Criteria of Identification: Arises from the hepatic artery (proper or common) and descends to the pyloric end of the stomach, running from right to left along the lesser curvature within the lesser omentum to anastomose with the left gastric artery.",
+    "keyConcept": "The lesser curvature of the stomach is supplied by an arterial arcade formed by the right gastric artery (from hepatic artery proper/common) and left gastric artery (from celiac trunk) within the hepatogastric ligament."
+  },
+  "1629021938": {
+    "index": 2,
+    "target": "Splenic vein",
+    "explanation": "Criteria of Identification: Large horizontal vein formed at the splenic hilum, coursing to the right behind the body and tail of the pancreas and stomach, receiving the short gastric, left gastroepiploic, and inferior mesenteric veins before uniting with the SMV.",
+    "keyConcept": "The splenic vein runs in the retroperitoneal groove behind the pancreas and joins the superior mesenteric vein behind the neck of the pancreas to form the hepatic portal vein."
+  },
+  "1107970220": {
+    "index": 4,
+    "target": "LT gastric vein",
+    "explanation": "Criteria of Identification: Runs along the lesser curvature of the stomach within the lesser omentum from left to right, receiving esophageal tributaries and draining directly into the portal vein.",
+    "keyConcept": "The left gastric (coronary) vein is a major tributary of the portal vein and forms a crucial portosystemic anastomosis with the esophageal branches of the azygos vein, dilating into esophageal varices in portal hypertension."
+  },
+  "1845780813": {
+    "index": 1,
+    "target": "Inferior mesentric vein",
+    "explanation": "Criteria of Identification: Ascends vertically in the retroperitoneum on the left side of the posterior abdominal wall, draining blood from the rectum, sigmoid colon, and descending colon, typically terminating in the splenic vein behind the pancreatic body.",
+    "keyConcept": "The inferior mesenteric vein (IMV) drains hindgut derivatives and typically empties into the splenic vein (or occasionally into the SMV or splenomesenteric junction)."
+  },
+  "1750588237": {
+    "index": 4,
+    "target": "Superior mesentric vein",
+    "explanation": "Criteria of Identification: Large vertical vein ascending in the root of the mesentery to the right of the superior mesenteric artery, passing anterior to the 3rd (horizontal) part of the duodenum and uncinate process of the pancreas to join the splenic vein.",
+    "keyConcept": "The superior mesenteric vein (SMV) drains midgut structures (small intestine, cecum, ascending colon, and transverse colon) and unites with the splenic vein behind the neck of the pancreas to form the hepatic portal vein."
+  },
+  "785425847": {
+    "index": 1,
+    "target": "Portal vein",
+    "explanation": "Criteria of Identification: Formed behind the neck of the pancreas by the confluence of the splenic and superior mesenteric veins; ascends obliquely to the right within the hepatoduodenal ligament of the lesser omentum posterior to the proper hepatic artery and common bile duct.",
+    "keyConcept": "The hepatic portal vein is formed at the L1-L2 level behind the neck of the pancreas; within the free margin of the lesser omentum, it lies posterior to the proper hepatic artery (left) and common bile duct (right)."
+  },
+  "430215715": {
+    "index": 2,
+    "target": "Inferior mesentric artery",
+    "explanation": "Criteria of Identification: Arises from the anterior aspect of the abdominal aorta approximately 3-4 cm above the aortic bifurcation at vertebral level L3, giving origin to the left colic artery, sigmoid arteries, and terminating as the superior rectal artery.",
+    "keyConcept": "The inferior mesenteric artery (IMA) is the artery of the hindgut; it originates at L3 behind the third part of the duodenum and supplies the distal third of the transverse colon, descending colon, sigmoid colon, and proximal rectum."
+  },
+  "1944693534": {
+    "index": 4,
+    "target": "Left colic artery",
+    "explanation": "Criteria of Identification: First branch of the inferior mesenteric artery, coursing retroperitoneally upward and to the left across the psoas major and gonadal vessels before dividing into ascending and descending branches.",
+    "keyConcept": "The left colic artery is the primary branch of the IMA supplying the descending colon and splenic flexure, dividing into an ascending branch (which anastomoses with the middle colic artery) and a descending branch."
+  },
+  "1678279141": {
+    "index": 2,
+    "target": "Ascending branch of left colic",
+    "explanation": "Criteria of Identification: Branch of the left colic artery running vertically upward toward the splenic flexure and left portion of the transverse colon to anastomose with the middle colic artery, contributing to the marginal artery of Drummond.",
+    "keyConcept": "The ascending branch of the left colic artery provides blood supply to the splenic flexure and anastomoses with the left branch of the middle colic artery, completing the marginal artery (arc of Riolan / Drummond's marginal artery)."
+  },
+  "1543457600": {
+    "index": 4,
+    "target": "Descending branch of left colic",
+    "explanation": "Criteria of Identification: Lower division of the left colic artery running downward toward the descending colon to anastomose with the highest sigmoid artery along the mesenteric border.",
+    "keyConcept": "The descending branch of the left colic artery supplies the descending colon and anastomoses inferiorly with the superior sigmoid artery, sustaining the continuous marginal artery arcade along the hindgut."
+  },
+  "112879593": {
+    "index": 3,
+    "target": "Sigmoid artery",
+    "explanation": "Criteria of Identification: Two to four branches arising from the inferior mesenteric artery that descend obliquely to the left across the psoas major and enter the sigmoid mesocolon to supply the sigmoid colon.",
+    "keyConcept": "The sigmoid arteries enter the sigmoid mesocolon to supply the pelvic/sigmoid colon, forming arterial arcades that anastomose with the left colic artery above and superior rectal artery below."
+  },
+  "1162269875": {
+    "index": 3,
+    "target": "Superior rectal artery",
+    "explanation": "Criteria of Identification: Direct continuation of the inferior mesenteric artery as it crosses the left common iliac vessels to descend into the pelvic cavity within the root of the sigmoid mesocolon/mesorectum.",
+    "keyConcept": "The superior rectal (superior hemorrhoidal) artery is the terminal continuation of the inferior mesenteric artery; it bifurcates around S3 to supply the upper rectum down to the pectinate line."
+  },
+  "1668800335": {
+    "index": 6,
+    "target": "Gall bladder",
+    "explanation": "Criteria of Identification: Pear-shaped sac lodged in the gallbladder fossa on the visceral surface of the right lobe of the liver, consisting of a fundus, body, infundibulum, and neck.",
+    "keyConcept": "The gallbladder stores and concentrates bile produced by the liver; its fundus projects beyond the inferior border of the liver at the tip of the right 9th costal cartilage (Murphy's point)."
+  },
+  "1635220697": {
+    "index": 4,
+    "target": "Cystic duct",
+    "explanation": "Criteria of Identification: Convoluted duct approximately 3-4 cm long connecting the neck of the gallbladder to the common hepatic duct, containing internal mucosal folds known as the spiral valves of Heister.",
+    "keyConcept": "The cystic duct connects the gallbladder to the common hepatic duct to form the common bile duct; it forms the inferior boundary of the cystohepatic triangle of Calot."
+  },
+  "657548325": {
+    "index": 0,
+    "target": "RT hepatic duct",
+    "explanation": "Criteria of Identification: Duct exiting the right lobe of the liver at the porta hepatis on the anatomical right side of the biliary bifurcation, uniting with the left hepatic duct to form the common hepatic duct.",
+    "keyConcept": "The right hepatic duct drains bile from anatomical segments V, VI, VII, and VIII of the right functional liver and joins the left hepatic duct at the porta hepatis."
+  },
+  "1121731789": {
+    "index": 6,
+    "target": "LT hepatic duct",
+    "explanation": "Criteria of Identification: Duct emerging from the porta hepatis on the anatomical left side, draining the left functional liver (segments II, III, IV) and joining the right hepatic duct to form the common hepatic duct.",
+    "keyConcept": "The left hepatic duct drains segments II, III, and IV (and part of I); it has a longer extrahepatic course than the right hepatic duct before they merge to form the common hepatic duct."
+  },
+  "2068083452": {
+    "index": 0,
+    "target": "Common hepatic duct",
+    "explanation": "Criteria of Identification: Formed at the porta hepatis by the convergence of the right and left hepatic ducts; descends approximately 4 cm within the hepatoduodenal ligament before receiving the cystic duct.",
+    "keyConcept": "The common hepatic duct descends within the free edge of the lesser omentum to the right of the proper hepatic artery and anterior to the portal vein, joining the cystic duct to form the common bile duct."
+  },
+  "826220002": {
+    "index": 3,
+    "target": "Common bile duct",
+    "explanation": "Criteria of Identification: Main extrahepatic biliary channel formed by the confluence of the common hepatic duct and cystic duct; descends behind the first part of the duodenum and head of the pancreas to enter the second part of the duodenum.",
+    "keyConcept": "The common bile duct passes through supraduodenal, retroduodenal, infraduodenal, and intraduodenal portions, entering the second part of the duodenum at the major duodenal papilla via the ampulla of Vater."
+  },
+  "820969191": {
+    "index": 0,
+    "target": "Main pancreatic duct",
+    "explanation": "Criteria of Identification: Extends horizontally through the pancreas from tail to head, joining the terminal part of the common bile duct at the hepatopancreatic ampulla (ampulla of Vater) in the wall of the descending duodenum.",
+    "keyConcept": "The main pancreatic duct (duct of Wirsung) joins the common bile duct at the hepatopancreatic ampulla of Vater, which is guarded by the sphincter of Oddi and opens at the major duodenal papilla in the medial wall of the second part of the duodenum."
+  },
+  "1215375314": {
+    "index": 3,
+    "target": "All of above",
+    "explanation": "Criteria of Identification: The quadrate lobe of the liver is related on its visceral surface from superior to inferior to: the lesser omentum (L, most superior), pylorus and first part of the duodenum (P, middle), and transverse colon (T, most inferior), forming the classic mnemonic 'L-P-T'.",
+    "keyConcept": "The quadrate lobe of the liver lies on the visceral surface bounded by the gallbladder fossa on the right, fissure for ligamentum teres on the left, and porta hepatis superiorly; its visceral relations from superior to inferior follow the mnemonic 'L-P-T' (Lesser omentum, Pylorus/1st part duodenum, Transverse colon)."
+  }
+}

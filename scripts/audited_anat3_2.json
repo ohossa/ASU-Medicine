@@ -1,0 +1,122 @@
+{
+  "1528016831": {
+    "index": 1,
+    "target": "Renal impression",
+    "explanation": "Criteria of Identification: Concave impression located on the visceral surface of the spleen inferior and posterior to the splenic hilum, separated from the gastric impression by the intermediate border. It accommodates the anterior surface of the upper pole of the left kidney and left suprarenal gland.",
+    "keyConcept": "Splenic visceral impressions: The renal impression lies below and behind the hilum (related to the left kidney), whereas the gastric impression lies above and anterior to the hilum."
+  },
+  "219395922": {
+    "index": 2,
+    "target": "Colic impression",
+    "explanation": "Criteria of Identification: Flat, triangular impression situated at the anterior (expanded) end/lateral extremity of the visceral surface of the spleen, bounded by the anterior pole, inferior border, and the splenic hilum. It rests directly upon the left colic (splenic) flexure and the phrenicocolic ligament.",
+    "keyConcept": "Colic impression of spleen: Located at the anterior pole/angle, resting on the left colic flexure and supported by the phrenicocolic ligament (sustentaculum lienis)."
+  },
+  "1127052004": {
+    "index": 3,
+    "target": "Pancreatic impression",
+    "explanation": "Criteria of Identification: Small, smooth facet located on the visceral surface of the spleen between the lower part of the splenic hilum and the colic impression. It makes direct contact with the tail of the pancreas within the lienorenal (splenorenal) ligament.",
+    "keyConcept": "Pancreatic impression of spleen: Positioned between the lower end of the hilum and the colic impression, accommodating the tail of the pancreas which enters the splenorenal ligament."
+  },
+  "753616402": {
+    "index": 0,
+    "target": "Spleen related to 9th, 10th & 11th left ribs",
+    "explanation": "Criteria of Identification: The smooth, convex diaphragmatic surface of the spleen faces posterolaterally and superiorly, molded to the abdominal surface of the diaphragm. It is related through the diaphragm and left costodiaphragmatic recess of the pleura to the shafts of the 9th, 10th, and 11th left ribs, with its long axis oriented parallel to the 10th rib.",
+    "keyConcept": "Surface anatomy of spleen: Lies in the left hypochondrium underlying the 9th, 10th, and 11th ribs, separated from them by the diaphragm and costodiaphragmatic pleural recess; rib fractures here pose high risk of splenic rupture."
+  },
+  "1133005640": {
+    "index": 3,
+    "target": "Superior mesentric vessels (S.M.A & S.M.V)",
+    "explanation": "Criteria of Identification: Paired major vascular channels (artery and vein) emerging from beneath the lower border of the neck of the pancreas and crossing anterior to the uncinate process of the pancreas and the third (horizontal) part of the duodenum before descending into the root of the mesentery.",
+    "keyConcept": "Superior mesenteric vessels (SMA & SMV): Emerge below the pancreatic neck, cross anterior to the uncinate process and 3rd part of the duodenum; compression can cause superior mesenteric artery (Wilkie's) syndrome."
+  },
+  "16817864": {
+    "index": 3,
+    "target": "Superior mesentric Artery",
+    "explanation": "Criteria of Identification: Main arterial trunk arising from the anterior aspect of the abdominal aorta at L1 (approx. 1 cm below the celiac trunk). It passes posterior to the neck of the pancreas, anterior to the uncinate process and 3rd part of the duodenum, and enters the root of the mesentery, coursing downward and to the right toward the right iliac fossa.",
+    "keyConcept": "Superior mesenteric artery (SMA): Originates at L1, passes over the uncinate process and 3rd part of duodenum, supplies midgut derivatives from major duodenal papilla to proximal two-thirds of transverse colon."
+  },
+  "1292311517": {
+    "index": 1,
+    "target": "Superior mesentric Artery",
+    "explanation": "Criteria of Identification: Main trunk of the superior mesenteric artery (labeled D) coursing obliquely downward and to the right in the mesentery root, giving off colic branches from its right/concave side and multiple intestinal (jejunal and ileal) branches from its left/convex side.",
+    "keyConcept": "SMA arborization: The main trunk gives colic branches (middle colic, right colic, ileocolic) from its right side and intestinal branches (jejunal and ileal) from its left side."
+  },
+  "485781016": {
+    "index": 2,
+    "target": "Middle colic artery",
+    "explanation": "Criteria of Identification: Arises from the anterior/right aspect of the SMA just below the neck of the pancreas (labeled A). It enters the transverse mesocolon, coursing upward and forward, and divides into right and left branches to supply the transverse colon and anastomose with the right colic and left colic arteries.",
+    "keyConcept": "Middle colic artery: First colic branch of the SMA, travels within the transverse mesocolon to supply the proximal two-thirds of the transverse colon, forming an anastomosis contributing to the marginal artery of Drummond."
+  },
+  "683380237": {
+    "index": 3,
+    "target": "RT colic artery",
+    "explanation": "Criteria of Identification: Arises from the right side of the SMA (labeled B) or via a common trunk with the ileocolic artery. It courses retroperitoneally to the right across the posterior abdominal wall, passing in front of the testicular/ovarian vessels, right ureter, and psoas major to reach and supply the ascending colon.",
+    "keyConcept": "Right colic artery: Arises from the right side of the SMA, courses retroperitoneally to supply the ascending colon, dividing into ascending (anastomosing with middle colic) and descending (anastomosing with ileocolic) branches."
+  },
+  "415190429": {
+    "index": 2,
+    "target": "Ilio-colic artery",
+    "explanation": "Criteria of Identification: Lowest branch arising from the right concave side of the SMA (labeled C). It courses downward and laterally toward the right iliac fossa across the right ureter and psoas major, terminating near the ileocecal junction into superior (colic) and inferior branches (ileal, anterior and posterior cecal, and appendicular artery).",
+    "keyConcept": "Ileocolic artery: Lowest right branch of the SMA, supplies the terminal ileum, cecum, appendix (via appendicular artery), and proximal ascending colon."
+  },
+  "1958092880": {
+    "index": 3,
+    "target": "Ileal branches",
+    "explanation": "Criteria of Identification: Distal intestinal branches (labeled B) arising from the left convex side of the SMA supplying the ileum. They are anatomically characterized by forming multiple tiered vascular arcades (3 to 5 cascades) with very short, numerous straight terminal vessels (vasa recta) and abundant mesenteric fat extending up to the intestinal wall.",
+    "keyConcept": "Ileal arterial arcade architecture: Characterized by complex multi-tiered arterial arcades (3-5 cascades) and short, closely spaced vasa recta, distinguished from jejunal branches."
+  },
+  "1652534535": {
+    "index": 3,
+    "target": "Jejunal branches",
+    "explanation": "Criteria of Identification: Proximal intestinal branches (labeled C) arising from the upper part of the left convex border of the SMA heading toward the jejunum in the upper left quadrant. They are anatomically characterized by 1 or 2 simple arterial arcades giving rise to long, tall, straight terminal vessels (vasa recta) with minimal mesenteric fat creating translucent peritoneal 'windows'.",
+    "keyConcept": "Jejunal arterial arcade architecture: Features 1-2 simple arcades with long, widely spaced straight arteries (vasa recta) and clear mesenteric windows, contrasted with the multiple arcades and short vasa recta of the ileum."
+  },
+  "780279330": {
+    "index": 1,
+    "target": "Celiac Trunk",
+    "explanation": "Criteria of Identification: Short, wide arterial stump (approx. 1.25 cm long) originating directly from the anterior aspect of the abdominal aorta immediately below the aortic hiatus of the diaphragm at the level of the T12/L1 vertebral junction. It rapidly trifurcates into the left gastric, splenic, and common hepatic arteries to supply the embryological foregut.",
+    "keyConcept": "Celiac trunk: Originates from the abdominal aorta at T12, supplies foregut derivatives via its 3 classic branches: left gastric artery, splenic artery, and common hepatic artery."
+  },
+  "867491223": {
+    "index": 3,
+    "target": "LT gastric Artery",
+    "explanation": "Criteria of Identification: Smallest branch of the celiac trunk that ascends obliquely upward and to the left toward the abdominal esophagus and cardiac orifice of the stomach within the gastropancreatic fold. It gives esophageal branches and arches downward along the lesser curvature of the stomach within the lesser omentum to anastomose with the right gastric artery.",
+    "keyConcept": "Left gastric artery: Smallest celiac branch, runs in the lesser omentum along the lesser curvature, supplying the lower esophagus and cardiac/body region of the stomach."
+  },
+  "1050035602": {
+    "index": 3,
+    "target": "Splenic artery",
+    "explanation": "Criteria of Identification: Largest and most tortuous branch of the celiac trunk. It courses horizontally to the left along the superior border of the body and tail of the pancreas, in the floor of the lesser sac (stomach bed), and passes within the splenorenal ligament to enter the splenic hilum, giving pancreatic branches, short gastric arteries, and the left gastroepiploic artery.",
+    "keyConcept": "Splenic artery: Highly tortuous branch coursing along the upper border of the pancreas in the splenorenal ligament; gives short gastric arteries (fundus) and left gastroepiploic artery."
+  },
+  "376199324": {
+    "index": 3,
+    "target": "RT gastric Artery",
+    "explanation": "Criteria of Identification: Arises from the hepatic artery proper (or common hepatic) near the pylorus. It descends to the pyloric end of the stomach and courses from right to left along the lesser curvature within the lesser omentum, supplying both surfaces of the antrum and lesser curvature and anastomosing with the left gastric artery.",
+    "keyConcept": "Right gastric artery: Arises from the hepatic proper artery (or common hepatic), courses along the lesser curvature to anastomose with the left gastric artery."
+  },
+  "1291733442": {
+    "index": 0,
+    "target": "LT gastroepiploic artery",
+    "explanation": "Criteria of Identification: Arises from the splenic artery near the splenic hilum, traverses the gastrosplenic ligament to reach the greater curvature of the stomach, and runs from left to right between the anterior two layers of the greater omentum, supplying the gastric wall and omentum and anastomosing with the right gastroepiploic artery.",
+    "keyConcept": "Left gastroepiploic (gastro-omental) artery: Originates from the splenic artery within the gastrosplenic ligament and courses along the greater curvature to anastomose with the right gastroepiploic artery."
+  },
+  "291623739": {
+    "index": 1,
+    "target": "Right gastroepiploic artery",
+    "explanation": "Criteria of Identification: Arises as a terminal branch of the gastroduodenal artery behind the first part of the duodenum. It passes along the greater curvature of the stomach from right to left between the anterior layers of the greater omentum, giving branches to the stomach walls and greater omentum before anastomosing with the left gastroepiploic artery.",
+    "keyConcept": "Right gastroepiploic (gastro-omental) artery: Terminal branch of the gastroduodenal artery running along the greater curvature, forming an omental arc with the left gastroepiploic artery."
+  },
+  "1571415939": {
+    "index": 0,
+    "target": "hepatic Proper Artery",
+    "explanation": "Criteria of Identification: Continuation of the common hepatic artery beyond the origin of the gastroduodenal artery. It ascends within the free margin of the lesser omentum (hepatoduodenal ligament) anterior to the portal vein and to the left of the common bile duct, terminating near the porta hepatis by dividing into right and left hepatic arteries.",
+    "keyConcept": "Proper hepatic artery: Ascends in the free edge of the lesser omentum (portal triad: artery left, bile duct right, portal vein posterior) to supply the liver and gallbladder."
+  },
+  "274623353": {
+    "index": 1,
+    "target": "Common hepatic artery",
+    "explanation": "Criteria of Identification: Intermediate-sized branch of the celiac trunk running forward and to the right retroperitoneally along the superior border of the head of the pancreas and across the crus of the diaphragm and IVC. At the upper border of the first part of the duodenum, it terminates by dividing into the gastroduodenal artery and the hepatic artery proper.",
+    "keyConcept": "Common hepatic artery: Courses rightward along the upper border of the pancreatic head to bifurcate into gastroduodenal and proper hepatic arteries."
+  }
+}

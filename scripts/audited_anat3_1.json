@@ -1,0 +1,122 @@
+{
+  "569864277": {
+    "index": 0,
+    "target": "Anatomical Un-equal lobes",
+    "explanation": "Criteria of Identification: The falciform ligament is a double-layered sickle-shaped peritoneal fold attaching the diaphragmatic surface of the liver to the anterior abdominal wall and diaphragm. Morphologically and anatomically, its attachment divides the liver into two unequal lobes: a large anatomical right lobe (approx. 5/6 of liver mass) and a smaller anatomical left lobe (approx. 1/6).",
+    "keyConcept": "Anatomical vs. functional liver lobes: The falciform ligament anatomically divides the liver into unequal right and left lobes, whereas Cantlie's line physiologically divides it into two roughly equal functional halves."
+  },
+  "711636671": {
+    "index": 0,
+    "target": "Functional equal lobes",
+    "explanation": "Criteria of Identification: The highlighted plane represents Cantlie's line (principal plane of the liver), which courses obliquely from the gallbladder fossa on the visceral surface to the left border of the inferior vena cava. This plane divides the liver into right and left functional (physiological) lobes of approximately equal parenchymal volume.",
+    "keyConcept": "Functional lobes of liver: Demarcated by Cantlie's line from the IVC groove to the gallbladder fossa; splits the liver into two functionally equal halves based on independent hepatic arterial, portal venous, and biliary distributions."
+  },
+  "2093430736": {
+    "index": 2,
+    "target": "Bare area",
+    "explanation": "Criteria of Identification: Large triangular non-peritoneal area located on the posterior surface of the right anatomical lobe of the liver. It is delimited superiorly by the superior layer of the coronary ligament, inferiorly by the inferior layer of the coronary ligament, laterally by the right triangular ligament, and medially by the groove for the inferior vena cava.",
+    "keyConcept": "Bare area of the liver: Direct non-peritoneal contact zone between the liver and diaphragm; forms important retroperitoneal portosystemic venous communications and is enclosed by the coronary ligaments."
+  },
+  "59409639": {
+    "index": 2,
+    "target": "Papillary process",
+    "explanation": "Criteria of Identification: Distinct rounded or nipple-like projection (processus papillaris) extending from the inferior and left aspect of the caudate lobe of the liver. It projects downward and medially into the superior recess of the omental bursa (lesser sac), just behind the porta hepatis and to the right of the fissure for ligamentum venosum.",
+    "keyConcept": "Papillary process of caudate lobe: Small rounded nodule projecting from the lower left border of the caudate lobe into the omental bursa, adjacent to the porta hepatis."
+  },
+  "1607087802": {
+    "index": 1,
+    "target": "Caudate process",
+    "explanation": "Criteria of Identification: Narrow transverse ridge of hepatic parenchyma connecting the lower right corner of the caudate lobe to the visceral surface of the anatomical right lobe. It courses between the porta hepatis anteriorly and the groove for the inferior vena cava posteriorly, directly forming the superior margin (roof) of the epiploic foramen of Winslow.",
+    "keyConcept": "Caudate process: Narrow parenchymal bridge linking the caudate lobe to the right lobe between the IVC and porta hepatis; serves as the roof of the epiploic foramen."
+  },
+  "668874558": {
+    "index": 3,
+    "target": "RT Supra-renal (supra-renal impression)",
+    "explanation": "Criteria of Identification: Triangular depressed area situated on the bare area of the posterior aspect of the right lobe of the liver, positioned immediately adjacent to the right margin of the inferior vena cava and superior to the renal impression. It directly accommodates the right suprarenal gland without peritoneal intervention.",
+    "keyConcept": "Right suprarenal impression: Located on the bare area of the liver directly to the right of the IVC groove; lacks peritoneal lining and rests in direct apposition with the right suprarenal gland."
+  },
+  "266873191": {
+    "index": 3,
+    "target": "RT Kidney (Renal impression)",
+    "explanation": "Criteria of Identification: Broad, deep, smooth concave impression occupying the upper and posterior portion of the visceral surface of the right hepatic lobe. It is situated directly below the inferior layer of the coronary ligament and lateral to the duodenal impression, accommodating the upper half of the anterior surface of the right kidney.",
+    "keyConcept": "Renal impression of liver: The largest impression on the visceral surface of the right hepatic lobe, related to the right kidney and forming the anterior boundary of the hepatorenal recess (Morison's pouch)."
+  },
+  "1987736463": {
+    "index": 0,
+    "target": "2nd part Doudenom (doudenal impression)",
+    "explanation": "Criteria of Identification: Shallow impression on the visceral surface of the right lobe of the liver located immediately adjacent to the neck of the gallbladder and gallbladder fossa, medial to the renal impression and inferior to the caudate process. It directly contacts the descending (second) part of the duodenum.",
+    "keyConcept": "Duodenal impression on liver: Located on the right lobe between the gallbladder fossa and renal impression, in direct contact with the descending (2nd) part of the duodenum."
+  },
+  "2080488518": {
+    "index": 2,
+    "target": "Stomach body (Gastric impression)",
+    "explanation": "Criteria of Identification: Extensive, smooth, deep concavity occupying almost the entire visceral (inferior) surface of the anatomical left lobe of the liver. It lies anterior and to the left of the fissure for ligamentum venosum and is molded over the anterior wall of the body and fundus of the stomach.",
+    "keyConcept": "Gastric impression of liver: Covers the vast majority of the visceral surface of the left hepatic lobe, molded over the anterior aspect of the stomach body and fundus."
+  },
+  "688187323": {
+    "index": 4,
+    "target": "Esophagus (Esophageal impression)",
+    "explanation": "Criteria of Identification: Shallow groove situated on the posterosuperior aspect of the visceral surface of the left lobe of the liver, adjacent to the upper extremity of the fissure for the ligamentum venosum. It is produced by direct contact with the anterior surface of the abdominal segment of the esophagus.",
+    "keyConcept": "Esophageal impression: Notch-like groove on the visceral surface of the left lobe of the liver near the upper end of the fissure for ligamentum venosum, related to the abdominal esophagus."
+  },
+  "729033718": {
+    "index": 0,
+    "target": "RT colic flexure (Colic impression)",
+    "explanation": "Criteria of Identification: Flat, shallow impression situated at the anterior and inferior margin of the visceral surface of the right lobe of the liver, immediately behind the sharp inferior border and lateral to the gallbladder fossa. It directly accommodates the right colic (hepatic) flexure.",
+    "keyConcept": "Colic impression of liver: Occupies the anteroinferior territory of the right lobe's visceral surface, contacting the hepatic flexure where the ascending colon transitions into the transverse colon."
+  },
+  "1027213785": {
+    "index": 2,
+    "target": "Common hepatic duct",
+    "explanation": "Criteria of Identification: Extrahepatic biliary duct (labeled 1) formed within the porta hepatis by the confluence of the right and left hepatic ducts. It descends in the right free border of the lesser omentum (hepatoduodenal ligament) anterior to the portal vein until joined on its right lateral side by the cystic duct.",
+    "keyConcept": "Common hepatic duct: Formed by the union of right and left hepatic ducts, descends in the hepatoduodenal ligament, and joins the cystic duct to form the bile duct (common bile duct)."
+  },
+  "888835963": {
+    "index": 1,
+    "target": "Cystic duct",
+    "explanation": "Criteria of Identification: S-shaped extrahepatic biliary duct (labeled 2) measuring 3\u20134 cm in length, emerging from the neck of the gallbladder. It passes posteroinferiorly within the lesser omentum, containing mucosal spiral folds (valve of Heister), and joins the common hepatic duct at an acute angle.",
+    "keyConcept": "Cystic duct: Transports bile to and from the gallbladder; contains the spiral valve of Heister preventing duct collapse; forms the inferior boundary of the hepatobiliary triangle of Calot."
+  },
+  "591294741": {
+    "index": 3,
+    "target": "Bile duct",
+    "explanation": "Criteria of Identification: Main extrahepatic biliary channel (labeled 3) formed by the junction of the cystic duct and common hepatic duct. It descends within the free margin of the lesser omentum (supraduodenal part), passes behind the first part of the duodenum (retroduodenal part), and grooves the posterior head of the pancreas before entering the descending duodenum.",
+    "keyConcept": "Bile duct (ductus choledochus): Formed by the convergence of the common hepatic and cystic ducts; courses through supraduodenal, retroduodenal, and infraduodenal segments to terminate at the ampulla of Vater."
+  },
+  "1755936644": {
+    "index": 0,
+    "target": "Ampulla of vater",
+    "explanation": "Criteria of Identification: Dilated terminal hepatopancreatic confluence (labeled 4) formed by the union of the bile duct and the main pancreatic duct (of Wirsung). It pierces the posteromedial wall of the second (descending) part of the duodenum, surrounded by the sphincter of Oddi, and opens into the duodenal lumen at the major duodenal papilla.",
+    "keyConcept": "Hepatopancreatic ampulla (Ampulla of Vater): Shared terminal dilatation of the bile duct and main pancreatic duct entering the 2nd part of the duodenum; impaction of gallstones at this site can precipitate acute biliary pancreatitis."
+  },
+  "606378871": {
+    "index": 0,
+    "target": "Diaphragm (costal \"lateral\") surface",
+    "explanation": "Criteria of Identification: Broad, completely smooth, and convex surface of the spleen facing posterolaterally and superiorly. It is devoid of a hilum or visceral impressions and is molded against the abdominal surface of the diaphragm, which separates it from the left pleural cavity and ribs 9\u201311.",
+    "keyConcept": "Diaphragmatic surface of spleen: Smooth and convex, related via the diaphragm to the left costodiaphragmatic recess and shafts of the 9th, 10th, and 11th ribs."
+  },
+  "806316185": {
+    "index": 1,
+    "target": "Visceral surface",
+    "explanation": "Criteria of Identification: Irregular medial-facing surface of the spleen characterized by the long central splenic hilum transmitting the splenic vessels, and partitioned by distinct ridges into gastric, renal, colic, and pancreatic contact impressions.",
+    "keyConcept": "Visceral surface of spleen: Irregular and concave, contains the hilum transmitting the splenic artery and vein, and bears impressions for the stomach, left kidney, left colic flexure, and tail of the pancreas."
+  },
+  "14730604": {
+    "index": 1,
+    "target": "Anterior \"lateral\" end",
+    "explanation": "Criteria of Identification: Broad, expanded, flattened extremity of the spleen (extremitas anterior), directed anteroinferiorly and laterally. It is reliably recognized by its direct proximity to the splenic notch(es) on the sharp superior border, and on the visceral aspect it supports the colic impression resting upon the phrenicocolic ligament.",
+    "keyConcept": "Anterior (lateral) end of spleen: Expanded and border-like, directed downward and forward toward the left colic flexure; distinguished by its proximity to the notches on the superior border."
+  },
+  "1457684386": {
+    "index": 0,
+    "target": "Posterior \"medial\" end",
+    "explanation": "Criteria of Identification: Blunt, rounded, tapered pole of the spleen (extremitas posterior), directed posterosuperiorly and medially toward the vertebral column. It is smooth and rounded, situated well away from the splenic notches, and rests against the upper pole of the left kidney and left suprarenal gland.",
+    "keyConcept": "Posterior (medial) end of spleen: Rounded and blunt, directed medially and upward toward the vertebral column (level of T10), resting on the upper pole of the left kidney."
+  },
+  "1457776737": {
+    "index": 0,
+    "target": "Gastric impression",
+    "explanation": "Criteria of Identification: Large, smooth, concave impression (labeled 1) occupying the visceral surface of the spleen superior and anterior to the splenic hilum, bounded superiorly by the notched superior border. It accommodates the posterior wall of the gastric fundus and body.",
+    "keyConcept": "Gastric impression of spleen: Located above and anterior to the hilum, this is the largest visceral impression on the spleen and is directly related to the posterior wall of the stomach."
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "1580192893": {
+    "index": 80,
+    "target": "Common iliac Vein",
+    "explanation": "Criteria of Identification: Large venous channel situated in the lower lumbar and pelvic region, formed by the confluence of the external and internal iliac veins anterior to the sacroiliac joint. The left common iliac vein ascends obliquely medial to the left common iliac artery and crosses posterior to the right common iliac artery to unite with the right common iliac vein at L5, forming the inferior vena cava (IVC).",
+    "keyConcept": "Common iliac vein: Formed by internal and external iliac veins; the left common iliac vein crosses posterior to the right common iliac artery at L5 to join the IVC."
+  },
+  "1828671298": {
+    "index": 81,
+    "target": "Subcostal Nerve",
+    "explanation": "Criteria of Identification: Arises from the anterior ramus of the T12 thoracic spinal nerve. It enters the posterior abdominal wall behind the lateral arcuate ligament of the diaphragm and runs obliquely downward and laterally along the lower border of the 12th rib across the anterior surface of the quadratus lumborum muscle, superior to the iliohypogastric nerve.",
+    "keyConcept": "Subcostal nerve (T12): Descends below the 12th rib across the upper quadratus lumborum to innervate the anterior abdominal wall muscles and overlying skin."
+  },
+  "430200942": {
+    "index": 82,
+    "target": "Iliohypogastric Nerve",
+    "explanation": "Criteria of Identification: Arises from the anterior ramus of the L1 spinal nerve. It emerges from the upper lateral border of the psoas major muscle superior to the ilioinguinal nerve, crosses obliquely downward and laterally across the quadratus lumborum muscle toward the iliac crest, and pierces the transversus abdominis to supply hypogastric skin and lower abdominal wall muscles.",
+    "keyConcept": "Iliohypogastric nerve (L1): Emerges from the upper lateral border of psoas major above the ilioinguinal nerve, crossing quadratus lumborum to innervate suprapubic skin and abdominal muscles."
+  },
+  "889542493": {
+    "index": 83,
+    "target": "ilioinguinal Nerve",
+    "explanation": "Criteria of Identification: Arises from the anterior ramus of the L1 spinal nerve. It emerges from the lateral border of the psoas major muscle immediately inferior to the iliohypogastric nerve, traverses the quadratus lumborum and iliacus muscles near the iliac crest, enters the inguinal canal, and traverses the superficial inguinal ring to provide cutaneous sensation to the upper medial thigh and external genitalia.",
+    "keyConcept": "Ilioinguinal nerve (L1): Emerges from the lateral border of psoas major below the iliohypogastric nerve, traverses the inguinal canal, and exits through the superficial ring."
+  },
+  "1845138258": {
+    "index": 84,
+    "target": "Lateral cutaneous Nerve Of Thigh",
+    "explanation": "Criteria of Identification: Arises from the posterior divisions of the L2 and L3 anterior rami. It emerges from the lateral border of the psoas major muscle, courses obliquely downward and laterally across the iliacus muscle toward the anterior superior iliac spine (ASIS), and passes deep to the lateral end of the inguinal ligament to enter the anterolateral thigh.",
+    "keyConcept": "Lateral cutaneous nerve of thigh (L2\u2013L3): Crosses the iliacus muscle toward the ASIS and passes deep to the inguinal ligament; compression causes meralgia paresthetica."
+  },
+  "910801547": {
+    "index": 85,
+    "target": "Obturator Nerve",
+    "explanation": "Criteria of Identification: Arises from the anterior divisions of the L2, L3, and L4 anterior rami within the psoas major muscle. It is the sole branch of the lumbar plexus that emerges from the MEDIAL border of the psoas major muscle, crossing the pelvic brim into the lesser pelvis and heading through the obturator canal to supply the medial (adductor) compartment of the thigh.",
+    "keyConcept": "Obturator nerve (L2\u2013L4): The only lumbar plexus branch emerging from the medial border of psoas major; enters the obturator canal to innervate thigh adductors."
+  },
+  "769727181": {
+    "index": 86,
+    "target": "Femoral Nerve",
+    "explanation": "Criteria of Identification: The largest branch of the lumbar plexus, arising from the posterior divisions of the L2, L3, and L4 anterior rami. It emerges from the lower lateral border of the psoas major muscle and descends in the groove between the psoas major and iliacus muscles deep to the iliac fascia, passing behind the inguinal ligament lateral to the femoral artery into the femoral triangle.",
+    "keyConcept": "Femoral nerve (L2\u2013L4): Descends in the groove between psoas major and iliacus muscles, entering the femoral triangle lateral to the femoral sheath to supply anterior thigh muscles."
+  },
+  "1779650532": {
+    "index": 87,
+    "target": "Genitofemoral Nerve",
+    "explanation": "Criteria of Identification: Arises from the L1 and L2 anterior rami within the psoas major muscle. Its diagnostic anatomical hallmark is that it pierces the anterior surface of the psoas major muscle and descends vertically on its anterior fascia, dividing into genital (supplying cremaster muscle and scrotal/labial skin) and femoral branches.",
+    "keyConcept": "Genitofemoral nerve (L1\u2013L2): Pierces and runs on the anterior surface of psoas major; its genital branch supplies the cremaster muscle mediating the cremasteric reflex."
+  }
+}

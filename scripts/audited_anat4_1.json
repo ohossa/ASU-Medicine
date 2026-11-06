@@ -1,0 +1,122 @@
+{
+  "1407307297": {
+    "index": 20,
+    "target": "CT with barium enema",
+    "explanation": "Criteria of Identification: Plain radiograph / fluoroscopy showing complete retrograde filling and contrast opacification of the entire large intestine (rectum, sigmoid colon, descending colon, transverse colon, ascending colon, and caecum) via transrectal administration.",
+    "keyConcept": "A barium enema examination introduces radiopaque barium sulfate suspension through a rectal tube to outline the lumen, haustral mucosal pattern, and caliber of the entire large intestine."
+  },
+  "960183033": {
+    "index": 21,
+    "target": "Caecum",
+    "explanation": "Criteria of Identification: Label 1 indicates the large blind-ended sac of the large intestine situated in the right iliac fossa below the ileocecal junction, continuous superiorly with the ascending colon.",
+    "keyConcept": "The caecum is the widest segment of the colon, lying intraperitoneally in the right iliac fossa; all three teniae coli converge at the base of the vermiform appendix on its posteromedial wall."
+  },
+  "438148072": {
+    "index": 22,
+    "target": "Ascending colon",
+    "explanation": "Criteria of Identification: Label 3 indicates the vertical segment of the large intestine ascending through the right lumbar region along the right flank from the caecum to the right colic flexure.",
+    "keyConcept": "The ascending colon is secondarily retroperitoneal, covered anteriorly and on sides by peritoneum, and lies along the right paracolic gutter; it receives blood from the ileocolic and right colic arteries."
+  },
+  "1180130208": {
+    "index": 23,
+    "target": "Rt colic flexure",
+    "explanation": "Criteria of Identification: Label 4 indicates the right-angled junction situated in the right hypochondrium beneath the visceral surface of the liver, connecting the vertical ascending colon to the horizontal transverse colon.",
+    "keyConcept": "The right colic (hepatic) flexure lies lower and more anterior than the left colic flexure due to the overlying right lobe of the liver, and lies directly anterior to the lower pole of the right kidney."
+  },
+  "428066430": {
+    "index": 24,
+    "target": "Transverse colon",
+    "explanation": "Criteria of Identification: Label 5 indicates the long, arched segment of the large intestine traversing the abdomen from the right hypochondrium across the umbilical region to the left hypochondrium.",
+    "keyConcept": "The transverse colon is completely intraperitoneal and mobile, suspended by the transverse mesocolon; its proximal two-thirds derive from the midgut (middle colic artery) and its distal third from the hindgut (left colic artery)."
+  },
+  "1054580474": {
+    "index": 25,
+    "target": "Lt colic flexure",
+    "explanation": "Criteria of Identification: Label 6 indicates the sharp bend situated high in the left hypochondrium at the junction of the transverse and descending colon, positioned beneath the spleen and resting on the phrenicocolic ligament.",
+    "keyConcept": "The left colic (splenic) flexure is attached to the diaphragm by the phrenicocolic ligament (sustentaculum lienis); it lies higher and deeper than the right flexure and marks the watershed zone between SMA and IMA territories (Griffiths' point)."
+  },
+  "17841655": {
+    "index": 26,
+    "target": "Descending colon",
+    "explanation": "Criteria of Identification: Label 7 indicates the vertical segment of the large intestine descending through the left lumbar region along the lateral border of the left kidney and psoas major down to the pelvic brim.",
+    "keyConcept": "The descending colon is secondarily retroperitoneal and fixed to the posterior abdominal wall, medially bordering the left paracolic gutter and supplied by the left colic artery of the IMA."
+  },
+  "128673786": {
+    "index": 27,
+    "target": "Sigmoid colon",
+    "explanation": "Criteria of Identification: Label 8 indicates the S-shaped mobile loop of large intestine extending from the pelvic brim across the pelvic inlet to terminate at the level of the third sacral vertebra (S3).",
+    "keyConcept": "The sigmoid (pelvic) colon is freely mobile on its inverted V-shaped mesentery (sigmoid mesocolon); it is the most common site of colonic diverticula and volvulus."
+  },
+  "839713740": {
+    "index": 28,
+    "target": "Rectum",
+    "explanation": "Criteria of Identification: Label 9 indicates the fixed terminal pelvic segment of the large intestine lying in the sacral concavity from the level of S3 down to the pelvic diaphragm.",
+    "keyConcept": "The rectum commences at vertebral level S3 as a continuation of the sigmoid colon; it lacks haustra, teniae coli, and epiploic appendages, possessing a complete outer longitudinal muscular coat."
+  },
+  "1986396005": {
+    "index": 29,
+    "target": "Terminal ileum",
+    "explanation": "Criteria of Identification: Label 2 indicates the distal loop of small intestine ascending out of the pelvis to terminate into the posteromedial wall of the caecum at the ileocecal orifice.",
+    "keyConcept": "The terminal ileum enters the posteromedial aspect of the caecum at the ileocecal valve; it is characterized by prominent mucosal Peyer patches and is a common site for Crohn's disease and intussusception."
+  },
+  "1322300131": {
+    "index": 30,
+    "target": "Fundus",
+    "explanation": "Criteria of Identification: Label 1 indicates the dome-shaped superior portion of the stomach rising above the horizontal level of the cardiac notch, fitting under the left cupola of the diaphragm.",
+    "keyConcept": "The gastric fundus is the topmost curved part of the stomach above the cardiac orifice; on upright plain films, it contains swallowed air (the gastric air bubble or Magenblase) and is supplied by short gastric arteries from the splenic artery."
+  },
+  "1812568307": {
+    "index": 31,
+    "target": "Body",
+    "explanation": "Criteria of Identification: Label 2 indicates the large central vertical reservoir of the stomach bounded between the fundus above (horizontal plane through cardiac orifice) and the incisura angularis below.",
+    "keyConcept": "The body of the stomach makes up the largest anatomical region, lined by prominent rugae and containing gastric glands rich in parietal (acid-producing) and chief (pepsinogen-producing) cells."
+  },
+  "363661034": {
+    "index": 32,
+    "target": "Pyloric antrum",
+    "explanation": "Criteria of Identification: Label 3 indicates the wide, slightly dilated proximal chamber of the pyloric part of the stomach extending from the angular incisure (incisura angularis) to the pyloric canal.",
+    "keyConcept": "The pyloric antrum forms the broad proximal division of the pyloric region that grinds and mixes food; it contains gastrin-secreting G-cells and funnels chyme toward the pyloric canal."
+  },
+  "1358268332": {
+    "index": 33,
+    "target": "Pylorus",
+    "explanation": "Criteria of Identification: Label 4 indicates the narrow, constricted terminal muscular sphincter at the gastroduodenal junction marked by prominent circular muscle thickening at vertebral level L1.",
+    "keyConcept": "The pylorus is the distal anatomical sphincter of the stomach surrounded by a thickened ring of circular smooth muscle (pyloric sphincter) that controls gastric emptying into the duodenal bulb."
+  },
+  "494322615": {
+    "index": 34,
+    "target": "Doudenal cap (1st part doud)",
+    "explanation": "Criteria of Identification: Label 5 indicates the triangular/conical smooth-walled first 2.5 cm of the duodenum immediately distal to the pyloric sphincter, filled with a smooth bolus of barium contrast.",
+    "keyConcept": "The duodenal cap (bulb) is the intraperitoneal, mobile first part of the duodenum; lacking plicae circulares, it presents a characteristic smooth triangular appearance on barium meal and is the primary site of peptic ulcer disease."
+  },
+  "1005906006": {
+    "index": 35,
+    "target": "2nd part doudenom",
+    "explanation": "Criteria of Identification: Label 6 indicates the vertical C-shaped segment of the duodenum descending from the superior duodenal flexure to the inferior duodenal flexure along the right side of vertebral bodies L1–L3.",
+    "keyConcept": "The second (descending) part of the duodenum is retroperitoneal and closely embraces the head of the pancreas; it receives the common bile duct and pancreatic duct at the major duodenal papilla."
+  },
+  "747569052": {
+    "index": 36,
+    "target": "Jejunum",
+    "explanation": "Criteria of Identification: Label 7 indicates coiled small bowel loops displaying a delicate, feathery mucosal flocculation of barium produced by closely packed, prominent circular folds (plicae circulares).",
+    "keyConcept": "The jejunum occupies primarily the umbilical and left upper abdominal quadrants, characterized radiologically by a feathery mucosal pattern due to tall, numerous plicae circulares (valvulae conniventes)."
+  },
+  "408155755": {
+    "index": 37,
+    "target": "Ascending colon",
+    "explanation": "Criteria of Identification: Pointer 1 indicates the vertical segment of the large intestine ascending along the right side of the posterior abdominal wall with characteristic haustral sacculations.",
+    "keyConcept": "The ascending colon is secondarily retroperitoneal and extends from the caecum to the hepatic flexure, defined anatomically by sacculations (haustra) created by the teniae coli."
+  },
+  "31062890": {
+    "index": 38,
+    "target": "Transverse colon",
+    "explanation": "Criteria of Identification: Pointer 2 indicates the broad, festooned loop of large intestine crossing the abdominal cavity horizontally between the right (hepatic) and left (splenic) colic flexures.",
+    "keyConcept": "The transverse colon is suspended by the transverse mesocolon, providing high mobility; its lumen exhibits characteristic transverse haustral folds on double-contrast barium radiography."
+  },
+  "1944441972": {
+    "index": 39,
+    "target": "Descending colon",
+    "explanation": "Criteria of Identification: Pointer 3 indicates the vertical segment of the large intestine descending along the left flank from the splenic flexure to the pelvic brim.",
+    "keyConcept": "The descending colon lies retroperitoneally in the left lumbar gutter; it is narrower in caliber than the proximal colon and carries fecal contents into the sigmoid colon."
+  }
+}
