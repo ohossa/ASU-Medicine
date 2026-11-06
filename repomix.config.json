@@ -1,0 +1,68 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yamadashy/repomix/main/repomix.config.schema.json",
+  "output": {
+    "filePath": "repomix-output.md",
+    "style": "markdown",
+    "parsableStyle": true,
+    "fileSummary": true,
+    "directoryStructure": true,
+    "showLineNumbers": true,
+    "removeComments": false,
+    "removeEmptyLines": true,
+    "topFilesLength": 10,
+    "headerText": "# ASU Medical Portal (A-Plus) Codebase Snapshot\nGenerated via Repomix for deep architectural review, security audit, and model analysis."
+  },
+  "include": [
+    "src/**/*",
+    "api/**/*",
+    "server/**/*",
+    "shared/**/*",
+    "docs/**/*",
+    "data-format-v2/scripts/**/*",
+    "data-format-v2/*.md",
+    "*.md",
+    "*.json",
+    "*.ts",
+    "*.tsx"
+  ],
+  "ignore": {
+    "useGitignore": true,
+    "useDefaultPatterns": true,
+    "customPatterns": [
+      "**/*.svg",
+      "**/*.png",
+      "**/*.jpg",
+      "**/*.jpeg",
+      "**/*.webp",
+      "**/*.ico",
+      "**/*.pdf",
+      "**/*.mp4",
+      "**/*.mp3",
+      "src/test/fixtures/**",
+      "node_modules/**",
+      "dist/**",
+      "build/**",
+      ".git/**",
+      ".gemini/**",
+      ".claude/**",
+      ".agent/**",
+      ".agents/**",
+      "graphify-out/**",
+      "supabase-backup/**",
+      "docs/verification/**",
+      "src/imports/**",
+      "data-format-v2/banks/**",
+      "QUESTION_IMPORT_JOBS/**",
+      "Goodnotes_Organization/**",
+      "package-lock.json",
+      "skills-lock.json",
+      "repomix-output.*"
+    ]
+  },
+  "security": {
+    "enableSecurityCheck": true
+  },
+  "tokenCount": {
+    "encoding": "o200k_base"
+  }
+}
