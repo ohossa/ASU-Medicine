@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ZoomIn, ZoomOut, RotateCcw, Maximize2, Minimize2, Eye, SunMedium } from 'lucide-react';
+import { ZoomIn, ZoomOut, RotateCcw, Maximize2, Minimize2, Eye, SunMedium, Expand, Shrink } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 interface Props {
@@ -11,7 +11,10 @@ interface Props {
 /**
  * SpecimenViewer
  * Premium Apple HIG-compliant medical specimen viewer for practical exams:
+ * - Uncropped full-height specimen rendering (removes vertical constraints & clipping)
  * - Fluid hardware-accelerated zoom (1x to 3.5x) and drag panning
+ * - Double-click / double-tap inline zoom toggle
+ * - Toggleable Full Image vs Compact Fit view modes
  * - Light-field / Dark-field microscopy contrast toggle
  * - Fullscreen inspection modal with double-tap zoom
  * - Accessible controls (min 44px hit targets, visible focus, aria attributes)
@@ -20,6 +23,7 @@ export function SpecimenViewer({ imageUrl, altText = 'Practical exam specimen', 
   const [scale, setScale] = useState(1);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [invertContrast, setInvertContrast] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true); // Default to full, uncropped view
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const dragStart = useRef({ x: 0, y: 0 });
@@ -51,6 +55,14 @@ export function SpecimenViewer({ imageUrl, altText = 'Practical exam specimen', 
     setPan({ x: 0, y: 0 });
   };
 
+  const handleDoubleClick = () => {
+    if (scale > 1) {
+      resetZoom();
+    } else {
+      setScale(2);
+    }
+  };
+
   const handleMouseDown = (e: React.MouseEvent) => {
     if (scale > 1) {
       setIsDragging(true);
@@ -69,17 +81,28 @@ export function SpecimenViewer({ imageUrl, altText = 'Practical exam specimen', 
 
   const handleMouseUp = () => setIsDragging(false);
 
+  // Height container class for inline presentation
+  const containerHeightClass = isExpanded
+    ? 'w-full min-h-[340px] max-h-[85vh] sm:max-h-[880px]'
+    : 'w-full max-h-[380px] sm:max-h-[460px]';
+
   // Image component
   const renderImage = (inModal: boolean) => (
     <div
-      className={`relative overflow-hidden rounded-2xl flex items-center justify-center select-none ${
-        inModal ? 'w-full h-[75vh] bg-stone-950/80' : 'w-full max-h-[380px] sm:max-h-[460px] bg-stone-100 dark:bg-stone-900/60'
+      className={`relative overflow-hidden rounded-2xl flex items-center justify-center select-none p-2 sm:p-3 transition-all duration-300 ${
+        inModal
+          ? 'w-full h-[78vh] bg-stone-950/85'
+          : `${containerHeightClass} bg-stone-100/90 dark:bg-stone-900/60`
       }`}
-      style={{ cursor: scale > 1 ? (isDragging ? 'grabbing' : 'grab') : 'default' }}
+      style={{
+        cursor: scale > 1 ? (isDragging ? 'grabbing' : 'grab') : 'zoom-in',
+      }}
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
+      onDoubleClick={handleDoubleClick}
+      title={scale > 1 ? 'Drag to pan · Double-click to reset' : 'Double-click to zoom in'}
     >
       <motion.img
         src={resolvedSrc}
@@ -90,7 +113,7 @@ export function SpecimenViewer({ imageUrl, altText = 'Practical exam specimen', 
           y: pan.y,
         }}
         transition={{ type: 'spring', stiffness: 300, damping: 25 }}
-        className="max-w-full max-h-full object-contain rounded-xl transition-all duration-200"
+        className="w-auto h-auto max-w-full max-h-full object-contain rounded-xl transition-all duration-200 select-none shadow-xs"
         style={{
           filter: invertContrast ? 'invert(0.9) hue-rotate(180deg)' : 'none',
           willChange: 'transform',
@@ -103,31 +126,46 @@ export function SpecimenViewer({ imageUrl, altText = 'Practical exam specimen', 
   return (
     <div className={`specimen-viewer-container flex flex-col gap-2.5 my-3 ${className}`}>
       {/* Outer Card with Liquid Glass Border */}
-      <div className="relative rounded-2xl border border-stone-200 dark:border-stone-800/80 bg-white/70 dark:bg-stone-900/70 backdrop-blur-xl p-2.5 shadow-sm transition-all duration-300 hover:border-purple-500/40">
+      <div className="relative rounded-2xl border border-stone-200 dark:border-stone-800/80 bg-white/70 dark:bg-stone-900/70 backdrop-blur-xl p-2.5 sm:p-3 shadow-sm transition-all duration-300 hover:border-purple-500/40">
         
         {/* Top Floating Control Bar */}
-        <div className="flex items-center justify-between pb-2 px-1 text-xs text-stone-500 dark:text-stone-400">
+        <div className="flex items-center justify-between pb-2.5 px-1 text-xs text-stone-500 dark:text-stone-400">
           <div className="flex items-center gap-1.5 font-medium text-purple-600 dark:text-purple-400">
-            <Eye size={15} className="animate-pulse" />
-            <span>Practical Specimen</span>
-            {scale > 1 && (
-              <span className="ml-1 text-[11px] px-1.5 py-0.5 rounded-md bg-purple-500/10 text-purple-500 font-mono">
+            <Eye size={16} className="animate-pulse shrink-0" />
+            <span className="font-semibold tracking-tight">Practical Specimen</span>
+            {scale > 1 ? (
+              <span className="ml-1 text-[11px] px-2 py-0.5 rounded-md bg-purple-500/10 text-purple-500 font-mono font-medium">
                 {Math.round(scale * 100)}%
               </span>
-            )}
+            ) : isExpanded ? (
+              <span className="ml-1 text-[11px] px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-medium">
+                Full View
+              </span>
+            ) : null}
           </div>
 
-          {/* Apple HIG Control Toolbar */}
-          <div className="flex items-center gap-1 bg-stone-100/80 dark:bg-stone-800/80 rounded-xl p-0.5 border border-stone-200/60 dark:border-stone-700/60">
+          {/* Apple HIG Control Toolbar (44px min hit targets) */}
+          <div className="flex items-center gap-0.5 bg-stone-100/90 dark:bg-stone-800/90 rounded-xl p-0.5 border border-stone-200/70 dark:border-stone-700/70">
+            {/* View Mode Toggle: Full Uncropped vs Fit */}
+            <button
+              type="button"
+              onClick={() => setIsExpanded(v => !v)}
+              title={isExpanded ? 'Fit to compact frame' : 'Expand full uncropped image'}
+              aria-label={isExpanded ? 'Fit to compact frame' : 'Expand full uncropped image'}
+              className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-white dark:hover:bg-stone-700 text-stone-700 dark:text-stone-300 transition-colors focus-visible:outline-2 focus-visible:outline-purple-500"
+            >
+              {isExpanded ? <Shrink size={16} /> : <Expand size={16} />}
+            </button>
+
             <button
               type="button"
               onClick={zoomOut}
               disabled={scale <= 1}
               title="Zoom out"
               aria-label="Zoom out"
-              className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-white dark:hover:bg-stone-700 disabled:opacity-30 disabled:hover:bg-transparent text-stone-700 dark:text-stone-300 transition-colors"
+              className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-white dark:hover:bg-stone-700 disabled:opacity-30 disabled:hover:bg-transparent text-stone-700 dark:text-stone-300 transition-colors focus-visible:outline-2 focus-visible:outline-purple-500"
             >
-              <ZoomOut size={15} />
+              <ZoomOut size={16} />
             </button>
 
             <button
@@ -135,7 +173,7 @@ export function SpecimenViewer({ imageUrl, altText = 'Practical exam specimen', 
               onClick={resetZoom}
               title="Reset zoom"
               aria-label="Reset zoom"
-              className="px-2 h-8 flex items-center justify-center rounded-lg hover:bg-white dark:hover:bg-stone-700 font-mono text-[11px] text-stone-700 dark:text-stone-300 transition-colors"
+              className="min-h-[44px] px-2.5 flex items-center justify-center rounded-lg hover:bg-white dark:hover:bg-stone-700 font-mono text-[11px] text-stone-700 dark:text-stone-300 transition-colors focus-visible:outline-2 focus-visible:outline-purple-500"
             >
               <RotateCcw size={13} className="mr-1" />
               Reset
@@ -147,41 +185,47 @@ export function SpecimenViewer({ imageUrl, altText = 'Practical exam specimen', 
               disabled={scale >= 3.5}
               title="Zoom in"
               aria-label="Zoom in"
-              className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-white dark:hover:bg-stone-700 disabled:opacity-30 disabled:hover:bg-transparent text-stone-700 dark:text-stone-300 transition-colors"
+              className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-white dark:hover:bg-stone-700 disabled:opacity-30 disabled:hover:bg-transparent text-stone-700 dark:text-stone-300 transition-colors focus-visible:outline-2 focus-visible:outline-purple-500"
             >
-              <ZoomIn size={15} />
+              <ZoomIn size={16} />
             </button>
 
-            <div className="w-[1px] h-4 bg-stone-300 dark:bg-stone-700 mx-0.5" />
+            <div className="w-[1px] h-5 bg-stone-300 dark:bg-stone-700 mx-0.5" />
 
             <button
               type="button"
               onClick={() => setInvertContrast(v => !v)}
-              title={invertContrast ? "Original tone" : "Enhance / Invert contrast"}
+              title={invertContrast ? 'Standard tone' : 'Enhance / Invert microscopy contrast'}
               aria-label="Toggle microscopy contrast"
-              className={`w-8 h-8 flex items-center justify-center rounded-lg transition-colors ${
+              className={`min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg transition-colors focus-visible:outline-2 focus-visible:outline-purple-500 ${
                 invertContrast
                   ? 'bg-purple-600 text-white'
                   : 'hover:bg-white dark:hover:bg-stone-700 text-stone-700 dark:text-stone-300'
               }`}
             >
-              <SunMedium size={15} />
+              <SunMedium size={16} />
             </button>
 
             <button
               type="button"
               onClick={() => setIsFullscreen(true)}
-              title="Inspect in full screen"
+              title="Inspect high-resolution specimen in full screen"
               aria-label="Inspect specimen in full screen"
-              className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-white dark:hover:bg-stone-700 text-stone-700 dark:text-stone-300 transition-colors"
+              className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-white dark:hover:bg-stone-700 text-stone-700 dark:text-stone-300 transition-colors focus-visible:outline-2 focus-visible:outline-purple-500"
             >
-              <Maximize2 size={15} />
+              <Maximize2 size={16} />
             </button>
           </div>
         </div>
 
         {/* Inline Specimen Image Container */}
         {renderImage(false)}
+
+        {/* Bottom Quick-Hint */}
+        <div className="pt-2 px-1 flex items-center justify-between text-[11px] text-stone-400 dark:text-stone-500">
+          <span>Double-click image to zoom · Uncropped full specimen</span>
+          {scale > 1 && <span>Click and drag to pan</span>}
+        </div>
       </div>
 
       {/* Fullscreen Inspection Modal */}
@@ -194,7 +238,7 @@ export function SpecimenViewer({ imageUrl, altText = 'Practical exam specimen', 
             role="dialog"
             aria-modal="true"
             aria-label="High-resolution specimen inspection"
-            className="fixed inset-0 z-50 flex flex-col items-center justify-center p-4 sm:p-6 bg-stone-950/90 backdrop-blur-2xl"
+            className="fixed inset-0 z-50 flex flex-col items-center justify-center p-4 sm:p-6 bg-stone-950/92 backdrop-blur-2xl"
           >
             {/* Modal Header */}
             <div className="w-full max-w-5xl flex items-center justify-between pb-3 text-white">
@@ -202,7 +246,7 @@ export function SpecimenViewer({ imageUrl, altText = 'Practical exam specimen', 
                 <span className="font-semibold text-sm sm:text-base tracking-tight">
                   High-Resolution Specimen Inspection
                 </span>
-                <span className="text-xs px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                <span className="text-xs px-2.5 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 font-mono">
                   {Math.round(scale * 100)}%
                 </span>
               </div>
@@ -211,7 +255,7 @@ export function SpecimenViewer({ imageUrl, altText = 'Practical exam specimen', 
                 <button
                   type="button"
                   onClick={resetZoom}
-                  className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-medium text-white transition-colors flex items-center gap-1.5"
+                  className="min-h-[44px] px-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-medium text-white transition-colors flex items-center gap-1.5 focus-visible:outline-2 focus-visible:outline-purple-400"
                 >
                   <RotateCcw size={14} />
                   Reset
@@ -219,7 +263,7 @@ export function SpecimenViewer({ imageUrl, altText = 'Practical exam specimen', 
                 <button
                   type="button"
                   onClick={() => setIsFullscreen(false)}
-                  className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-xl bg-white/10 hover:bg-white/20 text-white transition-colors"
+                  className="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-xl bg-white/10 hover:bg-white/20 text-white transition-colors focus-visible:outline-2 focus-visible:outline-purple-400"
                   aria-label="Close fullscreen inspection"
                 >
                   <Minimize2 size={18} />
@@ -233,8 +277,8 @@ export function SpecimenViewer({ imageUrl, altText = 'Practical exam specimen', 
             </div>
 
             {/* Hint footer */}
-            <p className="text-xs text-white/50 pt-2 text-center">
-              Drag to pan magnified slide · Pinch or use toolbar to zoom · Press Esc to exit
+            <p className="text-xs text-white/50 pt-3 text-center">
+              Drag to pan magnified slide · Double-click to toggle zoom · Press Esc to exit
             </p>
           </motion.div>
         )}
