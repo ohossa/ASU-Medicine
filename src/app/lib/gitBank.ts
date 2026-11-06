@@ -19,6 +19,9 @@ export function selectGitExamPeriod(chapters: ChapterData[], examPeriod: 'ca-1' 
 
 /** Present each ordered iNerd topic as a selectable card, preserving its lecture number. */
 export function toGitTopicChapter(chapter: ChapterData): ChapterData {
+  if (chapter.bankSection === 'practical') {
+    return chapter;
+  }
   const topics: SubjectData[] = chapter.subjects.flatMap(subject =>
     subject.lectureNum !== undefined ? [subject] : (subject.lectureNames ?? []).map((name, index) => ({
       ...subject,

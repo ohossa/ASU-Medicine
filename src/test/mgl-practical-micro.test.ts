@@ -15,11 +15,11 @@ describe("MGL-3 Microbiology Practical Bank", () => {
 
   it("builds the practical chapter with correct metadata", () => {
     const chapters = getChaptersForModuleAndMode("MGL-3", "practical");
-    expect(chapters.length).toBe(7);
+    expect(chapters.length).toBe(6);
 
-    const microChapter = chapters.find((c) => c.id === 306)!;
+    const microChapter = chapters.find((c) => c.id === 305)!;
     expect(microChapter).toBeDefined();
-    expect(microChapter.id).toBe(306);
+    expect(microChapter.id).toBe(305);
     expect(microChapter.title).toBe("Practical — Microbiology");
     expect(microChapter.bankSection).toBe("practical");
     expect(microChapter.subjects.length).toBe(1);
@@ -31,7 +31,7 @@ describe("MGL-3 Microbiology Practical Bank", () => {
 
   it("validates all 51 questions for schema completeness", () => {
     const chapters = getChaptersForModuleAndMode("MGL-3", "practical");
-    const microChapter = chapters.find((c) => c.id === 306)!;
+    const microChapter = chapters.find((c) => c.id === 305)!;
     const questions = microChapter.subjects[0].questions;
 
     questions.forEach((q) => {
@@ -55,7 +55,7 @@ describe("MGL-3 Microbiology Practical Bank", () => {
 
   it("verifies key clinical answers match Ain Shams practical curriculum", () => {
     const chapters = getChaptersForModuleAndMode("MGL-3", "practical");
-    const microChapter = chapters.find((c) => c.id === 306)!;
+    const microChapter = chapters.find((c) => c.id === 305)!;
     const questions = microChapter.subjects[0].questions;
 
     // Q1: Next step for Gram -ve bacilli in dysentery -> Oxidase test

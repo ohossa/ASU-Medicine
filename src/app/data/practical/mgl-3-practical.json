@@ -8,6 +8,12 @@
       {
         "id": "anatomy",
         "name": "Anatomy",
+        "lectureNames": [
+          "Module 1: Oral Cavity, Pharynx & Anterior Abdominal Wall",
+          "Module 2: Posterior Abdominal Wall, Nerves & Lumbar Spine",
+          "Module 3: Liver, Gallbladder, Spleen & Celiac Vasculature",
+          "Module 4: Major Retroperitoneal Vessels, Mesenteries & Anomalies"
+        ],
         "questions": [
           {
             "id": "MGL3-PRAC-ANAT-1001",
@@ -6504,6 +6510,10 @@
       {
         "id": "histology",
         "name": "Histology",
+        "lectureNames": [
+          "Part 1: Oral Cavity, Lip, Tongue & Salivary Glands",
+          "Part 2: GI Tract, Liver, Gallbladder & Pancreas"
+        ],
         "questions": [
           {
             "id": "MGL3-PRAC-HIST-1001",
@@ -10171,18 +10181,22 @@
   },
   {
     "id": 303,
-    "title": "Practical — Pathology (Museum Jars)",
+    "title": "Practical — Pathology",
     "bankSection": "practical",
     "accentColor": "pathology",
     "subjects": [
       {
         "id": "pathology",
-        "name": "Pathology Museum",
+        "name": "Pathology",
+        "lectureNames": [
+          "Pathology Museum (Gross Jars)",
+          "Pathology Lab (Microscopic Slides)"
+        ],
         "questions": [
           {
             "id": "MGL3-PRAC-PATH-MUS-0001",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The lumen of this opened gall bladder is filled with",
             "options": [
               "Pus",
@@ -10202,7 +10216,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0002",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "Labels 1, 2 and 3 represent respectively:",
             "options": [
               "Raised everted edge; necrotic floor; hard infiltrating base",
@@ -10222,7 +10236,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0003",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "All of the following describe this gall bladder EXCEPT:",
             "options": [
               "Enlarged and distended",
@@ -10242,7 +10256,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0004",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "Label 3 points to:",
             "options": [
               "Marked circumferential thickening of the pyloric wall by greyish tumour tissue",
@@ -10262,7 +10276,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0005",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Bacillary dysentery",
@@ -10282,7 +10296,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0006",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "which of the following best describers the ulcers",
             "options": [
               "Caseous material in the submucosa",
@@ -10302,7 +10316,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0007",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "This specimen shows:",
             "options": [
               "Jejunum attached to the duodenum with an artificial opening between their lumina",
@@ -10322,7 +10336,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0008",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis of the arrowed lesion?",
             "options": [
               "Dilated, tortuous veins bulging under the esophageal mucosa",
@@ -10342,7 +10356,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0009",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "All of the following describe the circled ulcers EXCEPT:",
             "options": [
               "Multiple, irregular, with undermined edges",
@@ -10362,7 +10376,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0010",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Malignant ulcer of the pylorus",
@@ -10382,7 +10396,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0011",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The arrow points to:",
             "options": [
               "Dirty greyish membrane",
@@ -10402,7 +10416,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0012",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The arrow at the top right points to",
             "options": [
               "Entering loop",
@@ -10422,7 +10436,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0013",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Bilharzial periportal fibrosis",
@@ -10442,7 +10456,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0014",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "the circled area most likely shows:",
             "options": [
               "Perforation",
@@ -10462,7 +10476,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0015",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "All of the following are true except  EXCEPT:",
             "options": [
               "Raised everted edge",
@@ -10482,7 +10496,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0016",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The  arrow on the right points to:",
             "options": [
               "Lost gastric rugae",
@@ -10502,7 +10516,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0017",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "All of the following may be seen in this lesion EXCEPT:",
             "options": [
               "Swollen, oedematous, congested appendix",
@@ -10522,7 +10536,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0018",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "All of the following describe the spleen in  EXCEPT",
             "options": [
               "Enlarged and congested",
@@ -10542,7 +10556,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0019",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The arrows point to:",
             "options": [
               "Thickened longitudinal mucosal folds of the lower esophagus",
@@ -10562,7 +10576,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0020",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "All of the following are features of this liver EXCEPT:",
             "options": [
               "Nodular outer surface",
@@ -10582,7 +10596,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0021",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Ileo-ileal intussusception",
@@ -10602,7 +10616,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0022",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The red arrow points  to:",
             "options": [
               "Portal tracts that are thickened, fibrosed and white",
@@ -10622,7 +10636,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0023",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The black discolouration of the wall indicates:",
             "options": [
               "Haemorrhage into the wall",
@@ -10642,7 +10656,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0024",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Acute amoebic liver abscess",
@@ -10662,7 +10676,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0025",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The tissue between the nodules is",
             "options": [
               "Fibrous bands",
@@ -10682,7 +10696,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0026",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "Labels 1 and 2 represent respectively:",
             "options": [
               "Mucosal infiltration; marked dilatation of the lumen",
@@ -10702,7 +10716,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0027",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "This liver shows:",
             "options": [
               "Metastatic nodules from breast carcinoma",
@@ -10722,7 +10736,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0028",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The cavity wall is lined by:",
             "options": [
               "Thick fibrous tissue",
@@ -10742,7 +10756,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0029",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Chronic peptic ulcer with gastrojejunostomy",
@@ -10762,7 +10776,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0030",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "Q13.Labels A, B and C represent respectively:",
             "options": [
               "Large ulcer at the pyloric region; opened duodenum and jejunum; normal gastric rugae",
@@ -10782,7 +10796,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0031",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Fungating carcinoma of the large intestine",
@@ -10802,7 +10816,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0032",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "THis lesion is best characterized as:",
             "options": [
               "Acute gastric ulcer",
@@ -10822,7 +10836,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0033",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The area circled in orange, shows:",
             "options": [
               "Constriction ends of a strangulated loop",
@@ -10842,7 +10856,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0034",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The yellow arrow points to:",
             "options": [
               "Thick fibrous wall with chalky white calcification",
@@ -10862,7 +10876,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0035",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Early amoebic liver abscess",
@@ -10882,7 +10896,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0036",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "This specimen shows:",
             "options": [
               "Ileo-ileal intussusception",
@@ -10902,7 +10916,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0037",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "label A points to:",
             "options": [
               "sigmoid  loop",
@@ -10922,7 +10936,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0038",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "the arrowed liver shows:",
             "options": [
               "Laennec’s cirrhosis with nodular cut section",
@@ -10942,7 +10956,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0039",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The starred structure with the arrow represents:",
             "options": [
               "Terminal ileum invaginated into the caecum through the ileocecal valve",
@@ -10962,7 +10976,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0040",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Chronic cholecystitis with cholesterol stones",
@@ -10982,7 +10996,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0041",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "This lesion is defined as:",
             "options": [
               "Invagination of one ileal loop into another",
@@ -11002,7 +11016,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0042",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "All of the following are true about the specimens  EXCEPT:",
             "options": [
               "The liver is shrunken",
@@ -11022,7 +11036,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0043",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Macronodular cirrhosis",
@@ -11042,7 +11056,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0044",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The orange arrow points to the mucosa around the ulcer. It appears:",
             "options": [
               "Raised and everted",
@@ -11062,7 +11076,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0045",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "All of the following are features of this specimen EXCEPT:",
             "options": [
               "Amalgamated loops of small intestine",
@@ -11082,7 +11096,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0046",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Malignant ulcer of the large intestine",
@@ -11102,7 +11116,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0047",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The starred lesions represent:",
             "options": [
               "Cirrhotic nodules in a macronodular cirrhosis",
@@ -11122,7 +11136,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0048",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Chronic peptic ulcer of the stomach",
@@ -11142,7 +11156,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0049",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "A 45-year-old man with old pulmonary tuberculosis developed abdominal pain, weight loss, fever and diarrhoea. CT showed ascites, mesenteric lymphadenopathy, thickened peritoneum and multiple nodules. This is the gross appearance of his omentum. What is the diagnosis?",
             "options": [
               "Peritoneal metastatic deposits",
@@ -11162,7 +11176,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0050",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "Label 1 points to a structure that is:",
             "options": [
               "Blind-ended, about 10 cm long, on the mesenteric border",
@@ -11182,7 +11196,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0051",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Chronic appendicitis",
@@ -11202,7 +11216,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0052",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "which of the following describes these ulcers",
             "options": [
               "Multiple and variable in size",
@@ -11222,7 +11236,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0053",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "Label 1 points to:",
             "options": [
               "Thinned capsule",
@@ -11242,7 +11256,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0054",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "These specimens show:",
             "options": [
               "Effects of bilharzial periportal fibrosis",
@@ -11262,7 +11276,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0055",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "the arrows point to:",
             "options": [
               "Multiple black areas due to gangrene",
@@ -11282,7 +11296,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0056",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The circled lesion is located at the:",
             "options": [
               "Cardiac region",
@@ -11302,7 +11316,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0057",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Terminal ileum invaginated into the caecum through the ileocecal valve",
@@ -11322,7 +11336,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0058",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "All of the following describe these nodules EXCEPT:",
             "options": [
               "Multiple, of variable size",
@@ -11342,7 +11356,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0059",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Fungating carcinoma of the large intestine",
@@ -11362,7 +11376,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0060",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "All of the following describe this ulcer EXCEPT:",
             "options": [
               "Rounded, sharply punched-out shape",
@@ -11382,7 +11396,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0061",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The arrowed here shows",
             "options": [
               "Constriction ends of a strangulated loop",
@@ -11402,7 +11416,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0062",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Amoebic dysentery of the large intestine",
@@ -11422,7 +11436,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0063",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Chronic cholecystitis with mixed stones",
@@ -11442,7 +11456,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0064",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Fungating carcinoma of the large intestine",
@@ -11462,7 +11476,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0065",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "All of the following describe the arrowed mass EXCEPT:",
             "options": [
               "Rounded",
@@ -11482,7 +11496,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0066",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The arrow points to:",
             "options": [
               "Enlarged congested mesenteric vessels",
@@ -11502,7 +11516,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0067",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The arrowed cavities are:",
             "options": [
               "Multiple, irregular, filled with pus",
@@ -11522,7 +11536,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0068",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "labels 1 and 2 represent respectively:",
             "options": [
               "Flattened edge; clean floor",
@@ -11542,7 +11556,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0069",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The liver tissue between the portal tracts is greyish brown because of:",
             "options": [
               "Bile pigment",
@@ -11562,7 +11576,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0070",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "the arrow  points to:",
             "options": [
               "Lost splenic notch",
@@ -11582,7 +11596,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0071",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "All of the following are effects of liver cirrhosis EXCEPT:",
             "options": [
               "Oesophageal varices at the lower end of the oesophagus",
@@ -11602,7 +11616,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0072",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The red arrows point to LN that are:",
             "options": [
               "Enlarged, matted, caseating",
@@ -11622,7 +11636,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0073",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The border of this liver is described as:",
             "options": [
               "Sharp",
@@ -11642,7 +11656,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0074",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "All of the following are features of this disease in the museum specimens EXCEPT:",
             "options": [
               "Amalgamated loops of small intestine",
@@ -11662,7 +11676,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0075",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Malignant ulcer of the stomach",
@@ -11682,7 +11696,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0076",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Acute suppurative cholangitis",
@@ -11702,7 +11716,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0077",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Ileo-cecal intussusception",
@@ -11722,7 +11736,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0078",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Malignant ulcer of the stomach",
@@ -11742,7 +11756,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0079",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The intestine proximal to this lesion typically shows:",
             "options": [
               "Dilatation",
@@ -11762,7 +11776,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0080",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis",
             "options": [
               "Malignant ulcer of the pylorus",
@@ -11782,7 +11796,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0081",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "Label 2 points to the nodules. They are:",
             "options": [
               "Multiple, round, less than 3 mm in diameter",
@@ -11802,7 +11816,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0082",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "All of the following are true about the ulcer  EXCEPT:",
             "options": [
               "It is rounded",
@@ -11822,7 +11836,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0083",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Tuberculous ulcers of the small intestine",
@@ -11842,7 +11856,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0084",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Micronodular cirrhosis",
@@ -11862,7 +11876,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0085",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "the yellow arrow points to the ulcer margins. They are:",
             "options": [
               "Undermined",
@@ -11882,7 +11896,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0086",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "what is this legion",
             "options": [
               "Macronodular cirrhosis",
@@ -11902,7 +11916,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0087",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Calcified hydatid cyst with cirrhosis",
@@ -11922,7 +11936,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0088",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The two thin arrows on the left point to:",
             "options": [
               "Normal mucosa in between the ulcers",
@@ -11942,7 +11956,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0089",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "In this lesion, the irregular ulcer necks are located:",
             "options": [
               "In the center of rounded elevated areas of mucosa",
@@ -11962,7 +11976,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0090",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Bacillary dysentery of the large intestine",
@@ -11982,7 +11996,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0091",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "On section, the ulcers of this lesion are described as:",
             "options": [
               "Flask-shaped",
@@ -12002,7 +12016,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0092",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "What is the diagnosis?",
             "options": [
               "Ileo-ileal intussusception",
@@ -12022,7 +12036,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0093",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "The ulcers are:",
             "options": [
               "Oval, longitudinal, parallel to the direction of the gut",
@@ -12042,7 +12056,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0094",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "the arrow points to a complication of this lesion:",
             "options": [
               "Impacted stone",
@@ -12062,7 +12076,7 @@
           {
             "id": "MGL3-PRAC-PATH-MUS-0095",
             "type": "mcq",
-            "lecture": 3,
+            "lecture": 1,
             "text": "the orange arrow points to the entering loop, which is:",
             "options": [
               "Pale, thin, with areas of necrosis",
@@ -12078,25 +12092,11 @@
               "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_q95_78da4e82b0.webp",
               "caption": "Pathology Museum Specimen — Station 95"
             }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 304,
-    "title": "Practical — Pathology (Microscopic Slides)",
-    "bankSection": "practical",
-    "accentColor": "pathology",
-    "subjects": [
-      {
-        "id": "pathology",
-        "name": "Pathology Lab",
-        "questions": [
+          },
           {
             "id": "MGL3-PRAC-PATH-LAB-0001",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "identify the structure indicated by the right arrow.",
             "options": [
               "Normal colonic mucosa",
@@ -12117,7 +12117,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0002",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "What is the nature of this lesion?",
             "options": [
               "Acute localized catarrhal inflammation",
@@ -12138,7 +12138,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0003",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "All of the following are true about the lesion in  EXCEPT:",
             "options": [
               "Liver architecture is preserved",
@@ -12158,7 +12158,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0004",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "What is the most likely diagnosis?",
             "options": [
               "Adenomatous polyp",
@@ -12179,7 +12179,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0005",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "all of the following are true about the lesion in EXCEPT:",
             "options": [
               "A common predisposing factor in Egypt is HBV and HCV",
@@ -12199,7 +12199,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0006",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "Which of the following features is most characteristic of the epithelial changes indicated by the arrows?",
             "options": [
               "Decreased nuclear-to-cytoplasmic ratio",
@@ -12220,7 +12220,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0007",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "All of the following are found here EXCEPT:",
             "options": [
               "Chronic inflammatory cells",
@@ -12240,7 +12240,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0008",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "Which of the following best describes the structures indicated by the yellow arrows?",
             "options": [
               "Macrovesicular steatosis",
@@ -12261,7 +12261,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0009",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "What is the nature of the lesion",
             "options": [
               "Bilharzial pigment deposition",
@@ -12281,7 +12281,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0010",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "Which of the following best describes the nature of this lesion?",
             "options": [
               "Non-neoplastic hamartomatous polyp",
@@ -12302,7 +12302,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0011",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "Which of the following is the hallmark feature of this lesion?",
             "options": [
               "Cystically dilated glands",
@@ -12323,7 +12323,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0012",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "All of the following are true about this legion EXCEPT:",
             "options": [
               "They may be familial.",
@@ -12344,7 +12344,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0013",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "Which of the following best describes the epithelial lining of the dilated glands?",
             "options": [
               "Malignant columnar cells with marked atypia",
@@ -12365,7 +12365,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0014",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "What is the nature of the lesion",
             "options": [
               "Benign encapsulated salivary gland tumor",
@@ -12385,7 +12385,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0015",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "The architectural pattern shown is",
             "options": [
               "Trabecular",
@@ -12405,7 +12405,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0016",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "The architectural pattern shown is :",
             "options": [
               "Trabecular",
@@ -12425,7 +12425,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0017",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "A histopathological examination of a colonic tumor reveals malignant glands of variable size and shape. The glands are lined by one or more layers of malignant cells and invade through the basement membrane into the submucosa.",
             "options": [
               "Adenomatous polyp",
@@ -12446,7 +12446,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0018",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "What is the nature of this lesion?",
             "options": [
               "Diffuse hepatic fibrosis with regenerative liver nodules",
@@ -12466,7 +12466,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0019",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "What is the nature of the lesion",
             "options": [
               "Benign encapsulated mixed salivary gland tumor",
@@ -12486,7 +12486,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0020",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "All of the following are true about this legion EXCEPT:",
             "options": [
               "It may present with bleeding per rectum.",
@@ -12507,7 +12507,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0021",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "What is the nature of the lesion",
             "options": [
               "Diffuse hepatic fibrosis",
@@ -12527,7 +12527,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0022",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "Which of the following best identifies the circled structure?",
             "options": [
               "Granulomatous inflammation",
@@ -12548,7 +12548,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0023",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "the circled structure labeled 1 represents",
             "options": [
               "Proliferated bile ductules",
@@ -12568,7 +12568,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0024",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "What is the nature of this lesion?",
             "options": [
               "Benign encapsulated tumor",
@@ -12588,7 +12588,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0025",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "What is the most likely diagnosis?",
             "options": [
               "Juvenile hamartomatous polyp",
@@ -12609,7 +12609,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0026",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "All of the following are histopathological findings of this legion EXCEPT:",
             "options": [
               "Transmural inflammatory cell infiltration",
@@ -12630,7 +12630,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0027",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "All of the following are true about this legion polyps EXCEPT:",
             "options": [
               "They are also called retention polyps.",
@@ -12651,7 +12651,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0028",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "The cells lining this legion are",
             "options": [
               "Spindle myoepithelial cells",
@@ -12671,7 +12671,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0029",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "All of the following are true about the lesion EXCEPT:",
             "options": [
               "The patient presents with yellow skin and sclera",
@@ -12691,7 +12691,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0030",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "All of the following are true about the lesion  EXCEPT:",
             "options": [
               "It is also called papillary cystadenoma lymphomatosum",
@@ -12711,7 +12711,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0031",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "All of the following are true about the lesion EXCEPT:",
             "options": [
               "It has epithelial duct-like structures with spindle myoepithelial cells",
@@ -12731,7 +12731,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0032",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "All of the following are true about the lesion   EXCEPT:",
             "options": [
               "The commonest cause in Egypt is viral hepatitis",
@@ -12751,7 +12751,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0033",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "labels A and B represent respectively:",
             "options": [
               "Mesenchymal elements; epithelial elements",
@@ -12771,7 +12771,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0034",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "what stain is used, and what do the bluish areas (arrows) represent?",
             "options": [
               "H&E; bile pigment",
@@ -12792,7 +12792,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0035",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "The dashed arrows indicate inflammatory involvement of which structure?",
             "options": [
               "Mucosa",
@@ -12813,7 +12813,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0036",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "the red star marks:",
             "options": [
               "A Bilharzial granuloma",
@@ -12833,7 +12833,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0037",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "which of the following describes this photo",
             "options": [
               "Acinar pattern",
@@ -12853,7 +12853,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0038",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "label 1 and label 2 represent respectively:",
             "options": [
               "Cirrhotic nodules; HCC",
@@ -12873,7 +12873,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0039",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "What is the nature of the lesion",
             "options": [
               "Portal fibrosis with preserved architecture",
@@ -12893,7 +12893,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0040",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "(C), indicates:",
             "options": [
               "Loss of normal architecture",
@@ -12913,7 +12913,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0041",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "Label 3  represents:",
             "options": [
               "Bile pigment in hepatocytes",
@@ -12933,7 +12933,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0042",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "labels 1, 2 and 3 represent respectively:",
             "options": [
               "Bile ducts; fat droplets; granuloma",
@@ -12953,7 +12953,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0043",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "Which of the following is the characteristic microscopic finding?",
             "options": [
               "Crowded malignant glands invading the muscularis propria",
@@ -12974,7 +12974,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0044",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "which of the following is true",
             "options": [
               "highly differentiated",
@@ -12994,7 +12994,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0045",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "All of the following are characteristic microscopic features of this legion EXCEPT:",
             "options": [
               "Glands variable in size and shape",
@@ -13015,7 +13015,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0046",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "Which of the following statements about this legion  is CORRECT?",
             "options": [
               "They are always malignant at the time of diagnosis.",
@@ -13036,7 +13036,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0047",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "the area labeled A shows:",
             "options": [
               "Fibrous septa surrounding regenerative nodules",
@@ -13056,7 +13056,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0048",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "The areas outlined by the red dotted lines in are:",
             "options": [
               "HCC foci",
@@ -13076,7 +13076,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0049",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "What is the most likely diagnosis?",
             "options": [
               "Adenomatous polyp",
@@ -13097,7 +13097,7 @@
           {
             "id": "MGL3-PRAC-PATH-LAB-0050",
             "type": "mcq",
-            "lecture": 4,
+            "lecture": 2,
             "text": "All of the following are features of this legion except",
             "options": [
               "Hyperchromatic, pleomorphic nuclei",
@@ -13119,7 +13119,7 @@
     ]
   },
   {
-    "id": 305,
+    "id": 304,
     "title": "Practical — Parasitology",
     "bankSection": "practical",
     "accentColor": "parasitology",
@@ -13127,6 +13127,9 @@
       {
         "id": "parasitology",
         "name": "Parasitology",
+        "lectureNames": [
+          "Parasitology Practical Spotters"
+        ],
         "questions": [
           {
             "id": "MGL3-PRAC-PARA-0001",
@@ -14845,7 +14848,7 @@
     ]
   },
   {
-    "id": 306,
+    "id": 305,
     "title": "Practical — Microbiology",
     "bankSection": "practical",
     "accentColor": "microbiology",
@@ -14853,6 +14856,9 @@
       {
         "id": "microbiology",
         "name": "Microbiology",
+        "lectureNames": [
+          "Microbiology Practical Mock Exam"
+        ],
         "questions": [
           {
             "id": "MGL3-PRAC-MIC-0001",
@@ -15803,7 +15809,7 @@
     ]
   },
   {
-    "id": 307,
+    "id": 306,
     "title": "Practical — Physiology",
     "bankSection": "practical",
     "accentColor": "physiology",
@@ -15811,6 +15817,9 @@
       {
         "id": "physiology",
         "name": "Physiology",
+        "lectureNames": [
+          "Clinical Motility, Secretions & Digestion"
+        ],
         "questions": [
           {
             "id": "MGL3-PRAC-PHY-0001",
