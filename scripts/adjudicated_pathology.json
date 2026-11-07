@@ -12,8 +12,8 @@
         "Elongated, ulcerated veins projecting into the gastric lumen"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Lower end of esophagus opened longitudinally showing multiple prominent, bluish, elongated, tortuous, dilated submucosal veins bulging beneath the mucosal surface, characteristic of esophageal varices.",
-      "keyConcept": "Esophageal varices: Submucosal venous tortuosity at the lower third of the esophagus due to portal hypertension (porto-systemic shunting).",
+      "explanation": "Criteria of Identification: Lower end of esophagus opened longitudinally showing prominent, bluish, elongated, tortuous, dilated submucosal veins bulging beneath the mucosal surface, pathognomonic of esophageal varices.",
+      "keyConcept": "Esophageal varices: Submucosal venous tortuosity at the lower esophagus due to portal hypertension.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_2016958619.webp",
@@ -52,8 +52,8 @@
         "Thickened, fibrosed white portal tracts in the liver"
       ],
       "correctIndex": 2,
-      "explanation": "Criteria of Identification: All are consequences of liver cirrhosis and chronic venous congestion of the portal system except atrophic white pulp with dark red appearance. In chronic congestive splenomegaly (Banti's disease), the spleen is markedly enlarged and firm with a thick fibrous capsule; cut section shows prominent trabeculae and fibrosis (Gandy-Gamna bodies), not atrophy.",
-      "keyConcept": "Congestive splenomegaly: Markedly enlarged, firm spleen with thickened capsule and fibrocongestive red pulp expansion.",
+      "explanation": "Criteria of Identification: All are consequences of liver cirrhosis and chronic venous congestion of the portal system except atrophic white pulp with dark red appearance. In chronic congestive splenomegaly (Banti's disease), the spleen is markedly enlarged and firm with a thick fibrous capsule; cut section shows prominent trabeculae and fibrocongestive red pulp expansion.",
+      "keyConcept": "Congestive splenomegaly: Markedly enlarged, firm spleen with thickened capsule and fibrocongestive expansion.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_954555631.webp",
@@ -72,7 +72,7 @@
         "Infiltrating carcinoma of the stomach"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Stomach opened to reveal a solitary, rounded, sharply punched-out ulcer on the lesser curvature of the prepyloric region. The mucosal folds (rugae) radiate symmetrically towards the margins of the ulcer, and the floor is clean and indurated, pathognomonic of a chronic benign peptic ulcer.",
+      "explanation": "Criteria of Identification: Stomach opened to reveal a solitary, rounded, sharply punched-out ulcer on the lesser curvature. The mucosal folds radiate towards the margins of the ulcer, and the floor is clean and indurated.",
       "keyConcept": "Chronic peptic ulcer: Solitary, punched-out mucosal defect with radiating rugae and clean fibrotic base.",
       "media": {
         "type": "image",
@@ -112,7 +112,7 @@
         "Hard infiltrating base"
       ],
       "correctIndex": 3,
-      "explanation": "Criteria of Identification: A hard, wide, infiltrating base is the hallmark of a malignant ulcer (gastric adenocarcinoma). Chronic peptic ulcers feature a sharply punched-out, clean or scarred base limited to the muscularis propria without diffuse infiltration.",
+      "explanation": "Criteria of Identification: A hard, wide, infiltrating base is the hallmark of a malignant ulcer (gastric adenocarcinoma). Chronic peptic ulcers feature a clean, scarred base limited to the muscularis propria without diffuse infiltration.",
       "keyConcept": "Malignant vs benign gastric ulcer: Hard infiltrating base characterizes carcinoma.",
       "media": {
         "type": "image",
@@ -132,7 +132,7 @@
         "Infiltrating carcinoma of the cardia"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Segment of stomach showing marked circumferential mural thickening of the pyloric canal with rigidity and luminal stenosis (napkin-ring / linitis plastica type of infiltrating adenocarcinoma).",
+      "explanation": "Criteria of Identification: Segment of stomach showing marked circumferential mural thickening of the pyloric canal with rigidity and luminal stenosis (linitis plastica type of infiltrating adenocarcinoma).",
       "keyConcept": "Infiltrating pyloric carcinoma: Diffuse circumferential mural thickening causing gastric outlet obstruction.",
       "media": {
         "type": "image",
@@ -152,8 +152,8 @@
         "Infiltrating carcinoma of the cardia"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Segment of stomach showing marked circumferential mural thickening of the pyloric canal with rigidity and luminal stenosis (napkin-ring / linitis plastica type of infiltrating adenocarcinoma).",
-      "keyConcept": "Infiltrating pyloric carcinoma: Diffuse circumferential mural thickening causing gastric outlet obstruction.",
+      "explanation": "Criteria of Identification: Segment of stomach showing marked circumferential mural thickening of the pyloric canal with rigidity and luminal stenosis.",
+      "keyConcept": "Infiltrating pyloric carcinoma: Mural infiltration with stenosis.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1834719341.webp",
@@ -192,8 +192,8 @@
         "Serosal infiltration; marked narrowing of the lumen"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Label 1 shows diffuse infiltration of the muscularis externa by malignant scirrhous carcinoma, and Label 2 demonstrates severe stenosis (narrowing) of the pyloric lumen.",
-      "keyConcept": "Linitis plastica / Scirrhous carcinoma: Muscular infiltration producing concentric luminal stenosis.",
+      "explanation": "Criteria of Identification: Label 1 indicates deep infiltration of the muscularis propria by malignant neoplastic glands, and label 2 demonstrates severe stenosis of the pyloric orifice.",
+      "keyConcept": "Gastric carcinoma: Transmural infiltration with luminal stenosis.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_351652384.webp",
@@ -211,9 +211,9 @@
         "Infiltrating carcinoma of the stomach with gastrojejunostomy",
         "Malignant ulcer of the duodenum with gastroduodenostomy"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Museum jar displaying a segment of stomach with a chronic peptic ulcer anastomosed surgically to an adjacent loop of jejunum (gastrojejunostomy) created to bypass gastric outlet obstruction.",
-      "keyConcept": "Gastrojejunostomy: Surgical bypass anastomosis between stomach and proximal jejunum for obstructed peptic ulcer.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Specimen showing a large, irregular malignant gastric ulcer with raised everted edges, together with a surgical anastomotic stoma connecting the stomach to an adjacent loop of jejunum (gastrojejunostomy).",
+      "keyConcept": "Gastric malignancy with palliative gastrojejunostomy bypass.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_108381323.webp",
@@ -232,8 +232,8 @@
         "Small ulcer at the pyloric region; opened jejunum and ileum; normal gastric rugae"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Gross pathology shows a chronic peptic ulcer at the prepyloric region with surgical gastrojejunostomy.",
-      "keyConcept": "Peptic ulcer with surgical anastomosis.",
+      "explanation": "Criteria of Identification: Labels show the primary gastric ulcer, the loop of jejunum anastomosed to the stomach, and adjacent mucosa.",
+      "keyConcept": "Gastrojejunostomy specimen landmarks.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_258464899.webp",
@@ -251,9 +251,9 @@
         "Pyloric region",
         "Fundus"
       ],
-      "correctIndex": 2,
-      "explanation": "Criteria of Identification: The chronic peptic ulcer is located prepylorically along the lesser curvature.",
-      "keyConcept": "Gastric ulcer location: Commonly lesser curvature and prepyloric antrum.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: The primary ulcer crater is situated along the lesser curvature of the gastric body, the classic site for chronic peptic and malignant ulcers.",
+      "keyConcept": "Ulcer anatomical location: Lesser curvature of stomach.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1254725865.webp",
@@ -272,8 +272,8 @@
         "Thickened gastric rugae"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Mucosal rugae adjacent to the anastomotic stoma are flattened.",
-      "keyConcept": "Mucosal changes in chronic peptic disease.",
+      "explanation": "Criteria of Identification: The arrow points to smooth, flattened gastric rugae adjacent to the lesion.",
+      "keyConcept": "Gastric mucosal flattening.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_235439625.webp",
@@ -292,8 +292,8 @@
         "Flat undermined edge; clean floor; soft fibrous base"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: The classic triad of a malignant ulcer (gastric carcinoma): (1) raised everted (rolled-out) margins, (2) necrotic, irregular, hemorrhagic floor, and (3) hard, indurated, deeply infiltrating base.",
-      "keyConcept": "Triad of malignant ulcer: Raised everted edges, necrotic dirty floor, hard infiltrating base.",
+      "explanation": "Criteria of Identification: Classic gross triad of a malignant ulcer (gastric adenocarcinoma): raised, rolled, everted margins; rough necrotic floor covered by slough and hemorrhage; and an indurated, widely infiltrating base.",
+      "keyConcept": "Malignant ulcer triad: Raised everted edges, necrotic dirty floor, and hard infiltrating base.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_532761479.webp",
@@ -312,8 +312,8 @@
         "Sharply punched-out outline"
       ],
       "correctIndex": 3,
-      "explanation": "Criteria of Identification: A sharply punched-out outline is characteristic of a benign chronic peptic ulcer. Malignant ulcers have irregular, raised, everted margins with diffuse invasion.",
-      "keyConcept": "Malignant ulcer: Irregular outline with rolled-out edges, not punched-out.",
+      "explanation": "Criteria of Identification: A sharply punched-out outline with clear-cut margins is the hallmark of a benign peptic ulcer, whereas a malignant ulcer features irregular, raised, everted borders.",
+      "keyConcept": "Malignant vs peptic ulcer: Punched-out outline characterizes benign peptic ulcers.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_459670614.webp",
@@ -332,8 +332,8 @@
         "Jejunum attached to the stomach with a fistulous tract between their lumina"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Gastrojejunostomy consists of an artificial surgical stoma created between the dependent portion of the greater curvature of the stomach and a loop of proximal jejunum.",
-      "keyConcept": "Gastrojejunostomy: Surgical stoma connecting gastric and jejunal lumina.",
+      "explanation": "Criteria of Identification: The specimen shows a loop of jejunum surgically anastomosed to the greater curvature of the stomach with a wide artificial stoma connecting their lumens (gastrojejunostomy).",
+      "keyConcept": "Gastrojejunostomy: Surgical stoma between gastric body and jejunal loop.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1190901791.webp",
@@ -352,8 +352,8 @@
         "Chronic gastric abscess"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Well-defined, solitary crater with dense fibrous base and radiating rugae, diagnostic of a chronic peptic ulcer.",
-      "keyConcept": "Chronic peptic ulcer.",
+      "explanation": "Criteria of Identification: Solitary, well-delineated mucosal ulcer crater with clean floor and radiating rugae characteristic of chronic gastric peptic ulcer.",
+      "keyConcept": "Chronic peptic ulcer: Solitary mucosal defect with clean floor.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_2053909021.webp",
@@ -371,9 +371,9 @@
         "It has clear-cut edges",
         "It has raised everted edges"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Chronic peptic ulcers do NOT have an extensive hard infiltrating base; that finding signifies gastric adenocarcinoma.",
-      "keyConcept": "Benign peptic ulcer features.",
+      "correctIndex": 3,
+      "explanation": "Criteria of Identification: Raised everted edges characterize malignant ulcers (gastric carcinomas). Benign peptic ulcers have flat or overhanging, clear-cut edges.",
+      "keyConcept": "Ulcer margins: Raised everted edges indicate malignancy.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_336347811.webp",
@@ -392,8 +392,8 @@
         "Infiltrating carcinoma of the pylorus only"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Large, irregular ulcer with prominent raised, rolled, everted margins and a necrotic slough in the floor, diagnostic of ulcerating gastric adenocarcinoma.",
-      "keyConcept": "Gastric adenocarcinoma: Malignant ulceration.",
+      "explanation": "Criteria of Identification: Large irregular ulcerated mass in the gastric mucosa with raised, rolled, everted margins and a hard, fixed base.",
+      "keyConcept": "Malignant gastric ulcer: Large, irregular with everted borders.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_630881403.webp",
@@ -412,8 +412,8 @@
         "Acute gastric ulcer of the stomach"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Large ulcerative lesion with characteristic malignant features: everted boundaries and necrotic base.",
-      "keyConcept": "Malignant gastric ulcer.",
+      "explanation": "Criteria of Identification: Gastric specimen displaying a large malignant ulcer crater with necrotic hemorrhagic debris in the floor.",
+      "keyConcept": "Gastric adenocarcinoma: Malignant ulceration.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_241703373.webp",
@@ -432,8 +432,8 @@
         "Undermined edge; necrotic floor"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Label 1 points to the raised, everted (rolled) tumor margin, while label 2 points to the necrotic, hemorrhagic, dirty floor of the ulcer.",
-      "keyConcept": "Malignant ulcer morphology.",
+      "explanation": "Criteria of Identification: Labels 1 and 2 point respectively to the raised, rolled, everted edge of the malignant ulcer and the rough necrotic floor.",
+      "keyConcept": "Malignant ulcer anatomy: Raised everted edges and necrotic slough in floor.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_2000694594.webp",
@@ -452,8 +452,8 @@
         "Bilharzial periportal fibrosis"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Liver surface is distorted by large, irregular regenerating nodules measuring between 0.5 cm and 3 cm in diameter, separated by broad bands of depressed fibrous tissue, characteristic of macronodular (post-hepatitic) cirrhosis.",
-      "keyConcept": "Macronodular cirrhosis: Coarse regenerating nodules (>3 mm, up to 2–3 cm) separated by irregular fibrous scars (viral hepatitis B/C etiology).",
+      "explanation": "Criteria of Identification: Liver surface and cut section studded with large, irregular regenerating nodules of variable size (ranging from 3 mm up to several centimeters) separated by broad, depressed, greyish-white fibrous scar bands.",
+      "keyConcept": "Macronodular cirrhosis: Coarse regenerative nodules (>3 mm) separated by broad irregular fibrous septa.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1506776433.webp",
@@ -472,8 +472,8 @@
         "multiple, round, about 5 cm in diameter"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: The nodules in macronodular cirrhosis are large, varying from 0.5 to 2 cm in diameter.",
-      "keyConcept": "Nodule dimensions in macronodular cirrhosis.",
+      "explanation": "Criteria of Identification: Label 2 indicates macronodules which typically measure 0.5 to 2 cm (and can reach 3–5 cm), characteristic of post-hepatitic (HBV/HCV) cirrhosis.",
+      "keyConcept": "Macronodular cirrhosis nodule size: 0.5 to 2 cm diameter.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_562559706.webp",
@@ -492,8 +492,8 @@
         "Rounded border"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: The Glisson's capsule of the cirrhotic liver is chronically thickened and fibrotic.",
-      "keyConcept": "Capsular thickening in cirrhosis.",
+      "explanation": "Criteria of Identification: Label 1 shows the chronic fibrotic thickening of Glisson's capsule over the nodular liver parenchyma.",
+      "keyConcept": "Cirrhotic liver capsule: Fibrotically thickened Glisson's capsule.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_2013021043.webp",
@@ -512,7 +512,7 @@
         "Bilharzial periportal fibrosis"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Prominent large nodules separated by broad fibrous depressions.",
+      "explanation": "Criteria of Identification: Specimen showing prominent large, variable regenerative nodules separated by broad fibrous depressions.",
       "keyConcept": "Macronodular cirrhosis.",
       "media": {
         "type": "image",
@@ -531,9 +531,9 @@
         "Markedly shrunken with retracted cut section",
         "Normal liver tissue in between the nodules"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: In macronodular cirrhosis, the fibrous bands are broad, irregular, and depressed between the regenerating parenchyma.",
-      "keyConcept": "Fibrous septa in macronodular cirrhosis.",
+      "correctIndex": 3,
+      "explanation": "Criteria of Identification: In true cirrhosis, diffuse parenchymal disorganization occurs throughout the entire organ; normal hepatic lobular architecture is completely lost, and there is NO normal liver tissue between nodules.",
+      "keyConcept": "Hallmark of cirrhosis: Diffuse architectural distortion without intervening normal parenchyma.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1288296549.webp",
@@ -551,9 +551,9 @@
         "Effects of metastatic liver disease",
         "Effects of chronic amoebic abscess"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Cirrhotic liver containing a massive, dominant, yellowish-white, necrotic tumor mass with satellite nodules, representing hepatocellular carcinoma (HCC) arising as a complication of cirrhosis.",
-      "keyConcept": "Hepatocellular carcinoma: Arises on top of HBV/HCV macronodular cirrhosis.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Display of multi-organ autopsy specimens illustrating the consequences of liver cirrhosis: shrunken nodular liver, congestive splenomegaly, and lower esophageal varices.",
+      "keyConcept": "Systemic triad of cirrhosis: Nodular liver, splenomegaly, and esophageal varices.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1263195362.webp",
@@ -571,9 +571,9 @@
         "Thickened splenic capsule",
         "Atrophic white pulp"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Background of regenerating cirrhotic nodules with a superimposed large neoplastic tumor mass.",
-      "keyConcept": "HCC complicating cirrhosis.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: In chronic congestive splenomegaly (Banti's spleen), the spleen enlarges symmetrically while maintaining its characteristic anterior border notch.",
+      "keyConcept": "Congestive splenomegaly: Symmetrical splenic enlargement with preserved notch.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_2036401647.webp",
@@ -591,9 +591,9 @@
         "Dark red with atrophic white pulp",
         "Shrunken with a wrinkled capsule"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Label 1 points to the main HCC tumor mass, which is bulky, unencapsulated, and shows typical variegated cut surface with areas of yellow necrosis and dark hemorrhage.",
-      "keyConcept": "Gross features of hepatocellular carcinoma.",
+      "correctIndex": 3,
+      "explanation": "Criteria of Identification: In chronic congestive splenomegaly, the spleen is markedly ENLARGED, tense, firm, and weighs several times normal with a THICKENED, smooth fibrous capsule; it is never shrunken.",
+      "keyConcept": "Congestive splenomegaly gross features: Markedly enlarged, firm with thickened capsule.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_664588047.webp",
@@ -611,9 +611,9 @@
         "Bilharzial fibrosis with white portal tracts",
         "Fatty change with yellow bulging surface"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Label 2 indicates the background cirrhotic regenerative nodules.",
-      "keyConcept": "Cirrhotic nodules.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: The arrowed liver specimen shows post-necrotic macronodular cirrhosis with prominent regenerative nodules on cut section.",
+      "keyConcept": "Macronodular cirrhosis cut section.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_267816436.webp",
@@ -631,9 +631,9 @@
         "The esophagus shows dilated tortuous submucosal veins",
         "The liver shows thickened white portal tracts"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Liver cut section displaying broad, dense, whitish fibrous collars expanding the portal tracts around portal vein branches resembling the stems of clay pipes ('pipe-stem fibrosis'). Liver lobular architecture is preserved, and true regenerative nodules are absent.",
-      "keyConcept": "Symmers' pipe-stem fibrosis: Periportal fibrosis around intrahepatic portal branches with preserved parenchymal lobules (non-cirrhotic portal hypertension).",
+      "correctIndex": 3,
+      "explanation": "Criteria of Identification: Thickened white portal tracts (pipe-stem fibrosis) are the pathognomonic hallmark of Schistosoma (Bilharzial) periportal fibrosis, whereas in cirrhosis the fibrous tissue forms bands surrounding regenerative nodules.",
+      "keyConcept": "Cirrhosis vs bilharzial fibrosis: Thickened white portal tracts characterize schistosomiasis.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_54572941.webp",
@@ -651,9 +651,9 @@
         "Solitary metastatic nodule with cirrhosis",
         "Chronic amoebic abscess with cirrhosis"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Dense white fibrous sheaths surrounding portal tracts.",
-      "keyConcept": "Pipe-stem fibrosis.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Liver cut section displaying a background of micronodular/macronodular cirrhosis upon which a large, bulky, yellowish-green, necrotic primary tumor mass (hepatocellular carcinoma) has arisen.",
+      "keyConcept": "Hepatocellular carcinoma on cirrhosis: Bulky malignant mass superimposed on cirrhotic nodules.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1551118463.webp",
@@ -671,9 +671,9 @@
         "Greyish with areas of haemorrhage and necrosis",
         "Central depression"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: The white bands are thick sleeves of collagenous scar tissue expanding the portal triads.",
-      "keyConcept": "Periportal fibrous cuffs in schistosomiasis.",
+      "correctIndex": 3,
+      "explanation": "Criteria of Identification: A central depression (umbilication) is characteristic of SECONDARY / metastatic liver tumors (due to central ischemia and necrosis). Primary HCC lesions are bulky, expansile, fleshy masses without central umbilication.",
+      "keyConcept": "Primary HCC vs metastatic nodules: Central umbilication characterizes metastatic carcinoma.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1766547060.webp",
@@ -692,8 +692,8 @@
         "Early amoebic liver abscesse"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Hepatic parenchyma between the pipe-stem fibrous tracts shows preserved architectural lobulation without pseudolobules.",
-      "keyConcept": "Preserved lobular architecture in Bilharzial fibrosis.",
+      "explanation": "Criteria of Identification: The starred lesions represent the background regenerative cirrhotic nodules surrounding the dominant tumor mass.",
+      "keyConcept": "Background cirrhotic nodules in HCC.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1507082571.webp",
@@ -712,8 +712,8 @@
         "Thickened portal tracts"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: In Schistosoma mansoni pipe-stem fibrosis, the normal lobular architecture of the liver is preserved, distinguishing it from true cirrhosis.",
-      "keyConcept": "Non-cirrhotic portal fibrosis.",
+      "explanation": "Criteria of Identification: The tissue separating the cirrhotic nodules consists of dense collagenous fibrous bands (septa) containing chronic inflammatory infiltrates and proliferating bile ductules.",
+      "keyConcept": "Cirrhotic septa: Collagenous fibrous bands bridging portal and central areas.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1677848902.webp",
@@ -731,9 +731,9 @@
         "Cirrhotic nodules in a macronodular cirrhosis",
         "Cirrhotic nodules in a micronodular cirrhosis"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: All are true EXCEPT impaired liver functions. In Schistosoma pipe-stem fibrosis, hepatocellular synthetic function (albumin, coagulation factors) is preserved until very late, because the hepatocytes themselves are not destroyed.",
-      "keyConcept": "Preserved hepatocellular function in Bilharzial hepatic fibrosis.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Liver cut section studded with multiple, discrete, rounded, jet-black to dark brown tumor nodules of varying sizes, characteristic of metastatic malignant melanoma.",
+      "keyConcept": "Metastatic melanoma to liver: Jet-black pigmented nodules scattered throughout the parenchyma.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1365974479.webp",
@@ -752,8 +752,8 @@
         "Metastatic nodules with necrosis"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Liver enlarged and studded with multiple, bilateral, spherical, whitish-tan tumor deposits of varying sizes, many displaying central necrosis and umbilication (central depression), pathognomonic of hematogenous hepatic metastases.",
-      "keyConcept": "Hepatic metastases: Multiple, variable-sized, bilateral spherical nodules with central umbilication.",
+      "explanation": "Criteria of Identification: Hepatic parenchyma containing multiple, ragged, irregular, poorly demarcated necrotic cavities without a formed fibrous capsule, filled with chocolate-colored 'anchovy paste' necrotic liquefied liver tissue.",
+      "keyConcept": "Early amoebic liver abscess: Multiple irregular necrotic cavities lacking a mature fibrous wall.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_2141287935.webp",
@@ -771,9 +771,9 @@
         "Single, irregular, filled with pus",
         "Multiple, regular, with thick fibrous walls"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Multiple cannonball nodules scattered throughout both liver lobes.",
-      "keyConcept": "Metastatic liver disease.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: The arrowed cavities are multiple, irregular in contour, and filled with necrotic, liquefied liver parenchyma (anchovy sauce pus) produced by Entamoeba histolytica histolytic enzymes.",
+      "keyConcept": "Amoebic abscess cavity: Irregular margins filled with liquefactive anchovy-paste debris.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_212800485.webp",
@@ -791,9 +791,9 @@
         "Acute amoebic liver abscess",
         "Chronic amoebic liver abscess"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: The central depression in metastatic nodules results from rapid tumor outgrowth of its blood supply, causing ischemic central necrosis and retraction.",
-      "keyConcept": "Central umbilication in liver metastases.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Liver section containing a large, solitary, chronic amoebic abscess cavity encapsulated by a dense, thick, whitish fibrous wall that demarcates it from the adjacent compressed liver parenchyma.",
+      "keyConcept": "Chronic amoebic liver abscess: Solitary large cavity enclosed by a thick mature fibrous capsule.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_2004782199.webp",
@@ -812,8 +812,8 @@
         "Chalky white calcification"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Key diagnostic hallmark: multiplicity, size variation, and central umbilication.",
-      "keyConcept": "Gross criteria of secondary liver tumors.",
+      "explanation": "Criteria of Identification: In chronic long-standing amoebic abscesses, the host mounts a prominent fibroblastic response, producing a thick collagenous fibrous capsule lining the cavity.",
+      "keyConcept": "Chronic amoebic abscess wall: Mature fibrous encapsulation.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_829223053.webp",
@@ -831,9 +831,9 @@
         "Chronic amoebic liver abscess",
         "Early amoebic liver abscess"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Gallbladder opened to reveal a markedly thickened, fibrotic, greyish-white wall and an inflamed mucosal surface containing multiple faceted, yellow-brown gallstones (cholelithiasis).",
-      "keyConcept": "Chronic calculous cholecystitis: Thick fibrotic wall with multiple faceted gallstones.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Hepatic section displaying a large rounded cystic cavity whose pericyst wall has undergone dense dystrophic calcification, presenting as a hard, rigid, chalky-white, radio-opaque shell.",
+      "keyConcept": "Calcified hydatid cyst: Dystrophic calcification within the fibrous pericyst capsule.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_414332856.webp",
@@ -852,8 +852,8 @@
         "Thin fibrous wall with smooth regular lining"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Classic museum specimen of chronic gallstone disease.",
-      "keyConcept": "Calculous cholecystitis.",
+      "explanation": "Criteria of Identification: The yellow arrow points to the thick fibrous pericyst demonstrating prominent chalky-white calcified deposits.",
+      "keyConcept": "Hydatid cyst calcification: Chalky-white calcified pericyst wall.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_2196321.webp",
@@ -871,9 +871,9 @@
         "Nodular",
         "Notched"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: The wall of the gallbladder is abnormally thickened (often >4-5 mm) by dense fibrous scar tissue.",
-      "keyConcept": "Mural fibrosis in chronic cholecystitis.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: The anterior border of this enlarged, fatty liver is blunted and rounded, contrasting with the normal sharp inferior hepatic margin.",
+      "keyConcept": "Fatty liver border: Blunted, rounded anterior margin.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1392173087.webp",
@@ -892,8 +892,8 @@
         "Dilated bile ducts with surrounding fibrosis"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: The stones are multiple with flat, polished facet surfaces resulting from mutual friction and compression within the contracted gallbladder.",
-      "keyConcept": "Faceted gallstones: Mixed stones formed by chronic cholelithiasis and friction.",
+      "explanation": "Criteria of Identification: The red arrow points to the portal triads, which are conspicuously expanded by dense, whitish, collagenous scar tissue surrounding intrahepatic portal vein branches.",
+      "keyConcept": "Symmers' pipe-stem fibrosis: Dense whitish periportal fibrous collars.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1732011607.webp",
@@ -911,9 +911,9 @@
         "Macronodular cirrhosis",
         "Fatty change of the liver"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: A thin, translucent wall is normal. Chronic cholecystitis causes dense, thick, opaque, fibrotic mural hypertrophy.",
-      "keyConcept": "Features of chronic cholecystitis.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Liver cut section displaying broad, dense, whitish fibrous sleeves expanding the portal tracts ('clay pipe-stem fibrosis'). Liver lobular architecture is preserved, and true regenerative nodules are absent.",
+      "keyConcept": "Bilharzial hepatic fibrosis (Symmers' pipe-stem): Non-cirrhotic portal fibrosis with preserved lobules.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_40441536.webp",
@@ -931,9 +931,9 @@
         "Haemosiderin",
         "Melanin"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Gallbladder with a thick, contracted wall harboring a solitary, large, rounded, barrel-shaped cholesterol gallstone.",
-      "keyConcept": "Solitary pure cholesterol gallstone in chronic cholecystitis.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: The hepatic parenchyma appears brownish-grey to slate-grey due to extensive deposition of bilharzial pigment (hemozoin / schistosomulum pigment) engulfed by Kupffer cells and portal macrophages.",
+      "keyConcept": "Bilharzial pigment: Slate-grey parenchymal discoloration due to macrophage hemozoin.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_562948794.webp",
@@ -951,9 +951,9 @@
         "Haemorrhage, necrosis and cystic degeneration",
         "Separated by fibrous bands with no normal live"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: The single stone is large, yellowish, oval, with a smooth surface.",
-      "keyConcept": "Cholesterol stone morphology.",
+      "correctIndex": 3,
+      "explanation": "Criteria of Identification: In bilharzial periportal fibrosis, true regenerative nodules do NOT form, and the hepatic parenchyma between portal tracts remains normal and preserved (non-cirrhotic).",
+      "keyConcept": "Bilharzial fibrosis architecture: Preserved intervening liver parenchyma without nodular remodeling.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_406037136.webp",
@@ -971,9 +971,9 @@
         "Micronodular cirrhosis",
         "Obstructive jaundice"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Gallbladder wall is thickened and shrunken around the stone.",
-      "keyConcept": "Contracted gallbladder wall.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Liver is uniformly enlarged, smooth, with a diffuse bright yellow color, rounded borders, and a greasy, yellowish-tan cut surface that bulges on sectioning.",
+      "keyConcept": "Hepatic steatosis (fatty liver): Diffusely enlarged, yellow, greasy liver with rounded margins.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_2094733186.webp",
@@ -991,9 +991,9 @@
         "Acute cholecystitis with empyema",
         "Cholesterol stone without hydrops"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Segment of large intestine whose mucosal lining is carpeted by hundreds of small, rounded, sessile and pedunculated adenomatous polyps (>100 polyps), pathognomonic of autosomal dominant FAP (APC gene mutation).",
-      "keyConcept": "Familial Adenomatous Polyposis: Innumerable adenomatous polyps (>100) carpet the colonic mucosa; 100% progress to adenocarcinoma if untreated.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Gallbladder is markedly enlarged, elongated, and tense with a thin, translucent wall and pale serosa, resulting from chronic cystic duct obstruction by an impacted stone with absorption of bile and accumulation of clear mucous secretion (mucocele).",
+      "keyConcept": "Hydrops of gallbladder (mucocele): Distended translucent gallbladder filled with sterile mucus.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_2019311237.webp",
@@ -1011,9 +1011,9 @@
         "Thin, translucent wall",
         "Contracted, thick, irregular wall"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Hundreds of adenomatous polyps covering the colonic mucosa.",
-      "keyConcept": "FAP syndrome.",
+      "correctIndex": 3,
+      "explanation": "Criteria of Identification: In hydrops of the gallbladder, the wall is markedly STRETCHED, thin, and translucent; a thick, contracted, fibrotic wall is characteristic of chronic calculous cholecystitis, not hydrops.",
+      "keyConcept": "Hydrops vs chronic cholecystitis: Hydrops features a distended, thin, translucent wall.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_619431087.webp",
@@ -1031,9 +1031,9 @@
         "Bile-stained blood",
         "Multiple small stones"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: The mucosal surface displays diffuse carpet-like polyposis.",
-      "keyConcept": "Carpet polyposis.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: In hydrops (mucocele) of the gallbladder, cystic duct obstruction causes the trapped bile pigments to be resorbed by the mucosa, while mucosal epithelial goblet cells continue to secrete clear, watery mucus ('white bile').",
+      "keyConcept": "Mucocele lumen: Clear, sterile, watery mucinous secretion ('white bile').",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_939421328.webp",
@@ -1051,9 +1051,9 @@
         "Hydrops of the gall bladder without stones",
         "Mixed stone with chronic cholecystitis"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Untreated FAP carries a 100% lifetime risk of developing invasive colorectal adenocarcinoma by age 40.",
-      "keyConcept": "FAP malignant transformation.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Markedly distended, thin-walled gallbladder containing a single, large, yellowish, oval cholesterol calculus impacted in Hartmann's pouch/cystic duct.",
+      "keyConcept": "Hydrops with solitary cholesterol stone: Cystic duct impaction leading to mucocele.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1815411644.webp",
@@ -1072,8 +1072,8 @@
         "Fistula into the duodenum"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Colonic specimen displaying a single discrete pedunculated polyp projecting into the lumen.",
-      "keyConcept": "Pedunculated adenomatous colonic polyp.",
+      "explanation": "Criteria of Identification: The arrow points to the solitary cholesterol calculus firmly impacted in the neck of the gallbladder/cystic duct, precipitating the luminal obstruction.",
+      "keyConcept": "Cystic duct stone impaction: Mechanical cause of gallbladder hydrops.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_699934103.webp",
@@ -1091,9 +1091,9 @@
         "Strangulated hernia",
         "Ileo-cecal intussusception"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: The pedunculated polyp consists of a lobulated adenomatous head attached to the mucosa by a narrow fibrovascular stalk.",
-      "keyConcept": "Pedunculated polyp architecture.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Segment of terminal ileum displaying a solitary, blind-ended, finger-like tubular diverticulum arising from the anti-mesenteric border approximately 2 feet proximal to the ileocecal valve.",
+      "keyConcept": "Meckel's diverticulum: True congenital diverticulum on the anti-mesenteric border of ileum.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_685648786.webp",
@@ -1111,9 +1111,9 @@
         "Open-ended, about 2 cm long, on the anti-mesenteric border",
         "Blind-ended, about 2 cm long, on the mesenteric border"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Adenomatous polyps are true neoplastic lesions (dysplastic), NOT non-neoplastic hamartomas.",
-      "keyConcept": "Adenoma vs hamartoma.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Label 1 indicates Meckel's diverticulum, which arises from the anti-mesenteric border of the ileum as a blind-ending pouch (remnant of the vitelline / omphalomesenteric duct).",
+      "keyConcept": "Meckel's diverticulum anatomy: Anti-mesenteric blind pouch of terminal ileum.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1222081745.webp",
@@ -1132,8 +1132,8 @@
         "Bacillary dysentery of the large intestine"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Segment of sigmoid colon / left colon showing a circumferential, constricting, infiltrating tumor mass encircling the bowel wall like a napkin-ring, causing marked luminal stenosis and proximal dilatation.",
-      "keyConcept": "Annular carcinoma of left colon: Napkin-ring constricting lesion producing bowel obstruction.",
+      "explanation": "Criteria of Identification: Segment of ileum showing multiple transverse mucosal ulcers oriented perpendicular to the long axis of the bowel (girdle ulcers), with ragged undermined edges and subserosal tubercles.",
+      "keyConcept": "Tuberculous intestinal ulcers: Transverse 'girdle' ulcers with undermined edges and serosal tubercles.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1286005216.webp",
@@ -1152,8 +1152,8 @@
         "Fibrous healing at the edges"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Segment of sigmoid colon / left colon showing a circumferential, constricting, infiltrating tumor mass encircling the bowel wall like a napkin-ring, causing marked luminal stenosis and proximal dilatation.",
-      "keyConcept": "Annular carcinoma of left colon: Napkin-ring constricting lesion producing bowel obstruction.",
+      "explanation": "Criteria of Identification: Tuberculous ulcers are caused by caseous necrosis within submucosal lymphoid tissue that breaks through the overlying mucosa, creating undermined edges.",
+      "keyConcept": "Pathogenesis of tuberculous ulcer: Submucosal caseation sloughing through mucosa.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1747895412.webp",
@@ -1171,9 +1171,9 @@
         "Flask-shaped, irregular, with undermined edges",
         "Oval, transverse, parallel to the direction of the gut"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: The tumor grows circumferentially within the bowel wall, constricting the lumen.",
-      "keyConcept": "Napkin-ring annular constriction.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Intestinal tuberculous ulcers encircle the gut transversely (girdle ulcers) because Mycobacterium tuberculosis spreads circumferentially along the transverse submucosal lymphatic channels.",
+      "keyConcept": "Tuberculous ulcer orientation: Transverse / perpendicular to gut axis along lymphatics.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_2047197563.webp",
@@ -1192,8 +1192,8 @@
         "Heaped up"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: The bowel proximal to the annular obstruction undergoes compensatory dilatation and hypertrophy.",
-      "keyConcept": "Proximal bowel dilatation in obstructive colonic carcinoma.",
+      "explanation": "Criteria of Identification: The margins of intestinal tuberculous ulcers are ragged and characteristically undermined, because caseous necrosis in the loose submucosa extends more widely than the mucosal defect.",
+      "keyConcept": "Tuberculous ulcer edges: Characteristically undermined margins.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_197791579.webp",
@@ -1211,9 +1211,9 @@
         "Soft base",
         "Caseous material and tubercles in the floor"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Segment of cecum / ascending colon opened to show a large, bulky, cauliflower-like, friable, exophytic mass projecting into the lumen, typical of right-sided fungating colorectal adenocarcinoma.",
-      "keyConcept": "Fungating carcinoma of right colon: Exophytic polypoid mass projecting into the spacious cecal lumen.",
+      "correctIndex": 3,
+      "explanation": "Criteria of Identification: The floor of a tuberculous ulcer is ragged, dirty, and studded with yellowish-white caseous tubercles.",
+      "keyConcept": "Tuberculous ulcer floor: Caseous debris and tubercles.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1810510561.webp",
@@ -1231,9 +1231,9 @@
         "Amalgamated loops of small intestine",
         "Metastatic deposits in the mesentery"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: The mass is exophytic, irregular, and cauliflower-like.",
-      "keyConcept": "Exophytic tumor morphology.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: The arrow points to prominent, enlarged, matted mesenteric lymph nodes with areas of yellowish-white caseation necrosis (tabes mesenterica).",
+      "keyConcept": "Tabes mesenterica: Matted, caseous mesenteric tuberculous lymphadenopathy.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_106790340.webp",
@@ -1251,9 +1251,9 @@
         "Enlarged, matted, caseating mesenteric lymph nodes",
         "Black foci of gangrene with perforations"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Fungating carcinomas occur predominantly in the right colon where the large lumen and liquid feces allow tumors to grow large without early obstruction.",
-      "keyConcept": "Colorectal cancer location: Fungating in right colon, annular in left colon.",
+      "correctIndex": 3,
+      "explanation": "Criteria of Identification: Intestinal tuberculosis features strictures, adhesions, and caseation; acute moist gangrene with black perforations is a vascular/ischemic catastrophe (strangulation), not tuberculosis.",
+      "keyConcept": "Intestinal TB features: Matted nodes, tubercles, transverse ulcers; lacks primary gangrene.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1324130090.webp",
@@ -1272,8 +1272,8 @@
         "Enlarged, discrete, haemorrhagic"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Early obstruction is typical of left-sided annular lesions, NOT right-sided fungating lesions, which present with occult bleeding, anemia, and weakness.",
-      "keyConcept": "Clinical presentation of right vs left colon cancer.",
+      "explanation": "Criteria of Identification: The red arrows indicate mesenteric lymph nodes that are enlarged, fused together into matted conglomerates, and show cheesy caseous necrosis on cut section.",
+      "keyConcept": "Tuberculous lymph nodes: Matted and caseous.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_2097028335.webp",
@@ -1291,9 +1291,9 @@
         "Acute suppurative appendicitis",
         "Tuberculous peritonitis"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Colonic mucosa interrupted by a large, deep, irregular ulcer with raised, everted margins and a dirty necrotic base, typical of ulcerating adenocarcinoma.",
-      "keyConcept": "Ulcerating colonic adenocarcinoma.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Resected loop of small intestine demonstrating acute moist gangrene secondary to strangulation at the hernia neck: the loop is swollen, dark purple to black, cold, and friable with lost peritoneal luster.",
+      "keyConcept": "Strangulated intestinal hernia: Ischemic loop showing acute moist gangrene.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_998459233.webp",
@@ -1311,9 +1311,9 @@
         "Ileo-ileal intussusception",
         "Tuberculous peritonitis"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Colonic mucosa interrupted by a large, deep, irregular ulcer with raised, everted margins and a dirty necrotic base, typical of ulcerating adenocarcinoma.",
-      "keyConcept": "Ulcerating colonic adenocarcinoma.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Intestinal loop showing diffuse, blackish discolouration, severe edema, hemorrhagic infarction, and loss of mucosal lining due to complete mesenteric vascular occlusion.",
+      "keyConcept": "Moist intestinal gangrene: Dark black, necrotic, foul-smelling bowel segment.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_936354154.webp",
@@ -1331,9 +1331,9 @@
         "Thrombosed mesenteric vessel",
         "Entering loop of intussusception"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: The edges of the malignant colonic ulcer are raised and rolled outward (everted).",
-      "keyConcept": "Malignant ulcer edge.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: The circled area demonstrates the sharp, pale, indented constriction rings at the neck of the strangulated loop where the constricting band arrested blood flow.",
+      "keyConcept": "Strangulation constriction rings: Narrow grooved lines of mechanical pressure at loop neck.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_554373406.webp",
@@ -1352,8 +1352,8 @@
         "Multiple haemorrhagic tuberculous ulcers"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: The floor is necrotic, shaggy, and stained with fecal and blood debris.",
-      "keyConcept": "Malignant ulcer floor.",
+      "explanation": "Criteria of Identification: The arrows indicate extensive patchy to confluent areas of dark black necrosis resulting from tissue putrefaction and iron sulfide formation.",
+      "keyConcept": "Gangrenous bowel discoloration: Blackish tissue necrosis.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_2000260389.webp",
@@ -1371,9 +1371,9 @@
         "Meckel’s diverticulum",
         "Strangulated hernia"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Loop of small intestine that is markedly swollen, edematous, congested, and discolored dark blackish-purple with lost luster, resulting from acute mesenteric vascular occlusion (strangulated bowel / mesenteric infarction).",
-      "keyConcept": "Moist gangrene of bowel: Mesenteric vascular occlusion causing blackish-purple hemorrhagic necrosis and peritonitis.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Segment of small bowel showing invagination of a proximal ileal loop (intussusceptum) into the lumen of the immediately adjacent distal ileal segment (intussuscipiens).",
+      "keyConcept": "Ileo-ileal intussusception: Telescoping of proximal ileum into distal ileal lumen.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1320557519.webp",
@@ -1392,8 +1392,8 @@
         "Twisting of an ileal loop around its mesentery"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Putrefaction and iron sulfide formation color the gangrenous bowel wall dark reddish-black to black.",
-      "keyConcept": "Color of intestinal gangrene.",
+      "explanation": "Criteria of Identification: Ileo-ileal intussusception is defined as the telescoping or invagination of one segment of the ileum into an adjacent segment of the ileum.",
+      "keyConcept": "Definition of ileo-ileal intussusception: Ileum invaginating into ileum.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1253849796.webp",
@@ -1411,9 +1411,9 @@
         "Swollen, greyish, with tiny yellow tubercles",
         "Contracted, bluish, with dirty greyish membrane"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Moist gangrene of the intestine is precipitated by sudden arterial thrombosis, mesenteric embolism, or strangulated hernia.",
-      "keyConcept": "Etiology of intestinal gangrene.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: The entering loop (intussusceptum) suffers venous obstruction, becoming intensely congested, swollen, cyanotic (bluish-red), and hemorrhagic.",
+      "keyConcept": "Intussusceptum pathology: Venous congestion, intense swelling, and hemorrhagic infarction.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_499131271.webp",
@@ -1431,9 +1431,9 @@
         "Stenosis and fibrous adhesion",
         "Caecum"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: In moist gangrene, the bowel wall is massively thickened, edematous, and covered by dull, foul-smelling fibrinous exudate, NOT thin, dry, or glistening.",
-      "keyConcept": "Features of moist gangrene.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Label A indicates the entering loop of ileum (the inner invaginating tube of the intussusceptum).",
+      "keyConcept": "Intussusception anatomy: Entering ileal loop.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1565591433.webp",
@@ -1452,8 +1452,8 @@
         "Ileocecal valve with invaginated ileum"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Herniated loop of small bowel showing a deep constriction groove at the site of neck compression with distal congested, gangrenous loops.",
-      "keyConcept": "Strangulated intestinal loop.",
+      "explanation": "Criteria of Identification: The orange circle highlights the constricted neck of the intussusception where mesenteric vessels are compressed.",
+      "keyConcept": "Constriction neck of intussusception.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_2025958802.webp",
@@ -1472,8 +1472,8 @@
         "Mesentery"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Herniated loop of small bowel showing a deep constriction groove at the site of neck compression with distal congested, gangrenous loops.",
-      "keyConcept": "Strangulated intestinal loop.",
+      "explanation": "Criteria of Identification: The arrow points to the entering proximal segment of bowel passing into the receiving sheath.",
+      "keyConcept": "Entering loop of intussusception.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1644135242.webp",
@@ -1491,9 +1491,9 @@
         "Stenosis and fibrous adhesion proximal to the intussusception",
         "Ileocecal valve with invaginated ileum"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Arrow points to the distinct pale constriction groove.",
-      "keyConcept": "Constriction groove in strangulation.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Pathological changes distal to the intussusception include inflammatory adhesions and luminal compromise.",
+      "keyConcept": "Intussusception complications: Obstruction and fibrous adhesions.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1389465831.webp",
@@ -1511,9 +1511,9 @@
         "Fungating carcinoma of the caecum",
         "Acute suppurative appendicitis"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: The two points of constriction marking the entry and exit of the strangulated loop.",
-      "keyConcept": "Neck of strangulation.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Surgical specimen demonstrating the terminal ileum invaginating through the ileocecal valve into the cecum and ascending colon.",
+      "keyConcept": "Ileo-cecal intussusception: Terminal ileum invaginated into cecum.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_105868076.webp",
@@ -1532,8 +1532,8 @@
         "Appendix invaginated into the caecum through its orifice"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Specimen showing invagination of the terminal ileum (intussusceptum) into the cecum and ascending colon (intussuscipiens) through the ileocecal valve.",
-      "keyConcept": "Ileo-cecal intussusception: Terminal ileum invaginates into the cecum, causing intestinal obstruction.",
+      "explanation": "Criteria of Identification: The starred structure represents the invaginated terminal ileum which forms the apex of the intussusceptum advancing into the cecum.",
+      "keyConcept": "Ileo-cecal intussusception mechanism: Terminal ileum entering cecum via valve.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1126948530.webp",
@@ -1552,8 +1552,8 @@
         "Appendix invaginated into the caecum through its orifice"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Specimen showing invagination of the terminal ileum (intussusceptum) into the cecum and ascending colon (intussuscipiens) through the ileocecal valve.",
-      "keyConcept": "Ileo-cecal intussusception: Terminal ileum invaginates into the cecum, causing intestinal obstruction.",
+      "explanation": "Criteria of Identification: Terminal ileum invaginated into the caecum through the ileocecal valve.",
+      "keyConcept": "Ileo-cecal intussusception.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1764267323.webp",
@@ -1571,9 +1571,9 @@
         "Moist gangrene of the small intestine",
         "Malignant ulcer of the appendix"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Specimen showing invagination of the terminal ileum (intussusceptum) into the cecum and ascending colon (intussuscipiens) through the ileocecal valve.",
-      "keyConcept": "Ileo-cecal intussusception: Terminal ileum invaginates into the cecum, causing intestinal obstruction.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Vermiform appendix is swollen, turgid, club-shaped, intensely congested, with a dull serosal surface covered by yellowish-white fibrinous and purulent exudate.",
+      "keyConcept": "Acute suppurative appendicitis: Turgid, congested appendix coated with purulent exudate.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1598132364.webp",
@@ -1591,9 +1591,9 @@
         "Blackish discolouration if gangrenous",
         "Thick contracted wall with faceted stones"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Appendix is swollen, tense, congested, and covered by dull fibrinous and purulent exudate with focal mucosal ulcerations, characteristic of acute suppurative appendicitis.",
-      "keyConcept": "Acute appendicitis: Swollen, hyperemic organ covered with purulent serosal exudate.",
+      "correctIndex": 3,
+      "explanation": "Criteria of Identification: A contracted thick wall with faceted gallstones describes chronic calculous cholecystitis, whereas acute appendicitis features acute transmural swelling and purulent exudate.",
+      "keyConcept": "Appendicitis vs cholecystitis: Appendicitis lacks thick fibrotic contraction and faceted stones.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_650223256.webp",
@@ -1611,9 +1611,9 @@
         "Tuberculous ulcers of the large intestine",
         "Fungating carcinoma of the large intestin"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Contracted wall with faceted stones describes chronic cholecystitis, NOT acute appendicitis.",
-      "keyConcept": "Acute appendicitis differential.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Large intestine opened to reveal a diffuse acute fibrino-purulent pseudomembranous colitis: mucosa is intensely congested and coated by a dirty greyish-green, ragged pseudomembrane with superficial mucosal erosions.",
+      "keyConcept": "Bacillary dysentery: Diffuse acute pseudomembranous inflammation of colonic mucosa.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_301695656.webp",
@@ -1632,8 +1632,8 @@
         "Raised everted edges"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Colonic mucosa covered diffusely by a dirty greyish-green pseudomembrane composed of necrotic mucosa, fibrin, and polymorphs (pseudomembranous / bacillary dysentery caused by Shigella).",
-      "keyConcept": "Bacillary dysentery: Superficial pseudomembrane over congested mucosa with bran-like ulcers.",
+      "explanation": "Criteria of Identification: The arrow points to the dirty greyish-green pseudomembrane (composed of coagulated fibrin, necrotic epithelial debris, and neutrophils) adhering to the inflamed colonic mucosa.",
+      "keyConcept": "Pseudomembrane in bacillary dysentery: Fibrinopurulent exudate adhering to mucosa.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_799098448.webp",
@@ -1651,9 +1651,9 @@
         "Typhoid ulcers",
         "Tuberculous ulcers"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Colonic mucosa covered diffusely by a dirty greyish-green pseudomembrane composed of necrotic mucosa, fibrin, and polymorphs (pseudomembranous / bacillary dysentery caused by Shigella).",
-      "keyConcept": "Bacillary dysentery: Superficial pseudomembrane over congested mucosa with bran-like ulcers.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Segment of colon displaying multiple, discrete, rounded to oval mucosal ulcers with characteristically undermined edges, separated by completely normal intervening mucosal patches.",
+      "keyConcept": "Amoebic dysentery: Discrete ulcers with undermined edges and normal intervening mucosa.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_351782238.webp",
@@ -1672,8 +1672,8 @@
         "Necrotic floor of the ulcers"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Large intestine displaying discrete, isolated ulcers with undermined edges and normal intervening mucosa, pathognomonic of amoebic dysentery (Entamoeba histolytica).",
-      "keyConcept": "Amoebic dysentery: Discrete flask-shaped ulcers with undermined edges and normal intervening mucosa.",
+      "explanation": "Criteria of Identification: The arrows highlight intact, healthy, pale colonic mucosa between individual amoebic ulcers, in sharp contrast to the diffuse continuous inflammation of bacillary dysentery.",
+      "keyConcept": "Amoebic vs bacillary colitis: Intact normal mucosa between ulcers in amebiasis.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1194160683.webp",
@@ -1691,9 +1691,9 @@
         "Up to 2 cm in diameter",
         "D indurated base"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Arrows point to the completely normal, unaffected colonic mucosa between adjacent amoebic ulcers (crucial distinction from bacillary dysentery).",
-      "keyConcept": "Normal intervening mucosa in amoebiasis.",
+      "correctIndex": 3,
+      "explanation": "Criteria of Identification: Amoebic ulcers have a soft base composed of necrotic debris and cellular infiltrate; an indurated, hard base is characteristic of carcinoma, not amebiasis.",
+      "keyConcept": "Amoebic ulcer characteristics: Soft base, undermined edges, and normal intervening mucosa.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1479773699.webp",
@@ -1712,8 +1712,8 @@
         "Over hyperplastic Peyer’s patches"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Amoebic ulcers have a soft necrotic base formed by submucosa or muscularis, NOT a hard indurated base (which signifies malignancy).",
-      "keyConcept": "Amoebic ulcer morphology.",
+      "explanation": "Criteria of Identification: Early amoebic lesions begin as small submucosal abscesses that elevate the overlying mucosa into rounded domes, with the ulcer neck opening at the center.",
+      "keyConcept": "Amoebic ulcer formation: Small central mucosal neck opening over submucosal necrosis.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1868108237.webp",
@@ -1732,8 +1732,8 @@
         "Crater-shaped"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: The small ulcer neck is situated in the center of a mucosal elevation over the submucosal amoebic abscess.",
-      "keyConcept": "Amoebic flask ulcer neck.",
+      "explanation": "Criteria of Identification: On cross section, amoebic ulcers are classically flask-shaped (or buttonhole-shaped), having a narrow neck in the mucosa and a broad base in the loose submucosa due to lateral lytic spread of trophozoites.",
+      "keyConcept": "Flask-shaped amoebic ulcer: Narrow mucosal neck with wide submucosal base.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1891894151.webp",
@@ -1751,9 +1751,9 @@
         "Amoebic dysentery of the large intestine",
         "Bacillary dysentery of the large intestine"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: On vertical section, amoebic ulcers are flask-shaped (narrow mucosal neck with widely undermined submucosal base).",
-      "keyConcept": "Flask-shaped ulcer: Narrow neck with wide base in submucosa due to amoebic histolysins.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Large intestine displaying a bulky, cauliflower-like, friable, fungating exophytic tumor mass projecting into and partially obstructing the lumen.",
+      "keyConcept": "Fungating colonic carcinoma: Bulky exophytic cauliflower-like mucosal mass.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1561191127.webp",
@@ -1772,8 +1772,8 @@
         "Intussusception"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Colorectal adenocarcinoma specimen presenting as a fungating exophytic or ulcerating lesion causing luminal narrowing and proximal bowel dilatation.",
-      "keyConcept": "Colorectal carcinoma gross morphology.",
+      "explanation": "Criteria of Identification: Chronic partial luminal obstruction by an exophytic colonic carcinoma leads to marked muscular hypertrophy and secondary dilatation of the proximal bowel.",
+      "keyConcept": "Colonic obstruction: Upstream bowel dilatation and hypertrophy.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_82085402.webp",
@@ -1791,9 +1791,9 @@
         "Amoebic ulcer of the rectum",
         "Chronic peptic ulcer of the rectum"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Colorectal adenocarcinoma specimen presenting as a fungating exophytic or ulcerating lesion causing luminal narrowing and proximal bowel dilatation.",
-      "keyConcept": "Colorectal carcinoma gross morphology.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Colorectal segment opened to reveal an annular, ulcerating malignant mass with raised, rolled, everted margins, a rough necrotic hemorrhagic floor, and a hard infiltrating base.",
+      "keyConcept": "Malignant colorectal ulcer: Annular ulcerated mass with raised everted borders.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_411852210.webp",
@@ -1812,8 +1812,8 @@
         "Chronic peptic ulcer of the rectum"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Colorectal adenocarcinoma specimen presenting as a fungating exophytic or ulcerating lesion causing luminal narrowing and proximal bowel dilatation.",
-      "keyConcept": "Colorectal carcinoma gross morphology.",
+      "explanation": "Criteria of Identification: Specimen showing a prominent exophytic, polypoid, fungating malignant neoplasm arising from the mucosal surface of the cecum/colon.",
+      "keyConcept": "Fungating colorectal carcinoma: Large polypoid mucosal mass.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1345220206.webp",
@@ -1832,8 +1832,8 @@
         "Chronic peptic ulcer of the rectum"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Colorectal adenocarcinoma specimen presenting as a fungating exophytic or ulcerating lesion causing luminal narrowing and proximal bowel dilatation.",
-      "keyConcept": "Colorectal carcinoma gross morphology.",
+      "explanation": "Criteria of Identification: Fungating exophytic mass in colon.",
+      "keyConcept": "Fungating colonic carcinoma.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_458483868.webp",
@@ -1851,9 +1851,9 @@
         "Bilharzial pigment",
         "Melanosis"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Colorectal adenocarcinoma specimen presenting as a fungating exophytic or ulcerating lesion causing luminal narrowing and proximal bowel dilatation.",
-      "keyConcept": "Colorectal carcinoma gross morphology.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: The dark blackish-purple discolouration of the intestinal wall is due to bacterial putrefaction and formation of iron sulfide (FeS) in ischemic, necrotic, gangrenous tissue.",
+      "keyConcept": "Moist gangrene: Blackish discoloration produced by bacterial iron sulfide.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1590619853.webp",
@@ -1871,9 +1871,9 @@
         "Enlarged, matted, caseating mesenteric lymph nodes",
         "Swollen loop with black foci of gangrene"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Blackish discoloration of the bowel wall is diagnostic of ischemic gangrene resulting from putrefactive iron sulfide formation.",
-      "keyConcept": "Intestinal gangrene discoloration.",
+      "correctIndex": 3,
+      "explanation": "Criteria of Identification: Tuberculous peritonitis features diffuse peritoneal thickening, matted loops, and tubercles without acute moist gangrenous loops.",
+      "keyConcept": "Tuberculous peritonitis features: Diffuse tubercles, ascites, and adhesions; lacks primary gangrene.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1423698993.webp",
@@ -1891,9 +1891,9 @@
         "Tuberculous ulcers with tabes mesenterica",
         "Acute suppurative peritonitis"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Black gangrenous foci describe acute mesenteric vascular catastrophe, NOT chronic tuberculous peritonitis.",
-      "keyConcept": "Tuberculous peritonitis features.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Greater omentum is markedly thickened, contracted into a rolled-up transverse fibrous mass ('omental cake'), and densely studded with innumerable, tiny, greyish-white to yellowish caseous tubercles.",
+      "keyConcept": "Tuberculous peritonitis ('omental cake'): Thickened fibrotic omentum studded with tubercles.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/museum/patho_mus_1612868849.webp",
@@ -1914,12 +1914,12 @@
         "Malignant epithelial tumor of viral oncogenesis"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Microscopic slide of the liver shows broad bands of fibrous tissue expanding the portal tracts (pipe-stem fibrosis) while the central veins and parenchymal lobular architecture are preserved, characteristic of hepatic schistosomiasis (Bilharzial liver).",
-      "keyConcept": "Bilharzial hepatic fibrosis: Portal expansion by fibrous tissue with preserved lobular architecture.",
+      "explanation": "Criteria of Identification: Liver biopsy displaying expanded portal tracts by dense collagenous fibrous tissue containing bilharzial granulomas, dead calcified Schistosoma ova, and chronic inflammatory cells, with preserved lobular architecture and absence of true regenerative nodules.",
+      "keyConcept": "Bilharzial hepatic fibrosis: Portal expansion with dead ova and preserved lobular architecture.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1691475788.webp",
-        "caption": "Pathology Microscopic Slide — Station 1"
+        "caption": "Pathology Lab Slide — Station 1"
       }
     },
     {
@@ -1933,13 +1933,13 @@
         "Dead Bilharzial ova",
         "Regenerative nodule"
       ],
-      "correctIndex": 1,
-      "explanation": "Criteria of Identification: Circled structure 1 shows angiomatoids: vascular channels formed by newly canalized vessels and telangiectatic capillaries within the fibrosed portal tract.",
-      "keyConcept": "Angiomatoids: Telangiectatic vascular channels in Bilharzial portal tracts.",
+      "correctIndex": 2,
+      "explanation": "Criteria of Identification: Label 1 indicates dead, calcified, shrunken Schistosoma mansoni ova embedded within the periportal fibrous tissue, surrounded by foreign-body giant cells, histiocytes, and eosinophils.",
+      "keyConcept": "Dead Bilharzial ova: Calcified, oval, brownish egg shells within portal granulomas.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1426917509.webp",
-        "caption": "Pathology Microscopic Slide — Station 2"
+        "caption": "Pathology Lab Slide — Station 2"
       }
     },
     {
@@ -1954,12 +1954,12 @@
         "Lipofuscin"
       ],
       "correctIndex": 2,
-      "explanation": "Criteria of Identification: Label 3 indicates dark brown to blackish Bilharzial pigment (hemozoin-like pigment) engulfed inside the cytoplasm of portal macrophages (histiocytes).",
-      "keyConcept": "Bilharzial pigment: Dark brown iron-free pigment in portal tract macrophages.",
+      "explanation": "Criteria of Identification: Label 3 indicates dark brown to blackish granular bilharzial pigment (hemozoin / schistosomulum pigment) engulfed within the cytoplasm of portal histiocytes and Kupffer cells.",
+      "keyConcept": "Bilharzial pigment: Dark granular hemozoin inside portal macrophages.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1968445181.webp",
-        "caption": "Pathology Microscopic Slide — Station 3"
+        "caption": "Pathology Lab Slide — Station 3"
       }
     },
     {
@@ -1974,12 +1974,12 @@
         "Lymphoid stroma with germinal centers"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Area A demonstrates a markedly broadened portal tract containing chronic granulomatous inflammation surrounding Schistosoma mansoni ova with multinucleated foreign body giant cells, epithelioid cells, and dense collagenous fibrosis.",
-      "keyConcept": "Bilharzial granuloma: Granulomatous response around Schistosoma ova in portal areas.",
+      "explanation": "Criteria of Identification: Area A demonstrates marked fibrous widening of a portal triad infiltrated by specific granulomatous inflammation surrounding bilharzial ova.",
+      "keyConcept": "Expanded portal tract in schistosomiasis: Fibrous expansion by granulomas.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1200586026.webp",
-        "caption": "Pathology Microscopic Slide — Station 4"
+        "caption": "Pathology Lab Slide — Station 4"
       }
     },
     {
@@ -1994,12 +1994,12 @@
         "Ova reach the portal tracts as emboli through the portal circulation"
       ],
       "correctIndex": 2,
-      "explanation": "Criteria of Identification: All are true EXCEPT marked impairment of liver functions. In Bilharzial pipe-stem fibrosis, liver architecture and hepatocellular metabolic/synthetic functions remain remarkably preserved until terminal complications intervene.",
-      "keyConcept": "Preserved hepatic synthetic function in Bilharzial fibrosis.",
+      "explanation": "Criteria of Identification: In pure bilharzial hepatic fibrosis (Symmers' pipe-stem), parenchymal liver functions (serum albumin, bilirubin, coagulation factors) remain PRESERVED for decades because hepatocytes and lobular architecture are intact; liver failure occurs only if viral hepatitis or end-stage cirrhosis supervenes.",
+      "keyConcept": "Bilharzial fibrosis clinical hallmark: Preserved parenchymal liver functions with non-cirrhotic portal hypertension.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1694499172.webp",
-        "caption": "Pathology Microscopic Slide — Station 5"
+        "caption": "Pathology Lab Slide — Station 5"
       }
     },
     {
@@ -2014,12 +2014,12 @@
         "Regenerating nodule"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Label C highlights the surrounding hepatic parenchyma with preserved classical lobular plates radiating toward the central vein.",
-      "keyConcept": "Preserved lobular architecture.",
+      "explanation": "Criteria of Identification: Label C highlights the surrounding hepatic lobules where hepatocyte cords, sinusoids, and central veins maintain normal spatial orientation.",
+      "keyConcept": "Preserved lobular architecture in schistosomiasis.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_217698719.webp",
-        "caption": "Pathology Microscopic Slide — Station 6"
+        "caption": "Pathology Lab Slide — Station 6"
       }
     },
     {
@@ -2034,12 +2034,12 @@
         "Chronic specific inflammation"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Hepatocellular carcinoma (HCC) is a primary malignant epithelial neoplasm derived from hepatocytes.",
-      "keyConcept": "Hepatocellular carcinoma: Malignant epithelial neoplasm.",
+      "explanation": "Criteria of Identification: High-power section of hepatocellular carcinoma (HCC), a malignant epithelial neoplasm derived from transformed hepatocytes.",
+      "keyConcept": "Hepatocellular carcinoma: Malignant epithelial neoplasm of hepatocyte origin.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1513755048.webp",
-        "caption": "Pathology Microscopic Slide — Station 7"
+        "caption": "Pathology Lab Slide — Station 7"
       }
     },
     {
@@ -2054,12 +2054,12 @@
         "Papillary pattern"
       ],
       "correctIndex": 2,
-      "explanation": "Criteria of Identification: The tumor cells grow in thick, irregular trabeculae (plates >3 cells thick) separated by sinusoidal blood spaces lined by endothelial cells, the classic trabecular (sinusoidal) pattern of HCC.",
-      "keyConcept": "HCC trabecular pattern: Tumor cell cords >3 cells thick separated by sinusoid-like vascular spaces.",
+      "explanation": "Criteria of Identification: Neoplastic hepatocytes are organized into thick, irregular cords and trabeculae (many cells thick, in contrast to normal 1- to 2-cell thick hepatic plates) separated by sinusoid-like vascular spaces lined by endothelial cells.",
+      "keyConcept": "HCC trabecular pattern: Thick multicellular hepatocyte cords flanked by sinusoids.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1126221069.webp",
-        "caption": "Pathology Microscopic Slide — Station 8"
+        "caption": "Pathology Lab Slide — Station 8"
       }
     },
     {
@@ -2074,12 +2074,12 @@
         "Cystic"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: The tumor cells grow in thick, irregular trabeculae (plates >3 cells thick) separated by sinusoidal blood spaces lined by endothelial cells, the classic trabecular (sinusoidal) pattern of HCC.",
-      "keyConcept": "HCC trabecular pattern: Tumor cell cords >3 cells thick separated by sinusoid-like vascular spaces.",
+      "explanation": "Criteria of Identification: Architectural pattern consisting of widened hepatocyte trabeculae separated by sinusoid-like channels.",
+      "keyConcept": "HCC trabecular architecture.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1575969656.webp",
-        "caption": "Pathology Microscopic Slide — Station 9"
+        "caption": "Pathology Lab Slide — Station 9"
       }
     },
     {
@@ -2093,13 +2093,13 @@
         "Diffuse sheets",
         "Nodular"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: The tumor cells grow in thick, irregular trabeculae (plates >3 cells thick) separated by sinusoidal blood spaces lined by endothelial cells, the classic trabecular (sinusoidal) pattern of HCC.",
-      "keyConcept": "HCC trabecular pattern: Tumor cell cords >3 cells thick separated by sinusoid-like vascular spaces.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Neoplastic hepatocytes are arranged in pseudoglandular / acinar structures around central dilated lumina (pseudocanaliculi), mimicking glands.",
+      "keyConcept": "HCC pseudoglandular/acinar pattern: Neoplastic cells arranged around central lumina.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_2072093626.webp",
-        "caption": "Pathology Microscopic Slide — Station 10"
+        "caption": "Pathology Lab Slide — Station 10"
       }
     },
     {
@@ -2114,12 +2114,12 @@
         "Atypical mitotic figures"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Malignant cells exhibit an INCREASED nuclear-to-cytoplasmic (N/C) ratio, prominent pleomorphism, hyperchromasia, and atypical mitoses; they do not have a decreased N/C ratio.",
-      "keyConcept": "Cytological criteria of malignancy: Increased N/C ratio.",
+      "explanation": "Criteria of Identification: Cytological hallmarks of malignancy include an INCREASED nuclear-to-cytoplasmic (N/C) ratio; a decreased N/C ratio is characteristic of benign, well-differentiated or mature cells.",
+      "keyConcept": "Malignancy hallmark: Increased N/C ratio, nuclear pleomorphism, and hyperchromasia.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_503452901.webp",
-        "caption": "Pathology Microscopic Slide — Station 11"
+        "caption": "Pathology Lab Slide — Station 11"
       }
     },
     {
@@ -2134,12 +2134,12 @@
         "trabecular patten of growth"
       ],
       "correctIndex": 3,
-      "explanation": "Criteria of Identification: Classic trabecular growth pattern.",
-      "keyConcept": "HCC architecture.",
+      "explanation": "Criteria of Identification: Neoplastic cells demonstrate a characteristic trabecular architecture with widened liver cell plates.",
+      "keyConcept": "Trabecular growth pattern in HCC.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_652579228.webp",
-        "caption": "Pathology Microscopic Slide — Station 12"
+        "caption": "Pathology Lab Slide — Station 12"
       }
     },
     {
@@ -2153,13 +2153,13 @@
         "Normal liver; fibrous septa",
         "Bilharzial granuloma; normal liver"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Label 1 shows background cirrhotic liver parenchyma with fibrous septa, while label 2 shows the malignant HCC trabeculae.",
-      "keyConcept": "HCC arising on cirrhosis.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Label 1 indicates the cellular, pleomorphic malignant hepatoma (HCC) focus, and label 2 indicates the background regenerating cirrhotic pseudolobules.",
+      "keyConcept": "HCC arising in cirrhotic liver: Tumor focus adjacent to regenerative nodules.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1819778843.webp",
-        "caption": "Pathology Microscopic Slide — Station 13"
+        "caption": "Pathology Lab Slide — Station 13"
       }
     },
     {
@@ -2174,12 +2174,12 @@
         "It is a malignant epithelial tumor"
       ],
       "correctIndex": 2,
-      "explanation": "Criteria of Identification: All are true EXCEPT decreased AFP. Serum alpha-fetoprotein (AFP) is significantly ELEVATED in >70% of hepatocellular carcinoma patients and serves as a primary tumor marker.",
-      "keyConcept": "Tumor markers: Serum AFP is markedly elevated in HCC.",
+      "explanation": "Criteria of Identification: Serum alpha-fetoprotein (AFP) is a key oncofetal tumor marker that is characteristically ELEVATED (frequently >400–1000 ng/mL) in patients with hepatocellular carcinoma.",
+      "keyConcept": "HCC tumor marker: Serum alpha-fetoprotein (AFP) is markedly increased.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_465282491.webp",
-        "caption": "Pathology Microscopic Slide — Station 14"
+        "caption": "Pathology Lab Slide — Station 14"
       }
     },
     {
@@ -2195,12 +2195,12 @@
         "Silver stain ; fibrous tissue"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Masson's trichrome stain selectively colors collagenous fibrous connective tissue bright blue, clearly delineating the bridging fibrous septa that encircle regenerating hepatocytes in cirrhosis.",
-      "keyConcept": "Special stains: Masson's trichrome stains collagen / fibrous septa blue.",
+      "explanation": "Criteria of Identification: Masson's trichrome special stain stains collagen fibers intense blue or green, clearly outlining the broad fibrous tissue septa bridging between portal tracts and central veins.",
+      "keyConcept": "Masson's trichrome stain: Blue-stained collagen septa delineating cirrhotic nodules.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1802465563.webp",
-        "caption": "Pathology Microscopic Slide — Station 15"
+        "caption": "Pathology Lab Slide — Station 15"
       }
     },
     {
@@ -2215,12 +2215,12 @@
         "Portal tracts"
       ],
       "correctIndex": 2,
-      "explanation": "Criteria of Identification: Outlined areas represent rounded regenerative parenchymal nodules lacking central veins and surrounded completely by fibrous scars.",
-      "keyConcept": "Regenerative nodules in cirrhosis.",
+      "explanation": "Criteria of Identification: The areas encircled by blue fibrous septa represent rounded regenerative nodules (pseudolobules) lacking normal central veins.",
+      "keyConcept": "Cirrhotic pseudolobules: Regenerative parenchymal islands lacking normal vascular orientation.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1375378528.webp",
-        "caption": "Pathology Microscopic Slide — Station 16"
+        "caption": "Pathology Lab Slide — Station 16"
       }
     },
     {
@@ -2235,12 +2235,12 @@
         "Benign encapsulated tumor"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Triad of cirrhosis: diffuse parenchymal bridging fibrosis, loss of normal lobular architecture, and parenchymal nodular regeneration.",
-      "keyConcept": "Histological definition of cirrhosis: Diffuse fibrosis + regenerative nodules + architectural distortion.",
+      "explanation": "Criteria of Identification: Definitive histological triad of liver cirrhosis: diffuse parenchymal extinction, dense collagenous bridging fibrous septa, and structural remodeling into round regenerative pseudolobules.",
+      "keyConcept": "Histological definition of cirrhosis: Diffuse fibrosis with regenerative pseudolobules.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1157760716.webp",
-        "caption": "Pathology Microscopic Slide — Station 17"
+        "caption": "Pathology Lab Slide — Station 17"
       }
     },
     {
@@ -2255,12 +2255,12 @@
         "Neutrophil infiltration"
       ],
       "correctIndex": 3,
-      "explanation": "Criteria of Identification: In chronic cirrhosis, the inflammatory infiltrate consists of lymphocytes, plasma cells, and histiocytes; acute neutrophils are not a typical feature unless acute alcoholic hepatitis or sepsis is superimposed.",
-      "keyConcept": "Chronic inflammatory infiltrate in cirrhosis.",
+      "explanation": "Criteria of Identification: Liver cirrhosis is a chronic progressive disease characterized by mononuclear lymphocytes, plasma cells, and macrophages; dense acute neutrophil infiltration is seen in acute ascending cholangitis or severe alcoholic hepatitis, not uncomplicated viral cirrhosis.",
+      "keyConcept": "Cirrhotic infiltrate: Chronic mononuclear inflammatory cells, not acute neutrophils.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1530277575.webp",
-        "caption": "Pathology Microscopic Slide — Station 18"
+        "caption": "Pathology Lab Slide — Station 18"
       }
     },
     {
@@ -2275,12 +2275,12 @@
         "It is a predisposing factor for HCC"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Unlike pure Bilharzial fibrosis, true liver cirrhosis causes progressive hepatocellular functional failure (hypoalbuminemia, coagulopathy, jaundice).",
-      "keyConcept": "Impaired liver function in cirrhosis.",
+      "explanation": "Criteria of Identification: In established liver cirrhosis, progressive hepatocyte loss and architectural distortion lead to severe parenchymal dysfunction (hypoalbuminemia, coagulopathy, jaundice, hepatic encephalopathy).",
+      "keyConcept": "Cirrhosis pathophysiology: Progressive impairment of parenchymal liver functions.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1277902946.webp",
-        "caption": "Pathology Microscopic Slide — Station 19"
+        "caption": "Pathology Lab Slide — Station 19"
       }
     },
     {
@@ -2296,12 +2296,12 @@
         "Ballooning degeneration"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Hepatocytes distended by large single intracytoplasmic lipid droplets that displace the nucleus to the cell periphery (signet-ring appearance), diagnostic of macrovesicular steatosis (fatty liver).",
-      "keyConcept": "Macrovesicular steatosis: Single large fat vacuole displacing the hepatocyte nucleus.",
+      "explanation": "Criteria of Identification: Hepatocytes contain a single, large, clear intracytoplasmic lipid vacuole that pushes the nucleus to the periphery of the cell, giving a signet-ring appearance.",
+      "keyConcept": "Macrovesicular steatosis: Large solitary lipid droplet displacing nucleus to cell margin.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_193711147.webp",
-        "caption": "Pathology Microscopic Slide — Station 20"
+        "caption": "Pathology Lab Slide — Station 20"
       }
     },
     {
@@ -2316,12 +2316,12 @@
         "Malignant epithelial tumor"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Steatosis represents abnormal accumulation of triglycerides within parenchymal liver cells.",
-      "keyConcept": "Pathogenesis of hepatic steatosis.",
+      "explanation": "Criteria of Identification: Hepatic steatosis (fatty liver) is characterized by abnormal intracellular accumulation of neutral triglycerides within the cytoplasm of hepatocytes.",
+      "keyConcept": "Fatty liver nature: Reversible intracellular triglyceride accumulation in hepatocytes.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1813411132.webp",
-        "caption": "Pathology Microscopic Slide — Station 21"
+        "caption": "Pathology Lab Slide — Station 21"
       }
     },
     {
@@ -2336,12 +2336,12 @@
         "Hemorrhage"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Intrahepatic bile stasis manifests as yellow-green to brown bile plugs within dilated canaliculi and hepatocytes, representing endogenous pigment deposition.",
-      "keyConcept": "Cholestasis: Endogenous bile pigment accumulation.",
+      "explanation": "Criteria of Identification: Intrahepatic cholestasis manifests as abnormal accumulation of endogenous bile pigment (bilirubin) presenting as greenish-brown to yellowish plugs within dilated bile canaliculi and droplet accumulation within hepatocytes.",
+      "keyConcept": "Cholestasis: Endogenous bile pigment accumulation within canaliculi and hepatocytes.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_160484196.webp",
-        "caption": "Pathology Microscopic Slide — Station 22"
+        "caption": "Pathology Lab Slide — Station 22"
       }
     },
     {
@@ -2356,12 +2356,12 @@
         "Proliferated bile ductules; bile accumulations; lymphoid stroma"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Classic histopathological triad of biliary obstruction in the portal tract.",
-      "keyConcept": "Histology of extrahepatic biliary obstruction.",
+      "explanation": "Criteria of Identification: The microscopic field demonstrates proliferated, tortuous interlobular bile ductules, yellowish-brown inspissated bile plugs (bile thrombi), and periportal fibrosis with chronic inflammation.",
+      "keyConcept": "Biliary obstruction histology: Proliferated ductules, bile thrombi, and portal fibrosis.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1180902809.webp",
-        "caption": "Pathology Microscopic Slide — Station 23"
+        "caption": "Pathology Lab Slide — Station 23"
       }
     },
     {
@@ -2375,13 +2375,13 @@
         "Stool is dark",
         "It may progress to liver cirrhosis"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Full-thickness gastric mucosal defect showing the 4 classical zones of Askanazy: (1) superficial necrotic exudate, (2) fibrinoid necrosis, (3) vascular granulation tissue, and (4) deep fibrous collagenous scar.",
-      "keyConcept": "Four histological zones of chronic peptic ulcer.",
+      "correctIndex": 2,
+      "explanation": "Criteria of Identification: Complete obstructive (cholestatic) jaundice prevents conjugated bilirubin from entering the intestine, resulting in the absence of stercobilin and producing pale, clay-colored stools; dark stool is seen in hyperbilirubinemia due to hemolysis.",
+      "keyConcept": "Cholestatic jaundice features: Pale clay-colored stools, tea-colored urine, and pruritus.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1099991596.webp",
-        "caption": "Pathology Microscopic Slide — Station 24"
+        "caption": "Pathology Lab Slide — Station 24"
       }
     },
     {
@@ -2395,13 +2395,13 @@
         "Malignant epithelial tumor",
         "Chronic specific inflammation"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: The deepest zone of a chronic peptic ulcer is dense, hypocellular collagenous scar tissue replacing the muscularis propria.",
-      "keyConcept": "Deepest zone of peptic ulcer: Fibrous scar.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Warthin's tumor (papillary cystadenoma lymphomatosum) is a benign, encapsulated salivary gland neoplasm arising almost exclusively in the superficial lobe of the parotid gland.",
+      "keyConcept": "Warthin's tumor: Benign encapsulated parotid tumor with epithelial and lymphoid components.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1016817354.webp",
-        "caption": "Pathology Microscopic Slide — Station 25"
+        "caption": "Pathology Lab Slide — Station 25"
       }
     },
     {
@@ -2415,13 +2415,13 @@
         "A regenerative nodule",
         "Chondroid tissue"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Acute appendicitis is defined histopathologically by acute suppurative inflammation characterized by heavy neutrophilic infiltration extending transmurally through the muscularis propria.",
-      "keyConcept": "Diagnostic hallmark of acute appendicitis: Neutrophilic infiltration of muscularis propria.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: The red star marks a prominent lymphoid follicle with an active germinal center within the dense, mature lymphoid stroma of Warthin's tumor.",
+      "keyConcept": "Warthin's tumor lymphoid stroma: Dense lymphoid tissue with active germinal centers.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1447360553.webp",
-        "caption": "Pathology Microscopic Slide — Station 26"
+        "caption": "Pathology Lab Slide — Station 26"
       }
     },
     {
@@ -2435,13 +2435,13 @@
         "Oncocytic columnar cells",
         "Goblet cells"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Transmural neutrophilic infiltration through the muscularis propria is the definitive diagnostic criterion.",
-      "keyConcept": "Microscopic diagnosis of acute appendicitis.",
+      "correctIndex": 2,
+      "explanation": "Criteria of Identification: Cystic and papillary spaces in Warthin's tumor are lined by a characteristic double-layered oncocytic epithelium: a luminal layer of tall columnar oncocytes with granular eosinophilic cytoplasm (packed with mitochondria) and a basal layer of cuboidal cells.",
+      "keyConcept": "Warthin's tumor epithelium: Double-layered oncocytic (mitochondria-rich) epithelium.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1905971494.webp",
-        "caption": "Pathology Microscopic Slide — Station 27"
+        "caption": "Pathology Lab Slide — Station 27"
       }
     },
     {
@@ -2455,13 +2455,13 @@
         "It contains chondroid and myxoid stroma",
         "Cystic spaces may show intraluminal papillary projections"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Well-circumscribed salivary gland tumor exhibiting both epithelial structures (ducts, tubules, sheets) and mesenchymal-like myxoid, chondroid, and hyaline stroma, diagnostic of pleomorphic adenoma (mixed tumor).",
-      "keyConcept": "Pleomorphic adenoma: Biphasic mixed tumor composed of epithelial ducts and myxochondroid stroma.",
+      "correctIndex": 2,
+      "explanation": "Criteria of Identification: Chondroid and myxoid mesenchymal stroma is the pathognomonic hallmark of Pleomorphic Adenoma (benign mixed tumor), NOT Warthin's tumor (which features oncocytic epithelium in a dense lymphoid stroma).",
+      "keyConcept": "Warthin's vs pleomorphic adenoma: Chondromyxoid stroma characterizes pleomorphic adenoma.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_716427538.webp",
-        "caption": "Pathology Microscopic Slide — Station 28"
+        "caption": "Pathology Lab Slide — Station 28"
       }
     },
     {
@@ -2476,12 +2476,12 @@
         "Metaplasia"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Characteristically benign, encapsulated, and composed of mixed morphological components.",
-      "keyConcept": "Nature of pleomorphic adenoma.",
+      "explanation": "Criteria of Identification: Pleomorphic adenoma is a benign, encapsulated mixed tumor of salivary glands characterized by a remarkable diversity of epithelial/myoepithelial structures intermingled with mucoid, myxoid, and chondroid mesenchymal-like elements.",
+      "keyConcept": "Pleomorphic adenoma: Benign mixed tumor with epithelial ducts and chondromyxoid stroma.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1994805165.webp",
-        "caption": "Pathology Microscopic Slide — Station 29"
+        "caption": "Pathology Lab Slide — Station 29"
       }
     },
     {
@@ -2495,13 +2495,13 @@
         "Lymphoid stroma; cystic space",
         "Oncocytes; cartilage"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: The 'pleomorphic' designation refers to the mixture of ductal/myoepithelial cells with chondromyxoid matrix.",
-      "keyConcept": "Biphasic architecture.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Labels indicate ductular/trabecular epithelial structures and surrounding myxoid/chondroid stroma produced by myoepithelial cells.",
+      "keyConcept": "Pleomorphic adenoma dual histology: Epithelial-myoepithelial units and myxoid matrix.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1406483426.webp",
-        "caption": "Pathology Microscopic Slide — Station 30"
+        "caption": "Pathology Lab Slide — Station 30"
       }
     },
     {
@@ -2515,13 +2515,13 @@
         "It is most common in the parotid gland",
         "Its stroma is rich in lymphoid follicles with germinal centers"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Colonic polyp characterized by cystically dilated mucin-filled glands lined by bland, non-dysplastic columnar and goblet cells, embedded in abundant, vascular, inflamed stroma.",
-      "keyConcept": "Juvenile polyp: Hamartomatous polyp with cystically dilated retention glands and no dysplasia.",
+      "correctIndex": 3,
+      "explanation": "Criteria of Identification: A lymphoid stroma with germinal centers is the hallmark of Warthin's tumor; pleomorphic adenoma has a chondromyxoid, hyaline, or osseous mesenchymal stroma.",
+      "keyConcept": "Pleomorphic adenoma stroma: Chondromyxoid matrix; lacks lymphoid germinal centers.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1539503407.webp",
-        "caption": "Pathology Microscopic Slide — Station 31"
+        "caption": "Pathology Lab Slide — Station 31"
       }
     },
     {
@@ -2536,13 +2536,13 @@
         "Peritoneal cover",
         "Mucosal epithelium"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Prominent large, cyst-like glands filled with pink mucin.",
-      "keyConcept": "Cystic glandular dilatation in retention polyps.",
+      "correctIndex": 2,
+      "explanation": "Criteria of Identification: The dashed arrows indicate diffuse infiltration of the muscularis propria by acute inflammatory cells (neutrophils and pus cells), the definitive histological criterion for acute appendicitis.",
+      "keyConcept": "Acute appendicitis diagnostic hallmark: Transmural neutrophil infiltration into muscularis propria.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_49639773.webp",
-        "caption": "Pathology Microscopic Slide — Station 32"
+        "caption": "Pathology Lab Slide — Station 32"
       }
     },
     {
@@ -2557,13 +2557,13 @@
         "Chronic nonspecific inflammation",
         "Acute serous inflammation"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: The epithelium lining the cystic spaces is mature, bland, and non-dysplastic.",
-      "keyConcept": "Bland non-dysplastic epithelium.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Acute suppurative (phlegmonous) appendicitis is a classic diffuse suppurative inflammation characterized by extensive neutrophil infiltration throughout all mural layers of the appendix with mucosal necrosis and pus in the lumen.",
+      "keyConcept": "Acute phlegmonous appendicitis: Diffuse suppurative transmural inflammation.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_49428818.webp",
-        "caption": "Pathology Microscopic Slide — Station 33"
+        "caption": "Pathology Lab Slide — Station 33"
       }
     },
     {
@@ -2578,13 +2578,13 @@
         "Malignant lymphoid infiltration",
         "Necrotic debris"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: All are true EXCEPT neoplastic/dysplastic nature. Juvenile polyps are NON-neoplastic hamartomas with zero intrinsic dysplasia.",
-      "keyConcept": "Juvenile polyps are non-neoplastic hamartomas.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: The circled structure is a prominent mucosal/submucosal lymphoid follicle with a pale germinal center, an anatomical component of normal appendiceal lymphoid tissue that may undergo reactive hyperplasia.",
+      "keyConcept": "Appendiceal lymphoid follicle: Mucosal lymphoid tissue with reactive germinal centers.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1667477925.webp",
-        "caption": "Pathology Microscopic Slide — Station 34"
+        "caption": "Pathology Lab Slide — Station 34"
       }
     },
     {
@@ -2600,12 +2600,12 @@
         "Diffuse proliferation of malignant glands"
       ],
       "correctIndex": 4,
-      "explanation": "Criteria of Identification: Acute appendicitis does not feature malignant glands; it is characterized by acute inflammation, mucosal ulceration, neutrophils, and vascular congestion.",
-      "keyConcept": "Acute appendiceal histology.",
+      "explanation": "Criteria of Identification: Acute appendicitis is an acute non-neoplastic bacterial/obstructive inflammatory lesion; malignant glandular proliferation is seen in adenocarcinoma, not suppurative appendicitis.",
+      "keyConcept": "Appendicitis vs adenocarcinoma: Acute appendicitis lacks neoplastic glandular proliferation.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_2014584829.webp",
-        "caption": "Pathology Microscopic Slide — Station 35"
+        "caption": "Pathology Lab Slide — Station 35"
       }
     },
     {
@@ -2621,12 +2621,12 @@
         "Inflammatory pseudopolyp"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Classic retention polyp with cystically dilated crypts and inflamed stroma.",
-      "keyConcept": "Juvenile polyp.",
+      "explanation": "Criteria of Identification: Colonic polyp characterized by a smooth rounded contour, abundant edematous lamina propria with chronic inflammatory infiltrate, and multiple cystically dilated, mucus-filled glands lined by bland epithelium (retention polyp).",
+      "keyConcept": "Juvenile polyp: Hamartomatous retention polyp with cystically dilated mucous glands.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_851859357.webp",
-        "caption": "Pathology Microscopic Slide — Station 36"
+        "caption": "Pathology Lab Slide — Station 36"
       }
     },
     {
@@ -2641,13 +2641,13 @@
         "Pools of extracellular mucin containing malignant cells",
         "Granulomatous inflammation with caseous necrosis"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Colonic polyp showing crowded, elongated, branching glands lined by dysplastic epithelium with nuclear pseudostratification, hyperchromasia, and loss of goblet cells (tubular adenoma).",
-      "keyConcept": "Adenomatous polyp: Benign neoplastic polyp with epithelial dysplasia (pre-cancerous).",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Characteristic microscopic finding of juvenile polyps: markedly enlarged, cystically dilated colonic glands filled with inspissated mucin and lined by attenuated, non-dysplastic columnar epithelium.",
+      "keyConcept": "Juvenile polyp microscopic hallmark: Cystically dilated mucus-filled glands.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1402726930.webp",
-        "caption": "Pathology Microscopic Slide — Station 37"
+        "caption": "Pathology Lab Slide — Station 37"
       }
     },
     {
@@ -2662,13 +2662,13 @@
         "Transitional epithelium with nuclear atypia",
         "Oncocytic epithelial cells"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Microscopic feature correctly identified as Malignant columnar cells with marked atypia.",
-      "keyConcept": "Pathology lab spotter: Malignant columnar cells with marked atypia.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: The dilated glands in juvenile polyps are lined by bland, mature, non-dysplastic columnar absorptive cells and abundant goblet cells without nuclear atypia.",
+      "keyConcept": "Juvenile polyp epithelium: Bland, mature columnar and goblet cells lacking dysplasia.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1979068348.webp",
-        "caption": "Pathology Microscopic Slide — Station 38"
+        "caption": "Pathology Lab Slide — Station 38"
       }
     },
     {
@@ -2683,13 +2683,13 @@
         "They contain a fibrovascular core with or without inflammation.",
         "They are benign neoplastic polyps characterized by epithelial dysplasia."
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Microscopic feature correctly identified as They are also called retention polyps..",
-      "keyConcept": "Pathology lab spotter: They are also called retention polyps..",
+      "correctIndex": 4,
+      "explanation": "Criteria of Identification: Juvenile polyps are non-neoplastic HAMARTOMAS (retention polyps); adenomatous polyps are the benign neoplastic polyps that feature epithelial dysplasia.",
+      "keyConcept": "Juvenile vs adenomatous polyp: Juvenile polyps are hamartomas without dysplasia.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1480466914.webp",
-        "caption": "Pathology Microscopic Slide — Station 39"
+        "caption": "Pathology Lab Slide — Station 39"
       }
     },
     {
@@ -2704,13 +2704,13 @@
         "Hyperplastic polyp",
         "Inflammatory pseudopolyp"
       ],
-      "correctIndex": 1,
-      "explanation": "Criteria of Identification: Classic retention polyp with cystically dilated crypts and inflamed stroma.",
-      "keyConcept": "Juvenile polyp.",
+      "correctIndex": 0,
+      "explanation": "Criteria of Identification: Colonic mucosal polyp exhibiting crowded, branching, tubular epithelial glands lined by dysplastic columnar epithelium with nuclear stratification, hyperchromasia, and loss of goblet cells (tubular adenoma).",
+      "keyConcept": "Adenomatous polyp (tubular adenoma): Neoplastic polyp displaying epithelial dysplasia.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1018945877.webp",
-        "caption": "Pathology Microscopic Slide — Station 40"
+        "caption": "Pathology Lab Slide — Station 40"
       }
     },
     {
@@ -2725,13 +2725,13 @@
         "Pools of extracellular mucin",
         "Granulomatous inflammation"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Colonic polyp showing crowded, elongated, branching glands lined by dysplastic epithelium with nuclear pseudostratification, hyperchromasia, and loss of goblet cells (tubular adenoma).",
-      "keyConcept": "Adenomatous polyp: Benign neoplastic polyp with epithelial dysplasia (pre-cancerous).",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: The absolute hallmark and defining criterion of an adenoma is epithelial dysplasia (nuclear hyperchromasia, enlargement, elongation, pseudostratification, and active mitoses).",
+      "keyConcept": "Adenoma hallmark: Epithelial dysplasia (the precancerous milestone).",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1571750908.webp",
-        "caption": "Pathology Microscopic Slide — Station 41"
+        "caption": "Pathology Lab Slide — Station 41"
       }
     },
     {
@@ -2746,13 +2746,13 @@
         "They are benign neoplastic polyps.",
         "Their characteristic glands are lined by bland, non-dysplastic epithelium with goblet cells."
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Epithelial dysplasia (nuclear stratification, hyperchromasia, mitoses) is the definitive diagnostic hallmark distinguishing adenomas from non-neoplastic polyps.",
-      "keyConcept": "Hallmark of adenoma: Epithelial dysplasia.",
+      "correctIndex": 4,
+      "explanation": "Criteria of Identification: Adenomatous polyps are DEFINED by dysplasia and loss of normal differentiation (depletion of goblet cells); bland non-dysplastic epithelium characterizes hyperplastic or juvenile polyps.",
+      "keyConcept": "Adenoma histology: Dysplastic epithelium with goblet cell depletion.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1697134331.webp",
-        "caption": "Pathology Microscopic Slide — Station 42"
+        "caption": "Pathology Lab Slide — Station 42"
       }
     },
     {
@@ -2767,13 +2767,13 @@
         "Chronic inflammatory lesion",
         "Hyperplastic non-neoplastic polyp"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: All are true EXCEPT bland non-dysplastic lining. Adenomas are ALWAYS characterized by dysplastic epithelium.",
-      "keyConcept": "Adenoma dysplasia requirement.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Colonic adenomas are benign neoplastic epithelial lesions that serve as well-established premalignant precursors for colorectal adenocarcinoma via the adenoma-carcinoma sequence.",
+      "keyConcept": "Adenomatous polyp nature: Benign neoplastic precancerous precursor of adenocarcinoma.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_66156056.webp",
-        "caption": "Pathology Microscopic Slide — Station 43"
+        "caption": "Pathology Lab Slide — Station 43"
       }
     },
     {
@@ -2788,13 +2788,13 @@
         "They are characterized by cystically dilated glands without dysplasia.",
         "They are always associated with a fibrovascular core."
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Tubular adenomas are benign neoplasms that serve as premalignant precursor lesions for colorectal adenocarcinoma.",
-      "keyConcept": "Premalignant potential of adenomas.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: In the adenoma-carcinoma sequence, accumulation of genetic mutations (APC, KRAS, TP53) drives progression from low-grade dysplasia to high-grade dysplasia, intramucosal carcinoma, and invasive adenocarcinoma.",
+      "keyConcept": "Adenoma-carcinoma sequence: Progression from dysplasia to invasive adenocarcinoma.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_469982294.webp",
-        "caption": "Pathology Microscopic Slide — Station 44"
+        "caption": "Pathology Lab Slide — Station 44"
       }
     },
     {
@@ -2809,13 +2809,13 @@
         "Cystic dilatation of mucus-secreting glands",
         "Signet-ring appearance"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Adenoma-carcinoma sequence: progressive accumulation of mutations causes transition from low-grade to high-grade dysplasia, intramucosal carcinoma, and invasive adenocarcinoma.",
-      "keyConcept": "Adenoma-carcinoma sequence.",
+      "correctIndex": 2,
+      "explanation": "Criteria of Identification: Characteristic dysplastic features of adenomatous epithelium: elongated, hyperchromatic, crowded nuclei stacked in multiple layers (pseudostratification) occupying the basal half to full thickness of the epithelium.",
+      "keyConcept": "Dysplasia features: Nuclear pseudostratification, hyperchromasia, and enlargement.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_316621040.webp",
-        "caption": "Pathology Microscopic Slide — Station 45"
+        "caption": "Pathology Lab Slide — Station 45"
       }
     },
     {
@@ -2831,12 +2831,12 @@
         "Fibrovascular core"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Arrows demonstrate elongated, dark, hyperchromatic nuclei stacked upon one another (pseudostratification), typical of low-grade dysplasia.",
-      "keyConcept": "Cytological features of low-grade dysplasia.",
+      "explanation": "Criteria of Identification: The right arrow points to adjacent uninvolved normal colonic mucosa with straight, parallel, test-tube crypts containing abundant goblet cells.",
+      "keyConcept": "Colonic mucosa: Normal parallel crypts lined by mature goblet cells.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_793780580.webp",
-        "caption": "Pathology Microscopic Slide — Station 46"
+        "caption": "Pathology Lab Slide — Station 46"
       }
     },
     {
@@ -2851,13 +2851,13 @@
         "Hyperplastic polyp",
         "Chronic colitis"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Arrow points to the adjacent normal colonic mucosa with straight crypts and abundant goblet cells.",
-      "keyConcept": "Normal colonic crypt architecture.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: High-power microscopic examination showing irregular, crowded, back-to-back malignant glands infiltrating through the muscularis mucosae and invading the submucosa, diagnostic of invasive adenocarcinoma.",
+      "keyConcept": "Invasive colorectal adenocarcinoma: Irregular malignant glands infiltrating the bowel wall.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_1872092640.webp",
-        "caption": "Pathology Microscopic Slide — Station 47"
+        "caption": "Pathology Lab Slide — Station 47"
       }
     },
     {
@@ -2873,12 +2873,12 @@
         "Mucinous adenocarcinoma"
       ],
       "correctIndex": 2,
-      "explanation": "Criteria of Identification: Irregular, crowded, infiltrative malignant glands invading through the muscularis mucosae into the submucosa, lined by pleomorphic, hyperchromatic malignant cells, diagnostic of invasive adenocarcinoma.",
-      "keyConcept": "Colorectal adenocarcinoma: Malignant glands infiltrating through muscularis mucosae.",
+      "explanation": "Criteria of Identification: Malignant epithelial neoplasm composed of atypical glands invading a desmoplastic fibrous stroma in the wall of the colon.",
+      "keyConcept": "Colonic adenocarcinoma: Invasive malignant glands within desmoplastic stroma.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_166450541.webp",
-        "caption": "Pathology Microscopic Slide — Station 48"
+        "caption": "Pathology Lab Slide — Station 48"
       }
     },
     {
@@ -2893,13 +2893,13 @@
         "Its malignant glands may invade the submucosa.",
         "Its epithelial cells show no nuclear atypia."
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Irregular, crowded, infiltrative malignant glands invading through the muscularis mucosae into the submucosa, lined by pleomorphic, hyperchromatic malignant cells, diagnostic of invasive adenocarcinoma.",
-      "keyConcept": "Colorectal adenocarcinoma: Malignant glands infiltrating through muscularis mucosae.",
+      "correctIndex": 4,
+      "explanation": "Criteria of Identification: Adenocarcinomas are malignant neoplasms whose lining cells characteristically display marked cytological atypia: pleomorphism, hyperchromasia, prominent nucleoli, and atypical mitotic figures.",
+      "keyConcept": "Adenocarcinoma cytological features: Marked cellular and nuclear atypia.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_577632608.webp",
-        "caption": "Pathology Microscopic Slide — Station 49"
+        "caption": "Pathology Lab Slide — Station 49"
       }
     },
     {
@@ -2914,13 +2914,13 @@
         "Increased nuclear-to-cytoplasmic ratio",
         "Cystically dilated glands lined by bland columnar"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: All are true EXCEPT absence of nuclear atypia. Colorectal adenocarcinoma cells ALWAYS display marked cytological atypia, pleomorphism, and atypical mitoses.",
-      "keyConcept": "Malignant cytological atypia.",
+      "correctIndex": 4,
+      "explanation": "Criteria of Identification: Cystically dilated glands lined by bland, non-dysplastic epithelium are the hallmark of juvenile retention polyps, whereas adenocarcinomas feature crowded, irregular, back-to-back malignant glands.",
+      "keyConcept": "Adenocarcinoma vs juvenile polyp: Invasive carcinoma features irregular atypical glands, not bland cystic glands.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/pathology/lab/patho_lab_512075922.webp",
-        "caption": "Pathology Microscopic Slide — Station 50"
+        "caption": "Pathology Lab Slide — Station 50"
       }
     }
   ]

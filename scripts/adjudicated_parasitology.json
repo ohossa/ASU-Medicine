@@ -1377,8 +1377,8 @@
       "Segmented ovum (morula)"
     ],
     "correctIndex": 1,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "explanation": "Criteria of Identification: Heterophyes heterophyes egg is minute (30 x 15 µm), operculated with a small terminal knob, and contains a fully developed ciliated miracidium when shed in feces.",
+    "keyConcept": "Heterophyes heterophyes: Egg contains a mature miracidium upon passage.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_740205222.webp",
@@ -1397,9 +1397,9 @@
       "Miracidium",
       "Segmented ovum (morula)"
     ],
-    "correctIndex": 0,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Taenia species egg is spherical with a thick, brownish, radially striated embryophore enclosing a hexacanth embryo (oncosphere) bearing 6 hooklets.",
+    "keyConcept": "Taenia species: Egg features radially striated embryophore surrounding a 6-hooked oncosphere.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_398153459.webp",
@@ -1419,8 +1419,8 @@
       "Hexacanth embryo"
     ],
     "correctIndex": 1,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "explanation": "Criteria of Identification: Trichuris trichiura (whipworm) egg is barrel-shaped (ellipsoidal) with a yellowish-brown double shell and prominent bipolar clear mucoid plugs; it is passed unembryonated containing an unsegmented ovum.",
+    "keyConcept": "Trichuris trichiura: Barrel-shaped egg with bipolar plugs containing an unsegmented ovum.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_1012727471.webp",
@@ -1439,9 +1439,9 @@
       "Hexacanth embryo",
       "One-cell (unsegmented) ovum"
     ],
-    "correctIndex": 1,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: Fertilized Ascaris lumbricoides egg has a golden-brown coarsely mammillated albuminous coat and a thick shell enclosing a large, unsegmented one-cell ovum.",
+    "keyConcept": "Ascaris lumbricoides fertilized egg: Mammillated shell containing an unsegmented single-cell ovum.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_1752719491.webp",
@@ -1460,9 +1460,9 @@
       "Figure D",
       "Figure E"
     ],
-    "correctIndex": 0,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: All are passed mature with a ready embryo except Figure E (Fasciola hepatica egg), which is unembryonated and contains an unsegmented ovum surrounded by yolk cells.",
+    "keyConcept": "Fasciola egg: Passed unembryonated into the biliary tract and stool.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_1912099034_composite.webp",
@@ -1481,9 +1481,9 @@
       "Figure D",
       "Figure E"
     ],
-    "correctIndex": 0,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: All are passed immature except Figure D (Heterophyes heterophyes egg), which contains a fully formed, ciliated, mature miracidium on passage.",
+    "keyConcept": "Heterophyes egg: Fully mature on passage containing a miracidium.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_899830104_composite.webp",
@@ -1502,9 +1502,9 @@
       "Hexacanth embryo",
       "Mature larva"
     ],
-    "correctIndex": 0,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "correctIndex": 1,
+    "explanation": "Criteria of Identification: Schistosoma mansoni egg is large (150 x 60 µm), non-operculated, possesses a prominent lateral spine near the posterior pole, and contains a fully developed, mature ciliated miracidium.",
+    "keyConcept": "Schistosoma mansoni: Lateral-spined egg enclosing a fully formed ciliated miracidium.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_746415824.webp",
@@ -1524,8 +1524,8 @@
       "One-cell ovum"
     ],
     "correctIndex": 3,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "explanation": "Criteria of Identification: Hookworm egg (Ancylostoma / Necator) has a thin, transparent, colorless hyaline shell containing a 4- to 8-cell morula stage (segmented ovum).",
+    "keyConcept": "Hookworm egg: Oval, thin transparent shell enclosing a 4–8 cell segmented ovum.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_898571040.webp",
@@ -1545,8 +1545,8 @@
       "Trichocephalus trichiurus"
     ],
     "correctIndex": 0,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "explanation": "Criteria of Identification: All can cause acute appendicitis by luminal obstruction or mucosal invasion except Giardia lamblia, which is an upper small intestine (duodenum/jejunum) flagellate.",
+    "keyConcept": "Appendiceal parasitosis: Enterobius, Ascaris, Trichuris, and Schistosoma can cause appendicitis; Giardia does not.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_1766472287.webp",
@@ -1565,9 +1565,9 @@
       "Mature larva",
       "One-cell ovum"
     ],
-    "correctIndex": 0,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Enterobius vermicularis (pinworm) egg is asymmetrical, plano-convex (D-shaped), colorless with a double smooth shell, and contains a fully developed, coiled, mature tadpole-like larva.",
+    "keyConcept": "Enterobius vermicularis: Asymmetric D-shaped egg containing an infective mature coiled larva.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_1576883219.webp",
@@ -1586,9 +1586,9 @@
       "Figure D",
       "Figure E"
     ],
-    "correctIndex": 0,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "correctIndex": 3,
+    "explanation": "Criteria of Identification: Figure D is the female Enterobius vermicularis (pinworm), showing the pointed pin-like posterior end; pinworms frequently migrate into the lumen of the vermiform appendix, provoking acute obstructive appendicitis.",
+    "keyConcept": "Enterobius vermicularis: Pinworm adult causes appendicitis in pediatric patients.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_1969234931_composite.webp",
@@ -1607,9 +1607,9 @@
       "Coracidium",
       "Mature larva"
     ],
-    "correctIndex": 0,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Diphyllobothrium latum egg is operculated with an indistinct abopercular knob, light golden-yellow, and passed unembryonated containing an immature ovum surrounded by yolk cells.",
+    "keyConcept": "Diphyllobothrium latum: Operculated egg containing an immature unsegmented ovum.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_565793715.webp",
@@ -1629,8 +1629,8 @@
       "Figure E"
     ],
     "correctIndex": 0,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "explanation": "Criteria of Identification: All are passed mature except Figure A (Hookworm egg), which is passed in the morula/segmented ovum stage and must embryonate into a rhabditiform larva in warm moist soil.",
+    "keyConcept": "Hookworm egg: Passed immature in 4-8 cell cleavage stage.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_556855841_composite.webp",
@@ -1649,9 +1649,9 @@
       "Redia",
       "Hexacanth embryo"
     ],
-    "correctIndex": 0,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Fasciola hepatica egg is very large (140 x 80 µm), operculated, yellowish-brown, and contains an unsegmented immature ovum surrounded by numerous vitelline/yolk cells.",
+    "keyConcept": "Fasciola hepatica egg: Huge operculated egg containing an immature unsegmented ovum.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_1009428460.webp",
@@ -1670,9 +1670,9 @@
       "Figure D",
       "Figure E"
     ],
-    "correctIndex": 0,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "correctIndex": 4,
+    "explanation": "Criteria of Identification: Figure E shows the diagnostic D-shaped, plano-convex egg of Enterobius vermicularis with a mature larva, recovered from perianal skin via the cellophane tape (NIH swab) method.",
+    "keyConcept": "Enterobius vermicularis: Diagnostic D-shaped embryonated egg on perianal cellophane swab.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_536496132_composite.webp",
@@ -1692,8 +1692,8 @@
       "Decorticated Ascaris egg"
     ],
     "correctIndex": 0,
-    "explanation": "Criteria of Identification: Diagnostic feature correctly identified as Hookworm egg.",
-    "keyConcept": "Parasitology spotter: Hookworm egg.",
+    "explanation": "Criteria of Identification: Hookworm egg featuring an oval shape, blunt rounded poles, a thin transparent hyaline shell, and an inner 4- to 8-cell segmented ovum with clear space beneath the shell.",
+    "keyConcept": "Hookworm egg: Thin transparent shell enclosing a morula (4-8 blastomeres).",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_1099131412.webp",
@@ -1712,9 +1712,9 @@
       "Cysticercoid",
       "Miracidium"
     ],
-    "correctIndex": 1,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Hymenolepis nana (dwarf tapeworm) egg is spherical/subspherical (40 µm) with two distinct membranes; the inner embryophore has two polar thickening buttons giving rise to 4–8 polar filaments and encloses a 6-hooked hexacanth embryo.",
+    "keyConcept": "Hymenolepis nana: Egg has bipolar filaments and a 6-hooked oncosphere.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_1657053196.webp",
@@ -1733,9 +1733,9 @@
       "Figure D",
       "Figure E"
     ],
-    "correctIndex": 0,
-    "explanation": "Criteria of Identification: Diagnostic feature correctly identified as Figure A.",
-    "keyConcept": "Parasitology spotter: Figure A.",
+    "correctIndex": 2,
+    "explanation": "Criteria of Identification: Figure C is the Hymenolepis nana egg, which is passed completely mature and immediately infective to humans upon excretion, enabling direct autoinfection.",
+    "keyConcept": "Hymenolepis nana: Egg is passed mature with an infective oncosphere.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_1737233639_composite.webp",
@@ -1755,8 +1755,8 @@
       "Mature larva"
     ],
     "correctIndex": 0,
-    "explanation": "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology.",
-    "keyConcept": "Internal embryonic stage of parasite ova.",
+    "explanation": "Criteria of Identification: Hookworm egg demonstrating early embryonic cleavage with dark, rounded blastomeres (segmented ovum / morula stage) separated from the transparent shell by a clear space.",
+    "keyConcept": "Hookworm ovum: Segmented morula stage within a transparent shell.",
     "media": {
       "type": "image",
       "imageUrl": "/images/practical/mgl-3/parasitology/para_571939471.webp",

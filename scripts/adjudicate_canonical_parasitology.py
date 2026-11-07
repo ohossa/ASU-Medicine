@@ -401,27 +401,83 @@ def adjudicate_para(idx, q):
         correct_target = "Cryptosporidium parvum oocyst - it is passed already sporulated, containing 4 sporozoites"
         explanation = "Criteria of Identification: Cryptosporidium parvum oocysts sporulate inside the host enterocytes and are passed fully mature and immediately infective, containing 4 naked sporozoites."
         concept = "Cryptosporidium parvum: Passed fully sporulated with 4 sporozoites (immediate infectivity)."
-    # Stage inside eggs
-    elif idx in range(65, 84):
-        title_lower = title.lower()
-        if "stage found inside" in title_lower or "all of the following" in title_lower or "appendicitis" in title_lower:
-            for opt in options:
-                if "miracidium" in opt.lower() and idx in (65, 71, 76):
-                    correct_target = opt; break
-                elif "mature larva" in opt.lower() and idx in (66, 74, 80):
-                    correct_target = opt; break
-                elif "hexacanth" in opt.lower() and idx in (67, 72, 81):
-                    correct_target = opt; break
-                elif "one-cell" in opt.lower() or "unsegmented" in opt.lower() and idx in (68, 73, 78):
-                    correct_target = opt; break
-                elif "segmented" in opt.lower() or "morula" in opt.lower() and idx in (69, 75, 83):
-                    correct_target = opt; break
-                elif "giardia" in opt.lower():
-                    correct_target = opt; break
-                elif "enterobius" in opt.lower():
-                    correct_target = opt; break
-            explanation = "Criteria of Identification: Embryonic stage correctly identified based on diagnostic egg morphology."
-            concept = "Internal embryonic stage of parasite ova."
+    # Verified eggs and clinical spotters 65 to 83
+    elif idx == 65:
+        correct_target = "Miracidium"
+        explanation = "Criteria of Identification: Heterophyes heterophyes egg is minute (30 x 15 µm), operculated with a small terminal knob, and contains a fully developed ciliated miracidium when shed in feces."
+        concept = "Heterophyes heterophyes: Egg contains a mature miracidium upon passage."
+    elif idx == 66:
+        correct_target = "Hexacanth embryo (oncosphere)"
+        explanation = "Criteria of Identification: Taenia species egg is spherical with a thick, brownish, radially striated embryophore enclosing a hexacanth embryo (oncosphere) bearing 6 hooklets."
+        concept = "Taenia species: Egg features radially striated embryophore surrounding a 6-hooked oncosphere."
+    elif idx == 67:
+        correct_target = "Unsegmented ovum"
+        explanation = "Criteria of Identification: Trichuris trichiura (whipworm) egg is barrel-shaped (ellipsoidal) with a yellowish-brown double shell and prominent bipolar clear mucoid plugs; it is passed unembryonated containing an unsegmented ovum."
+        concept = "Trichuris trichiura: Barrel-shaped egg with bipolar plugs containing an unsegmented ovum."
+    elif idx == 68:
+        correct_target = "One-cell (unsegmented) ovum"
+        explanation = "Criteria of Identification: Fertilized Ascaris lumbricoides egg has a golden-brown coarsely mammillated albuminous coat and a thick shell enclosing a large, unsegmented one-cell ovum."
+        concept = "Ascaris lumbricoides fertilized egg: Mammillated shell containing an unsegmented single-cell ovum."
+    elif idx == 69:
+        correct_target = "Figure E" if "Figure E" in options else "E"
+        explanation = "Criteria of Identification: All are passed mature with a ready embryo except Figure E (Fasciola hepatica egg), which is unembryonated and contains an unsegmented ovum surrounded by yolk cells."
+        concept = "Fasciola egg: Passed unembryonated into the biliary tract and stool."
+    elif idx == 70:
+        correct_target = "Figure D" if "Figure D" in options else "D"
+        explanation = "Criteria of Identification: All are passed immature except Figure D (Heterophyes heterophyes egg), which contains a fully formed, ciliated, mature miracidium on passage."
+        concept = "Heterophyes egg: Fully mature on passage containing a miracidium."
+    elif idx == 71:
+        correct_target = "Miracidium"
+        explanation = "Criteria of Identification: Schistosoma mansoni egg is large (150 x 60 µm), non-operculated, possesses a prominent lateral spine near the posterior pole, and contains a fully developed, mature ciliated miracidium."
+        concept = "Schistosoma mansoni: Lateral-spined egg enclosing a fully formed ciliated miracidium."
+    elif idx == 72:
+        correct_target = "Segmented ovum (morula)"
+        explanation = "Criteria of Identification: Hookworm egg (Ancylostoma / Necator) has a thin, transparent, colorless hyaline shell containing a 4- to 8-cell morula stage (segmented ovum)."
+        concept = "Hookworm egg: Oval, thin transparent shell enclosing a 4–8 cell segmented ovum."
+    elif idx == 73:
+        correct_target = "Giardia lamblia"
+        explanation = "Criteria of Identification: All can cause acute appendicitis by luminal obstruction or mucosal invasion except Giardia lamblia, which is an upper small intestine (duodenum/jejunum) flagellate."
+        concept = "Appendiceal parasitosis: Enterobius, Ascaris, Trichuris, and Schistosoma can cause appendicitis; Giardia does not."
+    elif idx == 74:
+        correct_target = "Mature larva"
+        explanation = "Criteria of Identification: Enterobius vermicularis (pinworm) egg is asymmetrical, plano-convex (D-shaped), colorless with a double smooth shell, and contains a fully developed, coiled, mature tadpole-like larva."
+        concept = "Enterobius vermicularis: Asymmetric D-shaped egg containing an infective mature coiled larva."
+    elif idx == 75:
+        correct_target = "Figure D" if "Figure D" in options else "D"
+        explanation = "Criteria of Identification: Figure D is the female Enterobius vermicularis (pinworm), showing the pointed pin-like posterior end; pinworms frequently migrate into the lumen of the vermiform appendix, provoking acute obstructive appendicitis."
+        concept = "Enterobius vermicularis: Pinworm adult causes appendicitis in pediatric patients."
+    elif idx == 76:
+        correct_target = "Immature ovum surrounded by yolk cells"
+        explanation = "Criteria of Identification: Diphyllobothrium latum egg is operculated with an indistinct abopercular knob, light golden-yellow, and passed unembryonated containing an immature ovum surrounded by yolk cells."
+        concept = "Diphyllobothrium latum: Operculated egg containing an immature unsegmented ovum."
+    elif idx == 77:
+        correct_target = "Figure A" if "Figure A" in options else "A"
+        explanation = "Criteria of Identification: All are passed mature except Figure A (Hookworm egg), which is passed in the morula/segmented ovum stage and must embryonate into a rhabditiform larva in warm moist soil."
+        concept = "Hookworm egg: Passed immature in 4-8 cell cleavage stage."
+    elif idx == 78:
+        correct_target = "Immature ovum surrounded by yolk cells"
+        explanation = "Criteria of Identification: Fasciola hepatica egg is very large (140 x 80 µm), operculated, yellowish-brown, and contains an unsegmented immature ovum surrounded by numerous vitelline/yolk cells."
+        concept = "Fasciola hepatica egg: Huge operculated egg containing an immature unsegmented ovum."
+    elif idx == 79:
+        correct_target = "Figure E" if "Figure E" in options else "E"
+        explanation = "Criteria of Identification: Figure E shows the diagnostic D-shaped, plano-convex egg of Enterobius vermicularis with a mature larva, recovered from perianal skin via the cellophane tape (NIH swab) method."
+        concept = "Enterobius vermicularis: Diagnostic D-shaped embryonated egg on perianal cellophane swab."
+    elif idx == 80:
+        correct_target = "Hookworm egg"
+        explanation = "Criteria of Identification: Hookworm egg featuring an oval shape, blunt rounded poles, a thin transparent hyaline shell, and an inner 4- to 8-cell segmented ovum with clear space beneath the shell."
+        concept = "Hookworm egg: Thin transparent shell enclosing a morula (4-8 blastomeres)."
+    elif idx == 81:
+        correct_target = "Hexacanth embryo (oncosphere)"
+        explanation = "Criteria of Identification: Hymenolepis nana (dwarf tapeworm) egg is spherical/subspherical (40 µm) with two distinct membranes; the inner embryophore has two polar thickening buttons giving rise to 4–8 polar filaments and encloses a 6-hooked hexacanth embryo."
+        concept = "Hymenolepis nana: Egg has bipolar filaments and a 6-hooked oncosphere."
+    elif idx == 82:
+        correct_target = "Figure C" if "Figure C" in options else "C"
+        explanation = "Criteria of Identification: Figure C is the Hymenolepis nana egg, which is passed completely mature and immediately infective to humans upon excretion, enabling direct autoinfection."
+        concept = "Hymenolepis nana: Egg is passed mature with an infective oncosphere."
+    elif idx == 83:
+        correct_target = "Segmented ovum (morula)"
+        explanation = "Criteria of Identification: Hookworm egg demonstrating early embryonic cleavage with dark, rounded blastomeres (segmented ovum / morula stage) separated from the transparent shell by a clear space."
+        concept = "Hookworm ovum: Segmented morula stage within a transparent shell."
 
     if not correct_target or correct_target not in options:
         correct_target = options[0]

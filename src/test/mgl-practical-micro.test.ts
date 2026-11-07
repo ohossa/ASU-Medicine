@@ -8,14 +8,14 @@ describe("MGL-3 Microbiology Practical Bank", () => {
     await ensurePracticalDataLoaded("MGL-3");
   });
 
-  it("loads 826 total practical questions in getModuleQuestionCounts", () => {
+  it("loads 891 total practical questions in getModuleQuestionCounts", () => {
     const counts = getModuleQuestionCounts("MGL-3");
-    expect(counts.practicalCount).toBe(826);
+    expect(counts.practicalCount).toBe(891);
   });
 
   it("builds the practical chapter with correct metadata", () => {
     const chapters = getChaptersForModuleAndMode("MGL-3", "practical");
-    expect(chapters.length).toBe(6);
+    expect(chapters.length).toBe(7);
 
     const microChapter = chapters.find((c) => c.id === 305)!;
     expect(microChapter).toBeDefined();

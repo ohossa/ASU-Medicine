@@ -1152,8 +1152,8 @@
         "Serous demilune"
       ],
       "correctIndex": 1,
-      "explanation": "Criteria of Identification: Taste bud outlined in yellow.",
-      "keyConcept": "Taste bud.",
+      "explanation": "Criteria of Identification: Taste bud outlined in yellow on the lateral wall of vallate papilla.",
+      "keyConcept": "Taste bud: Barrel-shaped sensory organ containing gustatory and supporting cells.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_1462849633.webp",
@@ -1172,8 +1172,8 @@
         "Duct"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Apical taste pore.",
-      "keyConcept": "Taste pore.",
+      "explanation": "Criteria of Identification: Apical taste pore opening onto the epithelial surface.",
+      "keyConcept": "Taste pore: Apical orifice admitting chemical tastants to receptor microvilli.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_1595892675.webp",
@@ -1193,7 +1193,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Criteria of Identification: Elongated neuroepithelial sensory cells with central oval nuclei.",
-      "keyConcept": "Gustatory sensory cells.",
+      "keyConcept": "Gustatory sensory cells with apical receptor microvilli.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_629253130.webp",
@@ -1213,7 +1213,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Criteria of Identification: Sustentacular supporting cells.",
-      "keyConcept": "Supporting cells of taste bud.",
+      "keyConcept": "Supporting sustentacular cells of taste bud.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_520135573.webp",
@@ -1233,7 +1233,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Criteria of Identification: Short pyramidal stem cells at the base.",
-      "keyConcept": "Basal cells.",
+      "keyConcept": "Basal stem cells giving rise to taste bud cell turnover.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_1763568347.webp",
@@ -1251,7 +1251,7 @@
         "Mucous acinus",
         "Striated duct"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Criteria of Identification: TEM of serous acinar cell showing extensive parallel stacks of rough endoplasmic reticulum (RER) in the basal region and dense apical zymogen granules.",
       "keyConcept": "Ultrastructure of serous cell: Basal RER + apical electron-dense zymogen granules.",
       "media": {
@@ -1271,9 +1271,9 @@
         "Lumen of acinus",
         "Basal nucleus"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Dense zymogen granules packed in the apical cytoplasm.",
-      "keyConcept": "Zymogen granules.",
+      "correctIndex": 1,
+      "explanation": "Criteria of Identification: Transmission electron micrograph of a mucous acinar cell. Structure 1 points to the apical cytoplasm filled with numerous large, pale, electron-lucent membrane-bound mucin droplets that push the nucleus against the basal plasma membrane.",
+      "keyConcept": "Mucous cell TEM: Apical cytoplasm packed with pale, electron-lucent mucin granules.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_1820435634.webp",
@@ -1293,7 +1293,7 @@
       ],
       "correctIndex": 3,
       "explanation": "Criteria of Identification: Rounded euchromatic nucleus located basally.",
-      "keyConcept": "Serous cell nucleus.",
+      "keyConcept": "Serous cell nucleus: Spherical euchromatic basal nucleus.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_1536692934.webp",
@@ -1333,7 +1333,7 @@
       ],
       "correctIndex": 3,
       "explanation": "Criteria of Identification: Light, electron-lucent membrane-bound mucin droplets.",
-      "keyConcept": "Mucin droplets on TEM.",
+      "keyConcept": "Mucin droplets on TEM: Pale, low-density membrane-bound mucous secretory vesicles.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_917746456.webp",
@@ -1353,7 +1353,7 @@
       ],
       "correctIndex": 3,
       "explanation": "Criteria of Identification: Flattened nucleus compressed against the basal plasma membrane.",
-      "keyConcept": "Flattened basal nucleus in mucous cells.",
+      "keyConcept": "Flattened basal nucleus compressed by apical accumulation of mucin.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_1183860468.webp",
@@ -1372,8 +1372,8 @@
         "Basal nucleus"
       ],
       "correctIndex": 0,
-      "explanation": "Criteria of Identification: Apical acinar lumen.",
-      "keyConcept": "Lumen.",
+      "explanation": "Criteria of Identification: Apical acinar lumen where secretory products are discharged.",
+      "keyConcept": "Lumen of acinus: Central ductular space bounded by apical microvilli.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_972388094.webp",
@@ -1393,7 +1393,7 @@
       ],
       "correctIndex": 2,
       "explanation": "Criteria of Identification: Transverse section of the esophagus showing non-keratinized stratified squamous epithelium, muscularis mucosae, submucosal esophageal glands proper, and muscularis externa.",
-      "keyConcept": "Esophageal wall layers.",
+      "keyConcept": "Esophageal wall layers: Stratified squamous lining, submucosal glands, dual muscularis.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_2133361650.webp",
@@ -1413,7 +1413,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Criteria of Identification: Transverse section of the esophagus showing non-keratinized stratified squamous epithelium, muscularis mucosae, submucosal esophageal glands proper, and muscularis externa.",
-      "keyConcept": "Esophageal wall layers.",
+      "keyConcept": "Esophageal wall layers: Stratified squamous lining, submucosal glands, dual muscularis.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_1725407909.webp",
@@ -1433,7 +1433,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Criteria of Identification: Thick, non-keratinized stratified squamous lining protective against abrasion.",
-      "keyConcept": "Esophageal epithelium: Non-keratinized stratified squamous.",
+      "keyConcept": "Esophageal epithelium: Non-keratinized stratified squamous epithelium.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_9065380.webp",
@@ -1453,7 +1453,7 @@
       ],
       "correctIndex": 2,
       "explanation": "Criteria of Identification: Connective tissue with blood vessels and lymphatics.",
-      "keyConcept": "Lamina propria.",
+      "keyConcept": "Lamina propria: Loose vascular connective tissue supporting the epithelium.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_606134083.webp",
@@ -1473,7 +1473,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Criteria of Identification: Distinct longitudinal layer of smooth muscle separating mucosa from submucosa.",
-      "keyConcept": "Muscularis mucosae of esophagus.",
+      "keyConcept": "Muscularis mucosae of esophagus: Longitudinal smooth muscle layer.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_217587297.webp",
@@ -1493,7 +1493,7 @@
       ],
       "correctIndex": 3,
       "explanation": "Criteria of Identification: Compound tubuloacinar mucous glands situated exclusively in the submucosa.",
-      "keyConcept": "Esophageal glands proper (submucosal).",
+      "keyConcept": "Esophageal glands proper: Submucosal compound tubuloacinar mucous glands.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_1687331391.webp",
@@ -1513,7 +1513,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Criteria of Identification: Innermost layer (epithelium + lamina propria + muscularis mucosae).",
-      "keyConcept": "Mucosa.",
+      "keyConcept": "Mucosa: Epithelium, lamina propria, and muscularis mucosae.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_1545577672.webp",
@@ -1533,7 +1533,7 @@
       ],
       "correctIndex": 2,
       "explanation": "Criteria of Identification: Dense irregular connective tissue layer harboring submucosal glands.",
-      "keyConcept": "Submucosa.",
+      "keyConcept": "Submucosa: Vascular connective tissue layer harboring esophageal glands proper.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_415496619.webp",
@@ -1553,7 +1553,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Criteria of Identification: Inner circular and outer longitudinal muscle coats.",
-      "keyConcept": "Muscularis externa.",
+      "keyConcept": "Muscularis externa: Dual muscular coat driving esophageal peristalsis.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_714621914.webp",
@@ -1593,7 +1593,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Criteria of Identification: Transverse section of the esophagus showing non-keratinized stratified squamous epithelium, muscularis mucosae, submucosal esophageal glands proper, and muscularis externa.",
-      "keyConcept": "Esophageal wall layers.",
+      "keyConcept": "Esophageal wall layers: Stratified squamous lining, submucosal glands, dual muscularis.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_1092922052.webp",
@@ -1673,7 +1673,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Criteria of Identification: Submucosal layer.",
-      "keyConcept": "Submucosa.",
+      "keyConcept": "Submucosa: Vascular connective tissue layer supporting mucosa and containing neural plexus.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo1_83263312.webp",
@@ -1833,7 +1833,7 @@
         "Gastroesophageal junction",
         "Duodenum"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Criteria of Identification: Gastric mucosa identified as Fundus by pit-to-gland ratio and cellular composition (fundus has shallow pits and straight glands packed with parietal and chief cells; pylorus has deep pits >1/2 mucosal thickness and branched coiled mucous glands).",
       "keyConcept": "Fundus histology.",
       "media": {
@@ -1853,7 +1853,7 @@
         "Duodenum",
         "Gastroesophageal junction"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Criteria of Identification: Gastric mucosa identified as Pylorus by pit-to-gland ratio and cellular composition (fundus has shallow pits and straight glands packed with parietal and chief cells; pylorus has deep pits >1/2 mucosal thickness and branched coiled mucous glands).",
       "keyConcept": "Pylorus histology.",
       "media": {
@@ -1915,7 +1915,7 @@
       ],
       "correctIndex": 3,
       "explanation": "Criteria of Identification: Vascular connective tissue layer.",
-      "keyConcept": "Submucosa.",
+      "keyConcept": "Submucosa: Vascular connective tissue layer containing submucosal neurovascular plexus.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo2_306570078.webp",
@@ -1935,7 +1935,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Criteria of Identification: Gastric pit (foveola) lined by surface mucous cells.",
-      "keyConcept": "Gastric pit.",
+      "keyConcept": "Gastric pit (foveola): Mucosal invagination lined by surface mucous cells.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo2_1151262097.webp",
@@ -1955,7 +1955,7 @@
       ],
       "correctIndex": 2,
       "explanation": "Criteria of Identification: Tubular gastric gland body.",
-      "keyConcept": "Gastric gland.",
+      "keyConcept": "Gastric gland: Straight tubular gland containing parietal and chief cells.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo2_178183508.webp",
@@ -1973,7 +1973,7 @@
         "Pylorus",
         "Colon"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Criteria of Identification: Gastric mucosa identified as Fundus by pit-to-gland ratio and cellular composition (fundus has shallow pits and straight glands packed with parietal and chief cells; pylorus has deep pits >1/2 mucosal thickness and branched coiled mucous glands).",
       "keyConcept": "Fundus histology.",
       "media": {
@@ -1993,7 +1993,7 @@
         "Gastroesophageal junction",
         "Jejunum"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Criteria of Identification: Gastric mucosa identified as Pylorus by pit-to-gland ratio and cellular composition (fundus has shallow pits and straight glands packed with parietal and chief cells; pylorus has deep pits >1/2 mucosal thickness and branched coiled mucous glands).",
       "keyConcept": "Pylorus histology.",
       "media": {
@@ -2133,7 +2133,7 @@
         "Liver silver",
         "Liver pig"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Criteria of Identification: Small intestine feature correctly identified based on characteristic villus morphology and submucosal glands.",
       "keyConcept": "Small intestine histology.",
       "media": {
@@ -2153,7 +2153,7 @@
         "Liver silver",
         "Pancreas H&E"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Criteria of Identification: Small intestine feature correctly identified based on characteristic villus morphology and submucosal glands.",
       "keyConcept": "Small intestine histology.",
       "media": {
@@ -2493,7 +2493,7 @@
         "Liver silver",
         "Parotid gland"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Criteria of Identification: Small intestine feature correctly identified based on characteristic villus morphology and submucosal glands.",
       "keyConcept": "Small intestine histology.",
       "media": {
@@ -2613,7 +2613,7 @@
         "Ileum",
         "Pylorus"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Criteria of Identification: Microscopic feature identified: Jejunum.",
       "keyConcept": "Histology Spotter: Jejunum.",
       "media": {
@@ -2753,7 +2753,7 @@
         "Jejunum",
         "Appendix"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Criteria of Identification: Microscopic feature identified: Ileum.",
       "keyConcept": "Histology Spotter: Ileum.",
       "media": {
@@ -2773,7 +2773,7 @@
         "Jejunum",
         "Colon"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Criteria of Identification: Microscopic feature identified: Duodenum.",
       "keyConcept": "Histology Spotter: Duodenum.",
       "media": {
@@ -2933,9 +2933,9 @@
         "Jejunum",
         "Appendix"
       ],
-      "correctIndex": 0,
-      "explanation": "Criteria of Identification: Intestinal epithelial ultrastructure and junctional complex components.",
-      "keyConcept": "Intestinal junctional complexes and cell types.",
+      "correctIndex": 2,
+      "explanation": "Criteria of Identification: High-power section of the small intestine displaying tall, finger-like mucosal villi, straight crypts of Lieberkühn, and a submucosa composed of loose vascular connective tissue that is completely free of Brunner's glands (distinguishing from duodenum) and free of aggregated lymphoid follicles/Peyer's patches (distinguishing from ileum).",
+      "keyConcept": "Jejunum histology: Tall well-developed villi with submucosa lacking Brunner's glands and Peyer's patches.",
       "media": {
         "type": "image",
         "imageUrl": "/images/practical/mgl-3/histology/histo2_280618134.webp",
@@ -2953,7 +2953,7 @@
         "Goblet cell",
         "Opening of crypt"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Criteria of Identification: Intestinal epithelial ultrastructure and junctional complex components.",
       "keyConcept": "Intestinal junctional complexes and cell types.",
       "media": {
@@ -2973,7 +2973,7 @@
         "Crypt",
         "Microvilli"
       ],
-      "correctIndex": 3,
+      "correctIndex": 1,
       "explanation": "Criteria of Identification: Intestinal epithelial ultrastructure and junctional complex components.",
       "keyConcept": "Intestinal junctional complexes and cell types.",
       "media": {
@@ -2993,7 +2993,7 @@
         "Zonula occludens",
         "Desmosome"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Criteria of Identification: Intestinal epithelial ultrastructure and junctional complex components.",
       "keyConcept": "Intestinal junctional complexes and cell types.",
       "media": {
@@ -3033,7 +3033,7 @@
         "Zonula adherens",
         "Glycocalyx"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Criteria of Identification: Intestinal epithelial ultrastructure and junctional complex components.",
       "keyConcept": "Intestinal junctional complexes and cell types.",
       "media": {
@@ -3073,7 +3073,7 @@
         "Golgi apparatus",
         "Mitochondria"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Criteria of Identification: Intestinal epithelial ultrastructure and junctional complex components.",
       "keyConcept": "Intestinal junctional complexes and cell types.",
       "media": {
@@ -3093,7 +3093,7 @@
         "Enteroendocrine cell",
         "Enterocyte"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Criteria of Identification: Intestinal epithelial ultrastructure and junctional complex components.",
       "keyConcept": "Intestinal junctional complexes and cell types.",
       "media": {
@@ -3113,7 +3113,7 @@
         "Basal granules",
         "Short microvilli"
       ],
-      "correctIndex": 3,
+      "correctIndex": 2,
       "explanation": "Criteria of Identification: Intestinal epithelial ultrastructure and junctional complex components.",
       "keyConcept": "Intestinal junctional complexes and cell types.",
       "media": {
@@ -3133,7 +3133,7 @@
         "RER",
         "Nucleus"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Criteria of Identification: Intestinal epithelial ultrastructure and junctional complex components.",
       "keyConcept": "Intestinal junctional complexes and cell types.",
       "media": {
@@ -3153,7 +3153,7 @@
         "Paneth cell",
         "Enterocyte"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Criteria of Identification: Intestinal epithelial ultrastructure and junctional complex components.",
       "keyConcept": "Intestinal junctional complexes and cell types.",
       "media": {
@@ -3213,7 +3213,7 @@
         "Apical granules",
         "Glycocalyx granules"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Criteria of Identification: Large intestine segment identified (appendix shows ring of lymphoid follicles in mucosa/submucosa with narrow stellate lumen and no villi; colon shows straight crypts with numerous goblet cells and taeniae coli).",
       "keyConcept": "Large intestine histology: Crypts with abundant goblet cells, absence of villi.",
       "media": {
@@ -3273,7 +3273,7 @@
         "Goblet cells",
         "Crypts"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Criteria of Identification: Microscopic feature identified: Short villi.",
       "keyConcept": "Histology Spotter: Short villi.",
       "media": {
@@ -3293,7 +3293,7 @@
         "Lamina propria",
         "Muscularis mucosa"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Criteria of Identification: Microscopic feature identified: Muscularis externa.",
       "keyConcept": "Histology Spotter: Muscularis externa.",
       "media": {
@@ -3333,7 +3333,7 @@
         "Paneth cells",
         "Enteroendocrine cells"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Criteria of Identification: Large intestine segment identified (appendix shows ring of lymphoid follicles in mucosa/submucosa with narrow stellate lumen and no villi; colon shows straight crypts with numerous goblet cells and taeniae coli).",
       "keyConcept": "Large intestine histology: Crypts with abundant goblet cells, absence of villi.",
       "media": {
@@ -3353,7 +3353,7 @@
         "Colon",
         "Duodenum"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Criteria of Identification: Large intestine segment identified (appendix shows ring of lymphoid follicles in mucosa/submucosa with narrow stellate lumen and no villi; colon shows straight crypts with numerous goblet cells and taeniae coli).",
       "keyConcept": "Large intestine histology: Crypts with abundant goblet cells, absence of villi.",
       "media": {
@@ -3373,7 +3373,7 @@
         "Appendix",
         "Jejunum"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "explanation": "Criteria of Identification: Large intestine segment identified (appendix shows ring of lymphoid follicles in mucosa/submucosa with narrow stellate lumen and no villi; colon shows straight crypts with numerous goblet cells and taeniae coli).",
       "keyConcept": "Large intestine histology: Crypts with abundant goblet cells, absence of villi.",
       "media": {
@@ -3413,7 +3413,7 @@
         "Ileum",
         "Rectoanal junction"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Criteria of Identification: Microscopic feature identified: Colon.",
       "keyConcept": "Histology Spotter: Colon.",
       "media": {
@@ -3453,7 +3453,7 @@
         "Crypts",
         "Brunner's glands"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Criteria of Identification: Microscopic feature identified: Villi.",
       "keyConcept": "Histology Spotter: Villi.",
       "media": {
@@ -3473,7 +3473,7 @@
         "Jejunum",
         "Appendix"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Criteria of Identification: Abrupt transition from simple columnar epithelium of the rectum to stratified squamous epithelium of the anal canal.",
       "keyConcept": "Rectoanal junction.",
       "media": {
@@ -3513,7 +3513,7 @@
         "Anal side",
         "Esophagus side"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Criteria of Identification: Microscopic feature identified: Rectal side.",
       "keyConcept": "Histology Spotter: Rectal side.",
       "media": {
@@ -3533,7 +3533,7 @@
         "Columnar absorptive cells",
         "Stratified squamous non keratinized ep."
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Criteria of Identification: Abrupt transition from simple columnar epithelium of the rectum to stratified squamous epithelium of the anal canal.",
       "keyConcept": "Rectoanal junction.",
       "media": {
@@ -3553,7 +3553,7 @@
         "Appendix",
         "Colon"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Criteria of Identification: Microscopic feature identified: Rectoanal junction.",
       "keyConcept": "Histology Spotter: Rectoanal junction.",
       "media": {
@@ -3613,7 +3613,7 @@
         "Crypt of large intestine",
         "Villus of large intestine"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Criteria of Identification: Microscopic feature identified: Crypt of small intestine.",
       "keyConcept": "Histology Spotter: Crypt of small intestine.",
       "media": {
@@ -3633,7 +3633,7 @@
         "Zonula occludens",
         "Desmosome"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Criteria of Identification: Microscopic feature identified: Glycocalyx.",
       "keyConcept": "Histology Spotter: Glycocalyx.",
       "media": {

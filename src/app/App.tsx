@@ -594,7 +594,6 @@ function MainApp() {
   const transformedChapter = useMemo(() => {
     if (!selectedChapter) return null;
     if (selectedModule?.code === 'MGL-3') {
-      if (selectedChapter.bankSection === 'practical') return selectedChapter;
       return toGitTopicChapter(selectedChapter);
     }
     const isMINF = selectedModule?.code === 'MINF-1';

@@ -37,7 +37,7 @@ describe('GIT (MGL-3) Practical Question Bank Rebuild & Verification', () => {
       { id: 302, title: 'Practical — Histology', count: 183, topicsCount: 2 },
       { id: 303, title: 'Practical — Pathology', count: 145, topicsCount: 2 },
       { id: 304, title: 'Practical — Parasitology', count: 84, topicsCount: 1 },
-      { id: 305, title: 'Practical — Microbiology', count: 51, topicsCount: 1 },
+      { id: 305, title: 'Practical — Microbiology', count: 51, topicsCount: 6 },
       { id: 306, title: 'Practical — Physiology', count: 48, topicsCount: 1 },
       { id: 307, title: 'Practical — Biochemistry', count: 65, topicsCount: 4 },
     ]);
@@ -81,10 +81,10 @@ describe('GIT (MGL-3) Practical Question Bank Rebuild & Verification', () => {
     const practicalChaptersList = getChaptersForModuleAndMode('MGL-3', 'practical');
     for (const ch of practicalChaptersList) {
       const transformed = toGitTopicChapter(ch);
-      expect(transformed.subjects).toHaveLength(1);
-      expect(transformed.subjects[0].questions.length).toBe(ch.subjects[0].questions.length);
-      expect(transformed.subjects[0].lectureNames).toBeDefined();
-      expect(transformed.subjects[0].lectureNames!.length).toBeGreaterThan(0);
+      const expectedTopicCount = ch.subjects[0].lectureNames?.length ?? 1;
+      expect(transformed.subjects).toHaveLength(expectedTopicCount);
+      const totalTransformedQuestions = transformed.subjects.reduce((sum, s) => sum + s.questions.length, 0);
+      expect(totalTransformedQuestions).toBe(ch.subjects[0].questions.length);
     }
   });
 

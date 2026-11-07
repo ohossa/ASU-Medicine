@@ -244,24 +244,24 @@ def adjudicate_h1(idx, q):
         concept = "Filiform papillae on SEM: Tapered spires of keratinized epithelium."
     elif idx == 57:
         correct_target = "Taste bud"
-        explanation = "Criteria of Identification: Taste bud outlined in yellow."
-        concept = "Taste bud."
+        explanation = "Criteria of Identification: Taste bud outlined in yellow on the lateral wall of vallate papilla."
+        concept = "Taste bud: Barrel-shaped sensory organ containing gustatory and supporting cells."
     elif idx == 58:
         correct_target = "Taste pore"
-        explanation = "Criteria of Identification: Apical taste pore."
-        concept = "Taste pore."
+        explanation = "Criteria of Identification: Apical taste pore opening onto the epithelial surface."
+        concept = "Taste pore: Apical orifice admitting chemical tastants to receptor microvilli."
     elif idx == 59:
         correct_target = "Sensory cells"
         explanation = "Criteria of Identification: Elongated neuroepithelial sensory cells with central oval nuclei."
-        concept = "Gustatory sensory cells."
+        concept = "Gustatory sensory cells with apical receptor microvilli."
     elif idx == 60:
         correct_target = "Supporting cells"
         explanation = "Criteria of Identification: Sustentacular supporting cells."
-        concept = "Supporting cells of taste bud."
+        concept = "Supporting sustentacular cells of taste bud."
     elif idx == 61:
         correct_target = "Basal cells"
         explanation = "Criteria of Identification: Short pyramidal stem cells at the base."
-        concept = "Basal cells."
+        concept = "Basal stem cells giving rise to taste bud cell turnover."
     elif idx == 62:
         correct_target = "Serous acinus"
         explanation = "Criteria of Identification: TEM of serous acinar cell showing extensive parallel stacks of rough endoplasmic reticulum (RER) in the basal region and dense apical zymogen granules."
@@ -269,11 +269,11 @@ def adjudicate_h1(idx, q):
     elif idx == 63:
         correct_target = "Apical electron dense granules"
         explanation = "Criteria of Identification: Dense zymogen granules packed in the apical cytoplasm."
-        concept = "Zymogen granules."
+        concept = "Zymogen granules: Secretory vesicles packed with pancreatic/salivary proenzymes."
     elif idx == 64:
         correct_target = "Basal nucleus"
         explanation = "Criteria of Identification: Rounded euchromatic nucleus located basally."
-        concept = "Serous cell nucleus."
+        concept = "Serous cell nucleus: Spherical euchromatic basal nucleus."
     elif idx == 65:
         correct_target = "Mucous acinus"
         explanation = "Criteria of Identification: TEM of mucous cell showing abundant pale, electron-lucent mucinogen granules filling the supranuclear cytoplasm and flattening the basal nucleus."
@@ -281,47 +281,47 @@ def adjudicate_h1(idx, q):
     elif idx == 66:
         correct_target = "Apical electron lucent mucin granules"
         explanation = "Criteria of Identification: Light, electron-lucent membrane-bound mucin droplets."
-        concept = "Mucin droplets on TEM."
+        concept = "Mucin droplets on TEM: Pale, low-density membrane-bound mucous secretory vesicles."
     elif idx == 67:
         correct_target = "Basal nucleus"
         explanation = "Criteria of Identification: Flattened nucleus compressed against the basal plasma membrane."
-        concept = "Flattened basal nucleus in mucous cells."
+        concept = "Flattened basal nucleus compressed by apical accumulation of mucin."
     elif idx == 68:
         correct_target = "Lumen of acinus"
-        explanation = "Criteria of Identification: Apical acinar lumen."
-        concept = "Lumen."
+        explanation = "Criteria of Identification: Apical acinar lumen where secretory products are discharged."
+        concept = "Lumen of acinus: Central ductular space bounded by apical microvilli."
     elif idx in (69, 70, 79):
         correct_target = "Esophagus"
         explanation = "Criteria of Identification: Transverse section of the esophagus showing non-keratinized stratified squamous epithelium, muscularis mucosae, submucosal esophageal glands proper, and muscularis externa."
-        concept = "Esophageal wall layers."
+        concept = "Esophageal wall layers: Stratified squamous lining, submucosal glands, dual muscularis."
     elif idx == 71:
         correct_target = "Stratified squamous epithelium"
         explanation = "Criteria of Identification: Thick, non-keratinized stratified squamous lining protective against abrasion."
-        concept = "Esophageal epithelium: Non-keratinized stratified squamous."
+        concept = "Esophageal epithelium: Non-keratinized stratified squamous epithelium."
     elif idx == 72:
         correct_target = "Lamina propria"
         explanation = "Criteria of Identification: Connective tissue with blood vessels and lymphatics."
-        concept = "Lamina propria."
+        concept = "Lamina propria: Loose vascular connective tissue supporting the epithelium."
     elif idx == 73:
         correct_target = "Muscularis mucosa"
         explanation = "Criteria of Identification: Distinct longitudinal layer of smooth muscle separating mucosa from submucosa."
-        concept = "Muscularis mucosae of esophagus."
+        concept = "Muscularis mucosae of esophagus: Longitudinal smooth muscle layer."
     elif idx == 74:
         correct_target = "Esophageal glands"
         explanation = "Criteria of Identification: Compound tubuloacinar mucous glands situated exclusively in the submucosa."
-        concept = "Esophageal glands proper (submucosal)."
+        concept = "Esophageal glands proper: Submucosal compound tubuloacinar mucous glands."
     elif idx == 75:
         correct_target = "Mucosa"
         explanation = "Criteria of Identification: Innermost layer (epithelium + lamina propria + muscularis mucosae)."
-        concept = "Mucosa."
+        concept = "Mucosa: Epithelium, lamina propria, and muscularis mucosae."
     elif idx == 76:
         correct_target = "Submucosa"
         explanation = "Criteria of Identification: Dense irregular connective tissue layer harboring submucosal glands."
-        concept = "Submucosa."
+        concept = "Submucosa: Vascular connective tissue layer harboring esophageal glands proper."
     elif idx == 77:
         correct_target = "Muscularis externa"
         explanation = "Criteria of Identification: Inner circular and outer longitudinal muscle coats."
-        concept = "Muscularis externa."
+        concept = "Muscularis externa: Dual muscular coat driving esophageal peristalsis."
     elif idx == 78:
         correct_target = "Adventitia" if "Adventitia" in options else "Serosa"
         explanation = "Criteria of Identification: Loose adventitial connective tissue anchoring the thoracic esophagus to surrounding mediastinal structures."
@@ -341,7 +341,7 @@ def adjudicate_h1(idx, q):
     elif idx == 83:
         correct_target = "Submucosa"
         explanation = "Criteria of Identification: Submucosal layer."
-        concept = "Submucosa."
+        concept = "Submucosa: Vascular connective tissue layer supporting mucosa and containing neural plexus."
     elif idx == 84:
         correct_target = "Sublingual gland"
         explanation = "Criteria of Identification: Predominantly mucous acini."
@@ -428,15 +428,15 @@ def adjudicate_h2(idx, q):
     elif idx == 9:
         correct_target = "Submucosa"
         explanation = "Criteria of Identification: Vascular connective tissue layer."
-        concept = "Submucosa."
+        concept = "Submucosa: Vascular connective tissue layer containing submucosal neurovascular plexus."
     elif idx == 10:
         correct_target = "Pit"
         explanation = "Criteria of Identification: Gastric pit (foveola) lined by surface mucous cells."
-        concept = "Gastric pit."
+        concept = "Gastric pit (foveola): Mucosal invagination lined by surface mucous cells."
     elif idx == 11:
         correct_target = "Gland"
         explanation = "Criteria of Identification: Tubular gastric gland body."
-        concept = "Gastric gland."
+        concept = "Gastric gland: Straight tubular gland containing parietal and chief cells."
     elif idx in (15, 18, 19):
         correct_target = "Gastroesophageal junction"
         explanation = "Criteria of Identification: Abrupt, sharp transition (Z-line) from non-keratinized stratified squamous epithelium of the esophagus to simple columnar epithelium of the gastric cardia."
