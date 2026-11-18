@@ -17,19 +17,19 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     expect(manifestEntry).toBeDefined();
     expect(manifestEntry.year).toBe(3);
     expect(manifestEntry.semester).toBe(1);
-    expect(manifestEntry.totalCount).toBe(7704);
-    expect(manifestEntry.mcqCount).toBe(3748);
-    expect(manifestEntry.essayCount).toBe(3956);
+    expect(manifestEntry.totalCount).toBe(7596);
+    expect(manifestEntry.mcqCount).toBe(3732);
+    expect(manifestEntry.essayCount).toBe(3864);
     expect(manifestEntry.paths).toEqual(['../imports/year-3/semester-1/MUG-3.json']);
-    expect(manifestEntry.revision).toBe('e9d30b7ce8ff4472245c95e629b5abab48f93461d18f3f9f307462b85bad13d8');
-    expect(manifestEntry.bytes).toBe(14373881);
+    expect(manifestEntry.revision).toBe('c8c1974c435084a55bd437f3af98a8d3c57f720dbf5924d6e4644e6a73cca78d');
+    expect(manifestEntry.bytes).toBe(13084424);
   });
 
   it('reports module question counts from manifest when not yet in memory', () => {
     const counts = getModuleQuestionCounts('MUG-3');
-    expect(counts.totalCount).toBe(7704);
-    expect(counts.mcqCount).toBe(3748);
-    expect(counts.essayCount).toBe(3956);
+    expect(counts.totalCount).toBe(7596);
+    expect(counts.mcqCount).toBe(3732);
+    expect(counts.essayCount).toBe(3864);
   });
 
   it('resolves correct academic year for MUG-3', () => {
@@ -45,20 +45,20 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
 
   it('reports exact question counts in memory matching manifest', () => {
     const counts = getModuleQuestionCounts('MUG-3');
-    expect(counts.totalCount).toBe(7704);
-    expect(counts.mcqCount).toBe(3748);
-    expect(counts.essayCount).toBe(3956);
+    expect(counts.totalCount).toBe(7596);
+    expect(counts.mcqCount).toBe(3732);
+    expect(counts.essayCount).toBe(3864);
   });
 
   it('loads mixed mode chapters with exact chapter counts, schema integrity, and zero truncation', () => {
     const chapters = getChaptersForModuleAndMode('MUG-3', 'mixed');
     
-    // Total questions loaded must be exactly 7,704
+    // Total questions loaded must be exactly 7,596
     const totalLoaded = chapters.reduce(
       (sum, c) => sum + c.subjects.reduce((s, sub) => s + sub.questions.length, 0),
       0
     );
-    expect(totalLoaded).toBe(7704);
+    expect(totalLoaded).toBe(7596);
 
     // Verify visiblePracticeChapters behavior
     // 25 chapters in bank, 2 empty past-exam chapters (108, 204) properly hidden from student navigation
@@ -96,7 +96,7 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     // Verify Practice chapters (1-8)
     const ch1 = chapters.find((c) => c.id === 1);
     expect(ch1).toBeDefined();
-    expect(ch1!.subjects[0].questions.length).toBe(815); // +50 net (52 from Ch3, -2 to Ch5)
+    expect(ch1!.subjects[0].questions.length).toBe(787); // 815 - 28 excluded practical/corrupt OCR items
 
     const ch3 = chapters.find((c) => c.id === 3);
     expect(ch3).toBeDefined();
@@ -104,17 +104,17 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
 
     const ch5 = chapters.find((c) => c.id === 5);
     expect(ch5).toBeDefined();
-    expect(ch5!.subjects[0].questions.length).toBe(2832); // +2 from Ch1
+    expect(ch5!.subjects[0].questions.length).toBe(2796); // 2832 - 36 excluded corrupt items
 
     // Verify CA-1 chapters
     const ch101 = chapters.find((c) => c.id === 101);
     expect(ch101!.subjects[0].questions.length).toBe(15);
     const ch103 = chapters.find((c) => c.id === 103);
-    expect(ch103!.subjects[0].questions.length).toBe(94);
+    expect(ch103!.subjects[0].questions.length).toBe(84); // 94 - 10 dashed line fragments
     const ch104 = chapters.find((c) => c.id === 104);
     expect(ch104!.subjects[0].questions.length).toBe(3); // +1 from Ch103
     const ch105 = chapters.find((c) => c.id === 105);
-    expect(ch105!.subjects[0].questions.length).toBe(103); // -3 net
+    expect(ch105!.subjects[0].questions.length).toBe(101); // 103 - 2 dashed line fragments
     const ch106 = chapters.find((c) => c.id === 106);
     expect(ch106!.subjects[0].questions.length).toBe(6); // +2 from Ch105
 
@@ -122,18 +122,18 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     const ch201 = chapters.find((c) => c.id === 201);
     expect(ch201!.subjects[0].questions.length).toBe(24); // +1 net
     const ch203 = chapters.find((c) => c.id === 203);
-    expect(ch203!.subjects[0].questions.length).toBe(96); // -3 net
+    expect(ch203!.subjects[0].questions.length).toBe(92); // 96 - 4 dashed line fragments
     const ch205 = chapters.find((c) => c.id === 205);
-    expect(ch205!.subjects[0].questions.length).toBe(364); // +2 net
+    expect(ch205!.subjects[0].questions.length).toBe(363); // 364 - 1 dashed line fragment
   });
 
-  it('loads MCQ mode with exact question counts (3,748 questions)', () => {
+  it('loads MCQ mode with exact question counts (3,732 questions)', () => {
     const chapters = getChaptersForModuleAndMode('MUG-3', 'mcq');
     const totalMcq = chapters.reduce(
       (sum, c) => sum + c.subjects.reduce((s, sub) => s + sub.questions.length, 0),
       0
     );
-    expect(totalMcq).toBe(3748);
+    expect(totalMcq).toBe(3732);
 
     for (const c of chapters) {
       for (const s of c.subjects) {
@@ -144,13 +144,13 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     }
   });
 
-  it('loads Essay mode with exact question counts (3,956 questions)', () => {
+  it('loads Essay mode with exact question counts (3,864 questions)', () => {
     const chapters = getChaptersForModuleAndMode('MUG-3', 'essay');
     const totalEssay = chapters.reduce(
       (sum, c) => sum + c.subjects.reduce((s, sub) => s + sub.questions.length, 0),
       0
     );
-    expect(totalEssay).toBe(3956);
+    expect(totalEssay).toBe(3864);
 
     for (const c of chapters) {
       for (const s of c.subjects) {
@@ -226,7 +226,7 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
   it('resolves learning question versions for Chapter 1 and Chapter 301 without failure', async () => {
     const ch1Versions = await getLearningQuestionVersions('MUG-3', 1);
     expect(ch1Versions).toBeInstanceOf(Map);
-    expect(ch1Versions.size).toBe(815);
+    expect(ch1Versions.size).toBe(787);
     // Check moved question has version
     expect(ch1Versions.has('MUG3-CH3-PHYS-0307')).toBe(true);
     expect(ch1Versions.get('MUG3-CH3-PHYS-0307')).toMatch(/^[0-9a-f]{64}$/);
