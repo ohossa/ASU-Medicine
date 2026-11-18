@@ -1,65 +1,69 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 
-const mockSupabase = {
-  from: vi.fn(),
-};
-
-vi.mock("../../../server/supabase-client.js", () => ({
-  getSupabase: () => mockSupabase,
+const mocks = vi.hoisted(() => ({
+  d1Query: vi.fn(),
+  d1QueryFirst: vi.fn(),
+  d1Execute: vi.fn(),
+  d1Batch: vi.fn(),
+  isD1Configured: vi.fn(() => true),
 }));
 
-vi.mock("../../../server/report-store.js", () => ({
-  evalRedis: vi.fn(async () => null),
+vi.mock("../../../server/d1-client.js", () => ({
+  d1Query: mocks.d1Query,
+  d1QueryFirst: mocks.d1QueryFirst,
+  d1Execute: mocks.d1Execute,
+  d1Batch: mocks.d1Batch,
+  isD1Configured: mocks.isD1Configured,
 }));
 
-describe("Learning XP Recovery & Progress Resilience", () => {
+describe("Learning XP Recovery & Progress Resilience (Cloudflare D1)", () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    mocks.isD1Configured.mockReturnValue(true);
   });
 
   it("self-heals XP and level when a student has answered questions in learning_entries", async () => {
     const existingEntries = Array.from({ length: 25 }, (_, i) => ({
       question_id: `q_${i + 1}`,
-      ever_correct: true,
-      correct: true,
+      ever_correct: 1,
+      correct: 1,
     }));
 
     let updatedProfileData: any = null;
 
-    mockSupabase.from.mockImplementation((table: string) => {
-      if (table === "learning_profiles") {
+    mocks.d1QueryFirst.mockImplementation(async (sql: string, _params: any[]) => {
+      if (sql.includes("FROM learning_profiles")) {
         return {
-          select: vi.fn().mockReturnThis(),
-          eq: vi.fn().mockReturnThis(),
-          maybeSingle: vi.fn(async () => ({
-            data: {
-              user_id: "student_recovery_1",
-              year: 3,
-              xp: 0, // Corrupted / zeroed
-              level: 1, // Corrupted / level 1
-              alias: "Ahmed",
-              opt_in: true,
-            },
-            error: null,
-          })),
-          update: vi.fn((data: any) => {
-            updatedProfileData = data;
-            return {
-              eq: vi.fn(async () => ({ error: null })),
-            };
-          }),
+          user_id: "student_recovery_1",
+          year: 3,
+          xp: 0, // Corrupted / zeroed
+          competitive_xp: 0,
+          level: 1,
+          alias: "Ahmed",
+          opt_in: 1,
         };
       }
-      if (table === "learning_entries") {
-        return {
-          select: vi.fn().mockReturnThis(),
-          eq: vi.fn(async () => ({
-            data: existingEntries,
-            error: null,
-          })),
-        };
+      return null;
+    });
+
+    mocks.d1Query.mockImplementation(async (sql: string, _params: any[]) => {
+      if (sql.includes("FROM learning_entries")) {
+        return existingEntries;
       }
-      return { select: vi.fn().mockReturnThis(), eq: vi.fn().mockReturnThis(), maybeSingle: vi.fn(async () => ({ data: null, error: null })) };
+      return [];
+    });
+
+    mocks.d1Execute.mockImplementation(async (sql: string, params: any[]) => {
+      if (sql.includes("UPDATE learning_profiles SET xp = ?")) {
+        updatedProfileData = {
+          xp: params[0],
+          competitive_xp: params[1],
+          level: params[2],
+          user_id: params[4],
+        };
+        return { success: true, changes: 1 };
+      }
+      return { success: true, changes: 0 };
     });
 
     const { getProfile } = await import("../../../server/learning-store.js");
@@ -80,9 +84,14 @@ describe("Learning XP Recovery & Progress Resilience", () => {
         module_code: "MGL-3",
         chapter_id: 1,
         question_id: "q_mgl_1",
-        correct: true,
-        ever_correct: true,
-        first_correct: true,
+        subject: "Genetics",
+        topic: "Mutation",
+        type: "mcq",
+        correct: 1,
+        ever_correct: 1,
+        first_correct: 1,
+        attempts_count: 1,
+        content_version: "v1",
         created_at: new Date().toISOString(),
       },
       {
@@ -91,43 +100,41 @@ describe("Learning XP Recovery & Progress Resilience", () => {
         module_code: "MSS-2",
         chapter_id: 1,
         question_id: "q_mss_1",
-        correct: true,
-        ever_correct: true,
-        first_correct: true,
+        subject: "Special Senses",
+        topic: "Vision",
+        type: "mcq",
+        correct: 1,
+        ever_correct: 1,
+        first_correct: 1,
+        attempts_count: 1,
+        content_version: "v1",
         created_at: new Date().toISOString(),
       },
     ];
 
-    mockSupabase.from.mockImplementation((table: string) => {
-      if (table === "learning_profiles") {
+    mocks.d1QueryFirst.mockImplementation(async (sql: string) => {
+      if (sql.includes("FROM learning_profiles")) {
         return {
-          select: vi.fn().mockReturnThis(),
-          eq: vi.fn().mockReturnThis(),
-          order: vi.fn().mockReturnThis(),
-          limit: vi.fn(async () => ({ data: [], error: null })),
-          maybeSingle: vi.fn(async () => ({
-            data: {
-              user_id: "student_recovery_2",
-              year: 3,
-              xp: 20,
-              level: 1,
-              alias: "Salma",
-              opt_in: true,
-            },
-            error: null,
-          })),
+          user_id: "student_recovery_2",
+          year: 3,
+          xp: 20,
+          competitive_xp: 20,
+          level: 1,
+          alias: "Salma",
+          opt_in: 1,
         };
       }
-      if (table === "learning_entries") {
-        return {
-          select: vi.fn().mockReturnThis(),
-          eq: vi.fn(async () => ({
-            data: mixedEntries,
-            error: null,
-          })),
-        };
+      return null;
+    });
+
+    mocks.d1Query.mockImplementation(async (sql: string) => {
+      if (sql.includes("FROM learning_entries")) {
+        return mixedEntries;
       }
-      return { select: vi.fn().mockReturnThis(), eq: vi.fn().mockReturnThis(), maybeSingle: vi.fn(async () => ({ data: null, error: null })) };
+      if (sql.includes("ORDER BY competitive_xp DESC")) {
+        return [];
+      }
+      return [];
     });
 
     const { dashboard } = await import("../../../server/learning-store.js");
@@ -143,40 +150,42 @@ describe("Learning XP Recovery & Progress Resilience", () => {
   it("ensures learning_profiles row is upserted before learning_entries in award()", async () => {
     const executionOrder: string[] = [];
 
-    mockSupabase.from.mockImplementation((table: string) => {
-      if (table === "learning_profiles") {
+    mocks.d1QueryFirst.mockImplementation(async (sql: string) => {
+      if (sql.includes("FROM learning_profiles")) {
         return {
-          select: vi.fn().mockReturnThis(),
-          eq: vi.fn().mockReturnThis(),
-          maybeSingle: vi.fn(async () => ({
-            data: {
-              user_id: "new_student",
-              year: 3,
-              xp: 0,
-              level: 1,
-              streak: 0,
-              best_streak: 0,
-            },
-            error: null,
-          })),
-          upsert: vi.fn(async () => {
-            executionOrder.push("learning_profiles_upsert");
-            return { error: null };
-          }),
+          user_id: "new_student",
+          year: 3,
+          xp: 0,
+          competitive_xp: 0,
+          level: 1,
+          streak: 0,
+          best_streak: 0,
+          last_day: "",
+          alias: "Student",
+          opt_in: 0,
+          banner: "default",
+          title: "student",
+          weekly_xp: 0,
+          current_week: "",
         };
       }
-      if (table === "learning_entries") {
-        return {
-          select: vi.fn().mockReturnThis(),
-          eq: vi.fn().mockReturnThis(),
-          in: vi.fn().mockReturnThis(),
-          upsert: vi.fn(async () => {
-            executionOrder.push("learning_entries_upsert");
-            return { error: null };
-          }),
-        };
+      return null;
+    });
+
+    mocks.d1Query.mockImplementation(async (_sql: string) => {
+      return [];
+    });
+
+    mocks.d1Execute.mockImplementation(async (sql: string) => {
+      if (sql.includes("INSERT INTO learning_profiles") || sql.includes("UPDATE learning_profiles")) {
+        executionOrder.push("learning_profiles_upsert");
       }
-      return { select: vi.fn().mockReturnThis(), eq: vi.fn().mockReturnThis(), maybeSingle: vi.fn(async () => ({ data: null, error: null })) };
+      return { success: true, changes: 1 };
+    });
+
+    mocks.d1Batch.mockImplementation(async (_statements: any[]) => {
+      executionOrder.push("learning_entries_upsert");
+      return [];
     });
 
     const { award } = await import("../../../server/learning-store.js");

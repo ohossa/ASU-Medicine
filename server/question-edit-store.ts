@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto';
 import { evalRedis } from './report-store.js';
 import { ReportError } from './report-service.js';
 import type { EditStore, QuestionEdit } from './question-edit-service.js';
-import { getSupabase } from './supabase-client.js';
+import { d1Query, d1QueryFirst, d1Execute, isD1Configured } from './d1-client.js';
 
 const prefix = 'asu_question_edits:v1:';
 
@@ -43,18 +43,17 @@ function editId(moduleCode: string, chapterId: number, questionId: string): stri
 
 export const editStore: EditStore = {
   async list(moduleCode: string): Promise<QuestionEdit[]> {
-    const supabase = getSupabase();
-    if (supabase) {
+    if (isD1Configured()) {
       try {
-        const { data, error } = await supabase
-          .from('question_edits')
-          .select('*')
-          .eq('module_code', moduleCode);
-        if (!error && Array.isArray(data)) {
+        const data = await d1Query<any>(
+          'SELECT * FROM question_edits WHERE module_code = ?',
+          [moduleCode]
+        );
+        if (Array.isArray(data)) {
           return data.map(rowToEdit);
         }
       } catch (err) {
-        console.warn('Supabase question_edits list failed, falling back:', err);
+        console.warn('D1 question_edits list failed, falling back:', err);
       }
     }
 
@@ -75,28 +74,24 @@ export const editStore: EditStore = {
     const id = editId(edit.moduleCode, edit.chapterId, edit.questionId);
     const now = new Date().toISOString();
 
-    const supabase = getSupabase();
-    if (supabase) {
+    if (isD1Configured()) {
       try {
-        let { data: existing } = await supabase
-          .from('question_edits')
-          .select('id, revision, question_data')
-          .eq('id', id)
-          .maybeSingle();
+        let existing = await d1QueryFirst<any>(
+          'SELECT id, revision, question_data FROM question_edits WHERE id = ?',
+          [id]
+        );
 
         // Fallback: If not found by chapter-specific id, search by module_code and question_id
         // in case the question was moved between chapters
         if (!existing) {
-          const { data: byQ } = await supabase
-            .from('question_edits')
-            .select('id, revision, question_data')
-            .eq('module_code', edit.moduleCode)
-            .eq('question_id', edit.questionId)
-            .maybeSingle();
+          const byQ = await d1QueryFirst<any>(
+            'SELECT id, revision, question_data FROM question_edits WHERE module_code = ? AND question_id = ?',
+            [edit.moduleCode, edit.questionId]
+          );
           if (byQ) {
             existing = byQ;
             if (byQ.id !== id) {
-              await supabase.from('question_edits').delete().eq('id', byQ.id);
+              await d1Execute('DELETE FROM question_edits WHERE id = ?', [byQ.id]);
             }
           }
         }
@@ -117,14 +112,23 @@ export const editStore: EditStore = {
         const existingHistory = Array.isArray(existingData?.history) ? existingData.history : [];
         const history = [nextEdit, ...existingHistory].slice(0, 50);
 
-        const { error: upsertErr } = await supabase
-          .from('question_edits')
-          .upsert({
+        await d1Execute(
+          `INSERT INTO question_edits (id, module_code, chapter_id, question_id, question_data, revision, author_id, updated_at)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+           ON CONFLICT(id) DO UPDATE SET
+             module_code = excluded.module_code,
+             chapter_id = excluded.chapter_id,
+             question_id = excluded.question_id,
+             question_data = excluded.question_data,
+             revision = excluded.revision,
+             author_id = excluded.author_id,
+             updated_at = excluded.updated_at`,
+          [
             id,
-            module_code: edit.moduleCode,
-            chapter_id: edit.chapterId,
-            question_id: edit.questionId,
-            question_data: {
+            edit.moduleCode,
+            edit.chapterId,
+            edit.questionId,
+            JSON.stringify({
               baseVersion: edit.baseVersion,
               question: edit.question,
               subjectId: edit.subjectId,
@@ -132,27 +136,26 @@ export const editStore: EditStore = {
               targetSubjectId: edit.targetSubjectId,
               deleted: Boolean(edit.deleted),
               history,
-            },
-            revision: nextRevision,
-            author_id: edit.updatedBy,
-            updated_at: now,
-          }, { onConflict: 'id' });
+            }),
+            nextRevision,
+            edit.updatedBy,
+            now,
+          ]
+        );
 
-        if (!upsertErr) {
-          // Mirror in memory
-          if (!inMemoryEdits.has(edit.moduleCode)) {
-            inMemoryEdits.set(edit.moduleCode, new Map());
-          }
-          inMemoryEdits.get(edit.moduleCode)!.set(id, nextEdit);
-
-          const histList = inMemoryHistory.get(edit.moduleCode) || [];
-          inMemoryHistory.set(edit.moduleCode, [nextEdit, ...histList].slice(0, 50));
-
-          return nextEdit;
+        // Mirror in memory
+        if (!inMemoryEdits.has(edit.moduleCode)) {
+          inMemoryEdits.set(edit.moduleCode, new Map());
         }
+        inMemoryEdits.get(edit.moduleCode)!.set(id, nextEdit);
+
+        const histList = inMemoryHistory.get(edit.moduleCode) || [];
+        inMemoryHistory.set(edit.moduleCode, [nextEdit, ...histList].slice(0, 50));
+
+        return nextEdit;
       } catch (err) {
         if (err instanceof ReportError) throw err;
-        console.warn('Supabase question_edits save failed, falling back:', err);
+        console.warn('D1 question_edits save failed, falling back:', err);
       }
     }
 
@@ -192,14 +195,13 @@ export const editStore: EditStore = {
   },
 
   async history(moduleCode: string): Promise<QuestionEdit[]> {
-    const supabase = getSupabase();
-    if (supabase) {
+    if (isD1Configured()) {
       try {
-        const { data, error } = await supabase
-          .from('question_edits')
-          .select('question_data')
-          .eq('module_code', moduleCode);
-        if (!error && Array.isArray(data)) {
+        const data = await d1Query<any>(
+          'SELECT question_data FROM question_edits WHERE module_code = ?',
+          [moduleCode]
+        );
+        if (Array.isArray(data)) {
           const historyList: QuestionEdit[] = [];
           for (const row of data) {
             const d = typeof row.question_data === 'string' ? JSON.parse(row.question_data) : row.question_data;
@@ -212,7 +214,7 @@ export const editStore: EditStore = {
           }
         }
       } catch (err) {
-        console.warn('Supabase question_edits history failed, falling back:', err);
+        console.warn('D1 question_edits history failed, falling back:', err);
       }
     }
 
@@ -228,13 +230,10 @@ export const editStore: EditStore = {
 };
 
 export async function editedModules(): Promise<string[]> {
-  const supabase = getSupabase();
-  if (supabase) {
+  if (isD1Configured()) {
     try {
-      const { data, error } = await supabase
-        .from('question_edits')
-        .select('module_code');
-      if (!error && Array.isArray(data)) {
+      const data = await d1Query<any>('SELECT DISTINCT module_code FROM question_edits');
+      if (Array.isArray(data)) {
         const modules = Array.from(new Set(data.map((r: any) => String(r.module_code))));
         if (modules.length > 0) return modules;
       }

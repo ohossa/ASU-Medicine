@@ -1,7 +1,7 @@
 import { randomUUID } from "node:crypto";
 import { evalRedis } from "./report-store.js";
 import { cairoDay } from "./tutor-metrics.js";
-import { getSupabase } from "./supabase-client.js";
+import { d1Query, d1Execute, isD1Configured } from "./d1-client.js";
 import type {
   TriageAssessment,
   TriageLabel,
@@ -31,19 +31,20 @@ export const triageStore: TriageStore = {
     const out: Record<string, TriageAssessment> = {};
     if (!keys.length) return out;
 
-    // 1. Try Supabase first
-    const supabase = getSupabase();
-    if (supabase) {
+    // 1. Try Cloudflare D1 first
+    if (isD1Configured()) {
       try {
-        const { data, error } = await supabase
-          .from("triage_assessments")
-          .select("fingerprint, assessment")
-          .in("fingerprint", keys);
+        const placeholders = keys.map(() => '?').join(',');
+        const data = await d1Query<any>(
+          `SELECT fingerprint, assessment FROM triage_assessments WHERE fingerprint IN (${placeholders})`,
+          keys
+        );
 
-        if (!error && Array.isArray(data) && data.length > 0) {
+        if (Array.isArray(data) && data.length > 0) {
           data.forEach((r: any) => {
             if (r.fingerprint && r.assessment) {
-              out[r.fingerprint] = r.assessment;
+              const parsed = typeof r.assessment === 'string' ? JSON.parse(r.assessment) : r.assessment;
+              out[r.fingerprint] = parsed;
             }
           });
           // If all keys found, return immediately
@@ -78,19 +79,24 @@ export const triageStore: TriageStore = {
   },
 
   async save(a, lease) {
-    // 1. Save to Supabase if available
-    const supabase = getSupabase();
-    if (supabase) {
+    // 1. Save to Cloudflare D1 if available
+    if (isD1Configured()) {
       try {
-        await supabase.from("triage_assessments").upsert(
-          {
-            fingerprint: a.fingerprint,
-            assessment: a,
-            priority: a.priority || "medium",
-            confidence: (a as any).confidence || 0,
-            updated_at: new Date().toISOString(),
-          },
-          { onConflict: "fingerprint" },
+        await d1Execute(
+          `INSERT INTO triage_assessments (fingerprint, assessment, priority, confidence, updated_at)
+           VALUES (?, ?, ?, ?, ?)
+           ON CONFLICT(fingerprint) DO UPDATE SET
+             assessment = excluded.assessment,
+             priority = excluded.priority,
+             confidence = excluded.confidence,
+             updated_at = excluded.updated_at`,
+          [
+            a.fingerprint,
+            JSON.stringify(a),
+            a.priority || "medium",
+            (a as any).confidence || 0,
+            new Date().toISOString(),
+          ]
         );
       } catch {
         // Fallback to Redis

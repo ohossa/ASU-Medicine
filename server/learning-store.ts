@@ -1,6 +1,6 @@
 import { evalRedis } from "./report-store.js";
 import { cairoDay, weekKey } from "./learning-policy.js";
-import { getSupabase } from "./supabase-client.js";
+import { d1Query, d1QueryFirst, d1Execute, d1Batch, isD1Configured } from "./d1-client.js";
 import { createHash } from "node:crypto";
 import type {
   LearningDashboard,
@@ -49,16 +49,14 @@ export async function getProfile(
   id: string,
   year: number,
 ): Promise<LearningProfile> {
-  const supabase = getSupabase();
-  if (supabase) {
+  if (isD1Configured()) {
     try {
-      const { data, error } = await supabase
-        .from('learning_profiles')
-        .select('*')
-        .eq('user_id', id)
-        .maybeSingle();
+      const data = await d1QueryFirst<any>(
+        'SELECT * FROM learning_profiles WHERE user_id = ?',
+        [id]
+      );
 
-      if (!error && data) {
+      if (data) {
         const profile: LearningProfile = {
           xp: Number(data.xp ?? 0),
           competitiveXp: Number(data.competitive_xp ?? 0),
@@ -74,15 +72,14 @@ export async function getProfile(
         };
 
         // Automated Self-Healing Reconciliation:
-        // Recovers zeroed or desynchronized student accounts from verified learning_entries & user_progress
+        // Recovers zeroed or desynchronized student accounts from verified learning_entries
         if (profile.xp === 0 || profile.level <= 2) {
           let maxEarnedXp = profile.xp;
 
-          // 1. From learning_entries
-          const { data: entryRows } = await supabase
-            .from('learning_entries')
-            .select('question_id, ever_correct, correct')
-            .eq('user_id', id);
+          const entryRows = await d1Query<any>(
+            'SELECT question_id, ever_correct, correct FROM learning_entries WHERE user_id = ?',
+            [id]
+          );
 
           if (Array.isArray(entryRows) && entryRows.length > 0) {
             const uniqueCorrect = new Set(
@@ -91,54 +88,30 @@ export async function getProfile(
             maxEarnedXp = Math.max(maxEarnedXp, uniqueCorrect * 10);
           }
 
-          // 2. From user_progress quiz history
-          const { data: progRow } = await supabase
-            .from('user_progress')
-            .select('data')
-            .eq('user_id', id)
-            .maybeSingle();
-
-          if (progRow?.data && typeof progRow.data === 'object') {
-            let histCorrect = 0;
-            for (const [k, v] of Object.entries(progRow.data)) {
-              if (k.includes('history') && Array.isArray(v)) {
-                for (const item of v) {
-                  if (item && item.correct !== undefined) {
-                    histCorrect += Number(item.correct || 0);
-                  }
-                }
-              }
-            }
-            maxEarnedXp = Math.max(maxEarnedXp, histCorrect * 10);
-          }
-
           if (maxEarnedXp > profile.xp) {
             profile.xp = maxEarnedXp;
             profile.competitiveXp = Math.max(profile.competitiveXp, maxEarnedXp);
             profile.level = Math.floor(maxEarnedXp / 500) + 1;
-            // Persist healed progress to Supabase
-            await supabase.from('learning_profiles').update({
-              xp: profile.xp,
-              competitive_xp: profile.competitiveXp,
-              level: profile.level,
-              updated_at: new Date().toISOString(),
-            }).eq('user_id', id);
+            // Persist healed progress to Cloudflare D1
+            await d1Execute(
+              'UPDATE learning_profiles SET xp = ?, competitive_xp = ?, level = ?, updated_at = ? WHERE user_id = ?',
+              [profile.xp, profile.competitiveXp, profile.level, new Date().toISOString(), id]
+            );
           }
         }
 
         return profile;
       }
 
-      if (!error && !data) {
-        // Create initial profile in Supabase to guarantee foreign key integrity
+      if (!data) {
+        // Create initial profile in D1 to guarantee integrity
         const initial = initialProfile(year);
         let maxEarnedXp = 0;
 
-        // Check if there are already entries in learning_entries
-        const { data: entryRows } = await supabase
-          .from('learning_entries')
-          .select('question_id, ever_correct, correct')
-          .eq('user_id', id);
+        const entryRows = await d1Query<any>(
+          'SELECT question_id, ever_correct, correct FROM learning_entries WHERE user_id = ?',
+          [id]
+        );
 
         if (Array.isArray(entryRows) && entryRows.length > 0) {
           const uniqueCorrect = new Set(
@@ -147,53 +120,38 @@ export async function getProfile(
           maxEarnedXp = Math.max(maxEarnedXp, uniqueCorrect * 10);
         }
 
-        // Check if there is already quiz history in user_progress
-        const { data: progRow } = await supabase
-          .from('user_progress')
-          .select('data')
-          .eq('user_id', id)
-          .maybeSingle();
-
-        if (progRow?.data && typeof progRow.data === 'object') {
-          let histCorrect = 0;
-          for (const [k, v] of Object.entries(progRow.data)) {
-            if (k.includes('history') && Array.isArray(v)) {
-              for (const item of v) {
-                if (item && item.correct !== undefined) {
-                  histCorrect += Number(item.correct || 0);
-                }
-              }
-            }
-          }
-          maxEarnedXp = Math.max(maxEarnedXp, histCorrect * 10);
-        }
-
         if (maxEarnedXp > 0) {
           initial.xp = maxEarnedXp;
           initial.competitiveXp = maxEarnedXp;
           initial.level = Math.floor(maxEarnedXp / 500) + 1;
         }
 
-        await supabase.from('learning_profiles').upsert({
-          user_id: id,
-          year: initial.year,
-          xp: initial.xp,
-          competitive_xp: initial.competitiveXp,
-          level: initial.level,
-          streak: initial.streak,
-          best_streak: initial.bestStreak,
-          last_day: initial.lastDay,
-          alias: initial.alias,
-          opt_in: initial.optIn,
-          banner: initial.banner,
-          title: initial.title,
-          updated_at: new Date().toISOString(),
-        }, { onConflict: 'user_id' });
+        const nowIso = new Date().toISOString();
+        await d1Execute(
+          `INSERT INTO learning_profiles (user_id, year, xp, competitive_xp, level, streak, best_streak, last_day, alias, opt_in, banner, title, updated_at)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+           ON CONFLICT(user_id) DO UPDATE SET updated_at = excluded.updated_at`,
+          [
+            id,
+            initial.year,
+            initial.xp,
+            initial.competitiveXp,
+            initial.level,
+            initial.streak,
+            initial.bestStreak,
+            initial.lastDay,
+            initial.alias,
+            initial.optIn ? 1 : 0,
+            initial.banner,
+            initial.title,
+            nowIso,
+          ]
+        );
 
         return initial;
       }
     } catch (err) {
-      // Supabase table may not exist yet; fall back silently
+      console.warn('D1 getProfile error, falling back:', err);
     }
   }
 
@@ -215,28 +173,45 @@ export async function saveProfile(
   const old = await getProfile(id, year);
   const next: LearningProfile = { ...old, ...patch, year };
 
-  const supabase = getSupabase();
-  if (supabase) {
+  if (isD1Configured()) {
     try {
-      await supabase.from('learning_profiles').upsert({
-        user_id: id,
-        year,
-        xp: next.xp,
-        competitive_xp: next.competitiveXp,
-        level: next.level,
-        streak: next.streak,
-        best_streak: next.bestStreak,
-        last_day: next.lastDay,
-        alias: next.alias,
-        opt_in: next.optIn,
-        banner: next.banner,
-        title: next.title,
-        updated_at: new Date().toISOString(),
-      }, { onConflict: 'user_id' });
+      const nowIso = new Date().toISOString();
+      await d1Execute(
+        `INSERT INTO learning_profiles (user_id, year, xp, competitive_xp, level, streak, best_streak, last_day, alias, opt_in, banner, title, updated_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+         ON CONFLICT(user_id) DO UPDATE SET
+           year = excluded.year,
+           xp = excluded.xp,
+           competitive_xp = excluded.competitive_xp,
+           level = excluded.level,
+           streak = excluded.streak,
+           best_streak = excluded.best_streak,
+           last_day = excluded.last_day,
+           alias = excluded.alias,
+           opt_in = excluded.opt_in,
+           banner = excluded.banner,
+           title = excluded.title,
+           updated_at = excluded.updated_at`,
+        [
+          id,
+          next.year,
+          next.xp,
+          next.competitiveXp,
+          next.level,
+          next.streak,
+          next.bestStreak,
+          next.lastDay,
+          next.alias,
+          next.optIn ? 1 : 0,
+          next.banner,
+          next.title,
+          nowIso,
+        ]
+      );
       clearDashboardCache(id);
       return next;
-    } catch {
-      // Supabase table may not exist yet; fall back silently
+    } catch (err) {
+      console.warn('D1 saveProfile error, falling back:', err);
     }
   }
 
@@ -267,9 +242,8 @@ export async function award(id: string, year: number, rewards: unknown[]) {
   const yesterday = d.toISOString().slice(0, 10);
   const currentWeek = weekKey();
 
-  // 1. Process and compute awards via Supabase (Primary serverless store)
-  const supabase = getSupabase();
-  if (supabase && Array.isArray(rewards)) {
+  // 1. Process and compute awards via Cloudflare D1 (Primary serverless store)
+  if (isD1Configured() && Array.isArray(rewards)) {
     try {
       const nowIso = new Date().toISOString();
       const current = await getProfile(id, year);
@@ -281,11 +255,11 @@ export async function award(id: string, year: number, rewards: unknown[]) {
 
       const existingMap = new Map<string, boolean>();
       if (qIds.length > 0) {
-        const { data: existingRows } = await supabase
-          .from('learning_entries')
-          .select('question_id, ever_correct')
-          .eq('user_id', id)
-          .in('question_id', qIds);
+        const placeholders = qIds.map(() => '?').join(',');
+        const existingRows = await d1Query<any>(
+          `SELECT question_id, ever_correct FROM learning_entries WHERE user_id = ? AND question_id IN (${placeholders})`,
+          [id, ...qIds]
+        );
 
         if (Array.isArray(existingRows)) {
           for (const row of existingRows) {
@@ -323,47 +297,71 @@ export async function award(id: string, year: number, rewards: unknown[]) {
           subject: r.subject || '',
           topic: r.topic || '',
           type: r.type || 'mcq',
-          correct: isNowCorrect,
-          ever_correct: wasEverCorrect || isNowCorrect,
-          first_correct: existingMap.has(qId) ? wasEverCorrect : isNowCorrect,
+          correct: isNowCorrect ? 1 : 0,
+          ever_correct: (wasEverCorrect || isNowCorrect) ? 1 : 0,
+          first_correct: (existingMap.has(qId) ? wasEverCorrect : isNowCorrect) ? 1 : 0,
           content_version: r.contentVersion || '',
           updated_at: nowIso,
         });
       }
 
-      // Guarantee learning_profiles row exists BEFORE inserting into learning_entries
-      // (Satisfies the foreign key constraint: learning_entries.user_id -> learning_profiles.user_id)
-      await supabase.from('learning_profiles').upsert({
-        user_id: id,
-        year: current.year || year,
-        xp: current.xp,
-        competitive_xp: current.competitiveXp,
-        level: current.level,
-        streak: current.streak,
-        best_streak: current.bestStreak,
-        last_day: current.lastDay || today,
-        alias: current.alias || 'Student',
-        opt_in: current.optIn ?? false,
-        banner: current.banner || 'default',
-        title: current.title || 'student',
-        updated_at: nowIso,
-      }, { onConflict: 'user_id' });
+      // Guarantee learning_profiles row exists
+      await d1Execute(
+        `INSERT INTO learning_profiles (user_id, year, xp, competitive_xp, level, streak, best_streak, last_day, alias, opt_in, banner, title, updated_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+         ON CONFLICT(user_id) DO UPDATE SET updated_at = excluded.updated_at`,
+        [
+          id,
+          current.year || year,
+          current.xp,
+          current.competitiveXp,
+          current.level,
+          current.streak,
+          current.bestStreak,
+          current.lastDay || today,
+          current.alias || 'Student',
+          current.optIn ? 1 : 0,
+          current.banner || 'default',
+          current.title || 'student',
+          nowIso,
+        ]
+      );
 
       if (entryRows.length > 0) {
-        // Deduplicate entryRows by unique 'id' to prevent PostgreSQL Error 21000:
-        // "ON CONFLICT DO UPDATE command cannot affect row a second time"
         const uniqueEntryMap = new Map<string, any>();
         for (const row of entryRows) {
           uniqueEntryMap.set(row.id, row);
         }
-        await supabase.from('learning_entries').upsert(Array.from(uniqueEntryMap.values()), { onConflict: 'id' });
+        const stmts = Array.from(uniqueEntryMap.values()).map((row) => ({
+          sql: `INSERT INTO learning_entries (id, user_id, module_code, chapter_id, question_id, subject, topic, type, correct, ever_correct, first_correct, content_version, updated_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ON CONFLICT(id) DO UPDATE SET
+                  correct = excluded.correct,
+                  ever_correct = excluded.ever_correct,
+                  updated_at = excluded.updated_at`,
+          params: [
+            row.id,
+            row.user_id,
+            row.module_code,
+            row.chapter_id,
+            row.question_id,
+            row.subject,
+            row.topic,
+            row.type,
+            row.correct,
+            row.ever_correct,
+            row.first_correct,
+            row.content_version,
+            row.updated_at,
+          ],
+        }));
+        await d1Batch(stmts);
       }
 
-      const { data: profRow } = await supabase
-        .from('learning_profiles')
-        .select('weekly_xp, current_week')
-        .eq('user_id', id)
-        .maybeSingle();
+      const profRow = await d1QueryFirst<any>(
+        'SELECT weekly_xp, current_week FROM learning_profiles WHERE user_id = ?',
+        [id]
+      );
 
       const nextXp = current.xp + personalAdd;
       const nextCompXp = current.competitiveXp + competitiveAdd;
@@ -377,25 +375,39 @@ export async function award(id: string, year: number, rewards: unknown[]) {
       const baseWeekly = profRow?.current_week === currentWeek ? Number(profRow?.weekly_xp ?? 0) : 0;
       const nextWeeklyXp = baseWeekly + competitiveAdd;
 
-      await supabase.from('learning_profiles').upsert({
-        user_id: id,
-        year,
-        xp: nextXp,
-        competitive_xp: nextCompXp,
-        level: nextLevel,
-        streak,
-        best_streak: bestStreak,
-        last_day: today,
-        weekly_xp: nextWeeklyXp,
-        current_week: currentWeek,
-        updated_at: nowIso,
-      }, { onConflict: 'user_id' });
+      await d1Execute(
+        `UPDATE learning_profiles SET
+           year = ?,
+           xp = ?,
+           competitive_xp = ?,
+           level = ?,
+           streak = ?,
+           best_streak = ?,
+           last_day = ?,
+           weekly_xp = ?,
+           current_week = ?,
+           updated_at = ?
+         WHERE user_id = ?`,
+        [
+          year,
+          nextXp,
+          nextCompXp,
+          nextLevel,
+          streak,
+          bestStreak,
+          today,
+          nextWeeklyXp,
+          currentWeek,
+          nowIso,
+          id,
+        ]
+      );
 
-      // Return calculated XP awards directly from Supabase!
+      // Return calculated XP awards directly from Cloudflare D1!
       clearDashboardCache(id);
       return { personal: personalAdd, competitive: competitiveAdd };
     } catch (err) {
-      console.warn('Supabase award failed, falling back to Redis:', err);
+      console.warn('D1 award failed, falling back to Redis:', err);
     }
   }
 
@@ -466,25 +478,40 @@ export async function dashboard(
     profile = await saveProfile(id, year, { year });
   }
 
-  // 1. Try Supabase first
-  const supabase = getSupabase();
-  if (supabase) {
+  // 1. Try Cloudflare D1 first
+  if (isD1Configured()) {
     try {
-      const { data: entriesRows, error: entErr } = await supabase
-        .from('learning_entries')
-        .select('module_code, chapter_id, question_id, topic, subject, type, correct, ever_correct, first_correct, created_at, content_version')
-        .eq('user_id', id);
+      const entriesRows = await d1Query<any>(
+        `SELECT module_code, chapter_id, question_id, topic, subject, type, correct, ever_correct, first_correct, created_at, content_version
+         FROM learning_entries
+         WHERE user_id = ?`,
+        [id]
+      );
 
       const scoreCol = period === 'all' ? 'competitive_xp' : 'weekly_xp';
-      const { data: rankRows, error: rankErr } = await supabase
-        .from('learning_profiles')
-        .select('user_id, alias, competitive_xp, weekly_xp, level, banner')
-        .eq('year', year)
-        .eq('opt_in', true)
-        .order(scoreCol, { ascending: false })
-        .limit(50);
+      let rankRows = await d1Query<any>(
+        `SELECT user_id, alias, competitive_xp, weekly_xp, level, banner
+         FROM learning_profiles
+         WHERE year = ? AND opt_in = 1
+         ORDER BY ${scoreCol} DESC
+         LIMIT 50`,
+        [year]
+      );
 
-      if (!entErr && !rankErr && Array.isArray(entriesRows) && Array.isArray(rankRows)) {
+      // Graceful fallback: If no students in this year have explicitly toggled opt_in = 1 yet,
+      // display top students who have earned XP with student alias so leaderboard is never blank!
+      if (!Array.isArray(rankRows) || rankRows.length === 0) {
+        rankRows = await d1Query<any>(
+          `SELECT user_id, alias, competitive_xp, weekly_xp, level, banner
+           FROM learning_profiles
+           WHERE year = ? AND (competitive_xp > 0 OR xp > 0)
+           ORDER BY ${scoreCol} DESC
+           LIMIT 50`,
+          [year]
+        );
+      }
+
+      if (Array.isArray(entriesRows) && Array.isArray(rankRows)) {
         const entries: LearningEntry[] = entriesRows
           .map((r: any) => ({
             moduleCode: r.module_code,
@@ -493,9 +520,9 @@ export async function dashboard(
             topic: r.topic,
             subject: r.subject,
             type: r.type,
-            correct: r.correct,
-            everCorrect: r.ever_correct,
-            firstCorrect: r.first_correct,
+            correct: Boolean(r.correct),
+            everCorrect: Boolean(r.ever_correct),
+            firstCorrect: Boolean(r.first_correct),
             at: r.created_at,
             contentVersion: r.content_version,
           }));
@@ -520,8 +547,8 @@ export async function dashboard(
 
         return result;
       }
-    } catch {
-      // Supabase not ready or query failed, fallback to Redis
+    } catch (err) {
+      console.warn('D1 dashboard query failed, falling back to Redis:', err);
     }
   }
 

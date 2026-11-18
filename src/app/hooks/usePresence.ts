@@ -45,8 +45,8 @@ export function usePresence() {
     // Defer initial ping by 4s to prevent network contention during initial page render
     const initialTimer = setTimeout(ping, 4000);
 
-    // Ping every 3 minutes (180s) instead of 60s to reduce Redis network bandwidth by 70%+
-    timer = setInterval(ping, 180000);
+    // Ping every 30 seconds with Cloudflare D1 zero-egress serverless SQL
+    timer = setInterval(ping, 30000);
 
     return () => {
       clearTimeout(initialTimer);

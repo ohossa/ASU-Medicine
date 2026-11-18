@@ -3,7 +3,7 @@ import { ReportError } from "./report-service.js";
 import { evalRedis } from "./report-store.js";
 import { listEditableModules, readQuestionBank, bankEntries } from "./question-bank.js";
 import { getOnlineUsers } from "./presence-service.js";
-import { getSupabase } from "./supabase-client.js";
+import { d1Query, isD1Configured } from "./d1-client.js";
 
 export const OWNER_EMAIL = "omarhmaged@gmail.com";
 
@@ -301,52 +301,27 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
   // 2. Fetch enrolled Clerk users for real identities (name, email, avatar)
   const clerkUsers = await fetchEnrolledClerkUsers();
 
-  // 3. Try Supabase first (O(1) table query, unified complete roster)
-  const supabase = getSupabase();
-  let supabaseLoaded = false;
-  if (supabase) {
+  // 3. Try Cloudflare D1 first (O(1) table query, unified complete roster)
+  let d1Loaded = false;
+  if (isD1Configured()) {
     try {
-      const [profilesRes, progressRes] = await Promise.all([
-        supabase.from('learning_profiles').select('user_id, year, xp, competitive_xp, weekly_xp, level, streak, best_streak, alias, opt_in, banner, title, last_day, updated_at'),
-        supabase.from('user_progress').select('user_id, academic_year, updated_at'),
+      const [d1Profiles, allEntries] = await Promise.all([
+        d1Query<any>(
+          'SELECT user_id, year, xp, competitive_xp, weekly_xp, level, streak, best_streak, alias, opt_in, banner, title, last_day, updated_at FROM learning_profiles'
+        ),
+        d1Query<any>(
+          'SELECT user_id, module_code, question_id, chapter_id, correct, created_at FROM learning_entries ORDER BY created_at DESC LIMIT 5000'
+        ),
       ]);
 
-      const supaProfiles = profilesRes.data;
-      const supaProgress = progressRes.data;
-
-      // Paged extraction of all learning entries to bypass PostgREST 1,000-row default limit
-      const allEntries: any[] = [];
-      let entryOffset = 0;
-      const PAGE_SIZE = 1000;
-      while (true) {
-        const query = supabase
-          .from('learning_entries')
-          .select('user_id, module_code, question_id, chapter_id, correct, created_at')
-          .order('created_at', { ascending: false });
-
-        const { data: page, error: pageErr } = typeof (query as any).range === 'function'
-          ? await (query as any).range(entryOffset, entryOffset + PAGE_SIZE - 1)
-          : await (query as any).limit(PAGE_SIZE);
-
-        if (pageErr || !page || page.length === 0) break;
-        allEntries.push(...page);
-        if (page.length < PAGE_SIZE || typeof (query as any).range !== 'function') break;
-        entryOffset += PAGE_SIZE;
-      }
-
       const profileMap = new Map<string, any>();
-      if (Array.isArray(supaProfiles)) {
-        for (const p of supaProfiles) {
+      if (Array.isArray(d1Profiles)) {
+        for (const p of d1Profiles) {
           if (p && p.user_id) profileMap.set(p.user_id, p);
         }
       }
 
       const progressMap = new Map<string, any>();
-      if (Array.isArray(supaProgress)) {
-        for (const pr of supaProgress) {
-          if (pr && pr.user_id) progressMap.set(pr.user_id, pr);
-        }
-      }
 
       const entriesByUser = new Map<string, any[]>();
       if (Array.isArray(allEntries)) {
@@ -505,16 +480,16 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
           });
         }
         students.sort((a, b) => b.xp - a.xp);
-        supabaseLoaded = true;
+        d1Loaded = true;
       }
     } catch (err) {
-      console.warn("Supabase analytics loading error:", err);
+      console.warn("D1 analytics loading error:", err);
     }
   }
 
-  // 4. Fallback to Redis if Supabase didn't have profiles
+  // 4. Fallback to Redis if D1 didn't have profiles
   let rawProfileKeys: string[] = [];
-  if (!supabaseLoaded) {
+  if (!d1Loaded) {
     try {
       const keysResult = await evalRedis("return redis.call('KEYS', 'asu_learning:v1:profile:*')", []);
       if (Array.isArray(keysResult)) {
@@ -526,7 +501,7 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
   }
 
   // Aggregate student data from Redis with Clerk enrichment
-  if (!supabaseLoaded) {
+  if (!d1Loaded) {
     const redisUserIds = new Set<string>([
       ...clerkUsers.keys(),
       ...rawProfileKeys.map((k) => k.replace("asu_learning:v1:profile:", "")),

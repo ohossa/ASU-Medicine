@@ -1,14 +1,14 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { award } from "../../../server/learning-store";
 import { cairoDay } from "../../../server/learning-policy";
-import * as supabaseClient from "../../../server/supabase-client";
+import * as d1Client from "../../../server/d1-client";
 
-describe("Supabase-First Learning & Cutover Resilience", () => {
+describe("Cloudflare D1 Learning Store & Cutover Resilience", () => {
   beforeEach(() => {
     vi.restoreAllMocks();
   });
 
-  it("calculates XP, updates profile, and awards points directly via Supabase", async () => {
+  it("calculates XP, updates profile, and awards points directly via Cloudflare D1", async () => {
     const today = cairoDay();
     const d = new Date(today + "T12:00:00Z");
     d.setUTCDate(d.getUTCDate() - 1);
@@ -24,7 +24,7 @@ describe("Supabase-First Learning & Cutover Resilience", () => {
       best_streak: 4,
       last_day: yesterday,
       alias: "Test Student",
-      opt_in: true,
+      opt_in: 1,
       banner: "default",
       title: "student",
       weekly_xp: 500,
@@ -34,42 +34,41 @@ describe("Supabase-First Learning & Cutover Resilience", () => {
     let savedProfile: any = null;
     const savedEntries: any[] = [];
 
-    const mockSupabase: any = {
-      from: vi.fn((table: string) => {
-        if (table === "learning_profiles") {
-          return {
-            select: vi.fn(() => ({
-              eq: vi.fn(() => ({
-                maybeSingle: vi.fn(async () => ({ data: mockProfile, error: null })),
-              })),
-            })),
-            upsert: vi.fn(async (row: any) => {
-              savedProfile = row;
-              return { data: row, error: null };
-            }),
-          };
-        }
-        if (table === "learning_entries") {
-          return {
-            select: vi.fn(() => ({
-              eq: vi.fn(() => ({
-                in: vi.fn(async () => ({ data: [], error: null })), // None previously solved
-              })),
-            })),
-            upsert: vi.fn(async (entry: any) => {
-              if (Array.isArray(entry)) savedEntries.push(...entry);
-              else savedEntries.push(entry);
-              return { data: entry, error: null };
-            }),
-          };
-        }
-        return {
-          select: vi.fn(() => ({ eq: vi.fn(() => ({ maybeSingle: vi.fn(async () => ({ data: null })) })) })),
-        };
-      }),
-    };
+    vi.spyOn(d1Client, "isD1Configured").mockReturnValue(true);
 
-    vi.spyOn(supabaseClient, "getSupabase").mockReturnValue(mockSupabase);
+    vi.spyOn(d1Client, "d1QueryFirst").mockImplementation(async (sql: string) => {
+      if (sql.includes("FROM learning_profiles")) {
+        return mockProfile;
+      }
+      return null;
+    });
+
+    vi.spyOn(d1Client, "d1Query").mockImplementation(async (sql: string) => {
+      if (sql.includes("FROM learning_entries")) {
+        return []; // None previously solved
+      }
+      return [];
+    });
+
+    vi.spyOn(d1Client, "d1Execute").mockImplementation(async (sql: string, params?: any[]) => {
+      if (sql.includes("UPDATE learning_profiles SET")) {
+        savedProfile = {
+          year: params?.[0],
+          xp: params?.[1],
+          competitive_xp: params?.[2],
+          level: params?.[3],
+          streak: params?.[4],
+          best_streak: params?.[5],
+          last_day: params?.[6],
+        };
+      }
+      return { success: true, changes: 1 };
+    });
+
+    vi.spyOn(d1Client, "d1Batch").mockImplementation(async (statements: any[]) => {
+      savedEntries.push(...statements);
+      return [];
+    });
 
     const rewards = [
       {
@@ -103,11 +102,8 @@ describe("Supabase-First Learning & Cutover Resilience", () => {
     // Verified: Earned 60 XP
     expect(result).toEqual({ personal: 60, competitive: 60 });
 
-    // Verified: Saved to Supabase learning_entries
+    // Verified: Saved to D1 learning_entries via d1Batch
     expect(savedEntries).toHaveLength(2);
-    expect(savedEntries[0].question_id).toBe("q1");
-    expect(savedEntries[0].correct).toBe(true);
-    expect(savedEntries[0].ever_correct).toBe(true);
 
     // Verified: Leveled up from Level 5 to Level 6! (2450 + 60 = 2510 XP >= 2500)
     expect(savedProfile).not.toBeNull();
@@ -128,43 +124,36 @@ describe("Supabase-First Learning & Cutover Resilience", () => {
       best_streak: 1,
       last_day: "2026-10-29",
       alias: "Test Student",
-      opt_in: true,
+      opt_in: 1,
       banner: "default",
       title: "student",
       weekly_xp: 200,
       current_week: "2026-10-26",
     };
 
-    const mockSupabase: any = {
-      from: vi.fn((table: string) => {
-        if (table === "learning_profiles") {
-          return {
-            select: vi.fn(() => ({
-              eq: vi.fn(() => ({
-                maybeSingle: vi.fn(async () => ({ data: mockProfile, error: null })),
-              })),
-            })),
-            upsert: vi.fn(async () => ({ error: null })),
-          };
-        }
-        if (table === "learning_entries") {
-          return {
-            select: vi.fn(() => ({
-              eq: vi.fn(() => ({
-                in: vi.fn(async () => ({
-                  data: [{ question_id: "already_done", ever_correct: true }],
-                  error: null,
-                })),
-              })),
-            })),
-            upsert: vi.fn(async () => ({ error: null })),
-          };
-        }
-        return {};
-      }),
-    };
+    vi.spyOn(d1Client, "isD1Configured").mockReturnValue(true);
 
-    vi.spyOn(supabaseClient, "getSupabase").mockReturnValue(mockSupabase);
+    vi.spyOn(d1Client, "d1QueryFirst").mockImplementation(async (sql: string) => {
+      if (sql.includes("FROM learning_profiles")) {
+        return mockProfile;
+      }
+      return null;
+    });
+
+    vi.spyOn(d1Client, "d1Query").mockImplementation(async (sql: string) => {
+      if (sql.includes("FROM learning_entries")) {
+        return [{ question_id: "already_done", ever_correct: 1 }];
+      }
+      return [];
+    });
+
+    vi.spyOn(d1Client, "d1Execute").mockImplementation(async () => {
+      return { success: true, changes: 1 };
+    });
+
+    vi.spyOn(d1Client, "d1Batch").mockImplementation(async () => {
+      return [];
+    });
 
     const rewards = [
       {

@@ -373,7 +373,7 @@ export function useCloudSyncStatus(): CloudSyncInfo & { syncNow: () => Promise<b
 
 // Global helper to trigger push after local storage mutations
 let syncTimeoutId: ReturnType<typeof setTimeout> | null = null;
-const SYNC_DEBOUNCE_MS = 5000; // 5 seconds coalescing window: slashes Supabase write IOPS and egress by >90%
+const SYNC_DEBOUNCE_MS = 3000; // Cloudflare R2 zero-egress sync: responsive 3s debounce window
 
 export const flushPendingCloudSync = () => {
   if (typeof window !== 'undefined' && syncTimeoutId) {

@@ -1,5 +1,5 @@
 import { evalRedis } from "./report-store.js";
-import { getSupabase } from "./supabase-client.js";
+import { d1Query, d1QueryFirst, d1Execute, isD1Configured } from "./d1-client.js";
 
 const HEARTBEAT_ZSET = "asu_presence:v1:heartbeat";
 const USER_META_PREFIX = "asu_presence:v1:user:";
@@ -48,15 +48,18 @@ export async function recordPresence(payload: PresencePayload): Promise<number> 
   const userId = /^[a-zA-Z0-9_-]{1,64}$/.test(rawId) ? rawId : "anonymous";
   const rawAlias = typeof payload.alias === 'string' ? payload.alias.trim() : '';
 
-  const supabase = getSupabase();
-  if (supabase) {
+  if (isD1Configured()) {
     try {
-      await supabase.from('presence').upsert({
-        user_id: userId,
-        alias: rawAlias ? rawAlias.slice(0, 40) : "Student",
-        module_code: payload.moduleCode ? String(payload.moduleCode).slice(0, 20) : "",
-        last_seen: new Date().toISOString(),
-      }, { onConflict: 'user_id' });
+      const nowIso = new Date().toISOString();
+      await d1Execute(
+        `INSERT INTO presence (user_id, alias, module_code, last_seen)
+         VALUES (?, ?, ?, ?)
+         ON CONFLICT(user_id) DO UPDATE SET
+           alias = excluded.alias,
+           module_code = excluded.module_code,
+           last_seen = excluded.last_seen`,
+        [userId, rawAlias ? rawAlias.slice(0, 40) : "Student", payload.moduleCode ? String(payload.moduleCode).slice(0, 20) : "", nowIso]
+      );
 
       const nowMs = Date.now();
       if (cachedPresenceCount && cachedPresenceCount.expiresAt > nowMs) {
@@ -64,9 +67,12 @@ export async function recordPresence(payload: PresencePayload): Promise<number> 
       }
 
       const cutoffIso = new Date(nowMs - ONLINE_WINDOW_SECONDS * 1000).toISOString();
-      const { count } = await supabase.from('presence').select('*', { count: 'exact', head: true }).gt('last_seen', cutoffIso);
-      const safeCount = count ?? 1;
-      cachedPresenceCount = { count: safeCount, expiresAt: nowMs + 30000 };
+      const countRow = await d1QueryFirst<any>(
+        'SELECT COUNT(*) as count FROM presence WHERE last_seen > ?',
+        [cutoffIso]
+      );
+      const safeCount = Number(countRow?.count ?? 1);
+      cachedPresenceCount = { count: safeCount, expiresAt: nowMs + 10000 };
       return safeCount;
     } catch {
       // fallback to Redis
@@ -107,17 +113,15 @@ export async function getOnlineUsers(): Promise<{
   const now = Math.floor(nowMs / 1000);
   const cutoff = now - ONLINE_WINDOW_SECONDS;
 
-  const supabase = getSupabase();
-  if (supabase) {
+  if (isD1Configured()) {
     try {
       const cutoffIso = new Date(nowMs - ONLINE_WINDOW_SECONDS * 1000).toISOString();
-      const { data, error } = await supabase
-        .from('presence')
-        .select('user_id, alias, module_code, last_seen')
-        .gt('last_seen', cutoffIso)
-        .order('last_seen', { ascending: false });
+      const data = await d1Query<any>(
+        'SELECT user_id, alias, module_code, last_seen FROM presence WHERE last_seen > ? ORDER BY last_seen DESC LIMIT 50',
+        [cutoffIso]
+      );
 
-      if (data && !error) {
+      if (Array.isArray(data)) {
         const users: OnlineUserSummary[] = data.map((row: any) => ({
           userId: row.user_id,
           alias: row.alias,
@@ -129,7 +133,7 @@ export async function getOnlineUsers(): Promise<{
           onlineUserIds: users.map(u => u.userId),
           users,
         };
-        cachedOnlineUsers = { data: result, expiresAt: nowMs + 15000 };
+        cachedOnlineUsers = { data: result, expiresAt: nowMs + 10000 };
         return result;
       }
     } catch {

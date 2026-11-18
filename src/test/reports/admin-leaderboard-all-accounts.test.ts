@@ -47,7 +47,7 @@ import {
   clearClerkUsersCache,
   getAdminAnalytics,
 } from "../../../server/admin-analytics-service";
-import * as supabaseClient from "../../../server/supabase-client";
+import * as d1Client from "../../../server/d1-client";
 
 describe("Admin Master Leaderboard: Real Names, Real Emails & All Accounts Roster", () => {
   beforeEach(() => {
@@ -127,37 +127,19 @@ describe("Admin Master Leaderboard: Real Names, Real Emails & All Accounts Roste
         },
       ];
 
-      vi.spyOn(supabaseClient, "getSupabase").mockReturnValue({
-        from: vi.fn((table: string) => {
-          if (table === "learning_profiles") {
-            return {
-              select: vi.fn(async () => ({ data: mockProfiles, error: null })),
-            };
-          }
-          if (table === "user_progress") {
-            return {
-              select: vi.fn(async () => ({ data: [], error: null })),
-            };
-          }
-          if (table === "learning_entries") {
-            return {
-              select: vi.fn(() => ({
-                order: vi.fn(() => ({
-                  limit: vi.fn(async () => ({ data: [], error: null })),
-                })),
-              })),
-            };
-          }
-          if (table === "presence") {
-            return {
-              select: vi.fn(() => ({
-                gt: vi.fn(async () => ({ data: [], count: 0 })),
-              })),
-            };
-          }
-          return { select: vi.fn(async () => ({ data: [], error: null })) };
-        }),
-      } as any);
+      vi.spyOn(d1Client, "isD1Configured").mockReturnValue(true);
+      vi.spyOn(d1Client, "d1Query").mockImplementation(async (sql: string) => {
+        if (sql.includes("FROM learning_profiles")) {
+          return mockProfiles;
+        }
+        if (sql.includes("FROM learning_entries")) {
+          return [];
+        }
+        if (sql.includes("FROM presence")) {
+          return [];
+        }
+        return [];
+      });
 
       process.env.CLERK_SECRET_KEY = "sk_test_mock_key";
 

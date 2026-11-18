@@ -5,7 +5,7 @@ import {
   type ReportStatus,
 } from "../src/app/reports/contracts.js";
 import { ReportError, type ReportStore } from "./report-service.js";
-import { getSupabase } from "./supabase-client.js";
+import { d1Query, d1QueryFirst, d1Execute, isD1Configured } from "./d1-client.js";
 const PREFIX = "{asu_reports}:v1:"; // Clustered hash slot guarantee
 const LEGACY_PREFIX = "asu_reports:v1:"; // Backwards compatibility for existing records
 let runEval:
@@ -120,81 +120,85 @@ const RECOVERED_REPORTS: Record<string, import("../src/app/reports/contracts.js"
 // Resilient in-memory fallback store to ensure zero data loss during Redis network outages
 const fallbackReports = new Map<string, import("../src/app/reports/contracts.js").QuestionReport>();
 
-let hasAttemptedLegacyRedisSync = false;
-async function syncLegacyRedisReportsToSupabase(supabase: NonNullable<ReturnType<typeof getSupabase>>) {
-  if (hasAttemptedLegacyRedisSync) return;
-  hasAttemptedLegacyRedisSync = true;
-  try {
-    const rawIds = await evalRedis("return redis.call('ZRANGE', KEYS[1], 0, -1)", [LEGACY_PREFIX + "all"]);
-    const clusterIds = await evalRedis("return redis.call('ZRANGE', KEYS[1], 0, -1)", [PREFIX + "all"]);
-    const allIds = Array.from(new Set([
-      ...(Array.isArray(rawIds) ? (rawIds as string[]) : []),
-      ...(Array.isArray(clusterIds) ? (clusterIds as string[]) : [])
-    ]));
-    if (!allIds.length) return;
 
-    for (const id of allIds) {
-      let raw = await evalRedis("return redis.call('GET', KEYS[1])", [PREFIX + "record:" + id]);
-      if (!raw) {
-        raw = await evalRedis("return redis.call('GET', KEYS[1])", [LEGACY_PREFIX + "record:" + id]);
-      }
-      if (raw) {
-        const decoded = decodeStoredReport(String(raw));
-        await supabase.from('reports').upsert({
-          id: decoded.id,
-          request_hash: decoded.requestHash,
-          reporter_id: decoded.reporterId,
-          reporter: decoded.reporter || {},
-          category: decoded.category,
-          explanation: decoded.explanation,
-          module_code: decoded.snapshot?.moduleCode || 'UNKNOWN',
-          chapter_id: decoded.snapshot?.chapterId || 1,
-          question_id: String(decoded.snapshot?.question?.id || decoded.id),
-          sub_question_id: decoded.subQuestionId || null,
-          snapshot: decoded.snapshot,
-          status: decoded.status,
-          notes: decoded.notes || '',
-          revision: decoded.revision || 1,
-          notification: decoded.notification || {},
-          created_at: decoded.createdAt,
-          updated_at: decoded.updatedAt,
-        }, { onConflict: 'id' });
-      }
-    }
+function parseJsonField<T>(val: any, fallback: T): T {
+  if (!val) return fallback;
+  if (typeof val === 'object') return val;
+  try {
+    return JSON.parse(val);
   } catch {
-    // If Redis is not configured or fails, gracefully continue
+    return fallback;
   }
+}
+
+function rowToReport(data: any): import("../src/app/reports/contracts.js").QuestionReport {
+  return {
+    id: data.id,
+    requestHash: data.request_hash,
+    reporterId: data.reporter_id,
+    reporter: parseJsonField(data.reporter, undefined),
+    category: data.category,
+    explanation: data.explanation,
+    subQuestionId: data.sub_question_id || undefined,
+    snapshot: parseJsonField(data.snapshot, {} as any),
+    status: data.status,
+    notes: data.notes || '',
+    revision: Number(data.revision || 1),
+    createdAt: data.created_at,
+    updatedAt: data.updated_at,
+    notification: parseJsonField(data.notification, { state: 'unconfigured' as const }),
+  };
 }
 
 export const reportStore: ReportStore = {
   async create(report) {
-    const supabase = getSupabase();
-    if (supabase) {
+    if (isD1Configured()) {
       try {
-        const { error } = await supabase.from('reports').upsert({
-          id: report.id,
-          request_hash: report.requestHash,
-          reporter_id: report.reporterId,
-          reporter: report.reporter || {},
-          category: report.category,
-          explanation: report.explanation,
-          module_code: report.snapshot.moduleCode,
-          chapter_id: report.snapshot.chapterId,
-          question_id: String(report.snapshot.question.id),
-          sub_question_id: report.subQuestionId || null,
-          snapshot: report.snapshot,
-          status: report.status,
-          notes: report.notes,
-          revision: report.revision,
-          notification: report.notification,
-          created_at: report.createdAt,
-          updated_at: report.updatedAt,
-        }, { onConflict: 'id' });
-        if (!error) {
-          return { created: true, report };
-        }
+        await d1Execute(
+          `INSERT INTO reports (
+            id, request_hash, reporter_id, reporter, category, explanation,
+            module_code, chapter_id, question_id, sub_question_id,
+            snapshot, status, notes, revision, notification, created_at, updated_at
+          ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          ON CONFLICT(id) DO UPDATE SET
+            request_hash = excluded.request_hash,
+            reporter_id = excluded.reporter_id,
+            reporter = excluded.reporter,
+            category = excluded.category,
+            explanation = excluded.explanation,
+            module_code = excluded.module_code,
+            chapter_id = excluded.chapter_id,
+            question_id = excluded.question_id,
+            sub_question_id = excluded.sub_question_id,
+            snapshot = excluded.snapshot,
+            status = excluded.status,
+            notes = excluded.notes,
+            revision = excluded.revision,
+            notification = excluded.notification,
+            updated_at = excluded.updated_at`,
+          [
+            report.id,
+            report.requestHash,
+            report.reporterId,
+            JSON.stringify(report.reporter || {}),
+            report.category,
+            report.explanation,
+            report.snapshot.moduleCode,
+            report.snapshot.chapterId,
+            String(report.snapshot.question.id),
+            report.subQuestionId || null,
+            JSON.stringify(report.snapshot),
+            report.status,
+            report.notes,
+            report.revision,
+            JSON.stringify(report.notification || {}),
+            report.createdAt,
+            report.updatedAt,
+          ]
+        );
+        return { created: true, report };
       } catch (err) {
-        console.warn('Supabase report create error, falling back to Redis:', err);
+        console.warn('D1 report create error, falling back to Redis:', err);
       }
     }
     try {
@@ -226,30 +230,14 @@ export const reportStore: ReportStore = {
     }
   },
   async get(id) {
-    const supabase = getSupabase();
-    if (supabase) {
+    if (isD1Configured()) {
       try {
-        const { data, error } = await supabase.from('reports').select('*').eq('id', id).maybeSingle();
-        if (data && !error) {
-          return {
-            id: data.id,
-            requestHash: data.request_hash,
-            reporterId: data.reporter_id,
-            reporter: data.reporter,
-            category: data.category,
-            explanation: data.explanation,
-            subQuestionId: data.sub_question_id,
-            snapshot: data.snapshot,
-            status: data.status,
-            notes: data.notes,
-            revision: data.revision,
-            createdAt: data.created_at,
-            updatedAt: data.updated_at,
-            notification: data.notification,
-          };
+        const data = await d1QueryFirst<any>('SELECT * FROM reports WHERE id = ?', [id]);
+        if (data) {
+          return rowToReport(data);
         }
       } catch (err) {
-        console.warn('Supabase report get error, falling back to Redis:', err);
+        console.warn('D1 report get error, falling back to Redis:', err);
       }
     }
     try {
@@ -265,26 +253,34 @@ export const reportStore: ReportStore = {
       }
       if (raw) {
         const report = decodeStoredReport(String(raw));
-        if (supabase) {
-          supabase.from('reports').upsert({
-            id: report.id,
-            request_hash: report.requestHash,
-            reporter_id: report.reporterId,
-            reporter: report.reporter || {},
-            category: report.category,
-            explanation: report.explanation,
-            module_code: report.snapshot?.moduleCode || 'UNKNOWN',
-            chapter_id: report.snapshot?.chapterId || 1,
-            question_id: String(report.snapshot?.question?.id || report.id),
-            sub_question_id: report.subQuestionId || null,
-            snapshot: report.snapshot,
-            status: report.status,
-            notes: report.notes || '',
-            revision: report.revision || 1,
-            notification: report.notification || {},
-            created_at: report.createdAt,
-            updated_at: report.updatedAt,
-          }, { onConflict: 'id' }).then(() => {}, () => {});
+        if (isD1Configured()) {
+          d1Execute(
+            `INSERT INTO reports (
+              id, request_hash, reporter_id, reporter, category, explanation,
+              module_code, chapter_id, question_id, sub_question_id,
+              snapshot, status, notes, revision, notification, created_at, updated_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(id) DO NOTHING`,
+            [
+              report.id,
+              report.requestHash,
+              report.reporterId,
+              JSON.stringify(report.reporter || {}),
+              report.category,
+              report.explanation,
+              report.snapshot?.moduleCode || 'UNKNOWN',
+              report.snapshot?.chapterId || 1,
+              String(report.snapshot?.question?.id || report.id),
+              report.subQuestionId || null,
+              JSON.stringify(report.snapshot),
+              report.status,
+              report.notes || '',
+              report.revision || 1,
+              JSON.stringify(report.notification || {}),
+              report.createdAt,
+              report.updatedAt,
+            ]
+          ).catch(() => {});
         }
         return report;
       }
@@ -294,53 +290,39 @@ export const reportStore: ReportStore = {
     return RECOVERED_REPORTS[id] || fallbackReports.get(id) || null;
   },
   async list(status, offset, limit = 25) {
-    const supabase = getSupabase();
-    if (supabase) {
+    if (isD1Configured()) {
       try {
-        // Attempt lazy sync of any Redis reports into Supabase in background
-        syncLegacyRedisReportsToSupabase(supabase).catch(() => {});
+        const whereClause = status !== 'all' ? 'WHERE status = ?' : '';
+        const params = status !== 'all' ? [status, limit, offset] : [limit, offset];
 
-        let query = supabase.from('reports').select('*', { count: 'exact' });
-        if (status !== 'all') {
-          query = query.eq('status', status);
-        }
-        const { data, count, error } = await query
-          .order('created_at', { ascending: false })
-          .range(offset, offset + limit - 1);
-        if (data && !error) {
-          const { data: statusRows } = await supabase.from('reports').select('status');
-          const counts: Record<ReportStatus, number> = { new: 0, reviewing: 0, fixed: 0, dismissed: 0 };
-          if (statusRows) {
-            for (const row of statusRows) {
-              if (row.status && row.status in counts) {
-                counts[row.status as ReportStatus]++;
-              }
+        const data = await d1Query<any>(
+          `SELECT * FROM reports ${whereClause} ORDER BY created_at DESC LIMIT ? OFFSET ?`,
+          params
+        );
+
+        const totalRow = await d1QueryFirst<any>(
+          `SELECT COUNT(*) as count FROM reports ${whereClause}`,
+          status !== 'all' ? [status] : []
+        );
+
+        const statusRows = await d1Query<any>('SELECT status, COUNT(*) as count FROM reports GROUP BY status');
+        const counts: Record<ReportStatus, number> = { new: 0, reviewing: 0, fixed: 0, dismissed: 0 };
+        if (statusRows) {
+          for (const row of statusRows) {
+            if (row.status && row.status in counts) {
+              counts[row.status as ReportStatus] = Number(row.count || 0);
             }
           }
-          const mapped = data.map((d: any) => ({
-            id: d.id,
-            requestHash: d.request_hash,
-            reporterId: d.reporter_id,
-            reporter: d.reporter,
-            category: d.category,
-            explanation: d.explanation,
-            subQuestionId: d.sub_question_id,
-            snapshot: d.snapshot,
-            status: d.status,
-            notes: d.notes,
-            revision: d.revision,
-            createdAt: d.created_at,
-            updatedAt: d.updated_at,
-            notification: d.notification,
-          }));
-          return {
-            reports: mapped,
-            total: count ?? mapped.length,
-            counts,
-          };
         }
+
+        const mapped = data.map(rowToReport);
+        return {
+          reports: mapped,
+          total: Number(totalRow?.count ?? mapped.length),
+          counts,
+        };
       } catch (err) {
-        console.warn('Supabase report list error, falling back to Redis:', err);
+        console.warn('D1 report list error, falling back to Redis:', err);
       }
     }
     try {
@@ -417,41 +399,34 @@ export const reportStore: ReportStore = {
     }
   },
   async update(id, revision, patch) {
-    const supabase = getSupabase();
-    if (supabase) {
+    if (isD1Configured()) {
       try {
-        const updatePayload: Record<string, unknown> = {
-          updated_at: patch.updatedAt || new Date().toISOString(),
-          revision: revision + 1,
-        };
-        if (patch.status) updatePayload.status = patch.status;
-        if (patch.notes !== undefined) updatePayload.notes = patch.notes;
-        const { data, error } = await supabase
-          .from('reports')
-          .update(updatePayload)
-          .eq('id', id)
-          .select()
-          .single();
-        if (data && !error) {
-          return {
-            id: data.id,
-            requestHash: data.request_hash,
-            reporterId: data.reporter_id,
-            reporter: data.reporter,
-            category: data.category,
-            explanation: data.explanation,
-            subQuestionId: data.sub_question_id,
-            snapshot: data.snapshot,
-            status: data.status,
-            notes: data.notes,
-            revision: data.revision,
-            createdAt: data.created_at,
-            updatedAt: data.updated_at,
-            notification: data.notification,
-          };
+        const existing = await d1QueryFirst<any>('SELECT * FROM reports WHERE id = ?', [id]);
+        if (!existing) {
+          throw new ReportError(404, 'Report not found.');
+        }
+        const currentRev = Number(existing.revision || 1);
+        if (currentRev !== Number(revision)) {
+          throw new ReportError(409, 'This report changed in another window. Refresh before saving.');
+        }
+
+        const nextRev = currentRev + 1;
+        const updatedAt = patch.updatedAt || new Date().toISOString();
+        const nextStatus = patch.status || existing.status;
+        const nextNotes = patch.notes !== undefined ? patch.notes : (existing.notes || '');
+
+        await d1Execute(
+          `UPDATE reports SET status = ?, notes = ?, revision = ?, updated_at = ? WHERE id = ? AND revision = ?`,
+          [nextStatus, nextNotes, nextRev, updatedAt, id, currentRev]
+        );
+
+        const updatedRow = await d1QueryFirst<any>('SELECT * FROM reports WHERE id = ?', [id]);
+        if (updatedRow) {
+          return rowToReport(updatedRow);
         }
       } catch (err) {
-        console.warn('Supabase report update error, falling back to Redis:', err);
+        if (err instanceof ReportError) throw err;
+        console.warn('D1 report update error, falling back to Redis:', err);
       }
     }
     try {
@@ -491,12 +466,11 @@ export const reportStore: ReportStore = {
     return updated;
   },
   async notification(id, value) {
-    const supabase = getSupabase();
-    if (supabase) {
+    if (isD1Configured()) {
       try {
-        await supabase.from('reports').update({ notification: value }).eq('id', id);
+        await d1Execute('UPDATE reports SET notification = ? WHERE id = ?', [JSON.stringify(value), id]);
       } catch (err) {
-        console.warn('Supabase report notification error:', err);
+        console.warn('D1 report notification error:', err);
       }
     }
     try {

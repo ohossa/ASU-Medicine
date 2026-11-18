@@ -1523,7 +1523,7 @@ function MainApp() {
       )}
 
       {/* YEAR SELECTION ONBOARDING MODAL */}
-      {!yearLoading && !studentYear && !yearModalDismissed && (
+      {!yearLoading && !studentYear && !fallbackYear && !yearModalDismissed && (
         <YearSelectionModal
           localPreview={localPreview}
           onSelect={setStudentYear}

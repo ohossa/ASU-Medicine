@@ -81,6 +81,76 @@ export function SpecimenViewer({ imageUrl, altText = 'Practical exam specimen', 
 
   const handleMouseUp = () => setIsDragging(false);
 
+  // Wheel zoom handler
+  const handleWheel = (e: React.WheelEvent) => {
+    e.preventDefault();
+    if (e.deltaY < 0) {
+      setScale(s => Math.min(3.5, Number((s + 0.2).toFixed(2))));
+    } else {
+      setScale(s => {
+        const next = Math.max(1, Number((s - 0.2).toFixed(2)));
+        if (next <= 1) setPan({ x: 0, y: 0 });
+        return next;
+      });
+    }
+  };
+
+  // Touch pinch-to-zoom & pan handlers for mobile/iPad
+  const lastTouchDist = useRef<number | null>(null);
+  const lastTap = useRef<number>(0);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    if (e.touches.length === 2) {
+      const dist = Math.hypot(
+        e.touches[0].clientX - e.touches[1].clientX,
+        e.touches[0].clientY - e.touches[1].clientY
+      );
+      lastTouchDist.current = dist;
+    } else if (e.touches.length === 1) {
+      const now = Date.now();
+      if (now - lastTap.current < 300) {
+        handleDoubleClick();
+        lastTap.current = 0;
+        return;
+      }
+      lastTap.current = now;
+
+      if (scale > 1) {
+        setIsDragging(true);
+        dragStart.current = {
+          x: e.touches[0].clientX - pan.x,
+          y: e.touches[0].clientY - pan.y,
+        };
+      }
+    }
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (e.touches.length === 2 && lastTouchDist.current !== null) {
+      const currentDist = Math.hypot(
+        e.touches[0].clientX - e.touches[1].clientX,
+        e.touches[0].clientY - e.touches[1].clientY
+      );
+      const factor = currentDist / lastTouchDist.current;
+      setScale(s => {
+        const next = Math.min(3.5, Math.max(1, Number((s * factor).toFixed(2))));
+        if (next <= 1) setPan({ x: 0, y: 0 });
+        return next;
+      });
+      lastTouchDist.current = currentDist;
+    } else if (e.touches.length === 1 && isDragging && scale > 1) {
+      setPan({
+        x: e.touches[0].clientX - dragStart.current.x,
+        y: e.touches[0].clientY - dragStart.current.y,
+      });
+    }
+  };
+
+  const handleTouchEnd = () => {
+    lastTouchDist.current = null;
+    setIsDragging(false);
+  };
+
   // Height container class for inline presentation
   const containerHeightClass = isExpanded
     ? 'w-full min-h-[340px] max-h-[85vh] sm:max-h-[880px]'
@@ -102,6 +172,10 @@ export function SpecimenViewer({ imageUrl, altText = 'Practical exam specimen', 
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
       onDoubleClick={handleDoubleClick}
+      onWheel={handleWheel}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
       title={scale > 1 ? 'Drag to pan · Double-click to reset' : 'Double-click to zoom in'}
     >
       <motion.img

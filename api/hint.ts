@@ -18,7 +18,7 @@
  */
 
 import { recordTutorUsage } from '../server/tutor-metrics.js';
-import { getSupabase } from '../server/supabase-client.js';
+import { d1Execute, isD1Configured } from '../server/d1-client.js';
 import { logSecurityEvent } from '../server/security-logger.js';
 import { verifyToken } from '@clerk/backend';
 import { Redis as UpstashRedis } from '@upstash/redis';
@@ -667,19 +667,22 @@ export default async function handler(req: any, res: any) {
     const adapter = getAdapter();
     const response = await adapter.generateHint(requestBody);
 
-    /* Telemetry log to Supabase */
+    /* Telemetry log to Cloudflare D1 */
     try {
-      const supabase = getSupabase();
-      if (supabase) {
+      if (isD1Configured()) {
         Promise.resolve(
-          supabase.from('ai_hint_logs').insert({
-            user_id: userId,
-            module_code: (requestBody as any).moduleCode || '',
-            question_id: (requestBody as any).questionId || '',
-            provider: process.env.HINT_AI_PROVIDER || 'nvidia',
-            model: process.env.NVIDIA_HINT_MODEL || 'default',
-            status: 'success',
-          })
+          d1Execute(
+            `INSERT INTO ai_hint_logs (user_id, module_code, question_id, provider, model, status)
+             VALUES (?, ?, ?, ?, ?, ?)`,
+            [
+              userId,
+              (requestBody as any).moduleCode || '',
+              (requestBody as any).questionId || '',
+              process.env.HINT_AI_PROVIDER || 'nvidia',
+              process.env.NVIDIA_HINT_MODEL || 'default',
+              'success',
+            ]
+          )
         ).catch(() => {});
       }
     } catch {

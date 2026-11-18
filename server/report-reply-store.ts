@@ -3,7 +3,7 @@ import type { ReplyStore } from "./report-replies.js";
 import type { ReportReply, ReplyDraft } from "../src/app/reports/reply-contracts.js";
 import { ReportError } from "./report-service.js";
 import { evalRedis } from "./report-store.js";
-import { getSupabase } from "./supabase-client.js";
+import { d1Query, d1QueryFirst, d1Execute, isD1Configured } from "./d1-client.js";
 
 const PREFIX = "asu_report_replies:v1:";
 
@@ -32,15 +32,13 @@ const claimLocks = new Map<string, number>();
 
 export const replyStore: ReplyStore = {
   async draft(id) {
-    const supabase = getSupabase();
-    if (supabase) {
+    if (isD1Configured()) {
       try {
-        const { data, error } = await supabase
-          .from('report_replies')
-          .select('*')
-          .eq('id', 'draft_' + id)
-          .maybeSingle();
-        if (!error && data) {
+        const data = await d1QueryFirst<any>(
+          'SELECT * FROM report_replies WHERE id = ?',
+          ['draft_' + id]
+        );
+        if (data) {
           return {
             reportId: data.report_id,
             subject: data.subject,
@@ -51,7 +49,7 @@ export const replyStore: ReplyStore = {
           };
         }
       } catch (err) {
-        console.warn('Supabase reply draft error, falling back:', err);
+        console.warn('D1 reply draft error, falling back:', err);
       }
     }
 
@@ -68,17 +66,15 @@ export const replyStore: ReplyStore = {
   },
 
   async saveDraft(draft) {
-    const supabase = getSupabase();
     const now = new Date().toISOString();
 
-    if (supabase) {
+    if (isD1Configured()) {
       try {
         const draftId = 'draft_' + draft.reportId;
-        const { data: existing } = await supabase
-          .from('report_replies')
-          .select('revision')
-          .eq('id', draftId)
-          .maybeSingle();
+        const existing = await d1QueryFirst<any>(
+          'SELECT revision FROM report_replies WHERE id = ?',
+          [draftId]
+        );
 
         const currentRev = existing ? Number(existing.revision) : 0;
         if (currentRev !== Number(draft.revision)) {
@@ -95,24 +91,33 @@ export const replyStore: ReplyStore = {
           updatedAt: now,
         };
 
-        const { error } = await supabase.from('report_replies').upsert({
-          id: draftId,
-          report_id: draft.reportId,
-          subject: draft.subject,
-          body: draft.body,
-          state: 'draft',
-          revision: nextRev,
-          created_by: draft.updatedBy || 'owner',
-          updated_at: now,
-        }, { onConflict: 'id' });
+        await d1Execute(
+          `INSERT INTO report_replies (id, report_id, subject, body, state, revision, created_by, updated_at)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+           ON CONFLICT(id) DO UPDATE SET
+             subject = excluded.subject,
+             body = excluded.body,
+             state = excluded.state,
+             revision = excluded.revision,
+             created_by = excluded.created_by,
+             updated_at = excluded.updated_at`,
+          [
+            draftId,
+            draft.reportId,
+            draft.subject,
+            draft.body,
+            'draft',
+            nextRev,
+            draft.updatedBy || 'owner',
+            now,
+          ]
+        );
 
-        if (!error) {
-          inMemoryDrafts.set(draft.reportId, savedDraft);
-          return savedDraft;
-        }
+        inMemoryDrafts.set(draft.reportId, savedDraft);
+        return savedDraft;
       } catch (err) {
         if (err instanceof ReportError) throw err;
-        console.warn('Supabase save draft error, falling back:', err);
+        console.warn('D1 save draft error, falling back:', err);
       }
     }
 
@@ -152,17 +157,14 @@ export const replyStore: ReplyStore = {
   },
 
   async list(id) {
-    const supabase = getSupabase();
-    if (supabase) {
+    if (isD1Configured()) {
       try {
-        const { data, error } = await supabase
-          .from('report_replies')
-          .select('*')
-          .eq('report_id', id)
-          .neq('state', 'draft')
-          .order('created_at', { ascending: false });
+        const data = await d1Query<any>(
+          `SELECT * FROM report_replies WHERE report_id = ? AND state != 'draft' ORDER BY created_at DESC`,
+          [id]
+        );
 
-        if (!error && Array.isArray(data) && data.length > 0) {
+        if (Array.isArray(data) && data.length > 0) {
           return data.map((row: any) => ({
             id: row.id,
             reportId: row.report_id,
@@ -175,7 +177,7 @@ export const replyStore: ReplyStore = {
           }));
         }
       } catch (err) {
-        console.warn('Supabase reply list error, falling back:', err);
+        console.warn('D1 reply list error, falling back:', err);
       }
     }
 
@@ -196,14 +198,12 @@ export const replyStore: ReplyStore = {
   },
 
   async reserve(reply) {
-    const supabase = getSupabase();
-    if (supabase) {
+    if (isD1Configured()) {
       try {
-        const { data: existing } = await supabase
-          .from('report_replies')
-          .select('*')
-          .eq('id', reply.id)
-          .maybeSingle();
+        const existing = await d1QueryFirst<any>(
+          'SELECT * FROM report_replies WHERE id = ?',
+          [reply.id]
+        );
 
         if (existing) {
           return {
@@ -221,24 +221,26 @@ export const replyStore: ReplyStore = {
           };
         }
 
-        const { error } = await supabase.from('report_replies').insert({
-          id: reply.id,
-          report_id: reply.reportId,
-          subject: reply.subject,
-          body: reply.body,
-          state: reply.state,
-          created_by: reply.createdBy || 'owner',
-          created_at: reply.createdAt || new Date().toISOString(),
-          updated_at: new Date().toISOString(),
-        });
+        await d1Execute(
+          `INSERT INTO report_replies (id, report_id, subject, body, state, created_by, created_at, updated_at)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+          [
+            reply.id,
+            reply.reportId,
+            reply.subject,
+            reply.body,
+            reply.state,
+            reply.createdBy || 'owner',
+            reply.createdAt || new Date().toISOString(),
+            new Date().toISOString(),
+          ]
+        );
 
-        if (!error) {
-          const repList = inMemoryReplies.get(reply.reportId) || [];
-          inMemoryReplies.set(reply.reportId, [reply, ...repList]);
-          return { created: true, reply };
-        }
+        const repList = inMemoryReplies.get(reply.reportId) || [];
+        inMemoryReplies.set(reply.reportId, [reply, ...repList]);
+        return { created: true, reply };
       } catch (err) {
-        console.warn('Supabase reply reserve error, falling back:', err);
+        console.warn('D1 reply reserve error, falling back:', err);
       }
     }
 
@@ -294,44 +296,34 @@ export const replyStore: ReplyStore = {
   },
 
   async finish(reply) {
-    const supabase = getSupabase();
-    if (supabase) {
+    if (isD1Configured()) {
       try {
-        await supabase
-          .from('report_replies')
-          .update({
-            state: reply.state,
-            updated_at: new Date().toISOString(),
-          })
-          .eq('id', reply.id);
+        await d1Execute(
+          `UPDATE report_replies SET state = ?, updated_at = ? WHERE id = ?`,
+          [reply.state, new Date().toISOString(), reply.id]
+        );
 
         if (reply.state === 'accepted') {
           // Clear draft if it matches
           const draftId = 'draft_' + reply.reportId;
-          const { data: draftRow } = await supabase
-            .from('report_replies')
-            .select('subject, body, revision')
-            .eq('id', draftId)
-            .maybeSingle();
+          const draftRow = await d1QueryFirst<any>(
+            'SELECT subject, body, revision FROM report_replies WHERE id = ?',
+            [draftId]
+          );
 
           if (
             draftRow &&
             draftRow.body?.trim() === reply.body?.trim() &&
             draftRow.subject?.trim() === reply.subject?.trim()
           ) {
-            await supabase
-              .from('report_replies')
-              .update({
-                subject: '',
-                body: '',
-                revision: Number(draftRow.revision) + 1,
-                updated_at: new Date().toISOString(),
-              })
-              .eq('id', draftId);
+            await d1Execute(
+              `UPDATE report_replies SET subject = '', body = '', revision = ?, updated_at = ? WHERE id = ?`,
+              [Number(draftRow.revision) + 1, new Date().toISOString(), draftId]
+            );
           }
         }
       } catch (err) {
-        console.warn('Supabase finish reply error, falling back:', err);
+        console.warn('D1 finish reply error, falling back:', err);
       }
     }
 

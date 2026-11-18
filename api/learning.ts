@@ -4,7 +4,8 @@ import { evalRedis } from "../server/report-store.js";
 import { ReportError, isReportError } from "../server/report-service.js";
 import { learningBank } from "../server/learning-bank.js";
 import { createLearningService } from "../server/learning-service.js";
-import { getSupabase } from "../server/supabase-client.js";
+import { d1Query, d1QueryFirst, isD1Configured } from "../server/d1-client.js";
+import { getR2Json } from "../server/r2-client.js";
 import {
   award,
   dashboard,
@@ -35,58 +36,28 @@ const service = createLearningService({
   profile: getProfile,
   saveProfile,
   year: async (id) => {
-    // 1. Primary: Supabase
-    const supabase = getSupabase();
-    if (supabase) {
+    // 1. Primary: Cloudflare D1
+    if (isD1Configured()) {
       try {
-        const { data: userRow } = await supabase
-          .from("user_progress")
-          .select("academic_year, data")
-          .eq("user_id", id)
-          .maybeSingle();
-
-        const dataObj = userRow?.data as Record<string, any> | undefined;
-        const explicitPref = dataObj?.[`asu_preferences:${id}:academic-year`]?.year;
-        const portalYear = Number(dataObj?.["asu_portal_year"]);
-
-        // Explicit preference saved by the student takes absolute top priority
-        if (Number.isInteger(explicitPref) && explicitPref >= 1 && explicitPref <= 5) {
-          return explicitPref;
-        }
-
-        // Check if student has set an academic year > 1 in user_progress
-        if (
-          userRow?.academic_year &&
-          Number.isInteger(userRow.academic_year) &&
-          userRow.academic_year > 1 &&
-          userRow.academic_year <= 5
-        ) {
-          return userRow.academic_year;
-        }
-
-        // Check learning_profiles year if > 1
-        const { data: profileRow } = await supabase
-          .from("learning_profiles")
-          .select("year")
-          .eq("user_id", id)
-          .maybeSingle();
+        const profileRow = await d1QueryFirst<any>(
+          'SELECT year FROM learning_profiles WHERE user_id = ?',
+          [id]
+        );
 
         if (
           profileRow?.year &&
           Number.isInteger(profileRow.year) &&
-          profileRow.year > 1 &&
+          profileRow.year >= 1 &&
           profileRow.year <= 5
         ) {
           return profileRow.year;
         }
 
         // Check recent question attempts from learning_entries (e.g. MGL-3 -> Year 3)
-        const { data: recentEntries } = await supabase
-          .from("learning_entries")
-          .select("module_code")
-          .eq("user_id", id)
-          .order("updated_at", { ascending: false })
-          .limit(10);
+        const recentEntries = await d1Query<any>(
+          'SELECT module_code FROM learning_entries WHERE user_id = ? ORDER BY updated_at DESC LIMIT 10',
+          [id]
+        );
 
         if (Array.isArray(recentEntries) && recentEntries.length > 0) {
           for (const ent of recentEntries) {
@@ -99,42 +70,41 @@ const service = createLearningService({
             }
           }
         }
-
-        if (Number.isInteger(portalYear) && portalYear >= 1 && portalYear <= 5) {
-          return portalYear;
-        }
-
-        if (
-          userRow?.academic_year &&
-          Number.isInteger(userRow.academic_year) &&
-          userRow.academic_year >= 1 &&
-          userRow.academic_year <= 5
-        ) {
-          return userRow.academic_year;
-        }
-
-        if (
-          profileRow?.year &&
-          Number.isInteger(profileRow.year) &&
-          profileRow.year >= 1 &&
-          profileRow.year <= 5
-        ) {
-          return profileRow.year;
-        }
       } catch (err) {
-        console.warn("Supabase year check error:", err);
+        console.warn("D1 year check error:", err);
       }
     }
 
-    // 2. Resilient fallback: Redis (safely wrapped in try/catch)
+    // 2. Resilient check: Cloudflare R2 user progress blob
+    try {
+      const userR2Key = `users/${id}/progress.json`;
+      const r2Res = await getR2Json<Record<string, any>>(userR2Key);
+      if (r2Res?.data) {
+        const yearKey = `asu_preferences:${id}:academic-year`;
+        const explicitPref = r2Res.data[yearKey]?.year;
+        const portalYear = Number(r2Res.data['asu_portal_year']);
+        if (Number.isInteger(explicitPref) && explicitPref >= 1 && explicitPref <= 5) {
+          return explicitPref;
+        }
+        if (Number.isInteger(portalYear) && portalYear >= 1 && portalYear <= 5) {
+          return portalYear;
+        }
+      }
+    } catch {}
+
+    // 3. Fallback: Redis (safely wrapped in try/catch)
     try {
       const raw = await evalRedis("return redis.call('GET',KEYS[1])", [
         `asu_data:${id}:asu_preferences:${id}:academic-year`,
       ]);
-      return JSON.parse(LZString.decompress(String(raw)) ?? "null")?.year ?? 0;
-    } catch {
-      return 0;
-    }
+      const redisYear = JSON.parse(LZString.decompress(String(raw)) ?? "null")?.year;
+      if (Number.isInteger(redisYear) && redisYear >= 1 && redisYear <= 5) {
+        return redisYear;
+      }
+    } catch {}
+
+    // 4. Default to Year 1 so student is NEVER blocked by a 409 rejection
+    return 1;
   },
   rate: async (id) => {
     if (!checkRateLimit(id, 2500)) return false;

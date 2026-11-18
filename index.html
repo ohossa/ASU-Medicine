@@ -1,8 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <noscript><style>.crawl-shell { display: block !important; }</style></noscript>
     <meta name="description" content="Independent medical question bank and study companion for medical students in Egypt. Practice 29,864+ exam MCQs, clinical spotters, and past papers aligned with integrated medical curricula (Ain Shams University Years 1–3). 100% free." />
     <meta name="keywords" content="Ain Shams medical question bank, medical MCQs Egypt, بنك اسئلة طب عين شمس, امتحانات طب بشري, CVS MCQ, CNS MCQ, GIT MCQ, medical past papers Egypt, قصر العيني, طب عين شمس سنة اولى, طب عين شمس سنة ثانية, طب عين شمس سنة ثالثة, أسئلة موديولات الطب, Anki flashcards medical Egypt, Egyptian medical curricula, spaced repetition medicine" />
     <meta name="author" content="Omar Hossam" />
@@ -184,7 +185,9 @@
       html { background: #f8f9fc; color-scheme: light; }
       html.dark { background: #0c0e16; color-scheme: dark; }
       body { margin: 0; background: inherit; }
-      /* Pre-hydration fallback layout styling */
+      /* Hide pre-hydration crawl shell when JavaScript is enabled to eliminate split-second flash (Apple HIG zero-FOUC) */
+      html.js .crawl-shell { display: none !important; }
+      /* Pre-hydration fallback layout styling for non-JS scrapers & indexers */
       .crawl-shell {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         max-width: 960px;
@@ -204,6 +207,9 @@
     </style>
     <script id="theme-bootstrap">
       (function () {
+        if (document.documentElement.classList && typeof document.documentElement.classList.add === 'function') {
+          document.documentElement.classList.add('js');
+        }
         var dark = true;
         try { dark = localStorage.getItem('theme') !== 'light'; } catch (_) {}
         document.documentElement.classList.toggle('dark', dark);
