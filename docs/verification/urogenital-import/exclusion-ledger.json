@@ -790,5 +790,488 @@
     "stem": "MUG3-CH5-PATH-1865: garbled multi-question OCR bleed",
     "reason": "severe_ocr_bleed_author_header",
     "details": "Options contain garbled text from multiple adjacent questions and author name contamination (Thanaa Helal/Hegazy). Both stem and all options are unintelligible. Wave 7 exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Anatomy URO.pdf-Q1",
+    "stem": "Inferior rectal",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Inferior rectal\", ma=\"Refer to official faculty scor\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "MCQ Anatomy .pdf-p3-Q3",
+    "stem": "Renal column.",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"Renal column.\", opts=['Renal papillae.', 'Renal pelvis.', 'Renal pyramid.']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "anatomy renal.pdf-p6-Q33",
+    "stem": "Inferiorly, the",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed gibberish stem: Inferiorly, the. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "anatomy renal.pdf-p9-Q55",
+    "stem": "The averse scm : * 9 5-Locm 4.0-1-50M 0.8cM y.ocm vis, the left ureter steps over Oo} small pelvis, a i gres nterior asp",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed gibberish stem: The averse scm : * 9 5-Locm 4.0-1-50M 0.8cM y.ocm vis, the left ureter steps over Oo} small pelvis, a i gres® nterior aspect of the end of left common iliac artery. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "anatomy renal.pdf-p12-Q76",
+    "stem": "The course of a mon iliac ether m nd of right iliac artery",
+    "reason": "severed_ocr_fragment",
+    "details": "Garbled OCR stem: The course of a mon iliac ether m nd of . Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q18",
+    "stem": "Spermatic cord",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"Spermatic cord\", opts=['Spermatic cord', 'Epididymis', 'testis', 'Scrotum']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q23",
+    "stem": "Pelvic Kidney:",
+    "reason": "severed_ocr_fragment",
+    "details": "Gibberish model answer: =MP. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q27",
+    "stem": "Ectopia vesica:",
+    "reason": "severed_ocr_fragment",
+    "details": "Gibberish model answer: =MP. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Anatomy/anatomy renal.pdf-Q18",
+    "stem": "inferiorly, the",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed gibberish stem: inferiorly, the. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Anatomy/anatomy renal.pdf-Q39",
+    "stem": "The averse scm",
+    "reason": "severed_ocr_fragment",
+    "details": "Gibberish model answer: : * 9 5-Locm. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Anatomy/anatomy renal.pdf-Q55",
+    "stem": "jis INCORREC?",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed gibberish stem: jis INCORREC?. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Anatomy/anatomy renal.pdf-Q58",
+    "stem": "The course of a mon iliac ether m nd of right iliac artery - of right ce aay rior asPe f right ex the anterlo f the end ",
+    "reason": "severed_ocr_fragment",
+    "details": "Garbled OCR stem: The course of a mon iliac ether m nd of . Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q67",
+    "stem": "Artery of vas.",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Artery of vas.\", ma=\"3 Vs:\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Physiology URO.pdf-Q1",
+    "stem": "Freely filtered",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Freely filtered\", ma=\"Refer to official faculty scor\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Physiology URO.pdf-Q2",
+    "stem": "Not reabsorbed",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Not reabsorbed\", ma=\"Refer to official faculty scor\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Physiology URO.pdf-Q1",
+    "stem": "Decreasing GFR.",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Decreasing GFR.\", ma=\"Refer to official faculty scor\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "iNerd-p6-Q2",
+    "stem": "Ureteric bud :",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"Ureteric bud :\", opts=['Metanephric blastema f', 'Mesonephric ducts A', 'Paramesonephric duct H', 'Allantois :', 'Foe, 8 SS']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "iNerd-p33-Q5",
+    "stem": "Corpus luteum",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"Corpus luteum\", opts=['Secondary follicle', 'D. Adrenal cortex', 'Birthing']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "iNerd-p36-Q5",
+    "stem": "Spam ate tabor?",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed gibberish stem: Spam ate tabor?. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "💥Renal Physiology Questions-1.pdf-p15-Q41",
+    "stem": "Define each of:",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed gibberish stem: Define each of:. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "UG_NERD-p18-right-Q2",
+    "stem": "Erythropoietin",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"Erythropoietin\", opts=['Angiotensin Il', 'Prostaglandins', 'ADH ©. Calcitriol']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Physiology/MCQ-LABELLED 🏷️ physio female _compress.pdf-Q2",
+    "stem": "MKS Cervical te",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed gibberish stem: MKS Cervical te. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Physiology/MCQ-LABELLED 🏷️ physio female _compress.pdf-Q6",
+    "stem": "uterine 1 i S",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed gibberish stem: uterine 1 i S. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Physiology/Physiology URO.pdf-Q131",
+    "stem": "Decreasing GFR.",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Decreasing GFR.\", ma=\"Refer to Ain Shams Urogenital \". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Physiology/💥Renal Physiology Questions-1.pdf-Q91",
+    "stem": "Define each of:",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed gibberish stem: Define each of:. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Biochemistry URO.pdf-Q4",
+    "stem": "PLP deficiency",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"PLP deficiency\", ma=\"Refer to official faculty scor\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "UG_NERD-p44-right-Q2",
+    "stem": "Penile urethra",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"Penile urethra\", opts=['Prostatic gland', 'Seminal vesicles epididymis ©. Bulbourethral gland The resting mammary gland is by presence of: @. Adipose connective tissue in its stroma.', 'Simple cuboidal epithelium in lactiferous sit', 'Dense connective tissue intra lobular', 'Highly branched secretory acini. Thin connective tissue septa m']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Formatives ESSAY.pdf-Q1",
+    "stem": "Pregnant women.",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Pregnant women.\", ma=\"Refer to official faculty scor\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "iNerd-p53-Q9",
+    "stem": "Serum ANA we Ig",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"Serum ANA we Ig\", opts=['Serum HBsAg. : eRe', 'Serum anti ds-DNA. ; du']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "DEPARTMENT patho genital mcq.pdf-p2-Q2",
+    "stem": "36 A. Seminoma",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"36 A. Seminoma\", opts=['Yolk sac tumor B. Lymphoma', 'Immature teratoma D. Adenomatoid tumor']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "UG_NERD-p54-right-Q2",
+    "stem": "Angiomyolipoma",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"Angiomyolipoma\", opts=['Renal cell carcinoma ©. Transitional cell carcinoma', 'Wilms tumor ©. Medullary fibroma']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "UG_NERD-p64-left-Q6",
+    "stem": "Chocolate cyst",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"Chocolate cyst\", opts=['Follicular cysts', \"Gartner's duct cyst iS\", '©. Nabothian cysts :', 'iB.']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "UG_NERD-p64-right-Q2",
+    "stem": "Keratinous cyst",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"Keratinous cyst\", opts=['Endometriosis', 'Abscess', 'Intradermal naevus']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Pathology/DEPARTMENT patho genital mcq.pdf-Q16",
+    "stem": "The following |",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"The following |\", opts=['Non-suppurative inflammation', 'Tuberculosis swe! Questions and An Jlowing cone” i escended testis -anulomatous or granulomas dded granulom nune response rs in pathology is a risk factor of neoplasia,', 'Acute Orchitis', 'Syphilitic Orchitig dition rchitis in seminoma indicates, atous Jesion B. Bad immune resp', 'Spread of the tum Nse atous infection Or']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Pathology/DEPARTMENT patho genital mcq.pdf-Q154",
+    "stem": "A.Partial mole",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"A.Partial mole\", opts=['Complete mole', 'Invasive mole', 'Choriocarcinoma', 'Embryonal carcinoma']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Pathology/DEPARTMENT patho genital mcq.pdf-Q231",
+    "stem": "C (1584) Cc",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"C (1584) Cc\", ma=\"Refer to Ain Shams Urogenital \". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Pathology/DEPARTMENT patho urinary mcq.pdf-Q79",
+    "stem": "A. Wilm’s tumor",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"A. Wilm’s tumor\", opts=['Angiomyolipoma', 'Renal cell carcinoma', 'Renal oncocytoma', 'Renal adenoma']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Pathology/DEPARTMENT patho urinary mcq.pdf-Q104",
+    "stem": "F = E (1329) FO",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"F = E (1329) FO\", ma=\"Refer to Ain Shams Urogenital \". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Pathology/DEPARTMENT patho urinary mcq.pdf-Q105",
+    "stem": "F (1331) F mn |",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"F (1331) F mn |\", ma=\"Refer to Ain Shams Urogenital \". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Pathology/SGD FEMALE 2023 .pdf-Q25",
+    "stem": "leiomyosarcoma.",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"leiomyosarcoma.\", ma=\"Refer to Ain Shams Urogenital \". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Pathology/Tutorial urinary bladder.pdf-Q15",
+    "stem": "Adenocarcinoma:",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Adenocarcinoma:\", ma=\"May arise from:\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Pathology/female cases.pdf-Q39",
+    "stem": "y e a r - o l d",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"y e a r - o l d\", ma=\"Refer to Ain Shams Urogenital \". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Pathology/genitourinary mcq.pdf-Q68",
+    "stem": "Bone metast",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"Bone metast\", opts=['Osteolytle ye ‘ “ated', 'Well-different\" 4) pSA level 5 sjated with no ° . cific toa is s a can f serum prostatic specific antigen is used for; timation © s\\' of prosté ition of ases from P Pp. Poorly-differentiated noma the prostatic origi (issn * Typing atic carci!', 'Confirmé 1 in case Of metastases With Un.', 'Diagnosis of prostatitis known primary . © C. Diagnosis of prostatic hyperplasia I EXCE']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Pathology/patho genital.pdf-Q25",
+    "stem": "Phosphatases:",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Phosphatases:\", ma=\"Female\nCase:1\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Pathology/questions urinary (answers).pdf-Q9",
+    "stem": "A. Infertility,",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"A. Infertility,\", opts=['Sce book.', 'Tubreul iOUS Sa + s Salipingitis, tuberculous endometritis, endometriosis sean, tm Abe oblastic discas Mand malign arises from the smooth muscle fj ibre mors of the body of uterus (te, cs Deng itty ‘SCC DOOK. le. Ae Cori shite k-ydatidiform']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "UG_NERD-p94-left-Q2",
+    "stem": "Beta blockers",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"Beta blockers\", opts=['H, receptors blockers Nitrates', 'Alprostadil', 'Flutamide']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Urogenital paper 1 essay 2024.docx-Item",
+    "stem": "Middle rectal",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Middle rectal\", ma=\"Refer to official faculty scor\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "ASS 1 UG - 2020.pdf-Q6",
+    "stem": "Aff dilatation",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Aff dilatation\", ma=\"Inc RBF\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "UG paper 1 essay 2019 answers.pdf-Q2",
+    "stem": "Iien Sugplemst",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Iien Sugplemst\", ma=\"orad os pareatcad\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "UG paper 1 essay 2020 answers.pdf-Q2",
+    "stem": "Lemiasl aorta",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Lemiasl aorta\", ma=\"3 GonadeA.\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "💥Urogenital Assessment 1 MCQ.pdf-Q3",
+    "stem": "Man with UTI?",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Man with UTI?\", ma=\"Cipro 2 weeks\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "UG paper 1 essay 2020 answers.pdf-Q4",
+    "stem": "Common iliac",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"Common iliac\", opts=['Fenestr.ted endo thelum of btond capill awies', 'PAGE', 'DATE']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "practical 2018-2020.pdf-Q7",
+    "stem": "12 ( anion gap)",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"12 ( anion gap)\", ma=\"Histo\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "practical 2018-2020.pdf-Q17",
+    "stem": "Injected kidney",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Injected kidney\", ma=\"ويسف\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "practical 2018-2020.pdf-Q32",
+    "stem": "Apex of bladder",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Apex of bladder\", ma=\"وثاب\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "practical 2018-2020.pdf-Q31",
+    "stem": "Seminal vesicle",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Seminal vesicle\", ma=\"Micro\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "practical 2018-2020.pdf-Q3",
+    "stem": "Head of sperm",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Head of sperm\", ma=\"Bio\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "practical 2018-2020.pdf-Q6",
+    "stem": "Internal os",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Internal os\", ma=\"Physiology :\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "💥Practical UG Exam 2024.pdf-Q10",
+    "stem": "Clear cells",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Clear cells\", ma=\"Physio\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "practical 2018-2020.pdf-Q32",
+    "stem": "Forked tail",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"Forked tail\", opts=['Model 2', 'Anatomy']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "ug paper 2 - 2020.pdf-Q8",
+    "stem": "Mature teratoma",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Mature teratoma\", ma=\"cartilage,hair\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Past Exams/UG paper 2 essay answers 2019.pdf-Q8",
+    "stem": "Basenet mebane",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Basenet mebane\", ma=\"tophoyagt\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Past Exams/UG paper 2 essay answers 2020.pdf-Q3",
+    "stem": "Micldie rectal",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed MCQ fragment with broken options: stem=\"Micldie rectal\", opts=['Sar coma , Umkhel', 'Rit Supecior Vesical branches.']. Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Past Exams/practical 2018-2020.pdf-Q71",
+    "stem": "fallopian tube",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"fallopian tube\", ma=\"Patho\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Past Exams/practical 2018-2020.pdf-Q90",
+    "stem": "ndole test",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"índole test\", ma=\"Para\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Past Exams/practical 2018-2020.pdf-Q183",
+    "stem": "Forked tail",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Forked tail\", ma=\"Model 2\nAnatomy\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Past Exams/practical 2018-2020.pdf-Q234",
+    "stem": "erythropoietin",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"erythropoietin\", ma=\"Histo:\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "Past Exams/💥Practical UG Exam 2024.pdf-Q36",
+    "stem": "Sertoli cell",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Sertoli cell\", ma=\"Model 2:\nAnatomy\". Wave 8 purification exclusion."
+  },
+  {
+    "sourceFile": "unknown",
+    "sourceOccurrence": "practical 2018-2020.pdf-Q3",
+    "stem": "Bulinus snail",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed essay fragment with no answer: stem=\"Bulinus snail\", ma=\"Micro\". Wave 8 purification exclusion."
   }
 ]

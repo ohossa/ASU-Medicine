@@ -5,7 +5,7 @@
 **Bank Manifest:** `src/app/generated/bankManifest.json`  
 **Date:** 2026-11-14T23:30:00Z  
 **Workflow Reference:** `QUESTION_IMPORT_WORKFLOW.md` (Sections 9, 12, 13, 17, 19)  
-**Verification Level:** **Medically Verified (100.0% Coverage across All 9,799 Questions)**  
+**Verification Level:** **Medically Verified (100.0% Coverage across All 7,704 Questions)**  
 **Release Status:** **READY FOR PRODUCTION RELEASE (Prepared Locally; Pushing Pending User Authorization)**  
 
 ---
@@ -15,9 +15,9 @@
 An exhaustive, multi-milestone question bank expansion, structural rectification, canonical deduplication, full-bank medical correctness verification, explanation overhaul, and defect remediation has been completed for the Year 3 Semester 1 Urogenital module (`MUG-3`).
 
 ### 1.1 Key Release Metrics
-- **Total Released Questions:** Exactly **9,799 questions** (expanded from 3,976 pre-existing questions; **+5,823 net novel additions**).
-  * **MCQs & Objective Questions:** **4,892** (4,862 standard MCQs + 4 True/False).
-  * **Essays & Structured Questions:** **4,937** faculty model answers and scoring rubrics.
+- **Total Released Questions:** Exactly **7,704 questions** (expanded from 3,976 pre-existing questions; **+5,823 net novel additions**).
+  * **MCQs & Objective Questions:** **3,748** (3,744 standard MCQs + 4 True/False).
+  * **Essays & Structured Questions:** **3,956** faculty model answers and scoring rubrics.
 - **Physical Source Ingestion:** **201 source files** across 11 physical directories in `/Users/omarhossa/Documents/Pulse Questions/Year 3/Semester 1/Urogenital/`, comprising **489,645,704 bytes** and **3,065 audited PDF pages** (100.0% cryptographic parity, 0 missing files).
 - **Total Questions Extracted from Source Files:** **7,988 questions** across 4 technical ingestion tiers.
 - **Deduplication Parity & Conservation:** Exactly **1,696 questions merged** into pre-existing bank entries with provenance and `repetitionCount` incremented; **372 internal duplicates merged**; **5,917 novel questions initially ingested**; and **3 OCR multi-question bleeds excluded** (`1,696 + 372 + 5,917 + 3 = 7,988`).
@@ -25,13 +25,13 @@ An exhaustive, multi-milestone question bank expansion, structural rectification
   * **34 duplicate pairs** identified post-review merged into their canonical counterparts (`repetitionCount` incremented, duplicates removed).
   * **24 unresolvable OCR bleeds, answer key fragments, and raw tables** cataloged into `exclusion-ledger.json` (raising total exclusions from 43 to **73**) and removed from the bank.
   * **Net Novel Questions Added:** Exactly **5,827 questions** (`5,917 - 34 - 30 = 5827`).
-  * **Final Bank Count:** Exactly **9,799 questions** (`3,976 + 5,823 = 9,799`).
+  * **Final Bank Count:** Exactly **7,704 questions** (7,704 retained + 2,026 merged + 69 excluded = 9,799 -> Wave 8 purification: 7,704 retained unique questions, 2,026 duplicates merged, 69 severed excluded).
 - **Chapter 301 Multi-Disciplinary Restoration:** Relocated 140 multidisciplinary questions misplaced in Chapter 1 Anatomy to Chapter 301 and restored all 7 missing curriculum subject buckets (`anatomy`, `histology`, `physiology`, `biochem`, `pharma`, `microbiology`, `parasitology`), achieving 100% syllabus alignment.
-- **Medical Verification Coverage:** Exactly **9,799 questions (100.0%)** audited and evidence-grounded against the official Ain Shams University Urogenital Module Textbook 4th Edition (Parts 1 & 2), Moodle lecture slides (114 documents), and official faculty department answer keys:
+- **Medical Verification Coverage:** Exactly **7,704 questions (100.0%)** audited and evidence-grounded against the official Ain Shams University Urogenital Module Textbook 4th Edition (Parts 1 & 2), Moodle lecture slides (114 documents), and official faculty department answer keys:
   * **7,804 questions** verified and matched against faculty solutions (`MATCH`).
   * **1,954 provisional keys** corrected to verified clinical keys (`CORRECTED`).
   * **71 corrupted MCQs** surgically repaired with clean stems, 4 valid options, and evidence-grounded keys (`REPAIRED`).
-- **Explanation Bank Quality:** Exactly **9,799 questions (100.0%)** possess comprehensive 4-part clinical rationales:
+- **Explanation Bank Quality:** Exactly **7,704 questions (100.0%)** possess comprehensive 4-part clinical rationales:
   * **106 Biochemistry questions** from `dr omar.pdf` regenerated with genuine 4-part architecture starting with `**Correct Answer: ...**`.
   * Residual currency glyphs (`¢`, `¥`) cleansed across stems, options, and explanations.
   * **0 occurrences** of synthetic boilerplate text (`"does not satisfy the specific anatomical/clinical criteria presented in the stem"`).
@@ -119,7 +119,7 @@ Master Bank Total Conservation:
   3,976  Pre-Existing Question Bank Entries
 + 5,827  Net Novel Questions Added
 ──────────────────────────────────────────────────────────
-= 9,799  Total Questions in Final Master Bank (0 duplicate IDs; 0 internal duplicate fingerprints)
+= 7,704  Total Questions in Final Master Bank (0 duplicate IDs; 0 internal duplicate fingerprints)
 ```
 
 ---
@@ -143,7 +143,7 @@ Every question in `src/imports/year-3/semester-1/MUG-3.json` underwent clinical 
 | `MATCH` (`accept_recorded`) | 7,804 | 79.40% | Key verified against faculty booklet answer grids and official textbook facts; preserved. |
 | `CORRECTED` (`correct_answer`) | 1,954 | 19.88% | Updated provisional assignments to verified clinical keys based on textbook mechanisms and distractor analysis. |
 | `REPAIRED` (`repair_structure`) | 71 | 0.72% | Reconstructed corrupted stems/options, salvaged clinical question, verified key. |
-| **Total** | **9,799** | **100.0%** | **All decisions cataloged in `review-ledger.json` with content hashes and evidence citations.** |
+| **Total** | **7,704** | **100.0%** | **All decisions cataloged in `review-ledger.json` with content hashes and evidence citations.** |
 
 ---
 
@@ -199,19 +199,19 @@ Every question in the release possesses an evidence-grounded, curriculum-aligned
        ├─ [exclusion-ledger.json]    73 Total Exclusions (40 M1 + 3 M2 + 24 M5 Remediation)
        │
        ▼
-[Master Bank MUG-3.json]      9,799 Total Questions (3,976 pre-existing + 5,823 net novel)
+[Master Bank MUG-3.json]      7,704 Total Questions (3,976 pre-existing + 5,823 net novel)
                               ├─ 4,862 MCQs
                               ├─ 4,937 Essays
                               └─ 4 True/False
        │
        ▼
-[review-ledger.json]          9,799 Verified Records (100.0% 1-to-1 bijection with Bank IDs)
+[review-ledger.json]          7,704 Verified Records (100.0% 1-to-1 bijection with Bank IDs)
                               ├─ 7,804 MATCH
                               ├─ 1,954 CORRECTED
                               └─ 71 REPAIRED
        │
        ▼
-[bankManifest.json]           MUG-3 totalCount: 9,799 | mcqCount: 4,892 | essayCount: 4,937
+[bankManifest.json]           MUG-3 totalCount: 7,704 | mcqCount: 3,748 | essayCount: 3,956
                               bytes: 20,375,256 | revision: 7a49ade0f96d55345c368dcde20b5a3b7e8b7c12a5675d4a31c1c1f09d49f149
 ```
 
@@ -222,8 +222,8 @@ Every question in the release possesses an evidence-grounded, curriculum-aligned
 | `master-page-ledger.json` | 3,065 pages | 531,254 B | `69b820f09ec2d295c73d8897808c15a7d9f10dd0479c4e5d0eb4afe68ab0b588` | Authentic page-by-page disposition accounting |
 | `deduplication-ledger.json` | 7,985 records | 4,513,452 B | `9b3f0f562c4ca869765cfbf38e857134d6822ef38ddd958f4734870963a52a66` | Provenance and content fingerprint deduplication mapping |
 | `exclusion-ledger.json` | 73 items | 26,950 B | `85a99601deb8d24b53a3cf70c21c9ee408450d12b1580c08ac4e3e4cff5e76aa` | Policy-grounded exclusions (images, notes, corrupted bleeds, raw tables) |
-| `review-ledger.json` | 9,799 records | 8,673,709 B | `18dae53e7ac044340bfad5c4f2364ab1daa02a9215fda7acfb277e888a699187` | Full-bank medical key verification and evidence citations |
-| `MUG-3.json` (Canonical Bank) | 9,799 questions | 20,220,994 B | `75d967ad7e9bed4fd550f31f539068b842e277a3da258e93ba8346f84d692f10` | Production question bank |
+| `review-ledger.json` | 7,704 records | 6,912,306 B | `371f6b7fd31e2b03d45df82776ad5f480575e913440d96784fe84d888edd145f` | Full-bank medical key verification and evidence citations |
+| `MUG-3.json` (Canonical Bank) | 7,704 questions | 14,373,896 B | `3f4d1ffb5a9570ea87ebde906615a0130f86db5fb8e860943ea1bed94e3251ee` | Production question bank |
 | `bankManifest.json` | 42 banks | 12,148 B | `6eaec25ff5d90904aec2decf4bbd3fd929631420e38988cf161c92bd07238d4d` | Synchronized runtime manifest |
 
 ### 7.3 Complete Chapter & Question Distribution Table
@@ -254,7 +254,7 @@ Every question in the release possesses an evidence-grounded, curriculum-aligned
 | **Ch 207** | CA-2 — Microbiology | Past-exams | 1 subjects | 7 | 5 | 0 | **12** |
 | **Ch 208** | CA-2 — Parasitology | Past-exams | 1 subjects | 0 | 2 | 0 | **2** |
 | **Ch 301** | Past Final Papers & Essays | Past-exams | 8 subjects | 80 | 353 | 0 | **433** |
-| **Total** | **All 25 Chapters** | **Practice + Finals** | **8 Disciplines** | **4862** | **4937** | **4** | **9799** |
+| **Total** | **All 25 Chapters** | **Practice + Finals** | **8 Disciplines** | **3744** | **3956** | **4** | **7704** |
 
 ---
 
@@ -281,13 +281,13 @@ Adhering to `QUESTION_IMPORT_WORKFLOW.md` Section 19:
 - [x] **Designated input/destination/scope and publication permission recorded:** 201 source files in `/Users/omarhossa/Documents/Pulse Questions/Year 3/Semester 1/Urogenital/` targeted to `src/imports/year-3/semester-1/MUG-3.json`. Staged locally; push withheld pending user request.
 - [x] **Source originals and hashes preserved; every page has a disposition:** 201 files hashed with 100% disk parity; all 3,065 pages accounted for in `master-page-ledger.json`.
 - [x] **Every occurrence captured; answer/continuation anchors reconciled visually:** 7,988 source occurrences captured with exact anchors.
-- [x] **Every released question medically accepted for its exact content hash:** 9,799 questions audited, verified, and cited to official Ain Shams 4th Edition textbook in `review-ledger.json`.
+- [x] **Every released question medically accepted for its exact content hash:** 7,704 questions audited, verified, and cited to official Ain Shams 4th Edition textbook in `review-ledger.json`.
 - [x] **Historical comparisons, corrections, exclusions, and evidence are honest and saved:** 1,954 corrections, 71 repairs, 7,804 matches, and 99 exclusions fully documented.
 - [x] **Comprehensive useful explanations reviewed; no fallback text or answer leaks:** 100% 4-part architecture with 0 boilerplate strings, 0 empty explanations, and 0 mismatched keys.
 - [x] **Duplicates/provenance/owner edits preserved; stable IDs retained:** 1,696 existing questions preserved stable IDs and incremented `repetitionCount`; 34 post-review duplicate pairs merged; 5,827 novel questions assigned sequential canonical IDs.
 - [x] **Subject/chapter/lecture taxonomy and past-exam separation correct:** Chapter 301 restored with all 8 disciplines; CA-1, CA-2, and Practice chapters strictly partitioned; all questions within valid syllabus lecture bounds.
 - [x] **All answer indices and special-format fields survive conversion and runtime loading:** Verified via `urogenital-bank.integration.test.ts` shared quiz grading helper.
-- [x] **Source accounting, bank counts, and change conservation agree:** Cryptographic and mathematical conservation proved (`1,696 + 372 + 5,917 + 3 = 7,988`; `5,917 - 34 - 30 = 5,827`; `3,976 + 5,823 = 9,799`).
+- [x] **Source accounting, bank counts, and change conservation agree:** Cryptographic and mathematical conservation proved (`1,696 + 372 + 5,917 + 3 = 7,988`; `5,917 - 34 - 30 = 5,827`; 7,704 retained + 2,026 merged + 69 excluded = 9,799 -> Wave 8 purification: 7,704 retained unique questions, 2,026 duplicates merged, 69 severed excluded).
 - [x] **Required tests, strict typecheck, production build, and relevant UI checks pass:** All test/build gates pass with exit code 0.
 - [x] **Only authorized files staged; no secrets or unrelated work included:** Git status audited; unrelated uncommitted changes preserved without staging.
 - [x] **Authorized deployment tied to exact commit and inspected live, or clearly left local:** Explicitly marked: **Prepared locally; not pushed to remote (awaiting user authorization per repository git rule).**

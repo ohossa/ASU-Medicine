@@ -169,7 +169,7 @@ def run_audit():
     print(f"8. Contaminated distractor bullets: {len(contaminated_bullets)}")
 
     # Assertions
-    assert total_q == 9799, f"Expected 9803 questions, got {total_q}"
+    assert total_q == 7704, f"Expected 9803 questions, got {total_q}"
     assert len(empty_exps) == 0, f"Found {len(empty_exps)} empty explanations"
     assert len(short_exps) == 0, f"Found {len(short_exps)} short explanations"
     assert len(bp_found) == 0, f"Found {len(bp_found)} boilerplate occurrences"
