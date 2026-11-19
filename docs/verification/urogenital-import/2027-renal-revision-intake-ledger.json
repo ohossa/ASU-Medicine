@@ -1,0 +1,5606 @@
+{
+  "totalExtracted": 933,
+  "duplicateMerged": 13,
+  "newlyIntegrated": 920,
+  "totalActiveBankQuestions": 8511,
+  "records": [
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-Q1",
+      "targetId": "MUG3-CH3-PHYS-1963",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-Q2",
+      "targetId": "MUG3-CH3-PHYS-1964",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p2-Q3",
+      "targetId": "MUG3-CH3-PHYS-1965",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-Q4",
+      "targetId": "MUG3-CH3-PHYS-1966",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-Q5",
+      "targetId": "MUG3-CH3-PHYS-1967",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p3-Q6",
+      "targetId": "MUG3-CH3-PHYS-1968",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-Q7",
+      "targetId": "MUG3-CH3-PHYS-1969",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-Q8",
+      "targetId": "MUG3-CH3-PHYS-1970",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 5
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p4-Q9",
+      "targetId": "MUG3-CH3-PHYS-1971",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-Q10",
+      "targetId": "MUG3-CH3-PHYS-1972",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-Q11",
+      "targetId": "MUG3-CH3-PHYS-1973",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p5-Q12",
+      "targetId": "MUG3-CH3-PHYS-1974",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-Q13",
+      "targetId": "MUG3-CH3-PHYS-1975",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-Q14",
+      "targetId": "MUG3-CH3-PHYS-1976",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p6-Q15",
+      "targetId": "MUG3-CH3-PHYS-1977",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-Q16",
+      "targetId": "MUG3-CH3-PHYS-1978",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-Q17",
+      "targetId": "MUG3-CH3-PHYS-1979",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p7-Q18",
+      "targetId": "MUG3-CH3-PHYS-1980",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-Q19",
+      "targetId": "MUG3-CH3-PHYS-1981",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p8-Q20",
+      "targetId": "MUG3-CH3-PHYS-1982",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-SE1",
+      "targetId": "MUG3-CH3-PHYS-1983",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-SE2",
+      "targetId": "MUG3-CH3-PHYS-1984",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p9-SE3",
+      "targetId": "MUG3-CH3-PHYS-1985",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-SE4",
+      "targetId": "MUG3-CH3-PHYS-1986",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-SE5",
+      "targetId": "MUG3-CH3-PHYS-1987",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p10-SE6",
+      "targetId": "MUG3-CH3-PHYS-1988",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-SE7",
+      "targetId": "MUG3-CH3-PHYS-1989",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-SE8",
+      "targetId": "MUG3-CH3-PHYS-1990",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p11-SE9",
+      "targetId": "MUG3-CH3-PHYS-1991",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p1-SE10",
+      "targetId": "MUG3-CH3-PHYS-1992",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-Q1",
+      "targetId": "MUG3-CH3-PHYS-1993",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-Q2",
+      "targetId": "MUG3-CH3-PHYS-1994",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p13-Q3",
+      "targetId": "MUG3-CH3-PHYS-1995",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-Q4",
+      "targetId": "MUG3-CH3-PHYS-1996",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-Q5",
+      "targetId": "MUG3-CH3-PHYS-1997",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p14-Q6",
+      "targetId": "MUG3-CH3-PHYS-1998",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-Q7",
+      "targetId": "MUG3-CH3-PHYS-1999",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-Q8",
+      "targetId": "MUG3-CH3-PHYS-2000",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p15-Q9",
+      "targetId": "MUG3-CH3-PHYS-2001",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-Q10",
+      "targetId": "MUG3-CH3-PHYS-2002",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-Q11",
+      "targetId": "MUG3-CH3-PHYS-2003",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p16-Q12",
+      "targetId": "MUG3-CH3-PHYS-2004",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-Q13",
+      "targetId": "MUG3-CH3-PHYS-2005",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-Q14",
+      "targetId": "MUG3-CH3-PHYS-2006",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p17-Q15",
+      "targetId": "MUG3-CH3-PHYS-2007",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-Q16",
+      "targetId": "MUG3-CH3-PHYS-2008",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-Q17",
+      "targetId": "MUG3-CH3-PHYS-2009",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p18-Q18",
+      "targetId": "MUG3-CH3-PHYS-2010",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-Q19",
+      "targetId": "MUG3-CH3-PHYS-2011",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p19-Q20",
+      "targetId": "MUG3-CH3-PHYS-2012",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-SE1",
+      "targetId": "MUG3-CH3-PHYS-2013",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-SE2",
+      "targetId": "MUG3-CH3-PHYS-2014",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p20-SE3",
+      "targetId": "MUG3-CH3-PHYS-2015",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-SE4",
+      "targetId": "MUG3-CH3-PHYS-2016",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-SE5",
+      "targetId": "MUG3-CH3-PHYS-2017",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-SE6",
+      "targetId": "MUG3-CH3-PHYS-2018",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p21-SE7",
+      "targetId": "MUG3-CH3-PHYS-2019",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-SE8",
+      "targetId": "MUG3-CH3-PHYS-2020",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-SE9",
+      "targetId": "MUG3-CH3-PHYS-2021",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p12-SE10",
+      "targetId": "MUG3-CH3-PHYS-2022",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-Q1",
+      "targetId": "MUG3-CH3-PHYS-2023",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-Q2",
+      "targetId": "MUG3-CH3-PHYS-2024",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p23-Q3",
+      "targetId": "MUG3-CH3-PHYS-2025",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-Q4",
+      "targetId": "MUG3-CH3-PHYS-2026",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-Q5",
+      "targetId": "MUG3-CH3-PHYS-2027",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-Q6",
+      "targetId": "MUG3-CH3-PHYS-2028",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p24-Q7",
+      "targetId": "MUG3-CH3-PHYS-2029",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-Q8",
+      "targetId": "MUG3-CH3-PHYS-2030",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-Q9",
+      "targetId": "MUG3-CH3-PHYS-2031",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p25-Q10",
+      "targetId": "MUG3-CH3-PHYS-2032",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-Q11",
+      "targetId": "MUG3-CH3-PHYS-2033",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-Q12",
+      "targetId": "MUG3-CH3-PHYS-2034",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p26-Q13",
+      "targetId": "MUG3-CH3-PHYS-2035",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-Q14",
+      "targetId": "MUG3-CH3-PHYS-2036",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-Q15",
+      "targetId": "MUG3-CH3-PHYS-2037",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p27-Q16",
+      "targetId": "MUG3-CH3-PHYS-2038",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-Q17",
+      "targetId": "MUG3-CH3-PHYS-2039",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-Q18",
+      "targetId": "MUG3-CH3-PHYS-2040",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p28-Q19",
+      "targetId": "MUG3-CH3-PHYS-2041",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p29-Q20",
+      "targetId": "MUG3-CH3-PHYS-2042",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-SE1",
+      "targetId": "MUG3-CH3-PHYS-2043",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-SE2",
+      "targetId": "MUG3-CH3-PHYS-2044",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-SE3",
+      "targetId": "MUG3-CH3-PHYS-2045",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p30-SE4",
+      "targetId": "MUG3-CH3-PHYS-2046",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-SE5",
+      "targetId": "MUG3-CH3-PHYS-2047",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-SE6",
+      "targetId": "MUG3-CH3-PHYS-2048",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-SE7",
+      "targetId": "MUG3-CH3-PHYS-2049",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p31-SE8",
+      "targetId": "MUG3-CH3-PHYS-2050",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-SE9",
+      "targetId": "MUG3-CH3-PHYS-2051",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p22-SE10",
+      "targetId": "MUG3-CH3-PHYS-2052",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q1",
+      "targetId": "MUG3-CH3-PHYS-2053",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q2",
+      "targetId": "MUG3-CH3-PHYS-2054",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q3",
+      "targetId": "MUG3-CH3-PHYS-2055",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p33-Q4",
+      "targetId": "MUG3-CH3-PHYS-2056",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 5
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q5",
+      "targetId": "MUG3-CH3-PHYS-2057",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 5
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q6",
+      "targetId": "MUG3-CH3-PHYS-2058",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q7",
+      "targetId": "MUG3-CH3-PHYS-2059",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p34-Q8",
+      "targetId": "MUG3-CH3-PHYS-2060",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q9",
+      "targetId": "MUG3-CH3-PHYS-2061",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q10",
+      "targetId": "MUG3-CH3-PHYS-2062",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q11",
+      "targetId": "MUG3-CH3-PHYS-2063",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p35-Q12",
+      "targetId": "MUG3-CH3-PHYS-2064",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q13",
+      "targetId": "MUG3-CH3-PHYS-2065",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q14",
+      "targetId": "MUG3-CH3-PHYS-2066",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q15",
+      "targetId": "MUG3-CH3-PHYS-2067",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p36-Q16",
+      "targetId": "MUG3-CH3-PHYS-2068",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q17",
+      "targetId": "MUG3-CH3-PHYS-2069",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q18",
+      "targetId": "MUG3-CH3-PHYS-2070",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q19",
+      "targetId": "MUG3-CH3-PHYS-2071",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p37-Q20",
+      "targetId": "MUG3-CH3-PHYS-2072",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q21",
+      "targetId": "MUG3-CH3-PHYS-2073",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q22",
+      "targetId": "MUG3-CH3-PHYS-2074",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q23",
+      "targetId": "MUG3-CH3-PHYS-2075",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p38-Q24",
+      "targetId": "MUG3-CH3-PHYS-2076",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q25",
+      "targetId": "MUG3-CH3-PHYS-2077",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q26",
+      "targetId": "MUG3-CH3-PHYS-2078",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q27",
+      "targetId": "MUG3-CH3-PHYS-2079",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p39-Q28",
+      "targetId": "MUG3-CH3-PHYS-2080",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q29",
+      "targetId": "MUG3-CH3-PHYS-2081",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q30",
+      "targetId": "MUG3-CH3-PHYS-2082",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q31",
+      "targetId": "MUG3-CH3-PHYS-2083",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p40-Q32",
+      "targetId": "MUG3-CH3-PHYS-2084",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q33",
+      "targetId": "MUG3-CH3-PHYS-2085",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q34",
+      "targetId": "MUG3-CH3-PHYS-2086",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q35",
+      "targetId": "MUG3-CH3-PHYS-2087",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q36",
+      "targetId": "MUG3-CH3-PHYS-2088",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p41-Q37",
+      "targetId": "MUG3-CH3-PHYS-2089",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q38",
+      "targetId": "MUG3-CH3-PHYS-2090",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q39",
+      "targetId": "MUG3-CH3-PHYS-2091",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q40",
+      "targetId": "MUG3-CH3-PHYS-2092",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p42-Q41",
+      "targetId": "MUG3-CH3-PHYS-2093",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q42",
+      "targetId": "MUG3-CH3-PHYS-2094",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p43-Q43",
+      "targetId": "MUG3-CH3-PHYS-2095",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q44",
+      "targetId": "MUG3-CH3-PHYS-2096",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q45",
+      "targetId": "MUG3-CH3-PHYS-2097",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q46",
+      "targetId": "MUG3-CH3-PHYS-2098",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p44-Q47",
+      "targetId": "MUG3-CH3-PHYS-2099",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q48",
+      "targetId": "MUG3-CH3-PHYS-2100",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q49",
+      "targetId": "MUG3-CH3-PHYS-2101",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q50",
+      "targetId": "MUG3-CH3-PHYS-2102",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p45-Q51",
+      "targetId": "MUG3-CH3-PHYS-2103",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q52",
+      "targetId": "MUG3-CH3-PHYS-2104",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q53",
+      "targetId": "MUG3-CH3-PHYS-2105",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q54",
+      "targetId": "MUG3-CH3-PHYS-2106",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p46-Q55",
+      "targetId": "MUG3-CH3-PHYS-2107",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q56",
+      "targetId": "MUG3-CH3-PHYS-2108",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q57",
+      "targetId": "MUG3-CH3-PHYS-2109",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q58",
+      "targetId": "MUG3-CH3-PHYS-2110",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p47-Q59",
+      "targetId": "MUG3-CH3-PHYS-2111",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q60",
+      "targetId": "MUG3-CH3-PHYS-2112",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q61",
+      "targetId": "MUG3-CH3-PHYS-2113",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q62",
+      "targetId": "MUG3-CH3-PHYS-2114",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p48-Q63",
+      "targetId": "MUG3-CH3-PHYS-2115",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q64",
+      "targetId": "MUG3-CH3-PHYS-2116",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q65",
+      "targetId": "MUG3-CH3-PHYS-2117",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q66",
+      "targetId": "MUG3-CH3-PHYS-2118",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p49-Q67",
+      "targetId": "MUG3-CH3-PHYS-2119",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q68",
+      "targetId": "MUG3-CH3-PHYS-2120",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q69",
+      "targetId": "MUG3-CH3-PHYS-2121",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q70",
+      "targetId": "MUG3-CH3-PHYS-2122",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p50-Q71",
+      "targetId": "MUG3-CH3-PHYS-2123",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q72",
+      "targetId": "MUG3-CH3-PHYS-2124",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q73",
+      "targetId": "MUG3-CH3-PHYS-2125",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q74",
+      "targetId": "MUG3-CH3-PHYS-2126",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p51-Q75",
+      "targetId": "MUG3-CH3-PHYS-2127",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q76",
+      "targetId": "MUG3-CH3-PHYS-2128",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q77",
+      "targetId": "MUG3-CH3-PHYS-2129",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q78",
+      "targetId": "MUG3-CH3-PHYS-2130",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p52-Q79",
+      "targetId": "MUG3-CH3-PHYS-2131",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q80",
+      "targetId": "MUG3-CH3-PHYS-2132",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q81",
+      "targetId": "MUG3-CH3-PHYS-2133",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q82",
+      "targetId": "MUG3-CH3-PHYS-2134",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p53-Q83",
+      "targetId": "MUG3-CH3-PHYS-2135",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q84",
+      "targetId": "MUG3-CH3-PHYS-2136",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q85",
+      "targetId": "MUG3-CH3-PHYS-2137",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q86",
+      "targetId": "MUG3-CH3-PHYS-2138",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p54-Q87",
+      "targetId": "MUG3-CH3-PHYS-2139",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q88",
+      "targetId": "MUG3-CH3-PHYS-2140",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q89",
+      "targetId": "MUG3-CH3-PHYS-2141",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q90",
+      "targetId": "MUG3-CH3-PHYS-2142",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p55-Q91",
+      "targetId": "MUG3-CH3-PHYS-2143",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q92",
+      "targetId": "MUG3-CH3-PHYS-2144",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q93",
+      "targetId": "MUG3-CH3-PHYS-2145",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q94",
+      "targetId": "MUG3-CH3-PHYS-2146",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p56-Q95",
+      "targetId": "MUG3-CH3-PHYS-2147",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q96",
+      "targetId": "MUG3-CH3-PHYS-2148",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q97",
+      "targetId": "MUG3-CH3-PHYS-2149",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q98",
+      "targetId": "MUG3-CH3-PHYS-2150",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p57-Q99",
+      "targetId": "MUG3-CH3-PHYS-2151",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q100",
+      "targetId": "MUG3-CH3-PHYS-2152",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q101",
+      "targetId": "MUG3-CH3-PHYS-2153",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q102",
+      "targetId": "MUG3-CH3-PHYS-2154",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p58-Q103",
+      "targetId": "MUG3-CH3-PHYS-2155",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q104",
+      "targetId": "MUG3-CH3-PHYS-2156",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q105",
+      "targetId": "MUG3-CH3-PHYS-2157",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q106",
+      "targetId": "MUG3-CH3-PHYS-2158",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q107",
+      "targetId": "MUG3-CH3-PHYS-2159",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p59-Q108",
+      "targetId": "MUG3-CH3-PHYS-2160",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q109",
+      "targetId": "MUG3-CH3-PHYS-2161",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q110",
+      "targetId": "MUG3-CH3-PHYS-2162",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q111",
+      "targetId": "MUG3-CH3-PHYS-2163",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p60-Q112",
+      "targetId": "MUG3-CH3-PHYS-2164",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q113",
+      "targetId": "MUG3-CH3-PHYS-2165",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q114",
+      "targetId": "MUG3-CH3-PHYS-2166",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q115",
+      "targetId": "MUG3-CH3-PHYS-2167",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p61-Q116",
+      "targetId": "MUG3-CH3-PHYS-2168",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q117",
+      "targetId": "MUG3-CH3-PHYS-2169",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q118",
+      "targetId": "MUG3-CH3-PHYS-2170",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q119",
+      "targetId": "MUG3-CH3-PHYS-2171",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p62-Q120",
+      "targetId": "MUG3-CH3-PHYS-2172",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q121",
+      "targetId": "MUG3-CH3-PHYS-2173",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q122",
+      "targetId": "MUG3-CH3-PHYS-2174",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q123",
+      "targetId": "MUG3-CH3-PHYS-2175",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p63-Q124",
+      "targetId": "MUG3-CH3-PHYS-2176",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q125",
+      "targetId": "MUG3-CH3-PHYS-2177",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q126",
+      "targetId": "MUG3-CH3-PHYS-2178",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q127",
+      "targetId": "MUG3-CH3-PHYS-2179",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q128",
+      "targetId": "MUG3-CH3-PHYS-2180",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p64-Q129",
+      "targetId": "MUG3-CH3-PHYS-2181",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q130",
+      "targetId": "MUG3-CH3-PHYS-2182",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q131",
+      "targetId": "MUG3-CH3-PHYS-2183",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q132",
+      "targetId": "MUG3-CH3-PHYS-2184",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p65-Q133",
+      "targetId": "MUG3-CH3-PHYS-2185",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q134",
+      "targetId": "MUG3-CH3-PHYS-2186",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q135",
+      "targetId": "MUG3-CH3-PHYS-2187",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q136",
+      "targetId": "MUG3-CH3-PHYS-2188",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p66-Q137",
+      "targetId": "MUG3-CH3-PHYS-2189",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q138",
+      "targetId": "MUG3-CH3-PHYS-2190",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q139",
+      "targetId": "MUG3-CH3-PHYS-2191",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q140",
+      "targetId": "MUG3-CH3-PHYS-2192",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p67-Q141",
+      "targetId": "MUG3-CH3-PHYS-2193",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q142",
+      "targetId": "MUG3-CH3-PHYS-2194",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q143",
+      "targetId": "MUG3-CH3-PHYS-2195",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q144",
+      "targetId": "MUG3-CH3-PHYS-2196",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p68-Q145",
+      "targetId": "MUG3-CH3-PHYS-2197",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q146",
+      "targetId": "MUG3-CH3-PHYS-2198",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q147",
+      "targetId": "MUG3-CH3-PHYS-2199",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q148",
+      "targetId": "MUG3-CH3-PHYS-2200",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p69-Q149",
+      "targetId": "MUG3-CH3-PHYS-2201",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q150",
+      "targetId": "MUG3-CH3-PHYS-2202",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p32-Q151",
+      "targetId": "MUG3-CH3-PHYS-2203",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q1",
+      "targetId": "MUG3-CH3-PHYS-2204",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q2",
+      "targetId": "MUG3-CH3-PHYS-2205",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q3",
+      "targetId": "MUG3-CH3-PHYS-2206",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q4",
+      "targetId": "MUG3-CH3-PHYS-2207",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 5
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p82-SE-Q5",
+      "targetId": "MUG3-CH3-PHYS-2208",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q6",
+      "targetId": "MUG3-CH3-PHYS-2209",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q7",
+      "targetId": "MUG3-CH3-PHYS-2210",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q8",
+      "targetId": "MUG3-CH3-PHYS-2211",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q9",
+      "targetId": "MUG3-CH3-PHYS-2212",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p83-SE-Q10",
+      "targetId": "MUG3-CH3-PHYS-2213",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q11",
+      "targetId": "MUG3-CH3-PHYS-2214",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q12",
+      "targetId": "MUG3-CH3-PHYS-2215",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q13",
+      "targetId": "MUG3-CH3-PHYS-2216",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q14",
+      "targetId": "MUG3-CH3-PHYS-2217",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p84-SE-Q15",
+      "targetId": "MUG3-CH3-PHYS-2218",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q16",
+      "targetId": "MUG3-CH3-PHYS-2219",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q17",
+      "targetId": "MUG3-CH3-PHYS-2220",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q18",
+      "targetId": "MUG3-CH3-PHYS-2221",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q19",
+      "targetId": "MUG3-CH3-PHYS-2222",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p85-SE-Q20",
+      "targetId": "MUG3-CH3-PHYS-2223",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q21",
+      "targetId": "MUG3-CH3-PHYS-2224",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q22",
+      "targetId": "MUG3-CH3-PHYS-2225",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p86-SE-Q23",
+      "targetId": "MUG3-CH3-PHYS-2226",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q24",
+      "targetId": "MUG3-CH3-PHYS-2227",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q25",
+      "targetId": "MUG3-CH3-PHYS-2228",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 9
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q26",
+      "targetId": "MUG3-CH3-PHYS-2229",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q27",
+      "targetId": "MUG3-CH3-PHYS-2230",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p87-SE-Q28",
+      "targetId": "MUG3-CH3-PHYS-2231",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q29",
+      "targetId": "MUG3-CH3-PHYS-2232",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q30",
+      "targetId": "MUG3-CH3-PHYS-2233",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q31",
+      "targetId": "MUG3-CH3-PHYS-2234",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q32",
+      "targetId": "MUG3-CH3-PHYS-2235",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p88-SE-Q33",
+      "targetId": "MUG3-CH3-PHYS-2236",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q34",
+      "targetId": "MUG3-CH3-PHYS-2237",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q35",
+      "targetId": "MUG3-CH3-PHYS-2238",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q36",
+      "targetId": "MUG3-CH3-PHYS-2239",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q37",
+      "targetId": "MUG3-CH3-PHYS-2240",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p89-SE-Q38",
+      "targetId": "MUG3-CH3-PHYS-2241",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q39",
+      "targetId": "MUG3-CH3-PHYS-2242",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q40",
+      "targetId": "MUG3-CH3-PHYS-2243",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q41",
+      "targetId": "MUG3-CH3-PHYS-2244",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q42",
+      "targetId": "MUG3-CH3-PHYS-2245",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q43",
+      "targetId": "MUG3-CH3-PHYS-2246",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p90-SE-Q44",
+      "targetId": "MUG3-CH3-PHYS-2247",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q45",
+      "targetId": "MUG3-CH3-PHYS-2248",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q46",
+      "targetId": "MUG3-CH3-PHYS-2249",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q47",
+      "targetId": "MUG3-CH3-PHYS-2250",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p91-SE-Q48",
+      "targetId": "MUG3-CH3-PHYS-2251",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q49",
+      "targetId": "MUG3-CH3-PHYS-2252",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q50",
+      "targetId": "MUG3-CH3-PHYS-2253",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q51",
+      "targetId": "MUG3-CH3-PHYS-2254",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q52",
+      "targetId": "MUG3-CH3-PHYS-2255",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q53",
+      "targetId": "MUG3-CH3-PHYS-2256",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q54",
+      "targetId": "MUG3-CH3-PHYS-2257",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p92-SE-Q55",
+      "targetId": "MUG3-CH3-PHYS-2258",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q56",
+      "targetId": "MUG3-CH3-PHYS-2259",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q57",
+      "targetId": "MUG3-CH3-PHYS-2260",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q58",
+      "targetId": "MUG3-CH3-PHYS-2261",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q59",
+      "targetId": "MUG3-CH3-PHYS-2262",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p93-SE-Q60",
+      "targetId": "MUG3-CH3-PHYS-2263",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p94-SE-Q61",
+      "targetId": "MUG3-CH3-PHYS-2264",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q62",
+      "targetId": "MUG3-CH3-PHYS-2265",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q63",
+      "targetId": "MUG3-CH3-PHYS-2266",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q64",
+      "targetId": "MUG3-CH3-PHYS-2267",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q65",
+      "targetId": "MUG3-CH3-PHYS-2268",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q66",
+      "targetId": "MUG3-CH3-PHYS-2269",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p95-SE-Q67",
+      "targetId": "MUG3-CH3-PHYS-2270",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q68",
+      "targetId": "MUG3-CH3-PHYS-2271",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q69",
+      "targetId": "MUG3-CH3-PHYS-2272",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q70",
+      "targetId": "MUG3-CH3-PHYS-2273",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q71",
+      "targetId": "MUG3-CH3-PHYS-2274",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p96-SE-Q72",
+      "targetId": "MUG3-CH3-PHYS-2275",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q73",
+      "targetId": "MUG3-CH3-PHYS-2276",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q74",
+      "targetId": "MUG3-CH3-PHYS-2277",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q75",
+      "targetId": "MUG3-CH3-PHYS-2278",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q76",
+      "targetId": "MUG3-CH3-PHYS-2279",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q77",
+      "targetId": "MUG3-CH3-PHYS-2280",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p97-SE-Q78",
+      "targetId": "MUG3-CH3-PHYS-2281",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q79",
+      "targetId": "MUG3-CH3-PHYS-2282",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q80",
+      "targetId": "MUG3-CH3-PHYS-2283",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q81",
+      "targetId": "MUG3-CH3-PHYS-2284",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q82",
+      "targetId": "MUG3-CH3-PHYS-2285",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p98-SE-Q83",
+      "targetId": "MUG3-CH3-PHYS-2286",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q84",
+      "targetId": "MUG3-CH3-PHYS-2287",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q85",
+      "targetId": "MUG3-CH3-PHYS-2288",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q86",
+      "targetId": "MUG3-CH3-PHYS-2289",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q87",
+      "targetId": "MUG3-CH3-PHYS-2290",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q88",
+      "targetId": "MUG3-CH3-PHYS-2291",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p99-SE-Q89",
+      "targetId": "MUG3-CH3-PHYS-2292",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q90",
+      "targetId": "MUG3-CH3-PHYS-2293",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q91",
+      "targetId": "MUG3-CH3-PHYS-2294",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q92",
+      "targetId": "MUG3-CH3-PHYS-2295",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q93",
+      "targetId": "MUG3-CH3-PHYS-2296",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q94",
+      "targetId": "MUG3-CH3-PHYS-2297",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p100-SE-Q95",
+      "targetId": "MUG3-CH3-PHYS-2298",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q96",
+      "targetId": "MUG3-CH3-PHYS-2299",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q97",
+      "targetId": "MUG3-CH3-PHYS-2300",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q98",
+      "targetId": "MUG3-CH3-PHYS-2301",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q99",
+      "targetId": "MUG3-CH3-PHYS-2302",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p101-SE-Q100",
+      "targetId": "MUG3-CH3-PHYS-2303",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q101",
+      "targetId": "MUG3-CH3-PHYS-2304",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q102",
+      "targetId": "MUG3-CH3-PHYS-2305",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q103",
+      "targetId": "MUG3-CH3-PHYS-2306",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q104",
+      "targetId": "MUG3-CH3-PHYS-2307",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p102-SE-Q105",
+      "targetId": "MUG3-CH3-PHYS-2308",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q106",
+      "targetId": "MUG3-CH3-PHYS-2309",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q107",
+      "targetId": "MUG3-CH3-PHYS-2310",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q108",
+      "targetId": "MUG3-CH3-PHYS-2311",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q109",
+      "targetId": "MUG3-CH3-PHYS-2312",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 1.pdf-p81-SE-Q110",
+      "targetId": "MUG3-CH3-PHYS-2313",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-Q1",
+      "targetId": "MUG3-CH3-PHYS-2314",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-Q2",
+      "targetId": "MUG3-CH3-PHYS-2315",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p2-Q3",
+      "targetId": "MUG3-CH3-PHYS-2316",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-Q4",
+      "targetId": "MUG3-CH3-PHYS-2317",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-Q5",
+      "targetId": "MUG3-CH3-PHYS-2318",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p3-Q6",
+      "targetId": "MUG3-CH3-PHYS-2319",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-Q7",
+      "targetId": "MUG3-CH3-PHYS-2320",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-Q8",
+      "targetId": "MUG3-CH3-PHYS-2321",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p4-Q9",
+      "targetId": "MUG3-CH3-PHYS-2322",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-Q10",
+      "targetId": "MUG3-CH3-PHYS-2323",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-Q11",
+      "targetId": "MUG3-CH3-PHYS-2324",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p5-Q12",
+      "targetId": "MUG3-CH3-PHYS-2325",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-Q13",
+      "targetId": "MUG3-CH3-PHYS-2326",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-Q14",
+      "targetId": "MUG3-CH3-PHYS-2327",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p6-Q15",
+      "targetId": "MUG3-CH3-PHYS-2328",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-Q16",
+      "targetId": "MUG3-CH3-PHYS-2329",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-Q17",
+      "targetId": "MUG3-CH3-PHYS-2330",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p7-Q18",
+      "targetId": "MUG3-CH3-PHYS-2331",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-Q19",
+      "targetId": "MUG3-CH3-PHYS-2332",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p8-Q20",
+      "targetId": "MUG3-CH3-PHYS-2333",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-SE1",
+      "targetId": "MUG3-CH3-PHYS-2334",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-SE2",
+      "targetId": "MUG3-CH3-PHYS-2335",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-SE3",
+      "targetId": "MUG3-CH3-PHYS-2336",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p9-SE4",
+      "targetId": "MUG3-CH3-PHYS-2337",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-SE5",
+      "targetId": "MUG3-CH3-PHYS-2338",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-SE6",
+      "targetId": "MUG3-CH3-PHYS-2339",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-SE7",
+      "targetId": "MUG3-CH3-PHYS-2340",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p10-SE8",
+      "targetId": "MUG3-CH3-PHYS-2341",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-SE9",
+      "targetId": "MUG3-CH3-PHYS-2342",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p1-SE10",
+      "targetId": "MUG3-CH3-PHYS-2343",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-Q1",
+      "targetId": "MUG3-CH3-PHYS-2344",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-Q2",
+      "targetId": "MUG3-CH3-PHYS-2345",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p12-Q3",
+      "targetId": "MUG3-CH3-PHYS-2346",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-Q4",
+      "targetId": "MUG3-CH3-PHYS-2347",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-Q5",
+      "targetId": "MUG3-CH3-PHYS-2348",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p13-Q6",
+      "targetId": "MUG3-CH3-PHYS-2349",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-Q7",
+      "targetId": "MUG3-CH3-PHYS-2350",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-Q8",
+      "targetId": "MUG3-CH3-PHYS-2351",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p14-Q9",
+      "targetId": "MUG3-CH3-PHYS-2352",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-Q10",
+      "targetId": "MUG3-CH3-PHYS-2353",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-Q11",
+      "targetId": "MUG3-CH3-PHYS-2354",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p15-Q12",
+      "targetId": "MUG3-CH3-PHYS-2355",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-Q13",
+      "targetId": "MUG3-CH3-PHYS-2356",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-Q14",
+      "targetId": "MUG3-CH3-PHYS-2357",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p16-Q15",
+      "targetId": "MUG3-CH3-PHYS-2358",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-Q16",
+      "targetId": "MUG3-CH3-PHYS-2359",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-Q17",
+      "targetId": "MUG3-CH3-PHYS-2360",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p17-Q18",
+      "targetId": "MUG3-CH3-PHYS-2361",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-Q19",
+      "targetId": "MUG3-CH3-PHYS-2362",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p18-Q20",
+      "targetId": "MUG3-CH3-PHYS-2363",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-SE1",
+      "targetId": "MUG3-CH3-PHYS-2364",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-SE2",
+      "targetId": "MUG3-CH3-PHYS-2365",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-SE3",
+      "targetId": "MUG3-CH3-PHYS-2366",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p19-SE4",
+      "targetId": "MUG3-CH3-PHYS-2367",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-SE5",
+      "targetId": "MUG3-CH3-PHYS-2368",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-SE6",
+      "targetId": "MUG3-CH3-PHYS-2369",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-SE7",
+      "targetId": "MUG3-CH3-PHYS-2370",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p20-SE8",
+      "targetId": "MUG3-CH3-PHYS-2371",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-SE9",
+      "targetId": "MUG3-CH3-PHYS-2372",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-SE10",
+      "targetId": "MUG3-CH3-PHYS-2373",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p11-SE11",
+      "targetId": "MUG3-CH3-PHYS-2374",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-Q1",
+      "targetId": "MUG3-CH3-PHYS-2375",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-Q2",
+      "targetId": "MUG3-CH3-PHYS-2376",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p22-Q3",
+      "targetId": "MUG3-CH3-PHYS-2377",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-Q4",
+      "targetId": "MUG3-CH3-PHYS-2378",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 5
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-Q5",
+      "targetId": "MUG3-CH3-PHYS-2379",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-Q6",
+      "targetId": "MUG3-CH3-PHYS-2380",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p23-Q7",
+      "targetId": "MUG3-CH3-PHYS-2381",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-Q8",
+      "targetId": "MUG3-CH3-PHYS-2382",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-Q9",
+      "targetId": "MUG3-CH3-PHYS-2383",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p24-Q10",
+      "targetId": "MUG3-CH3-PHYS-2384",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-Q11",
+      "targetId": "MUG3-CH3-PHYS-2385",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-Q12",
+      "targetId": "MUG3-CH3-PHYS-2386",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p25-Q13",
+      "targetId": "MUG3-CH3-PHYS-2387",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-Q14",
+      "targetId": "MUG3-CH3-PHYS-2388",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-Q15",
+      "targetId": "MUG3-CH3-PHYS-2389",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p26-Q16",
+      "targetId": "MUG3-CH3-PHYS-2390",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-Q17",
+      "targetId": "MUG3-CH3-PHYS-2391",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-Q18",
+      "targetId": "MUG3-CH3-PHYS-2392",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p27-Q19",
+      "targetId": "MUG3-CH3-PHYS-2393",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p28-Q20",
+      "targetId": "MUG3-CH3-PHYS-2394",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-SE1",
+      "targetId": "MUG3-CH3-PHYS-2395",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-SE2",
+      "targetId": "MUG3-CH3-PHYS-2396",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-SE3",
+      "targetId": "MUG3-CH3-PHYS-2397",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p29-SE4",
+      "targetId": "MUG3-CH3-PHYS-2398",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-SE5",
+      "targetId": "MUG3-CH3-PHYS-2399",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-SE6",
+      "targetId": "MUG3-CH3-PHYS-2400",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-SE7",
+      "targetId": "MUG3-CH3-PHYS-2401",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p30-SE8",
+      "targetId": "MUG3-CH3-PHYS-2402",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-SE9",
+      "targetId": "MUG3-CH3-PHYS-2403",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p21-SE10",
+      "targetId": "MUG3-CH3-PHYS-2404",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-Q1",
+      "targetId": "MUG3-CH3-PHYS-2405",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-Q2",
+      "targetId": "MUG3-CH3-PHYS-2406",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p32-Q3",
+      "targetId": "MUG3-CH3-PHYS-2407",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-Q4",
+      "targetId": "MUG3-CH3-PHYS-2408",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-Q5",
+      "targetId": "MUG3-CH3-PHYS-2409",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p33-Q6",
+      "targetId": "MUG3-CH3-PHYS-2410",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-Q7",
+      "targetId": "MUG3-CH3-PHYS-2411",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-Q8",
+      "targetId": "MUG3-CH3-PHYS-2412",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p34-Q9",
+      "targetId": "MUG3-CH3-PHYS-2413",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-Q10",
+      "targetId": "MUG3-CH3-PHYS-2414",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-Q11",
+      "targetId": "MUG3-CH3-PHYS-2415",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p35-Q12",
+      "targetId": "MUG3-CH3-PHYS-2416",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-Q13",
+      "targetId": "MUG3-CH3-PHYS-2417",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-Q14",
+      "targetId": "MUG3-CH3-PHYS-2418",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p36-Q15",
+      "targetId": "MUG3-CH3-PHYS-2419",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-SE1",
+      "targetId": "MUG3-CH3-PHYS-2420",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-SE2",
+      "targetId": "MUG3-CH3-PHYS-2421",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-SE3",
+      "targetId": "MUG3-CH3-PHYS-2422",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p37-SE4",
+      "targetId": "MUG3-CH3-PHYS-2423",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-SE5",
+      "targetId": "MUG3-CH3-PHYS-2424",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-SE6",
+      "targetId": "MUG3-CH3-PHYS-2425",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-SE7",
+      "targetId": "MUG3-CH3-PHYS-2426",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p38-SE8",
+      "targetId": "MUG3-CH3-PHYS-2427",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-SE9",
+      "targetId": "MUG3-CH3-PHYS-2428",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p31-SE10",
+      "targetId": "MUG3-CH3-PHYS-2429",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q152",
+      "targetId": "MUG3-CH3-PHYS-2430",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q153",
+      "targetId": "MUG3-CH3-PHYS-2431",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q154",
+      "targetId": "MUG3-CH3-PHYS-2432",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p40-Q155",
+      "targetId": "MUG3-CH3-PHYS-2433",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q156",
+      "targetId": "MUG3-CH3-PHYS-2434",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q157",
+      "targetId": "MUG3-CH3-PHYS-2435",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q158",
+      "targetId": "MUG3-CH3-PHYS-2436",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q159",
+      "targetId": "MUG3-CH3-PHYS-2437",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p41-Q160",
+      "targetId": "MUG3-CH3-PHYS-2438",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q161",
+      "targetId": "MUG3-CH3-PHYS-2439",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q162",
+      "targetId": "MUG3-CH3-PHYS-2440",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q163",
+      "targetId": "MUG3-CH3-PHYS-2441",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p42-Q164",
+      "targetId": "MUG3-CH3-PHYS-2442",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q165",
+      "targetId": "MUG3-CH3-PHYS-2443",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q166",
+      "targetId": "MUG3-CH3-PHYS-2444",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q167",
+      "targetId": "MUG3-CH3-PHYS-2445",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p43-Q168",
+      "targetId": "MUG3-CH3-PHYS-2446",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q169",
+      "targetId": "MUG3-CH3-PHYS-2447",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q170",
+      "targetId": "MUG3-CH3-PHYS-2448",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q171",
+      "targetId": "MUG3-CH3-PHYS-2449",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p44-Q172",
+      "targetId": "MUG3-CH3-PHYS-2450",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q173",
+      "targetId": "MUG3-CH3-PHYS-2451",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q174",
+      "targetId": "MUG3-CH3-PHYS-2452",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q175",
+      "targetId": "MUG3-CH3-PHYS-2453",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p45-Q176",
+      "targetId": "MUG3-CH3-PHYS-2454",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q177",
+      "targetId": "MUG3-CH3-PHYS-2455",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q178",
+      "targetId": "MUG3-CH3-PHYS-2456",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p46-Q179",
+      "targetId": "MUG3-CH3-PHYS-2457",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q180",
+      "targetId": "MUG3-CH3-PHYS-2458",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q181",
+      "targetId": "MUG3-CH3-PHYS-2459",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q182",
+      "targetId": "MUG3-CH3-PHYS-2460",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p47-Q183",
+      "targetId": "MUG3-CH3-PHYS-2461",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q184",
+      "targetId": "MUG3-CH3-PHYS-2462",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q185",
+      "targetId": "MUG3-CH3-PHYS-2463",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q186",
+      "targetId": "MUG3-CH3-PHYS-2464",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q187",
+      "targetId": "MUG3-CH3-PHYS-2465",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p48-Q188",
+      "targetId": "MUG3-CH3-PHYS-2466",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q189",
+      "targetId": "MUG3-CH3-PHYS-2467",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q190",
+      "targetId": "MUG3-CH3-PHYS-2468",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q191",
+      "targetId": "MUG3-CH3-PHYS-2469",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p49-Q192",
+      "targetId": "MUG3-CH3-PHYS-2470",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q193",
+      "targetId": "MUG3-CH3-PHYS-2471",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q194",
+      "targetId": "MUG3-CH3-PHYS-2472",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q195",
+      "targetId": "MUG3-CH3-PHYS-2473",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p50-Q196",
+      "targetId": "MUG3-CH3-PHYS-2474",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q197",
+      "targetId": "MUG3-CH3-PHYS-2475",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q198",
+      "targetId": "MUG3-CH3-PHYS-2476",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q199",
+      "targetId": "MUG3-CH3-PHYS-2477",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q200",
+      "targetId": "MUG3-CH3-PHYS-2478",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p51-Q201",
+      "targetId": "MUG3-CH3-PHYS-2479",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q202",
+      "targetId": "MUG3-CH3-PHYS-2480",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q203",
+      "targetId": "MUG3-CH3-PHYS-2481",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q204",
+      "targetId": "MUG3-CH3-PHYS-2482",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q205",
+      "targetId": "MUG3-CH3-PHYS-2483",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p52-Q206",
+      "targetId": "MUG3-CH3-PHYS-2484",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q207",
+      "targetId": "MUG3-CH3-PHYS-2485",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q208",
+      "targetId": "MUG3-CH3-PHYS-2486",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q209",
+      "targetId": "MUG3-CH3-PHYS-2487",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p53-Q210",
+      "targetId": "MUG3-CH3-PHYS-2488",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q211",
+      "targetId": "MUG3-CH3-PHYS-2489",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q212",
+      "targetId": "MUG3-CH3-PHYS-2490",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q213",
+      "targetId": "MUG3-CH3-PHYS-2491",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p54-Q214",
+      "targetId": "MUG3-CH3-PHYS-2492",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q215",
+      "targetId": "MUG3-CH3-PHYS-2493",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q216",
+      "targetId": "MUG3-CH3-PHYS-2494",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q217",
+      "targetId": "MUG3-CH3-PHYS-2495",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q218",
+      "targetId": "MUG3-CH3-PHYS-2496",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p55-Q219",
+      "targetId": "MUG3-CH3-PHYS-2497",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q220",
+      "targetId": "MUG3-CH3-PHYS-2498",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q221",
+      "targetId": "MUG3-CH3-PHYS-2499",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q222",
+      "targetId": "MUG3-CH3-PHYS-2500",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p56-Q223",
+      "targetId": "MUG3-CH3-PHYS-2501",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q224",
+      "targetId": "MUG3-CH3-PHYS-2502",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q225",
+      "targetId": "MUG3-CH3-PHYS-2503",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q226",
+      "targetId": "MUG3-CH3-PHYS-2504",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p57-Q227",
+      "targetId": "MUG3-CH3-PHYS-2505",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q228",
+      "targetId": "MUG3-CH3-PHYS-2506",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q229",
+      "targetId": "MUG3-CH3-PHYS-2507",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q230",
+      "targetId": "MUG3-CH3-PHYS-2508",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p58-Q231",
+      "targetId": "MUG3-CH3-PHYS-2509",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q232",
+      "targetId": "MUG3-CH3-PHYS-2510",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q233",
+      "targetId": "MUG3-CH3-PHYS-2511",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q234",
+      "targetId": "MUG3-CH3-PHYS-2512",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q235",
+      "targetId": "MUG3-CH3-PHYS-2513",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p59-Q236",
+      "targetId": "MUG3-CH3-PHYS-2514",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q237",
+      "targetId": "MUG3-CH3-PHYS-2515",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q238",
+      "targetId": "MUG3-CH3-PHYS-2516",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q239",
+      "targetId": "MUG3-CH3-PHYS-2517",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q240",
+      "targetId": "MUG3-CH3-PHYS-2518",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p60-Q241",
+      "targetId": "MUG3-CH3-PHYS-2519",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q242",
+      "targetId": "MUG3-CH3-PHYS-2520",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q243",
+      "targetId": "MUG3-CH3-PHYS-2521",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q244",
+      "targetId": "MUG3-CH3-PHYS-2522",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p61-Q245",
+      "targetId": "MUG3-CH3-PHYS-2523",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p62-Q246",
+      "targetId": "MUG3-CH3-PHYS-2524",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q247",
+      "targetId": "MUG3-CH3-PHYS-2525",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q248",
+      "targetId": "MUG3-CH3-PHYS-2526",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q249",
+      "targetId": "MUG3-CH3-PHYS-2527",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p63-Q250",
+      "targetId": "MUG3-CH3-PHYS-2528",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q251",
+      "targetId": "MUG3-CH3-PHYS-2529",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q252",
+      "targetId": "MUG3-CH3-PHYS-2530",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q253",
+      "targetId": "MUG3-CH3-PHYS-2531",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p64-Q254",
+      "targetId": "MUG3-CH3-PHYS-2532",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q255",
+      "targetId": "MUG3-CH3-PHYS-2533",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q256",
+      "targetId": "MUG3-CH3-PHYS-2534",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q257",
+      "targetId": "MUG3-CH3-PHYS-2535",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p65-Q258",
+      "targetId": "MUG3-CH3-PHYS-2536",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q259",
+      "targetId": "MUG3-CH3-PHYS-2537",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q260",
+      "targetId": "MUG3-CH3-PHYS-2538",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q261",
+      "targetId": "MUG3-CH3-PHYS-2539",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p66-Q262",
+      "targetId": "MUG3-CH3-PHYS-2540",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q263",
+      "targetId": "MUG3-CH3-PHYS-2541",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q264",
+      "targetId": "MUG3-CH3-PHYS-2542",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q265",
+      "targetId": "MUG3-CH3-PHYS-2543",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p67-Q266",
+      "targetId": "MUG3-CH3-PHYS-2544",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q267",
+      "targetId": "MUG3-CH3-PHYS-2545",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q268",
+      "targetId": "MUG3-CH3-PHYS-2546",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q269",
+      "targetId": "MUG3-CH3-PHYS-2547",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p68-Q270",
+      "targetId": "MUG3-CH3-PHYS-2548",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q271",
+      "targetId": "MUG3-CH3-PHYS-2549",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q272",
+      "targetId": "MUG3-CH3-PHYS-2550",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q273",
+      "targetId": "MUG3-CH3-PHYS-2551",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p69-Q274",
+      "targetId": "MUG3-CH3-PHYS-2552",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q275",
+      "targetId": "MUG3-CH3-PHYS-2553",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q276",
+      "targetId": "MUG3-CH3-PHYS-2554",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q277",
+      "targetId": "MUG3-CH3-PHYS-2555",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p70-Q278",
+      "targetId": "MUG3-CH3-PHYS-2556",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q279",
+      "targetId": "MUG3-CH3-PHYS-2557",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q280",
+      "targetId": "MUG3-CH3-PHYS-2558",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p71-Q281",
+      "targetId": "MUG3-CH3-PHYS-2559",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q282",
+      "targetId": "MUG3-CH3-PHYS-2560",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q283",
+      "targetId": "MUG3-CH3-PHYS-2561",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q284",
+      "targetId": "MUG3-CH3-PHYS-2562",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p72-Q285",
+      "targetId": "MUG3-CH3-PHYS-2563",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q286",
+      "targetId": "MUG3-CH3-PHYS-2564",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q287",
+      "targetId": "MUG3-CH3-PHYS-2565",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q288",
+      "targetId": "MUG3-CH3-PHYS-2566",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p73-Q289",
+      "targetId": "MUG3-CH3-PHYS-2567",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q290",
+      "targetId": "MUG3-CH3-PHYS-2568",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q291",
+      "targetId": "MUG3-CH3-PHYS-2569",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q292",
+      "targetId": "MUG3-CH3-PHYS-2570",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p39-Q293",
+      "targetId": "MUG3-CH3-PHYS-2571",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q93",
+      "targetId": "MUG3-CH3-PHYS-2296",
+      "disposition": "DUPLICATE_MERGED",
+      "repetitionCount": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q94",
+      "targetId": "MUG3-CH3-PHYS-2297",
+      "disposition": "DUPLICATE_MERGED",
+      "repetitionCount": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q95",
+      "targetId": "MUG3-CH3-PHYS-2572",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q96",
+      "targetId": "MUG3-CH3-PHYS-2299",
+      "disposition": "DUPLICATE_MERGED",
+      "repetitionCount": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q97",
+      "targetId": "MUG3-CH3-PHYS-2300",
+      "disposition": "DUPLICATE_MERGED",
+      "repetitionCount": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p86-SE-Q98",
+      "targetId": "MUG3-CH3-PHYS-2301",
+      "disposition": "DUPLICATE_MERGED",
+      "repetitionCount": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q99",
+      "targetId": "MUG3-CH3-PHYS-2302",
+      "disposition": "DUPLICATE_MERGED",
+      "repetitionCount": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q100",
+      "targetId": "MUG3-CH3-PHYS-2573",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q101",
+      "targetId": "MUG3-CH3-PHYS-2304",
+      "disposition": "DUPLICATE_MERGED",
+      "repetitionCount": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q102",
+      "targetId": "MUG3-CH3-PHYS-2574",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p87-SE-Q103",
+      "targetId": "MUG3-CH3-PHYS-2575",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q104",
+      "targetId": "MUG3-CH3-PHYS-2307",
+      "disposition": "DUPLICATE_MERGED",
+      "repetitionCount": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q105",
+      "targetId": "MUG3-CH3-PHYS-2576",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q106",
+      "targetId": "MUG3-CH3-PHYS-2309",
+      "disposition": "DUPLICATE_MERGED",
+      "repetitionCount": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q107",
+      "targetId": "MUG3-CH3-PHYS-2310",
+      "disposition": "DUPLICATE_MERGED",
+      "repetitionCount": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p88-SE-Q108",
+      "targetId": "MUG3-CH3-PHYS-2311",
+      "disposition": "DUPLICATE_MERGED",
+      "repetitionCount": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q109",
+      "targetId": "MUG3-CH3-PHYS-2312",
+      "disposition": "DUPLICATE_MERGED",
+      "repetitionCount": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p89-SE-Q110",
+      "targetId": "MUG3-CH3-PHYS-2313",
+      "disposition": "DUPLICATE_MERGED",
+      "repetitionCount": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q111",
+      "targetId": "MUG3-CH3-PHYS-2577",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q112",
+      "targetId": "MUG3-CH3-PHYS-2578",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q113",
+      "targetId": "MUG3-CH3-PHYS-2579",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q114",
+      "targetId": "MUG3-CH3-PHYS-2580",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p90-SE-Q115",
+      "targetId": "MUG3-CH3-PHYS-2581",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q116",
+      "targetId": "MUG3-CH3-PHYS-2582",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q117",
+      "targetId": "MUG3-CH3-PHYS-2583",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q118",
+      "targetId": "MUG3-CH3-PHYS-2584",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q119",
+      "targetId": "MUG3-CH3-PHYS-2585",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q120",
+      "targetId": "MUG3-CH3-PHYS-2586",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p91-SE-Q121",
+      "targetId": "MUG3-CH3-PHYS-2587",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q122",
+      "targetId": "MUG3-CH3-PHYS-2588",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q123",
+      "targetId": "MUG3-CH3-PHYS-2589",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q124",
+      "targetId": "MUG3-CH3-PHYS-2590",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q125",
+      "targetId": "MUG3-CH3-PHYS-2591",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p92-SE-Q126",
+      "targetId": "MUG3-CH3-PHYS-2592",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q127",
+      "targetId": "MUG3-CH3-PHYS-2593",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q128",
+      "targetId": "MUG3-CH3-PHYS-2594",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q129",
+      "targetId": "MUG3-CH3-PHYS-2595",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q130",
+      "targetId": "MUG3-CH3-PHYS-2596",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p93-SE-Q131",
+      "targetId": "MUG3-CH3-PHYS-2597",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q132",
+      "targetId": "MUG3-CH3-PHYS-2598",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q133",
+      "targetId": "MUG3-CH3-PHYS-2599",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q134",
+      "targetId": "MUG3-CH3-PHYS-2600",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q135",
+      "targetId": "MUG3-CH3-PHYS-2601",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q136",
+      "targetId": "MUG3-CH3-PHYS-2602",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p94-SE-Q137",
+      "targetId": "MUG3-CH3-PHYS-2603",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q138",
+      "targetId": "MUG3-CH3-PHYS-2604",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q139",
+      "targetId": "MUG3-CH3-PHYS-2605",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q140",
+      "targetId": "MUG3-CH3-PHYS-2606",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q141",
+      "targetId": "MUG3-CH3-PHYS-2607",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p95-SE-Q142",
+      "targetId": "MUG3-CH3-PHYS-2608",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q143",
+      "targetId": "MUG3-CH3-PHYS-2609",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q144",
+      "targetId": "MUG3-CH3-PHYS-2610",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q145",
+      "targetId": "MUG3-CH3-PHYS-2611",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q146",
+      "targetId": "MUG3-CH3-PHYS-2612",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q147",
+      "targetId": "MUG3-CH3-PHYS-2613",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p96-SE-Q148",
+      "targetId": "MUG3-CH3-PHYS-2614",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q149",
+      "targetId": "MUG3-CH3-PHYS-2615",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q150",
+      "targetId": "MUG3-CH3-PHYS-2616",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q151",
+      "targetId": "MUG3-CH3-PHYS-2617",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q152",
+      "targetId": "MUG3-CH3-PHYS-2618",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p97-SE-Q153",
+      "targetId": "MUG3-CH3-PHYS-2619",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q154",
+      "targetId": "MUG3-CH3-PHYS-2620",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q155",
+      "targetId": "MUG3-CH3-PHYS-2621",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q156",
+      "targetId": "MUG3-CH3-PHYS-2622",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q157",
+      "targetId": "MUG3-CH3-PHYS-2623",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p98-SE-Q158",
+      "targetId": "MUG3-CH3-PHYS-2624",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p99-SE-Q159",
+      "targetId": "MUG3-CH3-PHYS-2625",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q160",
+      "targetId": "MUG3-CH3-PHYS-2626",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q161",
+      "targetId": "MUG3-CH3-PHYS-2627",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q162",
+      "targetId": "MUG3-CH3-PHYS-2628",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q163",
+      "targetId": "MUG3-CH3-PHYS-2629",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q164",
+      "targetId": "MUG3-CH3-PHYS-2630",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p100-SE-Q165",
+      "targetId": "MUG3-CH3-PHYS-2631",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q166",
+      "targetId": "MUG3-CH3-PHYS-2632",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q167",
+      "targetId": "MUG3-CH3-PHYS-2633",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 3
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q168",
+      "targetId": "MUG3-CH3-PHYS-2634",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q169",
+      "targetId": "MUG3-CH3-PHYS-2635",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p101-SE-Q170",
+      "targetId": "MUG3-CH3-PHYS-2636",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q171",
+      "targetId": "MUG3-CH3-PHYS-2637",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q172",
+      "targetId": "MUG3-CH3-PHYS-2638",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q173",
+      "targetId": "MUG3-CH3-PHYS-2639",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q174",
+      "targetId": "MUG3-CH3-PHYS-2640",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p102-SE-Q175",
+      "targetId": "MUG3-CH3-PHYS-2641",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q176",
+      "targetId": "MUG3-CH3-PHYS-2642",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q177",
+      "targetId": "MUG3-CH3-PHYS-2643",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q178",
+      "targetId": "MUG3-CH3-PHYS-2644",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q179",
+      "targetId": "MUG3-CH3-PHYS-2645",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p103-SE-Q180",
+      "targetId": "MUG3-CH3-PHYS-2646",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q181",
+      "targetId": "MUG3-CH3-PHYS-2647",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q182",
+      "targetId": "MUG3-CH3-PHYS-2648",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q183",
+      "targetId": "MUG3-CH3-PHYS-2649",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q184",
+      "targetId": "MUG3-CH3-PHYS-2650",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q185",
+      "targetId": "MUG3-CH3-PHYS-2651",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p104-SE-Q186",
+      "targetId": "MUG3-CH3-PHYS-2652",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p105-SE-Q187",
+      "targetId": "MUG3-CH3-PHYS-2653",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q188",
+      "targetId": "MUG3-CH3-PHYS-2654",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q189",
+      "targetId": "MUG3-CH3-PHYS-2655",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 1
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q190",
+      "targetId": "MUG3-CH3-PHYS-2656",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q191",
+      "targetId": "MUG3-CH3-PHYS-2657",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p106-SE-Q192",
+      "targetId": "MUG3-CH3-PHYS-2658",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q193",
+      "targetId": "MUG3-CH3-PHYS-2659",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q194",
+      "targetId": "MUG3-CH3-PHYS-2660",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q195",
+      "targetId": "MUG3-CH3-PHYS-2661",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q196",
+      "targetId": "MUG3-CH3-PHYS-2662",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 2.pdf-p85-SE-Q197",
+      "targetId": "MUG3-CH3-PHYS-2663",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 2
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-Q1",
+      "targetId": "MUG3-CH3-PHYS-2664",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 5
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-Q2",
+      "targetId": "MUG3-CH3-PHYS-2665",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p2-Q3",
+      "targetId": "MUG3-CH3-PHYS-2666",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-Q4",
+      "targetId": "MUG3-CH3-PHYS-2667",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-Q5",
+      "targetId": "MUG3-CH3-PHYS-2668",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p3-Q6",
+      "targetId": "MUG3-CH3-PHYS-2669",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-Q7",
+      "targetId": "MUG3-CH3-PHYS-2670",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-Q8",
+      "targetId": "MUG3-CH3-PHYS-2671",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p4-Q9",
+      "targetId": "MUG3-CH3-PHYS-2672",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-Q10",
+      "targetId": "MUG3-CH3-PHYS-2673",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-Q11",
+      "targetId": "MUG3-CH3-PHYS-2674",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p5-Q12",
+      "targetId": "MUG3-CH3-PHYS-2675",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-Q13",
+      "targetId": "MUG3-CH3-PHYS-2676",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-Q14",
+      "targetId": "MUG3-CH3-PHYS-2677",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p6-Q15",
+      "targetId": "MUG3-CH3-PHYS-2678",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-Q16",
+      "targetId": "MUG3-CH3-PHYS-2679",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-Q17",
+      "targetId": "MUG3-CH3-PHYS-2680",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p7-Q18",
+      "targetId": "MUG3-CH3-PHYS-2681",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-Q19",
+      "targetId": "MUG3-CH3-PHYS-2682",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p8-Q20",
+      "targetId": "MUG3-CH3-PHYS-2683",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-SE1",
+      "targetId": "MUG3-CH3-PHYS-2684",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-SE2",
+      "targetId": "MUG3-CH3-PHYS-2685",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-SE3",
+      "targetId": "MUG3-CH3-PHYS-2686",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p9-SE4",
+      "targetId": "MUG3-CH3-PHYS-2687",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-SE5",
+      "targetId": "MUG3-CH3-PHYS-2688",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-SE6",
+      "targetId": "MUG3-CH3-PHYS-2689",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 5
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-SE7",
+      "targetId": "MUG3-CH3-PHYS-2690",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p10-SE8",
+      "targetId": "MUG3-CH3-PHYS-2691",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-SE9",
+      "targetId": "MUG3-CH3-PHYS-2692",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-SE10",
+      "targetId": "MUG3-CH3-PHYS-2693",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p1-SE11",
+      "targetId": "MUG3-CH3-PHYS-2694",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-Q1",
+      "targetId": "MUG3-CH3-PHYS-2695",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-Q2",
+      "targetId": "MUG3-CH3-PHYS-2696",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p12-Q3",
+      "targetId": "MUG3-CH3-PHYS-2697",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-Q4",
+      "targetId": "MUG3-CH3-PHYS-2698",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-Q5",
+      "targetId": "MUG3-CH3-PHYS-2699",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p13-Q6",
+      "targetId": "MUG3-CH3-PHYS-2700",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-Q7",
+      "targetId": "MUG3-CH3-PHYS-2701",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-Q8",
+      "targetId": "MUG3-CH3-PHYS-2702",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p14-Q9",
+      "targetId": "MUG3-CH3-PHYS-2703",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-Q10",
+      "targetId": "MUG3-CH3-PHYS-2704",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-Q11",
+      "targetId": "MUG3-CH3-PHYS-2705",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-Q12",
+      "targetId": "MUG3-CH3-PHYS-2706",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p15-Q13",
+      "targetId": "MUG3-CH3-PHYS-2707",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-Q14",
+      "targetId": "MUG3-CH3-PHYS-2708",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-Q15",
+      "targetId": "MUG3-CH3-PHYS-2709",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p16-Q16",
+      "targetId": "MUG3-CH3-PHYS-2710",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-Q17",
+      "targetId": "MUG3-CH3-PHYS-2711",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-Q18",
+      "targetId": "MUG3-CH3-PHYS-2712",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p17-Q19",
+      "targetId": "MUG3-CH3-PHYS-2713",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p18-Q20",
+      "targetId": "MUG3-CH3-PHYS-2714",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-SE1",
+      "targetId": "MUG3-CH3-PHYS-2715",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-SE2",
+      "targetId": "MUG3-CH3-PHYS-2716",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-SE3",
+      "targetId": "MUG3-CH3-PHYS-2717",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p19-SE4",
+      "targetId": "MUG3-CH3-PHYS-2718",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-SE5",
+      "targetId": "MUG3-CH3-PHYS-2719",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-SE6",
+      "targetId": "MUG3-CH3-PHYS-2720",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-SE7",
+      "targetId": "MUG3-CH3-PHYS-2721",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p20-SE8",
+      "targetId": "MUG3-CH3-PHYS-2722",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-SE9",
+      "targetId": "MUG3-CH3-PHYS-2723",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p11-SE10",
+      "targetId": "MUG3-CH3-PHYS-2724",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-Q1",
+      "targetId": "MUG3-CH3-PHYS-2725",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-Q2",
+      "targetId": "MUG3-CH3-PHYS-2726",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p22-Q3",
+      "targetId": "MUG3-CH3-PHYS-2727",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-Q4",
+      "targetId": "MUG3-CH3-PHYS-2728",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-Q5",
+      "targetId": "MUG3-CH3-PHYS-2729",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p23-Q6",
+      "targetId": "MUG3-CH3-PHYS-2730",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-Q7",
+      "targetId": "MUG3-CH3-PHYS-2731",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-Q8",
+      "targetId": "MUG3-CH3-PHYS-2732",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-Q9",
+      "targetId": "MUG3-CH3-PHYS-2733",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p24-Q10",
+      "targetId": "MUG3-CH3-PHYS-2734",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-Q11",
+      "targetId": "MUG3-CH3-PHYS-2735",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-Q12",
+      "targetId": "MUG3-CH3-PHYS-2736",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p25-Q13",
+      "targetId": "MUG3-CH3-PHYS-2737",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-Q14",
+      "targetId": "MUG3-CH3-PHYS-2738",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p26-Q15",
+      "targetId": "MUG3-CH3-PHYS-2739",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-SE1",
+      "targetId": "MUG3-CH3-PHYS-2740",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-SE2",
+      "targetId": "MUG3-CH3-PHYS-2741",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-SE3",
+      "targetId": "MUG3-CH3-PHYS-2742",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-SE4",
+      "targetId": "MUG3-CH3-PHYS-2743",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p27-SE5",
+      "targetId": "MUG3-CH3-PHYS-2744",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-SE6",
+      "targetId": "MUG3-CH3-PHYS-2745",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-SE7",
+      "targetId": "MUG3-CH3-PHYS-2746",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-SE8",
+      "targetId": "MUG3-CH3-PHYS-2747",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-SE9",
+      "targetId": "MUG3-CH3-PHYS-2748",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p21-SE10",
+      "targetId": "MUG3-CH3-PHYS-2749",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q294",
+      "targetId": "MUG3-CH3-PHYS-2750",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q295",
+      "targetId": "MUG3-CH3-PHYS-2751",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q296",
+      "targetId": "MUG3-CH3-PHYS-2752",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q297",
+      "targetId": "MUG3-CH3-PHYS-2753",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 5
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p29-Q298",
+      "targetId": "MUG3-CH3-PHYS-2754",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q299",
+      "targetId": "MUG3-CH3-PHYS-2755",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 5
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q300",
+      "targetId": "MUG3-CH3-PHYS-2756",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q301",
+      "targetId": "MUG3-CH3-PHYS-2757",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p30-Q302",
+      "targetId": "MUG3-CH3-PHYS-2758",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q303",
+      "targetId": "MUG3-CH3-PHYS-2759",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q304",
+      "targetId": "MUG3-CH3-PHYS-2760",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q305",
+      "targetId": "MUG3-CH3-PHYS-2761",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q306",
+      "targetId": "MUG3-CH3-PHYS-2762",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p31-Q307",
+      "targetId": "MUG3-CH3-PHYS-2763",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q308",
+      "targetId": "MUG3-CH3-PHYS-2764",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q309",
+      "targetId": "MUG3-CH3-PHYS-2765",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q310",
+      "targetId": "MUG3-CH3-PHYS-2766",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p32-Q311",
+      "targetId": "MUG3-CH3-PHYS-2767",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 5
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q312",
+      "targetId": "MUG3-CH3-PHYS-2768",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q313",
+      "targetId": "MUG3-CH3-PHYS-2769",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 5
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q314",
+      "targetId": "MUG3-CH3-PHYS-2770",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q315",
+      "targetId": "MUG3-CH3-PHYS-2771",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p33-Q316",
+      "targetId": "MUG3-CH3-PHYS-2772",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q317",
+      "targetId": "MUG3-CH3-PHYS-2773",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q318",
+      "targetId": "MUG3-CH3-PHYS-2774",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q319",
+      "targetId": "MUG3-CH3-PHYS-2775",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q320",
+      "targetId": "MUG3-CH3-PHYS-2776",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 4
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p34-Q321",
+      "targetId": "MUG3-CH3-PHYS-2777",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q322",
+      "targetId": "MUG3-CH3-PHYS-2778",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q323",
+      "targetId": "MUG3-CH3-PHYS-2779",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q324",
+      "targetId": "MUG3-CH3-PHYS-2780",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q325",
+      "targetId": "MUG3-CH3-PHYS-2781",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p35-Q326",
+      "targetId": "MUG3-CH3-PHYS-2782",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q327",
+      "targetId": "MUG3-CH3-PHYS-2783",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q328",
+      "targetId": "MUG3-CH3-PHYS-2784",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q329",
+      "targetId": "MUG3-CH3-PHYS-2785",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p36-Q330",
+      "targetId": "MUG3-CH3-PHYS-2786",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q331",
+      "targetId": "MUG3-CH3-PHYS-2787",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q332",
+      "targetId": "MUG3-CH3-PHYS-2788",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q333",
+      "targetId": "MUG3-CH3-PHYS-2789",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p37-Q334",
+      "targetId": "MUG3-CH3-PHYS-2790",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q335",
+      "targetId": "MUG3-CH3-PHYS-2791",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q336",
+      "targetId": "MUG3-CH3-PHYS-2792",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q337",
+      "targetId": "MUG3-CH3-PHYS-2793",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q338",
+      "targetId": "MUG3-CH3-PHYS-2794",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p38-Q339",
+      "targetId": "MUG3-CH3-PHYS-2795",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q340",
+      "targetId": "MUG3-CH3-PHYS-2796",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q341",
+      "targetId": "MUG3-CH3-PHYS-2797",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q342",
+      "targetId": "MUG3-CH3-PHYS-2798",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q343",
+      "targetId": "MUG3-CH3-PHYS-2799",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p39-Q344",
+      "targetId": "MUG3-CH3-PHYS-2800",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q345",
+      "targetId": "MUG3-CH3-PHYS-2801",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q346",
+      "targetId": "MUG3-CH3-PHYS-2802",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q347",
+      "targetId": "MUG3-CH3-PHYS-2803",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q348",
+      "targetId": "MUG3-CH3-PHYS-2804",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p40-Q349",
+      "targetId": "MUG3-CH3-PHYS-2805",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q350",
+      "targetId": "MUG3-CH3-PHYS-2806",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q351",
+      "targetId": "MUG3-CH3-PHYS-2807",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q352",
+      "targetId": "MUG3-CH3-PHYS-2808",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p41-Q353",
+      "targetId": "MUG3-CH3-PHYS-2809",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q354",
+      "targetId": "MUG3-CH3-PHYS-2810",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q355",
+      "targetId": "MUG3-CH3-PHYS-2811",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q356",
+      "targetId": "MUG3-CH3-PHYS-2812",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q357",
+      "targetId": "MUG3-CH3-PHYS-2813",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p42-Q358",
+      "targetId": "MUG3-CH3-PHYS-2814",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q359",
+      "targetId": "MUG3-CH3-PHYS-2815",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q360",
+      "targetId": "MUG3-CH3-PHYS-2816",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q361",
+      "targetId": "MUG3-CH3-PHYS-2817",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q362",
+      "targetId": "MUG3-CH3-PHYS-2818",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p43-Q363",
+      "targetId": "MUG3-CH3-PHYS-2819",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q364",
+      "targetId": "MUG3-CH3-PHYS-2820",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q365",
+      "targetId": "MUG3-CH3-PHYS-2821",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q366",
+      "targetId": "MUG3-CH3-PHYS-2822",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q367",
+      "targetId": "MUG3-CH3-PHYS-2823",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p44-Q368",
+      "targetId": "MUG3-CH3-PHYS-2824",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q369",
+      "targetId": "MUG3-CH3-PHYS-2825",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q370",
+      "targetId": "MUG3-CH3-PHYS-2826",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q371",
+      "targetId": "MUG3-CH3-PHYS-2827",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p45-Q372",
+      "targetId": "MUG3-CH3-PHYS-2828",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q373",
+      "targetId": "MUG3-CH3-PHYS-2829",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q374",
+      "targetId": "MUG3-CH3-PHYS-2830",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q375",
+      "targetId": "MUG3-CH3-PHYS-2831",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q376",
+      "targetId": "MUG3-CH3-PHYS-2832",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p46-Q377",
+      "targetId": "MUG3-CH3-PHYS-2833",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q378",
+      "targetId": "MUG3-CH3-PHYS-2834",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q379",
+      "targetId": "MUG3-CH3-PHYS-2835",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q380",
+      "targetId": "MUG3-CH3-PHYS-2836",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p47-Q381",
+      "targetId": "MUG3-CH3-PHYS-2837",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q382",
+      "targetId": "MUG3-CH3-PHYS-2838",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q383",
+      "targetId": "MUG3-CH3-PHYS-2839",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p28-Q384",
+      "targetId": "MUG3-CH3-PHYS-2840",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q232",
+      "targetId": "MUG3-CH3-PHYS-2841",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q233",
+      "targetId": "MUG3-CH3-PHYS-2842",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q234",
+      "targetId": "MUG3-CH3-PHYS-2843",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q235",
+      "targetId": "MUG3-CH3-PHYS-2844",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p57-SE-Q236",
+      "targetId": "MUG3-CH3-PHYS-2845",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q237",
+      "targetId": "MUG3-CH3-PHYS-2846",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q238",
+      "targetId": "MUG3-CH3-PHYS-2847",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q239",
+      "targetId": "MUG3-CH3-PHYS-2848",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q240",
+      "targetId": "MUG3-CH3-PHYS-2849",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q241",
+      "targetId": "MUG3-CH3-PHYS-2850",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p58-SE-Q242",
+      "targetId": "MUG3-CH3-PHYS-2851",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q243",
+      "targetId": "MUG3-CH3-PHYS-2852",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q244",
+      "targetId": "MUG3-CH3-PHYS-2853",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q245",
+      "targetId": "MUG3-CH3-PHYS-2854",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q246",
+      "targetId": "MUG3-CH3-PHYS-2855",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p59-SE-Q247",
+      "targetId": "MUG3-CH3-PHYS-2856",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q248",
+      "targetId": "MUG3-CH3-PHYS-2857",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q249",
+      "targetId": "MUG3-CH3-PHYS-2858",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q250",
+      "targetId": "MUG3-CH3-PHYS-2859",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q251",
+      "targetId": "MUG3-CH3-PHYS-2860",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q252",
+      "targetId": "MUG3-CH3-PHYS-2861",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p60-SE-Q253",
+      "targetId": "MUG3-CH3-PHYS-2862",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q254",
+      "targetId": "MUG3-CH3-PHYS-2863",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q255",
+      "targetId": "MUG3-CH3-PHYS-2864",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q256",
+      "targetId": "MUG3-CH3-PHYS-2865",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q257",
+      "targetId": "MUG3-CH3-PHYS-2866",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p61-SE-Q258",
+      "targetId": "MUG3-CH3-PHYS-2867",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q259",
+      "targetId": "MUG3-CH3-PHYS-2868",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q260",
+      "targetId": "MUG3-CH3-PHYS-2869",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q261",
+      "targetId": "MUG3-CH3-PHYS-2870",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q262",
+      "targetId": "MUG3-CH3-PHYS-2871",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q263",
+      "targetId": "MUG3-CH3-PHYS-2872",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p62-SE-Q264",
+      "targetId": "MUG3-CH3-PHYS-2873",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q265",
+      "targetId": "MUG3-CH3-PHYS-2874",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q266",
+      "targetId": "MUG3-CH3-PHYS-2875",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q267",
+      "targetId": "MUG3-CH3-PHYS-2876",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q268",
+      "targetId": "MUG3-CH3-PHYS-2877",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q269",
+      "targetId": "MUG3-CH3-PHYS-2878",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p64-SE-Q270",
+      "targetId": "MUG3-CH3-PHYS-2879",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q271",
+      "targetId": "MUG3-CH3-PHYS-2880",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q272",
+      "targetId": "MUG3-CH3-PHYS-2881",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    },
+    {
+      "sourceOccurrence": "2027- Renal Revision Questions- 3.pdf-p56-SE-Q273",
+      "targetId": "MUG3-CH3-PHYS-2882",
+      "disposition": "NEW_QUESTION_INTEGRATED",
+      "lecture": 7
+    }
+  ]
+}

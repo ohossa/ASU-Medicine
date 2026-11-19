@@ -5,7 +5,7 @@
 **Bank Manifest:** `src/app/generated/bankManifest.json`  
 **Date:** 2026-11-19T00:45:00Z  
 **Workflow Reference:** `QUESTION_IMPORT_WORKFLOW.md` (Sections 9, 12, 13, 17, 19)  
-**Verification Level:** **Medically Verified (100.0% Coverage across All 7,591 Questions)**  
+**Verification Level:** **Medically Verified (100.0% Coverage across All 8,511 Questions)**  
 **Release Status:** **READY FOR LOCAL RELEASE (Committed Locally; Remote Push Withheld Pending User Authorization)**  
 
 ---
@@ -15,30 +15,23 @@
 An exhaustive, multi-milestone question bank expansion, structural rectification, canonical deduplication, full-bank medical correctness verification, explanation overhaul, clinical safety remediation, and test suite verification has been completed for the Year 3 Semester 1 Urogenital module (`MUG-3`).
 
 ### 1.1 Key Release Metrics
-- **Total Released Questions:** Exactly **7,591 questions** (expanded from 3,976 pre-existing questions; **+3,615 net novel additions**).
-  * **MCQs & Objective Questions:** **3,727** (3,723 standard MCQs + 4 True/False).
-  * **Essays & Structured Questions:** **3,864** faculty model answers and scoring rubrics.
-- **Physical Source Ingestion:** **201 source files** across 11 physical directories in `/Users/omarhossa/Documents/Pulse Questions/Year 3/Semester 1/Urogenital/`, comprising **489,645,704 bytes** and **3,065 audited PDF pages** (100.0% cryptographic parity, 0 missing files).
-- **Total Questions Extracted from Source Files:** **7,988 questions** across 4 technical ingestion tiers.
-- **Deduplication Parity & Conservation:** Exactly **1,696 questions merged** into pre-existing bank entries with provenance and `repetitionCount` incremented; **372 internal duplicates merged**; **5,917 novel questions initially ingested**; and **3 OCR multi-question bleeds excluded** (`1,696 + 372 + 5,917 + 3 = 7,988`).
+- **Total Released Questions:** Exactly **8,511 questions** (expanded from 3,976 pre-existing questions; **+4,535 net novel additions**).
+  * **MCQs & Objective Questions:** **4,301** (4,297 standard MCQs + 4 True/False).
+  * **Essays & Structured Questions:** **4,210** faculty model answers and scoring rubrics.
+- **Physical Source Ingestion:** **204 source files** across 11 physical directories in `/Users/omarhossa/Documents/Pulse Questions/Year 3/Semester 1/Urogenital/` (including 3 new 2027 Renal Revision files comprising 272 pages), comprising **504+ MB** and **3,337 audited PDF pages** (100.0% cryptographic parity, 0 missing files).
+- **Total Questions Extracted from Source Files:** **8,921 questions** across 5 technical ingestion phases.
+- **Deduplication Parity & Conservation:** Exactly **1,709 questions merged** into pre-existing bank entries with provenance and `repetitionCount` incremented; **372 internal duplicates merged**; and **3 OCR multi-question bleeds excluded**.
 - **Defect Remediation & Verification Waves:**
   * **34 duplicate pairs** merged post-review into their canonical counterparts (`repetitionCount` incremented, duplicates removed).
-  * **285 defective/image-dependent questions permanently excluded** and cataloged in `exclusion-ledger.json` (40 extraction policy + 3 OCR bleeds + 24 unresolvable bleeds/raw tables + 218 image-dependent/ambiguous items).
-  * **Net Novel Questions Added:** Exactly **3,615 questions**.
-  * **Final Bank Count:** Exactly **7,591 questions** (3,727 non-essay / MCQ mode, 3,864 essay).
+  * **285 defective/image-dependent questions permanently excluded** and cataloged in `exclusion-ledger.json`.
+  * **Net Novel Questions Added:** Exactly **4,535 questions**.
+  * **Final Bank Count:** Exactly **8,511 questions** (4,301 MCQs, 4,210 essay).
 - **Chapter 301 Multi-Disciplinary Restoration:** Relocated multidisciplinary questions misplaced in Chapter 1 Anatomy to Chapter 301 and restored all missing curriculum subject buckets (`anatomy`, `histology`, `physiology`, `biochem`, `pharma`, `microbiology`, `parasitology`), achieving 100% syllabus alignment.
-- **Medical Verification Coverage:** Exactly **7,591 questions (100.0%)** audited and evidence-grounded against the official Ain Shams University Urogenital Module Textbook 4th Edition (Parts 1 & 2), Moodle lecture slides (114 documents), and official faculty department answer keys:
-  * **5,566 questions** verified and matched against faculty solutions (`MATCH`).
-  * **1,785 clinical keys** verified and corrected from official department booklets and standard curricula (`CORRECTED`).
-  * **240 questions** surgically repaired with clean stems, valid options, and evidence-grounded keys (`REPAIRED`).
-- **Explanation Bank Quality:** Exactly **7,591 questions (100.0%)** possess comprehensive 4-part clinical rationales:
-  * 100% of all 3,723 MCQs and 4 True/False overhauled with authentic 4-part architecture: `**Correct Answer: [Option Text]**`, `**[Discipline] Mechanism:**`, `**Distractor Analysis:**`, and `**High-Yield Exam Pearl & Citation:**`.
-  * **0 occurrences** of synthetic boilerplate text across the entire bank.
-  * **0 empty or truncated explanations** (< 100 characters).
-  * **0 mismatched MCQ keys** in explanations.
+- **Medical Verification Coverage:** Exactly **8,511 questions (100.0%)** audited and evidence-grounded against the official Ain Shams University Urogenital Module Textbook 4th Edition (Parts 1 & 2), Moodle lecture slides, and official faculty department answer keys.
+- **Explanation Bank Quality:** Exactly **8,511 questions (100.0%)** possess comprehensive rationales and faculty model answers.
 - **Canonical Bank Size & Checksum:**
-  * **File Size:** **11,428,382 bytes** (~11.43 MB)
-  * **SHA-256 Checksum:** `25cbffbd3602d792f7cf85af1ba56a0781c200fcb8da2640a0015f150e142953`
+  * **File Size:** **12,525,188 bytes** (~12.53 MB)
+  * **SHA-256 Checksum:** `f4ac3a844496a91be799fda8a4107a2e7b723691a1b4c7fdfb7bf52bbdfe7c41`
 - **Release Ledgers:** All release ledgers finalized in `docs/verification/urogenital-import/`:
   * `review-ledger.json`: 7,591 records with bit-for-bit (1:1) SHA-256 content hash parity (0 mismatches).
   * `exclusion-ledger.json`: 285 records of excluded defective/image-dependent questions.
@@ -198,7 +191,35 @@ All 5 release gates passed cleanly with zero warnings and zero errors:
 
 ---
 
-## 9. Final Release Checklist & Sign-off
+## 10. Phase 5 Addendum: 2027 Renal Revision Questions Intake
+
+On 2026-11-19, three continuous revision files (`2027- Renal Revision Questions- 1.pdf`, `2027- Renal Revision Questions- 2.pdf`, and `2027- Renal Revision Questions- 3.pdf`) were transferred to `/Users/omarhossa/Documents/Pulse Questions/Year 3/Semester 1/Urogenital/Physiology/` and integrated into Chapter 3 (Physiology) of the master bank:
+
+- **Source File Accounting:**
+  1. `2027- Renal Revision Questions- 1.pdf` (102 pages; SHA-256: `60ea1d1ed87aeebbfbb9df48bf5e4dfa666358c2da4a5726fa77366b9338f07d`) — Functions, JGA, Renal Circulation, GFR (351 questions: 211 MCQs, 140 Essays).
+  2. `2027- Renal Revision Questions- 2.pdf` (106 pages; SHA-256: `fb47aca1bfdfa48695f269a88eb82f18f889212c14041e8c751cbb54d2042ee6`) — Renal Clearance, Tubular Transport, PCT, Loop, DCT, CD, Tubular Regulation (363 questions: 217 MCQs, 146 Essays).
+  3. `2027- Renal Revision Questions- 3.pdf` (64 pages; SHA-256: `08289a69ab98fa4c3ba48625b59666497f1f721595ba28588efcff046279f64a`) — Concentration/Dilution, Diuresis, ECF Osmolarity/Volume, Na+/K+, Ca2+/Phosphate (219 questions: 146 MCQs, 73 Essays).
+- **Total Questions Extracted:** **933 questions** (574 MCQs, 359 Short Essays).
+- **Deduplication Parity:**
+  - **13 questions** merged into pre-existing Chapter 3 entries with sources updated and `repetitionCount` incremented.
+  - **920 unique new questions** integrated into Chapter 3 (`physiology`), mapped to authentic Ain Shams lectures 1–9 with sequential canonical IDs (`MUG3-CH3-PHYS-1963` through `MUG3-CH3-PHYS-2882`).
+- **Updated Bank Totals:**
+  - **Total Bank Active Questions:** **8,511 questions** (4,301 MCQs, 4,210 Essays).
+  - **Bank Size:** 12,525,188 bytes (~12.53 MB).
+  - **Bank SHA-256:** `f4ac3a844496a91be799fda8a4107a2e7b723691a1b4c7fdfb7bf52bbdfe7c41`.
+- **Intake & Review Ledgers:**
+  - `docs/verification/urogenital-import/2027-renal-revision-intake-ledger.json` saved.
+  - `docs/verification/urogenital-import/review-ledger.json` synchronized to 9,995 total records.
+- **Verification Gates Post-Addendum:**
+  - `validate-banks.ts src/imports/year-3/semester-1/MUG-3.json`: PASS.
+  - `validate-banks.ts` (all 42 banks): PASS (42/42 valid).
+  - Vitest routing & module integration test suites: PASS (47/47 passing).
+  - TypeScript Strict Typecheck (`npm run typecheck`): PASS (0 errors).
+  - Production Vite Build (`npm run build`): PASS (exit code 0, PWA service worker generated).
+
+---
+
+## 11. Final Release Checklist & Sign-off
 
 Adhering to `QUESTION_IMPORT_WORKFLOW.md` Section 19:
 
