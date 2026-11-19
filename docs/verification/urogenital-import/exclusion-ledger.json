@@ -1273,5 +1273,909 @@
     "stem": "Bulinus snail",
     "reason": "severed_ocr_fragment",
     "details": "Severed essay fragment with no answer: stem=\"Bulinus snail\", ma=\"Micro\". Wave 8 purification exclusion."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0329",
+    "sourceFile": "Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Updated practical anatomy revision.pdf-p33-Q3",
+    "stem": "Spermatic cord B A C D",
+    "reason": "requires_image",
+    "details": "Practical anatomy slide pointer/diagram question strictly requiring unavailable image."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0672",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q1",
+    "stem": "Levator ani muscle",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Table of contents / slide header debris from practical revision PDF."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0673",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q2",
+    "stem": "Coccygeus muscle",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Table of contents / slide header debris from practical revision PDF."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0674",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q3",
+    "stem": "Extended Modular Program 27",
+    "reason": "requires_image",
+    "details": "Practical anatomy slide pointer/diagram question strictly requiring unavailable image."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0675",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q4",
+    "stem": "Urinary bladder.",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Table of contents / slide header debris from practical revision PDF."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0676",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q6",
+    "stem": "Ovaries and uterine tubes",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Table of contents / slide header debris from practical revision PDF."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0677",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q7",
+    "stem": "Uterus and vagina.",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Table of contents / slide header debris from practical revision PDF."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0678",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q8",
+    "stem": "Rectum and anal canal.",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Table of contents / slide header debris from practical revision PDF."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0679",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q10",
+    "stem": "Extended Modular Program 32",
+    "reason": "requires_image",
+    "details": "Practical anatomy slide pointer/diagram question strictly requiring unavailable image."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0680",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q11",
+    "stem": "Symphsis pubis and urinary bladder.",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Table of contents / slide header debris from practical revision PDF."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0681",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q12",
+    "stem": "Urethra (prostatic – membranous – penile)",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Table of contents / slide header debris from practical revision PDF."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0682",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q13",
+    "stem": "Prostate & scrotum",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Table of contents / slide header debris from practical revision PDF."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0683",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q15",
+    "stem": "Extended Modular Program",
+    "reason": "requires_image",
+    "details": "Practical anatomy slide pointer/diagram question strictly requiring unavailable image."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0684",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q16",
+    "stem": "Testis & epidedymis",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Table of contents / slide header debris from practical revision PDF."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0686",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q20",
+    "stem": "Renal Agenesis:",
+    "reason": "requires_image",
+    "details": "Practical anatomy slide pointer/diagram question strictly requiring unavailable image."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0689",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q24",
+    "stem": "Horseshoe Kidney:",
+    "reason": "requires_image",
+    "details": "Practical anatomy slide pointer/diagram question strictly requiring unavailable image."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0690",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q25",
+    "stem": "Double ureter & bifid",
+    "reason": "requires_image",
+    "details": "Practical anatomy slide pointer/diagram question strictly requiring unavailable image."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0691",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q26",
+    "stem": "Ectopic ureter:",
+    "reason": "requires_image",
+    "details": "Practical anatomy slide pointer/diagram question strictly requiring unavailable image."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0693",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q28",
+    "stem": "Patent Urachus:",
+    "reason": "requires_image",
+    "details": "Practical anatomy slide pointer/diagram question strictly requiring unavailable image."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0694",
+    "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
+    "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q29",
+    "stem": "Recto-vesical fistula: caused by incomplete urorectal septum. Superficial S aN inguinal pouch —___ ry Pubo-penile Oo- Femoral Transverse oy ~ ectopia e—— Perineal ~~ True Abdominal Inguinal Suprascrotal AL Ectopic Prepenile",
+    "reason": "requires_image",
+    "details": "Practical anatomy slide pointer/diagram question strictly requiring unavailable image."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0670",
+    "sourceFile": "Anatomy/Symbiosis (2).png",
+    "sourceOccurrence": "Anatomy/Symbiosis (2).png-Item2",
+    "stem": "He Mention Ane Relation of urinary Bladder _”, pw",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Table of contents / slide header debris from practical revision PDF."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0671",
+    "sourceFile": "Anatomy/Symbiosis (2).png",
+    "sourceOccurrence": "Anatomy/Symbiosis (2).png-Item3",
+    "stem": "y Mention he deference Between Ieuelialee Vig ba, My",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Table of contents / slide header debris from practical revision PDF."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2260",
+    "sourceFile": "Pathology/SGD UB, Male ,breast 2024_.pdf",
+    "sourceOccurrence": "Pathology/SGD UB, Male ,breast 2024_.pdf-Q4",
+    "stem": "Haemorrhagic cystitis ( viral, cytotoxic drugs) Extended Modular Program 4 Interstitial Polypoid Malakoplakia Haemorrhagic Epithelial Epithelial tumours tumoursof urinary bladder: of urinary bladder:",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Extended Modular Program slide presentation OCR bleed with corrupted options."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2270",
+    "sourceFile": "Pathology/SGD UB, Male ,breast 2024_.pdf",
+    "sourceOccurrence": "Pathology/SGD UB, Male ,breast 2024_.pdf-Q16",
+    "stem": "Intratubular germ cell neoplasia (in situ)",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Extended Modular Program slide presentation OCR bleed with corrupted options."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2278",
+    "sourceFile": "Pathology/SGD UB, Male ,breast 2024_.pdf",
+    "sourceOccurrence": "Pathology/SGD UB, Male ,breast 2024_.pdf-Q26",
+    "stem": "Renal failure due to bilateral hydronephrosis.",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Extended Modular Program slide presentation OCR bleed with corrupted options."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2282",
+    "sourceFile": "Pathology/SGD UB, Male ,breast 2024_.pdf",
+    "sourceOccurrence": "Pathology/SGD UB, Male ,breast 2024_.pdf-Q30",
+    "stem": "Genetic alterations Extended Modular Program 24 Gleason’s grading system Combined Gleason’s score: Addition of two most prevalent grades in the examined Biopsy e.g. 3+4= 7/10 Extended Modular Program 25 Which of the following conditions is premalignant?",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Extended Modular Program slide presentation OCR bleed with corrupted options."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2292",
+    "sourceFile": "Pathology/SGD UB, Male ,breast 2024_.pdf",
+    "sourceOccurrence": "Pathology/SGD UB, Male ,breast 2024_.pdf-Q41",
+    "stem": "Atypical hyperplasia (ductal or lobular) 5 x significant increase risk Extended Modular Program 37 Fibrocystic changes and malignancy ~ Atypical Invasive Normal Hyperplasia Hyperplasia DcIs Cancer",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Extended Modular Program slide presentation OCR bleed with corrupted options."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2295",
+    "sourceFile": "Pathology/SGD UB, Male ,breast 2024_.pdf",
+    "sourceOccurrence": "Pathology/SGD UB, Male ,breast 2024_.pdf-Q44",
+    "stem": "Fat necrosis ( hard mass)",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Extended Modular Program slide presentation OCR bleed with corrupted options."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2298",
+    "sourceFile": "Pathology/SGD UB, Male ,breast 2024_.pdf",
+    "sourceOccurrence": "Pathology/SGD UB, Male ,breast 2024_.pdf-Q51",
+    "stem": "Others : Angiosarcoma, skin tumours,.",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Extended Modular Program slide presentation OCR bleed with corrupted options."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2301",
+    "sourceFile": "Pathology/SGD UB, Male ,breast 2024_.pdf",
+    "sourceOccurrence": "Pathology/SGD UB, Male ,breast 2024_.pdf-Q54",
+    "stem": "Environmental variables",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Extended Modular Program slide presentation OCR bleed with corrupted options."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2308",
+    "sourceFile": "Pathology/SGD UB, Male ,breast 2024_.pdf",
+    "sourceOccurrence": "Pathology/SGD UB, Male ,breast 2024_.pdf-Q62",
+    "stem": "Tubular carcinoma",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Extended Modular Program slide presentation OCR bleed with corrupted options."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2309",
+    "sourceFile": "Pathology/SGD UB, Male ,breast 2024_.pdf",
+    "sourceOccurrence": "Pathology/SGD UB, Male ,breast 2024_.pdf-Q63",
+    "stem": "Invasive duct carcinoma , NOS: Various grades, commonest",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Extended Modular Program slide presentation OCR bleed with corrupted options."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2313",
+    "sourceFile": "Pathology/SGD UB, Male ,breast 2024_.pdf",
+    "sourceOccurrence": "Pathology/SGD UB, Male ,breast 2024_.pdf-Q68",
+    "stem": "Histologic type",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Extended Modular Program slide presentation OCR bleed with corrupted options."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2315",
+    "sourceFile": "Pathology/SGD UB, Male ,breast 2024_.pdf",
+    "sourceOccurrence": "Pathology/SGD UB, Male ,breast 2024_.pdf-Q70",
+    "stem": "Overexpression of HER2/NEU proto-oncogene within tumour cells - Their presence carries worse prognosis - ttt by trastuzumab (inhibitor of HER2/NEU) - Detected by immunohistochemistry or FISH. 6 & 7 represent basis of molecular classification Of breast carcinoma Extended Modular Program 50 Luminal A ",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Extended Modular Program slide presentation OCR bleed with corrupted options."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2317",
+    "sourceFile": "Pathology/SGD UB, Male ,breast 2024_.pdf",
+    "sourceOccurrence": "Pathology/SGD UB, Male ,breast 2024_.pdf-Q72",
+    "stem": "Obesity may predispose to breast carcinoma Estrogen in fat stores stimulate production of growth factors Define gynaecomastia , list two causes Enlargement of male breast, liver cirrhosis, klinefilter, exogenous or endogenous estrogen [es R oS Extended Modular Program 66",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Extended Modular Program slide presentation OCR bleed with corrupted options."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2321",
+    "sourceFile": "Pathology/SGD UB, Male ,breast 2024_.pdf",
+    "sourceOccurrence": "Pathology/SGD UB, Male ,breast 2024_.pdf-Q76",
+    "stem": "Can you give provisional stage based on her mammogram? Extended Modular Program 69 The most characteristic microscopic feature of this tumour is:",
+    "reason": "requires_image",
+    "details": "Slide presentation question strictly requiring radiological / microscopic image."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0167",
+    "sourceFile": "4_5845997956452321379.pdf",
+    "sourceOccurrence": "4_5845997956452321379.pdf-p7-Q5",
+    "stem": "Type B spermatogonia d) Give primary spermatocytes",
+    "reason": "unresolvable_answer_key_fragment",
+    "details": "Unresolvable raw answer grid / matching table dump."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0261",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q35",
+    "stem": "Leydig cells a) Largest cells in spermatogenic",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0262",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q36",
+    "stem": "Sertoli cell series",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0263",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q37",
+    "stem": "Spermatid b) Undergo metamorphosis",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0264",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q38",
+    "stem": "Secondary spermatocytes c) Secrete testosterone",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0266",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q40",
+    "stem": "Seminal vesicle a) Mucus-secreting gland",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0267",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q41",
+    "stem": "Prostate b) Its secretion is rich in fructose",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0268",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q42",
+    "stem": "Spermatic cord c) Dartos muscle",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0269",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q43",
+    "stem": "Vasa efferentia a) Opens in prostatic urethra",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0270",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q44",
+    "stem": "Rete testis b) Secretes some glycoproteins",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0271",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q45",
+    "stem": "Vas deferens c) Found in mediastinum testis",
+    "reason": "unresolvable_answer_key_fragment",
+    "details": "Unresolvable raw answer grid / matching table dump."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0272",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q46",
+    "stem": "Pale type A spermatogonia | a) Haploid no of chromosome |",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0273",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q47",
+    "stem": "Dark type A spermatogonia b) Largest spermatogenic cell",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0274",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q48",
+    "stem": "Type B spermatogonia c) Cycling cells",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0275",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q49",
+    "stem": "Primary spermatocyte d) Diffuse endocrine cells",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0276",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q50",
+    "stem": "Secondary spermatocyte e) Reserve cells",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0277",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q51",
+    "stem": "Androgen binding protein a) Epididymis",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0278",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q52",
+    "stem": "Reinke’s crystalloids ‘5 gland",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0279",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q53",
+    "stem": "Stereocilia b) Cowper's glands",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0280",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q54",
+    "stem": "Erectile tissue c) Sertoli cells",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed matching column fragment converted to pseudo-essay."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0281",
+    "sourceFile": "Histology/4_5845997956452321379.pdf",
+    "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q55",
+    "stem": "Corpora amaylacea d) Prostate gland",
+    "reason": "unresolvable_answer_key_fragment",
+    "details": "Unresolvable raw answer grid / matching table dump."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0282",
+    "sourceFile": "Histology/Histo paper 2.pdf",
+    "sourceOccurrence": "Histology/Histo paper 2.pdf-Q1",
+    "stem": "746 — 100% + G3) McQ  After fertilization of the ovum, implantation occurs in the endometrium. At this time the developing placenta begins % to produce a hormone necessary for embryonic viability. Which of the following best describes this hormone’s action?",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "WhatsApp screenshot multi-question concatenation with chat artifacts."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0283",
+    "sourceFile": "Histology/Histo paper 2.pdf",
+    "sourceOccurrence": "Histology/Histo paper 2.pdf-Q2",
+    "stem": "this photomicrogr.",
+    "reason": "requires_image",
+    "details": "Question strictly requires inspection of photomicrograph."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0286",
+    "sourceFile": "Histology/Histology URO.pdf",
+    "sourceOccurrence": "Histology/Histology URO.pdf-Q12",
+    "stem": "Compare between PCT and DCT. See book P.41",
+    "reason": "unresolvable_ambiguity",
+    "details": "Circular model answer referring to textbook page ('See book P.41')."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1229",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q1",
+    "stem": "Stage of corcariaf invasion ind schist gud migaion)",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed parasitology textbook paragraph OCR shred."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1230",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q3",
+    "stem": "of host antigens",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed parasitology textbook paragraph OCR shred."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1231",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q4",
+    "stem": "Require host antigen on its aa",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed parasitology textbook paragraph OCR shred."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1232",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q5",
+    "stem": "Hosttik antiges pro D i a",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed parasitology textbook paragraph OCR shred."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1233",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q6",
+    "stem": "indirect Immunodiag jnostic methods:",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed parasitology textbook paragraph OCR shred."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1234",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q8",
+    "stem": "cor sanitary measures: building latrines in-houses, schools, mosques, 2:",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed parasitology textbook paragraph OCR shred."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1235",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q9",
+    "stem": "Safe Water supply",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed parasitology textbook paragraph OCR shred."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1236",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q10",
+    "stem": "Trichomonas vaginalis completes its life cycle in one",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed parasitology textbook paragraph OCR shred."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1237",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q11",
+    "stem": "The trophozoite Stage reproduces by longitudinal",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed parasitology textbook paragraph OCR shred."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1238",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q12",
+    "stem": "Occasionally, infectioy",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed parasitology textbook paragraph OCR shred."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1240",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q14",
+    "stem": "Superadded infection as gonorrhoea.",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed parasitology textbook paragraph OCR shred."
+  },
+  {
+    "id": "MUG3-CH5-PATH-0796",
+    "sourceFile": "DrThanaaHelal",
+    "sourceOccurrence": "DrThanaaHelal-Q1353",
+    "stem": "mow  mow moO Ow ZF mun 0 cRwhe TO O0Wp . Focal embolic glomerulo- nephritis . Atherosclerotic kidney . Nephrotic syndrome . Chronic glomerulo-nephritis Hydronephrosis Yellowish white Stag-horn stone Multiple and spiky Radio-translucent Smooth and faceted . Wilm’s tumor . Angiomyolipoma . Renal cell ",
+    "reason": "unresolvable_answer_key_fragment",
+    "details": "Unresolvable raw answer grid / matching table dump."
+  },
+  {
+    "id": "MUG3-CH103-PHYS-0003",
+    "sourceFile": "ASS 1 ",
+    "sourceOccurrence": "ASS 1 - 2019.pdf-Q5",
+    "stem": "Iv calcium",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH103-PHYS-0004",
+    "sourceFile": "ASS 1 ",
+    "sourceOccurrence": "ASS 1 - 2019.pdf-Q6",
+    "stem": "Crush injury",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH103-PHYS-0005",
+    "sourceFile": "ASS 1 ",
+    "sourceOccurrence": "ASS 1 - 2019.pdf-Q7",
+    "stem": "H-k competition",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH103-PHYS-0006",
+    "sourceFile": "ASS 1 ",
+    "sourceOccurrence": "ASS 1 - 2019.pdf-Q8",
+    "stem": "Vas defrence",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH103-PHYS-0008",
+    "sourceFile": "ASS 1 ",
+    "sourceOccurrence": "ASS 1 - 2019.pdf-Q10",
+    "stem": "Renal stone",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH103-PHYS-0009",
+    "sourceFile": "ASS 1 ",
+    "sourceOccurrence": "ASS 1 - 2019.pdf-Q11",
+    "stem": "Hypothalamic osmoreceptor stimulation",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH103-PHYS-0010",
+    "sourceFile": "ASS 1 ",
+    "sourceOccurrence": "ASS 1 - 2019.pdf-Q14",
+    "stem": "Packed epithilal cells at the dct",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH103-PHYS-0011",
+    "sourceFile": "ASS 1 ",
+    "sourceOccurrence": "ASS 1 - 2019.pdf-Q15",
+    "stem": "Ascending limb vasa recta",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH103-PHYS-0013",
+    "sourceFile": "ASS 1 ",
+    "sourceOccurrence": "ASS 1 - 2019.pdf-Q21",
+    "stem": "Below renal threshold",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH103-PHYS-0015",
+    "sourceFile": "ASS 1 ",
+    "sourceOccurrence": "ASS 1 - 2019.pdf-Q23",
+    "stem": "Needs activity of carbonic anhydrase",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0025",
+    "sourceFile": "Past Exams/ASS 1 ",
+    "sourceOccurrence": "Past Exams/ASS 1 - 2019.pdf-Q36",
+    "stem": "hyperkalemia",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0027",
+    "sourceFile": "Past Exams/ASS 1 ",
+    "sourceOccurrence": "Past Exams/ASS 1 - 2019.pdf-Q38",
+    "stem": "erythropoietin",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH202-HIST-0003",
+    "sourceFile": "ASS UG 2",
+    "sourceOccurrence": "ASS UG 2- 2019.pdf-Q13",
+    "stem": "Sertoli cell produce androgen binding protein",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0001",
+    "sourceFile": "ASS UG ",
+    "sourceOccurrence": "ASS UG - 2018.pdf-Q10",
+    "stem": "Obesity",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0073",
+    "sourceFile": "ug paper 2 ",
+    "sourceOccurrence": "ug paper 2 - 2020.pdf-Q2",
+    "stem": "Estrogen is dominant in Proliferative phase",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0075",
+    "sourceFile": "ug paper 2 ",
+    "sourceOccurrence": "ug paper 2 - 2020.pdf-Q12",
+    "stem": "Aplasia uterus? unicornis",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0081",
+    "sourceFile": "ug paper 2 ",
+    "sourceOccurrence": "ug paper 2 - 2020.pdf-Q20",
+    "stem": "Placental estrogen inc excitablity",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0112",
+    "sourceFile": "Past Exams/ASS UG 2",
+    "sourceOccurrence": "Past Exams/ASS UG 2- 2019.pdf-Q25",
+    "stem": "Focal segmental GS",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH207-MICR-0001",
+    "sourceFile": "ASS UG 2",
+    "sourceOccurrence": "ASS UG 2- 2019.pdf-Q8",
+    "stem": "Infection other than syphilis",
+    "reason": "unresolvable_ambiguity",
+    "details": "Unanswerable student recall fragment with dashed line model answer ('---')."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0239",
+    "sourceFile": "MCQ Anatomy  (1).pdf",
+    "sourceOccurrence": "MCQ Anatomy  (1).pdf-p4-Q23",
+    "stem": "Which is NOT related to the kidneys:",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Severely corrupted OCR stem/options or concatenated multi-question bleed."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0249",
+    "sourceFile": "MCQ Anatomy  (1).pdf",
+    "sourceOccurrence": "MCQ Anatomy  (1).pdf-p7-Q42",
+    "stem": "As rest minal part of ureter 3 vic art of ureter he ae amural part of the ureter in' c the 302 of bladder",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Severely corrupted OCR stem/options or concatenated multi-question bleed."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0432",
+    "sourceFile": "anatomy renal.pdf",
+    "sourceOccurrence": "anatomy renal.pdf-p14-Q86",
+    "stem": "Which isn't correct about the description of urinary bladder?",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Severely corrupted OCR stem/options or concatenated multi-question bleed."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0546",
+    "sourceFile": "Anatomy/MCQ Anatomy  (1).pdf",
+    "sourceOccurrence": "Anatomy/MCQ Anatomy  (1).pdf-Q13",
+    "stem": "On the left side. The most likely nes mone bi ; a. laceration of the infra-r b, laceration of the right  c, puncture of the 3rd pa Pedicle",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Severely corrupted OCR stem/options or concatenated multi-question bleed."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0851",
+    "sourceFile": "Anatomy/anatomy renal.pdf",
+    "sourceOccurrence": "Anatomy/anatomy renal.pdf-Q99",
+    "stem": "The vertebral level of origin of the renal a!",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Severely corrupted OCR stem/options or concatenated multi-question bleed."
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0347",
+    "sourceFile": "iNerd",
+    "sourceOccurrence": "iNerd-p12-Q3",
+    "stem": "The hilum of the RT & LT kidneys is adjuste so tht it's below & above the .... Respective",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Severely corrupted OCR stem/options or concatenated multi-question bleed."
+  },
+  {
+    "id": "MUG3-CH5-PATH-0269",
+    "sourceFile": "iNerd",
+    "sourceOccurrence": "iNerd-p70-Q14",
+    "stem": "An 18- year- old girl had a large ovarig, : tumor, on Examination, the tumor was solig, | rubbery, with nodular surface and grayiy, : white cut surface. Sections examined reveg, i @ tumor tissue composed of a vacuolatey : network, containing microcysts, lined by | flattened cells, with perivascular ",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Severely corrupted OCR stem/options or concatenated multi-question bleed."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1118",
+    "sourceFile": "PathologyDept",
+    "sourceOccurrence": "PathologyDept-Case040",
+    "stem": "41. ‘1 ) d. Papillar Y TICCTOBTS b. Focal segmental glomerulosclerosis c. Nephrocalcinosis d. Interstitial nephritis. A 49-year-old female has been hospitalized for the past 10 days for treatment of a bronchopneumonia. There is no past history of renal disease. She has developed the onset of chills,",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1120",
+    "sourceFile": "PathologyDept",
+    "sourceOccurrence": "PathologyDept-Case043",
+    "stem": "44, analysis performed that demonstrates 2+ blood. A urine cytology is performed and he has atypical epithelial cells seen. A urologist performs a cystoscopy, but no mucosal lesions are noted. The presence of which of the following conditions best explains these findings: a. Adenocarcinoma of prosta",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1124",
+    "sourceFile": "PathologyDept",
+    "sourceOccurrence": "PathologyDept-Case056",
+    "stem": "A 75 —year-old female died with normal renal function. Postmortem examination reveals slightly small kidneys with a granular surface. Microscopic examination of renal sections reveal scattered hyalinized glomeruli, interstitial fibrosis, focal tubular atrophy, and arteriolar thickening. These findin",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1127",
+    "sourceFile": "PathologyDept",
+    "sourceOccurrence": "PathologyDept-Case067",
+    "stem": "A 5-year-old boy is noted to have increased puffiness around his eyes for the past week. His BP measurs 140/90mm Hg. A urine analysis reveals PH 6.5, no glucose, 4+ protein, no blood and no casts. Microscopic urinalysis reveals oval fat bodies, but no WBC(C’s or RBC’s. He improves following a course",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1129",
+    "sourceFile": "PathologyDept",
+    "sourceOccurrence": "PathologyDept-Case070",
+    "stem": "71. caused his azotemia? a- Patchy tubular necrosis b- Fusion of podocyte foot processes c- Glomerular crescents d- Hyperplastic arteriolosclerosis e- Mesangial immune complex deposition. A 55-year-old man complains of dull flank pain for the past month. On physical examination he has tenderness at ",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1185",
+    "sourceFile": "PathologyDept",
+    "sourceOccurrence": "PathologyDept-Case058",
+    "stem": "59. b. Leiomyomata . Endometrial adenocarcinoma d. Ovarian Thecoma . Oral contraceptive use. A 55-year-old woman had a simple hysterectomy performed 25 years before. Now, there is a 9cm mass involving her left ovary. Microscopic examination reveals malignant glands resembling endometrial glands. Wha",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1186",
+    "sourceFile": "PathologyDept",
+    "sourceOccurrence": "PathologyDept-Case062",
+    "stem": "63. A 62-year-old woman has abnormal uterine bleeding for the past 5 months. Endometrial biopsy shows a well-differentiated endometrial adenocarcinoma. Which of the following ovarian neoplasms is she most likely to have? Papillary serous cystadenocarcinoma Krukenbergtumour Mucinous cystadenoma Granu",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1189",
+    "sourceFile": "PathologyDept",
+    "sourceOccurrence": "PathologyDept-Case073",
+    "stem": "A 4-year-old female child presents with enlarged breast and bleeding per vagina. U/S revealed ovarian mass. The most likely diagnosis is :- a. Polycystic ovary b. Granulosa cell tumour c. Papillary serous tumour d. Endometriosis Female patient with positive pregnancy test, presents with vaginal blee",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1198",
+    "sourceFile": "PathologyDept",
+    "sourceOccurrence": "PathologyDept-Case086",
+    "stem": "87. A 59 —year-old postmenopausal female suffers from bleeding which has been present for a couple of months. Her physician refers her to a gynecologist, who performs an endometrial biopsy that reveals atypical adenomatous hyperplasia. This lesion most likely results from: a. Unopposed estrogenic st",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
+  },
+  {
+    "id": "MUG3-CH4-BIOC-0222",
+    "sourceFile": "Biochemistry/Biochemistry URO.pdf",
+    "sourceOccurrence": "Biochemistry/Biochemistry URO.pdf-Q87",
+    "stem": "Hartnup disease",
+    "reason": "unresolvable_ambiguity",
+    "details": "Exact semantic duplicate of MUG3-CH4-BIOC-0086 with erroneous Homocystinuria content."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0554",
+    "sourceFile": "Anatomy/MCQ Anatomy  (1).pdf",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0554",
+    "stem": "The structure passing through the hilu",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed stem ('The structure passing through the hilu'), deficient options count (<3 options, only 2), and severe two-column OCR bleed. Option 0 is OCR bullet noise ('paoex') and option 1 is a 210-character garbled concatenation of anterior kidney relations (Q35) and hilum structures (Q36). Cannot be reconstructed cleanly without speculative invention."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0274",
+    "sourceFile": "Anatomy/MCQ Anatomy  (1).pdf",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0274",
+    "stem": "Which sperms?",
+    "reason": "severed_ocr_fragment",
+    "details": "Severed stem ('Which sperms?') resulting from CamScanner column truncation of 'Which of the following produce sperms?', while its 5 options belong to an entirely different question ('The duct of prostate opens into'). Complete question-option mismatch resulting from OCR column misalignment."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0779",
+    "sourceFile": "Anatomy/anatomy renal.pdf",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0779",
+    "stem": "Regarding the kidneys all of the followings are true EXCEPT a, Each weighs about 340 grams",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "Severe multi-question collision between Question 15 ('Regarding the kidneys all of the followings are true EXCEPT') and Question 16 ('Left gonadal vein drains into:'). Stem swallowed option A, option 0 merged choices B, C, D, option 1 merged choice E with the stem of Q16, and options 2, 3, 4 are the choices of Q16. Q15 is already present cleanly as MUG3-CH1-ANAT-0234 and Q16 is present as MUG3-CH1-ANAT-0614."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0597",
+    "sourceFile": "Anatomy/MCQ Anatomy  (1).pdf",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0597",
+    "stem": "An elderly patient is h still feels as though he n Prostatic hypertrophy, whic! seminal colliculus interureteric crest ampulla trigone ; specific condition uula struction of the urinary tract. The sp paeoom in ob:",
+    "reason": "unresolvable_ocr_bleed",
+    "details": "829-character multi-line garbage collision block formed from a CamScanner scan boundary error on page 17 of MCQ Anatomy (1).pdf. It fuses chopped fragments of Q105 (BPH symptoms), Q106 (prostatic lobes), Q107 (urethral injury), Q108 (prostatic urethra), Q109 (shortest part of male urethra), and Q110 (female urethra) into 2 pseudo-options. All constituent questions already exist independently in the bank (e.g. MUG3-CH1-ANAT-0442). Unresolvable OCR collision."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0598",
+    "sourceFile": "Anatomy/MCQ Anatomy  (1).pdf",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0598",
+    "stem": "Which sperms?",
+    "reason": "severed_ocr_fragment",
+    "details": "Duplicate corrupted question with severed stem ('Which sperms?') and garbled multi-option string bleeds ('prostatic part of urethra membranous part of urethra bulbar part of urethra... penis prostate 120'). Unintelligible OCR fragment with only 3 corrupted choices."
   }
 ]
