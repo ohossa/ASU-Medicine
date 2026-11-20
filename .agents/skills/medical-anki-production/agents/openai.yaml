@@ -1,0 +1,4 @@
+interface:
+  display_name: "Medical Anki Production"
+  short_description: "Create source-grounded cards and tested Anki updates"
+  default_prompt: "Use $medical-anki-production with $medical-image-extraction to create a source-grounded, illustrated Anki deck with tested updates."

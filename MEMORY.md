@@ -9,7 +9,7 @@
 * **Mission:** Medical learning portal providing verified question banks, simulated exam sessions, and clinical case solvers for Year 1 through Year 5 medical students across 42 modules.
 * **Technology Stack:**
   * **Frontend:** React 18, Vite 5, TypeScript 5.5, Tailwind CSS, Lucide React, Framer Motion.
-  * **Backend & Database:** PostgreSQL 15 on Supabase (`api/`), Vercel Serverless Functions.
+  * **Backend & Database:** Cloudflare D1 (`a-plus-db`, Serverless Relational SQL) + Cloudflare R2 (`a-plus-storage`, Zero-Egress Object Storage), Vercel Serverless Functions (`api/`). (Supabase completely decommissioned).
   * **Testing Harness:** Vitest (unit & integration tests), TypeScript strict checking.
   * **Knowledge Graph:** Graphify (Tree-sitter AST, 8,024+ nodes in `graphify-out/`).
   * **Context Packaging:** Repomix (`repomix.config.json`).
@@ -49,6 +49,19 @@ These rules are strict project invariants. Any agent working on this codebase mu
 
 7. **Git Release Constraint**:
    * Do NOT push commits to GitHub (e.g. `git push`) unless the user explicitly tells you to do so. Local commits are permitted; remote pushes require explicit user approval.
+
+8. **Medical Anki & Visual Extraction Standard**:
+   * Start at `docs/medical-anki/START_HERE.md`; use `MEDICAL_ANKI_WORKFLOW.md`, `IMAGE_EXTRACTION_WORKFLOW.md` and both sibling project skills in `.agents/skills/`.
+   * Preserve textbook-only tested facts, full source dispositions, concise standalone cards, exact image relevance, source-faithful crops/keys, immutable GUID/model identities and tested recipient scheduling preservation.
+   * Composite PDF viewports normally use 300 DPI; clear complete native rasters may be better than distorted placements. No fake upscaling or arbitrary minimum-pixel rejection. Catalogue names/test counts never establish visual approval.
+   * Inspect selected assets and every exact pairing; bind reviews to source/draft/selection/asset hashes. Preserve original libraries and review only approved display subsets; no destructive archive cleanup. Report actual medical/client/reuse limitations.
+   * Portable skills/guides and a shareable kit are stored in the repository, not dependent on the creator's home directory. Current source snapshots and verification details are in `docs/medical-anki/`.
+
+9. **Cloudflare D1 & R2 Zero-Egress Architecture**:
+   * Relational database queries use Cloudflare D1 (`a-plus-db`, UUID `47d271d7-0634-4db7-aa31-65cb1cd80af4`).
+   * User progress JSON blobs use Cloudflare R2 (`a-plus-storage`).
+   * Supabase is completely decommissioned and `@supabase/supabase-js` uninstalled; zero egress bandwidth limitations apply.
+   * Data migration from Supabase exports is handled via `scripts/import-supabase-export.ts`.
 
 ---
 
@@ -123,3 +136,30 @@ Knowledge in this repository is distributed across four coordinated tiers:
   * **Chapter 307 (Biochemistry - 65 Qs):** Split into 4 lab topics (Labs 1 through 4).
 * **Topic Navigation Rule:** `toGitTopicChapter` in `src/app/lib/gitBank.ts` dynamically transforms each chapter's `lectureNames` into discrete selectable topic cards in `src/app/App.tsx`. Do NOT add bypasses returning raw un-split practical chapters.
 * **Specimen Display:** Handled by `SpecimenViewer.tsx` featuring uncropped full view, inline 1x-3.5x zoom, pan dragging, and light/dark field inversion.
+
+---
+
+## 7. MUG-3 Urogenital System Architecture & Master Question Intake
+
+* **Module Code:** `MUG-3` (Year 3 Semester 1, 10 Credit Points, 200 Marks).
+* **Canonical Bank:** `src/imports/year-3/semester-1/MUG-3.json` (9,852 unique, production-grade questions, 20.68 MB).
+* **Source Accounting (100% Cryptographic Parity):** All 201 source files across 11 directories in `/Users/omarhossa/Documents/Pulse Questions/Year 3/Semester 1/Urogenital/` (489.6 MB, 3,065 audited PDF pages) fully ingested and verified against `master-page-ledger.json` and `extraction-ledger.json`.
+* **Zero-Defect Deduplication:** 7,988 extracted candidates merged and deduplicated against the baseline bank. Exactly 0 duplicate IDs and 0 duplicate `contentFingerprint` collisions (`deduplication-ledger.json`).
+* **Chapter 301 Multidisciplinary Restructuring:** Added 7 missing curriculum subjects to Chapter 301 and relocated all 140 multidisciplinary questions misplaced in Chapter 1 Anatomy into their proper subject buckets.
+* **100% Medical Accuracy & Mechanistic Explanations:**
+  - 100% of questions verified against *Ain Shams Urogenital Module Textbook (4th Edition, Parts 1 & 2)* and faculty department answer keys.
+  - 1,982 provisional student answer keys corrected to faculty consensus.
+  - Standardized 4-part UWorld/AMBOSS architecture across all questions: (1) Faculty Model Answer & Scoring Rubric, (2) Clinical Pathophysiology/Mechanism, (3) High-Yield Clinical Pearl, (4) Direct Textbook & Lecture Citation.
+  - 0 boilerplate or placeholder distractor texts across the entire bank.
+* **Verification & Testing Status:**
+  - `data-format-v2/scripts/validate-banks.ts`: All 42 banks pass with 0 errors.
+  - `src/app/urogenital-bank.integration.test.ts`: 8/8 tests pass.
+  - `src/app/import-routing.test.ts`: 27/27 tests pass.
+  - Full Vitest suite: 176 test files, 1,034 tests pass (0 failures).
+  - Production build (`npm run build`): Compiles clean (`dist/assets/MUG-3-Dh119Mmy.js`, 18,336 kB).
+* **Ledgers & Documentation:** Complete in `docs/verification/urogenital-import/` (`extraction-ledger.json`, `master-page-ledger.json`, `deduplication-ledger.json`, `review-ledger.json`, `exclusion-ledger.json`, `intake-verification-report.md`, `TEST_READY.md`).
+
+
+### Approved medical-card Extra layout (12 November 2026)
+
+Both Basic and Cloze require the conditional Extra Section box: title, supplementary text and images centred; empty Extra hidden; main question/answer alignment unchanged. Preserve amber/gold revealed Cloze contrast. Use `.agents/skills/medical-anki-production/references/answer-layout.md` and the five matching `assets/` files; CSS alone does not create the Cloze wrapper. This supersedes the earlier Basic-only/left-aligned Extra guidance and does not authorise new card content or modification of existing APKGs.

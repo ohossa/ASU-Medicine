@@ -46,6 +46,17 @@ Specialized automated intake for Year 3 Semester 1 GIT (`MGL-3`):
    - **Continuous 2 (CA-2)**: Chapters 201–209 (`examPeriod: "ca-2"`, 247 questions).
    - Produced full ledgers and audit reports under `docs/verification/git-ca2-import-2026-10-27/`.
 
+### Urogenital Intake & Partition Pipeline (`scripts/import_urogenital_full.py`)
+
+Specialized intake pipeline for Year 3 Semester 1 Urogenital System (`MUG-3`):
+- Audited 51 files across Past Exams, Formatives, and 8 Subject Folders.
+- Ingested **957 unique verified questions** into canonical `src/imports/year-3/semester-1/MUG-3.json`.
+- Implements two-tier partition:
+  - **Practice Bank**: Chapters 1–8 (`bankSection: "practice"`, 698 questions).
+  - **Past Exams Bank**: Chapters 101–108 (`ca-1`), 201–208 (`ca-2`), and 301 (`Finals`) (`bankSection: "past-exams"`, 259 questions).
+- Produces full audit ledgers under `docs/verification/urogenital-import-2026-11-13/` (`extraction-ledger.json`, `master-page-ledger.json`, `deduplication-ledger.json`, `exclusion-ledger.json`, `intake-verification-report.md`).
+- Verified with vitest suite `src/app/urogenital-bank.integration.test.ts` (8/8 passing).
+
 ## Accepted incoming batch format
 
 The batch can contain mixed question types. It does not need canonical IDs.

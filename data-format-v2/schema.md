@@ -180,9 +180,19 @@ A valid file satisfies all of the following:
 
 ---
 
-## Supabase PostgreSQL 15 Sync & Performance Schema Specification
+## Cloud Storage & Cloudflare R2 Sync Architecture
 
-For cloud-synchronized learning progress and client state persistence (`api/sync.ts` and `server/learning-store.ts`), the canonical relational schema is governed by `supabase/schema.sql`:
+To prevent monthly network egress quotas from restricting student access, client state persistence (`api/sync.ts` and `server/learning-store.ts`) utilizes a dual-tier storage architecture:
+
+### 1. Primary Zero-Egress Object Store: Cloudflare R2 (`server/r2-client.ts`)
+- **Key Pattern:** `users/${userId}/progress.json`
+- **Zero-Egress SLA:** 100% free outbound data transfer with no bandwidth overage locks.
+- **Cache Protocol:** Native HTTP 304 `ETag` / `If-None-Match` negotiation preventing unnecessary round trips.
+- **Failover & Auto-Migration:** Automatically seeds from legacy stores (Supabase/Redis) upon first sync.
+
+### 2. Relational Metadata Store: Supabase PostgreSQL 15 Specification
+
+The relational schema for structured metadata, leaderboards, and question reporting is governed by `supabase/schema.sql`:
 
 ### 1. `user_progress` Table
 Primary key-value store for user client state:

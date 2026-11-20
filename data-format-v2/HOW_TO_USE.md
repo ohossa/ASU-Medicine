@@ -14,6 +14,7 @@ This folder contains the full plan and tooling for moving ASU Portal to a scalab
 | `scripts/import-ready.ts` | Bulk import pipeline. Processes all `_ready` batches across all modules in one run. |
 | `scripts/import_git_assessment2.py` | Automated intake, deduplication, enrichment, and auto-sorting pipeline for Assessment 2 (GIT / MGL-3). |
 | `scripts/import_git_ca2.py` | Automated intake, visual page audit (539 pages), and partition pipeline for GIT Continuous Assessment 2 (CA-2) past exams. |
+| `scripts/import_urogenital_full.py` | Complete question intake, deduplication, clinical review, and multi-disciplinary partitioning pipeline for Urogenital System (MUG-3). |
 | `import-workflow.md` | Short workflow notes for repeated batch imports. |
 
 ## Organized question intake folder structure

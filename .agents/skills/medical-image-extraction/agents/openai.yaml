@@ -1,0 +1,4 @@
+interface:
+  display_name: "Medical Image Extraction"
+  short_description: "Extract and verify medical figures for study decks"
+  default_prompt: "Use $medical-image-extraction to extract and review the authorised textbook and lecture figures with source and crop evidence."

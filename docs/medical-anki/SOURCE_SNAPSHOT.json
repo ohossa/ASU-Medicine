@@ -1,0 +1,175 @@
+{
+  "saved_date": "2026-11-11",
+  "scope": "Project-local portable copy of the accepted workflows; documentation routing adapted to this repository.",
+  "source_copies": [
+    {
+      "source": "/Users/omarhossa/.codex/skills/medical-anki-production/SKILL.md",
+      "project_path": ".agents/skills/medical-anki-production/SKILL.md",
+      "sha256": "c3a4e0a7d5cebf93cf3fc3dc429b77fc421440bbe4a22fd15e8e99667647d415",
+      "project_sha256": "4eacf9b52f57f17f867be7d8938efd90b20dd00b72bfc81ce08bd7aa974963a5",
+      "adapted": true,
+      "current_source_sha256": "4eacf9b52f57f17f867be7d8938efd90b20dd00b72bfc81ce08bd7aa974963a5"
+    },
+    {
+      "source": "/Users/omarhossa/.codex/skills/medical-anki-production/agents/openai.yaml",
+      "project_path": ".agents/skills/medical-anki-production/agents/openai.yaml",
+      "sha256": "949dc2a1c03e642792ec16e3db3199679f4d1b0a6a37022e3533b0b636f61731",
+      "project_sha256": "949dc2a1c03e642792ec16e3db3199679f4d1b0a6a37022e3533b0b636f61731",
+      "adapted": false,
+      "current_source_sha256": "949dc2a1c03e642792ec16e3db3199679f4d1b0a6a37022e3533b0b636f61731"
+    },
+    {
+      "source": "/Users/omarhossa/.codex/skills/medical-anki-production/references/start-prompt.md",
+      "project_path": ".agents/skills/medical-anki-production/references/start-prompt.md",
+      "sha256": "64ef0ecb3defea4b0a2ba34db7d9e8bb11adcd695d074962367b4d52b715cd27",
+      "project_sha256": "c7eb0ce905a22b5730be9b86a32eaabb423c1ecaef227e40da0aad5063dbdbda",
+      "adapted": true,
+      "current_source_sha256": "c03e0cae2940fcb8dda0c9b6c16f7ed44a98863043cbad4a4853609f27895855"
+    },
+    {
+      "source": "/Users/omarhossa/.codex/skills/medical-anki-production/references/workflow.md",
+      "project_path": ".agents/skills/medical-anki-production/references/workflow.md",
+      "sha256": "0731b3de9a14cf4003ffd8de93ede9a26518279089059f451d6b6fa71bc61467",
+      "project_sha256": "7da64624ee7c17325159890bd821f40adefd82bc09630fdb152996577c5d3a4d",
+      "adapted": true,
+      "current_source_sha256": "af7400a5e36f6febdb7f34d6ad74a9fffde8741bae91360a8db5033d952c61d6"
+    },
+    {
+      "source": "/Users/omarhossa/.codex/skills/medical-image-extraction/SKILL.md",
+      "project_path": ".agents/skills/medical-image-extraction/SKILL.md",
+      "sha256": "59fdb9da35e2a2b2dd9e18d4d09be1c767b5020170f5e94674a4c3286d171cec",
+      "project_sha256": "f4e11d90e73f1a7000beb82ea90c355d37f481c5ae7bb5693354f7c7c17499fc",
+      "adapted": true,
+      "current_source_sha256": "f4e11d90e73f1a7000beb82ea90c355d37f481c5ae7bb5693354f7c7c17499fc"
+    },
+    {
+      "source": "/Users/omarhossa/.codex/skills/medical-image-extraction/agents/openai.yaml",
+      "project_path": ".agents/skills/medical-image-extraction/agents/openai.yaml",
+      "sha256": "00f35fe892fa9f8744040bf90dc5f8a28a12e8c38afb3df76cfe8126f24e59f5",
+      "project_sha256": "00f35fe892fa9f8744040bf90dc5f8a28a12e8c38afb3df76cfe8126f24e59f5",
+      "adapted": false,
+      "current_source_sha256": "00f35fe892fa9f8744040bf90dc5f8a28a12e8c38afb3df76cfe8126f24e59f5"
+    },
+    {
+      "source": "/Users/omarhossa/.codex/skills/medical-image-extraction/references/bundle-contract.md",
+      "project_path": ".agents/skills/medical-image-extraction/references/bundle-contract.md",
+      "sha256": "649ee4722de3b4aae9ae0e4aa9ec6e3136bc5d513b08fe5d1713e0dfefdfce30",
+      "project_sha256": "649ee4722de3b4aae9ae0e4aa9ec6e3136bc5d513b08fe5d1713e0dfefdfce30",
+      "adapted": false,
+      "current_source_sha256": "649ee4722de3b4aae9ae0e4aa9ec6e3136bc5d513b08fe5d1713e0dfefdfce30"
+    },
+    {
+      "source": "/Users/omarhossa/.codex/skills/medical-image-extraction/references/workflow.md",
+      "project_path": ".agents/skills/medical-image-extraction/references/workflow.md",
+      "sha256": "6fb84e013312210929d1118cd7d7c8107a8587278ca5f6ce5536e7384a741b28",
+      "project_sha256": "b76372910eaff161c823037ae12bb58466f564eaa1793dd29854f7f23bb6967b",
+      "adapted": true,
+      "current_source_sha256": "e8bd348545ed734c80aad6bfd553d9d4d01304e9879d84e052cd29c4b2057a25"
+    },
+    {
+      "source": "/Users/omarhossa/.codex/skills/medical-image-extraction/scripts/test_verify_visual_bundle.py",
+      "project_path": ".agents/skills/medical-image-extraction/scripts/test_verify_visual_bundle.py",
+      "sha256": "0854543fedc963186ace811a664cea51dd7f9ecac31d9a0c18d20e121353edf7",
+      "project_sha256": "0854543fedc963186ace811a664cea51dd7f9ecac31d9a0c18d20e121353edf7",
+      "adapted": false,
+      "current_source_sha256": "0854543fedc963186ace811a664cea51dd7f9ecac31d9a0c18d20e121353edf7"
+    },
+    {
+      "source": "/Users/omarhossa/.codex/skills/medical-image-extraction/scripts/verify_visual_bundle.py",
+      "project_path": ".agents/skills/medical-image-extraction/scripts/verify_visual_bundle.py",
+      "sha256": "99c1788818d9b81f30ec637737429c6113d984b71425f5a0d5e6abcfb16f8670",
+      "project_sha256": "99c1788818d9b81f30ec637737429c6113d984b71425f5a0d5e6abcfb16f8670",
+      "adapted": false,
+      "current_source_sha256": "99c1788818d9b81f30ec637737429c6113d984b71425f5a0d5e6abcfb16f8670"
+    },
+    {
+      "source": "/Users/omarhossa/Documents/Codex/2026-09-20/h/IMAGE_EXTRACTION_WORKFLOW.md",
+      "project_path": "IMAGE_EXTRACTION_WORKFLOW.md",
+      "sha256": "6fb84e013312210929d1118cd7d7c8107a8587278ca5f6ce5536e7384a741b28",
+      "project_sha256": "b76372910eaff161c823037ae12bb58466f564eaa1793dd29854f7f23bb6967b",
+      "adapted": true,
+      "current_source_sha256": "e8bd348545ed734c80aad6bfd553d9d4d01304e9879d84e052cd29c4b2057a25"
+    },
+    {
+      "source": "/Users/omarhossa/Documents/Codex/2026-09-20/h/outputs/Medical_Anki_Complete_Workflow.md",
+      "project_path": "MEDICAL_ANKI_WORKFLOW.md",
+      "sha256": "0731b3de9a14cf4003ffd8de93ede9a26518279089059f451d6b6fa71bc61467",
+      "project_sha256": "7da64624ee7c17325159890bd821f40adefd82bc09630fdb152996577c5d3a4d",
+      "adapted": true,
+      "current_source_sha256": "af7400a5e36f6febdb7f34d6ad74a9fffde8741bae91360a8db5033d952c61d6"
+    },
+    {
+      "source": "/Users/omarhossa/Documents/Codex/2026-09-20/h/outputs/Medical_Anki_Workflow_Start_Prompt.md",
+      "project_path": "MEDICAL_ANKI_START_PROMPT.md",
+      "sha256": "64ef0ecb3defea4b0a2ba34db7d9e8bb11adcd695d074962367b4d52b715cd27",
+      "project_sha256": "b714b8239f57150091d7a004d83c2ec8bca8d6354c78227ed3b45c0bc8dd963a",
+      "adapted": true,
+      "current_source_sha256": "515ebb4ba4e954d483c38de93df526a88a9c479dbabd6dfedaedabf8c11fbf0e"
+    },
+    {
+      "source": "/Users/omarhossa/Documents/Codex/2026-09-20/h/outputs/Medical_Anki_Workflow_Validation.md",
+      "project_path": "docs/medical-anki/VALIDATION.md",
+      "sha256": "bcf9d07026118c0d3a4bd3011c0c01811afb718a6581e620b9104734240d230d",
+      "project_sha256": "db9bb6378e2aa06bbeefd1f4c2146be5a1aa8fa0fae3ab71ed9dfd41db82017e",
+      "adapted": true,
+      "current_source_sha256": "86c7d9c7ff0f8dd1c1433c500f0f30eee781c8202c8714ebc4d4f0850a4c1182"
+    },
+    {
+      "source": "/Users/omarhossa/Documents/Codex/2026-09-20/h/outputs/Medical_Anki_Workflow_Forward_Test.md",
+      "project_path": "docs/medical-anki/FORWARD_TEST.md",
+      "sha256": "bad3f5b446702413173939f5ea09507e673ae8b744a610b5e020a8e7be84d648",
+      "project_sha256": "bad3f5b446702413173939f5ea09507e673ae8b744a610b5e020a8e7be84d648",
+      "adapted": false,
+      "current_source_sha256": "bad3f5b446702413173939f5ea09507e673ae8b744a610b5e020a8e7be84d648"
+    },
+    {
+      "source": "/Users/omarhossa/Documents/Codex/2026-09-20/h/outputs/Medical_Anki_Workflow_Kit.zip",
+      "project_path": "docs/medical-anki/Medical_Anki_Workflow_Kit.zip",
+      "sha256": "78ae128c458825ae6ccc2bff08d069e928dc3e9986c8965ca05a5837e703a47a",
+      "project_sha256": "27cf5ac48b85accab566f4e3b26a8e1df7f79967ee6ec98752c79643a5e2e9c5",
+      "adapted": true,
+      "current_source_sha256": "0266a855338425344ee66a377054f1f225d61927450d9bf2a4ef91037ef716fa"
+    }
+  ],
+  "updated_date": "2026-11-12",
+  "answer_layout_revision": "Both Basic and Cloze: centred Extra title/text/images, conditional box; existing APKGs not rebuilt.",
+  "answer_layout_assets": [
+    {
+      "filename": "basic-back.html",
+      "sha256": "b651c4a68dc03724a378f445699d99117ed18820b7803662ba47bbbf8189a724",
+      "module_template": "/Users/omarhossa/Documents/Codex/2026-09-20/h/Urogenital_Anki_Project/templates/basic-back.html",
+      "user_skill": "/Users/omarhossa/.codex/skills/medical-anki-production/assets/basic-back.html",
+      "project_skill": ".agents/skills/medical-anki-production/assets/basic-back.html"
+    },
+    {
+      "filename": "basic-front.html",
+      "sha256": "1a0bb9a793f764f36e460a81bf06b1a65f815c3a603fb404be78071d83629e9e",
+      "module_template": "/Users/omarhossa/Documents/Codex/2026-09-20/h/Urogenital_Anki_Project/templates/basic-front.html",
+      "user_skill": "/Users/omarhossa/.codex/skills/medical-anki-production/assets/basic-front.html",
+      "project_skill": ".agents/skills/medical-anki-production/assets/basic-front.html"
+    },
+    {
+      "filename": "cloze-back.html",
+      "sha256": "12ad0fd28dd280bde3707443584b0693183a05fedb11d1de42dea644cd0ea155",
+      "module_template": "/Users/omarhossa/Documents/Codex/2026-09-20/h/Urogenital_Anki_Project/templates/cloze-back.html",
+      "user_skill": "/Users/omarhossa/.codex/skills/medical-anki-production/assets/cloze-back.html",
+      "project_skill": ".agents/skills/medical-anki-production/assets/cloze-back.html"
+    },
+    {
+      "filename": "cloze-front.html",
+      "sha256": "8d41e5c78fa30c9fb8b1e1d09ea207cbceb28c50c81ebea9db387d0cff12feab",
+      "module_template": "/Users/omarhossa/Documents/Codex/2026-09-20/h/Urogenital_Anki_Project/templates/cloze-front.html",
+      "user_skill": "/Users/omarhossa/.codex/skills/medical-anki-production/assets/cloze-front.html",
+      "project_skill": ".agents/skills/medical-anki-production/assets/cloze-front.html"
+    },
+    {
+      "filename": "styling.css",
+      "sha256": "14821252bc1fe1a9afb9c3c58a7b4a7b8776d2e83493392dc9d41f7215cefe96",
+      "module_template": "/Users/omarhossa/Documents/Codex/2026-09-20/h/Urogenital_Anki_Project/templates/styling.css",
+      "user_skill": "/Users/omarhossa/.codex/skills/medical-anki-production/assets/styling.css",
+      "project_skill": ".agents/skills/medical-anki-production/assets/styling.css"
+    }
+  ],
+  "answer_layout_reference_sha256": "7385c0af9d3c99e14042b48e74b23f34f1f4934f3bf2be775fc82cb73af9c896",
+  "workflow_routing_updated": "2026-11-17"
+}

@@ -17,19 +17,19 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     expect(manifestEntry).toBeDefined();
     expect(manifestEntry.year).toBe(3);
     expect(manifestEntry.semester).toBe(1);
-    expect(manifestEntry.totalCount).toBe(7591);
-    expect(manifestEntry.mcqCount).toBe(3727);
-    expect(manifestEntry.essayCount).toBe(3864);
+    expect(manifestEntry.totalCount).toBe(8511);
+    expect(manifestEntry.mcqCount).toBe(4301);
+    expect(manifestEntry.essayCount).toBe(4210);
     expect(manifestEntry.paths).toEqual(['../imports/year-3/semester-1/MUG-3.json']);
-    expect(manifestEntry.revision).toBe('25cbffbd3602d792f7cf85af1ba56a0781c200fcb8da2640a0015f150e142953');
-    expect(manifestEntry.bytes).toBe(11428382);
+    expect(manifestEntry.revision).toBe('f4ac3a844496a91be799fda8a4107a2e7b723691a1b4c7fdfb7bf52bbdfe7c41');
+    expect(manifestEntry.bytes).toBe(12525188);
   });
 
   it('reports module question counts from manifest when not yet in memory', () => {
     const counts = getModuleQuestionCounts('MUG-3');
-    expect(counts.totalCount).toBe(7591);
-    expect(counts.mcqCount).toBe(3727);
-    expect(counts.essayCount).toBe(3864);
+    expect(counts.totalCount).toBe(8511);
+    expect(counts.mcqCount).toBe(4301);
+    expect(counts.essayCount).toBe(4210);
   });
 
   it('resolves correct academic year for MUG-3', () => {
@@ -45,20 +45,20 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
 
   it('reports exact question counts in memory matching manifest', () => {
     const counts = getModuleQuestionCounts('MUG-3');
-    expect(counts.totalCount).toBe(7591);
-    expect(counts.mcqCount).toBe(3727);
-    expect(counts.essayCount).toBe(3864);
+    expect(counts.totalCount).toBe(8511);
+    expect(counts.mcqCount).toBe(4301);
+    expect(counts.essayCount).toBe(4210);
   });
 
   it('loads mixed mode chapters with exact chapter counts, schema integrity, and zero truncation', () => {
     const chapters = getChaptersForModuleAndMode('MUG-3', 'mixed');
     
-    // Total questions loaded must be exactly 7,596
+    // Total questions loaded must be exactly 8,511
     const totalLoaded = chapters.reduce(
       (sum, c) => sum + c.subjects.reduce((s, sub) => s + sub.questions.length, 0),
       0
     );
-    expect(totalLoaded).toBe(7591);
+    expect(totalLoaded).toBe(8511);
 
     // Verify visiblePracticeChapters behavior
     // 25 chapters in bank, 2 empty past-exam chapters (108, 204) properly hidden from student navigation
@@ -100,7 +100,7 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
 
     const ch3 = chapters.find((c) => c.id === 3);
     expect(ch3).toBeDefined();
-    expect(ch3!.subjects[0].questions.length).toBe(1484); // -52 moved to Ch1
+    expect(ch3!.subjects[0].questions.length).toBe(2404); // 1484 + 920 from 2027 renal revision
 
     const ch5 = chapters.find((c) => c.id === 5);
     expect(ch5).toBeDefined();
@@ -127,13 +127,13 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     expect(ch205!.subjects[0].questions.length).toBe(363); // 364 - 1 dashed line fragment
   });
 
-  it('loads MCQ mode with exact question counts (3,727 questions)', () => {
+  it('loads MCQ mode with exact question counts (4,301 questions)', () => {
     const chapters = getChaptersForModuleAndMode('MUG-3', 'mcq');
     const totalMcq = chapters.reduce(
       (sum, c) => sum + c.subjects.reduce((s, sub) => s + sub.questions.length, 0),
       0
     );
-    expect(totalMcq).toBe(3727);
+    expect(totalMcq).toBe(4301);
 
     for (const c of chapters) {
       for (const s of c.subjects) {
@@ -144,13 +144,13 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     }
   });
 
-  it('loads Essay mode with exact question counts (3,864 questions)', () => {
+  it('loads Essay mode with exact question counts (4,210 questions)', () => {
     const chapters = getChaptersForModuleAndMode('MUG-3', 'essay');
     const totalEssay = chapters.reduce(
       (sum, c) => sum + c.subjects.reduce((s, sub) => s + sub.questions.length, 0),
       0
     );
-    expect(totalEssay).toBe(3864);
+    expect(totalEssay).toBe(4210);
 
     for (const c of chapters) {
       for (const s of c.subjects) {

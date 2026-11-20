@@ -1,0 +1,26 @@
+
+.card { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+font-size: 20px; line-height: 1.55; text-align: left; color: #202124;
+background: #ffffff; margin: 0; padding: 22px; overflow-wrap: break-word; }
+.content { max-width: 760px; margin: auto; }
+.answer { margin-top: 22px; padding-top: 16px; border-top: 1px solid #888; }
+.extra { margin-top: 20px; }
+.extra-box { padding: 16px; border: 2px dashed #858995; border-radius: 10px; }
+.extra-title { margin: 0 0 14px; font-size: 1em; font-weight: 600; text-align: center; color: #9a4300; }
+.extra-box .extra-content { text-align: center; }
+.extra-box .extra-content img { display: block; float: none; max-width: 100%; height: auto; margin: 12px auto; }
+.extra-content > br:first-child { display: none; }
+.source { margin-top: 24px; font-size: 14px; color: #595959; }
+.faculty { margin-top: 16px; font-size: 15px; font-weight: 600; }
+.artery { color: #b42318; } .vein { color: #175cd3; }
+.cloze { font-weight: 600; } img { max-width: 100%; height: auto; }
+.nightMode, .night_mode, .card.nightMode { background: #1c1c1e; color: #f2f2f7; }
+.nightMode .source, .night_mode .source { color: #b8b8c0; }
+.nightMode .artery, .night_mode .artery { color: #ff9b94; }
+.nightMode .vein, .night_mode .vein { color: #8fbcff; }
+.nightMode .extra-box, .night_mode .extra-box { border-color: #777982; }
+.nightMode .extra-title, .night_mode .extra-title { color: #ffb86b; }
+.cloze-answer .cloze { color: #8a4b08; }
+.nightMode .cloze-answer .cloze, .night_mode .cloze-answer .cloze { color: #ffd166; }
+.cloze-answer .cloze * { color: inherit; }
+@media (max-width: 480px) { .card { padding: 16px; font-size: 19px; } .extra-box { padding: 12px 10px; } }

@@ -236,3 +236,8 @@ Before completing any task in this codebase, verify:
 * [ ] **Surgical Implementation:** Changed only the lines directly related to the user request.
 * [ ] **Tested Completely:** Ran all automated Vitest test suites.
 * [ ] **Updated Documentation:** Kept schema, documentation, and Graphify in sync.
+
+
+## Medical Anki and image-production skills
+
+The project-local entrypoint is [medical-anki/START_HERE.md](medical-anki/START_HERE.md). Both full workflows, the copyable starting prompt, two self-contained sibling skills, validator/tests and portable ZIP are saved in the project. Codex/Claude/another AI can follow the Markdown directly without a particular plugin. See [medical-anki/VALIDATION.md](medical-anki/VALIDATION.md) for the actual scope of validation and the original forward-test finding. This workflow does not imply new-source processing, live Anki mutation, publication or pushing without user authorisation.

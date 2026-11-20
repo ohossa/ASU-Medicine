@@ -41,3 +41,10 @@ data-format-v2/backups/
 supabase-backup/
 stats.html
 .vercel
+
+# Temporary extraction caches & AST
+scripts/*.png
+scripts/*.txt
+scripts/ocr_cache/
+scripts/reviewed_mcqs_cache/
+graphify-out/cache/ast/
