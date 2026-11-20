@@ -301,18 +301,49 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
   // 2. Fetch enrolled Clerk users for real identities (name, email, avatar)
   const clerkUsers = await fetchEnrolledClerkUsers();
 
+  let d1OverallKpiAttempts = 0;
+  let d1OverallKpiCorrect = 0;
+
   // 3. Try Cloudflare D1 first (O(1) table query, unified complete roster)
   let d1Loaded = false;
   if (isD1Configured()) {
     try {
-      const [d1Profiles, allEntries] = await Promise.all([
+      const [
+        d1Profiles,
+        overallKpis,
+        studentTotals,
+        studentBreakdowns,
+        moduleAggs,
+        topFailures,
+        recentEvents,
+      ] = await Promise.all([
         d1Query<any>(
           'SELECT user_id, year, xp, competitive_xp, weekly_xp, level, streak, best_streak, alias, opt_in, banner, title, last_day, updated_at FROM learning_profiles'
         ),
         d1Query<any>(
-          'SELECT user_id, module_code, question_id, chapter_id, correct, created_at FROM learning_entries ORDER BY created_at DESC LIMIT 5000'
+          'SELECT count(*) as total_attempts, sum(case when correct = 1 then 1 else 0 end) as total_correct FROM learning_entries'
+        ),
+        d1Query<any>(
+          'SELECT user_id, count(*) as attempts, sum(case when correct = 1 then 1 else 0 end) as correct FROM learning_entries GROUP BY user_id'
+        ),
+        d1Query<any>(
+          'SELECT user_id, module_code, count(*) as attempts, sum(case when correct = 1 then 1 else 0 end) as correct FROM learning_entries GROUP BY user_id, module_code'
+        ),
+        d1Query<any>(
+          'SELECT module_code, count(*) as attempts, sum(case when correct = 1 then 1 else 0 end) as correct, count(distinct user_id) as unique_students FROM learning_entries GROUP BY module_code'
+        ),
+        d1Query<any>(
+          'SELECT module_code, chapter_id, question_id, count(*) as attempts, sum(case when correct = 0 then 1 else 0 end) as failures FROM learning_entries GROUP BY module_code, chapter_id, question_id HAVING failures > 0 ORDER BY failures DESC LIMIT 50'
+        ),
+        d1Query<any>(
+          'SELECT user_id, module_code, question_id, correct, created_at FROM learning_entries ORDER BY created_at DESC LIMIT 50'
         ),
       ]);
+
+      if (Array.isArray(overallKpis) && overallKpis[0]) {
+        d1OverallKpiAttempts = Number(overallKpis[0].total_attempts || 0);
+        d1OverallKpiCorrect = Number(overallKpis[0].total_correct || 0);
+      }
 
       const profileMap = new Map<string, any>();
       if (Array.isArray(d1Profiles)) {
@@ -321,16 +352,77 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
         }
       }
 
-      const progressMap = new Map<string, any>();
+      // Map student totals
+      const studentTotalsMap = new Map<string, { attempts: number; correct: number }>();
+      if (Array.isArray(studentTotals)) {
+        for (const st of studentTotals) {
+          if (st && st.user_id) {
+            studentTotalsMap.set(st.user_id, {
+              attempts: Number(st.attempts || 0),
+              correct: Number(st.correct || 0),
+            });
+          }
+        }
+      }
 
-      const entriesByUser = new Map<string, any[]>();
-      if (Array.isArray(allEntries)) {
-        for (const entry of allEntries) {
-          const list = entriesByUser.get(entry.user_id) || [];
-          list.push(entry);
-          entriesByUser.set(entry.user_id, list);
+      // Map student module breakdowns
+      const studentBreakdownMap = new Map<string, Record<string, { attempts: number; correct: number; accuracy: number }>>();
+      if (Array.isArray(studentBreakdowns)) {
+        for (const sb of studentBreakdowns) {
+          if (sb && sb.user_id && sb.module_code) {
+            let userBreakdowns = studentBreakdownMap.get(sb.user_id);
+            if (!userBreakdowns) {
+              userBreakdowns = {};
+              studentBreakdownMap.set(sb.user_id, userBreakdowns);
+            }
+            const attempts = Number(sb.attempts || 0);
+            const correct = Number(sb.correct || 0);
+            userBreakdowns[sb.module_code] = {
+              attempts,
+              correct,
+              accuracy: attempts > 0 ? Math.round((correct / attempts) * 100) : 0,
+            };
+          }
+        }
+      }
 
-          if (entry.created_at && recentActivity.length < 50) {
+      // Map module aggregates
+      if (Array.isArray(moduleAggs)) {
+        for (const ma of moduleAggs) {
+          if (ma && ma.module_code) {
+            const uniqueSet = new Set<string>();
+            const count = Number(ma.unique_students || 0);
+            for (let i = 0; i < count; i++) {
+              uniqueSet.add(`learner_${i}`);
+            }
+            moduleAggregates[ma.module_code] = {
+              attempts: Number(ma.attempts || 0),
+              correct: Number(ma.correct || 0),
+              uniqueStudents: uniqueSet,
+            };
+          }
+        }
+      }
+
+      // Map top question failures
+      if (Array.isArray(topFailures)) {
+        for (const f of topFailures) {
+          if (f && f.module_code && f.question_id) {
+            const qKey = `${f.module_code}:${f.question_id}`;
+            questionFailures[qKey] = {
+              attempts: Number(f.attempts || 0),
+              failures: Number(f.failures || 0),
+              moduleCode: f.module_code,
+              chapterId: Number(f.chapter_id || 1),
+            };
+          }
+        }
+      }
+
+      // Map recent activity events
+      if (Array.isArray(recentEvents)) {
+        for (const entry of recentEvents) {
+          if (entry && entry.user_id && recentActivity.length < 50) {
             const clerkUser = clerkUsers.get(entry.user_id);
             const prof = profileMap.get(entry.user_id);
             const studentName = clerkUser?.name || prof?.alias || `Student ${entry.user_id.slice(-4)}`;
@@ -346,10 +438,13 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
         }
       }
 
+      const progressMap = new Map<string, any>();
+
       // Unified roster of ALL accounts: Clerk registrations + Cloudflare D1 profiles + Sync progress + Live presence
       const allUserIds = new Set<string>([
         ...clerkUsers.keys(),
         ...profileMap.keys(),
+        ...studentTotalsMap.keys(),
         ...progressMap.keys(),
         ...presence.onlineUserIds,
       ]);
@@ -359,7 +454,8 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
           const profile = profileMap.get(userId);
           const progress = progressMap.get(userId);
           const clerkUser = clerkUsers.get(userId);
-          const userEntries = entriesByUser.get(userId) || [];
+          const studentStats = studentTotalsMap.get(userId) || { attempts: 0, correct: 0 };
+          const studentModuleBreakdown = studentBreakdownMap.get(userId) || {};
 
           // Real Name from Clerk, with intelligent fallback
           const realName = clerkUser?.name || extractStudentName(clerkUser, profile?.alias, userId);
@@ -383,45 +479,6 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
           const streak = Number(profile?.streak || 0);
           const bestStreak = Number(profile?.best_streak || streak);
 
-          let studentCorrect = 0;
-          const studentModuleBreakdown: Record<string, { attempts: number; correct: number; accuracy: number }> = {};
-
-          for (const entry of userEntries) {
-            const mCode = entry.module_code;
-            if (!studentModuleBreakdown[mCode]) {
-              studentModuleBreakdown[mCode] = { attempts: 0, correct: 0, accuracy: 0 };
-            }
-            studentModuleBreakdown[mCode].attempts++;
-            if (entry.correct) {
-              studentModuleBreakdown[mCode].correct++;
-              studentCorrect++;
-            }
-
-            if (!moduleAggregates[mCode]) {
-              moduleAggregates[mCode] = { attempts: 0, correct: 0, uniqueStudents: new Set() };
-            }
-            moduleAggregates[mCode].attempts++;
-            if (entry.correct) moduleAggregates[mCode].correct++;
-            moduleAggregates[mCode].uniqueStudents.add(userId);
-
-            const qKey = `${mCode}:${entry.question_id}`;
-            if (!questionFailures[qKey]) {
-              questionFailures[qKey] = {
-                attempts: 0,
-                failures: 0,
-                moduleCode: mCode,
-                chapterId: entry.chapter_id || 1,
-              };
-            }
-            questionFailures[qKey].attempts++;
-            if (!entry.correct) questionFailures[qKey].failures++;
-          }
-
-          for (const mCode of Object.keys(studentModuleBreakdown)) {
-            const b = studentModuleBreakdown[mCode];
-            b.accuracy = b.attempts > 0 ? Math.round((b.correct / b.attempts) * 100) : 0;
-          }
-
           let weakestModule: string | undefined;
           let minAcc = 101;
           for (const [mCode, b] of Object.entries(studentModuleBreakdown)) {
@@ -431,8 +488,10 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
             }
           }
 
-          let totalAttempts = userEntries.length;
-          // Fallback to progress.data if userEntries has no records
+          let totalAttempts = studentStats.attempts;
+          let studentCorrect = studentStats.correct;
+
+          // Fallback to progress.data if totalAttempts has no records
           if (totalAttempts === 0 && progress?.data && typeof progress.data === "object") {
             try {
               for (const [key, val] of Object.entries(progress.data)) {
@@ -471,7 +530,7 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
             questionsAttempted: totalAttempts,
             questionsCorrect: studentCorrect,
             accuracy: studentAccuracy,
-            studyTimeMinutes: Math.round(totalAttempts * 1.5),
+            studyTimeMinutes: Math.round(totalAttempts * 1.8),
             lastActive,
             isOnline: presence.onlineUserIds.includes(userId),
             activeModule: onlineMeta?.moduleCode,
@@ -808,13 +867,14 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
   // 3. Compile Module Analytics for all 42 modules
   const modules: ModuleAnalytics[] = catalogModules.map((m) => {
     const agg = moduleAggregates[m.code] || { attempts: 0, correct: 0, uniqueStudents: new Set() };
-    const attempts = agg.attempts > 0 ? agg.attempts : Math.floor(Math.random() * 80) + 40;
-    const correct = agg.attempts > 0 ? agg.correct : Math.round(attempts * (0.65 + (m.year * 0.04)));
-    const accuracy = attempts > 0 ? Math.round((correct / attempts) * 100) : 75;
-    const activeLearners = agg.uniqueStudents.size > 0 ? agg.uniqueStudents.size : Math.max(1, Math.floor(attempts / 25));
+    const attempts = agg.attempts;
+    const correct = agg.correct;
+    const accuracy = attempts > 0 ? Math.round((correct / attempts) * 100) : 0;
+    const activeLearners = agg.uniqueStudents.size;
 
     let difficultyRating: ModuleAnalytics["difficultyRating"] = "Moderate";
-    if (accuracy >= 85) difficultyRating = "Beginner";
+    if (attempts === 0) difficultyRating = "Moderate";
+    else if (accuracy >= 85) difficultyRating = "Beginner";
     else if (accuracy >= 75) difficultyRating = "Moderate";
     else if (accuracy >= 65) difficultyRating = "Challenging";
     else difficultyRating = "Hard";
@@ -900,11 +960,17 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
   const HISTORICAL_STUDY_HOURS_BASELINE = 110;
 
   const totalStudents = students.length;
-  const liveQuestionsSolved = students.reduce((acc, s) => acc + s.questionsAttempted, 0);
-  const liveQuestionsCorrect = students.reduce((acc, s) => acc + s.questionsCorrect, 0);
+  const liveQuestionsSolved =
+    d1OverallKpiAttempts > 0
+      ? d1OverallKpiAttempts
+      : students.reduce((acc, s) => acc + s.questionsAttempted, 0);
+  const liveQuestionsCorrect =
+    d1OverallKpiCorrect > 0
+      ? d1OverallKpiCorrect
+      : students.reduce((acc, s) => acc + s.questionsCorrect, 0);
   const totalQuestionsSolved = liveQuestionsSolved + HISTORICAL_SOLVED_BASELINE;
   const overallAccuracy = liveQuestionsSolved > 0 ? Math.round((liveQuestionsCorrect / liveQuestionsSolved) * 100) : 83;
-  const liveStudyHours = Math.round(students.reduce((acc, s) => acc + s.studyTimeMinutes, 0) / 60);
+  const liveStudyHours = Math.round((liveQuestionsSolved * 1.8) / 60);
   const totalStudyHours = liveStudyHours + HISTORICAL_STUDY_HOURS_BASELINE;
 
   const today = new Date().toISOString().slice(0, 10);
