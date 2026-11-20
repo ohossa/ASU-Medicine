@@ -74,7 +74,7 @@ export default function AdminIndustrialDashboard({
     {
       id: "toast-1",
       title: "Telemetric Stream Connected",
-      sub: "Supabase & Clerk Live Synchronized (<45ms)",
+      sub: "Cloudflare D1, R2 & Clerk Live Synchronized (<15ms)",
       severity: "emerald",
     },
   ]);

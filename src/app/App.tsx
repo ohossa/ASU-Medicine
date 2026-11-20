@@ -1810,14 +1810,21 @@ export default function App() {
   );
 
   const [optimisticAuth, setOptimisticAuth] = useState(() => isOptimisticallyAuthenticated());
+  const [authResolved, setAuthResolved] = useState(false);
 
   useEffect(() => {
     if (isLoaded) {
       if (isSignedIn) {
         setOptimisticAuth(true);
+        setAuthResolved(true);
       } else {
-        setOptimisticAuth(false);
-        clearCachedSession();
+        // Debounce unauthenticated transition to prevent split-second flash during Clerk session hydration
+        const timer = setTimeout(() => {
+          setOptimisticAuth(false);
+          clearCachedSession();
+          setAuthResolved(true);
+        }, 250);
+        return () => clearTimeout(timer);
       }
     }
   }, [isLoaded, isSignedIn]);
@@ -1843,7 +1850,7 @@ export default function App() {
     }
   }, [isLoaded, isSignedIn]);
 
-  const isAuthenticated = isSignedIn || isDevPreview || (optimisticAuth && !isLoaded);
+  const isAuthenticated = isSignedIn || isDevPreview || (optimisticAuth && (!isLoaded || !authResolved));
 
   return (
     <ThemeProvider>

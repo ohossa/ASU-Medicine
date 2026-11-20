@@ -5,7 +5,6 @@ const mocks = vi.hoisted(() => ({
   r2Client: null as any,
   getR2Json: vi.fn(),
   putR2Json: vi.fn(),
-  supabase: null as any,
 }));
 
 vi.mock("@clerk/backend", () => ({
@@ -19,16 +18,11 @@ vi.mock("../../../server/r2-client.js", () => ({
   getR2BucketName: () => "a-plus-storage",
 }));
 
-vi.mock("../../../server/supabase-client.js", () => ({
-  getSupabase: () => mocks.supabase,
-}));
-
 describe("Cloudflare R2 Zero-Egress Sync API (/api/sync)", () => {
   beforeEach(() => {
     vi.clearAllMocks();
     process.env.CLERK_SECRET_KEY = "test_clerk_secret";
     mocks.r2Client = { send: vi.fn() };
-    mocks.supabase = null;
   });
 
   const mockRes = () => {
@@ -170,23 +164,10 @@ describe("Cloudflare R2 Zero-Egress Sync API (/api/sync)", () => {
     );
   });
 
-  it("succeeds on POST even if Supabase is down with 402 Payment Required", async () => {
+  it("succeeds on POST and persists directly to Cloudflare R2", async () => {
     mocks.verifyToken.mockResolvedValue({ sub: "user_r2_test" });
     mocks.getR2Json.mockResolvedValue({ data: {}, notModified: false });
     mocks.putR2Json.mockResolvedValue({ etag: '"r2-ok"' });
-
-    // Simulate Supabase returning a 402 Payment Required error
-    mocks.supabase = {
-      from: vi.fn(() => ({
-        select: vi.fn(() => ({
-          eq: vi.fn(() => ({
-            maybeSingle: vi.fn(async () => {
-              throw new Error("402 Payment Required: Egress Exceeded");
-            }),
-          })),
-        })),
-      })),
-    };
 
     const { default: handler } = await import("../../../api/sync");
     const req: any = {

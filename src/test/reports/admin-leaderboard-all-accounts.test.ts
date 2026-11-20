@@ -103,7 +103,7 @@ describe("Admin Master Leaderboard: Real Names, Real Emails & All Accounts Roste
 
   describe("Enrolled Clerk Accounts Integration", () => {
     it("fetches all Clerk accounts and merges them into the Admin Leaderboard", async () => {
-      // Mock Supabase: user_top_01 and user_contender_02 have profiles; user_zero_xp_03 has NO profile
+      // Mock D1: user_top_01 and user_contender_02 have profiles; user_zero_xp_03 has NO profile
       const mockProfiles = [
         {
           user_id: "user_top_01",

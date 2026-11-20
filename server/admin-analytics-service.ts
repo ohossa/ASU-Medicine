@@ -268,7 +268,7 @@ export async function fetchEnrolledClerkUsers(secretKey?: string): Promise<Map<s
  * Handles production data and gracefully provides structured platform baselines when testing offline.
  */
 let adminAnalyticsCache: { timestamp: number; data: FullAdminAnalytics } | null = null;
-const ADMIN_ANALYTICS_CACHE_TTL = 60_000; // 60 seconds server-side cache to slash Supabase egress
+const ADMIN_ANALYTICS_CACHE_TTL = 60_000; // 60 seconds server-side cache to slash database load
 
 export async function getAdminAnalytics(token: string): Promise<FullAdminAnalytics> {
   await verifyOwner(token);
@@ -346,7 +346,7 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
         }
       }
 
-      // Unified roster of ALL accounts: Clerk registrations + Supabase profiles + Sync progress + Live presence
+      // Unified roster of ALL accounts: Clerk registrations + Cloudflare D1 profiles + Sync progress + Live presence
       const allUserIds = new Set<string>([
         ...clerkUsers.keys(),
         ...profileMap.keys(),

@@ -4,7 +4,6 @@ import { Redis as ioredis } from 'ioredis';
 import { mergeHistory, newerValue, SYNC_CAS_LUA } from '../shared/cloud-merge.js';
 import { getR2Client, getR2Json, putR2Json } from '../server/r2-client.js';
 import { d1QueryFirst, d1Execute, isD1Configured } from '../server/d1-client.js';
-import { getSupabase } from '../server/supabase-client.js';
 import LZString from 'lz-string';
 const { compress, decompress } = LZString;
 
@@ -180,10 +179,9 @@ export default async function handler(req: any, res: any) {
 
     const hasR2 = !!getR2Client();
     const hasD1 = isD1Configured();
-    const supabase = getSupabase();
     const hasRedis = !!(redisUrl || (kvUrl && kvToken));
 
-    if (!hasR2 && !hasD1 && !supabase && !hasRedis) {
+    if (!hasR2 && !hasD1 && !hasRedis) {
       return res.status(503).json({ error: 'Cloud sync storage is not configured.' });
     }
 
@@ -269,106 +267,6 @@ export default async function handler(req: any, res: any) {
         }
       }
 
-      // --- Supabase Fallback Path (if R2 did not return or is not primary) ---
-      if (supabase) {
-        try {
-          if (isYearOnly) {
-            const { data: row } = await supabase
-              .from('user_progress')
-              .select('academic_year')
-              .eq('user_id', userId)
-              .maybeSingle();
-
-            let resolvedYear = row?.academic_year;
-            if (!resolvedYear || resolvedYear === 1) {
-              const { data: prof } = await supabase
-                .from('learning_profiles')
-                .select('year')
-                .eq('user_id', userId)
-                .maybeSingle();
-              if (prof?.year) resolvedYear = prof.year;
-            }
-
-            const safeYear = Number.isInteger(resolvedYear) && resolvedYear! >= 1 && resolvedYear! <= 5 ? resolvedYear! : 1;
-            res.setHeader('Server-Timing', `db;dur=${Date.now() - getStartTime}`);
-            return res.status(200).json({
-              year: safeYear,
-              data: {
-                [yearKey]: { year: safeYear, version: 1, timestamp: Date.now() },
-                asu_portal_year: safeYear,
-              }
-            });
-          }
-
-          const clientEtag = req.headers['if-none-match'];
-          if (clientEtag) {
-            const { data: meta } = await supabase
-              .from('user_progress')
-              .select('updated_at')
-              .eq('user_id', userId)
-              .maybeSingle();
-
-            const serverEtag = `W/"${meta?.updated_at || '0'}"`;
-            const cleanClient = clientEtag.replace(/^W\//, '');
-            const cleanServer = serverEtag.replace(/^W\//, '');
-            if (meta && cleanClient === cleanServer) {
-              res.setHeader('ETag', serverEtag);
-              res.setHeader('Server-Timing', `etag;dur=${Date.now() - getStartTime}`);
-              return res.status(304).end();
-            }
-          }
-
-          const { data: row, error } = await supabase
-            .from('user_progress')
-            .select('data, academic_year, updated_at')
-            .eq('user_id', userId)
-            .maybeSingle();
-
-          if (!error && row) {
-            const etag = `W/"${row.updated_at || '0'}"`;
-            res.setHeader('ETag', etag);
-            if (clientEtag && clientEtag.replace(/^W\//, '') === etag.replace(/^W\//, '')) {
-              res.setHeader('Server-Timing', `db;dur=${Date.now() - getStartTime}`);
-              return res.status(304).end();
-            }
-
-            const resultData = (typeof row.data === 'object' && row.data !== null) ? { ...(row.data as Record<string, unknown>) } : {};
-            const explicitPref = (resultData[yearKey] as any)?.year;
-            const portalYear = Number(resultData['asu_portal_year']);
-            let resolvedYear = row.academic_year;
-
-            if (Number.isInteger(explicitPref) && explicitPref >= 1 && explicitPref <= 5) {
-              resolvedYear = explicitPref;
-            } else if (Number.isInteger(portalYear) && portalYear >= 1 && portalYear <= 5) {
-              resolvedYear = portalYear;
-            }
-
-            if (!resultData[yearKey] && resolvedYear) {
-              resultData[yearKey] = { year: resolvedYear, version: 1, timestamp: Date.now() };
-            }
-            res.setHeader('Server-Timing', `db;dur=${Date.now() - getStartTime}`);
-            return res.status(200).json({ data: resultData });
-          }
-
-          if (!error && !row) {
-            const { data: prof } = await supabase
-              .from('learning_profiles')
-              .select('year')
-              .eq('user_id', userId)
-              .maybeSingle();
-
-            const resultData: Record<string, unknown> = {};
-            if (prof?.year) {
-              resultData[yearKey] = { year: prof.year, version: 1, timestamp: Date.now() };
-            }
-            res.setHeader('Server-Timing', `db;dur=${Date.now() - getStartTime}`);
-            return res.status(200).json({ data: resultData });
-          }
-        } catch (err) {
-          console.warn('Supabase sync GET error, checking Redis fallback:', err);
-        }
-      }
-
       if (!redisUrl && (!kvUrl || !kvToken)) {
         return res.status(200).json({ data: {}, message: "Storage not configured yet" });
       }
@@ -434,7 +332,6 @@ export default async function handler(req: any, res: any) {
         }
 
         // --- 1. Cloudflare R2 Primary Storage (Zero Egress, High Performance) ---
-        let r2SaveSucceeded = false;
         if (hasR2) {
           try {
             const existingRes = await getR2Json<Record<string, unknown>>(userR2Key);
@@ -472,10 +369,9 @@ export default async function handler(req: any, res: any) {
             if (putRes?.etag) {
               res.setHeader('ETag', putRes.etag);
             }
-            r2SaveSucceeded = true;
           } catch (r2Err) {
             console.error('R2 sync POST error:', r2Err);
-            if (!hasD1 && !supabase && !hasRedis) {
+            if (!hasD1 && !hasRedis) {
               return res.status(500).json({ error: 'Failed to save to Cloudflare R2 storage.', details: String(r2Err) });
             }
           }
@@ -495,92 +391,8 @@ export default async function handler(req: any, res: any) {
           }
         }
 
-        // --- 3. Optional Supabase Persistence (Graceful Fallback / Dual-Write) ---
-        if (supabase) {
-          try {
-            const { data: existingRow } = await supabase
-              .from('user_progress')
-              .select('data, academic_year')
-              .eq('user_id', userId)
-              .maybeSingle();
-            const current = (existingRow?.data as Record<string, unknown>) || {};
-            const next = { ...current };
-
-            for (const [key, val] of Object.entries(body)) {
-              if (val === null) {
-                delete next[key];
-              } else if (key === 'endocrine_essay_quiz_history' || key.startsWith(`asu_quiz_session:${userId}:`)) {
-                next[key] = mergeHistory(current[key], val, key === 'endocrine_essay_quiz_history');
-              } else {
-                next[key] = val;
-              }
-            }
-
-            let sbYear = existingRow?.academic_year;
-            if (resolvedYear) {
-              sbYear = resolvedYear;
-            } else if (!sbYear || sbYear === 1) {
-              const prefInNext = (next[yearKey] as any)?.year;
-              const portalInNext = Number(next['asu_portal_year']);
-              if (Number.isInteger(prefInNext) && prefInNext >= 1 && prefInNext <= 5) {
-                sbYear = prefInNext;
-              } else if (Number.isInteger(portalInNext) && portalInNext >= 1 && portalInNext <= 5) {
-                sbYear = portalInNext;
-              }
-            }
-
-            if (resolvedYear) {
-              const { data: existingProf } = await supabase
-                .from('learning_profiles')
-                .select('user_id')
-                .eq('user_id', userId)
-                .maybeSingle();
-
-              if (existingProf) {
-                await supabase.from('learning_profiles').update({
-                  year: sbYear || 1,
-                  updated_at: new Date().toISOString(),
-                }).eq('user_id', userId);
-              } else {
-                await supabase.from('learning_profiles').insert({
-                  user_id: userId,
-                  year: sbYear || 1,
-                  xp: 0,
-                  competitive_xp: 0,
-                  level: 1,
-                  streak: 0,
-                  best_streak: 0,
-                  alias: 'Student',
-                  opt_in: false,
-                  banner: 'default',
-                  title: 'student',
-                  updated_at: new Date().toISOString(),
-                });
-              }
-            }
-
-            const isIdentical = existingRow &&
-              existingRow.academic_year === sbYear &&
-              JSON.stringify(existingRow.data || {}) === JSON.stringify(next);
-
-            if (!isIdentical) {
-              await supabase.from('user_progress').upsert({
-                user_id: userId,
-                data: next,
-                academic_year: sbYear || 1,
-                updated_at: new Date().toISOString(),
-              }, { onConflict: 'user_id' });
-            }
-          } catch (sbErr: any) {
-            console.warn('Supabase sync POST failed (graceful degradation):', sbErr?.message || sbErr);
-            if (!r2SaveSucceeded && !hasRedis) {
-              return res.status(500).json({ error: 'Failed to save to cloud storage.', details: sbErr?.message || String(sbErr) });
-            }
-          }
-        }
-
-        // --- 4. Redis Fallback (Only if neither R2 nor Supabase active) ---
-        if (!hasR2 && !supabase && hasRedis) {
+        // --- 3. Redis Fallback (Only if R2 storage is not active) ---
+        if (!hasR2 && hasRedis) {
           try {
             for (const [strippedKey, value] of Object.entries(body)) {
               if (strippedKey.startsWith('asu_preferences:') && strippedKey !== `asu_preferences:${userId}:shuffle` && strippedKey !== yearKey) continue;

@@ -1,26 +1,24 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 
-// Mock Supabase client
-const mockSupabase = {
-  from: vi.fn(),
-};
-
-vi.mock("../../../server/supabase-client.js", () => ({
-  getSupabase: () => mockSupabase,
+const mocks = vi.hoisted(() => ({
+  verifyToken: vi.fn(async () => ({ sub: "student_year3" })),
+  r2Client: { send: vi.fn() },
+  getR2Json: vi.fn(),
+  putR2Json: vi.fn(),
 }));
 
 vi.mock("@clerk/backend", () => ({
-  verifyToken: vi.fn(async () => ({ sub: "student_year3" })),
+  verifyToken: mocks.verifyToken,
 }));
 
-vi.mock("../../../server/report-store.js", () => ({
-  getRedisClient: vi.fn(() => ({
-    scanKeys: vi.fn(async () => []),
-    get: vi.fn(async () => null),
-  })),
+vi.mock("../../../server/r2-client.js", () => ({
+  getR2Client: () => mocks.r2Client,
+  getR2Json: mocks.getR2Json,
+  putR2Json: mocks.putR2Json,
+  getR2BucketName: () => "a-plus-storage",
 }));
 
-describe("Sync Academic Year Preservation & Recovery", () => {
+describe("Sync Academic Year Preservation & Recovery (Cloudflare R2)", () => {
   beforeEach(() => {
     vi.clearAllMocks();
   });
@@ -32,35 +30,16 @@ describe("Sync Academic Year Preservation & Recovery", () => {
       "asu_preferences:student_year3:academic-year": { year: 3, version: 1, timestamp: 1000 },
     };
 
-    let capturedUpsert: any = null;
+    mocks.getR2Json.mockResolvedValue({
+      data: existingData,
+      etag: '"r2-etag-1"',
+      notModified: false,
+    });
 
-    mockSupabase.from.mockImplementation((table: string) => {
-      if (table === "user_progress") {
-        return {
-          select: vi.fn().mockReturnThis(),
-          eq: vi.fn().mockReturnThis(),
-          maybeSingle: vi.fn(async () => ({
-            data: { academic_year: 3, data: existingData },
-            error: null,
-          })),
-          upsert: vi.fn(async (row: any) => {
-            capturedUpsert = row;
-            return { error: null };
-          }),
-        };
-      }
-      if (table === "learning_profiles") {
-        return {
-          select: vi.fn().mockReturnThis(),
-          eq: vi.fn().mockReturnThis(),
-          maybeSingle: vi.fn(async () => ({
-            data: { user_id: "student_year3", year: 3, xp: 2500, level: 6 },
-            error: null,
-          })),
-          update: vi.fn().mockReturnThis(),
-        };
-      }
-      return { select: vi.fn().mockReturnThis(), eq: vi.fn().mockReturnThis(), maybeSingle: vi.fn(async () => ({ data: null, error: null })) };
+    let savedData: any = null;
+    mocks.putR2Json.mockImplementation(async (_key: string, data: any) => {
+      savedData = data;
+      return { etag: '"r2-etag-2"' };
     });
 
     const handler = (await import("../../../api/sync.js")).default;
@@ -92,30 +71,20 @@ describe("Sync Academic Year Preservation & Recovery", () => {
 
     expect(responseStatus).toBe(200);
     expect(responseBody).toEqual({ success: true });
-    expect(capturedUpsert).not.toBeNull();
-    // CRITICAL: academic_year MUST remain 3, NEVER 1!
-    expect(capturedUpsert.academic_year).toBe(3);
+    expect(savedData).not.toBeNull();
+    // CRITICAL: academic year in R2 progress MUST remain 3, NEVER 1!
+    expect(savedData.asu_portal_year).toBe(3);
+    expect(savedData["asu_preferences:student_year3:academic-year"]).toMatchObject({ year: 3 });
   });
 
   it("heals academic_year in GET /api/sync if data contains asu_portal_year: 3", async () => {
-    mockSupabase.from.mockImplementation((table: string) => {
-      if (table === "user_progress") {
-        return {
-          select: vi.fn().mockReturnThis(),
-          eq: vi.fn().mockReturnThis(),
-          maybeSingle: vi.fn(async () => ({
-            data: {
-              academic_year: 1, // Corrupted default 1
-              data: {
-                theme: "dark",
-                asu_portal_year: 3, // Real year
-              },
-            },
-            error: null,
-          })),
-        };
-      }
-      return { select: vi.fn().mockReturnThis(), eq: vi.fn().mockReturnThis(), maybeSingle: vi.fn(async () => ({ data: null, error: null })) };
+    mocks.getR2Json.mockResolvedValue({
+      data: {
+        theme: "dark",
+        asu_portal_year: 3, // Real year present without explicit preference key
+      },
+      etag: '"r2-etag-3"',
+      notModified: false,
     });
 
     const handler = (await import("../../../api/sync.js")).default;
