@@ -79,7 +79,12 @@ export async function getProfile(
             'SELECT count(distinct question_id) as unique_correct FROM learning_entries WHERE user_id = ? AND (ever_correct = 1 OR correct = 1)',
             [id]
           );
-          const uniqueCorrect = Number(verifiedRows?.[0]?.unique_correct || 0);
+          const rawFirst = verifiedRows?.[0];
+          const uniqueCorrect = rawFirst && 'unique_correct' in rawFirst
+            ? Number(rawFirst.unique_correct || 0)
+            : Array.isArray(verifiedRows)
+              ? new Set(verifiedRows.filter((e: any) => e?.ever_correct || e?.correct).map((e: any) => e?.question_id)).size
+              : 0;
           const minEarnedXp = uniqueCorrect * 10;
 
           if (minEarnedXp > profile.xp) {

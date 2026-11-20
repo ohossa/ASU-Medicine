@@ -27,7 +27,7 @@ import { AcademicYearProfilePage } from './components/profile/AcademicYearProfil
 
 import Dashboard from '../pages/Dashboard';
 import { isOptimisticallyAuthenticated, setCachedSession, clearCachedSession } from './auth/cachedSession';
-import { updateDocumentTitle } from './utils/pageTitle';
+import { updatePageHead } from './utils/pageTitle';
 import { usePageTracking } from './hooks/usePageTracking';
 
 // Lazy-loaded components for routing/modals
@@ -551,7 +551,10 @@ function MainApp() {
       }
     }
 
-    updateDocumentTitle(title);
+    updatePageHead({
+      pageName: title,
+      pathname: location.pathname,
+    });
   }, [location.pathname, screen]);
   const [isFromHistory, setIsFromHistory] = useState(false);
   const [historySource, setHistorySource] = useState<'chapters' | 'history' | null>(null);

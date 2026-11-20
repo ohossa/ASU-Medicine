@@ -4,6 +4,7 @@ import LoadingScreen from "./app/components/LoadingScreen";
 import { ThemeProvider } from "./app/context/ThemeContext";
 import { LanguageProvider } from "./app/context/LanguageContext";
 import { trackPageView } from "./app/lib/analytics";
+import { updatePageHead } from "./app/utils/pageTitle";
 import StudyEntry from "./StudyEntry";
 
 const SupportPage = lazy(() => import("./pages/support/SupportPage"));
@@ -32,12 +33,17 @@ export function PortalEntry({
   const normalizedPath = pathname.replace(/\/+$/, "");
 
   useEffect(() => {
-    if (
-      isSupportPath(normalizedPath) ||
-      isTermsPath(normalizedPath) ||
-      isPrivacyPath(normalizedPath) ||
-      isDisclaimerPath(normalizedPath)
-    ) {
+    if (isSupportPath(normalizedPath)) {
+      updatePageHead({ pageName: "Support", pathname: "/support" });
+      trackPageView(normalizedPath);
+    } else if (isTermsPath(normalizedPath)) {
+      updatePageHead({ pageName: "Terms of Service", pathname: "/terms" });
+      trackPageView(normalizedPath);
+    } else if (isPrivacyPath(normalizedPath)) {
+      updatePageHead({ pageName: "Privacy Policy", pathname: "/privacy" });
+      trackPageView(normalizedPath);
+    } else if (isDisclaimerPath(normalizedPath)) {
+      updatePageHead({ pageName: "Medical Disclaimer", pathname: "/disclaimer" });
       trackPageView(normalizedPath);
     }
   }, [normalizedPath]);

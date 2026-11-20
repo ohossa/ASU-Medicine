@@ -13,22 +13,46 @@ async function generate() {
 
   const urls = [
     { loc: "https://asu.codes/", priority: "1.0", changefreq: "daily" },
-    { loc: "https://asu.codes/anki", priority: "0.8", changefreq: "weekly" },
+    { loc: "https://asu.codes/anki", priority: "0.9", changefreq: "weekly" },
     { loc: "https://asu.codes/marks-calculator", priority: "0.8", changefreq: "monthly" },
-    { loc: "https://asu.codes/learning", priority: "0.8", changefreq: "weekly" },
+    { loc: "https://asu.codes/learning", priority: "0.85", changefreq: "weekly" },
     { loc: "https://asu.codes/support", priority: "0.6", changefreq: "monthly" },
     { loc: "https://asu.codes/terms", priority: "0.4", changefreq: "yearly" },
     { loc: "https://asu.codes/privacy", priority: "0.4", changefreq: "yearly" },
     { loc: "https://asu.codes/disclaimer", priority: "0.4", changefreq: "yearly" },
   ];
 
+  // Year level landing hubs
+  for (let y = 1; y <= 5; y++) {
+    urls.push({
+      loc: `https://asu.codes/year-${y}`,
+      priority: "0.85",
+      changefreq: "weekly",
+    });
+  }
+
   // Add individual module URLs across Years 1 to 5
-  for (const [code, info] of Object.entries(manifest)) {
+  // Sorted predictably by year and module code
+  const entries = Object.entries(manifest).sort(([aCode, aInfo], [bCode, bInfo]) => {
+    if (aInfo.year !== bInfo.year) return aInfo.year - bInfo.year;
+    return aCode.localeCompare(bCode);
+  });
+
+  for (const [code, info] of entries) {
     const yr = info.year;
     const lowerCode = code.toLowerCase();
+
+    // 1. Module mode & syllabus overview landing page
+    urls.push({
+      loc: `https://asu.codes/year-${yr}/${lowerCode}`,
+      priority: "0.9",
+      changefreq: "weekly",
+    });
+
+    // 2. Direct mixed practice mode (preserves existing indexed URLs in GSC)
     urls.push({
       loc: `https://asu.codes/year-${yr}/${lowerCode}/mixed`,
-      priority: "0.9",
+      priority: "0.85",
       changefreq: "weekly",
     });
   }

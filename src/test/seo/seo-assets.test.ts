@@ -156,4 +156,52 @@ describe("SEO & AI Search Assets Verification", () => {
       expect(html).toContain('Ain Shams medical question bank');
     });
   });
+
+  describe("Sitemap & Prerendered Canonical Compliance", () => {
+    it("sitemap contains only valid, verified, non-redirecting canonical URLs", () => {
+      const sitemapPath = path.join(root, "public/sitemap.xml");
+      const xml = fs.readFileSync(sitemapPath, "utf-8");
+      const urls = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1]);
+
+      expect(urls.length).toBeGreaterThanOrEqual(90);
+      expect(new Set(urls).size).toBe(urls.length); // Strict zero duplicates
+
+      for (const u of urls) {
+        expect(u.startsWith("https://asu.codes/")).toBe(true);
+        // Trailing slash only allowed on root
+        if (u !== "https://asu.codes/") {
+          expect(u.endsWith("/")).toBe(false);
+        }
+      }
+
+      // Must contain core tools and years
+      expect(urls).toContain("https://asu.codes/");
+      expect(urls).toContain("https://asu.codes/anki");
+      expect(urls).toContain("https://asu.codes/marks-calculator");
+      expect(urls).toContain("https://asu.codes/learning");
+      expect(urls).toContain("https://asu.codes/year-1");
+      expect(urls).toContain("https://asu.codes/year-1/iae-1");
+      expect(urls).toContain("https://asu.codes/year-1/iae-1/mixed");
+      expect(urls).toContain("https://asu.codes/year-2/mcvs-2/mixed");
+    });
+
+    it("prerendered shells have strictly matching self-referencing canonical tags", () => {
+      const ankiHtml = fs.readFileSync(path.join(root, "dist/anki/index.html"), "utf-8");
+      expect(ankiHtml).toContain('<link rel="canonical" href="https://asu.codes/anki" />');
+      expect(ankiHtml).toContain('<meta property="og:url" content="https://asu.codes/anki" />');
+      expect(ankiHtml).toContain("<title>Medical Anki Decks &amp; Spaced Repetition — A-Plus · asu.codes</title>");
+
+      const mixedHtml = fs.readFileSync(path.join(root, "dist/year-1/iae-1/mixed/index.html"), "utf-8");
+      expect(mixedHtml).toContain('<link rel="canonical" href="https://asu.codes/year-1/iae-1/mixed" />');
+      expect(mixedHtml).toContain('<meta property="og:url" content="https://asu.codes/year-1/iae-1/mixed" />');
+      expect(mixedHtml).toContain("IAE-1 Practice MCQs");
+
+      const modeHtml = fs.readFileSync(path.join(root, "dist/year-1/iae-1/index.html"), "utf-8");
+      expect(modeHtml).toContain('<link rel="canonical" href="https://asu.codes/year-1/iae-1" />');
+      expect(modeHtml).toContain('<meta property="og:url" content="https://asu.codes/year-1/iae-1" />');
+
+      const yearHtml = fs.readFileSync(path.join(root, "dist/year-1/index.html"), "utf-8");
+      expect(yearHtml).toContain('<link rel="canonical" href="https://asu.codes/year-1" />');
+    });
+  });
 });

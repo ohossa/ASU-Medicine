@@ -47,6 +47,10 @@ describe("Learning XP Recovery & Progress Resilience (Cloudflare D1)", () => {
     });
 
     mocks.d1Query.mockImplementation(async (sql: string, _params: any[]) => {
+      if (sql.includes("count(distinct question_id)")) {
+        const unique = new Set(existingEntries.filter((e) => e.ever_correct || e.correct).map((e) => e.question_id)).size;
+        return [{ unique_correct: unique }];
+      }
       if (sql.includes("FROM learning_entries")) {
         return existingEntries;
       }
