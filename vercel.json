@@ -167,6 +167,9 @@
     "api/sync.ts": {
       "maxDuration": 60
     },
+    "api/admin-backup.ts": {
+      "maxDuration": 120
+    },
     "api/cron-maintenance.ts": {
       "includeFiles": "src/app/generated/bankManifest.json",
       "maxDuration": 300

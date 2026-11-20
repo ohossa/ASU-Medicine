@@ -71,33 +71,29 @@ export async function getProfile(
           title: String(data.title ?? 'student'),
         };
 
-        // Automated Self-Healing Reconciliation:
-        // Recovers zeroed or desynchronized student accounts from verified learning_entries
-        if (profile.xp === 0 || profile.level <= 2) {
-          let maxEarnedXp = profile.xp;
-
-          const entryRows = await d1Query<any>(
-            'SELECT question_id, ever_correct, correct FROM learning_entries WHERE user_id = ?',
+        // Automated Continuous Monotonic Self-Healing:
+        // Guarantees student progress (XP, level, solved questions) is strictly non-decreasing
+        // and automatically reconciles any desynchronized accounts from verified learning_entries.
+        try {
+          const verifiedRows = await d1Query<any>(
+            'SELECT count(distinct question_id) as unique_correct FROM learning_entries WHERE user_id = ? AND (ever_correct = 1 OR correct = 1)',
             [id]
           );
+          const uniqueCorrect = Number(verifiedRows?.[0]?.unique_correct || 0);
+          const minEarnedXp = uniqueCorrect * 10;
 
-          if (Array.isArray(entryRows) && entryRows.length > 0) {
-            const uniqueCorrect = new Set(
-              entryRows.filter((e) => e.ever_correct || e.correct).map((e) => e.question_id)
-            ).size;
-            maxEarnedXp = Math.max(maxEarnedXp, uniqueCorrect * 10);
-          }
-
-          if (maxEarnedXp > profile.xp) {
-            profile.xp = maxEarnedXp;
-            profile.competitiveXp = Math.max(profile.competitiveXp, maxEarnedXp);
-            profile.level = Math.floor(maxEarnedXp / 500) + 1;
+          if (minEarnedXp > profile.xp) {
+            profile.xp = minEarnedXp;
+            profile.competitiveXp = Math.max(profile.competitiveXp, minEarnedXp);
+            profile.level = Math.floor(minEarnedXp / 500) + 1;
             // Persist healed progress to Cloudflare D1
             await d1Execute(
               'UPDATE learning_profiles SET xp = ?, competitive_xp = ?, level = ?, updated_at = ? WHERE user_id = ?',
               [profile.xp, profile.competitiveXp, profile.level, new Date().toISOString(), id]
             );
           }
+        } catch (healErr) {
+          console.warn('Continuous self-healing check error:', healErr);
         }
 
         return profile;

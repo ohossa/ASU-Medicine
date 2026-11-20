@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { evalRedis } from '../server/report-store.js';
+import { createCloudflareBackup } from '../server/cloudflare-backup-service.js';
 
 interface Req {
   method?: string;
@@ -94,7 +95,25 @@ export default async function handler(req: Req, res: Res) {
     };
   }
 
-  // 4. Return complete maintenance status
+  // 4. Automated Nightly Cloudflare D1 to R2 Backup Snapshot
+  try {
+    const backupRes = await createCloudflareBackup({ storeInR2: true });
+    checks.cloudflareBackup = {
+      status: 'success',
+      totalRecords: backupRes.snapshot.metadata.totalRecords,
+      tableCounts: backupRes.snapshot.metadata.tableCounts,
+      r2Key: backupRes.r2Key,
+      sha256: backupRes.snapshot.metadata.sha256,
+      durationMs: backupRes.durationMs,
+    };
+  } catch (err: unknown) {
+    checks.cloudflareBackup = {
+      status: 'failed',
+      message: err instanceof Error ? err.message : String(err),
+    };
+  }
+
+  // 5. Return complete maintenance status
   const durationMs = Date.now() - startTime;
   return res.status(200).json({
     ok: true,

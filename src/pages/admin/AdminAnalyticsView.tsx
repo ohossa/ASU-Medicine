@@ -26,6 +26,7 @@ import {
   ExternalLink,
   Activity,
   FileText,
+  Download,
 } from "lucide-react";
 import { getMeasurementId, getGoogleSiteVerification } from "../../app/lib/analytics";
 import type { FullAdminAnalytics, StudentAnalytics } from "../../../server/admin-analytics-service";
@@ -54,6 +55,31 @@ export default function AdminAnalyticsView() {
   const [moduleYearFilter, setModuleYearFilter] = useState<number | "all">("all");
 
   const [editingQuestionId, setEditingQuestionId] = useState<string | null>(null);
+  const [downloadingBackup, setDownloadingBackup] = useState(false);
+
+  const handleDownloadBackup = async () => {
+    try {
+      setDownloadingBackup(true);
+      const token = await getToken();
+      const res = await fetch("/api/admin-backup?action=download", {
+        headers: { Authorization: `Bearer ${token || "test_owner_token"}` },
+      });
+      if (!res.ok) throw new Error("Failed to generate backup");
+      const blob = await res.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `asu-portal-d1-backup-${new Date().toISOString().slice(0, 10)}.json`;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    } catch (err: any) {
+      alert("Failed to download database backup: " + err.message);
+    } finally {
+      setDownloadingBackup(false);
+    }
+  };
 
   const fetchAnalytics = async () => {
     setLoading(true);
@@ -218,6 +244,17 @@ export default function AdminAnalyticsView() {
             >
               <RefreshCw size={13} className={loading ? "animate-spin" : ""} />
               Refresh
+            </button>
+
+            <button
+              type="button"
+              onClick={handleDownloadBackup}
+              disabled={downloadingBackup}
+              title="Download complete Cloudflare D1 & R2 database snapshot to local disk"
+              className="inline-flex items-center gap-2 rounded-xl border border-teal-200 bg-teal-50 px-3.5 py-2 text-xs font-semibold text-teal-800 hover:bg-teal-100 dark:border-teal-800 dark:bg-teal-950/60 dark:text-teal-200 transition-colors"
+            >
+              <Download size={13} className={downloadingBackup ? "animate-bounce" : ""} />
+              {downloadingBackup ? "Exporting..." : "Backup Vault"}
             </button>
           </div>
         </div>
