@@ -36,7 +36,7 @@ ensureEnvLoaded();
 
 const FALLBACK_ACCOUNT_ID = '1ee85c49030c48359b274b85ee33ab08';
 const FALLBACK_DATABASE_ID = '47d271d7-0634-4db7-aa31-65cb1cd80af4';
-const FALLBACK_API_TOKEN = '';
+const FALLBACK_API_TOKEN = process.env.D1_API_TOKEN || '';
 
 function getAccountId(): string {
   return process.env.D1_ACCOUNT_ID || process.env.R2_ACCOUNT_ID || process.env.CLOUDFLARE_ACCOUNT_ID || FALLBACK_ACCOUNT_ID;

@@ -62,11 +62,11 @@ Configured in `.env.local` and deployed to production environment:
 |---|---|---|
 | **Cloudflare Account ID** | `1ee85c49030c48359b274b85ee33ab08` | Primary Cloudflare Organization |
 | **Cloudflare R2 Bucket** | `a-plus-storage` | S3-Compatible Zero-Egress Storage Bucket |
-| **R2 Access Key ID** | `REDACTED` | R2 Token ID (S3 API Client) |
-| **R2 Secret Access Key** | `REDACTED` | R2 Secret Signing Key |
+| **R2 Access Key ID** | `[CONFIGURED_IN_ENV]` | R2 Token ID (S3 API Client) |
+| **R2 Secret Access Key** | `[CONFIGURED_IN_ENV]` | R2 Secret Signing Key |
 | **Cloudflare D1 Database** | `a-plus-db` | Serverless Relational Database |
 | **D1 Database UUID** | `47d271d7-0634-4db7-aa31-65cb1cd80af4` | D1 Resource GUID |
-| **Cloudflare API Token** | `REDACTED` | REST API Token (D1 Queries & Mutations) |
+| **Cloudflare API Token** | `[CONFIGURED_IN_ENV]` | REST API Token (D1 Queries & Mutations) |
 
 ---
 

@@ -1,17 +1,17 @@
-# Graph Report - ASU-Medical-Portal  (2026-11-05)
+# Graph Report - ASU-Medical-Portal  (2026-11-12)
 
 ## Corpus Check
-- 1741 files · ~23,902,060 words
+- 2089 files · ~29,709,758 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 257 file(s) not represented in the graph (top: .jsonl 147, .woff2 42, .css 30)
+- Unclassified: 270 file(s) not represented in the graph (top: .jsonl 147, .woff2 42, .css 31)
 
 ## Summary
-- 8276 nodes · 13835 edges · 1146 communities (507 shown, 639 thin omitted)
-- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 908 edges (avg confidence: 0.86)
+- 10114 nodes · 15842 edges · 1352 communities (627 shown, 725 thin omitted)
+- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 929 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c5e3f8f6`
+- Built from commit: `db41a047`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -19,19 +19,19 @@
 - QuizInterface.tsx
 - StudyEntry.tsx
 - Tailwind Variance & Styling Primitives
-- ref_node_fs
+- ref_node_path
 - React Framework & Icon Dependencies
-- Atomic UI Components & Avatars
+- cn
 - src/app/App.tsx
-- Chapter Selection & Flow Breadcrumbs
+- LearningHub.tsx
 - CNS Question Taxonomy & Content
 - pull-hig.mjs
 - question-reports.ts
 - Feedback
 - MasterLocomotorEngine
-- question-edit-store.ts
+- QuestionSearch.tsx
 - Form Input Controls & Modals
-- reports/contracts.ts
+- AdminPortal.tsx
 - Triage Report Lease
 - Question
 - AnkiDecksPage.tsx
@@ -40,39 +40,39 @@
 - ReportReplyComposer.tsx
 - Metabolism Brain Motor
 - Metabolism Brain Motor
-- useAcademicYear.ts
+- SyllabusTrackerPage.tsx
 - validate-coverage-ledger.cjs
 - Carousel React Alert
-- Segmented controls
-- Radix React Imagewithfallback
+- test_adversarial_m1_r2.py
+- ref_react
 - Chapter Hybrid Force
 - Subject Import Batch
 - React Eslint Plugin
-- ref_lucide_react
-- ref_node_path
-- data.ts
+- LegalLayout.tsx
+- analyze-cleaned.ts
+- orchestrator/DISPATCH.md
 - Format Options Mandatory
-- vitest
+- @testing-library/react
 - Tests Build Import
-- The menu bar
+- Apple Pay
 - Eslint React Plugin
 - Intake Valid Google
 - Generatehint Constructor Hint
-- Master Forensic Audit & Medical Quality Report
+- 6. Comprehensive Curriculum Lecture Inventory
 - Subject Migrate Chapter
-- React Accordion Checkbox
+- lucide-react@0.487.0
 - Audit Answer Review
-- LearningHub.tsx
+- profanity-filter.ts
 - Subject Questionbankschema Assertuniquequestionids
 - Path Cleaner Batch
 - Issue Medium High
-- admin-analytics-service.ts
+- Explorer Fix 3 Handoff Report: Surgical Engine Remediation & M2–M5 Manifest Strategy
 - useTheme
 - Parse Interim Canonicalchapters
 - Source Recall Question
 - Polish Rejected Biochemistry
 - Taxonomy Questions Binding
-- Dashboard.tsx
+- year1-quality-release.test.ts
 - Owner Page Payment
 - Owner Page Payment
 - Dialog Command Commanddialog
@@ -80,8 +80,8 @@
 - Bank Audit Validate
 - Usesoundengine Soundkey Audiopolicy
 - Tsconfig Compileroptions Allowimportingtsextensions
-- Collections
-- learning-store.ts
+- LearningProvider.tsx
+- report-store.ts
 - InteractiveBackground.tsx
 - import-ready.ts
 - Label React Badge
@@ -95,82 +95,82 @@
 - Section Question Output
 - Topic Required Source
 - ATTACK-CLASSES.md
-- import_git_assessment2.py
+- os
 - Case Chunk
-- Designing for iOS
+- Collections
 - Does Sync Device
-- Lists and tables
+- Layout
 - Machine learning
-- refreshQuestionCorrections
-- Question Format Portal
+- pathlib
+- ASU Portal Question Bank Format v2
 - ref_path
 - Extract Chunks Buildchunks
 - Wave Step Plan
 - Toggle Alert Group
 - Ain Shams University Faculty of Medicine (ASU)
-- SupportPage.tsx
+- Part 3: Screen-by-Screen Redesign Blueprint & Prompts
 - os
 - Section Question Output
-- PremiumCards.tsx
+- useTimer.ts
 - Includefiles Maxduration Question
-- Playing haptics
-- run_100_percent_git_workflow.py
-- generate-version.mjs
+- START_HERE.md
+- import_cns_histology.py
+- output
 - Phase Master Medical
 - Issue Quiz Cloud
 - Vite Config Figmaassetresolver
 - KnowledgeGraphDrawer.tsx
-- Rejected Biochemistry Organization
-- triage-store.ts
+- biochemistry_organization.py
+- tutor-metrics.ts
 - Format Question Folder
-- drawer.tsx
+- admin-analytics-service.ts
 - Dimension Recs Medical
 - Phased Implementation Order
 - Chart Chartconfig Chartcontainer
 - select.tsx
 - Changelog
 - Color Name Manifest
-- src/main.tsx
+- vitest
 - Briefing 2026 10t18
 - Optimization Performance Rendering
-- import_cns_histology.py
+- Student Incident Reply Email Drafts (Preview for Approval)
 - The menu bar
-- Inclusion
+- SF Symbols
 - confirmed
 - App icons
-- GitBankSelect.tsx
+- 1. Observation
 - Fixes Merge Chunk
 - Question Distribution File
-- AIChatPanel.tsx
+- storage.ts
 - Valid Validate Cleaner
 - Chunk Resume Build
 - Comprehensive Analysis Analyze
 - Question Distribution Audit
-- Labels Answer Intaketests
-- Toolbars
-- parse-inerd-essays.py
-- Design Principles Agency
+- StarlightToggle.tsx
+- The menu bar
+- EvidenceTests
+- HIG reference lookup
 - Buttons
 - 2. Canonical Bank Architecture (`MLS-1.json`)
-- apply_git_medical_overhaul.py
+- re
 - Manual Clean Blocks
 - Question Search Implementation
 - Unified Learning Progress
-- AdminIndustrialDashboard.tsx
+- src/main.tsx
 - Option Chat Tutor
 - Text Extraction Source
 - Analyze Questions Bankdata
 - Text Extraction Source
-- A-Plus (`A⁺`) Brand Identity Specification & Design System
+- Medical Anki deck production workflow
 - Parse Inerd Deduplicate
 - Personal Once Never
 - Dashboardcard Modulecompletionring Weakesttopicscard
 - What Skill Ending
 - Audit Briefing 2026
-- 3. The 7 Core Subsystems
-- navigation-menu.tsx
+- AIChatPanel.tsx
+- The menu bar
 - quality-audit.ts
-- Writing
+- Medical Anki deck production workflow
 - Supabase
 - Widgets
 - Audit Briefing 2026
@@ -211,9 +211,9 @@
 - What Skill Ending
 - What Skill Ending
 - Draft Reply Replytests
-- re
-- validate-findings.test.cjs
-- BRIEFING — 2026-06-10T19:03:30Z
+- parse-inerd-essays.py
+- useQuizSession.ts
+- Charts
 - What Skill Ending
 - What Skill Ending
 - What Skill Ending
@@ -228,7 +228,7 @@
 - Onboarding
 - GIT CA-2 Intake Verification Report
 - 6. Admin Command Center, Analytics & Master Leaderboard Subsystems
-- CLAUDE.md
+- Challenger 1 Handoff Report: Adversarial Stress-Testing of Gutter Splitting & Edge Boundary Engine
 - Skill Anti Patterns
 - Skill Anti Patterns
 - Skill Anti Patterns
@@ -238,9 +238,9 @@
 - Skill Anti Patterns
 - Skill Anti Patterns
 - Hints Tutoring Setup
-- ASU Medical Portal — Code Audit Report
+- Handoff Report — Explorer R2 3: QA Test Runner Sampling Bias & Adversarial Challenger Integration Strategy
 - Import Patho Essays
-- @clerk/clerk-react
+- 5. Verification Method
 - Writing Guidelines for Postgres References
 - Design Owner Report
 - Year Semester Medical
@@ -248,27 +248,27 @@
 - Verification Production Pilot
 - Images Cases Case
 - Essay Overhaul Report
-- cross-match-essays.py
+- 1.3 Detailed Layout Typology and Formatting Observations
 - Phases Phase Final
-- celebrate.ts
+- 1. Observation
 - Audit Mcns Contradiction
 - Tsconfig Node Compileroptions
 - Xphud Gamificationstore Zustand
 - sync.ts
 - AdminPortal.tsx
-- AdminAnalyticsView.tsx
+- Segmented controls
 - What Opsx Explore
 - Skill Primitives Ports
 - useVersionCheck.ts
-- pulseEngine.ts
+- analytics.ts
 - Security Audit
-- zod
+- File management
 - enrich-via-api.ts
-- PulseEngine
-- profanity-filter.ts
+- 1. Observation
+- SupportPage.tsx
 - Desktop, Mobile, and Local IPC Hunting
-- HIG reference lookup
-- TriagePanel.tsx
+- Buttons
+- Apple Design Skill
 - diag.ts
 - AI, LLM, and Agent Hunting
 - Client-Side and Browser Hunting
@@ -284,7 +284,7 @@
 - What Opsx Explore
 - Question Bank Enrichment
 - recover-missing.ts
-- ref_react
+- PortalEntry.tsx
 - Section8 Blocks Existing
 - Owner Administration Student
 - Custom Practice Question
@@ -301,7 +301,7 @@
 - Example Answer Template
 - What Opsx Explore
 - What Explore Ending
-- Resource Exhaustion and Availability Hunting
+- validate-findings.test.cjs
 - What Opsx Explore
 - Distribution Question Mcns
 - Breakdown Mcns Question
@@ -314,7 +314,7 @@
 - Rules Portal Project
 - Vulnerability Hunting
 - restore-to-new-supabase.mjs
-- SoundManager
+- Reviewer 1 Handoff Report: Milestone M1 (Code Quality & Architecture Review)
 - Handoff Caveats Conclusion
 - Skill Notes Quick
 - Skill Defaults Worth
@@ -323,18 +323,18 @@
 - Liveness Auth Conventions
 - HTTP-Protocol and Authentication Hunting
 - Section Definitions
-- classify-cns-questions.py
-- assemble-final.ts
+- pulseEngine.ts
+- medical-anki-production/SKILL.md
 - Supply Chain and Release Hunting
 - Master Medical Verification & Audit Report: Integrated GIT & Liver Bank (`MGL-3`)
 - enrich-deepseek.ts
 - enrich-fast.ts
-- ASUCodes: website design and experience master plan
-- git-owner-corrections.test.ts
-- AdminAnalyticsView.tsx
+- 1. Observation
+- Handoff Report: Investigation and Surgical Fix Strategy for Developing Human Crop Bleed Defect
+- Textbook Corpus Explorer Survey Report (Explorer 2)
 - Supabase Postgres Best Practices
 - Protocols, RPC, and Messaging Hunting
-- store/progress.tsx
+- Master Verification Report: Live Student Reports Forensic Triage & Amboss Medical Audit
 - fitz
 - advanced-full-text-search.md
 - advanced-jsonb-indexing.md
@@ -434,7 +434,7 @@
 - security-rls-basics.md
 - security-rls-performance.md
 - _template.md
-- ASU Medical Portal — Master Architectural Encyclopedia & System Specification
+- Medical image extraction and Anki pairing workflow
 - generate-placeholders.ts
 - Pathology Parasitology Chunk
 - Section Questions Short
@@ -446,7 +446,7 @@
 - Owner Dashboard Configuration
 - Local Learning Review
 - ASUCodes release status
-- extract_supplement.py
+- 5. Verification Method
 - Checks Admin Report
 - Cross Device Progress
 - Release Quality Screen
@@ -454,16 +454,16 @@
 - Scientific Research Intake
 - Gates Responsive Verification
 - Local Student Experience
-- recover-024.ts
+- PulseEngine
 - React Optional Peerdependenciesmeta
 - Collapsible Collapsiblecontent Collapsibletrigger
 - React Optional Peerdependenciesmeta
 - Project Medicine Optimization
 - StreakCalendar.tsx
 - propagate-fixes.ts
-- devDependencies
+- Master Forensic Audit & Medical Quality Report
 - Shrinking Headder Scroll
-- build-git-practical-bank.py
+- GitBankSelect.tsx
 - Implementation Name Schema
 - Implementation Name Schema
 - Archive Complete Opsx
@@ -508,14 +508,15 @@
 - Archive Complete Opsx
 - Implementation Name Schema
 - Section Mcqs Chunk
-- audit-contradictions.ts
-- extract-biochem-066.ts
+- Notifications
+- Acceptance Criteria
 - Block Parts Summary
-- recover-032.ts
-- FakeWorker
+- IntakeTests
+- SoundManager
 - True False Report
 - Node Missed Question
 - Quiz Feedback Open
+- Forensic Integrity Audit Report: Milestone M1 (Core Extraction & Splitting Engine)
 - Past Exam Owner
 - History Case Solver
 - Scientific Research Formative
@@ -554,7 +555,10 @@
 - Implementation Name Schema
 - Archive Complete Warnings
 - Implementation Name Schema
+- 1. Observation
+- Medical image extraction and Anki pairing workflow
 - Implementation Name Schema
+- Handoff Report: Explorer Fix 2 (Milestone M1 Iteration 2)
 - Implementation Name Schema
 - Archive Complete Opsx
 - Implementation Name Schema
@@ -564,11 +568,18 @@
 - Implementation Name Schema
 - Implementation Name Schema
 - Archive Complete Opsx
-- Medical Portal Agent
+- orchestrator_r2/DISPATCH.md
+- Part II: Skill & Plugin Reference Guide
 - Status Progress Current
+- 1. Observation
+- 1. Observation
 - Chapter Question Sorting
 - Sorting Statistics After
 - Opencode Plugin Schema
+- Handoff Report — Explorer R2 2: Netter Systems Overview Divider Pages & Robbins Legacy Duplicates Fix Strategy
+- Milestone M1 Review Report: Visual Fidelity & Curricular Completeness (Reviewer 2)
+- generate-version.mjs
+- Acceptance Criteria
 - Tsconfig Files References
 - Skill Archive Complete
 - Original Prompt 2026
@@ -829,11 +840,13 @@
 - Physiology Essays
 - Validation Errors Report
 - Account Academic Year
+- BRIEFING — 2026-11-08T19:50:00Z
 - Admin Overview Implementation
 - Source Numbering Cleanup
 - Startup Semester Defaults
 - Question Reporting Private
 - Year Question Quality
+- BRIEFING — 2026-11-07T18:30:15Z
 - Build Subsystem
 - Owner Question Management
 - Tests Subsystem
@@ -1103,6 +1116,7 @@
 - Opsx Propose Prompt
 - Skill Subsystem
 - Deploy Subsystem
+- BRIEFING — 2026-11-08T21:08:00Z
 - Opsx Propose
 - Skill Subsystem
 - Index Subsystem
@@ -1154,34 +1168,226 @@
 - Image Premium Minimal
 - Image React
 - Image Vite
+- BRIEFING — 2026-11-07T15:48:00Z
+- BRIEFING — 2026-11-07T18:41:30Z
+- E2E Test Suite Implementation Handoff Report
+- BRIEFING — 2026-11-08T20:54:00Z
 - Skill Subsystem
 - Skill Subsystem
 - Skill Subsystem
 - Opsx Propose
+- 1. Observation
+- BRIEFING — 2026-11-07T15:37:00Z
+- BRIEFING — 2026-11-08T21:35:00Z
+- BRIEFING — 2026-11-09T00:25:00Z
+- BRIEFING — 2026-11-09T00:38:00Z
+- BRIEFING — 2026-11-07T21:50:00Z
+- Orchestrator Final Handoff Report: End-to-End Urogenital Textbook Visual Extraction, Unified Master Index & Verification Suite
+- BRIEFING — 2026-11-08T21:00:00Z
+- BRIEFING — 2026-11-08T21:10:00Z
+- BRIEFING — 2026-11-07T15:52:00Z
+- BRIEFING — 2026-11-07T15:52:00Z
+- BRIEFING — 2026-11-07T18:47:00Z
+- BRIEFING — 2026-11-07T18:46:00Z
+- Challenger 2 Handoff Report: Adversarial Verification of Milestone M1
+- BRIEFING — 2026-11-08T21:09:00Z
+- Handoff Report — Reviewer FE 1: Urogenital Textbook Visual Extraction and Quality Verifications
+- BRIEFING — 2026-11-08T21:11:30Z
+- BRIEFING — 2026-11-07T15:52:00Z
+- BRIEFING — 2026-11-07T15:55:00Z
+- BRIEFING — 2026-11-07T18:36:00Z
+- BRIEFING — 2026-11-07T18:50:00Z
+- BRIEFING — 2026-11-07T15:43:00Z
+- BRIEFING — 2026-11-08T19:56:00Z
+- BRIEFING — 2026-11-07T16:45:00Z
+- Worker M1 Handoff Report: Core Extraction, Multi-Panel Splitting, and Caption Compositing Engine
+- Handoff Report: Milestone M1 Extraction Engine Remediation
+- Victory Audit Report — Comprehensive Urogenital Medical Visual Library
+- updateDocumentTitle
+- Project: Comprehensive Urogenital Medical Visual Library
+- 5-Component Handoff Report
+- Handoff Report: Extraction Pipeline, Curriculum Taxonomy & 7-Pillar Test Architecture
+- Explorer 1 Survey Report: Example Analysis, Previous Library Deficiencies, and Technical Architecture
+- BRIEFING — 2026-11-07T16:17:30Z
+- BRIEFING — 2026-11-07T13:48:40Z
+- BRIEFING — 2026-11-09T00:39:00Z
+- Agent Skills, Design & Memory Playbook
+- BRIEFING — 2026-11-08T19:37:00Z
+- BRIEFING — 2026-11-08T19:36:00Z
+- BRIEFING — 2026-11-07T16:05:00Z
+- BRIEFING — 2026-11-07T16:04:30Z
+- BRIEFING — 2026-11-07T16:03:15Z
+- BRIEFING — 2026-11-08T21:34:00Z
+- BRIEFING — 2026-11-08T21:32:00Z
+- BRIEFING — 2026-11-08T21:30:00Z
+- BRIEFING — 2026-11-07T15:17:15Z
+- BRIEFING — 2026-11-07T15:25:30Z
+- BRIEFING — 2026-11-07T15:20:00Z
+- Dispatch for Reviewer FE 1
+- Handoff Report: Milestone M1 Visual Pipeline & 7-Pillar Verification Review
+- 2. Key Medical Adjudications & Source Key Corrections
+- Resource Exhaustion and Availability Hunting
+- Orchestrator Progress Tracker
+- teamwork_auditor_fe_1/DISPATCH.md
+- teamwork_challenger_fe_1/DISPATCH.md
+- teamwork_challenger_fe_2/DISPATCH.md
+- Handoff Report — Challenger FE 2: Adversarial Audit of Multi-Figure Page Splitting, Sub-Panel Unification, and Curriculum Symlink Integrity
+- teamwork_reviewer_fe_2/DISPATCH.md
+- Review & Adversarial Verification Report: Milestone M1
+- Curriculum Visual Library Extraction & Clean Replacement — Handoff Report
+- 5-Component Handoff Report
+- reorganize_year2_topics.py
+- Memory Safety, Binary, and Kernel Hunting
+- BRIEFING — 2026-11-08T19:37:00Z
+- Sentinel Handoff Report: Urogenital Visual Library Rebuild & Multi-Figure Splitting
+- Handoff Report — Sentinel: Urogenital Visual Library Project Rollout & Victory Confirmation
+- teamwork_explorer_r2_1/DISPATCH.md
+- teamwork_explorer_r2_2/DISPATCH.md
+- teamwork_explorer_r2_3/DISPATCH.md
+- Handoff Report: Milestone M1 Rebuild, Library Replacement & 7-Pillar E2E Verification
+- Gate Status — Milestone 1 (Core Extraction & Splitting Engine)
+- Scope: Rebuild Textbook Figure Extraction & Cropping Pipeline
+- Progress — Challenger 1 (Round 2)
+- recover-024.ts
+- Forward test of reusable medical workflows
+- Orchestrator Progress Tracker
+- Progress — Explorer FE 2
+- Progress: E2E Test Writer FE
+- teamwork_worker_r2_1/DISPATCH.md
+- victory_auditor_r2/DISPATCH.md
+- ASU Medical Portal — Code Audit Report
+- Project Memory & Knowledge Scratchpad (MEMORY.md)
+- Gate Status Tracker
+- Audit Progress Tracker
+- Progress: Forensic Audit Milestone M1
+- Progress — Milestone M1 Forensic Audit
+- Progress Heartbeat
+- Progress - Challenger FE 2
+- Progress — Challenger 1 (Milestone M1)
+- Progress — Challenger 2 (Milestone M1)
+- Progress — Challenger 2 (teamwork_challenger_r2_2)
+- Progress — Explorer FE 3
+- teamwork_explorer_m1_fix_1/DISPATCH.md
+- Progress — teamwork_explorer_m1_fix_1
+- teamwork_explorer_m1_fix_2/DISPATCH.md
+- Progress — Explorer Fix 3
+- Progress Heartbeat
+- Progress Heartbeat — Explorer 1
+- teamwork_explorer_survey_2/DISPATCH.md
+- Progress — Explorer 2 (Textbook Corpus Explorer)
+- teamwork_explorer_survey_3/DISPATCH.md
+- teamwork_reviewer_m1_2/DISPATCH.md
+- Progress: E2E Test Writer
+- teamwork_worker_curriculum/DISPATCH.md
+- Progress - teamwork_worker_curriculum
+- Progress — Worker M1
+- teamwork_worker_m1_remediation/DISPATCH.md
+- Progress — Worker M1 Remediation
+- Progress — Worker R2 1
+- Progress Tracking - Worker R2 2
+- Progress — Victory Auditor
+- Progress Log - Victory Auditor R2
+- teamwork_auditor_m1_1/DISPATCH.md
+- teamwork_auditor_m1_1/README.md
+- teamwork_auditor_r2_1/DISPATCH.md
+- teamwork_auditor_r2_1/plan.md
+- teamwork_challenger_m1_1/DISPATCH.md
+- teamwork_challenger_m1_1/README.md
+- teamwork_challenger_m1_2/DISPATCH.md
+- teamwork_challenger_m1_2/README.md
+- teamwork_challenger_r2_1/DISPATCH.md
+- teamwork_challenger_r2_1/plan.md
+- teamwork_challenger_r2_2/DISPATCH.md
+- teamwork_challenger_r2_2/plan.md
+- teamwork_explorer_fe_1/DISPATCH.md
+- teamwork_explorer_fe_2/DISPATCH.md
+- teamwork_explorer_fe_3/DISPATCH.md
+- teamwork_explorer_m1_fix_1/README.md
+- teamwork_explorer_m1_fix_2/progress.md
+- teamwork_explorer_m1_fix_2/README.md
+- teamwork_explorer_m1_fix_3/DISPATCH.md
+- teamwork_explorer_m1_fix_3/README.md
+- teamwork_explorer_r2_1/plan.md
+- teamwork_explorer_r2_1/progress.md
+- teamwork_explorer_r2_2/plan.md
+- teamwork_explorer_r2_2/progress.md
+- teamwork_explorer_r2_3/plan.md
+- teamwork_explorer_survey_1/DISPATCH.md
+- teamwork_explorer_survey_1/README.md
+- teamwork_explorer_survey_2/README.md
+- teamwork_explorer_survey_3/progress.md
+- teamwork_explorer_survey_3/README.md
+- teamwork_reviewer_fe_1/progress.md
+- teamwork_reviewer_fe_2/progress.md
+- teamwork_reviewer_m1_1/DISPATCH.md
+- teamwork_reviewer_m1_1/progress.md
+- teamwork_reviewer_m1_1/README.md
+- teamwork_reviewer_m1_2/progress.md
+- teamwork_reviewer_m1_2/README.md
+- teamwork_reviewer_r2_1/DISPATCH.md
+- teamwork_reviewer_r2_1/plan.md
+- teamwork_reviewer_r2_2/DISPATCH.md
+- teamwork_reviewer_r2_2/plan.md
+- teamwork_reviewer_r2_2/progress.md
+- teamwork_test_writer_e2e/DISPATCH.md
+- teamwork_test_writer_e2e/README.md
+- teamwork_test_writer_fe/DISPATCH.md
+- teamwork_worker_curriculum/README.md
+- teamwork_worker_fe/DISPATCH.md
+- teamwork_worker_fe/progress.md
+- teamwork_worker_m1/DISPATCH.md
+- teamwork_worker_m1/README.md
+- teamwork_worker_m1_remediation/README.md
+- teamwork_worker_r2_1/plan.md
+- teamwork_worker_r2_2/DISPATCH.md
+- victory_auditor/DISPATCH.md
+- victory_auditor_r2/plan.md
+- git-owner-corrections.test.ts
+- store/progress.tsx
+- assemble-final.ts
+- Workflow validation record
+- ASUCodes: website design and experience master plan
+- Light_Dark Mode Toggle/src/app/App.tsx
+- Medical Anki and image workflows — start here
+- extract_supplement.py
+- extract_supplement_v2.py
+- LanguageContext.tsx
+- Project workflow save verification
+- TestAdversarialPillar2Grouping
+- peerDependencies
+- Verification Report: Year 3 GIT Practical Exam (`MGL-3`) Complete Rebuild & Topic Architecture
+- Centred Extra workflow verification
+- Q: Okay make sure to save both workflows for the both of the skills that you created in the project that we have ASU portal or whatever so that I can use it with any other AI in the future as well. Make sure it is perfect.
+- devDependencies
+- SecurityNoticeToast.tsx
+- audit-contradictions.ts
+- extract-biochem-066.ts
+- recover-032.ts
+- ErrorBoundary
 
 ## God Nodes (most connected - your core abstractions)
 1. `cn()` - 223 edges
-2. `QuizPayload` - 175 edges
-3. `SoundToggle()` - 175 edges
-4. `vitest` - 172 edges
+2. `vitest` - 177 edges
+3. `QuizPayload` - 175 edges
+4. `SoundToggle()` - 175 edges
 5. `questionVariants` - 170 edges
 6. `HIG reference lookup` - 143 edges
 7. `Main Cns Questions` - 75 edges
 8. `@testing-library/react` - 70 edges
-9. `MainApp()` - 68 edges
+9. `MainApp()` - 70 edges
 10. `Question` - 68 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Federated-identity attack classes (subagent_type: `general`)` --references--> `state()`  [INFERRED]
-  .agents/skills/security-audit/WEB-PROTOCOL-AND-AUTH.md → server/triage-worker.ts
-- `6.13 The Secret Starlight Velvet Theme Engine (`src/app/config/secretThemes.ts` & `src/styles/starlight-theme.css`)` --references--> `isUserStarlightEligible()`  [INFERRED]
-  docs/ARCHITECTURE_ENCYCLOPEDIA.md → src/app/config/secretThemes.ts
-- `6.9 Anki Flashcard Decks Architecture & Direct Storage Resolution` --references--> `resolveDirectDownloadUrl()`  [INFERRED]
-  docs/ARCHITECTURE_ENCYCLOPEDIA.md → src/app/data/ankiDecks.ts
-- `IBM-1 book-aligned organization` --conceptually_related_to--> `convertSubQuestion()`  [INFERRED]
-  docs/verification/biochemistry-import-2026-10-09/organization/README.md → data-format-v2/scripts/import-ready.ts
-- `IBM-1 biochemistry intake — 9 October 2026` --conceptually_related_to--> `convertSubQuestion()`  [INFERRED]
-  docs/verification/biochemistry-import-2026-10-09/polish/before-README.md → data-format-v2/scripts/import-ready.ts
+- `1.3 Unified Master Image Index & Flashcard CLI Tool` --references--> `topic()`  [INFERRED]
+  .agents/teamwork/orchestrator/handoff.md → scripts/build_biochemistry_bank.py
+- `Master Index Schema (`UNIFIED_MASTER_IMAGE_INDEX.csv` & `.json`)` --references--> `topic()`  [INFERRED]
+  .agents/teamwork/PROJECT.md → scripts/build_biochemistry_bank.py
+- `Investigation State` --references--> `topic()`  [INFERRED]
+  .agents/teamwork/teamwork_explorer_fe_1/BRIEFING.md → scripts/build_biochemistry_bank.py
+- `2. Logic Chain` --references--> `topic()`  [INFERRED]
+  .agents/teamwork/teamwork_explorer_fe_1/handoff.md → scripts/build_biochemistry_bank.py
+- `C. Requirements for `UNIFIED_MASTER_IMAGE_INDEX.csv` and `.json`` --references--> `topic()`  [INFERRED]
+  .agents/teamwork/teamwork_explorer_fe_1/handoff.md → scripts/build_biochemistry_bank.py
 
 ## Import Cycles
 - None detected.
@@ -1259,39 +1465,39 @@
 - **Module Conceptual Cluster 179** — docs_verification_year1_quality_2026_10_09_runtime_load_test, docs_verification_year1_quality_2026_10_09_staging_summary, docs_verification_year1_quality_2026_10_09_table_tests_red, docs_verification_year1_quality_2026_10_09_tests_red, docs_verification_year1_quality_2026_10_09_typecheck_current, docs_verification_year1_quality_2026_10_09_typecheck_initial [INFERRED 0.85]
 - **Module Conceptual Cluster 180** — question_workflow_pulse_prompts_gap_filling_mcq_generator_v2, question_workflow_pulse_prompts_gap_filling_mcq_generator_v2_project_master_instruction_v2, question_workflow_pulse_prompts_gap_filling_mcq_generator_v2_1_core_objective, question_workflow_pulse_prompts_gap_filling_mcq_generator_v2_2_required_inputs, question_workflow_pulse_prompts_gap_filling_mcq_generator_v2_3_automatic_generation_mode, question_workflow_pulse_prompts_gap_filling_mcq_generator_v2_4_source_hierarchy_critical [INFERRED 0.85]
 
-## Communities (1146 total, 639 thin omitted)
+## Communities (1352 total, 725 thin omitted)
 
 ### Community 0 - "QuizInterface.tsx"
 Cohesion: 0.05
-Nodes (79): FormattedAnswer(), FormattedAnswerProps, HighlightText(), renderTextWithFormatting(), hapticError(), hapticSuccess(), hapticTap(), MatchingProps (+71 more)
+Nodes (76): Subsystem 1: The App Shell & State Nexus (`src/app/App.tsx`), focus-trap-react, chapter, question, chapter, feedback, q, getQuestionStatus() (+68 more)
 
 ### Community 1 - "StudyEntry.tsx"
 Cohesion: 0.02
-Nodes (148): Forensic Audit Report, 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5. Verification Method, Progress, BRIEFING — 2026-06-10T18:52:16Z (+140 more)
+Nodes (127): Forensic Audit Report, 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5. Verification Method, BRIEFING — 2026-06-10T18:52:16Z, Artifact Index (+119 more)
 
 ### Community 2 - "Tailwind Variance & Styling Primitives"
 Cohesion: 0.02
 Nodes (109): dependencies, class-variance-authority, class-variance-authority@0.7.1, clsx, clsx@2.1.1, cmdk, cmdk@1.1.1, date-fns (+101 more)
 
-### Community 3 - "ref_node_fs"
-Cohesion: 0.06
-Nodes (15): allTexts, crossChunkDupes, files, Summary, rawFiles, rawFiles, files, files (+7 more)
+### Community 3 - "ref_node_path"
+Cohesion: 0.04
+Nodes (31): rawFiles, rawFiles, STRUCTURE, SUBFOLDERS, files, files, files, files (+23 more)
 
 ### Community 4 - "React Framework & Icon Dependencies"
 Cohesion: 0.02
-Nodes (90): lucide-react, motion, react, react-dom, react-router, tailwindcss, @tailwindcss/vite, tw-animate-css (+82 more)
+Nodes (91): lucide-react, motion, react, react-dom, react-router, tailwindcss, @tailwindcss/vite, tw-animate-css (+83 more)
 
-### Community 5 - "Atomic UI Components & Avatars"
-Cohesion: 0.05
-Nodes (55): Avatar(), AvatarFallback(), AvatarImage(), BreadcrumbEllipsis(), BreadcrumbItem(), BreadcrumbLink(), BreadcrumbList(), BreadcrumbPage() (+47 more)
+### Community 5 - "cn"
+Cohesion: 0.04
+Nodes (67): BreadcrumbEllipsis(), BreadcrumbItem(), BreadcrumbLink(), BreadcrumbList(), BreadcrumbPage(), BreadcrumbSeparator(), Card(), CardAction() (+59 more)
 
 ### Community 6 - "src/app/App.tsx"
 Cohesion: 0.04
-Nodes (63): @clerk/themes, AdminPortal, AnkiDecksPage, App(), ChapterSelect, FlaggedQuestionsScreen, GitBankSelect, LazyLevelUpOverlay (+55 more)
+Nodes (70): @clerk/themes, AdminPortal, AnkiDecksPage, App(), ChapterSelect, FlaggedQuestionsScreen, GitBankSelect, LearningHub (+62 more)
 
-### Community 7 - "Chapter Selection & Flow Breadcrumbs"
-Cohesion: 0.07
-Nodes (44): FlaggedQuestionsScreen(), invalidResult, getHistoryDate(), getRelativeDayName(), HistoryScreen(), HistoryScreenProps, isSameDay(), Props (+36 more)
+### Community 7 - "LearningHub.tsx"
+Cohesion: 0.09
+Nodes (34): isModuleDataLoaded(), continuationQuestions(), findContinuation(), LearningEntry, cairoDate(), calendarActivity(), ModuleScope, scopeHistory() (+26 more)
 
 ### Community 8 - "CNS Question Taxonomy & Content"
 Cohesion: 0.03
@@ -1302,52 +1508,48 @@ Cohesion: 0.07
 Nodes (65): abstractOf(), ALL_PLATFORMS, anchorEntries(), anchorMapFor(), cellText(), collapseBlankLines(), collectReferences(), coveredPlatformsLine() (+57 more)
 
 ### Community 10 - "question-reports.ts"
-Cohesion: 0.05
-Nodes (55): handler(), service, current(), replies, reportRateLimits, Request, Response, service (+47 more)
+Cohesion: 0.04
+Nodes (66): handler(), handler(), service, checkReportRateLimit(), current(), handler(), replies, reportRateLimits (+58 more)
 
 ### Community 11 - "Feedback"
 Cohesion: 0.04
-Nodes (62): Augmented reality, Best practices, Communicating with people, Designing object interactions, Handling interruptions, Helping people place objects, Icons and badges, Offering a multiuser experience (+54 more)
+Nodes (69): Progress, Augmented reality, Best practices, Communicating with people, Designing object interactions, Handling interruptions, Helping people place objects, Icons and badges (+61 more)
 
-### Community 12 - "MasterLocomotorEngine"
-Cohesion: 0.16
-Nodes (4): clean_option(), compute_fingerprint(), MasterLocomotorEngine, normalize_text()
-
-### Community 13 - "question-edit-store.ts"
-Cohesion: 0.10
-Nodes (12): 6.8 Dynamic Curriculum Relocation & Stable ID Invariant Architecture, imports, manifest, root, walk(), learningBank(), EditStore, QuestionEdit (+4 more)
+### Community 13 - "QuestionSearch.tsx"
+Cohesion: 0.07
+Nodes (41): FlaggedQuestionsScreen(), FormattedAnswer(), FormattedAnswerProps, HighlightText(), renderTextWithFormatting(), LanguageProfilePage(), QuestionSearch(), Props (+33 more)
 
 ### Community 14 - "Form Input Controls & Modals"
 Cohesion: 0.06
 Nodes (45): Input(), Separator(), Sheet(), SheetContent(), SheetDescription(), SheetFooter(), SheetHeader(), SheetOverlay() (+37 more)
 
-### Community 15 - "reports/contracts.ts"
-Cohesion: 0.08
-Nodes (30): OWNER_EMAIL, reportReplyConfigured(), sendReportEmail(), sendReportReply(), InboxQuery, normalize(), queryReportInbox(), summarizeReports() (+22 more)
+### Community 15 - "AdminPortal.tsx"
+Cohesion: 0.05
+Nodes (47): InboxQuery, normalize(), queryReportInbox(), summarizeReports(), createReportService(), allReports(), owner(), Dependencies (+39 more)
 
 ### Community 16 - "Triage Report Lease"
 Cohesion: 0.07
-Nodes (39): Dependencies, ReportStore, aiSource(), assessStructure(), finalPriority(), groupForTriage(), normal(), pilotMetrics() (+31 more)
+Nodes (41): aiSource(), assessStructure(), finalPriority(), groupForTriage(), normal(), pilotMetrics(), redact(), targetQuestion() (+33 more)
 
 ### Community 17 - "Question"
-Cohesion: 0.04
-Nodes (96): Subsystem 6: Performance, CWV & Session Resilience (`src/app/learning/`), ResultPayload, ChapterPracticePicker(), Props, sampleChapters, badgeColors, BreadcrumbItem, ChapterSelect() (+88 more)
+Cohesion: 0.06
+Nodes (76): Subsystem 6: Performance, CWV & Session Resilience (`src/app/learning/`), allChapters, Preview(), ResultPayload, ChapterPracticePicker(), Props, sampleChapters, badgeColors (+68 more)
 
 ### Community 18 - "AnkiDecksPage.tsx"
-Cohesion: 0.22
-Nodes (16): ANKI_DECKS_REGISTRY, ANKI_WHATSAPP_GROUP_URL, AnkiDeck, FULL_YEAR_DECKS_REGISTRY, FullYearAnkiDeck, getAnkiCommunityUrl(), getFullYearDeck(), getModuleDeckGroups() (+8 more)
+Cohesion: 0.23
+Nodes (15): ANKI_DECKS_REGISTRY, ANKI_WHATSAPP_GROUP_URL, AnkiDeck, FULL_YEAR_DECKS_REGISTRY, FullYearAnkiDeck, getAnkiCommunityUrl(), getFullYearDeck(), getModuleDeckGroups() (+7 more)
 
 ### Community 19 - "Quality Replay Content"
-Cohesion: 0.11
+Cohesion: 0.12
 Nodes (22): coverage_errors(), main(), prepare(), source_errors(), BiochemistryReplayTests, bank(), q(), QualityTests (+14 more)
 
 ### Community 20 - "json"
 Cohesion: 0.05
-Nodes (30): opts(), patch(), txt(), add(), ex(), save(), add(), evidence() (+22 more)
+Nodes (39): add_candidate(), clean_option(), compute_fingerprint(), normalize_text(), clean_option(), fingerprint(), normalize_text(), process_checkpoint() (+31 more)
 
 ### Community 21 - "ReportReplyComposer.tsx"
-Cohesion: 0.08
-Nodes (28): createReplyService(), owner(), report(), Dependencies, ReplyStore, reportId, schema, claimLocks (+20 more)
+Cohesion: 0.07
+Nodes (35): createReplyService(), Dependencies, ReplyStore, reportId, schema, claimLocks, FINISH_REPLY_LUA, inMemoryDrafts (+27 more)
 
 ### Community 22 - "Metabolism Brain Motor"
 Cohesion: 0.04
@@ -1357,9 +1559,9 @@ Nodes (46): Chunk 075 Failed, 1. Neurotransmitters & Brain Chemistry, 2. Brain E
 Cohesion: 0.04
 Nodes (46): Raw Chunk 075, 1. Neurotransmitters & Brain Chemistry, 2. Brain Energy Metabolism, 3. Addiction & Reward Pathways, 4. Ammonia & Urea Metabolism, 5. Amino Acid & Vitamin Metabolism, 6. CNS Infections & Vaccines, Amino Acid Metabolism & Hyperammonemia (+38 more)
 
-### Community 24 - "useAcademicYear.ts"
-Cohesion: 0.26
-Nodes (11): academicYearKey(), cached(), hasFreshRead(), parsePreference(), pendingReads, readCloudYear(), recentReads, auth (+3 more)
+### Community 24 - "SyllabusTrackerPage.tsx"
+Cohesion: 0.09
+Nodes (28): LazySoundManagerComponent, SoundManagerComponent(), ACCENT, BASE_FIELDS, BaseField, ChapterState, emptyChapterState(), FALLBACK (+20 more)
 
 ### Community 25 - "validate-coverage-ledger.cjs"
 Cohesion: 0.08
@@ -1367,19 +1569,19 @@ Nodes (56): ATTEMPT_FIELDS, ATTEMPT_STATUSES, canonicalCoverageId(), collectUnit
 
 ### Community 26 - "Carousel React Alert"
 Cohesion: 0.07
-Nodes (36): AlertDialogAction(), AlertDialogCancel(), AlertDialogContent(), AlertDialogDescription(), AlertDialogFooter(), AlertDialogHeader(), AlertDialogOverlay(), AlertDialogPortal() (+28 more)
+Nodes (35): AlertDialogAction(), AlertDialogCancel(), AlertDialogContent(), AlertDialogDescription(), AlertDialogFooter(), AlertDialogHeader(), AlertDialogOverlay(), AlertDialogPortal() (+27 more)
 
-### Community 27 - "Segmented controls"
-Cohesion: 0.12
-Nodes (17): Boxes, Best practices, Content, Platform considerations, Related guidelines, Segmented controls, Best practices, Change log (+9 more)
-
-### Community 28 - "Radix React Imagewithfallback"
+### Community 27 - "test_adversarial_m1_r2.py"
 Cohesion: 0.08
-Nodes (15): HoverCardContent(), PopoverContent(), Progress(), ScrollArea(), ScrollBar(), Slider(), Switch(), clsx (+7 more)
+Nodes (4): get_all_textbook_figures(), TestAdversarialPillar1Splitting, TestAdversarialPillar3BodyTextAndHeaders, TestAdversarialPillar4PhysicalBounds
+
+### Community 28 - "ref_react"
+Cohesion: 0.05
+Nodes (25): Avatar(), AvatarFallback(), AvatarImage(), HoverCardContent(), PopoverContent(), Progress(), RadioGroup(), RadioGroupItem() (+17 more)
 
 ### Community 29 - "Chapter Hybrid Force"
-Cohesion: 0.08
-Nodes (24): classify_with_rules(), apply_force_routes(), apply_force_routes_for_chapter(), calc_idf(), determine_subject(), normalize_question(), term_matches(), tfidf_score() (+16 more)
+Cohesion: 0.06
+Nodes (36): classify_with_rules(), apply_force_routes(), apply_force_routes_for_chapter(), calc_idf(), determine_subject(), normalize_question(), term_matches(), tfidf_score() (+28 more)
 
 ### Community 30 - "Subject Import Batch"
 Cohesion: 0.10
@@ -1387,35 +1589,35 @@ Nodes (36): buildDuplicateIndex(), Chapter, clamp(), cleanStarText(), convertQue
 
 ### Community 31 - "React Eslint Plugin"
 Cohesion: 0.06
-Nodes (36): engines, node, lucide-react, motion, react, react-dom, react-router, tailwindcss (+28 more)
+Nodes (33): engines, node, lucide-react, motion, react, react-dom, react-router, tailwindcss (+25 more)
 
-### Community 32 - "ref_lucide_react"
-Cohesion: 0.04
-Nodes (72): 4.2 Bilingual Integration & Route Isolation, ClerkThemeTogglePortal(), useBankRevision(), LanguageToggle(), Harness(), Crumb, PortalShell(), LanguageProfilePage() (+64 more)
+### Community 32 - "LegalLayout.tsx"
+Cohesion: 0.23
+Nodes (9): ClerkThemeTogglePortal(), LanguageToggle(), Harness(), ThemeToggle(), LegalLayout(), LegalLayoutProps, MedicalDisclaimerPage(), PrivacyPage() (+1 more)
 
-### Community 33 - "ref_node_path"
-Cohesion: 0.06
-Nodes (17): STRUCTURE, SUBFOLDERS, files, files, chunks, files, VALID_SUBJECTS, details (+9 more)
+### Community 33 - "analyze-cleaned.ts"
+Cohesion: 0.40
+Nodes (4): allTexts, crossChunkDupes, files, Summary
 
-### Community 34 - "data.ts"
-Cohesion: 0.05
-Nodes (59): CorrectionStatus(), subscribe(), assertUniqueQuestionIds(), bankLoader, bankManifest, buildChapter(), buildChaptersForModuleAndMode(), CHAPTER_META (+51 more)
+### Community 34 - "orchestrator/DISPATCH.md"
+Cohesion: 0.08
+Nodes (25): 2026-11-07T15:04:42Z, 2026-11-08T19:22:38Z, 2026-11-08T23:50:37Z, Acceptance Criteria, Acceptance Criteria, Figure Splitting, Framing, and Visual Quality, Library Organization, Index, and CLI, Orchestration Directives (+17 more)
 
 ### Community 35 - "Format Options Mandatory"
 Cohesion: 0.06
 Nodes (36): PULSE — GAP-FILLING MCQ GENERATOR, 10. NO DUPLICATION, 11. FORMAT — ADAPTIVE, 12. FORMAT FOLLOWS THE GAP, 13. CLINICAL SCENARIO RULES, 14. TARGET DIFFICULTY, 15. TRACEABILITY, 16. OPTIONS (+28 more)
 
-### Community 36 - "vitest"
-Cohesion: 0.03
-Nodes (68): ALLOWED_SUBJECTS, Chapter, findJsonFiles(), ModuleMeta, Question, QuestionType, run(), Subject (+60 more)
+### Community 36 - "@testing-library/react"
+Cohesion: 0.06
+Nodes (47): @testing-library/react, LazyLevelUpOverlay, getHomeSnapshot(), HOME_SNAPSHOT_KEY, HomeSnapshot, saveHomeSnapshot(), LevelUpOverlay(), LevelUpOverlayProps (+39 more)
 
 ### Community 37 - "Tests Build Import"
 Cohesion: 0.19
 Nodes (31): convertSubQuestion(), getSubjectKey(), main(), normalize(), SUBJECT_DISPLAY, SubjectColor, QuestionBankFile, Build (+23 more)
 
-### Community 38 - "The menu bar"
-Cohesion: 0.04
-Nodes (57): Designing for games, Adopt Apple technologies, Change log, Enable intuitive interactions, Jump into gameplay, Look stunning on every display, Related guidelines, Welcome everyone (+49 more)
+### Community 38 - "Apple Pay"
+Cohesion: 0.08
+Nodes (24): App Clips, App Clip Codes, Change log, Creating content for an App Clip card, Designing your App Clip, Legal requirements, Platform considerations, Printing guidelines (+16 more)
 
 ### Community 39 - "Eslint React Plugin"
 Cohesion: 0.06
@@ -1423,31 +1625,31 @@ Nodes (32): devDependencies, eslint, @eslint/js, eslint-plugin-react-hooks, esli
 
 ### Community 40 - "Intake Valid Google"
 Cohesion: 0.10
-Nodes (24): buildSystemPrompt(), CanonicalChapter, CanonicalModule, __dirname, extractText(), fail(), __filename, IMPORTS_DIR (+16 more)
+Nodes (27): buildSystemPrompt(), callLLM(), CanonicalChapter, CanonicalModule, __dirname, extractText(), fail(), __filename (+19 more)
 
 ### Community 41 - "Generatehint Constructor Hint"
-Cohesion: 0.12
-Nodes (19): AIAdapter, buildInitialMessage(), buildSystemPrompt(), buildUserPrompt(), checkRateLimit(), detectProvider(), getAdapter(), GoogleGenAIAdapter (+11 more)
+Cohesion: 0.13
+Nodes (18): AIAdapter, buildInitialMessage(), buildSystemPrompt(), buildUserPrompt(), checkRateLimit(), detectProvider(), getAdapter(), GoogleGenAIAdapter (+10 more)
 
-### Community 42 - "Master Forensic Audit & Medical Quality Report"
-Cohesion: 0.14
-Nodes (13): 1. Executive Summary & Verification Metrics, 2.1 OCR Corruption & Broken Ligature Restoration, 2.2 De-concatenation of Multi-Column Scanned MCQs (`MBL-2`), 2.3 Physiology Key Transposition Cluster Remediation (`MBL-2`), 2.4 The `MRS-2` True/False Medical Audit, 2. Forensic Quality & Data Integrity Remediations, 3. Medical Explanation Upgrades (252 Core Items), 4.1 Architecture & Page Specifications (+5 more)
+### Community 42 - "6. Comprehensive Curriculum Lecture Inventory"
+Cohesion: 0.08
+Nodes (25): 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5. Verification Method, 6. Comprehensive Curriculum Lecture Inventory, 7.1 Anatomy & Embryology Domain, 7.2 Histology & Cell Biology Domain (+17 more)
 
 ### Community 43 - "Subject Migrate Chapter"
 Cohesion: 0.09
 Nodes (29): CHAPTER_EMOJIS, clampIndex(), convertQuestion(), convertSubQuestion(), findJsonFiles(), inferQuestionType(), main(), makeQuestionId() (+21 more)
 
-### Community 44 - "React Accordion Checkbox"
-Cohesion: 0.08
-Nodes (17): AccordionContent(), AccordionItem(), AccordionTrigger(), Checkbox(), InputOTP(), InputOTPGroup(), InputOTPSlot(), RadioGroup() (+9 more)
+### Community 44 - "lucide-react@0.487.0"
+Cohesion: 0.10
+Nodes (14): AccordionContent(), AccordionItem(), AccordionTrigger(), Checkbox(), InputOTP(), InputOTPGroup(), InputOTPSlot(), ResizableHandle() (+6 more)
 
 ### Community 45 - "Audit Answer Review"
 Cohesion: 0.07
 Nodes (28): PULSE — MCQ REVIEWER & QUALITY CONTROL, 10. STEM AUDIT, 11. CLINICAL SCENARIO AUDIT, 12. DIFFICULTY AUDIT, 13. DISTRACTOR AUDIT — MANDATORY, 14. OPTIONS-ONLY TEST — SILENT BUT MANDATORY, 15. ANSWER LEAKAGE CLASSIFICATION, 16. OPTION QUALITY (+20 more)
 
-### Community 46 - "LearningHub.tsx"
-Cohesion: 0.13
-Nodes (19): DashboardCacheEntry, learningState, LearningDashboard, LearningEntry, LearningProfile, LearningSubmission, Context, LearningContext (+11 more)
+### Community 46 - "profanity-filter.ts"
+Cohesion: 0.29
+Nodes (9): ARABIC_BOUNDARY_TERMS, ARABIC_ROOT_TERMS, ENGLISH_BLOCKED_TERMS, isNameAllowed(), NameValidationResult, normalizeArabic(), normalizeEnglish(), sanitizeDisplayName() (+1 more)
 
 ### Community 47 - "Subject Questionbankschema Assertuniquequestionids"
 Cohesion: 0.10
@@ -1455,15 +1657,15 @@ Nodes (25): BaseCaseSubQuestionSchema, BaseQuestionSchema, CaseQuestionSchema, C
 
 ### Community 48 - "Path Cleaner Batch"
 Cohesion: 0.11
-Nodes (27): buildChunks(), callLLM(), callLLMWithRetry(), ChunkPlan, CLEANED_DIR, createSemaphore(), acquire(), __dirname (+19 more)
+Nodes (24): buildChunks(), callLLM(), callLLMWithRetry(), ChunkPlan, CLEANED_DIR, createSemaphore(), acquire(), __dirname (+16 more)
 
 ### Community 49 - "Issue Medium High"
 Cohesion: 0.07
 Nodes (27): Comprehensive Audit Report, Build, Issue 10 [MEDIUM]: QuizInterface.tsx sets dead state `_subAnswers`, Issue 11 [MEDIUM]: `lastFocusedSubQ` ref not cleared on blur, Issue 12 [MEDIUM]: Invalid Tailwind classes (broken styling), Issue 13 [MEDIUM]: useHintSystem body consumption race on JSON parse failure, Issue 14 [MEDIUM]: `customUserButton` recreated every render, expensive root re-renders, Issue 15 [MEDIUM]: `getYearProgress` executed on every render of Analytics route (+19 more)
 
-### Community 50 - "admin-analytics-service.ts"
-Cohesion: 0.07
-Nodes (33): handler(), Request, Response, handler(), handler(), Request, Response, checkReportRateLimit() (+25 more)
+### Community 50 - "Explorer Fix 3 Handoff Report: Surgical Engine Remediation & M2–M5 Manifest Strategy"
+Cohesion: 0.08
+Nodes (23): 1.1 `auto_split_plate` Post-`doc.close()` Crash (Finding 1 / Major), 1.2 Bounding Box Inversion and Missing Normalization (Finding 4 / Minor), 1.3 Gutter Detection Sensitivity, Noise Tolerance & Vector Leader Line Penetration, 1.4 Minor Discrepancies in Typography & Wrapping, 1. Architectural Model, 1. Observation, 2. Logic Chain, 2. Manifest Schema (`PlateManifestEntry`) (+15 more)
 
 ### Community 51 - "useTheme"
 Cohesion: 0.06
@@ -1478,16 +1680,16 @@ Cohesion: 0.08
 Nodes (26): PULSE — Recall → MCQ Generator, 10. DIRECT QUESTION RULES, 11. CLINICAL SCENARIO RULES, 12. DIFFICULTY, 13. OPTIONS AND DISTRACTORS, 14. OPTION-SURFACE AUDIT — SILENT, MANDATORY, 15. CORRECT ANSWER POSITION — BATCH-WIDE, 16. PROHIBITED QUESTION STYLES (+18 more)
 
 ### Community 54 - "Polish Rejected Biochemistry"
-Cohesion: 0.15
-Nodes (7): apply(), digest(), main(), questions(), main(), extract_book_passage(), PolishTests
+Cohesion: 0.09
+Nodes (13): apply(), digest(), main(), questions(), extract_bank_essays(), jaccard(), load_bank(), load_inerd() (+5 more)
 
 ### Community 55 - "Taxonomy Questions Binding"
 Cohesion: 0.08
 Nodes (25): PULSE — QUESTION BANK TAXONOMY CLASSIFIER, 0. WHY A MANIFEST — READ FIRST, 10. TOPIC BOUNDARY RULE, 11. CONFIDENCE — REQUIRED FIELD, 12. SMALL-SET INLINE MODE — THE ONLY EXCEPTION, 13. SOURCE MATERIAL, 14. ORIGIN AND METADATA, 15. DUPLICATES (+17 more)
 
-### Community 56 - "Dashboard.tsx"
-Cohesion: 0.31
-Nodes (9): getHomeSnapshot(), HOME_SNAPSHOT_KEY, HomeSnapshot, saveHomeSnapshot(), Dashboard(), DashboardProps, TOOLS, Year (+1 more)
+### Community 56 - "year1-quality-release.test.ts"
+Cohesion: 0.18
+Nodes (11): contentFingerprint(), normalizeContent(), QuestionContent, questionQualityIssues(), resolveAnswerIndex(), biochemistry, duplicates, exclusions (+3 more)
 
 ### Community 57 - "Owner Page Payment"
 Cohesion: 0.09
@@ -1502,8 +1704,8 @@ Cohesion: 0.14
 Nodes (18): Command(), CommandDialog(), CommandGroup(), CommandInput(), CommandItem(), CommandList(), CommandSeparator(), CommandShortcut() (+10 more)
 
 ### Community 60 - "Release Inspect October"
-Cohesion: 0.07
-Nodes (27): ASU Medical Portal: complete question intake and release workflow, 10. Canonical conversion and format-specific gates, 11. Stage the integration and inspect every mutation, 12. Reconciliation and release accounting, 13. Tests: prove data and runtime behavior, 14. Publish only the authorized release, 15. Known errors and permanent fixes, 16. Cost and usage controls without false verification (+19 more)
+Cohesion: 0.09
+Nodes (23): ASU Medical Portal: complete question intake and release workflow, 10. Canonical conversion and format-specific gates, 11. Stage the integration and inspect every mutation, 12. Reconciliation and release accounting, 13. Tests: prove data and runtime behavior, 14. Publish only the authorized release, 15. Known errors and permanent fixes, 16. Cost and usage controls without false verification (+15 more)
 
 ### Community 61 - "Bank Audit Validate"
 Cohesion: 0.11
@@ -1517,21 +1719,21 @@ Nodes (18): SoundKey, useSoundEngine(), feedbackSoundEnabled(), isIPhoneSafari()
 Cohesion: 0.09
 Nodes (21): compilerOptions, allowImportingTsExtensions, erasableSyntaxOnly, jsx, lib, module, moduleDetection, moduleResolution (+13 more)
 
-### Community 64 - "Collections"
-Cohesion: 0.17
-Nodes (15): Collections, Best practices, Platform considerations, Related guidelines, content_hash(), historical_index(), main(), parse_text() (+7 more)
+### Community 64 - "LearningProvider.tsx"
+Cohesion: 0.14
+Nodes (19): prepareReward(), createLearningService(), account(), Dependencies, DashboardCacheEntry, learningState, LearningDashboard, LearningProfile (+11 more)
 
-### Community 65 - "learning-store.ts"
-Cohesion: 0.09
-Nodes (38): handler(), Req, Res, checkRateLimit(), inMemoryRates, Req, Res, service (+30 more)
+### Community 65 - "report-store.ts"
+Cohesion: 0.07
+Nodes (41): handler(), Req, Res, checkRateLimit(), inMemoryRates, Req, Res, service (+33 more)
 
 ### Community 66 - "InteractiveBackground.tsx"
 Cohesion: 0.10
 Nodes (11): LazyInteractiveBackground, Cell, currentLayerDef, InteractiveBackground(), MOOD_TINT, MouseState, Pulse, Simplex (+3 more)
 
 ### Community 67 - "import-ready.ts"
-Cohesion: 0.07
-Nodes (47): buildDuplicateIndex(), Chapter, cleanStarText(), convertQuestion(), findFilesInDir(), findQuestionById(), findTargetFile(), getOrCreateSubject() (+39 more)
+Cohesion: 0.10
+Nodes (36): buildDuplicateIndex(), Chapter, cleanStarText(), convertQuestion(), findFilesInDir(), findQuestionById(), findTargetFile(), getOrCreateSubject() (+28 more)
 
 ### Community 68 - "Label React Badge"
 Cohesion: 0.18
@@ -1544,10 +1746,6 @@ Nodes (44): Adding questions to ASU Medical Portal, Formats and paths, Repositor
 ### Community 70 - "Stage Website Portable"
 Cohesion: 0.06
 Nodes (31): Adding questions to ASU Medical Portal, Formats and paths, Repository checks, ASU Question Bank — Portable Master Prompt v3, 10. OPTIONAL GENERATION — OFF UNLESS REQUESTED, 11. STAGE G — MAP BOOK CHAPTERS TO WEBSITE DESTINATIONS, 12. WEBSITE DATA CONTRACT — SELF-CONTAINED, 13. STAGE H — DETERMINISTIC EXPORT AND PREFLIGHT (+23 more)
-
-### Community 71 - "MasterLocomotorIntake"
-Cohesion: 0.23
-Nodes (4): clean_option(), compute_fingerprint(), MasterLocomotorIntake, normalize_text()
 
 ### Community 72 - "validate-findings.cjs"
 Cohesion: 0.13
@@ -1574,40 +1772,40 @@ Cohesion: 0.12
 Nodes (17): PULSE — MODULE & TOPIC STRUCTURE BUILDER, 10. SCOPE, INCLUDE, AND EXCLUDE RULES — REQUIRED, 11. SOURCE REFERENCES — REQUIRED, 12. NO LOWER LEVELS, 13. SELF-CHECK BEFORE OUTPUT, 14. OUTPUT FORMAT, 15. JSON MODE, 1. OBJECTIVE (+9 more)
 
 ### Community 78 - "ATTACK-CLASSES.md"
-Cohesion: 0.08
-Nodes (17): Attack Classes, Attack classes — choose and split based on Phase 1, Binary loading and runtime attack classes (subagent_type: `general`), Bounds, integer, and representation attack classes (subagent_type: `general`), Core discipline (include in every agent prompt for this domain), FFI and ABI attack classes (subagent_type: `general`), Kernel and privileged-interface attack classes (subagent_type: `general`), Lifetime, type, and concurrency attack classes (subagent_type: `general`) (+9 more)
-
-### Community 79 - "import_git_assessment2.py"
 Cohesion: 0.13
-Nodes (11): extract_abdel_hamid_physio(), extract_alaa_pharma(), extract_elshorbagy(), extract_hegazy(), extract_histo_mcq3(), extract_patho_bro(), match_lecture(), normalize_text() (+3 more)
+Nodes (7): Attack Classes, Attack classes — choose and split based on Phase 1, Architecture summary and companion selection, Deterministic coverage ledger, Phase 1: Map the source and plan coverage, Prior-run input, Reconnaissance
+
+### Community 79 - "os"
+Cohesion: 0.03
+Nodes (33): audit_assets(), audit_master_index(), audit_symlinks(), run_all_tests(), run_test(), verify_authentic_caption_matching(), verify_wheater_fig_18_4(), run_test() (+25 more)
 
 ### Community 80 - "Case Chunk"
 Cohesion: 0.12
 Nodes (16): Raw Chunk 080, Case 1, Case 10 (MCQ), Case 11 (MCQ), Case 12 (MCQ), Case 13 (MCQ), Case 14 (MCQ), Case 15 (MCQ) (+8 more)
 
-### Community 81 - "Designing for iOS"
-Cohesion: 0.15
-Nodes (13): Designing for iOS, Best practices, Designing for iPhone Duo, Anatomy, Best practices, Change log, Dynamic layouts, Related guidelines (+5 more)
+### Community 81 - "Collections"
+Cohesion: 0.09
+Nodes (17): Collections, Best practices, Platform considerations, Related guidelines, Progress — Explorer FE 1, Status: Investigation Complete & Handoff Report Drafting, content_hash(), historical_index() (+9 more)
 
 ### Community 82 - "Does Sync Device"
 Cohesion: 0.12
 Nodes (16): Cross-Device Quiz Resume Sync — Debug Review, A. localStorage key format written by `saveQuizSession`, B. Does `useCloudSync.pushData()` include `asu_quiz_session:` keys?, C. Does `api/sync.ts` POST handler correctly store per-key values in Redis?, Critical Issue Found: `savedSession.essayDrafts` Type Mismatch, D. Does `api/sync.ts` GET handler correctly return these keys?, E. Does `useCloudSync.pullData()` restore keys to localStorage on the new device?, F. Does the debounced auto-save effect in `QuizInterface.tsx` actually fire? (+8 more)
 
-### Community 83 - "Lists and tables"
-Cohesion: 0.09
-Nodes (26): Column views, Best practices, Platform considerations, Related guidelines, Disclosure controls, Best practices, Disclosure buttons, Disclosure triangles (+18 more)
+### Community 83 - "Layout"
+Cohesion: 0.04
+Nodes (53): Column views, Best practices, Platform considerations, Related guidelines, Disclosure controls, Best practices, Disclosure buttons, Disclosure triangles (+45 more)
 
 ### Community 84 - "Machine learning"
 Cohesion: 0.05
-Nodes (38): Generative AI, Best practices, Change log, Continuous improvement, Inputs, Models and datasets, Outputs, Platform considerations (+30 more)
+Nodes (42): Generative AI, Best practices, Change log, Continuous improvement, Inputs, Models and datasets, Outputs, Platform considerations (+34 more)
 
-### Community 85 - "refreshQuestionCorrections"
-Cohesion: 0.14
-Nodes (9): refreshQuestionCorrections(), startCorrectionsRefresh(), handleRestoreQuestion(), AdminQuestionEditor(), exportEdits(), removeQuestion(), save(), q (+1 more)
+### Community 85 - "pathlib"
+Cohesion: 0.10
+Nodes (12): indexed(), nonempty(), require(), unique(), verify_bundle(), checked_file(), opts(), patch() (+4 more)
 
-### Community 86 - "Question Format Portal"
-Cohesion: 0.13
-Nodes (14): ASU Portal Question Bank Format v2, Case question, Chapter, Essay question, Fillblank question, Matching question, MCQ question, ModuleMeta (+6 more)
+### Community 86 - "ASU Portal Question Bank Format v2"
+Cohesion: 0.04
+Nodes (43): ASU Portal Question Bank Format v2, Case question, Chapter, Essay question, Fillblank question, Matching question, MCQ question, ModuleMeta (+35 more)
 
 ### Community 87 - "ref_path"
 Cohesion: 0.13
@@ -1622,44 +1820,44 @@ Cohesion: 0.13
 Nodes (15): 🏥 ASU Medical Portal — Implementation Spec & Step-by-Step Execution Plan, 0. Lock File — Stakeholder Decisions, 10. Full Integration Test, 1. Architecture Overview, 2. WAVE 1: Schema Foundation (Zero Visible Changes), 3. WAVE 2: Sound Engine + Micro-interactions (Visible for First Time), 4. WAVE 3: Countdown Timer + Exam Mode, 5. WAVE 4: Gamification Core (XP, Streaks, Weakest Topics) (+7 more)
 
 ### Community 90 - "Toggle Alert Group"
-Cohesion: 0.15
-Nodes (14): Alert(), AlertDescription(), AlertTitle(), alertVariants, Badge(), badgeVariants, ToggleGroup(), ToggleGroupContext (+6 more)
+Cohesion: 0.14
+Nodes (15): Alert(), AlertDescription(), AlertTitle(), alertVariants, Badge(), badgeVariants, ToggleGroup(), ToggleGroupContext (+7 more)
 
 ### Community 91 - "Ain Shams University Faculty of Medicine (ASU)"
 Cohesion: 0.10
 Nodes (20): 1. System Overview, 2. Directory Architecture & Naming Conventions, 3. Complete Curriculum Map (All 42 Modules & 403 Folders), 4. How to Import and Use on Your iPad, 5. Pro-Tips for Peak Goodnotes Organization at Ain Shams, Ain Shams University Faculty of Medicine (ASU), File Deliverables on Your Mac:, Master Goodnotes & iPadOS Academic Organization System (+12 more)
 
-### Community 92 - "SupportPage.tsx"
-Cohesion: 0.25
-Nodes (9): refundUrl(), SUPPORT, COST_CONVERSION, costAmount(), MONTHLY_TOTAL_USD, RUNNING_COSTS, FAQs, Method (+1 more)
+### Community 92 - "Part 3: Screen-by-Screen Redesign Blueprint & Prompts"
+Cohesion: 0.08
+Nodes (24): 1. Color Palette, 2. Typography Stack, 3. Surface & Elevation (Apple HIG Liquid Glass & Solid Fields), A-Plus (`A⁺`) — Complete Master Redesign Handoff for Gemini Argon 4, Copy-Paste Prompt for Argon 4:, Copy-Paste Prompt for Argon 4:, Copy-Paste Prompt for Argon 4:, Copy-Paste Prompt for Argon 4: (+16 more)
 
 ### Community 93 - "os"
-Cohesion: 0.09
-Nodes (11): build_raw_question_obj(), main(), rebalance_authored_question(), verify_image(), get_biochemistry_questions(), get_clinical_questions(), get_microbiology_questions(), get_physiology_questions() (+3 more)
+Cohesion: 0.11
+Nodes (8): build_raw_question_obj(), main(), rebalance_authored_question(), verify_image(), get_biochemistry_questions(), get_clinical_questions(), get_microbiology_questions(), get_physiology_questions()
 
 ### Community 94 - "Section Question Output"
 Cohesion: 0.09
 Nodes (23): Adding New Question Databases to ASU Medical Portal, File Organization, How It Works, How the Importer Routes Questions Automatically, Import Commands, Incoming Batch JSON Format (v2), Quick Start (3 Steps), Tips (+15 more)
 
-### Community 95 - "PremiumCards.tsx"
-Cohesion: 0.23
-Nodes (8): ErrorBoundary, CardShell(), IconBadge(), ModuleCard(), PremiumCardsDemo(), StudyModeCard(), SYSTEMS, YearCard()
+### Community 95 - "useTimer.ts"
+Cohesion: 0.40
+Nodes (4): TimerMode, UrgencyLevel, useTimer(), UseTimerOptions
 
 ### Community 96 - "Includefiles Maxduration Question"
 Cohesion: 0.09
-Nodes (21): includeFiles, maxDuration, maxDuration, includeFiles, maxDuration, includeFiles, maxDuration, includeFiles (+13 more)
+Nodes (22): includeFiles, maxDuration, maxDuration, includeFiles, maxDuration, includeFiles, maxDuration, includeFiles (+14 more)
 
-### Community 97 - "Playing haptics"
-Cohesion: 0.12
-Nodes (19): Combo boxes, Best practices, Platform considerations, Related guidelines, Labels, Best practices, Change log, Platform considerations (+11 more)
+### Community 97 - "START_HERE.md"
+Cohesion: 0.13
+Nodes (12): ASU Medical Portal agent instructions, Question extraction and imports, Website design policy, Approved medical-card Extra layout (12 November 2026), Execution Discipline, graphify, Medical Anki and image workflows, Skills & Memory Architecture (+4 more)
 
-### Community 98 - "run_100_percent_git_workflow.py"
-Cohesion: 0.15
-Nodes (6): classify_page_disposition(), match_lecture(), normalize_text(), ocr_single_page(), options_overlap(), run_100_percent_audit()
+### Community 98 - "import_cns_histology.py"
+Cohesion: 0.30
+Nodes (5): extract_questions_from_pdf(), load_json(), main(), save_json(), table_to_html()
 
-### Community 99 - "generate-version.mjs"
-Cohesion: 0.15
-Nodes (9): fails, files, files, out, report, buildTime, root, timestamp (+1 more)
+### Community 99 - "output"
+Cohesion: 0.09
+Nodes (21): ignore, customPatterns, useDefaultPatterns, useGitignore, include, output, directoryStructure, filePath (+13 more)
 
 ### Community 100 - "Phase Master Medical"
 Cohesion: 0.15
@@ -1677,21 +1875,21 @@ Nodes (4): rollup-plugin-visualizer, vite-plugin-pwa, localApi(), config
 Cohesion: 0.19
 Nodes (9): disciplineColors, KnowledgeGraphDrawer(), Props, ConceptNeighborhood, GraphEdge, GraphNode, KnowledgeGraphService, MEDICAL_CURRICULUM_CONCEPTS (+1 more)
 
-### Community 104 - "Rejected Biochemistry Organization"
+### Community 104 - "biochemistry_organization.py"
 Cohesion: 0.27
 Nodes (4): main(), questions(), reorganize(), OrganizationTests
 
-### Community 105 - "triage-store.ts"
-Cohesion: 0.13
-Nodes (15): TRIAGE_BUDGET_LUA, TRIAGE_LEASE_LUA, TRIAGE_SAVE_LUA, triageStore, bounded(), cairoDay(), dayKey(), header() (+7 more)
+### Community 105 - "tutor-metrics.ts"
+Cohesion: 0.32
+Nodes (11): bounded(), cairoDay(), dayKey(), header(), number(), readTutorUsage(), RECORD_TUTOR_LUA, recordTutorUsage() (+3 more)
 
 ### Community 106 - "Format Question Folder"
 Cohesion: 0.17
 Nodes (12): How to Use ASU Portal Data Format v2, Duplicate behavior, Exact prompt for generating future question batches, Files in this folder, Final safety checks before merging, Incoming batch format, Make the workflow amazing and nearly one-click, Organized question intake folder structure (+4 more)
 
-### Community 107 - "drawer.tsx"
-Cohesion: 0.20
-Nodes (8): DrawerContent(), DrawerDescription(), DrawerFooter(), DrawerHeader(), DrawerOverlay(), DrawerPortal(), DrawerTitle(), vaul@1.1.2
+### Community 107 - "admin-analytics-service.ts"
+Cohesion: 0.11
+Nodes (21): handler(), Request, Response, AnalyticsSummary, clearClerkUsersCache(), ClerkUserInfo, extractStudentEmail(), extractStudentName() (+13 more)
 
 ### Community 108 - "Dimension Recs Medical"
 Cohesion: 0.17
@@ -1714,12 +1912,12 @@ Cohesion: 0.10
 Nodes (20): [0.1.3](https://github.com/supabase/agent-skills/compare/v0.1.2...v0.1.3) (2026-06-02), [0.1.4](https://github.com/supabase/agent-skills/compare/v0.1.3...v0.1.4) (2026-06-05), [0.1.5](https://github.com/supabase/agent-skills/compare/v0.1.4...v0.1.5) (2026-07-10), [0.1.6](https://github.com/supabase/agent-skills/compare/v0.1.5...supabase-v0.1.6) (2026-07-30), [0.1.7](https://github.com/supabase/agent-skills/compare/v0.1.6...supabase-v0.1.7) (2026-08-12), [0.1.8](https://github.com/supabase/agent-skills/compare/v0.1.7...supabase-v0.1.8) (2026-09-24), [0.1.9](https://github.com/supabase/agent-skills/compare/v0.1.8...supabase-v0.1.9) (2026-09-28), Bug Fixes (+12 more)
 
 ### Community 113 - "Color Name Manifest"
-Cohesion: 0.17
-Nodes (11): background_color, description, display, icons, lang, name, orientation, scope (+3 more)
+Cohesion: 0.15
+Nodes (12): background_color, description, display, icons, lang, name, orientation, scope (+4 more)
 
-### Community 114 - "src/main.tsx"
-Cohesion: 0.14
-Nodes (8): @vercel/analytics, ErrorBoundary, Props, State, FeatureErrorBoundary(), getRating(), initWebVitals(), Metric
+### Community 114 - "vitest"
+Cohesion: 0.02
+Nodes (98): ALLOWED_SUBJECTS, Chapter, findJsonFiles(), ModuleMeta, Question, QuestionType, run(), Subject (+90 more)
 
 ### Community 115 - "Briefing 2026 10t18"
 Cohesion: 0.18
@@ -1729,29 +1927,29 @@ Nodes (11): BRIEFING — 2026-06-10T18:41:17Z, Active Timers, Artifact Index, Cu
 Cohesion: 0.18
 Nodes (11): Performance Guide, Critical Rendering Path (CRP) Optimization, CSS Rendering & Containment Optimization, Interaction to Next Paint (INP) & Main Thread Unblocking, JavaScript Code-Splitting, Largest Contentful Paint (LCP) & Resource Fetching, Modern Image & Media Optimization, Service Workers & Caching Strategies (+3 more)
 
-### Community 117 - "import_cns_histology.py"
-Cohesion: 0.30
-Nodes (5): extract_questions_from_pdf(), load_json(), main(), save_json(), table_to_html()
+### Community 117 - "Student Incident Reply Email Drafts (Preview for Approval)"
+Cohesion: 0.12
+Nodes (15): 1. Reply to Yahia El-Serafy (`yahiaelserafy@gmail.com`), 2. Reply to Haila Galal (`hailalagalal@yahoo.com`), 3. Reply to Mohamed (`mohamed200774@gmail.com`), 4. Reply to Hussein Salah (`hsalah2906@gmail.com`), 5. Reply to `overshothailplayz@gmail.com`, 6. Reply to Aly Mahmoud (`alymahmoud7988@gmail.com`), 7. Reply to Farida Elshazley (`elshazleyfarida@gmail.com`), Draft Message Body: (+7 more)
 
 ### Community 118 - "The menu bar"
-Cohesion: 0.04
-Nodes (60): Apple Pencil and Scribble, Barrel roll, Best practices, Change log, Custom drawing, Double tap, Hover, Platform considerations (+52 more)
+Cohesion: 0.03
+Nodes (69): Apple Pencil and Scribble, Barrel roll, Best practices, Change log, Custom drawing, Double tap, Hover, Platform considerations (+61 more)
 
-### Community 119 - "Inclusion"
+### Community 119 - "SF Symbols"
 Cohesion: 0.04
-Nodes (62): Accessibility, Change log, Cognitive, Hearing, Mobility, Platform considerations, Related guidelines, Speech (+54 more)
+Nodes (58): Home Screen quick actions, Best practices, Platform considerations, Related guidelines, Icons, Best practices, Change log, Platform considerations (+50 more)
 
 ### Community 120 - "confirmed"
 Cohesion: 0.17
 Nodes (20): Cost budget, Coverage and prior runs, Full audit planning, Full audit workflow, Run profiles and scope, confirmed(), evidence(), needsValidation() (+12 more)
 
 ### Community 121 - "App icons"
-Cohesion: 0.06
-Nodes (31): App icons, Appearances, Change log, Design, Icon shape, Layer design, Platform considerations, Related guidelines (+23 more)
+Cohesion: 0.10
+Nodes (21): App icons, Appearances, Change log, Design, Icon shape, Layer design, Platform considerations, Related guidelines (+13 more)
 
-### Community 122 - "GitBankSelect.tsx"
-Cohesion: 0.07
-Nodes (34): allChapters, Preview(), @testing-library/user-event, compactSnapshot(), FlowBreadcrumbs(), FlowCrumb, subscribeCompact(), labels (+26 more)
+### Community 122 - "1. Observation"
+Cohesion: 0.09
+Nodes (17): 1. Observation, 1. Verify 4,650 University Lecture Visual Index & Asset Presence:, 2. Logic Chain, 2. Verify Card Matcher CLI Functionality & Anki `<img src="...">` Tag:, 3. Caveats, 3. Verify 7-Pillar E2E Test Suite and Standalone Runner:, 4. Conclusion, 5. Verification Method (+9 more)
 
 ### Community 123 - "Fixes Merge Chunk"
 Cohesion: 0.18
@@ -1761,9 +1959,9 @@ Nodes (9): bankData, bankPath, __dirname, __filename, fixes, fixesPath, fixLines
 Cohesion: 0.18
 Nodes (11): MCNS-2 Central Nervous System Question Bank (MEDARK v2), Chapter Distribution, Enrichment Credits, File Structure, Git Commit, Known Limitations & Review List, Overview, Question Breakdown (+3 more)
 
-### Community 125 - "AIChatPanel.tsx"
-Cohesion: 0.21
-Nodes (8): AIChatPanel(), AIChatPanelProps, t, useAutoResizeTextarea(), ChatMessage, MakeProps, useHintSystem(), UseHintSystemOptions
+### Community 125 - "storage.ts"
+Cohesion: 0.08
+Nodes (37): invalidResult, getHistoryDate(), getRelativeDayName(), HistoryScreen(), HistoryScreenProps, isSameDay(), chapter, props (+29 more)
 
 ### Community 126 - "Valid Validate Cleaner"
 Cohesion: 0.25
@@ -1781,25 +1979,29 @@ Nodes (9): bankData, confirmed, fixes, FixRecord, Issue, issues, Question, quest
 Cohesion: 0.18
 Nodes (11): MCNS-2 Question Bank — Final Biological Quality Report, Chapter Distribution, Files Modified, Fix Execution, Initial Audit Results (Pre-Fix), Known Limitations, Post-Fix Audit, Question Breakdown (+3 more)
 
-### Community 131 - "Toolbars"
+### Community 130 - "StarlightToggle.tsx"
+Cohesion: 0.22
+Nodes (13): Props, StarlightToggle(), useSafeUser(), isStarlightEligible(), isUserStarlightEligible(), STARLIGHT_AUTHORIZED_EMAILS, STARLIGHT_STORAGE_KEY, applyTheme() (+5 more)
+
+### Community 131 - "The menu bar"
+Cohesion: 0.03
+Nodes (87): Accessibility, Change log, Cognitive, Hearing, Mobility, Platform considerations, Related guidelines, Speech (+79 more)
+
+### Community 133 - "HIG reference lookup"
 Cohesion: 0.04
-Nodes (60): Color, Best practices, Change log, Color management, Inclusive color, Liquid Glass color, Platform considerations, Related guidelines (+52 more)
-
-### Community 132 - "parse-inerd-essays.py"
-Cohesion: 0.29
-Nodes (5): extract_qa_pairs(), infer_chapter(), infer_subject(), normalize_whitespace(), parse_file()
-
-### Community 133 - "Design Principles Agency"
-Cohesion: 0.20
-Nodes (10): Design principles, Agency, Change log, Craft, Delight, Familiarity, Flexibility, Purpose (+2 more)
+Nodes (51): AirPlay, Best practices, Change log, Platform considerations, Referring to AirPlay, Using AirPlay icons, Collaboration and sharing, Best practices (+43 more)
 
 ### Community 134 - "Buttons"
-Cohesion: 0.03
-Nodes (81): Buttons, Best practices, Change log, Content, Platform considerations, Related guidelines, Role, Style (+73 more)
+Cohesion: 0.04
+Nodes (55): Combo boxes, Best practices, Platform considerations, Related guidelines, Context menus, Best practices, Change log, Content (+47 more)
 
 ### Community 135 - "2. Canonical Bank Architecture (`MLS-1.json`)"
 Cohesion: 0.22
 Nodes (8): 1. Executive Summary & Verification Gates, 2. Canonical Bank Architecture (`MLS-1.json`), 3. Complete File-by-File Accounting Ledger (All 122 Files), Chapter 1: Upper Limb Anatomy & Injuries (1,241 Questions), Chapter 2: Lower Limb Anatomy & Injuries (410 Questions), Chapter 3: Spine & Musculoskeletal Pathologies (483 Questions), Master Locomotor (MLS-1) Multi-Source Intake & Medical Verification Report, Quality & Semantic Verification Gates
+
+### Community 136 - "re"
+Cohesion: 0.06
+Nodes (32): compute_fingerprint(), normalize_text(), compute_fingerprint(), normalize_text(), fix(), adjudicate_anat1(), adjudicate_anat2(), adjudicate_anat3() (+24 more)
 
 ### Community 137 - "Manual Clean Blocks"
 Cohesion: 0.20
@@ -1813,9 +2015,9 @@ Nodes (10): Question Search: implementation master plan, Current limitations con
 Cohesion: 0.20
 Nodes (10): Unified Learning Hub: progress, performance, activity and rewards, Current implementation evidence, Definitions students can trust, Delivery phases, Design specification, Product outcome, Proposed navigation, Required acceptance tests (+2 more)
 
-### Community 140 - "AdminIndustrialDashboard.tsx"
-Cohesion: 0.27
-Nodes (7): AdminOverview, AdminIndustrialDashboard(), InspectedUnit, Toast, mockList, mockOverview, renderDashboard()
+### Community 140 - "src/main.tsx"
+Cohesion: 0.16
+Nodes (6): ErrorBoundary, Props, State, getRating(), initWebVitals(), Metric
 
 ### Community 141 - "Option Chat Tutor"
 Cohesion: 0.20
@@ -1833,9 +2035,9 @@ Nodes (9): bankData, confirmed, fixes, FixRecord, Issue, issues, Question, quest
 Cohesion: 0.20
 Nodes (10): ASU PDF/OCR Medical Text Cleaner — Faithful Extraction Stage, 1. Preserve source text before cleaning, 2. Question boundaries and page continuations, 3. OCR corrections, 4. Answer extraction and reconciliation, 5. Images, SATA and duplicates, 6. Normalized block format, 7. Review records and accounting (+2 more)
 
-### Community 145 - "A-Plus (`A⁺`) Brand Identity Specification & Design System"
-Cohesion: 0.18
-Nodes (10): 1. Executive Summary & Brand Overview, 2. Brand Architecture & Naming System, 3. Creator Attribution (Nonchalant & Tasteful), 4. Visual Identity & Apple HIG Design System, 5. Directory of Brand Assets, 6. Ten Commandments for Future AI Coding Agents, A-Plus (`A⁺`) Brand Identity Specification & Design System, Core Color Tokens (+2 more)
+### Community 145 - "Medical Anki deck production workflow"
+Cohesion: 0.07
+Nodes (29): 10 Draft and approve text before image enrichment, 11 Apply the established formatting, 12 Review every note and its image pairing, 13 Package with stable identities, 14 Handle existing deck updates safely, 15 Validate the package and test imports, 16 Release and continue, 17 Exam emphasis, subject coverage and future updates (+21 more)
 
 ### Community 146 - "Parse Inerd Deduplicate"
 Cohesion: 0.33
@@ -1853,29 +2055,29 @@ Nodes (9): Skill, Ending Discovery, Guardrails, Handling Different Entry Points,
 Cohesion: 0.22
 Nodes (9): BRIEFING — 2026-06-10T22:05:00+03:00, Artifact Index, Audit Progress, Audit Scope, Current Parent, 🔒 Key Constraints, Key Decisions Made, Mission (+1 more)
 
-### Community 151 - "3. The 7 Core Subsystems"
-Cohesion: 0.20
-Nodes (10): 3. The 7 Core Subsystems, Subsystem 10: Apple Design Curricular Study Mode Selector, Subsystem 1: The App Shell & State Nexus (`src/app/App.tsx`), Subsystem 2: Dynamic Bank Loader & Caching (`src/app/data.ts`), Subsystem 3: The Active Solving Engine (`QuizInterface.tsx` & `ClinicalCaseSolver.tsx`), Subsystem 4: Client-Side Inverted Search Index (`src/app/search/`), Subsystem 5: Question Intake & Validation Pipeline (`data-format-v2/`), Subsystem 7: Supabase PostgreSQL 15 Database, Error Reporting & Live Question Management (`server/`) (+2 more)
+### Community 151 - "AIChatPanel.tsx"
+Cohesion: 0.21
+Nodes (8): AIChatPanel(), AIChatPanelProps, t, useAutoResizeTextarea(), ChatMessage, MakeProps, useHintSystem(), UseHintSystemOptions
 
-### Community 152 - "navigation-menu.tsx"
-Cohesion: 0.22
-Nodes (10): NavigationMenu(), NavigationMenuContent(), NavigationMenuIndicator(), NavigationMenuItem(), NavigationMenuLink(), NavigationMenuList(), NavigationMenuTrigger(), navigationMenuTriggerStyle (+2 more)
+### Community 152 - "The menu bar"
+Cohesion: 0.08
+Nodes (26): Dock menus, Best practices, Platform considerations, Related guidelines, Image wells, Best practices, Platform considerations, Related guidelines (+18 more)
 
 ### Community 153 - "quality-audit.ts"
 Cohesion: 0.50
 Nodes (3): bank, questions, textMap
 
-### Community 154 - "Writing"
-Cohesion: 0.09
-Nodes (23): Managing notifications, Best practices, Integrating with Focus, Platform considerations, Related guidelines, Sending marketing notifications, Notifications, Anatomy (+15 more)
+### Community 154 - "Medical Anki deck production workflow"
+Cohesion: 0.07
+Nodes (29): 10 Draft and approve text before image enrichment, 11 Apply the established formatting, 12 Review every note and its image pairing, 13 Package with stable identities, 14 Handle existing deck updates safely, 15 Validate the package and test imports, 16 Release and continue, 17 Exam emphasis, subject coverage and future updates (+21 more)
 
 ### Community 155 - "Supabase"
 Cohesion: 0.11
 Nodes (15): Fix suggestion, Source, What happened, Skill Feedback, Steps, Core Principles, Debugging, Making and Committing Schema Changes (+7 more)
 
 ### Community 156 - "Widgets"
-Cohesion: 0.03
-Nodes (68): App Shortcuts, Best practices, Change log, Editorial guidelines, Platform considerations, Related guidelines, Branding, Best practices (+60 more)
+Cohesion: 0.05
+Nodes (43): App Shortcuts, Best practices, Change log, Editorial guidelines, Platform considerations, Related guidelines, Controls, Anatomy (+35 more)
 
 ### Community 157 - "Audit Briefing 2026"
 Cohesion: 0.22
@@ -2025,17 +2227,17 @@ Nodes (9): Skill, Ending Discovery, Guardrails, Handling Different Entry Points,
 Cohesion: 0.22
 Nodes (9): Skill, Ending Discovery, Guardrails, Handling Different Entry Points, OpenSpec Awareness, The Stance, What We Figured Out, What You Don't Have To Do (+1 more)
 
-### Community 195 - "re"
-Cohesion: 0.07
-Nodes (23): clean_option(), fingerprint(), normalize_text(), process_checkpoint(), fix(), extract_keywords(), main(), normalize() (+15 more)
+### Community 195 - "parse-inerd-essays.py"
+Cohesion: 0.29
+Nodes (5): extract_qa_pairs(), infer_chapter(), infer_subject(), normalize_whitespace(), parse_file()
 
-### Community 196 - "validate-findings.test.cjs"
-Cohesion: 0.18
-Nodes (6): LIMITS, errorsFor(), rejectMutation(), TERMINAL_CONTROL_BYTES, validatorPath, validateDocument()
+### Community 196 - "useQuizSession.ts"
+Cohesion: 0.16
+Nodes (14): TimerMode, TimerSettingsPanelProps, cleanAnswers(), clearLocalDrafts(), getDraftsKey(), getKey(), loadLocalDrafts(), saveLocalDrafts() (+6 more)
 
-### Community 197 - "BRIEFING — 2026-06-10T19:03:30Z"
-Cohesion: 0.25
-Nodes (8): BRIEFING — 2026-06-10T19:03:30Z, Artifact Index, Current Parent, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity, Review Scope
+### Community 197 - "Charts"
+Cohesion: 0.12
+Nodes (17): Charting data, Best practices, Change log, Designing effective charts, Platform considerations, Related guidelines, Charts, Anatomy (+9 more)
 
 ### Community 198 - "What Skill Ending"
 Cohesion: 0.22
@@ -2082,12 +2284,16 @@ Cohesion: 0.50
 Nodes (3): 1. Global Page Accounting Summary, 2. Question Intake & Deduplication Summary, Master Page-by-Page Audit Report (GIT Assessment 2 Past Exams)
 
 ### Community 209 - "Onboarding"
-Cohesion: 0.04
-Nodes (56): App Clips, App Clip Codes, Change log, Creating content for an App Clip card, Designing your App Clip, Legal requirements, Platform considerations, Printing guidelines (+48 more)
+Cohesion: 0.05
+Nodes (49): Apple In-App Purchase, Auto-renewable subscriptions, Best practices, Change log, Platform considerations, Designing for games, Adopt Apple technologies, Change log (+41 more)
 
 ### Community 211 - "6. Admin Command Center, Analytics & Master Leaderboard Subsystems"
-Cohesion: 0.15
-Nodes (13): 6.10 30-Point Performance Optimization, Egress Elimination & Apple HIG Skeletons Architecture, 6.11 Pre-Launch Security Toolkit Architecture, 6.12 The Anti-Average Custom 404 Experience (`src/pages/NotFoundPage.tsx`), 6.13 The Secret Starlight Velvet Theme Engine (`src/app/config/secretThemes.ts` & `src/styles/starlight-theme.css`), 6.14 GIT Practical Exam Engine & Specimen Inspection Suite (`src/app/components/SpecimenViewer.tsx` & `src/app/data/practical/mgl-3-practical.json`), 6.1 Security & Authentication Architecture, 6.2 Real-Time Online Presence Engine, 6.3 Admin Master Leaderboard & Student Search (+5 more)
+Cohesion: 0.14
+Nodes (14): 6.10 30-Point Performance Optimization, Egress Elimination & Apple HIG Skeletons Architecture, 6.11 Pre-Launch Security Toolkit Architecture, 6.12 The Anti-Average Custom 404 Experience (`src/pages/NotFoundPage.tsx`), 6.13 The Secret Starlight Velvet Theme Engine (`src/app/config/secretThemes.ts` & `src/styles/starlight-theme.css`), 6.14 GIT Practical Exam Engine & Specimen Inspection Suite (`src/app/components/SpecimenViewer.tsx` & `src/app/data/practical/mgl-3-practical.json`), 6.1 Security & Authentication Architecture, 6.2 Real-Time Online Presence Engine, 6.3 Admin Master Leaderboard & Student Search (+6 more)
+
+### Community 212 - "Challenger 1 Handoff Report: Adversarial Stress-Testing of Gutter Splitting & Edge Boundary Engine"
+Cohesion: 0.10
+Nodes (20): 1.1 Gutter Detection Boundary Penetration, 1.2 Default ROI Body Text Capture & Margin Truncation, 1.3 Failure to Split Real Multi-Figure Plates, 1.4 False Gutters Inside Figures with Internal Whitespace, 1.5 Omission of Vertical Gutter Integration, 1. Observation, 2. Logic Chain, 3. Challenges (+12 more)
 
 ### Community 213 - "Skill Anti Patterns"
 Cohesion: 0.25
@@ -2125,17 +2331,17 @@ Nodes (8): Skill, Anti-patterns, Checklist, Quick start, See also, Troubleshooti
 Cohesion: 0.25
 Nodes (8): AI Tutoring Hints — Setup Guide, Adding a custom provider, Configuration, Files you may need to touch, How it works, Providers, Rate limits, Testing hints locally
 
-### Community 222 - "ASU Medical Portal — Code Audit Report"
-Cohesion: 0.25
-Nodes (8): ASU Medical Portal — Code Audit Report, 🔴 Critical, Files Touched by the Audit, 🟠 High, 🟢 Low, 🟡 Medium, Recommended Fix Order, Summary
+### Community 222 - "Handoff Report — Explorer R2 3: QA Test Runner Sampling Bias & Adversarial Challenger Integration Strategy"
+Cohesion: 0.10
+Nodes (20): 1.1 Empirical Verification of QA Test Runner Sampling Bias, 1.2 Parallel Sampling Defect in Pytest Suite, 1.3 Regex and Scope Omission in `test_helpers.py`, 1.4 Adversarial Test Suite Live Execution and Failure Audit, 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion (+12 more)
 
 ### Community 223 - "Import Patho Essays"
 Cohesion: 0.39
 Nodes (7): cleanAnswerText(), CUSTOM_TABLES, generateExplanation(), generateKeyConcept(), getChapterAndLecture(), Question, run()
 
-### Community 224 - "@clerk/clerk-react"
-Cohesion: 0.36
-Nodes (6): @clerk/clerk-react, DeleteQuestionModalProps, InlineQuestionEditorProps, authenticatedRequest(), questionBankRequest(), Entry
+### Community 224 - "5. Verification Method"
+Cohesion: 0.10
+Nodes (20): 1.1 Curriculum Library Structure and Subject Coverage (R2, Pillar 7), 1.2 Symlink Graph Audit & Legacy Remnant Purging (R2, R4, Pillar 7), 1.3 Master Visual Indices Existence, Record Count, and Integrity (R3, Pillars 5 & 7), 1.4 Schema Compliance and Anki HTML Tag Formatting (R3), 1.5 Flashcard Visual Matcher CLI Execution (`match_for_card.py`), 1.6 Independent Automated Test Execution, 1. Master Index & Schema Verification (4/4 checks), 1. Observation (+12 more)
 
 ### Community 225 - "Writing Guidelines for Postgres References"
 Cohesion: 0.12
@@ -2165,17 +2371,17 @@ Nodes (8): Case Solver Image Generation Prompts, 🧠 CNS Cases (5 images), 🔄
 Cohesion: 0.25
 Nodes (8): CNS Essay Overhaul Report, Artifacts, Chapter Distribution (Essays), Commit, Overview, Process, Source Breakdown, Validation
 
-### Community 232 - "cross-match-essays.py"
-Cohesion: 0.31
-Nodes (7): extract_bank_essays(), jaccard(), load_bank(), load_inerd(), main(), map_inered_to_valid_subject(), normalize()
+### Community 232 - "1.3 Detailed Layout Typology and Formatting Observations"
+Cohesion: 0.10
+Nodes (19): 1.1 Filesystem Inventory & Character Encoding Verification, 1.2 PDF Structure, Bookmarks, and Exact Target Page Ranges, 1.3 Detailed Layout Typology and Formatting Observations, 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion & Recommended Programmatic Enumeration Strategy, 5. Verification Method (+11 more)
 
 ### Community 233 - "Phases Phase Final"
 Cohesion: 0.25
 Nodes (8): Phase 6 — Final Review Report, 1. Build Status, 2. Defect Scan, 3. File Inventory — New Files Created in Phases 1–6, 4. Commit History (Phases 1–6), 5. Coverage, 6. Known Issues, 7. Verdict
 
-### Community 234 - "celebrate.ts"
-Cohesion: 0.31
-Nodes (6): canvas-confetti, LazyConfettiManager, ConfettiManager(), celebrate(), getConfettiColors(), moduleConfettiColors
+### Community 234 - "1. Observation"
+Cohesion: 0.11
+Nodes (17): 1.1 Netter Systems Approach Divider Assets & Robbins Legacy Assets (Steps 5.1 & 5.2), 1.2 Developing Human Re-Extraction (Step 5.3), 1.3 Junqueira Crop Bounds & Running Header Investigation & Fix, 1.4 Netter Reproductive Section Dividers Purge, 1.5 Master Index & Symlinks Audit (Step 5.4), 1. Adversarial Challenger Test Suite (12/12), 1. Observation, 2. Logic Chain (+9 more)
 
 ### Community 235 - "Audit Mcns Contradiction"
 Cohesion: 0.25
@@ -2194,12 +2400,12 @@ Cohesion: 0.17
 Nodes (14): DbClient, handler(), mergeAccountValue(), setWithTTL(), lz-string, @upstash/redis, mergeHistory(), newerValue() (+6 more)
 
 ### Community 239 - "AdminPortal.tsx"
-Cohesion: 0.18
-Nodes (13): cleanQuestionStem(), AdminOverviewPanel(), format(), labels, AdminPortal(), AdminQuestionEditor, AdminWorkspace(), statusLabels (+5 more)
+Cohesion: 0.06
+Nodes (34): 6.6 Concurrency Control, Deletion & Instant Restoration Lifecycle, @clerk/clerk-react, FullAdminAnalytics, StudentAnalytics, DeleteQuestionModal(), DeleteQuestionModalProps, InlineQuestionEditor(), InlineQuestionEditorProps (+26 more)
 
-### Community 240 - "AdminAnalyticsView.tsx"
-Cohesion: 0.31
-Nodes (6): FullAdminAnalytics, StudentAnalytics, StudentEmailReplyModal(), StudentEmailReplyModalProps, AdminAnalyticsView(), mockAnalyticsData
+### Community 240 - "Segmented controls"
+Cohesion: 0.12
+Nodes (17): Boxes, Best practices, Content, Platform considerations, Related guidelines, Segmented controls, Best practices, Change log (+9 more)
 
 ### Community 241 - "What Opsx Explore"
 Cohesion: 0.29
@@ -2210,40 +2416,44 @@ Cohesion: 0.29
 Nodes (7): Skill, iii primitives, Ports, Retrieval model, See also, Storage and lifecycle, Viewer
 
 ### Community 243 - "useVersionCheck.ts"
-Cohesion: 0.29
-Nodes (8): 6.8 Indestructible Cache & Auto-Update Architecture (iPadOS/iOS Safari & Cross-Platform), SiteUpdateNotice(), applyAppUpdate(), AppVersionInfo, CURRENT_BUILD_VERSION, fetchRemoteVersion(), isNewerVersion(), useVersionCheck()
+Cohesion: 0.33
+Nodes (7): SiteUpdateNotice(), applyAppUpdate(), AppVersionInfo, CURRENT_BUILD_VERSION, fetchRemoteVersion(), isNewerVersion(), useVersionCheck()
 
-### Community 244 - "pulseEngine.ts"
-Cohesion: 0.28
-Nodes (4): Burst, fx, Mood, pulse
+### Community 244 - "analytics.ts"
+Cohesion: 0.29
+Nodes (14): usePageTracking(), getGoogleSiteVerification(), getMeasurementId(), initAnalytics(), trackAnkiDownload(), trackEvent(), trackPageView(), trackQuestionAnswer() (+6 more)
 
 ### Community 245 - "Security Audit"
 Cohesion: 0.15
 Nodes (13): Anti-patterns, Core principles, Full audit setup, Operating modes, Platform terminology, Recommend the smallest effective source fix, Require a boundary and result, Respect source visibility (+5 more)
 
-### Community 246 - "zod"
-Cohesion: 0.50
-Nodes (3): MediaSchema, QuestionSchema, QuestionSchemaType
+### Community 246 - "File management"
+Cohesion: 0.13
+Nodes (15): File management, Change log, Creating and opening files, Platform considerations, Quick Look previews, Related guidelines, Saving work, Path controls (+7 more)
 
 ### Community 247 - "enrich-via-api.ts"
 Cohesion: 0.29
 Nodes (10): API_KEY, buildSystemPrompt(), buildUserPrompt(), callLLM(), cleanJsonResponse(), CONFIG, enrichBatch(), main() (+2 more)
 
-### Community 249 - "profanity-filter.ts"
-Cohesion: 0.29
-Nodes (9): ARABIC_BOUNDARY_TERMS, ARABIC_ROOT_TERMS, ENGLISH_BLOCKED_TERMS, isNameAllowed(), NameValidationResult, normalizeArabic(), normalizeEnglish(), sanitizeDisplayName() (+1 more)
+### Community 248 - "1. Observation"
+Cohesion: 0.12
+Nodes (16): 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion & Actionable Code Proposals, 5. Verification Method, Additional Related Defect Noted: RGBA Transparency Corruption, Defect 1: Horizontal Overflow and Text Truncation on Narrow Figures (< 464px, < 300px), Defect 2: Omission of DPI Metadata on PNG Save (+8 more)
+
+### Community 249 - "SupportPage.tsx"
+Cohesion: 0.25
+Nodes (9): refundUrl(), SUPPORT, COST_CONVERSION, costAmount(), MONTHLY_TOTAL_USD, RUNNING_COSTS, FAQs, Method (+1 more)
 
 ### Community 250 - "Desktop, Mobile, and Local IPC Hunting"
 Cohesion: 0.18
 Nodes (10): Application-state and device-lifecycle attack classes (subagent_type: `general`), Core discipline (include in every agent prompt for this domain), Deep-link, callback, and navigation attack classes (subagent_type: `general`), Desktop, Mobile, and Local IPC Hunting, Local IPC and exported-component attack classes (subagent_type: `general`), Privileged-helper and local-file attack classes (subagent_type: `general`), Universal moves (apply across the above), Validation rules (apply before reporting ANY finding here) (+2 more)
 
-### Community 251 - "HIG reference lookup"
-Cohesion: 0.03
-Nodes (73): Action sheets, Best practices, Platform considerations, Related guidelines, Activity views, Best practices, Platform considerations, Related guidelines (+65 more)
+### Community 251 - "Buttons"
+Cohesion: 0.04
+Nodes (57): Action sheets, Best practices, Platform considerations, Related guidelines, Activity views, Best practices, Platform considerations, Related guidelines (+49 more)
 
-### Community 252 - "TriagePanel.tsx"
-Cohesion: 0.23
-Nodes (8): StatusMessage(), StudyButton(), reportRequest(), state, useOwnerAccess(), TriageAssessmentCard(), action(), TriagePanel()
+### Community 252 - "Apple Design Skill"
+Cohesion: 0.22
+Nodes (9): Apple Design Skill, Design reviews, Install, Keeping the references current, Origin and license, Sponsor, Use it, What a review covers (+1 more)
 
 ### Community 253 - "diag.ts"
 Cohesion: 0.20
@@ -2305,9 +2515,9 @@ Nodes (7): CNS Question Bank Enrichment — Resume Status, Files, How to Continu
 Cohesion: 0.25
 Nodes (7): blocks024, blocks032, markdownMatch, part7Match, parts032, raw024, raw032
 
-### Community 268 - "ref_react"
-Cohesion: 0.04
-Nodes (47): App(), ThemeToggle(), ThemeToggleProps, StudyMode, SyllabusTrackerPage, LevelUpOverlay(), LevelUpOverlayProps, SoundManagerComponent() (+39 more)
+### Community 268 - "PortalEntry.tsx"
+Cohesion: 0.34
+Nodes (12): 4.2 Bilingual Integration & Route Isolation, LanguageProvider(), isDisclaimerPath(), isPrivacyPath(), isSupportPath(), isTermsPath(), MedicalDisclaimerPage, PortalEntry() (+4 more)
 
 ### Community 269 - "Section8 Blocks Existing"
 Cohesion: 0.29
@@ -2373,9 +2583,9 @@ Nodes (7): Opsx Explore.Prompt, Ending Discovery, Guardrails, OpenSpec Awareness
 Cohesion: 0.29
 Nodes (7): Explore, Ending Discovery, Guardrails, OpenSpec Awareness, The Stance, What You Don't Have To Do, What You Might Do
 
-### Community 285 - "Resource Exhaustion and Availability Hunting"
-Cohesion: 0.20
-Nodes (9): Computational amplification attack classes (subagent_type: `general`), Core discipline (include in every agent prompt for this domain), Failure and recovery attack classes (subagent_type: `general`), Quota and scheduling attack classes (subagent_type: `general`), Resource accumulation attack classes (subagent_type: `general`), Resource Exhaustion and Availability Hunting, Universal moves (apply across the above), Validation rules (apply before reporting ANY finding here) (+1 more)
+### Community 285 - "validate-findings.test.cjs"
+Cohesion: 0.22
+Nodes (6): LIMITS, errorsFor(), rejectMutation(), TERMINAL_CONTROL_BYTES, validatorPath, validateDocument()
 
 ### Community 286 - "What Opsx Explore"
 Cohesion: 0.29
@@ -2425,6 +2635,10 @@ Nodes (10): Core hunting method — include in every hunter prompt, Core validat
 Cohesion: 0.40
 Nodes (5): @supabase/supabase-js, backupPath, chunk(), client, restore()
 
+### Community 298 - "Reviewer 1 Handoff Report: Milestone M1 (Code Quality & Architecture Review)"
+Cohesion: 0.12
+Nodes (16): 1.1 Interface Compliance Check against `PROJECT.md`, 1.2 Matrix Scaling and Resolution Verification, 1.3 Independent Test Execution, 1.4 Visual Inspection of Delivered Assets, 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion (+8 more)
+
 ### Community 299 - "Handoff Caveats Conclusion"
 Cohesion: 0.33
 Nodes (6): Handoff, Caveats, Conclusion, Logic Chain, Observation, Verification
@@ -2457,13 +2671,13 @@ Nodes (10): API-key and mTLS attack classes (subagent_type: `general`), Browser-
 Cohesion: 0.20
 Nodes (9): 1. Query Performance (query), 2. Connection Management (conn), 3. Security & RLS (security), 4. Schema Design (schema), 5. Concurrency & Locking (lock), 6. Data Access Patterns (data), 7. Monitoring & Diagnostics (monitor), 8. Advanced Features (advanced) (+1 more)
 
-### Community 307 - "classify-cns-questions.py"
-Cohesion: 0.29
-Nodes (5): build_valid_chapter_subjects(), classify(), load_data(), main(), normalize_question()
+### Community 307 - "pulseEngine.ts"
+Cohesion: 0.15
+Nodes (9): canvas-confetti, LazyConfettiManager, ConfettiManager(), getConfettiColors(), moduleConfettiColors, Burst, fx, Mood (+1 more)
 
-### Community 308 - "assemble-final.ts"
-Cohesion: 0.25
-Nodes (7): all, bank, chapterMap, chapterOrder, chapters, chunkDir, meta
+### Community 308 - "medical-anki-production/SKILL.md"
+Cohesion: 0.11
+Nodes (12): Answer-side Extra Section standard, Complete copyable assets, Required result, Shared Extra markup for BOTH back templates, Verification before declaring a template ready, Medical Anki project start prompt, Medical Anki production, Superseded visual extraction reference (+4 more)
 
 ### Community 309 - "Supply Chain and Release Hunting"
 Cohesion: 0.22
@@ -2481,17 +2695,17 @@ Nodes (6): callLLM(), clean(), enrichBatch(), main(), needsE(), sleep()
 Cohesion: 0.52
 Nodes (6): callLLM(), clean(), enrichBatch(), main(), needsE(), sleep()
 
-### Community 313 - "ASUCodes: website design and experience master plan"
-Cohesion: 0.25
-Nodes (8): ASUCodes: website design and experience master plan, Completed locally, Direction, Final local pass — 9 October 2026, Priority and implementation sequence, Release checks, Shared design system, Whole-site coverage and next work
+### Community 313 - "1. Observation"
+Cohesion: 0.12
+Nodes (15): 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5. Verification Method, Actionable Remediations for Milestone M1 Developer:, Challenger 2 Report — Typography Caption Compositing Adversarial Stress Testing, Invalidation Conditions: (+7 more)
 
-### Community 314 - "git-owner-corrections.test.ts"
-Cohesion: 0.25
-Nodes (4): LEDGER_DIR, CorrectionQuestion, preparedBank, questions
+### Community 314 - "Handoff Report: Investigation and Surgical Fix Strategy for Developing Human Crop Bleed Defect"
+Cohesion: 0.13
+Nodes (14): 1.1 Root Cause Location in Extraction Pipeline, 1.2 Empirical Failure Modes on Sample Pages, 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5. Verification Method, A. Single-Column Bottom Figures (e.g., Page 350, Figure 12-28) (+6 more)
 
-### Community 315 - "AdminAnalyticsView.tsx"
-Cohesion: 0.22
-Nodes (6): 6.6 Concurrency Control, Deletion & Instant Restoration Lifecycle, DeleteQuestionModal(), InlineQuestionEditor(), ReportDetail(), save(), mockQuestion
+### Community 315 - "Textbook Corpus Explorer Survey Report (Explorer 2)"
+Cohesion: 0.13
+Nodes (14): 1.1 Source Files & Verification, 1.2 Textbook Inventory & Curriculum Mapping, 1.3 Critical Technical Observation: Root Cause of Unlabelled Plate Defect, 1.4 Plate and Multi-Figure Structural Taxonomy, 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion (+6 more)
 
 ### Community 316 - "Supabase Postgres Best Practices"
 Cohesion: 0.33
@@ -2501,13 +2715,13 @@ Nodes (5): How to Use, References, Rule Categories by Priority, Supabase Postgre
 Cohesion: 0.20
 Nodes (9): Broker and queue isolation attack classes (subagent_type: `general`), Core discipline (include in every agent prompt for this domain), Framing, schema, and interpretation attack classes (subagent_type: `general`), Protocols, RPC, and Messaging Hunting, Replay, ordering, and transaction attack classes (subagent_type: `general`), RPC identity and authorization attack classes (subagent_type: `general`), Universal moves (apply across the above), Validation rules (apply before reporting ANY finding here) (+1 more)
 
-### Community 318 - "store/progress.tsx"
-Cohesion: 0.43
-Nodes (6): AccountProgress(), load(), ProgressProvider(), Ctx, ProgressContext, ProgressState
+### Community 318 - "Master Verification Report: Live Student Reports Forensic Triage & Amboss Medical Audit"
+Cohesion: 0.40
+Nodes (4): 1. Executive Summary, 2. Report-by-Report Forensic Ledger, 3. Automated Verification Results, Master Verification Report: Live Student Reports Forensic Triage & Amboss Medical Audit
 
 ### Community 319 - "fitz"
-Cohesion: 0.09
-Nodes (23): add_candidate(), clean_option(), compute_fingerprint(), normalize_text(), add_candidate(), clean_option(), compute_fingerprint(), normalize_text() (+15 more)
+Cohesion: 0.10
+Nodes (17): extract_abdel_hamid_physio(), extract_alaa_pharma(), extract_elshorbagy(), extract_hegazy(), extract_histo_mcq3(), extract_patho_bro(), match_lecture(), normalize_text() (+9 more)
 
 ### Community 335 - "Skill Checklist Directory"
 Cohesion: 0.33
@@ -2773,9 +2987,9 @@ Nodes (6): Skill, ADDED Requirements, MODIFIED Requirements, REMOVED Requirement
 Cohesion: 0.33
 Nodes (6): Opsx Sync, ADDED Requirements, MODIFIED Requirements, REMOVED Requirements, RENAMED Requirements, Specs Synced: <change-name>
 
-### Community 418 - "ASU Medical Portal — Master Architectural Encyclopedia & System Specification"
-Cohesion: 0.29
-Nodes (6): 1. System Overview & Core Philosophy, 2. High-Level System Architecture, 4. Canonical Module Catalog (42 Banks), 7. Medical Review & High-Yield Explanation Standards, ASU Medical Portal — Master Architectural Encyclopedia & System Specification, Core Architectural Axioms
+### Community 418 - "Medical image extraction and Anki pairing workflow"
+Cohesion: 0.14
+Nodes (14): 10. Verification and delivery gates, 1. Scope, preservation and inventory, 2. Inspect the real source before choosing extraction, 3. Choose the least altered faithful representation, 4. Crop boundaries, panels, captions and keys, 5. Visual acceptance: inspect every selected image, 6. Online enrichment, 7. Pair with the exact recall target (+6 more)
 
 ### Community 419 - "generate-placeholders.ts"
 Cohesion: 0.40
@@ -2817,9 +3031,9 @@ Nodes (5): Learning hub and XP — local review build, Integrity and storage, St
 Cohesion: 0.20
 Nodes (10): Admin and student experience implementation, ASUCodes release status, 11 October follow-up, Actual remaining gates, Deployed, Documentation rules, Learning Progress and XP Implementation Plan, Constraints and checks (+2 more)
 
-### Community 430 - "extract_supplement.py"
-Cohesion: 0.90
-Nodes (4): add_candidate(), clean_option(), compute_fingerprint(), normalize_text()
+### Community 430 - "5. Verification Method"
+Cohesion: 0.13
+Nodes (14): 1. Execute the 7-Pillars QA Runner:, 1. Observation, 2. Execute the Flashcard Matcher CLI Tests:, 2. Logic Chain, 3. Caveats, 3. Execute the 7-Pillars Pytest Suite:, 4. Conclusion, 4. Execute the Card Matcher CLI Pytest Suite: (+6 more)
 
 ### Community 431 - "Checks Admin Report"
 Cohesion: 0.40
@@ -2849,10 +3063,6 @@ Nodes (5): Responsive verification — 8 October 2026, Browser evidence, Gates, 
 Cohesion: 0.40
 Nodes (5): Local student experience refinements — 9 October 2026, Changes, iPhone Safari background music, Owner-supplied cost breakdown, Verification
 
-### Community 438 - "recover-024.ts"
-Cohesion: 0.33
-Nodes (5): blocks, idx, pieces, raw, rest
-
 ### Community 439 - "React Optional Peerdependenciesmeta"
 Cohesion: 0.40
 Nodes (5): peerDependenciesMeta, react, react-dom, optional, optional
@@ -2873,13 +3083,17 @@ Nodes (5): colors, getIntensity(), StreakCalendar(), StreakCalendarProps, WEEK_D
 Cohesion: 0.50
 Nodes (3): combined, fixReport, idToFix
 
-### Community 445 - "devDependencies"
-Cohesion: 0.40
-Nodes (5): devDependencies, tailwindcss, @tailwindcss/vite, vite, @vitejs/plugin-react
+### Community 445 - "Master Forensic Audit & Medical Quality Report"
+Cohesion: 0.14
+Nodes (13): 1. Executive Summary & Verification Metrics, 2.1 OCR Corruption & Broken Ligature Restoration, 2.2 De-concatenation of Multi-Column Scanned MCQs (`MBL-2`), 2.3 Physiology Key Transposition Cluster Remediation (`MBL-2`), 2.4 The `MRS-2` True/False Medical Audit, 2. Forensic Quality & Data Integrity Remediations, 3. Medical Explanation Upgrades (252 Core Items), 4.1 Architecture & Page Specifications (+5 more)
 
 ### Community 446 - "Shrinking Headder Scroll"
 Cohesion: 0.40
 Nodes (5): Shrinking headder on scroll, Best Practices, Browser support and fallback strategies, Example code, How to implement
+
+### Community 447 - "GitBankSelect.tsx"
+Cohesion: 0.07
+Nodes (31): @testing-library/user-event, compactSnapshot(), FlowBreadcrumbs(), FlowCrumb, subscribeCompact(), labels, activeTopicCount(), appear (+23 more)
 
 ### Community 448 - "Implementation Name Schema"
 Cohesion: 0.50
@@ -3057,21 +3271,17 @@ Nodes (4): Skill, Implementation Complete, Implementation Paused, Implementing: 
 Cohesion: 0.50
 Nodes (4): Raw Chunk 077, Section 3: Central Nervous System MCQs (1–46), Section 4: Matching Questions (Table 1 & 2), Section 5: Neuroanatomy MCQs (1–100) – Selected
 
-### Community 492 - "audit-contradictions.ts"
-Cohesion: 0.50
-Nodes (3): bank, contradictions, questions
+### Community 492 - "Notifications"
+Cohesion: 0.09
+Nodes (23): Managing notifications, Best practices, Integrating with Focus, Platform considerations, Related guidelines, Sending marketing notifications, Notifications, Anatomy (+15 more)
 
-### Community 493 - "extract-biochem-066.ts"
-Cohesion: 0.50
-Nodes (3): blocks, pages, raw
+### Community 493 - "Acceptance Criteria"
+Cohesion: 0.14
+Nodes (13): Acceptance Criteria, Figure Splitting, Framing, and Visual Quality, Initial Request — 2026-11-08T19:21:18Z, Library Organization, Index, and CLI, Original User Request, R1. Multi-Book Urogenital Extraction and Figure Splitting, R2. Textbook and Unified Curriculum Visual Libraries, R3. Unified Master Image Index and Card Matching Tool (+5 more)
 
 ### Community 494 - "Block Parts Summary"
 Cohesion: 0.50
 Nodes (4): Fix Summary: chunk_078.txt — Validation Errors, Block 134 (parts[133]), Block 149 (parts[148]), Block 86 (parts[85])
-
-### Community 495 - "recover-032.ts"
-Cohesion: 0.50
-Nodes (3): blocks, parts, raw
 
 ### Community 497 - "True False Report"
 Cohesion: 0.50
@@ -3084,6 +3294,10 @@ Nodes (4): Missed-question practice and Node 24, Node runtime upgrade, Student f
 ### Community 499 - "Quiz Feedback Open"
 Cohesion: 0.50
 Nodes (4): Quiz feedback and open-tab updates, Reported issue and evidence, Safe refresh, Verification
+
+### Community 500 - "Forensic Integrity Audit Report: Milestone M1 (Core Extraction & Splitting Engine)"
+Cohesion: 0.14
+Nodes (13): 1.1 Static Analysis & AST Inspection, 1.2 Dynamic Execution & Runtime Tracing, 1.3 Asset Provenance & Bit-for-Bit Determinism, 1.4 Parameter Perturbation & Sensitivity Testing, 1.5 Opaque-Box Quality & OCR Verification, 1. Observation, 2. Logic Chain, 3. Caveats (+5 more)
 
 ### Community 501 - "Past Exam Owner"
 Cohesion: 0.50
@@ -3237,9 +3451,21 @@ Nodes (4): Archive, Archive Complete, Archive Complete (with warnings), Archive 
 Cohesion: 0.50
 Nodes (4): Skill, Implementation Complete, Implementation Paused, Implementing: <change-name> (schema: <schema-name>)
 
+### Community 539 - "1. Observation"
+Cohesion: 0.14
+Nodes (13): 1.1 Adversarial Geometry and Metadata Audit (Pillars 1 & 6), 1.2 Critical Defect 1: Narrative Body Text Bleed in Developing Human (Pillar 3 & R1), 1.3 Critical Defect 2: Table of Contents / Section Dividers Extracted as Anatomical Plates (Pillar 3 & R1), 1.4 Critical Defect 3: Unindexed Legacy Duplicate Files in Robbins and Curriculum Library (Pillar 7 & R2), 1.5 Masking Defect in Automated QA Test Runner (`tests/run_tests.py`), 1.6 Adversarial Test Suite Execution, 1. Observation, 2. Logic Chain (+5 more)
+
+### Community 540 - "Medical image extraction and Anki pairing workflow"
+Cohesion: 0.14
+Nodes (14): 10. Verification and delivery gates, 1. Scope, preservation and inventory, 2. Inspect the real source before choosing extraction, 3. Choose the least altered faithful representation, 4. Crop boundaries, panels, captions and keys, 5. Visual acceptance: inspect every selected image, 6. Online enrichment, 7. Pair with the exact recall target (+6 more)
+
 ### Community 541 - "Implementation Name Schema"
 Cohesion: 0.50
 Nodes (4): Skill, Implementation Complete, Implementation Paused, Implementing: <change-name> (schema: <schema-name>)
+
+### Community 542 - "Handoff Report: Explorer Fix 2 (Milestone M1 Iteration 2)"
+Cohesion: 0.14
+Nodes (13): 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion & Proposed Code Fixes, 5. Verification Method, Code Snippet (Before → After):, Code Snippet (Before → After):, Handoff Report: Explorer Fix 2 (Milestone M1 Iteration 2) (+5 more)
 
 ### Community 543 - "Implementation Name Schema"
 Cohesion: 0.50
@@ -3273,13 +3499,25 @@ Nodes (4): Opsx Apply, Implementation Complete, Implementation Paused, Implement
 Cohesion: 0.50
 Nodes (4): Opsx Archive, Archive Complete, Archive Complete (with warnings), Archive Failed
 
-### Community 553 - "Medical Portal Agent"
-Cohesion: 0.67
-Nodes (3): ASU Medical Portal agent instructions, Question extraction and imports, Website design policy
+### Community 552 - "orchestrator_r2/DISPATCH.md"
+Cohesion: 0.15
+Nodes (12): 2026-11-07T17:36:00Z, 2026-11-07T18:05:03Z, Acceptance Criteria, Agent Configuration & Context, Figure Splitting and Framing, Library Deliverables and Testing, R1. Individual Figure Extraction and Multi-Figure Page Splitting, R2. Strict Exclusion of Body Text and Synthetic Metadata (+4 more)
+
+### Community 553 - "Part II: Skill & Plugin Reference Guide"
+Cohesion: 0.15
+Nodes (13): 1. Token Savers & Observability, 2. Engineering Discipline & Minimalism, 3. Design Intelligence & Accessibility, 4. Cross-Harness Workflow Marketplaces, `apple-design` & `taste-skill`, `caveman` (Telegraphic Communication Mode), `claude-code-workflows` (`wshobson/agents`), `claude-hud` (Real-Time Terminal Heads-Up Display) (+5 more)
 
 ### Community 554 - "Status Progress Current"
 Cohesion: 0.67
 Nodes (3): Progress, Current Status, Iteration Status
+
+### Community 555 - "1. Observation"
+Cohesion: 0.15
+Nodes (12): 1.1 Source Code and Pipeline Authenticity, 1.2 Asset Integrity & Physical Reality, 1.3 Symlink Reality & Curriculum Graph Integrity, 1.4 Master Visual Index Authenticity (`UNIFIED_MASTER_IMAGE_INDEX`), 1.5 Flashcard CLI Matcher (`match_for_card.py`), 1.6 Independent Test Suite Execution Results, 1. Observation, 2. Logic Chain (+4 more)
+
+### Community 556 - "1. Observation"
+Cohesion: 0.15
+Nodes (12): 1.1 Multi-Figure Page Splitting Oracle (Test 1), 1.2 Sub-Panel Grouping Integrity (Test 2), 1.3 Adversarial Text & Narrative Header Exclusion (Test 3), 1.4 Physical Geometry & Bounding Box Stress Tests (Test 4), 1.5 Legacy Defect Clean Replacement Audit, 1.6 Adversarial Test Suite Execution Log, 1. Observation, 2. Logic Chain (+4 more)
 
 ### Community 557 - "Chapter Question Sorting"
 Cohesion: 0.67
@@ -3289,25 +3527,478 @@ Nodes (3): CNS Question Sorting Report, Cross-Chapter Moves, Within-Chapter Subj
 Cohesion: 0.67
 Nodes (3): CNS Sorting Statistics, After, Before
 
+### Community 560 - "Handoff Report — Explorer R2 2: Netter Systems Overview Divider Pages & Robbins Legacy Duplicates Fix Strategy"
+Cohesion: 0.15
+Nodes (12): 1.1 Netter Systems Approach Overview & Divider Pages, 1.2 Robbins Legacy Unindexed Duplicates & Symlinks, 1. Observation, 2. Logic Chain, 3. Caveats, 4.1 Code Changes in `pipeline/extract_all_books.py`, 4.2 Exact Purging and Cleanup Commands for Worker, 4. Conclusion & Actionable Implementation Plan for Worker (+4 more)
+
+### Community 561 - "Milestone M1 Review Report: Visual Fidelity & Curricular Completeness (Reviewer 2)"
+Cohesion: 0.15
+Nodes (12): 1.1 Direct Visual Comparison: User Reference Example vs Generated Assets, 1.2 Verification of Requirement R1: Sub-Figure Splitting & Gutter Separation, 1.3 Verification of Requirement R2: Label & Callout Preservation (Zero Truncation), 1.4 Verification of Requirement R3: Mandatory Caption Typography Card, 1.5 Adversarial Testing & Robustness, 1. Observation, 2. Logic Chain, 3. Caveats (+4 more)
+
+### Community 562 - "generate-version.mjs"
+Cohesion: 0.15
+Nodes (9): fails, files, files, out, report, buildTime, root, timestamp (+1 more)
+
+### Community 563 - "Acceptance Criteria"
+Cohesion: 0.17
+Nodes (11): Acceptance Criteria, Figure Splitting, Framing, and Visual Quality, Library Organization, Index, and CLI, R1. Multi-Book Urogenital Extraction and Figure Splitting, R2. Textbook and Unified Curriculum Visual Libraries, R3. Unified Master Image Index and Card Matching Tool, R4. Automated Verification Test Suite, Requirements (+3 more)
+
+### Community 825 - "BRIEFING — 2026-11-08T19:50:00Z"
+Cohesion: 0.17
+Nodes (11): Active Timers, Artifact Index, BRIEFING — 2026-11-08T19:50:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity (+3 more)
+
+### Community 831 - "BRIEFING — 2026-11-07T18:30:15Z"
+Cohesion: 0.17
+Nodes (11): Active Timers, Artifact Index, BRIEFING — 2026-11-07T18:30:15Z, Current Parent, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity (+3 more)
+
+### Community 1101 - "BRIEFING — 2026-11-08T21:08:00Z"
+Cohesion: 0.17
+Nodes (11): Artifact Index, Attack Surface, Audit Progress, Audit Scope, BRIEFING — 2026-11-08T21:08:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made (+3 more)
+
+### Community 1156 - "BRIEFING — 2026-11-07T15:48:00Z"
+Cohesion: 0.17
+Nodes (11): Artifact Index, Attack Surface, Audit Progress, Audit Scope, BRIEFING — 2026-11-07T15:48:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made (+3 more)
+
+### Community 1157 - "BRIEFING — 2026-11-07T18:41:30Z"
+Cohesion: 0.17
+Nodes (11): Artifact Index, Attack Surface, Audit Progress, Audit Scope, BRIEFING — 2026-11-07T18:41:30Z, Current Parent, 🔒 Key Constraints, Key Decisions Made (+3 more)
+
+### Community 1158 - "E2E Test Suite Implementation Handoff Report"
+Cohesion: 0.17
+Nodes (11): 1.1 Deliverables Created & File Locations, 1.2 Tool Execution Results & Baseline Audit, 1.3 Exact Failure Diagnostics, 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5. Verification Method (+3 more)
+
+### Community 1159 - "BRIEFING — 2026-11-08T20:54:00Z"
+Cohesion: 0.17
+Nodes (11): Artifact Index, BRIEFING — 2026-11-08T20:54:00Z, Change Tracker, Current Parent, 🔒 Key Constraints, Key Decisions Made, Loaded Skills, Mission (+3 more)
+
+### Community 1164 - "1. Observation"
+Cohesion: 0.17
+Nodes (11): 1.1 Source Documents and Execution Scope, 1.2 Pipeline Scripts and Key Implementations, 1.3 Library Organization and Symlinks, 1.4 Master Visual Indices, 1.5 Verification Suite Results, 1. Observation, 2. Logic Chain, 3. Caveats (+3 more)
+
+### Community 1165 - "BRIEFING — 2026-11-07T15:37:00Z"
+Cohesion: 0.17
+Nodes (11): Artifact Index, BRIEFING — 2026-11-07T15:37:00Z, Change Tracker, Current Parent, 🔒 Key Constraints, Key Decisions Made, Loaded Skills, Mission (+3 more)
+
+### Community 1166 - "BRIEFING — 2026-11-08T21:35:00Z"
+Cohesion: 0.17
+Nodes (11): Artifact Index, BRIEFING — 2026-11-08T21:35:00Z, Change Tracker, Current Parent, 🔒 Key Constraints, Key Decisions Made, Loaded Skills, Mission (+3 more)
+
+### Community 1167 - "BRIEFING — 2026-11-09T00:25:00Z"
+Cohesion: 0.17
+Nodes (11): Artifact Index, BRIEFING — 2026-11-09T00:25:00Z, Change Tracker, Current Parent, 🔒 Key Constraints, Key Decisions Made, Loaded Skills, Mission (+3 more)
+
+### Community 1168 - "BRIEFING — 2026-11-09T00:38:00Z"
+Cohesion: 0.17
+Nodes (11): Artifact Index, Attack Surface, Audit Progress, Audit Scope, BRIEFING — 2026-11-09T00:38:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made (+3 more)
+
+### Community 1169 - "BRIEFING — 2026-11-07T21:50:00Z"
+Cohesion: 0.17
+Nodes (11): Artifact Index, Attack Surface, Audit Progress, Audit Scope, BRIEFING — 2026-11-07T21:50:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made (+3 more)
+
+### Community 1170 - "Orchestrator Final Handoff Report: End-to-End Urogenital Textbook Visual Extraction, Unified Master Index & Verification Suite"
+Cohesion: 0.18
+Nodes (10): 1.1 Scope & Coverage Across All 10 Medical Textbooks, 1.2 Unified Curriculum Visual Library (`Urogenital_Unified_Curriculum_Library/`), 1.3 Unified Master Image Index & Flashcard CLI Tool, 1.4 Automated Verification Test Suite Results (100% Success), 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion (+2 more)
+
+### Community 1171 - "BRIEFING — 2026-11-08T21:00:00Z"
+Cohesion: 0.18
+Nodes (10): Artifact Index, Attack Surface, BRIEFING — 2026-11-08T21:00:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made, Loaded Skills, Mission (+2 more)
+
+### Community 1172 - "BRIEFING — 2026-11-08T21:10:00Z"
+Cohesion: 0.18
+Nodes (10): Artifact Index, Attack Surface, BRIEFING — 2026-11-08T21:10:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made, Loaded Skills, Mission (+2 more)
+
+### Community 1173 - "BRIEFING — 2026-11-07T15:52:00Z"
+Cohesion: 0.18
+Nodes (10): Artifact Index, Attack Surface, BRIEFING — 2026-11-07T15:52:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made, Loaded Skills, Mission (+2 more)
+
+### Community 1174 - "BRIEFING — 2026-11-07T15:52:00Z"
+Cohesion: 0.18
+Nodes (10): Artifact Index, Attack Surface, BRIEFING — 2026-11-07T15:52:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made, Loaded Skills, Mission (+2 more)
+
+### Community 1175 - "BRIEFING — 2026-11-07T18:47:00Z"
+Cohesion: 0.18
+Nodes (10): Artifact Index, Attack Surface, BRIEFING — 2026-11-07T18:47:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made, Loaded Skills, Mission (+2 more)
+
+### Community 1176 - "BRIEFING — 2026-11-07T18:46:00Z"
+Cohesion: 0.18
+Nodes (10): Artifact Index, Attack Surface, BRIEFING — 2026-11-07T18:46:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made, Loaded Skills, Mission (+2 more)
+
+### Community 1177 - "Challenger 2 Handoff Report: Adversarial Verification of Milestone M1"
+Cohesion: 0.18
+Nodes (10): 1.1 Test 1: Adversarial Synthetic Metadata & Pixel Probe Scan, 1.2 Test 2: Authentic Caption & Abbreviation Verification, 1.3 Test 3: Clean Replacement Audit, 1.4 Test Suite Integration, 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion (+2 more)
+
+### Community 1178 - "BRIEFING — 2026-11-08T21:09:00Z"
+Cohesion: 0.18
+Nodes (10): Artifact Index, Attack Surface, BRIEFING — 2026-11-08T21:09:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity (+2 more)
+
+### Community 1179 - "Handoff Report — Reviewer FE 1: Urogenital Textbook Visual Extraction and Quality Verifications"
+Cohesion: 0.18
+Nodes (10): 1.1 Automated Test Execution Results, 1.2 Independent 100% Library Audit Results (`audit_independent.py`), 1.3 Specific Figure Quality & Layout Verification, 1.4 Adversarial Integrity Inspection, 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion (+2 more)
+
+### Community 1180 - "BRIEFING — 2026-11-08T21:11:30Z"
+Cohesion: 0.18
+Nodes (10): Artifact Index, Attack Surface, BRIEFING — 2026-11-08T21:11:30Z, Current Parent, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity (+2 more)
+
+### Community 1181 - "BRIEFING — 2026-11-07T15:52:00Z"
+Cohesion: 0.18
+Nodes (10): Artifact Index, Attack Surface, BRIEFING — 2026-11-07T15:52:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity (+2 more)
+
+### Community 1182 - "BRIEFING — 2026-11-07T15:55:00Z"
+Cohesion: 0.18
+Nodes (10): Artifact Index, Attack Surface, BRIEFING — 2026-11-07T15:55:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity (+2 more)
+
+### Community 1183 - "BRIEFING — 2026-11-07T18:36:00Z"
+Cohesion: 0.18
+Nodes (10): Artifact Index, Attack Surface, BRIEFING — 2026-11-07T18:36:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity (+2 more)
+
+### Community 1184 - "BRIEFING — 2026-11-07T18:50:00Z"
+Cohesion: 0.18
+Nodes (10): Artifact Index, Attack Surface, BRIEFING — 2026-11-07T18:50:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity (+2 more)
+
+### Community 1185 - "BRIEFING — 2026-11-07T15:43:00Z"
+Cohesion: 0.18
+Nodes (10): Artifact Index, BRIEFING — 2026-11-07T15:43:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made, Loaded Skills, Mission, 🔒 My Identity (+2 more)
+
+### Community 1186 - "BRIEFING — 2026-11-08T19:56:00Z"
+Cohesion: 0.18
+Nodes (10): Artifact Index, BRIEFING — 2026-11-08T19:56:00Z, Current Parent, 🔒 Key Constraints, Key Decisions Made, Loaded Skills, Mission, 🔒 My Identity (+2 more)
+
+### Community 1187 - "BRIEFING — 2026-11-07T16:45:00Z"
+Cohesion: 0.18
+Nodes (10): Artifact Index, BRIEFING — 2026-11-07T16:45:00Z, Change Tracker, Current Parent, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity (+2 more)
+
+### Community 1188 - "Worker M1 Handoff Report: Core Extraction, Multi-Panel Splitting, and Caption Compositing Engine"
+Cohesion: 0.18
+Nodes (10): 1.1 Source Plate Analysis & Defect Elimination, 1.2 Mathematical Gutter & Column Separation, 1.3 Generated Reference Output Files, 1.4 Automated Test Suite Execution, 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion (+2 more)
+
+### Community 1189 - "Handoff Report: Milestone M1 Extraction Engine Remediation"
+Cohesion: 0.18
+Nodes (10): 1.1 Baseline Defects Observed in `extract_engine.py`, 1.2 Remediations Applied to `/Users/omarhossa/Documents/Codex/2026-09-20/h/pipeline/extract_engine.py`, 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5.1 Project Verification Commands, 5. Verification Method (+2 more)
+
+### Community 1190 - "Victory Audit Report — Comprehensive Urogenital Medical Visual Library"
+Cohesion: 0.18
+Nodes (10): 1.1 Timeline & Provenance Audit (Phase A), 1.2 Forensic Integrity & Anti-Cheating Analysis (Phase B), 1.3 Independent Test Execution (Phase C), 1.4 Detailed Requirements & Acceptance Criteria Verification (R1–R4), 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion (+2 more)
+
+### Community 1191 - "updateDocumentTitle"
+Cohesion: 0.36
+Nodes (6): BASE_BRAND, DEFAULT_FULL_TITLE, formatPageTitle(), updateDocumentTitle(), NotFoundPage(), mockNavigate
+
+### Community 1192 - "Project: Comprehensive Urogenital Medical Visual Library"
+Cohesion: 0.20
+Nodes (9): Architecture, Automated Test Runner Contract, Code Layout, `extract_engine.py` ↔ Book Extractors, Feature Inventory, Interface Contracts, Master Index Schema (`UNIFIED_MASTER_IMAGE_INDEX.csv` & `.json`), Milestones (+1 more)
+
+### Community 1193 - "5-Component Handoff Report"
+Cohesion: 0.20
+Nodes (9): 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5-Component Handoff Report, 5. Verification Method, Forensic Audit Report, Milestone M1 Forensic Integrity Audit Report & Handoff (+1 more)
+
+### Community 1194 - "Handoff Report: Extraction Pipeline, Curriculum Taxonomy & 7-Pillar Test Architecture"
+Cohesion: 0.20
+Nodes (9): 1.1 Extraction Pipeline Code Inspection (`pipeline/extract_engine.py` & `pipeline/extract_curriculum.py`), 1.2 Curriculum Symlinking Across 10 Subjects (`Urogenital_Unified_Curriculum_Library/`), 1.3 Automated Verification Test Suite (`tests/run_tests.py` & `tests/test_e2e_visual_library.py`), 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5. Verification Method (+1 more)
+
+### Community 1195 - "Explorer 1 Survey Report: Example Analysis, Previous Library Deficiencies, and Technical Architecture"
+Cohesion: 0.20
+Nodes (9): 1.1 User Reference Image Deep Dive, 1.2 Previous Visual Libraries Audit (`/Users/omarhossa/Documents/Codex/2026-09-20/h/`), 1.3 System Environment and Tooling, 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5. Verification Method (+1 more)
+
+### Community 1196 - "BRIEFING — 2026-11-07T16:17:30Z"
+Cohesion: 0.20
+Nodes (9): Artifact Index, BRIEFING — 2026-11-07T16:17:30Z, Change Tracker, Current Parent, 🔒 Key Constraints, Mission, 🔒 My Identity, Quality Status (+1 more)
+
+### Community 1197 - "BRIEFING — 2026-11-07T13:48:40Z"
+Cohesion: 0.22
+Nodes (8): Artifact Index, BRIEFING — 2026-11-07T13:48:40Z, 🔒 Key Constraints, Mission, 🔒 My Identity, Project Status, User Context, Victory Audit Status
+
+### Community 1198 - "BRIEFING — 2026-11-09T00:39:00Z"
+Cohesion: 0.22
+Nodes (8): Artifact Index, BRIEFING — 2026-11-09T00:39:00Z, 🔒 Key Constraints, Mission, 🔒 My Identity, Project Status, User Context, Victory Audit Status
+
+### Community 1199 - "Agent Skills, Design & Memory Playbook"
+Cohesion: 0.15
+Nodes (13): 1. Project Directory Structure, 1. Tier 1: Directives & Brand Invariants (`CLAUDE.md`, `AGENTS.md`, `MEMORY.md`), 2. Standard `repomix.config.json` Template, 2. Tier 2: Structural Memory (`Graphify`), 3. One-Command Setup Script for Any Machine, 3. Tier 3: Episodic Session Memory (`claude-mem` + `agentmemory`), 4. Tier 4: Snapshot Context Packaging (`Repomix`), Agent Skills, Design & Memory Playbook (+5 more)
+
+### Community 1200 - "BRIEFING — 2026-11-08T19:37:00Z"
+Cohesion: 0.22
+Nodes (8): Artifact Index, BRIEFING — 2026-11-08T19:37:00Z, Current Parent, Investigation State, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity
+
+### Community 1201 - "BRIEFING — 2026-11-08T19:36:00Z"
+Cohesion: 0.22
+Nodes (8): Artifact Index, BRIEFING — 2026-11-08T19:36:00Z, Current Parent, Investigation State, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity
+
+### Community 1202 - "BRIEFING — 2026-11-07T16:05:00Z"
+Cohesion: 0.22
+Nodes (8): Artifact Index, BRIEFING — 2026-11-07T16:05:00Z, Current Parent, Investigation State, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity
+
+### Community 1203 - "BRIEFING — 2026-11-07T16:04:30Z"
+Cohesion: 0.22
+Nodes (8): Artifact Index, BRIEFING — 2026-11-07T16:04:30Z, Current Parent, Investigation State, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity
+
+### Community 1204 - "BRIEFING — 2026-11-07T16:03:15Z"
+Cohesion: 0.22
+Nodes (8): Artifact Index, BRIEFING — 2026-11-07T16:03:15Z, Current Parent, Investigation State, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity
+
+### Community 1205 - "BRIEFING — 2026-11-08T21:34:00Z"
+Cohesion: 0.22
+Nodes (8): Artifact Index, BRIEFING — 2026-11-08T21:34:00Z, Current Parent, Investigation State, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity
+
+### Community 1206 - "BRIEFING — 2026-11-08T21:32:00Z"
+Cohesion: 0.22
+Nodes (8): Artifact Index, BRIEFING — 2026-11-08T21:32:00Z, Current Parent, Investigation State, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity
+
+### Community 1207 - "BRIEFING — 2026-11-08T21:30:00Z"
+Cohesion: 0.22
+Nodes (8): Artifact Index, BRIEFING — 2026-11-08T21:30:00Z, Current Parent, Investigation State, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity
+
+### Community 1208 - "BRIEFING — 2026-11-07T15:17:15Z"
+Cohesion: 0.22
+Nodes (8): Artifact Index, BRIEFING — 2026-11-07T15:17:15Z, Current Parent, Investigation State, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity
+
+### Community 1209 - "BRIEFING — 2026-11-07T15:25:30Z"
+Cohesion: 0.22
+Nodes (8): Artifact Index, BRIEFING — 2026-11-07T15:25:30Z, Current Parent, Investigation State, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity
+
+### Community 1210 - "BRIEFING — 2026-11-07T15:20:00Z"
+Cohesion: 0.22
+Nodes (8): Artifact Index, BRIEFING — 2026-11-07T15:20:00Z, Current Parent, Investigation State, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity
+
+### Community 1211 - "Dispatch for Reviewer FE 1"
+Cohesion: 0.22
+Nodes (8): 2026-11-08T20:59:00Z, Authoritative Files (MUST READ FIRST), Dispatch for Reviewer FE 1, Handoff Requirements, Specific Review Focus: Extraction Quality, Physical Geometry, Caption & Test Execution, Target Project Workspace, Your Mission, Your Working Directory
+
+### Community 1212 - "Handoff Report: Milestone M1 Visual Pipeline & 7-Pillar Verification Review"
+Cohesion: 0.22
+Nodes (8): 1. Observation, 2. Logic Chain, 3. Caveats & Findings, 4. Conclusion, 5. Verification Method, Caveats, Findings, Handoff Report: Milestone M1 Visual Pipeline & 7-Pillar Verification Review
+
+### Community 1213 - "2. Key Medical Adjudications & Source Key Corrections"
+Cohesion: 0.22
+Nodes (8): 1. Intake Summary, 1. Physiology Q42 (Slide 131) — Intrapleural Pressure Becoming Positive, 2. Key Medical Adjudications & Source Key Corrections, 2. Physiology Q33 (Slide 113) — Site of Maximum Airway Resistance, 3. Automated Test Verification & Schema Compliance, 3. Physiology Q36 (Slide 119) — Alveolar Ventilation Calculation, 4. Microbiology Q15 (Slide 35) — Rhinocerebral Fungal Morphology, Verification Report: Year 2 Respiratory System (MRS-2) Past Exams & Formative Assessments Intake
+
+### Community 1214 - "Resource Exhaustion and Availability Hunting"
+Cohesion: 0.20
+Nodes (9): Computational amplification attack classes (subagent_type: `general`), Core discipline (include in every agent prompt for this domain), Failure and recovery attack classes (subagent_type: `general`), Quota and scheduling attack classes (subagent_type: `general`), Resource accumulation attack classes (subagent_type: `general`), Resource Exhaustion and Availability Hunting, Universal moves (apply across the above), Validation rules (apply before reporting ANY finding here) (+1 more)
+
+### Community 1215 - "Orchestrator Progress Tracker"
+Cohesion: 0.25
+Nodes (7): Current Status, Iteration Status, Orchestrator Progress Tracker, Recommendations for Future Visual Ingestion:, Retrospective & Process Notes, What Didn't Work in Previous Iterations:, What Worked:
+
+### Community 1216 - "teamwork_auditor_fe_1/DISPATCH.md"
+Cohesion: 0.25
+Nodes (7): 2026-11-08T21:00:15Z, Authoritative Files (MUST READ FIRST), Forensic Integrity Audit Protocol (ZERO TOLERANCE), Handoff Requirements, Target Project Workspace, Your Mission, Your Working Directory
+
+### Community 1217 - "teamwork_challenger_fe_1/DISPATCH.md"
+Cohesion: 0.25
+Nodes (7): 2026-11-08T20:59:37Z, Authoritative Files (MUST READ FIRST), Handoff Requirements, Specific Challenger Focus: Adversarial Geometry, Resolution, OCR Exclusion, Target Project Workspace, Your Mission, Your Working Directory
+
+### Community 1218 - "teamwork_challenger_fe_2/DISPATCH.md"
+Cohesion: 0.25
+Nodes (7): 2026-11-08T20:59:49Z, Authoritative Files (MUST READ FIRST), Handoff Requirements, Specific Challenger Focus: Splitting vs Unification Oracles & Symlink Health, Target Project Workspace, Your Mission, Your Working Directory
+
+### Community 1219 - "Handoff Report — Challenger FE 2: Adversarial Audit of Multi-Figure Page Splitting, Sub-Panel Unification, and Curriculum Symlink Integrity"
+Cohesion: 0.25
+Nodes (7): 1.1 Direct Tool Execution Results, 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5. Verification Method, Handoff Report — Challenger FE 2: Adversarial Audit of Multi-Figure Page Splitting, Sub-Panel Unification, and Curriculum Symlink Integrity
+
+### Community 1220 - "teamwork_reviewer_fe_2/DISPATCH.md"
+Cohesion: 0.25
+Nodes (7): 2026-11-08T20:59:20Z, Authoritative Files (MUST READ FIRST), Handoff Requirements, Specific Review Focus: Curriculum Symlinks, Master Index & CLI Tool, Target Project Workspace, Your Mission, Your Working Directory
+
+### Community 1221 - "Review & Adversarial Verification Report: Milestone M1"
+Cohesion: 0.25
+Nodes (7): 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5. Verification Method, Review & Adversarial Verification Report: Milestone M1, Review Summary
+
+### Community 1222 - "Curriculum Visual Library Extraction & Clean Replacement — Handoff Report"
+Cohesion: 0.25
+Nodes (7): 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5. Verification Method, Curriculum Visual Library Extraction & Clean Replacement — Handoff Report, Verbatim Commands and Test Execution Results
+
+### Community 1223 - "5-Component Handoff Report"
+Cohesion: 0.25
+Nodes (7): 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5-Component Handoff Report, 5. Verification Method, Post-Victory Audit Report & Handoff
+
+### Community 1224 - "reorganize_year2_topics.py"
+Cohesion: 0.33
+Nodes (10): content(), digest(), norm(), reorganize_mcvs2(), classify_mcvs(), reorganize_mem2(), classify_mem(), reorganize_mrs2() (+2 more)
+
+### Community 1225 - "Memory Safety, Binary, and Kernel Hunting"
+Cohesion: 0.20
+Nodes (10): Binary loading and runtime attack classes (subagent_type: `general`), Bounds, integer, and representation attack classes (subagent_type: `general`), Core discipline (include in every agent prompt for this domain), FFI and ABI attack classes (subagent_type: `general`), Kernel and privileged-interface attack classes (subagent_type: `general`), Lifetime, type, and concurrency attack classes (subagent_type: `general`), Memory Safety, Binary, and Kernel Hunting, Universal moves (apply across the above) (+2 more)
+
+### Community 1226 - "BRIEFING — 2026-11-08T19:37:00Z"
+Cohesion: 0.22
+Nodes (8): Artifact Index, BRIEFING — 2026-11-08T19:37:00Z, Current Parent, Investigation State, 🔒 Key Constraints, Key Decisions Made, Mission, 🔒 My Identity
+
+### Community 1227 - "Sentinel Handoff Report: Urogenital Visual Library Rebuild & Multi-Figure Splitting"
+Cohesion: 0.29
+Nodes (6): 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5. Verification Method, Sentinel Handoff Report: Urogenital Visual Library Rebuild & Multi-Figure Splitting
+
+### Community 1228 - "Handoff Report — Sentinel: Urogenital Visual Library Project Rollout & Victory Confirmation"
+Cohesion: 0.29
+Nodes (6): 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5. Verification Method, Handoff Report — Sentinel: Urogenital Visual Library Project Rollout & Victory Confirmation
+
+### Community 1229 - "teamwork_explorer_r2_1/DISPATCH.md"
+Cohesion: 0.29
+Nodes (6): 2026-11-08T21:17:14Z, Authoritative Files (MUST READ FIRST), Specific Investigation Focus, Target Project Workspace, Your Mission, Your Working Directory
+
+### Community 1230 - "teamwork_explorer_r2_2/DISPATCH.md"
+Cohesion: 0.29
+Nodes (6): 2026-11-08T21:17:23Z, Authoritative Files (MUST READ FIRST), Specific Investigation Focus, Target Project Workspace, Your Mission, Your Working Directory
+
+### Community 1231 - "teamwork_explorer_r2_3/DISPATCH.md"
+Cohesion: 0.29
+Nodes (6): 2026-11-08T21:17:33Z, Authoritative Files (MUST READ FIRST), Specific Investigation Focus, Target Project Workspace, Your Mission, Your Working Directory
+
+### Community 1232 - "Handoff Report: Milestone M1 Rebuild, Library Replacement & 7-Pillar E2E Verification"
+Cohesion: 0.29
+Nodes (6): 1. Observation, 2. Logic Chain, 3. Caveats, 4. Conclusion, 5. Verification Method, Handoff Report: Milestone M1 Rebuild, Library Replacement & 7-Pillar E2E Verification
+
+### Community 1233 - "Gate Status — Milestone 1 (Core Extraction & Splitting Engine)"
+Cohesion: 0.33
+Nodes (5): Gate — Full-Scale 10-Book Extraction, Master Index & CLI Suite, Gate — Iteration 1, Gate — Iteration 2 (Remediation), Gate — Iteration 2 (Remediation & Full-Scale Hardening), Gate Status — Milestone 1 (Core Extraction & Splitting Engine)
+
+### Community 1234 - "Scope: Rebuild Textbook Figure Extraction & Cropping Pipeline"
+Cohesion: 0.33
+Nodes (5): Architecture, Feature Inventory, Key Verification & Output Metrics, Milestones, Scope: Rebuild Textbook Figure Extraction & Cropping Pipeline
+
+### Community 1235 - "Progress — Challenger 1 (Round 2)"
+Cohesion: 0.33
+Nodes (5): Completed Steps, Current Step, Progress — Challenger 1 (Round 2), Remaining Steps, Status
+
+### Community 1236 - "recover-024.ts"
+Cohesion: 0.33
+Nodes (5): blocks, idx, pieces, raw, rest
+
+### Community 1237 - "Forward test of reusable medical workflows"
+Cohesion: 0.25
+Nodes (8): Final rerun after parent fixes, Forward test of reusable medical workflows, Portable validator execution and additional case, Scenario 1: GBM layers Basic card, Scenario 2: analgesic nephropathy wholefigure, Scenario 3: shared-deck images, lecture rename, future drug highlighting, Scenario 4: extract complete, review disconnected, appended notes, Skill gaps and ambiguity found
+
+### Community 1238 - "Orchestrator Progress Tracker"
+Cohesion: 0.40
+Nodes (4): Current Status, Final Verified Metrics, Iteration Status, Orchestrator Progress Tracker
+
+### Community 1239 - "Progress — Explorer FE 2"
+Cohesion: 0.50
+Nodes (3): Progress — Explorer FE 2, Status, Tasks
+
+### Community 1240 - "Progress: E2E Test Writer FE"
+Cohesion: 0.50
+Nodes (3): Completed, Progress: E2E Test Writer FE, Status
+
+### Community 1241 - "teamwork_worker_r2_1/DISPATCH.md"
+Cohesion: 0.50
+Nodes (3): 2026-11-08T21:34:15Z, 2026-11-08T21:44:53Z, 2026-11-08T21:55:33Z
+
+### Community 1242 - "victory_auditor_r2/DISPATCH.md"
+Cohesion: 0.50
+Nodes (3): 2026-11-07T19:40:07Z, Audit Scope & Verification Mandate, Mandatory Audit Inputs
+
+### Community 1243 - "ASU Medical Portal — Code Audit Report"
+Cohesion: 0.25
+Nodes (8): ASU Medical Portal — Code Audit Report, 🔴 Critical, Files Touched by the Audit, 🟠 High, 🟢 Low, 🟡 Medium, Recommended Fix Order, Summary
+
+### Community 1244 - "Project Memory & Knowledge Scratchpad (MEMORY.md)"
+Cohesion: 0.22
+Nodes (8): 1. Project Identity & Architecture Core, 2. Inviolable Architectural & UI Invariants, 3. The 4-Layer Memory Operating System, 4. Installed Skills & Tooling Roles, 5. Key File & Routing Anchors, 6. MGL-3 GIT Practical Bank Architecture & Navigation Invariants, Approved medical-card Extra layout (12 November 2026), Project Memory & Knowledge Scratchpad (MEMORY.md)
+
+### Community 1330 - "git-owner-corrections.test.ts"
+Cohesion: 0.25
+Nodes (4): LEDGER_DIR, CorrectionQuestion, preparedBank, questions
+
+### Community 1331 - "store/progress.tsx"
+Cohesion: 0.43
+Nodes (6): AccountProgress(), load(), ProgressProvider(), Ctx, ProgressContext, ProgressState
+
+### Community 1332 - "assemble-final.ts"
+Cohesion: 0.25
+Nodes (7): all, bank, chapterMap, chapterOrder, chapters, chunkDir, meta
+
+### Community 1333 - "Workflow validation record"
+Cohesion: 0.25
+Nodes (8): 12 November2026 answer-layout revision, Acceptance and remaining boundary, Current official Anki documentation checked, Existing implementation evidence, Installed and mirrored, Meaningful portable-validator tests, Separate AI forward test, Workflow validation record
+
+### Community 1334 - "ASUCodes: website design and experience master plan"
+Cohesion: 0.25
+Nodes (8): ASUCodes: website design and experience master plan, Completed locally, Direction, Final local pass — 9 October 2026, Priority and implementation sequence, Release checks, Shared design system, Whole-site coverage and next work
+
+### Community 1335 - "Light_Dark Mode Toggle/src/app/App.tsx"
+Cohesion: 0.36
+Nodes (3): App(), ThemeToggle(), ThemeToggleProps
+
+### Community 1336 - "Medical Anki and image workflows — start here"
+Cohesion: 0.33
+Nodes (6): Current answer layout — 12 November 2026, Give another AI this prompt, Medical Anki and image workflows — start here, Read in this order, Share or move to another computer, Verify and maintain
+
+### Community 1337 - "extract_supplement.py"
+Cohesion: 0.90
+Nodes (4): add_candidate(), clean_option(), compute_fingerprint(), normalize_text()
+
+### Community 1338 - "extract_supplement_v2.py"
+Cohesion: 0.90
+Nodes (4): add_candidate(), clean_option(), compute_fingerprint(), normalize_text()
+
+### Community 1339 - "LanguageContext.tsx"
+Cohesion: 0.33
+Nodes (5): Language, translations, Language, LanguageContext, LanguageContextType
+
+### Community 1340 - "Project workflow save verification"
+Cohesion: 0.33
+Nodes (5): Graphify use and boundaries, Portal checks required by the project instructions, Project workflow save verification, Remaining use requirements, Saved and checked
+
+### Community 1342 - "peerDependencies"
+Cohesion: 0.67
+Nodes (3): peerDependencies, react, react-dom
+
+### Community 1343 - "Verification Report: Year 3 GIT Practical Exam (`MGL-3`) Complete Rebuild & Topic Architecture"
+Cohesion: 0.33
+Nodes (5): 1. Master Compilation & Topic Architecture, 2. Topic Resolution & Navigation Fix, 3. On-Demand Lazy Loading Architecture, 4. Verification & Quality Gates, Verification Report: Year 3 GIT Practical Exam (`MGL-3`) Complete Rebuild & Topic Architecture
+
+### Community 1344 - "Centred Extra workflow verification"
+Cohesion: 0.40
+Nodes (4): Centred Extra workflow verification, Evidence, Scope and next step, What is now standard
+
+### Community 1345 - "Q: Okay make sure to save both workflows for the both of the skills that you created in the project that we have ASU portal or whatever so that I can use it with any other AI in the future as well. Make sure it is perfect."
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: Okay make sure to save both workflows for the both of the skills that you created in the project that we have ASU portal or whatever so that I can use it with any other AI in the future as well. Make sure it is perfect., Source Nodes
+
+### Community 1346 - "devDependencies"
+Cohesion: 0.40
+Nodes (5): devDependencies, tailwindcss, @tailwindcss/vite, vite, @vitejs/plugin-react
+
+### Community 1347 - "SecurityNoticeToast.tsx"
+Cohesion: 0.60
+Nodes (3): dispatchSecurityNotice(), SecurityNoticePayload, SecurityNoticeToast()
+
+### Community 1348 - "audit-contradictions.ts"
+Cohesion: 0.50
+Nodes (3): bank, contradictions, questions
+
+### Community 1349 - "extract-biochem-066.ts"
+Cohesion: 0.50
+Nodes (3): blocks, pages, raw
+
+### Community 1350 - "recover-032.ts"
+Cohesion: 0.50
+Nodes (3): blocks, parts, raw
+
 ## Knowledge Gaps
 - **3557 isolated node(s):** `@emotion/react`, `@emotion/react@11.14.0`, `@emotion/styled`, `@emotion/styled@11.14.1`, `@mui/icons-material` (+3552 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 5301 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **639 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 6664 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **725 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+
+## Work-memory lessons
+
+**Preferred sources** — corroborated by past sessions; start here.
+- `QuizPayload` (2× useful, score=1.303538082)
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `vitest` connect `vitest` to `QuizInterface.tsx`, `ref_node_fs`, `src/app/App.tsx`, `Chapter Selection & Flow Breadcrumbs`, `question-reports.ts`, `ref_react`, `AdminIndustrialDashboard.tsx`, `question-edit-store.ts`, `reports/contracts.ts`, `Triage Report Lease`, `Question`, `AnkiDecksPage.tsx`, `ReportReplyComposer.tsx`, `useAcademicYear.ts`, `Subject Import Batch`, `React Eslint Plugin`, `ref_lucide_react`, `ref_node_path`, `data.ts`, `Generatehint Constructor Hint`, `LearningHub.tsx`, `admin-analytics-service.ts`, `useTheme`, `Dashboard.tsx`, `git-owner-corrections.test.ts`, `AdminAnalyticsView.tsx`, `Usesoundengine Soundkey Audiopolicy`, `learning-store.ts`, `InteractiveBackground.tsx`, `import-ready.ts`, `refreshQuestionCorrections`, `ref_path`, `SupportPage.tsx`, `Vite Config Figmaassetresolver`, `triage-store.ts`, `Xphud Gamificationstore Zustand`, `sync.ts`, `AdminPortal.tsx`, `AdminAnalyticsView.tsx`, `useVersionCheck.ts`, `zod`, `profanity-filter.ts`, `GitBankSelect.tsx`, `TriagePanel.tsx`, `AIChatPanel.tsx`?**
-  _High betweenness centrality (0.081) - this node is a cross-community bridge._
+- **Why does `Collections` connect `Collections` to `StudyEntry.tsx`, `HIG reference lookup`, `re`, `Feedback`, `Layout`, `json`, `Quality Replay Content`, `Polish Rejected Biochemistry`, `SF Symbols`, `Chapter Hybrid Force`?**
+  _High betweenness centrality (0.069) - this node is a cross-community bridge._
 - **Are the 170 inferred relationships involving `QuizPayload` (e.g. with `Forensic Audit Report` and `Progress`) actually correct?**
   _`QuizPayload` has 170 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `@emotion/react`, `@emotion/react@11.14.0`, `@emotion/styled` to the rest of the system?**
   _3557 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `QuizInterface.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.04570166496772001 - nodes in this community are weakly interconnected._
-- **Why does `Collections` connect `Collections` to `StudyEntry.tsx`, `re`, `The menu bar`, `cross-match-essays.py`, `Lists and tables`, `json`, `classify-cns-questions.py`, `Polish Rejected Biochemistry`, `Quality Replay Content`, `App icons`, `HIG reference lookup`, `Chapter Hybrid Force`?**
-  _High betweenness centrality (0.071) - this node is a cross-community bridge._
+  _Cohesion score 0.04743935309973046 - nodes in this community are weakly interconnected._
+- **Why does `vitest` connect `vitest` to `QuizInterface.tsx`, `StarlightToggle.tsx`, `ref_node_path`, `src/app/App.tsx`, `LearningHub.tsx`, `question-reports.ts`, `PortalEntry.tsx`, `QuestionSearch.tsx`, `AdminPortal.tsx`, `Triage Report Lease`, `Question`, `AnkiDecksPage.tsx`, `ReportReplyComposer.tsx`, `AIChatPanel.tsx`, `Subject Import Batch`, `React Eslint Plugin`, `LegalLayout.tsx`, `@testing-library/react`, `updateDocumentTitle`, `Generatehint Constructor Hint`, `profanity-filter.ts`, `git-owner-corrections.test.ts`, `useTheme`, `year1-quality-release.test.ts`, `Usesoundengine Soundkey Audiopolicy`, `GitBankSelect.tsx`, `LearningProvider.tsx`, `report-store.ts`, `SecurityNoticeToast.tsx`, `useQuizSession.ts`, `ref_path`, `useTimer.ts`, `Vite Config Figmaassetresolver`, `tutor-metrics.ts`, `admin-analytics-service.ts`, `Xphud Gamificationstore Zustand`, `sync.ts`, `AdminPortal.tsx`, `useVersionCheck.ts`, `analytics.ts`, `SupportPage.tsx`, `storage.ts`?**
+  _High betweenness centrality (0.065) - this node is a cross-community bridge._
 - **Are the 169 inferred relationships involving `SoundToggle()` (e.g. with `Forensic Audit Report` and `Progress`) actually correct?**
   _`SoundToggle()` has 169 INFERRED edges - model-reasoned connections that need verification._
 - **Should `StudyEntry.tsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.02308724832214765 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.02300688976377953 - nodes in this community are weakly interconnected._

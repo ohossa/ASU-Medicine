@@ -35,8 +35,8 @@ function ensureEnvLoaded() {
 ensureEnvLoaded();
 
 const FALLBACK_ACCOUNT_ID = '1ee85c49030c48359b274b85ee33ab08';
-const FALLBACK_ACCESS_KEY_ID = '';
-const FALLBACK_SECRET_ACCESS_KEY = '';
+const FALLBACK_ACCESS_KEY_ID = process.env.R2_ACCESS_KEY_ID || '';
+const FALLBACK_SECRET_ACCESS_KEY = process.env.R2_SECRET_ACCESS_KEY || '';
 const FALLBACK_BUCKET_NAME = 'a-plus-storage';
 
 function getAccountId() {
