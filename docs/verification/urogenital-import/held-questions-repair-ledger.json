@@ -16448,5 +16448,375 @@
     "originalStem": "Katayama syndrome is thought to be a form of immune",
     "repairedStem": "Katayama syndrome is thought to be a form of immune",
     "explanationLength": 751
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0109",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 5,
+    "originalStem": "The printed answer line 1 was appended to the archive stem. Move into structured rubric distinguishing arterial pressure maintenance from cellular volume protection.",
+    "repairedStem": "Explain the physiological importance of regulating extracellular fluid (ECF) volume and ECF osmolarity.",
+    "explanationLength": 133
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0110",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 5,
+    "originalStem": "The baseline stem omits the '24 hours' timeframe and stores unrelated sperm text in the model answer. Restore the 4 distinct physiological compensatory mechanisms for dehydration.",
+    "repairedStem": "Explain four physiological compensatory mechanisms that operate in a person deprived of water for 24 hours to conserve body water and maintain arterial pressure.",
+    "explanationLength": 127
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0120",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 6,
+    "originalStem": "Authentic prompt asking for sources of H+. Restore volatile vs non-volatile fixed acids with biochemical examples.",
+    "repairedStem": "List the principal metabolic sources of hydrogen ions in the human body, distinguishing volatile from non-volatile acids.",
+    "explanationLength": 122
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0121",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 6,
+    "originalStem": "Authentic prompt regarding buffer effectiveness. Restore pK proximity, component concentration, and open system characteristics.",
+    "repairedStem": "Explain the factors that determine the chemical and physiological effectiveness of a buffer system.",
+    "explanationLength": 139
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0122",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 6,
+    "originalStem": "Authentic prompt regarding respiratory role in pH regulation. Restore chemoreceptor responses to acidosis and alkalosis.",
+    "repairedStem": "Describe the role and mechanism of the respiratory system in the regulation of blood pH.",
+    "explanationLength": 119
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0123",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 6,
+    "originalStem": "The printed heading wraps 'ECF?' onto the following line. Restore high concentration and independent pulmonary/renal regulation.",
+    "repairedStem": "Why is the bicarbonate buffer system the most important chemical buffer in extracellular fluid despite having a pK (6.1) far from blood pH?",
+    "explanationLength": 147
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0124",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 6,
+    "originalStem": "Authentic prompt for proximal H+ secretion. Restore secondary active transport via apical NHE3 coupled to basolateral Na+/K+ ATPase.",
+    "repairedStem": "Describe the cellular mechanism of hydrogen ion secretion in the proximal convoluted tubule.",
+    "explanationLength": 123
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0125",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 6,
+    "originalStem": "Authentic prompt for distal H+ secretion. Restore primary active transport via apical H+ ATPase and H+/K+ ATPase in alpha-intercalated cells.",
+    "repairedStem": "Describe the cellular mechanism and regulation of hydrogen ion secretion in the late distal tubule and collecting duct.",
+    "explanationLength": 131
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0126",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 6,
+    "originalStem": "Authentic prompt for carbonic anhydrase inhibitor effects. Restore inhibition of CA-II and CA-IV, bicarbonaturia, and metabolic acidosis.",
+    "repairedStem": "Explain the pharmacological and renal effects of carbonic anhydrase inhibitors on tubular bicarbonate reabsorption and systemic acid-base status.",
+    "explanationLength": 132
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0130",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 6,
+    "originalStem": "Authentic prompt for causes of respiratory acidosis. Restore central, neuromuscular, obstructive, and pulmonary parenchymal categories.",
+    "repairedStem": "List the principal etiologies of respiratory acidosis categorized by anatomical and physiological mechanism.",
+    "explanationLength": 106
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0131",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 6,
+    "originalStem": "Authentic prompt for causes of respiratory alkalosis. Restore psychogenic, hypoxemic, pharmacological, and central etiologies.",
+    "repairedStem": "List the principal etiologies of respiratory alkalosis categorized by pathophysiological mechanism.",
+    "explanationLength": 95
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0132",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 6,
+    "originalStem": "Authentic prompt for causes of metabolic acidosis. Restore high anion gap (MUDPILES) and normal anion gap hyperchloremic categories.",
+    "repairedStem": "Classify and list the clinical causes of metabolic acidosis based on the serum anion gap.",
+    "explanationLength": 106
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0133",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 6,
+    "originalStem": "Authentic prompt for causes of metabolic alkalosis. Restore volume-depleted chloride-responsive and volume-expanded chloride-resistant categories.",
+    "repairedStem": "Classify and list the major etiologies of metabolic alkalosis based on extracellular volume status and chloride responsiveness.",
+    "explanationLength": 142
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0134",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 6,
+    "originalStem": "Authentic prompt for anion gap. Restore mathematical formula, normal reference range, and diagnostic discrimination.",
+    "repairedStem": "Define the serum anion gap, state its normal reference value, and explain its clinical utility in differentiating metabolic acidoses.",
+    "explanationLength": 108
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0137",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 6,
+    "originalStem": "Authentic prompt for metabolic acidosis correction. Restore three sequential stages: chemical buffering, respiratory hyperventilation, and renal acid excretion.",
+    "repairedStem": "Describe the three sequential physiological compensatory mechanisms that act to correct metabolic acidosis.",
+    "explanationLength": 140
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0139",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 6,
+    "originalStem": "Authentic prompt for respiratory acidosis correction. Restore acute chemical buffering and chronic renal tubular acid secretion and bicarbonate generation.",
+    "repairedStem": "Explain how the body compensates for respiratory acidosis in acute and chronic phases.",
+    "explanationLength": 144
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0140",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 6,
+    "originalStem": "Authentic prompt for respiratory alkalosis correction. Restore acute chemical buffering and chronic renal bicarbonate wasting and decreased ammoniagenesis.",
+    "repairedStem": "Explain how the body compensates for respiratory alkalosis in acute and chronic stages.",
+    "explanationLength": 125
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0143",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 8,
+    "originalStem": "Authentic prompt on oblique intramural ureteric entry. Restore flap valve mechanism and prevention of vesicoureteral reflux.",
+    "repairedStem": "Explain the anatomical arrangement and functional physiological importance of the oblique intramural course of the ureter through the bladder wall.",
+    "explanationLength": 116
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0144",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 8,
+    "originalStem": "The archive model answer wrongly claims contraction of trigone. Restore S2-S4 parasympathetic detrusor contraction and bladder neck/sphincter relaxation.",
+    "repairedStem": "Describe the autonomic parasympathetic innervation of the urinary bladder and its functional effects on micturition.",
+    "explanationLength": 124
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0145",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 8,
+    "originalStem": "Authentic prompt for sympathetic bladder innervation. Restore T11-L2 beta-adrenergic detrusor relaxation and alpha-1 internal sphincter contraction.",
+    "repairedStem": "Describe the sympathetic innervation of the urinary bladder and its physiological effects during the bladder filling phase.",
+    "explanationLength": 115
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0147",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 8,
+    "originalStem": "Authentic prompt for bladder compliance. Restore detrusor plasticity, receptive relaxation, and physical Law of Laplace (P=2T/r).",
+    "repairedStem": "Explain the physiological mechanisms and physical law that allow the urinary bladder to accommodate up to 400 mL of urine with only minimal increases in intravesical pressure.",
+    "explanationLength": 125
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0148",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 8,
+    "originalStem": "Authentic prompt for micturition reflex arc. Restore stretch receptors, pelvic afferents, S2-S4 spinal center, and parasympathetic efferents.",
+    "repairedStem": "Describe the neural reflex arc of the basic spinal micturition reflex, detailing the afferent pathway, central integration center, and efferent limb.",
+    "explanationLength": 117
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0149",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 8,
+    "originalStem": "Authentic prompt for higher center bladder control. Restore tonic cortical inhibition, pontine micturition center coordination, and voluntary pudendal sphincter control.",
+    "repairedStem": "Explain how higher brain centers modulate and control the spinal micturition reflex.",
+    "explanationLength": 122
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0152",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 8,
+    "originalStem": "Authentic prompt for automatic bladder. Restore suprasacral cord transection, reflex spinal voiding, and detrusor-sphincter dyssynergia.",
+    "repairedStem": "Describe the pathophysiological features and clinical presentation of an automatic neurogenic bladder resulting from spinal cord transection above the sacral level.",
+    "explanationLength": 129
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0153",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 9,
+    "originalStem": "Authentic prompt for acute renal failure. Restore prerenal hypoperfusion, intrinsic renal parenchymal injury (ATN, glomerulonephritis), and postrenal obstruction.",
+    "repairedStem": "Classify and list the clinical causes of acute kidney injury into prerenal, intrinsic renal, and postrenal categories.",
+    "explanationLength": 140
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0159",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 9,
+    "originalStem": "Authentic prompt for chronic renal failure. Restore diabetic nephropathy, hypertensive nephrosclerosis, glomerulonephritis, and polycystic kidney disease.",
+    "repairedStem": "List the principal etiologies of chronic kidney disease leading to progressive loss of functional nephrons.",
+    "explanationLength": 133
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0163",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 9,
+    "originalStem": "The model answer begins with OCR page header '18 SM UROGENITAL'. Restore calcitriol deficiency, phosphate retention, hypocalcemia, secondary hyperparathyroidism, and osteomalacia.",
+    "repairedStem": "Explain the pathophysiological mechanisms responsible for the development of renal osteodystrophy in chronic kidney disease.",
+    "explanationLength": 131
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0164",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 10,
+    "originalStem": "Authentic prompt for hormones stimulating spermatogenesis. Restore LH (Leydig cells), testosterone (Sertoli cells), FSH (ABP production), and GH/estrogen.",
+    "repairedStem": "List the primary hormones that stimulate and regulate spermatogenesis, specifying the cellular site of action for each.",
+    "explanationLength": 123
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0165",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 10,
+    "originalStem": "Authentic prompt for prolactin effects on male reproduction. Restore normal LH receptor upregulation vs pathological GnRH suppression in hyperprolactinemia.",
+    "repairedStem": "Explain the physiological effects of normal and elevated prolactin levels on male reproductive function and spermatogenesis.",
+    "explanationLength": 128
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0168",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 10,
+    "originalStem": "Authentic prompt for blood-testis barrier fluid differences. Restore low glucose/protein, high potassium/androgens, and adluminal microenvironment.",
+    "repairedStem": "Compare the biochemical composition of seminiferous tubular fluid with blood plasma, explaining how the blood-testis barrier creates these compositional differences.",
+    "explanationLength": 138
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0169",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 11,
+    "originalStem": "Authentic prompt on CatSper channels. Restore flagellar localization, alkaline pH activation, calcium influx, and hyperactivated motility.",
+    "repairedStem": "Describe CatSper channels, their physiological activation, and their essential roles in sperm motility and fertilization.",
+    "explanationLength": 123
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0170",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 11,
+    "originalStem": "The first answer sentence was appended to the stem. Restore sperm storage, fluid reabsorption/concentration, and acquisition of progressive motility.",
+    "repairedStem": "Describe the physiological functions of the epididymis in sperm maturation, storage, and concentration.",
+    "explanationLength": 120
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0172",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 11,
+    "originalStem": "Authentic prompt on prostatic fibrinolysin (PSA). Restore post-ejaculatory clot liquefaction and release of motile spermatozoa.",
+    "repairedStem": "Explain the physiological importance and action of fibrinolysin (prostate-specific antigen) in prostatic fluid during the post-ejaculatory period.",
+    "explanationLength": 119
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0173",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 11,
+    "originalStem": "Authentic prompt on prostatic clotting enzymes. Restore vesiculase action on seminal vesicle fibrinogen, semen coagulation, and cervical retention.",
+    "repairedStem": "Explain the physiological significance of prostatic clotting enzymes in semen coagulation immediately following ejaculation.",
+    "explanationLength": 105
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0174",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 11,
+    "originalStem": "Authentic prompt on semen composition. Restore seminal vesicle (60%), prostate (30%), sperm/testicular fluid (10%), and bulbourethral mucus (<2%).",
+    "repairedStem": "List the constituent fluids of human semen, specifying their anatomical origin and relative percentage contributions to total ejaculate volume.",
+    "explanationLength": 132
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0176",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 10,
+    "originalStem": "Authentic prompt on cryptorchidism. Restore thermosensitivity of germinal epithelium causing azoospermia vs thermoresistance of Leydig cells preserving testosterone.",
+    "repairedStem": "Explain why undescended testis (cryptorchidism) impairs spermatogenesis while preserving testosterone production.",
+    "explanationLength": 117
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0178",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 10,
+    "originalStem": "Authentic prompt on fetal testosterone functions. Restore Wolffian duct differentiation, DHT external virilization, testicular descent, and hypothalamic programming.",
+    "repairedStem": "Describe the essential endocrine functions of testosterone during intrauterine fetal development.",
+    "explanationLength": 134
   }
 ]

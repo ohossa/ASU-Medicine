@@ -4593,5 +4593,96 @@
     "stem": "In chronic cases, the organism is metabolic inactive. So, it is not susceptible to many",
     "reason": "unresolvable_fragment",
     "details": "The organism, relevant drugs and completion of the sentence are absent. The bank stem is the second answer point for a tuberculosis-treatment question. It is not a standalone prompt for this module."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p012-q15",
+    "stem": "Decreasing discharge from high- pressure and low-pressure baroreceptors — increased sympathetic nerv",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0113: Detached fragment corresponding to mechanism 3 (baroreceptor reflex and ADH) of question 0110. Held as component of parent prompt."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p012-q15",
+    "stem": "13 SM UROGENITAL ACID BASE BALANCE AND DISTURBANCE",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0115: Detached fragment corresponding to mechanism 5 (peritubular oncotic pressure) of question 0110. Held as component of parent prompt."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p013-q1",
+    "stem": "Affects enzymatic activity which disturbs metabolism.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0117: Detached fragment representing effect 1 (enzymatic activity) of pH disturbance. Held as component of parent prompt."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p013-q1",
+    "stem": "Influences potassium level in blood.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0119: Detached fragment representing effect 3 (potassium distribution) of pH disturbance. Held as component of parent prompt."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p014-q16",
+    "stem": "» Loss of homeostatic function of kidney as in acute and chronic renal failure leads to hyperkalemia",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0135: The printed key 'Renal(uremic) acidosis' was appended to the stem and model answer carries unrelated hyperkalemia text. Held as damaged fill-in-the-blank."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p014-q17",
+    "stem": "it Urinary system Renal physiology Acid-base balance Acid-base balance is concerned with maintenance",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0136: The printed key was appended to the stem and model answer carries unrelated textbook text. Held as damaged fill-in-the-blank."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p015-q23",
+    "stem": "pH 7.56, HCO3- 45 meq/L, pCO2 54 mmHg Increased pH indicates alkalosis Increased HCO3- indicates met",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0142: Arterial blood gas interpretation prompt lacking the necessary laboratory numerical values in the stem. Held for missing laboratory data."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p016-q4",
+    "stem": "Pudendal nerve, external urethra sphincter.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0146: Truncated fill-in-the-blank item ('The somatic supply to bladder is by . To .'). Held as defective incomplete stem."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p016-q8",
+    "stem": "DILUTION OF URINE Kidneys can excrete diluted urine in over hydration as when one drinks large volum",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0150: The key '600ml' entered the stem and model answer carries unrelated urine dilution text. Held as damaged fill-in-the-blank."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p016-q9",
+    "stem": "Atonic bladder: - As In destruction of sensory nerve fiber from urinary bladder to spinal cord or in",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0151: The key 'Atonic bladder' entered the stem and model answer carries incomplete note. Held as damaged fill-in-the-blank."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p019-q4",
+    "stem": "- Normally, the testes descend into the scrotum at the 7",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0167: The key '7th' entered the stem and model answer is truncated. Held as damaged fill-in-the-blank."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p020-q12",
+    "stem": "_ The normal count of sperm ranges from 60-100 million/ml.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0175: The answer numbers and terms entered the stem. Held as damaged fill-in-the-blank."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p020-q14",
+    "stem": "Complications: a- Testicular atrophy and infertility due to higher temperature within the body than ",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0177: The answer text was appended directly into the stem. Held as damaged item with leaked key."
   }
 ]

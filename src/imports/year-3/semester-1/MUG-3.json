@@ -23463,6 +23463,483 @@
                 "18 mg%"
               ],
               "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0109",
+              "type": "essay",
+              "lecture": 5,
+              "text": "Explain the physiological importance of regulating extracellular fluid (ECF) volume and ECF osmolarity.",
+              "modelAnswer": "1. ECF Volume Regulation: Maintaining ECF volume is essential for preserving adequate effective circulating arterial blood volume, cardiac output, and arterial blood pressure, thereby ensuring adequate organ and tissue perfusion.\n2. ECF Osmolarity Regulation: Maintaining ECF osmolarity (normally ~285–295 mOsm/L) is critical for preventing osmotic fluid shifts across cell membranes, thus preserving normal cellular hydration, cell volume, and intracellular enzymatic and metabolic functions, particularly in brain tissue.",
+              "explanation": "Volume regulation maintains circulatory perfusion, while osmolarity regulation maintains cellular structural and metabolic integrity.",
+              "sources": [
+                "Physiology URO.pdf-Q14"
+              ],
+              "repetitionCount": 1
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0110",
+              "type": "essay",
+              "lecture": 5,
+              "text": "Explain four physiological compensatory mechanisms that operate in a person deprived of water for 24 hours to conserve body water and maintain arterial pressure.",
+              "modelAnswer": "1. Baroreceptor and Volume Receptor Activation: Decreased arterial and cardiopulmonary baroreceptor stretch stimulates the sympathetic nervous system and triggers hypothalamic release of antidiuretic hormone (ADH / vasopressin), while also stimulating thirst.\n2. Decreased Glomerular Filtration Rate (GFR): Renal vasoconstriction reduces GFR, lowering the filtered load of water and solutes.\n3. Activation of the Renin-Angiotensin-Aldosterone System (RAAS): Reduced renal perfusion stimulates renin release, elevating angiotensin II and aldosterone to maximize distal tubular Na+ and water reabsorption.\n4. Increased Proximal Tubular Fluid Reabsorption: Water loss concentrates plasma proteins, elevating peritubular capillary oncotic pressure and driving enhanced proximal fluid and sodium reabsorption.\n5. Decreased Atrial Natriuretic Peptide (ANP) Secretion: Reduced atrial stretch diminishes ANP release, removing its inhibition on renin, aldosterone, and sodium reabsorption.",
+              "explanation": "Compensatory reflexes integrate neural (baroreceptor/sympathetic), endocrine (ADH, RAAS, ANP), and physical hemodynamic forces.",
+              "sources": [
+                "Physiology URO.pdf-Q15"
+              ],
+              "repetitionCount": 1
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0120",
+              "type": "essay",
+              "lecture": 6,
+              "text": "List the principal metabolic sources of hydrogen ions in the human body, distinguishing volatile from non-volatile acids.",
+              "modelAnswer": "1. Volatile Acid (Carbonic Acid, H2CO3): Produced from cellular aerobic metabolism and oxidation of carbohydrates, fats, and amino acids, generating CO2 (~15,000 mmol/day) that hydrates to form H2CO3 and dissociates into H+ and HCO3-; eliminated entirely by pulmonary ventilation.\n2. Non-Volatile (Fixed) Acids: Produced from metabolic processes (~50–100 mEq/day) and excreted exclusively by the kidneys:\n   a. Inorganic acids: Sulfuric acid from catabolism of sulfur-containing amino acids (methionine, cysteine); phosphoric acid from catabolism of phosphoproteins, phospholipids, and nucleic acids.\n   b. Organic acids: Lactic acid from anaerobic glycolysis; ketoacids (acetoacetic acid, beta-hydroxybutyric acid) from fatty acid oxidation; uric acid from purine catabolism.",
+              "explanation": "Volatile acid is eliminated by the respiratory system, whereas fixed non-volatile metabolic acids require renal excretion.",
+              "sources": [
+                "Physiology URO.pdf-Q2",
+                "Physiology/Physiology URO.pdf-Q140"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0121",
+              "type": "essay",
+              "lecture": 6,
+              "text": "Explain the factors that determine the chemical and physiological effectiveness of a buffer system.",
+              "modelAnswer": "1. The pK of the Buffer System: A chemical buffer is most effective when its pK is close to the ambient pH of the fluid compartment (within +/- 1.0 pH unit), where equal concentrations of the weak acid and its conjugate base exist.\n2. The Total Concentration of Buffer Components: The absolute concentration (buffer capacity) of the weak acid and its conjugate base determines the amount of strong acid or base the system can neutralize without a significant shift in pH.\n3. Open vs. Closed Nature of the System: In physiological systems (e.g., bicarbonate buffer), open regulation of components by respiratory (CO2) and renal (HCO3-) excretion dramatically increases its in vivo effectiveness beyond that predicted by its pK alone.",
+              "explanation": "A physiological open buffer can be highly effective even if its pK is far from blood pH because its components are independently regulated.",
+              "sources": [
+                "Physiology URO.pdf-Q3",
+                "Physiology/Physiology URO.pdf-Q141"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0122",
+              "type": "essay",
+              "lecture": 6,
+              "text": "Describe the role and mechanism of the respiratory system in the regulation of blood pH.",
+              "modelAnswer": "The respiratory system regulates arterial pH by controlling alveolar ventilation and thereby adjusting the arterial partial pressure of carbon dioxide (PaCO2):\n1. Response to Acidosis (Increased [H+]): Elevated arterial [H+] or PaCO2 stimulates peripheral (carotid and aortic bodies) and central chemoreceptors, increasing alveolar ventilation. This washes out CO2, shifting the reaction H+ + HCO3- <-> H2CO3 <-> H2O + CO2 to the right, reducing [H+] and restoring pH toward normal within minutes.\n2. Response to Alkalosis (Decreased [H+]): Decreased arterial [H+] reduces chemoreceptor stimulation, decreasing alveolar ventilation. This causes CO2 retention, elevating PaCO2 and shifting the reaction to generate H+, lowering pH toward normal (limited by hypoxemic stimulation).",
+              "explanation": "Respiratory compensation provides rapid, negative-feedback control of arterial pH by modulating volatile CO2 excretion.",
+              "sources": [
+                "Physiology URO.pdf-Q4",
+                "Physiology/Physiology URO.pdf-Q142"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0123",
+              "type": "essay",
+              "lecture": 6,
+              "text": "Why is the bicarbonate buffer system the most important chemical buffer in extracellular fluid despite having a pK (6.1) far from blood pH?",
+              "modelAnswer": "The bicarbonate buffer system is the predominant extracellular buffer due to two key physiological properties:\n1. High Quantitative Concentration: Bicarbonate (HCO3-) is present in the ECF at a much higher concentration (~24 mEq/L) than any other chemical buffer.\n2. Open Physiological System with Independent Dual Organ Regulation: Unlike closed buffer systems whose components cannot leave the body, the components of the bicarbonate system are independently and dynamically regulated by two organ systems:\n   a. The lungs rapidly control volatile CO2 excretion via alveolar ventilation.\n   b. The kidneys regulate the plasma HCO3- concentration via tubular reabsorption, secretion, and synthesis of new bicarbonate.",
+              "explanation": "The bicarbonate system's open character and independent dual-organ regulation make it the principal ECF buffer despite an apparent pK disadvantage.",
+              "sources": [
+                "Physiology URO.pdf-Q5",
+                "Formatives/Week 2 formative.pdf-Q9"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0124",
+              "type": "essay",
+              "lecture": 6,
+              "text": "Describe the cellular mechanism of hydrogen ion secretion in the proximal convoluted tubule.",
+              "modelAnswer": "1. Intracellular H+ and HCO3- Generation: Cytoplasmic carbonic anhydrase (CA-II) catalyzes the hydration of CO2 with H2O to form H2CO3, which dissociates into H+ and HCO3-.\n2. Secondary Active Apical Secretion: The generated H+ is actively extruded across the apical brush-border membrane into the tubular lumen via secondary active transport through the Na+/H+ antiporter (NHE3), energized by the inward sodium gradient maintained by basolateral Na+/K+ ATPase. A minor fraction is secreted by apical vacuolar H+ ATPase.\n3. Basolateral Bicarbonate Reclamation: Intracellular HCO3- exits the basolateral membrane into the peritubular capillaries primarily through the electrogenic Na+-3HCO3- cotransporter (NBCe1).\n4. Luminal Bicarbonate Titration: Secreted H+ combines with filtered HCO3- in the lumen; apical brush-border carbonic anhydrase (CA-IV) dehydrates it to CO2 and H2O, allowing CO2 to rapidly diffuse back into the tubular cell.",
+              "explanation": "Proximal H+ secretion is primarily coupled to sodium reabsorption and functions to reclaim filtered bicarbonate indirectly.",
+              "sources": [
+                "Physiology URO.pdf-Q6",
+                "Physiology/Physiology URO.pdf-Q146"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0125",
+              "type": "essay",
+              "lecture": 6,
+              "text": "Describe the cellular mechanism and regulation of hydrogen ion secretion in the late distal tubule and collecting duct.",
+              "modelAnswer": "1. Primary Active Secretion by Type A Intercalated Cells: In the late distal tubule and collecting duct, H+ secretion is performed by alpha-intercalated cells via primary active transport:\n   a. Apical Vacuolar H+ ATPase actively pumps H+ into the lumen against a steep electrochemical concentration gradient (up to 1,000:1, lowering urine pH to ~4.5).\n   b. Apical H+/K+ ATPase reabsorbs K+ in exchange for H+ extrusion, which is particularly upregulated in hypokalemia.\n2. Basolateral Exit: The intracellularly generated HCO3- exits across the basolateral membrane via the Cl-/HCO3- anion exchanger (AE1 / Band 3) into the peritubular capillary.\n3. Hormonal Regulation: Aldosterone directly stimulates the apical H+ ATPase pump and promotes basolateral HCO3- extrusion, while also stimulating principal cell Na+ reabsorption that creates a lumen-negative transepithelial potential facilitating H+ secretion.",
+              "explanation": "Distal H+ secretion is primary active transport by intercalated cells responsible for net acid excretion and urinary acidification.",
+              "sources": [
+                "Physiology URO.pdf-Q7",
+                "Physiology/Physiology URO.pdf-Q147"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0126",
+              "type": "essay",
+              "lecture": 6,
+              "text": "Explain the pharmacological and renal effects of carbonic anhydrase inhibitors on tubular bicarbonate reabsorption and systemic acid-base status.",
+              "modelAnswer": "1. Inhibition of Carbonic Anhydrase Isozymes: Carbonic anhydrase inhibitors (e.g., acetazolamide) inhibit both apical brush-border CA-IV (blocking conversion of luminal filtered HCO3- + H+ to CO2 + H2O) and cytoplasmic CA-II (diminishing intracellular H+ and HCO3- generation in proximal tubular cells).\n2. Decreased Bicarbonate Reabsorption and Bicarbonaturia: Filtered bicarbonate cannot be converted to CO2 for reabsorption and is wasted in the urine along with sodium and water, resulting in alkaline urine (high urinary pH) and mild osmotic diuresis.\n3. Induction of Systemic Acidosis: The net urinary wasting of NaHCO3 depletes extracellular buffer reserve, causing a hyperchloremic (normal anion gap) metabolic acidosis and self-limiting diuretic efficacy as filtered bicarbonate falls.",
+              "explanation": "Carbonic anhydrase inhibitors block indirect bicarbonate reclamation, producing bicarbonaturia and systemic hyperchloremic acidosis.",
+              "sources": [
+                "Physiology URO.pdf-Q8",
+                "Physiology/Physiology URO.pdf-Q148"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0130",
+              "type": "essay",
+              "lecture": 6,
+              "text": "List the principal etiologies of respiratory acidosis categorized by anatomical and physiological mechanism.",
+              "modelAnswer": "Respiratory acidosis is caused by alveolar hypoventilation leading to CO2 retention (PaCO2 > 45 mmHg):\n1. Central Respiratory Center Depression: Opioid or sedative overdose, general anesthesia, head trauma, central nervous system infections, cerebrovascular accidents, central sleep apnea.\n2. Neuromuscular and Chest Wall Impairment: Myasthenia gravis, Guillain-Barre syndrome, amyotrophic lateral sclerosis, cervical spinal cord injury, severe kyphoscoliosis, flail chest, severe obesity-hypoventilation syndrome.\n3. Upper and Lower Airway Obstruction: Foreign body aspiration, severe acute asthma, laryngospasm, severe obstructive sleep apnea.\n4. Severe Pulmonary Parenchymal and Gas-Exchange Disease: Chronic obstructive pulmonary disease (COPD), acute respiratory distress syndrome (ARDS), severe pneumonia, pulmonary edema, extensive pulmonary fibrosis.",
+              "explanation": "Respiratory acidosis is fundamentally caused by alveolar hypoventilation causing carbon dioxide retention.",
+              "sources": [
+                "Physiology URO.pdf-Q11",
+                "Physiology/Physiology URO.pdf-Q155"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0131",
+              "type": "essay",
+              "lecture": 6,
+              "text": "List the principal etiologies of respiratory alkalosis categorized by pathophysiological mechanism.",
+              "modelAnswer": "Respiratory alkalosis results from alveolar hyperventilation causing excessive CO2 washout (PaCO2 < 35 mmHg):\n1. Central Chemosensory and Cortical Stimulation: Psychogenic hyperventilation (anxiety, panic attack, severe pain), fever, sepsis (early gram-negative endotoxemia), meningitis, intracranial tumors, cerebrovascular accident.\n2. Pharmacological Stimulation: Salicylate toxicity (direct medullary respiratory center stimulation before metabolic acidosis develops), theophylline, progesterone (e.g., in pregnancy).\n3. Hypoxemia-Induced Peripheral Chemoreceptor Stimulation: High altitude, severe anemia, pulmonary embolism, congestive heart failure.\n4. Iatrogenic Causes: Excessive mechanical ventilation support.",
+              "explanation": "Respiratory alkalosis results from alveolar hyperventilation that decreases PaCO2 below normal.",
+              "sources": [
+                "Physiology URO.pdf-Q12",
+                "Physiology/Physiology URO.pdf-Q156"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0132",
+              "type": "essay",
+              "lecture": 6,
+              "text": "Classify and list the clinical causes of metabolic acidosis based on the serum anion gap.",
+              "modelAnswer": "1. High Anion Gap Metabolic Acidosis (MUDPILES): Resulting from accumulation of unmeasured organic or inorganic acids:\n   a. Diabetic ketoacidosis (DKA), starvation ketoacidosis, alcoholic ketoacidosis.\n   b. Lactic acidosis (tissue hypoperfusion, shock, severe sepsis, metformin toxicity).\n   c. Renal failure / uremic acidosis (retention of sulfate, phosphate, and organic anions).\n   d. Toxins/ingestions: Methanol, ethylene glycol, salicylates.\n2. Normal Anion Gap (Hyperchloremic) Metabolic Acidosis (USED CARP): Resulting from direct loss of bicarbonate or impaired renal acid excretion:\n   a. Gastrointestinal bicarbonate loss: Severe diarrhea, enterocutaneous fistulae, ureterosigmoidostomy.\n   b. Renal bicarbonate loss or impaired excretion: Renal tubular acidosis (types 1, 2, and 4), carbonic anhydrase inhibitors (acetazolamide).\n   c. Volume resuscitation with large volumes of 0.9% saline (dilutional/hyperchloremic acidosis).",
+              "explanation": "The serum anion gap differentiates acid retention from primary bicarbonate loss or impaired acidification.",
+              "sources": [
+                "Physiology URO.pdf-Q13",
+                "Physiology/Physiology URO.pdf-Q157"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0133",
+              "type": "essay",
+              "lecture": 6,
+              "text": "Classify and list the major etiologies of metabolic alkalosis based on extracellular volume status and chloride responsiveness.",
+              "modelAnswer": "1. Chloride-Responsive Metabolic Alkalosis (Volume-Depleted, Urine Cl- < 20 mEq/L):\n   a. Gastrointestinal H+ and Cl- loss: Prolonged vomiting, continuous nasogastric suction.\n   b. Renal loss: Loop and thiazide diuretic therapy.\n   c. Congenital chloridorrhea or post-hypercapnic metabolic alkalosis.\n2. Chloride-Resistant Metabolic Alkalosis (Volume-Expanded / Normovolemic, Urine Cl- > 20 mEq/L):\n   a. Mineralocorticoid excess: Primary hyperaldosteronism (Conn syndrome), Cushing syndrome, bilateral adrenal hyperplasia.\n   b. Secondary hyperaldosteronism (e.g., renovascular hypertension).\n   c. Genetic tubulopathies: Bartter syndrome, Gitelman syndrome, Liddle syndrome.\n   d. Severe hypokalemia or excessive exogenous alkali administration (e.g., milk-alkali syndrome).",
+              "explanation": "Urinary chloride and volume status distinguish volume-depleted chloride-responsive from mineralocorticoid-driven chloride-resistant alkalosis.",
+              "sources": [
+                "Physiology URO.pdf-Q14",
+                "Physiology/Physiology URO.pdf-Q158"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0134",
+              "type": "essay",
+              "lecture": 6,
+              "text": "Define the serum anion gap, state its normal reference value, and explain its clinical utility in differentiating metabolic acidoses.",
+              "modelAnswer": "1. Definition and Calculation: The serum anion gap represents the difference between commonly measured extracellular cations and measured anions:\n   Anion Gap = [Na+] - ([Cl-] + [HCO3-])\n2. Normal Reference Value: Typically 8–16 mEq/L (or 8–12 mEq/L with modern ion-selective electrode assays), accounting for unmeasured anions, predominantly albumin, phosphate, and sulfate.\n3. Clinical Significance:\n   a. High Anion Gap Acidosis: Occurs when metabolic acidosis is caused by accumulation of non-chloride organic or inorganic acids (e.g., ketoacids, lactate, uremic anions, toxic alcohol metabolites), where the added anion consumes HCO3- without an equimolar rise in Cl-.\n   b. Normal Anion Gap (Hyperchloremic) Acidosis: Occurs when HCO3- is lost directly (via diarrhea or renal tubular acidosis), and the kidneys retain Cl- to preserve electroneutrality, keeping the calculated gap within normal limits.",
+              "explanation": "The serum anion gap is a diagnostic tool calculating unmeasured serum anions to classify metabolic acidosis.",
+              "sources": [
+                "Physiology URO.pdf-Q15",
+                "Physiology/Physiology URO.pdf-Q159"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0137",
+              "type": "essay",
+              "lecture": 6,
+              "text": "Describe the three sequential physiological compensatory mechanisms that act to correct metabolic acidosis.",
+              "modelAnswer": "1. Chemical Buffering (Immediate, Seconds to Minutes): Excess extracellular H+ is immediately neutralized by the HCO3-/H2CO3 buffer system. Intracellular chemical buffers (intracellular proteins, hemoglobin, and bone mineral exchange of Ca2+ and Na+ for H+) provide substantial additional buffering capacity.\n2. Respiratory Compensation (Rapid, Minutes to Hours): Acidemia stimulates peripheral arterial chemoreceptors in the carotid and aortic bodies, triggering hyperventilation (Kussmaul breathing). This reduces PaCO2 (~1.2 mmHg per 1 mEq/L drop in [HCO3-]), shifting carbonic equilibrium to reduce [H+] toward normal.\n3. Renal Compensation (Sustained, Hours to Days): Unless caused by severe renal failure, the kidneys correct the primary deficit by:\n   a. Reabsorbing 100% of filtered bicarbonate.\n   b. Excreting excess H+ via titratable acids (H2PO4-) and ammonium (NH4+) production and excretion, thereby generating and returning new HCO3- to the blood.",
+              "explanation": "Compensation progresses from instantaneous chemical buffering to rapid respiratory blowing off of CO2 and ultimate renal net acid excretion.",
+              "sources": [
+                "Physiology URO.pdf-Q18",
+                "Physiology/Physiology URO.pdf-Q162"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0139",
+              "type": "essay",
+              "lecture": 6,
+              "text": "Explain how the body compensates for respiratory acidosis in acute and chronic phases.",
+              "modelAnswer": "Because the primary defect in respiratory acidosis is pulmonary hypoventilation with CO2 retention, the respiratory system cannot compensate; compensation relies on chemical buffers and the kidneys:\n1. Acute Buffering (Immediate): Cellular and chemical buffers neutralize a small portion of the acid load. Intracellular proteins and hemoglobin take up H+, causing a modest rise in plasma [HCO3-] (~1 mEq/L per 10 mmHg increase in PaCO2).\n2. Chronic Renal Compensation (2–5 Days): Sustained elevated PaCO2 and renal intracellular acidosis stimulate the tubular epithelial cells to:\n   a. Increase apical H+ secretion across the PCT, DCT, and collecting ducts.\n   b. Maximize tubular reclamation of all filtered bicarbonate.\n   c. Greatly enhance glutamine metabolism, ammoniagenesis, and titratable acid excretion, adding newly synthesized HCO3- to peritubular blood (~3.5–4.0 mEq/L per 10 mmHg increase in PaCO2), restoring plasma pH toward normal.",
+              "explanation": "Acute compensation is limited to chemical buffering, whereas chronic compensation requires days of renal bicarbonate reclamation and generation.",
+              "sources": [
+                "Physiology URO.pdf-Q20",
+                "Physiology/Physiology URO.pdf-Q164"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0140",
+              "type": "essay",
+              "lecture": 6,
+              "text": "Explain how the body compensates for respiratory alkalosis in acute and chronic stages.",
+              "modelAnswer": "1. Acute Chemical Buffering (Immediate, Minutes): Extracellular buffers and intracellular proteins release H+ to neutralize the deficit in hydrogen ions, combining with HCO3- and causing a modest fall in plasma [HCO3-] (~2 mEq/L per 10 mmHg decrease in PaCO2).\n2. Chronic Renal Compensation (2–3 Days): Sustained hypocapnia reduces renal tubular H+ secretion by decreasing intracellular H+ and CO2 availability in tubular cells, resulting in:\n   a. Incomplete reabsorption and increased urinary excretion of filtered HCO3-.\n   b. Marked suppression of renal ammoniagenesis and titratable acid excretion.\n   c. Net excretion of alkaline urine and a progressive drop in plasma [HCO3-] (~4–5 mEq/L per 10 mmHg decrease in PaCO2), returning pH toward normal.",
+              "explanation": "Renal compensation for chronic respiratory alkalosis involves urinary bicarbonate wasting to match the primary drop in PaCO2.",
+              "sources": [
+                "Physiology URO.pdf-Q21",
+                "Physiology/Physiology URO.pdf-Q165"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0143",
+              "type": "essay",
+              "lecture": 8,
+              "text": "Explain the anatomical arrangement and functional physiological importance of the oblique intramural course of the ureter through the bladder wall.",
+              "modelAnswer": "1. Anatomical Arrangement: The ureter passes obliquely through the detrusor muscle of the bladder wall (intramural ureter) and travels beneath the bladder mucosa for 1.5–2.0 cm before opening into the trigone.\n2. Physiological Valve Mechanism: As the bladder fills with urine and especially during micturition when intravesical detrusor pressure rises markedly, the increased intravesical pressure compresses the mucosal flap and intramural segment of the ureter against the muscular wall.\n3. Functional Importance: This creates a physiological one-way flap valve that prevents the backward regurgitation of urine (vesicoureteral reflux) from the bladder into the ureters and renal pelves, thereby protecting the upper urinary tract from high pressure, hydronephrosis, and ascending bacterial infections.",
+              "explanation": "The oblique tunnel through the bladder wall forms a passive anti-reflux flap valve preventing vesicoureteral reflux.",
+              "sources": [
+                "Physiology URO.pdf-Q1",
+                "Physiology/Physiology URO.pdf-Q168"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0144",
+              "type": "essay",
+              "lecture": 8,
+              "text": "Describe the autonomic parasympathetic innervation of the urinary bladder and its functional effects on micturition.",
+              "modelAnswer": "1. Innervation Pathway: Pre-ganglionic parasympathetic fibers arise from the intermediolateral horn of sacral spinal cord segments S2, S3, and S4, traveling via pelvic splanchnic nerves (nervi erigentes) to synapse in ganglia within the bladder wall or adjacent pelvic plexus.\n2. Motor Action on Detrusor: Post-ganglionic parasympathetic fibers release acetylcholine acting on muscarinic M2 and M3 receptors, triggering forceful contraction of the detrusor muscle throughout the bladder dome and body.\n3. Action on Bladder Outlet: Parasympathetic activation causes relaxation of the internal urethral sphincter and trigone (mediated via nitric oxide / VIP / muscarinic inhibition of adrenergic tone), opening the bladder neck and allowing expulsion of urine during micturition.",
+              "explanation": "The parasympathetic system is the motor nerve of micturition, stimulating detrusor emptying while relaxing the bladder neck.",
+              "sources": [
+                "Physiology URO.pdf-Q2",
+                "Physiology/Physiology URO.pdf-Q169"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0145",
+              "type": "essay",
+              "lecture": 8,
+              "text": "Describe the sympathetic innervation of the urinary bladder and its physiological effects during the bladder filling phase.",
+              "modelAnswer": "1. Innervation Pathway: Pre-ganglionic fibers originate from thoracolumbar spinal segments T11–L2, pass through the sympathetic chain, and travel via the hypogastric nerves through the inferior hypogastric plexus to the bladder.\n2. Detrusor Relaxation (Urine Storage): Post-ganglionic noradrenergic fibers stimulate beta-2 and beta-3 adrenergic receptors on the detrusor muscle of the bladder dome and body, promoting detrusor smooth muscle relaxation and compliance during filling.\n3. Bladder Neck Contraction: Sympathetic stimulation activates alpha-1 adrenergic receptors in the bladder neck, trigone, and internal urethral sphincter, causing tonic contraction that maintains continence and prevents retrograde ejaculation into the bladder in males.\n4. Afferent Transmission: Sympathetic fibers also carry sensory afferents conveying sensations of pain and bladder overdistension.",
+              "explanation": "The sympathetic system is the nerve of urine storage, relaxing the detrusor and contracting the internal sphincter.",
+              "sources": [
+                "Physiology URO.pdf-Q3",
+                "Physiology/Physiology URO.pdf-Q170"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0147",
+              "type": "essay",
+              "lecture": 8,
+              "text": "Explain the physiological mechanisms and physical law that allow the urinary bladder to accommodate up to 400 mL of urine with only minimal increases in intravesical pressure.",
+              "modelAnswer": "1. Receptive Relaxation and Detrusor Plasticity: As the bladder fills from 0 to ~400 mL, detrusor smooth muscle exhibits intrinsic viscoelastic plasticity (stress relaxation), where initial elongation of muscle fibers is followed by spontaneous reduction in passive tension.\n2. Active Sympathetic Storage Reflex: Distension stimulates low-threshold pelvic afferents that reflexively activate sympathetic efferents via the hypogastric nerve, triggering beta-3 adrenergic detrusor relaxation while inhibiting parasympathetic ganglionic transmission.\n3. Physical Law of Laplace (P = 2T / r): In a hollow spherical organ, pressure (P) is directly proportional to wall tension (T) and inversely proportional to radius (r). During progressive filling, as the radius (r) expands, the proportional increase in wall tension (T) is blunted by muscle relaxation, resulting in an essentially constant internal pressure until functional capacity (~400 mL) is reached.",
+              "explanation": "Detrusor viscoelastic plasticity and Laplace's law allow the bladder to accommodate volume without premature pressure spikes.",
+              "sources": [
+                "Physiology URO.pdf-Q5"
+              ],
+              "repetitionCount": 1
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0148",
+              "type": "essay",
+              "lecture": 8,
+              "text": "Describe the neural reflex arc of the basic spinal micturition reflex, detailing the afferent pathway, central integration center, and efferent limb.",
+              "modelAnswer": "1. Receptors and Afferent Limb: Mechanosensitive stretch receptors in the detrusor muscle and bladder wall fire action potentials in response to bladder filling and wall distension. These sensory impulses travel via pelvic splanchnic afferent sensory fibers to the spinal cord.\n2. Spinal Reflex Center: The basic spinal micturition reflex is integrated in the sacral micturition center located within spinal cord segments S2, S3, and S4.\n3. Efferent Limb: Efferent preganglionic parasympathetic fibers travel via the pelvic splanchnic nerves to intramural ganglia, releasing acetylcholine to stimulate muscarinic (M3) detrusor contraction and pelvic floor/sphincteric relaxation.\n4. Supraspinal Modulation: In intact humans, this spinal reflex is controlled and coordinated by the pontine micturition center (Barrington nucleus) and higher cortical centers in the medial frontal cortex.",
+              "explanation": "The basic micturition reflex is an autonomous spinal arc in S2–S4 subject to supraspinal facilitation and inhibition.",
+              "sources": [
+                "Physiology URO.pdf-Q6",
+                "Physiology/Physiology URO.pdf-Q173"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0149",
+              "type": "essay",
+              "lecture": 8,
+              "text": "Explain how higher brain centers modulate and control the spinal micturition reflex.",
+              "modelAnswer": "1. Tonic Cortical Inhibition: Cerebral cortical centers (predominantly the medial frontal gyrus and anterior cingulate gyrus) exert constant tonic descending inhibitory control over the sacral micturition center, keeping the spinal micturition reflex suppressed until an appropriate social setting and time for voiding are identified.\n2. Sensation of Fullness and Desire to Void: Ascending sensory signals pass through the spinothalamic tracts to the thalamus and cerebral cortex, providing conscious awareness of bladder filling and the conscious urge to void.\n3. Pontine Micturition Center (Barrington's Nucleus): When micturition is consciously initiated, the cortex disinhibits the pontine micturition center, which sends descending excitatory pathways down the reticulospinal tract to coordinate simultaneous detrusor contraction and external urethral sphincter relaxation (sphincter-detrusor synergy).\n4. Voluntary Prevention of Voiding: If urination is inappropriate, the motor cortex voluntarily stimulates the pudendal nerve, tonically contracting the external urethral sphincter and pelvic floor musculature to override the reflex.",
+              "explanation": "Cortical and pontine centers transform a primitive spinal reflex into voluntary, socially controlled, synergistic voiding.",
+              "sources": [
+                "Physiology URO.pdf-Q7",
+                "Physiology/Physiology URO.pdf-Q174"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0152",
+              "type": "essay",
+              "lecture": 8,
+              "text": "Describe the pathophysiological features and clinical presentation of an automatic neurogenic bladder resulting from spinal cord transection above the sacral level.",
+              "modelAnswer": "1. Etiology: Complete spinal cord transection or lesion above the sacral level (above S2), disconnecting the sacral micturition center from higher inhibitory cortical and pontine control.\n2. Resolution of Spinal Shock: Following initial flaccid areflexia (spinal shock), the sacral spinal micturition reflex recovers autonomously as a primitive spinal reflex arc without brain modulation.\n3. Automatic Emptying: When bladder filling reaches a threshold (~150–250 mL), intrinsic stretch triggers an automatic, uninhibited reflex detrusor contraction and voiding without voluntary control or conscious warning.\n4. Detrusor-Sphincter Dyssynergia: Loss of pontine coordination causes simultaneous detrusor contraction and involuntary external urethral sphincter spasm, leading to interrupted voiding, high intravesical pressures, significant post-void residual volume, and high risk of vesicoureteral reflux and hydronephrosis.",
+              "explanation": "Suprasacral cord lesions disconnect higher centers, allowing the sacral arc to empty automatically but without sphincter synergy.",
+              "sources": [
+                "Physiology URO.pdf-Q10",
+                "Physiology/Physiology URO.pdf-Q177"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0153",
+              "type": "essay",
+              "lecture": 9,
+              "text": "Classify and list the clinical causes of acute kidney injury into prerenal, intrinsic renal, and postrenal categories.",
+              "modelAnswer": "1. Prerenal AKI (Renal Hypoperfusion with intact parenchyma):\n   a. Absolute volume depletion: Severe hemorrhage, gastrointestinal fluid loss (vomiting, diarrhea), severe dehydration, extensive cutaneous burns.\n   b. Decreased effective circulating volume: Congestive heart failure, decompensated liver cirrhosis, nephrotic syndrome.\n   c. Systemic vasodilation and shock: Septic shock, anaphylaxis.\n   d. Renal autoregulatory failure: High-dose NSAIDs (inhibiting afferent arteriolar prostacyclin) and ACE inhibitors/ARBs (inhibiting efferent arteriolar vasoconstriction).\n2. Intrinsic (Renal) AKI (Parenchymal Damage):\n   a. Acute tubular necrosis (ATN): Prolonged ischemic hypoperfusion; nephrotoxic agents (aminoglycosides, iodinated radiocontrast, cisplatin, amphotericin B); endogenous toxins (myoglobinuria in rhabdomyolysis, hemoglobinuria).\n   b. Acute glomerulonephritis: Post-infectious glomerulonephritis, rapidly progressive glomerulonephritis, lupus nephritis.\n   c. Acute interstitial nephritis: Drug-induced allergic hypersensitivity (penicillins, sulfonamides, NSAIDs), acute pyelonephritis.\n   d. Vascular: Malignant hypertension, renal atheroembolism, renal vein thrombosis.\n3. Postrenal AKI (Urinary Tract Obstruction):\n   a. Bilateral ureteral obstruction: Calculi, retroperitoneal fibrosis, pelvic malignancy.\n   b. Bladder neck and urethral obstruction: Benign prostatic hyperplasia (BPH), prostate adenocarcinoma, urethral strictures, neurogenic bladder.",
+              "explanation": "Acute kidney injury is classified functionally into prerenal hypoperfusion, intrinsic parenchymal injury, and postrenal outflow obstruction.",
+              "sources": [
+                "Physiology URO.pdf-Q1",
+                "Physiology/Physiology URO.pdf-Q178"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0159",
+              "type": "essay",
+              "lecture": 9,
+              "text": "List the principal etiologies of chronic kidney disease leading to progressive loss of functional nephrons.",
+              "modelAnswer": "1. Diabetic Nephropathy: The leading global cause, characterized by nodular and diffuse glomerulosclerosis secondary to long-standing hyperglycemia and hemodynamic glomerular hyperfiltration.\n2. Hypertensive Nephrosclerosis: Chronic benign and malignant hypertension causing hyaline and hyperplastic arteriolosclerosis and chronic ischemic nephron loss.\n3. Chronic Glomerulonephritis: Membranous nephropathy, focal segmental glomerulosclerosis (FSGS), IgA nephropathy, lupus nephritis.\n4. Chronic Tubulointerstitial Diseases: Chronic pyelonephritis, analgesic nephropathy, heavy metal toxicity, reflux nephropathy.\n5. Polycystic Kidney Disease: Autosomal dominant polycystic kidney disease (ADPKD) causing progressive parenchymal compression by expanding cysts.\n6. Systemic and Infiltrative Diseases: Systemic amyloidosis, multiple myeloma light-chain cast nephropathy, bilateral renal tuberculosis.",
+              "explanation": "Chronic kidney disease results from persistent, irreversible destruction of renal parenchyma by systemic or intrinsic renal diseases.",
+              "sources": [
+                "Physiology URO.pdf-Q3",
+                "Physiology/Physiology URO.pdf-Q184"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0163",
+              "type": "essay",
+              "lecture": 9,
+              "text": "Explain the pathophysiological mechanisms responsible for the development of renal osteodystrophy in chronic kidney disease.",
+              "modelAnswer": "1. Decreased Activation of Vitamin D: Progressive loss of functional renal mass diminishes renal 1-alpha-hydroxylase activity in proximal tubules, leading to deficient production of active 1,25-dihydroxycholecalciferol (calcitriol).\n2. Impaired Intestinal Calcium Absorption: Calcitriol deficiency impairs intestinal Ca2+ absorption, leading to systemic hypocalcemia and defective bone osteoid mineralization (osteomalacia / rickets).\n3. Hyperphosphatemia and Calcium Complexation: Reduced GFR causes phosphate retention and hyperphosphatemia, which precipitates with serum ionized calcium, further exacerbating hypocalcemia.\n4. Secondary Hyperparathyroidism: Hypocalcemia, hyperphosphatemia, and lack of vitamin D feedback vigorously stimulate the parathyroid glands to hypersecrete parathyroid hormone (PTH).\n5. Accelerated Bone Resorption: Markedly elevated PTH mobilizes calcium from the skeleton by stimulating osteoclast-mediated bone resorption, causing osteitis fibrosa cystica and mixed renal osteodystrophy.",
+              "explanation": "Renal osteodystrophy stems from calcitriol deficiency and hyperphosphatemia driving hypocalcemia and secondary hyperparathyroidism.",
+              "sources": [
+                "Physiology URO.pdf-Q5",
+                "Physiology/Physiology URO.pdf-Q194"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0164",
+              "type": "essay",
+              "lecture": 10,
+              "text": "List the primary hormones that stimulate and regulate spermatogenesis, specifying the cellular site of action for each.",
+              "modelAnswer": "1. Luteinizing Hormone (LH): Secreted by anterior pituitary gonadotropes; binds to receptors on interstitial Leydig cells to stimulate testosterone synthesis and secretion.\n2. Testosterone: Reaches high intratesticular concentrations (100-fold higher than serum); binds androgen receptors on Sertoli cells to maintain the blood-testis barrier, facilitate germ cell meiosis, and prevent spermatid apoptosis.\n3. Follicle-Stimulating Hormone (FSH): Binds to basolateral receptors on Sertoli cells to stimulate protein synthesis, growth, and secretion of androgen-binding protein (ABP), transferrin, and inhibin, supporting spermatogonial proliferation and spermatocyte maturation.\n4. Growth Hormone (GH) / IGF-1: Promotes early mitotic division of spermatogonia; deficiency causes impaired spermatogenesis.\n5. Estrogen: Formed locally in Sertoli and Leydig cells via aromatization of testosterone; required for final spermiogenesis and fluid reabsorption in the efferent ductules.",
+              "explanation": "Spermatogenesis requires coordinated endocrine regulation by LH (acting on Leydig cells) and FSH (acting on Sertoli cells).",
+              "sources": [
+                "Physiology URO.pdf-Q1",
+                "Physiology/Physiology URO.pdf-Q195"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0165",
+              "type": "essay",
+              "lecture": 10,
+              "text": "Explain the physiological effects of normal and elevated prolactin levels on male reproductive function and spermatogenesis.",
+              "modelAnswer": "1. Physiological Role at Normal Concentrations: Normal physiological levels of prolactin enhance the responsiveness of Leydig cells to LH by increasing Leydig cell LH receptor density, thereby facilitating normal testosterone synthesis.\n2. Pathological Role in Hyperprolactinemia: Excessively elevated prolactin levels (e.g., prolactinoma) suppress male fertility by:\n   a. Centrally inhibiting pulsatile gonadotropin-releasing hormone (GnRH) release from the hypothalamus, leading to marked reduction in pituitary LH and FSH secretion.\n   b. Directly inhibiting testicular steroidogenesis, causing secondary hypogonadism, low serum testosterone, testicular atrophy, impaired spermatogenesis, oligospermia or azoospermia, erectile dysfunction, and decreased libido.",
+              "explanation": "Normal prolactin facilitates Leydig LH responsiveness, but hyperprolactinemia centrally suppresses GnRH and causes hypogonadism.",
+              "sources": [
+                "Physiology URO.pdf-Q2",
+                "Physiology/Physiology URO.pdf-Q196"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0168",
+              "type": "essay",
+              "lecture": 10,
+              "text": "Compare the biochemical composition of seminiferous tubular fluid with blood plasma, explaining how the blood-testis barrier creates these compositional differences.",
+              "modelAnswer": "1. Role of the Blood-Testis Barrier: Specialized tight junctions (zonula occludens) between adjacent Sertoli cells divide the seminiferous epithelium into basal and adluminal compartments, preventing free paracellular diffusion and allowing Sertoli cells to establish a specialized adluminal microenvironment.\n2. Chemical Differences:\n   a. Lower Concentrations in Tubular Fluid: Glucose and total protein concentrations are substantially lower in seminiferous tubular fluid than in blood plasma.\n   b. Higher Concentrations in Tubular Fluid: Potassium (K+), androgens (testosterone and dihydrotestosterone bound to androgen-binding protein), estrogens, inositol, and specific amino acids (glutamic acid and aspartic acid) are significantly higher in tubular fluid than in systemic plasma.\n3. Functional Significance: This specialized fluid protects haploid germ cells from circulating toxins and systemic immune antibodies, providing optimal nutritional and hormonal conditions for meiosis and spermiogenesis.",
+              "explanation": "The blood-testis barrier allows Sertoli cells to create a specialized microenvironment high in K+ and androgens for germ cell development.",
+              "sources": [
+                "Physiology URO.pdf-Q5",
+                "Physiology/Physiology URO.pdf-Q204"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0169",
+              "type": "essay",
+              "lecture": 11,
+              "text": "Describe CatSper channels, their physiological activation, and their essential roles in sperm motility and fertilization.",
+              "modelAnswer": "1. Structure and Localization: CatSpers (Cation Channels of Sperm) are specialized, pH-sensitive, voltage-gated calcium channels localized exclusively to the plasma membrane of the sperm flagellum (tail).\n2. Mechanism of Activation: CatSper channels are activated by intracellular alkalization. As sperm transit from the acidic vaginal environment (pH ~4.0–5.0) into the alkaline cervical mucus and uterine fluid (pH ~7.5–8.5), intracellular pH rises, opening CatSper channels and mediating massive Ca2+ influx into the flagellum.\n3. Essential Physiological Roles:\n   a. Hyperactivated Motility: Ca2+ influx switches sperm movement from symmetrical, low-amplitude swimming into asymmetrical, high-amplitude, whip-like hyperactivated flagellar beats necessary to navigate the female tract.\n   b. Capacitation and Acrosome Reaction: Elevated intracellular Ca2+ triggers flagellar signaling and primes the sperm head for the acrosome reaction upon contact with the zona pellucida of the ovum, rendering CatSper indispensable for male fertility.",
+              "explanation": "CatSper channels translate female tract alkalinity into calcium-driven hyperactivated motility essential for fertilization.",
+              "sources": [
+                "Physiology URO.pdf-Q6",
+                "Physiology/Physiology URO.pdf-Q205"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0170",
+              "type": "essay",
+              "lecture": 11,
+              "text": "Describe the physiological functions of the epididymis in sperm maturation, storage, and concentration.",
+              "modelAnswer": "1. Sperm Storage and Reservoir: The epididymis, particularly its caudal segment (cauda epididymidis), serves as the primary storage reservoir for mature spermatozoa, where they can remain viable for several weeks in a quiescent, low-metabolic state.\n2. Fluid Absorption and Concentration: The epididymal epithelium reabsorbs approximately 90–99% of the testicular fluid entering from the seminiferous tubules, concentrating spermatozoa up to 100-fold prior to ejaculation.\n3. Functional Sperm Maturation: Immature, non-motile spermatozoa entering from the testis undergo crucial biochemical modifications during their 10–14 day transit through the caput and corpus epididymis, including:\n   a. Acquisition of progressive forward motility (associated with CatSper channel expression and cyclic AMP generation).\n   b. Remodeling of the sperm surface coat with stabilizing decapacitation glycoproteins that prevent premature acrosome reaction until exposure to the female tract.",
+              "explanation": "The epididymis concentrates, stores, and biochemically matures testicular spermatozoa into progressively motile gametes.",
+              "sources": [
+                "Physiology URO.pdf-Q7"
+              ],
+              "repetitionCount": 1
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0172",
+              "type": "essay",
+              "lecture": 11,
+              "text": "Explain the physiological importance and action of fibrinolysin (prostate-specific antigen) in prostatic fluid during the post-ejaculatory period.",
+              "modelAnswer": "1. Nature of the Enzyme: Prostatic fibrinolysin (a serine protease, predominantly prostate-specific antigen / PSA) is synthesized and secreted by the glandular epithelial cells of the prostate.\n2. Enzymatic Action: Following ejaculation, semen forms a temporary coagulum due to the action of prostatic clotting enzymes on seminal vesicle fibrinogen. Within 15–30 minutes, prostatic fibrinolysin / PSA enzymatically digests and lyses the semen clot proteins (semenogelins).\n3. Functional Importance: Liquefaction of the coagulum frees motile spermatozoa from the viscous seminal matrix, enabling them to actively swim through cervical mucus into the uterine cavity and fallopian tubes for fertilization.",
+              "explanation": "Prostatic fibrinolysin (PSA) liquefies the seminal coagulum, releasing spermatozoa to swim into the upper female tract.",
+              "sources": [
+                "Physiology URO.pdf-Q9",
+                "Physiology/Physiology URO.pdf-Q208"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0173",
+              "type": "essay",
+              "lecture": 11,
+              "text": "Explain the physiological significance of prostatic clotting enzymes in semen coagulation immediately following ejaculation.",
+              "modelAnswer": "1. Mechanism of Coagulation: Prostatic fluid contains a clotting enzyme (vesiculase) which, upon mixing with seminal vesicle secretions during ejaculation, converts seminal vesicle fibrinogen-like proteins (semenogelins) into a loose, gelatinous coagulum.\n2. Functional Significance: Rapid post-ejaculatory coagulation holds the ejaculate in a cohesive mass within the deep vagina and posterior fornix against the external cervical os, preventing premature backflow or drainage of semen upon withdrawal of the penis and protecting spermatozoa from the hostile acidic vaginal environment until liquefaction occurs.",
+              "explanation": "Prostatic clotting enzymes coagulate seminal vesicle proteins, anchoring the semen deposit at the cervix.",
+              "sources": [
+                "Physiology URO.pdf-Q10",
+                "Physiology/Physiology URO.pdf-Q209"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0174",
+              "type": "essay",
+              "lecture": 11,
+              "text": "List the constituent fluids of human semen, specifying their anatomical origin and relative percentage contributions to total ejaculate volume.",
+              "modelAnswer": "1. Seminal Vesicle Fluid (~60% of total volume): Thick, alkaline, yellowish fluid rich in fructose (primary energy source for sperm), prostaglandins, fibrinogen-like clotting proteins, and ascorbic acid.\n2. Prostatic Fluid (~30% of total volume): Thin, milky, slightly acidic or neutral fluid containing citrate, calcium, acid phosphatase, zinc, clotting enzyme (vesiculase), and fibrinolysin (PSA).\n3. Testicular Fluid and Spermatozoa (~10% of total volume): Carries spermatozoa (~60–100 million/mL) suspended in epididymal and testicular fluid.\n4. Bulbourethral (Cowper) and Urethral (Littre) Glands (<1–2% of total volume): Clear, viscous mucous secretion released prior to ejaculation that lubricates the urethra and neutralizes residual acidic urine.",
+              "explanation": "Semen is a composite fluid composed of seminal vesicle (60%), prostatic (30%), testicular (10%), and bulbourethral (<2%) secretions.",
+              "sources": [
+                "Physiology URO.pdf-Q11",
+                "Physiology/Physiology URO.pdf-Q210"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0176",
+              "type": "essay",
+              "lecture": 10,
+              "text": "Explain why undescended testis (cryptorchidism) impairs spermatogenesis while preserving testosterone production.",
+              "modelAnswer": "1. Temperature Sensitivity of Germinal Epithelium: Normal spermatogenesis requires a scrotal temperature that is 2–3°C cooler than core body temperature (37°C). In cryptorchidism, the elevated intra-abdominal or inguinal temperature causes progressive degeneration, arrest, and irreversible atrophy of the thermosensitive germinal epithelium, resulting in oligospermia or azoospermia.\n2. Thermal Resistance of Leydig Cells: Interstitial Leydig cells are thermo-resistant and remain metabolically and structurally intact at core body temperatures. Consequently, Leydig cells continue to synthesize and secrete normal physiological levels of testosterone, preserving secondary sexual characteristics and virilization despite severe testicular infertility.",
+              "explanation": "The germinal epithelium is thermosensitive and atrophies in cryptorchidism, whereas Leydig cells are thermoresistant.",
+              "sources": [
+                "Physiology URO.pdf-Q13",
+                "Physiology/Physiology URO.pdf-Q213"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0178",
+              "type": "essay",
+              "lecture": 10,
+              "text": "Describe the essential endocrine functions of testosterone during intrauterine fetal development.",
+              "modelAnswer": "1. Differentiation of Internal Male Genital Ducts: In the early male fetus, testosterone secreted by fetal Leydig cells stimulates the persistence and differentiation of the Wolffian (mesonephric) ducts into the epididymides, vas deferens, seminal vesicles, and ejaculatory ducts.\n2. Differentiation of External Genitalia: In target tissues with 5-alpha-reductase activity, testosterone is converted to dihydrotestosterone (DHT), which drives the virilization of the bipotential genital tubercle, folds, and swellings into the penis (glans and penile urethra), scrotum, and prostate gland.\n3. Testicular Descent: Testosterone, acting in concert with insulin-like peptide 3 (INSL3), promotes the trans-abdominal and trans-inguinal descent of the fetal testes into the scrotum during the late second and third trimesters (predominantly 7th month).\n4. Sexual Brain Differentiation: Exposure to fetal androgens programs hypothalamic nuclei, establishing non-cyclic (tonic) gonadotropin secretion.",
+              "explanation": "Intrauterine testosterone and its metabolite DHT drive internal ductal differentiation, external virilization, and testicular descent.",
+              "sources": [
+                "Physiology URO.pdf-Q15",
+                "Physiology/Physiology URO.pdf-Q215"
+              ],
+              "repetitionCount": 2
             }
           ]
         }
