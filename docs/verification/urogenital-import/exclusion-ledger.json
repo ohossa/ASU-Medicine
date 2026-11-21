@@ -17193,5 +17193,355 @@
     "stem": "What substance inhibits SGLT2, and what is the physiological consequence of this inhibition?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-2605: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 78 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p078-essay-2606",
+    "stem": "Define transport maximum (Tm) and explain why it exists.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2606: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 78 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p079-essay-2607",
+    "stem": "Why does sodium not exhibit a transport maximum, unlike most other actively reabsorbed substances?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2607: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 79 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p079-essay-2608",
+    "stem": "Define transport maximum for glucose (TmG) and state its normal values in males and females.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2608: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 79 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p079-essay-2609",
+    "stem": "Define renal threshold for glucose and state its approximate value.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2609: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 79 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p079-essay-2610",
+    "stem": "Define the filtered load of a substance and give the equation for calculating it.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2610: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 79 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p079-essay-2611",
+    "stem": "Explain the phenomenon of 'splay' in the glucose titration curve.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2611: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 79 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p079-essay-2612",
+    "stem": "Explain why the actual renal threshold for glucose (200 mg% arterial / 180 mg% venous) is lower than the theoretically predicted threshold (300 mg%).",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2612: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 79 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p079-essay-2613",
+    "stem": "Describe the method used to determine the transport maximum of a reabsorbed substance such as glucose.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2613: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 79 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p079-essay-2614",
+    "stem": "Describe the method used to determine the transport maximum of a secreted substance such as PAH. 96",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2614: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 79 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p079-essay-2615",
+    "stem": "Define glucosuria and list four causes.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2615: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 79 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p079-essay-2616",
+    "stem": "Describe the reabsorption of phosphate in the PCT, including transport mechanism and hormonal control.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2616: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 79 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p079-essay-2617",
+    "stem": "Describe the two chemical forms of phosphate in the PCT and their differing fates.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2617: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 79 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p079-essay-2618",
+    "stem": "Explain why mono-hydrogen phosphate becomes an effective urinary buffer despite its low initial concentration.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2618: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 79 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p079-essay-2619",
+    "stem": "Where does secretion occur in the PCT, and from what two sources do secreted substances originate?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2619: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 79 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p079-essay-2620",
+    "stem": "Describe the mechanism of H+ secretion in the PCT.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2620: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 79 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p080-essay-2621",
+    "stem": "Describe the pattern of PAH secretion at low versus high plasma PAH concentrations.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2621: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 80 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p080-essay-2622",
+    "stem": "What clinical/physiological significance does the TmPAH have?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2622: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 80 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p080-essay-2623",
+    "stem": "Identify the source of ammonia in the tubular cell and the two sources of glutamine used to form it.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2623: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 80 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p080-essay-2624",
+    "stem": "Describe the process of ammonia formation and secretion inside the proximal tubular cell, and its relationship to H+ secretion.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2624: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 80 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p080-essay-2625",
+    "stem": "Explain the concept of the 'ammonia cycle' as recently described in the PCT and loop of Henle.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2625: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 80 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p081-essay-2626",
+    "stem": "State the main function of the loop of Henle.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2626: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 81 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p064-essay-2627",
+    "stem": "What percentage of filtered sodium, chloride, and water is normally reabsorbed in the loop of Henle, and is this reabsorption hormonally regulated?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2627: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 64 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p081-essay-2628",
+    "stem": "What happens to the remaining filtered bicarbonate and potassium by the end of the loop of Henle?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2628: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 81 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p081-essay-2629",
+    "stem": "Why is the ascending limb of the loop of Henle called the 'diluting segment'?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2629: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 81 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p081-essay-2630",
+    "stem": "Describe the permeability characteristics of the descending limb of the loop of Henle.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2630: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 81 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p081-essay-2631",
+    "stem": "Describe the permeability characteristics of the ascending limb (both thin and thick portions) of the loop of Henle. 100",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2631: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 81 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p081-essay-2632",
+    "stem": "Describe sodium chloride handling in the thin ascending limb, and explain the source of the driving force.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2632: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 81 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p081-essay-2633",
+    "stem": "Describe the cellular transport mechanism of the thick ascending limb of the loop of Henle.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2633: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 81 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p049-essay-2634",
+    "stem": "Approximately what percentage of filtered sodium, chloride, and potassium is actively reabsorbed by the thick ascending limb, and what other ions are also reabsorbed here?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2634: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 49 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p081-essay-2635",
+    "stem": "Explain the origin and significance of the +8 mV lumen-positive potential in the thick ascending limb.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2635: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 81 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p081-essay-2636",
+    "stem": "Describe the site of action of loop diuretics and explain their mechanism. 101",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2636: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 81 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p081-essay-2637",
+    "stem": "Describe the pathophysiology of Bartter's syndrome.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2637: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 81 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p081-essay-2638",
+    "stem": "What overall function do the distal nephron (DCT and CD) perform?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2638: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 81 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p082-essay-2639",
+    "stem": "Why is the early part of the DCT also called the 'diluting segment', and what specific transporter is involved?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2639: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 82 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p082-essay-2640",
+    "stem": "Which class of diuretics act on the early DCT, and what is their mechanism?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2640: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 82 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p082-essay-2641",
+    "stem": "Describe the hormonal regulation of Na+ reabsorption in the late DCT and CD. 102",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2641: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 82 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p082-essay-2642",
+    "stem": "Describe the mechanism of chloride reabsorption in the DCT.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2642: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 82 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p082-essay-2643",
+    "stem": "Describe water reabsorption in the late DCT and CD, including the percentage reabsorbed and the term used for it.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2643: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 82 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p082-essay-2644",
+    "stem": "Describe the cellular mechanism by which ADH increases water permeability of the late DCT and CD.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2644: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 82 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p082-essay-2645",
+    "stem": "What happens to CD water permeability and urine volume in the absence of ADH (as in diabetes insipidus)?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2645: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 82 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p079-essay-2646",
+    "stem": "Describe the mechanism of H+ secretion in the late DCT and CD, including the cell type and pump involved.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2646: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 79 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p082-essay-2647",
+    "stem": "What is meant by the 'limiting pH' in the collecting duct, and how is this limit overcome?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2647: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 82 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p082-essay-2648",
+    "stem": "Describe the mechanism of K+ secretion in the late DCT/CD principal cells.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2648: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 82 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p069-essay-2649",
+    "stem": "What percentage of filtered K+ is normally excreted in urine, and where does urinary K+ mainly originate?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2649: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 69 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p082-essay-2650",
+    "stem": "What hormone regulates K+ secretion in the late distal nephron, and where is it secreted from?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2650: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 82 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p082-essay-2651",
+    "stem": "Describe ammonia (NH3) secretion in the collecting duct and its physiological significance.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2651: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 82 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p082-essay-2652",
+    "stem": "Summarize the five functional characteristics of the late distal tubule and cortical collecting tubule.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2652: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 82 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p083-essay-2653",
+    "stem": "How does the medullary collecting duct differ from the cortical collecting duct in its response to ADH regarding urea?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2653: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 83 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p036-essay-2654",
+    "stem": "Define glomerulotubular balance and state the constant percentage it maintains.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2654: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 36 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/2027- Renal Revision Questions- 2.pdf",
+    "sourceOccurrence": "S184-p084-essay-2655",
+    "stem": "Explain the mechanism linking increased GFR to increased proximal tubular reabsorption via peritubular capillary forces.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-2655: Unverified extracted essay prompt from 2027- Renal Revision Questions- 2 page 84 without authoritative rubric or structured model answer. Excluded under quality-over-quantity intake policy."
   }
 ]
