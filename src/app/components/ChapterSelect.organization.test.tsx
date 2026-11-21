@@ -27,7 +27,7 @@ it('hides empty past exams while preserving ordinary empty chapters',()=>{
  expect(screen.getByText('DNA Replication')).toBeInTheDocument();
 });
 
-it('shows one MUG-3 Past Exams block with links to the original chapters', () => {
+it('shows isolated MUG-3 exam blocks for CA-1, CA-2, and finals with links to the original chapters', () => {
  const past = (id: number, title: string, ids: string[]): ChapterData => ({
   ...chapter, id, title, bankSection: 'past-exams',
   subjects: [{id:'biochem',name:'Biochemistry',iconName:'',lectures:'',lectureCount:1,
@@ -40,20 +40,31 @@ it('shows one MUG-3 Past Exams block with links to the original chapters', () =>
  const select = vi.fn();
  render(<MemoryRouter><ChapterSelect chapters={[chapter,ca1,ca2,empty,finals]} moduleCode="MUG-3" moduleName="Urogenital" studyModeName="MCQ" onSelectChapter={select} onBackToModeSelect={()=>{}}/></MemoryRouter>);
  const region = screen.getByRole('region', {name:'Past Exams'});
- const disclosure = region.querySelector('details')!;
- expect(disclosure).toBeInTheDocument();
- expect(disclosure.open).toBe(false);
- expect(disclosure.querySelector('summary')).toHaveTextContent('4 questions');
- expect(screen.getAllByRole('region', {name:'Past Exams'})).toHaveLength(1);
- fireEvent.click(disclosure.querySelector('summary')!);
- expect(disclosure.open).toBe(true);
- const ca1Block = within(region).getByRole('group', { name: /Continuous Assessment 1/ });
- const ca2Block = within(region).getByRole('group', { name: /Continuous Assessment 2/ });
- const finalsBlock = within(region).getByRole('group', { name: /Past Final Papers/ });
- expect(within(ca1Block).getByRole('button', { name: /CA-1/ })).toBeInTheDocument();
- expect(within(ca2Block).getByRole('button', { name: /CA-2/ })).toBeInTheDocument();
- expect(within(finalsBlock).getByRole('button', { name: /Past Final/ })).toBeInTheDocument();
+ const disclosures = region.querySelectorAll('details');
+ expect(disclosures).toHaveLength(3);
+ const [ca1Disclosure, ca2Disclosure, finalsDisclosure] = Array.from(disclosures);
+
+ expect(ca1Disclosure.open).toBe(true);
+ expect(ca1Disclosure.querySelector('summary')).toHaveTextContent('Continuous Assessment 1 (CA-1)');
+ expect(ca1Disclosure.querySelector('summary')).toHaveTextContent('1 question');
+
+ expect(ca2Disclosure.open).toBe(false);
+ expect(ca2Disclosure.querySelector('summary')).toHaveTextContent('Continuous Assessment 2 (CA-2)');
+ expect(ca2Disclosure.querySelector('summary')).toHaveTextContent('2 questions');
+
+ expect(finalsDisclosure.open).toBe(false);
+ expect(finalsDisclosure.querySelector('summary')).toHaveTextContent('Past Final Papers & Essays');
+ expect(finalsDisclosure.querySelector('summary')).toHaveTextContent('1 question');
+
+ expect(within(ca1Disclosure).getByRole('button', { name: /CA-1/ })).toBeInTheDocument();
  expect(within(region).queryByRole('button', { name: /Parasitology/ })).toBeNull();
+
+ fireEvent.click(ca2Disclosure.querySelector('summary')!);
+ expect(within(ca2Disclosure).getByRole('button', { name: /CA-2/ })).toBeInTheDocument();
+
+ fireEvent.click(finalsDisclosure.querySelector('summary')!);
+ expect(within(finalsDisclosure).getByRole('button', { name: /Past Final/ })).toBeInTheDocument();
+
  for (const original of [ca1, ca2, finals]) {
   fireEvent.click(within(region).getByRole('button',{name:new RegExp(original.title)}));
   expect(select).toHaveBeenLastCalledWith(original);

@@ -1,4 +1,4 @@
-const CACHE_NAME = "asu-codes-cache-v3";
+const CACHE_NAME = "asu-codes-cache-v4";
 
 // Core static assets to cache immediately upon installation
 const PRECACHE_ASSETS = [

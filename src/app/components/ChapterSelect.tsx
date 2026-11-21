@@ -3,7 +3,7 @@ import { FlowBreadcrumbs } from './FlowBreadcrumbs';
 import { isPastExamSection, visiblePracticeChapters } from "../lib/practiceOrder";
 import { useSyncedHistory } from '../hooks/useSyncedHistory';
 import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
-import React, { useId, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import { GraduationCap, Layers, ArrowRight, Clock, Award, Trash2, ArrowLeft, Calendar, ChevronDown } from 'lucide-react';
 import type { ChapterData, SubjectColor, SubjectData, Question } from '../types';
@@ -227,9 +227,6 @@ export function ChapterSelect({
     .filter(isPastExamSection)
     .filter(c => chapterQuestionCount(c) > 0);
   const pastExamsLabel = isRTL ? 'الامتحانات السابقة' : 'Past Exams';
-  const ca1HeadingId = useId();
-  const ca2HeadingId = useId();
-  const finalHeadingId = useId();
   const ca1Chapters = pastChapters.filter(chapter => chapter.examPeriod === 'ca-1');
   const ca2Chapters = pastChapters.filter(chapter => chapter.examPeriod === 'ca-2');
   const finalChapters = pastChapters.filter(chapter => !chapter.examPeriod);
@@ -422,57 +419,85 @@ export function ChapterSelect({
             {pastChapters.length > 0 && (
               <section aria-label={pastExamsLabel} className="mb-8">
                 {moduleCode === 'MUG-3' ? (
-                  <details className="group rounded-[28px] border border-border bg-card glass-panel">
-                    <summary className="flex min-h-14 cursor-pointer list-none items-center gap-3 rounded-[28px] px-5 py-3 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring [&::-webkit-details-marker]:hidden">
-                      <Calendar aria-hidden size={20} className="shrink-0 text-clinical" />
-                      <span className="min-w-0 flex-1">
-                        <span className="block text-base font-semibold text-foreground">{pastExamsLabel}</span>
-                        <span className="block text-sm text-muted-foreground">
-                          {questionCountLabel(pastChapters.reduce((total, chapter) => total + chapterQuestionCount(chapter), 0), isRTL)}
-                        </span>
-                      </span>
-                      <ChevronDown aria-hidden size={18} className="shrink-0 text-muted-foreground group-open:rotate-180" />
-                    </summary>
+                  <div className="space-y-4">
+                    {/* Block 1: Continuous Assessment 1 (CA-1) */}
                     {ca1Chapters.length > 0 && (
-                      <div role="group" aria-labelledby={ca1HeadingId} className="border-t border-border px-5 py-3">
-                        <div className="flex items-center justify-between px-2 py-1">
-                          <h4 id={ca1HeadingId} className="text-xs font-bold tracking-wider uppercase text-muted-foreground">
-                            {isRTL ? 'التقييم المستمر الأول (CA-1)' : 'Continuous Assessment 1 (CA-1)'}
-                          </h4>
-                          <span className="text-xs text-muted-foreground">
-                            {questionCountLabel(ca1Chapters.reduce((total, chapter) => total + chapterQuestionCount(chapter), 0), isRTL)}
+                      <details className="group rounded-[28px] border border-border bg-card glass-panel" open>
+                        <summary className="flex min-h-14 cursor-pointer list-none items-center gap-3 rounded-[28px] px-5 py-3 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring [&::-webkit-details-marker]:hidden">
+                          <Calendar aria-hidden size={20} className="shrink-0 text-clinical" />
+                          <span className="min-w-0 flex-1">
+                            <span className="flex items-center gap-2">
+                              <span className="text-base font-semibold text-foreground">
+                                {isRTL ? 'التقييم المستمر الأول (CA-1)' : 'Continuous Assessment 1 (CA-1)'}
+                              </span>
+                              <span className="rounded-full bg-clinical/10 px-2 py-0.5 text-[10px] font-semibold text-clinical">
+                                {isRTL ? 'اختيار من متعدد فقط' : 'MCQ Only'}
+                              </span>
+                            </span>
+                            <span className="block text-sm text-muted-foreground">
+                              {questionCountLabel(ca1Chapters.reduce((total, chapter) => total + chapterQuestionCount(chapter), 0), isRTL)}
+                            </span>
                           </span>
+                          <ChevronDown aria-hidden size={18} className="shrink-0 text-muted-foreground group-open:rotate-180 transition-transform" />
+                        </summary>
+                        <div className="border-t border-border px-5 py-3">
+                          <ul className="divide-y divide-border">{ca1Chapters.map(renderPastExamRow)}</ul>
                         </div>
-                        <ul className="divide-y divide-border">{ca1Chapters.map(renderPastExamRow)}</ul>
-                      </div>
+                      </details>
                     )}
+
+                    {/* Block 2: Continuous Assessment 2 (CA-2) */}
                     {ca2Chapters.length > 0 && (
-                      <div role="group" aria-labelledby={ca2HeadingId} className="border-t border-border px-5 py-3">
-                        <div className="flex items-center justify-between px-2 py-1">
-                          <h4 id={ca2HeadingId} className="text-xs font-bold tracking-wider uppercase text-muted-foreground">
-                            {isRTL ? 'التقييم المستمر الثاني (CA-2)' : 'Continuous Assessment 2 (CA-2)'}
-                          </h4>
-                          <span className="text-xs text-muted-foreground">
-                            {questionCountLabel(ca2Chapters.reduce((total, chapter) => total + chapterQuestionCount(chapter), 0), isRTL)}
+                      <details className="group rounded-[28px] border border-border bg-card glass-panel">
+                        <summary className="flex min-h-14 cursor-pointer list-none items-center gap-3 rounded-[28px] px-5 py-3 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring [&::-webkit-details-marker]:hidden">
+                          <Calendar aria-hidden size={20} className="shrink-0 text-clinical" />
+                          <span className="min-w-0 flex-1">
+                            <span className="flex items-center gap-2">
+                              <span className="text-base font-semibold text-foreground">
+                                {isRTL ? 'التقييم المستمر الثاني (CA-2)' : 'Continuous Assessment 2 (CA-2)'}
+                              </span>
+                              <span className="rounded-full bg-clinical/10 px-2 py-0.5 text-[10px] font-semibold text-clinical">
+                                {isRTL ? 'اختيار من متعدد فقط' : 'MCQ Only'}
+                              </span>
+                            </span>
+                            <span className="block text-sm text-muted-foreground">
+                              {questionCountLabel(ca2Chapters.reduce((total, chapter) => total + chapterQuestionCount(chapter), 0), isRTL)}
+                            </span>
                           </span>
+                          <ChevronDown aria-hidden size={18} className="shrink-0 text-muted-foreground group-open:rotate-180 transition-transform" />
+                        </summary>
+                        <div className="border-t border-border px-5 py-3">
+                          <ul className="divide-y divide-border">{ca2Chapters.map(renderPastExamRow)}</ul>
                         </div>
-                        <ul className="divide-y divide-border">{ca2Chapters.map(renderPastExamRow)}</ul>
-                      </div>
+                      </details>
                     )}
+
+                    {/* Block 3: Past Final Papers & Essays */}
                     {finalChapters.length > 0 && (
-                      <div role="group" aria-labelledby={finalHeadingId} className="border-t border-border px-5 py-3">
-                        <div className="flex items-center justify-between px-2 py-1">
-                          <h4 id={finalHeadingId} className="text-xs font-bold tracking-wider uppercase text-muted-foreground">
-                            {isRTL ? 'امتحانات الفاينل والأسئلة المقالية' : 'Past Final Papers & Essays'}
-                          </h4>
-                          <span className="text-xs text-muted-foreground">
-                            {questionCountLabel(finalChapters.reduce((total, chapter) => total + chapterQuestionCount(chapter), 0), isRTL)}
+                      <details className="group rounded-[28px] border border-border bg-card glass-panel">
+                        <summary className="flex min-h-14 cursor-pointer list-none items-center gap-3 rounded-[28px] px-5 py-3 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring [&::-webkit-details-marker]:hidden">
+                          <GraduationCap aria-hidden size={20} className="shrink-0 text-biochem" />
+                          <span className="min-w-0 flex-1">
+                            <span className="flex items-center gap-2">
+                              <span className="text-base font-semibold text-foreground">
+                                {isRTL ? 'امتحانات الفاينل والأسئلة المقالية' : 'Past Final Papers & Essays'}
+                              </span>
+                              <span className="rounded-full bg-biochem/10 px-2 py-0.5 text-[10px] font-semibold text-biochem">
+                                {isRTL ? 'شامل + مقالي' : 'Finals & Essays'}
+                              </span>
+                            </span>
+                            <span className="block text-sm text-muted-foreground">
+                              {questionCountLabel(finalChapters.reduce((total, chapter) => total + chapterQuestionCount(chapter), 0), isRTL)}
+                            </span>
                           </span>
+                          <ChevronDown aria-hidden size={18} className="shrink-0 text-muted-foreground group-open:rotate-180 transition-transform" />
+                        </summary>
+                        <div className="border-t border-border px-5 py-3">
+                          <ul className="divide-y divide-border">{finalChapters.map(renderPastExamRow)}</ul>
                         </div>
-                        <ul className="divide-y divide-border">{finalChapters.map(renderPastExamRow)}</ul>
-                      </div>
+                      </details>
                     )}
-                  </details>
+                  </div>
                 ) : (
                   <>
                     <h3 className="mb-4 text-sm font-bold tracking-wider uppercase text-muted-foreground border-s-4 border-clinical ps-3">{pastExamsLabel}</h3>

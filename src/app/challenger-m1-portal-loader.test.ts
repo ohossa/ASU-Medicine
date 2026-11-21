@@ -21,7 +21,7 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     expect(manifestEntry.mcqCount).toBe(1069);
     expect(manifestEntry.essayCount).toBe(1228);
     expect(manifestEntry.paths).toEqual(['../imports/year-3/semester-1/MUG-3.json']);
-    expect(manifestEntry.revision).toBe('10edf6beaa33690e238c81ed6136c8b9c2811e0b7175a8ba1218f12082591ff0');
+    expect(manifestEntry.revision).toBe('c21ce19224ee5b7b86eb33cc786a682fd27e33552c1987a51bef7a4f4721faa1');
     expect(manifestEntry.bytes).toBe(3034870);
   });
 
@@ -74,7 +74,7 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     expect(ch301!.bankSection).toBe('past-exams');
 
     const c301Count = ch301!.subjects.reduce((s, sub) => s + sub.questions.length, 0);
-    expect(c301Count).toBe(494);
+    expect(c301Count).toBe(495);
 
     // Verify Practice chapters with verified content
     const ch1 = chapters.find((c) => c.id === 1);
@@ -151,7 +151,7 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
 
     const ch301Versions = await getLearningQuestionVersions('MUG-3', 301);
     expect(ch301Versions).toBeInstanceOf(Map);
-    expect(ch301Versions.size).toBe(494);
+    expect(ch301Versions.size).toBe(495);
     expect(ch301Versions.has('MUG3-CH301-ANAT-0014')).toBe(true);
   });
 });

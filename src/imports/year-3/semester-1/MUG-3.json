@@ -26340,25 +26340,6 @@
               "correctIndex": 3
             },
             {
-              "id": "MUG3-CH101-ANAT-0027",
-              "type": "mcq",
-              "lecture": 5,
-              "sources": [
-                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf#S118-p002-anatomy-q22"
-              ],
-              "repetitionCount": 1,
-              "text": "Both kidneys are low in position, and a band of renal tissue joins their lower poles. Which developmental anomaly explains this finding?",
-              "explanation": "Fusion of the lower renal poles produces a horseshoe kidney. Its ascent can be limited by the root of the inferior mesenteric artery.",
-              "options": [
-                "Unilateral renal agenesis",
-                "Congenital cystic kidney",
-                "Persistent fetal lobulation",
-                "Unilateral pelvic kidney",
-                "Horseshoe kidney"
-              ],
-              "correctIndex": 4
-            },
-            {
               "id": "MUG3-CH101-ANAT-0028",
               "type": "mcq",
               "lecture": 5,
@@ -26396,25 +26377,6 @@
                 "Stomach"
               ],
               "correctIndex": 4
-            },
-            {
-              "id": "MUG3-CH101-ANAT-0030",
-              "type": "mcq",
-              "lecture": 3,
-              "sources": [
-                "Past Exams/FIRST ASSESSMENT UG 2024.pdf#S091-p001-q10"
-              ],
-              "repetitionCount": 1,
-              "text": "Which ligament runs from the apex of the adult urinary bladder to the umbilicus?",
-              "explanation": "The median umbilical ligament is the remnant of the urachus. It connects the bladder apex to the umbilicus. The medial umbilical ligament is associated with an obliterated umbilical artery.",
-              "options": [
-                "Lateral puboprostatic ligament",
-                "Median umbilical ligament",
-                "Medial umbilical ligament",
-                "Medial puboprostatic ligament",
-                "Pubovesical ligament"
-              ],
-              "correctIndex": 1
             },
             {
               "id": "MUG3-CH101-ANAT-0032",
@@ -26493,42 +26455,6 @@
               "correctIndex": 2
             },
             {
-              "id": "MUG3-CH103-PHYS-0134",
-              "type": "mcq",
-              "lecture": 9,
-              "sources": [
-                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf#S118-p005-biochem-q11"
-              ],
-              "repetitionCount": 1,
-              "text": "Which substance released by the kidney in response to hypoxia stimulates red blood cell production in the bone marrow?",
-              "explanation": "Hypoxia stimulates renal erythropoietin release, which increases red blood cell production in the bone marrow. The other listed renal products regulate different processes.",
-              "options": [
-                "Renin",
-                "Calcitriol",
-                "Prostaglandin E2",
-                "Erythropoietin",
-                "Prostacyclin"
-              ],
-              "correctIndex": 3
-            },
-            {
-              "id": "MUG3-CH103-PHYS-0110",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "ASS 1 resit - 2019.pdf-Q11",
-                "Past Exams/ASS 1 resit - 2019.pdf-Q11"
-              ],
-              "repetitionCount": 2,
-              "text": "Which of the following is founded in chronic Kidney failure?",
-              "explanation": "**Correct Answer: Metabolic acidosis**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Metabolic acidosis** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Function of kidney & functional unit', pp. 53–57.",
-              "options": [
-                "Metabolic acidosis",
-                "Anatomy"
-              ],
-              "correctIndex": 0
-            },
-            {
               "id": "MUG3-CH103-PHYS-0111",
               "type": "mcq",
               "lecture": 1,
@@ -26542,40 +26468,6 @@
               "options": [
                 "Obturator vessels",
                 "Pharma"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH103-PHYS-0119",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "💥Urogenital Assessment 1 MCQ.pdf-Q22",
-                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q22"
-              ],
-              "repetitionCount": 2,
-              "text": "Both kidneys pushed so close together during their passage through the",
-              "explanation": "**Correct Answer: Arterial fork?**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Arterial fork?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Function of kidney & functional unit', pp. 53–57.",
-              "options": [
-                "Arterial fork?",
-                "Horseshoe kidney"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH103-PHYS-0124",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "💥Urogenital Assessment 1 MCQ.pdf-Q11",
-                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q46"
-              ],
-              "repetitionCount": 2,
-              "text": "The endocrine function of the kidney is due to its ability to produce which",
-              "explanation": "**Correct Answer: Of the following hormones?**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Of the following hormones?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Function of kidney & functional unit', pp. 53–57.",
-              "options": [
-                "Of the following hormones?",
-                "Erythropoietin"
               ],
               "correctIndex": 0
             },
@@ -26614,80 +26506,6 @@
               "options": [
                 "Early Splitting of ureteric bud",
                 "PATHO"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH203-PHYS-0025",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "FIRST ASSESSMENT UG 2024.pdf-Q1",
-                "Past Exams/FIRST ASSESSMENT UG 2024.pdf-Q1"
-              ],
-              "repetitionCount": 2,
-              "text": "At rest, what approximate fraction of an adult's cardiac output reaches both kidneys?",
-              "explanation": "Both kidneys receive approximately one fifth to one quarter of resting cardiac output. Renal plasma flow is lower than whole-blood renal flow because it excludes the cellular fraction.",
-              "options": [
-                "5–10%",
-                "20–25%",
-                "35–40%",
-                "50–55%"
-              ],
-              "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH203-PHYS-0110",
-              "type": "mcq",
-              "lecture": 2,
-              "sources": [
-                "FIRST ASSESSMENT UG 2024.pdf-Q17",
-                "Past Exams/FIRST ASSESSMENT UG 2024.pdf-Q17"
-              ],
-              "repetitionCount": 2,
-              "text": "A patient develops acute kidney injury after starting a penicillin antibiotic. Biopsy shows interstitial edema with an eosinophil-rich infiltrate and tubulitis. Which diagnosis best fits?",
-              "explanation": "Drug-induced acute tubulointerstitial nephritis can present with interstitial edema, inflammatory cells including eosinophils, and tubulitis. The lesion is centered in the interstitium and tubules.",
-              "options": [
-                "Acute tubular necrosis",
-                "Acute bacterial pyelonephritis",
-                "Acute tubulointerstitial nephritis",
-                "Acute poststreptococcal glomerulonephritis"
-              ],
-              "correctIndex": 2
-            },
-            {
-              "id": "MUG3-CH203-PHYS-0135",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "💥Urogenital Assessment 2 MCQ-1.pdf-Q4"
-              ],
-              "repetitionCount": 1,
-              "text": "Which of the following represents a primary preventive measure against the progression of chronic kidney disease (CKD)?",
-              "explanation": "**Correct Answer: All of the above**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **All of the above** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Function of kidney & functional unit', pp. 53–57.",
-              "options": [
-                "Strict blood pressure control (< 130/80 mmHg) and glycemic control in diabetics",
-                "Regular screening for microalbuminuria in high-risk individuals",
-                "Avoidance of nephrotoxic medications such as NSAIDs and aminoglycosides",
-                "All of the above"
-              ],
-              "correctIndex": 3
-            },
-            {
-              "id": "MUG3-CH205-PATH-0144",
-              "type": "mcq",
-              "lecture": 4,
-              "sources": [
-                "Past Exams/UG ass 2 and paper 2.pdf-Q31"
-              ],
-              "repetitionCount": 1,
-              "text": "An adult has bilaterally enlarged kidneys with numerous cysts and affected relatives in successive generations. Which protein is encoded by the gene most often affected in this condition?",
-              "explanation": "Autosomal dominant polycystic kidney disease most often results from pathogenic variants in PKD1, which encodes polycystin-1. Pathogenic PKD2 variants cause another form.",
-              "options": [
-                "Polycystin-1",
-                "Fibrocystin",
-                "Type IV collagen alpha-5",
-                "Uromodulin"
               ],
               "correctIndex": 0
             }
@@ -26848,24 +26666,6 @@
               "correctIndex": 0
             },
             {
-              "id": "MUG3-CH103-PHYS-0127",
-              "type": "mcq",
-              "lecture": 2,
-              "sources": [
-                "💥Urogenital Assessment 1 MCQ.pdf-Q14"
-              ],
-              "repetitionCount": 1,
-              "text": "Under transmission electron microscopy, which characteristic ultrastructural feature distinguishes intraglomerular mesangial cells?",
-              "explanation": "**Correct Answer: Abundant contractile microfilaments (actin-myosin) and phagocytic lysosomes**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Tubular Reabsorption & Secretion Mechanisms', **Abundant contractile microfilaments (actin-myosin) and phagocytic lysosomes** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Renal blood flow and Glomerular filtration', pp. 58–73.",
-              "options": [
-                "Abundant contractile microfilaments (actin-myosin) and phagocytic lysosomes",
-                "Apical microvilli forming a dense brush border",
-                "Continuous non-fenestrated thin cytoplasmic plates",
-                "Large lipid vacuoles displacing the nucleus"
-              ],
-              "correctIndex": 0
-            },
-            {
               "id": "MUG3-CH105-PATH-0020",
               "type": "mcq",
               "lecture": 4,
@@ -26907,6 +26707,63 @@
               "correctIndex": 2
             },
             {
+              "id": "MUG3-CH203-PHYS-0111",
+              "type": "mcq",
+              "lecture": 5,
+              "sources": [
+                "FIRST ASSESSMENT UG 2024.pdf-Q21",
+                "Past Exams/FIRST ASSESSMENT UG 2024.pdf-Q21"
+              ],
+              "repetitionCount": 2,
+              "text": "Which change helps superficial urothelial cells expand their apical surface as the bladder fills?",
+              "explanation": "Fusiform vesicles in umbrella cells can fuse with the luminal membrane as the bladder distends. Tight junctions remain part of the urine barrier.",
+              "options": [
+                "Deposition of a thicker basal lamina",
+                "Fusion of apical fusiform vesicles",
+                "Loss of intercellular tight junctions",
+                "Migration of intermediate cells into the lumen"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH103-PHYS-0067",
+              "type": "mcq",
+              "lecture": 4,
+              "sources": [
+                "💥Urogenital Assessment 1 MCQ.pdf-Q6",
+                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q55"
+              ],
+              "repetitionCount": 2,
+              "text": "Juxtaglomerular granular cells are a modified form of which cell type?",
+              "explanation": "Juxtaglomerular granular cells are modified smooth muscle cells in the arteriolar wall, mainly in the afferent arteriole. They synthesize and release renin.",
+              "options": [
+                "Vascular endothelial cells",
+                "Distal tubular epithelial cells",
+                "Visceral epithelial cells",
+                "Vascular smooth muscle cells"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "MUG3-CH205-PATH-0058",
+              "type": "mcq",
+              "lecture": 6,
+              "sources": [
+                "💥Urogenital Assessment 2 MCQ-1.pdf-Q14",
+                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q70"
+              ],
+              "repetitionCount": 2,
+              "text": "A bladder tumor contains invasive nests with intercellular bridges and keratin pearls. Extensive sampling shows no urothelial carcinoma component. Which diagnosis best fits?",
+              "explanation": "Keratin pearls and intercellular bridges support squamous differentiation. Invasion and absence of a urothelial component in the sampled tumor support primary squamous cell carcinoma rather than urothelial carcinoma with focal squamous differentiation.",
+              "options": [
+                "Keratinizing squamous cell carcinoma",
+                "Invasive conventional urothelial carcinoma",
+                "Primary bladder adenocarcinoma",
+                "Small-cell neuroendocrine carcinoma"
+              ],
+              "correctIndex": 0
+            },
+            {
               "id": "MUG3-CH203-PHYS-0104",
               "type": "mcq",
               "lecture": 1,
@@ -26925,25 +26782,6 @@
                 "Type VII collagen"
               ],
               "correctIndex": 2
-            },
-            {
-              "id": "MUG3-CH203-PHYS-0111",
-              "type": "mcq",
-              "lecture": 5,
-              "sources": [
-                "FIRST ASSESSMENT UG 2024.pdf-Q21",
-                "Past Exams/FIRST ASSESSMENT UG 2024.pdf-Q21"
-              ],
-              "repetitionCount": 2,
-              "text": "Which change helps superficial urothelial cells expand their apical surface as the bladder fills?",
-              "explanation": "Fusiform vesicles in umbrella cells can fuse with the luminal membrane as the bladder distends. Tight junctions remain part of the urine barrier.",
-              "options": [
-                "Deposition of a thicker basal lamina",
-                "Fusion of apical fusiform vesicles",
-                "Loss of intercellular tight junctions",
-                "Migration of intermediate cells into the lumen"
-              ],
-              "correctIndex": 1
             }
           ]
         }
@@ -26993,6 +26831,169 @@
           ],
           "questions": [
             {
+              "id": "MUG3-CH101-ANAT-0027",
+              "type": "mcq",
+              "lecture": 5,
+              "sources": [
+                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf#S118-p002-anatomy-q22"
+              ],
+              "repetitionCount": 1,
+              "text": "Both kidneys are low in position, and a band of renal tissue joins their lower poles. Which developmental anomaly explains this finding?",
+              "explanation": "Fusion of the lower renal poles produces a horseshoe kidney. Its ascent can be limited by the root of the inferior mesenteric artery.",
+              "options": [
+                "Unilateral renal agenesis",
+                "Congenital cystic kidney",
+                "Persistent fetal lobulation",
+                "Unilateral pelvic kidney",
+                "Horseshoe kidney"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "MUG3-CH101-ANAT-0030",
+              "type": "mcq",
+              "lecture": 3,
+              "sources": [
+                "Past Exams/FIRST ASSESSMENT UG 2024.pdf#S091-p001-q10"
+              ],
+              "repetitionCount": 1,
+              "text": "Which ligament runs from the apex of the adult urinary bladder to the umbilicus?",
+              "explanation": "The median umbilical ligament is the remnant of the urachus. It connects the bladder apex to the umbilicus. The medial umbilical ligament is associated with an obliterated umbilical artery.",
+              "options": [
+                "Lateral puboprostatic ligament",
+                "Median umbilical ligament",
+                "Medial umbilical ligament",
+                "Medial puboprostatic ligament",
+                "Pubovesical ligament"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH103-PHYS-0134",
+              "type": "mcq",
+              "lecture": 9,
+              "sources": [
+                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf#S118-p005-biochem-q11"
+              ],
+              "repetitionCount": 1,
+              "text": "Which substance released by the kidney in response to hypoxia stimulates red blood cell production in the bone marrow?",
+              "explanation": "Hypoxia stimulates renal erythropoietin release, which increases red blood cell production in the bone marrow. The other listed renal products regulate different processes.",
+              "options": [
+                "Renin",
+                "Calcitriol",
+                "Prostaglandin E2",
+                "Erythropoietin",
+                "Prostacyclin"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "MUG3-CH103-PHYS-0110",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "ASS 1 resit - 2019.pdf-Q11",
+                "Past Exams/ASS 1 resit - 2019.pdf-Q11"
+              ],
+              "repetitionCount": 2,
+              "text": "Which of the following is founded in chronic Kidney failure?",
+              "explanation": "**Correct Answer: Metabolic acidosis**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Metabolic acidosis** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Function of kidney & functional unit', pp. 53–57.",
+              "options": [
+                "Metabolic acidosis",
+                "Anatomy"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH103-PHYS-0119",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥Urogenital Assessment 1 MCQ.pdf-Q22",
+                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q22"
+              ],
+              "repetitionCount": 2,
+              "text": "Both kidneys pushed so close together during their passage through the",
+              "explanation": "**Correct Answer: Arterial fork?**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Arterial fork?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Function of kidney & functional unit', pp. 53–57.",
+              "options": [
+                "Arterial fork?",
+                "Horseshoe kidney"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH103-PHYS-0124",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥Urogenital Assessment 1 MCQ.pdf-Q11",
+                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q46"
+              ],
+              "repetitionCount": 2,
+              "text": "The endocrine function of the kidney is due to its ability to produce which",
+              "explanation": "**Correct Answer: Of the following hormones?**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Of the following hormones?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Function of kidney & functional unit', pp. 53–57.",
+              "options": [
+                "Of the following hormones?",
+                "Erythropoietin"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH203-PHYS-0025",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "FIRST ASSESSMENT UG 2024.pdf-Q1",
+                "Past Exams/FIRST ASSESSMENT UG 2024.pdf-Q1"
+              ],
+              "repetitionCount": 2,
+              "text": "At rest, what approximate fraction of an adult's cardiac output reaches both kidneys?",
+              "explanation": "Both kidneys receive approximately one fifth to one quarter of resting cardiac output. Renal plasma flow is lower than whole-blood renal flow because it excludes the cellular fraction.",
+              "options": [
+                "5–10%",
+                "20–25%",
+                "35–40%",
+                "50–55%"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH203-PHYS-0135",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥Urogenital Assessment 2 MCQ-1.pdf-Q4"
+              ],
+              "repetitionCount": 1,
+              "text": "Which of the following represents a primary preventive measure against the progression of chronic kidney disease (CKD)?",
+              "explanation": "**Correct Answer: All of the above**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **All of the above** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Function of kidney & functional unit', pp. 53–57.",
+              "options": [
+                "Strict blood pressure control (< 130/80 mmHg) and glycemic control in diabetics",
+                "Regular screening for microalbuminuria in high-risk individuals",
+                "Avoidance of nephrotoxic medications such as NSAIDs and aminoglycosides",
+                "All of the above"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "MUG3-CH103-PHYS-0127",
+              "type": "mcq",
+              "lecture": 2,
+              "sources": [
+                "💥Urogenital Assessment 1 MCQ.pdf-Q14"
+              ],
+              "repetitionCount": 1,
+              "text": "Under transmission electron microscopy, which characteristic ultrastructural feature distinguishes intraglomerular mesangial cells?",
+              "explanation": "**Correct Answer: Abundant contractile microfilaments (actin-myosin) and phagocytic lysosomes**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Tubular Reabsorption & Secretion Mechanisms', **Abundant contractile microfilaments (actin-myosin) and phagocytic lysosomes** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Renal blood flow and Glomerular filtration', pp. 58–73.",
+              "options": [
+                "Abundant contractile microfilaments (actin-myosin) and phagocytic lysosomes",
+                "Apical microvilli forming a dense brush border",
+                "Continuous non-fenestrated thin cytoplasmic plates",
+                "Large lipid vacuoles displacing the nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
               "id": "MUG3-CH102-HIST-0010",
               "type": "mcq",
               "lecture": 2,
@@ -27027,25 +27028,6 @@
                 "Renal extraction ratio of PAH",
                 "Urinary PAH concentration alone",
                 "Transport maximum for PAH"
-              ],
-              "correctIndex": 3
-            },
-            {
-              "id": "MUG3-CH103-PHYS-0067",
-              "type": "mcq",
-              "lecture": 4,
-              "sources": [
-                "💥Urogenital Assessment 1 MCQ.pdf-Q6",
-                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q55"
-              ],
-              "repetitionCount": 2,
-              "text": "Juxtaglomerular granular cells are a modified form of which cell type?",
-              "explanation": "Juxtaglomerular granular cells are modified smooth muscle cells in the arteriolar wall, mainly in the afferent arteriole. They synthesize and release renin.",
-              "options": [
-                "Vascular endothelial cells",
-                "Distal tubular epithelial cells",
-                "Visceral epithelial cells",
-                "Vascular smooth muscle cells"
               ],
               "correctIndex": 3
             },
@@ -27519,25 +27501,6 @@
               "correctIndex": 2
             },
             {
-              "id": "MUG3-CH203-PHYS-0041",
-              "type": "mcq",
-              "lecture": 4,
-              "sources": [
-                "UG ass 2 and paper 2.pdf-Q11",
-                "Past Exams/UG ass 2 and paper 2.pdf-Q34"
-              ],
-              "repetitionCount": 2,
-              "text": "After the initial stimulatory phase, how does continuous leuprolide lower gonadal steroid production?",
-              "explanation": "Continuous GnRH agonist exposure desensitizes pituitary gonadotropes. LH and FSH fall after the initial rise, reducing gonadal steroid production.",
-              "options": [
-                "It blocks androgen receptors in target tissues",
-                "It inhibits conversion of testosterone to DHT",
-                "It reduces pituitary LH and FSH release",
-                "It inhibits adrenal glucocorticoid synthesis"
-              ],
-              "correctIndex": 2
-            },
-            {
               "id": "MUG3-CH203-PHYS-0107",
               "type": "mcq",
               "lecture": 2,
@@ -27666,41 +27629,6 @@
               "correctIndex": 0
             },
             {
-              "id": "MUG3-CH203-PHYS-0129",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "ug paper 2 - 2020.pdf-Q6",
-                "Past Exams/ug paper 2 - 2020.pdf-Q6"
-              ],
-              "repetitionCount": 2,
-              "text": "Vesicles ulcers , skin smear?",
-              "explanation": "**Correct Answer: Inclusion bodies geimsa stain**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Inclusion bodies geimsa stain** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
-              "options": [
-                "Inclusion bodies geimsa stain",
-                "Multinucleated giant cells"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH203-PHYS-0130",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "💥Practical UG Exam 2024.pdf-Q2"
-              ],
-              "repetitionCount": 1,
-              "text": "Which protozoan parasite of the urogenital tract is characterized microscopically by jerky motility and an undulating membrane?",
-              "explanation": "**Correct Answer: Trichomonas vaginalis**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Trichomonas vaginalis** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
-              "options": [
-                "Trichomonas vaginalis",
-                "Giardia lamblia",
-                "Entamoeba histolytica",
-                "Toxoplasma gondii"
-              ],
-              "correctIndex": 0
-            },
-            {
               "id": "MUG3-CH203-PHYS-0134",
               "type": "mcq",
               "lecture": 10,
@@ -27717,26 +27645,6 @@
                 "Androgen insensitivity syndrome"
               ],
               "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH203-PHYS-0140",
-              "type": "mcq",
-              "lecture": 10,
-              "sources": [
-                "💥Urogenital Assessment 2 MCQ-1.pdf-Q19",
-                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q75"
-              ],
-              "repetitionCount": 2,
-              "text": "A 59-year-old male has experienced lower back pain for several months.",
-              "explanation": "**Correct Answer: Composed of nests of cells with clear cytoplasm. Which of the following**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Male Reproductive Endocrinology & Spermatogenesis', **Composed of nests of cells with clear cytoplasm. Which of the following** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Male Reproductive Endocrinology & Spermatogenesis'.",
-              "options": [
-                "urine analysis is performed as part of a workup for the cause of the pain. He",
-                "Is found to have microscopic hematuria. An abdominal CT scan reveals a 6",
-                "Cm. solid mass in the upper pole of the right kidney. A right nephrectomy is",
-                "Performed, and the grossly variegated mass is seen microscopically to be",
-                "Composed of nests of cells with clear cytoplasm. Which of the following"
-              ],
-              "correctIndex": 4
             },
             {
               "id": "MUG3-CH205-PATH-0046",
@@ -27759,72 +27667,6 @@
               "correctIndex": 2
             },
             {
-              "id": "MUG3-CH205-PATH-0288",
-              "type": "mcq",
-              "lecture": 4,
-              "sources": [
-                "Past Exams/practical 2018-2020.pdf-Q175",
-                "Past Exams/💥Practical UG Exam 2024.pdf-Q4",
-                "Past Exams/ASS UG 2- 2019.pdf-Q1",
-                "ASS UG 2- 2019.pdf-Q0",
-                "UG ass 2 and paper 2.pdf-Q0",
-                "💥Practical UG Exam 2024.pdf-Q6",
-                "Past Exams/UG ass 2 and paper 2.pdf-Q1",
-                "Past Exams/💥Practical UG Exam 2024.pdf-Q114"
-              ],
-              "repetitionCount": 8,
-              "text": "Which anatomical segment of the male urethra is the widest?",
-              "explanation": "The prostatic urethra is the widest and most dilatable segment. It traverses the prostate before continuing into the membranous urethra.",
-              "options": [
-                "Preprostatic urethra",
-                "Membranous urethra",
-                "Prostatic urethra",
-                "Spongy urethra"
-              ],
-              "correctIndex": 2
-            },
-            {
-              "id": "MUG3-CH205-PATH-0422",
-              "type": "mcq",
-              "lecture": 14,
-              "sources": [
-                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q21",
-                "💥UG Final 2 MCQ Collection.pdf-Q21",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q21"
-              ],
-              "repetitionCount": 3,
-              "text": "What is the main developmental effect of fetal anti-Müllerian hormone in a typical male reproductive tract?",
-              "explanation": "Fetal Sertoli cells produce anti-Müllerian hormone, which causes paramesonephric duct regression. Testosterone promotes mesonephric duct differentiation. DHT is important for masculinization of the external genitalia.",
-              "options": [
-                "Regression of the paramesonephric ducts",
-                "Development of the mesonephric ducts",
-                "Fusion of the urethral folds",
-                "Differentiation of the genital tubercle"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH205-PATH-0051",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "FIRST ASSESSMENT UG 2024.pdf-Q13",
-                "💥Urogenital Assessment 1 MCQ.pdf-Q6",
-                "Past Exams/FIRST ASSESSMENT UG 2024.pdf-Q13",
-                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q117"
-              ],
-              "repetitionCount": 4,
-              "text": "Oliguria, hematuria, hypertension, and periorbital edema are characteristic clinical features for which of the following types of glomerulonephritis?",
-              "explanation": "**Correct Answer: Poststreptococcal GN**\n\n**Pathophysiological & Morphological Rationale:**\nAcute nephritic syndrome (hematuria, red cell casts, oliguria, hypertension, periorbital edema) is the hallmark presentation of acute post-streptococcal glomerulonephritis.\n\n**Curriculum Reference & Citation:**\nRobbins Basic Pathology 10th Ed, Ch 20, p. 542.",
-              "options": [
-                "Minimal change disease",
-                "Poststreptococcal GN",
-                "Membranous nephropathy",
-                "Rapidly progressive GN"
-              ],
-              "correctIndex": 1
-            },
-            {
               "id": "MUG3-CH205-PATH-0053",
               "type": "mcq",
               "lecture": 6,
@@ -27843,26 +27685,6 @@
                 "Urethral stricture"
               ],
               "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH205-PATH-0054",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "UG ass 2 and paper 2.pdf-Q3",
-                "Past Exams/UG ass 2 and paper 2.pdf-Q53"
-              ],
-              "repetitionCount": 2,
-              "text": "Select the drug which affords faster and greater",
-              "explanation": "**Correct Answer: Tadalafil (not sure)**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Tadalafil (not sure)** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
-              "options": [
-                "Symptomatic relief in BPH of the prostate.",
-                "Sildenafil",
-                "Tadalafil (not sure)",
-                "Finasteride",
-                "Alprostadil"
-              ],
-              "correctIndex": 2
             },
             {
               "id": "MUG3-CH205-PATH-0055",
@@ -27885,21 +27707,140 @@
               "correctIndex": 3
             },
             {
-              "id": "MUG3-CH205-PATH-0201",
+              "id": "MUG3-CH205-PATH-0047",
+              "type": "mcq",
+              "lecture": 14,
+              "sources": [
+                "ASS UG 2- 2019.pdf-Q21",
+                "UG ass 2 and paper 2.pdf-Q21",
+                "Past Exams/ASS UG 2- 2019.pdf-Q19",
+                "Past Exams/UG ass 2 and paper 2.pdf-Q19"
+              ],
+              "repetitionCount": 4,
+              "text": "Invasive squamous cell carcinoma well deffrintiated",
+              "explanation": "**Correct Answer: Mass in the bladder keratinized mass ,Multilayered,invading the stroma below it, and sheets and**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Diseases of the Breast', **Mass in the bladder keratinized mass ,Multilayered,invading the stroma below it, and sheets and** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Diseases of the Breast'.",
+              "options": [
+                "Mass in the bladder keratinized mass ,Multilayered,invading the stroma below it, and sheets and",
+                "Nests of malignant cells was found many of these cells show keratin pearls ?"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH205-PATH-0050",
+              "type": "mcq",
+              "lecture": 14,
+              "sources": [
+                "ASS UG 2- 2019.pdf-Q24",
+                "UG ass 2 and paper 2.pdf-Q24",
+                "Pathology/Tutorial urinary bladder.pdf-Q14",
+                "Past Exams/ASS UG 2- 2019.pdf-Q22",
+                "Past Exams/UG ass 2 and paper 2.pdf-Q22"
+              ],
+              "repetitionCount": 5,
+              "text": "Squamous cell carcinoma",
+              "explanation": "**Correct Answer: Schistosomiasis causes squamous metaplasia then convert into squamous cell carcinoma**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Diseases of the Breast', **Schistosomiasis causes squamous metaplasia then convert into squamous cell carcinoma** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Diseases of the Breast'.",
+              "options": [
+                "Mass in the bladder but",
+                "It's most likely to be what??",
+                "Schistosomiasis causes squamous metaplasia then convert into squamous cell carcinoma"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "MUG3-CH205-PATH-0059",
+              "type": "mcq",
+              "lecture": 11,
+              "sources": [
+                "💥Urogenital Assessment 2 MCQ-1.pdf-Q15",
+                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q71"
+              ],
+              "repetitionCount": 2,
+              "text": "An Egyptian man with schistosomiasis, mass in bladder, microscopic",
+              "explanation": "**Correct Answer: Finding revealed changes in epithelium and cells showed keratinisation. What**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Endometrial Hyperplasia & Carcinoma, Adenomyosis', **Finding revealed changes in epithelium and cells showed keratinisation. What** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Diseases of ureter & urinary bladder', pp. 252–257.",
+              "options": [
+                "Finding revealed changes in epithelium and cells showed keratinisation. What",
+                "Is the most likely diagnosis?",
+                "Squamous cell carcinoma"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH205-PATH-0143",
+              "type": "mcq",
+              "lecture": 2,
+              "sources": [
+                "Past Exams/UG ass 2 and paper 2.pdf-Q26"
+              ],
+              "repetitionCount": 1,
+              "text": "A urethral smear from a man with purulent urethral discharge shows Gram-negative diplococci within neutrophils. Which organism is most likely?",
+              "explanation": "Intracellular Gram-negative diplococci in a urethral smear from a symptomatic man are characteristic of gonococcal urethritis. Other causes of urethritis do not have this Gram-stain appearance.",
+              "options": [
+                "Chlamydia trachomatis",
+                "Neisseria gonorrhoeae",
+                "Mycoplasma genitalium",
+                "Trichomonas vaginalis"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH205-PATH-0172",
+              "type": "mcq",
+              "lecture": 3,
+              "sources": [
+                "Past Exams/UG ass 2 and paper 2.pdf-Q71",
+                "final paper 2 - 2019.pdf-Q2",
+                "Past Exams/final paper 2 - 2019.pdf-Q3"
+              ],
+              "repetitionCount": 3,
+              "text": "A newborn develops mucopurulent conjunctivitis in the second week after birth. Conjunctival epithelial cells show intracytoplasmic inclusions. Which organism best fits?",
+              "explanation": "Perinatal chlamydial infection can cause conjunctivitis after the first few days of life. Intracytoplasmic inclusions support chlamydial rather than gonococcal or herpetic infection.",
+              "options": [
+                "Neisseria gonorrhoeae",
+                "Staphylococcus aureus",
+                "Chlamydia trachomatis",
+                "Herpes simplex virus 2"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "MUG3-CH203-PHYS-0140",
+              "type": "mcq",
+              "lecture": 10,
+              "sources": [
+                "💥Urogenital Assessment 2 MCQ-1.pdf-Q19",
+                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q75"
+              ],
+              "repetitionCount": 2,
+              "text": "A 59-year-old male has experienced lower back pain for several months.",
+              "explanation": "**Correct Answer: Composed of nests of cells with clear cytoplasm. Which of the following**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Male Reproductive Endocrinology & Spermatogenesis', **Composed of nests of cells with clear cytoplasm. Which of the following** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Male Reproductive Endocrinology & Spermatogenesis'.",
+              "options": [
+                "urine analysis is performed as part of a workup for the cause of the pain. He",
+                "Is found to have microscopic hematuria. An abdominal CT scan reveals a 6",
+                "Cm. solid mass in the upper pole of the right kidney. A right nephrectomy is",
+                "Performed, and the grossly variegated mass is seen microscopically to be",
+                "Composed of nests of cells with clear cytoplasm. Which of the following"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "MUG3-CH205-PATH-0054",
               "type": "mcq",
               "lecture": 1,
               "sources": [
-                "Past Exams/UG paper 2 essay answers 2020.pdf-Q8"
+                "UG ass 2 and paper 2.pdf-Q3",
+                "Past Exams/UG ass 2 and paper 2.pdf-Q53"
               ],
-              "repetitionCount": 1,
-              "text": "Cotain clothng enzyues 8 ibrin ysin",
-              "explanation": "**Correct Answer: thin bsiky laid that, slgktly alkaline to neatrali ze aidty o the aS & vaind secrehun ’1 mhly of sperms ao Predct the tumaur resfase X fo eredict the prognosis**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **thin bsiky laid that, slgktly alkaline to neatrali ze aidty o the aS & vaind secrehun ’1 mhly of sperms ao Predct the tumaur resfase X fo eredict the prognosis** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Diseases of the tubules and the interstitium', pp. 235–239.",
+              "repetitionCount": 2,
+              "text": "Select the drug which affords faster and greater",
+              "explanation": "**Correct Answer: Tadalafil (not sure)**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Tadalafil (not sure)** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
               "options": [
-                "Secvetes",
-                "thin bsiky laid that, slgktly alkaline to neatrali ze aidty o the aS & vaind secrehun '1 mhly of sperms ao Predct the tumaur resfase X fo eredict the prognosis",
-                "breatt Cciasma."
+                "Symptomatic relief in BPH of the prostate.",
+                "Sildenafil",
+                "Tadalafil (not sure)",
+                "Finasteride",
+                "Alprostadil"
               ],
-              "correctIndex": 1
+              "correctIndex": 2
             },
             {
               "id": "MUG3-CH207-MICR-0007",
@@ -27937,6 +27878,23 @@
                 "Ather"
               ],
               "correctIndex": 4
+            },
+            {
+              "id": "MUG3-CH207-MICR-0012",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥Urogenital Assessment 2 MCQ-1.pdf-Q6",
+                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q81"
+              ],
+              "repetitionCount": 2,
+              "text": "A male patient with urethritis, IC organism , gram-ve diplococci. What's your",
+              "explanation": "**Correct Answer: Neisseria gonorrhea**\n\n**Microbiological & Clinical Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Urinary Tract Infections: Etiology, Pathogenesis & Diagnosis', **Neisseria gonorrhea** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Urinary Tract Infections: Etiology, Pathogenesis & Diagnosis'.",
+              "options": [
+                "Diagnosis?",
+                "Neisseria gonorrhea"
+              ],
+              "correctIndex": 1
             }
           ]
         }
@@ -28133,6 +28091,64 @@
           ],
           "questions": [
             {
+              "id": "MUG3-CH203-PHYS-0110",
+              "type": "mcq",
+              "lecture": 2,
+              "sources": [
+                "FIRST ASSESSMENT UG 2024.pdf-Q17",
+                "Past Exams/FIRST ASSESSMENT UG 2024.pdf-Q17"
+              ],
+              "repetitionCount": 2,
+              "text": "A patient develops acute kidney injury after starting a penicillin antibiotic. Biopsy shows interstitial edema with an eosinophil-rich infiltrate and tubulitis. Which diagnosis best fits?",
+              "explanation": "Drug-induced acute tubulointerstitial nephritis can present with interstitial edema, inflammatory cells including eosinophils, and tubulitis. The lesion is centered in the interstitium and tubules.",
+              "options": [
+                "Acute tubular necrosis",
+                "Acute bacterial pyelonephritis",
+                "Acute tubulointerstitial nephritis",
+                "Acute poststreptococcal glomerulonephritis"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "MUG3-CH205-PATH-0144",
+              "type": "mcq",
+              "lecture": 4,
+              "sources": [
+                "Past Exams/UG ass 2 and paper 2.pdf-Q31"
+              ],
+              "repetitionCount": 1,
+              "text": "An adult has bilaterally enlarged kidneys with numerous cysts and affected relatives in successive generations. Which protein is encoded by the gene most often affected in this condition?",
+              "explanation": "Autosomal dominant polycystic kidney disease most often results from pathogenic variants in PKD1, which encodes polycystin-1. Pathogenic PKD2 variants cause another form.",
+              "options": [
+                "Polycystin-1",
+                "Fibrocystin",
+                "Type IV collagen alpha-5",
+                "Uromodulin"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH205-PATH-0051",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "FIRST ASSESSMENT UG 2024.pdf-Q13",
+                "💥Urogenital Assessment 1 MCQ.pdf-Q6",
+                "Past Exams/FIRST ASSESSMENT UG 2024.pdf-Q13",
+                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q117"
+              ],
+              "repetitionCount": 4,
+              "text": "Oliguria, hematuria, hypertension, and periorbital edema are characteristic clinical features for which of the following types of glomerulonephritis?",
+              "explanation": "**Correct Answer: Poststreptococcal GN**\n\n**Pathophysiological & Morphological Rationale:**\nAcute nephritic syndrome (hematuria, red cell casts, oliguria, hypertension, periorbital edema) is the hallmark presentation of acute post-streptococcal glomerulonephritis.\n\n**Curriculum Reference & Citation:**\nRobbins Basic Pathology 10th Ed, Ch 20, p. 542.",
+              "options": [
+                "Minimal change disease",
+                "Poststreptococcal GN",
+                "Membranous nephropathy",
+                "Rapidly progressive GN"
+              ],
+              "correctIndex": 1
+            },
+            {
               "id": "MUG3-CH103-PHYS-0118",
               "type": "mcq",
               "lecture": 6,
@@ -28149,25 +28165,6 @@
                 "Cystine"
               ],
               "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH105-PATH-0006",
-              "type": "mcq",
-              "lecture": 6,
-              "sources": [
-                "💥Urogenital Assessment 1 MCQ.pdf-Q7",
-                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q118"
-              ],
-              "repetitionCount": 2,
-              "text": "A cervical carcinoma compresses both distal ureters. Which structural change is expected in the kidneys if the obstruction persists?",
-              "explanation": "Persistent blockage of urinary outflow transmits pressure upstream and dilates the collecting systems. This is hydronephrosis.",
-              "options": [
-                "Segmental infarction of the renal cortex",
-                "Crescent formation in Bowman spaces",
-                "Calcification of the renal papillary tips",
-                "Dilation of renal pelves and calyces"
-              ],
-              "correctIndex": 3
             },
             {
               "id": "MUG3-CH105-PATH-0005",
@@ -28404,26 +28401,6 @@
                 "Isotonic saline + loop diuretics"
               ],
               "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH301-PATH-0066",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q80",
-                "Past Exams/paper one urogenital mcq for 2020.pdf-Q121"
-              ],
-              "repetitionCount": 2,
-              "text": "the following is a mechanism of the pharmacological actions exerted by the magnesium(Mg2+)",
-              "explanation": "**Correct Answer: Natural physiologic competitive antagonist of calcium at T type of Calcium Channels**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Natural physiologic competitive antagonist of calcium at T type of Calcium Channels** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
-              "options": [
-                "Natural physiologic competitive antagonist of calcium at T type of Calcium Channels",
-                "NMDA receptor antagonist leading to analgesic, anticonvulsant, sedative effects",
-                "Increase Acetylcholine release leading to muscle relaxation",
-                "Increase catecholamine release after sympathetic stimulus",
-                "Stimulation of M3 Muscarinic Receptors PATHO"
-              ],
-              "correctIndex": 0
             }
           ]
         }
@@ -28574,41 +28551,47 @@
           ],
           "questions": [
             {
-              "id": "MUG3-CH101-ANAT-0023",
+              "id": "MUG3-CH205-PATH-0288",
               "type": "mcq",
-              "lecture": 11,
+              "lecture": 4,
               "sources": [
-                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-p2-recall-13",
-                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-p2-recall-19"
+                "Past Exams/practical 2018-2020.pdf-Q175",
+                "Past Exams/💥Practical UG Exam 2024.pdf-Q4",
+                "Past Exams/ASS UG 2- 2019.pdf-Q1",
+                "ASS UG 2- 2019.pdf-Q0",
+                "UG ass 2 and paper 2.pdf-Q0",
+                "💥Practical UG Exam 2024.pdf-Q6",
+                "Past Exams/UG ass 2 and paper 2.pdf-Q1",
+                "Past Exams/💥Practical UG Exam 2024.pdf-Q114"
               ],
-              "repetitionCount": 1,
-              "text": "Which prostatic lobe lies between the upper prostatic urethra and the ejaculatory ducts?",
-              "explanation": "The median lobe lies between the upper prostatic urethra and the ejaculatory ducts. The posterior lobe is below the ducts, while the anterior lobe is ventral to the urethra.",
+              "repetitionCount": 8,
+              "text": "Which anatomical segment of the male urethra is the widest?",
+              "explanation": "The prostatic urethra is the widest and most dilatable segment. It traverses the prostate before continuing into the membranous urethra.",
               "options": [
-                "Posterior lobe",
-                "Left lateral lobe",
-                "Median lobe",
-                "Anterior lobe",
-                "Right lateral lobe"
+                "Preprostatic urethra",
+                "Membranous urethra",
+                "Prostatic urethra",
+                "Spongy urethra"
               ],
               "correctIndex": 2
             },
             {
-              "id": "MUG3-CH101-ANAT-0024",
+              "id": "MUG3-CH205-PATH-0422",
               "type": "mcq",
-              "lecture": 7,
+              "lecture": 14,
               "sources": [
-                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-p2-recall-14"
+                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q21",
+                "💥UG Final 2 MCQ Collection.pdf-Q21",
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q21"
               ],
-              "repetitionCount": 1,
-              "text": "Which pair of lumbar ventral rami contributes to the lumbosacral trunk?",
-              "explanation": "The lumbosacral trunk contains contributions from L4 and L5. Upper sacral ventral rami join it in forming the sacral plexus.",
+              "repetitionCount": 3,
+              "text": "What is the main developmental effect of fetal anti-Müllerian hormone in a typical male reproductive tract?",
+              "explanation": "Fetal Sertoli cells produce anti-Müllerian hormone, which causes paramesonephric duct regression. Testosterone promotes mesonephric duct differentiation. DHT is important for masculinization of the external genitalia.",
               "options": [
-                "L4 and L5",
-                "L3 and L4",
-                "L2 and L3",
-                "L3 and L5",
-                "L2 and L4"
+                "Regression of the paramesonephric ducts",
+                "Development of the mesonephric ducts",
+                "Fusion of the urethral folds",
+                "Differentiation of the genital tubercle"
               ],
               "correctIndex": 0
             },
@@ -28669,27 +28652,6 @@
                 "Nerve to obturator internus"
               ],
               "correctIndex": 2
-            },
-            {
-              "id": "MUG3-CH201-ANAT-0009",
-              "type": "mcq",
-              "lecture": 9,
-              "sources": [
-                "UG ass 2 and paper 2.pdf-Q15",
-                "final paper 2 - 2019.pdf-Q15",
-                "Past Exams/UG ass 2 and paper 2.pdf-Q84",
-                "Past Exams/final paper 2 - 2019.pdf-Q16"
-              ],
-              "repetitionCount": 4,
-              "text": "In which compartment are the bulbourethral glands themselves located?",
-              "explanation": "The bulbourethral glands lie in the deep perineal pouch. Their ducts pierce the perineal membrane and open into the proximal spongy urethra.",
-              "options": [
-                "Ischioanal fossa",
-                "Superficial perineal pouch",
-                "Retropubic space",
-                "Deep perineal pouch"
-              ],
-              "correctIndex": 3
             },
             {
               "id": "MUG3-CH201-ANAT-0020",
@@ -28769,25 +28731,6 @@
               "correctIndex": 3
             },
             {
-              "id": "MUG3-CH201-ANAT-0031",
-              "type": "mcq",
-              "lecture": 9,
-              "sources": [
-                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf#S119-p001-anatomy-q01"
-              ],
-              "repetitionCount": 1,
-              "text": "Which of the following structures lies in the superficial perineal pouch in males?",
-              "explanation": "The bulb forms part of the root of the penis and lies below the perineal membrane in the superficial pouch. The bulbourethral glands themselves lie in the deep pouch, although their ducts enter the superficial pouch.",
-              "options": [
-                "Membranous urethra",
-                "Bulbourethral gland",
-                "Deep transverse perineal muscle",
-                "Bulb of the penis",
-                "External urethral sphincter"
-              ],
-              "correctIndex": 3
-            },
-            {
               "id": "MUG3-CH201-ANAT-0032",
               "type": "mcq",
               "lecture": 7,
@@ -28805,25 +28748,6 @@
                 "Superior gluteal artery"
               ],
               "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH201-ANAT-0033",
-              "type": "mcq",
-              "lecture": 11,
-              "sources": [
-                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf#S119-p002-anatomy-q16"
-              ],
-              "repetitionCount": 1,
-              "text": "In the five-lobe description of the prostate, which lobe lies behind the prostatic urethra and below the ejaculatory ducts?",
-              "explanation": "The posterior lobe lies behind the urethra and below the ejaculatory ducts. The median lobe lies between the upper prostatic urethra and the ducts.",
-              "options": [
-                "Right lateral lobe",
-                "Median lobe",
-                "Anterior lobe",
-                "Left lateral lobe",
-                "Posterior lobe"
-              ],
-              "correctIndex": 4
             },
             {
               "id": "MUG3-CH201-ANAT-0026",
@@ -28844,23 +28768,6 @@
               "correctIndex": 0
             },
             {
-              "id": "MUG3-CH201-ANAT-0027",
-              "type": "mcq",
-              "lecture": 8,
-              "sources": [
-                "💥Urogenital Assessment 2 MCQ-1.pdf-Q5",
-                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q5"
-              ],
-              "repetitionCount": 2,
-              "text": "Which of the following belongs to the Anterior division of the internal iliac",
-              "explanation": "**Correct Answer: Obturator artery**\n\n**Anatomical & Functional Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Pelvic Cavity, Peritoneum & Pelvic Diaphragm', **Obturator artery** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Pelvic Cavity, Peritoneum & Pelvic Diaphragm'.",
-              "options": [
-                "Artery?",
-                "Obturator artery"
-              ],
-              "correctIndex": 1
-            },
-            {
               "id": "MUG3-CH201-ANAT-0028",
               "type": "mcq",
               "lecture": 15,
@@ -28876,121 +28783,6 @@
                 "Deep perineal pouch"
               ],
               "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH203-PHYS-0043",
-              "type": "mcq",
-              "lecture": 11,
-              "sources": [
-                "UG ass 2 and paper 2.pdf-Q19",
-                "Past Exams/UG ass 2 and paper 2.pdf-Q42"
-              ],
-              "repetitionCount": 2,
-              "text": "Which two structures bound the interval occupied by the seminal vesicles, from anterior to posterior?",
-              "explanation": "The seminal vesicles lie posterior to the base of the bladder and anterior to the rectum. Each duct joins the ductus deferens to form an ejaculatory duct.",
-              "options": [
-                "Pubic symphysis and bladder neck",
-                "Prostate and perineal membrane",
-                "Rectum and anterior sacral fascia",
-                "Bladder base and rectum"
-              ],
-              "correctIndex": 3
-            },
-            {
-              "id": "MUG3-CH203-PHYS-0132",
-              "type": "mcq",
-              "lecture": 7,
-              "sources": [
-                "💥Urogenital Assessment 2 MCQ-1.pdf-Q17",
-                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q17"
-              ],
-              "repetitionCount": 2,
-              "text": "Which pelvic muscle lies immediately posterior to the sacral plexus?",
-              "explanation": "The sacral plexus lies on the anterior surface of piriformis. The sciatic nerve usually leaves the pelvis below piriformis through the greater sciatic foramen.",
-              "options": [
-                "Coccygeus",
-                "Obturator internus",
-                "Iliacus",
-                "Piriformis"
-              ],
-              "correctIndex": 3
-            },
-            {
-              "id": "MUG3-CH203-PHYS-0131",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "💥Urogenital Assessment 2 MCQ-1.pdf-Q16",
-                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q16"
-              ],
-              "repetitionCount": 2,
-              "text": "Which lobe of the prostate lies superiorly in the urogenital diaphragm and",
-              "explanation": "**Correct Answer: Posterior lobe of prostate**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Posterior lobe of prostate** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 2, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
-              "options": [
-                "Inferior to the ejaculatory ducts?",
-                "Posterior lobe of prostate"
-              ],
-              "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH205-PATH-0067",
-              "type": "mcq",
-              "lecture": 11,
-              "sources": [
-                "Past Exams/ASS 2 - 2019 RESIT.pdf-Q8",
-                "💥Urogenital Assessment 2 MCQ-1.pdf-Q7",
-                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q7"
-              ],
-              "repetitionCount": 3,
-              "text": "Which of the following is related to the posterior surface of the prostate?",
-              "explanation": "The rectum is posterior to the prostate, separated by the rectoprostatic fascia. The bladder is superior to the gland and levator ani lies inferolaterally.",
-              "options": [
-                "Rectum",
-                "Urinary bladder",
-                "Pelvic colon",
-                "Levator ani",
-                "Internal iliac artery"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH205-PATH-0168",
-              "type": "mcq",
-              "lecture": 13,
-              "sources": [
-                "Past Exams/UG ass 2 and paper 2.pdf-Q65",
-                "Past Exams/ASS 2 - 2019 RESIT.pdf-Q14"
-              ],
-              "repetitionCount": 2,
-              "text": "The internal os of the uterus marks the junction between:",
-              "explanation": "The internal os is the upper opening of the cervical canal into the uterine cavity. The external os opens into the vagina.",
-              "options": [
-                "Cervix and vagina",
-                "Uterine tube and peritoneal cavity",
-                "Uterine tube and fundus of the uterus",
-                "Body and Cervix of the uterus",
-                "Fundus and body of the uterus"
-              ],
-              "correctIndex": 3
-            },
-            {
-              "id": "MUG3-CH205-PATH-0337",
-              "type": "mcq",
-              "lecture": 12,
-              "sources": [
-                "Past Exams/ug paper 2 - 2020.pdf-Q3",
-                "ug paper 2 - 2020.pdf-Q3"
-              ],
-              "repetitionCount": 2,
-              "text": "Which lymph nodes first receive most lymphatic drainage from the labia majora?",
-              "explanation": "Lymph from the labia majora drains chiefly to the superficial inguinal nodes. The primary drainage differs from that of the ovaries, which follows the ovarian vessels toward para-aortic nodes.",
-              "options": [
-                "Superficial inguinal nodes",
-                "Internal iliac nodes",
-                "Para-aortic lymph nodes",
-                "Inferior mesenteric lymph nodes"
-              ],
-              "correctIndex": 0
             },
             {
               "id": "MUG3-CH205-PATH-0341",
@@ -29010,6 +28802,47 @@
                 "Median sacral artery"
               ],
               "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH205-PATH-0099",
+              "type": "mcq",
+              "lecture": 14,
+              "sources": [
+                "Past Exams/ASS UG 2- 2019.pdf-Q6",
+                "ASS 1 - 2019.pdf-Q1",
+                "ASS UG 2- 2019.pdf-Q5",
+                "UG ass 2 and paper 2.pdf-Q5",
+                "Past Exams/ASS 1 - 2019.pdf-Q2",
+                "Past Exams/UG ass 2 and paper 2.pdf-Q6"
+              ],
+              "repetitionCount": 6,
+              "text": "Which embryonic structure gives rise to the seminal vesicles?",
+              "explanation": "The seminal vesicles form as outgrowths from the distal mesonephric ducts. Prostatic glands instead develop from the urogenital sinus.",
+              "options": [
+                "Paramesonephric ducts",
+                "Mesonephric tubules",
+                "Urogenital sinus",
+                "Mesonephric ducts"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "MUG3-CH103-PHYS-0120",
+              "type": "mcq",
+              "lecture": 13,
+              "sources": [
+                "💥Urogenital Assessment 1 MCQ.pdf-Q24"
+              ],
+              "repetitionCount": 1,
+              "text": "Lymphatic vessels from an ovary follow the ovarian vessels primarily to which lymph nodes?",
+              "explanation": "The primary ovarian lymphatic route follows the ovarian vessels to the lumbar para-aortic nodes.",
+              "options": [
+                "Superficial inguinal nodes",
+                "Internal iliac nodes",
+                "External iliac nodes",
+                "Para-aortic nodes"
+              ],
+              "correctIndex": 3
             }
           ]
         }
@@ -29156,22 +28989,386 @@
           ],
           "questions": [
             {
-              "id": "MUG3-CH103-PHYS-0120",
+              "id": "MUG3-CH205-PATH-0201",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "Past Exams/UG paper 2 essay answers 2020.pdf-Q8"
+              ],
+              "repetitionCount": 1,
+              "text": "Cotain clothng enzyues 8 ibrin ysin",
+              "explanation": "**Correct Answer: thin bsiky laid that, slgktly alkaline to neatrali ze aidty o the aS & vaind secrehun ’1 mhly of sperms ao Predct the tumaur resfase X fo eredict the prognosis**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **thin bsiky laid that, slgktly alkaline to neatrali ze aidty o the aS & vaind secrehun ’1 mhly of sperms ao Predct the tumaur resfase X fo eredict the prognosis** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Diseases of the tubules and the interstitium', pp. 235–239.",
+              "options": [
+                "Secvetes",
+                "thin bsiky laid that, slgktly alkaline to neatrali ze aidty o the aS & vaind secrehun '1 mhly of sperms ao Predct the tumaur resfase X fo eredict the prognosis",
+                "breatt Cciasma."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH203-PHYS-0049",
+              "type": "mcq",
+              "lecture": 16,
+              "sources": [
+                "UG ass 2 and paper 2.pdf-Q10",
+                "final paper 2 - 2019.pdf-Q10",
+                "Past Exams/UG ass 2 and paper 2.pdf-Q79",
+                "Past Exams/final paper 2 - 2019.pdf-Q11"
+              ],
+              "repetitionCount": 4,
+              "text": "Which change after delivery removes the placental hormonal restraint on copious milk secretion?",
+              "explanation": "Expulsion of the placenta lowers circulating estrogen and progesterone. This permits prolactin to support copious milk synthesis. Oxytocin helps eject milk already made.",
+              "options": [
+                "Rise in maternal progesterone and estrogen",
+                "Fall in maternal estrogen and progesterone",
+                "Rise in placental human chorionic gonadotropin",
+                "Fall in maternal prolactin and oxytocin"
+              ],
+              "correctIndex": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 204,
+      "title": "CA-2 — Biochemistry",
+      "subtitle": "Continuous Assessment 2 · Biochemistry",
+      "emoji": "📝",
+      "page": 204,
+      "lectureRange": "Lectures 1–4",
+      "accentColor": "biochem",
+      "bankSection": "past-exams",
+      "examPeriod": "ca-2",
+      "keywords": [
+        "biochem",
+        "past-exams",
+        "ca-2",
+        "assessment 2"
+      ],
+      "subjects": [
+        {
+          "id": "biochem",
+          "name": "Biochemistry",
+          "iconName": "Dna",
+          "lectures": "Lectures 1–4",
+          "lectureCount": 4,
+          "lectureNames": [
+            "Metabolic Functions of the Kidney & Gluconeogenesis",
+            "Biosynthesis & Metabolism of Steroid Hormones",
+            "Biochemical Markers of Renal Function",
+            "Biochemistry of Urine & Inborn Errors of Metabolism"
+          ],
+          "questions": []
+        }
+      ]
+    },
+    {
+      "id": 205,
+      "title": "CA-2 — Pathology",
+      "subtitle": "Continuous Assessment 2 · Pathology",
+      "emoji": "📝",
+      "page": 205,
+      "lectureRange": "Lectures 1–14",
+      "accentColor": "pathology",
+      "bankSection": "past-exams",
+      "examPeriod": "ca-2",
+      "keywords": [
+        "pathology",
+        "past-exams",
+        "ca-2",
+        "assessment 2"
+      ],
+      "subjects": [
+        {
+          "id": "pathology",
+          "name": "Pathology",
+          "iconName": "Virus",
+          "lectures": "Lectures 1–14",
+          "lectureCount": 14,
+          "lectureNames": [
+            "Glomerular Diseases: Nephritic & Nephrotic Syndromes",
+            "Tubulointerstitial Nephritis & Acute Tubular Necrosis",
+            "Renal Vascular Pathology & Hypertensive Nephropathy",
+            "Chronic Kidney Disease & Renal Failure",
+            "Neoplasms of the Kidney & Wilms Tumor",
+            "Pathology of the Urinary Bladder & Urolithiasis",
+            "Pathology of the Testis, Epididymis & Scrotum",
+            "Prostatic Diseases: Hyperplasia & Carcinoma",
+            "Pathology of the Penis & Urethra",
+            "Non-Neoplastic & Neoplastic Cervical Lesions",
+            "Endometrial Hyperplasia & Carcinoma, Adenomyosis",
+            "Gestational Trophoblastic Diseases",
+            "Diseases of Fallopian Tubes and Ovaries",
+            "Diseases of the Breast"
+          ],
+          "questions": [
+            {
+              "id": "MUG3-CH203-PHYS-0072",
+              "type": "mcq",
+              "lecture": 3,
+              "sources": [
+                "ug paper 2 - 2020.pdf-Q1"
+              ],
+              "repetitionCount": 1,
+              "text": "Which congenital infection can cause nonimmune fetal hydrops by suppressing fetal erythropoiesis?",
+              "explanation": "Parvovirus B19 infects erythroid precursors. Suppression of fetal red-cell production can cause severe fetal anemia, which can in turn lead to nonimmune hydrops.",
+              "options": [
+                "Rubella virus",
+                "Cytomegalovirus",
+                "Parvovirus B19",
+                "Herpes simplex virus"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "MUG3-CH105-PATH-0006",
+              "type": "mcq",
+              "lecture": 6,
+              "sources": [
+                "💥Urogenital Assessment 1 MCQ.pdf-Q7",
+                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q118"
+              ],
+              "repetitionCount": 2,
+              "text": "A cervical carcinoma compresses both distal ureters. Which structural change is expected in the kidneys if the obstruction persists?",
+              "explanation": "Persistent blockage of urinary outflow transmits pressure upstream and dilates the collecting systems. This is hydronephrosis.",
+              "options": [
+                "Segmental infarction of the renal cortex",
+                "Crescent formation in Bowman spaces",
+                "Calcification of the renal papillary tips",
+                "Dilation of renal pelves and calyces"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "MUG3-CH101-ANAT-0023",
+              "type": "mcq",
+              "lecture": 11,
+              "sources": [
+                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-p2-recall-13",
+                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-p2-recall-19"
+              ],
+              "repetitionCount": 1,
+              "text": "Which prostatic lobe lies between the upper prostatic urethra and the ejaculatory ducts?",
+              "explanation": "The median lobe lies between the upper prostatic urethra and the ejaculatory ducts. The posterior lobe is below the ducts, while the anterior lobe is ventral to the urethra.",
+              "options": [
+                "Posterior lobe",
+                "Left lateral lobe",
+                "Median lobe",
+                "Anterior lobe",
+                "Right lateral lobe"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "MUG3-CH101-ANAT-0024",
+              "type": "mcq",
+              "lecture": 7,
+              "sources": [
+                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-p2-recall-14"
+              ],
+              "repetitionCount": 1,
+              "text": "Which pair of lumbar ventral rami contributes to the lumbosacral trunk?",
+              "explanation": "The lumbosacral trunk contains contributions from L4 and L5. Upper sacral ventral rami join it in forming the sacral plexus.",
+              "options": [
+                "L4 and L5",
+                "L3 and L4",
+                "L2 and L3",
+                "L3 and L5",
+                "L2 and L4"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH201-ANAT-0009",
+              "type": "mcq",
+              "lecture": 9,
+              "sources": [
+                "UG ass 2 and paper 2.pdf-Q15",
+                "final paper 2 - 2019.pdf-Q15",
+                "Past Exams/UG ass 2 and paper 2.pdf-Q84",
+                "Past Exams/final paper 2 - 2019.pdf-Q16"
+              ],
+              "repetitionCount": 4,
+              "text": "In which compartment are the bulbourethral glands themselves located?",
+              "explanation": "The bulbourethral glands lie in the deep perineal pouch. Their ducts pierce the perineal membrane and open into the proximal spongy urethra.",
+              "options": [
+                "Ischioanal fossa",
+                "Superficial perineal pouch",
+                "Retropubic space",
+                "Deep perineal pouch"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "MUG3-CH201-ANAT-0031",
+              "type": "mcq",
+              "lecture": 9,
+              "sources": [
+                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf#S119-p001-anatomy-q01"
+              ],
+              "repetitionCount": 1,
+              "text": "Which of the following structures lies in the superficial perineal pouch in males?",
+              "explanation": "The bulb forms part of the root of the penis and lies below the perineal membrane in the superficial pouch. The bulbourethral glands themselves lie in the deep pouch, although their ducts enter the superficial pouch.",
+              "options": [
+                "Membranous urethra",
+                "Bulbourethral gland",
+                "Deep transverse perineal muscle",
+                "Bulb of the penis",
+                "External urethral sphincter"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "MUG3-CH201-ANAT-0033",
+              "type": "mcq",
+              "lecture": 11,
+              "sources": [
+                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf#S119-p002-anatomy-q16"
+              ],
+              "repetitionCount": 1,
+              "text": "In the five-lobe description of the prostate, which lobe lies behind the prostatic urethra and below the ejaculatory ducts?",
+              "explanation": "The posterior lobe lies behind the urethra and below the ejaculatory ducts. The median lobe lies between the upper prostatic urethra and the ducts.",
+              "options": [
+                "Right lateral lobe",
+                "Median lobe",
+                "Anterior lobe",
+                "Left lateral lobe",
+                "Posterior lobe"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "MUG3-CH201-ANAT-0027",
+              "type": "mcq",
+              "lecture": 8,
+              "sources": [
+                "💥Urogenital Assessment 2 MCQ-1.pdf-Q5",
+                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q5"
+              ],
+              "repetitionCount": 2,
+              "text": "Which of the following belongs to the Anterior division of the internal iliac",
+              "explanation": "**Correct Answer: Obturator artery**\n\n**Anatomical & Functional Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Pelvic Cavity, Peritoneum & Pelvic Diaphragm', **Obturator artery** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Pelvic Cavity, Peritoneum & Pelvic Diaphragm'.",
+              "options": [
+                "Artery?",
+                "Obturator artery"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH203-PHYS-0043",
+              "type": "mcq",
+              "lecture": 11,
+              "sources": [
+                "UG ass 2 and paper 2.pdf-Q19",
+                "Past Exams/UG ass 2 and paper 2.pdf-Q42"
+              ],
+              "repetitionCount": 2,
+              "text": "Which two structures bound the interval occupied by the seminal vesicles, from anterior to posterior?",
+              "explanation": "The seminal vesicles lie posterior to the base of the bladder and anterior to the rectum. Each duct joins the ductus deferens to form an ejaculatory duct.",
+              "options": [
+                "Pubic symphysis and bladder neck",
+                "Prostate and perineal membrane",
+                "Rectum and anterior sacral fascia",
+                "Bladder base and rectum"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "MUG3-CH203-PHYS-0132",
+              "type": "mcq",
+              "lecture": 7,
+              "sources": [
+                "💥Urogenital Assessment 2 MCQ-1.pdf-Q17",
+                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q17"
+              ],
+              "repetitionCount": 2,
+              "text": "Which pelvic muscle lies immediately posterior to the sacral plexus?",
+              "explanation": "The sacral plexus lies on the anterior surface of piriformis. The sciatic nerve usually leaves the pelvis below piriformis through the greater sciatic foramen.",
+              "options": [
+                "Coccygeus",
+                "Obturator internus",
+                "Iliacus",
+                "Piriformis"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "MUG3-CH203-PHYS-0131",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥Urogenital Assessment 2 MCQ-1.pdf-Q16",
+                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q16"
+              ],
+              "repetitionCount": 2,
+              "text": "Which lobe of the prostate lies superiorly in the urogenital diaphragm and",
+              "explanation": "**Correct Answer: Posterior lobe of prostate**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Posterior lobe of prostate** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 2, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
+              "options": [
+                "Inferior to the ejaculatory ducts?",
+                "Posterior lobe of prostate"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH205-PATH-0067",
+              "type": "mcq",
+              "lecture": 11,
+              "sources": [
+                "Past Exams/ASS 2 - 2019 RESIT.pdf-Q8",
+                "💥Urogenital Assessment 2 MCQ-1.pdf-Q7",
+                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q7"
+              ],
+              "repetitionCount": 3,
+              "text": "Which of the following is related to the posterior surface of the prostate?",
+              "explanation": "The rectum is posterior to the prostate, separated by the rectoprostatic fascia. The bladder is superior to the gland and levator ani lies inferolaterally.",
+              "options": [
+                "Rectum",
+                "Urinary bladder",
+                "Pelvic colon",
+                "Levator ani",
+                "Internal iliac artery"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH205-PATH-0168",
               "type": "mcq",
               "lecture": 13,
               "sources": [
-                "💥Urogenital Assessment 1 MCQ.pdf-Q24"
+                "Past Exams/UG ass 2 and paper 2.pdf-Q65",
+                "Past Exams/ASS 2 - 2019 RESIT.pdf-Q14"
               ],
-              "repetitionCount": 1,
-              "text": "Lymphatic vessels from an ovary follow the ovarian vessels primarily to which lymph nodes?",
-              "explanation": "The primary ovarian lymphatic route follows the ovarian vessels to the lumbar para-aortic nodes.",
+              "repetitionCount": 2,
+              "text": "The internal os of the uterus marks the junction between:",
+              "explanation": "The internal os is the upper opening of the cervical canal into the uterine cavity. The external os opens into the vagina.",
+              "options": [
+                "Cervix and vagina",
+                "Uterine tube and peritoneal cavity",
+                "Uterine tube and fundus of the uterus",
+                "Body and Cervix of the uterus",
+                "Fundus and body of the uterus"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "MUG3-CH205-PATH-0337",
+              "type": "mcq",
+              "lecture": 12,
+              "sources": [
+                "Past Exams/ug paper 2 - 2020.pdf-Q3",
+                "ug paper 2 - 2020.pdf-Q3"
+              ],
+              "repetitionCount": 2,
+              "text": "Which lymph nodes first receive most lymphatic drainage from the labia majora?",
+              "explanation": "Lymph from the labia majora drains chiefly to the superficial inguinal nodes. The primary drainage differs from that of the ovaries, which follows the ovarian vessels toward para-aortic nodes.",
               "options": [
                 "Superficial inguinal nodes",
                 "Internal iliac nodes",
-                "External iliac nodes",
-                "Para-aortic nodes"
+                "Para-aortic lymph nodes",
+                "Inferior mesenteric lymph nodes"
               ],
-              "correctIndex": 3
+              "correctIndex": 0
             },
             {
               "id": "MUG3-CH203-PHYS-0036",
@@ -29207,27 +29404,6 @@
                 "Increased cGMP through guanylyl cyclase activation",
                 "Increased cAMP through adrenergic receptor activation",
                 "Reduced cAMP through adenylyl cyclase inhibition"
-              ],
-              "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH203-PHYS-0049",
-              "type": "mcq",
-              "lecture": 16,
-              "sources": [
-                "UG ass 2 and paper 2.pdf-Q10",
-                "final paper 2 - 2019.pdf-Q10",
-                "Past Exams/UG ass 2 and paper 2.pdf-Q79",
-                "Past Exams/final paper 2 - 2019.pdf-Q11"
-              ],
-              "repetitionCount": 4,
-              "text": "Which change after delivery removes the placental hormonal restraint on copious milk secretion?",
-              "explanation": "Expulsion of the placenta lowers circulating estrogen and progesterone. This permits prolactin to support copious milk synthesis. Oxytocin helps eject milk already made.",
-              "options": [
-                "Rise in maternal progesterone and estrogen",
-                "Fall in maternal estrogen and progesterone",
-                "Rise in placental human chorionic gonadotropin",
-                "Fall in maternal prolactin and oxytocin"
               ],
               "correctIndex": 1
             },
@@ -29379,84 +29555,7 @@
                 "They hawe chaces o Sterod (Tstosteone) secicting cels: Rounded nith acidophilic uacalated cytoglasm R ceutral Ronnded vesiculas nuclens wel deveoped sER. mtochanglia with hubateu cristae, Pemintut Galsi &lipid dreplets. They contain Cystals P Rienke. Strama: . Thic kened endomelium stromal edena with congestion of bloncd wesels Wide, tortaoas Sacdated slancs aCcmudat ion of Glycogem spiral Contan more Lecichal reachienstromol cels teconme Parge and pale cytaplajha Glycegea ipid. Kestiag Mamusy Gad) Later-ldber septa daides the glond inte Lobes septu Luterlobuly i iide the Lobes into lobudes Adipose tissue in inter-fobor& ierfoblar segta rorerchyaa Dact system endy_no secreoy adueol ter lobuha &inta fobula glands"
               ],
               "correctIndex": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 204,
-      "title": "CA-2 — Biochemistry",
-      "subtitle": "Continuous Assessment 2 · Biochemistry",
-      "emoji": "📝",
-      "page": 204,
-      "lectureRange": "Lectures 1–4",
-      "accentColor": "biochem",
-      "bankSection": "past-exams",
-      "examPeriod": "ca-2",
-      "keywords": [
-        "biochem",
-        "past-exams",
-        "ca-2",
-        "assessment 2"
-      ],
-      "subjects": [
-        {
-          "id": "biochem",
-          "name": "Biochemistry",
-          "iconName": "Dna",
-          "lectures": "Lectures 1–4",
-          "lectureCount": 4,
-          "lectureNames": [
-            "Metabolic Functions of the Kidney & Gluconeogenesis",
-            "Biosynthesis & Metabolism of Steroid Hormones",
-            "Biochemical Markers of Renal Function",
-            "Biochemistry of Urine & Inborn Errors of Metabolism"
-          ],
-          "questions": []
-        }
-      ]
-    },
-    {
-      "id": 205,
-      "title": "CA-2 — Pathology",
-      "subtitle": "Continuous Assessment 2 · Pathology",
-      "emoji": "📝",
-      "page": 205,
-      "lectureRange": "Lectures 1–14",
-      "accentColor": "pathology",
-      "bankSection": "past-exams",
-      "examPeriod": "ca-2",
-      "keywords": [
-        "pathology",
-        "past-exams",
-        "ca-2",
-        "assessment 2"
-      ],
-      "subjects": [
-        {
-          "id": "pathology",
-          "name": "Pathology",
-          "iconName": "Virus",
-          "lectures": "Lectures 1–14",
-          "lectureCount": 14,
-          "lectureNames": [
-            "Glomerular Diseases: Nephritic & Nephrotic Syndromes",
-            "Tubulointerstitial Nephritis & Acute Tubular Necrosis",
-            "Renal Vascular Pathology & Hypertensive Nephropathy",
-            "Chronic Kidney Disease & Renal Failure",
-            "Neoplasms of the Kidney & Wilms Tumor",
-            "Pathology of the Urinary Bladder & Urolithiasis",
-            "Pathology of the Testis, Epididymis & Scrotum",
-            "Prostatic Diseases: Hyperplasia & Carcinoma",
-            "Pathology of the Penis & Urethra",
-            "Non-Neoplastic & Neoplastic Cervical Lesions",
-            "Endometrial Hyperplasia & Carcinoma, Adenomyosis",
-            "Gestational Trophoblastic Diseases",
-            "Diseases of Fallopian Tubes and Ovaries",
-            "Diseases of the Breast"
-          ],
-          "questions": [
+            },
             {
               "id": "MUG3-CH201-ANAT-0024",
               "type": "mcq",
@@ -29610,48 +29709,6 @@
               "correctIndex": 1
             },
             {
-              "id": "MUG3-CH205-PATH-0058",
-              "type": "mcq",
-              "lecture": 6,
-              "sources": [
-                "💥Urogenital Assessment 2 MCQ-1.pdf-Q14",
-                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q70"
-              ],
-              "repetitionCount": 2,
-              "text": "A bladder tumor contains invasive nests with intercellular bridges and keratin pearls. Extensive sampling shows no urothelial carcinoma component. Which diagnosis best fits?",
-              "explanation": "Keratin pearls and intercellular bridges support squamous differentiation. Invasion and absence of a urothelial component in the sampled tumor support primary squamous cell carcinoma rather than urothelial carcinoma with focal squamous differentiation.",
-              "options": [
-                "Keratinizing squamous cell carcinoma",
-                "Invasive conventional urothelial carcinoma",
-                "Primary bladder adenocarcinoma",
-                "Small-cell neuroendocrine carcinoma"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH205-PATH-0099",
-              "type": "mcq",
-              "lecture": 14,
-              "sources": [
-                "Past Exams/ASS UG 2- 2019.pdf-Q6",
-                "ASS 1 - 2019.pdf-Q1",
-                "ASS UG 2- 2019.pdf-Q5",
-                "UG ass 2 and paper 2.pdf-Q5",
-                "Past Exams/ASS 1 - 2019.pdf-Q2",
-                "Past Exams/UG ass 2 and paper 2.pdf-Q6"
-              ],
-              "repetitionCount": 6,
-              "text": "Which embryonic structure gives rise to the seminal vesicles?",
-              "explanation": "The seminal vesicles form as outgrowths from the distal mesonephric ducts. Prostatic glands instead develop from the urogenital sinus.",
-              "options": [
-                "Paramesonephric ducts",
-                "Mesonephric tubules",
-                "Urogenital sinus",
-                "Mesonephric ducts"
-              ],
-              "correctIndex": 3
-            },
-            {
               "id": "MUG3-CH205-PATH-0182",
               "type": "mcq",
               "lecture": 11,
@@ -29730,46 +29787,6 @@
               "correctIndex": 2
             },
             {
-              "id": "MUG3-CH205-PATH-0047",
-              "type": "mcq",
-              "lecture": 14,
-              "sources": [
-                "ASS UG 2- 2019.pdf-Q21",
-                "UG ass 2 and paper 2.pdf-Q21",
-                "Past Exams/ASS UG 2- 2019.pdf-Q19",
-                "Past Exams/UG ass 2 and paper 2.pdf-Q19"
-              ],
-              "repetitionCount": 4,
-              "text": "Invasive squamous cell carcinoma well deffrintiated",
-              "explanation": "**Correct Answer: Mass in the bladder keratinized mass ,Multilayered,invading the stroma below it, and sheets and**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Diseases of the Breast', **Mass in the bladder keratinized mass ,Multilayered,invading the stroma below it, and sheets and** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Diseases of the Breast'.",
-              "options": [
-                "Mass in the bladder keratinized mass ,Multilayered,invading the stroma below it, and sheets and",
-                "Nests of malignant cells was found many of these cells show keratin pearls ?"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH205-PATH-0050",
-              "type": "mcq",
-              "lecture": 14,
-              "sources": [
-                "ASS UG 2- 2019.pdf-Q24",
-                "UG ass 2 and paper 2.pdf-Q24",
-                "Pathology/Tutorial urinary bladder.pdf-Q14",
-                "Past Exams/ASS UG 2- 2019.pdf-Q22",
-                "Past Exams/UG ass 2 and paper 2.pdf-Q22"
-              ],
-              "repetitionCount": 5,
-              "text": "Squamous cell carcinoma",
-              "explanation": "**Correct Answer: Schistosomiasis causes squamous metaplasia then convert into squamous cell carcinoma**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Diseases of the Breast', **Schistosomiasis causes squamous metaplasia then convert into squamous cell carcinoma** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Diseases of the Breast'.",
-              "options": [
-                "Mass in the bladder but",
-                "It's most likely to be what??",
-                "Schistosomiasis causes squamous metaplasia then convert into squamous cell carcinoma"
-              ],
-              "correctIndex": 2
-            },
-            {
               "id": "MUG3-CH205-PATH-0052",
               "type": "mcq",
               "lecture": 13,
@@ -29787,22 +29804,82 @@
               "correctIndex": 1
             },
             {
-              "id": "MUG3-CH205-PATH-0059",
+              "id": "MUG3-CH203-PHYS-0113",
               "type": "mcq",
-              "lecture": 11,
+              "lecture": 2,
               "sources": [
-                "💥Urogenital Assessment 2 MCQ-1.pdf-Q15",
-                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q71"
+                "UG ass 2 and paper 2.pdf-Q12",
+                "Past Exams/UG ass 2 and paper 2.pdf-Q35"
               ],
               "repetitionCount": 2,
-              "text": "An Egyptian man with schistosomiasis, mass in bladder, microscopic",
-              "explanation": "**Correct Answer: Finding revealed changes in epithelium and cells showed keratinisation. What**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Endometrial Hyperplasia & Carcinoma, Adenomyosis', **Finding revealed changes in epithelium and cells showed keratinisation. What** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Diseases of ureter & urinary bladder', pp. 252–257.",
+              "text": "A patient has homogeneous gray vaginal discharge and a fishy odor. Microscopy shows squamous epithelial cells coated with bacteria. Which diagnosis best fits?",
+              "explanation": "Bacteria coating squamous epithelial cells create clue cells. Together with a homogeneous discharge and amine odor, this supports bacterial vaginosis, a polymicrobial shift in vaginal flora.",
               "options": [
-                "Finding revealed changes in epithelium and cells showed keratinisation. What",
-                "Is the most likely diagnosis?",
-                "Squamous cell carcinoma"
+                "Vulvovaginal candidiasis",
+                "Trichomonas vaginitis",
+                "Gonococcal cervicitis",
+                "Bacterial vaginosis"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "MUG3-CH205-PATH-0343",
+              "type": "mcq",
+              "lecture": 2,
+              "sources": [
+                "Past Exams/ug paper 2 - 2020.pdf-Q13",
+                "ug paper 2 - 2020.pdf-Q13"
+              ],
+              "repetitionCount": 2,
+              "text": "Which activity of resident vaginal lactobacilli helps maintain a low vaginal pH?",
+              "explanation": "Lactobacilli ferment glycogen-derived carbohydrates to produce lactic acid. This helps maintain an acidic vaginal environment that contributes to colonization resistance.",
+              "options": [
+                "Hydrolysis of urea to ammonia",
+                "Release of bicarbonate into the lumen",
+                "Carbohydrate fermentation to lactate",
+                "Degradation of mucus to alkaline amines"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "MUG3-CH207-MICR-0006",
+              "type": "mcq",
+              "lecture": 2,
+              "sources": [
+                "ASS 2 - 2019 RESIT.pdf-Q13",
+                "Past Exams/ASS 2 - 2019 RESIT.pdf-Q9"
+              ],
+              "repetitionCount": 2,
+              "text": "A 32 year old male presents with very painful genital ulcer and adenopathy. A swab was taken to the lab for tissue culture and revealed multi-nucleated giant cells and intra-nuclear inclusion bodies. What is the causative pathogen?",
+              "explanation": "Painful genital ulceration with multinucleated giant cells and intranuclear inclusions supports herpes simplex virus infection. The listed bacterial pathogens and HPV do not produce this typical combination.",
+              "options": [
+                "HSV",
+                "HPV",
+                "N. Gonorrhea",
+                "Treponema pallidum",
+                "Chlamydia trachomatis"
               ],
               "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH207-MICR-0009",
+              "type": "mcq",
+              "lecture": 3,
+              "sources": [
+                "UG ass 2 and paper 2.pdf-Q13",
+                "Past Exams/UG ass 2 and paper 2.pdf-Q60"
+              ],
+              "repetitionCount": 2,
+              "text": "A 32 year old male presents with very painful genital ulcer",
+              "explanation": "**Correct Answer: Culture and revealed multi-nucleated giant cells and intra**\n\n**Microbiological & Clinical Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Perinatal & Congenital Infections', **Culture and revealed multi-nucleated giant cells and intra** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Perinatal & Congenital Infections'.",
+              "options": [
+                "And adenopathy. A swab was taken to the lab for tissue",
+                "Culture and revealed multi-nucleated giant cells and intra",
+                "Nuclear inclusion bodies. What is the causative pathogen?",
+                "HSV",
+                "HPV"
+              ],
+              "correctIndex": 1
             }
           ]
         }
@@ -29840,6 +29917,25 @@
             "Female Hormonal Therapy & Contraception"
           ],
           "questions": [
+            {
+              "id": "MUG3-CH203-PHYS-0041",
+              "type": "mcq",
+              "lecture": 4,
+              "sources": [
+                "UG ass 2 and paper 2.pdf-Q11",
+                "Past Exams/UG ass 2 and paper 2.pdf-Q34"
+              ],
+              "repetitionCount": 2,
+              "text": "After the initial stimulatory phase, how does continuous leuprolide lower gonadal steroid production?",
+              "explanation": "Continuous GnRH agonist exposure desensitizes pituitary gonadotropes. LH and FSH fall after the initial rise, reducing gonadal steroid production.",
+              "options": [
+                "It blocks androgen receptors in target tissues",
+                "It inhibits conversion of testosterone to DHT",
+                "It reduces pituitary LH and FSH release",
+                "It inhibits adrenal glucocorticoid synthesis"
+              ],
+              "correctIndex": 2
+            },
             {
               "id": "MUG3-CH205-PATH-0044",
               "type": "mcq",
@@ -29929,116 +30025,37 @@
               "correctIndex": 3
             },
             {
-              "id": "MUG3-CH203-PHYS-0072",
+              "id": "MUG3-CH203-PHYS-0129",
               "type": "mcq",
-              "lecture": 3,
+              "lecture": 1,
               "sources": [
-                "ug paper 2 - 2020.pdf-Q1"
+                "ug paper 2 - 2020.pdf-Q6",
+                "Past Exams/ug paper 2 - 2020.pdf-Q6"
+              ],
+              "repetitionCount": 2,
+              "text": "Vesicles ulcers , skin smear?",
+              "explanation": "**Correct Answer: Inclusion bodies geimsa stain**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Inclusion bodies geimsa stain** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
+              "options": [
+                "Inclusion bodies geimsa stain",
+                "Multinucleated giant cells"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH203-PHYS-0130",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥Practical UG Exam 2024.pdf-Q2"
               ],
               "repetitionCount": 1,
-              "text": "Which congenital infection can cause nonimmune fetal hydrops by suppressing fetal erythropoiesis?",
-              "explanation": "Parvovirus B19 infects erythroid precursors. Suppression of fetal red-cell production can cause severe fetal anemia, which can in turn lead to nonimmune hydrops.",
+              "text": "Which protozoan parasite of the urogenital tract is characterized microscopically by jerky motility and an undulating membrane?",
+              "explanation": "**Correct Answer: Trichomonas vaginalis**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Trichomonas vaginalis** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
               "options": [
-                "Rubella virus",
-                "Cytomegalovirus",
-                "Parvovirus B19",
-                "Herpes simplex virus"
-              ],
-              "correctIndex": 2
-            },
-            {
-              "id": "MUG3-CH203-PHYS-0113",
-              "type": "mcq",
-              "lecture": 2,
-              "sources": [
-                "UG ass 2 and paper 2.pdf-Q12",
-                "Past Exams/UG ass 2 and paper 2.pdf-Q35"
-              ],
-              "repetitionCount": 2,
-              "text": "A patient has homogeneous gray vaginal discharge and a fishy odor. Microscopy shows squamous epithelial cells coated with bacteria. Which diagnosis best fits?",
-              "explanation": "Bacteria coating squamous epithelial cells create clue cells. Together with a homogeneous discharge and amine odor, this supports bacterial vaginosis, a polymicrobial shift in vaginal flora.",
-              "options": [
-                "Vulvovaginal candidiasis",
-                "Trichomonas vaginitis",
-                "Gonococcal cervicitis",
-                "Bacterial vaginosis"
-              ],
-              "correctIndex": 3
-            },
-            {
-              "id": "MUG3-CH205-PATH-0143",
-              "type": "mcq",
-              "lecture": 2,
-              "sources": [
-                "Past Exams/UG ass 2 and paper 2.pdf-Q26"
-              ],
-              "repetitionCount": 1,
-              "text": "A urethral smear from a man with purulent urethral discharge shows Gram-negative diplococci within neutrophils. Which organism is most likely?",
-              "explanation": "Intracellular Gram-negative diplococci in a urethral smear from a symptomatic man are characteristic of gonococcal urethritis. Other causes of urethritis do not have this Gram-stain appearance.",
-              "options": [
-                "Chlamydia trachomatis",
-                "Neisseria gonorrhoeae",
-                "Mycoplasma genitalium",
-                "Trichomonas vaginalis"
-              ],
-              "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH205-PATH-0172",
-              "type": "mcq",
-              "lecture": 3,
-              "sources": [
-                "Past Exams/UG ass 2 and paper 2.pdf-Q71",
-                "final paper 2 - 2019.pdf-Q2",
-                "Past Exams/final paper 2 - 2019.pdf-Q3"
-              ],
-              "repetitionCount": 3,
-              "text": "A newborn develops mucopurulent conjunctivitis in the second week after birth. Conjunctival epithelial cells show intracytoplasmic inclusions. Which organism best fits?",
-              "explanation": "Perinatal chlamydial infection can cause conjunctivitis after the first few days of life. Intracytoplasmic inclusions support chlamydial rather than gonococcal or herpetic infection.",
-              "options": [
-                "Neisseria gonorrhoeae",
-                "Staphylococcus aureus",
-                "Chlamydia trachomatis",
-                "Herpes simplex virus 2"
-              ],
-              "correctIndex": 2
-            },
-            {
-              "id": "MUG3-CH205-PATH-0343",
-              "type": "mcq",
-              "lecture": 2,
-              "sources": [
-                "Past Exams/ug paper 2 - 2020.pdf-Q13",
-                "ug paper 2 - 2020.pdf-Q13"
-              ],
-              "repetitionCount": 2,
-              "text": "Which activity of resident vaginal lactobacilli helps maintain a low vaginal pH?",
-              "explanation": "Lactobacilli ferment glycogen-derived carbohydrates to produce lactic acid. This helps maintain an acidic vaginal environment that contributes to colonization resistance.",
-              "options": [
-                "Hydrolysis of urea to ammonia",
-                "Release of bicarbonate into the lumen",
-                "Carbohydrate fermentation to lactate",
-                "Degradation of mucus to alkaline amines"
-              ],
-              "correctIndex": 2
-            },
-            {
-              "id": "MUG3-CH207-MICR-0006",
-              "type": "mcq",
-              "lecture": 2,
-              "sources": [
-                "ASS 2 - 2019 RESIT.pdf-Q13",
-                "Past Exams/ASS 2 - 2019 RESIT.pdf-Q9"
-              ],
-              "repetitionCount": 2,
-              "text": "A 32 year old male presents with very painful genital ulcer and adenopathy. A swab was taken to the lab for tissue culture and revealed multi-nucleated giant cells and intra-nuclear inclusion bodies. What is the causative pathogen?",
-              "explanation": "Painful genital ulceration with multinucleated giant cells and intranuclear inclusions supports herpes simplex virus infection. The listed bacterial pathogens and HPV do not produce this typical combination.",
-              "options": [
-                "HSV",
-                "HPV",
-                "N. Gonorrhea",
-                "Treponema pallidum",
-                "Chlamydia trachomatis"
+                "Trichomonas vaginalis",
+                "Giardia lamblia",
+                "Entamoeba histolytica",
+                "Toxoplasma gondii"
               ],
               "correctIndex": 0
             },
@@ -30060,26 +30077,6 @@
               "correctIndex": 1
             },
             {
-              "id": "MUG3-CH207-MICR-0009",
-              "type": "mcq",
-              "lecture": 3,
-              "sources": [
-                "UG ass 2 and paper 2.pdf-Q13",
-                "Past Exams/UG ass 2 and paper 2.pdf-Q60"
-              ],
-              "repetitionCount": 2,
-              "text": "A 32 year old male presents with very painful genital ulcer",
-              "explanation": "**Correct Answer: Culture and revealed multi-nucleated giant cells and intra**\n\n**Microbiological & Clinical Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Perinatal & Congenital Infections', **Culture and revealed multi-nucleated giant cells and intra** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Perinatal & Congenital Infections'.",
-              "options": [
-                "And adenopathy. A swab was taken to the lab for tissue",
-                "Culture and revealed multi-nucleated giant cells and intra",
-                "Nuclear inclusion bodies. What is the causative pathogen?",
-                "HSV",
-                "HPV"
-              ],
-              "correctIndex": 1
-            },
-            {
               "id": "MUG3-CH207-MICR-0011",
               "type": "mcq",
               "lecture": 3,
@@ -30096,23 +30093,6 @@
                 "Ci"
               ],
               "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH207-MICR-0012",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "💥Urogenital Assessment 2 MCQ-1.pdf-Q6",
-                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q81"
-              ],
-              "repetitionCount": 2,
-              "text": "A male patient with urethritis, IC organism , gram-ve diplococci. What's your",
-              "explanation": "**Correct Answer: Neisseria gonorrhea**\n\n**Microbiological & Clinical Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Urinary Tract Infections: Etiology, Pathogenesis & Diagnosis', **Neisseria gonorrhea** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Urinary Tract Infections: Etiology, Pathogenesis & Diagnosis'.",
-              "options": [
-                "Diagnosis?",
-                "Neisseria gonorrhea"
-              ],
-              "correctIndex": 1
             }
           ]
         }
@@ -30453,6 +30433,28 @@
               "modelAnswer": "uterine duct"
             },
             {
+              "id": "MUG3-CH301-PATH-0118",
+              "type": "mcq",
+              "lecture": 6,
+              "sources": [
+                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q14",
+                "Past Exams/UG ass 2 and paper 2.pdf-Q69",
+                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q93",
+                "Past Exams/paper one urogenital mcq for 2020.pdf-Q134"
+              ],
+              "repetitionCount": 4,
+              "text": "The left ureter enters the pelvis by Crossing which of the following structures",
+              "explanation": "**Correct Answer: Genito-femoral nerve**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Pathology of the Urinary Bladder & Urolithiasis', **Genito-femoral nerve** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 2, Lecture: 'Pathology of the Urinary Bladder & Urolithiasis'.",
+              "options": [
+                "Genito-femoral nerve",
+                "Inferior Mesenteric artery",
+                "common iliac Artery",
+                "psoas major muscle",
+                "Femoral nerve"
+              ],
+              "correctIndex": 0
+            },
+            {
               "id": "MUG3-CH301-ANAT-0014",
               "type": "mcq",
               "lecture": 14,
@@ -30491,6 +30493,61 @@
                 "Uterus didelphys"
               ],
               "correctIndex": 3
+            },
+            {
+              "id": "MUG3-CH301-PATH-0237",
+              "type": "mcq",
+              "lecture": 11,
+              "sources": [
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q7"
+              ],
+              "repetitionCount": 1,
+              "text": "Which organ lies behind the posterior surface of the prostate, separated from it by rectovesical fascia?",
+              "explanation": "The posterior surface of the prostate faces the rectum across the rectovesical fascia. This relationship allows the posterior prostate to be felt during a digital rectal examination.",
+              "options": [
+                "Urinary bladder",
+                "Sigmoid colon",
+                "Coil of ileum",
+                "Descending colon",
+                "Rectum"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "MUG3-CH301-PATH-0243",
+              "type": "mcq",
+              "lecture": 2,
+              "sources": [
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q24"
+              ],
+              "repetitionCount": 1,
+              "text": "Which structure passes close to the upper end of the lateral vaginal fornix, beneath the uterine artery?",
+              "explanation": "The pelvic ureter passes close to the lateral vaginal fornix. The uterine artery crosses above it lateral to the cervix before supplying the uterus.",
+              "options": [
+                "Urethra",
+                "Round ligament of the uterus",
+                "Ureter",
+                "Obturator nerve",
+                "Ovarian vein"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "MUG3-CH301-PHYS-0089",
+              "type": "mcq",
+              "lecture": 10,
+              "sources": [
+                "💥UG Final 2 (2023-2024).pdf-Q4",
+                "Past Exams/💥UG Final 2 (2023-2024).pdf-Q4"
+              ],
+              "repetitionCount": 2,
+              "text": "A female patient with breast cancer in the left upper quadrant, which LN will",
+              "explanation": "**Correct Answer: Possibly get affected?**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Male Reproductive Endocrinology & Spermatogenesis', **Possibly get affected?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 2, 'The male sexual act', pp. 71–74.",
+              "options": [
+                "Possibly get affected?",
+                "Anterior axillary LN"
+              ],
+              "correctIndex": 0
             }
           ]
         },
@@ -30614,6 +30671,44 @@
               "modelAnswer": "Sertoli cell\n\n**Key Scoring Criteria & Faculty Rubric Points:**\nSpecify fetal testis and expand MIH to anti-Müllerian hormone to distinguish fetal duct regression from unrelated Sertoli functions. Visual sources agree on Sertoli cells, but span Final and CA2. Resolve duplicate lineage and assessment placement before reusing."
             },
             {
+              "id": "MUG3-CH301-PATH-0110",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q6",
+                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q85",
+                "Past Exams/paper one urogenital mcq for 2020.pdf-Q126"
+              ],
+              "repetitionCount": 3,
+              "text": "Which of the following is the most characteristic microscopic featurs of the juxtaglomerular Cells",
+              "explanation": "**Correct Answer: Basal membrane infoldings**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Basal membrane infoldings** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
+              "options": [
+                "abundant rough endoplasmic reticulum",
+                "Basal membrane infoldings",
+                "Numerous lysosomes",
+                "Apical Well-developed microvilli",
+                "Numerous Peroxisomes"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH301-HIST-0003",
+              "type": "mcq",
+              "lecture": 3,
+              "sources": [
+                "💥UG Final 2 MCQ Collection.pdf-Q5",
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q47"
+              ],
+              "repetitionCount": 2,
+              "text": "Which of the following is true regarding the cells lining the",
+              "explanation": "**Correct Answer: Sertoli cell with indistinct cell boundary**\n\n**Histological & Structural Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Loop of Henle & Collecting Duct System', **Sertoli cell with indistinct cell boundary** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Loop of Henle & Collecting Duct System'.",
+              "options": [
+                "Seminiferous tubules?",
+                "Sertoli cell with indistinct cell boundary"
+              ],
+              "correctIndex": 1
+            },
+            {
               "id": "MUG3-CH301-HIST-0001",
               "type": "mcq",
               "lecture": 6,
@@ -30632,23 +30727,6 @@
                 "Luteinizing hormone"
               ],
               "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH301-HIST-0003",
-              "type": "mcq",
-              "lecture": 3,
-              "sources": [
-                "💥UG Final 2 MCQ Collection.pdf-Q5",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q47"
-              ],
-              "repetitionCount": 2,
-              "text": "Which of the following is true regarding the cells lining the",
-              "explanation": "**Correct Answer: Sertoli cell with indistinct cell boundary**\n\n**Histological & Structural Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Loop of Henle & Collecting Duct System', **Sertoli cell with indistinct cell boundary** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Loop of Henle & Collecting Duct System'.",
-              "options": [
-                "Seminiferous tubules?",
-                "Sertoli cell with indistinct cell boundary"
-              ],
-              "correctIndex": 1
             }
           ]
         },
@@ -31915,26 +31993,6 @@
               "modelAnswer": "Estrogen stimulates proliferation of epithelial cells, glands and blood vessels in the endometrium, resulting in endometrial growth (proliferative phase)."
             },
             {
-              "id": "MUG3-CH301-PHYS-0068",
-              "type": "mcq",
-              "lecture": 15,
-              "sources": [
-                "💥UG Final 2 MCQ Collection.pdf-Q18",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q69"
-              ],
-              "repetitionCount": 2,
-              "text": "Which estrogen is the predominant one produced by the placenta during pregnancy?",
-              "explanation": "The placenta uses steroid precursors supplied by the fetus to produce estriol. Estriol production rises markedly during pregnancy.",
-              "options": [
-                "Estrone",
-                "Estradiol",
-                "Estriol",
-                "Ethinyl estradiol",
-                "Diethylstilbestrol"
-              ],
-              "correctIndex": 2
-            },
-            {
               "id": "MUG3-CH301-PHYS-0081",
               "type": "mcq",
               "lecture": 2,
@@ -31950,25 +32008,6 @@
                 "How to measure intensity of the infection?"
               ],
               "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH301-PHYS-0082",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "FINAL UG 1- 2020.pdf-Q20",
-                "Past Exams/FINAL UG 1- 2020.pdf-Q20"
-              ],
-              "repetitionCount": 2,
-              "text": "(21 alpha hydroxylase deficiency)",
-              "explanation": "**Correct Answer: Not beta hydroxy steroid where the three hormones are deficient**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Not beta hydroxy steroid where the three hormones are deficient** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
-              "options": [
-                "Masculine female genitalia",
-                "Hyponatermia",
-                "Hyperkalemia",
-                "Not beta hydroxy steroid where the three hormones are deficient"
-              ],
-              "correctIndex": 3
             },
             {
               "id": "MUG3-CH301-PHYS-0086",
@@ -32008,74 +32047,6 @@
               "correctIndex": 0
             },
             {
-              "id": "MUG3-CH301-PHYS-0088",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "final paper 2 - 2019.pdf-Q5",
-                "Past Exams/final paper 2 - 2019.pdf-Q6"
-              ],
-              "repetitionCount": 2,
-              "text": "Risk of canser transformation in opposite testes",
-              "explanation": "**Correct Answer: Associated with this condition ??**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Associated with this condition ??** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
-              "options": [
-                "Cryptorchidism undergo orichodectomy and testes found to be atrophied, which probably",
-                "Associated with this condition ??"
-              ],
-              "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH301-PHYS-0089",
-              "type": "mcq",
-              "lecture": 10,
-              "sources": [
-                "💥UG Final 2 (2023-2024).pdf-Q4",
-                "Past Exams/💥UG Final 2 (2023-2024).pdf-Q4"
-              ],
-              "repetitionCount": 2,
-              "text": "A female patient with breast cancer in the left upper quadrant, which LN will",
-              "explanation": "**Correct Answer: Possibly get affected?**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Male Reproductive Endocrinology & Spermatogenesis', **Possibly get affected?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 2, 'The male sexual act', pp. 71–74.",
-              "options": [
-                "Possibly get affected?",
-                "Anterior axillary LN"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH301-PHYS-0091",
-              "type": "mcq",
-              "lecture": 6,
-              "sources": [
-                "💥UG Final 2 MCQ Collection.pdf-Q7",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q79"
-              ],
-              "repetitionCount": 2,
-              "text": "A case with a sac of fluid and partially ciliated epithelium. What's the",
-              "explanation": "**Correct Answer: Serous cyst of ovaries**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Renal Mechanisms in Acid-Base Balance', **Serous cyst of ovaries** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Renal Mechanisms in Acid-Base Balance'.",
-              "options": [
-                "Possible diagnosis?",
-                "Serous cyst of ovaries"
-              ],
-              "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH301-PHYS-0092",
-              "type": "mcq",
-              "lecture": 2,
-              "sources": [
-                "💥UG Final 2 MCQ Collection.pdf-Q8",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q80"
-              ],
-              "repetitionCount": 2,
-              "text": "A case with dilatation in the gland + plasma cell infiltration. What's the",
-              "explanation": "**Correct Answer: Mammary duct ectasia (plasma cell mastitis)**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Tubular Reabsorption & Secretion Mechanisms', **Mammary duct ectasia (plasma cell mastitis)** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Renal blood flow and Glomerular filtration', pp. 58–73.",
-              "options": [
-                "Possible diagnosis?",
-                "Mammary duct ectasia (plasma cell mastitis)"
-              ],
-              "correctIndex": 1
-            },
-            {
               "id": "MUG3-CH301-PHYS-0093",
               "type": "mcq",
               "lecture": 1,
@@ -32093,106 +32064,91 @@
               "correctIndex": 0
             },
             {
-              "id": "MUG3-CH301-PHYS-0095",
+              "id": "MUG3-CH301-PATH-0112",
               "type": "mcq",
-              "lecture": 1,
+              "lecture": 3,
               "sources": [
-                "💥UG Final 2 MCQ Collection.pdf-Q13",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q85"
+                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q8",
+                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q87",
+                "Past Exams/paper one urogenital mcq for 2020.pdf-Q128"
               ],
-              "repetitionCount": 2,
-              "text": "Why do we perform colonoscopy for a patient with cervical",
-              "explanation": "**Correct Answer: As it has high risk of cancer**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **As it has high risk of cancer** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
+              "repetitionCount": 3,
+              "text": "Which of the following is correct about renal blood flow?",
+              "explanation": "**Correct Answer: It fluctuates with the fluctuation of mean arterial blood pressure (MAP)**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Renal Vascular Pathology & Hypertensive Nephropathy', **It fluctuates with the fluctuation of mean arterial blood pressure (MAP)** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Inherited renal diseases', pp. 147–149.",
               "options": [
-                "Intraepithelial neoplasm (CIN)?",
-                "As it has high risk of cancer"
-              ],
-              "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH301-PHYS-0096",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "💥UG Final 2 MCQ Collection.pdf-Q15",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q87"
-              ],
-              "repetitionCount": 2,
-              "text": "A 65 year old man complaining from scrotal enlargement, what could",
-              "explanation": "**Correct Answer: Be its cause?**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Be its cause?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 2, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
-              "options": [
-                "Be its cause?",
-                "Lymphoma"
+                "It fluctuates with the fluctuation of mean arterial blood pressure (MAP)",
+                "it is autoregulated when MAP decreases below 80 mmHg",
+                "it is low when related to kidney weight.",
+                "It can be maintained relatively constant when MAP is between 80-180 mmHg",
+                "It decreases when MAP increases above 180 mmHg"
               ],
               "correctIndex": 0
             },
             {
-              "id": "MUG3-CH301-PHYS-0097",
+              "id": "MUG3-CH301-PATH-0114",
               "type": "mcq",
               "lecture": 1,
               "sources": [
-                "💥UG Final 2 MCQ Collection.pdf-Q20",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q92"
+                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q10",
+                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q89",
+                "Past Exams/paper one urogenital mcq for 2020.pdf-Q130",
+                "💥Urogenital Assessment 1 MCQ.pdf-Q31",
+                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q94"
               ],
-              "repetitionCount": 2,
-              "text": "A woman came presented with a thickening in vulva, Biopsy was",
-              "explanation": "**Correct Answer: Taken revealed thinning and dermal fibrosis. What is your diagnosis?**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Taken revealed thinning and dermal fibrosis. What is your diagnosis?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
+              "repetitionCount": 5,
+              "text": "The vasa recta are characterized by ?",
+              "explanation": "**Correct Answer: Passage of water from interstitial space to its descending limb**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Passage of water from interstitial space to its descending limb** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
               "options": [
-                "Taken revealed thinning and dermal fibrosis. What is your diagnosis?",
-                "Lichen sclerosis"
+                "Passage of water from interstitial space to its descending limb",
+                "Being responsible for building up the medullary interstitial hyperosmolarity",
+                "Having a rapid flow",
+                "Being a passive system",
+                "Passage of salts from its interstitial space to its ascending limb`"
               ],
               "correctIndex": 0
             },
             {
-              "id": "MUG3-CH301-PHYS-0098",
+              "id": "MUG3-CH301-PATH-0115",
               "type": "mcq",
               "lecture": 1,
               "sources": [
-                "💥UG Final 2 MCQ Collection.pdf-Q22",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q94"
+                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q11",
+                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q90",
+                "Past Exams/paper one urogenital mcq for 2020.pdf-Q131",
+                "💥Urogenital Assessment 1 MCQ.pdf-Q32",
+                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q95"
               ],
-              "repetitionCount": 2,
-              "text": "A 65 year old woman had stage IV cervical cancer. If untreated, which",
-              "explanation": "**Correct Answer: Of the following could be the cause of death in this patient?**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Of the following could be the cause of death in this patient?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
+              "repetitionCount": 5,
+              "text": "Serum potassium concentration of 2.5mEa/L can occur due to:",
+              "explanation": "**Correct Answer: Major muscle trauma**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Major muscle trauma** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
               "options": [
-                "Of the following could be the cause of death in this patient?",
-                "Renal failure and Uremia"
+                "Hemolytic anemia",
+                "Hyperosmolarity",
+                "Major muscle trauma",
+                "Alkalosis",
+                "Hypoxia"
               ],
-              "correctIndex": 0
+              "correctIndex": 2
             },
             {
-              "id": "MUG3-CH301-PHYS-0099",
+              "id": "MUG3-CH301-PHYS-0068",
               "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "💥UG Final 2 MCQ Collection.pdf-Q23",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q95"
-              ],
-              "repetitionCount": 2,
-              "text": "Orchiectomy was done to a 25 year old man with inguinal atrophic",
-              "explanation": "**Correct Answer: Testis. Which of the following is a possible complication?**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Testis. Which of the following is a possible complication?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
-              "options": [
-                "Testis. Which of the following is a possible complication?",
-                "Risk of malignant transformation in the contralateral testis"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH301-PHYS-0101",
-              "type": "mcq",
-              "lecture": 1,
+              "lecture": 15,
               "sources": [
                 "💥UG Final 2 MCQ Collection.pdf-Q18",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q118"
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q69"
               ],
               "repetitionCount": 2,
-              "text": "What is the highest risk to the fetus if a rubella infection occurs",
-              "explanation": "**Correct Answer: During the first trimester?**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **During the first trimester?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
+              "text": "Which estrogen is the predominant one produced by the placenta during pregnancy?",
+              "explanation": "The placenta uses steroid precursors supplied by the fetus to produce estriol. Estriol production rises markedly during pregnancy.",
               "options": [
-                "During the first trimester?",
-                "Congenital defects in the developing organs"
+                "Estrone",
+                "Estradiol",
+                "Estriol",
+                "Ethinyl estradiol",
+                "Diethylstilbestrol"
               ],
-              "correctIndex": 0
+              "correctIndex": 2
             }
           ]
         },
@@ -32249,6 +32205,46 @@
               "text": "Which of the following may be present in a 60 years old lady?",
               "explanation": "**Faculty Model Answer & Scoring Rubric:**\nincreased cholesterol **Core Educational Objective & Clinical Mechanism:**\nThis question evaluates essential clinical competencies in Biochem.\nOfficial textbook guidance notes: \"It is the second most common cause of uncomplicated UTIs in sexually active young (13-40 years of age) women following E coli.\" **High-Yield Exam Pearl:**\nWhich of the following may be present in a 60 years old lady is a recurring examination target in Biochem. **Textbook & Curriculum Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition (Part 1, Urinary tract infections, p. 205), Lecture: Metabolic Functions of the Kidney & Gluconeogenesis.",
               "modelAnswer": "increased cholesterol"
+            },
+            {
+              "id": "MUG3-CH301-PHYS-0082",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "FINAL UG 1- 2020.pdf-Q20",
+                "Past Exams/FINAL UG 1- 2020.pdf-Q20"
+              ],
+              "repetitionCount": 2,
+              "text": "(21 alpha hydroxylase deficiency)",
+              "explanation": "**Correct Answer: Not beta hydroxy steroid where the three hormones are deficient**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Not beta hydroxy steroid where the three hormones are deficient** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
+              "options": [
+                "Masculine female genitalia",
+                "Hyponatermia",
+                "Hyperkalemia",
+                "Not beta hydroxy steroid where the three hormones are deficient"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "MUG3-CH301-PATH-0120",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q16",
+                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q95",
+                "Past Exams/paper one urogenital mcq for 2020.pdf-Q136"
+              ],
+              "repetitionCount": 3,
+              "text": "A 15-year-old female patient was diagnosed with hypertension and defective 17 Alpha hydroxylase elevation of the which of the following hormones would be the cause of hypertension",
+              "explanation": "**Correct Answer: Aldosterone**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Aldosterone** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
+              "options": [
+                "Aldosterone",
+                "Androstenedione",
+                "Progesterone",
+                "Cortisol",
+                "Estradiol"
+              ],
+              "correctIndex": 0
             }
           ]
         },
@@ -36329,42 +36325,302 @@
               "modelAnswer": "H. Ducreyi\nPara:"
             },
             {
-              "id": "MUG3-CH301-PATH-0237",
+              "id": "MUG3-CH301-PHYS-0088",
               "type": "mcq",
-              "lecture": 11,
+              "lecture": 1,
               "sources": [
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q7"
+                "final paper 2 - 2019.pdf-Q5",
+                "Past Exams/final paper 2 - 2019.pdf-Q6"
               ],
-              "repetitionCount": 1,
-              "text": "Which organ lies behind the posterior surface of the prostate, separated from it by rectovesical fascia?",
-              "explanation": "The posterior surface of the prostate faces the rectum across the rectovesical fascia. This relationship allows the posterior prostate to be felt during a digital rectal examination.",
+              "repetitionCount": 2,
+              "text": "Risk of canser transformation in opposite testes",
+              "explanation": "**Correct Answer: Associated with this condition ??**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Associated with this condition ??** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
               "options": [
-                "Urinary bladder",
-                "Sigmoid colon",
-                "Coil of ileum",
-                "Descending colon",
-                "Rectum"
+                "Cryptorchidism undergo orichodectomy and testes found to be atrophied, which probably",
+                "Associated with this condition ??"
               ],
-              "correctIndex": 4
+              "correctIndex": 1
             },
             {
-              "id": "MUG3-CH301-PATH-0243",
+              "id": "MUG3-CH301-PHYS-0091",
+              "type": "mcq",
+              "lecture": 6,
+              "sources": [
+                "💥UG Final 2 MCQ Collection.pdf-Q7",
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q79"
+              ],
+              "repetitionCount": 2,
+              "text": "A case with a sac of fluid and partially ciliated epithelium. What's the",
+              "explanation": "**Correct Answer: Serous cyst of ovaries**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Renal Mechanisms in Acid-Base Balance', **Serous cyst of ovaries** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Renal Mechanisms in Acid-Base Balance'.",
+              "options": [
+                "Possible diagnosis?",
+                "Serous cyst of ovaries"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH301-PHYS-0092",
               "type": "mcq",
               "lecture": 2,
               "sources": [
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q24"
+                "💥UG Final 2 MCQ Collection.pdf-Q8",
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q80"
+              ],
+              "repetitionCount": 2,
+              "text": "A case with dilatation in the gland + plasma cell infiltration. What's the",
+              "explanation": "**Correct Answer: Mammary duct ectasia (plasma cell mastitis)**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Tubular Reabsorption & Secretion Mechanisms', **Mammary duct ectasia (plasma cell mastitis)** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Renal blood flow and Glomerular filtration', pp. 58–73.",
+              "options": [
+                "Possible diagnosis?",
+                "Mammary duct ectasia (plasma cell mastitis)"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH301-PATH-0012",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥UG Final 2 MCQ Collection.pdf-Q26",
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q98"
+              ],
+              "repetitionCount": 2,
+              "text": "An 8 year old boy is brought to the physician by his parents who",
+              "explanation": "**Correct Answer: Noticed the appearance of puberty symptoms on him. Physical**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Noticed the appearance of puberty symptoms on him. Physical** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
+              "options": [
+                "Noticed the appearance of puberty symptoms on him. Physical",
+                "Examination revealed enlargement of the external genitalia and facial",
+                "Hair. Which of the following neoplasms is the most likely cause of",
+                "Precocious puberty in this patient?",
+                "Leydig cell tumor"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH301-PATH-0014",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥UG Final 2 MCQ Collection.pdf-Q9",
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q81"
+              ],
+              "repetitionCount": 2,
+              "text": "A case of movable mass with lymphoplasmacytic infiltration and",
+              "explanation": "**Correct Answer: Normal skin, triple -ve (NO HER2/NEU & ER/PR) with cells forming**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Normal skin, triple -ve (NO HER2/NEU & ER/PR) with cells forming** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
+              "options": [
+                "Normal skin, triple -ve (NO HER2/NEU & ER/PR) with cells forming",
+                "Continuous cords (syncytium)?",
+                "Medullary Carcinoma"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH301-PATH-0016",
+              "type": "mcq",
+              "lecture": 6,
+              "sources": [
+                "💥UG Final 2 MCQ Collection.pdf-Q25",
+                "💥Urogenital Assessment 2 MCQ-1.pdf-Q16",
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q97",
+                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q72"
+              ],
+              "repetitionCount": 4,
+              "text": "A 78 year old was admitted to the hospital due to acute urinary tract",
+              "explanation": "**Correct Answer: Obstruction. For the past few years, he has had recurrent bouts of**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Pathology of the Urinary Bladder & Urolithiasis', **Obstruction. For the past few years, he has had recurrent bouts of** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Diseases of ureter & urinary bladder', pp. 252–257.",
+              "options": [
+                "Obstruction. For the past few years, he has had recurrent bouts of",
+                "Cystitis. Two days before being admitted to the hospital, he was not able",
+                "To urinate at all. What is the probable cause of bladder outlet obstruction",
+                "In this case?",
+                "Nodular prostatic hyperplasia"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH301-PATH-0017",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥UG Final 2 MCQ Collection.pdf-Q27",
+                "💥Urogenital Assessment 2 MCQ-1.pdf-Q18",
+                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q74",
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q99"
+              ],
+              "repetitionCount": 4,
+              "text": "A 4-year-old female child presents with polypoid, grape-like masses",
+              "explanation": "**Correct Answer: Small round malignant tumor cells, some of which have eosinophilic**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Small round malignant tumor cells, some of which have eosinophilic** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
+              "options": [
+                "Projecting from the vagina. Histologic examination of the biopsy shows",
+                "Small round malignant tumor cells, some of which have eosinophilic",
+                "Strap like cytoplasm. This lesion is best classified as",
+                "Sarcoma Botryoides (embryonal rhabdomyosarcoma)"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH301-PATH-0111",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q7",
+                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q86",
+                "Past Exams/paper one urogenital mcq for 2020.pdf-Q127"
+              ],
+              "repetitionCount": 3,
+              "text": "Whats is the major role of the juxtamedullary nephron?",
+              "explanation": "**Correct Answer: Conveys oxygen to nephron segments.**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Conveys oxygen to nephron segments.** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
+              "options": [
+                "Conveys oxygen to nephron segments.",
+                "Serves as a pathway for the return of reabsorbed water and solutes",
+                "Conveys nutrients to nephron segments.",
+                "Concentrates and dilutes urine.",
+                "Delivers substances for nephron secretion"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH301-PATH-0066",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q80",
+                "Past Exams/paper one urogenital mcq for 2020.pdf-Q121"
+              ],
+              "repetitionCount": 2,
+              "text": "the following is a mechanism of the pharmacological actions exerted by the magnesium(Mg2+)",
+              "explanation": "**Correct Answer: Natural physiologic competitive antagonist of calcium at T type of Calcium Channels**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Natural physiologic competitive antagonist of calcium at T type of Calcium Channels** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
+              "options": [
+                "Natural physiologic competitive antagonist of calcium at T type of Calcium Channels",
+                "NMDA receptor antagonist leading to analgesic, anticonvulsant, sedative effects",
+                "Increase Acetylcholine release leading to muscle relaxation",
+                "Increase catecholamine release after sympathetic stimulus",
+                "Stimulation of M3 Muscarinic Receptors PATHO"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH301-PATH-0105",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q1"
               ],
               "repetitionCount": 1,
-              "text": "Which structure passes close to the upper end of the lateral vaginal fornix, beneath the uterine artery?",
-              "explanation": "The pelvic ureter passes close to the lateral vaginal fornix. The uterine artery crosses above it lateral to the cervix before supplying the uterus.",
+              "text": "the following is a mechanism of the pharmacological actions exerted by the magnesium",
+              "explanation": "**Correct Answer: Natural physiologic competitive antagonist of calcium at T type of Calcium Channels**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Natural physiologic competitive antagonist of calcium at T type of Calcium Channels** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
               "options": [
-                "Urethra",
-                "Round ligament of the uterus",
-                "Ureter",
-                "Obturator nerve",
-                "Ovarian vein"
+                "Natural physiologic competitive antagonist of calcium at T type of Calcium Channels",
+                "NMDA receptor antagonist leading to analgesic, anticonvulsant, sedative effects",
+                "Increase Acetylcholine release leading to muscle relaxation",
+                "Increase catecholamine release after sympathetic stimulus",
+                "Stimulation of M3 Muscarinic Receptors"
               ],
-              "correctIndex": 2
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH301-PATH-0122",
+              "type": "mcq",
+              "lecture": 3,
+              "sources": [
+                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q19",
+                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q98",
+                "Past Exams/paper one urogenital mcq for 2020.pdf-Q139"
+              ],
+              "repetitionCount": 3,
+              "text": "choose the least susceptible to Urinary Tract infections (UTIs)",
+              "explanation": "**Correct Answer: Adult males**\n\n**Pathophysiological & Morphological Rationale:**\nUnder Ain Shams University faculty curriculum guidelines for 'Pathology of the Testis, Epididymis & Scrotum', **Adult males** represents the designated incorrect statement or exception; all other options represent factually established curriculum features.\n\n**Distractor Analysis:**\n- **Alternative Choices:** In this negative-stem presentation, all competing choices represent factually established, clinically authentic characteristics of 'Pathology of the Testis, Epididymis & Scrotum' under standard Ain Shams curriculum guidelines, making **Adult males** the designated exception.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Diseases of ureter & urinary bladder', pp. 252–257.",
+              "options": [
+                "Preschool males",
+                "Adult males",
+                "Postmenopausal women",
+                "Elderly males",
+                "Pregnant females"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH301-PHYS-0095",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥UG Final 2 MCQ Collection.pdf-Q13",
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q85"
+              ],
+              "repetitionCount": 2,
+              "text": "Why do we perform colonoscopy for a patient with cervical",
+              "explanation": "**Correct Answer: As it has high risk of cancer**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **As it has high risk of cancer** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
+              "options": [
+                "Intraepithelial neoplasm (CIN)?",
+                "As it has high risk of cancer"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH301-PHYS-0096",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥UG Final 2 MCQ Collection.pdf-Q15",
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q87"
+              ],
+              "repetitionCount": 2,
+              "text": "A 65 year old man complaining from scrotal enlargement, what could",
+              "explanation": "**Correct Answer: Be its cause?**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Be its cause?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 2, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
+              "options": [
+                "Be its cause?",
+                "Lymphoma"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH301-PHYS-0097",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥UG Final 2 MCQ Collection.pdf-Q20",
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q92"
+              ],
+              "repetitionCount": 2,
+              "text": "A woman came presented with a thickening in vulva, Biopsy was",
+              "explanation": "**Correct Answer: Taken revealed thinning and dermal fibrosis. What is your diagnosis?**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Taken revealed thinning and dermal fibrosis. What is your diagnosis?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
+              "options": [
+                "Taken revealed thinning and dermal fibrosis. What is your diagnosis?",
+                "Lichen sclerosis"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH301-PHYS-0098",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥UG Final 2 MCQ Collection.pdf-Q22",
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q94"
+              ],
+              "repetitionCount": 2,
+              "text": "A 65 year old woman had stage IV cervical cancer. If untreated, which",
+              "explanation": "**Correct Answer: Of the following could be the cause of death in this patient?**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Of the following could be the cause of death in this patient?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
+              "options": [
+                "Of the following could be the cause of death in this patient?",
+                "Renal failure and Uremia"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH301-PHYS-0099",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥UG Final 2 MCQ Collection.pdf-Q23",
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q95"
+              ],
+              "repetitionCount": 2,
+              "text": "Orchiectomy was done to a 25 year old man with inguinal atrophic",
+              "explanation": "**Correct Answer: Testis. Which of the following is a possible complication?**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **Testis. Which of the following is a possible complication?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
+              "options": [
+                "Testis. Which of the following is a possible complication?",
+                "Risk of malignant transformation in the contralateral testis"
+              ],
+              "correctIndex": 0
             },
             {
               "id": "MUG3-CH301-PATH-0007",
@@ -36441,26 +36697,6 @@
               "correctIndex": 1
             },
             {
-              "id": "MUG3-CH301-PATH-0012",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "💥UG Final 2 MCQ Collection.pdf-Q26",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q98"
-              ],
-              "repetitionCount": 2,
-              "text": "An 8 year old boy is brought to the physician by his parents who",
-              "explanation": "**Correct Answer: Noticed the appearance of puberty symptoms on him. Physical**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Noticed the appearance of puberty symptoms on him. Physical** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
-              "options": [
-                "Noticed the appearance of puberty symptoms on him. Physical",
-                "Examination revealed enlargement of the external genitalia and facial",
-                "Hair. Which of the following neoplasms is the most likely cause of",
-                "Precocious puberty in this patient?",
-                "Leydig cell tumor"
-              ],
-              "correctIndex": 0
-            },
-            {
               "id": "MUG3-CH301-PATH-0013",
               "type": "mcq",
               "lecture": 1,
@@ -36478,24 +36714,6 @@
               "correctIndex": 1
             },
             {
-              "id": "MUG3-CH301-PATH-0014",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "💥UG Final 2 MCQ Collection.pdf-Q9",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q81"
-              ],
-              "repetitionCount": 2,
-              "text": "A case of movable mass with lymphoplasmacytic infiltration and",
-              "explanation": "**Correct Answer: Normal skin, triple -ve (NO HER2/NEU & ER/PR) with cells forming**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Normal skin, triple -ve (NO HER2/NEU & ER/PR) with cells forming** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
-              "options": [
-                "Normal skin, triple -ve (NO HER2/NEU & ER/PR) with cells forming",
-                "Continuous cords (syncytium)?",
-                "Medullary Carcinoma"
-              ],
-              "correctIndex": 0
-            },
-            {
               "id": "MUG3-CH301-PATH-0015",
               "type": "mcq",
               "lecture": 1,
@@ -36510,68 +36728,6 @@
                 "Lining epithelium is mitotically active and with atypical cells. What's the",
                 "Possible diagnosis?",
                 "Atypical endometrial hyperplasia"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH301-PATH-0016",
-              "type": "mcq",
-              "lecture": 6,
-              "sources": [
-                "💥UG Final 2 MCQ Collection.pdf-Q25",
-                "💥Urogenital Assessment 2 MCQ-1.pdf-Q16",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q97",
-                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q72"
-              ],
-              "repetitionCount": 4,
-              "text": "A 78 year old was admitted to the hospital due to acute urinary tract",
-              "explanation": "**Correct Answer: Obstruction. For the past few years, he has had recurrent bouts of**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Pathology of the Urinary Bladder & Urolithiasis', **Obstruction. For the past few years, he has had recurrent bouts of** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Diseases of ureter & urinary bladder', pp. 252–257.",
-              "options": [
-                "Obstruction. For the past few years, he has had recurrent bouts of",
-                "Cystitis. Two days before being admitted to the hospital, he was not able",
-                "To urinate at all. What is the probable cause of bladder outlet obstruction",
-                "In this case?",
-                "Nodular prostatic hyperplasia"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH301-PATH-0017",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "💥UG Final 2 MCQ Collection.pdf-Q27",
-                "💥Urogenital Assessment 2 MCQ-1.pdf-Q18",
-                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q74",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q99"
-              ],
-              "repetitionCount": 4,
-              "text": "A 4-year-old female child presents with polypoid, grape-like masses",
-              "explanation": "**Correct Answer: Small round malignant tumor cells, some of which have eosinophilic**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Small round malignant tumor cells, some of which have eosinophilic** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
-              "options": [
-                "Projecting from the vagina. Histologic examination of the biopsy shows",
-                "Small round malignant tumor cells, some of which have eosinophilic",
-                "Strap like cytoplasm. This lesion is best classified as",
-                "Sarcoma Botryoides (embryonal rhabdomyosarcoma)"
-              ],
-              "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH301-PATH-0105",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q1"
-              ],
-              "repetitionCount": 1,
-              "text": "the following is a mechanism of the pharmacological actions exerted by the magnesium",
-              "explanation": "**Correct Answer: Natural physiologic competitive antagonist of calcium at T type of Calcium Channels**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Natural physiologic competitive antagonist of calcium at T type of Calcium Channels** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
-              "options": [
-                "Natural physiologic competitive antagonist of calcium at T type of Calcium Channels",
-                "NMDA receptor antagonist leading to analgesic, anticonvulsant, sedative effects",
-                "Increase Acetylcholine release leading to muscle relaxation",
-                "Increase catecholamine release after sympathetic stimulus",
-                "Stimulation of M3 Muscarinic Receptors"
               ],
               "correctIndex": 0
             },
@@ -36600,179 +36756,6 @@
                 "Stage to tissue fibrosis"
               ],
               "correctIndex": 4
-            },
-            {
-              "id": "MUG3-CH301-PATH-0110",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q6",
-                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q85",
-                "Past Exams/paper one urogenital mcq for 2020.pdf-Q126"
-              ],
-              "repetitionCount": 3,
-              "text": "Which of the following is the most characteristic microscopic featurs of the juxtaglomerular Cells",
-              "explanation": "**Correct Answer: Basal membrane infoldings**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Basal membrane infoldings** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
-              "options": [
-                "abundant rough endoplasmic reticulum",
-                "Basal membrane infoldings",
-                "Numerous lysosomes",
-                "Apical Well-developed microvilli",
-                "Numerous Peroxisomes"
-              ],
-              "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH301-PATH-0111",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q7",
-                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q86",
-                "Past Exams/paper one urogenital mcq for 2020.pdf-Q127"
-              ],
-              "repetitionCount": 3,
-              "text": "Whats is the major role of the juxtamedullary nephron?",
-              "explanation": "**Correct Answer: Conveys oxygen to nephron segments.**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Conveys oxygen to nephron segments.** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
-              "options": [
-                "Conveys oxygen to nephron segments.",
-                "Serves as a pathway for the return of reabsorbed water and solutes",
-                "Conveys nutrients to nephron segments.",
-                "Concentrates and dilutes urine.",
-                "Delivers substances for nephron secretion"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH301-PATH-0112",
-              "type": "mcq",
-              "lecture": 3,
-              "sources": [
-                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q8",
-                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q87",
-                "Past Exams/paper one urogenital mcq for 2020.pdf-Q128"
-              ],
-              "repetitionCount": 3,
-              "text": "Which of the following is correct about renal blood flow?",
-              "explanation": "**Correct Answer: It fluctuates with the fluctuation of mean arterial blood pressure (MAP)**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Renal Vascular Pathology & Hypertensive Nephropathy', **It fluctuates with the fluctuation of mean arterial blood pressure (MAP)** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Inherited renal diseases', pp. 147–149.",
-              "options": [
-                "It fluctuates with the fluctuation of mean arterial blood pressure (MAP)",
-                "it is autoregulated when MAP decreases below 80 mmHg",
-                "it is low when related to kidney weight.",
-                "It can be maintained relatively constant when MAP is between 80-180 mmHg",
-                "It decreases when MAP increases above 180 mmHg"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH301-PATH-0114",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q10",
-                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q89",
-                "Past Exams/paper one urogenital mcq for 2020.pdf-Q130",
-                "💥Urogenital Assessment 1 MCQ.pdf-Q31",
-                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q94"
-              ],
-              "repetitionCount": 5,
-              "text": "The vasa recta are characterized by ?",
-              "explanation": "**Correct Answer: Passage of water from interstitial space to its descending limb**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Passage of water from interstitial space to its descending limb** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
-              "options": [
-                "Passage of water from interstitial space to its descending limb",
-                "Being responsible for building up the medullary interstitial hyperosmolarity",
-                "Having a rapid flow",
-                "Being a passive system",
-                "Passage of salts from its interstitial space to its ascending limb`"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH301-PATH-0115",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q11",
-                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q90",
-                "Past Exams/paper one urogenital mcq for 2020.pdf-Q131",
-                "💥Urogenital Assessment 1 MCQ.pdf-Q32",
-                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q95"
-              ],
-              "repetitionCount": 5,
-              "text": "Serum potassium concentration of 2.5mEa/L can occur due to:",
-              "explanation": "**Correct Answer: Major muscle trauma**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Major muscle trauma** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
-              "options": [
-                "Hemolytic anemia",
-                "Hyperosmolarity",
-                "Major muscle trauma",
-                "Alkalosis",
-                "Hypoxia"
-              ],
-              "correctIndex": 2
-            },
-            {
-              "id": "MUG3-CH301-PATH-0118",
-              "type": "mcq",
-              "lecture": 6,
-              "sources": [
-                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q14",
-                "Past Exams/UG ass 2 and paper 2.pdf-Q69",
-                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q93",
-                "Past Exams/paper one urogenital mcq for 2020.pdf-Q134"
-              ],
-              "repetitionCount": 4,
-              "text": "The left ureter enters the pelvis by Crossing which of the following structures",
-              "explanation": "**Correct Answer: Genito-femoral nerve**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Pathology of the Urinary Bladder & Urolithiasis', **Genito-femoral nerve** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 2, Lecture: 'Pathology of the Urinary Bladder & Urolithiasis'.",
-              "options": [
-                "Genito-femoral nerve",
-                "Inferior Mesenteric artery",
-                "common iliac Artery",
-                "psoas major muscle",
-                "Femoral nerve"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH301-PATH-0120",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q16",
-                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q95",
-                "Past Exams/paper one urogenital mcq for 2020.pdf-Q136"
-              ],
-              "repetitionCount": 3,
-              "text": "A 15-year-old female patient was diagnosed with hypertension and defective 17 Alpha hydroxylase elevation of the which of the following hormones would be the cause of hypertension",
-              "explanation": "**Correct Answer: Aldosterone**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Diseases: Nephritic & Nephrotic Syndromes', **Aldosterone** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Diseases: Nephritic & Nephrotic Syndromes'.",
-              "options": [
-                "Aldosterone",
-                "Androstenedione",
-                "Progesterone",
-                "Cortisol",
-                "Estradiol"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH301-PATH-0122",
-              "type": "mcq",
-              "lecture": 7,
-              "sources": [
-                "Past Exams/FINAL 1 UG resit - 2019.pdf-Q19",
-                "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q98",
-                "Past Exams/paper one urogenital mcq for 2020.pdf-Q139"
-              ],
-              "repetitionCount": 3,
-              "text": "choose the least susceptible to Urinary Tract infections (UTIs)",
-              "explanation": "**Correct Answer: Adult males**\n\n**Pathophysiological & Morphological Rationale:**\nUnder Ain Shams University faculty curriculum guidelines for 'Pathology of the Testis, Epididymis & Scrotum', **Adult males** represents the designated incorrect statement or exception; all other options represent factually established curriculum features.\n\n**Distractor Analysis:**\n- **Alternative Choices:** In this negative-stem presentation, all competing choices represent factually established, clinically authentic characteristics of 'Pathology of the Testis, Epididymis & Scrotum' under standard Ain Shams curriculum guidelines, making **Adult males** the designated exception.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Diseases of ureter & urinary bladder', pp. 252–257.",
-              "options": [
-                "Preschool males",
-                "Adult males",
-                "Postmenopausal women",
-                "Elderly males",
-                "Pregnant females"
-              ],
-              "correctIndex": 1
             }
           ]
         },
@@ -36871,23 +36854,6 @@
               "text": "Which of the following is an adverse effect for PDE5 inhibitors Tadalafil ?",
               "explanation": "**Faculty Model Answer & Scoring Rubric:**\nVisual disturbance **Core Educational Objective & Clinical Mechanism:**\nThis question evaluates essential clinical competencies in Pharma.\nOfficial textbook guidance notes: \"PDES Inhibitors: Tadalafil 5 mg tablet Currently has a labeled indication for BPH Action: induces prostate, bladder, urethra smooth muscle relaxation Mechanism of action: * Phosphodiesterase 5 is distributed throughout the urinary tract, including the bladder detrusor, vascular smooth muscle, prostate tissue, and ureter.\" **High-Yield Exam Pearl:**\nWhich of the following is an adverse effect for PDE5 inhibitors Tadalafil is a recurring examination target in Pharma. **Textbook & Curriculum Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition (Part 2, Erectile dysfunction pharmacotherapy, p. 90), Lecture: Female Hormonal Therapy & Contraception.",
               "modelAnswer": "Visual disturbance"
-            },
-            {
-              "id": "MUG3-CH301-PHAR-0004",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "💥UG Final 2 MCQ Collection.pdf-Q16",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q116"
-              ],
-              "repetitionCount": 2,
-              "text": "A Pregnant mother 36 weeks , microscopic findings revealed Strept",
-              "explanation": "**Correct Answer: Agalactiae positive. What's the recommended ttt?**\n\n**Pharmacological & Therapeutic Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Diuretics & Drug Therapy of Electrolytes and Acid/Base Disturbance', **Agalactiae positive. What's the recommended ttt?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Diuretics & Drug Therapy of Electrolytes and Acid/Base Disturbance'.",
-              "options": [
-                "Agalactiae positive. What's the recommended ttt?",
-                "IV intrapartum ampicillin G"
-              ],
-              "correctIndex": 0
             }
           ]
         },
@@ -36917,23 +36883,6 @@
               "modelAnswer": "immunity in vagina"
             },
             {
-              "id": "MUG3-CH301-MICR-0004",
-              "type": "mcq",
-              "lecture": 2,
-              "sources": [
-                "💥UG Final 2 MCQ Collection.pdf-Q3",
-                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q103"
-              ],
-              "repetitionCount": 2,
-              "text": "A female positive for VDRL but has no history of syphilis and",
-              "explanation": "**Correct Answer: Infection other than syphilis**\n\n**Microbiological & Clinical Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Infections of the Genital System & STDs', **Infection other than syphilis** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Infections of the Genital System & STDs'.",
-              "options": [
-                "Asymptomatic. What's your diagnosis?",
-                "Infection other than syphilis"
-              ],
-              "correctIndex": 1
-            },
-            {
               "id": "MUG3-CH301-MICR-0005",
               "type": "mcq",
               "lecture": 1,
@@ -36949,6 +36898,57 @@
                 "HSV-2"
               ],
               "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH301-PHYS-0101",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥UG Final 2 MCQ Collection.pdf-Q18",
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q118"
+              ],
+              "repetitionCount": 2,
+              "text": "What is the highest risk to the fetus if a rubella infection occurs",
+              "explanation": "**Correct Answer: During the first trimester?**\n\n**Physiological & Regulatory Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Glomerular Filtration Rate & Renal Hemodynamics', **During the first trimester?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Glomerular Filtration Rate & Renal Hemodynamics'.",
+              "options": [
+                "During the first trimester?",
+                "Congenital defects in the developing organs"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH301-PHAR-0004",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥UG Final 2 MCQ Collection.pdf-Q16",
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q116"
+              ],
+              "repetitionCount": 2,
+              "text": "A Pregnant mother 36 weeks , microscopic findings revealed Strept",
+              "explanation": "**Correct Answer: Agalactiae positive. What's the recommended ttt?**\n\n**Pharmacological & Therapeutic Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Diuretics & Drug Therapy of Electrolytes and Acid/Base Disturbance', **Agalactiae positive. What's the recommended ttt?** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Diuretics & Drug Therapy of Electrolytes and Acid/Base Disturbance'.",
+              "options": [
+                "Agalactiae positive. What's the recommended ttt?",
+                "IV intrapartum ampicillin G"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH301-MICR-0004",
+              "type": "mcq",
+              "lecture": 2,
+              "sources": [
+                "💥UG Final 2 MCQ Collection.pdf-Q3",
+                "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q103"
+              ],
+              "repetitionCount": 2,
+              "text": "A female positive for VDRL but has no history of syphilis and",
+              "explanation": "**Correct Answer: Infection other than syphilis**\n\n**Microbiological & Clinical Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Infections of the Genital System & STDs', **Infection other than syphilis** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Lecture: 'Infections of the Genital System & STDs'.",
+              "options": [
+                "Asymptomatic. What's your diagnosis?",
+                "Infection other than syphilis"
+              ],
+              "correctIndex": 1
             },
             {
               "id": "MUG3-CH301-MICR-0006",
