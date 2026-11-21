@@ -5293,5 +5293,355 @@
     "stem": "Regarding Inulin clearance, all of the foliowing are true EXCEPT:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0384: OCR corrupted prompt ('foliowing are true') and mangled option text ('His fikered, not reabsorbed...') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p022-mcq-0385",
+    "stem": "Regarding Creatinine clearance:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0385: Fragmentary prompt stem (\"Regarding Creatinine clearance\") with unverified answer key from UG_NERD page 22. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p022-mcq-0386",
+    "stem": "Renal plasma clearance of glucose: >. Is equal to GFR,",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0386: Unverified scanned MCQ from UG_NERD page 22 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p022-mcq-0387",
+    "stem": "Sodium reabsorption in the proximal tubule, | from the luminal surface is marked",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0387: Unverified scanned MCQ from UG_NERD page 22 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p022-mcq-0388",
+    "stem": "PAHA, all are true EXCEPT: ,",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0388: Unverified negative MCQ from UG_NERD page 22 with OCR artifacts and missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p022-mcq-0389",
+    "stem": "Equal to GFR. H",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0389: Fragmentary prompt stem (\"Equal to GFR. H\") with unverified answer key from UG_NERD page 22. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p022-mcq-0390",
+    "stem": "A substance that is freely filtered, H a arenal plasma clearance: :",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0390: Unverified scanned MCQ from UG_NERD page 22 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p023-mcq-0391",
+    "stem": "What is the GFR (ml/min) if the urinary i inulin is 40mg/mL, the urinary flow ra",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0391: Unverified scanned MCQ from UG_NERD page 23 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p023-mcq-0392",
+    "stem": "Inulin clearance >. Formula using plasma creatinine concentration Ammonia produc",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0392: Unverified scanned MCQ from UG_NERD page 23 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p024-mcq-0393",
+    "stem": "50 ml/minute < 125 ml/minute",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0393: Truncated 2-option scan with unverified answer key from UG_NERD page 24. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p024-mcq-0394",
+    "stem": "What is the clearance of a substance whe its concentration in plasma is Img/mL, ",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0394: Truncated 2-option scan with unverified answer key from UG_NERD page 24. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p021-mcq-0395",
+    "stem": "Reabsorption is isosmotic.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0395: Fragmentary prompt stem (\"Reabsorption is isosmotic.\") with unverified answer key from UG_NERD page 21. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p025-mcq-0396",
+    "stem": "Isthe maximal amount of a substance ; less reabsorbed or secreted per minute. i ",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0396: Unverified scanned MCQ from UG_NERD page 25 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p025-mcq-0397",
+    "stem": "The following contributes to the high H osmolarity of the renal medulla: a >, Lo",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0397: Unverified scanned MCQ from UG_NERD page 25 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p025-mcq-0398",
+    "stem": "The restriction of protein to pass through the : '2 filtration membrane is due t",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0398: Unverified scanned MCQ from UG_NERD page 25 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p021-mcq-0399",
+    "stem": "The following decreases the GFR: F : a",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0399: Unverified scanned MCQ from UG_NERD page 21 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p024-mcq-0400",
+    "stem": "Chloride reabsorption in the proximal tubu is:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0400: Unverified scanned MCQ from UG_NERD page 24 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p022-mcq-0401",
+    "stem": "Urea reabsorption in the proximal tubule i",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0401: Unverified scanned MCQ from UG_NERD page 22 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p026-mcq-0402",
+    "stem": "Renal threshold for glucose is:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0402: Unverified scanned MCQ from UG_NERD page 26 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p024-mcq-0403",
+    "stem": "Itisa passive process.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0403: Fragmentary prompt stem (\"Itisa passive process.\") with unverified answer key from UG_NERD page 24. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p026-mcq-0404",
+    "stem": "Carbonic anhydrase inhibition leads to all of the following EXCEPT:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0404: Unverified negative MCQ from UG_NERD page 26 with OCR artifacts and missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p027-mcq-0405",
+    "stem": "Magnesium and calcium are reabsorbed H passively 2\" to potassium movement from :",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0405: Unverified scanned MCQ from UG_NERD page 27 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p027-mcq-0406",
+    "stem": "In distal convoluted tubule and collecting: ducts (distal nephron): :",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0406: Unverified scanned MCQ from UG_NERD page 27 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p027-mcq-0407",
+    "stem": "Regarding the regulation of tubsslar function, all of the following hormones aff",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0407: Unverified negative MCQ from UG_NERD page 27 with OCR artifacts and missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p028-mcq-0408",
+    "stem": "The following is true about the Vasc Recta:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0408: Unverified scanned MCQ from UG_NERD page 28 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p028-mcq-0409",
+    "stem": "Contains mesangial cells that secrete rennin. | b. Sympathetic nerves activate t",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0409: Unverified scanned MCQ from UG_NERD page 28 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p028-mcq-0410",
+    "stem": "Suxtaglomerular apparatus is WOT:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0410: Unverified negative MCQ from UG_NERD page 28 with OCR artifacts and missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p025-mcq-0411",
+    "stem": "Mesangial cells. '",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0411: Truncated 2-option scan with unverified answer key from UG_NERD page 25. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p028-mcq-0412",
+    "stem": "Mesangial cells. bb. Macula densa. Granular cells. ae",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0412: Unverified scanned MCQ from UG_NERD page 28 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p028-mcq-0413",
+    "stem": "Renin secretion by the kidney is increased by increasing: a . Tubular fluid flow",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0413: Unverified scanned MCQ from UG_NERD page 28 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p029-mcq-0414",
+    "stem": "Proximal convulated tube",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0414: Truncated 2-option scan with unverified answer key from UG_NERD page 29. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p029-mcq-0415",
+    "stem": "The ability of the kidney to excrete a concentrated urine will increase if:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0415: Unverified scanned MCQ from UG_NERD page 29 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p022-mcq-0416",
+    "stem": "Regarding Potassium, all are true EXCEPT",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0416: Unverified negative MCQ from UG_NERD page 22 with OCR artifacts and missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p029-mcq-0417",
+    "stem": "The macula densa in the juxtaglomerular apparatus regulate: tonic a, Plasma pH",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0417: Unverified scanned MCQ from UG_NERD page 29 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p029-mcq-0418",
+    "stem": "The failure of one or both testes to descend into the scrotum is referred to as:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0418: Unverified scanned MCQ from UG_NERD page 29 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p030-mcq-0419",
+    "stem": "The main function of the prostate is.  Spermatogenesis Production of glycogen Se",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0419: Unverified scanned MCQ from UG_NERD page 30 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p030-mcq-0420",
+    "stem": "Which hormone initiates the changes in puberty?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0420: Unverified scanned MCQ from UG_NERD page 30 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p030-mcq-0421",
+    "stem": "The target of FSH is the mt > Prostate '",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0421: Truncated 3-option scan with unverified answer key from UG_NERD page 30. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p030-mcq-0422",
+    "stem": "Which of these is not @ function of | testosterone? Loss of body hair 22! bs Thi",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0422: Unverified scanned MCQ from UG_NERD page 30 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p030-mcq-0423",
+    "stem": "Specifically, where are sperm cells formed : within the testes? |",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0423: Unverified scanned MCQ from UG_NERD page 30 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p031-mcq-0424",
+    "stem": "Which factor favors spermatozoa developmen",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0424: Unverified scanned MCQ from UG_NERD page 31 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p029-mcq-0425",
+    "stem": "Seminiferous tubule",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0425: Truncated 3-option scan with unverified answer key from UG_NERD page 29. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p031-mcq-0426",
+    "stem": "Which statement about spermatogenesis i not correct",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0426: Unverified scanned MCQ from UG_NERD page 31 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p031-mcq-0428",
+    "stem": "Effects of testosterone on 2\" sex characte: include. Increases fluidity of sebac",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0428: Unverified scanned MCQ from UG_NERD page 31 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p031-mcq-0429",
+    "stem": "Acell called the is a fertilized cell with 46 : chromosomes.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0429: Unverified scanned MCQ from UG_NERD page 31 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p032-mcq-0430",
+    "stem": "Why it osteoporosis much more common elderty women than in eideriy men?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0430: Unverified scanned MCQ from UG_NERD page 32 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p032-mcq-0431",
+    "stem": "Estrogen actions include. Secretory endometrial changes",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0431: Truncated 3-option scan with unverified answer key from UG_NERD page 32. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p032-mcq-0432",
+    "stem": "Which of these is NOT an action of estroge | = Increase myometrial gap junction.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0432: Unverified negative MCQ from UG_NERD page 32 with OCR artifacts and missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p032-mcq-0433",
+    "stem": "Which statement is MOT true about puberty, > Associated with pulsatile increase ",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0433: Unverified negative MCQ from UG_NERD page 32 with OCR artifacts and missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p041-mcq-0435",
+    "stem": "Vitality of germ cells",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0435: Fragmentary prompt stem (\"Vitality of germ cells\") with unverified answer key from UG_NERD page 41. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p033-mcq-0436",
+    "stem": "The fltcte that results from the follicular growth phase 1s also called a- \"inal",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0436: Unverified scanned MCQ from UG_NERD page 33 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
   }
 ]
