@@ -23,14 +23,14 @@
   {
     "sourceFile": "Histology/Symbiosis (4).png",
     "sourceOccurrence": "Histology/Symbiosis (4).png",
-    "stem": "Tala about Renal Te: a J\n\na Tail about Venus gtainage Svenunaraa\nf\n\n+ (om fue Between Alfani a\n\n# \u201cJauc_about facet cell",
+    "stem": "Tala about Renal Te: a J\n\na Tail about Venus gtainage Svenunaraa\nf\n\n+ (om fue Between Alfani a\n\n# “Jauc_about facet cell",
     "reason": "handwritten_recall_notes",
     "details": "Handwritten student study notes / fragmented recall without verifiable question stem or model answer."
   },
   {
     "sourceFile": "Microbiology/ Symbiosis ( part 1 ).png",
     "sourceOccurrence": "Microbiology/ Symbiosis ( part 1 ).png",
-    "stem": "\u201c \\ke4 Gov. 4. Focnu\n\ni : Micro\npe Sommales ave mere saccePtable +o UN\nMACY.C Tran males\n\nADAP Gin sia Fe\n\nWeetuleen UTT",
+    "stem": "“ \\ke4 Gov. 4. Focnu\n\ni : Micro\npe Sommales ave mere saccePtable +o UN\nMACY.C Tran males\n\nADAP Gin sia Fe\n\nWeetuleen UTT",
     "reason": "handwritten_recall_notes",
     "details": "Handwritten student study notes / fragmented recall without verifiable question stem or model answer."
   },
@@ -238,36 +238,36 @@
     "details": "Question fragment has empty or insufficient text stem."
   },
   {
-    "sourceFile": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf",
-    "sourceOccurrence": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf-Q1",
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "Pathology/الكتاب الاصفر Female & Breast.pdf-Q1",
     "stem": "bad",
     "reason": "unresolvable_ambiguity",
     "details": "Question fragment has empty or insufficient text stem."
   },
   {
-    "sourceFile": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf",
-    "sourceOccurrence": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf-Q19",
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "Pathology/الكتاب الاصفر Female & Breast.pdf-Q19",
     "stem": "34",
     "reason": "unresolvable_ambiguity",
     "details": "Question fragment has empty or insufficient text stem."
   },
   {
-    "sourceFile": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf",
-    "sourceOccurrence": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf-Q56",
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "Pathology/الكتاب الاصفر Female & Breast.pdf-Q56",
     "stem": "",
     "reason": "unresolvable_ambiguity",
     "details": "Question fragment has empty or insufficient text stem."
   },
   {
-    "sourceFile": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf",
-    "sourceOccurrence": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf-Q57",
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "Pathology/الكتاب الاصفر Female & Breast.pdf-Q57",
     "stem": "OE",
     "reason": "unresolvable_ambiguity",
     "details": "Question fragment has empty or insufficient text stem."
   },
   {
-    "sourceFile": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf",
-    "sourceOccurrence": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf-Q66",
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "Pathology/الكتاب الاصفر Female & Breast.pdf-Q66",
     "stem": "",
     "reason": "unresolvable_ambiguity",
     "details": "Question fragment has empty or insufficient text stem."
@@ -387,13 +387,13 @@
   {
     "id": "MUG3-CH5-PATH-3043",
     "reason": "Unresolvable raw answer grid table / non-question OCR fragment",
-    "text": ". % Se \u2014 ee ~\u2014 4 | = > <> e i Ps _\u2014 . a . ak: \u201c & a - ; . a a i. i \u201c4 ay \u00bb Le i",
+    "text": ". % Se — ee ~— 4 | = > <> e i Ps _— . a . ak: “ & a - ; . a a i. i “4 ay » Le i",
     "sources": [
       "Pathology/female tutorials1.pdf-Page51"
     ],
     "sourceFile": "Pathology/female tutorials1.pdf",
     "sourceOccurrence": "Pathology/female tutorials1.pdf-Page51",
-    "stem": ". % Se \u2014 ee ~\u2014 4 | = > <> e i Ps _\u2014 . a . ak: \u201c & a - ; . a a i. i \u201c4 ay \u00bb Le i",
+    "stem": ". % Se — ee ~— 4 | = > <> e i Ps _— . a . ak: “ & a - ; . a a i. i “4 ay » Le i",
     "details": "Unresolvable raw answer grid table / non-question OCR fragment"
   },
   {
@@ -418,7 +418,7 @@
   {
     "sourceFile": "Anatomy/MCQ Anatomy  (1).pdf",
     "sourceOccurrence": "Anatomy/MCQ Anatomy  (1).pdf-Q28",
-    "stem": "As rest minal part of ureter 3 vic art of ureter he ae amural part of the ureter in\u2019",
+    "stem": "As rest minal part of ureter 3 vic art of ureter he ae amural part of the ureter in’",
     "reason": "unresolvable_ocr_bleed",
     "details": "Severe unresolvable OCR corruption of stem and options, including page number fragment '109' and overlapping multi-question text."
   },
@@ -444,8 +444,8 @@
     "details": "Truncated fragment with invalid options referencing 'See the book' and missing authentic clinical question stem."
   },
   {
-    "sourceFile": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf",
-    "sourceOccurrence": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf-Q105",
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "Pathology/الكتاب الاصفر Female & Breast.pdf-Q105",
     "stem": "a. Brenner tumor",
     "reason": "unresolvable_ambiguity",
     "details": "Truncated fragment containing textbook answer key bleed ('See the book d, Serous tumor... 4B. e 69. b') without intact stem or options."
@@ -479,8 +479,8 @@
     "details": "Non-question fragment referencing textbook solutions ('A. See book.') without genuine clinical stem or distractors."
   },
   {
-    "sourceFile": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf",
-    "sourceOccurrence": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf-Q132",
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "Pathology/الكتاب الاصفر Female & Breast.pdf-Q132",
     "stem": "See the book",
     "reason": "unresolvable_ambiguity",
     "details": "Non-question textbook cross-reference fragment ('See the book') without authentic clinical stem or valid medical options."
@@ -488,7 +488,7 @@
   {
     "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
     "sourceOccurrence": "Physiology/Urogenital Module - Physiology Department MCQs.pdf-Q52",
-    "stem": " \u2014 = \u2014 = lL =Jn= = my Ted =e \u2014\u2014\u2014\u2014\u2014\u2014\u2014(",
+    "stem": " — = — = lL =Jn= = my Ted =e ———————(",
     "reason": "unresolvable_ocr_bleed",
     "details": "Severe unresolvable OCR noise line bleed in stem alongside leaked faculty answer key in options ('...QF Answer: E')."
   },
@@ -507,8 +507,8 @@
     "details": "Stem corrupted by leaked faculty answer string ('S Answer: E') with cross-question key bleed in options ('...036 Answer: B')."
   },
   {
-    "sourceFile": "Pathology/\ud83d\udca5Khalifa male mcq+Ans.pdf",
-    "sourceOccurrence": "Pathology/\ud83d\udca5Khalifa male mcq+Ans.pdf-Q43",
+    "sourceFile": "Pathology/💥Khalifa male mcq+Ans.pdf",
+    "sourceOccurrence": "Pathology/💥Khalifa male mcq+Ans.pdf-Q43",
     "stem": "Dr. Abdelrahman Khalifa M.D. , PhD.",
     "reason": "unresolvable_ambiguity",
     "details": "Lecturer title/author header extracted as corrupt essay question ('Dr. Abdelrahman Khalifa M.D. , PhD.') without clinical question content."
@@ -553,7 +553,7 @@
     "sourceOccurrence": "Biochemistry/dr omar.pdf-Q36",
     "stem": "Glycine cleavage system produces all of the following EXCEPT:",
     "reason": "unresolvable_ambiguity",
-    "details": "Multiple choice question that lost its options during intake, ingested as essay with unresolvable letter-only model answer ('Correct answer: C\\n\u2018Butocross\\n')."
+    "details": "Multiple choice question that lost its options during intake, ingested as essay with unresolvable letter-only model answer ('Correct answer: C\\n‘Butocross\\n')."
   },
   {
     "sourceFile": "Pre-existing Baseline Bank (Chapter 5 Pathology)",
@@ -681,13 +681,13 @@
     "questionId": "MUG3-CH5-PATH-3325",
     "stem": "B. Epithelial hyperplasia",
     "reason": "unresolvable_ambiguity",
-    "details": "Corrupted OCR fragment with options containing 'Serous cystadenoma: >, See book.' and 'Sce book a a) \u00a7'."
+    "details": "Corrupted OCR fragment with options containing 'Serous cystadenoma: >, See book.' and 'Sce book a a) §'."
   },
   {
     "sourceFile": "Pathology/questions urinary (answers).pdf",
     "sourceOccurrence": "Pathology/questions urinary (answers).pdf-Q16",
     "questionId": "MUG3-CH5-PATH-3328",
-    "stem": "A. Wilm\u2019s tumor. D",
+    "stem": "A. Wilm’s tumor. D",
     "reason": "unresolvable_ambiguity",
     "details": "Corrupted 2-option duplicate fragment of Wilms tumor problem-case model answer with 'See book' distractor."
   },
@@ -735,7 +735,7 @@
     "sourceFile": "Pathology/questions urinary (answers).pdf",
     "sourceOccurrence": "Pathology/questions urinary (answers).pdf-Q26",
     "questionId": "MUG3-CH5-PATH-3336",
-    "stem": "A. Ra - Rapidly progressive \u2018 ji As gressive (cres entic) glomerulonephrit 1S duc to forma . 1 ation of i glomerular in 7 mmune comple: \u2018lar injury, Format plexes or antibodies whic! ce be idiopathic of aren of these immune complexes _ X \u2014 ine evieosene Cran lary to other diseases ae + (1 Xes orantibodies may arteritis nodosa, (3) Wook ) Q) haa nar . gener\u2019s granulomatosis. (4) Goodpasteur\u2019 2epasteur\u2019s syndrome",
+    "stem": "A. Ra - Rapidly progressive ‘ ji As gressive (cres entic) glomerulonephrit 1S duc to forma . 1 ation of i glomerular in 7 mmune comple: ‘lar injury, Format plexes or antibodies whic! ce be idiopathic of aren of these immune complexes _ X — ine evieosene Cran lary to other diseases ae + (1 Xes orantibodies may arteritis nodosa, (3) Wook ) Q) haa nar . gener’s granulomatosis. (4) Goodpasteur’ 2epasteur’s syndrome",
     "reason": "unresolvable_ambiguity",
     "details": "Massive OCR bleed across pages; designated correct answer starts with 'See book rome...'."
   },
@@ -756,8 +756,8 @@
     "details": "Incomplete heading fragment ('A Complete hyd:') with 'See book.' as option [0]."
   },
   {
-    "sourceFile": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 male.pdf",
-    "sourceOccurrence": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 male.pdf-Q34",
+    "sourceFile": "Pathology/الكتاب الاصفر male.pdf",
+    "sourceOccurrence": "Pathology/الكتاب الاصفر male.pdf-Q34",
     "questionId": "MUG3-CH5-PATH-3498",
     "stem": "a. Yolk sac (endodc.rmal sinus) tumour. scrum alpha-fetoproteins",
     "reason": "unresolvable_ambiguity",
@@ -817,7 +817,7 @@
     "sourceOccurrence": "anatomy renal.pdf-p9-Q55",
     "stem": "The averse scm : * 9 5-Locm 4.0-1-50M 0.8cM y.ocm vis, the left ureter steps over Oo} small pelvis, a i gres nterior asp",
     "reason": "severed_ocr_fragment",
-    "details": "Severed gibberish stem: The averse scm : * 9 5-Locm 4.0-1-50M 0.8cM y.ocm vis, the left ureter steps over Oo} small pelvis, a i gres\u00ae nterior aspect of the end of left common iliac artery. Wave 8 purification exclusion."
+    "details": "Severed gibberish stem: The averse scm : * 9 5-Locm 4.0-1-50M 0.8cM y.ocm vis, the left ureter steps over Oo} small pelvis, a i gres® nterior aspect of the end of left common iliac artery. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -877,7 +877,7 @@
   },
   {
     "sourceFile": "unknown",
-    "sourceOccurrence": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q67",
+    "sourceOccurrence": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q67",
     "stem": "Artery of vas.",
     "reason": "severed_ocr_fragment",
     "details": "Severed essay fragment with no answer: stem=\"Artery of vas.\", ma=\"3 Vs:\". Wave 8 purification exclusion."
@@ -926,7 +926,7 @@
   },
   {
     "sourceFile": "unknown",
-    "sourceOccurrence": "\ud83d\udca5Renal Physiology Questions-1.pdf-p15-Q41",
+    "sourceOccurrence": "💥Renal Physiology Questions-1.pdf-p15-Q41",
     "stem": "Define each of:",
     "reason": "severed_ocr_fragment",
     "details": "Severed gibberish stem: Define each of:. Wave 8 purification exclusion."
@@ -936,18 +936,18 @@
     "sourceOccurrence": "UG_NERD-p18-right-Q2",
     "stem": "Erythropoietin",
     "reason": "severed_ocr_fragment",
-    "details": "Severed MCQ fragment with broken options: stem=\"Erythropoietin\", opts=['Angiotensin Il', 'Prostaglandins', 'ADH \u00a9. Calcitriol']. Wave 8 purification exclusion."
+    "details": "Severed MCQ fragment with broken options: stem=\"Erythropoietin\", opts=['Angiotensin Il', 'Prostaglandins', 'ADH ©. Calcitriol']. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
-    "sourceOccurrence": "Physiology/MCQ-LABELLED \ud83c\udff7\ufe0f physio female _compress.pdf-Q2",
+    "sourceOccurrence": "Physiology/MCQ-LABELLED 🏷️ physio female _compress.pdf-Q2",
     "stem": "MKS Cervical te",
     "reason": "severed_ocr_fragment",
     "details": "Severed gibberish stem: MKS Cervical te. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
-    "sourceOccurrence": "Physiology/MCQ-LABELLED \ud83c\udff7\ufe0f physio female _compress.pdf-Q6",
+    "sourceOccurrence": "Physiology/MCQ-LABELLED 🏷️ physio female _compress.pdf-Q6",
     "stem": "uterine 1 i S",
     "reason": "severed_ocr_fragment",
     "details": "Severed gibberish stem: uterine 1 i S. Wave 8 purification exclusion."
@@ -961,7 +961,7 @@
   },
   {
     "sourceFile": "unknown",
-    "sourceOccurrence": "Physiology/\ud83d\udca5Renal Physiology Questions-1.pdf-Q91",
+    "sourceOccurrence": "Physiology/💥Renal Physiology Questions-1.pdf-Q91",
     "stem": "Define each of:",
     "reason": "severed_ocr_fragment",
     "details": "Severed gibberish stem: Define each of:. Wave 8 purification exclusion."
@@ -978,7 +978,7 @@
     "sourceOccurrence": "UG_NERD-p44-right-Q2",
     "stem": "Penile urethra",
     "reason": "severed_ocr_fragment",
-    "details": "Severed MCQ fragment with broken options: stem=\"Penile urethra\", opts=['Prostatic gland', 'Seminal vesicles epididymis \u00a9. Bulbourethral gland The resting mammary gland is by presence of: @. Adipose connective tissue in its stroma.', 'Simple cuboidal epithelium in lactiferous sit', 'Dense connective tissue intra lobular', 'Highly branched secretory acini. Thin connective tissue septa m']. Wave 8 purification exclusion."
+    "details": "Severed MCQ fragment with broken options: stem=\"Penile urethra\", opts=['Prostatic gland', 'Seminal vesicles epididymis ©. Bulbourethral gland The resting mammary gland is by presence of: @. Adipose connective tissue in its stroma.', 'Simple cuboidal epithelium in lactiferous sit', 'Dense connective tissue intra lobular', 'Highly branched secretory acini. Thin connective tissue septa m']. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -1006,14 +1006,14 @@
     "sourceOccurrence": "UG_NERD-p54-right-Q2",
     "stem": "Angiomyolipoma",
     "reason": "severed_ocr_fragment",
-    "details": "Severed MCQ fragment with broken options: stem=\"Angiomyolipoma\", opts=['Renal cell carcinoma \u00a9. Transitional cell carcinoma', 'Wilms tumor \u00a9. Medullary fibroma']. Wave 8 purification exclusion."
+    "details": "Severed MCQ fragment with broken options: stem=\"Angiomyolipoma\", opts=['Renal cell carcinoma ©. Transitional cell carcinoma', 'Wilms tumor ©. Medullary fibroma']. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
     "sourceOccurrence": "UG_NERD-p64-left-Q6",
     "stem": "Chocolate cyst",
     "reason": "severed_ocr_fragment",
-    "details": "Severed MCQ fragment with broken options: stem=\"Chocolate cyst\", opts=['Follicular cysts', \"Gartner's duct cyst iS\", '\u00a9. Nabothian cysts :', 'iB.']. Wave 8 purification exclusion."
+    "details": "Severed MCQ fragment with broken options: stem=\"Chocolate cyst\", opts=['Follicular cysts', \"Gartner's duct cyst iS\", '©. Nabothian cysts :', 'iB.']. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -1027,7 +1027,7 @@
     "sourceOccurrence": "Pathology/DEPARTMENT patho genital mcq.pdf-Q16",
     "stem": "The following |",
     "reason": "severed_ocr_fragment",
-    "details": "Severed MCQ fragment with broken options: stem=\"The following |\", opts=['Non-suppurative inflammation', 'Tuberculosis swe! Questions and An Jlowing cone\u201d i escended testis -anulomatous or granulomas dded granulom nune response rs in pathology is a risk factor of neoplasia,', 'Acute Orchitis', 'Syphilitic Orchitig dition rchitis in seminoma indicates, atous Jesion B. Bad immune resp', 'Spread of the tum Nse atous infection Or']. Wave 8 purification exclusion."
+    "details": "Severed MCQ fragment with broken options: stem=\"The following |\", opts=['Non-suppurative inflammation', 'Tuberculosis swe! Questions and An Jlowing cone” i escended testis -anulomatous or granulomas dded granulom nune response rs in pathology is a risk factor of neoplasia,', 'Acute Orchitis', 'Syphilitic Orchitig dition rchitis in seminoma indicates, atous Jesion B. Bad immune resp', 'Spread of the tum Nse atous infection Or']. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -1046,9 +1046,9 @@
   {
     "sourceFile": "unknown",
     "sourceOccurrence": "Pathology/DEPARTMENT patho urinary mcq.pdf-Q79",
-    "stem": "A. Wilm\u2019s tumor",
+    "stem": "A. Wilm’s tumor",
     "reason": "severed_ocr_fragment",
-    "details": "Severed MCQ fragment with broken options: stem=\"A. Wilm\u2019s tumor\", opts=['Angiomyolipoma', 'Renal cell carcinoma', 'Renal oncocytoma', 'Renal adenoma']. Wave 8 purification exclusion."
+    "details": "Severed MCQ fragment with broken options: stem=\"A. Wilm’s tumor\", opts=['Angiomyolipoma', 'Renal cell carcinoma', 'Renal oncocytoma', 'Renal adenoma']. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -1090,7 +1090,7 @@
     "sourceOccurrence": "Pathology/genitourinary mcq.pdf-Q68",
     "stem": "Bone metast",
     "reason": "severed_ocr_fragment",
-    "details": "Severed MCQ fragment with broken options: stem=\"Bone metast\", opts=['Osteolytle ye \u2018 \u201cated', 'Well-different\" 4) pSA level 5 sjated with no \u00b0 . cific toa is s a can f serum prostatic specific antigen is used for; timation \u00a9 s\\' of prost\u00e9 ition of ases from P Pp. Poorly-differentiated noma the prostatic origi (issn * Typing atic carci!', 'Confirm\u00e9 1 in case Of metastases With Un.', 'Diagnosis of prostatitis known primary . \u00a9 C. Diagnosis of prostatic hyperplasia I EXCE']. Wave 8 purification exclusion."
+    "details": "Severed MCQ fragment with broken options: stem=\"Bone metast\", opts=['Osteolytle ye ‘ “ated', 'Well-different\" 4) pSA level 5 sjated with no ° . cific toa is s a can f serum prostatic specific antigen is used for; timation © s\\' of prosté ition of ases from P Pp. Poorly-differentiated noma the prostatic origi (issn * Typing atic carci!', 'Confirmé 1 in case Of metastases With Un.', 'Diagnosis of prostatitis known primary . © C. Diagnosis of prostatic hyperplasia I EXCE']. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -1104,7 +1104,7 @@
     "sourceOccurrence": "Pathology/questions urinary (answers).pdf-Q9",
     "stem": "A. Infertility,",
     "reason": "severed_ocr_fragment",
-    "details": "Severed MCQ fragment with broken options: stem=\"A. Infertility,\", opts=['Sce book.', 'Tubreul iOUS Sa + s Salipingitis, tuberculous endometritis, endometriosis sean, tm Abe oblastic discas Mand malign arises from the smooth muscle fj ibre mors of the body of uterus (te, cs Deng itty \u2018SCC DOOK. le. Ae Cori shite k-ydatidiform']. Wave 8 purification exclusion."
+    "details": "Severed MCQ fragment with broken options: stem=\"A. Infertility,\", opts=['Sce book.', 'Tubreul iOUS Sa + s Salipingitis, tuberculous endometritis, endometriosis sean, tm Abe oblastic discas Mand malign arises from the smooth muscle fj ibre mors of the body of uterus (te, cs Deng itty ‘SCC DOOK. le. Ae Cori shite k-ydatidiform']. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -1143,7 +1143,7 @@
   },
   {
     "sourceFile": "unknown",
-    "sourceOccurrence": "\ud83d\udca5Urogenital Assessment 1 MCQ.pdf-Q3",
+    "sourceOccurrence": "💥Urogenital Assessment 1 MCQ.pdf-Q3",
     "stem": "Man with UTI?",
     "reason": "severed_ocr_fragment",
     "details": "Severed essay fragment with no answer: stem=\"Man with UTI?\", ma=\"Cipro 2 weeks\". Wave 8 purification exclusion."
@@ -1167,14 +1167,14 @@
     "sourceOccurrence": "practical 2018-2020.pdf-Q17",
     "stem": "Injected kidney",
     "reason": "severed_ocr_fragment",
-    "details": "Severed essay fragment with no answer: stem=\"Injected kidney\", ma=\"\u0648\u064a\u0633\u0641\". Wave 8 purification exclusion."
+    "details": "Severed essay fragment with no answer: stem=\"Injected kidney\", ma=\"ويسف\". Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
     "sourceOccurrence": "practical 2018-2020.pdf-Q32",
     "stem": "Apex of bladder",
     "reason": "severed_ocr_fragment",
-    "details": "Severed essay fragment with no answer: stem=\"Apex of bladder\", ma=\"\u0648\u062b\u0627\u0628\". Wave 8 purification exclusion."
+    "details": "Severed essay fragment with no answer: stem=\"Apex of bladder\", ma=\"وثاب\". Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -1199,7 +1199,7 @@
   },
   {
     "sourceFile": "unknown",
-    "sourceOccurrence": "\ud83d\udca5Practical UG Exam 2024.pdf-Q10",
+    "sourceOccurrence": "💥Practical UG Exam 2024.pdf-Q10",
     "stem": "Clear cells",
     "reason": "severed_ocr_fragment",
     "details": "Severed essay fragment with no answer: stem=\"Clear cells\", ma=\"Physio\". Wave 8 purification exclusion."
@@ -1244,7 +1244,7 @@
     "sourceOccurrence": "Past Exams/practical 2018-2020.pdf-Q90",
     "stem": "ndole test",
     "reason": "severed_ocr_fragment",
-    "details": "Severed essay fragment with no answer: stem=\"\u00edndole test\", ma=\"Para\". Wave 8 purification exclusion."
+    "details": "Severed essay fragment with no answer: stem=\"índole test\", ma=\"Para\". Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -1262,7 +1262,7 @@
   },
   {
     "sourceFile": "unknown",
-    "sourceOccurrence": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q36",
+    "sourceOccurrence": "Past Exams/💥Practical UG Exam 2024.pdf-Q36",
     "stem": "Sertoli cell",
     "reason": "severed_ocr_fragment",
     "details": "Severed essay fragment with no answer: stem=\"Sertoli cell\", ma=\"Model 2:\nAnatomy\". Wave 8 purification exclusion."
@@ -1358,7 +1358,7 @@
     "id": "MUG3-CH1-ANAT-0681",
     "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
     "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q12",
-    "stem": "Urethra (prostatic \u2013 membranous \u2013 penile)",
+    "stem": "Urethra (prostatic – membranous – penile)",
     "reason": "unresolvable_ocr_bleed",
     "details": "Table of contents / slide header debris from practical revision PDF."
   },
@@ -1430,7 +1430,7 @@
     "id": "MUG3-CH1-ANAT-0694",
     "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
     "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q29",
-    "stem": "Recto-vesical fistula: caused by incomplete urorectal septum. Superficial S aN inguinal pouch \u2014___ ry Pubo-penile Oo- Femoral Transverse oy ~ ectopia e\u2014\u2014 Perineal ~~ True Abdominal Inguinal Suprascrotal AL Ectopic Prepenile",
+    "stem": "Recto-vesical fistula: caused by incomplete urorectal septum. Superficial S aN inguinal pouch —___ ry Pubo-penile Oo- Femoral Transverse oy ~ ectopia e—— Perineal ~~ True Abdominal Inguinal Suprascrotal AL Ectopic Prepenile",
     "reason": "requires_image",
     "details": "Practical anatomy slide pointer/diagram question strictly requiring unavailable image."
   },
@@ -1438,7 +1438,7 @@
     "id": "MUG3-CH1-ANAT-0670",
     "sourceFile": "Anatomy/Symbiosis (2).png",
     "sourceOccurrence": "Anatomy/Symbiosis (2).png-Item2",
-    "stem": "He Mention Ane Relation of urinary Bladder _\u201d, pw",
+    "stem": "He Mention Ane Relation of urinary Bladder _”, pw",
     "reason": "unresolvable_ocr_bleed",
     "details": "Table of contents / slide header debris from practical revision PDF."
   },
@@ -1478,7 +1478,7 @@
     "id": "MUG3-CH5-PATH-2282",
     "sourceFile": "Pathology/SGD UB, Male ,breast 2024_.pdf",
     "sourceOccurrence": "Pathology/SGD UB, Male ,breast 2024_.pdf-Q30",
-    "stem": "Genetic alterations Extended Modular Program 24 Gleason\u2019s grading system Combined Gleason\u2019s score: Addition of two most prevalent grades in the examined Biopsy e.g. 3+4= 7/10 Extended Modular Program 25 Which of the following conditions is premalignant?",
+    "stem": "Genetic alterations Extended Modular Program 24 Gleason’s grading system Combined Gleason’s score: Addition of two most prevalent grades in the examined Biopsy e.g. 3+4= 7/10 Extended Modular Program 25 Which of the following conditions is premalignant?",
     "reason": "unresolvable_ocr_bleed",
     "details": "Extended Modular Program slide presentation OCR bleed with corrupted options."
   },
@@ -1702,7 +1702,7 @@
     "id": "MUG3-CH2-HIST-0278",
     "sourceFile": "Histology/4_5845997956452321379.pdf",
     "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q52",
-    "stem": "Reinke\u2019s crystalloids \u20185 gland",
+    "stem": "Reinke’s crystalloids ‘5 gland",
     "reason": "severed_ocr_fragment",
     "details": "Severed matching column fragment converted to pseudo-essay."
   },
@@ -1734,7 +1734,7 @@
     "id": "MUG3-CH2-HIST-0282",
     "sourceFile": "Histology/Histo paper 2.pdf",
     "sourceOccurrence": "Histology/Histo paper 2.pdf-Q1",
-    "stem": "746 \u2014 100% + G3) McQ  After fertilization of the ovum, implantation occurs in the endometrium. At this time the developing placenta begins % to produce a hormone necessary for embryonic viability. Which of the following best describes this hormone\u2019s action?",
+    "stem": "746 — 100% + G3) McQ  After fertilization of the ovum, implantation occurs in the endometrium. At this time the developing placenta begins % to produce a hormone necessary for embryonic viability. Which of the following best describes this hormone’s action?",
     "reason": "unresolvable_ocr_bleed",
     "details": "WhatsApp screenshot multi-question concatenation with chat artifacts."
   },
@@ -1756,88 +1756,88 @@
   },
   {
     "id": "MUG3-CH5-PATH-1229",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q1",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q1",
     "stem": "Stage of corcariaf invasion ind schist gud migaion)",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1230",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q3",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q3",
     "stem": "of host antigens",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1231",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q4",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q4",
     "stem": "Require host antigen on its aa",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1232",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q5",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q5",
     "stem": "Hosttik antiges pro D i a",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1233",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q6",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q6",
     "stem": "indirect Immunodiag jnostic methods:",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1234",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q8",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q8",
     "stem": "cor sanitary measures: building latrines in-houses, schools, mosques, 2:",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1235",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q9",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q9",
     "stem": "Safe Water supply",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1236",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q10",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q10",
     "stem": "Trichomonas vaginalis completes its life cycle in one",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1237",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q11",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q11",
     "stem": "The trophozoite Stage reproduces by longitudinal",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1238",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q12",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q12",
     "stem": "Occasionally, infectioy",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1240",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q14",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q14",
     "stem": "Superadded infection as gonorrhoea.",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
@@ -1846,7 +1846,7 @@
     "id": "MUG3-CH5-PATH-0796",
     "sourceFile": "DrThanaaHelal",
     "sourceOccurrence": "DrThanaaHelal-Q1353",
-    "stem": "mow  mow moO Ow ZF mun 0 cRwhe TO O0Wp . Focal embolic glomerulo- nephritis . Atherosclerotic kidney . Nephrotic syndrome . Chronic glomerulo-nephritis Hydronephrosis Yellowish white Stag-horn stone Multiple and spiky Radio-translucent Smooth and faceted . Wilm\u2019s tumor . Angiomyolipoma . Renal cell ",
+    "stem": "mow  mow moO Ow ZF mun 0 cRwhe TO O0Wp . Focal embolic glomerulo- nephritis . Atherosclerotic kidney . Nephrotic syndrome . Chronic glomerulo-nephritis Hydronephrosis Yellowish white Stag-horn stone Multiple and spiky Radio-translucent Smooth and faceted . Wilm’s tumor . Angiomyolipoma . Renal cell ",
     "reason": "unresolvable_answer_key_fragment",
     "details": "Unresolvable raw answer grid / matching table dump."
   },
@@ -2062,7 +2062,7 @@
     "id": "MUG3-CH5-PATH-1118",
     "sourceFile": "PathologyDept",
     "sourceOccurrence": "PathologyDept-Case040",
-    "stem": "41. \u20181 ) d. Papillar Y TICCTOBTS b. Focal segmental glomerulosclerosis c. Nephrocalcinosis d. Interstitial nephritis. A 49-year-old female has been hospitalized for the past 10 days for treatment of a bronchopneumonia. There is no past history of renal disease. She has developed the onset of chills,",
+    "stem": "41. ‘1 ) d. Papillar Y TICCTOBTS b. Focal segmental glomerulosclerosis c. Nephrocalcinosis d. Interstitial nephritis. A 49-year-old female has been hospitalized for the past 10 days for treatment of a bronchopneumonia. There is no past history of renal disease. She has developed the onset of chills,",
     "reason": "unresolvable_ocr_bleed",
     "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
   },
@@ -2078,7 +2078,7 @@
     "id": "MUG3-CH5-PATH-1124",
     "sourceFile": "PathologyDept",
     "sourceOccurrence": "PathologyDept-Case056",
-    "stem": "A 75 \u2014year-old female died with normal renal function. Postmortem examination reveals slightly small kidneys with a granular surface. Microscopic examination of renal sections reveal scattered hyalinized glomeruli, interstitial fibrosis, focal tubular atrophy, and arteriolar thickening. These findin",
+    "stem": "A 75 —year-old female died with normal renal function. Postmortem examination reveals slightly small kidneys with a granular surface. Microscopic examination of renal sections reveal scattered hyalinized glomeruli, interstitial fibrosis, focal tubular atrophy, and arteriolar thickening. These findin",
     "reason": "unresolvable_ocr_bleed",
     "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
   },
@@ -2086,7 +2086,7 @@
     "id": "MUG3-CH5-PATH-1127",
     "sourceFile": "PathologyDept",
     "sourceOccurrence": "PathologyDept-Case067",
-    "stem": "A 5-year-old boy is noted to have increased puffiness around his eyes for the past week. His BP measurs 140/90mm Hg. A urine analysis reveals PH 6.5, no glucose, 4+ protein, no blood and no casts. Microscopic urinalysis reveals oval fat bodies, but no WBC(C\u2019s or RBC\u2019s. He improves following a course",
+    "stem": "A 5-year-old boy is noted to have increased puffiness around his eyes for the past week. His BP measurs 140/90mm Hg. A urine analysis reveals PH 6.5, no glucose, 4+ protein, no blood and no casts. Microscopic urinalysis reveals oval fat bodies, but no WBC(C’s or RBC’s. He improves following a course",
     "reason": "unresolvable_ocr_bleed",
     "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
   },
@@ -2126,7 +2126,7 @@
     "id": "MUG3-CH5-PATH-1198",
     "sourceFile": "PathologyDept",
     "sourceOccurrence": "PathologyDept-Case086",
-    "stem": "87. A 59 \u2014year-old postmenopausal female suffers from bleeding which has been present for a couple of months. Her physician refers her to a gynecologist, who performs an endometrial biopsy that reveals atypical adenomatous hyperplasia. This lesion most likely results from: a. Unopposed estrogenic st",
+    "stem": "87. A 59 —year-old postmenopausal female suffers from bleeding which has been present for a couple of months. Her physician refers her to a gynecologist, who performs an endometrial biopsy that reveals atypical adenomatous hyperplasia. This lesion most likely results from: a. Unopposed estrogenic st",
     "reason": "unresolvable_ocr_bleed",
     "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
   },
@@ -2270,7 +2270,7 @@
     "id": "MUG3-CH1-ANAT-0700",
     "sourceFile": "Anatomy/anatomy -genital essay.pdf-Q6",
     "sourceOccurrence": "MUG3-CH1-ANAT-0700-held-exclusion",
-    "stem": "prostatic and membranous urethra \u2014internal and external iliac lymph nodes",
+    "stem": "prostatic and membranous urethra —internal and external iliac lymph nodes",
     "reason": "unresolvable_fragment",
     "details": "The textbook lists internal iliac nodes for prostatic and membranous urethra. The sheet adds external iliac. Record the disagreement and do not treat the fragment as a prompt. Source child d, line 1, adds external iliac drainage. S205 page 30 lists internal iliac only for the prostatic and membranous segments."
   },
@@ -2300,7 +2300,7 @@
   },
   {
     "id": "MUG3-CH1-ANAT-0896",
-    "sourceFile": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q15",
+    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q15",
     "sourceOccurrence": "MUG3-CH1-ANAT-0896-held-exclusion",
     "stem": "Umbilical A",
     "reason": "unresolvable_fragment",
@@ -2308,7 +2308,7 @@
   },
   {
     "id": "MUG3-CH1-ANAT-0915",
-    "sourceFile": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q38",
+    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q38",
     "sourceOccurrence": "MUG3-CH1-ANAT-0915-held-exclusion",
     "stem": "Bulbospongiosus",
     "reason": "unresolvable_fragment",
@@ -2316,7 +2316,7 @@
   },
   {
     "id": "MUG3-CH1-ANAT-0916",
-    "sourceFile": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q39",
+    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q39",
     "sourceOccurrence": "MUG3-CH1-ANAT-0916-held-exclusion",
     "stem": "Ischiocavernosus",
     "reason": "unresolvable_fragment",
@@ -2324,7 +2324,7 @@
   },
   {
     "id": "MUG3-CH1-ANAT-0918",
-    "sourceFile": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q42",
+    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q42",
     "sourceOccurrence": "MUG3-CH1-ANAT-0918-held-exclusion",
     "stem": "Superficial Transverse",
     "reason": "unresolvable_fragment",
@@ -2332,7 +2332,7 @@
   },
   {
     "id": "MUG3-CH1-ANAT-0920",
-    "sourceFile": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q44",
+    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q44",
     "sourceOccurrence": "MUG3-CH1-ANAT-0920-held-exclusion",
     "stem": "Obturator Internus",
     "reason": "unresolvable_fragment",
@@ -2340,7 +2340,7 @@
   },
   {
     "id": "MUG3-CH1-ANAT-0921",
-    "sourceFile": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q46",
+    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q46",
     "sourceOccurrence": "MUG3-CH1-ANAT-0921-held-exclusion",
     "stem": "Ano-coccygeal body",
     "reason": "unresolvable_fragment",
@@ -2348,7 +2348,7 @@
   },
   {
     "id": "MUG3-CH1-ANAT-0923",
-    "sourceFile": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q48",
+    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q48",
     "sourceOccurrence": "MUG3-CH1-ANAT-0923-held-exclusion",
     "stem": "Ischial tuberosities",
     "reason": "unresolvable_fragment",
@@ -2356,7 +2356,7 @@
   },
   {
     "id": "MUG3-CH1-ANAT-0924",
-    "sourceFile": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q49",
+    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q49",
     "sourceOccurrence": "MUG3-CH1-ANAT-0924-held-exclusion",
     "stem": "Sacrotuberous ligament",
     "reason": "unresolvable_fragment",
@@ -2424,7 +2424,7 @@
     "sourceOccurrence": "MUG3-CH103-PHYS-0025-held-exclusion",
     "stem": "Turnover BM",
     "reason": "unresolvable_fragment",
-    "details": "The response about basement membrane turnover became an essay stem and the mesangial-cell prompt appears in its model answer. \u201cBM\u201d could mean basement membrane in a histology context, but the fragment lacks both referent and requested criterion. No scored answer from the archive. The source restores the question about intraglomerular mesangial cells, with basement membrane turnover as a reported response. Keep the clipped archive held."
+    "details": "The response about basement membrane turnover became an essay stem and the mesangial-cell prompt appears in its model answer. “BM” could mean basement membrane in a histology context, but the fragment lacks both referent and requested criterion. No scored answer from the archive. The source restores the question about intraglomerular mesangial cells, with basement membrane turnover as a reported response. Keep the clipped archive held."
   },
   {
     "id": "MUG3-CH103-PHYS-0050",
@@ -2600,7 +2600,7 @@
     "sourceOccurrence": "MUG3-CH2-HIST-0045-held-exclusion",
     "stem": "Exocrine function:",
     "reason": "unresolvable_fragment",
-    "details": "Androgen-binding protein and tubular fluid are secreted into the seminiferous tubules. \u201cExocrine function\u201d is an answer heading lacking the cell and task. The source records this as answer point 5 of Male Q14."
+    "details": "Androgen-binding protein and tubular fluid are secreted into the seminiferous tubules. “Exocrine function” is an answer heading lacking the cell and task. The source records this as answer point 5 of Male Q14."
   },
   {
     "id": "MUG3-CH2-HIST-0046",
@@ -2608,7 +2608,7 @@
     "sourceOccurrence": "MUG3-CH2-HIST-0046-held-exclusion",
     "stem": "Endocrine function:",
     "reason": "unresolvable_fragment",
-    "details": "Sertoli cells produce inhibin and fetal anti-M\u00fcllerian hormone. This heading is a component of a larger rubric, not an independent prompt. The source records this as answer point 6 of Male Q14."
+    "details": "Sertoli cells produce inhibin and fetal anti-Müllerian hormone. This heading is a component of a larger rubric, not an independent prompt. The source records this as answer point 6 of Male Q14."
   },
   {
     "id": "MUG3-CH2-HIST-0343",
@@ -2676,7 +2676,7 @@
   },
   {
     "id": "MUG3-CH202-HIST-0009",
-    "sourceFile": "\ud83d\udca5Practical UG Exam 2024.pdf-Q3",
+    "sourceFile": "💥Practical UG Exam 2024.pdf-Q3",
     "sourceOccurrence": "MUG3-CH202-HIST-0009-held-exclusion",
     "stem": "Podocytes- visceral layer of bowman capsule",
     "reason": "unresolvable_fragment",
@@ -2772,7 +2772,7 @@
   },
   {
     "id": "MUG3-CH203-PHYS-0083",
-    "sourceFile": "\ud83d\udca5Practical UG Exam 2024.pdf-Q7",
+    "sourceFile": "💥Practical UG Exam 2024.pdf-Q7",
     "sourceOccurrence": "MUG3-CH203-PHYS-0083-held-exclusion",
     "stem": "Excretion for HCO",
     "reason": "unresolvable_fragment",
@@ -2780,7 +2780,7 @@
   },
   {
     "id": "MUG3-CH203-PHYS-0084",
-    "sourceFile": "\ud83d\udca5Practical UG Exam 2024.pdf-Q3",
+    "sourceFile": "💥Practical UG Exam 2024.pdf-Q3",
     "sourceOccurrence": "MUG3-CH203-PHYS-0084-held-exclusion",
     "stem": "Renal ischemia",
     "reason": "unresolvable_fragment",
@@ -2788,7 +2788,7 @@
   },
   {
     "id": "MUG3-CH203-PHYS-0085",
-    "sourceFile": "\ud83d\udca5Practical UG Exam 2024.pdf-Q5",
+    "sourceFile": "💥Practical UG Exam 2024.pdf-Q5",
     "sourceOccurrence": "MUG3-CH203-PHYS-0085-held-exclusion",
     "stem": "Enterococcus faecalis",
     "reason": "unresolvable_fragment",
@@ -2796,7 +2796,7 @@
   },
   {
     "id": "MUG3-CH203-PHYS-0088",
-    "sourceFile": "\ud83d\udca5Practical UG Exam 2024.pdf-Q10",
+    "sourceFile": "💥Practical UG Exam 2024.pdf-Q10",
     "sourceOccurrence": "MUG3-CH203-PHYS-0088-held-exclusion",
     "stem": "Keratinized epithelium",
     "reason": "unresolvable_fragment",
@@ -2804,7 +2804,7 @@
   },
   {
     "id": "MUG3-CH203-PHYS-0091",
-    "sourceFile": "\ud83d\udca5Practical UG Exam 2024.pdf-Q2",
+    "sourceFile": "💥Practical UG Exam 2024.pdf-Q2",
     "sourceOccurrence": "MUG3-CH203-PHYS-0091-held-exclusion",
     "stem": "Liver disease",
     "reason": "unresolvable_fragment",
@@ -2812,7 +2812,7 @@
   },
   {
     "id": "MUG3-CH203-PHYS-0093",
-    "sourceFile": "\ud83d\udca5Practical UG Exam 2024.pdf-Q10",
+    "sourceFile": "💥Practical UG Exam 2024.pdf-Q10",
     "sourceOccurrence": "MUG3-CH203-PHYS-0093-held-exclusion",
     "stem": "Parietal epithelium proliferation",
     "reason": "unresolvable_fragment",
@@ -2868,7 +2868,7 @@
   },
   {
     "id": "MUG3-CH203-PHYS-0137",
-    "sourceFile": "\ud83d\udca5Urogenital Assessment 2 MCQ-1.pdf-Q11",
+    "sourceFile": "💥Urogenital Assessment 2 MCQ-1.pdf-Q11",
     "sourceOccurrence": "MUG3-CH203-PHYS-0137-held-exclusion",
     "stem": "A 65 year old woman had stage IV cervical cancer. If untreated, which of",
     "reason": "unresolvable_fragment",
@@ -3364,7 +3364,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0351",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q5",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q5",
     "sourceOccurrence": "MUG3-CH205-PATH-0351-held-exclusion",
     "stem": "persistence lobulation of kidney",
     "reason": "unresolvable_fragment",
@@ -3372,7 +3372,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0352",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q7",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q7",
     "sourceOccurrence": "MUG3-CH205-PATH-0352-held-exclusion",
     "stem": "felteration load : 100",
     "reason": "unresolvable_fragment",
@@ -3380,7 +3380,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0353",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q8",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q8",
     "sourceOccurrence": "MUG3-CH205-PATH-0353-held-exclusion",
     "stem": "excecretion load : 30",
     "reason": "unresolvable_fragment",
@@ -3388,7 +3388,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0354",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q9",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q9",
     "sourceOccurrence": "MUG3-CH205-PATH-0354-held-exclusion",
     "stem": "reabsorption : 70",
     "reason": "unresolvable_fragment",
@@ -3396,7 +3396,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0355",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q10",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q10",
     "sourceOccurrence": "MUG3-CH205-PATH-0355-held-exclusion",
     "stem": "renal fraction : 25",
     "reason": "unresolvable_fragment",
@@ -3404,7 +3404,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0356",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q12",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q12",
     "sourceOccurrence": "MUG3-CH205-PATH-0356-held-exclusion",
     "stem": "log HCO / CO2 : 1.7",
     "reason": "unresolvable_fragment",
@@ -3412,7 +3412,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0357",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q13",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q13",
     "sourceOccurrence": "MUG3-CH205-PATH-0357-held-exclusion",
     "stem": "excretion for HCO3",
     "reason": "unresolvable_fragment",
@@ -3420,7 +3420,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0358",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q14",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q14",
     "sourceOccurrence": "MUG3-CH205-PATH-0358-held-exclusion",
     "stem": "1 mg/dl conc. Of creatinine serum",
     "reason": "unresolvable_fragment",
@@ -3428,7 +3428,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0359",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q15",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q15",
     "sourceOccurrence": "MUG3-CH205-PATH-0359-held-exclusion",
     "stem": "normal ratio less than 30",
     "reason": "unresolvable_fragment",
@@ -3436,7 +3436,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0360",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q18",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q18",
     "sourceOccurrence": "MUG3-CH205-PATH-0360-held-exclusion",
     "stem": "Proteus swarming growth",
     "reason": "unresolvable_fragment",
@@ -3444,7 +3444,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0361",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q22",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q22",
     "sourceOccurrence": "MUG3-CH205-PATH-0361-held-exclusion",
     "stem": "creamy yellowish material",
     "reason": "unresolvable_fragment",
@@ -3452,7 +3452,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0362",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q24",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q24",
     "sourceOccurrence": "MUG3-CH205-PATH-0362-held-exclusion",
     "stem": "diffuse enlargement",
     "reason": "unresolvable_fragment",
@@ -3460,7 +3460,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0363",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q26",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q26",
     "sourceOccurrence": "MUG3-CH205-PATH-0363-held-exclusion",
     "stem": "Malignant germ cell",
     "reason": "unresolvable_fragment",
@@ -3468,7 +3468,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0364",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q27",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q27",
     "sourceOccurrence": "MUG3-CH205-PATH-0364-held-exclusion",
     "stem": "connected to the pelvicalyceal",
     "reason": "unresolvable_fragment",
@@ -3476,7 +3476,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0365",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q28",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q28",
     "sourceOccurrence": "MUG3-CH205-PATH-0365-held-exclusion",
     "stem": "multilocular filled with mucinous material",
     "reason": "unresolvable_fragment",
@@ -3484,7 +3484,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0366",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q29",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q29",
     "sourceOccurrence": "MUG3-CH205-PATH-0366-held-exclusion",
     "stem": "subepithelial humps",
     "reason": "unresolvable_fragment",
@@ -3492,7 +3492,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0367",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q30",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q30",
     "sourceOccurrence": "MUG3-CH205-PATH-0367-held-exclusion",
     "stem": "her 2 neu receptor ( positive)",
     "reason": "unresolvable_fragment",
@@ -3500,7 +3500,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0368",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q32",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q32",
     "sourceOccurrence": "MUG3-CH205-PATH-0368-held-exclusion",
     "stem": "large egg with terminal spine",
     "reason": "unresolvable_fragment",
@@ -3508,7 +3508,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0369",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q35",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q35",
     "sourceOccurrence": "MUG3-CH205-PATH-0369-held-exclusion",
     "stem": "secretory granules",
     "reason": "unresolvable_fragment",
@@ -3516,7 +3516,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0371",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q43",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q43",
     "sourceOccurrence": "MUG3-CH205-PATH-0371-held-exclusion",
     "stem": "filtered load : 100 mg/ml",
     "reason": "unresolvable_fragment",
@@ -3524,7 +3524,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0372",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q44",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q44",
     "sourceOccurrence": "MUG3-CH205-PATH-0372-held-exclusion",
     "stem": "execretory load : 300 mg/ml",
     "reason": "unresolvable_fragment",
@@ -3532,7 +3532,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0373",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q45",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q45",
     "sourceOccurrence": "MUG3-CH205-PATH-0373-held-exclusion",
     "stem": "Filtration fraction : 16%",
     "reason": "unresolvable_fragment",
@@ -3540,7 +3540,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0374",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q47",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q47",
     "sourceOccurrence": "MUG3-CH205-PATH-0374-held-exclusion",
     "stem": "increase H secretion",
     "reason": "unresolvable_fragment",
@@ -3548,7 +3548,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0375",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q49",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q49",
     "sourceOccurrence": "MUG3-CH205-PATH-0375-held-exclusion",
     "stem": "net secretion 200",
     "reason": "unresolvable_fragment",
@@ -3556,7 +3556,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0376",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q51",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q51",
     "sourceOccurrence": "MUG3-CH205-PATH-0376-held-exclusion",
     "stem": "chorionic villi",
     "reason": "unresolvable_fragment",
@@ -3564,7 +3564,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0378",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q53",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q53",
     "sourceOccurrence": "MUG3-CH205-PATH-0378-held-exclusion",
     "stem": "Indole positive, oxidase negative",
     "reason": "unresolvable_fragment",
@@ -3572,7 +3572,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0379",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q54",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q54",
     "sourceOccurrence": "MUG3-CH205-PATH-0379-held-exclusion",
     "stem": "exo pigment production",
     "reason": "unresolvable_fragment",
@@ -3580,7 +3580,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0380",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q58",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q58",
     "sourceOccurrence": "MUG3-CH205-PATH-0380-held-exclusion",
     "stem": "Thick opaque wall ( pyonephrosis)",
     "reason": "unresolvable_fragment",
@@ -3588,7 +3588,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0381",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q59",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q59",
     "sourceOccurrence": "MUG3-CH205-PATH-0381-held-exclusion",
     "stem": "obstruction factors ( hydronephrosis)",
     "reason": "unresolvable_fragment",
@@ -3596,7 +3596,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0382",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q60",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q60",
     "sourceOccurrence": "MUG3-CH205-PATH-0382-held-exclusion",
     "stem": "infiltration border",
     "reason": "unresolvable_fragment",
@@ -3604,7 +3604,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0383",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q61",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q61",
     "sourceOccurrence": "MUG3-CH205-PATH-0383-held-exclusion",
     "stem": "infiltrating myometrium necrotic mass ( choriocarcinoma)",
     "reason": "unresolvable_fragment",
@@ -3612,7 +3612,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0384",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q62",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q62",
     "sourceOccurrence": "MUG3-CH205-PATH-0384-held-exclusion",
     "stem": "scelrotic glomerulus with thick blood vessels",
     "reason": "unresolvable_fragment",
@@ -3620,7 +3620,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0385",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q63",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q63",
     "sourceOccurrence": "MUG3-CH205-PATH-0385-held-exclusion",
     "stem": "papilla on the inner surface ( papillary cystadenoma)",
     "reason": "unresolvable_fragment",
@@ -3628,7 +3628,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0386",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q65",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q65",
     "sourceOccurrence": "MUG3-CH205-PATH-0386-held-exclusion",
     "stem": "dilated prostatic glands",
     "reason": "unresolvable_fragment",
@@ -3636,7 +3636,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0387",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q66",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q66",
     "sourceOccurrence": "MUG3-CH205-PATH-0387-held-exclusion",
     "stem": "Parietal proliferation with granular deposits",
     "reason": "unresolvable_fragment",
@@ -3644,7 +3644,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0388",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q68",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q68",
     "sourceOccurrence": "MUG3-CH205-PATH-0388-held-exclusion",
     "stem": "micro albumin / creatinine ratio : 100",
     "reason": "unresolvable_fragment",
@@ -3652,7 +3652,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0389",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q71",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q71",
     "sourceOccurrence": "MUG3-CH205-PATH-0389-held-exclusion",
     "stem": "egg with mature miracidium",
     "reason": "unresolvable_fragment",
@@ -3660,7 +3660,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0390",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q72",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q72",
     "sourceOccurrence": "MUG3-CH205-PATH-0390-held-exclusion",
     "stem": "undulating membrane",
     "reason": "unresolvable_fragment",
@@ -3668,7 +3668,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0392",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q89",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q89",
     "sourceOccurrence": "MUG3-CH205-PATH-0392-held-exclusion",
     "stem": "2 (conc of test formula)",
     "reason": "unresolvable_fragment",
@@ -3676,7 +3676,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0393",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q92",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q92",
     "sourceOccurrence": "MUG3-CH205-PATH-0393-held-exclusion",
     "stem": "Cervical cancer",
     "reason": "unresolvable_fragment",
@@ -3684,7 +3684,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0394",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q93",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q93",
     "sourceOccurrence": "MUG3-CH205-PATH-0394-held-exclusion",
     "stem": "Crescentic -parietal epithelial bowman",
     "reason": "unresolvable_fragment",
@@ -3692,7 +3692,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0395",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q94",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q94",
     "sourceOccurrence": "MUG3-CH205-PATH-0395-held-exclusion",
     "stem": "Pyocele- tunica vaginalis with pus",
     "reason": "unresolvable_fragment",
@@ -3700,7 +3700,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0396",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q95",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q95",
     "sourceOccurrence": "MUG3-CH205-PATH-0396-held-exclusion",
     "stem": "Vesicular mole- serous fluid",
     "reason": "unresolvable_fragment",
@@ -3708,7 +3708,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0397",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q96",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q96",
     "sourceOccurrence": "MUG3-CH205-PATH-0397-held-exclusion",
     "stem": "Multilocular mucinous",
     "reason": "unresolvable_fragment",
@@ -3716,7 +3716,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0398",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q97",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q97",
     "sourceOccurrence": "MUG3-CH205-PATH-0398-held-exclusion",
     "stem": "Staghorn pyonephrosis",
     "reason": "unresolvable_fragment",
@@ -3724,7 +3724,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0399",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q98",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q98",
     "sourceOccurrence": "MUG3-CH205-PATH-0399-held-exclusion",
     "stem": "Pyogenic with obstruction",
     "reason": "unresolvable_fragment",
@@ -3732,7 +3732,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0400",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q99",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q99",
     "sourceOccurrence": "MUG3-CH205-PATH-0400-held-exclusion",
     "stem": "Comedo-pleomorphic",
     "reason": "unresolvable_fragment",
@@ -3740,7 +3740,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0401",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q100",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q100",
     "sourceOccurrence": "MUG3-CH205-PATH-0401-held-exclusion",
     "stem": "Adaptation hyperplasia",
     "reason": "unresolvable_fragment",
@@ -3748,7 +3748,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0403",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q116",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q116",
     "sourceOccurrence": "MUG3-CH205-PATH-0403-held-exclusion",
     "stem": "mitochondria middle piece",
     "reason": "unresolvable_fragment",
@@ -3756,7 +3756,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0404",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q120",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q120",
     "sourceOccurrence": "MUG3-CH205-PATH-0404-held-exclusion",
     "stem": "100 (biochemistry)",
     "reason": "unresolvable_fragment",
@@ -3764,7 +3764,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0406",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q123",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q123",
     "sourceOccurrence": "MUG3-CH205-PATH-0406-held-exclusion",
     "stem": "staph saprophyticus",
     "reason": "unresolvable_fragment",
@@ -3772,7 +3772,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0407",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q126",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q126",
     "sourceOccurrence": "MUG3-CH205-PATH-0407-held-exclusion",
     "stem": "not specific monitoring efficacy",
     "reason": "unresolvable_fragment",
@@ -3780,7 +3780,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0408",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q128",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q128",
     "sourceOccurrence": "MUG3-CH205-PATH-0408-held-exclusion",
     "stem": "enlarged caseous",
     "reason": "unresolvable_fragment",
@@ -3788,7 +3788,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0409",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q129",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q129",
     "sourceOccurrence": "MUG3-CH205-PATH-0409-held-exclusion",
     "stem": "chronic necrotizing granuloma",
     "reason": "unresolvable_fragment",
@@ -3796,7 +3796,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0410",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q131",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q131",
     "sourceOccurrence": "MUG3-CH205-PATH-0410-held-exclusion",
     "stem": "papillary malignant urothelial carcinoma",
     "reason": "unresolvable_fragment",
@@ -3804,7 +3804,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0411",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q132",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q132",
     "sourceOccurrence": "MUG3-CH205-PATH-0411-held-exclusion",
     "stem": "leiomyoma polyp",
     "reason": "unresolvable_fragment",
@@ -3812,7 +3812,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0412",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q133",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q133",
     "sourceOccurrence": "MUG3-CH205-PATH-0412-held-exclusion",
     "stem": "invasive carcinoma of ducts, breast",
     "reason": "unresolvable_fragment",
@@ -3820,7 +3820,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0413",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q134",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q134",
     "sourceOccurrence": "MUG3-CH205-PATH-0413-held-exclusion",
     "stem": "axillary l.n (n)",
     "reason": "unresolvable_fragment",
@@ -3828,7 +3828,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0414",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q135",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q135",
     "sourceOccurrence": "MUG3-CH205-PATH-0414-held-exclusion",
     "stem": "rcc: large mass upper pole with renal capsule",
     "reason": "unresolvable_fragment",
@@ -3836,7 +3836,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0415",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q136",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q136",
     "sourceOccurrence": "MUG3-CH205-PATH-0415-held-exclusion",
     "stem": "tb pyelonephritis: enlarged with caseation",
     "reason": "unresolvable_fragment",
@@ -3844,7 +3844,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0416",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q139",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q139",
     "sourceOccurrence": "MUG3-CH205-PATH-0416-held-exclusion",
     "stem": "D: high ph, high hco3, high pco2, low H",
     "reason": "unresolvable_fragment",
@@ -3852,7 +3852,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0417",
-    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q143",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q143",
     "sourceOccurrence": "MUG3-CH205-PATH-0417-held-exclusion",
     "stem": "24 hr urine sample",
     "reason": "unresolvable_fragment",
@@ -3876,7 +3876,7 @@
   },
   {
     "id": "MUG3-CH208-PARA-0002",
-    "sourceFile": "\ud83d\udca5Practical UG Exam 2024.pdf-Q2",
+    "sourceFile": "💥Practical UG Exam 2024.pdf-Q2",
     "sourceOccurrence": "MUG3-CH208-PARA-0002-held-exclusion",
     "stem": "Furcocercous cercariae",
     "reason": "unresolvable_fragment",
@@ -3900,7 +3900,7 @@
   },
   {
     "id": "MUG3-CH301-PATH-0010",
-    "sourceFile": "\ud83d\udca5UG Final 2 MCQ Collection.pdf-Q19",
+    "sourceFile": "💥UG Final 2 MCQ Collection.pdf-Q19",
     "sourceOccurrence": "MUG3-CH301-PATH-0010-held-exclusion",
     "stem": "A 2y old boy, glomeruloid schiller bodies, serum level show elevation",
     "reason": "unresolvable_fragment",
@@ -4597,7 +4597,7 @@
   {
     "sourceFile": "Physiology/Physiology URO.pdf",
     "sourceOccurrence": "S187-p012-q15",
-    "stem": "Decreasing discharge from high- pressure and low-pressure baroreceptors \u2014 increased sympathetic nerv",
+    "stem": "Decreasing discharge from high- pressure and low-pressure baroreceptors — increased sympathetic nerv",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0113: Detached fragment corresponding to mechanism 3 (baroreceptor reflex and ADH) of question 0110. Held as component of parent prompt."
   },
@@ -4625,7 +4625,7 @@
   {
     "sourceFile": "Physiology/Physiology URO.pdf",
     "sourceOccurrence": "S187-p014-q16",
-    "stem": "\u00bb Loss of homeostatic function of kidney as in acute and chronic renal failure leads to hyperkalemia",
+    "stem": "» Loss of homeostatic function of kidney as in acute and chronic renal failure leads to hyperkalemia",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0135: The printed key 'Renal(uremic) acidosis' was appended to the stem and model answer carries unrelated hyperkalemia text. Held as damaged fill-in-the-blank."
   },
@@ -4779,7 +4779,7 @@
   {
     "sourceFile": "Physiology/Physiology URO.pdf",
     "sourceOccurrence": "S187-p030-q23",
-    "stem": "cells cells Selectively | SEES = sic 1 = i ion FH | | FSH | LH Sia + V+ A \u2014\u2014 TT PLE \u2014\u2014 Ovary | Matur",
+    "stem": "cells cells Selectively | SEES = sic 1 = i ion FH | | FSH | LH Sia + V+ A —— TT PLE —— Ovary | Matur",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0263: Damaged fill-in-the-blank item with answer 'High levels of estrogen' leaked into stem. Excluded under quality-over-quantity intake policy."
   },
@@ -7045,756 +7045,756 @@
     "details": "Question MUG3-CH3-PHYS-0704: Unverified scanned MCQ from UG_NERD page 89 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-2.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-2.pdf",
     "sourceOccurrence": "S200-p008-mcq-0705",
     "stem": "Which of the following substances will be found in high concentration at the end of the proximal tubule?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0705: Unverified extracted MCQ from Renal Physiology Questions-2 page 8 (Q36) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-2.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-2.pdf",
     "sourceOccurrence": "S200-p010-mcq-0706",
     "stem": "Parathyroid hormone effects on renal tubules include:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0706: Unverified extracted MCQ from Renal Physiology Questions-2 page 10 (Q46) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-2.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-2.pdf",
     "sourceOccurrence": "S200-p010-mcq-0707",
     "stem": "Which of the following pressures helps reabsorption:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0707: Unverified extracted MCQ from Renal Physiology Questions-2 page 10 (Q47) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-2.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-2.pdf",
     "sourceOccurrence": "S200-p010-mcq-0708",
     "stem": "Which of the following hormones affect Na reabsorption in the proximal tubule:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0708: Unverified extracted MCQ from Renal Physiology Questions-2 page 10 (Q48) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-2.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-2.pdf",
     "sourceOccurrence": "S200-p010-mcq-0709",
     "stem": "The only renal tubule that handle PAHA and PO4 transport is:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0709: Unverified extracted MCQ from Renal Physiology Questions-2 page 10 (Q49) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-2.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-2.pdf",
     "sourceOccurrence": "S200-p011-mcq-0711",
     "stem": "When the renal artery PAHA concentration is 10 mg%, and the renal vein PAHA concentration is 1.5 mg%, the PAHA extraction ratio is:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0711: Unverified extracted MCQ from Renal Physiology Questions-2 page 11 (Q51) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-2.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-2.pdf",
     "sourceOccurrence": "S200-p011-mcq-0712",
     "stem": "When the renal artery PAHA concentration is 10 mg%, and the renal vein PAHA concentration is 1.5 mg%, and when the PAHA clearance is 600 ml/min. The actual renal plasma flow is:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0712: Unverified extracted MCQ from Renal Physiology Questions-2 page 11 (Q52) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p001-mcq-0714",
     "stem": "Renal counter current mechanisms:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0714: Unverified extracted MCQ from Renal Physiology Questions-3 page 1 (Q1) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p001-mcq-0715",
     "stem": "Counter current multiplier system:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0715: Unverified extracted MCQ from Renal Physiology Questions-3 page 1 (Q2) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p001-mcq-0716",
     "stem": "Counter current exchanger system:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0716: Unverified extracted MCQ from Renal Physiology Questions-3 page 1 (Q3) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p001-mcq-0717",
     "stem": "Regarding the renal counter current mechanisms, all are true EXCEPT:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0717: Unverified extracted MCQ from Renal Physiology Questions-3 page 1 (Q4) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p002-mcq-0719",
     "stem": "Regarding Urea, which sentence is not correct:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0719: Unverified extracted MCQ from Renal Physiology Questions-3 page 2 (Q6) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p002-mcq-0720",
     "stem": "Regarding vasopressin actions, which sentence is not correct:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0720: Unverified extracted MCQ from Renal Physiology Questions-3 page 2 (Q7) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p002-mcq-0721",
     "stem": "Concerning urine concentration and dilution, all are true, EXCEPT:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0721: Unverified extracted MCQ from Renal Physiology Questions-3 page 2 (Q9) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p003-mcq-0723",
     "stem": "Regarding Diuresis, all are true, EXCEPT:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0723: Unverified extracted MCQ from Renal Physiology Questions-3 page 3 (Q11) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p003-mcq-0724",
     "stem": "Concerning the diuretic drugs, all are true EXCEPT:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0724: Unverified extracted MCQ from Renal Physiology Questions-3 page 3 (Q13) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p003-mcq-0725",
     "stem": "Regarding water renal handling, all are true EXCEPT:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0725: Unverified extracted MCQ from Renal Physiology Questions-3 page 3 (Q14) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p004-mcq-0726",
     "stem": "Sodium handling mechanisms:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0726: Unverified extracted MCQ from Renal Physiology Questions-3 page 4 (Q15) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p004-mcq-0727",
     "stem": "Sodium reabsorption:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0727: Unverified extracted MCQ from Renal Physiology Questions-3 page 4 (Q16) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p004-mcq-0728",
     "stem": "Regarding the ECF:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0728: Unverified extracted MCQ from Renal Physiology Questions-3 page 4 (Q17) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p004-mcq-0729",
     "stem": "Regarding the ECF, all are true EXCEPT:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0729: Unverified extracted MCQ from Renal Physiology Questions-3 page 4 (Q18) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p004-mcq-0730",
     "stem": "Which of the following is not a cause of hypertonicity:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0730: Unverified extracted MCQ from Renal Physiology Questions-3 page 4 (Q19) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p005-mcq-0732",
     "stem": "Hypervolemia is not corrected by:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0732: Unverified extracted MCQ from Renal Physiology Questions-3 page 5 (Q21) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p005-mcq-0733",
     "stem": "Regarding potassium balance, all are true EXCEPT:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0733: Unverified extracted MCQ from Renal Physiology Questions-3 page 5 (Q22) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p005-mcq-0734",
     "stem": "Regarding Ca++ balance:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0734: Unverified extracted MCQ from Renal Physiology Questions-3 page 5 (Q23) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p005-mcq-0735",
     "stem": "Regarding PO4 balance:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0735: Unverified extracted MCQ from Renal Physiology Questions-3 page 5 (Q24) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p006-mcq-0737",
     "stem": "In a patient who has become dehydrated, body water should be replaced by intravenous infusion of",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0737: Unverified extracted MCQ from Renal Physiology Questions-3 page 6 (Q26) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p006-mcq-0738",
     "stem": "A scientist is performing studies on runners after a 10,000-m race. She finds that the urine of runners after the race is more concentrated and has reduced volume than before the race. What mechanism contributes to the change in urine concentration and output?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0738: Unverified extracted MCQ from Renal Physiology Questions-3 page 6 (Q27) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p006-mcq-0739",
     "stem": "In normal kidneys, which of the following is true about the osmolarity of renal tubular fluid that flows through the early distal tubule in the region of the macula densa?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0739: Unverified extracted MCQ from Renal Physiology Questions-3 page 6 (Q28) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p007-mcq-0742",
     "stem": "Which of the following changes tends to increase peritubular capillary reabsorption?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0742: Unverified extracted MCQ from Renal Physiology Questions-3 page 7 (Q31) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p007-mcq-0743",
     "stem": "Under conditions of normal renal function, which of the following is true about the concentration of urea in tubular fluid at the end of the proximal tubule?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0743: Unverified extracted MCQ from Renal Physiology Questions-3 page 7 (Q32) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p008-mcq-0745",
     "stem": "Administration of a thiazide diuretic (e.g., chlorothiazide) would be expected to cause which of the following effects as its primary mechanism of action?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0745: Unverified extracted MCQ from Renal Physiology Questions-3 page 8 (Q34) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p008-mcq-0747",
     "stem": "Which of the following would likely lead to hyponatremia?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0747: Unverified extracted MCQ from Renal Physiology Questions-3 page 8 (Q36) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p009-mcq-0749",
     "stem": "Which of the following would be expected to cause a decrease in extracellular fluid potassium concentration (hypokalemia)?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0749: Unverified extracted MCQ from Renal Physiology Questions-3 page 9 (Q38) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p009-mcq-0750",
     "stem": "A healthy 29-year-old man runs a 10-km race on a hot day and becomes very dehydrated. Normally, in which part of the renal tubule is the most water reabsorbed?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0750: Unverified extracted MCQ from Renal Physiology Questions-3 page 9 (Q39) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p009-mcq-0751",
     "stem": "Which of the following has similar values for both intracellular and interstitial body fluids?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0751: Unverified extracted MCQ from Renal Physiology Questions-3 page 9 (Q40) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p010-mcq-0754",
     "stem": "Which of the following changes would you expect to find in a patient consuming a high-sodium diet compared with the same patient on a normal-sodium diet, assuming normal kidneys conditions?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0754: Unverified extracted MCQ from Renal Physiology Questions-3 page 10 (Q43) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p010-mcq-0755",
     "stem": "Which part of the renal tubule would have the lowest tubular fluid osmolarity in a patient who has complete lack of antidiuretic hormone due to \"central\" diabetes insipidus?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0755: Unverified extracted MCQ from Renal Physiology Questions-3 page 10 (Q44) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p011-mcq-0757",
     "stem": "What creates the osmotic gradient in the renal medulla?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0757: Unverified extracted MCQ from Renal Physiology Questions-3 page 11 (Q47) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-3.pdf",
     "sourceOccurrence": "S201-p011-mcq-0758",
     "stem": "A patient with uncontrolled hypertension is placed on a new diuretic targeted to act on the Na+ reabsorption site from the basolateral surface of the renal epithelial cells. Which of the following transport processes is the new drug affecting?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0758: Unverified extracted MCQ from Renal Physiology Questions-3 page 11 (Q48) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p001-mcq-0761",
     "stem": "The importance of pH regulation includes all of the following, EXCEPT:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0761: Unverified extracted MCQ from Renal Physiology Questions-4 page 1 (Q1) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p001-mcq-0763",
     "stem": "For optimal pH, the ratio between HCO3 and CO2 should be kept at:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0763: Unverified extracted MCQ from Renal Physiology Questions-4 page 1 (Q3) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p001-mcq-0764",
     "stem": "Role of kidney in pH regulation includes all of the following except:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0764: Unverified extracted MCQ from Renal Physiology Questions-4 page 1 (Q4) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p001-mcq-0765",
     "stem": "Hydrogen secretion by renal tubules:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0765: Unverified extracted MCQ from Renal Physiology Questions-4 page 1 (Q5) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p002-mcq-0766",
     "stem": "Hydrogen secretion by renal tubules is not affected by:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0766: Unverified extracted MCQ from Renal Physiology Questions-4 page 2 (Q6) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p002-mcq-0767",
     "stem": "Plasma CO2 is increased in which 2 of the following:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0767: Unverified extracted MCQ from Renal Physiology Questions-4 page 2 (Q7) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p002-mcq-0768",
     "stem": "Plasma CO2 is decreased in which 2 of the following:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0768: Unverified extracted MCQ from Renal Physiology Questions-4 page 2 (Q8) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p002-mcq-0769",
     "stem": "Plasma HCO3 is increased in which 2 of the following:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0769: Unverified extracted MCQ from Renal Physiology Questions-4 page 2 (Q9) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p002-mcq-0770",
     "stem": "Plasma HCO3 is decreased in which 2 of the following:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0770: Unverified extracted MCQ from Renal Physiology Questions-4 page 2 (Q10) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p003-mcq-0772",
     "stem": "Absence of NH4Cl & titrable acidity in urine occurs in which 2 of the following:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0772: Unverified extracted MCQ from Renal Physiology Questions-4 page 3 (Q12) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p003-mcq-0773",
     "stem": "Which of the following is not a cause of respiratory acidosis (increased CO2):",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0773: Unverified extracted MCQ from Renal Physiology Questions-4 page 3 (Q13) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p003-mcq-0774",
     "stem": "Which of the following is not a cause of respiratory alkalosis (decreased CO2):",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0774: Unverified extracted MCQ from Renal Physiology Questions-4 page 3 (Q14) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p003-mcq-0775",
     "stem": "Which of the following is not a cause of metabolic acidosis (decreased HCO3):",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0775: Unverified extracted MCQ from Renal Physiology Questions-4 page 3 (Q15) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p004-mcq-0777",
     "stem": "Which of the following is not a compensatory mechanism in alkalosis:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0777: Unverified extracted MCQ from Renal Physiology Questions-4 page 4 (Q17) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p004-mcq-0778",
     "stem": "Which of the following is not a compensatory mechanism in acidosis:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0778: Unverified extracted MCQ from Renal Physiology Questions-4 page 4 (Q18) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p004-mcq-0779",
     "stem": "Which of the following types of acidosis is not a hypercholeremic type:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0779: Unverified extracted MCQ from Renal Physiology Questions-4 page 4 (Q20) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p005-mcq-0781",
     "stem": "Compensatory mechanisms in metabolic acidosis include",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0781: Unverified extracted MCQ from Renal Physiology Questions-4 page 5 (Q22) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p005-mcq-0782",
     "stem": "Regarding renal compensation in respiratory acidosis and alkalosis",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0782: Unverified extracted MCQ from Renal Physiology Questions-4 page 5 (Q23) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p005-mcq-0783",
     "stem": "Concerning micturition:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0783: Unverified extracted MCQ from Renal Physiology Questions-4 page 5 (Q24) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p005-mcq-0784",
     "stem": "Regarding the urinary bladder:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0784: Unverified extracted MCQ from Renal Physiology Questions-4 page 5 (Q25) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p006-mcq-0786",
     "stem": "Functions of the cerebral cortex in control of micturition include all of the following, EXCEPT:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0786: Unverified extracted MCQ from Renal Physiology Questions-4 page 6 (Q27) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p006-mcq-0787",
     "stem": "Acute renal failure is commonly characterized by all of the following, EXCEPT:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0787: Unverified extracted MCQ from Renal Physiology Questions-4 page 6 (Q28) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p006-mcq-0788",
     "stem": "In chronic renal failure:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0788: Unverified extracted MCQ from Renal Physiology Questions-4 page 6 (Q29) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p006-mcq-0789",
     "stem": "In chronic renal failure, there is:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0789: Unverified extracted MCQ from Renal Physiology Questions-4 page 6 (Q30) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p006-mcq-0790",
     "stem": "Tubular function tests include all of the following EXCEPT:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0790: Unverified extracted MCQ from Renal Physiology Questions-4 page 6 (Q31) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p007-mcq-0792",
     "stem": "Urine specific gravity of the morning urine sample after overnight fasting is normally:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0792: Unverified extracted MCQ from Renal Physiology Questions-4 page 7 (Q33) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p007-mcq-0793",
     "stem": "Normal ECF level of HCO3 is:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0793: Unverified extracted MCQ from Renal Physiology Questions-4 page 7 (Q34) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p007-mcq-0794",
     "stem": "Normal PCO2 is:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0794: Unverified extracted MCQ from Renal Physiology Questions-4 page 7 (Q35) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p007-mcq-0795",
     "stem": "Normal plasma creatinine level is:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0795: Unverified extracted MCQ from Renal Physiology Questions-4 page 7 (Q36) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p008-mcq-0797",
     "stem": "A patient has the following laboratory values: arterial pH = 7.13, plasma HCO3 = 15 mEq/L, plasma chloride concentration = 118 mEq/L, arterial Pco2 = 28 mm Hg, and plasma Na+ concentration = 141 mEq/L. What is the most likely cause of his acidosis?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0797: Unverified extracted MCQ from Renal Physiology Questions-4 page 8 (Q38) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p008-mcq-0798",
     "stem": "In acidosis, most of the hydrogen ions secreted by the proximal tubule are associated with which of the following processes?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0798: Unverified extracted MCQ from Renal Physiology Questions-4 page 8 (Q39) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p008-mcq-0799",
     "stem": "Which of the following changes would you expect to find in a patient who developed acute renal failure?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0799: Unverified extracted MCQ from Renal Physiology Questions-4 page 8 (Q40) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p008-mcq-0800",
     "stem": "Metabolic acidosis leads to a .. plasma K+ concentration and  in K+ secretion by the distal tubule and cortical collecting tubules.",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0800: Unverified extracted MCQ from Renal Physiology Questions-4 page 8 (Q41) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p009-mcq-0801",
     "stem": "A young man is arterial blood sample yields the following values: pH = 7.02, HCO3 = 24 mEq/L, and PCO2 = 68 mm Hg. This patient's acid-base status is most accurately described as",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0801: Unverified extracted MCQ from Renal Physiology Questions-4 page 9 (Q42) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p009-mcq-0802",
     "stem": "In chronic respiratory acidosis with partial renal compensation, you would expect to find the following changes, compared to normal: .. urinary excretion of NH4; .. plasma HCO3 concentration; and  urine pH.",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0802: Unverified extracted MCQ from Renal Physiology Questions-4 page 9 (Q43) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p009-mcq-0804",
     "stem": "A 28-year-old woman is diagnosed with renal tubular acidosis. Which of the following laboratory measurements will most likely be normal in this patient?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0804: Unverified extracted MCQ from Renal Physiology Questions-4 page 9 (Q45) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p010-mcq-0805",
     "stem": "A 24-year-old man is admitted to the hospital with acute renal failure. His BUN is 150 mg/dL. This patient's high serum urea nitrogen was most likely caused by which of the following?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0805: Unverified extracted MCQ from Renal Physiology Questions-4 page 10 (Q46) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p010-mcq-0806",
     "stem": "A patient has suffered from persistent diarrhea lasting for 7 days. Which of the following would be decreased in this patient?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0806: Unverified extracted MCQ from Renal Physiology Questions-4 page 10 (Q47) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p010-mcq-0807",
     "stem": "Which of the following statements best describes renal ammonia (NH3)?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0807: Unverified extracted MCQ from Renal Physiology Questions-4 page 10 (Q48) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p012-mcq-0812",
     "stem": "To voluntarily control urination, the . nervous system innervates the ...",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0812: Unverified extracted MCQ from Renal Physiology Questions-4 page 12 (Q53) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceFile": "Physiology/💥Renal Physiology Questions-4.pdf",
     "sourceOccurrence": "S202-p012-mcq-0813",
     "stem": "During micturition, neural activity to bladder muscles and sphincters from which of the following is increased?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0813: Unverified extracted MCQ from Renal Physiology Questions-4 page 12 (Q54) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology F Questions.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology F Questions.pdf",
     "sourceOccurrence": "S203-p006-mcq-0815",
     "stem": "Which structure is formed from follicle following ovulation?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0815: Unverified extracted MCQ from Reproduction Physiology F Questions page 6 (Q28) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology F Questions.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology F Questions.pdf",
     "sourceOccurrence": "S203-p007-mcq-0816",
     "stem": "A woman is given daily injections of a substance beginning on the 16th day of her normal, 28 days, menstrual cycle and continuing for 3 weeks. As long as the injections continue, she does not menstruate. The injected substance could be which of the following?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0816: Unverified extracted MCQ from Reproduction Physiology F Questions page 7 (Q30) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology F Questions.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology F Questions.pdf",
     "sourceOccurrence": "S203-p007-mcq-0817",
     "stem": "When do progesterone levels rise to highest point during the female cycles?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0817: Unverified extracted MCQ from Reproduction Physiology F Questions page 7 (Q32) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology F Questions.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology F Questions.pdf",
     "sourceOccurrence": "S203-p009-mcq-0819",
     "stem": "During the week following ovulation, the endometrium thickness increases to 5-6 mm. What stimulates this increase in thickness?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0819: Unverified extracted MCQ from Reproduction Physiology F Questions page 9 (Q38) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology F Questions.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology F Questions.pdf",
     "sourceOccurrence": "S203-p013-mcq-0820",
     "stem": "In primary hypogonadism before puberty, there is",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0820: Unverified extracted MCQ from Reproduction Physiology F Questions page 13 (Q59) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology F Questions.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology F Questions.pdf",
     "sourceOccurrence": "S203-p014-mcq-0822",
     "stem": "In the female reproductive cycle, ______ is/are normally produced every 28 days.",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0822: Unverified extracted MCQ from Reproduction Physiology F Questions page 14 (Q62) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology F Questions.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology F Questions.pdf",
     "sourceOccurrence": "S203-p014-mcq-0823",
     "stem": "Each ova is embedded within a ____ and only a small proportion will advance beyond_____.",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0823: Unverified extracted MCQ from Reproduction Physiology F Questions page 14 (Q63) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology F Questions.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology F Questions.pdf",
     "sourceOccurrence": "S203-p015-mcq-0825",
     "stem": "The follicular phase of ovarian cycle corresponds with  phase(s) of uterine cycle?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0825: Unverified extracted MCQ from Reproduction Physiology F Questions page 15 (Q65) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology F Questions.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology F Questions.pdf",
     "sourceOccurrence": "S203-p015-mcq-0826",
     "stem": "What does the LH surge that occurs at the beginning of the luteal phase trigger?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0826: Unverified extracted MCQ from Reproduction Physiology F Questions page 15 (Q66) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology F Questions.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology F Questions.pdf",
     "sourceOccurrence": "S203-p015-mcq-0827",
     "stem": "The changes in the uterus that occur during the secretory phase are mediated by:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0827: Unverified extracted MCQ from Reproduction Physiology F Questions page 15 (Q67) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology F Questions.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology F Questions.pdf",
     "sourceOccurrence": "S203-p016-mcq-0829",
     "stem": "The secretory activity of the anterior pituitary begins to change during late follicular phase such that ________.",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0829: Unverified extracted MCQ from Reproduction Physiology F Questions page 16 (Q69) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology F Questions.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology F Questions.pdf",
     "sourceOccurrence": "S203-p016-mcq-0830",
     "stem": "The hormonal trigger for menstruation involves a ________.",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0830: Unverified extracted MCQ from Reproduction Physiology F Questions page 16 (Q70) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology F Questions.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology F Questions.pdf",
     "sourceOccurrence": "S203-p017-mcq-0833",
     "stem": "Estrogen and progesterone secretion by the corpus luteum is maintained during pregnancy by ________ until the corpus luteum degenerates and the ________ takes over secretion of these hormones.",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0833: Unverified extracted MCQ from Reproduction Physiology F Questions page 17 (Q73) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology F Questions.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology F Questions.pdf",
     "sourceOccurrence": "S203-p018-mcq-0835",
     "stem": "Which of the following is a function of oxytocin?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0835: Unverified extracted MCQ from Reproduction Physiology F Questions page 18 (Q75) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology F Questions.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology F Questions.pdf",
     "sourceOccurrence": "S203-p018-mcq-0836",
     "stem": "The ejection of milk that occurs while the infant is suckling is mediated by ________.",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0836: Unverified extracted MCQ from Reproduction Physiology F Questions page 18 (Q76) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology F Questions.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology F Questions.pdf",
     "sourceOccurrence": "S203-p019-mcq-0838",
     "stem": "A 19-year-old female presents to her physician with significant weight loss and secondary amenorrhea. She has a high- intensity exercise regimen for a marathon race, and seems to have a fear of losing it. Decreased production of which of these hormones leads to amenorrhea in this case?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0838: Unverified extracted MCQ from Reproduction Physiology F Questions page 19 (Q78) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology M Questions-1.pdf",
     "sourceOccurrence": "S204-p001-mcq-0843",
     "stem": "When do the testes begin to descend into scrotum?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0843: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 1 (Q2) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology M Questions-1.pdf",
     "sourceOccurrence": "S204-p008-mcq-0845",
     "stem": "Eunuchism is Not characterized by",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0845: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 8 (Q37) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology M Questions-1.pdf",
     "sourceOccurrence": "S204-p008-mcq-0846",
     "stem": "Which of the following specifically interrupts emission",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0846: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 8 (Q38) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology M Questions-1.pdf",
     "sourceOccurrence": "S204-p009-mcq-0847",
     "stem": "In male hypogonadism before puberty, there is",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0847: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 9 (Q40) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology M Questions-1.pdf",
     "sourceOccurrence": "S204-p011-mcq-0852",
     "stem": "What is the function of Leydig cells?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0852: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 11 (Q47) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology M Questions-1.pdf",
     "sourceOccurrence": "S204-p011-mcq-0853",
     "stem": "What cells secrete Mllerian inhibiting substance in fetal life?",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0853: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 11 (Q48) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology M Questions-1.pdf",
     "sourceOccurrence": "S204-p011-mcq-0854",
     "stem": "The ________ erectile tissue increases during sexual excitement, causing the penis to become erect.",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0854: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 11 (Q49) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology M Questions-1.pdf",
     "sourceOccurrence": "S204-p012-mcq-0857",
     "stem": "Inhibin is secreted from the ________ and acts to reduce the secretion of ______.",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0857: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 12 (Q52) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology M Questions-1.pdf",
     "sourceOccurrence": "S204-p012-mcq-0858",
     "stem": "Spermatogenesis is directly stimulated by",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0858: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 12 (Q53) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology M Questions-1.pdf",
     "sourceOccurrence": "S204-p014-mcq-0863",
     "stem": "Clotting of semen inside the female genital tract is promoted by:",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0863: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 14 (Q58) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
   {
-    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceFile": "Physiology/💥Reproduction Physiology M Questions-1.pdf",
     "sourceOccurrence": "S204-p014-mcq-0864",
     "stem": "Which secretion in male contains a substance to dissolve mucous in the female genital tract?",
     "reason": "corrupt_extraction_or_fragment",
@@ -7957,7 +7957,7 @@
   {
     "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
     "sourceOccurrence": "S193-p006-mcq-0888",
-    "stem": "t end of menstrual phase of uterine cycle, . . . menstrual | Proliferative | Secretory estrogen levels in the blood rise rapidly. phase | phase phase . 0 Follicular phase Luteal phase What is the source of the estrogen\u2019 oy I on a Seotoras",
+    "stem": "t end of menstrual phase of uterine cycle, . . . menstrual | Proliferative | Secretory estrogen levels in the blood rise rapidly. phase | phase phase . 0 Follicular phase Luteal phase What is the source of the estrogen’ oy I on a Seotoras",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0888: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 6 (Q27) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   },
@@ -8650,7 +8650,7 @@
   {
     "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
     "sourceOccurrence": "S031-p027-mcq-0996",
-    "stem": "In the Loop of Henle: a, Magnesium and calcium are reabsorbed passively 2\u201d to potassium movement from tubular cells to tubular lumen.",
+    "stem": "In the Loop of Henle: a, Magnesium and calcium are reabsorbed passively 2” to potassium movement from tubular cells to tubular lumen.",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0996: Unverified extracted MCQ from UG_NERD page 27 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
   },
@@ -8793,5 +8793,355 @@
     "stem": "During the week following ovulation, the",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-1020: Unverified extracted MCQ from UG_NERD page 33 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p033-mcq-1021",
+    "stem": "Luteinizing hormone",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1021: Unverified extracted MCQ from Comprehensive MCQ Bank (UG_NERD) page 33 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p033-mcq-1022",
+    "stem": "What factor will inhibit LH secretion?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1022: Unverified extracted MCQ from Comprehensive MCQ Bank (UG_NERD) page 33 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p034-mcq-1023",
+    "stem": "Ovulation appears to be triggered by a",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1023: Unverified extracted MCQ from Comprehensive MCQ Bank (UG_NERD) page 34 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p034-mcq-1024",
+    "stem": "Which structure is formed following",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1024: Unverified extracted MCQ from Comprehensive MCQ Bank (UG_NERD) page 34 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p034-mcq-1025",
+    "stem": "The production of testosterone in the",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1025: Unverified extracted MCQ from Comprehensive MCQ Bank (UG_NERD) page 34 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p034-mcq-1026",
+    "stem": "Seven days after ovulation, pituitary",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1026: Unverified extracted MCQ from Comprehensive MCQ Bank (UG_NERD) page 34 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p034-mcq-1027",
+    "stem": "When do progesterone levels rise to their 2 Vv",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1027: Unverified extracted MCQ from Comprehensive MCQ Bank (UG_NERD) page 34 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p034-mcq-1028",
+    "stem": "Secretory phase of uterine cycle a.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1028: Unverified extracted MCQ from Comprehensive MCQ Bank (UG_NERD) page 34 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p034-mcq-1029",
+    "stem": "Rupture of Graffian follicle",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1029: Unverified extracted MCQ from Comprehensive MCQ Bank (UG_NERD) page 34 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/MCQ-LABELLED 🏷️ physio female _compress.pdf",
+    "sourceOccurrence": "S186-p001-essay-1030",
+    "stem": "Induces en: ent_of external genitalia,",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1030: Unverified extracted ESSAY from Physiology Female MCQs page 1 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/MCQ-LABELLED 🏷️ physio female _compress.pdf",
+    "sourceOccurrence": "S186-p001-essay-1032",
+    "stem": "StimUlates orai cell proliferation and th i ration,",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1032: Unverified extracted ESSAY from Physiology Female MCQs page 1 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/MCQ-LABELLED 🏷️ physio female _compress.pdf",
+    "sourceOccurrence": "S186-p001-essay-1033",
+    "stem": "Is_essential for ova maturation and release by ‘Induction oft",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1033: Unverified extracted ESSAY from Physiology Female MCQs page 1 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/MCQ-LABELLED 🏷️ physio female _compress.pdf",
+    "sourceOccurrence": "S186-p001-essay-1034",
+    "stem": "Controls. Gn ‘SH and LH secretion:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1034: Unverified extracted ESSAY from Physiology Female MCQs page 1 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/MCQ-LABELLED 🏷️ physio female _compress.pdf",
+    "sourceOccurrence": "S186-p001-essay-1036",
+    "stem": "Tt_promotes_ the development o' of th",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1036: Unverified extracted ESSAY from Physiology Female MCQs page 1 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/MCQ-LABELLED 🏷️ physio female _compress.pdf",
+    "sourceOccurrence": "S186-p001-mcq-1037",
+    "stem": "Hypersecretion pie ovaries s (tumors of the ovary), ized by:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1037: Unverified extracted MCQ from Physiology Female MCQs page 1 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p001-essay-1040",
+    "stem": "regulation of arterial blood pressure",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1040: Unverified extracted ESSAY from Physiology URO booklet page 1 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p001-essay-1041",
+    "stem": "autoregulation of renal blood flow and glomerular filtration rate",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1041: Unverified extracted ESSAY from Physiology URO booklet page 1 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p002-essay-1042",
+    "stem": "Mention 2 characteristics of renal circulation",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1042: Unverified extracted ESSAY from Physiology URO booklet page 2 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p002-essay-1043",
+    "stem": "High flow circulation RBF (1200 ml/min) represents 20% of the COP",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1043: Unverified extracted ESSAY from Physiology URO booklet page 2 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p002-essay-1044",
+    "stem": "Portal circulation consists of glomerular capillary and peritubular capillary",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1044: Unverified extracted ESSAY from Physiology URO booklet page 2 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p002-essay-1045",
+    "stem": "Glomerular capillary a high-pressure capillary bed favors filtration",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1045: Unverified extracted ESSAY from Physiology URO booklet page 2 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p002-essay-1046",
+    "stem": "Peritubular capillary a low-pressure capillary bed favors reabsorption",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1046: Unverified extracted ESSAY from Physiology URO booklet page 2 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p002-essay-1047",
+    "stem": "Vasa recta present in juxtamedullary nephron characterized by sluggish blood flow",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1047: Unverified extracted ESSAY from Physiology URO booklet page 2 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p002-essay-1048",
+    "stem": "Mention the importance of efferent arteriolar resistance.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1048: Unverified extracted ESSAY from Physiology URO booklet page 2 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p002-essay-1049",
+    "stem": "generates high pressure in glomerular capillaries favoring filtration.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1049: Unverified extracted ESSAY from Physiology URO booklet page 2 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p002-essay-1050",
+    "stem": "decreasing blood flow in peritubular capillaries decreasing their hydrostatic",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1050: Unverified extracted ESSAY from Physiology URO booklet page 2 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p002-essay-1051",
+    "stem": "decreasing the velocity of blood in vasa recta.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1051: Unverified extracted ESSAY from Physiology URO booklet page 2 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p002-essay-1052",
+    "stem": "Mention the basic renal processes of urine formation.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1052: Unverified extracted ESSAY from Physiology URO booklet page 2 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p002-essay-1053",
+    "stem": "Glomerular Filtration 2-Tubular Reabsorption 3-Tubular Secretion",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1053: Unverified extracted ESSAY from Physiology URO booklet page 2 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p002-essay-1054",
+    "stem": "Define Glomerular filtration rate (GFR)",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1054: Unverified extracted ESSAY from Physiology URO booklet page 2 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p003-essay-1057",
+    "stem": "Glomerular hydrostatic pressure (60mmhg).",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1057: Unverified extracted ESSAY from Physiology URO booklet page 3 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p003-essay-1058",
+    "stem": "Glomerular colloidal osmotic pressure",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1058: Unverified extracted ESSAY from Physiology URO booklet page 3 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p003-essay-1059",
+    "stem": "Bowman capsule hydrostatic pressure",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1059: Unverified extracted ESSAY from Physiology URO booklet page 3 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p003-essay-1060",
+    "stem": "bowman osmotic pressure = zero",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1060: Unverified extracted ESSAY from Physiology URO booklet page 3 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p003-essay-1062",
+    "stem": "Permeability of the glomerular membrane",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1062: Unverified extracted ESSAY from Physiology URO booklet page 3 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p003-essay-1063",
+    "stem": "Surface area of the glomerular membrane",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1063: Unverified extracted ESSAY from Physiology URO booklet page 3 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p004-essay-1066",
+    "stem": "Study the mode of tubular handling of different solutes.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1066: Unverified extracted ESSAY from Physiology URO booklet page 4 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p004-essay-1067",
+    "stem": "Measurement of GFR",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1067: Unverified extracted ESSAY from Physiology URO booklet page 4 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p004-essay-1068",
+    "stem": "Measurement of RPF",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1068: Unverified extracted ESSAY from Physiology URO booklet page 4 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p004-essay-1069",
+    "stem": "Measurement of FF",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1069: Unverified extracted ESSAY from Physiology URO booklet page 4 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p004-essay-1070",
+    "stem": "Mention the criteria of substance whose clearance is used in GFR calculation.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1070: Unverified extracted ESSAY from Physiology URO booklet page 4 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p004-essay-1071",
+    "stem": "Completely filtered.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1071: Unverified extracted ESSAY from Physiology URO booklet page 4 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p004-essay-1072",
+    "stem": "Not reabsorbed or secreted.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1072: Unverified extracted ESSAY from Physiology URO booklet page 4 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p004-essay-1073",
+    "stem": "Not toxic and physiologically inert",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1073: Unverified extracted ESSAY from Physiology URO booklet page 4 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p004-essay-1074",
+    "stem": "Not stored by kidney",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1074: Unverified extracted ESSAY from Physiology URO booklet page 4 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p004-essay-1075",
+    "stem": "Not synthesized or metabolized by the tubule.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1075: Unverified extracted ESSAY from Physiology URO booklet page 4 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p004-essay-1076",
+    "stem": "Not bound to plasma proteins",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1076: Unverified extracted ESSAY from Physiology URO booklet page 4 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p004-essay-1077",
+    "stem": "Easy to measure in plasma and urine.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1077: Unverified extracted ESSAY from Physiology URO booklet page 4 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p004-essay-1078",
+    "stem": "Has no effect on filtration rate.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1078: Unverified extracted ESSAY from Physiology URO booklet page 4 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p004-essay-1079",
+    "stem": "Discuss the disadvantages of using inulin clearance in measuring GFR.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1079: Unverified extracted ESSAY from Physiology URO booklet page 4 with option formatting artifacts, missing answer key, or stem fragmentation. Excluded under quality-over-quantity intake policy."
   }
 ]
