@@ -11243,5 +11243,355 @@
     "stem": "Relaxin causes relaxation of",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-1485: Unverified extracted fragment from Physiology Genital Questions and Answers page 4 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p005-essay-1486",
+    "stem": "if fertilization of ovum occurs: C.L grows and continues till placenta is formed",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1486: Unverified extracted fragment from Physiology Genital Questions and Answers page 5 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p005-essay-1487",
+    "stem": "if not fertilized: degeneration of corpus luteum and formation of corpus albicans",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1487: Unverified extracted fragment from Physiology Genital Questions and Answers page 5 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p006-essay-1488",
+    "stem": "Compare physiological function of estrogen & progesterone",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1488: Unverified extracted fragment from Physiology Genital Questions and Answers page 6 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p006-essay-1489",
+    "stem": "Cervix: thin mucosa, profuse arteries",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1489: Unverified extracted fragment from Physiology Genital Questions and Answers page 6 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p006-mcq-1490",
+    "stem": "vagina: the epithelium becomes relaxation of cervical muscles stratified to increase the resistance 3. Fallopian tube: increase secretion for to infection nutrition of the ovum accessory sex | Development of duct system, nipple and Growth of secretory alveoli & swelling of organs stroma, increase fat deposition and breast pigmentation of nipple 2rY sex e distribution of fat in breast and buttocks characters | high pitched sound",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1490: Unverified extracted fragment from Physiology Genital Questions and Answers page 6 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p007-essay-1491",
+    "stem": "Mention the sources of estrogen. Outline its main functions.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1491: Unverified extracted fragment from Physiology Genital Questions and Answers page 7 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p007-essay-1492",
+    "stem": "1ry follicles. 3. Placenta",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1492: Unverified extracted fragment from Physiology Genital Questions and Answers page 7 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p007-essay-1494",
+    "stem": "\\llustrate with diagram how the LH surge is controlled and mention its effects.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1494: Unverified extracted fragment from Physiology Genital Questions and Answers page 7 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p007-essay-1495",
+    "stem": "list hormones secreted by placenta. What is meant by feto-placental unit and",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1495: Unverified extracted fragment from Physiology Genital Questions and Answers page 7 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p007-essay-1497",
+    "stem": "Placental estrogen and progesterone.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1497: Unverified extracted fragment from Physiology Genital Questions and Answers page 7 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p007-mcq-1498",
+    "stem": "Human Chorionic Somatomamotropin. - Feto-placental unit:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1498: Unverified extracted fragment from Physiology Genital Questions and Answers page 7 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p007-essay-1499",
+    "stem": "State the actions of human chorionic gonadotropin and mention its clinical",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1499: Unverified extracted fragment from Physiology Genital Questions and Answers page 7 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p007-essay-1500",
+    "stem": "Stimulate leydig cells in cells of male fotus to secrete testosterone causing descend of testis",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1500: Unverified extracted fragment from Physiology Genital Questions and Answers page 7 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p007-essay-1501",
+    "stem": "Stimulate CTZ — vomiting",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1501: Unverified extracted fragment from Physiology Genital Questions and Answers page 7 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p007-essay-1502",
+    "stem": "Prolongs life span of corpus luteum.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1502: Unverified extracted fragment from Physiology Genital Questions and Answers page 7 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p008-essay-1503",
+    "stem": "what is menopause? State its causes, list hormonal and anatomical changes",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1503: Unverified extracted fragment from Physiology Genital Questions and Answers page 8 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p008-essay-1504",
+    "stem": "Depletion of ovarian follicles and stop of estrogen secretion so ovarian and menstrual cycles",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1504: Unverified extracted fragment from Physiology Genital Questions and Answers page 8 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/physio genital.pdf",
+    "sourceOccurrence": "S195-p008-essay-1505",
+    "stem": "A midlife hypothalamic changes.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1505: Unverified extracted fragment from Physiology Genital Questions and Answers page 8 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p001-essay-1506",
+    "stem": "What are the distinguishing characteristics of a superficial nephron? &",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1506: Unverified extracted fragment from Physiology Renal Questions and Answers page 1 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p001-essay-1507",
+    "stem": "They contain juxtaglomerular apparatus. they show auto regulation",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1507: Unverified extracted fragment from Physiology Renal Questions and Answers page 1 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p001-mcq-1508",
+    "stem": "Main function is Na absorption. - Juxtaglomerular apparatus: - Site: In cortical nephron. Near glomeruli at the region where the initial portion of distal tubule comes in contact with glomerulus. - Components:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1508: Unverified extracted fragment from Physiology Renal Questions and Answers page 1 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p003-essay-1509",
+    "stem": "State and explain the most unique feature of renal circulation",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1509: Unverified extracted fragment from Physiology Renal Questions and Answers page 3 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p003-mcq-1510",
+    "stem": "10% only Renal oxygen consumption is very high (8% of total body consumption) & it correlates with Na reabsorption The arrangement of renal capillaries is called portal circulation& the afferent &efferent arterioleareconsidered a portal vessel. The only circulation where its capillaries drained by arterioles (glomerular capillaries ) High degree of auto regulation Renal capillaries are of 3 types:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1510: Unverified extracted fragment from Physiology Renal Questions and Answers page 3 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p003-essay-1511",
+    "stem": "Afferent a. is portal",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1511: Unverified extracted fragment from Physiology Renal Questions and Answers page 3 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p003-essay-1512",
+    "stem": "Afferent a. drain",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1512: Unverified extracted fragment from Physiology Renal Questions and Answers page 3 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p003-essay-1513",
+    "stem": "High flow Renal e Glomerular capillaries",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1513: Unverified extracted fragment from Physiology Renal Questions and Answers page 3 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p003-essay-1514",
+    "stem": "High O2 . . e Peritubular capillaries",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1514: Unverified extracted fragment from Physiology Renal Questions and Answers page 3 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p003-essay-1515",
+    "stem": "High cotical BF",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1515: Unverified extracted fragment from Physiology Renal Questions and Answers page 3 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p003-essay-1516",
+    "stem": "Explain the intrinsic & Extrinsic Mechanisms that Regulates RBF.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1516: Unverified extracted fragment from Physiology Renal Questions and Answers page 3 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p004-essay-1517",
+    "stem": "What is meant by \"renal auto-regulation\"? Explain the mechanisms that lead",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1517: Unverified extracted fragment from Physiology Renal Questions and Answers page 4 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p004-mcq-1518",
+    "stem": "Explain regulation of GFR? Extrinsic Regulation Intrinsic Regulation (auto-regulation):",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1518: Unverified extracted fragment from Physiology Renal Questions and Answers page 4 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p004-essay-1520",
+    "stem": "T Sympathetic activity.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1520: Unverified extracted fragment from Physiology Renal Questions and Answers page 4 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p004-mcq-1521",
+    "stem": "Local production of Vasodilators prostaglandins (PG E2& PG Iz) in kidney Modulate the VC produced by the symp nervous system & angiotensin II SO, it is protective For RBF",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1521: Unverified extracted fragment from Physiology Renal Questions and Answers page 4 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p004-mcq-1522",
+    "stem": "What are the preglomerular blood vessels? Which blood vessels in the kidney provide for the greatest resistance to blood flow? How would selective changes in preglomerular or postglomerular renal vascular resistance alter GFR?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1522: Unverified extracted fragment from Physiology Renal Questions and Answers page 4 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p005-essay-1523",
+    "stem": "Define glomerular filtration. Explain the forces determining the glomerular",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1523: Unverified extracted fragment from Physiology Renal Questions and Answers page 5 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p005-essay-1524",
+    "stem": "Glomerular capillary pressure.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1524: Unverified extracted fragment from Physiology Renal Questions and Answers page 5 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p005-mcq-1525",
+    "stem": "What is the GFR in normal human? How can be measured? Can GFR be elevated clinically? [tis the volume of plasma filtered by all glomeruli of both kidneys per minute, equal (125ml/min) (180L/Day ) in normal person.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1525: Unverified extracted fragment from Physiology Renal Questions and Answers page 5 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p006-essay-1526",
+    "stem": "What are the pressures favoring and opposing glomerular filtration?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1526: Unverified extracted fragment from Physiology Renal Questions and Answers page 6 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p006-essay-1527",
+    "stem": "Discuss the forces involved in glomerular filtration. Explain why",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1527: Unverified extracted fragment from Physiology Renal Questions and Answers page 6 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p006-essay-1529",
+    "stem": "Filtration occur throughout all the glomerular cap but other cap at arterial end only & at venous",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1529: Unverified extracted fragment from Physiology Renal Questions and Answers page 6 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p006-essay-1530",
+    "stem": "Vc in afferent arteriole ct Glomeualar cap. —> | Filtring force — |crr)",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1530: Unverified extracted fragment from Physiology Renal Questions and Answers page 6 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p006-essay-1531",
+    "stem": "Severe V.C in efferent art.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1531: Unverified extracted fragment from Physiology Renal Questions and Answers page 6 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p006-essay-1532",
+    "stem": "Sympathetic stimulation( VC of both aff & eff arterioles but its effect in aff art. Is more than in eff",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1532: Unverified extracted fragment from Physiology Renal Questions and Answers page 6 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p006-essay-1533",
+    "stem": "Decrease numb of function nephrons",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1533: Unverified extracted fragment from Physiology Renal Questions and Answers page 6 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p006-essay-1534",
+    "stem": "Increase hydrostatic pressure of Bowman capsule due to (renal stone , ureteric obstruction )",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1534: Unverified extracted fragment from Physiology Renal Questions and Answers page 6 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p006-essay-1535",
+    "stem": "State the composition of the glomerular filtrate and explain how it is",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1535: Unverified extracted fragment from Physiology Renal Questions and Answers page 6 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p006-essay-1536",
+    "stem": "03 % albumin",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1536: Unverified extracted fragment from Physiology Renal Questions and Answers page 6 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p007-essay-1537",
+    "stem": "Filtering forces",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1537: Unverified extracted fragment from Physiology Renal Questions and Answers page 7 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p007-essay-1538",
+    "stem": "Opposing forces",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1538: Unverified extracted fragment from Physiology Renal Questions and Answers page 7 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/renal - physio.pdf",
+    "sourceOccurrence": "S196-p007-essay-1539",
+    "stem": "Discuss the renal plasma clearance concept. Mention its equation and",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-1539: Unverified extracted fragment from Physiology Renal Questions and Answers page 7 representing isolated sub-bullets, section titles, or broken answer components ingested as standalone questions. Excluded under quality-over-quantity intake policy."
   }
 ]
