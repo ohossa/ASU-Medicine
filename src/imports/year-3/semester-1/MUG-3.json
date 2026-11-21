@@ -23940,6 +23940,525 @@
                 "Physiology/Physiology URO.pdf-Q215"
               ],
               "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0179",
+              "type": "essay",
+              "lecture": 10,
+              "text": "Enumerate the primary reproductive functions of testosterone in the adult male.",
+              "modelAnswer": "1. Spermatogenesis: Testosterone (acting locally within seminiferous tubules via Sertoli cells) is essential for maintaining spermatogenesis, germ cell survival, and spermiogenesis.\n2. Maintenance of Male Reproductive Organs: Stimulates growth, structural integrity, and secretory activity of internal and external genitalia (penis, scrotum, epididymis, vas deferens, seminal vesicles, and prostate gland).\n3. Secondary Sexual Characteristics: Induces and maintains adult male secondary sex characteristics, including male-pattern body/facial hair, deep voice (laryngeal enlargement and vocal cord thickening), and male libido (sexual drive).\n4. Neuroendocrine Feedback: Exerts negative feedback inhibition on the hypothalamus (reducing GnRH pulse frequency) and anterior pituitary gonadotropes (suppressing LH secretion).",
+              "explanation": "Testosterone acts as an intratesticular paracrine factor for spermatogenesis and as a systemic endocrine androgen for target reproductive tissues and feedback control.",
+              "sources": [
+                "Physiology URO.pdf-Q16",
+                "Physiology/Physiology URO.pdf-Q216"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0180",
+              "type": "essay",
+              "lecture": 10,
+              "text": "Describe the major non-reproductive (metabolic and systemic) functions of testosterone.",
+              "modelAnswer": "1. Protein Anabolism and Muscle Mass: Stimulates protein synthesis and nitrogen retention, leading to increased skeletal muscle mass, strength, and overall lean body mass.\n2. Skeletal Growth and Bone Density: Stimulates linear bone growth during puberty and increases bone mineral density by stimulating osteoblasts; aromatization to estradiol ultimately mediates epiphyseal closure.\n3. Erythropoiesis: Directly stimulates renal erythropoietin (EPO) secretion and bone marrow erythroid progenitor proliferation, resulting in higher hematocrit and hemoglobin levels in males compared to females.\n4. Electrolyte and Fluid Homeostasis: Promotes renal tubular reabsorption of sodium, potassium, calcium, and water, slightly expanding extracellular fluid volume.\n5. Basal Metabolic Rate (BMR): Increases basal metabolic rate by 5–10% secondary to increased protein turnover and active muscle tissue mass.",
+              "explanation": "Non-reproductive actions of testosterone explain the characteristic sexual dimorphism in muscle mass, bone density, and hematocrit between adult men and women.",
+              "sources": [
+                "Physiology URO.pdf-Q17",
+                "Physiology/Physiology URO.pdf-Q217"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0183",
+              "type": "essay",
+              "lecture": 10,
+              "text": "Compare the clinical manifestations of male hypogonadism occurring before puberty (eunuchoidism) versus after puberty.",
+              "modelAnswer": "1. Pre-pubertal Hypogonadism (Eunuchoidism):\n- External and internal genitalia remain infantile in size (microphallus, small atrophic testes, hypoplastic prostate and seminal vesicles).\n- Failure to develop male secondary sexual characteristics: absence of beard, mustache, and body hair; high-pitched voice; infantile fat distribution.\n- Skeleton: Delayed epiphyseal closure leads to disproportionately long limbs compared to the trunk (eunuchoid proportions: arm span exceeds height by >5 cm; lower body segment > upper segment).\n- Libido and sexual potency fail to develop; complete infertility (azoospermia).\n\n2. Post-pubertal Hypogonadism (Adult Onset):\n- Genitalia: Testes undergo partial atrophy and softening; penis and prostate undergo minor regression but do not revert to infantile dimensions.\n- Secondary sexual characteristics: Slow regression of body hair growth and slowing of beard growth; voice pitch remains deep permanently because adult laryngeal cartilage enlargement is irreversible.\n- Bone and muscle: Progressive loss of muscle mass, decreased bone mineral density (osteopenia/osteoporosis), and increase in visceral adiposity.\n- Sexual function: Marked reduction in libido, erectile dysfunction, decreased seminal volume, oligospermia or azoospermia, and emotional changes (fatigue, depression, irritability).",
+              "explanation": "The critical clinical distinction rests on whether testosterone deficiency occurred before or after pubertal epiphyseal fusion and laryngeal masculinization.",
+              "sources": [
+                "Physiology URO.pdf-Q20",
+                "Physiology/Physiology URO.pdf-Q220"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0184",
+              "type": "essay",
+              "lecture": 11,
+              "text": "Identify the spinal reflex centers governing erection, emission, and ejaculation proper in the male.",
+              "modelAnswer": "1. Center of Erection: Located in the sacral spinal cord segments (S2, S3, S4) for parasympathetic outflow (pelvic splanchnic nerves), supplemented by a thoracolumbar center (T11–L2) mediating psychogenic erection.\n2. Center of Emission: Located in the upper lumbar spinal cord segments (L1, L2), giving rise to sympathetic preganglionic fibers traveling through the hypogastric nerve.\n3. Center of Ejaculation Proper: Located in the sacral spinal cord segments (S2, S3, S4), giving rise to somatic motor fibers within the pudendal nerve.",
+              "explanation": "The male sexual act integrates three distinct spinal reflex arcs: parasympathetic erection, sympathetic emission, and somatic ejaculation proper.",
+              "sources": [
+                "Physiology URO.pdf-Q21",
+                "Physiology/Physiology URO.pdf-Q221"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0185",
+              "type": "essay",
+              "lecture": 11,
+              "text": "Explain the physiological hemodynamic and neurochemical mechanisms that cause penile erection.",
+              "modelAnswer": "1. Neurochemical Trigger: Sexual stimulation (tactile or psychic) triggers sacral parasympathetic efferents (pelvic nerves) and non-adrenergic non-cholinergic (NANC) neurons to release nitric oxide (NO) and acetylcholine.\n2. Vascular Smooth Muscle Relaxation: Nitric oxide diffuses into vascular smooth muscle cells of the deep penile arteries (helocine arteries) and cavernous trabeculae, activating soluble guanylyl cyclase to increase cyclic GMP (cGMP). cGMP decreases intracellular calcium, causing marked smooth muscle relaxation and arteriolar vasodilation.\n3. Cavernosal Engorgement: Blood inflow into the erectile tissue of the corpora cavernosa and corpus spongiosum increases several-fold, expanding the cavernous vascular lacunae against the rigid, non-compliant fibrous tunica albuginea.\n4. Venous Compression (Veno-occlusion): Expansion of the cavernous spaces compresses the subtunical venules against the unyielding tunica albuginea, drastically impeding venous outflow. Trapping of blood at arterial pressure produces tumescence, high intracavernosal pressure, and full penile rigidity.",
+              "explanation": "Erection is a vascular neuro-hemodynamic event where marked arteriolar inflow combined with passive veno-occlusive entrapment produces intracavernosal pressurization.",
+              "sources": [
+                "Physiology URO.pdf-Q22",
+                "Physiology/Physiology URO.pdf-Q222"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0186",
+              "type": "essay",
+              "lecture": 11,
+              "text": "Explain how penile erection terminates following orgasm (mechanism of detumescence).",
+              "modelAnswer": "1. Sympathetic Activation: Post-ejaculatory sympathetic nervous system firing releases norepinephrine, which acts on post-junctional alpha-1 adrenergic receptors on penile helicine arteries and cavernous trabecular smooth muscle cells.\n2. cGMP Degradation: Intracellular cGMP in cavernous vascular smooth muscle is rapidly broken down by the enzyme phosphodiesterase type 5 (PDE-5) into inactive 5'-GMP, restoring intracellular calcium levels.\n3. Arteriolar Vasoconstriction and Trabecular Contraction: Vascular and trabecular smooth muscles contract vigorously, drastically decreasing arterial inflow into the cavernous spaces.\n4. Venous Decompression (Detumescence): Contraction of the erectile tissue releases mechanical compression on the subtunical venous plexus, permitting rapid venous drainage of trapped blood and returning the penis to its flaccid resting state.",
+              "explanation": "Detumescence is an active sympathetic vasoconstrictive process reinforced by enzymatic cGMP hydrolysis by PDE-5.",
+              "sources": [
+                "Physiology URO.pdf-Q23",
+                "Physiology/Physiology URO.pdf-Q223"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0188",
+              "type": "essay",
+              "lecture": 11,
+              "text": "Describe the physiological mechanism and sequence of events of emission during the male sexual act.",
+              "modelAnswer": "1. Reflex Afferent Input: Tactile stimulation of the glans penis transmits sensory impulses via the internal pudendal nerves to the upper lumbar spinal cord (L1–L2).\n2. Sympathetic Efferent Activation: Lumbar sympathetic preganglionic fibers synapse in prevertebral ganglia, sending postganglionic adrenergic fibers via the hypogastric plexus to the genital ducts and accessory glands.\n3. Smooth Muscle Peristalsis: Sympathetic stimulation induces rhythmic peristaltic contractions of the smooth muscle coats of the epididymis, vas deferens, and ampullae, propelling spermatozoa forward into the internal urethra.\n4. Accessory Gland Secretion: Simultaneous sympathetic contraction of the muscular capsules of the prostate gland and seminal vesicles expels prostatic fluid (acidic, enzyme-rich) and seminal vesicle fluid (fructose and prostaglandin-rich) into the prostatic urethra, forming semen.\n5. Internal Sphincter Closure: Sympathetic impulses stimulate vigorous contraction of the internal urethral sphincter (bladder neck), preventing retrograde emission of semen into the urinary bladder.",
+              "explanation": "Emission is the preparatory sympathetic phase where semen components are assembled and propelled into the posterior urethra while the bladder neck closes.",
+              "sources": [
+                "Physiology URO.pdf-Q25",
+                "Physiology/Physiology URO.pdf-Q225"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0191",
+              "type": "essay",
+              "lecture": 11,
+              "text": "Write short notes on the systemic and genital physiological manifestations of male orgasm.",
+              "modelAnswer": "1. Definition and Timing: Male orgasm is the peak culmination of the sexual act, encompassing the subjective sensory climax and the objective motor events of emission and ejaculation proper.\n2. Genital Motor Events: Rhythmic, involuntary clonic contractions of the bulbocavernosus and ischiocavernosus perineal muscles, accompanied by contractions of the internal urethral sphincter preventing retrograde flow.\n3. Cardiovascular Responses: Marked sympathetic surge causing acute tachycardia (heart rate up to 160–180 bpm) and a significant rise in systolic and diastolic arterial blood pressure.\n4. Respiratory and Neuromuscular Responses: Hyperventilation (tachypnea) and generalized involuntary muscular tension (myotonia), often accompanied by facial contractions, carpopedal spasms, and intense psychological release/pleasure.\n5. Neurochemical Release: Massive central release of oxytocin, endorphins, and prolactin from the pituitary and hypothalamus, mediating emotional bonding, satiation, and post-orgasmic sedation.",
+              "explanation": "Male orgasm is an integrated neuro-autonomic climax featuring synchronized pelvic striated muscle contractions, profound sympathetic stimulation, and central neuropeptide release.",
+              "sources": [
+                "Physiology URO.pdf-Q28",
+                "Physiology/Physiology URO.pdf-Q228"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0192",
+              "type": "essay",
+              "lecture": 11,
+              "text": "Explain what is meant by the 'resolution' phase of the male sexual act and describe its physiological features.",
+              "modelAnswer": "1. Definition: Resolution is the final physiological phase of the male sexual response cycle following orgasm, characterized by the progressive dissipation of sexual arousal and return of organ systems to their baseline resting states.\n2. Penile Detumescence: Sympathetic vasoconstriction and PDE-5 activity decrease cavernous arterial inflow and decompress subtunical veins, returning the penis from rigidity to flaccidity within 1 to 2 minutes.\n3. Autonomic and Cardiovascular Normalization: Sympathetic tone recedes; heart rate, blood pressure, and respiratory rate rapidly decline to pre-arousal basal levels, accompanied by diffuse cutaneous perspiration.\n4. Male Refractory Period: Men experience an obligatory physiological refractory period during which re-arousal, erection, and second orgasm cannot be achieved; duration ranges from minutes in young men to hours or days with advancing age, heavily influenced by elevated post-ejaculatory prolactin levels.",
+              "explanation": "Resolution completes the sexual cycle with rapid detumescence, autonomic recovery, and an obligatory prolactin-mediated refractory interval unique to males.",
+              "sources": [
+                "Physiology URO.pdf-Q29",
+                "Physiology/Physiology URO.pdf-Q229"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0197",
+              "type": "essay",
+              "lecture": 12,
+              "text": "List the three regulatory levels controlling ovarian function and describe their interactions.",
+              "modelAnswer": "1. Hypothalamic Level: Neurons in the arcuate nucleus and preoptic area synthesize and release Gonadotropin-Releasing Hormone (GnRH) in an obligatory pulsatile (episodic) rhythm into the hypophyseal portal circulation.\n2. Anterior Pituitary Level: Pituitary gonadotropes express GnRH receptors and secrete two glycoprotein gonadotropins:\n- Follicle-Stimulating Hormone (FSH): Stimulates ovarian follicular recruitment, granulosa cell proliferation, and aromatase induction.\n- Luteinizing Hormone (LH): Stimulates theca interna androgen synthesis, triggers the mid-cycle ovulatory surge, and maintains luteinization of the corpus luteum.\n3. Ovarian Level (Feedback Regulators):\n- Estrogen (17beta-estradiol): Exerts low/moderate-dose negative feedback on pituitary FSH and hypothalamic GnRH, but sustained high-dose pre-ovulatory estradiol switches to positive feedback triggering the LH surge.\n- Progesterone: Secreted by the corpus luteum; exerts potent negative feedback on both hypothalamic GnRH and pituitary LH/FSH.\n- Inhibin B and Inhibin A: Secreted by granulosa and luteal cells, respectively; exert selective negative feedback inhibition on pituitary FSH secretion.",
+              "explanation": "Ovarian regulation operates through a closed neuroendocrine loop where hypothalamic GnRH pulses and pituitary gonadotropins drive ovarian steroidogenesis, which in turn feeds back negatively or positively.",
+              "sources": [
+                "Physiology URO.pdf-Q5",
+                "Physiology/Physiology URO.pdf-Q234"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0198",
+              "type": "essay",
+              "lecture": 12,
+              "text": "Identify the primary endocrine units of the ovary across the menstrual cycle and name the hormones secreted by each.",
+              "modelAnswer": "1. Developing Ovarian Follicle (Follicular Phase):\n- Theca Interna Cells: Secrete androgens (androstenedione and testosterone) under the stimulus of LH.\n- Granulosa Cells: Under the stimulus of FSH, convert thecal androgens to Estrogens (predominantly 17beta-estradiol) via aromatase; also secrete Inhibin B, Follistatin, and small amounts of AMH (Anti-Müllerian Hormone).\n2. Corpus Luteum (Luteal Phase):\n- Granulosa Lutein Cells: Secrete large amounts of Progesterone and moderate amounts of 17beta-estradiol, as well as Inhibin A.\n- Theca Lutein Cells: Secrete androgens and progesterone precursors.\n- Luteal Stroma: Secretes peptide hormones, notably Relaxin.",
+              "explanation": "The ovary functions sequentially as an estrogen-secreting follicular unit in the first half of the cycle and a progesterone/estrogen-secreting corpus luteum in the second half.",
+              "sources": [
+                "Physiology URO.pdf-Q6",
+                "Physiology/Physiology URO.pdf-Q235"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0199",
+              "type": "essay",
+              "lecture": 12,
+              "text": "Describe the hormonal changes and physiological dynamics during the early-to-mid follicular phase of the ovarian cycle.",
+              "modelAnswer": "1. Initial FSH Elevation: At the end of the previous luteal cycle, degeneration of the corpus luteum removes estrogen and progesterone feedback, causing an early-cycle rise in plasma FSH.\n2. Follicular Recruitment: Elevated FSH recruits a cohort of antral follicles (typically 6–12), stimulating granulosa cell mitosis and antrum formation.\n3. Induction of Steroidogenesis: FSH induces aromatase expression in granulosa cells; cooperation with LH-stimulated thecal androgen production leads to rising systemic 17beta-estradiol levels.\n4. Negative Feedback on Pituitary FSH: Rising moderate concentrations of estradiol and granulosa-derived Inhibin B exert selective negative feedback on anterior pituitary gonadotropes, causing circulating FSH levels to decline after day 5.\n5. Dominant Follicle Selection: By day 6–7, the follicle with the highest density of FSH receptors, greatest aromatase activity, and earliest acquisition of LH receptors on granulosa cells thrives in the declining FSH environment, while lesser competing follicles undergo atresia.",
+              "explanation": "The early follicular phase relies on a transient FSH window to recruit follicles, followed by estrogen/inhibin negative feedback that starves all but the single dominant follicle.",
+              "sources": [
+                "Physiology URO.pdf-Q7",
+                "Physiology/Physiology URO.pdf-Q236"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0202",
+              "type": "essay",
+              "lecture": 12,
+              "text": "Explain the autocrine and paracrine effects of estrogen on ovarian granulosa cells in the developing follicle.",
+              "modelAnswer": "1. Granulosa Cell Proliferation: Estrogen acts locally on estrogen receptor beta (ER-beta) on granulosa cells to stimulate mitotic division, increasing cell layers and follicular diameter.\n2. Upregulation of FSH Receptors: Estrogen works synergistically with FSH to increase the number of FSH receptors expressed on granulosa cells, enhancing their sensitivity to low circulating FSH levels.\n3. Amplification of Aromatase Activity: By upregulating FSH signaling, estrogen enhances its own biosynthesis (positive autocrine feed-forward amplification).\n4. Induction of LH Receptors: In the late follicular phase, high local estrogen combined with FSH induces the expression of LH receptors on granulosa cells, preparing the dominant follicle to respond to the mid-cycle LH surge and undergo luteinization.",
+              "explanation": "Local intra-follicular estrogen creates an autocrine positive feedback loop that ensures dominant follicle survival and equips it with LH receptors for ovulation.",
+              "sources": [
+                "Physiology URO.pdf-Q10",
+                "Physiology/Physiology URO.pdf-Q239"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0206",
+              "type": "essay",
+              "lecture": 12,
+              "text": "List the major physiological consequences triggered by the mid-cycle LH surge in the pre-ovulatory follicle.",
+              "modelAnswer": "1. Resumption of Meiosis: Reverses meiotic arrest in the primary oocyte (halted in prophase I / dictyotene stage since fetal life), completing the first meiotic division and producing the secondary oocyte and the first polar body; meiosis arrests in metaphase II.\n2. Follicular Rupture (Ovulation): Stimulates local production of prostaglandins (PGF2alpha and PGE2) and proteolytic enzymes (collagenase, plasmin, matrix metalloproteinases) that digest the follicular wall and tunica albuginea at the stigma, expelling the oocyte-cumulus complex.\n3. Luteinization of Granulosa and Theca Cells: Transforms residual granulosa and theca cells into lutein cells, characterized by vascular invasion, lipid droplet accumulation, and expression of enzymes for progesterone biosynthesis.\n4. Shift in Steroidogenesis: Terminates high estradiol synthesis by downregulating aromatase, initiating rapid and substantial secretion of progesterone prior to follicular collapse.",
+              "explanation": "The mid-cycle LH surge is the master trigger that simultaneously resumes oocyte meiosis, ruptures the follicle to release the egg, and luteinizes the follicle to form the corpus luteum.",
+              "sources": [
+                "Physiology URO.pdf-Q14",
+                "Physiology/Physiology URO.pdf-Q243"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0214",
+              "type": "essay",
+              "lecture": 13,
+              "text": "Explain the physiological role of prostaglandins in the mechanism of normal menstruation.",
+              "modelAnswer": "1. Production Trigger: Decline in progesterone and estrogen at the end of the luteal phase destabilizes endometrial lysosomes, releasing phospholipase A2 and generating high levels of uterine prostaglandins (specifically PGF2alpha and PGE2).\n2. Spiral Artery Vasospasm: PGF2alpha exerts potent vasoconstrictor action on endometrial spiral arterioles approximately 24 hours prior to menstruation, producing severe local ischemia and hypoxia in the stratum functionale.\n3. Endometrial Ischemic Necrosis: Prolonged arteriolar vasospasm leads to ischemic necrosis of the functional layer of the endometrium, rupture of necrotic capillaries, and localized tissue sloughing.\n4. Myometrial Contraction and Tissue Expulsion: Prostaglandins induce coordinated rhythmic contractions of the uterine myometrium, which compresses bleeding vessels to limit total blood loss while simultaneously expelling menstrual blood and desquamated endometrial debris into the vagina.",
+              "explanation": "Prostaglandins are the proximate chemical mediators of menstruation, orchestrating both the ischemic shedding of the endometrium and the muscular expulsion of menstrual effluent.",
+              "sources": [
+                "Physiology URO.pdf-Q20",
+                "Physiology/Physiology URO.pdf-Q251"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0216",
+              "type": "essay",
+              "lecture": 13,
+              "text": "Explain why normal menstrual blood does not clot, and state the conditions under which menstrual clots may form.",
+              "modelAnswer": "1. Mechanism of Fluidity: In normal menstruation, blood does clot initially within the uterine cavity; however, the desquamating endometrium releases abundant tissue plasminogen activator (tPA) and fibrinolysin (plasmin). This potent local fibrinolytic enzyme system rapidly digests fibrin clots, converting menstrual effluent into a completely non-clotting liquid before it exits the cervix into the vagina.\n2. Conditions of Clot Formation: Menstrual clots appear clinically when the rate of uterine bleeding is excessively rapid or heavy (menorrhagia, uterine leiomyomas, adenomyosis, coagulopathies). In these situations, the volume of blood overwhelms or traverses the uterine cavity too quickly for endogenous endometrial fibrinolysin to lyse the fibrin meshwork, allowing intact dark red clots to pass.",
+              "explanation": "Normal menstrual blood appears liquid because of powerful local endometrial fibrinolytic action; visible clots indicate excessive menstrual flow exceeding fibrinolytic capacity.",
+              "sources": [
+                "Physiology URO.pdf-Q22",
+                "Physiology/Physiology URO.pdf-Q253"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0218",
+              "type": "essay",
+              "lecture": 13,
+              "text": "Describe the physiological effects of progesterone on the non-pregnant uterus during the luteal phase.",
+              "modelAnswer": "1. Secretory Transformation of Endometrium: Converts the estrogen-primed proliferative endometrium into a secretory endometrium, characterized by tortuous, saw-toothed endometrial glands that secrete glycogen-, lipid-, and glycoprotein-rich fluid to nourish a potential blastocyst.\n2. Vascular Changes: Causes spiral arterioles to become highly elongated, coiled, and tortuous, markedly increasing stromal vascularity and inducing stromal edema.\n3. Decidual Reaction: Promotes the initial swelling and glycogen accumulation of endometrial stromal cells (pre-decidual reaction) necessary for blastocyst implantation.\n4. Myometrial Quiescence: Exerts a potent inhibitory effect on myometrial contractility and excitability ('progesterone block') by hyperpolarizing smooth muscle resting membrane potential and decreasing gap junctions and oxytocin receptor expression.\n5. Cervical Mucus Changes: Reverses estrogen effects on the cervix, rendering cervical mucus thick, viscous, scanty, cellular, and impermeable to sperm, forming a barrier plug.",
+              "explanation": "Progesterone transforms the uterine lining into a nutritive, hospitable, quiet environment optimized for embryo implantation, while sealing the cervix against ascending microbes and sperm.",
+              "sources": [
+                "Physiology URO.pdf-Q24",
+                "Physiology/Physiology URO.pdf-Q255"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0219",
+              "type": "essay",
+              "lecture": 13,
+              "text": "Enumerate the major clinical somatic and psychological manifestations of premenstrual syndrome (PMS).",
+              "modelAnswer": "1. Somatic / Physical Symptoms:\n- Fluid retention and abdominal bloating; mild generalized peripheral edema.\n- Mastalgia (bilateral cyclical breast swelling, tenderness, and fullness).\n- Headaches (migraines or tension headaches), fatigue, and joint/muscle ache.\n- Gastrointestinal disturbances, including constipation or altered bowel habits.\n2. Affective / Psychological Symptoms:\n- Irritability, emotional lability, anxiety, and tension.\n- Depressed mood, feelings of being overwhelmed, and crying spells.\n- Cognitive changes: decreased concentration, forgetfulness, and poor coordination.\n- Altered sleep architecture (insomnia or hypersomnia) and food cravings (especially carbohydrate-rich or sweet foods).\n3. Timing Invariant: Symptoms emerge predictably during the late luteal phase (5–11 days before menses) and completely resolve within 1–2 days of menstrual flow onset.",
+              "explanation": "PMS reflects abnormal central nervous system sensitivity to normal cyclical fluctuations in luteal ovarian steroids (progesterone/allopregnanolone and estrogen) impacting serotonergic signaling.",
+              "sources": [
+                "Physiology URO.pdf-Q25",
+                "Physiology/Physiology URO.pdf-Q256"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0220",
+              "type": "essay",
+              "lecture": 12,
+              "text": "State when anovulatory menstrual cycles commonly occur physiologically and explain their underlying hormonal basis.",
+              "modelAnswer": "1. Common Physiological Windows:\n- Adolescence: During the first 1 to 2 years following menarche (post-menarchal adolescent girls).\n- Perimenopause: During the few years immediately preceding menopause (late reproductive transition, ages 45–52).\n- Postpartum / Lactation: During the immediate post-delivery period and lactational amenorrhea/oligomenorrhea.\n2. Hormonal Basis in Adolescence: Immaturity of the hypothalamic-pituitary-ovarian axis; pulsatile GnRH release lacks the coordinated positive-feedback response to high estrogen levels, failing to generate an ovulatory LH surge despite follicular growth and estrogen secretion.\n3. Hormonal Basis in Perimenopause: Progressive depletion of the functional ovarian primordial follicle pool and diminished inhibin B secretion lead to uncoordinated, irregular FSH surges without follicular maturation or sustained estradiol peaks capable of triggering an LH surge.",
+              "explanation": "Anovulatory cycles occur at the chronological boundaries of reproductive life because the positive-feedback neuroendocrine mechanism governing the LH surge is either immature or failing.",
+              "sources": [
+                "Physiology URO.pdf-Q26",
+                "Physiology/Physiology URO.pdf-Q257"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0221",
+              "type": "essay",
+              "lecture": 12,
+              "text": "List four clinical or laboratory indicators used to detect the occurrence of ovulation.",
+              "modelAnswer": "1. Basal Body Temperature (BBT) Rise: A sustained biphasic temperature rise of 0.3°C to 0.5°C (0.5°F–1.0°F) occurring 24–48 hours after ovulation, caused by the thermogenic effect of progesterone acting on the hypothalamic preoptic thermoregulatory center.\n2. Cervical Mucus Changes: Immediately preceding ovulation, high estrogen makes cervical mucus abundant, clear, thin, watery, and highly elastic (demonstrating spinnbarkeit / stretchability >8–10 cm and arborization/ferning on a glass slide). Post-ovulation, progesterone abruptly makes mucus thick, opaque, and cellular.\n3. Urinary LH Surge Kit: Detection of the pre-ovulatory LH surge in early-morning or mid-day urine using rapid monoclonal antibody immunochromatography (ovulation typically follows the LH peak by 10–12 hours, or 24–36 hours after the initial LH rise).\n4. Mid-Luteal Serum Progesterone: Measurement of serum progesterone concentration 7 days before anticipated menses (day 21 of a 28-day cycle); a level >3–5 ng/mL (typically >10 ng/mL) confirms functioning luteal tissue and prior ovulation.\n5. Transvaginal Ultrasonography: Serial pelvic ultrasound demonstrating pre-ovulatory dominant follicle collapse, thickening of the follicular wall, and appearance of fluid in the cul-de-sac (pouch of Douglas).",
+              "explanation": "Confirming ovulation relies on documenting the pre-ovulatory LH surge or the post-ovulatory biological actions of progesterone on temperature, mucus, and serum levels.",
+              "sources": [
+                "Physiology URO.pdf-Q27",
+                "Physiology/Physiology URO.pdf-Q258"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0222",
+              "type": "essay",
+              "lecture": 14,
+              "text": "Identify the anatomical sites of secretion and describe the physiological functions of the hormone relaxin in females.",
+              "modelAnswer": "1. Sites of Secretion:\n- In Non-Pregnant Females: Secreted by the corpus luteum of the ovary during the luteal phase of the menstrual cycle.\n- In Pregnant Females: Secreted in large quantities by the corpus luteum of pregnancy (first trimester) and subsequently by the placenta and decidua (second and third trimesters).\n2. Physiological Functions:\n- Pelvic Joint Relaxation: Increases flexibility and causes softening of the symphysis pubis and sacroiliac joints and pelvic ligaments, widening the pelvic inlet and birth canal to facilitate parturition.\n- Cervical Remodeling: Promotes cervical ripening and softening by breaking down collagen bundles and altering extracellular matrix ground substance prior to delivery.\n- Uterine Quiescence: Works synergistically with progesterone to inhibit myometrial contractility, preventing premature uterine contractions during gestation.\n- Mammary Gland Development: Contributes to ductal and alveolar development in the breast during pregnancy.",
+              "explanation": "Relaxin is a luteal and placental peptide hormone specialized in remodeling pelvic connective tissues and maintaining uterine quiescence until parturition.",
+              "sources": [
+                "Physiology URO.pdf-Q1",
+                "Physiology/Physiology URO.pdf-Q259"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0223",
+              "type": "essay",
+              "lecture": 14,
+              "text": "List the three major physiological estrogens present in female plasma and specify their primary anatomical sources of secretion.",
+              "modelAnswer": "1. 17beta-Estradiol (E2):\n- Potency: The most potent and biologically active naturally occurring estrogen in non-pregnant women.\n- Primary Source: Granulosa cells of developing ovarian follicles (and to a lesser degree the corpus luteum) via aromatization of thecal androgens.\n2. Estrone (E1):\n- Potency: Weak estrogen (approximately 1/10th the biological potency of estradiol); the dominant circulating estrogen in postmenopausal women.\n- Primary Source: Peripheral extragonadal tissues (predominantly adipose tissue, skeletal muscle, and liver) through aromatization of circulating adrenal androstenedione.\n3. Estriol (E3):\n- Potency: The weakest naturally occurring estrogen (approximately 1/80th the potency of estradiol); the dominant estrogen during pregnancy.\n- Primary Source: Placenta (fetal-placental unit), synthesized by the syncytiotrophoblast from 16-alpha-hydroxy-DHEA sulfate provided by the fetal liver and adrenal glands.",
+              "explanation": "The three physiological estrogens reflect different life stages: estradiol dominates reproductive life (ovaries), estrone dominates postmenopause (adipose), and estriol dominates gestation (placenta).",
+              "sources": [
+                "Physiology URO.pdf-Q2",
+                "Physiology/Physiology URO.pdf-Q260"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0224",
+              "type": "essay",
+              "lecture": 14,
+              "text": "Describe the physiological actions of estrogen on the external genitalia, uterus, and oviducts (fallopian tubes).",
+              "modelAnswer": "1. External Genitalia: Stimulates enlargement of the labia majora, labia minora, and clitoris at puberty; promotes deposition of subcutaneous fat in the mons pubis; stimulates vaginal epithelial cornification and glycogen deposition (which Döderlein lactobacilli ferment to lactic acid, creating an acidic protective pH 3.8–4.5).\n2. Uterine Endometrium and Myometrium: Stimulates marked mitosis and thickening of the endometrial stratum functionale during the proliferative phase; stimulates myometrial smooth muscle hypertrophy and hyperplasia; increases myometrial excitability, resting tone, and sensitivity to oxytocin by inducing oxytocin receptors and gap junctions.\n3. Cervix: Induces secretion of profuse, watery, alkaline, clear cervical mucus with low viscosity (spinnbarkeit), creating a hospitable conduit for sperm penetration.\n4. Oviducts (Fallopian Tubes): Stimulates epithelial proliferation, increases the number and beating frequency of ciliated mucosal cells, stimulates secretory peg cells, and enhances rhythmic muscular peristalsis directed toward the uterine cavity, facilitating ovum pick-up and transport.",
+              "explanation": "Estrogen prepares the female tract for conception by expanding mucosal surfaces, increasing muscular motility, producing sperm-permeable mucus, and enhancing oxytocin sensitivity.",
+              "sources": [
+                "Physiology URO.pdf-Q3",
+                "Physiology/Physiology URO.pdf-Q261"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0225",
+              "type": "essay",
+              "lecture": 14,
+              "text": "Describe the physiological effects of estrogen on mammary gland development and lactation.",
+              "modelAnswer": "1. Pubertal Mammary Development: Stimulates elongation, arborization, and branching of the lactiferous ductal system of the breasts.\n2. Stromal and Adipose Growth: Promotes substantial deposition of adipose tissue within the breast stroma and stimulates stromal connective tissue proliferation, producing the characteristic rounded adult female breast contour.\n3. Areola and Nipple Pigmentation: Stimulates enlargement and increased pigmentation of the nipple and areola during puberty and pregnancy.\n4. Receptor Induction: Upregulates progesterone receptors and prolactin receptors in mammary tissue, priming the breast for subsequent lobular-alveolar differentiation.\n5. Gestational Antagonism of Lactation: During pregnancy, very high circulating levels of placental estrogen (and progesterone) directly block the milk-secreting action of prolactin on alveolar epithelial cells; the precipitous postpartum drop in estrogen unmasks prolactin, allowing active lactation to initiate.",
+              "explanation": "Estrogen drives the ductal and architectural development of the breast while paradoxically acting as a systemic brake on milk secretion until delivery.",
+              "sources": [
+                "Physiology URO.pdf-Q4",
+                "Physiology/Physiology URO.pdf-Q262"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0226",
+              "type": "essay",
+              "lecture": 14,
+              "text": "Enumerate the female secondary sexual characteristics induced and maintained by estrogen.",
+              "modelAnswer": "1. Adipose Tissue Distribution: Promotes the feminine (gynecoid) pattern of fat deposition, predominantly in the breasts, hips, buttocks, and thighs.\n2. Skeletal Architecture: Causes a wider, rounder pelvic inlet and outlet, broader hips, and narrower shoulders compared to males, resulting in a pronounced carrying angle at the elbow.\n3. Voice Pitch: Maintains a high-pitched feminine voice by preserving smaller laryngeal cartilages and shorter, thinner vocal cords.\n4. Cutaneous Characteristics: Makes the skin soft, smooth, warm, and highly vascularized; decreases sebum viscosity (reducing acne compared to androgens).\n5. Body Hair Pattern: Maintains fine body hair and a flat-topped horizontal upper border of pubic hair (escutcheon), in contrast to the diamond-shaped masculine distribution extending toward the umbilicus.",
+              "explanation": "Estrogen directs somatic sexual dimorphism, generating feminine body composition, skeletal contours, acoustic pitch, and dermatological features.",
+              "sources": [
+                "Physiology URO.pdf-Q5",
+                "Physiology/Physiology URO.pdf-Q263"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0227",
+              "type": "essay",
+              "lecture": 14,
+              "text": "Describe the physiological roles of adrenal androgens in the normal female.",
+              "modelAnswer": "1. Pubertal Growth Spurt: Secretion of adrenal androgens (DHEA, DHEA-sulfate, and androstenedione) rises significantly at adrenarche (ages 6–8), contributing to the pubertal linear growth spurt and early skeletal maturation in girls.\n2. Sexual Hair Development: Responsible for the initiation and maintenance of pubic hair and axillary hair development (pubarche) in females (estrogens alone cannot stimulate coarse sexual hair).\n3. Maintenance of Female Libido: Adrenal androgens act on hypothalamic androgen receptors to stimulate and maintain normal female sexual desire, arousal, and libido.\n4. Peripheral Estrogen Precursors: Serve as circulating pro-hormones that undergo peripheral aromatization in adipose tissue, skin, and liver to estrone and estradiol, serving as the sole source of estrogen after menopause.",
+              "explanation": "Adrenal androgens are essential in females for sexual hair growth, libido maintenance, and supplying peripheral substrate for estrogen synthesis.",
+              "sources": [
+                "Physiology URO.pdf-Q6",
+                "Physiology/Physiology URO.pdf-Q264"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0228",
+              "type": "essay",
+              "lecture": 14,
+              "text": "Describe the major non-reproductive metabolic and cardiovascular actions of estrogen.",
+              "modelAnswer": "1. Bone Metabolism and Density: Inhibits osteoclast activity and bone resorption (by stimulating osteoprotegerin and downregulating RANKL), promotes osteoblast survival, and stimulates pubertal linear growth followed by final epiphyseal plate closure.\n2. Plasma Lipoprotein Profile: Exerts cardioprotective actions by increasing circulating High-Density Lipoprotein (HDL) cholesterol, decreasing Low-Density Lipoprotein (LDL) cholesterol, and decreasing total plasma cholesterol.\n3. Vascular Endothelial Function: Stimulates endothelial nitric oxide synthase (eNOS) and prostacyclin production, promoting arterial vasodilation, preserving vascular compliance, and reducing peripheral resistance.\n4. Fluid and Electrolyte Homeostasis: Promotes mild renal tubular reabsorption of sodium and water (similar to aldosterone), contributing to cyclic fluid retention during the late follicular phase and pregnancy.\n5. Protein Synthesis: Stimulates hepatic synthesis of transport globulins (thyroid-binding globulin [TBG], corticosteroid-binding globulin [CBG], sex hormone-binding globulin [SHBG]) and coagulation factors (factors II, VII, IX, X, and fibrinogen).",
+              "explanation": "Estrogen provides systemic protection against osteoporosis and atherosclerosis while regulating hepatic protein output and vascular endothelial tone.",
+              "sources": [
+                "Physiology URO.pdf-Q7",
+                "Physiology/Physiology URO.pdf-Q265"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0230",
+              "type": "essay",
+              "lecture": 14,
+              "text": "Describe the physiological effects of progesterone on the mammary gland.",
+              "modelAnswer": "1. Lobuloalveolar Development: Stimulates the proliferation and branching of the terminal lobules and secretory alveoli of the mammary glands (in synergy with estrogen, prolactin, and growth hormone).\n2. Secretory Epithelial Differentiation: Induces differentiation of alveolar epithelial cells into a secretorily active phenotype capable of milk synthesis.\n3. Cyclical Premenstrual Changes: In the late luteal phase, elevated progesterone causes swelling, intercellular fluid retention, and hyperemia within the breast lobules, producing premenstrual breast fullness and tenderness (mastalgia).\n4. Antagonism of Lactogenesis: Along with high gestational estrogen, high levels of progesterone during pregnancy suppress active milk secretion by downregulating prolactin receptors and inhibiting alpha-lactalbumin synthesis until delivery.",
+              "explanation": "Progesterone completes breast preparation by building the milk-producing alveolar machinery while simultaneously preventing premature milk secretion during pregnancy.",
+              "sources": [
+                "Physiology URO.pdf-Q9",
+                "Physiology/Physiology URO.pdf-Q267"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0231",
+              "type": "essay",
+              "lecture": 17,
+              "text": "List the characteristic clinical and anatomical features of female hypogonadism occurring due to absent or non-functioning ovaries from birth (e.g., Turner syndrome).",
+              "modelAnswer": "1. Genital Infantilism: Internal and external genitalia remain completely infantile in structure; uterus is small and hypoplastic (infantile uterus), vagina is narrow, and ovaries are absent or replaced by fibrous streak gonads.\n2. Failure of Secondary Sexual Characteristics: Complete absence of breast development (thelarche fails); high-pitched voice; absence of adult feminine fat distribution.\n3. Primary Amenorrhea: Menarche never occurs (lifetime failure of menstruation).\n4. Skeletal Eunuchoidism: Delayed epiphyseal plate fusion due to absolute estrogen deficiency causes prolonged growth of long bones, leading to tall eunuchoid stature with disproportionately long extremities (except in Turner syndrome 45,X where SHOX gene haploinsufficiency causes short stature).\n5. Hypergonadotropic Endocrine Profile: Marked elevation of serum pituitary gonadotropins (FSH and LH) due to complete absence of ovarian negative feedback (hypergonadotropic hypogonadism).",
+              "explanation": "Congenital absence of ovaries produces primary amenorrhea, sexual infantilism, and uninhibited high pituitary gonadotropins due to total lack of feedback steroids.",
+              "sources": [
+                "Physiology URO.pdf-Q10",
+                "Physiology/Physiology URO.pdf-Q268"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0232",
+              "type": "essay",
+              "lecture": 17,
+              "text": "List the clinical and physiological consequences of bilateral surgical removal of the ovaries (oophorectomy) in an adult woman.",
+              "modelAnswer": "1. Immediate Secondary Amenorrhea: Abrupt and permanent cessation of menstrual cycles.\n2. Urogenital Atrophy: Gradual regression and atrophy of estrogen-dependent tissues: thinning and dryness of vaginal epithelium (atrophic vaginitis, dyspareunia), loss of vaginal acidity, and shrinkage of the uterus and labia.\n3. Vasomotor Symptoms (Hot Flushes): Acute neurovascular instability characterized by sudden episodes of cutaneous flushing, diaphoresis, and sensation of heat over the face, neck, and upper chest, caused by hypothalamic thermoregulatory instability following estrogen withdrawal.\n4. Accelerated Bone Demineralization: Unchecked osteoclast activity leads to rapid bone mineral density loss (osteopenia and osteoporosis), significantly increasing the risk of vertebral and hip fractures.\n5. Cardiovascular and Metabolic Changes: Loss of cardioprotective lipid pattern, leading to increased LDL cholesterol, decreased HDL cholesterol, endothelial dysfunction, and increased long-term cardiovascular disease risk.\n6. Psychological and Libido Alterations: Insomnia, anxiety, depression, emotional lability, and decrease in libido (especially if bilateral oophorectomy removes the ovarian contribution to androgens).",
+              "explanation": "Bilateral oophorectomy in an adult induces acute surgical menopause, precipitating sudden vasomotor symptoms, rapid bone loss, and progressive urogenital atrophy.",
+              "sources": [
+                "Physiology URO.pdf-Q11"
+              ],
+              "repetitionCount": 1
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0233",
+              "type": "essay",
+              "lecture": 13,
+              "text": "Enumerate the major physiological and pathological causes of secondary amenorrhea in women.",
+              "modelAnswer": "1. Physiological Causes:\n- Pregnancy: The most common cause of secondary amenorrhea in women of reproductive age.\n- Lactation: High prolactin suppresses pulsatile GnRH and gonadotropins (lactational amenorrhea).\n- Natural Menopause: Permanent physiological depletion of ovarian follicles.\n2. Hypothalamic Dysfunction (Hypogonadotropic):\n- Functional hypothalamic amenorrhea: Severe caloric restriction, rapid weight loss (anorexia nervosa), intense physical training (athletic amenorrhea), and psychological stress, leading to suppression of GnRH pulse frequency.\n3. Pituitary Disorders:\n- Hyperprolactinemia (prolactinoma or dopamine antagonist drugs) inhibiting GnRH.\n- Pituitary infarction / necrosis (Sheehan syndrome) or pituitary macroadenomas.\n4. Ovarian Disorders (Hypergonadotropic):\n- Polycystic Ovary Syndrome (PCOS): Chronic anovulation with hyperandrogenism.\n- Premature Ovarian Insufficiency (POI): Autoimmune, genetic, or post-chemotherapy follicular failure before age 40.\n5. Uterine Outflow Tract Disorders:\n- Intrauterine synechiae / adhesions (Asherman syndrome) following aggressive postpartum or post-abortion curettage.",
+              "explanation": "Evaluating secondary amenorrhea always begins by ruling out pregnancy, followed by systematic assessment of hypothalamic, pituitary, ovarian, and uterine outflow causes.",
+              "sources": [
+                "Physiology URO.pdf-Q12",
+                "Physiology/Physiology URO.pdf-Q270"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0234",
+              "type": "essay",
+              "lecture": 13,
+              "text": "Distinguish between menorrhagia and metrorrhagia in terms of menstrual pattern and common underlying causes.",
+              "modelAnswer": "1. Menorrhagia (Heavy Menstrual Bleeding):\n- Definition: Abnormally heavy, profuse, or prolonged menstrual bleeding (>80 mL of blood loss or duration >7 days) that occurs at regular, normal cyclical intervals (every 21–35 days).\n- Common Causes: Uterine leiomyomas (submucosal fibroids), adenomyosis, endometrial polyps, intrauterine contraceptive devices (copper IUD), and bleeding disorders (von Willebrand disease, thrombocytopenia).\n\n2. Metrorrhagia (Intermenstrual Bleeding):\n- Definition: Bleeding from the uterus that occurs at irregular, acyclic, non-menstrual intervals between expected menstrual periods, with variable flow volume.\n- Common Causes: Endometrial polyps, cervical polyps, chronic endometritis, cervical or endometrial carcinomas, exogenous hormonal therapy (breakthrough bleeding from oral contraceptives), and ovulation spotting (estrogen drop).",
+              "explanation": "Menorrhagia preserves cyclicity but exhibits excessive blood loss, whereas metrorrhagia is characterized by loss of cyclic timing with unpredictable intermenstrual bleeding.",
+              "sources": [
+                "Physiology URO.pdf-Q13",
+                "Physiology/Physiology URO.pdf-Q271"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0235",
+              "type": "essay",
+              "lecture": 17,
+              "text": "Explain the neuroendocrine mechanisms and physiological signals responsible for the initiation of pulsatile GnRH release at puberty.",
+              "modelAnswer": "1. Pre-pubertal State: Before puberty, hypothalamic GnRH neurons are held under profound central inhibition (by GABAergic neurons) and exhibit extreme hypersensitivity to the negative feedback of minute circulating levels of sex steroids ('gonadostat hypothesis').\n2. Decreased Pineal Melatonin: Melatonin secretion from the pineal gland gradually declines with age; high childhood melatonin suppresses GnRH, and its decline relieves hypothalamic inhibition.\n3. Leptin and Energy Stores: Adipocyte-derived leptin crosses the blood-brain barrier. Attainment of a critical body weight and percentage of body fat stimulates kisspeptin neurons in the arcuate nucleus, signaling nutritional sufficiency for reproduction.\n4. Kisspeptin and GPR54 Activation: Kisspeptin binds to its receptor (GPR54 / KISS1R) on GnRH neurons, serving as the master upstream activator that triggers high-amplitude, pulsatile GnRH secretion, initially occurring nocturnally during sleep.\n5. Pituitary Gonadotropin Activation: Nocturnal GnRH pulses stimulate anterior pituitary secretion of LH and FSH, which progressively stimulates gonadal steroidogenesis and secondary sexual maturation.",
+              "explanation": "Puberty is initiated when adequate metabolic energy (leptin) and declining melatonin converge on hypothalamic kisspeptin neurons to unleash pulsatile GnRH secretion.",
+              "sources": [
+                "Physiology URO.pdf-Q14",
+                "Physiology/Physiology URO.pdf-Q272"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0236",
+              "type": "essay",
+              "lecture": 17,
+              "text": "State the clinical age thresholds defining delayed puberty in males and females.",
+              "modelAnswer": "1. In Males (Boys):\n- Absence of testicular enlargement (testicular volume remaining <4 mL on Prader orchidometer) by 14 years of age.\n- Or failure to achieve complete genital and pubertal maturity within 4 to 5 years following the onset of testicular development.\n\n2. In Females (Girls):\n- Absence of breast development (thelarche; failure to reach Tanner Stage 2) by 13 years of age.\n- Or absence of menarche (first menstrual period) by 15 to 16 years of age (or within 3 years of thelarche) in the presence of otherwise normal secondary sexual development.",
+              "explanation": "Delayed puberty is defined objectively by chronological milestones: lack of testicular growth by age 14 in boys, and lack of breast development by age 13 or menarche by age 15–16 in girls.",
+              "sources": [
+                "Physiology URO.pdf-Q15",
+                "Physiology/Physiology URO.pdf-Q273"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0237",
+              "type": "essay",
+              "lecture": 17,
+              "text": "Classify the major etiologies of delayed puberty into functional, hypogonadotropic, and hypergonadotropic categories.",
+              "modelAnswer": "1. Constitutional Delay of Growth and Puberty (CDGP):\n- The most common cause in both sexes (more frequently evaluated in boys).\n- Represents a benign variant of normal development ('late bloomers') with delayed bone age, positive family history, and spontaneous onset of puberty later.\n\n2. Hypogonadotropic Hypogonadism (Low/Normal FSH & LH, Low Sex Steroids):\n- Functional: Severe malnutrition, anorexia nervosa, chronic systemic illnesses (celiac disease, cystic fibrosis, chronic kidney disease), and intensive physical training.\n- Congenital / Genetic: Isolated GnRH deficiency (Kallmann syndrome with anosmia, due to KAL-1 / FGFR1 mutations; normosmic idiopathic hypotropic hypogonadism).\n- Organic Pituitary/Hypothalamic Lesions: Craniopharyngioma, prolactinoma, germinoma, histiocytosis, or pituitary radiation/trauma.\n\n3. Hypergonadotropic Hypogonadism (Elevated FSH & LH, Low Sex Steroids - Primary Gonadal Failure):\n- Genetic / Chromosomal: Turner syndrome (45,X or mosaicism) in females; Klinefelter syndrome (47,XXY) in males.\n- Acquired Gonadal Damage: Post-mumps orchitis, bilateral testicular torsion, pelvic irradiation, alkylating chemotherapy, or autoimmune oophoritis/orchitis.",
+              "explanation": "Classifying delayed puberty depends on measuring serum gonadotropins to distinguish constitutional/hypothalamic failure (low LH/FSH) from primary gonadal failure (high LH/FSH).",
+              "sources": [
+                "Physiology URO.pdf-Q16",
+                "Physiology/Physiology URO.pdf-Q274"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0239",
+              "type": "essay",
+              "lecture": 17,
+              "text": "Describe the anatomical sources and biochemical pathway of estrogen synthesis in postmenopausal women.",
+              "modelAnswer": "1. Absence of Ovarian Follicular Synthesis: Following menopause, the ovarian follicular reserve is depleted; direct ovarian secretion of 17beta-estradiol essentially ceases.\n2. Primary Precursor (Adrenal Androgens): The adrenal cortex continues to secrete androgens, predominantly androstenedione and dehydroepiandrosterone (DHEA).\n3. Extragonadal Peripheral Aromatization: Circulating androstenedione is taken up by peripheral non-endocrine tissues, predominantly subcutaneous and visceral adipose tissue, as well as skeletal muscle, skin, and liver.\n4. Enzymatic Conversion: The enzyme cytochrome P450 aromatase (CYP19A1) expressed in stromal and vascular cells of adipose tissue converts androstenedione directly into Estrone (E1).\n5. Dominant Circulating Estrogen: Estrone (E1) becomes the principal circulating estrogen in postmenopausal women; plasma estrone levels correlate directly with body mass index (BMI), explaining why obese postmenopausal women maintain higher estrogen levels and have increased endometrial hyperplasia and carcinoma risk.",
+              "explanation": "In postmenopausal women, estrogen is produced entirely outside the ovaries via adipose tissue aromatization of adrenal androgens into estrone.",
+              "sources": [
+                "Physiology URO.pdf-Q18",
+                "Physiology/Physiology URO.pdf-Q276"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0240",
+              "type": "essay",
+              "lecture": 17,
+              "text": "Describe the major physiological and anatomical alterations accompanying the menopause.",
+              "modelAnswer": "1. Reproductive and Genital Tract Changes:\n- Permanent cessation of menstruation (menopause diagnosed after 12 consecutive months of amenorrhea).\n- Progressive atrophy of internal and external genitalia: vaginal epithelium becomes thin, pale, dry, and loses rugae (atrophic vaginitis, dyspareunia); uterine myometrium and endometrium shrink; cervix atrophies.\n2. Vasomotor Instability:\n- Hot flushes and nocturnal diaphoresis (night sweats) experienced by 75–85% of women, resulting from central hypothalamic thermoregulatory dysfunction secondary to acute estrogen withdrawal.\n3. Skeletal Alterations:\n- Accelerated bone mineral resorption due to loss of estrogen's inhibitory effect on osteoclasts; rapid bone loss (up to 3–5% per year) leading to postmenopausal osteoporosis and elevated fracture risk (vertebrae, wrist, hip).\n4. Cardiovascular and Metabolic Changes:\n- Adverse shift in plasma lipid profile (elevation of total cholesterol and LDL, decrease in HDL), loss of endothelial vasodilatory compliance, and increased long-term coronary artery disease risk.\n5. Endocrine Profile:\n- Marked, permanent elevation in pituitary gonadotropins: serum FSH rises 10–20 fold and LH rises 3–5 fold due to total loss of ovarian negative feedback (estrogen and inhibin).",
+              "explanation": "Menopause is a systemic transition driven by ovarian follicular exhaustion, resulting in hypergonadotropic hypogonadism, urogenital atrophy, vasomotor flushes, and accelerated bone and cardiovascular vulnerability.",
+              "sources": [
+                "Physiology URO.pdf-Q19",
+                "Physiology/Physiology URO.pdf-Q277"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0243",
+              "type": "essay",
+              "lecture": 15,
+              "text": "List the physiological factors within the male and female reproductive tracts that enhance sperm motility and forward transit.",
+              "modelAnswer": "1. Seminal Fluid Composition: Prostatic fluid provides an alkaline pH (7.2–7.6) and zinc that neutralize acidic vaginal secretions; seminal vesicle fructose serves as the primary metabolic substrate for ATP production by sperm flagellar mitochondria.\n2. Cervical Mucus Properties: Under high pre-ovulatory estrogen influence, cervical mucus becomes thin, watery, alkaline, and arranged in parallel micellar channels (spinnbarkeit), guiding motile sperm through the endocervical canal.\n3. Female Tract Motility (Uterine and Tubal Peristalsis): Prostaglandins in semen and oxytocin released during coitus stimulate antiperistaltic smooth muscle contractions of the myometrium and oviducts, rapidly aspirating and propelling sperm toward the ampulla.\n4. Capacitation and Hyperactivation: Exposure to female tract secretions strips sterols and decapacitation glycoproteins from the sperm plasma membrane and opens CatSper calcium channels, triggering whiplash-like hyperactivated flagellar motility.\n5. Chemoattraction and Thermotaxis: Chemical attractants released by the cumulus oophorus and mature oocyte (e.g., progesterone, olfactory receptor agonists) and a slight temperature gradient along the fallopian tube guide sperm toward the fertilization site.",
+              "explanation": "Sperm transit is a collaborative process where alkaline seminal substrates, estrogen-primed cervical mucus, female tract muscular contractions, and capacitation-induced hyperactivation converge to transport sperm to the ampulla.",
+              "sources": [
+                "Physiology URO.pdf-Q3",
+                "Physiology/Physiology URO.pdf-Q282"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0244",
+              "type": "essay",
+              "lecture": 15,
+              "text": "Explain the physiological necessity for a high sperm concentration (>20 million/mL) in semen for normal male fertility.",
+              "modelAnswer": "1. Extreme Attrition Along the Female Genital Tract: Although 200–400 million sperm are ejaculated, the female reproductive tract presents formidable physical and biochemical barriers. Millions are lost through vaginal leakage, killed by acidic vaginal secretions (pH ~4.0), trapped in cervical mucosal crypts, or phagocytosed by endometrial and tubal leukocytes. Consequently, only a few thousand reach the fallopian tubes, and fewer than 100–200 viable sperm reach the ampulla.\n2. Collective Acrosomal Enzyme Requirement: The ovulated oocyte is surrounded by dense cellular and matrix barriers: the corona radiata and the sticky hyaluronic acid matrix of the cumulus oophorus, overlying the resilient glycoprotein zona pellucida. Penetration requires a large collective release of acrosomal enzymes (hyaluronidase, corona-penetrating enzyme) by dozens of sperm acting cooperatively to dissolve the intercellular cement and disperse corona cells, paving the way for a single sperm to bind the zona pellucida.\n3. Clinical Threshold: If the initial concentration drops below 20 million/mL (oligozoospermia), the absolute number surviving to reach the ampulla is insufficient to achieve the threshold enzymatic dispersion required for fertilization.",
+              "explanation": "High sperm density is biologically essential to withstand massive anatomical attrition in the female tract and provide the collective enzymatic force needed to penetrate the egg's cellular vestments.",
+              "sources": [
+                "Physiology URO.pdf-Q4",
+                "Physiology/Physiology URO.pdf-Q283"
+              ],
+              "repetitionCount": 2
+            },
+            {
+              "id": "MUG3-CH3-PHYS-0245",
+              "type": "essay",
+              "lecture": 15,
+              "text": "Explain what triggers the acrosome reaction in human spermatozoa and describe the cellular events that occur.",
+              "modelAnswer": "1. Mandatory Prerequisite (Capacitation): Spermatozoa must first undergo capacitation in the female genital tract (typically taking 5–7 hours), which removes inhibitory decapacitation factors, alters membrane fluidity, and exposes surface receptors.\n2. Receptor-Ligand Binding: When the capacitated sperm penetrates the corona radiata, its plasma membrane receptor (including fertilin and beta-1,4-galactosyltransferase) binds specifically to glycoprotein ZP3 (Zona Pellucida Protein 3) on the zona pellucida of the ovum.\n3. Calcium Influx: ZP3 binding activates receptor-operated and voltage-gated calcium channels, triggering a massive, rapid influx of extracellular Ca2+ into the sperm head cytoplasm, accompanied by an increase in intracellular pH.\n4. Membrane Fusion and Exocytosis: Elevated cytosolic calcium stimulates multiple point fusions between the outer acrosomal membrane and the overlying sperm plasma membrane, forming pores and vesicles (vesiculation).\n5. Release of Acrosomal Enzymes: Soluble proteolytic and glycolytic enzymes stored within the acrosomal vesicle are released by exocytosis, notably:\n- Hyaluronidase: Breaks down hyaluronic acid polymers between cumulus cells.\n- Acrosin: A trypsin-like serine protease bound to the inner acrosomal membrane that digests a narrow penetration pathway through the zona pellucida, allowing the sperm to reach the oocyte perivitelline space.",
+              "explanation": "The acrosome reaction is a calcium-dependent exocytotic event triggered by specific ZP3 binding, releasing acrosin and hyaluronidase to bore a microscopic channel through the zona pellucida.",
+              "sources": [
+                "Physiology URO.pdf-Q5",
+                "Physiology/Physiology URO.pdf-Q284"
+              ],
+              "repetitionCount": 2
             }
           ]
         }

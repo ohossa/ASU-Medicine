@@ -4684,5 +4684,75 @@
     "stem": "Complications: a- Testicular atrophy and infertility due to higher temperature within the body than ",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0177: The answer text was appended directly into the stem. Held as damaged item with leaked key."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p023-q1",
+    "stem": "At birth, there is resting pool of follicles (about 2 millions), and no new oocytes or follicles are",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0193: Damaged fill-in-the-blank item with printed numbers leaked into prompt string. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p023-q2",
+    "stem": "The length of the cycle is variable, ranging between 20-45 days, with an average of 28 days, calcula",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0194: Damaged fill-in-the-blank item with answer fragment '20-' in prompt string. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p023-q3",
+    "stem": "The degenerated follicles are invaded by fibroblasts and become fibrotic.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0195: Damaged fill-in-the-blank item with answer '6th' leaked into prompt string. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p023-q4",
+    "stem": "The corpus luteum: + [t becomes fully functioning within 4 days after ovulation.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0196: Truncated fill-in-the-blank fragment with cut-off sentence. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p023-q11",
+    "stem": "vasoconstriction of the endometrial blood vessels (that occurs 24 hours before menses).",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0203: Damaged fill-in-the-blank item with answer '9 hours' leaked into prompt string. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p024-q13",
+    "stem": "_ Both LH and FSH are required for synthesis of estrogen by the follicular (theca and granulosa) cel",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0205: Corrupt fill-in-the-blank fragment with missing blanks. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p024-q16",
+    "stem": "Control of follicular phase During early part of the follicular phase - FSH moderately increase, hel",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0208: Damaged fill-in-the-blank item with answer 'Progesterone' appended to prompt string. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p024-q1",
+    "stem": "deprivation of the endometrium from its hormonal support, which involutes and decreases in thickness",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0212: Corrupt extraction of rubric step 1 from preceding menstruation item. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p025-q23",
+    "stem": "Epithelium, glands, blood vessels",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0217: Damaged fill-in-the-blank fragment with missing target. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p027-q17",
+    "stem": "Precocious pseudopuberty: | * Is an early development of secondary sexual character without gametoge",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0238: Corrupted fill-in-the-blank item with fragments leaked into prompt. Excluded under quality-over-quantity intake policy."
   }
 ]

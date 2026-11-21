@@ -16818,5 +16818,405 @@
     "originalStem": "Authentic prompt on fetal testosterone functions. Restore Wolffian duct differentiation, DHT external virilization, testicular descent, and hypothalamic programming.",
     "repairedStem": "Describe the essential endocrine functions of testosterone during intrauterine fetal development.",
     "explanationLength": 134
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0179",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 10,
+    "originalStem": "Authentic prompt on testosterone reproductive actions. Restore spermatogenesis stimulation, reproductive tract growth/differentiation, and gonadotropin feedback.",
+    "repairedStem": "Enumerate the primary reproductive functions of testosterone in the adult male.",
+    "explanationLength": 167
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0180",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 10,
+    "originalStem": "Authentic prompt on testosterone non-reproductive actions. Restore protein anabolism, linear bone growth/epiphyseal closure, erythropoiesis, and fluid retention.",
+    "repairedStem": "Describe the major non-reproductive (metabolic and systemic) functions of testosterone.",
+    "explanationLength": 159
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0183",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 10,
+    "originalStem": "Authentic prompt comparing prepubertal vs postpubertal hypogonadism. Restore eunuchoid proportions, infantile genitalia vs organ regression and libido loss.",
+    "repairedStem": "Compare the clinical manifestations of male hypogonadism occurring before puberty (eunuchoidism) versus after puberty.",
+    "explanationLength": 157
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0184",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 11,
+    "originalStem": "Authentic prompt for neuroanatomical centers of erection, emission, and ejaculation proper. Restore parasympathetic/sympathetic lumbar and sacral spinal centers.",
+    "repairedStem": "Identify the spinal reflex centers governing erection, emission, and ejaculation proper in the male.",
+    "explanationLength": 145
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0185",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 11,
+    "originalStem": "Authentic prompt on erection mechanism. Restore parasympathetic NANC nitric oxide release, arteriolar vasodilation, cavernosal engorgement, and venous compression.",
+    "repairedStem": "Explain the physiological hemodynamic and neurochemical mechanisms that cause penile erection.",
+    "explanationLength": 166
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0186",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 11,
+    "originalStem": "Authentic prompt on termination of erection. Restore sympathetic alpha-1 adrenergic vasoconstriction, smooth muscle contraction, and venous decompression (detumescence).",
+    "repairedStem": "Explain how penile erection terminates following orgasm (mechanism of detumescence).",
+    "explanationLength": 112
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0188",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 11,
+    "originalStem": "Authentic prompt on emission mechanism. Restore sympathetic hypogastric reflex, peristalsis of vas deferens, seminal vesicle/prostate contraction into prostatic urethra.",
+    "repairedStem": "Describe the physiological mechanism and sequence of events of emission during the male sexual act.",
+    "explanationLength": 154
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0191",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 11,
+    "originalStem": "Authentic prompt on male orgasm. Restore systemic physiological responses (tachycardia, hyperpnea, generalized skeletal contractions) and internal urethral sphincter closure.",
+    "repairedStem": "Write short notes on the systemic and genital physiological manifestations of male orgasm.",
+    "explanationLength": 179
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0192",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 11,
+    "originalStem": "Authentic prompt on the resolution phase of the male sexual response. Restore rapid detumescence, heart rate/respiratory normalization, and refractory period.",
+    "repairedStem": "Explain what is meant by the 'resolution' phase of the male sexual act and describe its physiological features.",
+    "explanationLength": 156
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0197",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 12,
+    "originalStem": "Authentic prompt on regulation of ovarian function. Restore three-tier hypothalamic (GnRH pulses), pituitary (FSH/LH), and ovarian feedback hierarchy.",
+    "repairedStem": "List the three regulatory levels controlling ovarian function and describe their interactions.",
+    "explanationLength": 205
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0198",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 12,
+    "originalStem": "Authentic prompt on ovarian endocrine units. Restore ovarian follicles (estrogens, inhibin) and corpus luteum (progesterone, estrogen, relaxin, inhibin A).",
+    "repairedStem": "Identify the primary endocrine units of the ovary across the menstrual cycle and name the hormones secreted by each.",
+    "explanationLength": 176
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0199",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 12,
+    "originalStem": "Authentic prompt on early follicular phase endocrine dynamics. Restore FSH rise, follicular recruitment, estradiol negative feedback, and dominant follicle selection.",
+    "repairedStem": "Describe the hormonal changes and physiological dynamics during the early-to-mid follicular phase of the ovarian cycle.",
+    "explanationLength": 179
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0202",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 12,
+    "originalStem": "Authentic prompt on autocrine effects of estrogen on granulosa cells. Restore proliferation stimulation, FSH receptor induction, and amplified aromatization.",
+    "repairedStem": "Explain the autocrine and paracrine effects of estrogen on ovarian granulosa cells in the developing follicle.",
+    "explanationLength": 162
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0206",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 12,
+    "originalStem": "Authentic prompt on physiological consequences of the pre-ovulatory LH surge. Restore meiotic resumption (arrest in metaphase II), follicular rupture, luteinization, and progesterone secretion.",
+    "repairedStem": "List the major physiological consequences triggered by the mid-cycle LH surge in the pre-ovulatory follicle.",
+    "explanationLength": 185
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0214",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 13,
+    "originalStem": "Authentic prompt on prostaglandin actions in menstruation. Restore spiral arteriolar vasoconstriction causing ischemic necrosis and myometrial contractions expelling tissue.",
+    "repairedStem": "Explain the physiological role of prostaglandins in the mechanism of normal menstruation.",
+    "explanationLength": 178
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0216",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 13,
+    "originalStem": "Authentic prompt regarding coagulation state of menstrual effluent. Restore rapid intrauterine clot liquefaction by fibrinolysin and conditions leading to visible clots.",
+    "repairedStem": "Explain why normal menstrual blood does not clot, and state the conditions under which menstrual clots may form.",
+    "explanationLength": 177
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0218",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 13,
+    "originalStem": "Authentic prompt on progesterone actions on the uterus. Restore secretory transformation, glycogen/lipid accumulation, spiral artery tortuosity, and myometrial quiescence.",
+    "repairedStem": "Describe the physiological effects of progesterone on the non-pregnant uterus during the luteal phase.",
+    "explanationLength": 188
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0219",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 13,
+    "originalStem": "Authentic prompt on premenstrual syndrome (PMS) symptomatology. Restore somatic symptoms (fluid retention, mastalgia, headache) and affective symptoms (irritability, mood swings).",
+    "repairedStem": "Enumerate the major clinical somatic and psychological manifestations of premenstrual syndrome (PMS).",
+    "explanationLength": 194
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0220",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 12,
+    "originalStem": "Authentic prompt on clinical timing of anovulatory menstrual cycles. Restore early post-menarche and late perimenopause physiological transitional windows.",
+    "repairedStem": "State when anovulatory menstrual cycles commonly occur physiologically and explain their underlying hormonal basis.",
+    "explanationLength": 186
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0221",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 12,
+    "originalStem": "Authentic prompt on indicators of ovulation. Restore basal body temperature rise, thin elastic cervical mucus (spinnbarkeit), mid-cycle LH surge, and serum progesterone elevation.",
+    "repairedStem": "List four clinical or laboratory indicators used to detect the occurrence of ovulation.",
+    "explanationLength": 167
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0222",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 14,
+    "originalStem": "Authentic prompt on relaxin secretion and functions. Restore corpus luteum and placental sources, pelvic ligamentous relaxation, and cervical softening/dilation.",
+    "repairedStem": "Identify the anatomical sites of secretion and describe the physiological functions of the hormone relaxin in females.",
+    "explanationLength": 155
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0223",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 14,
+    "originalStem": "Authentic prompt on physiological estrogens in females. Restore 17beta-estradiol (ovaries), estrone (peripheral aromatization), and estriol (placenta/fetal-maternal unit).",
+    "repairedStem": "List the three major physiological estrogens present in female plasma and specify their primary anatomical sources of secretion.",
+    "explanationLength": 200
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0224",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 14,
+    "originalStem": "Authentic prompt on estrogen actions on female tract organs. Restore endometrial/myometrial proliferation, tubal motility, thin cervical mucus, and progesterone receptor induction.",
+    "repairedStem": "Describe the physiological actions of estrogen on the external genitalia, uterus, and oviducts (fallopian tubes).",
+    "explanationLength": 179
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0225",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 14,
+    "originalStem": "Authentic prompt on estrogen actions on breast tissue. Restore mammary ductal elongation, adipose deposition, stromal proliferation, and antagonism of lactation before parturition.",
+    "repairedStem": "Describe the physiological effects of estrogen on mammary gland development and lactation.",
+    "explanationLength": 151
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0226",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 14,
+    "originalStem": "Authentic prompt on estrogen-dependent female secondary sexual characteristics. Restore gynecoid fat distribution, wide pelvic girdle, vocal pitch, fine skin texture, and hair pattern.",
+    "repairedStem": "Enumerate the female secondary sexual characteristics induced and maintained by estrogen.",
+    "explanationLength": 145
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0227",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 14,
+    "originalStem": "Authentic prompt on adrenal androgen actions in females. Restore pubertal growth spurt, axillary/pubic hair development, and maintenance of adult libido.",
+    "repairedStem": "Describe the physiological roles of adrenal androgens in the normal female.",
+    "explanationLength": 145
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0228",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 14,
+    "originalStem": "Authentic prompt on non-reproductive physiological actions of estrogen. Restore osteoclast inhibition, epiphyseal fusion, favorable lipid profile (HDL increase, LDL decrease), and endothelial nitric oxide release.",
+    "repairedStem": "Describe the major non-reproductive metabolic and cardiovascular actions of estrogen.",
+    "explanationLength": 149
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0230",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 14,
+    "originalStem": "Authentic prompt on progesterone effects on breast tissue. Restore alveolar-lobular development, secretory epithelial differentiation, and cyclical premenstrual breast swelling.",
+    "repairedStem": "Describe the physiological effects of progesterone on the mammary gland.",
+    "explanationLength": 166
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0231",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 17,
+    "originalStem": "Authentic prompt on congenital female hypogonadism (ovarian agenesis). Restore infantile genitalia, primary amenorrhea, lack of secondary sexual characteristics, and tall eunuchoid habitus.",
+    "repairedStem": "List the characteristic clinical and anatomical features of female hypogonadism occurring due to absent or non-functioning ovaries from birth (e.g., Turner syndrome).",
+    "explanationLength": 163
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0232",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 17,
+    "originalStem": "Authentic prompt on post-pubertal hypogonadism (surgical castration / oophorectomy). Restore secondary amenorrhea, genital/breast atrophy, hot flushes, and bone density loss.",
+    "repairedStem": "List the clinical and physiological consequences of bilateral surgical removal of the ovaries (oophorectomy) in an adult woman.",
+    "explanationLength": 162
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0233",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 13,
+    "originalStem": "Authentic prompt on etiology of secondary amenorrhea. Restore pregnancy, hypothalamic suppression (weight loss, stress, exercise), hyperprolactinemia, and premature ovarian insufficiency.",
+    "repairedStem": "Enumerate the major physiological and pathological causes of secondary amenorrhea in women.",
+    "explanationLength": 169
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0234",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 13,
+    "originalStem": "Authentic prompt distinguishing menorrhagia from metrorrhagia. Restore regular heavy prolonged bleeding (menorrhagia) versus irregular acyclic non-menstrual bleeding (metrorrhagia).",
+    "repairedStem": "Distinguish between menorrhagia and metrorrhagia in terms of menstrual pattern and common underlying causes.",
+    "explanationLength": 173
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0235",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 17,
+    "originalStem": "Authentic prompt on neuroendocrine triggers initiating puberty. Restore nocturnal pulsatile GnRH activation driven by declining melatonin and increasing adipocyte leptin/kisspeptin.",
+    "repairedStem": "Explain the neuroendocrine mechanisms and physiological signals responsible for the initiation of pulsatile GnRH release at puberty.",
+    "explanationLength": 165
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0236",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 17,
+    "originalStem": "Authentic prompt defining age thresholds for delayed puberty. Restore absence of testicular enlargement by 14 in males and absence of thelarche by 13 or menarche by 15-16 in females.",
+    "repairedStem": "State the clinical age thresholds defining delayed puberty in males and females.",
+    "explanationLength": 188
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0237",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 17,
+    "originalStem": "Authentic prompt on etiologies of delayed puberty. Restore constitutional delay, hypogonadotropic hypogonadism (Kallmann syndrome, pituitary deficiency), and hypergonadotropic hypogonadism (Turner/Klinefelter syndrome).",
+    "repairedStem": "Classify the major etiologies of delayed puberty into functional, hypogonadotropic, and hypergonadotropic categories.",
+    "explanationLength": 176
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0239",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 17,
+    "originalStem": "Authentic prompt on estrogen synthesis in postmenopausal women. Restore extragonadal aromatization of adrenal androstenedione to estrone in adipose tissue, skin, and liver.",
+    "repairedStem": "Describe the anatomical sources and biochemical pathway of estrogen synthesis in postmenopausal women.",
+    "explanationLength": 142
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0240",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 17,
+    "originalStem": "Authentic prompt on physiological alterations accompanying menopause. Restore cessation of menses, vasomotor hot flushes, urogenital atrophy, accelerated bone resorption, and adverse cardiovascular risk profile.",
+    "repairedStem": "Describe the major physiological and anatomical alterations accompanying the menopause.",
+    "explanationLength": 214
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0243",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 15,
+    "originalStem": "Authentic prompt on physiological factors enhancing sperm motility. Restore alkaline vaginal/cervical pH, thin estrous mucus, female tract antiperistaltic fluid currents, and ovum chemoattractants.",
+    "repairedStem": "List the physiological factors within the male and female reproductive tracts that enhance sperm motility and forward transit.",
+    "explanationLength": 228
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0244",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 15,
+    "originalStem": "Authentic prompt explaining the physiological requirement for high sperm count (>20 million/mL). Restore high tract attrition rate and necessity of collective enzymatic breakdown of cumulus oophorus/zona pellucida.",
+    "repairedStem": "Explain the physiological necessity for a high sperm concentration (>20 million/mL) in semen for normal male fertility.",
+    "explanationLength": 199
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0245",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 15,
+    "originalStem": "Authentic prompt on triggers of the acrosomal reaction. Restore sperm capacitation, binding to zona pellucida glycoprotein ZP3, calcium influx, and acrosin/hyaluronidase exocytosis.",
+    "repairedStem": "Explain what triggers the acrosome reaction in human spermatozoa and describe the cellular events that occur.",
+    "explanationLength": 190
   }
 ]
