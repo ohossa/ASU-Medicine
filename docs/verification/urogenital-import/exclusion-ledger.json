@@ -4943,5 +4943,355 @@
     "stem": "Is often associated with abnormal persistence",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0328: Detached sentence fragment without prompt. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p009-mcq-0329",
+    "stem": "The ureter is supplied by the following ia arteries EXCEPT: ;",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0329: Unverified scanned MCQ from UG_NERD page 9 with missing answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p009-mcq-0330",
+    "stem": "The left renal vein: | se",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0330: Mangled OCR stem with trailing delimiter ('se') and unverified key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p009-mcq-0331",
+    "stem": "Which of the following statements H concerning the kidneys is false: i",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0331: Corrupted OCR stem containing spurious characters ('statements H concerning') and unverified key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p009-mcq-0332",
+    "stem": "Which of the following structures opens into | the prostatic sinus: :",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0332: Damaged OCR stem with pipe artifact and missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p010-mcq-0333",
+    "stem": "The part of the uterine tube which isa Gitated portion and curves over the ovary",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0333: OCR corrupted stem ('isa Gitated portion') with missing official key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p010-mcq-0334",
+    "stem": "The rounded vaginal part of the cervix extends inte the vagine and communicates ",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0334: Corrupted OCR stem ('inte the vagi') with unverified key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p010-mcq-0335",
+    "stem": "The constituents of the spermatic cord are the following except :",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0335: Unverified scanned MCQ from UG_NERD page 10 with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p010-mcq-0336",
+    "stem": "The testes are covered by c tough fibrous coat known as the :",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0336: OCR corrupted prompt ('c tough fibrous coat') with unverified key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p010-mcq-0337",
+    "stem": "Part of the broad ligament located between uterine tube and ovary:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0337: Unverified scanned MCQ from UG_NERD page 10 with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p010-mcq-0338",
+    "stem": "The lateral fornix of the vagina is most closely related to:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0338: Incomplete options list (4 options) and unverified key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p010-mcq-0339",
+    "stem": "The _____ serve as the primary reservoir for lymphatic drainage from the breast:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0339: Truncated 3-option fill-in stem ('The _____ serve as...') with unverified key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p010-mcq-0341",
+    "stem": "Which prostatic lobe is superior to the urogenital diaphragm and inferior to the",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0341: Incomplete 4-option scan with unverified key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p011-mcq-0342",
+    "stem": "The deep arteries of the penis are located in which of the following areas: . su",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0342: Incomplete 4-option scan with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p010-mcq-0343",
+    "stem": "The Mesosalpnix forms the mesentery for which of the following structures: ,",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0343: Unverified scanned MCQ from UG_NERD page 10 with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p011-mcq-0344",
+    "stem": "Which of the following structures maybe referred to as the fourchette: a, Prepuc",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0344: OCR corrupted stem ('structures maybe referred') with 4 options and unverified key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p012-mcq-0345",
+    "stem": "The most anterior structure in the hilum of the kidney is:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0345: Incomplete 4-option scan with unverified key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p012-mcq-0348",
+    "stem": "The anterior relations of the right kidney include all of the following EXCEPT:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0348: Unverified scanned MCQ from UG_NERD page 12 with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p012-mcq-0349",
+    "stem": "The anterior relations of the left kidney include all of the following EXCEPT:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0349: Unverified scanned MCQ from UG_NERD page 12 with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p012-mcq-0350",
+    "stem": "Which one of the following areas on the front of right kidney is covered with pe",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0350: Unverified scanned MCQ from UG_NERD page 12 with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p012-mcq-0351",
+    "stem": "Pelvic ureter is supplied by:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0351: Unverified scanned MCQ from UG_NERD page 12 with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p013-mcq-0352",
+    "stem": "Paradidymis  c One of the following arteries isa parietal: branch of anterior di",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0352: Severely corrupted stem fragment ('Paradidymis c One of the following arteries isa parietal') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p014-mcq-0353",
+    "stem": "Posterior (subscapular) axillary lymph nodes.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0353: Detached fragment stem ('Posterior (subscapular) axillary lymph nodes') foreign to urogenital anatomy with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p014-mcq-0354",
+    "stem": "Ina plain X ray, a stone is seen opposite the sacro-iliac joint.What is the site",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0354: Corrupted OCR stem ('Ina plain X ray') with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p014-mcq-0355",
+    "stem": "Testicular descent along the inguinal | canal normally takes place during which ",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0355: Corrupted OCR stem containing pipe artifact ('inguinal | canal') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p014-mcq-0356",
+    "stem": "A malignant tumour in the wall of the vagina above the hymen, can reach which gr",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0356: Unverified scanned MCQ from UG_NERD page 14 with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p014-mcq-0357",
+    "stem": "35 years old female, suffers from fever, pel pain & tenderness. On examination b",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0357: Damaged OCR stem ('pel pain & tenderne') with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p015-mcq-0358",
+    "stem": "Medial wall of ischiorectal fossa is made by: ; e.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0358: Corrupted OCR stem with delimiter artifacts ('made by: ; e.') and missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p015-mcq-0359",
+    "stem": "Douglas pouch lies between : i d. a, Uterus & ant. Abdominal wall : e. b, Rectum",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0359: Severely damaged 3-option stem containing option text in prompt ('lies between : i d. a, Uterus & ant. Abdominal') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p015-mcq-0360",
+    "stem": "The floor of rectovesical pouch is about -cm b. above the anal orifice: F . a 95",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0360: Damaged OCR prompt ('about -cm b. above') with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p015-mcq-0361",
+    "stem": "Which of the following layers of the scrotal | wall is the continuation of the a",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0361: Damaged OCR stem containing pipe artifact ('scrotal | wall') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p017-mcq-0363",
+    "stem": "Secretion of renin. ; '",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0363: Detached 4-option fragment stem ('Secretion of renin. ; ') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p017-mcq-0364",
+    "stem": "Which of the following chemicals is notan endocrine (secretory) function of the ",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0364: Truncated 3-option stem ('notan endocrine') with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p017-mcq-0365",
+    "stem": "Renal hypertension is a complication of: H :",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0365: Damaged 4-option stem containing OCR noise ('complication of: H :') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p017-mcq-0366",
+    "stem": "The best treatment of renal hypertension is: | P",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0366: Corrupted 4-option prompt ('hypertension is: | P') with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p017-mcq-0367",
+    "stem": "The kidneys de net play a role in: he",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0367: Corrupted OCR stem ('kidneys de net play a role in: he') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p017-mcq-0369",
+    "stem": "Normal renal blood fiow is: a 0.2-0.5 Limin",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0369: Severely truncated 2-option fragment stem containing option text ('a 0.2-0.5 Limin') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p017-mcq-0370",
+    "stem": "Which of the following is NOT a functi the kidneys? +",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0370: Damaged OCR stem ('NOT a functi the kidneys? +') with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p019-mcq-0371",
+    "stem": "In tubuloglomerular feedback, increased NaCl delivery to the macula densa leads ",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0371: Incomplete 4-option scan with unverified answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p019-mcq-0372",
+    "stem": "Inthin ascending limb urea is actively i veaDere transported to interstitial flu",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0372: Severely garbled 3-option OCR stem ('urea is actively i veaDere transported') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p019-mcq-0373",
+    "stem": "Represents a high-capacity low gradient system ie aa",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0373: Damaged prompt with trailing OCR gibberish ('system ie aa') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p019-mcq-0374",
+    "stem": "Play a role in maintenance of a relatively { Siooleteinl constant renal blood fl",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0374: Severely garbled 4-option OCR stem ('relatively { Siooleteinl con') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p020-mcq-0375",
+    "stem": "Concerning filtration fraction, all are true EXCEPT: 2 Isthe percentage of renal",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0375: Damaged OCR stem containing option preamble ('EXCEPT: 2 Isthe') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p020-mcq-0376",
+    "stem": "Glomerular capillary hydrostatic pressure is about 32 mmHg.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0376: Unverified scanned MCQ from UG_NERD page 20 with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p020-mcq-0377",
+    "stem": "If the clearance of Substance X is greater than the clearance on inulin, it is m",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0377: Unverified scanned MCQ from UG_NERD page 20 with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p020-mcq-0378",
+    "stem": "Regarding the filtering membrane: : a. The membrane that separates blood in i pe",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0378: Damaged OCR prompt containing option letter in stem ('membrane: : a. The me') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p021-mcq-0380",
+    "stem": "The GFR is: : a, Increased in ureteric obstruction or tight renal! capsule. :",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0380: Damaged OCR prompt containing option preamble ('The GFR is: : a, Increased') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p021-mcq-0381",
+    "stem": "25 ml/min e180 ml/min The following factors when increased, they will increase t",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0381: Severely mangled stem prefixed with numbers from preceding question header ('25 ml/min e180 ml/min The following factors...') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p020-mcq-0382",
+    "stem": "Regarding renal plasma clearance, ail are true EXCEPT:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0382: Corrupted OCR stem ('ail are true EXCEPT') with unverified key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p021-mcq-0383",
+    "stem": "Which of the following should not be a character of a substance to be used in",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0383: Unverified scanned MCQ from UG_NERD page 21 with missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p022-mcq-0384",
+    "stem": "Regarding Inulin clearance, all of the foliowing are true EXCEPT:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0384: OCR corrupted prompt ('foliowing are true') and mangled option text ('His fikered, not reabsorbed...') with missing key. Excluded under quality-over-quantity intake policy."
   }
 ]
