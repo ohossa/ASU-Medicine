@@ -7043,5 +7043,355 @@
     "stem": "What is the GFR (ml/min) if the urinary inulin is 40mg/mL, the urinary flow rate is 60mL/hour and the plasma inulin concentration is 0.4mg/ml",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0704: Unverified scanned MCQ from UG_NERD page 89 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-2.pdf",
+    "sourceOccurrence": "S200-p008-mcq-0705",
+    "stem": "Which of the following substances will be found in high concentration at the end of the proximal tubule?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0705: Unverified extracted MCQ from Renal Physiology Questions-2 page 8 (Q36) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-2.pdf",
+    "sourceOccurrence": "S200-p010-mcq-0706",
+    "stem": "Parathyroid hormone effects on renal tubules include:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0706: Unverified extracted MCQ from Renal Physiology Questions-2 page 10 (Q46) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-2.pdf",
+    "sourceOccurrence": "S200-p010-mcq-0707",
+    "stem": "Which of the following pressures helps reabsorption:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0707: Unverified extracted MCQ from Renal Physiology Questions-2 page 10 (Q47) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-2.pdf",
+    "sourceOccurrence": "S200-p010-mcq-0708",
+    "stem": "Which of the following hormones affect Na reabsorption in the proximal tubule:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0708: Unverified extracted MCQ from Renal Physiology Questions-2 page 10 (Q48) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-2.pdf",
+    "sourceOccurrence": "S200-p010-mcq-0709",
+    "stem": "The only renal tubule that handle PAHA and PO4 transport is:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0709: Unverified extracted MCQ from Renal Physiology Questions-2 page 10 (Q49) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-2.pdf",
+    "sourceOccurrence": "S200-p011-mcq-0711",
+    "stem": "When the renal artery PAHA concentration is 10 mg%, and the renal vein PAHA concentration is 1.5 mg%, the PAHA extraction ratio is:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0711: Unverified extracted MCQ from Renal Physiology Questions-2 page 11 (Q51) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-2.pdf",
+    "sourceOccurrence": "S200-p011-mcq-0712",
+    "stem": "When the renal artery PAHA concentration is 10 mg%, and the renal vein PAHA concentration is 1.5 mg%, and when the PAHA clearance is 600 ml/min. The actual renal plasma flow is:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0712: Unverified extracted MCQ from Renal Physiology Questions-2 page 11 (Q52) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p001-mcq-0714",
+    "stem": "Renal counter current mechanisms:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0714: Unverified extracted MCQ from Renal Physiology Questions-3 page 1 (Q1) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p001-mcq-0715",
+    "stem": "Counter current multiplier system:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0715: Unverified extracted MCQ from Renal Physiology Questions-3 page 1 (Q2) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p001-mcq-0716",
+    "stem": "Counter current exchanger system:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0716: Unverified extracted MCQ from Renal Physiology Questions-3 page 1 (Q3) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p001-mcq-0717",
+    "stem": "Regarding the renal counter current mechanisms, all are true EXCEPT:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0717: Unverified extracted MCQ from Renal Physiology Questions-3 page 1 (Q4) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p002-mcq-0719",
+    "stem": "Regarding Urea, which sentence is not correct:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0719: Unverified extracted MCQ from Renal Physiology Questions-3 page 2 (Q6) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p002-mcq-0720",
+    "stem": "Regarding vasopressin actions, which sentence is not correct:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0720: Unverified extracted MCQ from Renal Physiology Questions-3 page 2 (Q7) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p002-mcq-0721",
+    "stem": "Concerning urine concentration and dilution, all are true, EXCEPT:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0721: Unverified extracted MCQ from Renal Physiology Questions-3 page 2 (Q9) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p003-mcq-0723",
+    "stem": "Regarding Diuresis, all are true, EXCEPT:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0723: Unverified extracted MCQ from Renal Physiology Questions-3 page 3 (Q11) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p003-mcq-0724",
+    "stem": "Concerning the diuretic drugs, all are true EXCEPT:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0724: Unverified extracted MCQ from Renal Physiology Questions-3 page 3 (Q13) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p003-mcq-0725",
+    "stem": "Regarding water renal handling, all are true EXCEPT:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0725: Unverified extracted MCQ from Renal Physiology Questions-3 page 3 (Q14) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p004-mcq-0726",
+    "stem": "Sodium handling mechanisms:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0726: Unverified extracted MCQ from Renal Physiology Questions-3 page 4 (Q15) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p004-mcq-0727",
+    "stem": "Sodium reabsorption:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0727: Unverified extracted MCQ from Renal Physiology Questions-3 page 4 (Q16) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p004-mcq-0728",
+    "stem": "Regarding the ECF:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0728: Unverified extracted MCQ from Renal Physiology Questions-3 page 4 (Q17) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p004-mcq-0729",
+    "stem": "Regarding the ECF, all are true EXCEPT:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0729: Unverified extracted MCQ from Renal Physiology Questions-3 page 4 (Q18) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p004-mcq-0730",
+    "stem": "Which of the following is not a cause of hypertonicity:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0730: Unverified extracted MCQ from Renal Physiology Questions-3 page 4 (Q19) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p005-mcq-0732",
+    "stem": "Hypervolemia is not corrected by:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0732: Unverified extracted MCQ from Renal Physiology Questions-3 page 5 (Q21) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p005-mcq-0733",
+    "stem": "Regarding potassium balance, all are true EXCEPT:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0733: Unverified extracted MCQ from Renal Physiology Questions-3 page 5 (Q22) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p005-mcq-0734",
+    "stem": "Regarding Ca++ balance:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0734: Unverified extracted MCQ from Renal Physiology Questions-3 page 5 (Q23) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p005-mcq-0735",
+    "stem": "Regarding PO4 balance:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0735: Unverified extracted MCQ from Renal Physiology Questions-3 page 5 (Q24) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p006-mcq-0737",
+    "stem": "In a patient who has become dehydrated, body water should be replaced by intravenous infusion of",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0737: Unverified extracted MCQ from Renal Physiology Questions-3 page 6 (Q26) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p006-mcq-0738",
+    "stem": "A scientist is performing studies on runners after a 10,000-m race. She finds that the urine of runners after the race is more concentrated and has reduced volume than before the race. What mechanism contributes to the change in urine concentration and output?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0738: Unverified extracted MCQ from Renal Physiology Questions-3 page 6 (Q27) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p006-mcq-0739",
+    "stem": "In normal kidneys, which of the following is true about the osmolarity of renal tubular fluid that flows through the early distal tubule in the region of the macula densa?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0739: Unverified extracted MCQ from Renal Physiology Questions-3 page 6 (Q28) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p007-mcq-0742",
+    "stem": "Which of the following changes tends to increase peritubular capillary reabsorption?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0742: Unverified extracted MCQ from Renal Physiology Questions-3 page 7 (Q31) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p007-mcq-0743",
+    "stem": "Under conditions of normal renal function, which of the following is true about the concentration of urea in tubular fluid at the end of the proximal tubule?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0743: Unverified extracted MCQ from Renal Physiology Questions-3 page 7 (Q32) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p008-mcq-0745",
+    "stem": "Administration of a thiazide diuretic (e.g., chlorothiazide) would be expected to cause which of the following effects as its primary mechanism of action?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0745: Unverified extracted MCQ from Renal Physiology Questions-3 page 8 (Q34) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p008-mcq-0747",
+    "stem": "Which of the following would likely lead to hyponatremia?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0747: Unverified extracted MCQ from Renal Physiology Questions-3 page 8 (Q36) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p009-mcq-0749",
+    "stem": "Which of the following would be expected to cause a decrease in extracellular fluid potassium concentration (hypokalemia)?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0749: Unverified extracted MCQ from Renal Physiology Questions-3 page 9 (Q38) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p009-mcq-0750",
+    "stem": "A healthy 29-year-old man runs a 10-km race on a hot day and becomes very dehydrated. Normally, in which part of the renal tubule is the most water reabsorbed?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0750: Unverified extracted MCQ from Renal Physiology Questions-3 page 9 (Q39) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p009-mcq-0751",
+    "stem": "Which of the following has similar values for both intracellular and interstitial body fluids?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0751: Unverified extracted MCQ from Renal Physiology Questions-3 page 9 (Q40) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p010-mcq-0754",
+    "stem": "Which of the following changes would you expect to find in a patient consuming a high-sodium diet compared with the same patient on a normal-sodium diet, assuming normal kidneys conditions?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0754: Unverified extracted MCQ from Renal Physiology Questions-3 page 10 (Q43) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p010-mcq-0755",
+    "stem": "Which part of the renal tubule would have the lowest tubular fluid osmolarity in a patient who has complete lack of antidiuretic hormone due to \"central\" diabetes insipidus?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0755: Unverified extracted MCQ from Renal Physiology Questions-3 page 10 (Q44) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p011-mcq-0757",
+    "stem": "What creates the osmotic gradient in the renal medulla?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0757: Unverified extracted MCQ from Renal Physiology Questions-3 page 11 (Q47) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-3.pdf",
+    "sourceOccurrence": "S201-p011-mcq-0758",
+    "stem": "A patient with uncontrolled hypertension is placed on a new diuretic targeted to act on the Na+ reabsorption site from the basolateral surface of the renal epithelial cells. Which of the following transport processes is the new drug affecting?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0758: Unverified extracted MCQ from Renal Physiology Questions-3 page 11 (Q48) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceOccurrence": "S202-p001-mcq-0761",
+    "stem": "The importance of pH regulation includes all of the following, EXCEPT:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0761: Unverified extracted MCQ from Renal Physiology Questions-4 page 1 (Q1) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceOccurrence": "S202-p001-mcq-0763",
+    "stem": "For optimal pH, the ratio between HCO3 and CO2 should be kept at:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0763: Unverified extracted MCQ from Renal Physiology Questions-4 page 1 (Q3) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceOccurrence": "S202-p001-mcq-0764",
+    "stem": "Role of kidney in pH regulation includes all of the following except:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0764: Unverified extracted MCQ from Renal Physiology Questions-4 page 1 (Q4) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceOccurrence": "S202-p001-mcq-0765",
+    "stem": "Hydrogen secretion by renal tubules:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0765: Unverified extracted MCQ from Renal Physiology Questions-4 page 1 (Q5) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceOccurrence": "S202-p002-mcq-0766",
+    "stem": "Hydrogen secretion by renal tubules is not affected by:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0766: Unverified extracted MCQ from Renal Physiology Questions-4 page 2 (Q6) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceOccurrence": "S202-p002-mcq-0767",
+    "stem": "Plasma CO2 is increased in which 2 of the following:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0767: Unverified extracted MCQ from Renal Physiology Questions-4 page 2 (Q7) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceOccurrence": "S202-p002-mcq-0768",
+    "stem": "Plasma CO2 is decreased in which 2 of the following:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0768: Unverified extracted MCQ from Renal Physiology Questions-4 page 2 (Q8) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceOccurrence": "S202-p002-mcq-0769",
+    "stem": "Plasma HCO3 is increased in which 2 of the following:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0769: Unverified extracted MCQ from Renal Physiology Questions-4 page 2 (Q9) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceOccurrence": "S202-p002-mcq-0770",
+    "stem": "Plasma HCO3 is decreased in which 2 of the following:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0770: Unverified extracted MCQ from Renal Physiology Questions-4 page 2 (Q10) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Renal Physiology Questions-4.pdf",
+    "sourceOccurrence": "S202-p003-mcq-0772",
+    "stem": "Absence of NH4Cl & titrable acidity in urine occurs in which 2 of the following:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0772: Unverified extracted MCQ from Renal Physiology Questions-4 page 3 (Q12) with option formatting artifacts and line-wrapping defects. Excluded under quality-over-quantity intake policy."
   }
 ]
