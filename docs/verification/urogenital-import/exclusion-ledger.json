@@ -7743,5 +7743,355 @@
     "stem": "Which of the following specifically interrupts emission",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0846: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 8 (Q38) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceOccurrence": "S204-p009-mcq-0847",
+    "stem": "In male hypogonadism before puberty, there is",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0847: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 9 (Q40) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceOccurrence": "S204-p011-mcq-0852",
+    "stem": "What is the function of Leydig cells?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0852: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 11 (Q47) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceOccurrence": "S204-p011-mcq-0853",
+    "stem": "What cells secrete Mllerian inhibiting substance in fetal life?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0853: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 11 (Q48) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceOccurrence": "S204-p011-mcq-0854",
+    "stem": "The ________ erectile tissue increases during sexual excitement, causing the penis to become erect.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0854: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 11 (Q49) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceOccurrence": "S204-p012-mcq-0857",
+    "stem": "Inhibin is secreted from the ________ and acts to reduce the secretion of ______.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0857: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 12 (Q52) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceOccurrence": "S204-p012-mcq-0858",
+    "stem": "Spermatogenesis is directly stimulated by",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0858: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 12 (Q53) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceOccurrence": "S204-p014-mcq-0863",
+    "stem": "Clotting of semen inside the female genital tract is promoted by:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0863: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 14 (Q58) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/\ud83d\udca5Reproduction Physiology M Questions-1.pdf",
+    "sourceOccurrence": "S204-p014-mcq-0864",
+    "stem": "Which secretion in male contains a substance to dissolve mucous in the female genital tract?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0864: Unverified extracted MCQ from Reproduction Physiology M Questions-1 page 14 (Q59) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p002-mcq-0866",
+    "stem": "unction of the epididymis includes:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0866: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 2 (Q1) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p002-mcq-0867",
+    "stem": "hich of the following hormones inhibits spermatogenesis?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0867: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 2 (Q2) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p002-mcq-0868",
+    "stem": "hich of the following is not a function of the Sertoli cells? > . secreting seminiferous tubule fluid",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0868: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 2 (Q3) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p002-mcq-0869",
+    "stem": "hich of the following is not a function of the primary sex organs?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0869: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 2 (Q5) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p003-mcq-0870",
+    "stem": "uman spermatozoa are characterized by:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0870: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 3 (Q6) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p003-mcq-0871",
+    "stem": "or normal development of spermatozoa there must be:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0871: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 3 (Q7) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p003-mcq-0872",
+    "stem": "he normal seminal ejaculate (semen) is correctly described by which of the following?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0872: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 3 (Q8) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p003-mcq-0873",
+    "stem": "unction of Sertoli cells include:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0873: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 3 (Q9) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p003-mcq-0874",
+    "stem": "n a male, which of the following correctly represents FSH?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0874: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 3 (Q10) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p003-mcq-0875",
+    "stem": "n adult male, actions of inhibin include:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0875: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 3 (Q11) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p004-mcq-0876",
+    "stem": "hich of the following is a function of testosterone at puberty and adult male?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0876: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 4 (Q12) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p004-mcq-0877",
+    "stem": "he interstitial (Leydig) cells of the testis are characterized by:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0877: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 4 (Q13) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p004-mcq-0878",
+    "stem": "hich of the following is a function of testosterone in the intrauterine period?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0878: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 4 (Q14) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p004-mcq-0879",
+    "stem": "econdary sexual characteristics do not develop in children who:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0879: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 4 (Q15) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p004-mcq-0880",
+    "stem": "emoval of the testes in the adult causes:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0880: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 4 (Q16) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p004-mcq-0881",
+    "stem": "rection of the penis is correctly explained by which of the following:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0881: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 4 (Q17) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p005-mcq-0882",
+    "stem": "n the last part of the follicular phase, granulosa cells of the follicle secrete large quantities of: |",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0882: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 5 (Q21) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p005-mcq-0883",
+    "stem": "uring the 9-hr period preceding ovulation, which of the following would occur?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0883: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 5 (Q22) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p006-mcq-0884",
+    "stem": "hich of the following characterizes ovulation?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0884: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 6 (Q23) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p006-mcq-0885",
+    "stem": "uring luteal phase of the ovarian cycle, pituitary secretion of luteinizing hormone (LH) starts to decrease because of the: A feedback inhibition of GnRH secretion by the high level of estrogen",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0885: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 6 (Q24) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p006-mcq-0886",
+    "stem": "he Menstrual phase of the uterine cycle is marked by which of the following?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0886: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 6 (Q25) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p006-mcq-0887",
+    "stem": "he proliferative phase differs from the secretory phase of uterine cycle in that:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0887: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 6 (Q26) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p006-mcq-0888",
+    "stem": "t end of menstrual phase of uterine cycle, . . . menstrual | Proliferative | Secretory estrogen levels in the blood rise rapidly. phase | phase phase . 0 Follicular phase Luteal phase What is the source of the estrogen\u2019 oy I on a Seotoras",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0888: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 6 (Q27) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p007-mcq-0889",
+    "stem": "he graafian follicle secretes large quantities of estrogen, which is responsible for:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0889: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 7 (Q29) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p007-mcq-0890",
+    "stem": "hat hormone causes the endometrial glands to fill with glycogen and endometri: blood vessels to become more numerous?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0890: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 7 (Q30) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p007-mcq-0891",
+    "stem": "hich of the following correctly represents the secretory phase of the uterine cycle?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0891: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 7 (Q31) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p007-mcq-0892",
+    "stem": "ailure to ovulate in a given cycle is likely if the:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0892: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 7 (Q32) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p007-mcq-0893",
+    "stem": "hich of the following characterizes postmenopausal women?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0893: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 7 (Q33) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p007-mcq-0894",
+    "stem": "ollowing the menopause, which of the following may occur?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0894: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 7 (Q34) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p008-mcq-0895",
+    "stem": "evelopment of precocious pseudopuberty in male child could be due to:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0895: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 8 (Q35) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p008-mcq-0896",
+    "stem": "reduction in the secretion of what hormone may serve as the trigger for the onse of puberty:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0896: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 8 (Q36) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p008-mcq-0897",
+    "stem": "hat is the main source of estrogen and progesterone secretion during the first ten weeks of pregnancy?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0897: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 8 (Q37) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p008-mcq-0898",
+    "stem": "ecretion and function of human chorionic gonadotrophic hormone (hCG) is correctly represented by which of the following? A_ inhibits secretion of testosterone by Leydig cells in male embryos",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0898: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 8 (Q38) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p008-mcq-0899",
+    "stem": "hich of the following helps movement of sperm from vagina to oviduct?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0899: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 8 (Q40) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p009-mcq-0900",
+    "stem": "he proper site for implantation of the ovum is:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0900: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 9 (Q41) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p009-mcq-0901",
+    "stem": "terine contractions are inhibited by",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0901: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 9 (Q44) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p009-mcq-0902",
+    "stem": "nitiation of labor is triggered by high levels of both estrogen & uterine oxytocin receptors. Which of the following could delay initiation of labor?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0902: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 9 (Q45) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p010-mcq-0903",
+    "stem": "hich of the following explains milk formation and ejection by the mammary glands?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0903: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 10 (Q47) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p010-mcq-0904",
+    "stem": "hy is milk produced only after delivery, not before?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0904: Unverified extracted MCQ from Physiology Department MCQs (Reproduction) page 10 (Q48) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p021-mcq-0905",
+    "stem": "hich of the following is true about the juxtaglomerular apparatus?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0905: Unverified extracted MCQ from Physiology Department MCQs (Renal) page 21 (Q7) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p021-mcq-0906",
+    "stem": "hich of the following is true about the juxtaglomerular apparatus (JGA)?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0906: Unverified extracted MCQ from Physiology Department MCQs (Renal) page 21 (Q8) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
+    "sourceOccurrence": "S193-p021-mcq-0907",
+    "stem": "ormal renal blood flow is:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0907: Unverified extracted MCQ from Physiology Department MCQs (Renal) page 21 (Q9) with option formatting artifacts and missing medical verification. Excluded under quality-over-quantity intake policy."
   }
 ]
