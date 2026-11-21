@@ -63,6 +63,10 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     // Verify visiblePracticeChapters behavior (22 visible chapters in mixed mode)
     expect(chapters.length).toBe(22);
 
+    for (const chapter of chapters.filter(ch => ch.id >= 101 && ch.id <= 208)) {
+      expect(chapter.examPeriod, chapter.title).toBe(chapter.id < 200 ? 'ca-1' : 'ca-2');
+    }
+
     // Verify Chapter 301
     const ch301 = chapters.find((c) => c.id === 301);
     expect(ch301).toBeDefined();

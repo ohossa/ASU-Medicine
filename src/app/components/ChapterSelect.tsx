@@ -3,9 +3,9 @@ import { FlowBreadcrumbs } from './FlowBreadcrumbs';
 import { isPastExamSection, visiblePracticeChapters } from "../lib/practiceOrder";
 import { useSyncedHistory } from '../hooks/useSyncedHistory';
 import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
-import React, { useMemo } from 'react';
+import React, { useId, useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router';
-import { GraduationCap, Layers, ArrowRight, Clock, Award, Trash2, ArrowLeft, Calendar } from 'lucide-react';
+import { GraduationCap, Layers, ArrowRight, Clock, Award, Trash2, ArrowLeft, Calendar, ChevronDown } from 'lucide-react';
 import type { ChapterData, SubjectColor, SubjectData, Question } from '../types';
 import { formatTime } from '../types';
 import type { QuizResult } from '../utils/storage';
@@ -103,6 +103,9 @@ const startButtonBg: Record<SubjectColor, string> = {
 /* ------------------------------------------------------------------ */
 /* Helpers                                                             */
 /* ------------------------------------------------------------------ */
+
+const chapterQuestionCount = (chapter: ChapterData) =>
+  chapter.subjects.reduce((total, subject) => total + subject.questions.length, 0);
 
 /** Score color classification. */
 const pctColor = (pct: number): string => {
@@ -222,7 +225,14 @@ export function ChapterSelect({
 
   const pastChapters = chapters
     .filter(isPastExamSection)
-    .filter(c => c.subjects.reduce((sum, s) => sum + s.questions.length, 0) > 0);
+    .filter(c => chapterQuestionCount(c) > 0);
+  const pastExamsLabel = isRTL ? 'الامتحانات السابقة' : 'Past Exams';
+  const assessmentsHeadingId = useId();
+  const assessmentChapters = [
+    ...pastChapters.filter(chapter => chapter.examPeriod === 'ca-1'),
+    ...pastChapters.filter(chapter => chapter.examPeriod === 'ca-2'),
+  ];
+  const otherPastChapters = pastChapters.filter(chapter => !chapter.examPeriod);
   const regularChapters = chapters.filter(c => !isPastExamSection(c));
 
   const history = useSyncedHistory().slice(0,6);
@@ -243,6 +253,15 @@ export function ChapterSelect({
     { label: moduleCode },
     { label: studyModeName },
   ];
+
+  const renderPastExamRow = (chapter: ChapterData) => (
+    <li key={chapter.id}>
+      <button type="button" onClick={() => onSelectChapter(chapter)} className="flex min-h-11 w-full items-center justify-between gap-3 rounded-lg px-2 py-2 text-start text-sm text-foreground hover:bg-muted focus-visible:outline-2 focus-visible:outline-ring">
+        <span>{chapter.title}</span>
+        <span className="shrink-0 text-xs text-muted-foreground">{questionCountLabel(chapterQuestionCount(chapter), isRTL)}</span>
+      </button>
+    </li>
+  );
 
   const renderChapterCard = (chapter: ChapterData, index: number) => {
     const accent = chapter.accentColor;
@@ -400,10 +419,42 @@ export function ChapterSelect({
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_320px]">
           {/* Chapter grid */}
           <section aria-label={isRTL ? "الفصول" : "Chapters"}>
-            {pastChapters.length > 0 && <section aria-label={isRTL ? 'الامتحانات السابقة' : 'Past Exams'} className="mb-8">
-              <h3 className="mb-4 text-sm font-bold tracking-wider uppercase text-muted-foreground border-s-4 border-clinical ps-3">{isRTL ? 'الامتحانات السابقة' : 'Past Exams'}</h3>
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">{pastChapters.map(chapter=>renderChapterCard(chapter,chapters.indexOf(chapter)))}</div>
-            </section>}
+            {pastChapters.length > 0 && (
+              <section aria-label={pastExamsLabel} className="mb-8">
+                {moduleCode === 'MUG-3' ? (
+                  <details className="group rounded-[28px] border border-border bg-card glass-panel">
+                    <summary className="flex min-h-14 cursor-pointer list-none items-center gap-3 rounded-[28px] px-5 py-3 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring [&::-webkit-details-marker]:hidden">
+                      <Calendar aria-hidden size={20} className="shrink-0 text-clinical" />
+                      <span className="min-w-0 flex-1">
+                        <span className="block text-base font-semibold text-foreground">{pastExamsLabel}</span>
+                        <span className="block text-sm text-muted-foreground">
+                          {questionCountLabel(pastChapters.reduce((total, chapter) => total + chapterQuestionCount(chapter), 0), isRTL)}
+                        </span>
+                      </span>
+                      <ChevronDown aria-hidden size={18} className="shrink-0 text-muted-foreground group-open:rotate-180" />
+                    </summary>
+                    {assessmentChapters.length > 0 && (
+                      <div role="group" aria-labelledby={assessmentsHeadingId} className="border-t border-border px-5 py-2">
+                        <h4 id={assessmentsHeadingId} className="px-2 py-1 text-xs font-semibold text-muted-foreground">
+                          {isRTL ? 'التقييمات المستمرة' : 'Continuous Assessments'}
+                        </h4>
+                        <ul className="divide-y divide-border">{assessmentChapters.map(renderPastExamRow)}</ul>
+                      </div>
+                    )}
+                    {otherPastChapters.length > 0 && (
+                      <ul className="divide-y divide-border border-t border-border px-5 pb-2">
+                        {otherPastChapters.map(renderPastExamRow)}
+                      </ul>
+                    )}
+                  </details>
+                ) : (
+                  <>
+                    <h3 className="mb-4 text-sm font-bold tracking-wider uppercase text-muted-foreground border-s-4 border-clinical ps-3">{pastExamsLabel}</h3>
+                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">{pastChapters.map(chapter => renderChapterCard(chapter, chapters.indexOf(chapter)))}</div>
+                  </>
+                )}
+              </section>
+            )}
             {chapters.length > 0 && (
               <ChapterPracticePicker
                 chapters={chapters}

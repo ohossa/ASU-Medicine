@@ -127,6 +127,7 @@ type V2RawSubject = {
 
 type V2RawChapter = {
   bankSection?: ChapterData['bankSection'];
+  examPeriod?: ChapterData['examPeriod'];
   accentColor?: SubjectColor;
   id?: number;
   title?: string;
@@ -1030,6 +1031,7 @@ function buildChaptersForModuleAndMode(
       return {
         id: ch.id ?? 0,
         bankSection: ch.bankSection,
+        examPeriod: ch.examPeriod,
         title: ch.title || '',
         subtitle: ch.subtitle || ch.title || '',
         emoji: ch.emoji || '🧠',
