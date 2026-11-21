@@ -13,7 +13,7 @@ export function selectGitExamPeriod(chapters: ChapterData[], examPeriod: 'ca-1' 
     if (examPeriod === 'ca-1') {
       return chapter.examPeriod === 'ca-1' || (!chapter.examPeriod && chapter.id < 200);
     }
-    return chapter.examPeriod === 'ca-2' || chapter.id >= 200;
+    return chapter.examPeriod === 'ca-2' || (!chapter.examPeriod && chapter.id >= 200 && chapter.id < 300);
   });
 }
 

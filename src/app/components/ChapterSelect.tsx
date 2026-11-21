@@ -227,12 +227,12 @@ export function ChapterSelect({
     .filter(isPastExamSection)
     .filter(c => chapterQuestionCount(c) > 0);
   const pastExamsLabel = isRTL ? 'الامتحانات السابقة' : 'Past Exams';
-  const assessmentsHeadingId = useId();
-  const assessmentChapters = [
-    ...pastChapters.filter(chapter => chapter.examPeriod === 'ca-1'),
-    ...pastChapters.filter(chapter => chapter.examPeriod === 'ca-2'),
-  ];
-  const otherPastChapters = pastChapters.filter(chapter => !chapter.examPeriod);
+  const ca1HeadingId = useId();
+  const ca2HeadingId = useId();
+  const finalHeadingId = useId();
+  const ca1Chapters = pastChapters.filter(chapter => chapter.examPeriod === 'ca-1');
+  const ca2Chapters = pastChapters.filter(chapter => chapter.examPeriod === 'ca-2');
+  const finalChapters = pastChapters.filter(chapter => !chapter.examPeriod);
   const regularChapters = chapters.filter(c => !isPastExamSection(c));
 
   const history = useSyncedHistory().slice(0,6);
@@ -433,18 +433,44 @@ export function ChapterSelect({
                       </span>
                       <ChevronDown aria-hidden size={18} className="shrink-0 text-muted-foreground group-open:rotate-180" />
                     </summary>
-                    {assessmentChapters.length > 0 && (
-                      <div role="group" aria-labelledby={assessmentsHeadingId} className="border-t border-border px-5 py-2">
-                        <h4 id={assessmentsHeadingId} className="px-2 py-1 text-xs font-semibold text-muted-foreground">
-                          {isRTL ? 'التقييمات المستمرة' : 'Continuous Assessments'}
-                        </h4>
-                        <ul className="divide-y divide-border">{assessmentChapters.map(renderPastExamRow)}</ul>
+                    {ca1Chapters.length > 0 && (
+                      <div role="group" aria-labelledby={ca1HeadingId} className="border-t border-border px-5 py-3">
+                        <div className="flex items-center justify-between px-2 py-1">
+                          <h4 id={ca1HeadingId} className="text-xs font-bold tracking-wider uppercase text-muted-foreground">
+                            {isRTL ? 'التقييم المستمر الأول (CA-1)' : 'Continuous Assessment 1 (CA-1)'}
+                          </h4>
+                          <span className="text-xs text-muted-foreground">
+                            {questionCountLabel(ca1Chapters.reduce((total, chapter) => total + chapterQuestionCount(chapter), 0), isRTL)}
+                          </span>
+                        </div>
+                        <ul className="divide-y divide-border">{ca1Chapters.map(renderPastExamRow)}</ul>
                       </div>
                     )}
-                    {otherPastChapters.length > 0 && (
-                      <ul className="divide-y divide-border border-t border-border px-5 pb-2">
-                        {otherPastChapters.map(renderPastExamRow)}
-                      </ul>
+                    {ca2Chapters.length > 0 && (
+                      <div role="group" aria-labelledby={ca2HeadingId} className="border-t border-border px-5 py-3">
+                        <div className="flex items-center justify-between px-2 py-1">
+                          <h4 id={ca2HeadingId} className="text-xs font-bold tracking-wider uppercase text-muted-foreground">
+                            {isRTL ? 'التقييم المستمر الثاني (CA-2)' : 'Continuous Assessment 2 (CA-2)'}
+                          </h4>
+                          <span className="text-xs text-muted-foreground">
+                            {questionCountLabel(ca2Chapters.reduce((total, chapter) => total + chapterQuestionCount(chapter), 0), isRTL)}
+                          </span>
+                        </div>
+                        <ul className="divide-y divide-border">{ca2Chapters.map(renderPastExamRow)}</ul>
+                      </div>
+                    )}
+                    {finalChapters.length > 0 && (
+                      <div role="group" aria-labelledby={finalHeadingId} className="border-t border-border px-5 py-3">
+                        <div className="flex items-center justify-between px-2 py-1">
+                          <h4 id={finalHeadingId} className="text-xs font-bold tracking-wider uppercase text-muted-foreground">
+                            {isRTL ? 'امتحانات الفاينل والأسئلة المقالية' : 'Past Final Papers & Essays'}
+                          </h4>
+                          <span className="text-xs text-muted-foreground">
+                            {questionCountLabel(finalChapters.reduce((total, chapter) => total + chapterQuestionCount(chapter), 0), isRTL)}
+                          </span>
+                        </div>
+                        <ul className="divide-y divide-border">{finalChapters.map(renderPastExamRow)}</ul>
+                      </div>
                     )}
                   </details>
                 ) : (

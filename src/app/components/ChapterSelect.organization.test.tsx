@@ -47,11 +47,13 @@ it('shows one MUG-3 Past Exams block with links to the original chapters', () =>
  expect(screen.getAllByRole('region', {name:'Past Exams'})).toHaveLength(1);
  fireEvent.click(disclosure.querySelector('summary')!);
  expect(disclosure.open).toBe(true);
- const assessments = within(region).getByRole('group',{name:'Continuous Assessments'});
- expect(within(assessments).getByRole('button',{name:/CA-1/})).toBeInTheDocument();
- expect(within(assessments).getByRole('button',{name:/CA-2/})).toBeInTheDocument();
- expect(within(assessments).queryByRole('button',{name:/Past Final/})).toBeNull();
- expect(within(region).queryByRole('button',{name:/Parasitology/})).toBeNull();
+ const ca1Block = within(region).getByRole('group', { name: /Continuous Assessment 1/ });
+ const ca2Block = within(region).getByRole('group', { name: /Continuous Assessment 2/ });
+ const finalsBlock = within(region).getByRole('group', { name: /Past Final Papers/ });
+ expect(within(ca1Block).getByRole('button', { name: /CA-1/ })).toBeInTheDocument();
+ expect(within(ca2Block).getByRole('button', { name: /CA-2/ })).toBeInTheDocument();
+ expect(within(finalsBlock).getByRole('button', { name: /Past Final/ })).toBeInTheDocument();
+ expect(within(region).queryByRole('button', { name: /Parasitology/ })).toBeNull();
  for (const original of [ca1, ca2, finals]) {
   fireEvent.click(within(region).getByRole('button',{name:new RegExp(original.title)}));
   expect(select).toHaveBeenLastCalledWith(original);
