@@ -42393,5 +42393,355 @@
     "stem": "List the adverse effects of B3 agonists.",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH6-PHAR-0090: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q12",
+    "stem": "Mention the therapeutic uses of Flutamide.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0092: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q13",
+    "stem": "Mention the mechanism of action and uses of Finasteride.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0093: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q14",
+    "stem": "List the adverse effects of Finasteride.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0094: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q15",
+    "stem": "List the adverse effects of Leuprolide.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0095: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q16",
+    "stem": "Mention the therapeutic uses of Leuprolide.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0096: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q17",
+    "stem": "List the adverse effects of Abiraterone.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0097: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q18",
+    "stem": "Mention the mechanism of action of Abiraterone.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0098: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q19",
+    "stem": "Mention the mechanism of action of Alprostadil.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0099: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q20",
+    "stem": "Mention the therapeutic uses of Alprostadil.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0100: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q21",
+    "stem": "List the adverse effects of Alprostadil.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0101: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q22",
+    "stem": "Mention the mechanism of actions and uses of androgens.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0102: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q23",
+    "stem": "List the adverse effects of methyl testosterone.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0103: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q24",
+    "stem": "Mention the mechanism of action of ketoconazole.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0104: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q25",
+    "stem": "Mention the mechanism of action of Stanozolol.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0105: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q26",
+    "stem": "Mention the uses of Stanozolol.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0106: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q27",
+    "stem": "Mention the adverse effects of Stanozolol.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0107: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q28",
+    "stem": "Why is Tamoxifen added to Sataonzolol?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0108: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q29",
+    "stem": "Why is Bicalutamide added to androgen deprivation therapy?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0109: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q30",
+    "stem": "List the adverse effects of Enzalutamide.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0110: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q1",
+    "stem": "List the therapeutic uses of synthetic estrogen.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0111: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q2",
+    "stem": "Mention the adverse effects of synthetic estrogen.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0112: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q3",
+    "stem": "List the therapeutic uses of synthetic progesterone.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0113: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q4",
+    "stem": "Mention the adverse effects of synthetic progesterone.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0114: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q5",
+    "stem": "Mention the minor adverse effects of OCP.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0115: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q6",
+    "stem": "Mention the intermediate risk adverse effects of OCP.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0116: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q7",
+    "stem": "Mention the major risk adverse effects of OCP.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0117: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q8",
+    "stem": "Explain the mechanism of action of contraceptives.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0118: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q9",
+    "stem": "List the indications of contraceptives.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0119: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q10",
+    "stem": "Mention the types and preparations of contraceptives.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0120: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q11",
+    "stem": "List the indication of raloxifene. Treatment of osteoporosis",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0121: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q14",
+    "stem": "List the indication of clomiphene.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0124: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q15",
+    "stem": "Mention the adverse effects of clomiphene.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0125: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q16",
+    "stem": "List the indication of Tamoxifen.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0126: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q17",
+    "stem": "Tamoxifen acts as estrogen agonist in .. and  while antagonist in  Bone and uterus, breast",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0127: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q18",
+    "stem": "Mention the adverse effects of tamoxifen.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0128: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q19",
+    "stem": "Mention the mechanism of action and uses of mifepristone.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0129: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q20",
+    "stem": "Mention the indications of Gonadorelin.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0130: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q21",
+    "stem": "List the adverse effects of gonadorelin.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0131: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q22",
+    "stem": "List the clinically used gonadotropins.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0132: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q23",
+    "stem": "List the therapeutic uses of gonadotropins.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0133: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q25",
+    "stem": "List ovulation-inducing agents.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0135: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q26",
+    "stem": "Explain the mechanism of action of ergot alkaloids.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0136: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q27",
+    "stem": "List the therapeutic uses of ergot alkaloids.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0137: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q28",
+    "stem": "List the adverse effects of ergot alkaloids.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0138: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Formatives/essay formative exam week 3_ Attempt review.pdf",
+    "sourceOccurrence": "S047-p001-Q2",
+    "stem": "Combine K -sparing diuretics with K -losing diuretics",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0139: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p001-p86_Q34",
+    "stem": "The following is not usually recommended during treatment of acute euvolemic hypercalcemic patient:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0146: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p001-p86_Q35",
+    "stem": "Hyperkalemia can be reported with the : @. Captopril (ACE!) plus Liquorice",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0147: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p001-p86_Q32",
+    "stem": "Incase of hyperkalemic induced life- H threatening arrhythmia, to stabilize ;",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0148: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p001-p86_Q9",
+    "stem": "Acute symptomatic severe hyponatremia, choose incorrect sentence:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0149: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p001-p86_Q0",
+    "stem": "Salt and fluid restriction is required in treatment oft . Hypervolemic hypotonic hyponatremia",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0150: Practice mcq unverified extraction or fragment; held for correction."
   }
 ]
