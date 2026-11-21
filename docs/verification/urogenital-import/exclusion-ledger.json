@@ -2177,5 +2177,2421 @@
     "stem": "Which sperms?",
     "reason": "severed_ocr_fragment",
     "details": "Duplicate corrupted question with severed stem ('Which sperms?') and garbled multi-option string bleeds ('prostatic part of urethra membranous part of urethra bulbar part of urethra... penis prostate 120'). Unintelligible OCR fragment with only 3 corrupted choices."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0234",
+    "sourceFile": "MCQ Anatomy  (1).pdf-p3-Q15",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0234-held-exclusion",
+    "stem": "Regarding the kidneys all of the followings are true EXCEPT",
+    "reason": "unresolvable_fragment",
+    "details": "Several alternatives are truncated. The cited weight and fragments cannot support a unique EXCEPT answer."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0237",
+    "sourceFile": "MCQ Anatomy  (1).pdf-p4-Q21",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0237-held-exclusion",
+    "stem": "The pararenal fat in the kidney bed is an elaboration of: Peritoneum",
+    "reason": "unresolvable_fragment",
+    "details": "Pararenal fat is outside renal fascia and belongs to extraperitoneal tissue. The archived stem appends Peritoneum and two options are unreadable; reject the current form."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0284",
+    "sourceFile": "MCQ Anatomy  (1).pdf-p23-Q141",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0284-held-exclusion",
+    "stem": "Structure that does not cross the midline is:",
+    "reason": "unresolvable_fragment",
+    "details": "The fifth option is a stem fragment and the crossing reference is unclear; several vessels do not cross depending on what is meant by midline."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0434",
+    "sourceFile": "anatomy renal.pdf-p15-Q0",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0434-held-exclusion",
+    "stem": "Which of the following isn't correct about the position of urinary bla",
+    "reason": "unresolvable_fragment",
+    "details": "The neonatal bladder sits higher, and descent accompanies growth. Several alternatives are truncated and a separate uvula question is included. The older-adult position claim needs independent evidence."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0485",
+    "sourceFile": "Anatomy/Anatomy URO.pdf-Q78",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0485-held-exclusion",
+    "stem": "Inferior rectal",
+    "reason": "unresolvable_fragment",
+    "details": "Detached inferior rectal branch heading. It is an answer element rather than a complete prompt."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0586",
+    "sourceFile": "Anatomy/MCQ Anatomy  (1).pdf-Q65",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0586-held-exclusion",
+    "stem": "Which of the following isn't correct about the position of urinary bla Ee a. The position of urinary bladder in newborn is higher thar",
+    "reason": "unresolvable_fragment",
+    "details": "Neonatal bladder is relatively high. The age-position scan is clipped and the uvula prompt appears as an option. Compare 0434 and do not infer missing qualifiers. The scan cuts off option wording at the right margin. Preserve Q91 as a separate parent. Compare 0434."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0619",
+    "sourceFile": "Anatomy/MCQ Anatomy .pdf-Q7",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0619-held-exclusion",
+    "stem": "Renal columns.",
+    "reason": "unresolvable_fragment",
+    "details": "Renal columns are cortical tissue extensions between pyramids. The noun phrase alone does not indicate the original question or ask a student to do anything. Renal columns was choice D of the neighboring papilla MCQ. The archive has only that phrase, so retain this association as a detached-option hypothesis."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0621",
+    "sourceFile": "Anatomy/MCQ Anatomy .pdf-Q13",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0621-held-exclusion",
+    "stem": "The ure er is supplied by the following arteries EXCEPT:",
+    "reason": "unresolvable_fragment",
+    "details": "The abdominal ureter receives branches from renal, gonadal, aortic and iliac arteries. Splenic artery is not a named source. Remove the embedded printed page furniture."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0626",
+    "sourceFile": "Anatomy/MCQ Anatomy .pdf-Q24",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0626-held-exclusion",
+    "stem": "The following structures lie in front of left kidney EXCEPT:",
+    "reason": "unresolvable_fragment",
+    "details": "The descending duodenum is anterior to the right kidney. Stomach, pancreas, left colic flexure and jejunal loops relate anteriorly to the left kidney. Remove printed page furniture and distinguish this set from corrupted 0412."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0630",
+    "sourceFile": "Anatomy/MCQ Anatomy .pdf-Q29",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0630-held-exclusion",
+    "stem": "Prostatic part.",
+    "reason": "unresolvable_fragment",
+    "details": "Urethral choices are mixed with the posterior kidney muscle question. A second renal prompt needs its anterior versus posterior qualifier and intact options before checking any key. Q24 options are combined with Q25. Q25 continues on page 6. The visible printed Q25 A mark is quadratus lumborum, which the textbook lists as a posterior relation."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0637",
+    "sourceFile": "Anatomy/MCQ Anatomy .pdf-Q40",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0637-held-exclusion",
+    "stem": "All of the following st Correct EXCEPT:",
+    "reason": "unresolvable_fragment",
+    "details": "Renal pyramids are medullary structures, not hilum contents. The other stated relations fit the hilum after the truncations are repaired. Recover all options and the continuation. Source Q36 carries D and E onto page 8. The source and archive E both identify pyramids, but the option text is damaged."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0700",
+    "sourceFile": "Anatomy/anatomy -genital essay.pdf-Q6",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0700-held-exclusion",
+    "stem": "prostatic and membranous urethra —internal and external iliac lymph nodes",
+    "reason": "unresolvable_fragment",
+    "details": "The textbook lists internal iliac nodes for prostatic and membranous urethra. The sheet adds external iliac. Record the disagreement and do not treat the fragment as a prompt. Source child d, line 1, adds external iliac drainage. S205 page 30 lists internal iliac only for the prostatic and membranous segments."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0825",
+    "sourceFile": "Anatomy/anatomy renal.pdf-Q67",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0825-held-exclusion",
+    "stem": "The uvula of the bladder is located in which of the following locatior",
+    "reason": "unresolvable_fragment",
+    "details": "Uvula is behind the internal urethral opening at the trigone's apex, within the base. Both more general area labels can plausibly apply. Another bladder neck question was pasted into it; separate parents and check 0315. Q91 is followed by Q92 on the same page. Both stems are clipped at the right margin and Q92 option E is clipped at the bottom."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0871",
+    "sourceFile": "Anatomy/mcq pelvis and perinum .pdf-p3-col2-Q3",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0871-held-exclusion",
+    "stem": "The median umbilical ligament contains which of the following structures?",
+    "reason": "unresolvable_fragment",
+    "details": "Median umbilical ligament is the fibrous urachal remnant. Inferior epigastric vessels underlie the lateral fold. The end of option E contains a distinct seminal-vesicle prompt. Printed Q62 marks C. Its last choice is followed by distinct Q63, which has its own key."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0873",
+    "sourceFile": "Anatomy/mcq pelvis and perinum .pdf-p5-col2-Q3",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0873-held-exclusion",
+    "stem": "(C) posterior lobe",
+    "reason": "unresolvable_fragment",
+    "details": "The uterine artery crosses superior to the ureter near cervix. A prostate lobe question was joined to the stem. Ovarian vessels cross a different ureteric segment. Q83 begins on page 5, followed by distinct Q84. Compare 0297 before retaining another ureter-crossing item."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0896",
+    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q15",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0896-held-exclusion",
+    "stem": "Umbilical A",
+    "reason": "unresolvable_fragment",
+    "details": "Bare artery label. The patent proximal segment gives superior vesical branches, while the distal part obliterates. A diagram label alone cannot establish a gradable prompt. The source contains a figure label or teaching bullet. Hold the independent archive item."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0915",
+    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q38",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0915-held-exclusion",
+    "stem": "Bulbospongiosus",
+    "reason": "unresolvable_fragment",
+    "details": "Single muscle name. The course gives superficial location over the bulb and several functions, but the source fragment does not specify what is asked. The source contains a figure label or teaching bullet. Hold the independent archive item."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0916",
+    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q39",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0916-held-exclusion",
+    "stem": "Ischiocavernosus",
+    "reason": "unresolvable_fragment",
+    "details": "Single muscle name. The course gives contact with the crus but the fragment does not ask for it. The source contains a figure label or teaching bullet. Hold the independent archive item."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0918",
+    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q42",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0918-held-exclusion",
+    "stem": "Superficial Transverse",
+    "reason": "unresolvable_fragment",
+    "details": "Muscle-name fragment likely from the neighboring superficial list. No testable task is stated. The source contains a figure label or teaching bullet. Hold the independent archive item."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0920",
+    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q44",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0920-held-exclusion",
+    "stem": "Obturator Internus",
+    "reason": "unresolvable_fragment",
+    "details": "Single muscle label. It could refer to a pelvic wall muscle, fossa boundary, fascial arch or canal, so the task cannot be inferred. The source contains a figure label or teaching bullet. Hold the independent archive item."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0921",
+    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q46",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0921-held-exclusion",
+    "stem": "Ano-coccygeal body",
+    "reason": "unresolvable_fragment",
+    "details": "A body or raphe label without context. Keep it with the original diagram or list once identified. The source contains a figure label or teaching bullet. Hold the independent archive item."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0923",
+    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q48",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0923-held-exclusion",
+    "stem": "Ischial tuberosities",
+    "reason": "unresolvable_fragment",
+    "details": "Label for ischial tuberosities. It lacks a question about perineal boundaries or any other use. The source contains a figure label or teaching bullet. Hold the independent archive item."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0924",
+    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q49",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0924-held-exclusion",
+    "stem": "Sacrotuberous ligament",
+    "reason": "unresolvable_fragment",
+    "details": "Ligament label without a question. Course describes both perineal boundary and fossa relationships. The source contains a figure label or teaching bullet. Hold the independent archive item."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0983",
+    "sourceFile": "UG_NERD-p5-left-Q1",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0983-held-exclusion",
+    "stem": "Collecting duct.",
+    "reason": "unresolvable_fragment",
+    "details": "The textbook assigns renal plexus innervation to the kidney. The combined renal and suprarenal task and its full plexus options must be recovered before accepting a common source. Q5 marks A (celiac). The kidney textbook names the renal plexus as the direct supply. Hold the combined plexus-scoping item."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0984",
+    "sourceFile": "UG_NERD-p5-right-Q2",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0984-held-exclusion",
+    "stem": "Minor calyx. An organ or structure that is not a component of the urinary system is the:",
+    "reason": "unresolvable_fragment",
+    "details": "The adrenal gland is endocrine rather than a urinary tract component. Its keyed field also contains the kidney alternative and a neighboring gland prompt."
+  },
+  {
+    "id": "MUG3-CH1-ANAT-0989",
+    "sourceFile": "UG_NERD-p6-right-Q21",
+    "sourceOccurrence": "MUG3-CH1-ANAT-0989-held-exclusion",
+    "stem": "In the male, the membranous urethra:",
+    "reason": "unresolvable_fragment",
+    "details": "The membranous urethra traverses the external sphincter and perineal membrane. The archive joins distinct urethral alternatives and a separate right-kidney relations item. Printed Q17 marks C and Q18 marks A. The archive embeds parts of both in a single question."
+  },
+  {
+    "id": "MUG3-CH101-ANAT-0003",
+    "sourceFile": "Urogenital paper 1 essay 2024.docx-Item",
+    "sourceOccurrence": "MUG3-CH101-ANAT-0003-held-exclusion",
+    "stem": "Inferior vesical",
+    "reason": "unresolvable_fragment",
+    "details": "Bare arterial label. It could answer a bladder, ureter, prostate or vesicle task. Hold unless its original task can be identified. The source is headed Urogenital ESSAY FINAL 1. Clear the CA1/Final placement conflict before rebuilding or moving this ID."
+  },
+  {
+    "id": "MUG3-CH101-ANAT-0005",
+    "sourceFile": "Urogenital paper 1 essay 2024.docx-Item",
+    "sourceOccurrence": "MUG3-CH101-ANAT-0005-held-exclusion",
+    "stem": "Penile branches of internal pedundel",
+    "reason": "unresolvable_fragment",
+    "details": "A supply fragment without stem or anatomical target. It cannot support a scored essay. The source is headed Urogenital ESSAY FINAL 1. Clear the CA1/Final placement conflict before rebuilding or moving this ID."
+  },
+  {
+    "id": "MUG3-CH101-ANAT-0010",
+    "sourceFile": "Urogenital paper 1 essay 2024.docx-Item",
+    "sourceOccurrence": "MUG3-CH101-ANAT-0010-held-exclusion",
+    "stem": "Cerebral Hemmorrage",
+    "reason": "unresolvable_fragment",
+    "details": "An isolated complication does not identify the disease, timing or relationship it was intended to test. No answer can be inferred. The source is headed Urogenital ESSAY FINAL 1. Clear the CA1/Final placement conflict before rebuilding or moving this ID."
+  },
+  {
+    "id": "MUG3-CH101-ANAT-0011",
+    "sourceFile": "Urogenital paper 1 essay 2024.docx-Item",
+    "sourceOccurrence": "MUG3-CH101-ANAT-0011-held-exclusion",
+    "stem": "Hyponetraima etc",
+    "reason": "unresolvable_fragment",
+    "details": "Hyponatremia is a laboratory finding with many possible mechanisms. The rest of the task is missing. The source is headed Urogenital ESSAY FINAL 1. Clear the CA1/Final placement conflict before rebuilding or moving this ID."
+  },
+  {
+    "id": "MUG3-CH103-PHYS-0025",
+    "sourceFile": "ASS 1 UG - 2020.pdf-Q22",
+    "sourceOccurrence": "MUG3-CH103-PHYS-0025-held-exclusion",
+    "stem": "Turnover BM",
+    "reason": "unresolvable_fragment",
+    "details": "The response about basement membrane turnover became an essay stem and the mesangial-cell prompt appears in its model answer. “BM” could mean basement membrane in a histology context, but the fragment lacks both referent and requested criterion. No scored answer from the archive. The source restores the question about intraglomerular mesangial cells, with basement membrane turnover as a reported response. Keep the clipped archive held."
+  },
+  {
+    "id": "MUG3-CH103-PHYS-0050",
+    "sourceFile": "paper one urogenital mcq for 2020.pdf-Q12",
+    "sourceOccurrence": "MUG3-CH103-PHYS-0050-held-exclusion",
+    "stem": "anatomy",
+    "reason": "unresolvable_fragment",
+    "details": "The bank turns a subject heading into an essay question. The attached reply is only the student's selected location. A subject label. No testable content or defensible choice set follows. The exact matching S112 recall describes aortic ligation and the recorded response echoed by the archive, but the preceding word 'anatomy' is not the stem. Compare 0022."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0028",
+    "sourceFile": "Past Exams/ASS 1 - 2019.pdf-Q39",
+    "sourceOccurrence": "MUG3-CH105-PATH-0028-held-exclusion",
+    "stem": "lowest clearence",
+    "reason": "unresolvable_fragment",
+    "details": "Glucose clearance is near zero below threshold. The term lowest needs comparator substances and conditions. Compare packet 025 draft 0078. The records name glucose. Compare draft 0078, which adds a defined comparison below the renal threshold."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0035",
+    "sourceFile": "Past Exams/ASS 1 UG - 2020.pdf-Q2",
+    "sourceOccurrence": "MUG3-CH105-PATH-0035-held-exclusion",
+    "stem": "Antibiotic ingestion",
+    "reason": "unresolvable_fragment",
+    "details": "Antibiotic exposure alone does not establish interstitial nephritis. Fever, rash, eosinophilia and timing can support it if the original case includes them. The recall includes rash, fever and urine findings but lacks a complete question or official answer."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0036",
+    "sourceFile": "Past Exams/ASS 1 UG - 2020.pdf-Q4",
+    "sourceOccurrence": "MUG3-CH105-PATH-0036-held-exclusion",
+    "stem": "Basal Golgi",
+    "reason": "unresolvable_fragment",
+    "details": "Basal Golgi is a specific macula densa feature in the course. The available phrase is a detached answer. Compare 0002. This is the recorded answer to a macula densa ultrastructure question. The prior draft 0002 retains the original task."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0037",
+    "sourceFile": "Past Exams/ASS 1 UG - 2020.pdf-Q6",
+    "sourceOccurrence": "MUG3-CH105-PATH-0037-held-exclusion",
+    "stem": "Aff dilatation",
+    "reason": "unresolvable_fragment",
+    "details": "With other resistance and pressure fixed, afferent dilation increases renal blood flow and glomerular capillary pressure. The archive is an answer or premise fragment. Compare 0096. Afferent dilation belongs to a renal blood-flow question. Archive order is reversed. Compare draft 0096."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0038",
+    "sourceFile": "Past Exams/ASS 1 UG - 2020.pdf-Q7",
+    "sourceOccurrence": "MUG3-CH105-PATH-0038-held-exclusion",
+    "stem": "hyponaterimemia",
+    "reason": "unresolvable_fragment",
+    "details": "The lab finding alone does not specify hypotonicity, volume status, etiology or rate management. Hold the fragment. Hyponatremia is a reported answer in 21-hydroxylase deficiency. The archive has the question and response reversed and no subtype context."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0039",
+    "sourceFile": "Past Exams/ASS 1 UG - 2020.pdf-Q8",
+    "sourceOccurrence": "MUG3-CH105-PATH-0039-held-exclusion",
+    "stem": "hypokalemia",
+    "reason": "unresolvable_fragment",
+    "details": "Hypokalemia is a possible effect in several clinical settings. The archive lacks the exposure or mechanism the question would need to test. Hypokalemia is attached to a question about bicarbonate adverse effects. The student bank turns the adverse effect into the task itself."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0040",
+    "sourceFile": "Past Exams/ASS 1 UG - 2020.pdf-Q10",
+    "sourceOccurrence": "MUG3-CH105-PATH-0040-held-exclusion",
+    "stem": "Mesangil deposition",
+    "reason": "unresolvable_fragment",
+    "details": "The bank presents the response-like mesangial deposition clue as the stem and the Berger disease clue as model answer. Mesangial deposition is not by itself unique to an immunoglobulin or diagnosis. IgA-dominant mesangial deposits support IgA nephropathy. The recall specifies Berger disease and reported mesangial deposition. Require the missing target such as immunofluorescence before scoring."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0042",
+    "sourceFile": "Past Exams/ASS 1 UG - 2020.pdf-Q14",
+    "sourceOccurrence": "MUG3-CH105-PATH-0042-held-exclusion",
+    "stem": "Amyloid Nephropathy",
+    "reason": "unresolvable_fragment",
+    "details": "The bank presents the response-like amyloid nephropathy text as the stem and the chronic bronchiectasis case fragment as the model answer. Chronic inflammation can lead to AA amyloidosis presenting with proteinuria. The archive's disease name alone cannot establish a testable scenario. The full topic reappears as chronic bronchiectasis and nephrotic syndrome. Hold this detached diagnosis until exact scenario and distractors support one answer."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0045",
+    "sourceFile": "Past Exams/ASS 1 UG - 2020.pdf-Q17",
+    "sourceOccurrence": "MUG3-CH105-PATH-0045-held-exclusion",
+    "stem": "Pelviureteric junction",
+    "reason": "unresolvable_fragment",
+    "details": "The source's recalled location appears as a bank stem, and its question clue about a stone at the transpyloric plane appears as the model answer. The ureteropelvic junction is the transition from renal pelvis to ureter and a usual narrowing. The label is not a question. The source identifies a stone at the transpyloric plane. The archive is its detached reported answer, and a reference level alone can be imprecise."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0046",
+    "sourceFile": "Past Exams/ASS 1 UG - 2020.pdf-Q18",
+    "sourceOccurrence": "MUG3-CH105-PATH-0046-held-exclusion",
+    "stem": "Glutamyl Decarboxylase",
+    "reason": "unresolvable_fragment",
+    "details": "The response-like enzyme name becomes the question and the prompt about enzyme membership becomes its model answer. Glutamyl decarboxylase is not among the listed gamma-glutamyl-cycle enzymes. Verify whether the original asks for an exception and whether its remaining options are available. The source explicitly asks for an exception and reports glutamyl decarboxylase. It includes no competing enzyme alternatives."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0051",
+    "sourceFile": "Past Exams/ASS 1 UG - 2020.pdf-Q24",
+    "sourceOccurrence": "MUG3-CH105-PATH-0051-held-exclusion",
+    "stem": "Psychic hyperventilation",
+    "reason": "unresolvable_fragment",
+    "details": "The bank turns the reported hyperventilation response into a question, while the titratable acidity prompt is written as the answer. Hyperventilation lowers arterial CO2 and can cause respiratory alkalosis. The isolated phrase could be one of several causes and lacks an independent task. The source connects psychogenic hyperventilation with reduced titratable acid excretion. The archive is the detached stimulus."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0070",
+    "sourceFile": "Past Exams/FIRST ASSESSMENT UG 2024.pdf-Q24",
+    "sourceOccurrence": "MUG3-CH105-PATH-0070-held-exclusion",
+    "stem": "L-Carnitine",
+    "reason": "unresolvable_fragment",
+    "details": "The bank files an incomplete biochemistry prompt under Pathology. The intended question is missing. Carnitine is a bare topic label. Renal handling and transport into mitochondria are distinct tasks and cannot be inferred from this alone. The photographed first assessment gives the compound name alone. The separate topic guesses do not recover the actual task."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0077",
+    "sourceFile": "Past Exams/UG paper 1 essay 2019 answers.pdf-Q1",
+    "sourceOccurrence": "MUG3-CH105-PATH-0077-held-exclusion",
+    "stem": "AJenocarcinomd",
+    "reason": "unresolvable_fragment",
+    "details": "An answer from Q2 became a question, and the model answer mixes neighbouring table/answer content. Adenocarcinoma is a bare histopathology option or answer point. Identify the specimen and original tumor task before grading. Adenocarcinoma is one item in the handwritten Q2a list of bladder tumor types from the Final dated 19 June 2022, not an independent essay."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0078",
+    "sourceFile": "Past Exams/UG paper 1 essay 2019 answers.pdf-Q2",
+    "sourceOccurrence": "MUG3-CH105-PATH-0078-held-exclusion",
+    "stem": "Creatininei",
+    "reason": "unresolvable_fragment",
+    "details": "The model uses the second sub-answer as stem and appends the third sub-answer to the rubric. Creatinine is a substance label. Concentration and total amount change differently along the proximal tubule. Recover the parent and its exact comparison. Creatinine is the second child of the 19 June 2022 Final concentration task. Keep the entire parent and child history traceable."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0083",
+    "sourceFile": "Past Exams/UG paper 1 essay 2020 answers.pdf-Q2",
+    "sourceOccurrence": "MUG3-CH105-PATH-0083-held-exclusion",
+    "stem": "Nitro krontoin",
+    "reason": "unresolvable_fragment",
+    "details": "A Q4 answer fragment is presented as the stem. The rubric mixes creatinine, crescent formation, and hematuria. A drug name alone does not identify its indication or context. Keep the answer fragment out of scored use pending its parent. Nitrofurantoin is among the handwritten responses to Q4 on the photographed Final. The original patient and medication context is missing from the archive."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0085",
+    "sourceFile": "Past Exams/UG paper 1 essay 2020 answers.pdf-Q6",
+    "sourceOccurrence": "MUG3-CH105-PATH-0085-held-exclusion",
+    "stem": "Common iliac",
+    "reason": "unresolvable_fragment",
+    "details": "A Q9 blood-supply answer became a stem; the rubric blends in Q10's filtration barrier. Common iliac is an isolated vessel label that could be a ureteric blood supply branch or a crossing landmark. Trace its original task. Common iliac is one source in the Q9 arterial list. Keep the fragment linked to 0076 and hold its standalone form."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0086",
+    "sourceFile": "Past Exams/UG paper 1 essay 2020 answers.pdf-Q8",
+    "sourceOccurrence": "MUG3-CH105-PATH-0086-held-exclusion",
+    "stem": "Sltration sits",
+    "reason": "unresolvable_fragment",
+    "details": "Q10 answer text became a stem and the rubric includes podocyte text and printed exam directions. The phrase appears to mean filtration slits. A single anatomical component is not a scorable three-layer barrier question. Confirm source parent. Slits and diaphragm are one distal component of the ordered filtration-barrier response. The archive is a detached rubric point."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0087",
+    "sourceFile": "Past Exams/UG paper 1 essay 2020 answers.pdf-Q9",
+    "sourceOccurrence": "MUG3-CH105-PATH-0087-held-exclusion",
+    "stem": "b.Enlarged prostate",
+    "reason": "unresolvable_fragment",
+    "details": "A single Q1 subpart became a standalone essay. The rubric is the exam title, question count and year. Obstructive prostate enlargement can lower GFR by increasing tubular and Bowman space pressure. The fragment omits both obstructive condition and parent question. The phrase is printed Q1b on the Final. Restore it to the three-part draft under 0071."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0098",
+    "sourceFile": "Past Exams/paper one urogenital mcq for 2020.pdf-Q7",
+    "sourceOccurrence": "MUG3-CH105-PATH-0098-held-exclusion",
+    "stem": "hyponaterimemia",
+    "reason": "unresolvable_fragment",
+    "details": "A finding of hyponatremia without a scenario or diagnostic task cannot be scored. The original association is required. The source links hyponatremia with a 21-hydroxylase deficiency recall. The archive reverses question and answer. Specify phenotype before reuse."
+  },
+  {
+    "id": "MUG3-CH105-PATH-0114",
+    "sourceFile": "Past Exams/paper one urogenital mcq for 2020.pdf-Q140",
+    "sourceOccurrence": "MUG3-CH105-PATH-0114-held-exclusion",
+    "stem": "One of the following viruses is considered an important cause of urinary tract infections",
+    "reason": "unresolvable_fragment",
+    "details": "Option E absorbs the following assessment's heading and notes. The CA-1 placement also conflicts with the Summer Paper One 2019 source. Printed check marks A; bank index 4 keys a different choice. The printed check remains unverified medically. The bank's keyed option differs from the student-marked answer in the visually checked source. Option E absorbs the next booklet. The 2019 final resit item is also placed under CA-1. The bank keys option 5 (Herpes simplex virus-2), but the printed key and the independent review agree on option 1 (Adenovirus). Adenovirus is a recognized cause of viral urinary infection presenting as hemorrhagic cystitis. EBV, RSV and HIV are not listed as important direct UTI pathogens. HSV-2 principally causes genital herpes and does not match the established urinary infection association targeted by the question. The bank's fifth option also contains unrelated recall notes and the assessment placement needs reconciliation. Adenovirus can cause hemorrhagic cystitis; the named respiratory and unrelated systemic viruses are not the intended comparators here. The final option is contaminated by unrelated recalled questions. The three full prints mark adenovirus. S088 is Final resit, while other sources are compilations. The archive selects a contaminated HSV-2 option. A separate independent review of the printed Final occurrence already agrees with adenovirus."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0045",
+    "sourceFile": "Histology URO.pdf-Q5",
+    "sourceOccurrence": "MUG3-CH2-HIST-0045-held-exclusion",
+    "stem": "Exocrine function:",
+    "reason": "unresolvable_fragment",
+    "details": "Androgen-binding protein and tubular fluid are secreted into the seminiferous tubules. “Exocrine function” is an answer heading lacking the cell and task. The source records this as answer point 5 of Male Q14."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0046",
+    "sourceFile": "Histology URO.pdf-Q6",
+    "sourceOccurrence": "MUG3-CH2-HIST-0046-held-exclusion",
+    "stem": "Endocrine function:",
+    "reason": "unresolvable_fragment",
+    "details": "Sertoli cells produce inhibin and fetal anti-Müllerian hormone. This heading is a component of a larger rubric, not an independent prompt. The source records this as answer point 6 of Male Q14."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0343",
+    "sourceFile": "Histology/Q.pdf-Q3",
+    "sourceOccurrence": "MUG3-CH2-HIST-0343-held-exclusion",
+    "stem": "Facet cell of the urinary bladder is characterized by: May be binucleated.",
+    "reason": "unresolvable_fragment",
+    "details": "Umbrella cells can have two nuclei. Their apical membrane is thickened, and tight junctions are important. The second stem is a separate question about phagocytic intraglomerular mesangial cells. The source's A is in the bank stem and remainder of the row contains the next page's mesangial question. Keep both anchors and the alternative 0553 canonical candidate."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0455",
+    "sourceFile": "Histology/histo genital.pdf-Q13",
+    "sourceOccurrence": "MUG3-CH2-HIST-0455-held-exclusion",
+    "stem": "temperature:",
+    "reason": "unresolvable_fragment",
+    "details": "Lower scrotal temperature supports spermatogenesis. A single word may be a rubric heading for a longer question. Avoid requiring a fixed range if not necessary. The rubric heading and explanation occur on both pp5 and 6 under Q9. Keep one occurrence with the repeated passages traceable."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0456",
+    "sourceFile": "Histology/histo genital.pdf-Q14",
+    "sourceOccurrence": "MUG3-CH2-HIST-0456-held-exclusion",
+    "stem": "VITAMINS: (A&E) +it",
+    "reason": "unresolvable_fragment",
+    "details": "A nutrient list is not a standalone prompt. Confirm whether it is a rubric entry and leave specific vitamin claims for evidence review. The vitamin list is repeated on both pages. It has no separate question label and remains outside the proposed rubric pending evidence review."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0482",
+    "sourceFile": "Histology/histo genital.pdf-Q44",
+    "sourceOccurrence": "MUG3-CH2-HIST-0482-held-exclusion",
+    "stem": "theca externa:dense",
+    "reason": "unresolvable_fragment",
+    "details": "Theca externa is mainly fibromuscular supporting tissue. An isolated heading is a fragment of a follicular description. Detached theca externa cell in the mature stage of the table."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0483",
+    "sourceFile": "Histology/histo genital.pdf-Q45",
+    "sourceOccurrence": "MUG3-CH2-HIST-0483-held-exclusion",
+    "stem": "theca interna:",
+    "reason": "unresolvable_fragment",
+    "details": "Theca interna is a vascular, steroidogenic layer supplying androgen precursors. Hold the standalone heading and find the paired comparison. Detached theca interna cell in the mature stage of the table."
+  },
+  {
+    "id": "MUG3-CH2-HIST-0490",
+    "sourceFile": "Histology/histo genital.pdf-Q55",
+    "sourceOccurrence": "MUG3-CH2-HIST-0490-held-exclusion",
+    "stem": "myoepithelial cells",
+    "reason": "unresolvable_fragment",
+    "details": "Myoepithelial cells surround mammary secretory alveoli and contract in response to oxytocin to aid milk ejection. One term is likely a detached table cell or rubric point. Detached cellular constituent from the same answer."
+  },
+  {
+    "id": "MUG3-CH201-ANAT-0018",
+    "sourceFile": "ug paper 2 - 2020.pdf-Q22",
+    "sourceOccurrence": "MUG3-CH201-ANAT-0018-held-exclusion",
+    "stem": "Testicular vein",
+    "reason": "unresolvable_fragment",
+    "details": "This Final answer-only fragment gives a vein and a negative cue without any options. The pampiniform plexus lies within the cord, while veins coalesce along their course. The recall does not establish identifiable vessel location or a unique missing option."
+  },
+  {
+    "id": "MUG3-CH202-HIST-0008",
+    "sourceFile": "practical 2018-2020.pdf-Q19",
+    "sourceOccurrence": "MUG3-CH202-HIST-0008-held-exclusion",
+    "stem": "Podocyte and endothelial",
+    "reason": "unresolvable_fragment",
+    "details": "This is a practical answer slot. The original question, label and specimen are absent. The two named cell classes do not identify the intended visual question or establish the archive's essay rubric."
+  },
+  {
+    "id": "MUG3-CH202-HIST-0009",
+    "sourceFile": "💥Practical UG Exam 2024.pdf-Q3",
+    "sourceOccurrence": "MUG3-CH202-HIST-0009-held-exclusion",
+    "stem": "Podocytes- visceral layer of bowman capsule",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. Model 3 practical answer slot supplies a tissue layer and cell name without the specimen or question. Hold this exact archive essay."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0046",
+    "sourceFile": "UG ass 2 and paper 2.pdf-Q3",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0046-held-exclusion",
+    "stem": "Develop organ",
+    "reason": "unresolvable_fragment",
+    "details": "The bank prompt is the reported answer fragment and its model answer is the question. The reported fragment and stem were reversed. Both witnesses place the recall in Final. The prompt has no options and the reported risk is an unfinished phrase."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0051",
+    "sourceFile": "practical 2018-2020.pdf-Q6",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0051-held-exclusion",
+    "stem": "Blood renal barrier",
+    "reason": "unresolvable_fragment",
+    "details": "Practical answer slot names a barrier without the identifying prompt or specimen. A long subject-wide essay rubric is not provenance."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0053",
+    "sourceFile": "practical 2018-2020.pdf-Q6",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0053-held-exclusion",
+    "stem": "Staph saprophytic \"catalse +ve\"",
+    "reason": "unresolvable_fragment",
+    "details": "Practical answer slot names organism and catalase result without the test or choices. The archive model joins two organisms without defining the task."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0055",
+    "sourceFile": "practical 2018-2020.pdf-Q5",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0055-held-exclusion",
+    "stem": "Elevated serum creatinine decrease creatinine clearnce",
+    "reason": "unresolvable_fragment",
+    "details": "Practical answer slot reports two measurements without values, vignette or asked task. A generic clearance discussion does not identify the original question."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0059",
+    "sourceFile": "practical 2018-2020.pdf-Q44",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0059-held-exclusion",
+    "stem": "Stag horn and pus",
+    "reason": "unresolvable_fragment",
+    "details": "Practical answer slot lacks the image, test results and original question. The generic stone comparison cannot establish what was asked."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0060",
+    "sourceFile": "practical 2018-2020.pdf-Q36",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0060-held-exclusion",
+    "stem": "Increases NH4CL execretion",
+    "reason": "unresolvable_fragment",
+    "details": "Practical answer slot names an excretion change without the context or requested calculation. The stored pH expression is truncated and unrelated."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0061",
+    "sourceFile": "practical 2018-2020.pdf-Q37",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0061-held-exclusion",
+    "stem": "Multiple adaptation",
+    "reason": "unresolvable_fragment",
+    "details": "Practical answer-only phrase cannot identify the tested tissue or adaptation. The archive applies an unrelated cell description."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0063",
+    "sourceFile": "practical 2018-2020.pdf-Q28",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0063-held-exclusion",
+    "stem": "Dark microscope",
+    "reason": "unresolvable_fragment",
+    "details": "Practical answer slot names a microscopy method without the specimen or identifying task. A copied motility note cannot establish the original question."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0067",
+    "sourceFile": "practical 2018-2020.pdf-Q10",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0067-held-exclusion",
+    "stem": "Chronic pyelonephritis: sclerosis glomerulus, atrophy of tubules and thick walled blood vessels",
+    "reason": "unresolvable_fragment",
+    "details": "Practical answer slot reports chronic pyelonephritis features without the slide or question. The archive rubric describes chronic glomerulonephritis and cannot resolve the intended diagnosis."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0069",
+    "sourceFile": "practical 2018-2020.pdf-Q3",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0069-held-exclusion",
+    "stem": "Acrosomal reaction",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0071",
+    "sourceFile": "practical 2018-2020.pdf-Q1",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0071-held-exclusion",
+    "stem": "Sexually Transmitted",
+    "reason": "unresolvable_fragment",
+    "details": "Practical response about route of transmission lacks the original scenario or organism. The archive substitutes a table of contents."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0083",
+    "sourceFile": "💥Practical UG Exam 2024.pdf-Q7",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0083-held-exclusion",
+    "stem": "Excretion for HCO",
+    "reason": "unresolvable_fragment",
+    "details": "Practical answer slot names bicarbonate excretion without the original test, scenario or numeric values. The stored rubric is a placeholder."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0084",
+    "sourceFile": "💥Practical UG Exam 2024.pdf-Q3",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0084-held-exclusion",
+    "stem": "Renal ischemia",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The practical source records an answer only. The damaged archive essay has no original prompt or substantive rubric."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0085",
+    "sourceFile": "💥Practical UG Exam 2024.pdf-Q5",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0085-held-exclusion",
+    "stem": "Enterococcus faecalis",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. Practical microbiology answer slot. The original vignette and identifying test are absent. The archive adds a second organism with no evidence."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0088",
+    "sourceFile": "💥Practical UG Exam 2024.pdf-Q10",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0088-held-exclusion",
+    "stem": "Keratinized epithelium",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. Practical pathology answer slot. Tissue context, slide and question are missing. The unrelated archive model describes urethral histology."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0091",
+    "sourceFile": "💥Practical UG Exam 2024.pdf-Q2",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0091-held-exclusion",
+    "stem": "Liver disease",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. Practical source supplies an answer only with no values or testing context. The archive model substitutes aldosterone deficiency."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0093",
+    "sourceFile": "💥Practical UG Exam 2024.pdf-Q10",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0093-held-exclusion",
+    "stem": "Parietal epithelium proliferation",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. Practical answer slot supplies a histologic feature without its slide or exact request. Keep the later archive definition separate from source evidence."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0103",
+    "sourceFile": "ASS UG 2- 2019.pdf-Q10",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0103-held-exclusion",
+    "stem": "Corpora amylecea in lumen",
+    "reason": "unresolvable_fragment",
+    "details": "The reported answer is the stem. Recall label and prompt became options, and the key marks a choice that the source labels as wrong. The recall alternates between malignant pathology and a normal aging acinus. Corpora amylacea are not a discriminating sign of cancer. The archive also imports a case label as a choice. Hold until those two concepts are separated."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0112",
+    "sourceFile": "UG ass 2 and paper 2.pdf-Q22",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0112-held-exclusion",
+    "stem": "Solid mass on right kidney , microscope nest of cell with",
+    "reason": "unresolvable_fragment",
+    "details": "The recall mixes a clear-cell renal carcinoma vignette with a broad least-likely complication claim. The recorded answer is hepatitis, not a diagnosis. Hold ambiguous complication and duplicate review with 0140."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0119",
+    "sourceFile": "UG ass 2 and paper 2.pdf-Q7",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0119-held-exclusion",
+    "stem": "A 65 year old woman had stage IV cervical cancer. If",
+    "reason": "unresolvable_fragment",
+    "details": "The same resit case also appears at 0102 and 0137. Several listed events could cause death in untreated advanced cancer. Hold the archived item despite the source key."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0120",
+    "sourceFile": "UG ass 2 and paper 2.pdf-Q5",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0120-held-exclusion",
+    "stem": "Orichodectomy ??",
+    "reason": "unresolvable_fragment",
+    "details": "The archived stem is only a procedure label. The Final compiler explicitly doubts the reported contralateral risk in the course, and a CA2 duplicate is already archived at 0139. Hold period and wording."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0124",
+    "sourceFile": "essay.pdf-Q2",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0124-held-exclusion",
+    "stem": "The structure of the placental barrier is different in early pregnancy",
+    "reason": "unresolvable_fragment",
+    "details": "Both printed short-answer subparts were split into fabricated choices, including the footer GOOD LUCK. The source is a June 2022 Paper 2 final, not a CA-2 physiology MCQ. The archive is a detached and truncated child A of an actual Final written question. Restore its complete wording and retain the full printed parent and siblings in review before drafting."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0125",
+    "sourceFile": "practical 2018-2020.pdf-Q13",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0125-held-exclusion",
+    "stem": "Unilocuar cyst with papillary projection",
+    "reason": "unresolvable_fragment",
+    "details": "An ovarian morphology practical answer lacks specimen and prompt. The truncated feature cannot establish a specific diagnosis or a full original MCQ."
+  },
+  {
+    "id": "MUG3-CH203-PHYS-0137",
+    "sourceFile": "💥Urogenital Assessment 2 MCQ-1.pdf-Q11",
+    "sourceOccurrence": "MUG3-CH203-PHYS-0137-held-exclusion",
+    "stem": "A 65 year old woman had stage IV cervical cancer. If untreated, which of",
+    "reason": "unresolvable_fragment",
+    "details": "The source contains a prompt and one reported answer without printed options. The imported MCQ uses the source stem continuation as an option. The CA2 recall repeats the resit question held at 0102 and 0119. The indicated renal-failure key does not resolve a general possible-cause-of-death prompt."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0019",
+    "sourceFile": "ASSESSEMENT ONE UROGENITAL 2020.pdf",
+    "sourceOccurrence": "MUG3-CH205-PATH-0019-held-exclusion",
+    "stem": "renal glucosuria",
+    "reason": "unresolvable_fragment",
+    "details": "The unassigned renal glucosuria note is the same evidence used by 0024. The translated reported answer does not establish an exact CA2 Pathology question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0032",
+    "sourceFile": "UG ass 2 and paper 2.pdf",
+    "sourceOccurrence": "MUG3-CH205-PATH-0032-held-exclusion",
+    "stem": "Nobothian cyst",
+    "reason": "unresolvable_fragment",
+    "details": "The first note says tumor obstruction while the appendix gives endocervical gland obstruction. The archive reverses the response and clinical clue. Keep both witnesses and hold uncertain period and wording."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0096",
+    "sourceFile": "Past Exams/ASS UG 2- 2019.pdf-Q3",
+    "sourceOccurrence": "MUG3-CH205-PATH-0096-held-exclusion",
+    "stem": "Superior gluteal",
+    "reason": "unresolvable_fragment",
+    "details": "The reported answer is the essay stem, and the reported prompt became its model answer. The archive reverses the reported answer and question. A CA2 reconstruction pending independent acceptance already exists at ANAT-0020. Review the duplicate instead of assigning a second repair."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0098",
+    "sourceFile": "Past Exams/ASS UG 2- 2019.pdf-Q5",
+    "sourceOccurrence": "MUG3-CH205-PATH-0098-held-exclusion",
+    "stem": "Mesosalpinx",
+    "reason": "unresolvable_fragment",
+    "details": "The reported answer is the essay stem, and the reported prompt became its model answer. The answer-first archive repeats the exact CA2 objective already drafted under ANAT-0025. Preserve this additional source witness for the same question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0103",
+    "sourceFile": "Past Exams/ASS UG 2- 2019.pdf-Q16",
+    "sourceOccurrence": "MUG3-CH205-PATH-0103-held-exclusion",
+    "stem": "Visual disturbance",
+    "reason": "unresolvable_fragment",
+    "details": "The reported answer is the essay stem, and the reported prompt plus note became its model answer. The reported visual disturbance is the archived stem. The recall lacks its full options and class-versus-drug specificity. Hold the original."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0104",
+    "sourceFile": "Past Exams/ASS UG 2- 2019.pdf-Q17",
+    "sourceOccurrence": "MUG3-CH205-PATH-0104-held-exclusion",
+    "stem": "Loop diuretic",
+    "reason": "unresolvable_fragment",
+    "details": "The reported answer is the essay stem, and the reported prompt with possible distractors became its model answer. The reported diuretic is the stored stem. The recalled clinical setting and alternatives are incomplete. Compare the related hold at PHYS-0039 and leave the exact management item pending."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0110",
+    "sourceFile": "Past Exams/ASS UG 2- 2019.pdf-Q23",
+    "sourceOccurrence": "MUG3-CH205-PATH-0110-held-exclusion",
+    "stem": "Lichen sclerosis",
+    "reason": "unresolvable_fragment",
+    "details": "The reported answer is the essay stem, and its model answer contains the case prompt followed by a section header. The diagnostic response became the essay stem. The witnesses support a vulvar biopsy objective but no printed choices. Hold until a defensible pathology topic placement is adjudicated."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0113",
+    "sourceFile": "Past Exams/ASS UG 2- 2019.pdf-Q26",
+    "sourceOccurrence": "MUG3-CH205-PATH-0113-held-exclusion",
+    "stem": "Pyelonephritis",
+    "reason": "unresolvable_fragment",
+    "details": "The reported diagnosis is the essay stem, and the clinical clues became its model answer. The answer-first archive has no complete question. Compare the earlier reconstructed pyelonephritis question and the related but different pregnancy vignette at PHYS-0115."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0124",
+    "sourceFile": "Past Exams/UG ass 2 -2020.pdf-Q1",
+    "sourceOccurrence": "MUG3-CH205-PATH-0124-held-exclusion",
+    "stem": "Vaginal plate",
+    "reason": "unresolvable_fragment",
+    "details": "The answer-first vaginal plate recall already has a source-matched CA2 draft at PHYS-0036. Do not assign a second candidate while canonical ID adjudication is pending."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0126",
+    "sourceFile": "Past Exams/UG ass 2 -2020.pdf-Q5",
+    "sourceOccurrence": "MUG3-CH205-PATH-0126-held-exclusion",
+    "stem": "Enzulatamide.",
+    "reason": "unresolvable_fragment",
+    "details": "The reported drug name was made the stem. A seizure following treatment does not identify one drug without a clear regimen and options. Hold the incomplete management vignette."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0128",
+    "sourceFile": "Past Exams/UG ass 2 and paper 2.pdf-Q5",
+    "sourceOccurrence": "MUG3-CH205-PATH-0128-held-exclusion",
+    "stem": "Mesosalpinx",
+    "reason": "unresolvable_fragment",
+    "details": "The answer-first archive repeats the CA2 concept already drafted at ANAT-0025 and linked at PATH-0098. Preserve duplicate history."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0130",
+    "sourceFile": "Past Exams/UG ass 2 and paper 2.pdf-Q7",
+    "sourceOccurrence": "MUG3-CH205-PATH-0130-held-exclusion",
+    "stem": "Gardinella vaginallis",
+    "reason": "unresolvable_fragment",
+    "details": "An organism-only answer fragment has no stem. The model answer is a reference placeholder. The archive promotes a reported organism to the stem and adds an unsupported rubric pointer. The syndrome-level CA2 reconstruction at PHYS-0113 supplies clinical discrimination."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0136",
+    "sourceFile": "Past Exams/UG ass 2 and paper 2.pdf-Q17",
+    "sourceOccurrence": "MUG3-CH205-PATH-0136-held-exclusion",
+    "stem": "Loop diuretic",
+    "reason": "unresolvable_fragment",
+    "details": "The answer-first archive duplicates the incomplete CKD edema management recall at PATH-0104. The source does not give enough clinical context to choose treatment."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0173",
+    "sourceFile": "Past Exams/UG ass 2 and paper 2.pdf-Q72",
+    "sourceOccurrence": "MUG3-CH205-PATH-0173-held-exclusion",
+    "stem": "develop organ",
+    "reason": "unresolvable_fragment",
+    "details": "The reported response is unfinished and the Final source repeats the held rubella recall at PHYS-0046. Do not infer a missing question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0179",
+    "sourceFile": "Past Exams/UG ass 2 and paper 2.pdf-Q78",
+    "sourceOccurrence": "MUG3-CH205-PATH-0179-held-exclusion",
+    "stem": "preterm labor",
+    "reason": "unresolvable_fragment",
+    "details": "The shared preterm-birth concept occurs in Final and CA2. Hold incomplete exact case and assessment reconciliation before drafting a duplicate."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0180",
+    "sourceFile": "Past Exams/UG ass 2 and paper 2.pdf-Q80",
+    "sourceOccurrence": "MUG3-CH205-PATH-0180-held-exclusion",
+    "stem": "uterine duct",
+    "reason": "unresolvable_fragment",
+    "details": "The Final witness reports uterine duct. Rebuild with the standard uterine tube term and alternatives from different embryological structures."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0184",
+    "sourceFile": "Past Exams/UG ass 2 and paper 2.pdf-Q87",
+    "sourceOccurrence": "MUG3-CH205-PATH-0184-held-exclusion",
+    "stem": "endocervical polyp",
+    "reason": "unresolvable_fragment",
+    "details": "The bank prompt contains the reported response and its model answer is a negative question without options. The source preserves an exception cue and says other options were risk factors, but does not list them. The archive gives no complete question or original choice set."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0187",
+    "sourceFile": "Past Exams/UG ass 2 and paper 2.pdf-Q91",
+    "sourceOccurrence": "MUG3-CH205-PATH-0187-held-exclusion",
+    "stem": "increased cholesterol",
+    "reason": "unresolvable_fragment",
+    "details": "The bank puts the reported response in the prompt, and the model answer incorporates unrelated exam topics. The age-only menopause recall lacks requested domain and choices. The archive also joins the heading of another section. Hold the unsupported cholesterol and hormone inference."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0188",
+    "sourceFile": "Past Exams/UG paper 2 essay answers 2019.pdf-Q1",
+    "sourceOccurrence": "MUG3-CH205-PATH-0188-held-exclusion",
+    "stem": "Ie liganests",
+    "reason": "unresolvable_fragment",
+    "details": "The bank treats part of a handwritten essay answer as the question. The complete source prompt is separately visible in the appended paper. The archive consists of answer-rubric fragments from the Final broad ligament question. Keep the authentic printed stem separate from unofficial handwritten notes and compare other versions before rewriting."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0192",
+    "sourceFile": "Past Exams/UG paper 2 essay answers 2019.pdf-Q7",
+    "sourceOccurrence": "MUG3-CH205-PATH-0192-held-exclusion",
+    "stem": "cytropha blast",
+    "reason": "unresolvable_fragment",
+    "details": "The OCR fragment 'cytropha blast' acts as stem. Mammary-gland content and placental-barrier answers were merged. The archive joins mammary-gland structures to a placental-barrier answer fragment. Restore only from the separately recorded Final prompts and preserve the complete multipart parent of Q14."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0198",
+    "sourceFile": "Past Exams/UG paper 2 essay answers 2020.pdf-Q4",
+    "sourceOccurrence": "MUG3-CH205-PATH-0198-held-exclusion",
+    "stem": "Apocint metaplasiai",
+    "reason": "unresolvable_fragment",
+    "details": "The bank treats part of a handwritten essay answer as the question. The complete source prompt is separately visible in the appended paper. The archived stem is a handwritten microscopic feature within the fibrocystic breast answer. It is not a separate printed essay. The full source question already has a draft at PATH-0118."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0199",
+    "sourceFile": "Past Exams/UG paper 2 essay answers 2020.pdf-Q5",
+    "sourceOccurrence": "MUG3-CH205-PATH-0199-held-exclusion",
+    "stem": "Laferioc vesicol",
+    "reason": "unresolvable_fragment",
+    "details": "Site-specific text from one handwritten answer is split into the stem and choices. An inferior vesical artery answer line and its sex-specific clause were flattened into a separate MCQ. Preserve the handwritten rubric as an answer under the vascular essay, with PATH-0117 as the related archive version."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0209",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q16",
+    "sourceOccurrence": "MUG3-CH205-PATH-0209-held-exclusion",
+    "stem": "metaboltic acidosis",
+    "reason": "unresolvable_fragment",
+    "details": "The practical slot reports an acid-base diagnosis without values or the requested interpretation. Keep the standalone answer held."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0211",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q19",
+    "sourceOccurrence": "MUG3-CH205-PATH-0211-held-exclusion",
+    "stem": "seminephrous tubules",
+    "reason": "unresolvable_fragment",
+    "details": "The practical slot reports a tissue label without a view, specimen or question. The archive model begins in unrelated renal material."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0213",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q26",
+    "sourceOccurrence": "MUG3-CH205-PATH-0213-held-exclusion",
+    "stem": "mature miracidum",
+    "reason": "unresolvable_fragment",
+    "details": "The practical slot supplies a parasite-stage answer without the specimen or asked feature. The archived rubric is about an unrelated ovarian tumor."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0229",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q60",
+    "sourceOccurrence": "MUG3-CH205-PATH-0229-held-exclusion",
+    "stem": "respiratory acidosis",
+    "reason": "unresolvable_fragment",
+    "details": "The practical answer is an acid-base diagnosis without the blood gas data. The copied generic threshold is not a source rubric."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0231",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q64",
+    "sourceOccurrence": "MUG3-CH205-PATH-0231-held-exclusion",
+    "stem": "decreased aldosterone",
+    "reason": "unresolvable_fragment",
+    "details": "The practical slot supplies an aldosterone change but no clinical setting. The archive answers with an unrelated vasopressin passage."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0232",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q70",
+    "sourceOccurrence": "MUG3-CH205-PATH-0232-held-exclusion",
+    "stem": "primordial follicles",
+    "reason": "unresolvable_fragment",
+    "details": "The practical slot names primordial follicles without the slide or identifying instruction. The migration excerpt does not recreate the original question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0242",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q80",
+    "sourceOccurrence": "MUG3-CH205-PATH-0242-held-exclusion",
+    "stem": "multiple adaptations",
+    "reason": "unresolvable_fragment",
+    "details": "The practical answer consists of two nonspecific words and no task. Keep separate from other numbered practical notes with similar wording."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0247",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q85",
+    "sourceOccurrence": "MUG3-CH205-PATH-0247-held-exclusion",
+    "stem": "enterococcus feacalis",
+    "reason": "unresolvable_fragment",
+    "details": "Two numbered practical slots give the same organism name. The source lacks specimens, test results and the requested identification task. Repeated wording does not establish identical questions."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0248",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q87",
+    "sourceOccurrence": "MUG3-CH205-PATH-0248-held-exclusion",
+    "stem": "sabouroads dextrose",
+    "reason": "unresolvable_fragment",
+    "details": "Culture-medium answer alone supplies no specimen, question or original alternatives."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0250",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q89",
+    "sourceOccurrence": "MUG3-CH205-PATH-0250-held-exclusion",
+    "stem": "swarming growth",
+    "reason": "unresolvable_fragment",
+    "details": "Growth description lacks the culture image, organism and original question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0253",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q94",
+    "sourceOccurrence": "MUG3-CH205-PATH-0253-held-exclusion",
+    "stem": "modified thayer martin",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. Repeated practical slots name the same culture medium without a specimen or identifying question. Keep the 2024 slot distinct from both earlier slots."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0260",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q107",
+    "sourceOccurrence": "MUG3-CH205-PATH-0260-held-exclusion",
+    "stem": "Hyperkalemia.. bradycardia",
+    "reason": "unresolvable_fragment",
+    "details": "Recover whether the question asks for an ECG finding, mechanism, or treatment before assigning a key."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0264",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q119",
+    "sourceOccurrence": "MUG3-CH205-PATH-0264-held-exclusion",
+    "stem": "1ry multilaminar",
+    "reason": "unresolvable_fragment",
+    "details": "The developmental label is abbreviated and no specimen, structure or original question is supplied."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0267",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q128",
+    "sourceOccurrence": "MUG3-CH205-PATH-0267-held-exclusion",
+    "stem": "Urethral orifice",
+    "reason": "unresolvable_fragment",
+    "details": "An orifice label cannot identify the original specimen, arrow or requested urethral relation."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0268",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q131",
+    "sourceOccurrence": "MUG3-CH205-PATH-0268-held-exclusion",
+    "stem": "Polysystic kidney",
+    "reason": "unresolvable_fragment",
+    "details": "The renal diagnosis is given without the practical image, inheritance context or question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0269",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q134",
+    "sourceOccurrence": "MUG3-CH205-PATH-0269-held-exclusion",
+    "stem": "Translucent wall",
+    "reason": "unresolvable_fragment",
+    "details": "A translucent wall is a nonspecific observation and neither organ nor original target is recorded."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0273",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q138",
+    "sourceOccurrence": "MUG3-CH205-PATH-0273-held-exclusion",
+    "stem": "Infiltrating borders",
+    "reason": "unresolvable_fragment",
+    "details": "A single gross finding cannot identify the lesion or the intended practical task."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0276",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q143",
+    "sourceOccurrence": "MUG3-CH205-PATH-0276-held-exclusion",
+    "stem": "Adaptational hyperplasia",
+    "reason": "unresolvable_fragment",
+    "details": "Two words record an adaptation label without the tissue, stimulus or original question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0282",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q161",
+    "sourceOccurrence": "MUG3-CH205-PATH-0282-held-exclusion",
+    "stem": "Enlarged caseating",
+    "reason": "unresolvable_fragment",
+    "details": "The caseating description lacks a specimen and underlying question. Do not infer an organ or organism."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0287",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q171",
+    "sourceOccurrence": "MUG3-CH205-PATH-0287-held-exclusion",
+    "stem": "Presistant lobulation",
+    "reason": "unresolvable_fragment",
+    "details": "The morphology label lacks the depicted organ, adjacent structures and original task."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0289",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q177",
+    "sourceOccurrence": "MUG3-CH205-PATH-0289-held-exclusion",
+    "stem": "Sabourad dextrose",
+    "reason": "unresolvable_fragment",
+    "details": "This is a separate culture-medium practical slot, with a different spelling in the source. It supplies no specimen or original selection task."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0290",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q178",
+    "sourceOccurrence": "MUG3-CH205-PATH-0290-held-exclusion",
+    "stem": "Swarming motiliy",
+    "reason": "unresolvable_fragment",
+    "details": "The practical slot gives a motility description without culture, organism or question. Preserve it independently from the growth slot at 0250."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0291",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q182",
+    "sourceOccurrence": "MUG3-CH205-PATH-0291-held-exclusion",
+    "stem": "Dark microscope",
+    "reason": "unresolvable_fragment",
+    "details": "A microscopy label alone cannot distinguish the original organism, specimen or purpose. Keep the other similarly worded slots traceable separately."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0293",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q185",
+    "sourceOccurrence": "MUG3-CH205-PATH-0293-held-exclusion",
+    "stem": "Fundus of uterus",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. Three answer slots name the uterine fundus. None of these slots includes its original diagram, arrow or asked relation."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0294",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q186",
+    "sourceOccurrence": "MUG3-CH205-PATH-0294-held-exclusion",
+    "stem": "Quadratus lumborum",
+    "reason": "unresolvable_fragment",
+    "details": "Repeated muscle names occur in separate practical models. No preserved specimen or question establishes equivalent prompts."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0295",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q187",
+    "sourceOccurrence": "MUG3-CH205-PATH-0295-held-exclusion",
+    "stem": "Head of epididymis",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The earlier and 2024 practical lists name the structure without the specimen or question. Keep the two models distinct."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0298",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q193",
+    "sourceOccurrence": "MUG3-CH205-PATH-0298-held-exclusion",
+    "stem": "300 microalbuminuria",
+    "reason": "unresolvable_fragment",
+    "details": "The scan prints a range starting at 30. The archive drops the lower bound. The specimen, units and classification task are absent."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0299",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q194",
+    "sourceOccurrence": "MUG3-CH205-PATH-0299-held-exclusion",
+    "stem": "100mg/g albumin/creat",
+    "reason": "unresolvable_fragment",
+    "details": "The archive preserves the measured ratio but the source omits the specimen context, units interpretation and requested clinical decision."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0302",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q198",
+    "sourceOccurrence": "MUG3-CH205-PATH-0302-held-exclusion",
+    "stem": "Hydro: obstructive",
+    "reason": "unresolvable_fragment",
+    "details": "The practical answer abbreviates a diagnosis and etiology without the image or asked distinction."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0305",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q201",
+    "sourceOccurrence": "MUG3-CH205-PATH-0305-held-exclusion",
+    "stem": "Proliferative ducts",
+    "reason": "unresolvable_fragment",
+    "details": "An isolated histology observation lacks the tissue image and diagnostic instruction."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0306",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q202",
+    "sourceOccurrence": "MUG3-CH205-PATH-0306-held-exclusion",
+    "stem": "Infiltrative border",
+    "reason": "unresolvable_fragment",
+    "details": "One gross feature is recorded without the mass, tissue or original task."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0309",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q206",
+    "sourceOccurrence": "MUG3-CH205-PATH-0309-held-exclusion",
+    "stem": "Complete hemolysis",
+    "reason": "unresolvable_fragment",
+    "details": "The answer describes hemolysis without the culture image, organism or asked distinction."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0315",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q215",
+    "sourceOccurrence": "MUG3-CH205-PATH-0315-held-exclusion",
+    "stem": "Filtered load=50",
+    "reason": "unresolvable_fragment",
+    "details": "The practical list gives a filtered-load result with no inputs, units or original calculation."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0318",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q220",
+    "sourceOccurrence": "MUG3-CH205-PATH-0318-held-exclusion",
+    "stem": "Base of bladder",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The 2020 and 2024 lists name the same structure without their identifying models or arrows."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0321",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q229",
+    "sourceOccurrence": "MUG3-CH205-PATH-0321-held-exclusion",
+    "stem": "Metabolic Alkalosis",
+    "reason": "unresolvable_fragment",
+    "details": "Three distinct practical slots give the same diagnosis without blood-gas measurements. Preserve the model distinctions."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0322",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q230",
+    "sourceOccurrence": "MUG3-CH205-PATH-0322-held-exclusion",
+    "stem": "hypoventilation",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The reported ventilation response lacks the original stimulus and clinical data in both practical witnesses."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0334",
+    "sourceFile": "Past Exams/practical 2018-2020.pdf-Q246",
+    "sourceOccurrence": "MUG3-CH205-PATH-0334-held-exclusion",
+    "stem": "adaptive hyperplasia",
+    "reason": "unresolvable_fragment",
+    "details": "The response is an adaptation term without a defined tissue, stimulus or question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0336",
+    "sourceFile": "Past Exams/ug paper 2 - 2020.pdf-Q1",
+    "sourceOccurrence": "MUG3-CH205-PATH-0336-held-exclusion",
+    "stem": "Parvo virus",
+    "reason": "unresolvable_fragment",
+    "details": "The Final recall reverses its question and response in the archive. A source-matched MCQ draft already exists at PHYS-0072. Preserve both IDs pending duplicate review."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0340",
+    "sourceFile": "Past Exams/ug paper 2 - 2020.pdf-Q8",
+    "sourceOccurrence": "MUG3-CH205-PATH-0340-held-exclusion",
+    "stem": "Mature teratoma",
+    "reason": "unresolvable_fragment",
+    "details": "Recover the assessment objective or supply a specific morphology or classification question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0351",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q5",
+    "sourceOccurrence": "MUG3-CH205-PATH-0351-held-exclusion",
+    "stem": "persistence lobulation of kidney",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The practical source names retained renal lobulation without a gross specimen or question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0352",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q7",
+    "sourceOccurrence": "MUG3-CH205-PATH-0352-held-exclusion",
+    "stem": "felteration load : 100",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The list records a filtered-load value without measurements, units or formula prompt."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0353",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q8",
+    "sourceOccurrence": "MUG3-CH205-PATH-0353-held-exclusion",
+    "stem": "excecretion load : 30",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The excretion value lacks the concentrations, urine flow and units required for interpretation."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0354",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q9",
+    "sourceOccurrence": "MUG3-CH205-PATH-0354-held-exclusion",
+    "stem": "reabsorption : 70",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The list records a reabsorption result without the underlying question. Nearby answer numbers do not uniquely determine the original dataset."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0355",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q10",
+    "sourceOccurrence": "MUG3-CH205-PATH-0355-held-exclusion",
+    "stem": "renal fraction : 25",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The recorded number does not establish whether the question concerns cardiac-output fraction, filtration fraction or another ratio."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0356",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q12",
+    "sourceOccurrence": "MUG3-CH205-PATH-0356-held-exclusion",
+    "stem": "log HCO / CO2 : 1.7",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The reported logarithm lacks the full expression, measured data, units and requested calculation."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0357",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q13",
+    "sourceOccurrence": "MUG3-CH205-PATH-0357-held-exclusion",
+    "stem": "excretion for HCO3",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The bicarbonate fragment is the same source slot already recorded at PHYS-0083 and lacks an original case."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0358",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q14",
+    "sourceOccurrence": "MUG3-CH205-PATH-0358-held-exclusion",
+    "stem": "1 mg/dl conc. Of creatinine serum",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. A serum concentration is printed without the requested task or whether it was given or calculated."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0359",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q15",
+    "sourceOccurrence": "MUG3-CH205-PATH-0359-held-exclusion",
+    "stem": "normal ratio less than 30",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The threshold lacks a named ratio, units, specimen details and the original question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0360",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q18",
+    "sourceOccurrence": "MUG3-CH205-PATH-0360-held-exclusion",
+    "stem": "Proteus swarming growth",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The response pairs a genus with a growth pattern but omits the observed culture and identifying task."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0361",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q22",
+    "sourceOccurrence": "MUG3-CH205-PATH-0361-held-exclusion",
+    "stem": "creamy yellowish material",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes organ, gross specimen and the task attached to the material description."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0362",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q24",
+    "sourceOccurrence": "MUG3-CH205-PATH-0362-held-exclusion",
+    "stem": "diffuse enlargement",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes organ, the extent and nature of enlargement, and the diagnostic task."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0363",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q26",
+    "sourceOccurrence": "MUG3-CH205-PATH-0363-held-exclusion",
+    "stem": "Malignant germ cell",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes organ, subtype, clinical context and original identification prompt."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0364",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q27",
+    "sourceOccurrence": "MUG3-CH205-PATH-0364-held-exclusion",
+    "stem": "connected to the pelvicalyceal",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the structure joined to the collecting system and the labelled specimen."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0365",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q28",
+    "sourceOccurrence": "MUG3-CH205-PATH-0365-held-exclusion",
+    "stem": "multilocular filled with mucinous material",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes organ, gross specimen and the question specifying the lesion."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0366",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q29",
+    "sourceOccurrence": "MUG3-CH205-PATH-0366-held-exclusion",
+    "stem": "subepithelial humps",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the original microscopy image, tissue context and the asked interpretation."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0367",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q30",
+    "sourceOccurrence": "MUG3-CH205-PATH-0367-held-exclusion",
+    "stem": "her 2 neu receptor ( positive)",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes stain intensity, completeness, image and interpretation question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0368",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q32",
+    "sourceOccurrence": "MUG3-CH205-PATH-0368-held-exclusion",
+    "stem": "large egg with terminal spine",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the original egg specimen, image and requested distinction."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0369",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q35",
+    "sourceOccurrence": "MUG3-CH205-PATH-0369-held-exclusion",
+    "stem": "secretory granules",
+    "reason": "unresolvable_fragment",
+    "details": "The source records an answer fragment. Missing evidence includes tissue type, images and requested observations for both practical models. Shared response wording does not establish identical original questions."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0371",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q43",
+    "sourceOccurrence": "MUG3-CH205-PATH-0371-held-exclusion",
+    "stem": "filtered load : 100 mg/ml",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes concentration and filtration inputs, a time denominator for the load and the requested calculation. The reported mg/ml is a concentration unit and cannot substantiate a load per time."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0372",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q44",
+    "sourceOccurrence": "MUG3-CH205-PATH-0372-held-exclusion",
+    "stem": "execretory load : 300 mg/ml",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes urine concentration and flow data, a time denominator for the load and the requested calculation. The reported mg/ml is a concentration unit and cannot substantiate a load per time."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0373",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q45",
+    "sourceOccurrence": "MUG3-CH205-PATH-0373-held-exclusion",
+    "stem": "Filtration fraction : 16%",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the GFR and plasma flow inputs and the requested calculation."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0374",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q47",
+    "sourceOccurrence": "MUG3-CH205-PATH-0374-held-exclusion",
+    "stem": "increase H secretion",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the acid-base context, site and asked response."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0375",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q49",
+    "sourceOccurrence": "MUG3-CH205-PATH-0375-held-exclusion",
+    "stem": "net secretion 200",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the underlying filtration and excretion calculations, units and original task."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0376",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q51",
+    "sourceOccurrence": "MUG3-CH205-PATH-0376-held-exclusion",
+    "stem": "chorionic villi",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the specimen, image and specific tissue-identification prompt."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0378",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q53",
+    "sourceOccurrence": "MUG3-CH205-PATH-0378-held-exclusion",
+    "stem": "Indole positive, oxidase negative",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes organism context, culture evidence and the diagnostic question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0379",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q54",
+    "sourceOccurrence": "MUG3-CH205-PATH-0379-held-exclusion",
+    "stem": "exo pigment production",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the organism, pigment identity, test context and question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0380",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q58",
+    "sourceOccurrence": "MUG3-CH205-PATH-0380-held-exclusion",
+    "stem": "Thick opaque wall ( pyonephrosis)",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the gross specimen and requested morphology or diagnostic distinction."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0381",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q59",
+    "sourceOccurrence": "MUG3-CH205-PATH-0381-held-exclusion",
+    "stem": "obstruction factors ( hydronephrosis)",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the underlying obstruction site, case and original task."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0382",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q60",
+    "sourceOccurrence": "MUG3-CH205-PATH-0382-held-exclusion",
+    "stem": "infiltration border",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes organ, lesion context and requested gross finding."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0383",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q61",
+    "sourceOccurrence": "MUG3-CH205-PATH-0383-held-exclusion",
+    "stem": "infiltrating myometrium necrotic mass ( choriocarcinoma)",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the gross specimen and task that led to the reported diagnosis."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0384",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q62",
+    "sourceOccurrence": "MUG3-CH205-PATH-0384-held-exclusion",
+    "stem": "scelrotic glomerulus with thick blood vessels",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the source slide, disease context and asked distinction."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0385",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q63",
+    "sourceOccurrence": "MUG3-CH205-PATH-0385-held-exclusion",
+    "stem": "papilla on the inner surface ( papillary cystadenoma)",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes organ, complete gross or microscopic specimen, and original identification task."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0386",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q65",
+    "sourceOccurrence": "MUG3-CH205-PATH-0386-held-exclusion",
+    "stem": "dilated prostatic glands",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the original prostate slide and identifying instruction."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0387",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q66",
+    "sourceOccurrence": "MUG3-CH205-PATH-0387-held-exclusion",
+    "stem": "Parietal proliferation with granular deposits",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the light microscopy and immunofluorescence panels and exact asked finding."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0388",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q68",
+    "sourceOccurrence": "MUG3-CH205-PATH-0388-held-exclusion",
+    "stem": "micro albumin / creatinine ratio : 100",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the ratio units, specimen context, reference framework and requested interpretation."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0389",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q71",
+    "sourceOccurrence": "MUG3-CH205-PATH-0389-held-exclusion",
+    "stem": "egg with mature miracidium",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the egg specimen, species details and asked life-cycle distinction."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0390",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q72",
+    "sourceOccurrence": "MUG3-CH205-PATH-0390-held-exclusion",
+    "stem": "undulating membrane",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the specimen, organism or stage and original identification task."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0392",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q89",
+    "sourceOccurrence": "MUG3-CH205-PATH-0392-held-exclusion",
+    "stem": "2 (conc of test formula)",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the test identity, formula, measured inputs, units and requested calculation."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0393",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q92",
+    "sourceOccurrence": "MUG3-CH205-PATH-0393-held-exclusion",
+    "stem": "Cervical cancer",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the original case or specimen and the diagnostic task."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0394",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q93",
+    "sourceOccurrence": "MUG3-CH205-PATH-0394-held-exclusion",
+    "stem": "Crescentic -parietal epithelial bowman",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the slide, exact requested structure and diagnostic inference."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0395",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q94",
+    "sourceOccurrence": "MUG3-CH205-PATH-0395-held-exclusion",
+    "stem": "Pyocele- tunica vaginalis with pus",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the gross specimen and original diagnostic question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0396",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q95",
+    "sourceOccurrence": "MUG3-CH205-PATH-0396-held-exclusion",
+    "stem": "Vesicular mole- serous fluid",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the gross specimen and requested distinction among gestational lesions."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0397",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q96",
+    "sourceOccurrence": "MUG3-CH205-PATH-0397-held-exclusion",
+    "stem": "Multilocular mucinous",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the organ and type of specimen underlying the gross description."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0398",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q97",
+    "sourceOccurrence": "MUG3-CH205-PATH-0398-held-exclusion",
+    "stem": "Staghorn pyonephrosis",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the gross specimen or image and whether the question asks for the stone, complication or both."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0399",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q98",
+    "sourceOccurrence": "MUG3-CH205-PATH-0399-held-exclusion",
+    "stem": "Pyogenic with obstruction",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the infection and obstruction context, specimen and requested diagnosis."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0400",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q99",
+    "sourceOccurrence": "MUG3-CH205-PATH-0400-held-exclusion",
+    "stem": "Comedo-pleomorphic",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the tissue context, original microscopic image and subtype question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0401",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q100",
+    "sourceOccurrence": "MUG3-CH205-PATH-0401-held-exclusion",
+    "stem": "Adaptation hyperplasia",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes tissue, stimulus and the original adaptation question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0403",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q116",
+    "sourceOccurrence": "MUG3-CH205-PATH-0403-held-exclusion",
+    "stem": "mitochondria middle piece",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the sperm image or labelled diagram and task."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0404",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q120",
+    "sourceOccurrence": "MUG3-CH205-PATH-0404-held-exclusion",
+    "stem": "100 (biochemistry)",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the analyte, units, measurements and asked calculation."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0406",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q123",
+    "sourceOccurrence": "MUG3-CH205-PATH-0406-held-exclusion",
+    "stem": "staph saprophyticus",
+    "reason": "unresolvable_fragment",
+    "details": "The source records an answer fragment. Missing evidence includes the original cultures and identifying questions across models and years. Shared response wording does not establish identical original questions."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0407",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q126",
+    "sourceOccurrence": "MUG3-CH205-PATH-0407-held-exclusion",
+    "stem": "not specific monitoring efficacy",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the marker name, condition, comparison and asked interpretation."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0408",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q128",
+    "sourceOccurrence": "MUG3-CH205-PATH-0408-held-exclusion",
+    "stem": "enlarged caseous",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes organ, gross image and specific lesion question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0409",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q129",
+    "sourceOccurrence": "MUG3-CH205-PATH-0409-held-exclusion",
+    "stem": "chronic necrotizing granuloma",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the specimen, site, characterizing test and requested inference."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0410",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q131",
+    "sourceOccurrence": "MUG3-CH205-PATH-0410-held-exclusion",
+    "stem": "papillary malignant urothelial carcinoma",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the original tumor specimen and task that produced the diagnosis."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0411",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q132",
+    "sourceOccurrence": "MUG3-CH205-PATH-0411-held-exclusion",
+    "stem": "leiomyoma polyp",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the source specimen, site and requested diagnostic distinction."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0412",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q133",
+    "sourceOccurrence": "MUG3-CH205-PATH-0412-held-exclusion",
+    "stem": "invasive carcinoma of ducts, breast",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the slide, diagnostic task and evidence for the reported tumor class."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0413",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q134",
+    "sourceOccurrence": "MUG3-CH205-PATH-0413-held-exclusion",
+    "stem": "axillary l.n (n)",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the case, exact nodal level, imaging or labelled specimen and question."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0414",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q135",
+    "sourceOccurrence": "MUG3-CH205-PATH-0414-held-exclusion",
+    "stem": "rcc: large mass upper pole with renal capsule",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The source records an answer fragment. Missing evidence includes the original specimen and whether the task asks for tumor class, location or gross description."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0415",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q136",
+    "sourceOccurrence": "MUG3-CH205-PATH-0415-held-exclusion",
+    "stem": "tb pyelonephritis: enlarged with caseation",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The practical answer names the lesion and morphology without the gross specimen or original prompt."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0416",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q139",
+    "sourceOccurrence": "MUG3-CH205-PATH-0416-held-exclusion",
+    "stem": "D: high ph, high hco3, high pco2, low H",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The practical answer reports a labelled result without original alternatives or blood-gas measurements."
+  },
+  {
+    "id": "MUG3-CH205-PATH-0417",
+    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q143",
+    "sourceOccurrence": "MUG3-CH205-PATH-0417-held-exclusion",
+    "stem": "24 hr urine sample",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The practical answer names a specimen type without the analyte, task or collection context."
+  },
+  {
+    "id": "MUG3-CH206-PHAR-0002",
+    "sourceFile": "ASS UG 2- 2019.pdf-Q16",
+    "sourceOccurrence": "MUG3-CH206-PHAR-0002-held-exclusion",
+    "stem": "Loop diuretic",
+    "reason": "unresolvable_fragment",
+    "details": "The reported answer is the essay stem, and the reported prompt became its model answer. Answer and asked task were stored in the reverse fields. The clinical severity and original options are not fully specified. Compare PATH-0104 and PATH-0136."
+  },
+  {
+    "id": "MUG3-CH207-MICR-0003",
+    "sourceFile": "practical 2018-2020.pdf-Q6",
+    "sourceOccurrence": "MUG3-CH207-MICR-0003-held-exclusion",
+    "stem": "Anerobic bacteria",
+    "reason": "unresolvable_fragment",
+    "details": "Recover the disease and question. Related textbook occurrences do not supply the intended answer."
+  },
+  {
+    "id": "MUG3-CH208-PARA-0002",
+    "sourceFile": "💥Practical UG Exam 2024.pdf-Q2",
+    "sourceOccurrence": "MUG3-CH208-PARA-0002-held-exclusion",
+    "stem": "Furcocercous cercariae",
+    "reason": "unresolvable_fragment",
+    "details": "The exact bank stem is printed only as a practical answer-list entry. Neither its original prompt nor a specimen or complete question is supplied. The practical source gives a stage name without a specimen, image or original task. A copied life-cycle excerpt is not an identifying prompt."
+  },
+  {
+    "id": "MUG3-CH301-ANAT-0003",
+    "sourceFile": "final paper 2 - 2019.pdf-Q11",
+    "sourceOccurrence": "MUG3-CH301-ANAT-0003-held-exclusion",
+    "stem": "Uterine duct",
+    "reason": "unresolvable_fragment",
+    "details": "The bank prompt contains the reported structure and its model answer is a question without alternatives."
+  },
+  {
+    "id": "MUG3-CH301-PARA-0001",
+    "sourceFile": "final paper 2 - 2019.pdf-Q9",
+    "sourceOccurrence": "MUG3-CH301-PARA-0001-held-exclusion",
+    "stem": "Preterm labor",
+    "reason": "unresolvable_fragment",
+    "details": "The bank prompt is the reported complication and its model answer is a question fragment."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0010",
+    "sourceFile": "💥UG Final 2 MCQ Collection.pdf-Q19",
+    "sourceOccurrence": "MUG3-CH301-PATH-0010-held-exclusion",
+    "stem": "A 2y old boy, glomeruloid schiller bodies, serum level show elevation",
+    "reason": "unresolvable_fragment",
+    "details": "The source prints one reported response and no choices. The current bank uses exact continuing stem text as an answer choice."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0057",
+    "sourceFile": "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q63",
+    "sourceOccurrence": "MUG3-CH301-PATH-0057-held-exclusion",
+    "stem": "homocystinuria",
+    "reason": "unresolvable_fragment",
+    "details": "The source uses answer-first layout. The bank displays homocystinuria as the question and the original dietary prompt as its rubric."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0058",
+    "sourceFile": "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q64",
+    "sourceOccurrence": "MUG3-CH301-PATH-0058-held-exclusion",
+    "stem": "homocysteine",
+    "reason": "unresolvable_fragment",
+    "details": "The bank turns homocysteine into a stem and the associated prompt into its model answer."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0060",
+    "sourceFile": "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q66",
+    "sourceOccurrence": "MUG3-CH301-PATH-0060-held-exclusion",
+    "stem": "adrenal cortex",
+    "reason": "unresolvable_fragment",
+    "details": "The bank reverses the answer-first fragment and includes the following Anatomy heading in the model answer."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0065",
+    "sourceFile": "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q79",
+    "sourceOccurrence": "MUG3-CH301-PATH-0065-held-exclusion",
+    "stem": "modified smooth muscle cells",
+    "reason": "unresolvable_fragment",
+    "details": "The stem is the recalled response. The model answer begins with the question and then absorbs the heading and content of the next exam. The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0087",
+    "sourceFile": "Past Exams/FINAL 1 UG - 2019.pdf-Q1",
+    "sourceOccurrence": "MUG3-CH301-PATH-0087-held-exclusion",
+    "stem": "escherechia coli",
+    "reason": "unresolvable_fragment",
+    "details": "The source uses answer-first layout. The bank displays the reported organism as the stem and the case clue in its rubric. The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0088",
+    "sourceFile": "Past Exams/FINAL 1 UG - 2019.pdf-Q2",
+    "sourceOccurrence": "MUG3-CH301-PATH-0088-held-exclusion",
+    "stem": "homocystenuria",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0089",
+    "sourceFile": "Past Exams/FINAL 1 UG - 2019.pdf-Q3",
+    "sourceOccurrence": "MUG3-CH301-PATH-0089-held-exclusion",
+    "stem": "homocystiene",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0091",
+    "sourceFile": "Past Exams/FINAL 1 UG - 2019.pdf-Q5",
+    "sourceOccurrence": "MUG3-CH301-PATH-0091-held-exclusion",
+    "stem": "adrenal cortex",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0092",
+    "sourceFile": "Past Exams/FINAL 1 UG - 2019.pdf-Q6",
+    "sourceOccurrence": "MUG3-CH301-PATH-0092-held-exclusion",
+    "stem": "collecting tubules",
+    "reason": "unresolvable_fragment",
+    "details": "The bank reverses the answer-first fragment, displaying the derivative as the prompt and its question as the start of the rubric. The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0093",
+    "sourceFile": "Past Exams/FINAL 1 UG - 2019.pdf-Q7",
+    "sourceOccurrence": "MUG3-CH301-PATH-0093-held-exclusion",
+    "stem": "lateral aortic LN",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0094",
+    "sourceFile": "Past Exams/FINAL 1 UG - 2019.pdf-Q8",
+    "sourceOccurrence": "MUG3-CH301-PATH-0094-held-exclusion",
+    "stem": "sluggish flow in vasa recta",
+    "reason": "unresolvable_fragment",
+    "details": "The bank displays the recalled flow characteristic as the stem and the actual question as rubric. The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0095",
+    "sourceFile": "Past Exams/FINAL 1 UG - 2019.pdf-Q9",
+    "sourceOccurrence": "MUG3-CH301-PATH-0095-held-exclusion",
+    "stem": "Drops of pressure",
+    "reason": "unresolvable_fragment",
+    "details": "The bank displays the stimulus as the stem and the renin question as rubric. The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0096",
+    "sourceFile": "Past Exams/FINAL 1 UG - 2019.pdf-Q10",
+    "sourceOccurrence": "MUG3-CH301-PATH-0096-held-exclusion",
+    "stem": "descending limb of loop of henle",
+    "reason": "unresolvable_fragment",
+    "details": "The bank displays the nephron segment as the stem and the original note's question as rubric. The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0097",
+    "sourceFile": "Past Exams/FINAL 1 UG - 2019.pdf-Q11",
+    "sourceOccurrence": "MUG3-CH301-PATH-0097-held-exclusion",
+    "stem": "loss of voluntary control of micturition reflex",
+    "reason": "unresolvable_fragment",
+    "details": "The bank displays the response as the stem. The original question continues on the next page and was placed in the rubric. The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0098",
+    "sourceFile": "Past Exams/FINAL 1 UG - 2019.pdf-Q12",
+    "sourceOccurrence": "MUG3-CH301-PATH-0098-held-exclusion",
+    "stem": "high concentration of buffer of fluid",
+    "reason": "unresolvable_fragment",
+    "details": "The bank displays the reported response as the stem and its question in the rubric. The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0099",
+    "sourceFile": "Past Exams/FINAL 1 UG - 2019.pdf-Q13",
+    "sourceOccurrence": "MUG3-CH301-PATH-0099-held-exclusion",
+    "stem": "surface area of capillary membrane",
+    "reason": "unresolvable_fragment",
+    "details": "The bank displays the recalled response as the stem and its filtration-coefficient prompt as rubric. The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0100",
+    "sourceFile": "Past Exams/FINAL 1 UG - 2019.pdf-Q14",
+    "sourceOccurrence": "MUG3-CH301-PATH-0100-held-exclusion",
+    "stem": "analgesic nephropathy more common in men",
+    "reason": "unresolvable_fragment",
+    "details": "The bank has an answer-like fragment as the stem and the incomplete ESRD question as rubric. The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0102",
+    "sourceFile": "Past Exams/FINAL 1 UG - 2019.pdf-Q17",
+    "sourceOccurrence": "MUG3-CH301-PATH-0102-held-exclusion",
+    "stem": "amoxacillin",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0103",
+    "sourceFile": "Past Exams/FINAL 1 UG - 2019.pdf-Q18",
+    "sourceOccurrence": "MUG3-CH301-PATH-0103-held-exclusion",
+    "stem": "may be binucleated",
+    "reason": "unresolvable_fragment",
+    "details": "The question and answer appear in reverse fields in the bank. The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0124",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q4",
+    "sourceOccurrence": "MUG3-CH301-PATH-0124-held-exclusion",
+    "stem": "start antibiotics*",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0125",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q5",
+    "sourceOccurrence": "MUG3-CH301-PATH-0125-held-exclusion",
+    "stem": "organ development",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0126",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q6",
+    "sourceOccurrence": "MUG3-CH301-PATH-0126-held-exclusion",
+    "stem": "asymptomatic latent",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt. The two descriptors supply neither a condition nor a task. Source contains only a numbered answer clue."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0127",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q7",
+    "sourceOccurrence": "MUG3-CH301-PATH-0127-held-exclusion",
+    "stem": "premature labour",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt. A clinical event is supplied without antecedent, mechanism, choices or a task. Source contains only a numbered answer clue."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0128",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q8",
+    "sourceOccurrence": "MUG3-CH301-PATH-0128-held-exclusion",
+    "stem": "anterior surface of prostate (urethra)",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0129",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q9",
+    "sourceOccurrence": "MUG3-CH301-PATH-0129-held-exclusion",
+    "stem": "ureter lateral relation of vagina",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0130",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q10",
+    "sourceOccurrence": "MUG3-CH301-PATH-0130-held-exclusion",
+    "stem": "mesonephric (seminal vesicles)",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0131",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q11",
+    "sourceOccurrence": "MUG3-CH301-PATH-0131-held-exclusion",
+    "stem": "paramesonephric (Uterine tube)",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0132",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q13",
+    "sourceOccurrence": "MUG3-CH301-PATH-0132-held-exclusion",
+    "stem": "uterine artery (Anastmosis with vaginal artery)",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0133",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q17",
+    "sourceOccurrence": "MUG3-CH301-PATH-0133-held-exclusion",
+    "stem": "deep peroneal pouch",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0134",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q19",
+    "sourceOccurrence": "MUG3-CH301-PATH-0134-held-exclusion",
+    "stem": "internal os (body and cervix)",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0135",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q20",
+    "sourceOccurrence": "MUG3-CH301-PATH-0135-held-exclusion",
+    "stem": "covers upper surface of bladder",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0136",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q21",
+    "sourceOccurrence": "MUG3-CH301-PATH-0136-held-exclusion",
+    "stem": "mullerian inhibitory factor",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0137",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q23",
+    "sourceOccurrence": "MUG3-CH301-PATH-0137-held-exclusion",
+    "stem": "para aortic lymphnode",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0138",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q24",
+    "sourceOccurrence": "MUG3-CH301-PATH-0138-held-exclusion",
+    "stem": "6 months amenorrhea",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0139",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q26",
+    "sourceOccurrence": "MUG3-CH301-PATH-0139-held-exclusion",
+    "stem": "rapid drop of progesterone",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0140",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q27",
+    "sourceOccurrence": "MUG3-CH301-PATH-0140-held-exclusion",
+    "stem": "cGmp induced nitric oxide release",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0141",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q28",
+    "sourceOccurrence": "MUG3-CH301-PATH-0141-held-exclusion",
+    "stem": "cool for spermatogenesis",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0142",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q30",
+    "sourceOccurrence": "MUG3-CH301-PATH-0142-held-exclusion",
+    "stem": "decidual reaction with glycogen storage",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0143",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q32",
+    "sourceOccurrence": "MUG3-CH301-PATH-0143-held-exclusion",
+    "stem": "follicular phase with proliferative phase",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0144",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q33",
+    "sourceOccurrence": "MUG3-CH301-PATH-0144-held-exclusion",
+    "stem": "upper third of fallobian tube",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0145",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q34",
+    "sourceOccurrence": "MUG3-CH301-PATH-0145-held-exclusion",
+    "stem": "external musculanization",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt. External masculinization without the sex, developmental stage or context cannot distinguish embryology, receptor signaling or a disorder. Source contains only a numbered answer clue."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0147",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q38",
+    "sourceOccurrence": "MUG3-CH301-PATH-0147-held-exclusion",
+    "stem": "endometrial hyperplasia",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0149",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q42",
+    "sourceOccurrence": "MUG3-CH301-PATH-0149-held-exclusion",
+    "stem": "atypical hyperplasia",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0150",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q43",
+    "sourceOccurrence": "MUG3-CH301-PATH-0150-held-exclusion",
+    "stem": "cin risk of cancer",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0151",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q46",
+    "sourceOccurrence": "MUG3-CH301-PATH-0151-held-exclusion",
+    "stem": "triple negative",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0152",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q47",
+    "sourceOccurrence": "MUG3-CH301-PATH-0152-held-exclusion",
+    "stem": "renal failure in cervical cancer",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt. The fragment names a disease and consequence without asking whether it concerns local obstruction, staging, progression or management. Source contains only a numbered answer clue."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0153",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q48",
+    "sourceOccurrence": "MUG3-CH301-PATH-0153-held-exclusion",
+    "stem": "breast cancer (unrelated to progesterone)",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0154",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q49",
+    "sourceOccurrence": "MUG3-CH301-PATH-0154-held-exclusion",
+    "stem": "osteoporosis anapolic steroid",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0155",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q50",
+    "sourceOccurrence": "MUG3-CH301-PATH-0155-held-exclusion",
+    "stem": "osteoporosis (estrogen modulator)",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0156",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q51",
+    "sourceOccurrence": "MUG3-CH301-PATH-0156-held-exclusion",
+    "stem": "28 days doxycycline",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0157",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q53",
+    "sourceOccurrence": "MUG3-CH301-PATH-0157-held-exclusion",
+    "stem": "decrease DHT",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt. A change in DHT without a patient, enzyme, drug, tissue or task is not independently answerable. Source contains only a numbered answer clue."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0158",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q54",
+    "sourceOccurrence": "MUG3-CH301-PATH-0158-held-exclusion",
+    "stem": "2 layers cuboidal",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0159",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q55",
+    "sourceOccurrence": "MUG3-CH301-PATH-0159-held-exclusion",
+    "stem": "corpora amylecea",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0160",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q56",
+    "sourceOccurrence": "MUG3-CH301-PATH-0160-held-exclusion",
+    "stem": "thich muscular wall",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0161",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q58",
+    "sourceOccurrence": "MUG3-CH301-PATH-0161-held-exclusion",
+    "stem": "prostatic urethea (most wide)",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0162",
+    "sourceFile": "Past Exams/FINAL UG - 2018.pdf-Q59",
+    "sourceOccurrence": "MUG3-CH301-PATH-0162-held-exclusion",
+    "stem": "steroli has apical infoldings with indistinct border",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0163",
+    "sourceFile": "Past Exams/FINAL UG 1- 2020.pdf-Q1",
+    "sourceOccurrence": "MUG3-CH301-PATH-0163-held-exclusion",
+    "stem": "Chronic cystitis",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0164",
+    "sourceFile": "Past Exams/FINAL UG 1- 2020.pdf-Q4",
+    "sourceOccurrence": "MUG3-CH301-PATH-0164-held-exclusion",
+    "stem": "Disodium MonoPhosphate",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0165",
+    "sourceFile": "Past Exams/FINAL UG 1- 2020.pdf-Q6",
+    "sourceOccurrence": "MUG3-CH301-PATH-0165-held-exclusion",
+    "stem": "Antidnase B",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0166",
+    "sourceFile": "Past Exams/FINAL UG 1- 2020.pdf-Q7",
+    "sourceOccurrence": "MUG3-CH301-PATH-0166-held-exclusion",
+    "stem": "furcocercus cerceria penetration",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0167",
+    "sourceFile": "Past Exams/FINAL UG 1- 2020.pdf-Q8",
+    "sourceOccurrence": "MUG3-CH301-PATH-0167-held-exclusion",
+    "stem": "Control Htn",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0168",
+    "sourceFile": "Past Exams/FINAL UG 1- 2020.pdf-Q9",
+    "sourceOccurrence": "MUG3-CH301-PATH-0168-held-exclusion",
+    "stem": "2nd part duodenum",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0169",
+    "sourceFile": "Past Exams/FINAL UG 1- 2020.pdf-Q10",
+    "sourceOccurrence": "MUG3-CH301-PATH-0169-held-exclusion",
+    "stem": "6 weeks prostatits",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0170",
+    "sourceFile": "Past Exams/FINAL UG 1- 2020.pdf-Q11",
+    "sourceOccurrence": "MUG3-CH301-PATH-0170-held-exclusion",
+    "stem": "intracellular lipid transport",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0171",
+    "sourceFile": "Past Exams/FINAL UG 1- 2020.pdf-Q12",
+    "sourceOccurrence": "MUG3-CH301-PATH-0171-held-exclusion",
+    "stem": "Tyrosine aa",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0172",
+    "sourceFile": "Past Exams/FINAL UG 1- 2020.pdf-Q13",
+    "sourceOccurrence": "MUG3-CH301-PATH-0172-held-exclusion",
+    "stem": "Pinocytic vesicles",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0173",
+    "sourceFile": "Past Exams/FINAL UG 1- 2020.pdf-Q14",
+    "sourceOccurrence": "MUG3-CH301-PATH-0173-held-exclusion",
+    "stem": "ascending Vasa recta",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0174",
+    "sourceFile": "Past Exams/FINAL UG 1- 2020.pdf-Q15",
+    "sourceOccurrence": "MUG3-CH301-PATH-0174-held-exclusion",
+    "stem": "(1&25 cholecalciferol)",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0175",
+    "sourceFile": "Past Exams/FINAL UG 1- 2020.pdf-Q17",
+    "sourceOccurrence": "MUG3-CH301-PATH-0175-held-exclusion",
+    "stem": "Median umbilical ligament",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0177",
+    "sourceFile": "Past Exams/FINAL UG 1- 2020.pdf-Q19",
+    "sourceOccurrence": "MUG3-CH301-PATH-0177-held-exclusion",
+    "stem": "Increase ANP secretion",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0210",
+    "sourceFile": "Past Exams/essay.pdf-Q4",
+    "sourceOccurrence": "MUG3-CH301-PATH-0210-held-exclusion",
+    "stem": "5 Mark(s)",
+    "reason": "unresolvable_fragment",
+    "details": "The bank stem is the stray marks line. The case and printed subparts are together in the bank's answer instead of a prompt with a substantive rubric."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0215",
+    "sourceFile": "Past Exams/final paper 2 - 2019.pdf-Q1",
+    "sourceOccurrence": "MUG3-CH301-PATH-0215-held-exclusion",
+    "stem": "intrapartum ampillicin",
+    "reason": "unresolvable_fragment",
+    "details": "The bank prompt is the reported answer line. The bank rubric is a bare reference and does not address the example."
+  },
+  {
+    "id": "MUG3-CH301-PATH-0217",
+    "sourceFile": "Past Exams/final paper 2 - 2019.pdf-Q4",
+    "sourceOccurrence": "MUG3-CH301-PATH-0217-held-exclusion",
+    "stem": "develop organ",
+    "reason": "unresolvable_fragment",
+    "details": "The bank prompt is an incomplete reported answer and the model answer is the original case fragment."
+  },
+  {
+    "id": "MUG3-CH301-PHYS-0001",
+    "sourceFile": "FINAL 1 UG - 2019.pdf-Q5",
+    "sourceOccurrence": "MUG3-CH301-PHYS-0001-held-exclusion",
+    "stem": "Adrenal cortex",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PHYS-0009",
+    "sourceFile": "FINAL UG 1- 2020.pdf-Q8",
+    "sourceOccurrence": "MUG3-CH301-PHYS-0009-held-exclusion",
+    "stem": "Control Htn",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PHYS-0012",
+    "sourceFile": "FINAL UG 1- 2020.pdf-Q12",
+    "sourceOccurrence": "MUG3-CH301-PHYS-0012-held-exclusion",
+    "stem": "Tyrosine aa",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH301-PHYS-0030",
+    "sourceFile": "final paper 2 - 2019.pdf-Q19",
+    "sourceOccurrence": "MUG3-CH301-PHYS-0030-held-exclusion",
+    "stem": "Fibrocyatic change",
+    "reason": "unresolvable_fragment",
+    "details": "The bank prompt contains the reported diagnosis and its model answer contains the clue."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1752",
+    "sourceFile": "Pathology/DEPARTMENT patho genital mcq.pdf-Q179",
+    "sourceOccurrence": "MUG3-CH5-PATH-1752-held-exclusion",
+    "stem": "Ab,Be,Cd,Da (1424) B (1425) B",
+    "reason": "unresolvable_fragment",
+    "details": "The essay stem consists of matching-answer codes or answer-grid debris and gives no matching columns."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1793",
+    "sourceFile": "Pathology/DEPARTMENT patho genital mcq.pdf-Q222",
+    "sourceOccurrence": "MUG3-CH5-PATH-1793-held-exclusion",
+    "stem": "Be,Ca,Db tise T (1551) T |",
+    "reason": "unresolvable_fragment",
+    "details": "The essay stem consists of matching-answer codes or answer-grid debris and gives no matching columns."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1795",
+    "sourceFile": "Pathology/DEPARTMENT patho genital mcq.pdf-Q224",
+    "sourceOccurrence": "MUG3-CH5-PATH-1795-held-exclusion",
+    "stem": "Bd,Ca,Db,Ee (1559",
+    "reason": "unresolvable_fragment",
+    "details": "The essay stem consists of matching-answer codes or answer-grid debris and gives no matching columns."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1889",
+    "sourceFile": "Pathology/DEPARTMENT patho urinary mcq.pdf-Q91",
+    "sourceOccurrence": "MUG3-CH5-PATH-1889-held-exclusion",
+    "stem": "Ba,Cd,Db,Ec (1238) B (1239) D",
+    "reason": "unresolvable_fragment",
+    "details": "The essay stem consists of matching-answer codes or answer-grid debris and gives no matching columns."
+  },
+  {
+    "id": "MUG3-CH5-PATH-1906",
+    "sourceFile": "Pathology/DEPARTMENT patho urinary mcq.pdf-Q112",
+    "sourceOccurrence": "MUG3-CH5-PATH-1906-held-exclusion",
+    "stem": "Ac,Ba,Db,Ed (1349) TAB Cb.Ea_|",
+    "reason": "unresolvable_fragment",
+    "details": "The essay stem consists of matching-answer codes or answer-grid debris and gives no matching columns."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2244",
+    "sourceFile": "Pathology/SGD FEMALE 2023 .pdf-Q22",
+    "sourceOccurrence": "MUG3-CH5-PATH-2244-held-exclusion",
+    "stem": "Endometrioid",
+    "reason": "unresolvable_fragment",
+    "details": "A histologic term appears without the parent question, case or answer choices. The stem and model answer together look like a diagnosis phrase split in two."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2731",
+    "sourceFile": "Pathology/Urogenital Module - MCQ and CASES in Pathology - Dr. Thanaa Helal.pdf-Q613",
+    "sourceOccurrence": "MUG3-CH5-PATH-2731-held-exclusion",
+    "stem": "Ad,Bb,Cc,Da",
+    "reason": "unresolvable_fragment",
+    "details": "The essay stem consists of matching-answer codes or answer-grid debris and gives no matching columns."
+  },
+  {
+    "id": "MUG3-CH5-PATH-2862",
+    "sourceFile": "Pathology/Urogenital Module - Pathology Department MCQs.pdf-Q142",
+    "sourceOccurrence": "MUG3-CH5-PATH-2862-held-exclusion",
+    "stem": "Granulosa cell tumor",
+    "reason": "unresolvable_fragment",
+    "details": "The visible exam source does not supply an essay stem/rubric. This bank version presents a source answer fragment as part or all of the prompt."
+  },
+  {
+    "id": "MUG3-CH7-MICR-0187",
+    "sourceFile": "Microbiology/Micro-Urogenital.pdf-Q60",
+    "sourceOccurrence": "MUG3-CH7-MICR-0187-held-exclusion",
+    "stem": "In chronic cases, the organism is metabolic inactive. So, it is not susceptible to many",
+    "reason": "unresolvable_fragment",
+    "details": "The organism, relevant drugs and completion of the sentence are absent. The bank stem is the second answer point for a tuberculosis-treatment question. It is not a standalone prompt for this module."
   }
 ]
