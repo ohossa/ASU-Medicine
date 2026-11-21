@@ -4754,5 +4754,194 @@
     "stem": "Precocious pseudopuberty: | * Is an early development of secondary sexual character without gametoge",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0238: Corrupted fill-in-the-blank item with fragments leaked into prompt. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p028-q7",
+    "stem": "Dorsal wall of uterus, week",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0247: Damaged fill-in-the-blank item for blastocyst implantation timing. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p028-q10",
+    "stem": "Internal descent: - The testis descends till it reaches the deep inguinal ring in the 3w month.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0250: Damaged fill-in-the-blank item with answer 'End of 2nd month' leaked into stem. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p029-q16",
+    "stem": "Female Genital System Physiology of Gestation, Parturition and Lactation Gestation (pregnancy) Perio",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0256: Damaged fill-in-the-blank item with answer '5th week' leaked into stem. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p030-q23",
+    "stem": "cells cells Selectively | SEES = sic 1 = i ion FH | | FSH | LH Sia + V+ A —— TT PLE —— Ovary | Matur",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0263: Damaged fill-in-the-blank item with answer 'High levels of estrogen' leaked into stem. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S187-p030-q26",
+    "stem": "Bearing down (voluntary contraction of abdominal muscles)",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0266: Damaged fill-in-the-blank item on maternal bearing down. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Physiology/Physiology URO.pdf",
+    "sourceOccurrence": "S191-p001-q0",
+    "stem": "Membranous part (2 cm): v' It is the shortest, least dilatable and; with the exception of the extern",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0277: Extracted section title header string from Reproduction Short Essay.docx. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p005-q2",
+    "stem": "Major calyx. ;",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0307: Unverified scanned MCQ from UG_NERD page 5 with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p005-q9",
+    "stem": "Trigone of the bladder E",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0308: Severely truncated OCR fragment with missing stem and incomplete options. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p005-q4",
+    "stem": "Inthe pelvic cavity, wrapped around a right or",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0309: Garbled OCR stem with preceding answer preamble. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p005-q5",
+    "stem": "Following plexusens i",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0310: Severely mangled OCR stem ('kidonprenlouprereasl') with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p006-q15",
+    "stem": "8Cmlong.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0312: Damaged OCR stem containing option A in prompt with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p006-q3",
+    "stem": "Second part of duodenum",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0313: Damaged stem containing option A with corrupt option E. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p007-q22",
+    "stem": "External urethral meatus",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0314: Unverified scanned MCQ from UG_NERD page 7 with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p007-q23",
+    "stem": "Thoracolumbar fascia.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0315: Unverified scanned MCQ from UG_NERD page 7 with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p007-q24",
+    "stem": "Ays d. 2 portion of the duodenum",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0316: Unverified scanned MCQ from UG_NERD page 7 with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p007-q25",
+    "stem": "Testes",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0317: Unverified scanned MCQ from UG_NERD page 7 with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p007-q26",
+    "stem": "Somitic mesoderm.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0318: Unverified scanned MCQ from UG_NERD page 7 with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p007-q2",
+    "stem": "It contains a single urethral sphincter near the",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0319: Damaged MCQ with options broken across half lines and missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p007-q18",
+    "stem": "Prostatic portion of urethra.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0320: Unverified scanned MCQ from UG_NERD page 7 with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p007-q29",
+    "stem": "Renal pelvis, major calyx, minor calyx, papillary",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0321: Damaged MCQ with options split across multiple fragments. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p007-q30",
+    "stem": "Contacts with prostate posteriorly (male).",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0322: Damaged MCQ stem containing option A with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p007-q31",
+    "stem": "Internal urethral orifice.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0323: Damaged MCQ containing OCR junk in option D with missing key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p008-q32",
+    "stem": "30cm-35em",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0324: Damaged MCQ with OCR gibberish in options ('1Scm-20em'). Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p008-q33",
+    "stem": "Endodermal derivative.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0325: Truncated sentence stem ('The following is WRONG about ureteric'). Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p008-q4",
+    "stem": "Ureters.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0326: Detached sentence fragment without complete prompt. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p008-q6",
+    "stem": "32 The renal pyramids are located within the",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0327: Scrambled options containing glued fragments from question 32. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p008-q2",
+    "stem": "Is often associated with abnormal persistence",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0328: Detached sentence fragment without prompt. Excluded under quality-over-quantity intake policy."
   }
 ]

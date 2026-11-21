@@ -17218,5 +17218,235 @@
     "originalStem": "Authentic prompt on triggers of the acrosomal reaction. Restore sperm capacitation, binding to zona pellucida glycoprotein ZP3, calcium influx, and acrosin/hyaluronidase exocytosis.",
     "repairedStem": "Explain what triggers the acrosome reaction in human spermatozoa and describe the cellular events that occur.",
     "explanationLength": 190
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0246",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 15,
+    "originalStem": "Authentic prompt on sperm-oocyte membrane fusion outcomes. Restore meiotic completion (secondary oocyte metaphase II exit) and cortical granule polyspermy block.",
+    "repairedStem": "Describe the cellular events triggered by the fusion of the fertilizing spermatozoon with the oocyte plasma membrane, and explain how polyspermy is prevented.",
+    "explanationLength": 196
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0248",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 15,
+    "originalStem": "Authentic prompt on placental physiology. Restore respiratory, nutritive, excretory, immunological barrier, and major endocrine synthetic functions.",
+    "repairedStem": "Enumerate the major physiological functions of the human placenta.",
+    "explanationLength": 132
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0249",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 15,
+    "originalStem": "Authentic prompt on human chorionic gonadotropin (hCG) functions. Restore corpus luteum rescue, fetal testicular testosterone stimulation, and morning sickness induction.",
+    "repairedStem": "Describe the major physiological functions of human chorionic gonadotropin (hCG) during pregnancy.",
+    "explanationLength": 158
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0252",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 15,
+    "originalStem": "Authentic prompt on gestational hCG secretion kinetics. Restore rapid early elevation, 8-10 week peak, nadir by end of first trimester, and low plateau throughout pregnancy.",
+    "repairedStem": "Outline the rate and chronological profile of human chorionic gonadotropin (hCG) secretion throughout normal human pregnancy.",
+    "explanationLength": 190
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0253",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 15,
+    "originalStem": "Authentic prompt on the feto-placental unit. Restore cooperative estriol synthesis via placental pregnenolone, fetal adrenal DHEA-S, fetal liver 16-alpha-hydroxylation, and placental aromatization.",
+    "repairedStem": "Explain the physiological cooperation of the 'feto-placental unit' in the biosynthesis of estriol during pregnancy.",
+    "explanationLength": 170
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0254",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 15,
+    "originalStem": "Authentic prompt on gestational estrogen actions. Restore myometrial hypertrophy, gap junction formation, oxytocin receptor upregulation, cervical prostaglandin softening, and lactational suppression.",
+    "repairedStem": "List the major physiological functions of estrogen during pregnancy.",
+    "explanationLength": 168
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0255",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 15,
+    "originalStem": "Authentic prompt on progesterone-mediated embryonic nutrition. Restore pre-implantation tubal/uterine secretions (histotroph) and post-implantation decidual glycogen/lipid accumulation.",
+    "repairedStem": "Explain the physiological role of progesterone in the nutrition of the early embryo and blastocyst.",
+    "explanationLength": 179
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0257",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 15,
+    "originalStem": "Authentic prompt on human chorionic somatomammotropin (hCS / hPL). Restore anti-insulin maternal glucose sparing, maternal lipolysis for fetal fatty acid supply, and mammary gland priming.",
+    "repairedStem": "Describe the biological functions and metabolic actions of human chorionic somatomammotropin (hCS / human placental lactogen [hPL]).",
+    "explanationLength": 189
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0258",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 16,
+    "originalStem": "Authentic prompt on relaxin actions during pregnancy and delivery. Restore pelvic symphysis/sacroiliac ligamentous relaxation, cervical ripening/softening, and myometrial quiescence.",
+    "repairedStem": "Describe the physiological actions of relaxin during pregnancy and parturition.",
+    "explanationLength": 180
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0260",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 15,
+    "originalStem": "Authentic prompt explaining gestational amenorrhea and anovulation. Restore sustained high estrogen and progesterone negative feedback suppressing hypothalamic GnRH and pituitary FSH/LH.",
+    "repairedStem": "Explain the physiological endocrine mechanisms that prevent menstruation and ovulation in pregnant women.",
+    "explanationLength": 193
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0261",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 16,
+    "originalStem": "Authentic prompt defining physiological requirements of parturition. Restore progressive cervical effacement/dilation and coordinated rhythmic myometrial contractions with fundal dominance.",
+    "repairedStem": "State the two fundamental physiological requirements for normal parturition (labor) to occur.",
+    "explanationLength": 161
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0262",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 16,
+    "originalStem": "Authentic prompt on late gestational maternal adaptations preparing for labor. Restore increased myometrial gap junctions/excitability, Braxton Hicks contractions, relaxin cervical softening, and fetal head engagement.",
+    "repairedStem": "List the maternal physiological and anatomical changes that occur during late gestation to prepare for the onset of labor.",
+    "explanationLength": 165
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0264",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 16,
+    "originalStem": "Authentic prompt on mechanical cervical stimulation during labor (Ferguson reflex). Restore cervical mechanoreceptor activation, ascending spinal impulses, and neuroendocrine posterior pituitary oxytocin release.",
+    "repairedStem": "Describe the neuroendocrine and mechanical consequences of the pressure exerted by the descending fetal head on the cervix during labor (Ferguson reflex).",
+    "explanationLength": 200
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0265",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 16,
+    "originalStem": "Authentic prompt on mechanisms of oxytocin-induced uterine contractions. Restore direct Gq-protein/IP3/DAG intracellular calcium elevation and secondary stimulation of decidual PGE2/PGF2alpha synthesis.",
+    "repairedStem": "Explain the intracellular and biochemical mechanisms by which oxytocin stimulates uterine smooth muscle contractions during labor.",
+    "explanationLength": 173
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0267",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 16,
+    "originalStem": "Authentic prompt on physiological factors accelerating postpartum uterine involution. Restore sudden withdrawal of placental estrogen/progesterone and suckling-induced oxytocin release stimulating sustained myometrial contractions.",
+    "repairedStem": "Enumerate the major endocrine, physiological, and mechanical factors that enhance uterine and cervical involution postpartum.",
+    "explanationLength": 200
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0269",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 16,
+    "originalStem": "Authentic prompt on neuroendocrine stimulation of prolactin during lactation. Restore suckling afferents inhibiting hypothalamic dopamine (PIF) and stimulating PRH/TRH release.",
+    "repairedStem": "Describe the neuroendocrine reflex arc and hypothalamic mechanisms that stimulate prolactin secretion during lactation.",
+    "explanationLength": 175
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0272",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 16,
+    "originalStem": "Authentic prompt on permissive hormonal actions supporting lactation. Restore cortisol (gene transcription of milk proteins), insulin (glucose transport), PTH (calcium mobilization), and growth hormone (amino acid uptake).",
+    "repairedStem": "List the major systemic hormones that exert permissive actions supporting milk formation (lactogenesis) in addition to prolactin, and specify the role of each.",
+    "explanationLength": 192
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0273",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 16,
+    "originalStem": "Authentic prompt on conditioned oxytocin release reflex. Restore higher cortical conditioning (infant cry, sight, nursing routine) triggering anticipatory hypothalamic oxytocin release and milk let-down.",
+    "repairedStem": "Explain how the oxytocin-mediated milk ejection reflex ('let-down reflex') can become conditioned, and contrast this with the prolactin reflex.",
+    "explanationLength": 177
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0274",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 16,
+    "originalStem": "Authentic prompt on physiological mechanisms of milk cessation at weaning. Restore cessation of suckling, prolactin/oxytocin withdrawal, and alveolar milk accumulation producing mechanical pressure atrophy.",
+    "repairedStem": "Explain the physiological mechanisms responsible for the cessation of milk production at weaning.",
+    "explanationLength": 186
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0275",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 16,
+    "originalStem": "Authentic prompt on physiological advantages of breastfeeding for the neonate. Restore maternal secretory IgA, lactoferrin, lysozyme, bifidus factor, and epidermal growth factors promoting gut epithelial maturation.",
+    "repairedStem": "Describe the immunological and physiological advantages of human breast milk for the newborn infant compared to formula milk.",
+    "explanationLength": 194
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0276",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 16,
+    "originalStem": "Authentic prompt on lactational amenorrhea and natural contraception. Restore suckling-induced hyperprolactinemia suppressing arcuate GnRH pulse generation, inhibiting pituitary FSH/LH and blocking ovulation.",
+    "repairedStem": "Explain the physiological mechanism by which frequent breastfeeding acts as a natural contraceptive method (lactational amenorrhea).",
+    "explanationLength": 189
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0295",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 12,
+    "originalStem": "Authentic prompt comparing follicular vs luteal cervical secretions. Restore estrogen-driven watery, elastic, sperm-permeable mucus vs progesterone-driven thick, cellular, impermeable mucus barrier.",
+    "repairedStem": "Compare the physical, chemical, and functional characteristics of cervical mucus during the first half (follicular phase) versus the second half (luteal phase) of the menstrual cycle.",
+    "explanationLength": 153
+  },
+  {
+    "id": "MUG3-CH3-PHYS-0303",
+    "chapterId": 3,
+    "subjectId": "physiology",
+    "type": "essay",
+    "lecture": 16,
+    "originalStem": "Authentic prompt distinguishing the mechanisms of onset versus progression of labor. Restore endocrine initiation (estrogen/progesterone ratio, CRH, local PGs) versus mechanical/Ferguson positive feedback progression.",
+    "repairedStem": "Distinguish between the physiological mechanisms responsible for the onset of labor versus those responsible for the progression and maintenance of active labor.",
+    "explanationLength": 214
   }
 ]
