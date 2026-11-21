@@ -44143,5 +44143,355 @@
     "stem": "Mention the management of hypotonic hypovolemic hyponatremia.",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH6-PHAR-0384: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q12",
+    "stem": "List the adverse effects of demeclocycline.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0385: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q16",
+    "stem": "Mention the management of euvolemic hypernatremia",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0386: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q17",
+    "stem": "Mention the management of hypervolemic hypernatremia.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0387: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q19",
+    "stem": "Mention the causes of hyperkalemia.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0388: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q23",
+    "stem": "Mention the mechanism of action of magnesium.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0389: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q24",
+    "stem": "competitive antagonist of calcium at L-type calcium channels.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0390: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q25",
+    "stem": "NMDA receptor antagonists decrease excitatory effect of glutamate causing sedation,",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0391: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q26",
+    "stem": "interferes Ach release so it has muscle relaxant effect",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0392: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q27",
+    "stem": "decrease the release of CA>>> hypotension",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0393: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q29",
+    "stem": "Torsade de pointes and digitalis induced arrhythmia (Mg sulphate)",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0395: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q34",
+    "stem": "hypomagnesemia associated with MI and diabetic coma",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0400: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q36",
+    "stem": "Mention the treatment of hypermagnesemia. IV calcium, loop diuretics, dialysis",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0401: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q39",
+    "stem": "How to manage acute severe hypocalcemia?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0402: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q40",
+    "stem": "300mg elemental Ca",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0403: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q43",
+    "stem": "Mention the management of hyperphosphatemia",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0404: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q48",
+    "stem": "Mention the disadvantages of alkali therapy in lactic acidosis.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0406: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q49",
+    "stem": "intracellular acidosis",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0407: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q50",
+    "stem": "rebound alkalosis",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0408: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q51",
+    "stem": "large amount of NaHCO3 is needed so Hypernatremia and volume overload.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0409: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q52",
+    "stem": "List the adverse effects of NAHCO3.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0410: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q53",
+    "stem": "list the precautions NaHCO3.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0411: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q55",
+    "stem": "avoid in volume overload",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0413: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q56",
+    "stem": "avoid extravasation",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0414: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q57",
+    "stem": "avoid drug reactions",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0415: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q60",
+    "stem": ". Is a fluoroquinolone CI in UTI and why?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0416: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q61",
+    "stem": "When should parenteral therapy be started?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0417: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q64",
+    "stem": "Nosocomial severe UTI",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0418: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q66",
+    "stem": "Mention the duration of therapy of uncomplicated and complicated cystitis and",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0419: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q67",
+    "stem": "Mention the duration of therapy of mild and severe acute pyelonephritis and",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0420: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q71",
+    "stem": "Why are tetracyclines and fluoroquinolones CI in pregnancy?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0423: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q72",
+    "stem": "Mention the management of catheterized patients.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0424: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q73",
+    "stem": "Prophylactic systemic Ab in short-term catheterization decreases risk of infection",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0425: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q74",
+    "stem": "New catheter every 2 weeks",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0426: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q75",
+    "stem": "Remove catheter if bacteriuria occurs",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0427: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q80",
+    "stem": "List the lines of treatment of anemia in patients with chronic kidney disease and",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0428: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q81",
+    "stem": "Erythropoiesis-stimulating agents (ESAs): epoetin alfa",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0429: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q82",
+    "stem": "Iron supplement: oral (absorption may be impaired) or parenteral",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0430: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q83",
+    "stem": "Vitamin supplements (folic and B12)",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0431: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q97",
+    "stem": "Mention the mechanism of action of Flutamide.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0432: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q128",
+    "stem": "Mention the adverse effects of raloxifene.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0435: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q133",
+    "stem": "Tamoxifen acts as estrogen agonist in .. and  while antagonist in",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0436: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Pharmacology URO.pdf",
+    "sourceOccurrence": "S176-p001-Q140",
+    "stem": "List the adverse effects of gonadotropins.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0437: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Questions.docx",
+    "sourceOccurrence": "S177-p001-Item1",
+    "stem": "mention drug induced hyper / hypokalemia",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0438: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Questions.docx",
+    "sourceOccurrence": "S177-p001-Item2",
+    "stem": "How to manage a patient presented with hypermagnesmia",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0439: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Questions.docx",
+    "sourceOccurrence": "S177-p001-Item3",
+    "stem": "Drugs better to be avoided in chronic hypocalcemia",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0440: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Questions.docx",
+    "sourceOccurrence": "S177-p001-Item4",
+    "stem": "Enumerate 2 side effects of androgen deprivation therapy",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0441: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/Questions.docx",
+    "sourceOccurrence": "S177-p001-Item5",
+    "stem": "Mention 3 Medications can induce erectile dysfunction",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0442: Practice essay unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/SGD UROGENITAL 2 ans.pdf",
+    "sourceOccurrence": "S178-p001-Page2",
+    "stem": "Which of the following is the best management for pregnant",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0443: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/SGD UROGENITAL 2 ans.pdf",
+    "sourceOccurrence": "S178-p001-Page3",
+    "stem": "Which of the following is not an androgen deprivation therapy:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0444: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pharmacology/SGD UROGENITAL 2 ans.pdf",
+    "sourceOccurrence": "S178-p001-Page4",
+    "stem": "The risk of urine retention in patients with benign prostatic hyperplasia occurs with:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH6-PHAR-0445: Practice mcq unverified extraction or fragment; held for correction."
   }
 ]
