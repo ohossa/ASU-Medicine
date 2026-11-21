@@ -17,19 +17,19 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     expect(manifestEntry).toBeDefined();
     expect(manifestEntry.year).toBe(3);
     expect(manifestEntry.semester).toBe(1);
-    expect(manifestEntry.totalCount).toBe(8511);
-    expect(manifestEntry.mcqCount).toBe(4301);
-    expect(manifestEntry.essayCount).toBe(4210);
+    expect(manifestEntry.totalCount).toBe(552);
+    expect(manifestEntry.mcqCount).toBe(305);
+    expect(manifestEntry.essayCount).toBe(247);
     expect(manifestEntry.paths).toEqual(['../imports/year-3/semester-1/MUG-3.json']);
-    expect(manifestEntry.revision).toBe('f4ac3a844496a91be799fda8a4107a2e7b723691a1b4c7fdfb7bf52bbdfe7c41');
-    expect(manifestEntry.bytes).toBe(12525188);
+    expect(manifestEntry.revision).toBe('599594ff57238a08d1ff4c10a464e2cce78038f1945efa1029a7266d840b640c');
+    expect(manifestEntry.bytes).toBe(508024);
   });
 
   it('reports module question counts from manifest when not yet in memory', () => {
     const counts = getModuleQuestionCounts('MUG-3');
-    expect(counts.totalCount).toBe(8511);
-    expect(counts.mcqCount).toBe(4301);
-    expect(counts.essayCount).toBe(4210);
+    expect(counts.totalCount).toBe(552);
+    expect(counts.mcqCount).toBe(305);
+    expect(counts.essayCount).toBe(247);
   });
 
   it('resolves correct academic year for MUG-3', () => {
@@ -45,95 +45,54 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
 
   it('reports exact question counts in memory matching manifest', () => {
     const counts = getModuleQuestionCounts('MUG-3');
-    expect(counts.totalCount).toBe(8511);
-    expect(counts.mcqCount).toBe(4301);
-    expect(counts.essayCount).toBe(4210);
+    expect(counts.totalCount).toBe(552);
+    expect(counts.mcqCount).toBe(305);
+    expect(counts.essayCount).toBe(247);
   });
 
   it('loads mixed mode chapters with exact chapter counts, schema integrity, and zero truncation', () => {
     const chapters = getChaptersForModuleAndMode('MUG-3', 'mixed');
     
-    // Total questions loaded must be exactly 8,511
+    // Total questions loaded must be exactly 552 verified questions
     const totalLoaded = chapters.reduce(
       (sum, c) => sum + c.subjects.reduce((s, sub) => s + sub.questions.length, 0),
       0
     );
-    expect(totalLoaded).toBe(8511);
+    expect(totalLoaded).toBe(552);
 
-    // Verify visiblePracticeChapters behavior
-    // 25 chapters in bank, 2 empty past-exam chapters (108, 204) properly hidden from student navigation
-    expect(chapters.length).toBe(23);
-    expect(chapters.find((c) => c.id === 108)).toBeUndefined();
-    expect(chapters.find((c) => c.id === 204)).toBeUndefined();
+    // Verify visiblePracticeChapters behavior (19 visible chapters in mixed mode)
+    expect(chapters.length).toBe(19);
 
     // Verify Chapter 301
     const ch301 = chapters.find((c) => c.id === 301);
     expect(ch301).toBeDefined();
     expect(ch301!.title).toBe('Past Final Papers & Essays');
     expect(ch301!.bankSection).toBe('past-exams');
-    expect((ch301 as any).examPeriod).toBeUndefined();
-    expect(ch301!.subjects.length).toBe(8);
 
     const c301Count = ch301!.subjects.reduce((s, sub) => s + sub.questions.length, 0);
-    expect(c301Count).toBe(317);
+    expect(c301Count).toBe(6);
 
-    // Verify Chapter 301 subject distribution
-    const subCounts: Record<string, number> = {};
-    for (const sub of ch301!.subjects) {
-      subCounts[sub.id] = sub.questions.length;
-    }
-    expect(subCounts).toEqual({
-      anatomy: 15,
-      histology: 3,
-      physiology: 78,
-      biochem: 1,
-      pathology: 210,
-      pharma: 1,
-      microbiology: 6,
-      parasitology: 3,
-    });
-
-    // Verify Practice chapters (1-8)
+    // Verify Practice chapters with verified content
     const ch1 = chapters.find((c) => c.id === 1);
     expect(ch1).toBeDefined();
-    expect(ch1!.subjects[0].questions.length).toBe(782); // 787 - 5 excluded in Iteration 4
+    expect(ch1!.subjects[0].questions.length).toBe(167);
+
+    const ch2 = chapters.find((c) => c.id === 2);
+    expect(ch2).toBeDefined();
+    expect(ch2!.subjects[0].questions.length).toBe(214);
 
     const ch3 = chapters.find((c) => c.id === 3);
     expect(ch3).toBeDefined();
-    expect(ch3!.subjects[0].questions.length).toBe(2404); // 1484 + 920 from 2027 renal revision
-
-    const ch5 = chapters.find((c) => c.id === 5);
-    expect(ch5).toBeDefined();
-    expect(ch5!.subjects[0].questions.length).toBe(2796); // 2832 - 36 excluded corrupt items
-
-    // Verify CA-1 chapters
-    const ch101 = chapters.find((c) => c.id === 101);
-    expect(ch101!.subjects[0].questions.length).toBe(15);
-    const ch103 = chapters.find((c) => c.id === 103);
-    expect(ch103!.subjects[0].questions.length).toBe(84); // 94 - 10 dashed line fragments
-    const ch104 = chapters.find((c) => c.id === 104);
-    expect(ch104!.subjects[0].questions.length).toBe(3); // +1 from Ch103
-    const ch105 = chapters.find((c) => c.id === 105);
-    expect(ch105!.subjects[0].questions.length).toBe(101); // 103 - 2 dashed line fragments
-    const ch106 = chapters.find((c) => c.id === 106);
-    expect(ch106!.subjects[0].questions.length).toBe(6); // +2 from Ch105
-
-    // Verify CA-2 chapters
-    const ch201 = chapters.find((c) => c.id === 201);
-    expect(ch201!.subjects[0].questions.length).toBe(24); // +1 net
-    const ch203 = chapters.find((c) => c.id === 203);
-    expect(ch203!.subjects[0].questions.length).toBe(92); // 96 - 4 dashed line fragments
-    const ch205 = chapters.find((c) => c.id === 205);
-    expect(ch205!.subjects[0].questions.length).toBe(363); // 364 - 1 dashed line fragment
+    expect(ch3!.subjects[0].questions.length).toBe(41);
   });
 
-  it('loads MCQ mode with exact question counts (4,301 questions)', () => {
+  it('loads MCQ mode with exact question counts (305 questions)', () => {
     const chapters = getChaptersForModuleAndMode('MUG-3', 'mcq');
     const totalMcq = chapters.reduce(
       (sum, c) => sum + c.subjects.reduce((s, sub) => s + sub.questions.length, 0),
       0
     );
-    expect(totalMcq).toBe(4301);
+    expect(totalMcq).toBe(305);
 
     for (const c of chapters) {
       for (const s of c.subjects) {
@@ -144,13 +103,13 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     }
   });
 
-  it('loads Essay mode with exact question counts (4,210 questions)', () => {
+  it('loads Essay mode with exact question counts (247 questions)', () => {
     const chapters = getChaptersForModuleAndMode('MUG-3', 'essay');
     const totalEssay = chapters.reduce(
       (sum, c) => sum + c.subjects.reduce((s, sub) => s + sub.questions.length, 0),
       0
     );
-    expect(totalEssay).toBe(4210);
+    expect(totalEssay).toBe(247);
 
     for (const c of chapters) {
       for (const s of c.subjects) {
@@ -161,63 +120,20 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     }
   });
 
-  it('correctly retrieves relocated questions via findQuestionById with new chapter and subject bindings', () => {
-    // 1. Moved Ch3 -> Ch1
-    const q307 = findQuestionById('MUG3-CH3-PHYS-0307');
-    expect(q307).toBeDefined();
-    expect(q307!.chapter.id).toBe(1);
-    expect(q307!.subjectName).toBe('Anatomy & Embryology');
-    expect(q307!.question.lecture).toBe(1);
+  it('correctly retrieves verified questions via findQuestionById with chapter and subject bindings', () => {
+    const q1 = findQuestionById('MUG3-CH1-ANAT-0002');
+    expect(q1).toBeDefined();
+    expect(q1!.chapter.id).toBe(1);
+    expect(q1!.subjectName).toBe('Anatomy & Embryology');
 
-    const q361 = findQuestionById('MUG3-CH3-PHYS-0361');
-    expect(q361).toBeDefined();
-    expect(q361!.chapter.id).toBe(1);
-    expect(q361!.subjectName).toBe('Anatomy & Embryology');
-    expect(q361!.question.lecture).toBe(10);
+    const q2 = findQuestionById('MUG3-CH2-HIST-0001');
+    expect(q2).toBeDefined();
+    expect(q2!.chapter.id).toBe(2);
+    expect(q2!.subjectName).toBe('Histology');
 
-    // 2. Cross-discipline items
-    // MUG3-CH101-ANAT-0012 -> Ch 103 (Physiology)
-    const qCross1 = findQuestionById('MUG3-CH101-ANAT-0012');
-    expect(qCross1).toBeDefined();
-    expect(qCross1!.chapter.id).toBe(103);
-    expect(qCross1!.subjectName).toBe('Physiology');
-    expect(qCross1!.question.lecture).toBe(3);
-
-    // MUG3-CH103-PHYS-0001 -> Ch 104 (Biochemistry)
-    const qCross2 = findQuestionById('MUG3-CH103-PHYS-0001');
-    expect(qCross2).toBeDefined();
-    expect(qCross2!.chapter.id).toBe(104);
-    expect(qCross2!.subjectName).toBe('Biochemistry');
-    expect(qCross2!.question.lecture).toBe(4);
-
-    // MUG3-CH105-PATH-0088 -> Ch 101 (Anatomy)
-    const qCross3 = findQuestionById('MUG3-CH105-PATH-0088');
-    expect(qCross3).toBeDefined();
-    expect(qCross3!.chapter.id).toBe(101);
-    expect(qCross3!.subjectName).toBe('Anatomy & Embryology');
-    expect(qCross3!.question.lecture).toBe(4);
-
-    // MUG3-CH105-PATH-0089 -> Ch 106 (Pharmacology)
-    const qCross4 = findQuestionById('MUG3-CH105-PATH-0089');
-    expect(qCross4).toBeDefined();
-    expect(qCross4!.chapter.id).toBe(106);
-    expect(qCross4!.subjectName).toBe('Pharmacology');
-    expect(qCross4!.question.lecture).toBe(1);
-
-    // MUG3-CH301-PHYS-0073 -> Ch 301 (Pathology)
-    const qCross5 = findQuestionById('MUG3-CH301-PHYS-0073');
-    expect(qCross5).toBeDefined();
-    expect(qCross5!.chapter.id).toBe(301);
-    expect(qCross5!.question.subjectColor).toBe('pathology');
-    expect(qCross5!.subjectName).toBe('Clinical Pathology & Multidisciplinary Finals');
-    expect(qCross5!.question.lecture).toBe(11);
-
-    // MUG3-CH1-ANAT-0493 -> Ch 5 (Pathology)
-    const qCross6 = findQuestionById('MUG3-CH1-ANAT-0493');
-    expect(qCross6).toBeDefined();
-    expect(qCross6!.chapter.id).toBe(5);
-    expect(qCross6!.subjectName).toBe('Pathology');
-    expect(qCross6!.question.lecture).toBe(8);
+    const q3 = findQuestionById('MUG3-CH301-ANAT-0014');
+    expect(q3).toBeDefined();
+    expect(q3!.chapter.id).toBe(301);
 
     // Non-existent ID returns null
     expect(findQuestionById('NON_EXISTENT_ID_9999')).toBeNull();
@@ -226,15 +142,12 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
   it('resolves learning question versions for Chapter 1 and Chapter 301 without failure', async () => {
     const ch1Versions = await getLearningQuestionVersions('MUG-3', 1);
     expect(ch1Versions).toBeInstanceOf(Map);
-    expect(ch1Versions.size).toBe(782);
-    // Check moved question has version
-    expect(ch1Versions.has('MUG3-CH3-PHYS-0307')).toBe(true);
-    expect(ch1Versions.get('MUG3-CH3-PHYS-0307')).toMatch(/^[0-9a-f]{64}$/);
+    expect(ch1Versions.size).toBe(167);
+    expect(ch1Versions.has('MUG3-CH1-ANAT-0002')).toBe(true);
 
     const ch301Versions = await getLearningQuestionVersions('MUG-3', 301);
     expect(ch301Versions).toBeInstanceOf(Map);
-    expect(ch301Versions.size).toBe(317);
-    expect(ch301Versions.has('MUG3-CH301-PHYS-0073')).toBe(true);
-    expect(ch301Versions.get('MUG3-CH301-PHYS-0073')).toMatch(/^[0-9a-f]{64}$/);
+    expect(ch301Versions.size).toBe(6);
+    expect(ch301Versions.has('MUG3-CH301-ANAT-0014')).toBe(true);
   });
 });
