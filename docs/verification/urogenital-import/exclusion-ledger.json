@@ -23,14 +23,14 @@
   {
     "sourceFile": "Histology/Symbiosis (4).png",
     "sourceOccurrence": "Histology/Symbiosis (4).png",
-    "stem": "Tala about Renal Te: a J\n\na Tail about Venus gtainage Svenunaraa\nf\n\n+ (om fue Between Alfani a\n\n# “Jauc_about facet cell",
+    "stem": "Tala about Renal Te: a J\n\na Tail about Venus gtainage Svenunaraa\nf\n\n+ (om fue Between Alfani a\n\n# \u201cJauc_about facet cell",
     "reason": "handwritten_recall_notes",
     "details": "Handwritten student study notes / fragmented recall without verifiable question stem or model answer."
   },
   {
     "sourceFile": "Microbiology/ Symbiosis ( part 1 ).png",
     "sourceOccurrence": "Microbiology/ Symbiosis ( part 1 ).png",
-    "stem": "“ \\ke4 Gov. 4. Focnu\n\ni : Micro\npe Sommales ave mere saccePtable +o UN\nMACY.C Tran males\n\nADAP Gin sia Fe\n\nWeetuleen UTT",
+    "stem": "\u201c \\ke4 Gov. 4. Focnu\n\ni : Micro\npe Sommales ave mere saccePtable +o UN\nMACY.C Tran males\n\nADAP Gin sia Fe\n\nWeetuleen UTT",
     "reason": "handwritten_recall_notes",
     "details": "Handwritten student study notes / fragmented recall without verifiable question stem or model answer."
   },
@@ -238,36 +238,36 @@
     "details": "Question fragment has empty or insufficient text stem."
   },
   {
-    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
-    "sourceOccurrence": "Pathology/الكتاب الاصفر Female & Breast.pdf-Q1",
+    "sourceFile": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf",
+    "sourceOccurrence": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf-Q1",
     "stem": "bad",
     "reason": "unresolvable_ambiguity",
     "details": "Question fragment has empty or insufficient text stem."
   },
   {
-    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
-    "sourceOccurrence": "Pathology/الكتاب الاصفر Female & Breast.pdf-Q19",
+    "sourceFile": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf",
+    "sourceOccurrence": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf-Q19",
     "stem": "34",
     "reason": "unresolvable_ambiguity",
     "details": "Question fragment has empty or insufficient text stem."
   },
   {
-    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
-    "sourceOccurrence": "Pathology/الكتاب الاصفر Female & Breast.pdf-Q56",
+    "sourceFile": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf",
+    "sourceOccurrence": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf-Q56",
     "stem": "",
     "reason": "unresolvable_ambiguity",
     "details": "Question fragment has empty or insufficient text stem."
   },
   {
-    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
-    "sourceOccurrence": "Pathology/الكتاب الاصفر Female & Breast.pdf-Q57",
+    "sourceFile": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf",
+    "sourceOccurrence": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf-Q57",
     "stem": "OE",
     "reason": "unresolvable_ambiguity",
     "details": "Question fragment has empty or insufficient text stem."
   },
   {
-    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
-    "sourceOccurrence": "Pathology/الكتاب الاصفر Female & Breast.pdf-Q66",
+    "sourceFile": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf",
+    "sourceOccurrence": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf-Q66",
     "stem": "",
     "reason": "unresolvable_ambiguity",
     "details": "Question fragment has empty or insufficient text stem."
@@ -387,13 +387,13 @@
   {
     "id": "MUG3-CH5-PATH-3043",
     "reason": "Unresolvable raw answer grid table / non-question OCR fragment",
-    "text": ". % Se — ee ~— 4 | = > <> e i Ps _— . a . ak: “ & a - ; . a a i. i “4 ay » Le i",
+    "text": ". % Se \u2014 ee ~\u2014 4 | = > <> e i Ps _\u2014 . a . ak: \u201c & a - ; . a a i. i \u201c4 ay \u00bb Le i",
     "sources": [
       "Pathology/female tutorials1.pdf-Page51"
     ],
     "sourceFile": "Pathology/female tutorials1.pdf",
     "sourceOccurrence": "Pathology/female tutorials1.pdf-Page51",
-    "stem": ". % Se — ee ~— 4 | = > <> e i Ps _— . a . ak: “ & a - ; . a a i. i “4 ay » Le i",
+    "stem": ". % Se \u2014 ee ~\u2014 4 | = > <> e i Ps _\u2014 . a . ak: \u201c & a - ; . a a i. i \u201c4 ay \u00bb Le i",
     "details": "Unresolvable raw answer grid table / non-question OCR fragment"
   },
   {
@@ -418,7 +418,7 @@
   {
     "sourceFile": "Anatomy/MCQ Anatomy  (1).pdf",
     "sourceOccurrence": "Anatomy/MCQ Anatomy  (1).pdf-Q28",
-    "stem": "As rest minal part of ureter 3 vic art of ureter he ae amural part of the ureter in’",
+    "stem": "As rest minal part of ureter 3 vic art of ureter he ae amural part of the ureter in\u2019",
     "reason": "unresolvable_ocr_bleed",
     "details": "Severe unresolvable OCR corruption of stem and options, including page number fragment '109' and overlapping multi-question text."
   },
@@ -444,8 +444,8 @@
     "details": "Truncated fragment with invalid options referencing 'See the book' and missing authentic clinical question stem."
   },
   {
-    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
-    "sourceOccurrence": "Pathology/الكتاب الاصفر Female & Breast.pdf-Q105",
+    "sourceFile": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf",
+    "sourceOccurrence": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf-Q105",
     "stem": "a. Brenner tumor",
     "reason": "unresolvable_ambiguity",
     "details": "Truncated fragment containing textbook answer key bleed ('See the book d, Serous tumor... 4B. e 69. b') without intact stem or options."
@@ -479,8 +479,8 @@
     "details": "Non-question fragment referencing textbook solutions ('A. See book.') without genuine clinical stem or distractors."
   },
   {
-    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
-    "sourceOccurrence": "Pathology/الكتاب الاصفر Female & Breast.pdf-Q132",
+    "sourceFile": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf",
+    "sourceOccurrence": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 Female & Breast.pdf-Q132",
     "stem": "See the book",
     "reason": "unresolvable_ambiguity",
     "details": "Non-question textbook cross-reference fragment ('See the book') without authentic clinical stem or valid medical options."
@@ -488,7 +488,7 @@
   {
     "sourceFile": "Physiology/Urogenital Module - Physiology Department MCQs.pdf",
     "sourceOccurrence": "Physiology/Urogenital Module - Physiology Department MCQs.pdf-Q52",
-    "stem": " — = — = lL =Jn= = my Ted =e ———————(",
+    "stem": " \u2014 = \u2014 = lL =Jn= = my Ted =e \u2014\u2014\u2014\u2014\u2014\u2014\u2014(",
     "reason": "unresolvable_ocr_bleed",
     "details": "Severe unresolvable OCR noise line bleed in stem alongside leaked faculty answer key in options ('...QF Answer: E')."
   },
@@ -507,8 +507,8 @@
     "details": "Stem corrupted by leaked faculty answer string ('S Answer: E') with cross-question key bleed in options ('...036 Answer: B')."
   },
   {
-    "sourceFile": "Pathology/💥Khalifa male mcq+Ans.pdf",
-    "sourceOccurrence": "Pathology/💥Khalifa male mcq+Ans.pdf-Q43",
+    "sourceFile": "Pathology/\ud83d\udca5Khalifa male mcq+Ans.pdf",
+    "sourceOccurrence": "Pathology/\ud83d\udca5Khalifa male mcq+Ans.pdf-Q43",
     "stem": "Dr. Abdelrahman Khalifa M.D. , PhD.",
     "reason": "unresolvable_ambiguity",
     "details": "Lecturer title/author header extracted as corrupt essay question ('Dr. Abdelrahman Khalifa M.D. , PhD.') without clinical question content."
@@ -553,7 +553,7 @@
     "sourceOccurrence": "Biochemistry/dr omar.pdf-Q36",
     "stem": "Glycine cleavage system produces all of the following EXCEPT:",
     "reason": "unresolvable_ambiguity",
-    "details": "Multiple choice question that lost its options during intake, ingested as essay with unresolvable letter-only model answer ('Correct answer: C\\n‘Butocross\\n')."
+    "details": "Multiple choice question that lost its options during intake, ingested as essay with unresolvable letter-only model answer ('Correct answer: C\\n\u2018Butocross\\n')."
   },
   {
     "sourceFile": "Pre-existing Baseline Bank (Chapter 5 Pathology)",
@@ -681,13 +681,13 @@
     "questionId": "MUG3-CH5-PATH-3325",
     "stem": "B. Epithelial hyperplasia",
     "reason": "unresolvable_ambiguity",
-    "details": "Corrupted OCR fragment with options containing 'Serous cystadenoma: >, See book.' and 'Sce book a a) §'."
+    "details": "Corrupted OCR fragment with options containing 'Serous cystadenoma: >, See book.' and 'Sce book a a) \u00a7'."
   },
   {
     "sourceFile": "Pathology/questions urinary (answers).pdf",
     "sourceOccurrence": "Pathology/questions urinary (answers).pdf-Q16",
     "questionId": "MUG3-CH5-PATH-3328",
-    "stem": "A. Wilm’s tumor. D",
+    "stem": "A. Wilm\u2019s tumor. D",
     "reason": "unresolvable_ambiguity",
     "details": "Corrupted 2-option duplicate fragment of Wilms tumor problem-case model answer with 'See book' distractor."
   },
@@ -735,7 +735,7 @@
     "sourceFile": "Pathology/questions urinary (answers).pdf",
     "sourceOccurrence": "Pathology/questions urinary (answers).pdf-Q26",
     "questionId": "MUG3-CH5-PATH-3336",
-    "stem": "A. Ra - Rapidly progressive ‘ ji As gressive (cres entic) glomerulonephrit 1S duc to forma . 1 ation of i glomerular in 7 mmune comple: ‘lar injury, Format plexes or antibodies whic! ce be idiopathic of aren of these immune complexes _ X — ine evieosene Cran lary to other diseases ae + (1 Xes orantibodies may arteritis nodosa, (3) Wook ) Q) haa nar . gener’s granulomatosis. (4) Goodpasteur’ 2epasteur’s syndrome",
+    "stem": "A. Ra - Rapidly progressive \u2018 ji As gressive (cres entic) glomerulonephrit 1S duc to forma . 1 ation of i glomerular in 7 mmune comple: \u2018lar injury, Format plexes or antibodies whic! ce be idiopathic of aren of these immune complexes _ X \u2014 ine evieosene Cran lary to other diseases ae + (1 Xes orantibodies may arteritis nodosa, (3) Wook ) Q) haa nar . gener\u2019s granulomatosis. (4) Goodpasteur\u2019 2epasteur\u2019s syndrome",
     "reason": "unresolvable_ambiguity",
     "details": "Massive OCR bleed across pages; designated correct answer starts with 'See book rome...'."
   },
@@ -756,8 +756,8 @@
     "details": "Incomplete heading fragment ('A Complete hyd:') with 'See book.' as option [0]."
   },
   {
-    "sourceFile": "Pathology/الكتاب الاصفر male.pdf",
-    "sourceOccurrence": "Pathology/الكتاب الاصفر male.pdf-Q34",
+    "sourceFile": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 male.pdf",
+    "sourceOccurrence": "Pathology/\u0627\u0644\u0643\u062a\u0627\u0628 \u0627\u0644\u0627\u0635\u0641\u0631 male.pdf-Q34",
     "questionId": "MUG3-CH5-PATH-3498",
     "stem": "a. Yolk sac (endodc.rmal sinus) tumour. scrum alpha-fetoproteins",
     "reason": "unresolvable_ambiguity",
@@ -817,7 +817,7 @@
     "sourceOccurrence": "anatomy renal.pdf-p9-Q55",
     "stem": "The averse scm : * 9 5-Locm 4.0-1-50M 0.8cM y.ocm vis, the left ureter steps over Oo} small pelvis, a i gres nterior asp",
     "reason": "severed_ocr_fragment",
-    "details": "Severed gibberish stem: The averse scm : * 9 5-Locm 4.0-1-50M 0.8cM y.ocm vis, the left ureter steps over Oo} small pelvis, a i gres® nterior aspect of the end of left common iliac artery. Wave 8 purification exclusion."
+    "details": "Severed gibberish stem: The averse scm : * 9 5-Locm 4.0-1-50M 0.8cM y.ocm vis, the left ureter steps over Oo} small pelvis, a i gres\u00ae nterior aspect of the end of left common iliac artery. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -877,7 +877,7 @@
   },
   {
     "sourceFile": "unknown",
-    "sourceOccurrence": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q67",
+    "sourceOccurrence": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q67",
     "stem": "Artery of vas.",
     "reason": "severed_ocr_fragment",
     "details": "Severed essay fragment with no answer: stem=\"Artery of vas.\", ma=\"3 Vs:\". Wave 8 purification exclusion."
@@ -926,7 +926,7 @@
   },
   {
     "sourceFile": "unknown",
-    "sourceOccurrence": "💥Renal Physiology Questions-1.pdf-p15-Q41",
+    "sourceOccurrence": "\ud83d\udca5Renal Physiology Questions-1.pdf-p15-Q41",
     "stem": "Define each of:",
     "reason": "severed_ocr_fragment",
     "details": "Severed gibberish stem: Define each of:. Wave 8 purification exclusion."
@@ -936,18 +936,18 @@
     "sourceOccurrence": "UG_NERD-p18-right-Q2",
     "stem": "Erythropoietin",
     "reason": "severed_ocr_fragment",
-    "details": "Severed MCQ fragment with broken options: stem=\"Erythropoietin\", opts=['Angiotensin Il', 'Prostaglandins', 'ADH ©. Calcitriol']. Wave 8 purification exclusion."
+    "details": "Severed MCQ fragment with broken options: stem=\"Erythropoietin\", opts=['Angiotensin Il', 'Prostaglandins', 'ADH \u00a9. Calcitriol']. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
-    "sourceOccurrence": "Physiology/MCQ-LABELLED 🏷️ physio female _compress.pdf-Q2",
+    "sourceOccurrence": "Physiology/MCQ-LABELLED \ud83c\udff7\ufe0f physio female _compress.pdf-Q2",
     "stem": "MKS Cervical te",
     "reason": "severed_ocr_fragment",
     "details": "Severed gibberish stem: MKS Cervical te. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
-    "sourceOccurrence": "Physiology/MCQ-LABELLED 🏷️ physio female _compress.pdf-Q6",
+    "sourceOccurrence": "Physiology/MCQ-LABELLED \ud83c\udff7\ufe0f physio female _compress.pdf-Q6",
     "stem": "uterine 1 i S",
     "reason": "severed_ocr_fragment",
     "details": "Severed gibberish stem: uterine 1 i S. Wave 8 purification exclusion."
@@ -961,7 +961,7 @@
   },
   {
     "sourceFile": "unknown",
-    "sourceOccurrence": "Physiology/💥Renal Physiology Questions-1.pdf-Q91",
+    "sourceOccurrence": "Physiology/\ud83d\udca5Renal Physiology Questions-1.pdf-Q91",
     "stem": "Define each of:",
     "reason": "severed_ocr_fragment",
     "details": "Severed gibberish stem: Define each of:. Wave 8 purification exclusion."
@@ -978,7 +978,7 @@
     "sourceOccurrence": "UG_NERD-p44-right-Q2",
     "stem": "Penile urethra",
     "reason": "severed_ocr_fragment",
-    "details": "Severed MCQ fragment with broken options: stem=\"Penile urethra\", opts=['Prostatic gland', 'Seminal vesicles epididymis ©. Bulbourethral gland The resting mammary gland is by presence of: @. Adipose connective tissue in its stroma.', 'Simple cuboidal epithelium in lactiferous sit', 'Dense connective tissue intra lobular', 'Highly branched secretory acini. Thin connective tissue septa m']. Wave 8 purification exclusion."
+    "details": "Severed MCQ fragment with broken options: stem=\"Penile urethra\", opts=['Prostatic gland', 'Seminal vesicles epididymis \u00a9. Bulbourethral gland The resting mammary gland is by presence of: @. Adipose connective tissue in its stroma.', 'Simple cuboidal epithelium in lactiferous sit', 'Dense connective tissue intra lobular', 'Highly branched secretory acini. Thin connective tissue septa m']. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -1006,14 +1006,14 @@
     "sourceOccurrence": "UG_NERD-p54-right-Q2",
     "stem": "Angiomyolipoma",
     "reason": "severed_ocr_fragment",
-    "details": "Severed MCQ fragment with broken options: stem=\"Angiomyolipoma\", opts=['Renal cell carcinoma ©. Transitional cell carcinoma', 'Wilms tumor ©. Medullary fibroma']. Wave 8 purification exclusion."
+    "details": "Severed MCQ fragment with broken options: stem=\"Angiomyolipoma\", opts=['Renal cell carcinoma \u00a9. Transitional cell carcinoma', 'Wilms tumor \u00a9. Medullary fibroma']. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
     "sourceOccurrence": "UG_NERD-p64-left-Q6",
     "stem": "Chocolate cyst",
     "reason": "severed_ocr_fragment",
-    "details": "Severed MCQ fragment with broken options: stem=\"Chocolate cyst\", opts=['Follicular cysts', \"Gartner's duct cyst iS\", '©. Nabothian cysts :', 'iB.']. Wave 8 purification exclusion."
+    "details": "Severed MCQ fragment with broken options: stem=\"Chocolate cyst\", opts=['Follicular cysts', \"Gartner's duct cyst iS\", '\u00a9. Nabothian cysts :', 'iB.']. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -1027,7 +1027,7 @@
     "sourceOccurrence": "Pathology/DEPARTMENT patho genital mcq.pdf-Q16",
     "stem": "The following |",
     "reason": "severed_ocr_fragment",
-    "details": "Severed MCQ fragment with broken options: stem=\"The following |\", opts=['Non-suppurative inflammation', 'Tuberculosis swe! Questions and An Jlowing cone” i escended testis -anulomatous or granulomas dded granulom nune response rs in pathology is a risk factor of neoplasia,', 'Acute Orchitis', 'Syphilitic Orchitig dition rchitis in seminoma indicates, atous Jesion B. Bad immune resp', 'Spread of the tum Nse atous infection Or']. Wave 8 purification exclusion."
+    "details": "Severed MCQ fragment with broken options: stem=\"The following |\", opts=['Non-suppurative inflammation', 'Tuberculosis swe! Questions and An Jlowing cone\u201d i escended testis -anulomatous or granulomas dded granulom nune response rs in pathology is a risk factor of neoplasia,', 'Acute Orchitis', 'Syphilitic Orchitig dition rchitis in seminoma indicates, atous Jesion B. Bad immune resp', 'Spread of the tum Nse atous infection Or']. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -1046,9 +1046,9 @@
   {
     "sourceFile": "unknown",
     "sourceOccurrence": "Pathology/DEPARTMENT patho urinary mcq.pdf-Q79",
-    "stem": "A. Wilm’s tumor",
+    "stem": "A. Wilm\u2019s tumor",
     "reason": "severed_ocr_fragment",
-    "details": "Severed MCQ fragment with broken options: stem=\"A. Wilm’s tumor\", opts=['Angiomyolipoma', 'Renal cell carcinoma', 'Renal oncocytoma', 'Renal adenoma']. Wave 8 purification exclusion."
+    "details": "Severed MCQ fragment with broken options: stem=\"A. Wilm\u2019s tumor\", opts=['Angiomyolipoma', 'Renal cell carcinoma', 'Renal oncocytoma', 'Renal adenoma']. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -1090,7 +1090,7 @@
     "sourceOccurrence": "Pathology/genitourinary mcq.pdf-Q68",
     "stem": "Bone metast",
     "reason": "severed_ocr_fragment",
-    "details": "Severed MCQ fragment with broken options: stem=\"Bone metast\", opts=['Osteolytle ye ‘ “ated', 'Well-different\" 4) pSA level 5 sjated with no ° . cific toa is s a can f serum prostatic specific antigen is used for; timation © s\\' of prosté ition of ases from P Pp. Poorly-differentiated noma the prostatic origi (issn * Typing atic carci!', 'Confirmé 1 in case Of metastases With Un.', 'Diagnosis of prostatitis known primary . © C. Diagnosis of prostatic hyperplasia I EXCE']. Wave 8 purification exclusion."
+    "details": "Severed MCQ fragment with broken options: stem=\"Bone metast\", opts=['Osteolytle ye \u2018 \u201cated', 'Well-different\" 4) pSA level 5 sjated with no \u00b0 . cific toa is s a can f serum prostatic specific antigen is used for; timation \u00a9 s\\' of prost\u00e9 ition of ases from P Pp. Poorly-differentiated noma the prostatic origi (issn * Typing atic carci!', 'Confirm\u00e9 1 in case Of metastases With Un.', 'Diagnosis of prostatitis known primary . \u00a9 C. Diagnosis of prostatic hyperplasia I EXCE']. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -1104,7 +1104,7 @@
     "sourceOccurrence": "Pathology/questions urinary (answers).pdf-Q9",
     "stem": "A. Infertility,",
     "reason": "severed_ocr_fragment",
-    "details": "Severed MCQ fragment with broken options: stem=\"A. Infertility,\", opts=['Sce book.', 'Tubreul iOUS Sa + s Salipingitis, tuberculous endometritis, endometriosis sean, tm Abe oblastic discas Mand malign arises from the smooth muscle fj ibre mors of the body of uterus (te, cs Deng itty ‘SCC DOOK. le. Ae Cori shite k-ydatidiform']. Wave 8 purification exclusion."
+    "details": "Severed MCQ fragment with broken options: stem=\"A. Infertility,\", opts=['Sce book.', 'Tubreul iOUS Sa + s Salipingitis, tuberculous endometritis, endometriosis sean, tm Abe oblastic discas Mand malign arises from the smooth muscle fj ibre mors of the body of uterus (te, cs Deng itty \u2018SCC DOOK. le. Ae Cori shite k-ydatidiform']. Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -1143,7 +1143,7 @@
   },
   {
     "sourceFile": "unknown",
-    "sourceOccurrence": "💥Urogenital Assessment 1 MCQ.pdf-Q3",
+    "sourceOccurrence": "\ud83d\udca5Urogenital Assessment 1 MCQ.pdf-Q3",
     "stem": "Man with UTI?",
     "reason": "severed_ocr_fragment",
     "details": "Severed essay fragment with no answer: stem=\"Man with UTI?\", ma=\"Cipro 2 weeks\". Wave 8 purification exclusion."
@@ -1167,14 +1167,14 @@
     "sourceOccurrence": "practical 2018-2020.pdf-Q17",
     "stem": "Injected kidney",
     "reason": "severed_ocr_fragment",
-    "details": "Severed essay fragment with no answer: stem=\"Injected kidney\", ma=\"ويسف\". Wave 8 purification exclusion."
+    "details": "Severed essay fragment with no answer: stem=\"Injected kidney\", ma=\"\u0648\u064a\u0633\u0641\". Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
     "sourceOccurrence": "practical 2018-2020.pdf-Q32",
     "stem": "Apex of bladder",
     "reason": "severed_ocr_fragment",
-    "details": "Severed essay fragment with no answer: stem=\"Apex of bladder\", ma=\"وثاب\". Wave 8 purification exclusion."
+    "details": "Severed essay fragment with no answer: stem=\"Apex of bladder\", ma=\"\u0648\u062b\u0627\u0628\". Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -1199,7 +1199,7 @@
   },
   {
     "sourceFile": "unknown",
-    "sourceOccurrence": "💥Practical UG Exam 2024.pdf-Q10",
+    "sourceOccurrence": "\ud83d\udca5Practical UG Exam 2024.pdf-Q10",
     "stem": "Clear cells",
     "reason": "severed_ocr_fragment",
     "details": "Severed essay fragment with no answer: stem=\"Clear cells\", ma=\"Physio\". Wave 8 purification exclusion."
@@ -1244,7 +1244,7 @@
     "sourceOccurrence": "Past Exams/practical 2018-2020.pdf-Q90",
     "stem": "ndole test",
     "reason": "severed_ocr_fragment",
-    "details": "Severed essay fragment with no answer: stem=\"índole test\", ma=\"Para\". Wave 8 purification exclusion."
+    "details": "Severed essay fragment with no answer: stem=\"\u00edndole test\", ma=\"Para\". Wave 8 purification exclusion."
   },
   {
     "sourceFile": "unknown",
@@ -1262,7 +1262,7 @@
   },
   {
     "sourceFile": "unknown",
-    "sourceOccurrence": "Past Exams/💥Practical UG Exam 2024.pdf-Q36",
+    "sourceOccurrence": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q36",
     "stem": "Sertoli cell",
     "reason": "severed_ocr_fragment",
     "details": "Severed essay fragment with no answer: stem=\"Sertoli cell\", ma=\"Model 2:\nAnatomy\". Wave 8 purification exclusion."
@@ -1358,7 +1358,7 @@
     "id": "MUG3-CH1-ANAT-0681",
     "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
     "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q12",
-    "stem": "Urethra (prostatic – membranous – penile)",
+    "stem": "Urethra (prostatic \u2013 membranous \u2013 penile)",
     "reason": "unresolvable_ocr_bleed",
     "details": "Table of contents / slide header debris from practical revision PDF."
   },
@@ -1430,7 +1430,7 @@
     "id": "MUG3-CH1-ANAT-0694",
     "sourceFile": "Anatomy/Updated practical anatomy revision.pdf",
     "sourceOccurrence": "Anatomy/Updated practical anatomy revision.pdf-Q29",
-    "stem": "Recto-vesical fistula: caused by incomplete urorectal septum. Superficial S aN inguinal pouch —___ ry Pubo-penile Oo- Femoral Transverse oy ~ ectopia e—— Perineal ~~ True Abdominal Inguinal Suprascrotal AL Ectopic Prepenile",
+    "stem": "Recto-vesical fistula: caused by incomplete urorectal septum. Superficial S aN inguinal pouch \u2014___ ry Pubo-penile Oo- Femoral Transverse oy ~ ectopia e\u2014\u2014 Perineal ~~ True Abdominal Inguinal Suprascrotal AL Ectopic Prepenile",
     "reason": "requires_image",
     "details": "Practical anatomy slide pointer/diagram question strictly requiring unavailable image."
   },
@@ -1438,7 +1438,7 @@
     "id": "MUG3-CH1-ANAT-0670",
     "sourceFile": "Anatomy/Symbiosis (2).png",
     "sourceOccurrence": "Anatomy/Symbiosis (2).png-Item2",
-    "stem": "He Mention Ane Relation of urinary Bladder _”, pw",
+    "stem": "He Mention Ane Relation of urinary Bladder _\u201d, pw",
     "reason": "unresolvable_ocr_bleed",
     "details": "Table of contents / slide header debris from practical revision PDF."
   },
@@ -1478,7 +1478,7 @@
     "id": "MUG3-CH5-PATH-2282",
     "sourceFile": "Pathology/SGD UB, Male ,breast 2024_.pdf",
     "sourceOccurrence": "Pathology/SGD UB, Male ,breast 2024_.pdf-Q30",
-    "stem": "Genetic alterations Extended Modular Program 24 Gleason’s grading system Combined Gleason’s score: Addition of two most prevalent grades in the examined Biopsy e.g. 3+4= 7/10 Extended Modular Program 25 Which of the following conditions is premalignant?",
+    "stem": "Genetic alterations Extended Modular Program 24 Gleason\u2019s grading system Combined Gleason\u2019s score: Addition of two most prevalent grades in the examined Biopsy e.g. 3+4= 7/10 Extended Modular Program 25 Which of the following conditions is premalignant?",
     "reason": "unresolvable_ocr_bleed",
     "details": "Extended Modular Program slide presentation OCR bleed with corrupted options."
   },
@@ -1702,7 +1702,7 @@
     "id": "MUG3-CH2-HIST-0278",
     "sourceFile": "Histology/4_5845997956452321379.pdf",
     "sourceOccurrence": "Histology/4_5845997956452321379.pdf-Q52",
-    "stem": "Reinke’s crystalloids ‘5 gland",
+    "stem": "Reinke\u2019s crystalloids \u20185 gland",
     "reason": "severed_ocr_fragment",
     "details": "Severed matching column fragment converted to pseudo-essay."
   },
@@ -1734,7 +1734,7 @@
     "id": "MUG3-CH2-HIST-0282",
     "sourceFile": "Histology/Histo paper 2.pdf",
     "sourceOccurrence": "Histology/Histo paper 2.pdf-Q1",
-    "stem": "746 — 100% + G3) McQ  After fertilization of the ovum, implantation occurs in the endometrium. At this time the developing placenta begins % to produce a hormone necessary for embryonic viability. Which of the following best describes this hormone’s action?",
+    "stem": "746 \u2014 100% + G3) McQ  After fertilization of the ovum, implantation occurs in the endometrium. At this time the developing placenta begins % to produce a hormone necessary for embryonic viability. Which of the following best describes this hormone\u2019s action?",
     "reason": "unresolvable_ocr_bleed",
     "details": "WhatsApp screenshot multi-question concatenation with chat artifacts."
   },
@@ -1756,88 +1756,88 @@
   },
   {
     "id": "MUG3-CH5-PATH-1229",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q1",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q1",
     "stem": "Stage of corcariaf invasion ind schist gud migaion)",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1230",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q3",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q3",
     "stem": "of host antigens",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1231",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q4",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q4",
     "stem": "Require host antigen on its aa",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1232",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q5",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q5",
     "stem": "Hosttik antiges pro D i a",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1233",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q6",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q6",
     "stem": "indirect Immunodiag jnostic methods:",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1234",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q8",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q8",
     "stem": "cor sanitary measures: building latrines in-houses, schools, mosques, 2:",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1235",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q9",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q9",
     "stem": "Safe Water supply",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1236",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q10",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q10",
     "stem": "Trichomonas vaginalis completes its life cycle in one",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1237",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q11",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q11",
     "stem": "The trophozoite Stage reproduces by longitudinal",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1238",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q12",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q12",
     "stem": "Occasionally, infectioy",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
   },
   {
     "id": "MUG3-CH5-PATH-1240",
-    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf",
-    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_🏷️_All_the_Para_and_micro_of_ass_2_compress.pdf-Q14",
+    "sourceFile": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf",
+    "sourceOccurrence": "Comprehensive Banks/MCQ_LABELLED_\ud83c\udff7\ufe0f_All_the_Para_and_micro_of_ass_2_compress.pdf-Q14",
     "stem": "Superadded infection as gonorrhoea.",
     "reason": "severed_ocr_fragment",
     "details": "Severed parasitology textbook paragraph OCR shred."
@@ -1846,7 +1846,7 @@
     "id": "MUG3-CH5-PATH-0796",
     "sourceFile": "DrThanaaHelal",
     "sourceOccurrence": "DrThanaaHelal-Q1353",
-    "stem": "mow  mow moO Ow ZF mun 0 cRwhe TO O0Wp . Focal embolic glomerulo- nephritis . Atherosclerotic kidney . Nephrotic syndrome . Chronic glomerulo-nephritis Hydronephrosis Yellowish white Stag-horn stone Multiple and spiky Radio-translucent Smooth and faceted . Wilm’s tumor . Angiomyolipoma . Renal cell ",
+    "stem": "mow  mow moO Ow ZF mun 0 cRwhe TO O0Wp . Focal embolic glomerulo- nephritis . Atherosclerotic kidney . Nephrotic syndrome . Chronic glomerulo-nephritis Hydronephrosis Yellowish white Stag-horn stone Multiple and spiky Radio-translucent Smooth and faceted . Wilm\u2019s tumor . Angiomyolipoma . Renal cell ",
     "reason": "unresolvable_answer_key_fragment",
     "details": "Unresolvable raw answer grid / matching table dump."
   },
@@ -2062,7 +2062,7 @@
     "id": "MUG3-CH5-PATH-1118",
     "sourceFile": "PathologyDept",
     "sourceOccurrence": "PathologyDept-Case040",
-    "stem": "41. ‘1 ) d. Papillar Y TICCTOBTS b. Focal segmental glomerulosclerosis c. Nephrocalcinosis d. Interstitial nephritis. A 49-year-old female has been hospitalized for the past 10 days for treatment of a bronchopneumonia. There is no past history of renal disease. She has developed the onset of chills,",
+    "stem": "41. \u20181 ) d. Papillar Y TICCTOBTS b. Focal segmental glomerulosclerosis c. Nephrocalcinosis d. Interstitial nephritis. A 49-year-old female has been hospitalized for the past 10 days for treatment of a bronchopneumonia. There is no past history of renal disease. She has developed the onset of chills,",
     "reason": "unresolvable_ocr_bleed",
     "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
   },
@@ -2078,7 +2078,7 @@
     "id": "MUG3-CH5-PATH-1124",
     "sourceFile": "PathologyDept",
     "sourceOccurrence": "PathologyDept-Case056",
-    "stem": "A 75 —year-old female died with normal renal function. Postmortem examination reveals slightly small kidneys with a granular surface. Microscopic examination of renal sections reveal scattered hyalinized glomeruli, interstitial fibrosis, focal tubular atrophy, and arteriolar thickening. These findin",
+    "stem": "A 75 \u2014year-old female died with normal renal function. Postmortem examination reveals slightly small kidneys with a granular surface. Microscopic examination of renal sections reveal scattered hyalinized glomeruli, interstitial fibrosis, focal tubular atrophy, and arteriolar thickening. These findin",
     "reason": "unresolvable_ocr_bleed",
     "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
   },
@@ -2086,7 +2086,7 @@
     "id": "MUG3-CH5-PATH-1127",
     "sourceFile": "PathologyDept",
     "sourceOccurrence": "PathologyDept-Case067",
-    "stem": "A 5-year-old boy is noted to have increased puffiness around his eyes for the past week. His BP measurs 140/90mm Hg. A urine analysis reveals PH 6.5, no glucose, 4+ protein, no blood and no casts. Microscopic urinalysis reveals oval fat bodies, but no WBC(C’s or RBC’s. He improves following a course",
+    "stem": "A 5-year-old boy is noted to have increased puffiness around his eyes for the past week. His BP measurs 140/90mm Hg. A urine analysis reveals PH 6.5, no glucose, 4+ protein, no blood and no casts. Microscopic urinalysis reveals oval fat bodies, but no WBC(C\u2019s or RBC\u2019s. He improves following a course",
     "reason": "unresolvable_ocr_bleed",
     "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
   },
@@ -2126,7 +2126,7 @@
     "id": "MUG3-CH5-PATH-1198",
     "sourceFile": "PathologyDept",
     "sourceOccurrence": "PathologyDept-Case086",
-    "stem": "87. A 59 —year-old postmenopausal female suffers from bleeding which has been present for a couple of months. Her physician refers her to a gynecologist, who performs an endometrial biopsy that reveals atypical adenomatous hyperplasia. This lesion most likely results from: a. Unopposed estrogenic st",
+    "stem": "87. A 59 \u2014year-old postmenopausal female suffers from bleeding which has been present for a couple of months. Her physician refers her to a gynecologist, who performs an endometrial biopsy that reveals atypical adenomatous hyperplasia. This lesion most likely results from: a. Unopposed estrogenic st",
     "reason": "unresolvable_ocr_bleed",
     "details": "Multi-question concatenation with concatenated vignettes and ambiguous Option (c) model answer."
   },
@@ -2270,7 +2270,7 @@
     "id": "MUG3-CH1-ANAT-0700",
     "sourceFile": "Anatomy/anatomy -genital essay.pdf-Q6",
     "sourceOccurrence": "MUG3-CH1-ANAT-0700-held-exclusion",
-    "stem": "prostatic and membranous urethra —internal and external iliac lymph nodes",
+    "stem": "prostatic and membranous urethra \u2014internal and external iliac lymph nodes",
     "reason": "unresolvable_fragment",
     "details": "The textbook lists internal iliac nodes for prostatic and membranous urethra. The sheet adds external iliac. Record the disagreement and do not treat the fragment as a prompt. Source child d, line 1, adds external iliac drainage. S205 page 30 lists internal iliac only for the prostatic and membranous segments."
   },
@@ -2300,7 +2300,7 @@
   },
   {
     "id": "MUG3-CH1-ANAT-0896",
-    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q15",
+    "sourceFile": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q15",
     "sourceOccurrence": "MUG3-CH1-ANAT-0896-held-exclusion",
     "stem": "Umbilical A",
     "reason": "unresolvable_fragment",
@@ -2308,7 +2308,7 @@
   },
   {
     "id": "MUG3-CH1-ANAT-0915",
-    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q38",
+    "sourceFile": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q38",
     "sourceOccurrence": "MUG3-CH1-ANAT-0915-held-exclusion",
     "stem": "Bulbospongiosus",
     "reason": "unresolvable_fragment",
@@ -2316,7 +2316,7 @@
   },
   {
     "id": "MUG3-CH1-ANAT-0916",
-    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q39",
+    "sourceFile": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q39",
     "sourceOccurrence": "MUG3-CH1-ANAT-0916-held-exclusion",
     "stem": "Ischiocavernosus",
     "reason": "unresolvable_fragment",
@@ -2324,7 +2324,7 @@
   },
   {
     "id": "MUG3-CH1-ANAT-0918",
-    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q42",
+    "sourceFile": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q42",
     "sourceOccurrence": "MUG3-CH1-ANAT-0918-held-exclusion",
     "stem": "Superficial Transverse",
     "reason": "unresolvable_fragment",
@@ -2332,7 +2332,7 @@
   },
   {
     "id": "MUG3-CH1-ANAT-0920",
-    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q44",
+    "sourceFile": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q44",
     "sourceOccurrence": "MUG3-CH1-ANAT-0920-held-exclusion",
     "stem": "Obturator Internus",
     "reason": "unresolvable_fragment",
@@ -2340,7 +2340,7 @@
   },
   {
     "id": "MUG3-CH1-ANAT-0921",
-    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q46",
+    "sourceFile": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q46",
     "sourceOccurrence": "MUG3-CH1-ANAT-0921-held-exclusion",
     "stem": "Ano-coccygeal body",
     "reason": "unresolvable_fragment",
@@ -2348,7 +2348,7 @@
   },
   {
     "id": "MUG3-CH1-ANAT-0923",
-    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q48",
+    "sourceFile": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q48",
     "sourceOccurrence": "MUG3-CH1-ANAT-0923-held-exclusion",
     "stem": "Ischial tuberosities",
     "reason": "unresolvable_fragment",
@@ -2356,7 +2356,7 @@
   },
   {
     "id": "MUG3-CH1-ANAT-0924",
-    "sourceFile": "Anatomy/أسئلة مراجعة الكلية_.pdf-Q49",
+    "sourceFile": "Anatomy/\u0627\u0654\u0633\u064a\u0654\u0644\u0629 \u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0643\u0644\u064a\u0629_.pdf-Q49",
     "sourceOccurrence": "MUG3-CH1-ANAT-0924-held-exclusion",
     "stem": "Sacrotuberous ligament",
     "reason": "unresolvable_fragment",
@@ -2424,7 +2424,7 @@
     "sourceOccurrence": "MUG3-CH103-PHYS-0025-held-exclusion",
     "stem": "Turnover BM",
     "reason": "unresolvable_fragment",
-    "details": "The response about basement membrane turnover became an essay stem and the mesangial-cell prompt appears in its model answer. “BM” could mean basement membrane in a histology context, but the fragment lacks both referent and requested criterion. No scored answer from the archive. The source restores the question about intraglomerular mesangial cells, with basement membrane turnover as a reported response. Keep the clipped archive held."
+    "details": "The response about basement membrane turnover became an essay stem and the mesangial-cell prompt appears in its model answer. \u201cBM\u201d could mean basement membrane in a histology context, but the fragment lacks both referent and requested criterion. No scored answer from the archive. The source restores the question about intraglomerular mesangial cells, with basement membrane turnover as a reported response. Keep the clipped archive held."
   },
   {
     "id": "MUG3-CH103-PHYS-0050",
@@ -2600,7 +2600,7 @@
     "sourceOccurrence": "MUG3-CH2-HIST-0045-held-exclusion",
     "stem": "Exocrine function:",
     "reason": "unresolvable_fragment",
-    "details": "Androgen-binding protein and tubular fluid are secreted into the seminiferous tubules. “Exocrine function” is an answer heading lacking the cell and task. The source records this as answer point 5 of Male Q14."
+    "details": "Androgen-binding protein and tubular fluid are secreted into the seminiferous tubules. \u201cExocrine function\u201d is an answer heading lacking the cell and task. The source records this as answer point 5 of Male Q14."
   },
   {
     "id": "MUG3-CH2-HIST-0046",
@@ -2608,7 +2608,7 @@
     "sourceOccurrence": "MUG3-CH2-HIST-0046-held-exclusion",
     "stem": "Endocrine function:",
     "reason": "unresolvable_fragment",
-    "details": "Sertoli cells produce inhibin and fetal anti-Müllerian hormone. This heading is a component of a larger rubric, not an independent prompt. The source records this as answer point 6 of Male Q14."
+    "details": "Sertoli cells produce inhibin and fetal anti-M\u00fcllerian hormone. This heading is a component of a larger rubric, not an independent prompt. The source records this as answer point 6 of Male Q14."
   },
   {
     "id": "MUG3-CH2-HIST-0343",
@@ -2676,7 +2676,7 @@
   },
   {
     "id": "MUG3-CH202-HIST-0009",
-    "sourceFile": "💥Practical UG Exam 2024.pdf-Q3",
+    "sourceFile": "\ud83d\udca5Practical UG Exam 2024.pdf-Q3",
     "sourceOccurrence": "MUG3-CH202-HIST-0009-held-exclusion",
     "stem": "Podocytes- visceral layer of bowman capsule",
     "reason": "unresolvable_fragment",
@@ -2772,7 +2772,7 @@
   },
   {
     "id": "MUG3-CH203-PHYS-0083",
-    "sourceFile": "💥Practical UG Exam 2024.pdf-Q7",
+    "sourceFile": "\ud83d\udca5Practical UG Exam 2024.pdf-Q7",
     "sourceOccurrence": "MUG3-CH203-PHYS-0083-held-exclusion",
     "stem": "Excretion for HCO",
     "reason": "unresolvable_fragment",
@@ -2780,7 +2780,7 @@
   },
   {
     "id": "MUG3-CH203-PHYS-0084",
-    "sourceFile": "💥Practical UG Exam 2024.pdf-Q3",
+    "sourceFile": "\ud83d\udca5Practical UG Exam 2024.pdf-Q3",
     "sourceOccurrence": "MUG3-CH203-PHYS-0084-held-exclusion",
     "stem": "Renal ischemia",
     "reason": "unresolvable_fragment",
@@ -2788,7 +2788,7 @@
   },
   {
     "id": "MUG3-CH203-PHYS-0085",
-    "sourceFile": "💥Practical UG Exam 2024.pdf-Q5",
+    "sourceFile": "\ud83d\udca5Practical UG Exam 2024.pdf-Q5",
     "sourceOccurrence": "MUG3-CH203-PHYS-0085-held-exclusion",
     "stem": "Enterococcus faecalis",
     "reason": "unresolvable_fragment",
@@ -2796,7 +2796,7 @@
   },
   {
     "id": "MUG3-CH203-PHYS-0088",
-    "sourceFile": "💥Practical UG Exam 2024.pdf-Q10",
+    "sourceFile": "\ud83d\udca5Practical UG Exam 2024.pdf-Q10",
     "sourceOccurrence": "MUG3-CH203-PHYS-0088-held-exclusion",
     "stem": "Keratinized epithelium",
     "reason": "unresolvable_fragment",
@@ -2804,7 +2804,7 @@
   },
   {
     "id": "MUG3-CH203-PHYS-0091",
-    "sourceFile": "💥Practical UG Exam 2024.pdf-Q2",
+    "sourceFile": "\ud83d\udca5Practical UG Exam 2024.pdf-Q2",
     "sourceOccurrence": "MUG3-CH203-PHYS-0091-held-exclusion",
     "stem": "Liver disease",
     "reason": "unresolvable_fragment",
@@ -2812,7 +2812,7 @@
   },
   {
     "id": "MUG3-CH203-PHYS-0093",
-    "sourceFile": "💥Practical UG Exam 2024.pdf-Q10",
+    "sourceFile": "\ud83d\udca5Practical UG Exam 2024.pdf-Q10",
     "sourceOccurrence": "MUG3-CH203-PHYS-0093-held-exclusion",
     "stem": "Parietal epithelium proliferation",
     "reason": "unresolvable_fragment",
@@ -2868,7 +2868,7 @@
   },
   {
     "id": "MUG3-CH203-PHYS-0137",
-    "sourceFile": "💥Urogenital Assessment 2 MCQ-1.pdf-Q11",
+    "sourceFile": "\ud83d\udca5Urogenital Assessment 2 MCQ-1.pdf-Q11",
     "sourceOccurrence": "MUG3-CH203-PHYS-0137-held-exclusion",
     "stem": "A 65 year old woman had stage IV cervical cancer. If untreated, which of",
     "reason": "unresolvable_fragment",
@@ -3364,7 +3364,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0351",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q5",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q5",
     "sourceOccurrence": "MUG3-CH205-PATH-0351-held-exclusion",
     "stem": "persistence lobulation of kidney",
     "reason": "unresolvable_fragment",
@@ -3372,7 +3372,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0352",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q7",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q7",
     "sourceOccurrence": "MUG3-CH205-PATH-0352-held-exclusion",
     "stem": "felteration load : 100",
     "reason": "unresolvable_fragment",
@@ -3380,7 +3380,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0353",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q8",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q8",
     "sourceOccurrence": "MUG3-CH205-PATH-0353-held-exclusion",
     "stem": "excecretion load : 30",
     "reason": "unresolvable_fragment",
@@ -3388,7 +3388,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0354",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q9",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q9",
     "sourceOccurrence": "MUG3-CH205-PATH-0354-held-exclusion",
     "stem": "reabsorption : 70",
     "reason": "unresolvable_fragment",
@@ -3396,7 +3396,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0355",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q10",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q10",
     "sourceOccurrence": "MUG3-CH205-PATH-0355-held-exclusion",
     "stem": "renal fraction : 25",
     "reason": "unresolvable_fragment",
@@ -3404,7 +3404,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0356",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q12",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q12",
     "sourceOccurrence": "MUG3-CH205-PATH-0356-held-exclusion",
     "stem": "log HCO / CO2 : 1.7",
     "reason": "unresolvable_fragment",
@@ -3412,7 +3412,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0357",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q13",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q13",
     "sourceOccurrence": "MUG3-CH205-PATH-0357-held-exclusion",
     "stem": "excretion for HCO3",
     "reason": "unresolvable_fragment",
@@ -3420,7 +3420,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0358",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q14",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q14",
     "sourceOccurrence": "MUG3-CH205-PATH-0358-held-exclusion",
     "stem": "1 mg/dl conc. Of creatinine serum",
     "reason": "unresolvable_fragment",
@@ -3428,7 +3428,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0359",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q15",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q15",
     "sourceOccurrence": "MUG3-CH205-PATH-0359-held-exclusion",
     "stem": "normal ratio less than 30",
     "reason": "unresolvable_fragment",
@@ -3436,7 +3436,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0360",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q18",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q18",
     "sourceOccurrence": "MUG3-CH205-PATH-0360-held-exclusion",
     "stem": "Proteus swarming growth",
     "reason": "unresolvable_fragment",
@@ -3444,7 +3444,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0361",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q22",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q22",
     "sourceOccurrence": "MUG3-CH205-PATH-0361-held-exclusion",
     "stem": "creamy yellowish material",
     "reason": "unresolvable_fragment",
@@ -3452,7 +3452,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0362",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q24",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q24",
     "sourceOccurrence": "MUG3-CH205-PATH-0362-held-exclusion",
     "stem": "diffuse enlargement",
     "reason": "unresolvable_fragment",
@@ -3460,7 +3460,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0363",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q26",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q26",
     "sourceOccurrence": "MUG3-CH205-PATH-0363-held-exclusion",
     "stem": "Malignant germ cell",
     "reason": "unresolvable_fragment",
@@ -3468,7 +3468,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0364",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q27",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q27",
     "sourceOccurrence": "MUG3-CH205-PATH-0364-held-exclusion",
     "stem": "connected to the pelvicalyceal",
     "reason": "unresolvable_fragment",
@@ -3476,7 +3476,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0365",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q28",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q28",
     "sourceOccurrence": "MUG3-CH205-PATH-0365-held-exclusion",
     "stem": "multilocular filled with mucinous material",
     "reason": "unresolvable_fragment",
@@ -3484,7 +3484,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0366",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q29",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q29",
     "sourceOccurrence": "MUG3-CH205-PATH-0366-held-exclusion",
     "stem": "subepithelial humps",
     "reason": "unresolvable_fragment",
@@ -3492,7 +3492,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0367",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q30",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q30",
     "sourceOccurrence": "MUG3-CH205-PATH-0367-held-exclusion",
     "stem": "her 2 neu receptor ( positive)",
     "reason": "unresolvable_fragment",
@@ -3500,7 +3500,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0368",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q32",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q32",
     "sourceOccurrence": "MUG3-CH205-PATH-0368-held-exclusion",
     "stem": "large egg with terminal spine",
     "reason": "unresolvable_fragment",
@@ -3508,7 +3508,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0369",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q35",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q35",
     "sourceOccurrence": "MUG3-CH205-PATH-0369-held-exclusion",
     "stem": "secretory granules",
     "reason": "unresolvable_fragment",
@@ -3516,7 +3516,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0371",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q43",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q43",
     "sourceOccurrence": "MUG3-CH205-PATH-0371-held-exclusion",
     "stem": "filtered load : 100 mg/ml",
     "reason": "unresolvable_fragment",
@@ -3524,7 +3524,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0372",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q44",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q44",
     "sourceOccurrence": "MUG3-CH205-PATH-0372-held-exclusion",
     "stem": "execretory load : 300 mg/ml",
     "reason": "unresolvable_fragment",
@@ -3532,7 +3532,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0373",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q45",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q45",
     "sourceOccurrence": "MUG3-CH205-PATH-0373-held-exclusion",
     "stem": "Filtration fraction : 16%",
     "reason": "unresolvable_fragment",
@@ -3540,7 +3540,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0374",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q47",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q47",
     "sourceOccurrence": "MUG3-CH205-PATH-0374-held-exclusion",
     "stem": "increase H secretion",
     "reason": "unresolvable_fragment",
@@ -3548,7 +3548,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0375",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q49",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q49",
     "sourceOccurrence": "MUG3-CH205-PATH-0375-held-exclusion",
     "stem": "net secretion 200",
     "reason": "unresolvable_fragment",
@@ -3556,7 +3556,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0376",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q51",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q51",
     "sourceOccurrence": "MUG3-CH205-PATH-0376-held-exclusion",
     "stem": "chorionic villi",
     "reason": "unresolvable_fragment",
@@ -3564,7 +3564,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0378",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q53",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q53",
     "sourceOccurrence": "MUG3-CH205-PATH-0378-held-exclusion",
     "stem": "Indole positive, oxidase negative",
     "reason": "unresolvable_fragment",
@@ -3572,7 +3572,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0379",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q54",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q54",
     "sourceOccurrence": "MUG3-CH205-PATH-0379-held-exclusion",
     "stem": "exo pigment production",
     "reason": "unresolvable_fragment",
@@ -3580,7 +3580,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0380",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q58",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q58",
     "sourceOccurrence": "MUG3-CH205-PATH-0380-held-exclusion",
     "stem": "Thick opaque wall ( pyonephrosis)",
     "reason": "unresolvable_fragment",
@@ -3588,7 +3588,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0381",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q59",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q59",
     "sourceOccurrence": "MUG3-CH205-PATH-0381-held-exclusion",
     "stem": "obstruction factors ( hydronephrosis)",
     "reason": "unresolvable_fragment",
@@ -3596,7 +3596,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0382",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q60",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q60",
     "sourceOccurrence": "MUG3-CH205-PATH-0382-held-exclusion",
     "stem": "infiltration border",
     "reason": "unresolvable_fragment",
@@ -3604,7 +3604,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0383",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q61",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q61",
     "sourceOccurrence": "MUG3-CH205-PATH-0383-held-exclusion",
     "stem": "infiltrating myometrium necrotic mass ( choriocarcinoma)",
     "reason": "unresolvable_fragment",
@@ -3612,7 +3612,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0384",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q62",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q62",
     "sourceOccurrence": "MUG3-CH205-PATH-0384-held-exclusion",
     "stem": "scelrotic glomerulus with thick blood vessels",
     "reason": "unresolvable_fragment",
@@ -3620,7 +3620,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0385",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q63",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q63",
     "sourceOccurrence": "MUG3-CH205-PATH-0385-held-exclusion",
     "stem": "papilla on the inner surface ( papillary cystadenoma)",
     "reason": "unresolvable_fragment",
@@ -3628,7 +3628,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0386",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q65",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q65",
     "sourceOccurrence": "MUG3-CH205-PATH-0386-held-exclusion",
     "stem": "dilated prostatic glands",
     "reason": "unresolvable_fragment",
@@ -3636,7 +3636,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0387",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q66",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q66",
     "sourceOccurrence": "MUG3-CH205-PATH-0387-held-exclusion",
     "stem": "Parietal proliferation with granular deposits",
     "reason": "unresolvable_fragment",
@@ -3644,7 +3644,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0388",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q68",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q68",
     "sourceOccurrence": "MUG3-CH205-PATH-0388-held-exclusion",
     "stem": "micro albumin / creatinine ratio : 100",
     "reason": "unresolvable_fragment",
@@ -3652,7 +3652,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0389",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q71",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q71",
     "sourceOccurrence": "MUG3-CH205-PATH-0389-held-exclusion",
     "stem": "egg with mature miracidium",
     "reason": "unresolvable_fragment",
@@ -3660,7 +3660,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0390",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q72",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q72",
     "sourceOccurrence": "MUG3-CH205-PATH-0390-held-exclusion",
     "stem": "undulating membrane",
     "reason": "unresolvable_fragment",
@@ -3668,7 +3668,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0392",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q89",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q89",
     "sourceOccurrence": "MUG3-CH205-PATH-0392-held-exclusion",
     "stem": "2 (conc of test formula)",
     "reason": "unresolvable_fragment",
@@ -3676,7 +3676,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0393",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q92",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q92",
     "sourceOccurrence": "MUG3-CH205-PATH-0393-held-exclusion",
     "stem": "Cervical cancer",
     "reason": "unresolvable_fragment",
@@ -3684,7 +3684,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0394",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q93",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q93",
     "sourceOccurrence": "MUG3-CH205-PATH-0394-held-exclusion",
     "stem": "Crescentic -parietal epithelial bowman",
     "reason": "unresolvable_fragment",
@@ -3692,7 +3692,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0395",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q94",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q94",
     "sourceOccurrence": "MUG3-CH205-PATH-0395-held-exclusion",
     "stem": "Pyocele- tunica vaginalis with pus",
     "reason": "unresolvable_fragment",
@@ -3700,7 +3700,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0396",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q95",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q95",
     "sourceOccurrence": "MUG3-CH205-PATH-0396-held-exclusion",
     "stem": "Vesicular mole- serous fluid",
     "reason": "unresolvable_fragment",
@@ -3708,7 +3708,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0397",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q96",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q96",
     "sourceOccurrence": "MUG3-CH205-PATH-0397-held-exclusion",
     "stem": "Multilocular mucinous",
     "reason": "unresolvable_fragment",
@@ -3716,7 +3716,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0398",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q97",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q97",
     "sourceOccurrence": "MUG3-CH205-PATH-0398-held-exclusion",
     "stem": "Staghorn pyonephrosis",
     "reason": "unresolvable_fragment",
@@ -3724,7 +3724,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0399",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q98",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q98",
     "sourceOccurrence": "MUG3-CH205-PATH-0399-held-exclusion",
     "stem": "Pyogenic with obstruction",
     "reason": "unresolvable_fragment",
@@ -3732,7 +3732,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0400",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q99",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q99",
     "sourceOccurrence": "MUG3-CH205-PATH-0400-held-exclusion",
     "stem": "Comedo-pleomorphic",
     "reason": "unresolvable_fragment",
@@ -3740,7 +3740,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0401",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q100",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q100",
     "sourceOccurrence": "MUG3-CH205-PATH-0401-held-exclusion",
     "stem": "Adaptation hyperplasia",
     "reason": "unresolvable_fragment",
@@ -3748,7 +3748,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0403",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q116",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q116",
     "sourceOccurrence": "MUG3-CH205-PATH-0403-held-exclusion",
     "stem": "mitochondria middle piece",
     "reason": "unresolvable_fragment",
@@ -3756,7 +3756,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0404",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q120",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q120",
     "sourceOccurrence": "MUG3-CH205-PATH-0404-held-exclusion",
     "stem": "100 (biochemistry)",
     "reason": "unresolvable_fragment",
@@ -3764,7 +3764,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0406",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q123",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q123",
     "sourceOccurrence": "MUG3-CH205-PATH-0406-held-exclusion",
     "stem": "staph saprophyticus",
     "reason": "unresolvable_fragment",
@@ -3772,7 +3772,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0407",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q126",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q126",
     "sourceOccurrence": "MUG3-CH205-PATH-0407-held-exclusion",
     "stem": "not specific monitoring efficacy",
     "reason": "unresolvable_fragment",
@@ -3780,7 +3780,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0408",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q128",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q128",
     "sourceOccurrence": "MUG3-CH205-PATH-0408-held-exclusion",
     "stem": "enlarged caseous",
     "reason": "unresolvable_fragment",
@@ -3788,7 +3788,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0409",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q129",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q129",
     "sourceOccurrence": "MUG3-CH205-PATH-0409-held-exclusion",
     "stem": "chronic necrotizing granuloma",
     "reason": "unresolvable_fragment",
@@ -3796,7 +3796,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0410",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q131",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q131",
     "sourceOccurrence": "MUG3-CH205-PATH-0410-held-exclusion",
     "stem": "papillary malignant urothelial carcinoma",
     "reason": "unresolvable_fragment",
@@ -3804,7 +3804,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0411",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q132",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q132",
     "sourceOccurrence": "MUG3-CH205-PATH-0411-held-exclusion",
     "stem": "leiomyoma polyp",
     "reason": "unresolvable_fragment",
@@ -3812,7 +3812,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0412",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q133",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q133",
     "sourceOccurrence": "MUG3-CH205-PATH-0412-held-exclusion",
     "stem": "invasive carcinoma of ducts, breast",
     "reason": "unresolvable_fragment",
@@ -3820,7 +3820,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0413",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q134",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q134",
     "sourceOccurrence": "MUG3-CH205-PATH-0413-held-exclusion",
     "stem": "axillary l.n (n)",
     "reason": "unresolvable_fragment",
@@ -3828,7 +3828,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0414",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q135",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q135",
     "sourceOccurrence": "MUG3-CH205-PATH-0414-held-exclusion",
     "stem": "rcc: large mass upper pole with renal capsule",
     "reason": "unresolvable_fragment",
@@ -3836,7 +3836,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0415",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q136",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q136",
     "sourceOccurrence": "MUG3-CH205-PATH-0415-held-exclusion",
     "stem": "tb pyelonephritis: enlarged with caseation",
     "reason": "unresolvable_fragment",
@@ -3844,7 +3844,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0416",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q139",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q139",
     "sourceOccurrence": "MUG3-CH205-PATH-0416-held-exclusion",
     "stem": "D: high ph, high hco3, high pco2, low H",
     "reason": "unresolvable_fragment",
@@ -3852,7 +3852,7 @@
   },
   {
     "id": "MUG3-CH205-PATH-0417",
-    "sourceFile": "Past Exams/💥Practical UG Exam 2024.pdf-Q143",
+    "sourceFile": "Past Exams/\ud83d\udca5Practical UG Exam 2024.pdf-Q143",
     "sourceOccurrence": "MUG3-CH205-PATH-0417-held-exclusion",
     "stem": "24 hr urine sample",
     "reason": "unresolvable_fragment",
@@ -3876,7 +3876,7 @@
   },
   {
     "id": "MUG3-CH208-PARA-0002",
-    "sourceFile": "💥Practical UG Exam 2024.pdf-Q2",
+    "sourceFile": "\ud83d\udca5Practical UG Exam 2024.pdf-Q2",
     "sourceOccurrence": "MUG3-CH208-PARA-0002-held-exclusion",
     "stem": "Furcocercous cercariae",
     "reason": "unresolvable_fragment",
@@ -3900,7 +3900,7 @@
   },
   {
     "id": "MUG3-CH301-PATH-0010",
-    "sourceFile": "💥UG Final 2 MCQ Collection.pdf-Q19",
+    "sourceFile": "\ud83d\udca5UG Final 2 MCQ Collection.pdf-Q19",
     "sourceOccurrence": "MUG3-CH301-PATH-0010-held-exclusion",
     "stem": "A 2y old boy, glomeruloid schiller bodies, serum level show elevation",
     "reason": "unresolvable_fragment",
@@ -4597,7 +4597,7 @@
   {
     "sourceFile": "Physiology/Physiology URO.pdf",
     "sourceOccurrence": "S187-p012-q15",
-    "stem": "Decreasing discharge from high- pressure and low-pressure baroreceptors — increased sympathetic nerv",
+    "stem": "Decreasing discharge from high- pressure and low-pressure baroreceptors \u2014 increased sympathetic nerv",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0113: Detached fragment corresponding to mechanism 3 (baroreceptor reflex and ADH) of question 0110. Held as component of parent prompt."
   },
@@ -4625,7 +4625,7 @@
   {
     "sourceFile": "Physiology/Physiology URO.pdf",
     "sourceOccurrence": "S187-p014-q16",
-    "stem": "» Loss of homeostatic function of kidney as in acute and chronic renal failure leads to hyperkalemia",
+    "stem": "\u00bb Loss of homeostatic function of kidney as in acute and chronic renal failure leads to hyperkalemia",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0135: The printed key 'Renal(uremic) acidosis' was appended to the stem and model answer carries unrelated hyperkalemia text. Held as damaged fill-in-the-blank."
   },
@@ -4779,7 +4779,7 @@
   {
     "sourceFile": "Physiology/Physiology URO.pdf",
     "sourceOccurrence": "S187-p030-q23",
-    "stem": "cells cells Selectively | SEES = sic 1 = i ion FH | | FSH | LH Sia + V+ A —— TT PLE —— Ovary | Matur",
+    "stem": "cells cells Selectively | SEES = sic 1 = i ion FH | | FSH | LH Sia + V+ A \u2014\u2014 TT PLE \u2014\u2014 Ovary | Matur",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0263: Damaged fill-in-the-blank item with answer 'High levels of estrogen' leaked into stem. Excluded under quality-over-quantity intake policy."
   },
@@ -6693,5 +6693,355 @@
     "stem": "A woman was trying to conceive a child, her gynecologist was trying to trace her",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH3-PHYS-0642: Unverified scanned MCQ from UG_NERD page 67 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p066-mcq-0644",
+    "stem": "A woman who has never had menstruation has:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0644: Unverified scanned MCQ from UG_NERD page 66 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p083-mcq-0646",
+    "stem": "What occurs in the level of oxytocin at onset of parturition?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0646: Unverified scanned MCQ from UG_NERD page 83 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p075-mcq-0647",
+    "stem": "High level of which of the following hormones triggers the onset of parturition?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0647: Unverified scanned MCQ from UG_NERD page 75 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p070-mcq-0648",
+    "stem": "What is the mechanism of involution of uterus?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0648: Unverified scanned MCQ from UG_NERD page 70 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p070-mcq-0649",
+    "stem": "What is the role of estrogen in developing the mammary glands?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0649: Unverified scanned MCQ from UG_NERD page 70 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p076-mcq-0650",
+    "stem": "Which of the following hormones is the primary stimulant for milk formation by the epithelial cells of the alveoli and its secretion into the lumen?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0650: Unverified scanned MCQ from UG_NERD page 76 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p088-mcq-0652",
+    "stem": "Which of the following is considered an advantage of breast feeding?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0652: Unverified scanned MCQ from UG_NERD page 88 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p093-mcq-0654",
+    "stem": "Compare the changes of cervical mucus (Near and After) ovulation?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0654: Truncated 2-option scan with unverified answer key from UG_NERD page 93. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p068-mcq-0655",
+    "stem": "Compare between Follicular phase and Luteal phase regarding Interval?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0655: Truncated 2-option scan with unverified answer key from UG_NERD page 68. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p070-mcq-0656",
+    "stem": "What are Effects of Uterine prostaglandins?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0656: Truncated 2-option scan with unverified answer key from UG_NERD page 70. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p088-mcq-0657",
+    "stem": "Compare between Low or Moderate Vs High level of Estrogen?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0657: Truncated 2-option scan with unverified answer key from UG_NERD page 88. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p094-mcq-0658",
+    "stem": "What are Effects of DHEA in female?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0658: Truncated 2-option scan with unverified answer key from UG_NERD page 94. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p070-mcq-0659",
+    "stem": "What are Non Reproductive effects of Estrogen?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0659: Defective MCQ item with 0 options from UG_NERD page 70. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p074-mcq-0660",
+    "stem": "Explain the relation between Rise in GnRH for the first time at puberty with Melatonin, Leptin?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0660: Truncated 2-option scan with unverified answer key from UG_NERD page 74. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p089-mcq-0661",
+    "stem": "Explain Effects of Decreased Melatonin secretion?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0661: Unverified scanned MCQ from UG_NERD page 89 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p091-mcq-0662",
+    "stem": "Explain Effects of Estrogen/Progesterone on breast?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0662: Truncated 2-option scan with unverified answer key from UG_NERD page 91. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p073-mcq-0663",
+    "stem": "What are Effects of absent ovaries from birth?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0663: Truncated 3-option scan with unverified answer key from UG_NERD page 73. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p068-mcq-0664",
+    "stem": "Spermatogenesis in the seminiferous tubules is primarily initiated and maintained by which pituitary hormone acting directly on Sertoli cells?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0664: Unverified scanned MCQ from UG_NERD page 68 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p097-mcq-0665",
+    "stem": "Which of the following radiological investigations is most sensitive and specific for detecting acute radiopaque and radiolucent renal calculi?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0665: Unverified scanned MCQ from UG_NERD page 97 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p087-mcq-0666",
+    "stem": "During adolescences and adult life: It has 2 effects:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0666: Unverified scanned MCQ from UG_NERD page 87 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p066-mcq-0667",
+    "stem": "During intrauterine life:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0667: Fragmentary prompt stem (\"During intrauterine life:\") with unverified answer key from UG_NERD page 66. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p088-mcq-0668",
+    "stem": "Anabolic effects of testosterone include which of the following?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0668: Truncated 3-option scan with unverified answer key from UG_NERD page 88. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p088-mcq-0669",
+    "stem": "2\"Y to the anabolic effect:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0669: Truncated 2-option scan with unverified answer key from UG_NERD page 88. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p075-mcq-0670",
+    "stem": "Corpus luteum 4, Adrenal cortex",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0670: Unverified scanned MCQ from UG_NERD page 75 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p070-mcq-0671",
+    "stem": "Human Chorionic Somatomamotropin.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0671: Fragmentary prompt stem (\"Human Chorionic Somatomamotrop\") with unverified answer key from UG_NERD page 70. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p069-mcq-0672",
+    "stem": "A midlife hypothalamic changes. ** There is small amount of estrogen still secreted by adrenal cortex.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0672: Unverified scanned MCQ from UG_NERD page 69 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p067-mcq-0673",
+    "stem": "The glomerular filtration barrier is composed of which three structural layers?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0673: Unverified scanned MCQ from UG_NERD page 67 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p080-mcq-0675",
+    "stem": "Glomerular capillary pressure. Colloid osmotic pressure of plasma proteins. Change in hydrostatic intra-capsular pressure of Bowman's capsule. Changes in the permeability of the membrane. Changes in filtering surface area \"changed by contraction or relaxation of mesangial cells\". Functioning kidney mass. AM PRWN Question 8: What is the GFR in normal human? How can be measured? Can GFR be elevated clinically? [tis the volume of plasma filtered by all glomeruli of both kidneys per minute, equal (125ml/min) (180L/Day ) in normal person. e Characters oF GFR:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0675: Unverified scanned MCQ from UG_NERD page 80 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p072-mcq-0676",
+    "stem": "The normal glomerular filtration rate (GFR) in a healthy young adult male is approximately:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0676: Unverified scanned MCQ from UG_NERD page 72 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p080-mcq-0677",
+    "stem": "Given Glomerular capillary hydrostatic pressure = 60 mmHg, Bowman's capsule hydrostatic pressure = 18 mmHg, and Glomerular oncotic pressure = 32 mmHg, what is the Net Filtration Pressure (NFP)?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0677: Unverified scanned MCQ from UG_NERD page 80 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p075-mcq-0678",
+    "stem": "Reabsorption of:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0678: Fragmentary prompt stem (\"Reabsorption of:\") with unverified answer key from UG_NERD page 75. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p075-mcq-0679",
+    "stem": "Active reabsorption of Ca under Control of PTH",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0679: Unverified scanned MCQ from UG_NERD page 75 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p089-mcq-0680",
+    "stem": "Secretion of ammonia, PAHA (PCT is the only site for PAHA secretion ) , drugs, creatinine, organic acid & H*",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0680: Unverified scanned MCQ from UG_NERD page 89 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p078-mcq-0681",
+    "stem": "Loop of Henle \"counter current multiplier\"",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0681: Unverified scanned MCQ from UG_NERD page 78 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p075-mcq-0682",
+    "stem": "Drain H20 reabsorbed by descending limb of LH (15 % of GFR)",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0682: Truncated 2-option scan with unverified answer key from UG_NERD page 75. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p097-mcq-0683",
+    "stem": "Regarding the renal handling of urea, the largest fraction of filtered urea is reabsorbed in:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0683: Unverified scanned MCQ from UG_NERD page 97 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p078-mcq-0684",
+    "stem": "ADH Question 26: Define Diuresis and Difference between Water Osmotic and Pressure Diuresis",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0684: Unverified scanned MCQ from UG_NERD page 78 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p071-mcq-0685",
+    "stem": "Creatinine clearance test (used clinically) :",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0685: Unverified scanned MCQ from UG_NERD page 71 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p076-mcq-0688",
+    "stem": "Imaging studies:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0688: Fragmentary prompt stem (\"Imaging studies:\") with unverified answer key from UG_NERD page 76. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p089-mcq-0689",
+    "stem": "PCO2 when increase that lead to increase H* secretion K* concentration when increase that lead to decrease H* secretion. Carbonic anhydrase : when inhibited -} H* secretion Ca** enzyme when inhibited that lead to decrease H* secretion Aldosterone increase K* and hydrogen secretion &Nat reabsorbition A PWN Question 30: Outline the different mechanisms of regulation of PH of blood & mention the factors affecting H* secretion?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0689: Unverified scanned MCQ from UG_NERD page 89 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p077-mcq-0691",
+    "stem": "Fibrinolysin is a protein th lot after ejaculation . This pro at helps dissolution of the tein is produced by :",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0691: Unverified scanned MCQ from UG_NERD page 77 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p066-mcq-0692",
+    "stem": "One of the following is abnormal in a 20 years old male with ntreated cryptorchidism :",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0692: Unverified scanned MCQ from UG_NERD page 66 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p065-mcq-0693",
+    "stem": "In primary hypogonadism, there's suppression of: .",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0693: Unverified scanned MCQ from UG_NERD page 65 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p078-mcq-0694",
+    "stem": "In primary hypogonadism (testicular failure), which pattern of circulating hormones is expected?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0694: Unverified scanned MCQ from UG_NERD page 78 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p092-mcq-0695",
+    "stem": "A woman was trying to conceive a child, her gynecologist as trying to trace her ovulation by presence of which of the ollowing just before ovulation:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0695: Unverified scanned MCQ from UG_NERD page 92 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p089-mcq-0696",
+    "stem": "What is the mechanism of lactational amenorrhea? . Suckling increases prolactin release, which inhibits pituitary gonadotropins (FSH and LH).",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0696: Unverified scanned MCQ from UG_NERD page 89 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p084-mcq-0697",
+    "stem": "Which of the following chemicals is not a secretory function of the kidney:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0697: Unverified negative MCQ from UG_NERD page 84 with OCR noise and missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p078-mcq-0699",
+    "stem": "There is a marked fall in glomerular filtration rate as the mean systolic blood pressure drops below:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0699: Unverified scanned MCQ from UG_NERD page 78 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p083-mcq-0700",
+    "stem": "All of the following lead to an increase the GFR EXCEPT:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0700: Unverified negative MCQ from UG_NERD page 83 with OCR noise and missing answer key. Excluded under quality-over-quantity intake policy."
+  },
+  {
+    "sourceFile": "Comprehensive Banks/UG_NERD mcqs.pdf",
+    "sourceOccurrence": "S031-p089-mcq-0704",
+    "stem": "What is the GFR (ml/min) if the urinary inulin is 40mg/mL, the urinary flow rate is 60mL/hour and the plasma inulin concentration is 0.4mg/ml",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH3-PHYS-0704: Unverified scanned MCQ from UG_NERD page 89 with missing official answer key and OCR noise. Excluded under quality-over-quantity intake policy."
   }
 ]
