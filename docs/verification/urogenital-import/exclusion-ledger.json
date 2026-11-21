@@ -25593,5 +25593,355 @@
     "stem": "A patient complains of dysuria and terminal hematuria. Cystoscopy shows sandy patches.",
     "reason": "corrupt_extraction_or_fragment",
     "details": "Question MUG3-CH5-PATH-0533: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Histology/Q.pdf",
+    "sourceOccurrence": "S057-p005-q134",
+    "stem": "F | lypoid | i 1) shows a po | A man complains of hematuria. Cystoscopy | or he picture of bladder mass. Biopsy examination reveals t p transitional cell carcinoma. ncer?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0534: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Histology/Q.pdf",
+    "sourceOccurrence": "S057-p006-q01",
+    "stem": "Severe hematuria accompanying the passage of a jagged calcium oxalate urinary stone is primarily caused by:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0538: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal assay cases.pdf",
+    "sourceOccurrence": "S161-p001-q01",
+    "stem": "A 42-year-old female presents with hematuria, new-onset hypertension, and rapidly deteriorating renal function. Renal biopsy demonstrates wire loop lesions on light microscopy with diffuse subendothelial immune deposits. What is the most likely diagnosis?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0540: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal assay cases.pdf",
+    "sourceOccurrence": "S161-p001-q02",
+    "stem": "A 42-year-old woman with a 10-year history of diabetes mellitus presents with nephrotic-range proteinuria and hypertension. Renal biopsy reveals diffuse mesangial matrix expansion and nodular glomerulosclerosis (Kimmelstiel-Wilson nodules). What is the most likely diagnosis?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0541: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal assay cases.pdf",
+    "sourceOccurrence": "S161-p001-q03",
+    "stem": "A 38-year-old female notices generalized oedema, headache and turbid urine. She seeks medical advice; her blood pressure is elevated and laboratory findings include proteinuria, hypoproteinaemia and hyperlipidaemia. She told her physician that she had been on non- steroidal anti-inflammatory drugs for long period due to rheumatoid arthritis.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0542: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal assay cases.pdf",
+    "sourceOccurrence": "S161-p002-q04",
+    "stem": "A 30-year-old female patient presents with new onset of generalized oedema. Physical examination reveals hypertension. Urine analysis reveals massive proteinuria and elevated serum cholesterol. Electron microscopy of renal biopsy specimen reveals subepithelial electron dense deposits separated by spikes.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0543: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal assay cases.pdf",
+    "sourceOccurrence": "S161-p002-q06",
+    "stem": "A 52-year-old woman has a 15-year- history of rheumatoid arthritis. She complains of swelling of her feet. Physical examination reveals hepatosplenomegaly. Urine analysis shows fatty casts and 5gm protein/24hours. Her blood level of albumin is reduced, while her serum cholesterol level is increased.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0544: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal assay cases.pdf",
+    "sourceOccurrence": "S161-p003-q08",
+    "stem": "An 8- year-old boy has a 2-day- history of malaise, fever and loin pain. His mother noticed that he had decreased urine output and that this urine is dark and has smoky color. On examination, his blood pressure is slightly elevated, with oedema of the face and puffiness of eye lids. He has been in good health except for a sore throat a week ago.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0545: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal assay cases.pdf",
+    "sourceOccurrence": "S161-p004-q10",
+    "stem": "A 7-year-old boy suffers from abdominal pain. His mother notices enlarging abdominal mass and blood urine. Physical examination reveals hypertension. U/S reveals a renal mass, infiltrating the renal capsule.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0546: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal assay cases.pdf",
+    "sourceOccurrence": "S161-p004-q11",
+    "stem": "An adult patient who was previously healthy has malaise, nausea, and lethargy. He notes that his urine has a darker color. Physical examination reveals no major findings. His blood pressure is 135/90 mm Hg. Laboratory findings reveal rapid deterioration of renal function with a rising serum urea and creatinine. Renal biopsy reveals light microscopic glomerular crescents.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0547: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal assay cases.pdf",
+    "sourceOccurrence": "S161-p004-q12",
+    "stem": "A 24-year-old pregnant female presents with frequency and dysuria. Then she starts suffering from fever, rigors, with pain and tenderness over the loin. Urine analysis reveals protein, RBCs and cellular casts in urine.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0548: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal assay cases.pdf",
+    "sourceOccurrence": "S161-p004-q13",
+    "stem": "A healthy 42-year-old woman presents with recent transient attacks of headache. She tries to manage it by analgesics but it worsens by time. One morning, she awakes with stitching pain in the chest and dyspnea. Physical examination reveals hypertension, pleurisy with pleuritic rub. Laboratory investigations reveal uremia and pyelography reveals destruction of calyces.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0549: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal assay cases.pdf",
+    "sourceOccurrence": "S161-p005-q14",
+    "stem": "A 48-year-old female, known to have systemic lupus erythematosus and is always under medical supervision and controlled by medications. Recently, she presents with recurrent hematuria. Physical examination reveals hypertension and peripheral neuritis Laboratory investigations reveal high serum nitrogen and urea, with evidence of anemia.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0550: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal assay cases.pdf",
+    "sourceOccurrence": "S161-p005-q16",
+    "stem": "A 5 year old boy is noted to have increased puffiness around his eyes. The boy has been less active than normal over the past week. A urinalysis reveals sp. Gr. 1.010, Ph 6.5, no glucose, 4+ proteins, no blood, no casts, and no ketones. Microscopic urinalysis reveals oval fat bodies, but no WBC's or RBC's. Renal biopsy reveals no glomerular pathology. He improves following a course of corticosteroid therapy.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0551: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal assay cases.pdf",
+    "sourceOccurrence": "S161-p007-q19",
+    "stem": "A 49-year-old male smoker presents with painless gross hematuria. Cystoscopy and biopsy of a papillary bladder lesion reveal atypical transitional cells forming finger-like projections with fibrovascular cores without lamina propria invasion. What is the most likely diagnosis?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0553: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal assay cases.pdf",
+    "sourceOccurrence": "S161-p007-q20",
+    "stem": "A 56- year -old male had been diagnosed as prostatic carcinoma and took a long course of chemotherapy. He had been treated before for Non-Hodgkin's lymphoma, so he became weak and susceptible to repeated upper respiratory tract infection or any other infection even with the low virulence organisms. Cystoscopy was done due to recent urinary bladder symptoms. It reveals multiple nodular yellowish soft thickenings in the mucosa of the trigone?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0554: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal assay cases.pdf",
+    "sourceOccurrence": "S161-p007-q21",
+    "stem": "A 25-year-old female presents with frequency, dysuria, pyuria, and suprapubic pain. Cystoscopy reveals acutely congested mucosa with edema, petechial hemorrhages, and neutrophilic exudate. What is the most likely diagnosis?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0555: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal cases.pdf",
+    "sourceOccurrence": "S162-p001-q34",
+    "stem": "Lune employment in an American company, was lound that very large rigl1t kidney. Intravenous py elography reeals dit.\" pelvis and calyces, with atrophy of the renal tissue.ew",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0556: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal cases.pdf",
+    "sourceOccurrence": "S162-p001-q35",
+    "stem": "A 45 year-old female suffers for a long time from rheumatoid arthritis as well as recent osteoarthritis involv ing both knees. She had been on nonsteroidal anti-inllammatory drugs for yeary, Athe beginning of this year. she presents with elevated blood urea nitrogen and creatinine levels and hypertension. ( hfonic TCru,",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0557: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal cases.pdf",
+    "sourceOccurrence": "S162-p003-q59",
+    "stem": "A skin mont c a u s e abdo the reveals These gross nests , IgA nephropathy/e i s",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0558: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal cases.pdf",
+    "sourceOccurrence": "S162-p006-q09",
+    "stem": "A -year-old child does nild does not ant to eat much at meals. The iatrician notes an enlarged abdomen and can palpate a mass on Pight. An abdominal CT scan revealed a 10cm solid mass the in lving the right kidney. The resected mass has the microscopie appea earance of Smal blue cells with_primitive tubular struetures. Which ich of the following neoplasms is most likely to account for these findings?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0561: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal cases.pdf",
+    "sourceOccurrence": "S162-p007-q52",
+    "stem": "A57-year-old man has been bothered by arthritis for . consumed large quantities (more than 3gm.per year) of (aspirin. phenacetin, acetaminophen) for years. He is i for the development of: years, he has st at risk",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0563: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal cases.pdf",
+    "sourceOccurrence": "S162-p008-q06",
+    "stem": "Inereasing lethargy. Urine analysis.revealed 3+ proteinuria, found to be due to both albumin and immunoglobulins. A 24 hour urine protein was 2.1 gm. His serum complement C3 and C4 were normal. His antinuclear antibody test was negative. The child did not improve despite corticosteroid therapy. The most likely diagnosis is:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0564: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal cases.pdf",
+    "sourceOccurrence": "S162-p009-q58",
+    "stem": "Re Re years I ex\" ce emergeney room with Nank pain and hematuria, and she oided . fragments of necrotic appearing tissue. After this erisis. noted that on urine analysis, the specilie gravity never exeeedo. 1.010. These findings are most characteristie for:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0566: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal cases.pdf",
+    "sourceOccurrence": "S162-p009-q59",
+    "stem": "A 20-year-cld male notices blood in lhis urine, but he is otherwise healthy. After several months, he develops more severe hematuria. A urine analysis reveals 4+ blood, 4+ protein, no ketones, and no glucose. On urine microscopic examination, a few RBC casts are noted. but no WBC casts. He progresses to end stage renal disease in 10 vears. The most characteristic renal biopsy finding for this CT th ye condition is: . a Lincar deposition of lgG along basement membrane",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0567: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal cases.pdf",
+    "sourceOccurrence": "S162-p012-q65",
+    "stem": "A5-year-old boy is noted to have increased puiliness around his eyes for the past weck. His BP measurs 140/90mm Hg. A urine analysis reveals PH 6.5, no glucose, 4+ Protein, no blood and Bo casts. Microscopic urinalysis reveals oval fat bodies, but no WBC' or RBC's. He improves following a course of corticosteroid therapy. Which of the following renal lesions is most likely to have been present in this boy:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0568: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal cases.pdf",
+    "sourceOccurrence": "S162-p012-q02",
+    "stem": "1iracerebral hemorrhage (stroke Nst marl OnowA",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0569: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal cases.pdf",
+    "sourceOccurrence": "S162-p013-q68",
+    "stem": "Past 5 days. He goes to his physician when he passes dark-eolored urine. On physical examination his blood pressure is 155/90 mm Hg. Laboratory studies show his serum creatinine is 4.4mg/dl. A urinalysis reveals Ph 6, 3+ blood, 1+ protein and no glucose. On urine microscopic examination, there are numerous RBC casts. Which of the following pathologie findings on renal biopsy is iost likely to be present in this man? (a Glomerular crescents.)",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0570: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal cases.pdf",
+    "sourceOccurrence": "S162-p014-q70",
+    "stem": "A 50-year-old man is hospitalized tor acute myocardis sion requirlg m u c multiple pressor agents. His urine output drops over i days. His serum urea nitrogen inereases to 59m He has decreased cardiac output with hypotension dias with b ereatinine of 2.9mg/dl. Urinalysis reveals no protein or. Se,",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0571: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal cases.pdf",
+    "sourceOccurrence": "S162-p014-q71",
+    "stem": "A 55-year-old man complains of dull flank pain for the past inonti. On physical examination he has tenderntis at ie riglht costovertebral angle. hematuria but no proteinuria or glucosuria. A urine cy ioiogy shows no atypical cells. A ' blood picture shows WBC count 7800/microliter, Hgb 21.1g.dl. His serum urea nitrogen and creatinine are within limits. Which of the following radiographic",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0572: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal cases.pdf",
+    "sourceOccurrence": "S162-p016-q78",
+    "stem": "At the left and MR angiograpny reveals fea narrowing with thickening and beading of the left nai a artery. She has an elevated plasma rennin. Which of the f. a is the most likely diagnosis? masses appear to be present. following oendne",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0574: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/renal cases.pdf",
+    "sourceOccurrence": "S162-p017-q18",
+    "stem": "De the following would best describe these renal changes? Plasma cell interstitial nephritis gG oG linear fluorescence along the glomerular basement membrane ranular deposits of antibodies in the glomerular basement",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0576: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p003-q14",
+    "stem": "A 4-year-old girl is noted to have breast enlargement and vagina] bleeding. On physical examination, she noted to have a 9-cm pelvic mass, . oo",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0577: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p004-q17",
+    "stem": "19, A -40-year-old female presents with repeated prolonged vaginal bleeding. Pelvic U/S reveals asymmetrically enlarged uterus with multiple variable sized masses, .",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0578: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p005-q25",
+    "stem": "A- 40-year-old woman with a history of abortion y meats 480. The she suffers form progressive unexplained ade 7 \"FAY rey, multiple small masses in both lungs (snow-storm lung). Transtho,. lung biopsy yields a hemorrhagic tissue. ,",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0579: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p005-q04",
+    "stem": "What do you think about the possible complications? A-50-year-old woman presents with severe acute abdominal pain and shock. U/S reveals right ovarian multilocular cyst 20cm in diameter filled with thick, viscid fluid.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0580: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p006-q26",
+    "stem": "A 9-year-old girl presents by precocious menstruation, and breast enlargement. Pelvic U/S reveals a unilateral ovarian solid mass Sem in diameter.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0581: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p006-q28",
+    "stem": "A 34-year-old female suffers from 1\" infertility. She is known to have old tuberculous infection, proved by her chest x-ray and being tuberculin +ve. Her gynaecologist asks her to come next cycle just before menses to perform endometrial biopsy.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0582: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p006-q30",
+    "stem": "A 62-year-old female presents with red crusted eczematous sharply demarcated areas on the labia majora. She suffers from severe itching and oozing. Her physician recommends incisional biopsy from the lesion.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0583: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p007-q33",
+    "stem": "34 A 56-year-old healthy female presents with multicentric Ythematoy Faised lesions involving the labia majora. After being XA MIngg clinically, her doctor recommends biopsy from the lesion. 4X Whatis the most likely dhagnosis? bo What are the expected microscopic findin . \" What is the possible underlying mechanism d vs of this skin lesion? What ts the prognosis of this case? NX) 42-year-old female presents with menorrhagia, and colicky Menstrual pain in the sacral and sacrococeygeal regions. Pelvic Sonography reveals diffuse uterine enlargement\" with\" markeg thickening of uterine wall, without any tumor mass, a What is the most likely diagnosis? bo What is the naked-e appearance on seconing through the myometrium? What are the microscopic features? oo",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0584: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p008-q36",
+    "stem": "39, A 45-year-old female presents with DUB, Sonography reveals marked endometrial thickening, the endometrium looks bulky and polypoid. The endo-myometrial junction is preserved and the uterus itself looks within normal size. a- What is the most likely diagnosis? b- What is the possible mechanism involved in the pathogenesis\" c- What are the different microscopic types you may see? d- What is the prognosis of such case? A 19-year-old female presents with secondary amenorrhea, Physical examination reveals an obese young woman with acne, increased facial hair and voice changes. A pelvic examination is within normal limits, excluding the adnexal regions, which could not be palpated secondary to obesity. Ultra-sound examination reveals bilateral enlargement of the ovaries (5-times the normal size), studded with multiple subcortical cysts. a, What is the most likely diagnosis?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0585: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p009-q40",
+    "stem": "A 70-year-old woman prese Hysterectomy specimen reveal epithelial glandular component, component. =",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0586: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p009-q41",
+    "stem": "A large cystic sac contain ovary of a 40-year-old wo non-cilaited columnar muc! r layer. There is a focus of increased cytologic Stromal invasion is absent.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0587: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p009-q42",
+    "stem": "A 40-year-old woman presents with solid ovarian tumor. Surgical excision reveals well circumscribed, firm rubbery solid neoplasm. Sections examined show nests of transitional -like epithelium, separated by fibroblastic stroma.",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0588: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p011-q48",
+    "stem": "A 43-year-old woman has noted heavy menstrual periods that last 6t 8 dae she has also noted minor intermenstrual bleeding. P examination reveals that the uterus is enlarged fo twice 'normal Size and is nodular. There are no adnexal masses. Which of the following j, the most likely diagnosis?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0589: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p012-q55",
+    "stem": "Ror the past year, a 50-year. eriods lasting 7 to 9 da pleeding. On gross old woman has noted heavy menstrual with occasional minor intermenstrual Pection the uterus showed a reddish-tan fleshy ss. Microscop ally the mass is highly cellular, with spindle cells having hype pmatic nu and 10 to 20 mitoses per 10 high power fields. Which of the following is the most likely diagnosis?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0591: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p013-q56",
+    "stem": "A 39-year-old woman has had clerantti for 7 months, The Ulery Appears to be symmetrically enlarged. Her serum pregnancy lest jy Negative. Which of the following microscopic findings is Most likely to be present in her uterus? 4 Atypical glands invading through the uterine wall b 1 arge avascular villi with trophoblastic proliferation Hyperchromatic and pleomorphic smooth muscle cells",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0592: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p014-q60",
+    "stem": "Ol. A 62-year-old woman has abnormal uterine bleeding for the past 5 months. Endometrial biopsy shows a well-differentiated endometrial adenocarcinoma. Which of the following ovarian neoplasms is she most likely to have?",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0593: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p001-q39",
+    "stem": "A 32-year-old female searching for pregnancy for 2 years. She also had painful menstruction for many years. An exploratory laparoscopy revealed multiple red-blue nodules covering the surface of the ovaries and uterine ligaments. These findings are indicative of which of the following:",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0595: Practice mcq unverified extraction or fragment; held for correction."
+  },
+  {
+    "sourceFile": "Pathology/الكتاب الاصفر Female & Breast.pdf",
+    "sourceOccurrence": "S163-p016-q02",
+    "stem": "Polycystic ovary b Granulosa cell tumour ary serous tumour c P. pill",
+    "reason": "corrupt_extraction_or_fragment",
+    "details": "Question MUG3-CH5-PATH-0596: Practice mcq unverified extraction or fragment; held for correction."
   }
 ]
