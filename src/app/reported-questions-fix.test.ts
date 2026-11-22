@@ -140,7 +140,8 @@ describe('Reported Questions Verification & Integrity Regression Tests', () => {
     const headers = new Set(['anatomy', 'patho', 'pharma', 'micro', 'physio', 'histo', 'biochem']);
     for (const ch of mug3Bank.chapters) {
       for (const sub of ch.subjects) {
-        for (const q of sub.questions) {
+        for (const item of sub.questions) {
+          const q = item as any;
           if (q.type === 'mcq') {
             expect(q.options.length, `QID ${q.id} has only ${q.options.length} options`).toBeGreaterThanOrEqual(4);
             for (const opt of q.options) {
@@ -185,7 +186,8 @@ describe('Reported Questions Verification & Integrity Regression Tests', () => {
     const hangingRegex = /\b(of|in|to|for|with|during|from|is|are|the|its|by|called|between|as)\s*$/i;
     for (const ch of mug3Bank.chapters) {
       for (const sub of ch.subjects) {
-        for (const q of sub.questions) {
+        for (const item of sub.questions) {
+          const q = item as any;
           const ma = q.modelAnswer || '';
           const text = q.text || '';
           expect(/\n(Pharma|Micro|Para|Bio|Physio):/i.test(ma), `QID ${q.id} has trailing section tag in modelAnswer`).toBe(false);
@@ -230,7 +232,8 @@ describe('Reported Questions Verification & Integrity Regression Tests', () => {
   it('enforces zero questions in MUG-3 have OCR debris (PAGE/DATE/ANSWERS) or dangling single letters', () => {
     for (const ch of mug3Bank.chapters) {
       for (const sub of ch.subjects) {
-        for (const q of sub.questions) {
+        for (const item of sub.questions) {
+          const q = item as any;
           const stem = (q.text || q.stem || '').trim();
           expect(/\s+[a-z]$/i.test(stem), `QID ${q.id} has dangling single letter stem: "${stem}"`).toBe(false);
           if (q.type === 'mcq') {
