@@ -11423,15 +11423,51 @@
               "type": "fillblank",
               "lecture": 7,
               "text": "The CNS is covered by 3 meninges which are ___, ___, ___ with the CSF in the ___ space.",
-              "explanation": "Cerebrospinal fluid is in the subarachnoid space between arachnoid and pia. The cranial epidural space is normally potential, whereas the spinal epidural space is a real space containing fat and a venous plexus.",
-              "keyConcept": "Meninges: dura, arachnoid, pia; CSF lies in the subarachnoid space.",
+              "explanation": "**Correct Answer: dura mater, arachnoid mater, pia mater, subarachnoid**\n\n**Anatomical Rationale:**\nThe central nervous system (brain and spinal cord) is invested by three protective meningeal layers. From superficial to deep, these are: 1) Dura mater (pachymeninx, outermost thick fibrous layer), 2) Arachnoid mater (avascular web-like intermediate layer), and 3) Pia mater (delicate, highly vascular innermost layer adhering closely to the nervous tissue). Cerebrospinal fluid (CSF) circulates within the subarachnoid space between the arachnoid and pia mater.\n\n**Curriculum Reference & Citation:**\nAin Shams University Foundation / Introduction to Anatomy & Embryology Textbook, 'General Anatomy of the Central Nervous System & Meninges'.",
+              "keyConcept": "Meninges from superficial to deep: dura mater, arachnoid mater, pia mater. CSF circulates in the subarachnoid space.",
               "blanks": [
-                "the dura mater (outermost)",
-                "the arachnoid mater",
-                "the pia mater (innermost)",
+                "dura mater",
+                "arachnoid mater",
+                "pia mater",
                 "subarachnoid"
               ],
-              "contentVersion": "88a32922486a4ec67acf09d87d82036d19168c1395d5aa4e2fff326ecd05bd9e"
+              "contentVersion": "88a32922486a4ec67acf09d87d82036d19168c1395d5aa4e2fff326ecd05bd9e",
+              "acceptedAnswers": [
+                [
+                  "dura",
+                  "the dura mater",
+                  "the dura mater (outermost)",
+                  "dura mater (outermost)",
+                  "pia",
+                  "pia mater",
+                  "arachnoid",
+                  "arachnoid mater"
+                ],
+                [
+                  "arachnoid",
+                  "the arachnoid mater",
+                  "the arachnoid",
+                  "dura",
+                  "dura mater",
+                  "pia",
+                  "pia mater"
+                ],
+                [
+                  "pia",
+                  "the pia mater",
+                  "the pia mater (innermost)",
+                  "pia mater (innermost)",
+                  "dura",
+                  "dura mater",
+                  "arachnoid",
+                  "arachnoid mater"
+                ],
+                [
+                  "subarachnoid space",
+                  "sub-arachnoid",
+                  "sub arachnoid"
+                ]
+              ]
             },
             {
               "id": "IAE-1-SRC-0681",
