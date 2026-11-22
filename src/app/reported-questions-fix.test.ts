@@ -153,4 +153,48 @@ describe('Reported Questions Verification & Integrity Regression Tests', () => {
       }
     }
   });
+
+  it('verifies MUG3-CH6-PHAR-0354 (Jarisch-Herxheimer reaction) has correct false key', () => {
+    const q = findQuestion(mug3Bank, 'MUG3-CH6-PHAR-0354');
+    expect(q).toBeDefined();
+    expect(q.type).toBe('truefalse');
+    expect(q.text).toContain('Jarisch-Herxheimer');
+    expect(q.correctIndex).toBe(1); // False: do NOT discontinue penicillin
+    expect(q.options[1]).toBe('False');
+  });
+
+  it('verifies MUG3-CH5-PATH-3583 (Endometriosis) is a clean 4-choice MCQ', () => {
+    const q = findQuestion(mug3Bank, 'MUG3-CH5-PATH-3583');
+    expect(q).toBeDefined();
+    expect(q.type).toBe('mcq');
+    expect(q.options.length).toBe(4);
+    expect(q.options[0]).toContain('endometriosis');
+    expect(q.correctIndex).toBe(0);
+  });
+
+  it('verifies MUG3-CH1-ANAT-0836 (Prostatic urethra anatomy) has clean options and correct key', () => {
+    const q = findQuestion(mug3Bank, 'MUG3-CH1-ANAT-0836');
+    expect(q).toBeDefined();
+    expect(q.type).toBe('mcq');
+    expect(q.options.length).toBe(4);
+    expect(q.options[0]).toContain('shortest part');
+    expect(q.correctIndex).toBe(0);
+  });
+
+  it('enforces that zero questions in MUG-3 have trailing section tags or hanging stems', () => {
+    const hangingRegex = /\b(of|in|to|for|with|during|from|is|are|the|its|by|called|between|as)\s*$/i;
+    for (const ch of mug3Bank.chapters) {
+      for (const sub of ch.subjects) {
+        for (const q of sub.questions) {
+          const ma = q.modelAnswer || '';
+          const text = q.text || '';
+          expect(/\n(Pharma|Micro|Para|Bio|Physio):/i.test(ma), `QID ${q.id} has trailing section tag in modelAnswer`).toBe(false);
+          expect(/\n(Pharma|Micro|Para|Bio|Physio):/i.test(text), `QID ${q.id} has trailing section tag in text`).toBe(false);
+          if (['essay', 'case', 'casestudy'].includes(q.type)) {
+            expect(hangingRegex.test(text), `QID ${q.id} has hanging stem: "${text}"`).toBe(false);
+          }
+        }
+      }
+    }
+  });
 });
