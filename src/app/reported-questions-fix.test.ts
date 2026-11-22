@@ -197,4 +197,51 @@ describe('Reported Questions Verification & Integrity Regression Tests', () => {
       }
     }
   });
+
+  it('verifies MUG3-CH103-PHYS-0114 (Eclampsia seizure management) is authentic and clean', () => {
+    const q = findQuestion(mug3Bank, 'MUG3-CH103-PHYS-0114');
+    expect(q).toBeDefined();
+    expect(q.type).toBe('mcq');
+    expect(q.text).toContain('pre-eclampsia and eclampsia');
+    expect(q.options[0]).toBe('Magnesium sulfate');
+    expect(q.correctIndex).toBe(0);
+    expect(q.options.some((o: string) => /PAGE|DATE/i.test(o))).toBe(false);
+  });
+
+  it('verifies MUG3-CH207-MICR-0010 (HPV oncogenesis p53 and Rb) is authentic and clean', () => {
+    const q = findQuestion(mug3Bank, 'MUG3-CH207-MICR-0010');
+    expect(q).toBeDefined();
+    expect(q.type).toBe('mcq');
+    expect(q.text).toContain('HPV types 16 and 18');
+    expect(q.options[0]).toContain('p53');
+    expect(q.options[0]).toContain('Retinoblastoma');
+    expect(q.correctIndex).toBe(0);
+  });
+
+  it('verifies MUG3-CH105-PATH-0095 (GFR dynamics) has clean essay model answer without exam cover dump', () => {
+    const q = findQuestion(mug3Bank, 'MUG3-CH105-PATH-0095');
+    expect(q).toBeDefined();
+    expect(q.type).toBe('essay');
+    expect(q.text).toContain('glomerular filtration rate');
+    expect(q.modelAnswer).toContain('hypoalbuminemia');
+    expect(q.modelAnswer).not.toContain('Write your name and ID');
+  });
+
+  it('enforces zero questions in MUG-3 have OCR debris (PAGE/DATE/ANSWERS) or dangling single letters', () => {
+    for (const ch of mug3Bank.chapters) {
+      for (const sub of ch.subjects) {
+        for (const q of sub.questions) {
+          const stem = (q.text || q.stem || '').trim();
+          expect(/\s+[a-z]$/i.test(stem), `QID ${q.id} has dangling single letter stem: "${stem}"`).toBe(false);
+          if (q.type === 'mcq') {
+            for (let idx = 0; idx < q.options.length; idx++) {
+              const opt = q.options[idx];
+              expect(/\b(?:PAGE|DATE)\b/.test(opt), `QID ${q.id} has PAGE/DATE in option ${idx}: "${opt}"`).toBe(false);
+              expect(/\bANSWERS?\s*\d*/i.test(opt), `QID ${q.id} has ANSWERS in option ${idx}: "${opt}"`).toBe(false);
+            }
+          }
+        }
+      }
+    }
+  });
 });
