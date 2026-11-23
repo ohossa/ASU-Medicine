@@ -41,7 +41,7 @@ describe('CA-1 Past Exams Intake & Quality Verification (Deduplicated)', () => {
 
     expect(chapterCounts[101]).toBe(59);  // Anatomy & Embryology
     expect(chapterCounts[102]).toBe(27);  // Histology
-    expect(chapterCounts[103]).toBe(140); // Physiology (misplaced micro & BPH questions relocated)
+    expect(chapterCounts[103]).toBe(139); // Physiology (misplaced micro & BPH questions relocated and duplicate merged)
     expect(chapterCounts[104]).toBe(54);  // Biochemistry
     expect(chapterCounts[105]).toBe(40);  // Pathology
     expect(chapterCounts[106]).toBe(36);  // Pharmacology
@@ -49,7 +49,7 @@ describe('CA-1 Past Exams Intake & Quality Verification (Deduplicated)', () => {
     expect(chapterCounts[108]).toBe(0);   // Parasitology
 
     const totalCa1 = Object.values(chapterCounts).reduce((a, b) => a + b, 0);
-    expect(totalCa1).toBe(356); // Fully deduplicated CA-1 questions (zero micro)
+    expect(totalCa1).toBe(355); // Fully deduplicated CA-1 questions (zero micro)
   });
 
   const pdfAnchoredQuestions = ca1Chapters.flatMap((c) =>

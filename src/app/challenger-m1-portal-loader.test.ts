@@ -17,18 +17,18 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     expect(manifestEntry).toBeDefined();
     expect(manifestEntry.year).toBe(3);
     expect(manifestEntry.semester).toBe(1);
-    expect(manifestEntry.totalCount).toBe(2836);
-    expect(manifestEntry.mcqCount).toBe(1599);
+    expect(manifestEntry.totalCount).toBe(2834);
+    expect(manifestEntry.mcqCount).toBe(1597);
     expect(manifestEntry.essayCount).toBe(1237);
     expect(manifestEntry.paths).toEqual(['../imports/year-3/semester-1/MUG-3.json']);
-    expect(manifestEntry.revision).toBe('e8e37375c3d01f8e26e9c1d97b16f748fd1fc035da368b57720c5b92084918bc');
-    expect(manifestEntry.bytes).toBe(3746767);
+    expect(manifestEntry.revision).toBe('f767bf14172af0619f96587e9b47758a29939526a4c7f13519cdaeef44931853');
+    expect(manifestEntry.bytes).toBe(4210769);
   });
 
   it('reports module question counts from manifest when not yet in memory', () => {
     const counts = getModuleQuestionCounts('MUG-3');
-    expect(counts.totalCount).toBe(2836);
-    expect(counts.mcqCount).toBe(1599);
+    expect(counts.totalCount).toBe(2834);
+    expect(counts.mcqCount).toBe(1597);
     expect(counts.essayCount).toBe(1237);
   });
 
@@ -45,20 +45,20 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
 
   it('reports exact question counts in memory matching manifest', () => {
     const counts = getModuleQuestionCounts('MUG-3');
-    expect(counts.totalCount).toBe(2836);
-    expect(counts.mcqCount).toBe(1599);
+    expect(counts.totalCount).toBe(2834);
+    expect(counts.mcqCount).toBe(1597);
     expect(counts.essayCount).toBe(1237);
   });
 
   it('loads mixed mode chapters with exact chapter counts, schema integrity, and zero truncation', () => {
     const chapters = getChaptersForModuleAndMode('MUG-3', 'mixed');
     
-    // Total questions loaded must be exactly 2836 verified questions
+    // Total questions loaded must be exactly 2834 verified questions
     const totalLoaded = chapters.reduce(
       (sum, c) => sum + c.subjects.reduce((s, sub) => s + sub.questions.length, 0),
       0
     );
-    expect(totalLoaded).toBe(2836);
+    expect(totalLoaded).toBe(2834);
 
     // Verify visiblePracticeChapters behavior (21 visible chapters in mixed mode: 25 total - 4 empty chapters: 107, 108, 204, 208)
     expect(chapters.length).toBe(21);
@@ -74,7 +74,7 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     expect(ch301!.bankSection).toBe('past-exams');
 
     const c301Count = ch301!.subjects.reduce((s, sub) => s + sub.questions.length, 0);
-    expect(c301Count).toBe(495);
+    expect(c301Count).toBe(494);
 
     // Verify Practice chapters with verified content
     const ch1 = chapters.find((c) => c.id === 1);
@@ -90,13 +90,13 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     expect(ch3!.subjects[0].questions.length).toBe(418);
   });
 
-  it('loads MCQ mode with exact question counts (1599 questions)', () => {
+  it('loads MCQ mode with exact question counts (1597 questions)', () => {
     const chapters = getChaptersForModuleAndMode('MUG-3', 'mcq');
     const totalMcq = chapters.reduce(
       (sum, c) => sum + c.subjects.reduce((s, sub) => s + sub.questions.length, 0),
       0
     );
-    expect(totalMcq).toBe(1599);
+    expect(totalMcq).toBe(1597);
 
     for (const c of chapters) {
       for (const s of c.subjects) {
@@ -151,7 +151,7 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
 
     const ch301Versions = await getLearningQuestionVersions('MUG-3', 301);
     expect(ch301Versions).toBeInstanceOf(Map);
-    expect(ch301Versions.size).toBe(495);
+    expect(ch301Versions.size).toBe(494);
     expect(ch301Versions.has('MUG3-CH301-ANAT-0014')).toBe(true);
   });
 });
