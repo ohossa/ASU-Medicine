@@ -1,0 +1,681 @@
+import json, re
+
+# Lecture 1: Metabolic Functions of the Kidney & Gluconeogenesis (15 Qs: 0501 to 0515)
+# Lecture 2: Biosynthesis & Metabolism of Steroid Hormones (15 Qs: 0516 to 0530)
+# Lecture 3: Biochemical Markers of Renal Function (15 Qs: 0531 to 0545)
+# Lecture 4: Biochemistry of Urine & Inborn Errors of Metabolism (15 Qs: 0546 to 0560)
+
+questions = [
+    # --- LECTURE 1: Metabolic Functions & Gluconeogenesis ---
+    {
+        "id": "MUG3-CH4-BIOC-0501",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Biochemistry/dr omar.pdf-p1-Q1"],
+        "repetitionCount": 1,
+        "text": "Which renal anatomical zone relies predominantly on anaerobic glycolysis for ATP generation due to low oxygen tension?",
+        "options": ["Renal cortex", "Proximal convoluted tubule", "Renal medulla", "Renal pelvis"],
+        "correctIndex": 2,
+        "explanation": "The renal medulla functions under physiological hypoxia with low blood flow (countercurrent architecture) and low oxygen tension, relying primarily on anaerobic glycolysis for ATP generation. In contrast, the renal cortex has abundant blood flow and high oxygen supply, relying on oxidative phosphorylation and gluconeogenesis."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0502",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Biochemistry/dr omar.pdf-p1-Q2"],
+        "repetitionCount": 1,
+        "text": "What is the primary metabolic fuel utilized by the renal cortex during the well-fed state?",
+        "options": ["Ketone bodies", "Glucose", "Fatty acids", "Glutamine"],
+        "correctIndex": 1,
+        "explanation": "In the well-fed state, circulating glucose and lactate are the primary fuels for renal cortical tubular cells. During prolonged fasting or starvation, the kidney switches to oxidizing free fatty acids and ketone bodies."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0503",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Biochemistry/dr omar.pdf-p1-Q3"],
+        "repetitionCount": 1,
+        "text": "Which high-capacity, low-affinity cotransporter mediates the reabsorption of approximately 90% of filtered glucose in the early S1 segment of the proximal tubule?",
+        "options": ["SGLT1", "GLUT4", "GLUT2", "SGLT2"],
+        "correctIndex": 3,
+        "explanation": "SGLT2 (sodium-glucose cotransporter 2) is a high-capacity, low-affinity transporter located on the apical brush border of early proximal tubule (S1 segment) that reabsorbs 90% of filtered glucose. SGLT1 reabsorbs the remaining 10% in the downstream S3 segment."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0504",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Biochemistry/dr omar.pdf-p1-Q4"],
+        "repetitionCount": 1,
+        "text": "What is the physiological renal threshold for arterial plasma glucose above which glucosuria begins to appear?",
+        "options": ["120 mg/dL", "140 mg/dL", "180 mg/dL", "240 mg/dL"],
+        "correctIndex": 2,
+        "explanation": "The normal renal threshold for glucose is approximately 180 mg/dL (10 mmol/L). When plasma glucose exceeds this level, the tubular transport maximum (TmG ~375 mg/min) is saturated, and unreabsorbed glucose spills into the urine (glucosuria)."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0505",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Biochemistry/dr omar.pdf-p1-Q5"],
+        "repetitionCount": 1,
+        "text": "Which key gluconeogenic enzyme present in the renal cortex allows the kidney to release free glucose into the systemic circulation during prolonged starvation?",
+        "options": ["Pyruvate carboxylase", "Glucose-6-phosphatase", "Hexokinase", "Phosphofructokinase-1"],
+        "correctIndex": 1,
+        "explanation": "Glucose-6-phosphatase hydrolyzes glucose-6-phosphate to free glucose, enabling export into the blood. It is expressed only in the liver and the renal cortex; muscle and adipose tissue lack this enzyme and cannot release free glucose into circulation."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0506",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Biochemistry/dr omar.pdf-p2-Q6"],
+        "repetitionCount": 1,
+        "text": "During prolonged starvation or metabolic acidosis, which amino acid serves as the primary renal substrate supplying both alpha-ketoglutarate for gluconeogenesis and NH3 for proton buffering?",
+        "options": ["Alanine", "Aspartate", "Glutamine", "Leucine"],
+        "correctIndex": 2,
+        "explanation": "Glutamine is the major renal amino acid substrate. Renal glutaminase deamidates glutamine to glutamate, releasing NH3. Glutamate dehydrogenase then deaminates glutamate to alpha-ketoglutarate (which enters the citric acid cycle for gluconeogenesis), releasing a second NH3 to buffer urinary H+ as NH4+."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0507",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Biochemistry/dr omar.pdf-p3-Q15"],
+        "repetitionCount": 1,
+        "text": "In prolonged fasting (starvation of several weeks), renal gluconeogenesis contributes approximately what percentage of total newly synthesized endogenous glucose?",
+        "options": ["10%", "25%", "50%", "80%"],
+        "correctIndex": 2,
+        "explanation": "While the liver accounts for ~90% of gluconeogenesis during an overnight fast, during prolonged fasting (starvation) renal cortical gluconeogenesis increases dramatically to supply up to 40-50% of circulating blood glucose."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0508",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Biochemistry/dr omar.pdf-p5-Q24"],
+        "repetitionCount": 1,
+        "text": "Which pair of amino acids is classified as exclusively ketogenic, generating only acetyl-CoA or acetoacetate and unable to yield net glucose?",
+        "options": ["Phenylalanine and Tyrosine", "Leucine and Lysine", "Isoleucine and Valine", "Alanine and Glycine"],
+        "correctIndex": 1,
+        "explanation": "Leucine and Lysine are the only two purely ketogenic amino acids. Their catabolism yields only acetyl-CoA and acetoacetate, which cannot be converted into net pyruvate or oxaloacetate for gluconeogenesis."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0509",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Biochemistry/dr omar.pdf-p5-Q25"],
+        "repetitionCount": 1,
+        "text": "Which of the following amino acids is classified as both glucogenic and ketogenic?",
+        "options": ["Alanine", "Glutamate", "Isoleucine", "Methionine"],
+        "correctIndex": 2,
+        "explanation": "Isoleucine, Phenylalanine, Tyrosine, and Tryptophan (the 'aromatics + isoleucine') are both glucogenic and ketogenic. Isoleucine yields succinyl-CoA (glucogenic) and acetyl-CoA (ketogenic)."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0510",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Biochemistry/dr omar.pdf-p5-Q26"],
+        "repetitionCount": 1,
+        "text": "Which amino acid is quantitatively the most important circulating substrate for hepatic and renal gluconeogenesis via transamination to pyruvate?",
+        "options": ["Aspartate", "Glutamine", "Alanine", "Serine"],
+        "correctIndex": 2,
+        "explanation": "Alanine is the principal gluconeogenic amino acid released by muscle in the glucose-alanine cycle. In the liver and kidney, alanine aminotransferase (ALT) transaminates alanine directly to pyruvate for entry into gluconeogenesis."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0511",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Biochemistry/dr omar.pdf-p6-Q27"],
+        "repetitionCount": 1,
+        "text": "Which enzyme hydrolyzes asparagine into aspartate and free ammonium in renal nitrogen metabolism?",
+        "options": ["Asparaginase", "Aspartate transaminase", "Glutaminase", "Arginase"],
+        "correctIndex": 0,
+        "explanation": "Asparaginase deamidates asparagine to produce aspartate and free ammonia (NH3). Aspartate can then undergo transamination to oxaloacetate, feeding gluconeogenesis."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0512",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Biochemistry/dr omar.pdf-p6-Q28"],
+        "repetitionCount": 1,
+        "text": "Which mitochondrial enzyme catalyzes the reversible oxidative deamination of glutamate to alpha-ketoglutarate, releasing ammonia and reducing NAD+ or NADP+?",
+        "options": ["Glutaminase", "Glutamine synthetase", "Glutamate dehydrogenase", "Alanine transaminase"],
+        "correctIndex": 2,
+        "explanation": "Glutamate dehydrogenase (GDH) in the mitochondrial matrix oxidatively deaminates glutamate to alpha-ketoglutarate, utilizing either NAD+ or NADP+ and liberating free ammonia (NH3) for urinary buffering."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0513",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Biochemistry/dr omar.pdf-p6-Q29"],
+        "repetitionCount": 1,
+        "text": "Which group of amino acids is degraded to propionyl-CoA and ultimately enters the Krebs cycle as succinyl-CoA for gluconeogenesis?",
+        "options": ["Valine, Isoleucine, Methionine, Threonine", "Leucine, Lysine, Tryptophan, Phenylalanine", "Alanine, Serine, Cysteine, Glycine", "Glutamate, Glutamine, Proline, Arginine"],
+        "correctIndex": 0,
+        "explanation": "The mnemonic VOMIT (Valine, Odd-chain fatty acids, Methionine, Isoleucine, Threonine) describes precursors converted to propionyl-CoA, then D-methylmalonyl-CoA, L-methylmalonyl-CoA, and finally succinyl-CoA."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0514",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Biochemistry/dr omar.pdf-p7-Q34"],
+        "repetitionCount": 1,
+        "text": "Transamination of which amino acid directly produces the citric acid cycle and gluconeogenic intermediate oxaloacetate?",
+        "options": ["Alanine", "Aspartate", "Glutamate", "Serine"],
+        "correctIndex": 1,
+        "explanation": "Aspartate transaminase (AST) transfers the amino group from aspartate to alpha-ketoglutarate, directly generating oxaloacetate (OAA) and glutamate. OAA is a direct gluconeogenic precursor."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0515",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Biochemistry/dr omar.pdf-p4-Q17"],
+        "repetitionCount": 1,
+        "text": "On the basolateral membrane of renal proximal tubular epithelial cells, glucose exit into the interstitial space is facilitated by which passive transporter?",
+        "options": ["SGLT2", "GLUT1", "GLUT2", "GLUT4"],
+        "correctIndex": 2,
+        "explanation": "While SGLT2 drives apical secondary active transport of glucose against its gradient, glucose exits down its concentration gradient across the basolateral membrane into peritubular capillaries via the facilitated diffusion transporter GLUT2."
+    },
+
+    # --- LECTURE 2: Biosynthesis & Metabolism of Steroid Hormones ---
+    {
+        "id": "MUG3-CH4-BIOC-0516",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Biochemistry/dr omar.pdf-p14-Q71"],
+        "repetitionCount": 1,
+        "text": "Which of the following enzymes is specifically required for cortisol synthesis but is NOT involved in aldosterone biosynthesis in the adrenal cortex?",
+        "options": ["21-Hydroxylase (CYP21A2)", "11beta-Hydroxylase (CYP11B1)", "17alpha-Hydroxylase (CYP17A1)", "Cholesterol desmolase (CYP11A1)"],
+        "correctIndex": 2,
+        "explanation": "17alpha-Hydroxylase (CYP17A1) is absent in the zona glomerulosa (where aldosterone is produced) and present in the zona fasciculata and reticularis. Aldosterone synthesis requires CYP11A1, 3beta-HSD, CYP21A2, and CYP11B2 (aldosterone synthase), but never 17alpha-hydroxylase."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0517",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Biochemistry/dr omar.pdf-p14-Q72"],
+        "repetitionCount": 1,
+        "text": "Which class of steroid hormones contains a 19-carbon cyclopentanoperhydrophenanthrene nucleus (androstane core)?",
+        "options": ["Progestins and Mineralocorticoids (21 carbons)", "Glucocorticoids (21 carbons)", "Androgens (e.g., Testosterone, DHEA)", "Estrogens (18 carbons)"],
+        "correctIndex": 2,
+        "explanation": "Steroid carbon counts follow a strict hierarchy: Cholesterol has 27 carbons, Progestins/Mineralocorticoids/Glucocorticoids have 21 carbons (pregnane), Androgens have 19 carbons (androstane), and Estrogens have 18 carbons (estrane)."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0518",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Biochemistry/dr omar.pdf-p15-Q73"],
+        "repetitionCount": 1,
+        "text": "How many carbon atoms constitute the steroid skeleton of estradiol and other natural estrogens (estrane core)?",
+        "options": ["17 carbons", "18 carbons", "19 carbons", "21 carbons"],
+        "correctIndex": 1,
+        "explanation": "Estrogens possess an 18-carbon estrane core characterized by an aromatic A-ring (which lacks the C-19 angular methyl group lost during aromatization by CYP19)."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0519",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Biochemistry/dr omar.pdf-p15-Q74"],
+        "repetitionCount": 1,
+        "text": "Which of the following adrenal steroids possesses a 21-carbon pregnane core structure?",
+        "options": ["Testosterone", "Androstenedione", "Aldosterone", "Dehydroepiandrosterone (DHEA)"],
+        "correctIndex": 2,
+        "explanation": "Aldosterone, cortisol, corticosterone, and progesterone all possess 21 carbons (pregnane derivatives). In contrast, DHEA, androstenedione, and testosterone are 19-carbon androgens."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0520",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Biochemistry/dr omar.pdf-p15-Q75"],
+        "repetitionCount": 1,
+        "text": "Which single microsomal cytochrome P450 enzyme possesses dual 17alpha-hydroxylase and 17,20-lyase activities essential for sex steroid synthesis?",
+        "options": ["CYP11A1", "CYP19A1", "CYP17A1", "CYP21A2"],
+        "correctIndex": 2,
+        "explanation": "CYP17A1 is a bifunctional enzyme that first catalyzes 17alpha-hydroxylation (converting pregnenolone to 17-OH pregnenolone) and subsequently 17,20-lyase cleavage (converting 17-OH pregnenolone to DHEA)."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0521",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Biochemistry/dr omar.pdf-p15-Q76"],
+        "repetitionCount": 1,
+        "text": "Which androgen binds to the androgen receptor with highest affinity and is considered the most biologically potent natural androgen?",
+        "options": ["Dehydroepiandrosterone (DHEA)", "Androstenedione", "Dihydrotestosterone (DHT)", "Testosterone"],
+        "correctIndex": 2,
+        "explanation": "Dihydrotestosterone (DHT) binds the androgen receptor with approximately 2- to 5-fold greater affinity and 10-fold higher potency than testosterone, and cannot be aromatized to estrogen."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0522",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Biochemistry/dr omar.pdf-p15-Q77"],
+        "repetitionCount": 1,
+        "text": "Which enzyme converts testosterone into the more potent androgen dihydrotestosterone (DHT) in target tissues like the prostate and hair follicles?",
+        "options": ["5alpha-Reductase", "Aromatase (CYP19)", "17beta-HSD", "3beta-HSD"],
+        "correctIndex": 0,
+        "explanation": "5alpha-Reductase reduces the 4,5-double bond of testosterone to form dihydrotestosterone (DHT). Pharmacological inhibition by finasteride or dutasteride is used in treating BPH and male-pattern alopecia."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0523",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Biochemistry/dr omar.pdf-p16-Q78"],
+        "repetitionCount": 1,
+        "text": "Which enzyme catalyzes the reversible interconversion of androstenedione into testosterone in the gonads and adrenal reticularis?",
+        "options": ["5alpha-Reductase", "Aromatase", "17beta-Hydroxysteroid dehydrogenase", "CYP17A1"],
+        "correctIndex": 2,
+        "explanation": "17beta-Hydroxysteroid dehydrogenase (17beta-HSD) reduces the 17-keto group of androstenedione into the 17beta-hydroxyl group of testosterone, converting a weak androgen into a potent one."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0524",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Biochemistry/dr omar.pdf-p16-Q79"],
+        "repetitionCount": 1,
+        "text": "Which cytochrome P450 enzyme aromatizes the A-ring of testosterone to form estradiol (and androstenedione to estrone)?",
+        "options": ["CYP11B1", "CYP17A1", "Aromatase (CYP19A1)", "CYP21A2"],
+        "correctIndex": 2,
+        "explanation": "Aromatase (CYP19A1) catalyzes three successive hydroxylation reactions removing the C-19 methyl group and creating the aromatic phenolic A-ring characteristic of estrogens."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0525",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Biochemistry/dr omar.pdf-p16-Q80"],
+        "repetitionCount": 1,
+        "text": "In congenital adrenal hyperplasia due to classic 21-hydroxylase deficiency, which biochemical finding is characteristically ABSENT?",
+        "options": ["Elevated 17-hydroxyprogesterone", "Elevated ACTH with adrenal cortical hyperplasia", "Increased serum aldosterone and hypertension", "Ambiguous genitalia in female neonates"],
+        "correctIndex": 2,
+        "explanation": "21-Hydroxylase deficiency impairs synthesis of BOTH cortisol and aldosterone. Therefore, aldosterone is decreased (salt-wasting, hypotension, hyperkalemia), NOT increased. The lack of cortisol feedback causes elevated ACTH, driving steroid precursors into the androgen pathway."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0526",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Biochemistry/dr omar.pdf-p16-Q81"],
+        "repetitionCount": 1,
+        "text": "Which clinical and laboratory profile characteristically distinguishes 17alpha-hydroxylase deficiency from 21-hydroxylase deficiency?",
+        "options": ["Hypertension with hypokalemia and lack of sex steroids", "Salt-wasting, hypotension, and hyperkalemia", "Virilization and ambiguous genitalia in female infants", "Markedly elevated serum testosterone levels"],
+        "correctIndex": 0,
+        "explanation": "17alpha-Hydroxylase deficiency blocks sex steroid and cortisol synthesis. Steroid precursors are shunted into 11-deoxycorticosterone (DOC) and corticosterone, which have mineralocorticoid activity, causing sodium retention, volume expansion, hypertension, and hypokalemia, with sexual infantilism."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0527",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Biochemistry/dr omar.pdf-p16-Q82"],
+        "repetitionCount": 1,
+        "text": "Which enzyme converts pregnenolone into progesterone by oxidizing the 3-hydroxyl group and isomerizing the double bond?",
+        "options": ["3beta-Hydroxysteroid dehydrogenase (3beta-HSD)", "17alpha-Hydroxylase", "21-Hydroxylase", "11beta-Hydroxylase"],
+        "correctIndex": 0,
+        "explanation": "3beta-Hydroxysteroid dehydrogenase / Delta5-Delta4 isomerase (3beta-HSD) converts Delta5 steroids (pregnenolone, 17-OH pregnenolone, DHEA) into Delta4 steroids (progesterone, 17-OH progesterone, androstenedione)."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0528",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Biochemistry/dr omar.pdf-p17-Q83"],
+        "repetitionCount": 1,
+        "text": "The initial, rate-limiting enzymatic step in the biosynthesis of all steroid hormones from cholesterol is catalyzed by:",
+        "options": ["17alpha-Hydroxylase", "21-Hydroxylase", "11beta-Hydroxylase", "Cholesterol desmolase (CYP11A1 / P450scc)"],
+        "correctIndex": 3,
+        "explanation": "Cholesterol side-chain cleavage enzyme (desmolase / CYP11A1 / P450scc) in the inner mitochondrial membrane cleaves the 6-carbon side chain of cholesterol (27C) to yield pregnenolone (21C). This is the rate-limiting step stimulated by ACTH and LH."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0529",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Biochemistry/dr omar.pdf-p17-Q84"],
+        "repetitionCount": 1,
+        "text": "Which intermediate accumulates dramatically in plasma and serves as the primary diagnostic biomarker for classic 21-hydroxylase deficiency?",
+        "options": ["Pregnenolone", "17-Hydroxyprogesterone (17-OHP)", "Aldosterone", "Dehydroepiandrosterone sulfate"],
+        "correctIndex": 1,
+        "explanation": "Because 21-hydroxylase (CYP21A2) acts on 17-hydroxyprogesterone to produce 11-deoxycortisol, enzyme deficiency leads to dramatic accumulation of 17-hydroxyprogesterone (17-OHP), which is the universal screening biomarker on neonatal heel prick blood spots."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0530",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Biochemistry/dr omar.pdf-p17-Q85"],
+        "repetitionCount": 1,
+        "text": "Deficiency of 11beta-hydroxylase (CYP11B1) causes virilization accompanied by which distinguishing cardiovascular feature?",
+        "options": ["Severe hypotension and shock", "Low-renin hypertension due to 11-deoxycorticosterone accumulation", "Aortic coarctation", "Orthostatic hypotension"],
+        "correctIndex": 1,
+        "explanation": "11beta-Hydroxylase deficiency blocks conversion of 11-deoxycorticosterone (DOC) to corticosterone. Accumulating DOC has potent mineralocorticoid activity, causing sodium retention, volume expansion, suppressed renin, and low-renin hypertension (unlike 21-hydroxylase deficiency, which causes hypotension)."
+    },
+
+    # --- LECTURE 3: Biochemical Markers of Renal Function ---
+    {
+        "id": "MUG3-CH4-BIOC-0531",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Biochemistry/dr omar.pdf-p2-Q7"],
+        "repetitionCount": 1,
+        "text": "Which brush-border enzyme initiates the gamma-glutamyl (Meister) cycle by transferring the glutamyl moiety of extracellular glutathione to an amino acid?",
+        "options": ["Gamma-glutamyl transferase (GGT)", "Glutathione synthetase", "5-Oxoprolinase", "Glutathione peroxidase"],
+        "correctIndex": 0,
+        "explanation": "Gamma-glutamyl transferase (GGT), located on the external surface of tubular cell membranes, initiates the Meister cycle by cleaving glutathione and transferring its gamma-glutamyl group to an acceptor amino acid for cellular transport."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0532",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Biochemistry/dr omar.pdf-p2-Q8"],
+        "repetitionCount": 1,
+        "text": "Cisplatin nephrotoxicity in proximal tubular cells is triggered by gamma-glutamyl transferase and beta-lyase metabolism producing which toxic compound?",
+        "options": ["Superoxide anion", "Cisplatin-derived reactive thiol / mercapturate intermediate", "Hydrogen cyanide", "Uric acid crystals"],
+        "correctIndex": 1,
+        "explanation": "Cisplatin is conjugated with glutathione and cleaved by renal tubular GGT and dipeptidases to a cysteinylglycine and cysteine conjugate, which cysteine S-conjugate beta-lyase converts into a highly reactive, nephrotoxic platinum-thiol species."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0533",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Biochemistry/dr omar.pdf-p2-Q9"],
+        "repetitionCount": 1,
+        "text": "Which renal tubular enzyme hydrolyzes glutamine to glutamate and free ammonia (NH3) to facilitate urinary proton secretion during systemic acidosis?",
+        "options": ["Renal glutaminase", "Glutamine synthetase", "Urease", "Carbamoyl phosphate synthetase I"],
+        "correctIndex": 0,
+        "explanation": "Phosphate-dependent renal glutaminase deamidates glutamine to glutamate, generating NH3. NH3 diffuses into the tubular lumen, binds H+ to form NH4+ (which cannot re-cross the lipid membrane), trapping acid and regenerating bicarbonate."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0534",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Biochemistry/dr omar.pdf-p3-Q10"],
+        "repetitionCount": 1,
+        "text": "Endogenous carnitine biosynthesis in the human liver and kidney begins with post-translational trimethylation of which amino acid?",
+        "options": ["Arginine", "Lysine (supplying carbon chain) and Methionine (supplying methyl groups via SAM)", "Glutamate and Glycine", "Histidine and Cysteine"],
+        "correctIndex": 1,
+        "explanation": "Carnitine is synthesized from peptide-bound L-lysine (which provides the carbon backbone) and S-adenosylmethionine (SAM, which donates methyl groups to form trimethyllysine), requiring Vitamin C, iron, and Vitamin B6 as cofactors."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0535",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Biochemistry/dr omar.pdf-p3-Q11"],
+        "repetitionCount": 1,
+        "text": "Prolonged therapy with the antiepileptic drug valproic acid can induce secondary systemic carnitine deficiency primarily by:",
+        "options": ["Inhibiting hepatic protein synthesis", "Inhibiting OCTN2 renal carnitine reabsorption and excreting valproylcarnitine", "Destroying renal proximal tubules", "Directly cleaving carnitine into trimethylamine"],
+        "correctIndex": 1,
+        "explanation": "Valproate is conjugated to carnitine to form valproylcarnitine, which is rapidly excreted in the urine. Furthermore, valproate inhibits OCTN2 (the high-affinity renal sodium-dependent carnitine cotransporter), preventing normal tubular reabsorption."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0536",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Biochemistry/dr omar.pdf-p3-Q12"],
+        "repetitionCount": 1,
+        "text": "Why does severe systemic carnitine deficiency result in non-ketotic hypoglycemia during fasting?",
+        "options": ["Excessive insulin release from pancreatic beta cells", "Direct inhibition of glycogen phosphorylase", "Impaired mitochondrial beta-oxidation of long-chain fatty acids depriving gluconeogenesis of ATP and acetyl-CoA", "Defective renal tubular reabsorption of glucose"],
+        "correctIndex": 2,
+        "explanation": "Carnitine is essential for the carnitine shuttle (CPT-I and CPT-II) transporting long-chain fatty acids into mitochondria. Impaired beta-oxidation leaves tissues unable to generate acetyl-CoA (which allosterically activates pyruvate carboxylase) and ATP, collapsing gluconeogenesis and ketone body production."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0537",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Biochemistry/dr omar.pdf-p3-Q13"],
+        "repetitionCount": 1,
+        "text": "Which of the following endocrine factors is NOT synthesized by renal parenchyma?",
+        "options": ["Erythropoietin (EPO)", "Renin", "1,25-Dihydroxycholecalciferol (Calcitriol)", "Antidiuretic hormone (Vasopressin)"],
+        "correctIndex": 3,
+        "explanation": "Antidiuretic hormone (ADH / Vasopressin) is synthesized in the supraoptic and paraventricular nuclei of the hypothalamus and stored/released from the posterior pituitary; it acts ON the kidney (V2 receptors in collecting ducts), but is not produced by it."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0538",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Biochemistry/dr omar.pdf-p3-Q14"],
+        "repetitionCount": 1,
+        "text": "The final activation step of Vitamin D into 1,25-dihydroxycholecalciferol (calcitriol) takes place in the renal proximal tubules catalyzed by which enzyme?",
+        "options": ["1alpha-Hydroxylase (CYP27B1)", "25-Hydroxylase (CYP2R1)", "24-Hydroxylase (CYP24A1)", "7-Dehydrocholesterol reductase"],
+        "correctIndex": 0,
+        "explanation": "25-hydroxyvitamin D undergoes 1alpha-hydroxylation in the mitochondria of renal proximal convoluted tubules by 1alpha-hydroxylase (CYP27B1), an enzyme upregulated by PTH and low serum phosphate."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0539",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Biochemistry/dr omar.pdf-p4-Q19"],
+        "repetitionCount": 1,
+        "text": "Glutathione (GSH), the master intracellular antioxidant and substrate in the Meister cycle, is a tripeptide composed of which three amino acids?",
+        "options": ["Glutamate, Cysteine, and Glycine (linked via atypical gamma-peptide bond)", "Glutamine, Cystine, and Alanine", "Glutamate, Methionine, and Proline", "Aspartate, Cysteine, and Glycine"],
+        "correctIndex": 0,
+        "explanation": "Glutathione is gamma-L-glutamyl-L-cysteinyl-glycine. The atypical peptide linkage between the gamma-carboxyl group of glutamate and the amino group of cysteine protects GSH from degradation by ordinary cellular aminopeptidases."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0540",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Biochemistry/dr omar.pdf-p4-Q22"],
+        "repetitionCount": 1,
+        "text": "Vitamin D-dependent rickets type I (VDDR-I) is an autosomal recessive metabolic disorder caused by mutations in which renal enzyme?",
+        "options": ["Renal 1alpha-hydroxylase (CYP27B1)", "Hepatic 25-hydroxylase (CYP2R1)", "Vitamin D receptor (VDR)", "Renal 24-hydroxylase"],
+        "correctIndex": 0,
+        "explanation": "VDDR-I results from inactivating mutations in CYP27B1 encoding renal 1alpha-hydroxylase, leading to low 1,25-(OH)2D despite normal or high 25-OHD. Type II (VDDR-II) is caused by end-organ resistance due to mutations in the Vitamin D receptor (VDR)."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0541",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Biochemistry/dr omar.pdf-p5-Q23"],
+        "repetitionCount": 1,
+        "text": "How many moles of ATP are consumed in the synthesis of one molecule of glutathione during the cyclical Meister (gamma-glutamyl) cycle?",
+        "options": ["1 ATP", "2 ATP", "3 ATP", "5 ATP"],
+        "correctIndex": 2,
+        "explanation": "Resynthesis of glutathione in the Meister cycle consumes 3 ATP molecules: 1 ATP for 5-oxoprolinase, 1 ATP for gamma-glutamylcysteine synthetase, and 1 ATP for glutathione synthetase."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0542",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Biochemistry/dr omar.pdf-p13-Q66"],
+        "repetitionCount": 1,
+        "text": "Isolated benign renal glucosuria is clinically characterized and distinguished from diabetes mellitus by which diagnostic hallmark?",
+        "options": ["Elevated fasting blood glucose above 126 mg/dL", "Normal venous blood glucose concentrations with presence of glucose in urine", "Associated severe aminoaciduria and hypophosphatemia", "Ketoacidosis and polyuria"],
+        "correctIndex": 1,
+        "explanation": "Benign familial renal glucosuria is an autosomal recessive defect in SGLT2 (SLC5A2 gene) characterized by constant glucosuria in the presence of strictly normal fasting and postprandial plasma glucose and normal oral glucose tolerance."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0543",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Biochemistry/dr omar.pdf-p12-Q64"],
+        "repetitionCount": 1,
+        "text": "De Toni-Debré-Fanconi syndrome is a generalized dysfunction of the proximal convoluted tubule leading to urinary wasting of all the following EXCEPT:",
+        "options": ["Glucose (glucosuria with normal blood sugar)", "Phosphate (hypophosphatemic rickets)", "Amino acids (generalized aminoaciduria)", "Potassium and Bicarbonate", "High-molecular-weight proteins like Immunoglobulins"],
+        "correctIndex": 4,
+        "explanation": "Fanconi syndrome is a proximal tubular reabsorption failure causing loss of low-molecular-weight substances (glucose, amino acids, phosphate, bicarbonate, uric acid, beta-2-microglobulin). High-molecular-weight proteins like IgG reflect glomerular breakdown, not proximal tubular transport defects."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0544",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Biochemistry/dr omar.pdf-p7-Q37"],
+        "repetitionCount": 1,
+        "text": "Which of the following compounds is NOT synthesized via transmethylation from S-adenosylmethionine (SAM)?",
+        "options": ["Creatine (from guanidinoacetate)", "Epinephrine (from norepinephrine)", "Phosphatidylcholine (from phosphatidylethanolamine)", "Glutathione (from glutamate, cysteine, glycine)"],
+        "correctIndex": 3,
+        "explanation": "Glutathione is synthesized by sequential peptide synthetase reactions (ATP-dependent ligases), NOT by transmethylation. Creatine, epinephrine, phosphatidylcholine, and melatonin all require methyl group donation from SAM."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0545",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Biochemistry/dr omar.pdf-p8-Q38"],
+        "repetitionCount": 1,
+        "text": "The remethylation of homocysteine to regenerate methionine in the cytoplasm requires which two essential vitamin cofactors?",
+        "options": ["Vitamin B1 (Thiamine) and Biotin", "Vitamin B12 (Cobalamin) and N5-methyltetrahydrofolate (Folate)", "Vitamin C and Niacin", "Pyridoxine (Vitamin B6) and Vitamin A"],
+        "correctIndex": 1,
+        "explanation": "Methionine synthase requires methylcobalamin (Vitamin B12) as a prosthetic group and N5-methyl-THF (folate) as methyl donor to convert homocysteine back to methionine."
+    },
+
+    # --- LECTURE 4: Biochemistry of Urine & Inborn Errors of Metabolism ---
+    {
+        "id": "MUG3-CH4-BIOC-0546",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Biochemistry/dr omar.pdf-p8-Q39"],
+        "repetitionCount": 1,
+        "text": "When dietary methionine and intracellular SAM stores are high, homocysteine is committed to irreversible transsulfuration to form cysteine via which intermediate?",
+        "options": ["Cystathionine", "Glutathione", "Taurine", "Homocystine"],
+        "correctIndex": 0,
+        "explanation": "When methionine is plentiful, cystathionine beta-synthase (a Vitamin B6-dependent enzyme) condenses homocysteine with serine to form cystathionine, committing the sulfur atom to irreversible conversion to cysteine."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0547",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Biochemistry/dr omar.pdf-p8-Q40"],
+        "repetitionCount": 1,
+        "text": "Classical homocystinuria (Type I) is an autosomal recessive inborn error of metabolism caused by deficiency of which enzyme?",
+        "options": ["Methionine synthase", "Cystathionine beta-synthase (CBS)", "Homogentisate 1,2-dioxygenase", "S-adenosylhomocysteine hydrolase"],
+        "correctIndex": 1,
+        "explanation": "Classical homocystinuria results from cystathionine beta-synthase (CBS) deficiency, leading to marked elevations in plasma and urine homocysteine and methionine, with ectopia lentis, marfanoid habitus, osteoporosis, and premature thromboembolism."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0548",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Biochemistry/dr omar.pdf-p8-Q41"],
+        "repetitionCount": 1,
+        "text": "In classic cystathionine beta-synthase (CBS) deficiency, what is the characteristic finding in plasma amino acid chromatography?",
+        "options": ["Low methionine and high homocysteine", "Markedly elevated methionine and elevated total homocysteine", "Low homocysteine and elevated cysteine", "Isolated hyperprolinemia"],
+        "correctIndex": 1,
+        "explanation": "Because CBS blocks the degradation of homocysteine to cystathionine, accumulated homocysteine is forced through the remethylation pathway, elevating BOTH serum homocysteine and methionine. In contrast, remethylation defects (MTHFR or B12 deficiency) show elevated homocysteine with LOW methionine."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0549",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Biochemistry/dr omar.pdf-p9-Q42"],
+        "repetitionCount": 1,
+        "text": "In classical homocystinuria, ectopia lentis (downward and inward subluxation of the ocular lens) occurs primarily because homocysteine disrupts:",
+        "options": ["Retinal rhodopsin synthesis", "Covalent disulfide cross-linking of fibrillin-1 in the ciliary zonules", "Collagen type IV in the corneal basement membrane", "Hyaluronic acid in the vitreous humor"],
+        "correctIndex": 1,
+        "explanation": "Homocysteine binds free sulfhydryl groups and interferes with disulfide bond formation in fibrillin-1 (a cysteine-rich glycoprotein). This weakens the ciliary zonules suspending the lens, causing downward lens dislocation (in contrast to upward subluxation in Marfan syndrome)."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0550",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Biochemistry/dr omar.pdf-p9-Q43"],
+        "repetitionCount": 1,
+        "text": "Alkaptonuria is an autosomal recessive disorder of phenylalanine and tyrosine catabolism caused by deficiency of:",
+        "options": ["Tyrosinase", "Homogentisate 1,2-dioxygenase (HGD)", "Fumarylacetoacetate hydrolase", "Phenylalanine hydroxylase"],
+        "correctIndex": 1,
+        "explanation": "Alkaptonuria is caused by loss of homogentisate 1,2-dioxygenase (HGD), leading to accumulation of homogentisic acid (HGA) which oxidizes to alkaptone (benzoquinone acetic acid)."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0551",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Biochemistry/dr omar.pdf-p9-Q44"],
+        "repetitionCount": 1,
+        "text": "Which physical finding is the cardinal hallmark of alkaptonuria seen in childhood?",
+        "options": ["Bilateral congenital cataracts", "Urine that turns brownish-black upon standing or exposure to alkaline reagents", "Severe photosensitive skin rash", "Recurrent hypoglycemia and hepatomegaly"],
+        "correctIndex": 1,
+        "explanation": "Homogentisic acid in the urine auto-oxidizes on standing, particularly when exposed to air or alkali, polymerizing into a dark melanin-like pigment (alkaptone) that turns the urine dark brownish-black."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0552",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Biochemistry/dr omar.pdf-p9-Q45"],
+        "repetitionCount": 1,
+        "text": "Primary hyperoxaluria type 1 (PH1) is a devastating inborn error leading to nephrocalcinosis and early ESRD, caused by deficiency of which hepatic peroxisomal enzyme?",
+        "options": ["Alanine-glyoxylate aminotransferase (AGT)", "Glyoxylate reductase", "Oxalate decarboxylase", "D-amino acid oxidase"],
+        "correctIndex": 0,
+        "explanation": "PH1 is caused by deficiency of peroxisomal hepatic alanine:glyoxylate aminotransferase (AGT). Without AGT, accumulated glyoxylate is converted by lactate dehydrogenase into excessive, insoluble oxalate."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0553",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Biochemistry/dr omar.pdf-p9-Q46"],
+        "repetitionCount": 1,
+        "text": "In primary hyperoxaluria, accumulated glyoxylate cannot be converted back to glycine and is oxidized by lactate dehydrogenase into which insoluble end-product?",
+        "options": ["Uric acid", "Oxalate", "Homogentisate", "Cystine"],
+        "correctIndex": 1,
+        "explanation": "Glyoxylate is oxidized by cytosolic lactate dehydrogenase (LDH) into oxalic acid. Oxalate precipitates with calcium as calcium oxalate monohydrate crystals, causing recurrent nephrolithiasis and widespread systemic oxalosis."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0554",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Biochemistry/dr omar.pdf-p11-Q54"],
+        "repetitionCount": 1,
+        "text": "Cystinosis is an autosomal recessive lysosomal storage disease caused by mutations in the CTNS gene, which encodes:",
+        "options": ["Lysosomal cystine transporter (Cystinosin)", "Apical renal dibasic amino acid transporter (b0,+)", "Cystathionine gamma-lyase", "Glutathione reductase"],
+        "correctIndex": 0,
+        "explanation": "Cystinosis is caused by defects in the CTNS gene encoding cystinosin, a 7-transmembrane lysosomal transporter that exports cystine out of lysosomes. Defective transport causes intralysosomal cystine crystal deposition throughout all organs."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0555",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Biochemistry/dr omar.pdf-p11-Q55"],
+        "repetitionCount": 1,
+        "text": "In infantile nephropathic cystinosis, crystalline accumulation of cystine within proximal tubular lysosomes characteristically triggers which renal syndrome in the first year of life?",
+        "options": ["Alport syndrome", "Renal tubular Fanconi syndrome", "Minimal change disease", "Renal amyloidosis"],
+        "correctIndex": 1,
+        "explanation": "Intralysosomal cystine crystals in renal proximal tubular cells disrupt mitochondrial ATP production and transport function, producing renal Fanconi syndrome (hypokalemia, metabolic acidosis, hypophosphatemic rickets, glucosuria, generalized aminoaciduria) by age 6-12 months."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0556",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Biochemistry/dr omar.pdf-p11-Q58"],
+        "repetitionCount": 1,
+        "text": "Which sulfhydryl-containing medication is the definitive treatment for cystinosis, entering lysosomes and reacting with cystine to form a mixed disulfide exported via lysine transporters?",
+        "options": ["Penicillamine", "Cysteamine (mercaptamine)", "Allopurinol", "Captopril"],
+        "correctIndex": 1,
+        "explanation": "Cysteamine reacts with intralysosomal cystine to produce cysteine and a cysteine-cysteamine mixed disulfide that mimics lysine and exits the lysosome via the intact cationic amino acid transporter PQLC2, clearing lysosomal cystine stores."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0557",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Biochemistry/dr omar.pdf-p12-Q59"],
+        "repetitionCount": 1,
+        "text": "Hartnup disease is caused by defective intestinal and renal tubular absorption of which group of amino acids via the B0AT1 transporter (SLC6A19)?",
+        "options": ["Dibasic amino acids (COLA: Cystine, Ornithine, Lysine, Arginine)", "Neutral amino acids (especially Tryptophan)", "Acidic amino acids (Aspartate, Glutamate)", "Imino acids (Proline, Hydroxyproline)"],
+        "correctIndex": 1,
+        "explanation": "Hartnup disease is an autosomal recessive defect in the B0AT1 neutral amino acid transporter (SLC6A19). Failure to reabsorb neutral amino acids—particularly tryptophan—leads to neutral aminoaciduria and reduced synthesis of niacin, causing pellagra-like manifestations."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0558",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Biochemistry/dr omar.pdf-p12-Q61"],
+        "repetitionCount": 1,
+        "text": "The photosensitive pellagra-like dermatitis and neurological symptoms (ataxia) seen in Hartnup disease stem directly from deficiency of which vitamin synthesized from tryptophan?",
+        "options": ["Thiamine (Vitamin B1)", "Riboflavin (Vitamin B2)", "Niacin / Nicotinamide (Vitamin B3)", "Pyridoxine (Vitamin B6)"],
+        "correctIndex": 2,
+        "explanation": "Tryptophan is the metabolic precursor for de novo synthesis of NAD+ and NADP+ (60 mg tryptophan yields 1 mg niacin). Impaired tryptophan absorption leads to severe niacin deficiency, presenting with the 3 Ds of pellagra: dermatitis, diarrhea, and dementia/ataxia."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0559",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Biochemistry/dr omar.pdf-p13-Q65"],
+        "repetitionCount": 1,
+        "text": "Classical renal cystinuria differs fundamentally from cystinosis in that cystinuria is caused by:",
+        "options": ["Lysosomal membrane transporter mutation causing crystal storage in all tissues", "Defective apical brush border reabsorption of dibasic amino acids (COLA) causing hexagonal urinary stones", "Glomerular filtration barrier failure causing massive proteinuria", "Hepatic peroxisomal enzyme deficiency producing hyperoxaluria"],
+        "correctIndex": 1,
+        "explanation": "Cystinuria is an apical brush border transport defect (SLC3A1 / SLC7A9) of dibasic amino acids: Cystine, Ornithine, Lysine, and Arginine (COLA). Insoluble cystine precipitates in acidic urine forming pathognomonic hexagonal stones; cystine does NOT accumulate in lysosomes or cause systemic storage disease."
+    },
+    {
+        "id": "MUG3-CH4-BIOC-0560",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Biochemistry/dr omar.pdf-p13-Q68"],
+        "repetitionCount": 1,
+        "text": "In a patient presenting with recurrent renal calculi due to classic cystinuria, which of the following amino acids is NOT excreted in excessive amounts in the urine?",
+        "options": ["Ornithine", "Lysine", "Arginine", "Methionine"],
+        "correctIndex": 3,
+        "explanation": "The shared transporter b0,+ handles dibasic amino acids and cystine: Cystine, Ornithine, Lysine, and Arginine (mnemonic: COLA). Methionine is a neutral sulfur amino acid handled by a different transport system (B0AT1) and is not wasted in cystinuria."
+    }
+]
+
+with open('scripts/curate_minor_subjects/staged_biochem.json', 'w') as f:
+    json.dump(questions, f, indent=2)
+
+print(f"Successfully generated {len(questions)} verified Biochemistry MCQs in staged_biochem.json")

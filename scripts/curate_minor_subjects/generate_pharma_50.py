@@ -1,0 +1,570 @@
+import json
+
+questions = [
+    # --- LECTURE 1: Diuretics & Electrolytes/Acid-Base (10 Qs: 0501 to 0510) ---
+    {
+        "id": "MUG3-CH6-PHAR-0501",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p1-Q1"],
+        "repetitionCount": 1,
+        "text": "Which of the following pharmacological agents is strictly CONTRAINDICATED in the acute management of severe symptomatic hyponatremia?",
+        "options": ["3% Hypertonic saline infusion", "Loop diuretics like Furosemide", "Desmopressin (dDAVP)", "Tolvaptan"],
+        "correctIndex": 2,
+        "explanation": "Desmopressin (dDAVP) is a synthetic V2 receptor agonist that promotes renal free water retention, which would dangerously worsen hyponatremia and exacerbate cerebral edema. In contrast, 3% hypertonic saline, loop diuretics, and vaptans (in non-acute settings) promote water clearance or sodium repletion."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0502",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p1-Q2"],
+        "repetitionCount": 1,
+        "text": "To prevent osmotic demyelination syndrome (central pontine myelinolysis), the maximum recommended rate of correction for chronic hyponatremia is:",
+        "options": ["18 to 24 mEq/L within the first 24 hours", "12 to 18 mEq/L in the first 12 hours", "Less than 8 to 10 mEq/L within the first 24 hours (and <18 mEq/L in 48 hours)", "More than 20 mEq/L within the first 48 hours"],
+        "correctIndex": 2,
+        "explanation": "Rapid correction of chronic hyponatremia causes sudden dehydration of brain oligodendrocytes, triggering osmotic demyelination syndrome (central pontine myelinolysis). The rate of correction must strictly not exceed 8-10 mEq/L in 24 hours and <18 mEq/L in 48 hours."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0503",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p2-Q6"],
+        "repetitionCount": 1,
+        "text": "In correcting acute severe hypernatremia, what is the maximum recommended daily reduction in serum sodium to avoid cerebral edema?",
+        "options": ["20 mEq/L per day", "15 mEq/L per day", "10 mEq/L per day", "5 mEq/L per day"],
+        "correctIndex": 2,
+        "explanation": "In hypernatremia, brain cells accumulate idiogenic osmoles to defend cell volume. Overly rapid reduction of serum sodium creates an osmotic gradient drawing water into brain cells, causing cerebral edema and seizures. The safe limit is a maximum reduction of 10 mEq/L daily."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0504",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Pharmacology/MCQ Pharma .pdf-p1-Q1"],
+        "repetitionCount": 1,
+        "text": "Which of the following substances induces hypokalemia and hypertension by inhibiting 11beta-hydroxysteroid dehydrogenase type 2 (11beta-HSD2)?",
+        "options": ["Spironolactone", "Propranolol", "NSAIDs", "Liquorice (glycyrrhizin)"],
+        "correctIndex": 3,
+        "explanation": "Glycyrrhizin in natural liquorice inhibits renal 11beta-HSD2, preventing the normal enzymatic conversion of cortisol to inactive cortisone. Uninactivated cortisol binds renal mineralocorticoid receptors with high affinity, stimulating excessive sodium reabsorption and potassium wasting (apparent mineralocorticoid excess)."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0505",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Pharmacology/MCQ Pharma .pdf-p2-Q8"],
+        "repetitionCount": 1,
+        "text": "In a patient with severe hyperkalemia displaying peaked T waves and widened QRS complexes, which intravenous drug is administered immediately to antagonize cardiac membrane excitability without altering serum potassium levels?",
+        "options": ["Sodium polystyrene sulfonate (Resonium)", "Regular insulin with dextrose", "Intravenous Calcium gluconate (10%)", "Nebulized salbutamol"],
+        "correctIndex": 2,
+        "explanation": "Intravenous Calcium gluconate membrane-stabilizes cardiac myocytes by restoring normal resting membrane potential thresholds and preventing fatal ventricular arrhythmias. It acts within minutes but does not alter serum potassium concentration."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0506",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p3-Q13"],
+        "repetitionCount": 1,
+        "text": "Which pharmacological regimen rapidly drives extracellular potassium into intracellular compartments within 15 to 30 minutes in acute hyperkalemia?",
+        "options": ["Oral sodium polystyrene sulfonate with sorbitol", "Intravenous regular insulin combined with 50% dextrose", "Spironolactone combined with triamterene", "Normal 0.9% saline infusion"],
+        "correctIndex": 1,
+        "explanation": "Insulin stimulates the Na+/K+-ATPase pump on skeletal muscle and hepatocytes, driving potassium into cells within 15-30 minutes. Dextrose is co-administered to prevent hypoglycemia."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0507",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p3-Q15"],
+        "repetitionCount": 1,
+        "text": "Which diuretic acts on the thick ascending limb of Henle by reversibly inhibiting the apical Na+/K+/2Cl- cotransporter (NKCC2)?",
+        "options": ["Hydrochlorothiazide", "Acetazolamide", "Amiloride", "Furosemide"],
+        "correctIndex": 3,
+        "explanation": "Loop diuretics (Furosemide, Bumetanide, Torsemide) bind the chloride site of the NKCC2 cotransporter in the thick ascending limb of Henle, producing profound diuresis and natriuresis and dissipating the corticomedullary osmotic gradient."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0508",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p4-Q18"],
+        "repetitionCount": 1,
+        "text": "Which characteristic metabolic disturbance is commonly produced by high-dose chronic loop diuretic therapy?",
+        "options": ["Hyperkalemic metabolic acidosis", "Hypokalemic, hypochloremic metabolic alkalosis", "Hypercalcemic metabolic acidosis", "Hypoglycemia and hypernatremia"],
+        "correctIndex": 1,
+        "explanation": "Loop diuretics increase distal delivery of sodium and water, stimulating aldosterone-mediated H+ and K+ excretion in the collecting duct, while volume contraction stimulates bicarbonate reabsorption, producing hypokalemic, hypochloremic metabolic alkalosis."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0509",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p4-Q20"],
+        "repetitionCount": 1,
+        "text": "Which oral vasopressin V2 receptor antagonist is specifically approved for the management of euvolemic (SIADH) and hypervolemic (heart failure, cirrhosis) hyponatremia?",
+        "options": ["Desmopressin", "Tolvaptan", "Spironolactone", "Amiloride"],
+        "correctIndex": 1,
+        "explanation": "Tolvaptan is an oral selective vasopressin V2 receptor antagonist that promotes aquaresis (electrolyte-free water excretion) without causing sodium loss, effectively raising serum sodium in SIADH and hypervolemic states."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0510",
+        "type": "mcq",
+        "lecture": 1,
+        "sources": ["Pharmacology/MCQ Pharma .pdf-p5-Q16"],
+        "repetitionCount": 1,
+        "text": "Which carbonic anhydrase inhibitor acts in the renal proximal convoluted tubule to induce sodium bicarbonate diuresis and alkalinize the urine?",
+        "options": ["Acetazolamide", "Chlorthalidone", "Indapamide", "Eplerenone"],
+        "correctIndex": 0,
+        "explanation": "Acetazolamide inhibits membrane-bound and cytosolic carbonic anhydrase in the proximal tubule, blocking bicarbonate reabsorption and producing self-limiting urinary alkalinization and metabolic acidosis."
+    },
+
+    # --- LECTURE 2: Treatment of Urinary Tract Infections (8 Qs: 0511 to 0518) ---
+    {
+        "id": "MUG3-CH6-PHAR-0511",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p5-Q25"],
+        "repetitionCount": 1,
+        "text": "An ideal antibiotic for treating acute uncomplicated lower cystitis should possess all the following pharmacokinetics EXCEPT:",
+        "options": ["Rapid and high concentration in renal parenchymal tissue rather than urine", "High concentration of active drug eliminated in the urine", "Minimal disturbance of vaginal and intestinal normal flora", "Convenient dosing schedule with low adverse effect profile"],
+        "correctIndex": 0,
+        "explanation": "For lower cystitis, high renal tissue concentration is NOT necessary; what is crucial is high urinary concentration of active, unmetabolized drug (e.g., Nitrofurantoin, Fosfomycin). High renal parenchymal and bloodstream concentrations are needed for upper UTIs (acute pyelonephritis)."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0512",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p5-Q26"],
+        "repetitionCount": 1,
+        "text": "Regarding the duration of antimicrobial therapy in urinary tract infections, which of the following statements is INCORRECT?",
+        "options": ["Single-dose therapy (e.g., Fosfomycin 3g) is suitable for uncomplicated lower cystitis in non-pregnant women", "Single-day antibiotic therapy is adequate and recommended for UTI in males", "7-day therapy is recommended for mild complicated UTIs and during pregnancy", "14-day therapy is recommended for acute uncomplicated pyelonephritis"],
+        "correctIndex": 1,
+        "explanation": "UTIs in males are by definition considered complicated (due to anatomical factors, risk of prostatitis or urethral obstruction) and must NEVER be treated with single-day therapy; they require at least 7 to 14 days of antimicrobials."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0513",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p5-Q27"],
+        "repetitionCount": 1,
+        "text": "In the management of outpatient acute pyelonephritis in an otherwise healthy non-pregnant woman, which class of antibiotics is the first-line oral empirical choice when local resistance is <10%?",
+        "options": ["Nitrofurantoin", "Oral Fluoroquinolones (e.g., Ciprofloxacin, Levofloxacin)", "Oral Vancomycin", "Fosfomycin tromethamine"],
+        "correctIndex": 1,
+        "explanation": "Oral fluoroquinolones (Ciprofloxacin 500mg BID for 7 days or Levofloxacin 750mg daily for 5 days) achieve excellent tissue and serum concentrations in the renal parenchyma and are first-line for acute pyelonephritis. Nitrofurantoin and Fosfomycin do not achieve therapeutic renal tissue levels and must not be used for pyelonephritis."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0514",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p5-Q29"],
+        "repetitionCount": 1,
+        "text": "Which antibiotic is considered safe for treating lower urinary tract infections throughout all trimesters of pregnancy?",
+        "options": ["Ciprofloxacin", "Doxycycline", "Cephalexin (or Amoxicillin-clavulanate)", "Trimethoprim-sulfamethoxazole in the 3rd trimester"],
+        "correctIndex": 2,
+        "explanation": "Beta-lactams (Cephalexin, Cefuroxime, Amoxicillin-clavulanate) are Category B and completely safe throughout all trimesters of pregnancy. Fluoroquinolones (cartilage toxicity), Tetracyclines (bone/tooth defects), and Sulfonamides in the 3rd trimester (kernicterus) are contraindicated."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0515",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p5-Q28"],
+        "repetitionCount": 1,
+        "text": "Why must sulfonamides (such as sulfamethoxazole) be strictly avoided during the third trimester of pregnancy?",
+        "options": ["They cause congenital limb reduction defects", "They displace bilirubin from albumin, increasing the risk of neonatal kernicterus", "They cause maternal acute liver failure", "They induce premature closure of the ductus arteriosus"],
+        "correctIndex": 1,
+        "explanation": "Sulfonamides compete with bilirubin for binding sites on fetal/neonatal plasma albumin, raising free unconjugated bilirubin which crosses the immature blood-brain barrier and causes fatal kernicterus."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0516",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p5-Q29"],
+        "repetitionCount": 1,
+        "text": "Which first-line lower UTI antimicrobial is concentrated in urine via glomerular filtration and tubular secretion, but is CONTRAINDICATED in patients with GFR < 30 mL/min due to inadequate urinary levels and risk of peripheral neuropathy?",
+        "options": ["Nitrofurantoin", "Ceftriaxone", "Azithromycin", "Amoxicillin"],
+        "correctIndex": 0,
+        "explanation": "Nitrofurantoin requires adequate GFR to achieve bactericidal concentrations in the urine. When GFR is <30 mL/min, urinary levels are subtherapeutic while systemic accumulation causes severe toxicity, including peripheral neuropathy and pulmonary fibrosis."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0517",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Pharmacology/MCQ Pharma .pdf-p6-Q20"],
+        "repetitionCount": 1,
+        "text": "Fosfomycin tromethamine is unique as an oral first-line agent for acute uncomplicated cystitis because:",
+        "options": ["It is given as a single 3-gram oral sachet that maintains therapeutic urinary concentrations for 48 hours", "It requires a 14-day continuous oral course", "It is an aminoglycoside that must be monitored with peak and trough levels", "It is only effective against Gram-positive anaerobes"],
+        "correctIndex": 0,
+        "explanation": "Fosfomycin tromethamine inhibits bacterial MurA (early peptidoglycan synthesis) and is administered as a single 3g oral dose dissolved in water, providing sustained bactericidal urinary concentrations for up to 2-3 days."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0518",
+        "type": "mcq",
+        "lecture": 2,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p5-Q29"],
+        "repetitionCount": 1,
+        "text": "Why is screening and treatment of asymptomatic bacteriuria (ASB) mandatory in pregnant women, but not in non-pregnant premenopausal women?",
+        "options": ["ASB in pregnancy carries a 20-30 fold increased risk of progressing to acute pyelonephritis, preterm labor, and low birth weight", "It always leads to fetal congenital heart disease", "Pregnancy induces complete resistance to all cephalosporins", "ASB in pregnancy indicates systemic bacteremia"],
+        "correctIndex": 0,
+        "explanation": "Pregnancy-induced ureteral dilation, decreased bladder tone, and physiological hydronephrosis allow ascending infection; untreated ASB progresses to pyelonephritis in up to 30% of pregnant women, directly increasing preterm birth and perinatal mortality."
+    },
+
+    # --- LECTURE 3: Drug Therapy in Chronic Kidney Diseases (8 Qs: 0519 to 0526) ---
+    {
+        "id": "MUG3-CH6-PHAR-0519",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Pharmacology/MCQ Pharma .pdf-p7-Q24"],
+        "repetitionCount": 1,
+        "text": "ACE inhibitors (e.g., Ramipril) and ARBs (e.g., Losartan) reduce proteinuria and slow CKD progression primarily through which hemodynamically mediated renal mechanism?",
+        "options": ["Constriction of the afferent arteriole", "Selective vasodilation of the efferent arteriole, reducing intraglomerular capillary hydrostatic pressure", "Direct stimulation of podocyte proliferation", "Increasing systemic arterial blood pressure to augment GFR"],
+        "correctIndex": 1,
+        "explanation": "Angiotensin II preferentially constricts the efferent arteriole. Blocking its action vasodilates the efferent arteriole more than the afferent, reducing intraglomerular hyperfiltration, capillary wall tension, and protein trafficking across the glomerular basement membrane."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0520",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p3-Q14"],
+        "repetitionCount": 1,
+        "text": "SGLT2 inhibitors (e.g., Dapagliflozin, Empagliflozin) confer powerful renoprotection in chronic kidney disease by restoring tubuloglomerular feedback through which mechanism?",
+        "options": ["Increasing sodium delivery to the macula densa, triggering afferent arteriolar vasoconstriction and reducing hyperfiltration", "Dilating the efferent arteriole via bradykinin release", "Directly inhibiting the renin-angiotensin-aldosterone axis", "Inhibiting proximal tubular gluconeogenesis"],
+        "correctIndex": 0,
+        "explanation": "SGLT2 inhibitors block proximal sodium-glucose cotransport, delivering more sodium and chloride downstream to the macula densa. This restores tubuloglomerular feedback, constricting the inappropriately dilated afferent arteriole and reducing intraglomerular hypertension."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0521",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p4-Q19"],
+        "repetitionCount": 1,
+        "text": "Which non-calcium, non-aluminum phosphate binder is preferred in CKD patients with hyperphosphatemia and vascular calcification?",
+        "options": ["Calcium carbonate", "Sevelamer carbonate", "Aluminum hydroxide", "Calcium acetate"],
+        "correctIndex": 1,
+        "explanation": "Sevelamer is an anion-exchange, non-absorbable polymer that binds intestinal phosphate without adding calcium load, preventing the progression of arterial and valvular calcification in CKD."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0522",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p4-Q21"],
+        "repetitionCount": 1,
+        "text": "Cinacalcet is an allosteric activator of the calcium-sensing receptor (CaSR) used in CKD stage 5 on dialysis to manage:",
+        "options": ["Primary hypoparathyroidism", "Secondary hyperparathyroidism", "Hypocalcemia", "Severe iron-deficiency anemia"],
+        "correctIndex": 1,
+        "explanation": "Cinacalcet is a calcimimetic that increases the sensitivity of CaSR on the parathyroid glands to extracellular calcium, suppressing PTH secretion without increasing serum calcium or phosphate."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0523",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p4-Q22"],
+        "repetitionCount": 1,
+        "text": "When administering erythropoiesis-stimulating agents (ESAs, e.g., Epoetin alfa) in CKD patients with anemia, the target hemoglobin concentration should strictly NOT exceed:",
+        "options": ["9 g/dL", "11.5 g/dL", "14.5 g/dL", "16.0 g/dL"],
+        "correctIndex": 1,
+        "explanation": "Target hemoglobin in CKD is maintained between 10.0 and 11.5 g/dL. Clinical trials demonstrated that normalizing hemoglobin above 12-13 g/dL with ESAs significantly increases the risk of stroke, myocardial infarction, and vascular access thrombosis."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0524",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p4-Q23"],
+        "repetitionCount": 1,
+        "text": "Oral sodium bicarbonate therapy is prescribed in chronic kidney disease stages 3 to 5 when serum bicarbonate falls below 22 mEq/L primarily to:",
+        "options": ["Alkalinize the stomach to enhance phosphate absorption", "Slow the rate of GFR decline and reduce muscle protein catabolism", "Increase urinary calcium excretion", "Directly stimulate erythropoietin secretion"],
+        "correctIndex": 1,
+        "explanation": "Chronic metabolic acidosis in CKD stimulates endothelin and aldosterone, accelerates renal fibrogenesis, and triggers ubiquitin-proteasome muscle wasting. Sodium bicarbonate supplementation slows CKD progression and preserves muscle mass."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0525",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p4-Q24"],
+        "repetitionCount": 1,
+        "text": "Why are nonsteroidal anti-inflammatory drugs (NSAIDs, e.g., Ibuprofen, Diclofenac) strictly avoided in patients with established CKD?",
+        "options": ["They block vasodilatory renal prostaglandins (PGE2, PGI2), causing acute afferent arteriolar constriction and precipitating acute-on-chronic renal failure", "They cause severe proximal tubular glucosuria", "They stimulate excessive renin and aldosterone release", "They induce systemic hypoglycemia"],
+        "correctIndex": 0,
+        "explanation": "In CKD, renal perfusion depends critically on compensatory vasodilatory prostaglandins (PGE2, PGI2) maintaining afferent arteriolar patency. NSAID inhibition of COX blocks these prostaglandins, causing unopposed afferent constriction, acute GFR collapse, and hyperkalemia."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0526",
+        "type": "mcq",
+        "lecture": 3,
+        "sources": ["Pharmacology/MCQ Pharma .pdf-p8-Q28"],
+        "repetitionCount": 1,
+        "text": "Which potassium-binding polymer exchanges sodium for potassium in the gastrointestinal tract and is used for chronic outpatient management of hyperkalemia in CKD patients taking ACE inhibitors or ARBs?",
+        "options": ["Sodium zirconium cyclosilicate (SZC) / Patiromer", "Magnesium hydroxide", "Calcium gluconate", "Furosemide"],
+        "correctIndex": 0,
+        "explanation": "Novel potassium binders (Patiromer, SZC) bind potassium in the colon, allowing patients with advanced CKD and heart failure to safely maintain life-prolonging ACE inhibitor, ARB, or MRA therapy without developing recurrent hyperkalemia."
+    },
+
+    # --- LECTURE 4: Treatment of Prostate Diseases & Erectile Dysfunction (8 Qs: 0527 to 0534) ---
+    {
+        "id": "MUG3-CH6-PHAR-0527",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p4-Q11"],
+        "repetitionCount": 1,
+        "text": "Regarding Tadalafil in the management of erectile dysfunction and BPH, which pharmacological characteristic is correct?",
+        "options": ["It has a short half-life of 4 hours requiring dosing immediately before coitus", "It selectively inhibits PDE-6 in retinal photoreceptors causing blue-tinted vision", "It possesses an elimination half-life of ~17.5 hours, permitting once-daily dosing for both ED and BPH lower urinary tract symptoms", "It directly stimulates testosterone production by Leydig cells"],
+        "correctIndex": 2,
+        "explanation": "Tadalafil has a prolonged elimination half-life (~17.5 hours) compared to sildenafil (4 hours). This unique pharmacokinetic property enables once-daily low-dose administration (5 mg) that improves both erectile function and BPH urinary symptoms."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0528",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p4-Q12"],
+        "repetitionCount": 1,
+        "text": "Phosphodiesterase type 5 (PDE-5) inhibitors (e.g., Sildenafil, Tadalafil) are approved and clinically utilized for all the following indications EXCEPT:",
+        "options": ["Erectile dysfunction", "Pulmonary arterial hypertension", "Benign prostatic hyperplasia (BPH lower urinary tract symptoms)", "Prostatic adenocarcinoma with bone metastasis"],
+        "correctIndex": 3,
+        "explanation": "PDE-5 inhibitors relax vascular smooth muscle (ED and pulmonary hypertension) and bladder neck/prostatic smooth muscle (BPH). They have no anti-neoplastic activity and are never indicated for treating prostate cancer."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0529",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p5-Q19"],
+        "repetitionCount": 1,
+        "text": "Finasteride improves lower urinary tract symptoms in BPH by which mechanism and over what typical timeframe?",
+        "options": ["Relaxing bladder neck alpha-1A receptors within 48 hours", "Inhibiting 5alpha-reductase, reducing intraprostatic DHT and shrinking prostate volume over 3 to 6 months", "Blocking Leydig cell LH receptors to eliminate testosterone", "Directly destroying urothelial transitional epithelium"],
+        "correctIndex": 1,
+        "explanation": "Finasteride is an oral 5alpha-reductase inhibitor that blocks conversion of testosterone to DHT. By eliminating the trophic stimulation of DHT, it reduces prostate volume by ~20-25%, but requires 3 to 6 months of continuous therapy for maximal clinical benefit."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0530",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p4-Q13"],
+        "repetitionCount": 1,
+        "text": "Concurrent administration of PDE-5 inhibitors (e.g., Sildenafil) with organic nitrates (e.g., Nitroglycerin, Isosorbide mononitrate) is ABSOLUTELY CONTRAINDICATED because:",
+        "options": ["It causes severe acute renal tubular necrosis", "Synergistic elevation of cGMP in vascular smooth muscle produces profound, refractory hypotension and cardiovascular collapse", "It precipitates acute priapism lasting >24 hours", "Nitrates completely block the intestinal absorption of sildenafil"],
+        "correctIndex": 1,
+        "explanation": "Organic nitrates stimulate guanylyl cyclase to form cGMP, while PDE-5 inhibitors block cGMP breakdown. The massive accumulation of intracellular cGMP in vascular smooth muscle triggers profound systemic vasodilation, catastrophic hypotension, myocardial infarction, and death."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0531",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p5-Q18"],
+        "repetitionCount": 1,
+        "text": "Which adverse effect is characteristically associated with 5alpha-reductase inhibitor therapy (Finasteride/Dutasteride)?",
+        "options": ["Erectile dysfunction, decreased libido, and gynecomastia", "Severe postural hypotension and syncope", "Blue-tinted vision (cyanopsia)", "Flushing and nasal congestion"],
+        "correctIndex": 0,
+        "explanation": "Suppressing DHT impairs androgenic signaling in target tissues, causing decreased libido, erectile dysfunction, ejaculatory disorders, and gynecomastia (due to increased peripheral aromatization of accumulating testosterone into estrogen)."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0532",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p4-Q15"],
+        "repetitionCount": 1,
+        "text": "Which alpha-1 adrenergic antagonist exhibits high selectivity for the alpha-1A receptor subtype in the bladder neck and prostate, minimizing orthostatic hypotension?",
+        "options": ["Prazosin", "Doxazosin", "Tamsulosin", "Phenoxybenzamine"],
+        "correctIndex": 2,
+        "explanation": "Tamsulosin and Silodosin are uroselective alpha-1A antagonists. They preferentially relax smooth muscle in the prostate stroma and bladder neck while having minimal effect on vascular alpha-1B receptors, thus minimizing systemic vasodilation and orthostatic hypotension."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0533",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Pharmacology/SGD UROGENITAL 2 ans.pdf-p3-Q3"],
+        "repetitionCount": 1,
+        "text": "When initiating GnRH agonists (e.g., Leuprolide, Goserelin) for metastatic prostate cancer, a non-steroidal antiandrogen (e.g., Bicalutamide) must be co-administered during the first 2-4 weeks to prevent:",
+        "options": ["Acute hepatic necrosis", "The initial testosterone 'flare' that can exacerbate bone pain, spinal cord compression, and urinary obstruction", "Severe hypercalcemic crisis", "Gastrointestinal perforation"],
+        "correctIndex": 1,
+        "explanation": "GnRH agonists initially stimulate pituitary GnRH receptors, triggering a surge of LH and FSH that causes a temporary 'flare' in serum testosterone during the first 1-2 weeks. Antiandrogens block androgen receptors during this window to prevent clinical flare."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0534",
+        "type": "mcq",
+        "lecture": 4,
+        "sources": ["Pharmacology/SGD UROGENITAL 2 ans.pdf-p3-Q2"],
+        "repetitionCount": 1,
+        "text": "Which drug suppresses androgen synthesis in castration-resistant prostate cancer by irreversibly inhibiting the enzyme CYP17 (17alpha-hydroxylase/17,20-lyase)?",
+        "options": ["Abiraterone acetate", "Enzalutamide", "Degarelix", "Tamsulosin"],
+        "correctIndex": 0,
+        "explanation": "Abiraterone acetate selectively and irreversibly inhibits CYP17A1 in the testes, adrenals, and prostate tumor tissue itself, completely shutting down de novo androgen biosynthesis (must be given with prednisone to prevent compensatory ACTH-driven mineralocorticoid excess)."
+    },
+
+    # --- LECTURE 5: Drug Therapy of Sexually Transmitted Diseases (8 Qs: 0535 to 0542) ---
+    {
+        "id": "MUG3-CH6-PHAR-0535",
+        "type": "mcq",
+        "lecture": 5,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p6-Q21"],
+        "repetitionCount": 1,
+        "text": "What is the definitive first-line pharmacological treatment of choice for primary and secondary syphilis?",
+        "options": ["Oral Doxycycline 100 mg BID for 14 days", "Intramuscular Benzathine penicillin G 2.4 million units in a single dose", "Intravenous Ceftriaxone 1g daily for 7 days", "Oral Azithromycin 1g single dose"],
+        "correctIndex": 1,
+        "explanation": "Intramuscular Benzathine penicillin G (2.4 million units single dose) provides sustained treponemicidal blood levels for 3 to 4 weeks and remains the undisputed gold standard for primary, secondary, and early latent syphilis."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0536",
+        "type": "mcq",
+        "lecture": 5,
+        "sources": ["Pharmacology/ALAA uro mcq.pdf-p5-Q24"],
+        "repetitionCount": 1,
+        "text": "An acute, self-limiting febrile reaction with chills, headache, and myalgias occurring within 24 hours of initiating penicillin therapy for syphilis is known as:",
+        "options": ["Stevens-Johnson syndrome", "Serum sickness-like reaction", "Jarisch-Herxheimer reaction", "Anaphylactic shock"],
+        "correctIndex": 2,
+        "explanation": "The Jarisch-Herxheimer reaction is an acute inflammatory cascade caused by the massive lysis of spirochetes releasing endotoxin-like lipoproteins. It requires reassurance, antipyretics, and supportive care; penicillin therapy must NOT be stopped."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0537",
+        "type": "mcq",
+        "lecture": 5,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p6-Q24"],
+        "repetitionCount": 1,
+        "text": "In a pregnant patient treated with intramuscular Ceftriaxone for uncomplicated gonorrhea, which antibiotic is recommended if concurrent Chlamydia trachomatis infection is suspected?",
+        "options": ["Oral Doxycycline 100 mg BID for 7 days", "Oral Ciprofloxacin 500 mg single dose", "Oral Azithromycin 1 gram in a single dose", "Oral Levofloxacin for 7 days"],
+        "correctIndex": 2,
+        "explanation": "Doxycycline is contraindicated in pregnancy due to fetal bone growth restriction and permanent deciduous tooth discoloration. Azithromycin (1g single oral dose) is Category B, safe in pregnancy, and effectively cures chlamydial infection."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0538",
+        "type": "mcq",
+        "lecture": 5,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p6-Q25"],
+        "repetitionCount": 1,
+        "text": "What is the antimicrobial drug of choice for trichomoniasis in both women and their sexual partners?",
+        "options": ["Benzathine penicillin G", "Parenteral Ceftriaxone", "Oral Metronidazole (or Tinidazole)", "Oral Fluconazole"],
+        "correctIndex": 2,
+        "explanation": "Metronidazole (500 mg BID for 7 days, or 2g single dose) is the drug of choice for Trichomonas vaginalis. Because trichomoniasis is a sexually transmitted ping-pong infection, simultaneous treatment of all sexual partners is mandatory."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0539",
+        "type": "mcq",
+        "lecture": 5,
+        "sources": ["Pharmacology/SGD UROGENITAL 2 ans.pdf-p2-Q1"],
+        "repetitionCount": 1,
+        "text": "Patients taking Metronidazole must be strictly instructed to avoid consuming alcoholic beverages to prevent:",
+        "options": ["Acute hepatic coma", "Severe disulfiram-like reaction (facial flushing, throbbing headache, nausea, tachycardia, hypotension)", "Renal cortical necrosis", "Fatal serotonin syndrome"],
+        "correctIndex": 1,
+        "explanation": "Metronidazole inhibits hepatic aldehyde dehydrogenase. Ingestion of alcohol leads to accumulation of acetaldehyde, triggering an unpleasant and potentially dangerous disulfiram-like reaction with flushing, vomiting, and palpitations."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0540",
+        "type": "mcq",
+        "lecture": 5,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p6-Q26"],
+        "repetitionCount": 1,
+        "text": "What is the primary antiviral mechanism of action of Acyclovir and Valacyclovir in suppressing genital herpes simplex virus (HSV-2) outbreaks?",
+        "options": ["Selective phosphorylation by viral thymidine kinase, leading to inhibition of viral DNA polymerase and chain termination", "Inhibition of viral neuraminidase preventing viral egress", "Inhibition of viral protease cleavage of capsid polyproteins", "Blockade of viral uncoating in host endosomes"],
+        "correctIndex": 0,
+        "explanation": "Acyclovir is selectively monophosphorylated by viral thymidine kinase, then converted by host cellular kinases to acyclovir triphosphate, which competitively inhibits viral DNA polymerase and acts as an obligate DNA chain terminator."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0541",
+        "type": "mcq",
+        "lecture": 5,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p6-Q27"],
+        "repetitionCount": 1,
+        "text": "What is the current first-line empirical regimen recommended by CDC and international guidelines for uncomplicated anogenital gonorrhea?",
+        "options": ["Ceftriaxone 500 mg intramuscularly in a single dose", "Ciprofloxacin 500 mg orally once", "Azithromycin 1g orally once as monotherapy", "Penicillin G 5 million units IV"],
+        "correctIndex": 0,
+        "explanation": "Due to widespread fluoroquinolone, macrolide, and penicillin resistance, Ceftriaxone (500 mg IM single dose for patients <150 kg) is the recommended first-line monotherapy for uncomplicated gonorrhea."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0542",
+        "type": "mcq",
+        "lecture": 5,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p6-Q28"],
+        "repetitionCount": 1,
+        "text": "Which patient-applied topical medication is approved for external genital warts (condyloma acuminata) that acts as an immune response modifier by stimulating toll-like receptor 7 (TLR7) and inducing interferon-alpha?",
+        "options": ["Podophyllotoxin", "Imiquimod (5% cream)", "Trichloroacetic acid", "Silver nitrate"],
+        "correctIndex": 1,
+        "explanation": "Imiquimod is a synthetic TLR7 agonist that stimulates local dendritic cells to release interferon-alpha, interleukin-12, and TNF-alpha, activating a cell-mediated immune response that clears HPV-induced genital warts."
+    },
+
+    # --- LECTURE 6: Female Hormonal Therapy & Contraception (8 Qs: 0543 to 0550) ---
+    {
+        "id": "MUG3-CH6-PHAR-0543",
+        "type": "mcq",
+        "lecture": 6,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p3-Q6"],
+        "repetitionCount": 1,
+        "text": "What is the primary mechanism of action by which combined estrogen-progestin oral contraceptives (COCs) prevent pregnancy?",
+        "options": ["Direct toxic effect on spermatozoa in the vagina", "Suppression of hypothalamic-pituitary gonadotropin secretion (LH and FSH), thereby preventing ovulation", "Accelerated transport of the ovum through the fallopian tube", "Induction of continuous endometrial shedding"],
+        "correctIndex": 1,
+        "explanation": "Estrogen suppresses pituitary FSH release (preventing follicle selection), while the progestin suppresses the midcycle LH surge, thereby completely blocking ovulation. Progestins also thicken cervical mucus and atrophy the endometrium."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0544",
+        "type": "mcq",
+        "lecture": 6,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p3-Q5"],
+        "repetitionCount": 1,
+        "text": "Which selective estrogen receptor modulator (SERM) acts as an estrogen antagonist on breast tissue but as an agonist on bone and endometrial tissue, increasing the risk of endometrial hyperplasia and adenocarcinoma?",
+        "options": ["Raloxifene", "Tamoxifen", "Clomiphene", "Letrozole"],
+        "correctIndex": 1,
+        "explanation": "Tamoxifen is an estrogen receptor antagonist in breast tissue (used in ER+ breast cancer), but exhibits agonistic activity on the endometrium, promoting endometrial proliferation, polyps, and a 2- to 3-fold increased risk of endometrial cancer."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0545",
+        "type": "mcq",
+        "lecture": 6,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p3-Q8"],
+        "repetitionCount": 1,
+        "text": "How does Raloxifene differ fundamentally from Tamoxifen in its organ-specific estrogenic effects?",
+        "options": ["Raloxifene is an estrogen antagonist in both breast AND endometrium, posing no increased risk of endometrial carcinoma", "Raloxifene stimulates breast tissue proliferation", "Raloxifene causes bone loss and severe osteoporosis", "Raloxifene is completely devoid of venous thromboembolism risk"],
+        "correctIndex": 0,
+        "explanation": "Raloxifene is an estrogen agonist on bone (preserving bone mineral density in postmenopausal osteoporosis) and lipid metabolism, but acts as an antagonist on BOTH breast and endometrial tissues, meaning it does NOT increase endometrial cancer risk."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0546",
+        "type": "mcq",
+        "lecture": 6,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p2-Q3"],
+        "repetitionCount": 1,
+        "text": "Clomiphene citrate induces ovulation in anovulatory infertility (such as polycystic ovary syndrome) by which mechanism?",
+        "options": ["Directly stimulating ovarian LH receptors", "Antagonizing estrogen receptors in the hypothalamus, blocking negative feedback and increasing pulsatile GnRH and gonadotropin (FSH/LH) release", "Aromatizing androgens directly into estrogens within the follicle", "Acting as an agonist on progesterone receptors"],
+        "correctIndex": 1,
+        "explanation": "Clomiphene binds hypothalamic estrogen receptors and prevents normal estradiol negative feedback. The hypothalamus perceives a hypoestrogenic state, releasing more pulsatile GnRH, which drives pituitary FSH and LH secretion to trigger follicular growth and ovulation."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0547",
+        "type": "mcq",
+        "lecture": 6,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p3-Q10"],
+        "repetitionCount": 1,
+        "text": "Which of the following conditions is an ABSOLUTE CONTRAINDICATION to the prescription of combined estrogen-progestin oral contraceptives?",
+        "options": ["Dysmenorrhea", "Premenstrual dysphoric disorder", "Woman aged 36 who smokes 15 cigarettes per day", "Mild acne vulgaris"],
+        "correctIndex": 2,
+        "explanation": "Women aged >= 35 who smoke have an exponentially increased risk of serious cardiovascular events, deep vein thrombosis, pulmonary embolism, and stroke due to estrogen-induced hepatic procoagulant synthesis (Fibrinogen, Factors VII, VIII, X) combined with nicotine-induced endothelial damage."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0548",
+        "type": "mcq",
+        "lecture": 6,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p7-Q30"],
+        "repetitionCount": 1,
+        "text": "Which adverse effect of combined oral contraceptives is attributed primarily to the estrogenic component stimulating hepatic protein synthesis?",
+        "options": ["Depression and fatigue", "Venous thromboembolism (VTE) due to increased procoagulant clotting factors", "Acne and hirsutism", "Alopecia"],
+        "correctIndex": 1,
+        "explanation": "Ethinyl estradiol stimulates hepatic synthesis of clotting factors (II, VII, IX, X, fibrinogen) and decreases antithrombin III, conferring a 2- to 4-fold elevated risk of venous thromboembolism. Progestins contribute to acne, weight gain, and mood changes."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0549",
+        "type": "mcq",
+        "lecture": 6,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p3-Q7"],
+        "repetitionCount": 1,
+        "text": "Which oral contraceptive option is preferred and safest for a breastfeeding mother 6 weeks postpartum, having zero inhibitory effect on milk volume?",
+        "options": ["High-dose combined oral contraceptive (50 mcg ethinyl estradiol)", "Progestin-only pill (POP / Minipill)", "Tamoxifen", "Clomiphene citrate"],
+        "correctIndex": 1,
+        "explanation": "Estrogens suppress prolactin-mediated lactation and reduce breast milk volume and composition. Progestin-only pills (POPs) do not affect lactation or milk quantity and carry no thromboembolic risk, making them the oral method of choice postpartum."
+    },
+    {
+        "id": "MUG3-CH6-PHAR-0550",
+        "type": "mcq",
+        "lecture": 6,
+        "sources": ["Pharmacology/essay questions and MCQs urogenital part 3 and 4.pdf-p2-Q12"],
+        "repetitionCount": 1,
+        "text": "What is the primary mechanism of action of Levonorgestrel when taken as emergency post-coital contraception within 72 hours of unprotected intercourse?",
+        "options": ["Inducing an acute chemical abortion of an implanted blastocyst", "Delaying or preventing the LH surge, thereby inhibiting or postponing ovulation", "Selectively destroying human spermatozoa in the fallopian tube", "Inhibiting chorionic gonadotropin synthesis by the placenta"],
+        "correctIndex": 1,
+        "explanation": "Emergency Levonorgestrel (1.5 mg single dose) suppresses or delays the luteinizing hormone (LH) surge, preventing follicular rupture and ovulation. It does not disrupt an established, implanted pregnancy and does not act as an abortifacient."
+    }
+]
+
+with open('scripts/curate_minor_subjects/staged_pharma.json', 'w') as f:
+    json.dump(questions, f, indent=2)
+
+print(f"Successfully generated {len(questions)} verified Pharmacology MCQs in staged_pharma.json")

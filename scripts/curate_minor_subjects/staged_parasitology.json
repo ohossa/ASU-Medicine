@@ -1,0 +1,362 @@
+[
+  {
+    "id": "MUG3-CH8-PARA-0101",
+    "type": "mcq",
+    "lecture": 1,
+    "sources": [
+      "Parasitology/MCQ Para .pdf-p1-Q19"
+    ],
+    "repetitionCount": 1,
+    "text": "Unlike all other medically important human trematodes which are hermaphroditic, Schistosoma species are biologically unique because:",
+    "options": [
+      "They lack an intermediate snail host in their life cycle",
+      "They are dioecious (unisexual), possessing distinct male and female worms",
+      "They produce operculated eggs that float in water",
+      "Their adults reside in the intestinal lumen"
+    ],
+    "correctIndex": 1,
+    "explanation": "All flukes (Trematoda) infecting humans are hermaphroditic except Schistosoma species, which are dioecious (separate male and female sexes). The stouter male possesses a gynecophoric canal in which the longer, slender female resides during copulation."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0102",
+    "type": "mcq",
+    "lecture": 1,
+    "sources": [
+      "Parasitology/MCQ Para .pdf-p2-Q30"
+    ],
+    "repetitionCount": 1,
+    "text": "Which freshwater snail serves as the specific obligate intermediate host for Schistosoma haematobium in Egypt and the Middle East?",
+    "options": [
+      "Biomphalaria alexandrina",
+      "Bulinus truncatus",
+      "Lymnaea cailliaudi",
+      "Cleopatra bulimoides"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bulinus truncatus (a left-handed, sinistral freshwater snail with a truncated spire) is the intermediate host for Schistosoma haematobium. Biomphalaria alexandrina serves as the intermediate host for S. mansoni, and Lymnaea cailliaudi for Fasciola gigantica."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0103",
+    "type": "mcq",
+    "lecture": 1,
+    "sources": [
+      "Parasitology/MCQ Para .pdf-p1-Q20"
+    ],
+    "repetitionCount": 1,
+    "text": "What is the infective stage of Schistosoma haematobium that actively penetrates intact human skin during contact with infested freshwater canals?",
+    "options": [
+      "Ciliated miracidium",
+      "Fork-tailed (furcocercous) cercaria",
+      "Metacercaria encysted on aquatic vegetation",
+      "Embryonated egg"
+    ],
+    "correctIndex": 1,
+    "explanation": "Furcocercous (fork-tailed) cercariae emerge from Bulinus snails into warm freshwater. Attracted by skin lipid secretions and warmth, they attach and penetrate unbroken human epidermis using histolytic enzymes from penetration glands."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0104",
+    "type": "mcq",
+    "lecture": 1,
+    "sources": [
+      "Parasitology/MCQ Para .pdf-p1-Q21"
+    ],
+    "repetitionCount": 1,
+    "text": "Upon shedding its forked tail during skin penetration, the transformed schistosomulum enters dermal venules and matures into adult worms within which vascular territory?",
+    "options": [
+      "Inferior vena cava",
+      "Pulmonary capillary beds",
+      "Intrahepatic portal venous system (intrahepatic branches of portal vein)",
+      "Vesical venous plexus directly"
+    ],
+    "correctIndex": 2,
+    "explanation": "After skin penetration and venous transit through the right heart and pulmonary capillaries, schistosomula reach the systemic arterial circulation and enter the mesenteric and intrahepatic portal venous branches, where they feed on red blood cells and mature into adult male and female worms."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0105",
+    "type": "mcq",
+    "lecture": 1,
+    "sources": [
+      "Parasitology/MCQ Para .pdf-p1-Q21"
+    ],
+    "repetitionCount": 1,
+    "text": "Following maturation in the portal vein, adult Schistosoma haematobium worms migrate against portal blood flow to establish permanent residence in:",
+    "options": [
+      "Superior mesenteric veins draining the small intestine",
+      "Inferior mesenteric veins draining the descending colon",
+      "Vesical, pelvic, and prostatic venous plexuses draining the urinary bladder",
+      "Hemorrhoidal venous plexus only"
+    ],
+    "correctIndex": 2,
+    "explanation": "Adult S. haematobium pairs migrate against the venous bloodstream through hemorrhoidal anastomoses into the vesical, pelvic, and ureteric venous plexuses, where females deposit hundreds of eggs daily into the venules of the urinary bladder wall."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0106",
+    "type": "mcq",
+    "lecture": 1,
+    "sources": [
+      "Parasitology/MCQ Para .pdf-p1-Q25"
+    ],
+    "repetitionCount": 1,
+    "text": "The primary pathology and tissue destruction in urinary schistosomiasis (such as bladder wall granulomas and fibrosis) is driven by:",
+    "options": [
+      "Mechanical biting and feeding of adult worms on bladder mucosa",
+      "T-cell mediated delayed-type hypersensitivity (granulomatous reaction) directed against soluble egg antigens (SEA) released by trapped eggs",
+      "Complement-mediated lysis of urothelial transitional cells by circulating cercariae",
+      "Bacterial exotoxins secreted by symbiotic bacteria inside adult worms"
+    ],
+    "correctIndex": 1,
+    "explanation": "Schistosome eggs trapped in host tissues secrete soluble egg antigens (SEA) through micro-pores in the egg shell. This triggers a CD4+ Th2-mediated granulomatous response (epithelioid cells, eosinophils, multinucleated giant cells) and progressive fibroblastic collagen deposition."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0107",
+    "type": "mcq",
+    "lecture": 1,
+    "sources": [
+      "Parasitology/MCQ Para .pdf-p1-Q22"
+    ],
+    "repetitionCount": 1,
+    "text": "Which characteristic morphological feature identifies the diagnostic egg of Schistosoma haematobium in urine microscopy?",
+    "options": [
+      "Large egg with a prominent lateral spine (140 x 60 um)",
+      "Oval, non-operculated egg with a distinct sharp terminal spine (150 x 50 um)",
+      "Small operculated egg containing a fully formed ciliated miracidium",
+      "Round egg with a thick, radially striated embryophore"
+    ],
+    "correctIndex": 1,
+    "explanation": "Schistosoma haematobium eggs are large, elongated, transparent, and non-operculated with a sharp, prominent terminal spine at the posterior pole. S. mansoni eggs possess a lateral spine, and S. japonicum eggs possess a tiny rudimentary lateral knob."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0108",
+    "type": "mcq",
+    "lecture": 1,
+    "sources": [
+      "Parasitology/MCQ Para .pdf-p2-Q26"
+    ],
+    "repetitionCount": 1,
+    "text": "What is the classical clinical presentation of active urinary schistosomiasis during the egg deposition phase?",
+    "options": [
+      "Continuous, painless gross total hematuria with blood clots",
+      "Terminal hematuria accompanied by dysuria and suprapubic discomfort",
+      "Sudden oliguria, facial edema, and hypertension",
+      "Severe flank colic radiating to the groin with massive pyuria"
+    ],
+    "correctIndex": 1,
+    "explanation": "As the bladder contracts at the very end of micturition, the inflamed, vascular, egg-laden bladder mucosa is squeezed, producing pathognomonic terminal hematuria (fresh blood passed in the last few drops of urine) with dysuria."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0109",
+    "type": "mcq",
+    "lecture": 1,
+    "sources": [
+      "Comprehensive Banks/UG_NERD mcqs.pdf-p105-Q6"
+    ],
+    "repetitionCount": 1,
+    "text": "In chronic urinary schistosomiasis, calcified non-viable eggs embedded in fibrotic bladder submucosa produce which pathognomonic cystoscopic appearance?",
+    "options": [
+      "Cobblestone mucosal ulcerations",
+      "'Sandy patches' (yellowish-brown granular mucosal plaques resembling beach sand)",
+      "Multiple papillary urothelial fronds",
+      "Bullous mucosal edema"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sandy patches are pathognomonic for chronic S. haematobium. They represent dense clusters of calcified, dead schistosome eggs in the atrophic submucosa, giving the bladder and cervical/vaginal mucosa a dry, sandpaper-like, yellowish-granular appearance."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0110",
+    "type": "mcq",
+    "lecture": 1,
+    "sources": [
+      "Comprehensive Banks/UG_NERD mcqs.pdf-p105-Q7"
+    ],
+    "repetitionCount": 1,
+    "text": "Longstanding, untreated chronic urinary schistosomiasis in Egypt is strongly etiologically associated with which specific histological type of bladder malignancy?",
+    "options": [
+      "Conventional urothelial (transitional cell) carcinoma",
+      "Squamous cell carcinoma (SCC) of the urinary bladder",
+      "Adenocarcinoma of the urachus",
+      "Small cell neuroendocrine carcinoma"
+    ],
+    "correctIndex": 1,
+    "explanation": "Chronic irritation from trapped eggs and secondary bacterial infection generate carcinogenic N-nitrosamines, inducing squamous metaplasia of the transitional epithelium that progresses to invasive, keratinizing Squamous Cell Carcinoma (SCC) in >75% of bilharzial bladder cancers."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0111",
+    "type": "mcq",
+    "lecture": 1,
+    "sources": [
+      "Parasitology/MCQ Para .pdf-p2-Q27"
+    ],
+    "repetitionCount": 1,
+    "text": "What is the World Health Organization (WHO) drug of choice for the treatment and mass chemotherapy of urinary schistosomiasis?",
+    "options": [
+      "Metronidazole 500 mg TID for 7 days",
+      "Praziquantel administered as a single oral dose of 40 mg/kg",
+      "Albendazole 400 mg single dose",
+      "Ivermectin 200 mcg/kg"
+    ],
+    "correctIndex": 1,
+    "explanation": "Praziquantel (40 mg/kg orally as a single dose or split in two doses) is the universal drug of choice. It increases schistosome tegumental calcium permeability, causing spastic paralysis, tegumental vacuolization, and destruction by host immune cells."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0112",
+    "type": "mcq",
+    "lecture": 1,
+    "sources": [
+      "Parasitology/MCQ Para .pdf-p2-Q28"
+    ],
+    "repetitionCount": 1,
+    "text": "Which chemical agent is widely applied to freshwater canals and irrigation streams as a potent molluscicide to destroy intermediate host snails (Bulinus and Biomphalaria)?",
+    "options": [
+      "Paris green (copper acetoarsenite)",
+      "Niclosamide (Bayluscide / ethanolamine salt)",
+      "Malathion",
+      "DDT"
+    ],
+    "correctIndex": 1,
+    "explanation": "Niclosamide (Bayluscide) is the standard molluscicide recommended by WHO for snail control. Paris green is an insecticide used against mosquito larvae, not a molluscicide."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0113",
+    "type": "mcq",
+    "lecture": 2,
+    "sources": [
+      "Parasitology/MCQ Para .pdf-p2-Q31"
+    ],
+    "repetitionCount": 1,
+    "text": "Trichomonas vaginalis belongs to the subphylum Mastigophora (flagellates) and locomotes by means of:",
+    "options": [
+      "Pseudopodia (amoeboid movement)",
+      "Four anterior free flagella and an undulating membrane attached to a recurrent flagellum",
+      "Ciliary beat covering the entire pellicle",
+      "Passive gliding motility"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trichomonas vaginalis is a flagellated protozoan bearing 4 anterior free flagella and a 5th recurrent flagellum forming a short undulating membrane extending half the length of the body, producing characteristic jerky, twitching, non-directional motility."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0114",
+    "type": "mcq",
+    "lecture": 2,
+    "sources": [
+      "Parasitology/MCQ Para .pdf-p2-Q35"
+    ],
+    "repetitionCount": 1,
+    "text": "Regarding its developmental life cycle, Trichomonas vaginalis is unique among pathogenic human luminal protozoa because:",
+    "options": [
+      "It possesses both an encysted infective stage and an intracellular flagellated amastigote",
+      "It exists solely in the trophozoite stage and has NO cyst form whatsoever",
+      "It undergoes obligate sexual schizogony inside vaginal epithelial cells",
+      "It requires an intermediate arthropod vector for transmission"
+    ],
+    "correctIndex": 1,
+    "explanation": "Unlike Giardia lamblia or Entamoeba histolytica, Trichomonas vaginalis exists EXCLUSIVELY as a vegetative trophozoite. Because it lacks a protective cyst wall, it is labile in the dry external environment and depends on direct person-to-person sexual transmission."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0115",
+    "type": "mcq",
+    "lecture": 2,
+    "sources": [
+      "Parasitology/MCQ Para .pdf-p2-Q33"
+    ],
+    "repetitionCount": 1,
+    "text": "What is the primary and predominant mode of transmission of Trichomonas vaginalis between humans?",
+    "options": [
+      "Ingestion of fecally contaminated water",
+      "Direct sexual intercourse",
+      "Inhalation of respiratory aerosols",
+      "Penetration of unbroken skin during swimming"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trichomoniasis is the most common non-viral sexually transmitted infection globally. Trophozoites are directly transferred between sexual partners during penile-vaginal or vaginal-vaginal contact."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0116",
+    "type": "mcq",
+    "lecture": 2,
+    "sources": [
+      "Parasitology/MCQ Para .pdf-p2-Q34"
+    ],
+    "repetitionCount": 1,
+    "text": "In human males infected with Trichomonas vaginalis, where does the organism characteristically reside, and what is the typical clinical manifestation?",
+    "options": [
+      "Renal collecting ducts, causing macroscopic hematuria",
+      "Prostate gland, urethra, and seminal vesicles, where it is frequently completely asymptomatic",
+      "Testicular seminiferous tubules, causing immediate bilateral azoospermia",
+      "Scrotal subcutaneous tissue, causing elephantiasis"
+    ],
+    "correctIndex": 1,
+    "explanation": "In men, T. vaginalis colonizes the urethra, prostate, and seminal vesicles. Most men (>75%) are completely asymptomatic, acting as silent reservoirs who unknowingly transmit infection to female partners."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0117",
+    "type": "mcq",
+    "lecture": 2,
+    "sources": [
+      "Comprehensive Banks/UG_NERD mcqs.pdf-p106-Q10"
+    ],
+    "repetitionCount": 1,
+    "text": "Trichomonas vaginalis grows optimally and establishes clinical vaginitis in which vaginal microenvironment?",
+    "options": [
+      "Strictly anaerobic, hyperacidic environment (pH < 3.5)",
+      "Elevated vaginal pH between 5.0 and 6.0 (less acidic / alkaline environment)",
+      "Hyperosmolar environment with high glycogen and high D\u00f6derlein bacilli counts",
+      "Vaginal pH 2.0 with zero moisture"
+    ],
+    "correctIndex": 1,
+    "explanation": "T. vaginalis cannot survive in normal healthy acidic vaginal secretions (pH 3.8-4.5). It thrives when vaginal acidity is reduced (pH > 4.5, optimally 5.0-6.0), such as after menses, during coitus (alkaline semen), or with loss of protective lactobacilli."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0118",
+    "type": "mcq",
+    "lecture": 2,
+    "sources": [
+      "Comprehensive Banks/UG_NERD mcqs.pdf-p106-Q11"
+    ],
+    "repetitionCount": 1,
+    "text": "A 30-year-old female presents with severe vulvovaginal itching, burning, and a profuse, malodorous, frothy, greenish-yellow discharge. Speculum examination reveals 'strawberry cervix' (colpitis macularis). What is the pathogen?",
+    "options": [
+      "Candida albicans",
+      "Gardnerella vaginalis",
+      "Trichomonas vaginalis",
+      "Chlamydia trachomatis"
+    ],
+    "correctIndex": 2,
+    "explanation": "Profuse, frothy, greenish-yellow, foul-smelling vaginal discharge with intense pruritus and punctate mucosal microhemorrhages on the ectocervix ('strawberry cervix' / colpitis macularis) is the classic clinical presentation of Trichomonas vaginalis vaginitis."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0119",
+    "type": "mcq",
+    "lecture": 2,
+    "sources": [
+      "Comprehensive Banks/UG_NERD mcqs.pdf-p106-Q12"
+    ],
+    "repetitionCount": 1,
+    "text": "What rapid, direct, bedside diagnostic test is routinely used to confirm active Trichomonas vaginalis infection in symptomatic females?",
+    "options": [
+      "Saline wet mount microscopic examination of fresh vaginal discharge demonstrating motile, twitching flagellated trophozoites",
+      "Gram stain demonstrating clue cells",
+      "10% KOH preparation demonstrating pseudohyphae and budding yeast",
+      "Serum antibody ELISA for IgG"
+    ],
+    "correctIndex": 0,
+    "explanation": "Immediate microscopic examination of fresh vaginal discharge suspended in normal saline (wet mount) demonstrates live, actively motile pear-shaped trophozoites with characteristic jerky/twitching motility and rotating flagella."
+  },
+  {
+    "id": "MUG3-CH8-PARA-0120",
+    "type": "mcq",
+    "lecture": 2,
+    "sources": [
+      "Comprehensive Banks/UG_NERD mcqs.pdf-p106-Q13"
+    ],
+    "repetitionCount": 1,
+    "text": "What is the recommended pharmacological treatment for trichomoniasis, and what critical instruction must be given to prevent recurrent reinfection?",
+    "options": [
+      "Oral Fluconazole single dose; only the symptomatic female is treated",
+      "Oral Metronidazole (or Tinidazole) with MANDATORY simultaneous treatment of all sexual partners, even if asymptomatic",
+      "Topical Nystatin cream for 14 days without treating partner",
+      "Oral Amoxicillin for 7 days"
+    ],
+    "correctIndex": 1,
+    "explanation": "Oral Metronidazole (500 mg BID for 7 days, or 2g single dose) is curative. Because asymptomatic sexual partners harbor the organism and readily cause reinfection ('ping-pong' transmission), simultaneous treatment of all sexual partners is clinically mandatory."
+  }
+]
