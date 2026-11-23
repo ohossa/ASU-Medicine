@@ -1,0 +1,636 @@
+{
+  "total_merged": 35,
+  "date": "2026-11-23",
+  "module": "MUG-3",
+  "assessment_period": "ca-1",
+  "entries": [
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0038",
+      "canonical_chapter": 101,
+      "canonical_text": "Which spinous processes mark the upper and lower horizontal boundaries of Morris’s rectangle for the kidney?",
+      "duplicate_id": "MUG3-CH101-ANAT-0501",
+      "duplicate_chapter": 101,
+      "duplicate_text": "The two horizontal planes used to draw the Morris rectangle for posterior kidney projection correspond to the spines of which vertebrae?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p7-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "ASS 1 resit - 2019.pdf-Q12",
+        "💥Urogenital Assessment 1 MCQ.pdf-Q1",
+        "Past Exams/ASS 1 resit - 2019.pdf-Q12",
+        "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q1",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p7-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 5,
+      "equivalence_reason": "Identical question: Morris rectangle horizontal boundary vertebrae (T11 and L3 spines)."
+    },
+    {
+      "canonical_id": "MUG3-CH101-ANAT-0029",
+      "canonical_chapter": 101,
+      "canonical_text": "Which structure lies anterior to the left kidney across the omental bursa?",
+      "duplicate_id": "MUG3-CH101-ANAT-0504",
+      "duplicate_chapter": 101,
+      "duplicate_text": "Which structure is related to the anterior surface of the left kidney and covered by the peritoneum of the omental bursa?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p13-2018 / 2019 / 2020 / 2024"
+      ],
+      "final_sources": [
+        "Past Exams/FIRST ASSESSMENT UG 2024.pdf#S091-p001-q08",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p13-2018 / 2019 / 2020 / 2024"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Identical question: Anterior relation of left kidney across omental bursa (Stomach) from 2024 paper."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0039",
+      "canonical_chapter": 101,
+      "canonical_text": "What is the approximate length of one adult ureter?",
+      "duplicate_id": "MUG3-CH101-ANAT-0515",
+      "duplicate_chapter": 101,
+      "duplicate_text": "What is the length of the ureter in an adult human?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p37-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "ASS 1 resit - 2019.pdf-Q13",
+        "Past Exams/ASS 1 resit - 2019.pdf-Q13",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p37-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 3,
+      "equivalence_reason": "Identical question: Adult ureter length (25 cm / 25-30 cm)."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0111",
+      "canonical_chapter": 101,
+      "canonical_text": "Which of the following structures does NOT cross anteriorly in front of the abdominal part of the right ureter?",
+      "duplicate_id": "MUG3-CH101-ANAT-0516",
+      "duplicate_chapter": 101,
+      "duplicate_text": "Which of the following structures does NOT cross in front of the right ureter during its course?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p39-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "ASS 1 resit - 2019.pdf-Q14",
+        "Past Exams/ASS 1 resit - 2019.pdf-Q14",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p39-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 3,
+      "equivalence_reason": "Identical question: Structure not crossing anteriorly in front of right ureter (Obturator vessels / bundle)."
+    },
+    {
+      "canonical_id": "MUG3-CH101-ANAT-0030",
+      "canonical_chapter": 103,
+      "canonical_text": "Which ligament runs from the apex of the adult urinary bladder to the umbilicus?",
+      "duplicate_id": "MUG3-CH101-ANAT-0524",
+      "duplicate_chapter": 101,
+      "duplicate_text": "The apex of the urinary bladder is directed anteriorly and attached to the umbilicus by which structure?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p56-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "Past Exams/FIRST ASSESSMENT UG 2024.pdf#S091-p001-q10",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p56-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Identical question: Apex of urinary bladder attached to umbilicus by Median umbilical ligament."
+    },
+    {
+      "canonical_id": "MUG3-CH201-ANAT-0023",
+      "canonical_chapter": 101,
+      "canonical_text": "Duplication of the ureter (double or bifid ureter) occurs embryologically due to which of the following?",
+      "duplicate_id": "MUG3-CH101-ANAT-0535",
+      "duplicate_chapter": 101,
+      "duplicate_text": "A double ureter may occur due to which of the following causes?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p80-2024"
+      ],
+      "final_sources": [
+        "FIRST ASSESSMENT UG 2024.pdf-Q12",
+        "Past Exams/FIRST ASSESSMENT UG 2024.pdf-Q12",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p80-2024",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p96-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 3,
+      "equivalence_reason": "Identical question: Embryological cause of double ureter (Early splitting of ureteric bud)."
+    },
+    {
+      "canonical_id": "MUG3-CH201-ANAT-0023",
+      "canonical_chapter": 101,
+      "canonical_text": "Duplication of the ureter (double or bifid ureter) occurs embryologically due to which of the following?",
+      "duplicate_id": "MUG3-CH101-ANAT-0543",
+      "duplicate_chapter": 101,
+      "duplicate_text": "A double ureter occurs due to which of the following mechanisms?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p96-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "FIRST ASSESSMENT UG 2024.pdf-Q12",
+        "Past Exams/FIRST ASSESSMENT UG 2024.pdf-Q12",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p80-2024",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p96-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 4,
+      "equivalence_reason": "Identical question: Embryological mechanism of double ureter (Early splitting of ureteric bud)."
+    },
+    {
+      "canonical_id": "MUG3-CH101-ANAT-0028",
+      "canonical_chapter": 101,
+      "canonical_text": "During urinary tract development, the ureteric bud grows out from which embryonic structure?",
+      "duplicate_id": "MUG3-CH101-ANAT-0537",
+      "duplicate_chapter": 101,
+      "duplicate_text": "The ureteric bud appears as a dorsal outgrowth from which of the following structures?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p84-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "Past Exams/ASS 1 - 2019.pdf#S079-p001-q01",
+        "Past Exams/💥Urogenital Assessment 1 MCQ.pdf#S118-p001-anatomy-q04",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p84-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Identical question: Ureteric bud outgrowth from Mesonephric duct."
+    },
+    {
+      "canonical_id": "MUG3-CH102-HIST-0009",
+      "canonical_chapter": 102,
+      "canonical_text": "Which structures are directly bridged by the glomerular slit diaphragm?",
+      "duplicate_id": "MUG3-CH102-HIST-0503",
+      "duplicate_chapter": 102,
+      "duplicate_text": "The filtration slit diaphragm of the blood-renal barrier is specifically located between which of the following structures?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p349-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "Past Exams/💥Urogenital Assessment 1 MCQ.pdf#S118-p005-histology-q02",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p349-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Identical question: Glomerular filtration slit diaphragm bridges adjacent podocyte foot processes."
+    },
+    {
+      "canonical_id": "MUG3-CH102-HIST-0011",
+      "canonical_chapter": 102,
+      "canonical_text": "The glomerular basement membrane forms by fusion of the basal laminae of which two cell types?",
+      "duplicate_id": "MUG3-CH102-HIST-0504",
+      "duplicate_chapter": 102,
+      "duplicate_text": "Which of the following statements best describes the structure and origin of the glomerular basement membrane?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p351-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "Past Exams/ASS 1 - 2019.pdf#S079-p002-q13",
+        "Past Exams/💥Urogenital Assessment 1 MCQ.pdf#S118-p005-histology-q03",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p351-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Identical question: Glomerular basement membrane formed by podocytes and endothelial cells."
+    },
+    {
+      "canonical_id": "MUG3-CH202-HIST-0005",
+      "canonical_chapter": 102,
+      "canonical_text": "Which histological feature identifies the macula densa at the vascular pole of a renal corpuscle?",
+      "duplicate_id": "MUG3-CH102-HIST-0516",
+      "duplicate_chapter": 102,
+      "duplicate_text": "Which of the following best describes the macula densa under light microscopy?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p377-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "ASSESSEMENT ONE UROGENITAL 2020.pdf-Q14",
+        "paper one urogenital mcq for 2020.pdf-Q14",
+        "Past Exams/ASSESSEMENT ONE UROGENITAL 2020.pdf-Q55",
+        "Past Exams/paper one urogenital mcq for 2020.pdf-Q96",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p377-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 5,
+      "equivalence_reason": "Identical question: Macula densa under light microscopy: closely packed tall epithelial cells with crowded nuclei."
+    },
+    {
+      "canonical_id": "MUG3-CH102-HIST-0002",
+      "canonical_chapter": 102,
+      "canonical_text": "Where is the Golgi apparatus located in a macula densa cell relative to its nucleus?",
+      "duplicate_id": "MUG3-CH102-HIST-0517",
+      "duplicate_chapter": 102,
+      "duplicate_text": "Under electron microscopy, which of the following is a characteristic feature of macula densa cells?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p379-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "ASS 1 UG - 2020.pdf-Q4",
+        "paper one urogenital mcq for 2020.pdf-Q4",
+        "Past Exams/paper one urogenital mcq for 2020.pdf-Q4",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p379-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 4,
+      "equivalence_reason": "Identical question: Macula densa Golgi apparatus reverse polarity: situated basal to nucleus."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0068",
+      "canonical_chapter": 102,
+      "canonical_text": "Which proteins form plaques in the apical membrane of urothelial umbrella cells?",
+      "duplicate_id": "MUG3-CH102-HIST-0520",
+      "duplicate_chapter": 102,
+      "duplicate_text": "Which of the following is a characteristic structural feature of facet cells that maintains the blood-urine barrier?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p385-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "💥Urogenital Assessment 1 MCQ.pdf-Q10",
+        "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q59",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p385-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 3,
+      "equivalence_reason": "Identical question: Apical membrane plaques of umbrella / facet cells composed of uroplakins."
+    },
+    {
+      "canonical_id": "MUG3-CH203-PHYS-0111",
+      "canonical_chapter": 102,
+      "canonical_text": "Which change helps superficial urothelial cells expand their apical surface as the bladder fills?",
+      "duplicate_id": "MUG3-CH102-HIST-0521",
+      "duplicate_chapter": 102,
+      "duplicate_text": "In urinary bladder facet cells, which mechanism is responsible for increasing surface area during bladder distension?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p387-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "FIRST ASSESSMENT UG 2024.pdf-Q21",
+        "Past Exams/FIRST ASSESSMENT UG 2024.pdf-Q21",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p387-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 3,
+      "equivalence_reason": "Identical question: Superficial urothelial cells distension via unfolding/fusion of apical fusiform vesicles."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0502",
+      "canonical_chapter": 103,
+      "canonical_text": "Which of the following is endocrine function of kidney?",
+      "duplicate_id": "MUG3-CH103-PHYS-0503",
+      "duplicate_chapter": 103,
+      "duplicate_text": "Which of the following is endocrine function of kidney?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p131-2025"
+      ],
+      "final_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p130-2025",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p131-2025",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p143-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Intra-PDF exact duplicate slide: Endocrine function of kidney: Secretion of erythropoietin."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0502",
+      "canonical_chapter": 103,
+      "canonical_text": "Which of the following is endocrine function of kidney?",
+      "duplicate_id": "MUG3-CH103-PHYS-0509",
+      "duplicate_chapter": 103,
+      "duplicate_text": "Which of the following is an endocrine function of the kidney?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p143-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p130-2025",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p131-2025",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p143-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 3,
+      "equivalence_reason": "Identical question: Endocrine function of kidney: Secretion of erythropoietin."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0526",
+      "canonical_chapter": 103,
+      "canonical_text": "Which of the following conditions acts as a direct stimulus for renin release by juxtaglomerular cells?",
+      "duplicate_id": "MUG3-CH103-PHYS-0520",
+      "duplicate_chapter": 103,
+      "duplicate_text": "Which of the following conditions stimulates renin release?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p167-2025"
+      ],
+      "final_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p179-2018 / 2019 / 2020",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p167-2025"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Identical question: Stimulus for renin release: Decreased NaCl delivery to macula densa."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0527",
+      "canonical_chapter": 103,
+      "canonical_text": "Which of the following statements regarding renal blood circulation is true?",
+      "duplicate_id": "MUG3-CH103-PHYS-0528",
+      "duplicate_chapter": 103,
+      "duplicate_text": "Which of the following statements is true about renal circulation?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p184-2025"
+      ],
+      "final_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p181-2018 / 2019 / 2020",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p184-2025"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Identical question: Renal circulation feature: Vasa recta preserve medullary hyperosmolality / hyperosmolarity."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0137",
+      "canonical_chapter": 103,
+      "canonical_text": "Which isolated change would increase glomerular filtration rate?",
+      "duplicate_id": "MUG3-CH103-PHYS-0529",
+      "duplicate_chapter": 103,
+      "duplicate_text": "Which of the following factors causes an increase in Glomerular Filtration Rate (GFR)?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p186-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "Past Exams/FIRST ASSESSMENT UG 2024.pdf#S091-p001-q03",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p186-2018 / 2019 / 2020",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p196-2018 / 2019 / 2020 / 2024"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Identical question: Factor increasing GFR: Decrease in plasma oncotic pressure."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0137",
+      "canonical_chapter": 103,
+      "canonical_text": "Which isolated change would increase glomerular filtration rate?",
+      "duplicate_id": "MUG3-CH103-PHYS-0534",
+      "duplicate_chapter": 103,
+      "duplicate_text": "Which of the following changes increases the glomerular filtration rate (GFR)?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p196-2018 / 2019 / 2020 / 2024"
+      ],
+      "final_sources": [
+        "Past Exams/FIRST ASSESSMENT UG 2024.pdf#S091-p001-q03",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p186-2018 / 2019 / 2020",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p196-2018 / 2019 / 2020 / 2024"
+      ],
+      "repetition_count": 3,
+      "equivalence_reason": "Identical question: Change increasing GFR: Decrease in plasma colloid osmotic pressure."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0538",
+      "canonical_chapter": 103,
+      "canonical_text": "Which of the following conditions decreases GFR?",
+      "duplicate_id": "MUG3-CH103-PHYS-0540",
+      "duplicate_chapter": 103,
+      "duplicate_text": "Which of the following conditions causes a decrease in GFR?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p208-2024"
+      ],
+      "final_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p204-2025",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p208-2024"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Identical question: Condition causing decrease in GFR: Prostatic enlargement."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0093",
+      "canonical_chapter": 103,
+      "canonical_text": "Which statement correctly describes the renal handling of inulin?",
+      "duplicate_id": "MUG3-CH103-PHYS-0549",
+      "duplicate_chapter": 103,
+      "duplicate_text": "Which of the following statements regarding inulin handling in the kidney is true?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p227-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "💥Urogenital Assessment 1 MCQ.pdf-Q36",
+        "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q99",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p227-2018 / 2019 / 2020",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p241-2025"
+      ],
+      "repetition_count": 3,
+      "equivalence_reason": "Identical question: Inulin handling in kidney: Filtered, neither reabsorbed nor secreted."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0093",
+      "canonical_chapter": 103,
+      "canonical_text": "Which statement correctly describes the renal handling of inulin?",
+      "duplicate_id": "MUG3-CH103-PHYS-0556",
+      "duplicate_chapter": 103,
+      "duplicate_text": "Which of the following is true about inulin?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p241-2025"
+      ],
+      "final_sources": [
+        "💥Urogenital Assessment 1 MCQ.pdf-Q36",
+        "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q99",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p227-2018 / 2019 / 2020",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p241-2025"
+      ],
+      "repetition_count": 4,
+      "equivalence_reason": "Identical question: Inulin handling in kidney: Freely filtered, not reabsorbed and not secreted."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0138",
+      "canonical_chapter": 103,
+      "canonical_text": "A freely filtered substance has a renal clearance greater than that of inulin but less than that of PAH. What can be inferred about its tubular handling?",
+      "duplicate_id": "MUG3-CH103-PHYS-0551",
+      "duplicate_chapter": 103,
+      "duplicate_text": "If a substance clearance is higher than inulin clearance but less than PAHA clearance, its renal handling involves which of the following processes?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p231-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "Past Exams/FIRST ASSESSMENT UG 2024.pdf#S091-p001-q04",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p231-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Identical question: Substance clearance > Inulin but < PAH: Tubular secretion occurs."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0129",
+      "canonical_chapter": 103,
+      "canonical_text": "The renal transport maximum (Tm) for a filtered substance is defined as which of the following?",
+      "duplicate_id": "MUG3-CH103-PHYS-0564",
+      "duplicate_chapter": 103,
+      "duplicate_text": "The renal transport maximum (Tm) for a substance is defined as the maximal:",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p258-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "💥Urogenital Assessment 1 MCQ.pdf-Q30",
+        "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q93",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p258-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 3,
+      "equivalence_reason": "Identical question: Renal transport maximum (Tm) definition: Maximal tubular reabsorption or secretion rate."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0095",
+      "canonical_chapter": 103,
+      "canonical_text": "Which alteration explains isolated renal glucosuria in a person with normal plasma glucose?",
+      "duplicate_id": "MUG3-CH103-PHYS-0565",
+      "duplicate_chapter": 103,
+      "duplicate_text": "Renal glucosuria (excretion of glucose in urine with normal plasma glucose) is caused by which of the following conditions?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p260-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "💥Urogenital Assessment 1 MCQ.pdf-Q39",
+        "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q102",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p260-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 3,
+      "equivalence_reason": "Identical question: Mechanism of isolated renal glucosuria: Reduced/decreased renal threshold for glucose."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0576",
+      "canonical_chapter": 103,
+      "canonical_text": "Which of the following statements regarding renal tubular transport is true?",
+      "duplicate_id": "MUG3-CH103-PHYS-0570",
+      "duplicate_chapter": 103,
+      "duplicate_text": "Which of the following statements is true?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p271-2024"
+      ],
+      "final_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p283-2018 / 2019 / 2020",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p271-2024"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Identical question: Renal tubular transport true statement: Angiotensin II increases luminal NaHCO3 reabsorption."
+    },
+    {
+      "canonical_id": "MUG3-CH203-PHYS-0108",
+      "canonical_chapter": 103,
+      "canonical_text": "Which of the following is a characteristic functional and anatomical feature of the renal vasa recta?",
+      "duplicate_id": "MUG3-CH103-PHYS-0573",
+      "duplicate_chapter": 103,
+      "duplicate_text": "Which of the following is a characteristic feature of the vasa recta?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p277-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "FIRST ASSESSMENT UG 2024.pdf-Q7",
+        "Past Exams/FIRST ASSESSMENT UG 2024.pdf-Q7",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p277-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 3,
+      "equivalence_reason": "Identical question: Characteristic feature of vasa recta: Passive countercurrent system/exchanger preserving gradient."
+    },
+    {
+      "canonical_id": "MUG3-CH103-PHYS-0109",
+      "canonical_chapter": 103,
+      "canonical_text": "According to the principle of glomerulotubular balance, when glomerular filtration rate (GFR) increases, what change in peritubular capillary dynamics promotes increased proximal tubular reabsorption?",
+      "duplicate_id": "MUG3-CH103-PHYS-0594",
+      "duplicate_chapter": 103,
+      "duplicate_text": "According to the glomerulotubular balance, an increase in GFR directly leads to which of the following changes?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p321-2018 / 2019 / 2020"
+      ],
+      "final_sources": [
+        "ASS 1 resit - 2019.pdf-Q6",
+        "💥Urogenital Assessment 1 MCQ.pdf-Q6",
+        "Past Exams/ASS 1 resit - 2019.pdf-Q6",
+        "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q69",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p321-2018 / 2019 / 2020"
+      ],
+      "repetition_count": 5,
+      "equivalence_reason": "Identical question: Glomerulotubular balance: Increase in GFR leads to increase in peritubular capillary oncotic pressure."
+    },
+    {
+      "canonical_id": "MUG3-CH104-BIOC-0541",
+      "canonical_chapter": 104,
+      "canonical_text": "Which of the following hormonal alterations is characteristically observed in patients with 17- alpha -hydroxylase deficiency?",
+      "duplicate_id": "MUG3-CH104-BIOC-0537",
+      "duplicate_chapter": 104,
+      "duplicate_text": "Which of the following occurs with 17 hdroxylase deficiency?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p466-2025"
+      ],
+      "final_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p474-2018 / 2019 / 2020",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p466-2025"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Identical question: 17-alpha-hydroxylase deficiency hormonal alteration: Elevated aldosterone."
+    },
+    {
+      "canonical_id": "MUG3-CH105-PATH-0502",
+      "canonical_chapter": 105,
+      "canonical_text": "Oliguria, hematuria, hypertension, and periorbital edema are characteristic clinical features for which of the following types of glomerulonephritis?",
+      "duplicate_id": "MUG3-CH105-PATH-0506",
+      "duplicate_chapter": 105,
+      "duplicate_text": "A patient presents with oliguria, hematuria, hypertension, and periorbital edema. Which of the following types of glomerulonephritis is characterized by these clinical features?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p504-2024"
+      ],
+      "final_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p496-2018 / 2019 / 2020",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p504-2024"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Identical question: Oliguria, hematuria, hypertension, and periorbital edema presentation: Poststreptococcal GN."
+    },
+    {
+      "canonical_id": "MUG3-CH105-PATH-0509",
+      "canonical_chapter": 105,
+      "canonical_text": "Linear immunofluorescence for IgG and C3 along the glomerular basement membrane accompanied by crescentic parietal cell proliferation is characteristic of which condition?",
+      "duplicate_id": "MUG3-CH105-PATH-0507",
+      "duplicate_chapter": 105,
+      "duplicate_text": "A patient with rapidly progressive renal deterioration demonstrates linear immunofluorescence for IgG and C3 along the glomerular capillary wall along with parietal epithelial cell proliferation. This finding is associated with:",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p506-2024"
+      ],
+      "final_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p510-2018 / 2019 / 2020",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p506-2024"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Identical question: Linear immunofluorescence for IgG and C3 along GBM with crescentic proliferation: Goodpasture syndrome."
+    },
+    {
+      "canonical_id": "MUG3-CH105-PATH-0513",
+      "canonical_chapter": 105,
+      "canonical_text": "Diabetic Glomerulosclerosis is characterized by all of the following morphological features EXCEPT:",
+      "duplicate_id": "MUG3-CH105-PATH-0518",
+      "duplicate_chapter": 105,
+      "duplicate_text": "A patient with long-standing diabetes mellitus is evaluated for renal involvement. Diabetic glomerulosclerosis is characterized by all of the following except:",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p529-2024"
+      ],
+      "final_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p519-2018 / 2019 / 2020",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p529-2024"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Identical question: Diabetic glomerulosclerosis morphology EXCEPT: Idiopathic membranous GN."
+    },
+    {
+      "canonical_id": "MUG3-CH105-PATH-0521",
+      "canonical_chapter": 105,
+      "canonical_text": "A 42-year-old patient receiving high- dose intravenous Penicillin therapy for an infection develops a high fever, a maculopapular skin rash, and rising serum creatinine 10 days after starting therapy. Laboratory tests show marked peripheral eosinophilia, and urinalysis reveals eosinophils and white blood cell casts. What is the diagnosis?",
+      "duplicate_id": "MUG3-CH105-PATH-0525",
+      "duplicate_chapter": 105,
+      "duplicate_text": "A patient receiving penicillin therapy develops acute renal dysfunction with an inflammatory infiltrate rich in eosinophils and neutrophils in the renal interstitium. Which of the following is the most likely diagnosis?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p544-2024"
+      ],
+      "final_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p536-2018 / 2019 / 2020",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p544-2024"
+      ],
+      "repetition_count": 2,
+      "equivalence_reason": "Identical question: Penicillin-induced acute tubulointerstitial nephritis with eosinophilic infiltrate."
+    },
+    {
+      "canonical_id": "MUG3-CH206-PHAR-0006",
+      "canonical_chapter": 106,
+      "canonical_text": "What is the recommended initial medical management for severe acute symptomatic hypercalcemia in a patient with heart failure?",
+      "duplicate_id": "MUG3-CH106-PHAR-0513",
+      "duplicate_chapter": 106,
+      "duplicate_text": "Which of the following is the best initial treatment for severe hypercalcemia in a patient with heart failure?",
+      "merged_sources": [
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p572-2024"
+      ],
+      "final_sources": [
+        "FIRST ASSESSMENT UG 2024.pdf-Q19",
+        "Past Exams/FIRST ASSESSMENT UG 2024.pdf-Q19",
+        "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p572-2024"
+      ],
+      "repetition_count": 3,
+      "equivalence_reason": "Identical question: Severe hypercalcemia in heart failure initial management: Isotonic saline plus loop diuretics."
+    }
+  ]
+}

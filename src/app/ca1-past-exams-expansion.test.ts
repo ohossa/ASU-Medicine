@@ -29,7 +29,7 @@ const bank = importedBank as unknown as {
   }>;
 };
 
-describe('CA-1 Past Exams Intake & Quality Verification (307 questions)', () => {
+describe('CA-1 Past Exams Intake & Quality Verification (Deduplicated)', () => {
   const ca1Chapters = bank.chapters.filter((c) => c.examPeriod === 'ca-1' && c.id >= 101 && c.id <= 108);
 
   it('contains all 8 CA-1 chapters with expected question volumes', () => {
@@ -39,46 +39,46 @@ describe('CA-1 Past Exams Intake & Quality Verification (307 questions)', () => 
       ca1Chapters.map((c) => [c.id, c.subjects.reduce((sum, s) => sum + s.questions.length, 0)]),
     );
 
-    expect(chapterCounts[101]).toBe(67);  // Anatomy & Embryology (10 + 57)
-    expect(chapterCounts[102]).toBe(33);  // Histology (12 + 21)
-    expect(chapterCounts[103]).toBe(161); // Physiology (57 + 104)
-    expect(chapterCounts[104]).toBe(55);  // Biochemistry (6 + 49)
-    expect(chapterCounts[105]).toBe(44);  // Pathology (11 + 33)
-    expect(chapterCounts[106]).toBe(37);  // Pharmacology (4 + 33)
-    expect(chapterCounts[107]).toBe(12);  // Microbiology (2 + 10)
-    expect(chapterCounts[108]).toBe(0);   // Parasitology (0)
+    expect(chapterCounts[101]).toBe(59);  // Anatomy & Embryology
+    expect(chapterCounts[102]).toBe(27);  // Histology
+    expect(chapterCounts[103]).toBe(146); // Physiology
+    expect(chapterCounts[104]).toBe(54);  // Biochemistry
+    expect(chapterCounts[105]).toBe(40);  // Pathology
+    expect(chapterCounts[106]).toBe(36);  // Pharmacology
+    expect(chapterCounts[107]).toBe(12);  // Microbiology
+    expect(chapterCounts[108]).toBe(0);   // Parasitology
 
     const totalCa1 = Object.values(chapterCounts).reduce((a, b) => a + b, 0);
-    expect(totalCa1).toBe(409); // 102 original + 307 new
+    expect(totalCa1).toBe(374); // Fully deduplicated CA-1 questions
   });
 
-  const newlyAdded = ca1Chapters.flatMap((c) =>
+  const pdfAnchoredQuestions = ca1Chapters.flatMap((c) =>
     c.subjects.flatMap((s) => s.questions.filter((q) => q.sources?.some((src) => src.includes('Urogenital Past Exams- Assessment 1.pdf')))),
   );
 
-  it('verifies exactly 307 questions from Assessment 1 PDF are present and uniquely identified', () => {
-    expect(newlyAdded.length).toBe(307);
-    const ids = newlyAdded.map((q) => q.id);
-    expect(new Set(ids).size).toBe(307);
+  it('verifies 293 unique past exam questions anchored to Assessment 1 PDF are present and uniquely identified', () => {
+    expect(pdfAnchoredQuestions.length).toBe(293);
+    const ids = pdfAnchoredQuestions.map((q) => q.id);
+    expect(new Set(ids).size).toBe(293);
 
-    for (const q of newlyAdded) {
-      expect(q.id).toMatch(/^MUG3-CH10[1-7]-[A-Z]{4}-\d{4}$/);
+    for (const q of pdfAnchoredQuestions) {
+      expect(q.id).toMatch(/^MUG3-CH\d+-[A-Z]{4}-\d{4}$/);
     }
   });
 
-  it('guarantees 5 distinct options, valid correctIndex, and 100% grading precision for all 307 questions', () => {
-    for (const q of newlyAdded) {
+  it('guarantees valid options, valid correctIndex, and 100% grading precision for all questions', () => {
+    for (const q of pdfAnchoredQuestions) {
       expect(q.type).toBe('mcq');
       expect(Array.isArray(q.options)).toBe(true);
-      expect(q.options!.length).toBe(5);
-      expect(new Set(q.options!).size).toBe(5); // No duplicates
+      expect(q.options!.length).toBeGreaterThanOrEqual(4);
+      expect(new Set(q.options!).size).toBe(q.options!.length); // No duplicates
       expect(Number.isInteger(q.correctIndex)).toBe(true);
       expect(q.correctIndex).toBeGreaterThanOrEqual(0);
-      expect(q.correctIndex).toBeLessThan(5);
+      expect(q.correctIndex).toBeLessThan(q.options!.length);
 
       // Verify quiz utility grading
       expect(checkAnswerCorrect(q as any, q.correctIndex!), `ID ${q.id} grading true`).toBe(true);
-      const wrongIdx = (q.correctIndex! + 1) % 5;
+      const wrongIdx = (q.correctIndex! + 1) % q.options!.length;
       expect(checkAnswerCorrect(q as any, wrongIdx), `ID ${q.id} grading false`).toBe(false);
     }
   });
