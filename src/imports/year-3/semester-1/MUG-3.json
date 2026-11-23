@@ -33801,25 +33801,6 @@
               "correctIndex": 2
             },
             {
-              "id": "MUG3-CH205-PATH-0053",
-              "type": "mcq",
-              "lecture": 6,
-              "sources": [
-                "UG ass 2 and paper 2.pdf-Q8",
-                "Past Exams/UG ass 2 and paper 2.pdf-Q58"
-              ],
-              "repetitionCount": 2,
-              "text": "A 78-year-old man is admitted with acute urinary retention. For three years, he has had progressive urinary hesitancy, frequency, nocturia, and recurrent cystitis. What is the most probable cause of bladder outlet obstruction in this patient?",
-              "explanation": "**Correct Answer: Benign (nodular) prostatic hyperplasia**\n\n**Pathological Rationale:**\nBenign prostatic hyperplasia (BPH) is the leading cause of bladder outlet obstruction in men over 60. Hyperplastic nodules in the periurethral transition zone compress the prostatic urethra, causing lower urinary tract symptoms (hesitancy, frequency, weak stream) and acute urinary retention.\n\n**Curriculum Reference:**\nAin Shams University Urogenital Module Textbook, Pathology of Prostate, pp. 252–257.",
-              "options": [
-                "Benign (nodular) prostatic hyperplasia",
-                "Urethral stricture from prior gonococcal urethritis",
-                "Impacted bladder calculus",
-                "Transitional cell carcinoma of the urinary bladder"
-              ],
-              "correctIndex": 0
-            },
-            {
               "id": "MUG3-CH205-PATH-0055",
               "type": "mcq",
               "lecture": 1,
@@ -33901,44 +33882,6 @@
               "correctIndex": 0
             },
             {
-              "id": "MUG3-CH205-PATH-0143",
-              "type": "mcq",
-              "lecture": 2,
-              "sources": [
-                "Past Exams/UG ass 2 and paper 2.pdf-Q26"
-              ],
-              "repetitionCount": 1,
-              "text": "A urethral smear from a man with purulent urethral discharge shows Gram-negative diplococci within neutrophils. Which organism is most likely?",
-              "explanation": "Intracellular Gram-negative diplococci in a urethral smear from a symptomatic man are characteristic of gonococcal urethritis. Other causes of urethritis do not have this Gram-stain appearance.",
-              "options": [
-                "Chlamydia trachomatis",
-                "Neisseria gonorrhoeae",
-                "Mycoplasma genitalium",
-                "Trichomonas vaginalis"
-              ],
-              "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH205-PATH-0172",
-              "type": "mcq",
-              "lecture": 3,
-              "sources": [
-                "Past Exams/UG ass 2 and paper 2.pdf-Q71",
-                "final paper 2 - 2019.pdf-Q2",
-                "Past Exams/final paper 2 - 2019.pdf-Q3"
-              ],
-              "repetitionCount": 3,
-              "text": "A newborn develops mucopurulent conjunctivitis in the second week after birth. Conjunctival epithelial cells show intracytoplasmic inclusions. Which organism best fits?",
-              "explanation": "Perinatal chlamydial infection can cause conjunctivitis after the first few days of life. Intracytoplasmic inclusions support chlamydial rather than gonococcal or herpetic infection.",
-              "options": [
-                "Neisseria gonorrhoeae",
-                "Staphylococcus aureus",
-                "Chlamydia trachomatis",
-                "Herpes simplex virus 2"
-              ],
-              "correctIndex": 2
-            },
-            {
               "id": "MUG3-CH203-PHYS-0140",
               "type": "mcq",
               "lecture": 10,
@@ -33976,63 +33919,6 @@
                 "Alprostadil"
               ],
               "correctIndex": 2
-            },
-            {
-              "id": "MUG3-CH207-MICR-0007",
-              "type": "mcq",
-              "lecture": 3,
-              "sources": [
-                "UG ass 2 -2020.pdf-Q4",
-                "Past Exams/UG ass 2 -2020.pdf-Q3"
-              ],
-              "repetitionCount": 2,
-              "text": "Why is serological antibody detection unreliable for the routine definitive diagnosis of acute Neisseria gonorrhoeae infection?",
-              "explanation": "**Correct Answer: High-frequency antigenic variation of bacterial pili and outer membrane proteins (Opa)**\n\n**Microbiological Rationale:**\nNeisseria gonorrhoeae undergoes extensive antigenic variation via DNA recombination and phase variation of its pilin and opacity (Opa) outer membrane proteins. Consequently, serum antibody responses are diverse and do not confer protective immunity or reliable diagnostic serology.",
-              "options": [
-                "High-frequency antigenic variation of bacterial pili and outer membrane proteins (Opa)",
-                "Lack of any humoral immune response in humans to gonococcal surface antigens",
-                "Immediate destruction of all anti-gonococcal antibodies by host macrophages",
-                "Cross-reactivity with normal colonic anaerobic bacteria"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH207-MICR-0010",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "UG paper 2 essay answers 2020.pdf-Q2"
-              ],
-              "repetitionCount": 1,
-              "text": "Persistent infection with high-risk human papillomavirus (HPV types 16 and 18) predisposes to cervical intraepithelial neoplasia (CIN) and invasive carcinoma primarily because viral oncoproteins E6 and E7 inhibit which host tumor suppressor proteins?",
-              "explanation": "**Correct Answer: p53 (by E6) and Retinoblastoma protein Rb (by E7)**\n\n**Microbiological & Pathophysiological Rationale:**\nUnder Ain Shams University microbiology curriculum standards for 'Oncogenic Viruses: HPV', high-risk HPV types 16 and 18 integrate into the host genome and overexpress oncoprotein E6 (which promotes ubiquitin-mediated degradation of p53) and oncoprotein E7 (which binds and inactivates Rb, releasing E2F to drive uncontrolled S-phase entry).\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 2, 'Microbiology: Papillomaviruses and Genital Infections'.",
-              "options": [
-                "p53 (by E6) and Retinoblastoma protein Rb (by E7)",
-                "BRCA1 and BRCA2 DNA repair enzymes",
-                "Cyclin-dependent kinase inhibitors p16 and p21",
-                "Vascular endothelial growth factor (VEGF)"
-              ],
-              "correctIndex": 0,
-              "stem": "Persistent infection with high-risk human papillomavirus (HPV types 16 and 18) predisposes to cervical intraepithelial neoplasia (CIN) and invasive carcinoma primarily because viral oncoproteins E6 and E7 inhibit which host tumor suppressor proteins?"
-            },
-            {
-              "id": "MUG3-CH207-MICR-0012",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "💥Urogenital Assessment 2 MCQ-1.pdf-Q6",
-                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q81"
-              ],
-              "repetitionCount": 2,
-              "text": "A young male presents with acute urethral discharge and dysuria. Microscopy of the exudate reveals intracellular Gram-negative diplococci within polymorphonuclear leukocytes. What is the most likely pathogen?",
-              "explanation": "**Correct Answer: Neisseria gonorrhoeae**\n\n**Microbiological & Clinical Rationale:**\nAcute gonococcal urethritis classically presents with profuse purulent urethral discharge. Microscopic identification of Gram-negative kidney-bean shaped diplococci located intracellularly within polymorphonuclear leukocytes (PMNs) is diagnostic of Neisseria gonorrhoeae in males.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Microbiology: 'Sexually Transmitted Infections'.",
-              "options": [
-                "Neisseria gonorrhoeae",
-                "Chlamydia trachomatis",
-                "Treponema pallidum",
-                "Trichomonas vaginalis"
-              ],
-              "correctIndex": 0
             },
             {
               "id": "MUG3-CH103-PHYS-0501",
@@ -38362,237 +38248,7 @@
             "Infections of the Genital System & STDs",
             "Perinatal & Congenital Infections"
           ],
-          "questions": [
-            {
-              "id": "MUG3-CH107-MICR-0001",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "💥Urogenital Assessment 1 MCQ.pdf-Q3",
-                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q130"
-              ],
-              "repetitionCount": 2,
-              "text": "A healthy young woman develops uncomplicated cystitis after intercourse. The urine isolate is a motile, lactose-fermenting Gram-negative rod. Which organism is most likely?",
-              "explanation": "E. coli is the most common cause of uncomplicated cystitis and fits the motile lactose-fermenting rod description. K. pneumoniae is typically nonmotile, P. mirabilis does not ferment lactose, and S. saprophyticus is a Gram-positive coccus.",
-              "options": [
-                "Staphylococcus saprophyticus",
-                "Escherichia coli",
-                "Klebsiella pneumoniae",
-                "Proteus mirabilis"
-              ],
-              "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH205-PATH-0045",
-              "type": "mcq",
-              "lecture": 3,
-              "sources": [
-                "ASS 2 - 2019 RESIT.pdf-Q8",
-                "Past Exams/ASS 2 - 2019 RESIT.pdf-Q7"
-              ],
-              "repetitionCount": 2,
-              "text": "A 78 year old was admitted to the hospital due to acute urinary tract obstruction. For the past few years, he has had recurrent bouts of cystitis. Two days before being admitted to the hospital, he was not able to urinate at all. What is the probable cause of bladder outlet obstruction in this case?",
-              "explanation": "Periurethral nodules in benign prostatic hyperplasia can narrow the prostatic urethra and cause urinary retention. Residual urine can contribute to recurrent cystitis. The vignette supplies no specific evidence of a stricture or malignancy.",
-              "options": [
-                "Urethral stricture",
-                "Nodular prostatic hyperplasia",
-                "Urothelial cell carcinoma of the bladder",
-                "Nephrogenic metaplasia",
-                "Prostatic adenocarcinoma"
-              ],
-              "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH107-MICR-0501",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p635-2025"
-              ],
-              "repetitionCount": 1,
-              "text": "What is the most common route of urinary tract infection (UTI)?",
-              "explanation": "**Faculty Model Answer & Core Concept:**\n**Ascending route**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **Ascending route** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
-              "options": [
-                "Hematogenous spread",
-                "Lymphatic dissemination",
-                "Ascending route",
-                "Direct extension",
-                "Glomerular filtration"
-              ],
-              "correctIndex": 2
-            },
-            {
-              "id": "MUG3-CH107-MICR-0502",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p637"
-              ],
-              "repetitionCount": 1,
-              "text": "Which bacterial pathogen is responsible for 75% to 95% of urinary tract infections in women?",
-              "explanation": "**Faculty Model Answer & Core Concept:**\n**Escherichia coli**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **Escherichia coli** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
-              "options": [
-                "Klebsiella pneumoniae",
-                "Proteus mirabilis",
-                "Escherichia coli",
-                "Staphylococcus saprophyticus",
-                "Pseudomonas aeruginosa"
-              ],
-              "correctIndex": 2
-            },
-            {
-              "id": "MUG3-CH107-MICR-0503",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p639"
-              ],
-              "repetitionCount": 1,
-              "text": "What quantitative colony count threshold in a midstream urine culture defines significant bacteriuria?",
-              "explanation": "**Faculty Model Answer & Core Concept:**\n**≥ 10^5 CFU/mL**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **≥ 10^5 CFU/mL** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
-              "options": [
-                "≥ 10^5 CFU/mL",
-                "≥ 10^3 CFU/mL",
-                "≥ 10^2 CFU/mL",
-                "≥ 10^7 CFU/mL",
-                "≥ 10^1 CFU/mL"
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "MUG3-CH107-MICR-0504",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p641"
-              ],
-              "repetitionCount": 1,
-              "text": "What is the recommended standard treatment duration for Nitrofurantoin in uncomplicated cystitis?",
-              "explanation": "**Faculty Model Answer & Core Concept:**\n**5 days**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **5 days** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
-              "options": [
-                "Single dose",
-                "3 days",
-                "14 days",
-                "10 days",
-                "5 days"
-              ],
-              "correctIndex": 4
-            },
-            {
-              "id": "MUG3-CH107-MICR-0505",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p643"
-              ],
-              "repetitionCount": 1,
-              "text": "How is a UTI relapse defined in clinical management?",
-              "explanation": "**Faculty Model Answer & Core Concept:**\n**Infection with the same organism within 2 weeks of treatment**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **Infection with the same organism within 2 weeks of treatment** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
-              "options": [
-                "Infection caused by a completely new strain after 1 month",
-                "Infection with the same organism within 2 weeks of treatment",
-                "Asymptomatic bacterial colonization lasting more than 6 months",
-                "Lower urinary tract symptoms without bacteriuria",
-                "Secondary fungal superinfection following broad-spectrum antibiotics"
-              ],
-              "correctIndex": 1
-            },
-            {
-              "id": "MUG3-CH107-MICR-0506",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p645"
-              ],
-              "repetitionCount": 1,
-              "text": "In urine dipstick testing, a positive leukocyte esterase test specifically signifies the presence of which of the following?",
-              "explanation": "**Faculty Model Answer & Core Concept:**\n**Microscopic glomerular Pyuria**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **Microscopic glomerular Pyuria** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
-              "options": [
-                "Gram-negative bacterial nitrites",
-                "Microscopic glomerular hematuria",
-                "Heavy nephrotic proteinuria",
-                "Microscopic glomerular Pyuria",
-                "Epithelial cell contamination"
-              ],
-              "correctIndex": 3
-            },
-            {
-              "id": "MUG3-CH107-MICR-0507",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p647"
-              ],
-              "repetitionCount": 1,
-              "text": "In urine dipstick testing, a positive nitrite test result specifically signifies the presence of which of the following?",
-              "explanation": "**Faculty Model Answer & Core Concept:**\n**Gram-negative bacteria**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **Gram-negative bacteria** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
-              "options": [
-                "Fungal Candida hyphae",
-                "Gram-positive enterococci",
-                "White blood cell casts",
-                "Gram-negative bacteria",
-                "Red blood cell dysmorphism"
-              ],
-              "correctIndex": 3
-            },
-            {
-              "id": "MUG3-CH107-MICR-0508",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p649"
-              ],
-              "repetitionCount": 1,
-              "text": "Which type of recurrent UTI is defined as an infection caused by a different bacterial strain presenting more than 2 weeks after completing treatment?",
-              "explanation": "**Faculty Model Answer & Core Concept:**\n**Bacterial reinfection**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **Bacterial reinfection** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
-              "options": [
-                "Bacterial relapse",
-                "Asymptomatic bacteriuria",
-                "Bacterial reinfection",
-                "Catheter-associated UTI",
-                "Uncomplicated cystitis"
-              ],
-              "correctIndex": 2
-            },
-            {
-              "id": "MUG3-CH107-MICR-0509",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p651"
-              ],
-              "repetitionCount": 1,
-              "text": "Which diagnostic imaging modality is specifically recommended for visualizing suspected ureteric stones?",
-              "explanation": "**Faculty Model Answer & Core Concept:**\n**Non-contrast computed tomography**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **Non-contrast computed tomography** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
-              "options": [
-                "Plain abdominal radiography (KUB)",
-                "Contrast-enhanced CT urography",
-                "Renal duplex ultrasonography",
-                "Intravenous pyelography (IVP)",
-                "Non-contrast computed tomography"
-              ],
-              "correctIndex": 4
-            },
-            {
-              "id": "MUG3-CH107-MICR-0510",
-              "type": "mcq",
-              "lecture": 1,
-              "sources": [
-                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p653"
-              ],
-              "repetitionCount": 1,
-              "text": "In which of the following clinical scenarios is antimicrobial treatment for asymptomatic bacteriuria explicitly indicated?",
-              "explanation": "**Faculty Model Answer & Core Concept:**\n**Pregnant women at any gestational age**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **Pregnant women at any gestational age** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
-              "options": [
-                "Non-pregnant women with controlled diabetes",
-                "Elderly residents in long-term care facilities",
-                "Pregnant women at any gestational age",
-                "Premenopausal women with recurrent cystitis",
-                "Adult men with mild prostatic enlargement"
-              ],
-              "correctIndex": 2
-            }
-          ]
+          "questions": []
         }
       ]
     },
@@ -40235,6 +39891,293 @@
                 "Chlamydia trachomatis serovars L1-L3"
               ],
               "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH107-MICR-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "💥Urogenital Assessment 1 MCQ.pdf-Q3",
+                "Past Exams/💥Urogenital Assessment 1 MCQ.pdf-Q130"
+              ],
+              "repetitionCount": 2,
+              "text": "A healthy young woman develops uncomplicated cystitis after intercourse. The urine isolate is a motile, lactose-fermenting Gram-negative rod. Which organism is most likely?",
+              "explanation": "E. coli is the most common cause of uncomplicated cystitis and fits the motile lactose-fermenting rod description. K. pneumoniae is typically nonmotile, P. mirabilis does not ferment lactose, and S. saprophyticus is a Gram-positive coccus.",
+              "options": [
+                "Staphylococcus saprophyticus",
+                "Escherichia coli",
+                "Klebsiella pneumoniae",
+                "Proteus mirabilis"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH107-MICR-0501",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p635-2025"
+              ],
+              "repetitionCount": 1,
+              "text": "What is the most common route of urinary tract infection (UTI)?",
+              "explanation": "**Faculty Model Answer & Core Concept:**\n**Ascending route**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **Ascending route** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
+              "options": [
+                "Hematogenous spread",
+                "Lymphatic dissemination",
+                "Ascending route",
+                "Direct extension",
+                "Glomerular filtration"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "MUG3-CH107-MICR-0502",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p637"
+              ],
+              "repetitionCount": 1,
+              "text": "Which bacterial pathogen is responsible for 75% to 95% of urinary tract infections in women?",
+              "explanation": "**Faculty Model Answer & Core Concept:**\n**Escherichia coli**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **Escherichia coli** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
+              "options": [
+                "Klebsiella pneumoniae",
+                "Proteus mirabilis",
+                "Escherichia coli",
+                "Staphylococcus saprophyticus",
+                "Pseudomonas aeruginosa"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "MUG3-CH107-MICR-0503",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p639"
+              ],
+              "repetitionCount": 1,
+              "text": "What quantitative colony count threshold in a midstream urine culture defines significant bacteriuria?",
+              "explanation": "**Faculty Model Answer & Core Concept:**\n**≥ 10^5 CFU/mL**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **≥ 10^5 CFU/mL** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
+              "options": [
+                "≥ 10^5 CFU/mL",
+                "≥ 10^3 CFU/mL",
+                "≥ 10^2 CFU/mL",
+                "≥ 10^7 CFU/mL",
+                "≥ 10^1 CFU/mL"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH107-MICR-0504",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p641"
+              ],
+              "repetitionCount": 1,
+              "text": "What is the recommended standard treatment duration for Nitrofurantoin in uncomplicated cystitis?",
+              "explanation": "**Faculty Model Answer & Core Concept:**\n**5 days**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **5 days** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
+              "options": [
+                "Single dose",
+                "3 days",
+                "14 days",
+                "10 days",
+                "5 days"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "MUG3-CH107-MICR-0505",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p643"
+              ],
+              "repetitionCount": 1,
+              "text": "How is a UTI relapse defined in clinical management?",
+              "explanation": "**Faculty Model Answer & Core Concept:**\n**Infection with the same organism within 2 weeks of treatment**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **Infection with the same organism within 2 weeks of treatment** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
+              "options": [
+                "Infection caused by a completely new strain after 1 month",
+                "Infection with the same organism within 2 weeks of treatment",
+                "Asymptomatic bacterial colonization lasting more than 6 months",
+                "Lower urinary tract symptoms without bacteriuria",
+                "Secondary fungal superinfection following broad-spectrum antibiotics"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "MUG3-CH107-MICR-0506",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p645"
+              ],
+              "repetitionCount": 1,
+              "text": "In urine dipstick testing, a positive leukocyte esterase test specifically signifies the presence of which of the following?",
+              "explanation": "**Faculty Model Answer & Core Concept:**\n**Microscopic glomerular Pyuria**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **Microscopic glomerular Pyuria** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
+              "options": [
+                "Gram-negative bacterial nitrites",
+                "Microscopic glomerular hematuria",
+                "Heavy nephrotic proteinuria",
+                "Microscopic glomerular Pyuria",
+                "Epithelial cell contamination"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "MUG3-CH107-MICR-0507",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p647"
+              ],
+              "repetitionCount": 1,
+              "text": "In urine dipstick testing, a positive nitrite test result specifically signifies the presence of which of the following?",
+              "explanation": "**Faculty Model Answer & Core Concept:**\n**Gram-negative bacteria**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **Gram-negative bacteria** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
+              "options": [
+                "Fungal Candida hyphae",
+                "Gram-positive enterococci",
+                "White blood cell casts",
+                "Gram-negative bacteria",
+                "Red blood cell dysmorphism"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "MUG3-CH107-MICR-0508",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p649"
+              ],
+              "repetitionCount": 1,
+              "text": "Which type of recurrent UTI is defined as an infection caused by a different bacterial strain presenting more than 2 weeks after completing treatment?",
+              "explanation": "**Faculty Model Answer & Core Concept:**\n**Bacterial reinfection**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **Bacterial reinfection** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
+              "options": [
+                "Bacterial relapse",
+                "Asymptomatic bacteriuria",
+                "Bacterial reinfection",
+                "Catheter-associated UTI",
+                "Uncomplicated cystitis"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "MUG3-CH107-MICR-0509",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p651"
+              ],
+              "repetitionCount": 1,
+              "text": "Which diagnostic imaging modality is specifically recommended for visualizing suspected ureteric stones?",
+              "explanation": "**Faculty Model Answer & Core Concept:**\n**Non-contrast computed tomography**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **Non-contrast computed tomography** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
+              "options": [
+                "Plain abdominal radiography (KUB)",
+                "Contrast-enhanced CT urography",
+                "Renal duplex ultrasonography",
+                "Intravenous pyelography (IVP)",
+                "Non-contrast computed tomography"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "MUG3-CH107-MICR-0510",
+              "type": "mcq",
+              "lecture": 1,
+              "sources": [
+                "Past Exams/Urogenital Past Exams- Assessment 1.pdf-p653"
+              ],
+              "repetitionCount": 1,
+              "text": "In which of the following clinical scenarios is antimicrobial treatment for asymptomatic bacteriuria explicitly indicated?",
+              "explanation": "**Faculty Model Answer & Core Concept:**\n**Pregnant women at any gestational age**\n\n**Microbiological Characteristics & Diagnostic Criteria:**\nThis question assesses core urogenital microbiology principles in Urinary Tract Infections. **Pregnant women at any gestational age** represents the proven microbiological etiology, diagnostic cutoff, or pathogenesis factor. Uropathogenic *Escherichia coli* (UPEC) accounts for 75–95% of uncomplicated UTIs via ascending infection facilitated by P fimbriae and adhesins. Laboratory diagnosis relies on significant colony count thresholds (≥10^5 CFU/mL in clean-catch midstream urine) and rapid screening markers (leukocyte esterase for pyuria and nitrite reduction for Gram-negative bacteria).\n\n**High-Yield Microbiology Pearl:**\nDistinguishing relapse (recurrent infection within 2 weeks with the same bacterial strain) from reinfection (infection with a new strain or organism occurring later) guides appropriate antimicrobial stewardship and workup for anatomical urinary tract abnormalities.",
+              "options": [
+                "Non-pregnant women with controlled diabetes",
+                "Elderly residents in long-term care facilities",
+                "Pregnant women at any gestational age",
+                "Premenopausal women with recurrent cystitis",
+                "Adult men with mild prostatic enlargement"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "MUG3-CH207-MICR-0007",
+              "type": "mcq",
+              "lecture": 2,
+              "sources": [
+                "UG ass 2 -2020.pdf-Q4",
+                "Past Exams/UG ass 2 -2020.pdf-Q3"
+              ],
+              "repetitionCount": 2,
+              "text": "Why is serological antibody detection unreliable for the routine definitive diagnosis of acute Neisseria gonorrhoeae infection?",
+              "explanation": "**Correct Answer: High-frequency antigenic variation of bacterial pili and outer membrane proteins (Opa)**\n\n**Microbiological Rationale:**\nNeisseria gonorrhoeae undergoes extensive antigenic variation via DNA recombination and phase variation of its pilin and opacity (Opa) outer membrane proteins. Consequently, serum antibody responses are diverse and do not confer protective immunity or reliable diagnostic serology.",
+              "options": [
+                "High-frequency antigenic variation of bacterial pili and outer membrane proteins (Opa)",
+                "Lack of any humoral immune response in humans to gonococcal surface antigens",
+                "Immediate destruction of all anti-gonococcal antibodies by host macrophages",
+                "Cross-reactivity with normal colonic anaerobic bacteria"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH207-MICR-0010",
+              "type": "mcq",
+              "lecture": 2,
+              "sources": [
+                "UG paper 2 essay answers 2020.pdf-Q2"
+              ],
+              "repetitionCount": 1,
+              "text": "Persistent infection with high-risk human papillomavirus (HPV types 16 and 18) predisposes to cervical intraepithelial neoplasia (CIN) and invasive carcinoma primarily because viral oncoproteins E6 and E7 inhibit which host tumor suppressor proteins?",
+              "explanation": "**Correct Answer: p53 (by E6) and Retinoblastoma protein Rb (by E7)**\n\n**Microbiological & Pathophysiological Rationale:**\nUnder Ain Shams University microbiology curriculum standards for 'Oncogenic Viruses: HPV', high-risk HPV types 16 and 18 integrate into the host genome and overexpress oncoprotein E6 (which promotes ubiquitin-mediated degradation of p53) and oncoprotein E7 (which binds and inactivates Rb, releasing E2F to drive uncontrolled S-phase entry).\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 2, 'Microbiology: Papillomaviruses and Genital Infections'.",
+              "options": [
+                "p53 (by E6) and Retinoblastoma protein Rb (by E7)",
+                "BRCA1 and BRCA2 DNA repair enzymes",
+                "Cyclin-dependent kinase inhibitors p16 and p21",
+                "Vascular endothelial growth factor (VEGF)"
+              ],
+              "correctIndex": 0,
+              "stem": "Persistent infection with high-risk human papillomavirus (HPV types 16 and 18) predisposes to cervical intraepithelial neoplasia (CIN) and invasive carcinoma primarily because viral oncoproteins E6 and E7 inhibit which host tumor suppressor proteins?"
+            },
+            {
+              "id": "MUG3-CH207-MICR-0012",
+              "type": "mcq",
+              "lecture": 2,
+              "sources": [
+                "💥Urogenital Assessment 2 MCQ-1.pdf-Q6",
+                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q81",
+                "Past Exams/UG ass 2 and paper 2.pdf-Q26"
+              ],
+              "repetitionCount": 3,
+              "text": "A young male presents with acute urethral discharge and dysuria. Microscopy of the exudate reveals intracellular Gram-negative diplococci within polymorphonuclear leukocytes. What is the most likely pathogen?",
+              "explanation": "**Correct Answer: Neisseria gonorrhoeae**\n\n**Microbiological & Clinical Rationale:**\nAcute gonococcal urethritis classically presents with profuse purulent urethral discharge. Microscopic identification of Gram-negative kidney-bean shaped diplococci located intracellularly within polymorphonuclear leukocytes (PMNs) is diagnostic of Neisseria gonorrhoeae in males.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, Microbiology: 'Sexually Transmitted Infections'.",
+              "options": [
+                "Neisseria gonorrhoeae",
+                "Chlamydia trachomatis",
+                "Treponema pallidum",
+                "Trichomonas vaginalis"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "MUG3-CH205-PATH-0172",
+              "type": "mcq",
+              "lecture": 3,
+              "sources": [
+                "Past Exams/UG ass 2 and paper 2.pdf-Q71",
+                "final paper 2 - 2019.pdf-Q2",
+                "Past Exams/final paper 2 - 2019.pdf-Q3"
+              ],
+              "repetitionCount": 3,
+              "text": "A newborn develops mucopurulent conjunctivitis in the second week after birth. Conjunctival epithelial cells show intracytoplasmic inclusions. Which organism best fits?",
+              "explanation": "Perinatal chlamydial infection can cause conjunctivitis after the first few days of life. Intracytoplasmic inclusions support chlamydial rather than gonococcal or herpetic infection.",
+              "options": [
+                "Neisseria gonorrhoeae",
+                "Staphylococcus aureus",
+                "Chlamydia trachomatis",
+                "Herpes simplex virus 2"
+              ],
+              "correctIndex": 2
             }
           ]
         }
@@ -46601,9 +46544,13 @@
                 "💥UG Final 2 MCQ Collection.pdf-Q25",
                 "💥Urogenital Assessment 2 MCQ-1.pdf-Q16",
                 "Past Exams/💥UG Final 2 MCQ Collection.pdf-Q97",
-                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q72"
+                "Past Exams/💥Urogenital Assessment 2 MCQ-1.pdf-Q72",
+                "ASS 2 - 2019 RESIT.pdf-Q8",
+                "Past Exams/ASS 2 - 2019 RESIT.pdf-Q7",
+                "UG ass 2 and paper 2.pdf-Q8",
+                "Past Exams/UG ass 2 and paper 2.pdf-Q58"
               ],
-              "repetitionCount": 4,
+              "repetitionCount": 8,
               "text": "A 78 year old was admitted to the hospital due to acute urinary tract",
               "explanation": "**Correct Answer: Obstruction. For the past few years, he has had recurrent bouts of**\n\n**Pathophysiological & Morphological Rationale:**\nAccording to Ain Shams University faculty curriculum standards for 'Pathology of the Urinary Bladder & Urolithiasis', **Obstruction. For the past few years, he has had recurrent bouts of** is the verified finding for this assessment.\n\n**Curriculum Reference & Citation:**\nAin Shams University Urogenital Module Textbook 4th Edition Part 1, 'Diseases of ureter & urinary bladder', pp. 252–257.",
               "options": [
