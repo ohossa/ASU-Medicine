@@ -18,6 +18,19 @@ export const GIT_MARKS_PRESET: ModulePreset = {
  boundaries:{A:221,B:195,C:169,D:156},
  finalPass:{sectionIds:['git-final-1','git-final-2'],minimum:41.6}
 };
+export const MUG_MARKS_PRESET: ModulePreset = {
+ id:'MUG-3', name:'Urogenital System Module',
+ sections:[
+ {id:'mug-assessment-1',name:'Assessment 1',max:25},
+ {id:'mug-assessment-2',name:'Assessment 2',max:25},
+ {id:'mug-computer-lab',name:'Computer lab',max:40},
+ {id:'mug-real-lab',name:'Real lab',max:20},
+ {id:'mug-activities',name:'Activities',max:10},
+ {id:'mug-final-1',name:'Final — Paper 1',max:30},
+ {id:'mug-final-2',name:'Final — Paper 2',max:50}],
+ boundaries:{A:170,B:150,C:130,D:120},
+ finalPass:{sectionIds:['mug-final-1','mug-final-2'],minimum:32}
+};
 export function gradeFromScore(score:number,boundaries:Record<GradeKey,number>):GradeKey|'Fail' {
  for(const grade of ['A','B','C','D'] as const) if(score>=boundaries[grade]) return grade;
  return 'Fail';

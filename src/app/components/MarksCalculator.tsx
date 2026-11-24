@@ -17,7 +17,7 @@ import {
 import { SYLLABUS_MODULES } from "../data";
 import { useTheme } from "../hooks/useTheme";
 
-import {GIT_MARKS_PRESET, evaluateFinalGate, gradeFromScore} from '../lib/marksRules';
+import {GIT_MARKS_PRESET, MUG_MARKS_PRESET, evaluateFinalGate, gradeFromScore} from '../lib/marksRules';
 
 /* ---------------------------------- Types --------------------------------- */
 
@@ -53,6 +53,7 @@ type GradeStatus =
 
 const OFFICIAL_PRESETS: Record<string, ModulePreset> = {
   "MGL-3": GIT_MARKS_PRESET,
+  "MUG-3": MUG_MARKS_PRESET,
   "MCNS-2": {
     id: "MCNS-2",
     name: "CNS Module",
@@ -877,14 +878,26 @@ export function MarksCalculator({ onBack, userButton, studentYear }: { onBack: (
 
               {/* ------------------------------ RIGHT: Results ----------------------------- */}
               <div className="space-y-6">
-                {activeModule.finalPass && <GlassCard className="p-5">
-                  <h2 className="font-semibold text-gray-900 dark:text-white">GIT passing requirements</h2>
-                  <p className="mt-2 text-sm text-gray-600 dark:text-white/60">13 credit points · 260 marks. Pass requires both ≥156 overall and ≥41.6/104 across the two final papers.</p>
-                  <p role="status" className="mt-3 text-sm font-semibold text-gray-900 dark:text-white">
-                    Final: {calc.finalGate.earned.toFixed(2).replace(/0+$/, '').replace(/\.$/, '')}/104 · {calc.finalGate.status === 'passed' ? 'Final requirement met' : calc.finalGate.status === 'failed' ? 'Final requirement not met' : calc.finalGate.status === 'invalid' ? 'Fix invalid final marks' : `Pending — ${Math.max(0,41.6-calc.finalGate.earned).toFixed(2)} more final marks needed`}
-                  </p>
-                  {Object.keys(calc.errors).length > 0 && <p className="mt-2 text-sm text-rose-500">Correct invalid inputs before relying on predictions.</p>}
-                </GlassCard>}
+                {activeModule.finalPass && (() => {
+                  const finalMax = activeModule.sections
+                    .filter((s) => activeModule.finalPass!.sectionIds.includes(s.id))
+                    .reduce((acc, s) => acc + s.max, 0);
+                  const creditPoints = total / 20;
+                  const moduleDisplayName = activeModule.id === "MGL-3" ? "GIT" : activeModule.name;
+
+                  return (
+                    <GlassCard className="p-5">
+                      <h2 className="font-semibold text-gray-900 dark:text-white">{moduleDisplayName} passing requirements</h2>
+                      <p className="mt-2 text-sm text-gray-600 dark:text-white/60">
+                        {creditPoints} credit points · {total} marks. Pass requires both ≥{activeModule.boundaries.D} overall and ≥{activeModule.finalPass.minimum}/{finalMax} across the two final papers.
+                      </p>
+                      <p role="status" className="mt-3 text-sm font-semibold text-gray-900 dark:text-white">
+                        Final: {calc.finalGate.earned.toFixed(2).replace(/0+$/, '').replace(/\.$/, '')}/{finalMax} · {calc.finalGate.status === 'passed' ? 'Final requirement met' : calc.finalGate.status === 'failed' ? 'Final requirement not met' : calc.finalGate.status === 'invalid' ? 'Fix invalid final marks' : `Pending — ${Math.max(0, activeModule.finalPass.minimum - calc.finalGate.earned).toFixed(2)} more final marks needed`}
+                      </p>
+                      {Object.keys(calc.errors).length > 0 && <p className="mt-2 text-sm text-rose-500">Correct invalid inputs before relying on predictions.</p>}
+                    </GlassCard>
+                  );
+                })()}
                 {/* Progress ring */}
                 <GlassCard className="flex flex-col items-center gap-4 p-6 sm:flex-row sm:justify-around">
                   <ProgressRing pct={pctAchieved} label="Achieved" />
