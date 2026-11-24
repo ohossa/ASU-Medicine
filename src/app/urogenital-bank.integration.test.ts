@@ -51,7 +51,7 @@ describe('Integrated Urogenital question bank (MUG-3)', () => {
     expect(bank.meta.moduleCode).toBe('MUG-3');
     expect(bank.meta.creditPoints).toBe(10);
     expect(bank.meta.totalMarks).toBe(200);
-    expect(rawQuestions.length).toBe(2834);
+    expect(rawQuestions.length).toBe(3085);
   });
 
   it('guarantees unique and well-formatted question IDs', () => {
@@ -111,7 +111,7 @@ describe('Integrated Urogenital question bank (MUG-3)', () => {
       0,
     );
 
-    expect(practiceCount).toBe(1901);
+    expect(practiceCount).toBe(2152);
     expect(pastCount).toBe(933);
     expect(practiceCount + pastCount).toBe(rawQuestions.length);
   });
