@@ -49,6 +49,8 @@ Read the existing target bank, catalog, schema, importer, loader, grading code, 
 | Bulk intake converter | `data-format-v2/scripts/import-ready.ts` |
 | Direct batch converter | `data-format-v2/scripts/import-batch.ts` |
 | Bank validator | `data-format-v2/scripts/validate-banks.ts` |
+| Shared quality rules | `data-format-v2/scripts/question-quality.ts` |
+| Deep quality auditor | `scripts/audit-question-quality.ts` |
 | Runtime conversion and bank loading | `src/app/data.ts` |
 | Shared answer grading | `src/app/utils/quiz.ts` |
 | Owner correction overlays | `src/app/lib/publishedEdits.ts` |
@@ -474,6 +476,84 @@ Add meaningful regression checks for the concrete import risks. Do not write ass
 - Taxonomy IDs, names, lecture ranges, and mode counts are consistent.
 - Explanations add a reason and contain no generic fallback or unsupported assertion.
 
+### Master zero-mistake quality audit matrix (Phased checklist — Categories A–H)
+
+Run **every applicable category** before declaring any bank intake, repair batch, or module release ready. Automated coverage lives in `data-format-v2/scripts/question-quality.ts`, `data-format-v2/scripts/validate-banks.ts`, `scripts/audit-question-quality.ts`, and `src/test/question-quality.test.ts`.
+
+#### Category A — Character Encoding, Control Escapes & LaTeX Integrity
+- [ ] Zero ASCII control bytes (`\x00–\x08`, `\x0b`, `\x0c`, `\x0e–\x1f`) in stems, options, `modelAnswer`, or explanations.
+- [ ] Zero Python/JSON unescaped LaTeX control sequences (`\a`lf/`\x07lpha`, `\b`et/`\x08eta`, `\x07pprox`, literal `\t` before `ext`/`heta`/`imes`/`au`, literal `\r` before `ightarrow`/`ho`, literal `\f` before `rac`). Inspect JSON output to verify single runtime backslash (`\alpha`, `\beta`, `\rightarrow`, `\frac`, `\text`) rather than double-escaped `\\rightarrow`.
+- [ ] Zero UTF-8 mojibake (`â€™`, `â€œ`, `ï»¿`), replacement glyphs (`\ufffd`), bidirectional override characters (`\u202a–\u202e`), or foreign homoglyph noise (`\u0400–\u04ff`, `\u0e00–\u0eff`).
+- [ ] Balanced unescaped KaTeX math delimiters (`$` and `$$`) whenever LaTeX commands are present; never allow OCR symbols like `$4` in place of `S4` to break math parsing.
+- [ ] Preserve meaningful scientific notation (`+ve`, `-ve`, `5-HT`, `17α-OHP`, `2.5` vs `25`, `H+`, `Ca2+`, `pKa`, `≤`/`≥`).
+
+#### Category B — OCR Noise, Scanner Artifacts & Spliced-Line Elimination
+- [ ] Zero scanner footers (`Scanned with CamScanner`, `Scanned by`, `CamScann`) anywhere in stems, options, rubrics, or explanations.
+- [ ] Zero book/sheet running headers embedded inside questions or essay answers (e.g., `7 SM UROGENITAL ...`, `15 SM UROGENITAL`, `BIOCHEMISTRY ACADEMY`, `PULSE ...`, author watermarks).
+- [ ] Zero truncated / garbled OCR words (`beh aa`, `IHoinguinal`, `Liohypogastrie`, `ner!`, `dene ae`, `raat eee`, `panies of duodenum`, `naalopens`, `en aoe`, `correc se`, `8ccreta`, `dig ng`, `Slat`, `Allofthe`).
+- [ ] Zero ASCII visual noise bars or broken symbols (`-—--—--`, isolated trailing `"i` / `“i`, stray `@ [A-Z]` markers, vertical-bar `|t` for `It`).
+- [ ] Zero stray margin page numbers (e.g., `107`, `424`, `111`, `121`) captured as phantom MCQ options alongside pure multi-word medical choices.
+- [ ] Zero adjacent-column text splicing (stem halves of two distinct PDF questions merged into one item, e.g. renal papilla mixed with nephron textbook prose, or left/right kidney stems mixed with opposite options).
+- [ ] Zero unmatched trailing quotes left by cut-off OCR blocks (e.g., `"...passage of nutritive substa"`).
+- [ ] Zero internal reviewer meta-notes (`Restore the original format...`, `compare 0309 for overlap...`) left inside student-facing `modelAnswer` or `explanation`.
+
+#### Category C — Stem Completeness, Clarity & Numbering Preservation
+- [ ] Every stem reads as a complete, self-contained question or clinical prompt (never stops mid-word like `...from beh aa`, never starts mid-sentence like `inferiorly, the posterior surfaces of th` or `It is a`).
+- [ ] Clean display numbering: strip leading question numbers (`1.`, `Q24)`, `12 -`) on new intakes without stripping legitimate clinical prefixes (`1st`, `24-hour`, `4-year-old`, `0.9%`, `5-fluorouracil`, `17-OHP`).
+- [ ] Preserve and check polarity words (`NOT`, `EXCEPT`, `INCORRECT`, `FALSE`, `LEAST likely`); never invert question polarity silently while cleaning punctuation.
+- [ ] Zero mid-stem leaked answer keys (`(Answer: B)`, `[Correct: C]`, underlined/highlighted remnants copied directly from PDF keys).
+- [ ] Clinical patient context preserved: age, sex, lab units (`mg/dL`, `mEq/L`, `mOsm/kg`, `mL/min`), time course, and vital thresholds match source images.
+- [ ] For case studies: parent stem introduces patient/scenario cleanly; every child stem (`subQuestions`) makes clear clinical sense both standalone and under the parent case.
+
+#### Category D — Option Set Integrity & Shuffle-Safe Construction
+- [ ] Zero split-sentence leaks where the tail of the stem spills into Option 0 (`"include all of the following EXCEPT"`, `"s, a stone usually lodges at"`, `"arterioles"`).
+- [ ] Zero stray option prefixes (`< Spleen`, `<. Allofthe above`, `. Have very thick basement membrane`, `a. `, `b) `) while preserving valid dot/symbol answers (`.pptx`, `.xlsx`, `<`, `>`).
+- [ ] Every MCQ option is non-empty, distinct after whitespace/punctuation/case normalization, and grammatically parallel with its sibling options.
+- [ ] Default minimum of 4 distinct, medically plausible options per single-best-answer MCQ unless the designated source explicitly defines a 3-option or 5-option item.
+- [ ] True/False items strictly use `["True", "False"]` (True at index `0`, False at index `1`).
+- [ ] Flag and inspect positional choices (`"All of the above"`, `"None of the above"`, `"Both A and B"`, `"B and C"`) for runtime option-shuffle safety before release.
+
+#### Category E — Schema Fidelity, Answer Mapping & Special Question Formats
+- [ ] Canonical JSON fields only: essays use non-empty **`modelAnswer`** (never a rogue `"answer"` key); MCQs/TFs use **`options`** + integer **`correctIndex`** (`0 <= correctIndex < options.length`).
+- [ ] Never map answers via blind ASCII arithmetic or clamping; verify printed source labels (`a–e`, `e–h`, `1–4`) match the exact text at `options[correctIndex]`.
+- [ ] Never accept missing keys defaulted to index `0`.
+- [ ] Essay `modelAnswer` contains substantive faculty scoring points—never just a topic heading, `"See above"`, bare word, or leftover PDF header (`7 SM UROGENITAL...`).
+- [ ] `matching` questions have complete `premise`/`target` pairs, unique unambiguous pairings, and shuffle-safe grading verified against content.
+- [ ] `fillblank` questions match the exact count of `___` placeholders in `text` with `blanks.length` and preserve `acceptedAnswers` variants cleanly.
+- [ ] `case` sub-questions validate per child (`mcq`, `essay`, `fillblank`) with unique globally-scoped `subQuestion.id`s.
+
+#### Category F — Medical Accuracy & Explanation Pedigree
+- [ ] Every released new parent & child has a medically verified mechanism-based explanation (~15–60 words or structured rubric) explaining **why** the answer is right and **why** major distractors are wrong.
+- [ ] Zero generic placeholder explanations (`Review the related lecture material`, `This question evaluates essential clinical competencies...` without specific mechanism).
+- [ ] For `NOT` / `EXCEPT` stems, explanation explicitly confirms why the keyed answer is the exception while distractors fit the rule.
+- [ ] No textbook-footer mismatches (e.g., citing a Pathology lecture inside an Anatomy lumbosacral trunk question, or a kidney corpuscle answer on a blood-testis barrier essay).
+- [ ] Biochemistry & Pharmacology precision check: enzyme/cofactor identity, rate-limiting step, direction of shift, toxicity/antidote, drug class, and receptor selectivity verified against curriculum/reference.
+
+#### Category G — Taxonomy, Routing, Deduplication & Owner-Overlay Conservation
+- [ ] Every practice question's `lecture` falls within `1..subject.lectureCount`, and `subject.lectureNames.length === subject.lectureCount`.
+- [ ] Subject IDs belong strictly to the allowed catalog (`anatomy`, `histology`, `physiology`, `biochem`, `microbiology`, `pathology`, `pharma`, `clinical`, `parasitology`, `psychiatry`, `ophthalmology`, `ent`).
+- [ ] Past-exam chapters preserve `bankSection: "past-exams"`, CA-1/CA-2 subject-eligibility rules (e.g., CA remains MCQ-only without out-of-scope subjects), and separation from practice chapters.
+- [ ] Duplicate IDs check returns zero collisions across parent questions and nested case `subQuestions`.
+- [ ] Owner correction overlays (`publishedEdits` / `contentVersion` SHA-256) reconciled; resolved student reports remain closed and replied to cleanly.
+
+#### Category H — Cache Busting, Service Worker Parity & Post-Push Production Verification
+- [ ] `vite.config.ts` Workbox `globPatterns` / `globIgnores` excludes HTML (`**/*.html`) from `precacheAndRoute` so `/` and deep routes always hit `NetworkFirst` (never trapped Cache-First).
+- [ ] Navigation `NetworkFirst` uses a realistic timeout (`>= 3s–4s`, not `0.5s`) and `cleanupOutdatedCaches: true` is enabled.
+- [ ] `vercel.json` serves `/`, `/index.html`, SPA rewrites, `/sw.js`, and `/version.json` with `Cache-Control: no-cache, no-store, must-revalidate` while keeping `/assets/*` `immutable`.
+- [ ] `SiteUpdateNotice` / `useVersionCheck` never interrupts active quizzes (`isQuizActive`), preserves progress via `asu:save-before-refresh`, clears `asu-navigation*` + `workbox-precache*` caches, and auto-updates idle tabs safely.
+- [ ] `node scripts/generate-bank-manifest.mjs && node scripts/generate-version.mjs && node scripts/generate-sitemap.mjs` regenerated prior to build.
+- [ ] After an authorized push, verify live commit SHA on `https://asu.codes/version.json`, verify `dist/sw.js` / live `/sw.js` omits HTML precaching, and inspect live hashed module JS chunk (`curl`) for fixed stems/options.
+
+#### Required Automated Verification Commands
+```bash
+npx tsx data-format-v2/scripts/validate-banks.ts
+npx tsx scripts/audit-question-quality.ts src/imports/year-3/semester-1/MUG-3.json   # add --strict for brand-new intakes
+npx vitest run src/test/question-quality.test.ts src/app/import-routing.test.ts src/app/special-senses.test.ts
+npx vitest run src/test/lifecycle/version-check.test.ts src/app/components/SiteUpdateNotice.test.tsx
+npm test
+npm run build
+```
+
 ### Runtime gates
 
 Load the canonical bank through `src/app/data.ts` and grade through the shared helper. Test:
@@ -639,6 +719,7 @@ For the next Biochemistry job, add the designated PDF paths and explicitly reque
 - [ ] Subject/chapter/lecture taxonomy and past-exam separation correct.
 - [ ] All answer indices and special-format fields survive conversion and runtime loading.
 - [ ] Source accounting, bank counts, and change conservation agree.
+- [ ] All checks in Section 13 **Master zero-mistake quality audit matrix (Categories A–H)** verified (`validate-banks.ts` green across 42 banks; `audit-question-quality.ts` 0 errors on target bank).
 - [ ] Required tests, strict typecheck, production build, and relevant UI checks pass.
 - [ ] Only authorized files staged; no secrets or unrelated work included.
 - [ ] Authorized deployment tied to the exact commit and inspected live, or clearly left local.

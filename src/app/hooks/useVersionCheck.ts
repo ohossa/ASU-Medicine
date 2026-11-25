@@ -51,13 +51,13 @@ export function applyAppUpdate(): void {
   // 1. Dispatch save event for any uncommitted quiz/study progress
   window.dispatchEvent(new CustomEvent("asu:save-before-refresh"));
 
-  // 2. Clear navigation caches so fresh index.html is loaded
+  // 2. Clear navigation & workbox precaches so fresh index.html + entry chunk load
   if ("caches" in window) {
     caches
       .keys()
       .then((names) => {
         for (const name of names) {
-          if (name.includes("asu-navigation")) {
+          if (name.includes("asu-navigation") || name.includes("workbox-precache")) {
             caches.delete(name).catch(() => {});
           }
         }
@@ -73,6 +73,8 @@ export function applyAppUpdate(): void {
     window.location.reload();
   }, 100);
 }
+
+const POLL_INTERVAL_MS = 3 * 60 * 1000;
 
 export function useVersionCheck(_options?: { isQuizActive?: boolean }) {
   const [updateAvailable, setUpdateAvailable] = useState(false);
@@ -95,7 +97,14 @@ export function useVersionCheck(_options?: { isQuizActive?: boolean }) {
       void checkVersion();
     }, 5000);
 
-    // 2. Check version on window focus and iPad visibility change
+    // 2. Periodic visible-tab check so open idle tabs catch deploys promptly
+    const pollTimer = setInterval(() => {
+      if (document.visibilityState === "visible") {
+        void checkVersion();
+      }
+    }, POLL_INTERVAL_MS);
+
+    // 3. Check version on window focus and iPad visibility change
     const onFocus = () => checkVersion();
     const onVisibility = () => {
       if (document.visibilityState === "visible") {
@@ -103,7 +112,7 @@ export function useVersionCheck(_options?: { isQuizActive?: boolean }) {
       }
     };
 
-    // 3. Listen to service worker update notification
+    // 4. Listen to service worker update notification
     const onSwUpdate = () => {
       setUpdateAvailable(true);
     };
@@ -114,6 +123,7 @@ export function useVersionCheck(_options?: { isQuizActive?: boolean }) {
 
     return () => {
       clearTimeout(initialTimer);
+      clearInterval(pollTimer);
       window.removeEventListener("focus", onFocus);
       document.removeEventListener("visibilitychange", onVisibility);
       window.removeEventListener("asu:sw-update-available", onSwUpdate);

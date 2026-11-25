@@ -159,5 +159,45 @@ describe("Version Invalidation & Auto-Update Engine", () => {
       });
       vi.useRealTimers();
     });
+
+    it("clears asu-navigation and workbox-precache caches while keeping hashed banks", async () => {
+      const deleted: string[] = [];
+      vi.stubGlobal("caches", {
+        keys: vi.fn().mockResolvedValue([
+          "asu-navigation-v2",
+          "workbox-precache-v2-https://asu.codes/",
+          "asu-visited-banks-v2",
+        ]),
+        delete: vi.fn((name: string) => {
+          deleted.push(name);
+          return Promise.resolve(true);
+        }),
+      });
+      const reloadSpy = vi.fn();
+      const originalReload = window.location.reload;
+      Object.defineProperty(window.location, "reload", {
+        value: reloadSpy,
+        writable: true,
+        configurable: true,
+      });
+
+      vi.useFakeTimers();
+      applyAppUpdate();
+      await Promise.resolve();
+      await Promise.resolve();
+      vi.advanceTimersByTime(150);
+
+      expect(deleted).toContain("asu-navigation-v2");
+      expect(deleted).toContain("workbox-precache-v2-https://asu.codes/");
+      expect(deleted).not.toContain("asu-visited-banks-v2");
+      expect(reloadSpy).toHaveBeenCalledOnce();
+
+      Object.defineProperty(window.location, "reload", {
+        value: originalReload,
+        writable: true,
+        configurable: true,
+      });
+      vi.useRealTimers();
+    });
   });
 });

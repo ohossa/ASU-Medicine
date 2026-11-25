@@ -35,10 +35,12 @@ const config: UserConfig & { test: InlineConfig } = {
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
+        cleanupOutdatedCaches: true,
         navigateFallback: null,
-        globPatterns: ['**/*.{js,css,html,png,svg,ico,woff2,mp3}'],
+        globPatterns: ['**/*.{js,css,png,svg,ico,woff2,mp3}'],
         maximumFileSizeToCacheInBytes: 15 * 1024 * 1024,
         globIgnores: [
+          '**/*.html',
           ...Object.keys(bankManifest).map(code => `**/${code}-*.js`),
           '**/graph-*.js',
           '**/version.json',
@@ -48,11 +50,8 @@ const config: UserConfig & { test: InlineConfig } = {
             urlPattern: ({ request }) => request.mode === 'navigate',
             handler: 'NetworkFirst',
             options: {
-              cacheName: 'asu-navigation-v2',
-              networkTimeoutSeconds: 0.5,
-              precacheFallback: {
-                fallbackURL: '/index.html',
-              },
+              cacheName: 'asu-navigation-v3',
+              networkTimeoutSeconds: 4,
             },
           },
           {

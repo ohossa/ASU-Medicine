@@ -35,12 +35,31 @@ export function questionQualityIssues(q:QuestionContent):string[]{
  const fields=[q.text??q.question??'',q.explanation??'',q.modelAnswer??'',q.keyConcept??'',...(q.options??[]),...(q.blanks??[]),...(q.pairs??[]).flatMap(p=>[p.premise,p.target])];
  for(const text of fields){
   if(typeof text!=='string'){errors.push('Non-text display field.');continue;}
-  if(/[\u0400-\u04ff\u0e00-\u0eff\u202a-\u202e\ufffd\x00]|\bPULSE\b(?=\s+[A-Z0-9])|Dr\s+Marw[ae]\s+Hamdy|Scanned (?:by|with)|\s[¢¥]\)\s|CamScann|sessss|Ssssuueu|sssusse|BIOCHEMIST[A-Z]{2,}|BIOCHEM(?:ISTRY)?\s+ACADEMY/.test(text))errors.push('Corrupt OCR, source footer, or directional control in display text.');
+  if(
+   /[\u0400-\u04ff\u0e00-\u0eff\u202a-\u202e\ufffd\x00-\x08\x0b\x0c\x0e-\x1f]|\t(?:ext(?:bf|it|rm|sf)?|heta|imes|au)|\r(?:ightarrow|ightleftharpoons|ho)|â€™|â€œ|ï»¿/.test(text) ||
+   /\bPULSE\b(?=\s+[A-Z0-9])|Dr\s+Marw[ae]\s+Hamdy|Scanned (?:by|with)|\s[¢¥]\)\s|CamScann|sessss|Ssssuueu|sssusse|BIOCHEMIST[A-Z]{2,}|BIOCHEM(?:ISTRY)?\s+ACADEMY|\bbeh aa\b|IHoinguinal|Liohypogastrie|ner!|raat eee|dene ae|panies of duodenum|naalopens|en aoe|correc se|-—--—--|\b\d{1,2}\s+SM\s+UROGENITAL|\bAllofthe\b|substa"|je aaa\)|dig ng|8ccreta|Restore the original format/.test(text)
+  ) errors.push('Corrupt OCR, LaTeX escape, source footer, or directional control in display text.');
+  const unescapedDollars=(text.match(/(?<!\\)\$/g)??[]).length;
+  if(unescapedDollars%2!==0 && (/\\(?:alpha|beta|gamma|delta|pi|sigma|approx|rightarrow|frac|text|cdot|leq|geq)\b|\$\$/.test(text) || !/\$\d/.test(text))) {
+   errors.push('Unbalanced LaTeX/math delimiter ($).');
+  }
  }
  if(q.type==='mcq'||q.type==='truefalse'){
   const options=q.options??[];
+  const stem=q.text??q.question??'';
   if(options.length<2||options.some(o=>typeof o!=='string'||!o.trim()))errors.push('At least two nonempty options required.');
   if(new Set(options.map(normalizeContent)).size!==options.length)errors.push('Duplicated alternatives.');
+  const asksNumeric=/\b(?:how many|number|percent|%|ph\b|specific gravity|osmolar|clearance|gfr|pressure|level|ratio|score|age|years?|weeks?|days?|hours?|minutes?|cm|mm|mg|ml|meq|mmol|grams?|liters?|count|value|how long|how much|weight|temp)\b/i.test(stem);
+  for(const opt of options){
+   const s=typeof opt==='string'?opt.trim():'';
+   if(/^(?:<\.?\s+[A-Za-z]|s,\s)/.test(s))errors.push(`Corrupt option prefix leaked from source/OCR: "${s.slice(0,40)}".`);
+   if(!asksNumeric && /^\d{2,4}$/.test(s) && options.length>=3){
+    const siblings=options.filter(o=>o!==opt).map(o=>String(o).trim());
+    if(siblings.every(sib=>!/\d/.test(sib) && (sib.match(/[a-zA-Z]/g)??[]).length>=6)){
+     errors.push(`Suspected stray page-number option "${s}" among text options.`);
+    }
+   }
+  }
   try{resolveAnswerIndex(q,options);}catch(e){errors.push((e as Error).message);}
   if(q.type==='truefalse'&&options.map(normalizeContent).join('|')!=='true|false')errors.push('True/false options must be True then False.');
  }

@@ -1,4 +1,4 @@
-import { it, expect, vi, afterEach } from "vitest";
+import { it, expect, vi, afterEach, beforeEach } from "vitest";
 import {
   render,
   screen,
@@ -7,7 +7,11 @@ import {
   act,
 } from "@testing-library/react";
 import { SiteUpdateNotice } from "./SiteUpdateNotice";
+beforeEach(() => {
+  sessionStorage.clear();
+});
 afterEach(() => {
+  vi.useRealTimers();
   cleanup();
   vi.unstubAllGlobals();
 });
@@ -38,4 +42,21 @@ it("does not interrupt first-time installation", () => {
   expect(
     screen.queryByRole("button", { name: "Save and refresh" }),
   ).not.toBeInTheDocument();
+});
+it("never auto-reloads while a quiz is active, but auto-reloads idle tabs after grace period", () => {
+  vi.useFakeTimers();
+  vi.stubGlobal("fetch", vi.fn().mockResolvedValue({ ok: false }));
+  const worker = Object.assign(new EventTarget(), { controller: {} });
+  vi.stubGlobal("navigator", { serviceWorker: worker });
+  const reload = vi.fn();
+  const { rerender } = render(<SiteUpdateNotice reload={reload} isQuizActive={true} />);
+  act(() => worker.dispatchEvent(new Event("controllerchange")));
+  act(() => vi.advanceTimersByTime(5000));
+  expect(reload).not.toHaveBeenCalled();
+  expect(screen.getByText("Update ready")).toBeInTheDocument();
+
+  rerender(<SiteUpdateNotice reload={reload} isQuizActive={false} />);
+  expect(screen.getByText("Updating app…")).toBeInTheDocument();
+  act(() => vi.advanceTimersByTime(1600));
+  expect(reload).toHaveBeenCalledOnce();
 });

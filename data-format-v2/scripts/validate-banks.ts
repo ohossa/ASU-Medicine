@@ -191,6 +191,10 @@ export function validateModuleFile(bank: QuestionBankFile): string[] {
           ids.add(q.id);
         }
 
+        if ('answer' in q) {
+          errors.push(`${qLoc}: unexpected "answer" property; canonical banks must use "modelAnswer" or "correctIndex".`);
+        }
+
         for (const issue of questionQualityIssues(q)) errors.push(`${qLoc}: ${issue}`);
 
         // Text check
@@ -251,6 +255,9 @@ export function validateModuleFile(bank: QuestionBankFile): string[] {
           } else {
             q.subQuestions.forEach((sq, sqIdx) => {
               const sqLoc = `${qLoc} -> SubQuestion index ${sqIdx + 1} (${sq.id || 'NO ID'})`;
+              if ('answer' in sq) {
+                errors.push(`${sqLoc}: unexpected "answer" property; canonical sub-questions must use "modelAnswer" or "correctIndex".`);
+              }
               if (typeof sq.id !== 'string' || !sq.id.trim()) {
                 errors.push(`${sqLoc}: sub-question "id" must be a non-empty string.`);
               } else {

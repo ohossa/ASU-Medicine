@@ -767,13 +767,15 @@ function MainApp() {
 
   // Track active quiz status for seamless background update decisions
   useEffect(() => {
+    const active = screen === 'quiz';
     try {
-      if (screen === 'quiz') {
+      if (active) {
         sessionStorage.setItem('asu:active-quiz', '1');
       } else {
         sessionStorage.removeItem('asu:active-quiz');
       }
     } catch {}
+    window.dispatchEvent(new CustomEvent('asu:quiz-state', { detail: { active } }));
   }, [screen]);
 
   const handleSelectChapter = (chapter: ChapterData) => {

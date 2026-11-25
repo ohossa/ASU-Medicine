@@ -26,7 +26,7 @@ window.addEventListener("vite:preloadError", () => {
     if ("caches" in window) {
       caches.keys().then((names) => {
         for (const name of names) {
-          if (name.includes("asu-navigation")) {
+          if (name.includes("asu-navigation") || name.includes("workbox-precache")) {
             caches.delete(name).catch(() => {});
           }
         }

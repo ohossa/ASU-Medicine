@@ -1,10 +1,22 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { applyAppUpdate, useVersionCheck } from "../hooks/useVersionCheck";
+
+const AUTO_UPDATE_DELAY_MS = 1500;
+const AUTO_UPDATE_COOLDOWN_MS = 30_000;
+const AUTO_UPDATE_KEY = "asu:last-auto-update";
+
+function readStoredQuizActive(): boolean {
+  try {
+    return sessionStorage.getItem("asu:active-quiz") === "1";
+  } catch {
+    return false;
+  }
+}
 
 /**
  * Apple HIG Liquid Glass floating update notice.
- * Keeps an open tab's old application code from silently outliving a deployed fix.
- * Safeguards active quizzes with an accessible, non-disruptive floating capsule.
+ * Auto-applies fresh deployments when idle outside a quiz, and safeguards active
+ * quizzes with an accessible, non-disruptive floating capsule.
  */
 export function SiteUpdateNotice({
   reload = () => applyAppUpdate(),
@@ -14,7 +26,23 @@ export function SiteUpdateNotice({
   isQuizActive?: boolean;
 }) {
   const [swAvailable, setSwAvailable] = useState(false);
-  const { updateAvailable: versionAvailable } = useVersionCheck({ isQuizActive });
+  const [trackedQuizActive, setTrackedQuizActive] = useState<boolean>(readStoredQuizActive);
+  const effectiveQuizActive = isQuizActive ?? trackedQuizActive;
+  const { updateAvailable: versionAvailable } = useVersionCheck({ isQuizActive: effectiveQuizActive });
+  const reloadedRef = useRef(false);
+
+  useEffect(() => {
+    const onQuizState = (event: Event) => {
+      const detail = (event as CustomEvent<{ active?: boolean }>).detail;
+      if (typeof detail?.active === "boolean") {
+        setTrackedQuizActive(detail.active);
+      } else {
+        setTrackedQuizActive(readStoredQuizActive());
+      }
+    };
+    window.addEventListener("asu:quiz-state", onQuizState);
+    return () => window.removeEventListener("asu:quiz-state", onQuizState);
+  }, []);
 
   useEffect(() => {
     if (!("serviceWorker" in navigator)) return;
@@ -28,7 +56,33 @@ export function SiteUpdateNotice({
     return () => worker.removeEventListener("controllerchange", changed);
   }, []);
 
+  const triggerReload = useCallback(() => {
+    if (reloadedRef.current) return;
+    reloadedRef.current = true;
+    window.dispatchEvent(new Event("asu:save-before-refresh"));
+    reload();
+  }, [reload]);
+
   const isVisible = swAvailable || versionAvailable;
+
+  useEffect(() => {
+    if (!isVisible || effectiveQuizActive) return;
+    try {
+      const last = Number(sessionStorage.getItem(AUTO_UPDATE_KEY) || 0);
+      if (Date.now() - last < AUTO_UPDATE_COOLDOWN_MS) return;
+    } catch {
+      // ignore storage failures
+    }
+    const timer = setTimeout(() => {
+      try {
+        sessionStorage.setItem(AUTO_UPDATE_KEY, String(Date.now()));
+      } catch {
+        // ignore storage failures
+      }
+      triggerReload();
+    }, AUTO_UPDATE_DELAY_MS);
+    return () => clearTimeout(timer);
+  }, [isVisible, effectiveQuizActive, triggerReload]);
 
   if (!isVisible) return null;
 
@@ -44,17 +98,14 @@ export function SiteUpdateNotice({
           <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
         </span>
         <span className="text-xs sm:text-sm font-medium tracking-tight text-stone-800 dark:text-stone-200 whitespace-nowrap">
-          Update ready
+          {effectiveQuizActive ? "Update ready" : "Updating app…"}
         </span>
       </div>
 
       <button
         type="button"
         className="inline-flex min-h-[44px] min-w-[44px] cursor-pointer items-center justify-center rounded-full bg-emerald-600 px-4 py-2 text-xs sm:text-sm font-semibold text-white shadow-sm transition-all hover:bg-emerald-500 active:scale-[0.97] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500 dark:bg-emerald-500 dark:hover:bg-emerald-400 dark:text-stone-950"
-        onClick={() => {
-          window.dispatchEvent(new Event("asu:save-before-refresh"));
-          reload();
-        }}
+        onClick={triggerReload}
       >
         Save and refresh
       </button>

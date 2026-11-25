@@ -21,8 +21,8 @@ describe('Challenger 2 — Adversarial Loader & Boundary Tests for MUG-3', () =>
     expect(manifestEntry.mcqCount).toBe(1848);
     expect(manifestEntry.essayCount).toBe(1237);
     expect(manifestEntry.paths).toEqual(['../imports/year-3/semester-1/MUG-3.json']);
-    expect(manifestEntry.revision).toBe('785f7b986fbb2df128b3cf2ef69445cb93298b70b388f2d2a9064673486bccd4');
-    expect(manifestEntry.bytes).toBe(4479478);
+    expect(manifestEntry.revision).toBe('484a9b6e4920527a9c1a8b88fd9177a0d191d84a950add07f99b3957435ed5f7');
+    expect(manifestEntry.bytes).toBe(4467292);
   });
 
   it('reports module question counts from manifest when not yet in memory', () => {
