@@ -4146,8 +4146,8 @@
     "semantic_hash": "2ffa3b85e60c5e009954037ddbb13a79"
   },
   "src/app/generated/bankManifest.json": {
-    "mtime": 1795814179.9579759,
-    "seen": 1795814215.15445,
+    "mtime": 1795815286.3481748,
+    "seen": 1795815323.55901,
     "ast_hash": "27ac72ba31d4a37cf7644f35902afe0b",
     "semantic_hash": ""
   },
@@ -13068,9 +13068,9 @@
     "semantic_hash": ""
   },
   "public/version.json": {
-    "mtime": 1795814180.001887,
-    "seen": 1795814215.1471,
-    "ast_hash": "0e04d2f104e9dfcc636abaea56d93db8",
+    "mtime": 1795815286.401305,
+    "seen": 1795815323.552109,
+    "ast_hash": "abba15d3d2eb6b5d2223ee95a7433916",
     "semantic_hash": ""
   },
   "scripts/generate-version.mjs": {
@@ -13080,9 +13080,9 @@
     "semantic_hash": ""
   },
   "src/app/generated/version.json": {
-    "mtime": 1795814180.0020854,
-    "seen": 1795814215.154451,
-    "ast_hash": "0e04d2f104e9dfcc636abaea56d93db8",
+    "mtime": 1795815286.4015641,
+    "seen": 1795815323.559011,
+    "ast_hash": "abba15d3d2eb6b5d2223ee95a7433916",
     "semantic_hash": ""
   },
   "src/app/hooks/useVersionCheck.ts": {
@@ -23370,15 +23370,15 @@
     "semantic_hash": ""
   },
   "server/d1-client.ts": {
-    "mtime": 1795792849.886329,
-    "seen": 1795793449.775455,
-    "ast_hash": "d8f2d3793b2fdeed95b47f6c1b93c41c",
+    "mtime": 1795815285.9902356,
+    "seen": 1795815323.555939,
+    "ast_hash": "e1805ec2323bff9aafd2fbef5864a7a2",
     "semantic_hash": ""
   },
   "server/r2-client.ts": {
-    "mtime": 1795792735.4595654,
-    "seen": 1795793449.7754638,
-    "ast_hash": "bcc04205d99db01bd68d7dc53dec1163",
+    "mtime": 1795815163.4277973,
+    "seen": 1795815323.556121,
+    "ast_hash": "5b1836817c5f556aab1eff06155bb222",
     "semantic_hash": ""
   },
   "src/app/already-made-questions-expansion.test.ts": {

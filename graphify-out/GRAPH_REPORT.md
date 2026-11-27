@@ -1,7 +1,7 @@
 # Graph Report - ASU-Medical-Portal  (2026-11-27)
 
 ## Corpus Check
-- 1955 files · ~29,754,907 words
+- 1955 files · ~29,754,882 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 263 file(s) not represented in the graph (top: .jsonl 147, .woff2 42, .css 31)
 
@@ -11,7 +11,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0eb01663`
+- Built from commit: `95499d0d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
