@@ -55,7 +55,7 @@ export function createLearningService(d: Dependencies) {
       )
         throw new ReportError(400, "Invalid learning submission.");
       if (!b.moduleCode.endsWith("-" + year))
-        throw new ReportError(400, "Only your current academic year earns XP.");
+        throw new ReportError(409, "Sync your current academic year to submit these answers.");
       const bank = await d.bank(b.moduleCode),
         seen = new Set<string>(),
         rewards: NonNullable<ReturnType<typeof prepareReward>>[] = [];

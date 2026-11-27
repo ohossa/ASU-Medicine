@@ -3,6 +3,6 @@ import './xp-award.css';
 export function XPAwardBubble({ amount }: { amount: number }) {
   if (!Number.isSafeInteger(amount) || amount <= 0) return null;
   return <div className="xp-award-bubble" role="status" aria-live="polite" aria-atomic="true">
-    <Sparkles size={15} aria-hidden="true" /><span dir="ltr">+{amount} XP</span>
+    <Sparkles size={15} aria-hidden="true" /><span dir="ltr">+{amount} XP</span><span className="xp-award-sync-label">Pending sync</span>
   </div>;
 }

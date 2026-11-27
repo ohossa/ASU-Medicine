@@ -8,6 +8,8 @@ import {
   type ReactNode,
 } from "react";
 import { useAuth } from "@clerk/clerk-react";
+import { getCachedSession } from "../auth/cachedSession";
+import type { LearningXpHint } from "./learningAnswerGrade";
 import type {
   LearningDashboard,
   LearningDashboardResponse,
@@ -26,7 +28,7 @@ interface Context {
   refresh: () => Promise<void>;
   retry: () => Promise<void>;
   discard: () => void;
-  submit: (s: LearningSubmission) => void;
+  submit: (s: LearningSubmission, options?: { defer?: boolean; xp?: LearningXpHint[] }) => boolean;
   settings: (patch: Partial<LearningProfile>) => Promise<void>;
 }
 const LearningContext = createContext<Context | null>(null);
@@ -34,6 +36,7 @@ export const queueKey = (id: string) => `asu_learning_pending:${id}`;
 interface Pending {
   id: string;
   submission: LearningSubmission;
+  xpNoticeIds?: string[];
 }
 function readQueue(id: string): Pending[] {
   try {
@@ -43,6 +46,17 @@ function readQueue(id: string): Pending[] {
     return [];
   }
 }
+const xpNoticeKey = (id: string) => `asu_learning_xp_notices:${id}`;
+
+function readXpNoticeIds(id: string): string[] {
+  try {
+    const value = JSON.parse(localStorage.getItem(xpNoticeKey(id)) ?? "[]");
+    return Array.isArray(value) ? value.filter((item) => typeof item === "string") : [];
+  } catch {
+    return [];
+  }
+}
+
 const cacheKey = (id: string, period: string) => `asu_learning_snapshot:${id}:${period}`;
 
 function readSnapshot(key: string): LearningDashboard | null {
@@ -77,7 +91,12 @@ function applyLearningResponse(
 }
 
 export function LearningProvider({ children }: { children: ReactNode }) {
-  const { userId, getToken, isLoaded } = useAuth();
+  const { userId: authenticatedId, getToken, isLoaded } = useAuth();
+  const userId = authenticatedId ?? (!isLoaded && typeof navigator !== "undefined" && navigator.onLine === false
+    ? getCachedSession()?.userId
+    : null);
+  const authId = useRef(authenticatedId);
+  authId.current = authenticatedId;
   const token = useRef(getToken);
   token.current = getToken;
   const activeId = useRef(userId);
@@ -91,7 +110,8 @@ export function LearningProvider({ children }: { children: ReactNode }) {
     [error, setError] = useState(""),
     [pending, setPending] = useState(0),
     [period, setPeriod] = useState("weekly");
-  const [awardNotice,setAwardNotice]=useState<{id:number;account:string;amount:number}|null>(null);
+  const [awardNotice, setAwardNotice] = useState<{ id: number; account: string; amount: number } | null>(null);
+  const noticeSequence = useRef(0);
   useEffect(()=>{if(!awardNotice)return;const timeout=setTimeout(()=>setAwardNotice(null),2200);return()=>clearTimeout(timeout);},[awardNotice]);
   const scope = userId ? cacheKey(userId, period) : null;
   const activeScope = useRef(scope);
@@ -102,6 +122,7 @@ export function LearningProvider({ children }: { children: ReactNode }) {
   const request = useCallback(
     async <T,>(method = "GET", body?: unknown, entriesCursor = "full"): Promise<T> => {
       const requestId = activeId.current;
+      if (!requestId || authId.current !== requestId) throw new Error("Your answers are saved on this device.");
       const t = await token.current();
       if (activeId.current !== requestId) throw new Error("Account changed.");
       if (!t) throw new Error("Sign in to sync your learning.");
@@ -148,7 +169,14 @@ export function LearningProvider({ children }: { children: ReactNode }) {
         const data = applyLearningResponse(base, response);
         history.current = { key, data };
         setSnapshot({ id, data });
-        try { localStorage.setItem(key, JSON.stringify(data)); } catch { /* Keep the in-memory copy. */ }
+        try {
+          localStorage.setItem(key, JSON.stringify(data));
+          const acknowledged = readXpNoticeIds(id);
+          if (acknowledged.length) {
+            const stored = new Set(data.entries.filter((entry) => entry.everCorrect || entry.correct).map((entry) => entry.questionId));
+            localStorage.setItem(xpNoticeKey(id), JSON.stringify(acknowledged.filter((entryId) => !stored.has(entryId))));
+          }
+        } catch { /* Keep the in-memory copy. */ }
         setError("");
       }
     } catch (e) {
@@ -159,36 +187,31 @@ export function LearningProvider({ children }: { children: ReactNode }) {
   }, [userId, scope, request]);
   const retry = useCallback(async () => {
     const id = userId;
-    if (!id || busy.current.has(id)) return;
+    if (!id || authId.current !== id || busy.current.has(id) || navigator.onLine === false) return;
     const initialQueue = readQueue(id);
     if (initialQueue.length === 0) return;
     busy.current.add(id);
     setSyncing(true);
+    let flushed = false;
+    let failure: unknown;
+    const blockedModules = new Set<string>();
     try {
       let queue = initialQueue;
-      let flushed = false;
       while (queue.length && activeId.current === id) {
-        const first = queue[0];
-        // Coalesce contiguous items for the same module (up to 50 questions per batch)
+        const moduleCode = queue[0].submission.moduleCode;
         const batch: typeof queue = [];
-        let totalQuestions = 0;
+        const uniqueItems = new Map<string, LearningSubmission["items"][number]>();
         for (const item of queue) {
-          if (item.submission.moduleCode === first.submission.moduleCode) {
-            const count = item.submission.items?.length || 0;
-            if (totalQuestions + count <= 50) {
-              batch.push(item);
-              totalQuestions += count;
-              continue;
-            }
-          }
-          break;
-        }
+          if (item.submission.moduleCode !== moduleCode) break;
+          const items = item.submission.items.filter((answer) => answer?.questionId);
+          if (batch.length && (uniqueItems.size + items.length > 50 || items.some((answer) => {
+            const previous = uniqueItems.get(answer.questionId);
+            return previous && JSON.stringify(previous.answer) !== JSON.stringify(answer.answer);
+          }))) break;
 
-        const uniqueItems = new Map<string, any>();
-        for (const item of batch.flatMap((b) => b.submission.items || [])) {
-          if (item && item.questionId) {
-            uniqueItems.set(item.questionId, item);
-          }
+          // The server accepts one answer per question in a batch. Keep changed answers in order.
+          for (const answer of items) uniqueItems.set(answer.questionId, answer);
+          batch.push(item);
         }
 
         const batchIds = new Set(batch.map((b) => b.id));
@@ -196,65 +219,58 @@ export function LearningProvider({ children }: { children: ReactNode }) {
         if (uniqueItems.size === 0) {
           const latest = readQueue(id).filter((item) => !batchIds.has(item.id));
           localStorage.setItem(queueKey(id), JSON.stringify(latest));
-          queue = latest;
+          queue = latest.filter((item) => !blockedModules.has(item.submission.moduleCode));
           flushed = true;
-          if (activeId.current === id) setPending(queue.length);
+          if (activeId.current === id) setPending(latest.length);
           continue;
         }
 
         const mergedSubmission: LearningSubmission = {
-          moduleCode: first.submission.moduleCode,
+          moduleCode,
           items: Array.from(uniqueItems.values()),
         };
 
         try {
-          const result = await request<{ personal?: number }>("POST", mergedSubmission);
-          if (activeId.current === id && Number.isSafeInteger(result.personal) && result.personal! > 0) {
-            if (!document.hidden) setAwardNotice({ id: Date.now(), account: id, amount: result.personal! });
-            setSnapshot((prev) => {
-              if (!prev || prev.id !== id) return prev;
-              const nextXp = prev.data.profile.xp + result.personal!;
-              return {
-                ...prev,
-                data: {
-                  ...prev.data,
-                  profile: {
-                    ...prev.data.profile,
-                    xp: nextXp,
-                    level: Math.floor(nextXp / 500) + 1,
-                  },
-                },
-              };
-            });
+          await request("POST", mergedSubmission);
+          const acknowledged = batch.flatMap((item) => item.xpNoticeIds ?? []);
+          if (acknowledged.length) {
+            localStorage.setItem(xpNoticeKey(id), JSON.stringify([...new Set([...readXpNoticeIds(id), ...acknowledged])]));
           }
           const latest = readQueue(id).filter((item) => !batchIds.has(item.id));
           localStorage.setItem(queueKey(id), JSON.stringify(latest));
-          queue = latest;
+          queue = latest.filter((item) => !blockedModules.has(item.submission.moduleCode));
           flushed = true;
-          if (activeId.current === id) setPending(queue.length);
+          if (activeId.current === id) setPending(latest.length);
         } catch (itemErr: any) {
-          // If server rejected item permanently (400 Bad Request, 409 Conflict), drop the batch to unblock queue
-          if (itemErr && (itemErr.status === 400 || itemErr.status === 409)) {
-            const latest = readQueue(id).filter((item) => !batchIds.has(item.id));
-            localStorage.setItem(queueKey(id), JSON.stringify(latest));
-            queue = latest;
-            flushed = true;
-            if (activeId.current === id) setPending(queue.length);
+          if (itemErr?.status === 409) {
+            failure = itemErr;
+            blockedModules.add(moduleCode);
+            queue = readQueue(id).filter((item) => !blockedModules.has(item.submission.moduleCode));
             continue;
           }
-          // For network or server errors (503, 500, etc.), halt and keep for next retry
+          if (itemErr?.status === 400) {
+            const latest = readQueue(id).filter((item) => !batchIds.has(item.id));
+            localStorage.setItem(queueKey(id), JSON.stringify(latest));
+            queue = latest.filter((item) => !blockedModules.has(item.submission.moduleCode));
+            flushed = true;
+            if (activeId.current === id) setPending(latest.length);
+            continue;
+          }
+          // Keep queued answers after a network or server error.
           throw itemErr;
         }
       }
-      if (flushed && activeId.current === id) await refresh();
     } catch (e) {
-      if (activeId.current === id)
-        setError(
-          e instanceof Error ? e.message : "Your attempt is pending sync.",
-        );
+      failure = e;
     } finally {
       busy.current.delete(id);
-      setSyncing(false);
+      if (activeId.current === id) {
+        setSyncing(false);
+        if (flushed) await refresh();
+        if (failure && activeId.current === id) {
+          setError(failure instanceof Error ? failure.message : "Your attempt is pending sync.");
+        }
+      }
     }
   }, [userId, request, refresh]);
   useEffect(() => {
@@ -262,6 +278,7 @@ export function LearningProvider({ children }: { children: ReactNode }) {
     const cached = scope ? readSnapshot(scope) : null;
     setSnapshot(userId&&cached?{id:userId,data:cached}:null);
     setPending(userId ? readQueue(userId).length : 0);
+    setSyncing(Boolean(userId && busy.current.has(userId)));
     if (isLoaded && userId) {
       void refresh();
       if (readQueue(userId).length) void retry();
@@ -310,28 +327,59 @@ export function LearningProvider({ children }: { children: ReactNode }) {
   }, [retry, refresh, isLoaded, userId]);
 
   const submit = useCallback(
-    (submission: LearningSubmission) => {
-      if (!userId) return;
+    (submission: LearningSubmission, { defer = false, xp = [] }: { defer?: boolean; xp?: LearningXpHint[] } = {}) => {
+      if (!userId || submission.items.length === 0) return false;
       const queue = readQueue(userId);
       try {
-        for (let i = 0; i < submission.items.length; i += 25)
+        const seen = new Set<string>();
+        if (xp.length) {
+          const current = history.current?.key === scope ? history.current.data : scope ? readSnapshot(scope) : null;
+          const confirmed = current ?? readSnapshot(cacheKey(userId, period === "weekly" ? "all" : "weekly"));
+          for (const entry of confirmed?.entries ?? []) {
+            if (entry.correct || entry.everCorrect) seen.add(entry.questionId);
+          }
+          for (const id of readXpNoticeIds(userId)) seen.add(id);
+          for (const item of queue) {
+            for (const id of item.xpNoticeIds ?? []) seen.add(id);
+          }
+        }
+        let amount = 0;
+        let chunk: LearningSubmission["items"] = [];
+        const putChunk = () => {
+          const ids = chunk.map((item) => item.questionId);
+          const xpNoticeIds: string[] = [];
+          for (const hint of xp) {
+            if (seen.has(hint.questionId) || !ids.some((id) => hint.questionId === id || hint.questionId.startsWith(id + "/"))) continue;
+            xpNoticeIds.push(hint.questionId);
+            seen.add(hint.questionId);
+            amount += hint.points;
+          }
           queue.push({
             id: crypto.randomUUID(),
-            submission: {
-              ...submission,
-              items: submission.items.slice(i, i + 25),
-            },
+            submission: { moduleCode: submission.moduleCode, items: chunk },
+            ...(xpNoticeIds.length ? { xpNoticeIds } : {}),
           });
+        };
+        for (const item of submission.items) {
+          if (chunk.length === 25 || chunk.some((previous) => previous.questionId === item.questionId)) {
+            putChunk();
+            chunk = [];
+          }
+          chunk.push(item);
+        }
+        if (chunk.length) putChunk();
+
         localStorage.setItem(queueKey(userId), JSON.stringify(queue));
         setPending(queue.length);
-        void retry();
+        if (amount > 0) setAwardNotice({ id: ++noticeSequence.current, account: userId, amount });
+        if (!defer) void retry();
+        return true;
       } catch {
-        setError(
-          "Device storage is full. This attempt could not be queued for XP.",
-        );
+        setError("Device storage is full. This attempt could not be queued for XP.");
+        return false;
       }
     },
-    [userId, retry],
+    [userId, scope, period, retry],
   );
   const settings = useCallback(
     async (patch: Partial<LearningProfile>) => {

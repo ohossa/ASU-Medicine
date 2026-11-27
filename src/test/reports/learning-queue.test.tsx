@@ -11,11 +11,11 @@ import {
   useLearning,
   queueKey,
 } from "../../app/learning/LearningProvider";
-const auth = vi.hoisted(() => ({ id: "alice" }));
+const auth = vi.hoisted(() => ({ id: "alice" as string | undefined, loaded: true }));
 vi.mock("@clerk/clerk-react", () => ({
   useAuth: () => ({
     userId: auth.id,
-    isLoaded: true,
+    isLoaded: auth.loaded,
     getToken: async () => auth.id,
   }),
 }));
@@ -37,6 +37,13 @@ function Harness() {
         Submit
       </button>
       <button onClick={() => void c.retry()}>Retry</button>
+      <button onClick={() => {
+        c.submit({ moduleCode: "MGL-3", items: [{ questionId: "q", answer: 1 }] },
+          { defer: true, xp: [{ questionId: "q", points: 10 }] });
+      }}>Correct</button>
+      <button onClick={() => {
+        c.submit({ moduleCode: "MGL-3", items: [{ questionId: "q", answer: 2 }] }, { defer: true });
+      }}>Wrong</button>
     </>
   );
 }
@@ -45,6 +52,8 @@ afterEach(() => {
   localStorage.clear();
   vi.unstubAllGlobals();
   auth.id = "alice";
+  auth.loaded = true;
+  vi.restoreAllMocks();
 });
 it("keeps failed submissions durable and only uses server-confirmed XP", async () => {
   let fail = true;
@@ -99,23 +108,41 @@ it("does not load another account’s pending attempts", async () => {
   );
   expect(JSON.parse(localStorage.getItem(queueKey("bob"))!)).toHaveLength(1);
 });
-it('shows only server-confirmed positive XP and never invents points for duplicate awards', async () => {
-  let points = 10;
-  vi.stubGlobal('fetch', vi.fn(async (_url, options) => ({
-    ok: true,
-    json: async () => options.method === 'GET'
-      ? { profile: { xp: 10 }, entries: [], leaderboard: [] }
-      : { personal: points, competitive: points },
-  })));
+it("shows XP immediately, stores the answer offline, and only updates the confirmed total after sync", async () => {
+  let online = false;
+  let xp = 0;
+  const fetch = vi.fn(async (_url, options) => {
+    if (options.method === "GET") {
+      return { ok: true, json: async () => ({ profile: { xp }, entries: [], leaderboard: [] }) };
+    }
+    if (!online) return { ok: false, status: 502, json: async () => ({ error: "Sync unavailable" }) };
+    xp = 10;
+    return { ok: true, json: async () => ({ personal: 10, competitive: 10 }) };
+  });
+  vi.stubGlobal("fetch", fetch);
   render(<LearningProvider><Harness /></LearningProvider>);
-  fireEvent.click(screen.getByText('Submit'));
-  expect(screen.queryByText('+10 XP')).not.toBeInTheDocument();
-  await screen.findByText('+10 XP');
-  points = 0;
-  fireEvent.click(screen.getByText('Submit'));
-  await waitFor(() => expect(screen.getByText('0 pending')).toBeInTheDocument());
-  expect(screen.queryByText('+0 XP')).not.toBeInTheDocument();
+  await screen.findByText("0");
+
+  fireEvent.click(screen.getByText("Correct"));
+  expect(screen.getByText("+10 XP")).toBeInTheDocument();
+  expect(screen.getByText("Pending sync")).toBeInTheDocument();
+  expect(screen.getByText("0")).toBeInTheDocument();
+  expect(fetch.mock.calls.filter(([, options]) => options.method === "POST")).toHaveLength(0);
+  expect(JSON.parse(localStorage.getItem(queueKey("alice"))!)).toHaveLength(1);
+
+  fireEvent.click(screen.getByText("Retry"));
+  await screen.findByText("Sync unavailable");
+  expect(JSON.parse(localStorage.getItem(queueKey("alice"))!)).toHaveLength(1);
+  online = true;
+  fireEvent.click(screen.getByText("Retry"));
+  await screen.findByText("10");
+  expect(JSON.parse(localStorage.getItem(queueKey("alice"))!)).toHaveLength(0);
+
+  const notice = screen.getByText("+10 XP").parentElement;
+  fireEvent.click(screen.getByText("Correct"));
+  expect(screen.getByText("+10 XP").parentElement).toBe(notice);
 });
+
 it('refreshes server progress when returning to an already-open tab', async()=>{
  let xp=0;
  vi.stubGlobal('fetch',vi.fn(async()=>({ok:true,json:async()=>({profile:{xp},entries:[],leaderboard:[]})})));
@@ -190,4 +217,59 @@ it("merges cross-device changes and deletions into the signed-in student's cache
   expect(JSON.parse(localStorage.getItem("asu_learning_snapshot:bob:weekly")!).entries).toEqual([
     { entryId: "bob", questionId: "q3" },
   ]);
+});
+
+it("keeps an offline reload queued, then sends correct and wrong retries in their original order", async () => {
+  auth.id = undefined;
+  auth.loaded = false;
+  const connection = vi.spyOn(navigator, "onLine", "get").mockReturnValue(false);
+  localStorage.setItem("asu:cached-auth", JSON.stringify({ userId: "alice" }));
+  const posts: number[] = [];
+  const fetch = vi.fn(async (_url, options) => {
+    if (options.method === "POST") {
+      posts.push(JSON.parse(options.body).items[0].answer);
+    }
+    return { ok: true, json: async () => ({ profile: { xp: 10 }, entries: [], leaderboard: [] }) };
+  });
+  vi.stubGlobal("fetch", fetch);
+
+  const offline = render(<LearningProvider><Harness /></LearningProvider>);
+  fireEvent.click(screen.getByText("Correct"));
+  expect(screen.getByText("+10 XP")).toBeInTheDocument();
+  fireEvent.click(screen.getByText("Wrong"));
+  expect(JSON.parse(localStorage.getItem(queueKey("alice"))!)).toHaveLength(2);
+  expect(fetch).not.toHaveBeenCalled();
+  offline.unmount();
+
+  auth.id = "alice";
+  auth.loaded = true;
+  connection.mockReturnValue(true);
+  render(<LearningProvider><Harness /></LearningProvider>);
+  await waitFor(() => expect(posts).toEqual([1, 2]));
+  await waitFor(() => expect(screen.getByText("0 pending")).toBeInTheDocument());
+  expect(screen.queryByText("+10 XP")).not.toBeInTheDocument();
+});
+
+it("preserves temporary year conflicts while sending items for the current year", async () => {
+  const queue = queueKey("alice");
+  localStorage.setItem(queue, JSON.stringify([
+    { id: "older", submission: { moduleCode: "MSS-2", items: [{ questionId: "a", answer: true }] } },
+    { id: "current", submission: { moduleCode: "MGL-3", items: [{ questionId: "b", answer: true }] } },
+  ]));
+  const submissions: string[] = [];
+  vi.stubGlobal("fetch", vi.fn(async (_url, options) => {
+    if (options.method === "POST") {
+      const moduleCode = JSON.parse(options.body).moduleCode;
+      submissions.push(moduleCode);
+      if (moduleCode === "MSS-2") {
+        return { ok: false, status: 409, json: async () => ({ error: "Sync your current academic year to submit these answers." }) };
+      }
+    }
+    return { ok: true, json: async () => ({ profile: { xp: 0 }, entries: [], leaderboard: [] }) };
+  }));
+  render(<LearningProvider><Harness /></LearningProvider>);
+  await screen.findByText("Sync your current academic year to submit these answers.");
+  expect(screen.getByText("1 pending")).toBeInTheDocument();
+  expect(submissions).toEqual(["MSS-2", "MGL-3"]);
+  expect(JSON.parse(localStorage.getItem(queue)!).map((item: { id: string }) => item.id)).toEqual(["older"]);
 });

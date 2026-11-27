@@ -1,3 +1,5 @@
+import { committedAnswerValue } from "./learning/committedAnswer";
+import { learningXpHints } from "./learning/learningAnswerGrade";
 import {findTopicPracticeSession} from './learning/topicPracticeSession';
 import {topicScores,questionScore,resumeCustomPractice,resumeMultiChapterPractice,selectedPractice,practiceTopics,type TopicScore} from './learning/customPractice';
 import {RouteDataGate} from './loading/RouteDataGate';
@@ -832,9 +834,11 @@ function MainApp() {
   useEffect(() => {
     if (screen !== 'quiz') return;
     const targetYear = getModuleAcademicYear(selectedModule?.code, selectedYear);
-    if (targetYear && studentYear !== targetYear) {
-      void setStudentYear(targetYear).catch(() => {});
-    }
+    if (!targetYear || studentYear === targetYear) return;
+    const syncYear = () => { void setStudentYear(targetYear).catch(() => {}); };
+    syncYear();
+    window.addEventListener("online", syncYear);
+    return () => window.removeEventListener("online", syncYear);
   }, [screen, selectedModule?.code, selectedYear, studentYear, setStudentYear]);
 
   const learning = useLearning();
@@ -867,46 +871,33 @@ function MainApp() {
     setQuizPayload({chapter,childAnchor:params.get('child')??undefined,subject:resume?(custom?.subject??{...(target.subject??chapter.subjects[0]),name:resume,questions}):params.has('missed')?missedPracticeSubject(subject,questions,chapter.accentColor):subject,questions:validSaved?(validSaved.questionIds?restoreQuestionOrder(questions,validSaved.questionIds)!:questions):questions,savedSession:validSaved});setScreen('quiz');
   },[location.pathname,location.search,bankRevision,learning.data]);
 
-  const answerBufferRef = useRef<{ questionId: string; answer: QuizAnswer }[]>([]);
-  const answerFlushTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  const flushAnswerBuffer = useCallback(() => {
-    if (answerFlushTimerRef.current) {
-      clearTimeout(answerFlushTimerRef.current);
-      answerFlushTimerRef.current = null;
-    }
-    if (!answerBufferRef.current.length || !selectedModule) return;
-    const items = [...answerBufferRef.current];
-    answerBufferRef.current = [];
-    learning.submit({ moduleCode: selectedModule.code, items });
-  }, [learning, selectedModule]);
-
-  const handleAnswerXP = useCallback((q: Question, answer: QuizAnswer) => {
-    if (!selectedModule) return;
-    const targetYear = getModuleAcademicYear(selectedModule.code, selectedYear);
-    if (targetYear && studentYear !== targetYear) {
-      void setStudentYear(targetYear).catch(() => {});
-    }
-    answerBufferRef.current.push({ questionId: String(q.id), answer });
-    if (answerFlushTimerRef.current) clearTimeout(answerFlushTimerRef.current);
-    answerFlushTimerRef.current = setTimeout(flushAnswerBuffer, 2500);
-  }, [selectedModule, selectedYear, studentYear, setStudentYear, flushAnswerBuffer]);
-
+  const { submit: submitLearning, retry: syncLearning } = learning;
+  const queuedAnswers = useRef<{ questions: Question[]; signatures: Map<string, string> } | null>(null);
+  const wasInQuiz = useRef(false);
   useEffect(() => {
-    return () => {
-      if (answerFlushTimerRef.current) {
-        clearTimeout(answerFlushTimerRef.current);
-        answerFlushTimerRef.current = null;
+    if (wasInQuiz.current && screen !== "quiz") {
+      queuedAnswers.current = null;
+      void syncLearning();
+    }
+    wasInQuiz.current = screen === "quiz";
+  }, [screen, syncLearning]);
+
+  const handleAnswerXP = useCallback((question: Question, answer: QuizAnswer) => {
+    if (!selectedModule || !quizPayload) return;
+    const id = String(question.id);
+    const saved = submitLearning(
+      { moduleCode: selectedModule.code, items: [{ questionId: id, answer }] },
+      { defer: true, xp: learningXpHints(question, answer) },
+    );
+    if (saved) {
+      if (queuedAnswers.current?.questions !== quizPayload.questions) {
+        queuedAnswers.current = { questions: quizPayload.questions, signatures: new Map() };
       }
-    };
-  }, []);
+      queuedAnswers.current.signatures.set(id, JSON.stringify(answer));
+    }
+  }, [selectedModule, quizPayload, submitLearning]);
 
   const handleFinishQuiz = (answers: Record<number, QuizAnswer>, elapsedSeconds: number, flaggedQuestions: Set<number>) => {
-    if (answerFlushTimerRef.current) {
-      clearTimeout(answerFlushTimerRef.current);
-      answerFlushTimerRef.current = null;
-    }
-    answerBufferRef.current = [];
     const questions = quizPayload!.questions;
     
     const scoreParts=questions.map((q,i)=>questionScore(q,answers[i]));
@@ -914,7 +905,18 @@ function MainApp() {
     const correct=scoreParts.reduce((n,s)=>n+s.correct,0);
     const topicResults=topicScores(questions,answers);
 
-    if(selectedModule) learning.submit({moduleCode:selectedModule.code,items:questions.flatMap((q,i)=>answers[i]===undefined?[]:[{questionId:String(q.id),answer:answers[i]}])});
+    if (selectedModule) {
+      const saved = queuedAnswers.current?.questions === questions ? queuedAnswers.current.signatures : undefined;
+      const remaining = questions.flatMap((question, index) => {
+        const answer = committedAnswerValue(question, answers[index]);
+        const questionId = String(question.id);
+        return answer === undefined || saved?.get(questionId) === JSON.stringify(answer)
+          ? []
+          : [{ questionId, answer }];
+      });
+      submitLearning({ moduleCode: selectedModule.code, items: remaining }, { defer: true });
+      void syncLearning();
+    }
     setIsFromHistory(false);
     saveQuizResult({
       questionSnapshot:freezeAttempt(questions),

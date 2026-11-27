@@ -1,4 +1,5 @@
 import { it, expect } from "vitest";
+import { learningXpHints } from "../../app/learning/learningAnswerGrade";
 import { prepareReward, weekKey } from "../../../server/learning-policy";
 const snapshot = (type = "truefalse", index = 0) => ({
   moduleCode: "MGL-3",
@@ -59,4 +60,26 @@ it("fails closed on absent keys and malformed/unanswered selections", () => {
 });
 it("sets Cairo Monday week boundaries", () => {
   expect(weekKey(new Date("2026-10-11T22:30:00Z"))).toBe("2026-10-12");
+});
+
+it("previews XP for committed case parts independently with the same reward rules as the server", () => {
+  const question = {
+    id: "case-1",
+    type: "case" as const,
+    subQuestions: [
+      { id: "mcq", text: "Choose one", explanation: "", type: "mcq" as const, options: ["A", "B"], correctIndex: 1 },
+      { id: "essay", text: "Explain", explanation: "", type: "essay" as const },
+      { id: "blank", text: "Complete", explanation: "", type: "fillblank" as const, blanks: ["correct"] },
+    ],
+  };
+  const answer = {
+    mcq: 1,
+    essay: { text: "This is long enough to be graded.", selfGrade: "correct" },
+    blank: { inputs: ["correct"], submitted: false },
+  };
+  expect(learningXpHints(question, answer)).toEqual([
+    { questionId: "case-1/mcq", points: 10 },
+    { questionId: "case-1/essay", points: 15 },
+  ]);
+  expect(learningXpHints(question, { mcq: 0, essay: { text: "short", selfGrade: "correct" } })).toEqual([]);
 });

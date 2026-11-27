@@ -1,7 +1,7 @@
 import { createHash } from "node:crypto";
 import type { QuestionSnapshot } from "../src/app/reports/contracts.js";
 import type { Question } from "../src/app/types.js";
-import { checkAnswerCorrect } from "../src/app/utils/quiz.js";
+import { gradeLearningAnswer } from "../src/app/learning/learningAnswerGrade.js";
 export function cairoDay(date = new Date()) {
   return new Intl.DateTimeFormat("en-CA", {
     timeZone: "Africa/Cairo",
@@ -28,55 +28,9 @@ export function prepareReward(snapshot: QuestionSnapshot, answer: unknown) {
     /^[A-Z]$/i.test(raw.correctAnswer)
   )
     q.correctIndex = raw.correctAnswer.toUpperCase().charCodeAt(0) - 65;
-  if (answer === undefined || answer === null) return null;
-  const a = answer as Record<string, unknown>;
-  let points = 0;
-  if (q.type === "mcq" || q.type === "truefalse") {
-    if (
-      !Number.isInteger(q.correctIndex) ||
-      q.correctIndex! < 0 ||
-      q.correctIndex! >= (q.options?.length ?? (q.type === "truefalse" ? 2 : 0))
-    )
-      return null;
-    if (
-      q.type === "truefalse"
-        ? !(typeof answer === "boolean" || answer === 0 || answer === 1)
-        : !(
-            typeof answer === "number" &&
-            Number.isInteger(answer) &&
-            answer >= 0 &&
-            answer < (q.options?.length ?? 0)
-          )
-    )
-      return null;
-    points = q.type === "truefalse" ? 5 : 10;
-  } else if (q.type === "essay") {
-    if (
-      typeof a.text !== "string" ||
-      a.text.trim().length < 20 ||
-      !["correct", "incorrect"].includes(String(a.selfGrade))
-    )
-      return null;
-    points = 15;
-  } else if (q.type === "matching" || q.type === "fillblank") {
-    if (typeof answer !== "object" || a.submitted !== true) return null;
-    if (
-      q.type === "fillblank" &&
-      (!Array.isArray(a.inputs) ||
-        a.inputs.some((v) => typeof v !== "string" || v.length > 2000))
-    )
-      return null;
-    if (
-      q.type === "matching" &&
-      (!Array.isArray(a.scrambled) ||
-        a.scrambled.some((v) => typeof v !== "string") ||
-        !a.matches ||
-        typeof a.matches !== "object")
-    )
-      return null;
-    points = 10;
-  } else return null;
-  const correct = checkAnswerCorrect(q, answer);
+  const grade = gradeLearningAnswer(q, answer);
+  if (!grade) return null;
+  const { correct, points } = grade;
   const text = q.text
     .replace(/^\s*(?:Q(?:uestion)?\s*)?\d+[.)\-:]\s*/i, "")
     .replace(/\s+/g, " ")

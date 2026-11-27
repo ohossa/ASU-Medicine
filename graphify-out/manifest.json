@@ -3462,15 +3462,15 @@
     "semantic_hash": ""
   },
   "server/learning-policy.ts": {
-    "mtime": 1795792735.4547255,
-    "seen": 1795793449.775457,
-    "ast_hash": "d8e43899c485b61f0e1254edd49094d0",
-    "semantic_hash": "d8e43899c485b61f0e1254edd49094d0"
+    "mtime": 1795813864.600444,
+    "seen": 1795814215.151337,
+    "ast_hash": "69ace2065b00a85b4a49a103b7121b16",
+    "semantic_hash": ""
   },
   "server/learning-service.ts": {
-    "mtime": 1795792980.9367242,
-    "seen": 1795793449.775457,
-    "ast_hash": "fe5b8c5ad6f6d46e4d18915a55c79d4d",
+    "mtime": 1795813928.533426,
+    "seen": 1795814215.151338,
+    "ast_hash": "1892624fd512cd74a05c99fd316816c7",
     "semantic_hash": ""
   },
   "server/learning-store.ts": {
@@ -3630,9 +3630,9 @@
     "semantic_hash": ""
   },
   "src/app/App.tsx": {
-    "mtime": 1795792735.4659085,
-    "seen": 1795793449.775481,
-    "ast_hash": "487cc07921d2c4f0a6935e433f36fac7",
+    "mtime": 1795814058.1666574,
+    "seen": 1795814215.151867,
+    "ast_hash": "a64547c1600a8d577b25e35ec36b6ced",
     "semantic_hash": ""
   },
   "src/app/biochemistry-bank.integration.test.ts": {
@@ -4146,8 +4146,8 @@
     "semantic_hash": "2ffa3b85e60c5e009954037ddbb13a79"
   },
   "src/app/generated/bankManifest.json": {
-    "mtime": 1795793304.11108,
-    "seen": 1795793449.775578,
+    "mtime": 1795814179.9579759,
+    "seen": 1795814215.15445,
     "ast_hash": "27ac72ba31d4a37cf7644f35902afe0b",
     "semantic_hash": ""
   },
@@ -4302,16 +4302,16 @@
     "semantic_hash": "cd2d65c7dd4d906b3200230d94f212c2"
   },
   "src/app/learning/LearningProvider.tsx": {
-    "mtime": 1795793042.7312047,
-    "seen": 1795793449.7756019,
-    "ast_hash": "c6e94d5efc1a96ca5d644e9f59f66182",
+    "mtime": 1795814179.6992536,
+    "seen": 1795814215.155071,
+    "ast_hash": "84aa4faa50839a14a7075ff2d19bb771",
     "semantic_hash": ""
   },
   "src/app/learning/XPAwardBubble.tsx": {
-    "mtime": 1795792735.514783,
-    "seen": 1795793449.775603,
-    "ast_hash": "a05ef23ecc0799b8e61b77de7f78633a",
-    "semantic_hash": "a05ef23ecc0799b8e61b77de7f78633a"
+    "mtime": 1795813928.5337687,
+    "seen": 1795814215.155072,
+    "ast_hash": "6b5045a714e7dd2d762fbdf7dc8ae1be",
+    "semantic_hash": ""
   },
   "src/app/learning/attemptSnapshot.ts": {
     "mtime": 1795792735.5148616,
@@ -5400,10 +5400,10 @@
     "semantic_hash": "1298fd44ce37386cc383c63add8651c6"
   },
   "src/test/reports/learning-policy.test.ts": {
-    "mtime": 1795792735.6964583,
-    "seen": 1795793449.775776,
-    "ast_hash": "af4424df8bf22c0661c151337f67b466",
-    "semantic_hash": "af4424df8bf22c0661c151337f67b466"
+    "mtime": 1795814127.274389,
+    "seen": 1795814215.1596851,
+    "ast_hash": "2d82781c8c7b53fc301efcc06142c5a9",
+    "semantic_hash": ""
   },
   "src/test/reports/learning-progress.test.ts": {
     "mtime": 1795792735.696538,
@@ -5412,9 +5412,9 @@
     "semantic_hash": "f97dba5c6ad52f3a330008ed153dead5"
   },
   "src/test/reports/learning-queue.test.tsx": {
-    "mtime": 1795793210.3471282,
-    "seen": 1795793449.775777,
-    "ast_hash": "534f471a1383786ab97f60432e6667e4",
+    "mtime": 1795814100.922657,
+    "seen": 1795814215.159706,
+    "ast_hash": "f7261cc95e7377c2a520b47f027e7847",
     "semantic_hash": ""
   },
   "src/test/reports/learning-service.test.ts": {
@@ -13068,9 +13068,9 @@
     "semantic_hash": ""
   },
   "public/version.json": {
-    "mtime": 1795793355.31459,
-    "seen": 1795793449.775272,
-    "ast_hash": "a00c7a5004761ff1810facdecdaff8b9",
+    "mtime": 1795814180.001887,
+    "seen": 1795814215.1471,
+    "ast_hash": "0e04d2f104e9dfcc636abaea56d93db8",
     "semantic_hash": ""
   },
   "scripts/generate-version.mjs": {
@@ -13080,9 +13080,9 @@
     "semantic_hash": ""
   },
   "src/app/generated/version.json": {
-    "mtime": 1795793355.3147404,
-    "seen": 1795793449.775579,
-    "ast_hash": "a00c7a5004761ff1810facdecdaff8b9",
+    "mtime": 1795814180.0020854,
+    "seen": 1795814215.154451,
+    "ast_hash": "0e04d2f104e9dfcc636abaea56d93db8",
     "semantic_hash": ""
   },
   "src/app/hooks/useVersionCheck.ts": {
@@ -23478,9 +23478,9 @@
     "semantic_hash": ""
   },
   "docs/superpowers/plans/2026-11-27-d1-read-budget.md": {
-    "mtime": 1795793355.3009574,
-    "seen": 1795793449.7764301,
-    "ast_hash": "1b94a28e0c84a74c9d97d36b43897135",
+    "mtime": 1795793788.81621,
+    "seen": 1795814215.179326,
+    "ast_hash": "3c51ea5b1d63d8a38e06e65f23b29ef8",
     "semantic_hash": ""
   },
   "docs/verification/urogenital-ca1-past-exams-deduplication.md": {
@@ -23517,6 +23517,18 @@
     "mtime": 1795792735.4188359,
     "seen": 1795793449.7766888,
     "ast_hash": "2c5dfa7e832426dc31200766728e186a",
+    "semantic_hash": ""
+  },
+  "src/app/learning/learningAnswerGrade.ts": {
+    "mtime": 1795813928.4896367,
+    "seen": 1795814215.155283,
+    "ast_hash": "cbe9839ebe5c69b5f1e76b0e94a48a20",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-11-27-d1-learning-feedback.md": {
+    "mtime": 1795813864.635565,
+    "seen": 1795814215.179324,
+    "ast_hash": "63d81a1703f5cf7289c24f44e11014bc",
     "semantic_hash": ""
   }
 }
