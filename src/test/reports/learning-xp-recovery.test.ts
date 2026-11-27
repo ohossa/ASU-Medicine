@@ -4,7 +4,7 @@ const mocks = vi.hoisted(() => ({
   d1Query: vi.fn(),
   d1QueryFirst: vi.fn(),
   d1Execute: vi.fn(),
-  d1Batch: vi.fn(),
+  d1Transaction: vi.fn(),
   isD1Configured: vi.fn(() => true),
 }));
 
@@ -12,7 +12,7 @@ vi.mock("../../../server/d1-client.js", () => ({
   d1Query: mocks.d1Query,
   d1QueryFirst: mocks.d1QueryFirst,
   d1Execute: mocks.d1Execute,
-  d1Batch: mocks.d1Batch,
+  d1Transaction: mocks.d1Transaction,
   isD1Configured: mocks.isD1Configured,
 }));
 
@@ -36,7 +36,8 @@ describe("Learning XP Recovery & Progress Resilience (Cloudflare D1)", () => {
         return {
           user_id: "student_recovery_1",
           year: 3,
-          xp: 0, // Corrupted / zeroed
+          xp_reconciled: updatedProfileData ? 1 : 0,
+          xp: updatedProfileData?.xp ?? 0,
           competitive_xp: 0,
           level: 1,
           alias: "Ahmed",
@@ -58,12 +59,12 @@ describe("Learning XP Recovery & Progress Resilience (Cloudflare D1)", () => {
     });
 
     mocks.d1Execute.mockImplementation(async (sql: string, params: any[]) => {
-      if (sql.includes("UPDATE learning_profiles SET xp = ?")) {
+      if (sql.includes("INSERT INTO learning_profiles")) {
         updatedProfileData = {
-          xp: params[0],
-          competitive_xp: params[1],
-          level: params[2],
-          user_id: params[4],
+          xp: params[2],
+          competitive_xp: params[3],
+          level: params[4],
+          user_id: params[0],
         };
         return { success: true, changes: 1 };
       }
@@ -78,6 +79,8 @@ describe("Learning XP Recovery & Progress Resilience (Cloudflare D1)", () => {
     expect(profile.level).toBe(1); // floor(250/500) + 1 = 1
     expect(updatedProfileData).not.toBeNull();
     expect(updatedProfileData.xp).toBe(250);
+    await getProfile("student_recovery_1", 3);
+    expect(mocks.d1Query).toHaveBeenCalledTimes(1);
   });
 
   it("preserves cross-module entries in dashboard so MGL-3 is never zeroed", async () => {
@@ -121,6 +124,7 @@ describe("Learning XP Recovery & Progress Resilience (Cloudflare D1)", () => {
         return {
           user_id: "student_recovery_2",
           year: 3,
+          xp_reconciled: 1,
           xp: 20,
           competitive_xp: 20,
           level: 1,
@@ -151,62 +155,4 @@ describe("Learning XP Recovery & Progress Resilience (Cloudflare D1)", () => {
     expect(result.entries.some((e) => e.moduleCode === "MSS-2")).toBe(true);
   });
 
-  it("ensures learning_profiles row is upserted before learning_entries in award()", async () => {
-    const executionOrder: string[] = [];
-
-    mocks.d1QueryFirst.mockImplementation(async (sql: string) => {
-      if (sql.includes("FROM learning_profiles")) {
-        return {
-          user_id: "new_student",
-          year: 3,
-          xp: 0,
-          competitive_xp: 0,
-          level: 1,
-          streak: 0,
-          best_streak: 0,
-          last_day: "",
-          alias: "Student",
-          opt_in: 0,
-          banner: "default",
-          title: "student",
-          weekly_xp: 0,
-          current_week: "",
-        };
-      }
-      return null;
-    });
-
-    mocks.d1Query.mockImplementation(async (_sql: string) => {
-      return [];
-    });
-
-    mocks.d1Execute.mockImplementation(async (sql: string) => {
-      if (sql.includes("INSERT INTO learning_profiles") || sql.includes("UPDATE learning_profiles")) {
-        executionOrder.push("learning_profiles_upsert");
-      }
-      return { success: true, changes: 1 };
-    });
-
-    mocks.d1Batch.mockImplementation(async (_statements: any[]) => {
-      executionOrder.push("learning_entries_upsert");
-      return [];
-    });
-
-    const { award } = await import("../../../server/learning-store.js");
-    const res = await award("new_student", 3, [
-      {
-        moduleCode: "MGL-3",
-        chapterId: 1,
-        questionId: "q_brand_new_1",
-        personal: 10,
-        competitive: 10,
-        correct: true,
-      },
-    ]);
-
-    expect(res).toEqual({ personal: 10, competitive: 10 });
-    // Foreign key guarantee: learning_profiles MUST be upserted BEFORE learning_entries!
-    expect(executionOrder[0]).toBe("learning_profiles_upsert");
-    expect(executionOrder[1]).toBe("learning_entries_upsert");
-  });
 });

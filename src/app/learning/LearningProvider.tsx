@@ -10,6 +10,7 @@ import {
 import { useAuth } from "@clerk/clerk-react";
 import type {
   LearningDashboard,
+  LearningDashboardResponse,
   LearningSubmission,
   LearningProfile,
 } from "./contracts";
@@ -42,6 +43,39 @@ function readQueue(id: string): Pending[] {
     return [];
   }
 }
+const cacheKey = (id: string, period: string) => `asu_learning_snapshot:${id}:${period}`;
+
+function readSnapshot(key: string): LearningDashboard | null {
+  try {
+    const data = JSON.parse(localStorage.getItem(key) ?? "null");
+    if (Array.isArray(data?.entries) && Array.isArray(data?.leaderboard) &&
+      typeof data.profile?.xp === "number") {
+      return data;
+    }
+  } catch {
+    // A missing or invalid cache requires a full load.
+  }
+  return null;
+}
+
+function applyLearningResponse(
+  base: LearningDashboard | null,
+  { deletedEntryIds, ...response }: LearningDashboardResponse,
+): LearningDashboard {
+  if (!deletedEntryIds) return response;
+  if (!base?.entriesCursor || !response.entriesCursor) {
+    throw new Error("Learning history could not be synchronized.");
+  }
+
+  if (response.entries.length === 0 && deletedEntryIds.length === 0) {
+    return { ...response, entries: base.entries };
+  }
+  const entries = new Map(base.entries.map((entry) => [entry.entryId, entry]));
+  for (const entryId of deletedEntryIds) entries.delete(entryId);
+  for (const entry of response.entries) entries.set(entry.entryId, entry);
+  return { ...response, entries: [...entries.values()] };
+}
+
 export function LearningProvider({ children }: { children: ReactNode }) {
   const { userId, getToken, isLoaded } = useAuth();
   const token = useRef(getToken);
@@ -59,16 +93,20 @@ export function LearningProvider({ children }: { children: ReactNode }) {
     [period, setPeriod] = useState("weekly");
   const [awardNotice,setAwardNotice]=useState<{id:number;account:string;amount:number}|null>(null);
   useEffect(()=>{if(!awardNotice)return;const timeout=setTimeout(()=>setAwardNotice(null),2200);return()=>clearTimeout(timeout);},[awardNotice]);
-  const refreshGeneration=useRef(0);
+  const scope = userId ? cacheKey(userId, period) : null;
+  const activeScope = useRef(scope);
+  activeScope.current = scope;
+  const history = useRef<{ key: string; data: LearningDashboard } | null>(null);
+  const refreshGeneration = useRef(0);
   const busy = useRef(new Set<string>());
   const request = useCallback(
-    async <T,>(method = "GET", body?: unknown): Promise<T> => {
+    async <T,>(method = "GET", body?: unknown, entriesCursor = "full"): Promise<T> => {
       const requestId = activeId.current;
       const t = await token.current();
       if (activeId.current !== requestId) throw new Error("Account changed.");
       if (!t) throw new Error("Sign in to sync your learning.");
       const response = await fetch(
-        "/api/learning" + (method === "GET" ? `?period=${period}` : ""),
+        "/api/learning" + (method === "GET" ? `?${new URLSearchParams({ period, entriesCursor })}` : ""),
         {
           method,
           headers: {
@@ -93,26 +131,32 @@ export function LearningProvider({ children }: { children: ReactNode }) {
     },
     [period],
   );
-  const cacheKey=(id:string,p:string)=>`asu_learning_snapshot:${id}:${p}`;
   const refresh = useCallback(async () => {
     const id = userId;
-    if (!id) return;
-    const generation=++refreshGeneration.current;
+    const key = scope;
+    if (!id || !key) return;
+    const generation = ++refreshGeneration.current;
+    const isCurrent = () => activeScope.current === key && generation === refreshGeneration.current;
+    const cached = history.current?.key === key ? history.current.data : readSnapshot(key);
+    const base = cached?.entriesCursor && cached.entries.every((entry) => typeof entry?.entryId === "string")
+      ? cached
+      : null;
     setLoading(true);
     try {
-      const data = await request<LearningDashboard>();
-      if (activeId.current === id&&generation===refreshGeneration.current) {
+      const response = await request<LearningDashboardResponse>("GET", undefined, base?.entriesCursor);
+      if (isCurrent()) {
+        const data = applyLearningResponse(base, response);
+        history.current = { key, data };
         setSnapshot({ id, data });
-        try{localStorage.setItem(cacheKey(id,period),JSON.stringify(data));}catch{/* Optional read cache; awards remain server-only. */}
+        try { localStorage.setItem(key, JSON.stringify(data)); } catch { /* Keep the in-memory copy. */ }
         setError("");
       }
     } catch (e) {
-      if (activeId.current === id&&generation===refreshGeneration.current)
-        setError(e instanceof Error ? e.message : "Learning sync failed.");
+      if (isCurrent()) setError(e instanceof Error ? e.message : "Learning sync failed.");
     } finally {
-      if (activeId.current === id&&generation===refreshGeneration.current) setLoading(false);
+      if (isCurrent()) setLoading(false);
     }
-  }, [userId, request]);
+  }, [userId, scope, request]);
   const retry = useCallback(async () => {
     const id = userId;
     if (!id || busy.current.has(id)) return;
@@ -215,15 +259,14 @@ export function LearningProvider({ children }: { children: ReactNode }) {
   }, [userId, request, refresh]);
   useEffect(() => {
     setError("");
-    let cached:LearningDashboard|null=null;
-    try{const raw=userId?JSON.parse(localStorage.getItem(cacheKey(userId,period))??'null'):null;if(raw&&Array.isArray(raw.entries)&&Array.isArray(raw.leaderboard)&&typeof raw.profile?.xp==='number')cached=raw;}catch{/* Corrupt cache is ignored. */}
+    const cached = scope ? readSnapshot(scope) : null;
     setSnapshot(userId&&cached?{id:userId,data:cached}:null);
     setPending(userId ? readQueue(userId).length : 0);
     if (isLoaded && userId) {
       void refresh();
       if (readQueue(userId).length) void retry();
     }
-  }, [userId, isLoaded, refresh, retry]);
+  }, [userId, scope, isLoaded, refresh, retry]);
   useEffect(() => {
     if (!isLoaded || !userId) return;
     let lastFocusRefresh = 0;

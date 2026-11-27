@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { evalRedis } from '../server/report-store.js';
+import { refreshAdminLearningSnapshot } from '../server/admin-learning-snapshot.js';
 import { createCloudflareBackup } from '../server/cloudflare-backup-service.js';
 
 interface Req {
@@ -108,6 +109,18 @@ export default async function handler(req: Req, res: Res) {
     };
   } catch (err: unknown) {
     checks.cloudflareBackup = {
+      status: 'failed',
+      message: err instanceof Error ? err.message : String(err),
+    };
+  }
+
+  try {
+    const generatedAt = await refreshAdminLearningSnapshot();
+    checks.adminLearningSnapshot = generatedAt
+      ? { status: 'success', generatedAt }
+      : { status: 'skipped' };
+  } catch (err: unknown) {
+    checks.adminLearningSnapshot = {
       status: 'failed',
       message: err instanceof Error ? err.message : String(err),
     };

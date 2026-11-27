@@ -146,6 +146,7 @@ export default async function handler(req: Req, res: Res) {
       const data = await service.overview(
         token,
         req.query?.period === "all" ? "all" : "weekly",
+        typeof req.query?.entriesCursor === "string" ? req.query.entriesCursor : undefined,
       );
       res.setHeader("Server-Timing", `total;dur=${Date.now() - start}`);
       return res.status(200).json(data);

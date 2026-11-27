@@ -12,6 +12,7 @@ export interface LearningProfile {
   title: string;
 }
 export interface LearningEntry {
+  entryId?: string;
   firstCorrect?: boolean;
   firstAt?: string;
   contentVersion?: string;
@@ -28,6 +29,7 @@ export interface LearningEntry {
 export interface LearningDashboard {
   profile: LearningProfile;
   entries: LearningEntry[];
+  entriesCursor?: string;
   leaderboard: Array<{
     alias: string;
     xp: number;
@@ -37,6 +39,10 @@ export interface LearningDashboard {
   }>;
   week: string;
 }
+export interface LearningDashboardResponse extends LearningDashboard {
+  deletedEntryIds?: string[];
+}
+
 export interface LearningSubmission {
   moduleCode: string;
   items: Array<{ questionId: string; answer: unknown }>;

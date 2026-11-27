@@ -11,7 +11,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { d1Execute, d1Batch, isD1Configured } from '../server/d1-client.js';
+import { d1Execute, d1Batch, d1QueryFirst, isD1Configured } from '../server/d1-client.js';
 import type { CloudflareBackupSnapshot } from '../server/cloudflare-backup-service.js';
 
 async function main() {
@@ -95,13 +95,14 @@ async function main() {
   if (entries.length > 0) {
     console.log(`   Restoring ${entries.length.toLocaleString()} learning_entries...`);
     const stmts = entries.map((e) => ({
-      sql: `INSERT INTO learning_entries (user_id, module_code, chapter_id, question_id, topic, subject, type, correct, ever_correct, first_correct, content_version, created_at, updated_at)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            ON CONFLICT(user_id, question_id) DO UPDATE SET
+      sql: `INSERT INTO learning_entries (id, user_id, module_code, chapter_id, question_id, topic, subject, type, correct, ever_correct, first_correct, content_version, created_at, updated_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON CONFLICT(id) DO UPDATE SET
               correct = excluded.correct,
               ever_correct = MAX(learning_entries.ever_correct, excluded.ever_correct),
               updated_at = excluded.updated_at`,
       params: [
+        e.id || crypto.createHash('sha256').update(`${e.user_id}:${e.module_code}:${e.question_id}`).digest('hex'),
         e.user_id, e.module_code, e.chapter_id ?? 1, e.question_id,
         e.topic ?? '', e.subject ?? '', e.type ?? 'mcq',
         e.correct ? 1 : 0, e.ever_correct ? 1 : 0, e.first_correct ? 1 : 0,
@@ -114,6 +115,20 @@ async function main() {
       if (i % 5000 === 0 && i > 0) {
         console.log(`      ...restored ${i.toLocaleString()} / ${entries.length.toLocaleString()}`);
       }
+    }
+  }
+
+  if (entries.length > 0 && await d1QueryFirst(
+    "SELECT name FROM pragma_table_info('learning_profiles') WHERE name = 'xp_reconciled'",
+  )) {
+    const userIds = [...new Set(entries.map((entry) => entry.user_id))];
+    for (let i = 0; i < userIds.length; i += 100) {
+      const batch = userIds.slice(i, i + 100);
+      await d1Execute(
+        `UPDATE learning_profiles SET xp_reconciled = 0
+         WHERE xp_reconciled = 1 AND user_id IN (${batch.map(() => "?").join(", ")})`,
+        batch,
+      );
     }
   }
 

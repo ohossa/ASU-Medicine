@@ -221,3 +221,17 @@ export async function d1Batch(
 
   return results;
 }
+
+/** Run bound statements in one D1 transaction and return results in statement order. */
+export async function d1Transaction(
+  statements: { sql: string; params?: unknown[] }[],
+): Promise<any[][]> {
+  if (!isD1Configured()) throw new Error('Cloudflare D1 database is not configured.');
+  if (statements.length === 0) return [];
+
+  const response = await fetchD1WithRetry({ batch: statements });
+  if (response.result.length !== statements.length || response.result.some((item) => !item.success)) {
+    throw new Error('D1 transaction did not return a successful result for each statement.');
+  }
+  return response.result.map((item) => item.results ?? []);
+}

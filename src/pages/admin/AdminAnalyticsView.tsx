@@ -218,7 +218,13 @@ export default function AdminAnalyticsView() {
               Portal Deep Analytics
             </h1>
             <p className="text-xs sm:text-sm text-stone-500 dark:text-stone-400 mt-1">
-              Real-time student progress, study duration, module mastery, and question difficulty across all 42 modules.
+              {data?.learningSnapshotAt ? (
+                <>Learning statistics as of{" "}
+                  <time dateTime={data.learningSnapshotAt}>
+                    {new Date(data.learningSnapshotAt).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}
+                  </time>
+                </>
+              ) : "Student progress, study duration, module mastery, and question difficulty."}
             </p>
           </div>
 

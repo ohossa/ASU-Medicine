@@ -47,6 +47,7 @@ import {
   clearClerkUsersCache,
   getAdminAnalytics,
 } from "../../../server/admin-analytics-service";
+import * as snapshots from "../../../server/admin-learning-snapshot";
 import * as d1Client from "../../../server/d1-client";
 
 describe("Admin Master Leaderboard: Real Names, Real Emails & All Accounts Roster", () => {
@@ -139,6 +140,11 @@ describe("Admin Master Leaderboard: Real Names, Real Emails & All Accounts Roste
           return [];
         }
         return [];
+      });
+
+      vi.spyOn(snapshots, "readAdminLearningSnapshot").mockResolvedValue({
+        generatedAt: "2026-11-27T01:00:00Z",
+        overallKpis: [], studentTotals: [], studentBreakdowns: [], moduleAggs: [], topFailures: [], recentEvents: [],
       });
 
       process.env.CLERK_SECRET_KEY = "sk_test_mock_key";

@@ -12,7 +12,7 @@ interface Dependencies {
     year: number,
     rewards: NonNullable<ReturnType<typeof prepareReward>>[],
   ) => Promise<unknown>;
-  dashboard: (id: string, year: number, period?: string) => Promise<unknown>;
+  dashboard: (id: string, year: number, period?: string, entriesCursor?: string) => Promise<unknown>;
   profile: (id: string, year: number) => Promise<{ level: number }>;
   saveProfile: (
     id: string,
@@ -30,9 +30,12 @@ export function createLearningService(d: Dependencies) {
     return { id, year };
   }
   return {
-    async overview(token: string, period = "weekly") {
+    async overview(token: string, period = "weekly", entriesCursor?: string) {
       const { id, year } = await account(token);
-      return d.dashboard(id, year, period === "all" ? "all" : "weekly");
+      const scope = period === "all" ? "all" : "weekly";
+      return entriesCursor === undefined
+        ? d.dashboard(id, year, scope)
+        : d.dashboard(id, year, scope, entriesCursor);
     },
     async submit(token: string, input: unknown) {
       const { id, year } = await account(token);

@@ -3,6 +3,7 @@ import { ReportError } from "./report-service.js";
 import { evalRedis } from "./report-store.js";
 import { listEditableModules, readQuestionBank, bankEntries } from "./question-bank.js";
 import { getOnlineUsers } from "./presence-service.js";
+import { readAdminLearningSnapshot } from "./admin-learning-snapshot.js";
 import { d1Query, isD1Configured } from "./d1-client.js";
 
 export const OWNER_EMAIL = "omarhmaged@gmail.com";
@@ -77,6 +78,7 @@ export interface AnalyticsSummary {
 }
 
 export interface FullAdminAnalytics {
+  learningSnapshotAt?: string;
   summary: AnalyticsSummary;
   students: StudentAnalytics[];
   modules: ModuleAnalytics[];
@@ -301,6 +303,7 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
   // 2. Fetch enrolled Clerk users for real identities (name, email, avatar)
   const clerkUsers = await fetchEnrolledClerkUsers();
 
+  let learningSnapshotAt: string | undefined;
   let d1OverallKpiAttempts = 0;
   let d1OverallKpiCorrect = 0;
 
@@ -308,37 +311,14 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
   let d1Loaded = false;
   if (isD1Configured()) {
     try {
-      const [
-        d1Profiles,
-        overallKpis,
-        studentTotals,
-        studentBreakdowns,
-        moduleAggs,
-        topFailures,
-        recentEvents,
-      ] = await Promise.all([
+      const [d1Profiles, snapshot] = await Promise.all([
         d1Query<any>(
           'SELECT user_id, year, xp, competitive_xp, weekly_xp, level, streak, best_streak, alias, opt_in, banner, title, last_day, updated_at FROM learning_profiles'
         ),
-        d1Query<any>(
-          'SELECT count(*) as total_attempts, sum(case when correct = 1 then 1 else 0 end) as total_correct FROM learning_entries'
-        ),
-        d1Query<any>(
-          'SELECT user_id, count(*) as attempts, sum(case when correct = 1 then 1 else 0 end) as correct FROM learning_entries GROUP BY user_id'
-        ),
-        d1Query<any>(
-          'SELECT user_id, module_code, count(*) as attempts, sum(case when correct = 1 then 1 else 0 end) as correct FROM learning_entries GROUP BY user_id, module_code'
-        ),
-        d1Query<any>(
-          'SELECT module_code, count(*) as attempts, sum(case when correct = 1 then 1 else 0 end) as correct, count(distinct user_id) as unique_students FROM learning_entries GROUP BY module_code'
-        ),
-        d1Query<any>(
-          'SELECT module_code, chapter_id, question_id, count(*) as attempts, sum(case when correct = 0 then 1 else 0 end) as failures FROM learning_entries GROUP BY module_code, chapter_id, question_id HAVING failures > 0 ORDER BY failures DESC LIMIT 50'
-        ),
-        d1Query<any>(
-          'SELECT user_id, module_code, question_id, correct, created_at FROM learning_entries ORDER BY created_at DESC LIMIT 50'
-        ),
+        readAdminLearningSnapshot(),
       ]);
+      learningSnapshotAt = snapshot.generatedAt;
+      const { overallKpis, studentTotals, studentBreakdowns, moduleAggs, topFailures, recentEvents } = snapshot;
 
       if (Array.isArray(overallKpis) && overallKpis[0]) {
         d1OverallKpiAttempts = Number(overallKpis[0].total_attempts || 0);
@@ -543,6 +523,7 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
       }
     } catch (err) {
       console.warn("D1 analytics loading error:", err);
+      throw new ReportError(503, "Admin learning analytics is temporarily unavailable.");
     }
   }
 
@@ -978,6 +959,7 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
   const onlineNow = Math.max(presence.onlineCount, students.filter((s) => s.isOnline).length);
 
   const finalResult: FullAdminAnalytics = {
+    learningSnapshotAt,
     summary: {
       totalStudents,
       onlineNow,

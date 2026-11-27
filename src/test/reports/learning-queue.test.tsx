@@ -157,3 +157,37 @@ it('coalesces multiple pending queue items for the same module into a single bat
   expect(sentBodies[0].items).toHaveLength(5);
   expect(JSON.parse(localStorage.getItem(queueKey("alice"))!)).toHaveLength(0);
 });
+
+it("merges cross-device changes and deletions into the signed-in student's cached history", async () => {
+  const existing = { entryId: "keep", questionId: "q1", correct: true };
+  const deleted = { entryId: "remove", questionId: "q2", correct: true };
+  const historyKey = "asu_learning_snapshot:alice:weekly";
+  const cached = { profile: { xp: 10 }, entries: [existing, deleted], leaderboard: [], entriesCursor: "v1:6" };
+  localStorage.setItem(historyKey, JSON.stringify(cached));
+  localStorage.setItem("asu_learning_snapshot:bob:weekly", JSON.stringify({
+    ...cached, entries: [{ entryId: "bob", questionId: "q3" }], entriesCursor: "v1:12",
+  }));
+  const fetch = vi.fn(async (url: string) => ({
+    ok: true,
+    json: async () => url.includes("entriesCursor=v1%3A6")
+      ? {
+        profile: { xp: 11 }, leaderboard: [], entriesCursor: "v1:7",
+        entries: [{ ...existing, correct: false }], deletedEntryIds: ["remove"],
+      }
+      : { profile: { xp: 12 }, leaderboard: [], entriesCursor: "v1:12", entries: [], deletedEntryIds: [] },
+  }));
+  vi.stubGlobal("fetch", fetch);
+  const view = render(<LearningProvider><Harness /></LearningProvider>);
+  await screen.findByText("11");
+  expect(fetch.mock.calls[0][0]).toContain("entriesCursor=v1%3A6");
+  expect(JSON.parse(localStorage.getItem(historyKey)!)).toMatchObject({
+    entries: [{ ...existing, correct: false }], entriesCursor: "v1:7",
+  });
+  auth.id = "bob";
+  view.rerender(<LearningProvider><Harness /></LearningProvider>);
+  await screen.findByText("12");
+  expect(fetch.mock.calls.at(-1)![0]).toContain("entriesCursor=v1%3A12");
+  expect(JSON.parse(localStorage.getItem("asu_learning_snapshot:bob:weekly")!).entries).toEqual([
+    { entryId: "bob", questionId: "q3" },
+  ]);
+});

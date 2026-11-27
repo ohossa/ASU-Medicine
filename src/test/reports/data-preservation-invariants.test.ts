@@ -215,7 +215,7 @@ describe("Enterprise Data Preservation & Anti-Loss Invariants", () => {
 
   describe("3. Codebase Architectural Invariants", () => {
     it("guarantees no LIMIT 5000 bottleneck exists for global learning_entries calculations", () => {
-      const filePath = path.resolve(process.cwd(), "server/admin-analytics-service.ts");
+      const filePath = path.resolve(process.cwd(), "server/admin-learning-snapshot.ts");
       const content = fs.readFileSync(filePath, "utf8");
 
       // Verify the old LIMIT 5000 query that caused the data truncation is strictly gone

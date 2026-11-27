@@ -1,4 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+import * as snapshots from "../../../server/admin-learning-snapshot";
 import * as d1Client from "../../../server/d1-client";
 import { getAdminAnalytics, clearClerkUsersCache } from "../../../server/admin-analytics-service";
 
@@ -51,36 +52,24 @@ describe("Admin Analytics Full Aggregations (No 5000 Limit Truncation)", () => {
           },
         ];
       }
-      if (sql.includes("count(*) as total_attempts")) {
-        // Return realistic 59,172 attempts and 48,782 correct
-        return [{ total_attempts: 59172, total_correct: 48782 }];
-      }
-      if (sql.includes("GROUP BY user_id, module_code")) {
-        return [
-          { user_id: "user_top_48", module_code: "MGL-3", attempts: 2375, correct: 2224 },
-        ];
-      }
-      if (sql.includes("GROUP BY user_id")) {
-        return [
-          { user_id: "user_top_48", attempts: 2375, correct: 2224 },
-        ];
-      }
-      if (sql.includes("GROUP BY module_code")) {
-        return [
-          { module_code: "MGL-3", attempts: 21241, correct: 18000, unique_students: 68 },
-        ];
-      }
-      if (sql.includes("HAVING failures > 0")) {
-        return [];
-      }
-      if (sql.includes("ORDER BY created_at DESC LIMIT 50")) {
-        return [];
-      }
       return [];
+    });
+
+    vi.spyOn(snapshots, "readAdminLearningSnapshot").mockResolvedValue({
+      generatedAt: "2026-11-27T01:00:00Z",
+      overallKpis: [{ total_attempts: 59172, total_correct: 48782 }],
+      studentTotals: [{ user_id: "user_top_48", attempts: 2375, correct: 2224 }],
+      studentBreakdowns: [{ user_id: "user_top_48", module_code: "MGL-3", attempts: 2375, correct: 2224 }],
+      moduleAggs: [{ module_code: "MGL-3", attempts: 21241, correct: 18000, unique_students: 68 }],
+      topFailures: [],
+      recentEvents: [],
     });
 
     process.env.CLERK_SECRET_KEY = "sk_test_key";
     const result = await getAdminAnalytics("mock_owner_token");
+
+    expect(result.learningSnapshotAt).toBe("2026-11-27T01:00:00Z");
+    expect(vi.mocked(d1Client.d1Query).mock.calls.some(([sql]) => sql.includes("FROM learning_entries"))).toBe(false);
 
     // 1. Total questions solved must account for all 59,172 live attempts + baseline (62,133)
     expect(result.summary.totalQuestionsSolved).toBe(62133);
