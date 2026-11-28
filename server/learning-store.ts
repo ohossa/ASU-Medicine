@@ -279,7 +279,7 @@ export async function award(id: string, year: number, rewards: unknown[]) {
 
   // 2. Also run Redis Lua script if available
   try {
-    return JSON.parse(
+    const receipt = JSON.parse(
       String(
         await evalRedis(
           AWARD_LUA,
@@ -305,9 +305,12 @@ export async function award(id: string, year: number, rewards: unknown[]) {
         ),
       ),
     );
+    if (!Number.isSafeInteger(receipt?.personal) || !Number.isSafeInteger(receipt?.competitive)) {
+      throw new Error("Redis did not confirm the learning update");
+    }
+    return receipt;
   } catch {
-    // If Redis fails, return calculated values or defaults
-    return { personal: 0, competitive: 0 };
+    throw new ReportError(503, "Learning sync is temporarily unavailable. Please retry.");
   }
 }
 

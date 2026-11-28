@@ -195,6 +195,9 @@ export function LearningProvider({ children }: { children: ReactNode }) {
     let flushed = false;
     let failure: unknown;
     const blockedModules = new Set<string>();
+    const heldBatchIds = new Set<string>();
+    const eligible = (items: Pending[]) => items.filter((item) =>
+      !blockedModules.has(item.submission.moduleCode) && !heldBatchIds.has(item.id));
     try {
       let queue = initialQueue;
       while (queue.length && activeId.current === id) {
@@ -231,29 +234,31 @@ export function LearningProvider({ children }: { children: ReactNode }) {
         };
 
         try {
-          await request("POST", mergedSubmission);
-          const acknowledged = batch.flatMap((item) => item.xpNoticeIds ?? []);
+          const receipt = await request<{ unprocessedQuestionIds?: string[] }>("POST", mergedSubmission);
+          const unprocessed = new Set(receipt?.unprocessedQuestionIds ?? []);
+          const isUnprocessed = (noticeId: string) => [...unprocessed].some((id) => noticeId === id || noticeId.startsWith(id + "/"));
+          const acknowledged = batch.flatMap((item) => item.xpNoticeIds ?? []).filter((id) => !isUnprocessed(id));
           if (acknowledged.length) {
             localStorage.setItem(xpNoticeKey(id), JSON.stringify([...new Set([...readXpNoticeIds(id), ...acknowledged])]));
           }
-          const latest = readQueue(id).filter((item) => !batchIds.has(item.id));
+          const latest = readQueue(id).flatMap((item) => {
+            if (!batchIds.has(item.id)) return [item];
+            const items = item.submission.items.filter((answer) => unprocessed.has(answer.questionId));
+            if (!items.length) return [];
+            heldBatchIds.add(item.id);
+            return [{ ...item, submission: { ...item.submission, items }, xpNoticeIds: item.xpNoticeIds?.filter(isUnprocessed) }];
+          });
           localStorage.setItem(queueKey(id), JSON.stringify(latest));
-          queue = latest.filter((item) => !blockedModules.has(item.submission.moduleCode));
+          queue = eligible(latest);
+          if (unprocessed.size) failure = new Error("Some answers could not be accepted and are still saved on this device.");
           flushed = true;
           if (activeId.current === id) setPending(latest.length);
         } catch (itemErr: any) {
-          if (itemErr?.status === 409) {
+          if ([400, 409, 413].includes(itemErr?.status)) {
             failure = itemErr;
-            blockedModules.add(moduleCode);
-            queue = readQueue(id).filter((item) => !blockedModules.has(item.submission.moduleCode));
-            continue;
-          }
-          if (itemErr?.status === 400) {
-            const latest = readQueue(id).filter((item) => !batchIds.has(item.id));
-            localStorage.setItem(queueKey(id), JSON.stringify(latest));
-            queue = latest.filter((item) => !blockedModules.has(item.submission.moduleCode));
-            flushed = true;
-            if (activeId.current === id) setPending(latest.length);
+            if (itemErr.status === 409) blockedModules.add(moduleCode);
+            else for (const batchId of batchIds) heldBatchIds.add(batchId);
+            queue = eligible(readQueue(id));
             continue;
           }
           // Keep queued answers after a network or server error.

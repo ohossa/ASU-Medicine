@@ -228,3 +228,20 @@ describe("Enterprise Data Preservation & Anti-Loss Invariants", () => {
     });
   });
 });
+
+it("leaves the last R2 snapshot intact when a table read fails", async () => {
+  vi.spyOn(d1Client, "isD1Configured").mockReturnValue(true);
+  const read = vi.spyOn(d1Client, "d1Query").mockImplementation(async (sql) => {
+    if (sql.includes("FROM learning_entries")) throw new Error("D1 quota");
+    return [];
+  });
+  const put = vi.spyOn(r2Client, "putR2Json").mockResolvedValue({ etag: "test" });
+  try {
+    await expect(createCloudflareBackup({ storeInR2: true })).rejects.toThrow("Backup failed while reading learning_entries");
+    expect(put).not.toHaveBeenCalled();
+  } finally {
+    read.mockRestore();
+    put.mockRestore();
+    vi.restoreAllMocks();
+  }
+});

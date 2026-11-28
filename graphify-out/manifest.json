@@ -3468,15 +3468,15 @@
     "semantic_hash": ""
   },
   "server/learning-service.ts": {
-    "mtime": 1795813928.533426,
-    "seen": 1795814215.151338,
-    "ast_hash": "1892624fd512cd74a05c99fd316816c7",
+    "mtime": 1795878835.5625708,
+    "seen": 1795878878.8719418,
+    "ast_hash": "861819561d6ec7836b1e6cf0dc8a7405",
     "semantic_hash": ""
   },
   "server/learning-store.ts": {
-    "mtime": 1795793290.1606526,
-    "seen": 1795793449.775458,
-    "ast_hash": "bff8181e20e3afb1d355b58e9b154859",
+    "mtime": 1795878835.5620968,
+    "seen": 1795878878.871943,
+    "ast_hash": "863944f72df263bbdfd04d8f480ba7dc",
     "semantic_hash": ""
   },
   "server/local-api.ts": {
@@ -4146,8 +4146,8 @@
     "semantic_hash": "2ffa3b85e60c5e009954037ddbb13a79"
   },
   "src/app/generated/bankManifest.json": {
-    "mtime": 1795815286.3481748,
-    "seen": 1795815323.55901,
+    "mtime": 1795878842.7570279,
+    "seen": 1795878878.874898,
     "ast_hash": "27ac72ba31d4a37cf7644f35902afe0b",
     "semantic_hash": ""
   },
@@ -4302,9 +4302,9 @@
     "semantic_hash": "cd2d65c7dd4d906b3200230d94f212c2"
   },
   "src/app/learning/LearningProvider.tsx": {
-    "mtime": 1795814179.6992536,
-    "seen": 1795814215.155071,
-    "ast_hash": "84aa4faa50839a14a7075ff2d19bb771",
+    "mtime": 1795878797.103558,
+    "seen": 1795878878.875467,
+    "ast_hash": "e4d82978e8e90ade4c5c77d47e3d12c4",
     "semantic_hash": ""
   },
   "src/app/learning/XPAwardBubble.tsx": {
@@ -5412,16 +5412,16 @@
     "semantic_hash": "f97dba5c6ad52f3a330008ed153dead5"
   },
   "src/test/reports/learning-queue.test.tsx": {
-    "mtime": 1795814100.922657,
-    "seen": 1795814215.159706,
-    "ast_hash": "f7261cc95e7377c2a520b47f027e7847",
+    "mtime": 1795878835.5692317,
+    "seen": 1795878878.879693,
+    "ast_hash": "3269708536d08f122c6cabed18386442",
     "semantic_hash": ""
   },
   "src/test/reports/learning-service.test.ts": {
-    "mtime": 1795792735.6969166,
-    "seen": 1795793449.775778,
-    "ast_hash": "c14b38aa4eb55cd0d769368ac6f36fcc",
-    "semantic_hash": "c14b38aa4eb55cd0d769368ac6f36fcc"
+    "mtime": 1795878835.5674875,
+    "seen": 1795878878.879694,
+    "ast_hash": "63a6d5bbeac3c5e12e47325987bb0697",
+    "semantic_hash": ""
   },
   "src/test/reports/management.test.ts": {
     "mtime": 1795792735.6974869,
@@ -13068,9 +13068,9 @@
     "semantic_hash": ""
   },
   "public/version.json": {
-    "mtime": 1795815286.401305,
-    "seen": 1795815323.552109,
-    "ast_hash": "abba15d3d2eb6b5d2223ee95a7433916",
+    "mtime": 1795878842.8042946,
+    "seen": 1795878878.8683069,
+    "ast_hash": "51517cf5c648b4d94593064a710c1be1",
     "semantic_hash": ""
   },
   "scripts/generate-version.mjs": {
@@ -13080,9 +13080,9 @@
     "semantic_hash": ""
   },
   "src/app/generated/version.json": {
-    "mtime": 1795815286.4015641,
-    "seen": 1795815323.559011,
-    "ast_hash": "abba15d3d2eb6b5d2223ee95a7433916",
+    "mtime": 1795878842.8046122,
+    "seen": 1795878878.874898,
+    "ast_hash": "51517cf5c648b4d94593064a710c1be1",
     "semantic_hash": ""
   },
   "src/app/hooks/useVersionCheck.ts": {
@@ -23364,9 +23364,9 @@
     "semantic_hash": ""
   },
   "server/cloudflare-backup-service.ts": {
-    "mtime": 1795792735.4536667,
-    "seen": 1795793449.775454,
-    "ast_hash": "83821a1f5c1af8c2e4e27ce878dc8d30",
+    "mtime": 1795878835.5623507,
+    "seen": 1795878878.871892,
+    "ast_hash": "4e16f848f4ecf525da0721fa4111f203",
     "semantic_hash": ""
   },
   "server/d1-client.ts": {
@@ -23448,9 +23448,9 @@
     "semantic_hash": ""
   },
   "src/test/reports/data-preservation-invariants.test.ts": {
-    "mtime": 1795793263.3876967,
-    "seen": 1795793449.775763,
-    "ast_hash": "5933e55723842f78aade82c532d39b02",
+    "mtime": 1795878835.5709748,
+    "seen": 1795878878.8793879,
+    "ast_hash": "35bd4dab16da7bf5a1b728de7370b6a3",
     "semantic_hash": ""
   },
   "src/test/reports/import-supabase-export.test.ts": {

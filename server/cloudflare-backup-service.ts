@@ -80,13 +80,14 @@ export async function createCloudflareBackup(options: { storeInR2?: boolean } = 
           [PAGE_SIZE, offset]
         );
 
-        if (!Array.isArray(page) || page.length === 0) break;
+        if (!Array.isArray(page)) throw new Error("Invalid backup page.");
+        if (page.length === 0) break;
         rows.push(...page);
         offset += page.length;
         if (page.length < PAGE_SIZE) break;
       }
     } catch (err) {
-      console.warn(`Backup: Table ${tableName} query error, skipping:`, err);
+      throw new Error(`Backup failed while reading ${tableName}; the previous snapshot is still available.`, { cause: err });
     }
 
     tablesData[tableName] = rows;
@@ -119,17 +120,16 @@ export async function createCloudflareBackup(options: { storeInR2?: boolean } = 
 
   let r2Key: string | undefined;
 
-  if (options.storeInR2 && getR2Client()) {
+  if (options.storeInR2) {
+    if (!getR2Client()) throw new Error("R2 backup storage is not configured.");
     const dateStr = timestamp.slice(0, 10);
     const timeStr = timestamp.slice(11, 19).replace(/:/g, '-');
     r2Key = `backups/snapshots/snapshot-${dateStr}-${timeStr}.json`;
     const latestKey = 'backups/latest.json';
 
-    // Store dated point-in-time snapshot and update latest pointer
-    await Promise.all([
-      putR2Json(r2Key, snapshot),
-      putR2Json(latestKey, snapshot),
-    ]);
+    // Publish latest only after the dated snapshot is durable.
+    await putR2Json(r2Key, snapshot);
+    await putR2Json(latestKey, snapshot);
   }
 
   return { snapshot, r2Key, durationMs };

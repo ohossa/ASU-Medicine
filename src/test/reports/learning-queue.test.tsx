@@ -273,3 +273,30 @@ it("preserves temporary year conflicts while sending items for the current year"
   expect(submissions).toEqual(["MSS-2", "MGL-3"]);
   expect(JSON.parse(localStorage.getItem(queue)!).map((item: { id: string }) => item.id)).toEqual(["older"]);
 });
+
+it.each([400, 413])("keeps the answer saved if the server rejects the batch with %i", async (status) => {
+  vi.stubGlobal("fetch", vi.fn(async (_url, options) => options.method === "POST"
+    ? { ok: false, status, json: async () => ({ error: "Could not accept this batch" }) }
+    : { ok: true, json: async () => ({ profile: { xp: 0 }, entries: [], leaderboard: [] }) }));
+  render(<LearningProvider><Harness /></LearningProvider>);
+  await screen.findByText("0");
+  fireEvent.click(screen.getByText("Correct"));
+  fireEvent.click(screen.getByText("Retry"));
+  await screen.findByText("Could not accept this batch");
+  expect(JSON.parse(localStorage.getItem(queueKey("alice"))!)).toHaveLength(1);
+});
+
+it("keeps only unprocessed answers after a partial acknowledgment", async () => {
+  const key = queueKey("alice");
+  localStorage.setItem(key, JSON.stringify([{ id: "batch", submission: {
+    moduleCode: "MGL-3", items: [{ questionId: "retired", answer: true }, { questionId: "q", answer: true }],
+  } }]));
+  vi.stubGlobal("fetch", vi.fn(async (_url, options) => ({
+    ok: true, json: async () => options.method === "POST"
+      ? { personal: 10, unprocessedQuestionIds: ["retired"] }
+      : { profile: { xp: 10 }, entries: [], leaderboard: [] },
+  })));
+  render(<LearningProvider><Harness /></LearningProvider>);
+  await screen.findByText("Some answers could not be accepted and are still saved on this device.");
+  expect(JSON.parse(localStorage.getItem(key)!)[0].submission.items).toEqual([{ questionId: "retired", answer: true }]);
+});

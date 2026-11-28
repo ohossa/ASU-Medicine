@@ -58,27 +58,31 @@ export function createLearningService(d: Dependencies) {
         throw new ReportError(409, "Sync your current academic year to submit these answers.");
       const bank = await d.bank(b.moduleCode),
         seen = new Set<string>(),
+        unprocessedQuestionIds: string[] = [],
         rewards: NonNullable<ReturnType<typeof prepareReward>>[] = [];
       for (const item of b.items) {
-        if (
-          !item ||
-          typeof item.questionId !== "string" ||
-          item.questionId.length > 180
-        )
+        if (!item || typeof item.questionId !== "string")
+          throw new ReportError(400, "Invalid learning question.");
+        if (item.questionId.length > 180) {
+          unprocessedQuestionIds.push(item.questionId);
           continue;
+        }
         if (seen.has(item.questionId)) {
           continue; // Gracefully deduplicate repeated questions within batch
         }
         seen.add(item.questionId);
         const snapshot = bank.get(item.questionId);
         if (!snapshot) {
-          continue; // Gracefully skip unavailable or retired questions without failing batch
+          unprocessedQuestionIds.push(item.questionId);
+          continue;
         }
+        const previousCount = rewards.length;
         if (["case", "casestudy"].includes(snapshot.question.type)) {
           const answers =
             item.answer && typeof item.answer === "object" ? item.answer : {};
-          for (const sub of (snapshot.question.subQuestions ??
-            []) as QuestionSnapshot["question"][]) {
+          const parts = (snapshot.question.subQuestions ?? []) as QuestionSnapshot["question"][];
+          const pendingParts = new Set(Object.keys(answers));
+          for (const sub of parts) {
             const q = {
               ...sub,
               id: item.questionId + "/" + sub.id,
@@ -88,19 +92,22 @@ export function createLearningService(d: Dependencies) {
               { ...snapshot, question: q },
               answers[sub.id],
             );
-            if (reward) rewards.push(reward);
+            if (reward) {
+              rewards.push(reward);
+              pendingParts.delete(String(sub.id));
+            }
           }
+          if (pendingParts.size && rewards.length > previousCount) unprocessedQuestionIds.push(item.questionId);
         } else {
           const reward = prepareReward(snapshot, item.answer);
           if (reward) rewards.push(reward);
         }
-      }
-      if (rewards.length === 0) {
-        return { personal: 0, competitive: 0 };
+        if (rewards.length === previousCount) unprocessedQuestionIds.push(item.questionId);
       }
       if (rewards.length > 300)
         throw new ReportError(400, "Too many question parts.");
-      return d.award(id, year, rewards);
+      const result = rewards.length ? await d.award(id, year, rewards) : { personal: 0, competitive: 0 };
+      return unprocessedQuestionIds.length ? { ...result as object, unprocessedQuestionIds } : result;
     },
     async settings(token: string, input: unknown) {
       const { id, year } = await account(token);

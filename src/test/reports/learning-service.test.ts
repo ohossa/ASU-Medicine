@@ -77,3 +77,12 @@ it("authenticates before reading or writing private records", async () => {
   expect(deps.year).not.toHaveBeenCalled();
   expect(deps.award).not.toHaveBeenCalled();
 });
+
+it("reports unprocessed answers while saving valid answers from the same batch", async () => {
+  const { deps, service } = setup();
+  await expect(service.submit("token", {
+    moduleCode: "MGL-3",
+    items: [{ questionId: "retired", answer: true }, { questionId: "q", answer: true }],
+  })).resolves.toEqual({ personal: 5, competitive: 5, unprocessedQuestionIds: ["retired"] });
+  expect(deps.award.mock.calls[0][2]).toHaveLength(1);
+});
